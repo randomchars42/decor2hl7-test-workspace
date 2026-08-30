@@ -1,0 +1,74 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.4067" ident="aktin-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.4067" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" lastModifiedDate="2025-12-26T20:01:54" isClosed="false" displayName="Weiterbehandlung Verlegung" ident="aktin-" name="Referralto" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="draft" url="http://art-decor.org/decor/services/" effectiveDate="2025-12-01T00:00:00">
+            <desc language="de-DE" lastTranslated="2025-12-26T20:01:54">Weiterbehandlung Verlegung des Patienten</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="VERSION" template="1.2.276.0.76.10.4067" flexibility="2015-09-18T00:00:00" tmid="1.2.276.0.76.10.4067" tmname="Referralto" tmdisplayName="Weiterbehandlung Verlegung" tmeffectiveDate="2015-09-18T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.301" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.301" tmname="CDAAct" tmdisplayName="CDA Act" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <relationship type="ADAPT" template="2.16.840.1.113883.10.20.22.4.140" tmid="2.16.840.1.113883.10.20.22.4.140" tmname="PatientReferralAct" tmdisplayName="Patient Referral Act" tmeffectiveDate="2015-08-13T00:00:00" tmstatusCode="draft" tmversionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <example type="neutral">
+                <act classCode="ACT" moodCode="INT">
+                    <templateId root="1.2.276.0.76.10.4067"/>
+                    <code code="1" codeSystem="1.2.276.0.76.3.1.195.5.53" displayName="intern: OP / Intervention (z.B. Herzkatheter, Endoskopie, ...)"/>
+                    <text>
+                        <reference value="#refact"/>
+                    </text>
+                </act>
+            </example>
+            <element name="hl7:act" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.651">
+                <item original="false" label="Referralto"/>
+                <attribute name="classCode" value="ACT" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.652"/>
+                <attribute name="moodCode" value="INT" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.653"/>
+                <element name="hl7:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.654">
+                    <item original="false" label="Referralto"/>
+                    <attribute name="root" value="1.2.276.0.76.10.4067" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.655"/>
+                </element>
+                <element name="hl7:code" datatype="CE" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.656">
+                    <item original="false" label="Referralto"/>
+                    <vocabulary valueSet="1.2.276.0.76.11.53" vsid="1.2.276.0.76.11.53" vsname="referral-actions" vsdisplayName="Referral actions" vsstatusCode="draft" vseffectiveDate="2015-11-17T00:00:00" linkedartefactmissing="false"/>
+                </element>
+                <element name="hl7:text" datatype="ED" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.657">
+                    <desc language="de-DE" lastTranslated="2025-12-26T20:01:54">Lediglich reference in den Text der zugehörigen Section</desc>
+                    <item original="false" label="Referralto"/>
+                    <element name="hl7:reference" datatype="URL" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.658">
+                        <item original="false" label="Referralto"/>
+                    </element>
+                </element>
+                <element name="hl7:participant" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true">
+                    <desc language="de-DE">Aufnehmende Fachabteilung § 301</desc>
+                    <item original="false" label="Referralto"/>
+                    <attribute name="typeCode" value="DST" isOptional="false" datatype="cs"/>
+                    <element name="hl7:participantRole" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R">
+                        <item original="false" label="Referralto"/>
+                        <attribute name="classCode" value="SDLOC" isOptional="false" datatype="cs"/>
+                        <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="CE">
+                            <item original="false" label="Referralto"/>
+                            <vocabulary valueSet="1.2.276.0.76.3.1.195.11.17" vsid="1.2.276.0.76.3.1.195.11.17" vsname="Fachabteilungsschluessel" vsdisplayName="Fachabteilungsschlüssel" vseffectiveDate="2024-08-08T13:35:43" vsstatusCode="draft" linkedartefactmissing="false"/>
+                            <element name="hl7:originalText" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" datatype="ST">
+                                <item original="false" label="Referralto"/>
+                            </element>
+                        </element>
+                    </element>
+                </element>
+            </element>
+            <staticAssociations>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.2.20021" effectiveDate="2015-06-20T13:35:05" refdisplay="aktin-dataelement2015(1)-20021" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.2" datasetEffectiveDate="2015-01-15T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.1-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.656" templateId="1.2.276.0.76.10.4067" templateEffectiveDate="2025-12-01T00:00:00" path="Weiteres Procedere / Therapieempfehlung / Weiterbehandler">
+                    <name language="de-DE">Typ Verlegung</name>
+                    <desc language="de-DE">Typ Verlegung</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.3.20021" effectiveDate="2015-11-01T00:00:00" refdisplay="aktin-dataelement2015(2)-20021" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.3" datasetEffectiveDate="2015-11-01T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.2-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.656" templateId="1.2.276.0.76.10.4067" templateEffectiveDate="2025-12-01T00:00:00" path="Weiteres Procedere / Therapieempfehlung / Weiterbehandler">
+                    <name language="de-DE">Typ Verlegung</name>
+                    <desc language="de-DE">Typ Verlegung</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+            </staticAssociations>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.3056" name="Eddisposition" displayName="Weiteres Procedere / Therapieempfehlung / Weiterbehandler" effectiveDate="2015-01-10T00:00:00" statusCode="active" isClosed="false" ident="aktin-"/>
+        </template>
+    </template>
+</result>

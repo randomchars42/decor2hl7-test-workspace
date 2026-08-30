@@ -1,0 +1,63 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:local="http://art-decor.org/local" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.20.22.4.17" name="MedicationSupplyOrder" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" displayName="Medication Supply Order" url="http://art-decor.org/decor/services/" ident="ccda-" sdtc:dummy-1="urn:hl7-org:sdtc" local:dummy-2="http://art-decor.org/local" xml:dummy-3="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-5="urn:hl7-org:v3" xsi:dummy-6="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">This template records the intent to supply a patient with medications.</desc>
+            <classification type="cdaentrylevel"/>
+            <context id="**"/>
+            <element name="cda:supply" id="2.16.840.1.113883.3.1937.99.3.9.461">
+                <attribute name="classCode" value="SPLY" id="2.16.840.1.113883.3.1937.99.3.9.462">
+                    <item label="conf-7427"/>
+                </attribute>
+                <attribute name="moodCode" value="INT" id="2.16.840.1.113883.3.1937.99.3.9.463">
+                    <item label="conf-7428"/>
+                </attribute>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.464">
+                    <desc language="en-US">SHALL contain exactly one [1..1] templateId (CONF:7429) such that it</desc>
+                    <item label="conf-7429"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.22.4.17" id="2.16.840.1.113883.3.1937.99.3.9.465">
+                        <item label="conf-10507"/>
+                    </attribute>
+                </element>
+                <element name="cda:id" datatype="II" minimumMultiplicity="1" maximumMultiplicity="*" isMandatory="false" id="2.16.840.1.113883.3.1937.99.3.9.466">
+                    <desc language="en-US">SHALL contain at least one [1..*] id (CONF:7430).</desc>
+                    <item label="conf-7430"/>
+                </element>
+                <element name="cda:statusCode" datatype="CS" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.467">
+                    <desc language="en-US">SHALL contain exactly one [1..1] statusCode (CONF:7432).</desc>
+                    <item label="conf-7432"/>
+                </element>
+                <element name="cda:effectiveTime" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" datatype="IVL_TS" id="2.16.840.1.113883.3.1937.99.3.9.468">
+                    <desc language="en-US">SHOULD contain zero or one [0..1] effectiveTime (CONF:15143) such that it</desc>
+                    <item label="conf-15143"/>
+                    <element name="cda:high" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.469">
+                        <desc language="en-US">SHALL contain exactly one [1..1] high (CONF:15144).</desc>
+                        <item label="conf-15144"/>
+                    </element>
+                </element>
+                <element name="cda:repeatNumber" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.470">
+                    <desc language="en-US">SHOULD contain zero or one [0..1] repeatNumber (CONF:7434).<p/>In "INT" (intent) mood, the repeatNumber defines the number of allowed fills. For example, a repeatNumber of "3" means that the substance can be supplied up to 3 times (or, can be dispensed, with 2 refills).</desc>
+                    <item label="conf-7434"/>
+                </element>
+                <element name="cda:quantity" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.471">
+                    <desc language="en-US">SHOULD contain zero or one [0..1] quantity (CONF:7436).</desc>
+                    <item label="conf-7436"/>
+                </element>
+                <element name="cda:product" minimumMultiplicity="0" maximumMultiplicity="1" contains="2.16.840.1.113883.10.20.22.4.23" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.3.1937.99.3.9.472">
+                    <item label="conf-7439"/>
+                </element>
+                <element name="cda:product" minimumMultiplicity="0" maximumMultiplicity="1" contains="2.16.840.1.113883.10.20.22.4.54" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.3.1937.99.3.9.473">
+                    <item label="conf-9334"/>
+                </element>
+                <element name="cda:author" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.474">
+                    <desc language="en-US">MAY contain zero or one [0..1] author (CONF:7438).</desc>
+                    <item label="conf-7438"/>
+                </element>
+                <element name="cda:entryRelationship" minimumMultiplicity="0" maximumMultiplicity="1" contains="2.16.840.1.113883.10.20.22.4.20" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.3.1937.99.3.9.475">
+                    <item label="conf-7442"/>
+                    <attribute name="typeCode" value="SUBJ" id="2.16.840.1.113883.3.1937.99.3.9.476">
+                        <item label="conf-7444"/>
+                    </attribute>
+                    <attribute name="inversionInd" value="true" id="2.16.840.1.113883.3.1937.99.3.9.477">
+                        <item label="conf-7445"/>
+                    </attribute>
+                </element>
+            </element>
+        </template>

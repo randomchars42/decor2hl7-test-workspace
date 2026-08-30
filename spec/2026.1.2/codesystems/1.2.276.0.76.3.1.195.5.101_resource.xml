@@ -1,0 +1,231 @@
+<codeSystems>
+    <project ident="aktin-">
+        <codeSystem id="1.2.276.0.76.3.1.195.5.101" name="mts-presentationdiagram" displayName="MTS-Präsentationsdiagramm" effectiveDate="2019-08-16T00:00:00" statusCode="draft" canonicalUri="http://aktin.org/fhir/CodeSystem/aktin-cs-mts-presentationdiagram" lastModifiedDate="2024-07-22T16:52:37" language="de-DE">
+            <desc language="en-US" lastTranslated="2024-07-19T15:54:48">
+                <p>MTS-Präsentationsdiagramm</p>
+            </desc>
+            <publishingAuthority name="AKTIN e. V." inherited="project">
+                <addrLine>c/o Uniklinik RWTH Aachen</addrLine>
+                <addrLine>Institut für Medizinische Informatik</addrLine>
+                <addrLine>Pauwelsstraße 35</addrLine>
+                <addrLine>52074 Aachen</addrLine>
+                <addrLine type="phone">Tel. +49 391 67 28186</addrLine>
+                <addrLine type="email">office@aktin.org</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <codedConcept code="1" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Abdominelle Schmerzen bei Erwachsenen"/>
+                    <designation language="en-US" type="preferred" displayName="Abdominal pain in adults"/>
+                </codedConcept>
+                <codedConcept code="2" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Abdominelle Schmerzen bei Kindern"/>
+                    <designation language="en-US" type="preferred" displayName="Abdominal pain in children"/>
+                </codedConcept>
+                <codedConcept code="3" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Abszesse und lokale Infektionen"/>
+                    <designation language="en-US" type="preferred" displayName="Abscesses and local infections"/>
+                </codedConcept>
+                <codedConcept code="4" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Allergie"/>
+                    <designation language="en-US" type="preferred" displayName="Allergy"/>
+                </codedConcept>
+                <codedConcept code="5" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Angriff (Zustand nach)"/>
+                    <designation language="en-US" type="preferred" displayName="Assault"/>
+                </codedConcept>
+                <codedConcept code="6" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Asthma"/>
+                    <designation language="en-US" type="preferred" displayName="Asthma"/>
+                </codedConcept>
+                <codedConcept code="7" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Atemproblem bei Erwachsenen"/>
+                    <designation language="en-US" type="preferred" displayName="Shortness of breath in adults"/>
+                </codedConcept>
+                <codedConcept code="8" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Atemproblem bei Kindern"/>
+                    <designation language="en-US" type="preferred" displayName="Shortness of breath in children"/>
+                </codedConcept>
+                <codedConcept code="9" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Auffälliges Verhalten"/>
+                    <designation language="en-US" type="preferred" displayName="Behaving strangely"/>
+                </codedConcept>
+                <codedConcept code="10" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Augenprobleme"/>
+                    <designation language="en-US" type="preferred" displayName="Eye problems"/>
+                </codedConcept>
+                <codedConcept code="11" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Besorgte Eltern"/>
+                    <designation language="en-US" type="preferred" displayName="Worried parents"/>
+                </codedConcept>
+                <codedConcept code="12" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Betrunkener Eindruck"/>
+                    <designation language="en-US" type="preferred" displayName="Apparently drunk"/>
+                </codedConcept>
+                <codedConcept code="13" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Bisse und Stiche"/>
+                    <designation language="en-US" type="preferred" displayName="Bites and stings"/>
+                </codedConcept>
+                <codedConcept code="14" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Chemikalienkontakt"/>
+                    <designation language="en-US" type="preferred" displayName="Chemical exposure"/>
+                </codedConcept>
+                <codedConcept code="15" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Diabetes"/>
+                    <designation language="en-US" type="preferred" displayName="Diabetes"/>
+                </codedConcept>
+                <codedConcept code="16" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Durchfälle und Erbrechen"/>
+                    <designation language="en-US" type="preferred" displayName="Diarrhoea and vomiting"/>
+                </codedConcept>
+                <codedConcept code="17" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Extremitätenprobleme"/>
+                    <designation language="en-US" type="preferred" displayName="Limb problems"/>
+                </codedConcept>
+                <codedConcept code="18" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Fremdkörper"/>
+                    <designation language="en-US" type="preferred" displayName="Foreign body"/>
+                </codedConcept>
+                <codedConcept code="19" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Gastrointestinale Blutung"/>
+                    <designation language="en-US" type="preferred" displayName="Gastrointestinal bleeding"/>
+                </codedConcept>
+                <codedConcept code="20" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Gesichtsprobleme"/>
+                    <designation language="en-US" type="preferred" displayName="Facial problems"/>
+                </codedConcept>
+                <codedConcept code="21" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Halsschmerz"/>
+                    <designation language="en-US" type="preferred" displayName="Sore throat"/>
+                </codedConcept>
+                <codedConcept code="22" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Hautausschläge"/>
+                    <designation language="en-US" type="preferred" displayName="Rashes"/>
+                </codedConcept>
+                <codedConcept code="23" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Herzklopfen"/>
+                    <designation language="en-US" type="preferred" displayName="Palpitations"/>
+                </codedConcept>
+                <codedConcept code="24" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Hinkendes Kind"/>
+                    <designation language="en-US" type="preferred" displayName="Limping child"/>
+                </codedConcept>
+                <codedConcept code="25" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Hodenschmerz"/>
+                    <designation language="en-US" type="preferred" displayName="Testicular pain"/>
+                </codedConcept>
+                <codedConcept code="26" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Irritables (erregbares/reizbares) Kind "/>
+                    <designation language="en-US" type="preferred" displayName="Irritable child"/>
+                </codedConcept>
+                <codedConcept code="27" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Körperstammverletzung"/>
+                    <designation language="en-US" type="preferred" displayName="Torso injury"/>
+                </codedConcept>
+                <codedConcept code="28" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Kollaps"/>
+                    <designation language="en-US" type="preferred" displayName="Collapse"/>
+                </codedConcept>
+                <codedConcept code="29" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Kopfschmerz"/>
+                    <designation language="en-US" type="preferred" displayName="Headache"/>
+                </codedConcept>
+                <codedConcept code="30" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Kopfverletzung"/>
+                    <designation language="en-US" type="preferred" displayName="Head injury"/>
+                </codedConcept>
+                <codedConcept code="31" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Krampfanfall"/>
+                    <designation language="en-US" type="preferred" displayName="Fit"/>
+                </codedConcept>
+                <codedConcept code="32" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Nackenschmerz"/>
+                    <designation language="en-US" type="preferred" displayName="Neck pain"/>
+                </codedConcept>
+                <codedConcept code="33" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Ohrenprobleme"/>
+                    <designation language="en-US" type="preferred" displayName="Ear problems"/>
+                </codedConcept>
+                <codedConcept code="34" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Psychiatrische Erkrankung"/>
+                    <designation language="en-US" type="preferred" displayName="Mental illness"/>
+                </codedConcept>
+                <codedConcept code="35" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Rückenschmerz"/>
+                    <designation language="en-US" type="preferred" displayName="Back pain"/>
+                </codedConcept>
+                <codedConcept code="36" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Schreiendes Baby"/>
+                    <designation language="en-US" type="preferred" displayName="Crying baby"/>
+                </codedConcept>
+                <codedConcept code="37" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Schwangerschaftsproblem"/>
+                    <designation language="en-US" type="preferred" displayName="Pregnancy"/>
+                </codedConcept>
+                <codedConcept code="38" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Schweres Trauma"/>
+                    <designation language="en-US" type="preferred" displayName="Major trauma"/>
+                </codedConcept>
+                <codedConcept code="39" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Selbstverletzung"/>
+                    <designation language="en-US" type="preferred" displayName="Self-harm"/>
+                </codedConcept>
+                <codedConcept code="40" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Sexualinfektion"/>
+                    <designation language="en-US" type="preferred" displayName="Sexually acquired infection"/>
+                </codedConcept>
+                <codedConcept code="41" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Stürze"/>
+                    <designation language="en-US" type="preferred" displayName="Falls"/>
+                </codedConcept>
+                <codedConcept code="42" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Thoraxschmerz"/>
+                    <designation language="en-US" type="preferred" displayName="Chest pain"/>
+                </codedConcept>
+                <codedConcept code="43" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Überdosierung und Vergiftung"/>
+                    <designation language="en-US" type="preferred" displayName="Overdose and poisoning"/>
+                </codedConcept>
+                <codedConcept code="44" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Unwohlsein bei Erwachsenen"/>
+                    <designation language="en-US" type="preferred" displayName="Unwell adult"/>
+                </codedConcept>
+                <codedConcept code="45" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Unwohlsein bei Kindern"/>
+                    <designation language="en-US" type="preferred" displayName="Unwell child"/>
+                </codedConcept>
+                <codedConcept code="46" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Unwohlsein bei Neugeborenen"/>
+                    <designation language="en-US" type="preferred" displayName="Unwell newborn"/>
+                </codedConcept>
+                <codedConcept code="47" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Unwohlsein bei Säuglingen"/>
+                    <designation language="en-US" type="preferred" displayName="Unwell baby"/>
+                </codedConcept>
+                <codedConcept code="48" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Urologische Probleme"/>
+                    <designation language="en-US" type="preferred" displayName="Urinary problems"/>
+                </codedConcept>
+                <codedConcept code="49" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Vaginale Blutung"/>
+                    <designation language="en-US" type="preferred" displayName="PV bleeding"/>
+                </codedConcept>
+                <codedConcept code="50" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Verbrennungen und Verbrühungen"/>
+                    <designation language="en-US" type="preferred" displayName="Burns and scalds"/>
+                </codedConcept>
+                <codedConcept code="51" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Wunden"/>
+                    <designation language="en-US" type="preferred" displayName="Wounds"/>
+                </codedConcept>
+                <codedConcept code="52" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Zahnprobleme"/>
+                    <designation language="en-US" type="preferred" displayName="Dental problems"/>
+                </codedConcept>
+                <codedConcept code="53" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Generelle Indikatoren"/>
+                    <designation language="en-US" type="preferred" displayName="General indicators"/>
+                </codedConcept>
+            </conceptList>
+        </codeSystem>
+    </project>
+</codeSystems>

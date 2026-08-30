@@ -1,0 +1,22 @@
+<codeSystems>
+    <project ident="aktin-">
+        <codeSystem id="1.2.276.0.76.3.1.195.5.56" name="andere-entlassungsarten" displayName="Andere Entlassungsarten" effectiveDate="2015-09-18T00:00:00" statusCode="draft" versionLabel="2024" canonicalUri="http://aktin.org/fhir/CodeSystem/aktin-cs-andere-entlassungsarten" lastModifiedDate="2024-08-18T16:28:41" language="de-DE">
+            <desc language="en-US" lastTranslated="2024-08-18T16:19:44">
+                <p>Entlassungsart (discharge disposition code) für "kein Arztkontakt" - AKTIN Notfalldokumentation</p>
+            </desc>
+            <publishingAuthority name="AKTIN e. V." inherited="project">
+                <addrLine>c/o Uniklinik RWTH Aachen</addrLine>
+                <addrLine>Institut für Medizinische Informatik</addrLine>
+                <addrLine>Pauwelsstraße 35</addrLine>
+                <addrLine>52074 Aachen</addrLine>
+                <addrLine type="phone">Tel. +49 391 67 28186</addrLine>
+                <addrLine type="email">office@aktin.org</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <codedConcept code="6" statusCode="draft" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Entlassung gegen ärztlichen Rat"/>
+                </codedConcept>
+            </conceptList>
+        </codeSystem>
+    </project>
+</codeSystems>

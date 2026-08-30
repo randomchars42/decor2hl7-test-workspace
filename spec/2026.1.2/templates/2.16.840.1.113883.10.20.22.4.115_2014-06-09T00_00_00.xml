@@ -1,0 +1,91 @@
+<result xmlns:json="http://www.json.org">
+    <template id="2.16.840.1.113883.10.20.22.4.115" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:local="http://art-decor.org/local" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.20.22.4.115" hl7:dummy-default="urn:hl7-org:v3" local:dummy-2="http://art-decor.org/local" displayName="External Document Reference" cda:dummy-5="urn:hl7-org:v3" xml:dummy-3="http://www.w3.org/XML/1998/namespace" url="http://art-decor.org/decor/services/" xsi:dummy-6="http://www.w3.org/2001/XMLSchema-instance" versionLabel="2.1" isClosed="false" ident="ccda-" name="ExternalDocumentReference" statusCode="draft" sdtc:dummy-1="urn:hl7-org:sdtc" effectiveDate="2014-06-09T00:00:00">
+            <desc language="en-US">Where it is necessary to reference an external clinical document, the External Document Reference template can be used to reference this external document. However, if the containing document is replacing or appending to another document in the same set, that relationship is set in the header, using ClinicalDocument/relatedDocument.</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.328" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.328" tmname="CDAExternalDocument" tmdisplayName="CDA ExternalDocument" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <element name="cda:externalDocument" id="2.16.840.1.113883.3.1937.99.3.9.3971">
+                <item original="false" label="ExternalDocumentReference"/>
+                <attribute name="classCode" value="DOCCLIN" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.3972">
+                    <desc language="en-US">SHALL contain exactly one [1..1] @classCode="DOCCLIN" Clinical Document (CodeSystem: HL7ActClass urn:oid:2.16.840.1.113883.5.6) (CONF:1098-31931).</desc>
+                    <item label="CONF:1098-31931"/>
+                </attribute>
+                <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.3973">
+                    <desc language="en-US">SHALL contain exactly one [1..1] @moodCode="EVN" Event (CodeSystem: ActMood urn:oid:2.16.840.1.113883.5.1001) (CONF:1098-31932).</desc>
+                    <item label="CONF:1098-31932"/>
+                </attribute>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                    <desc language="en-US">C-CDA R1.1 templateId root without an extension</desc>
+                    <item label="CONF:1198-32936"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.22.4.115" isOptional="false" datatype="uid"/>
+                </element>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.3974">
+                    <desc language="en-US">SHALL contain exactly one [1..1] templateId (CONF:1098-32748) such that it</desc>
+                    <item label="CONF:1098-32748"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.22.4.115" isOptional="false" datatype="uid" id="2.16.840.1.113883.3.1937.99.3.9.3975">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.22.4.115" (CONF:1098-32750).</desc>
+                        <item label="CONF:1098-32750"/>
+                    </attribute>
+                    <attribute name="extension" value="2014-06-09" isOptional="false" datatype="st" id="2.16.840.1.113883.3.1937.99.3.9.3976">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @extension="2014-06-09" (CONF:1098-32749).</desc>
+                        <item label="CONF:1098-32749"/>
+                    </attribute>
+                </element>
+                <element name="cda:id" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="false" id="2.16.840.1.113883.3.1937.99.3.9.3977">
+                    <desc language="en-US">SHALL contain exactly one [1..1] id (CONF:1098-32751).</desc>
+                    <item label="CONF:1098-32751"/>
+                </element>
+                <element name="cda:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="false" id="2.16.840.1.113883.3.1937.99.3.9.3978">
+                    <desc language="en-US">SHALL contain exactly one [1..1] code (CONF:1098-31933).</desc>
+                    <item label="CONF:1098-31933"/>
+                </element>
+                <element name="cda:setId" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.3979">
+                    <desc language="en-US">SHOULD contain zero or one [0..1] setId (CONF:1098-32752).</desc>
+                    <item label="CONF:1098-32752"/>
+                </element>
+                <element name="cda:versionNumber" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.3980">
+                    <desc language="en-US">SHOULD contain zero or one [0..1] versionNumber (CONF:1098-32753).</desc>
+                    <item label="CONF:1098-32753"/>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="contains" prefix="bccdapilot-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.3.51.60.3.40" name="BCCDAGoalObservation" displayName="BC CDA Goal Observation" statusCode="pending" versionLabel="2.1" effectiveDate="2019-04-29T09:35:49" ident="bccdapilot-"/>
+            <ref type="dependency" prefix="shnhf-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.17.10.2" name="SHNStructuredBody" displayName="SHN StructuredBody" effectiveDate="2015-05-09T11:18:02" statusCode="draft" isClosed="false" ident="shnhf-"/>
+            <ref type="dependency" prefix="shnhf-" flexibility="2015-05-09T11:18:02" id="2.16.840.1.113883.3.1937.99.61.17.10.3" name="SHNcomponent" displayName="SHN component" effectiveDate="2015-05-09T11:28:46" statusCode="draft" isClosed="false" ident="shnhf-"/>
+            <ref type="dependency" prefix="shl7ru-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.18.10.6" name="ВыписерйЭпикриз" displayName="Выписной эпикриз" effectiveDate="2015-06-06T14:32:25" statusCode="draft" isClosed="false" ident="shl7ru-"/>
+            <ref type="dependency" prefix="bccdapilot-" flexibility="2015-08-13T00:00:00" id="2.16.840.1.113883.3.1937.99.61.26.10.125" name="GoalObservation" displayName="Goal Observation" effectiveDate="2019-04-29T09:26:00" statusCode="draft" versionLabel="2.1" ident="bccdapilot-"/>
+            <ref type="contains" prefix="bccdapilot-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.3.1937.99.61.26.10.125" name="GoalObservation" displayName="Goal Observation" effectiveDate="2019-04-29T09:26:00" statusCode="draft" versionLabel="2.1" ident="bccdapilot-"/>
+            <ref type="dependency" prefix="slatam-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.3.1937.99.61.28.10.3" name="CDAConsulta" displayName="CDA de Consulta" effectiveDate="2017-04-22T23:20:01" statusCode="draft" versionLabel="1" ident="slatam-"/>
+            <ref type="contains" prefix="shl7it-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.3.1937.99.61.30.10.54" name="PCHealthConcernAct" displayName="Health Concern Act (harmonized)" statusCode="cancelled" versionLabel="0.1" effectiveDate="2020-10-08T10:55:41" ident="shl7it-"/>
+            <ref type="contains" prefix="sxehealth-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.3.1937.99.61.67.10.24" name="XeHAlertAct" displayName="XeH Alert Act" statusCode="cancelled" effectiveDate="2021-04-20T10:00:04" ident="sxehealth-"/>
+            <ref type="contains" prefix="sxehealth-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.3.1937.99.61.67.10.25" name="XeHRiskConcernAct" displayName="XeH Risk Concern Act" statusCode="cancelled" effectiveDate="2021-04-20T10:06:56" ident="sxehealth-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2015-08-01T00:00:00" id="2.16.840.1.113883.10.20.21.2.3" name="InterventionsSectionV3" effectiveDate="2015-08-01T00:00:00" statusCode="draft" displayName="Interventions Section (V3)" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.1.2" name="ContinuityofCareDocumentCCDV3" displayName="Continuity of Care Document (CCD) (V3)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.1.3" name="HistoryandPhysicalV3" displayName="History and Physical (V3)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.1.4" name="ConsultationNoteV3" displayName="Consultation Note (V3)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.1.6" name="ProcedureNoteV3" displayName="Procedure Note (V3)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.1.7" name="OperativeNoteV3" displayName="Operative Note (V3)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.1.8" name="DischargeSummaryV3" displayName="Discharge Summary (V3)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.1.9" name="ProgressNoteV3" displayName="Progress Note (V3)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.1.13" name="TransferSummaryV2" displayName="Transfer Summary (V2)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.1.14" name="ReferralNoteV2" displayName="Referral Note (V2)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.1.15" name="CarePlanV2" displayName="Care Plan (V2)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2015-08-13T00:00:00" id="2.16.840.1.113883.10.20.22.2.10" name="PlanofTreatmentSectionV2" displayName="Plan of Treatment Section (V2)" effectiveDate="2014-06-09T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="bccdapilot-" flexibility="2015-08-13T00:00:00" id="2.16.840.1.113883.10.20.22.2.10" name="PlanofTreatmentSectionV2" displayName="Plan of Treatment Section (V2)" effectiveDate="2019-03-16T08:54:08" statusCode="draft" versionLabel="2.1" ident="bccdapilot-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2015-08-01T00:00:00" id="2.16.840.1.113883.10.20.22.2.58" name="HealthConcernsSectionV2" displayName="Health Concerns Section (V2)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2015-08-13T00:00:00" id="2.16.840.1.113883.10.20.22.2.60" name="GoalsSection" displayName="Goals Section" effectiveDate="2015-08-13T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2015-08-13T00:00:00" id="2.16.840.1.113883.10.20.22.2.61" name="HealthStatusEvaluationsandOutcomesSection" displayName="Health Status Evaluations and Outcomes Section" effectiveDate="2015-08-13T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="bccdapilot-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.2.101" name="BCCDAReferralNoteV2" displayName="BC CDA Referral Note (V2)" effectiveDate="2019-04-06T02:03:17" statusCode="draft" versionLabel="2.1" ident="bccdapilot-"/>
+            <ref type="contains" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.4.121" name="GoalObservation" displayName="Goal Observation" effectiveDate="2015-08-13T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2015-08-13T00:00:00" id="2.16.840.1.113883.10.20.22.4.121" name="GoalObservation" displayName="Goal Observation" effectiveDate="2015-08-13T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2015-08-01T00:00:00" id="2.16.840.1.113883.10.20.22.4.131" name="InterventionActV2" displayName="Intervention Act (V2)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="contains" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.4.131" name="InterventionActV2" displayName="Intervention Act (V2)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="contains" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.4.132" name="HealthConcernActV2" displayName="Health Concern Act (V2)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="contains" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.4.136" name="RiskConcernActV2" displayName="Risk Concern Act (V2)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="contains" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.4.144" name="OutcomeObservation" effectiveDate="2015-08-13T00:00:00" statusCode="draft" displayName="Outcome Observation" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2015-08-01T00:00:00" id="2.16.840.1.113883.10.20.22.4.146" name="PlannedInterventionActV2" displayName="Planned Intervention Act (V2)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="contains" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.4.146" name="PlannedInterventionActV2" displayName="Planned Intervention Act (V2)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+        </template>
+    </template>
+</result>

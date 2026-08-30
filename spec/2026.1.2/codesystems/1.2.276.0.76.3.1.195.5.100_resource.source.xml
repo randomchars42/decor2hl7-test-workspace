@@ -1,0 +1,100 @@
+<codeSystem xmlns:json="http://www.json.org" id="1.2.276.0.76.3.1.195.5.100" name="alter-in-kategorien" displayName="Alter in Kategorien" effectiveDate="2019-12-30T00:00:00" statusCode="draft" canonicalUri="http://aktin.org/fhir/CodeSystem/aktin-cs-alter-in-kategorien" lastModifiedDate="2024-07-24T21:49:13" language="de-DE" url="http://art-decor.org/decor/services/" ident="aktin-">
+    <desc json:array="true" language="en-US" lastTranslated="2024-07-19T15:54:00">
+                 &lt;p&gt;Alter in Kategorien (laut NoKeDa)&lt;/p&gt; 
+            </desc>
+    <publishingAuthority json:array="true" name="AKTIN e. V." inherited="project">
+        <addrLine json:array="true">c/o Uniklinik RWTH Aachen</addrLine>
+        <addrLine json:array="true">Institut für Medizinische Informatik</addrLine>
+        <addrLine json:array="true">Pauwelsstraße 35</addrLine>
+        <addrLine json:array="true">52074 Aachen</addrLine>
+        <addrLine json:array="true" type="phone">Tel. +49 391 67 28186</addrLine>
+        <addrLine json:array="true" type="email">office@aktin.org</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <conceptList json:array="true">
+        <codedConcept json:array="true" code="0" statusCode="active" level="0" type="L" effectiveDate="2019-12-30T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="0 Jahre"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="0 years"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="1" statusCode="active" level="0" type="L" effectiveDate="2019-12-30T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="1 Jahr"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="1 year"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="2" statusCode="active" level="0" type="L" effectiveDate="2019-12-30T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="2 Jahre"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="2 years"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="3" statusCode="active" level="0" type="L" effectiveDate="2019-12-30T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="3 Jahre"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="3 years"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="4" statusCode="active" level="0" type="L" effectiveDate="2019-12-30T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="4 Jahre"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="4 years"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="5-9" statusCode="active" level="0" type="L" effectiveDate="2019-12-30T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="5-9 Jahre"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="5-9 years"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="10-14" statusCode="active" level="0" type="L" effectiveDate="2019-12-30T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="10-14 Jahre"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="10-14 years"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="15-19" statusCode="active" level="0" type="L" effectiveDate="2019-12-30T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="15-19 Jahre"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="15-19 years"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="20-24" statusCode="active" level="0" type="L" effectiveDate="2019-12-30T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="20-24 Jahre"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="20-24 years"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="25-29" statusCode="active" level="0" type="L" effectiveDate="2019-12-30T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="25-29 Jahre"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="25-29 years"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="30-34" statusCode="active" level="0" type="L" effectiveDate="2019-12-30T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="30-34  Jahre"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="30-34  years"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="35-39" statusCode="active" level="0" type="L" effectiveDate="2019-12-30T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="35-39 Jahre"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="35-39 years"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="40-44" statusCode="active" level="0" type="L" effectiveDate="2019-12-30T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="40-44 Jahre"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="40-44 years"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="45-49" statusCode="active" level="0" type="L" effectiveDate="2019-12-30T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="45-49 Jahre"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="45-49 years"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="50-54" statusCode="active" level="0" type="L" effectiveDate="2019-12-30T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="50-54 Jahre"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="50-54 years"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="55-59" statusCode="active" level="0" type="L" effectiveDate="2019-12-30T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="55-59 Jahre"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="55-59 years"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="60-64" statusCode="active" level="0" type="L" effectiveDate="2019-12-30T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="60-64 Jahre"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="60-64 years"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="65-69" statusCode="active" level="0" type="L" effectiveDate="2019-12-30T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="65-69 Jahre"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="65-69 years"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="70-74" statusCode="active" level="0" type="L" effectiveDate="2019-12-30T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="70-74 Jahre"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="70-74 years"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="75-79" statusCode="active" level="0" type="L" effectiveDate="2019-12-30T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="75-79 Jahre"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="75-79 years"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="80+" statusCode="active" level="0" type="L" effectiveDate="2019-12-30T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="80+ Jahre"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="80+ years"/>
+        </codedConcept>
+    </conceptList>
+</codeSystem>

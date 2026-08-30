@@ -1,0 +1,79 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:pharm="urn:ihe:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.2002" name="HeaderAuthor" displayName="CDA author" effectiveDate="2013-07-10T00:00:00" statusCode="draft" isClosed="false" url="http://art-decor.org/decor/services/" ident="hl7de-" pharm:dummy-1="urn:ihe:pharm" xml:dummy-2="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-4="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="de-DE">Die Autor-Relation gibt den Urheber der Dokumentation und den Zeitpunkt der Autorenschaft wieder. Dies sind in der Regel Personen (Gesundheitsdienstleister) oder auch Geräte, die Daten erzeugen.</desc>
+            <classification type="cdaheaderlevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.102"/>
+            <example caption="Autor ist eine Person">
+        <author typeCode="AUT">
+            <functionCode code="DISPHYS" displayName="discharging physician" codeSystem="2.16.840.1.113883.5.88" codeSystemName="ParticipationFunction"/>
+            <time value="20130407130000+0500"/>
+            <assignedAuthor classCode="ASSIGNED">
+                <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                    <name>
+                        <given>Marie</given>
+                        <family>Müller</family>
+                    </name>
+                </assignedPerson>
+                <representedOrganization>
+                    <id root="2.16.840.1.113883.19.5"/>
+                    <name>Beispiel Krankenhaus</name>
+                </representedOrganization>
+            </assignedAuthor>
+        </author>
+    </example>
+            <example caption="Autor ist ein Gerät/Maschine">
+        <author typeCode="AUT">
+            <assignedAuthor classCode="ASSIGNED">
+                <assignedAuthoringDevice classCode="DEV" determinerCode="INSTANCE">
+                    <code>...</code>
+                </assignedAuthoringDevice>
+            </assignedAuthor>
+        </author>
+    </example>
+            <element name="hl7:author" id="2.16.840.1.113883.2.6.77.9.376">
+                <example>
+            <author typeCode="AUT" contextControlCode="OP">
+                <time value="201306101654"/>
+                <assignedAuthor classCode="ASSIGNED">
+                            <!-- ... -->
+                </assignedAuthor>
+            </author>
+        </example>
+                <attribute name="typeCode" value="AUT" isOptional="true" id="2.16.840.1.113883.2.6.77.9.377"/>
+                <attribute name="contextControlCode" value="OP" isOptional="true" id="2.16.840.1.113883.2.6.77.9.378"/>
+                <element name="hl7:functionCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.2.6.77.9.379">
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.10267" flexibility="dynamic"/>
+                </element>
+                <element name="hl7:time" minimumMultiplicity="1" maximumMultiplicity="1" datatype="TS.DATE.MIN" id="2.16.840.1.113883.2.6.77.9.380">
+                    <desc language="de-DE">gibt den Zeitpunkt an, an dem der Autor seinen Beitrag am Dokument beendet hat; dies kommt bei einem Autoren praktisch überein mit ClinicalDocument.effectiveTime</desc>
+                </element>
+                <element name="hl7:assignedAuthor" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.381">
+                    <attribute name="classCode" value="ASSIGNED" isOptional="true" id="2.16.840.1.113883.2.6.77.9.382"/>
+                    <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="*" datatype="II" id="2.16.840.1.113883.2.6.77.9.383"/>
+                    <element name="hl7:code" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.2.6.77.9.384">
+                        <desc language="de-DE">Fachgebiet/Spezialität des Gesundheitsdienstleister, z. B. Ärztin/Arzt für Allgemeinmedizin, Approbierte Ärztin/Approbierter Arzt, Fachärztin/Facharzt für Anästhesiologie und Intensivmedizin</desc>
+                    </element>
+                    <element name="hl7:telecom" minimumMultiplicity="0" maximumMultiplicity="*" datatype="TEL" id="2.16.840.1.113883.2.6.77.9.385"/>
+                    <choice minimumMultiplicity="1" maximumMultiplicity="1">
+                        <element name="hl7:assignedPerson" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.386">
+                            <include ref="1.2.276.0.76.10.90010"/>
+                        </element>
+                        <element name="hl7:assignedAuthoringDevice" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.387">
+                            <attribute name="classCode" value="DEV" isOptional="true" id="2.16.840.1.113883.2.6.77.9.388"/>
+                            <attribute name="determinerCode" value="INSTANCE" isOptional="true" id="2.16.840.1.113883.2.6.77.9.389"/>
+                            <element name="hl7:manufacturerModelName" minimumMultiplicity="1" maximumMultiplicity="1" datatype="SC" id="2.16.840.1.113883.2.6.77.9.390"/>
+                            <element name="hl7:softwareName" minimumMultiplicity="1" maximumMultiplicity="1" datatype="SC" id="2.16.840.1.113883.2.6.77.9.391"/>
+                        </element>
+                    </choice>
+                    <element name="hl7:representedOrganization" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.392">
+                        <example>
+                    <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+                        <name>
+                                    <!-- ... -->
+                        </name>
+                    </representedOrganization>
+                </example>
+                        <include ref="1.2.276.0.76.10.90011"/>
+                    </element>
+                </element>
+            </element>
+        </template>

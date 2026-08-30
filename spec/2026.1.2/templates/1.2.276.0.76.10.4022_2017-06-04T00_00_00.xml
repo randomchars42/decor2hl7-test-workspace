@@ -1,0 +1,414 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.4022" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:ukfc="http://fhir.hl7.de/ukfc" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" id="1.2.276.0.76.10.4022" hl7:dummy-default="urn:hl7-org:v3" displayName="Medikation" xml:dummy-5="http://www.w3.org/XML/1998/namespace" cda:dummy-7="urn:hl7-org:v3" ukfc:dummy-1="http://fhir.hl7.de/ukfc" url="http://art-decor.org/decor/services/" pharm:dummy-4="urn:hl7-org:pharm" versionLabel="mpp 2017" xsi:dummy-8="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" ident="pmp-" name="MedicationStatement" sdtc:dummy-2="urn:hl7-org:sdtc" xhtml:dummy-3="http://www.w3.org/1999/xhtml" statusCode="draft" effectiveDate="2017-06-04T00:00:00">
+            <desc language="de-DE">Medikations-Eintrag (Medication Statement)</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.308" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.308" tmname="CDASubstanceAdministration" tmdisplayName="CDA SubstanceAdministration" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <item label="medspmp"/>
+            <example type="neutral">
+                <substanceAdministration classCode="SBADM" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4022"/>
+                    <id root="1.2.3.999"/>
+                    <code code="DRUG" codeSystem="2.16.840.1.113883.5.4"/>
+                    <text>
+                        <reference value="#med-1"/>
+                    </text>
+                    <statusCode code="active"/>
+                    <effectiveTime xsi:type="IVL_TS">
+          <!-- Einnahmeperiode, optional -->
+                    </effectiveTime>
+        <!-- Art der Anwendung -->
+                    <routeCode code="20053000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Oral use" codeSystemName="EDQM"/>
+                    <consumable typeCode="CSM">
+          <!-- Arzneimittel/Wirkstoff/Rezeptur -->
+                    </consumable>
+                    <author>
+          <!-- Autor des Medikationseintrags: verschreibender Gesundheitsdienstleister -->
+                    </author>
+                    <participant typeCode="AUT">
+          <!-- Selbstmedikation (Quelle: Patient) -->
+                    </participant>
+                    <informant typeCode="INF">
+          <!-- Informant dieser Information ist eine Kontaktperson/Angehöriger des Patienten -->
+                    </informant>
+                    <entryRelationship typeCode="COMP">
+          <!-- Einnahme: morgens, mittags, abends, nachts (template 1.2.276.0.76.10.4023) -->
+          <!-- oder Freitextliche Dosierinstruktionen (template 1.2.276.0.76.10.4024) -->
+                    </entryRelationship>
+                    <entryRelationship typeCode="SUBJ" inversionInd="true">
+          <!-- Patienteninstruktionen (template 2.16.840.1.113883.10.20.1.49) -->
+                    </entryRelationship>
+                    <entryRelationship typeCode="RSON">
+          <!-- Grund der Einnahme (template 2.16.840.1.113883.10.20.22.4.19) -->
+                    </entryRelationship>
+                </substanceAdministration>
+            </example>
+            <element name="hl7:substanceAdministration" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.2.6.60.4.9.203">
+                <item original="false" label="medspmp"/>
+                <attribute name="classCode" value="SBADM" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.204"/>
+                <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.205"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.206">
+                    <item original="false" label="medspmp"/>
+                    <attribute name="root" value="1.2.276.0.76.10.4022" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.60.4.9.207"/>
+                </element>
+                <element name="hl7:id" minimumMultiplicity="0" maximumMultiplicity="*" datatype="II" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.208">
+                    <item original="false" label="medspmp"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CV" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.209">
+                    <item original="false" label="medspmp"/>
+                    <vocabulary code="DRUG" codeSystem="2.16.840.1.113883.5.4"/>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="1" maximumMultiplicity="1" datatype="ED" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.210">
+                    <item original="false" label="medspmp"/>
+                    <element name="hl7:reference" minimumMultiplicity="1" maximumMultiplicity="1" datatype="TEL" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.211">
+                        <item original="false" label="medspmp"/>
+                        <attribute name="value" isOptional="false" id="2.16.840.1.113883.2.6.60.4.9.212">
+                            <desc language="de-DE">#med-{generierteID}, z.B.: #med-1</desc>
+                        </attribute>
+                    </element>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CS" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.213">
+                    <item original="false" label="medspmp"/>
+                    <vocabulary valueSet="2.16.840.1.113883.2.6.60.4.11.25" vsid="2.16.840.1.113883.2.6.60.4.11.25" vseffectiveDate="2017-03-30T00:00:00" vsname="ActStatusCodeActiveCompletedAbortedSuspended" vsdisplayName="ActStatusActiveCompletedAbortedSuspended" vsstatusCode="draft" linkedartefactmissing="false"/>
+                </element>
+                <include ref="1.2.276.0.76.10.90023" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" tmid="1.2.276.0.76.10.90023" tmname="Einnahmedauer" tmdisplayName="Einnahmedauer" tmeffectiveDate="2017-06-04T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="pmp-" linkedartefactmissing="false">
+                    <item original="false" label="medspmp"/>
+                    <choice minimumMultiplicity="0" maximumMultiplicity="1">
+                        <item original="false" label="Einnahmedauer"/>
+                        <element name="hl7:effectiveTime[hl7:low|hl7:high]" datatype="IVL_TS" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.2.6.60.4.9.266">
+                            <desc language="de-DE">Zeitelement zur Dokumentation der Einnahmedauer, hier spezifisches Interval von bis</desc>
+                            <item original="false" label="Einnahmedauer"/>
+                            <example type="neutral" caption="Intervall bekannt">
+                                <effectiveTime xsi:type="IVL_TS">
+    <low value="20130321"/>
+    <high value="20140321"/>
+</effectiveTime>
+                            </example>
+                            <example type="neutral" caption="unbekanntes Ende-Datum">
+                                <effectiveTime xsi:type="IVL_TS">
+    <low value="20130321"/>
+    <high nullFlavor="UNK"/>
+</effectiveTime>
+                            </example>
+                            <example type="neutral" caption="Dauermedikation">
+                                <effectiveTime xsi:type="IVL_TS">
+    <low value="20130321"/>
+    <high nullFlavor="NA"/>
+</effectiveTime>
+                            </example>
+                            <attribute name="xsi:type" value="IVL_TS" isOptional="true" id="2.16.840.1.113883.2.6.60.4.9.887"/>
+                            <element name="hl7:low" datatype="TS.DATE.MIN" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.267">
+                                <item original="false" label="Einnahmedauer"/>
+                            </element>
+                            <element name="hl7:high" datatype="TS.DATE.MIN" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.268">
+                                <item original="false" label="Einnahmedauer"/>
+                            </element>
+                        </element>
+                        <element name="hl7:effectiveTime[hl7:width]" datatype="IVL_TS" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.2.6.60.4.9.269">
+                            <desc language="de-DE">Zeitelement zur Dokumentation der Einnahmedauer, hier Dauer</desc>
+                            <item original="false" label="Einnahmedauer"/>
+                            <example type="neutral" caption="Einnahme für zwei Wochen">
+                                <effectiveTime xsi:type="IVL_TS">
+    <width value="2" unit="wk"/>
+</effectiveTime>
+                            </example>
+                            <element name="hl7:width" datatype="PQ" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.270">
+                                <item original="false" label="Einnahmedauer"/>
+                                <attribute name="unit" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.271">
+                                    <vocabulary valueSet="1.2.276.0.76.11.452" vsid="1.2.276.0.76.11.452" vsname="Zeiteinheiten" vsdisplayName="Zeiteinheiten (UCUM)" vseffectiveDate="2017-04-01T00:00:00" vsstatusCode="draft" linkedartefactmissing="false"/>
+                                </attribute>
+                            </element>
+                        </element>
+                        <element name="hl7:effectiveTime[@nullFlavor='NI']" datatype="TS" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.2.6.60.4.9.854">
+                            <item original="false" label="Einnahmedauer"/>
+                            <example type="neutral" caption="Keine Informationen über die Einnahmedauer">
+                                <effectiveTime nullFlavor="NI"/>
+                            </example>
+                            <attribute name="nullFlavor" value="NI" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.855"/>
+                        </element>
+                    </choice>
+                    <staticAssociations>
+                        <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.461" effectiveDate="2017-06-04T00:00:00" refdisplay="pmp-dataelement2017-461" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.4.1.3" datasetEffectiveDate="2017-06-04T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2017" datasetName="Patientenbezogener Medikationsplan Plus" ident="pmp-" elementId="2.16.840.1.113883.2.6.60.4.9.268" templateId="1.2.276.0.76.10.90023" templateEffectiveDate="2017-06-04T00:00:00" path="Medikation / Medikationseintrag / Einnahmedauer">
+                            <name language="de-DE">Enddatum Einnahme</name>
+                            <desc language="de-DE">Enddatum der Einnahme, bis zu welchem Tag einschließlich das Medikament eingenommen werden soll</desc>
+                            <datasetName language="de-DE">Patientenbezogener Medikationsplan Plus</datasetName>
+                            <projectName language="de-DE">Patientenbezogener Medikationsplan</projectName>
+                        </origconcept>
+                        <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.460" effectiveDate="2017-06-04T00:00:00" refdisplay="pmp-dataelement2017-460" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.4.1.3" datasetEffectiveDate="2017-06-04T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2017" datasetName="Patientenbezogener Medikationsplan Plus" ident="pmp-" elementId="2.16.840.1.113883.2.6.60.4.9.267" templateId="1.2.276.0.76.10.90023" templateEffectiveDate="2017-06-04T00:00:00" path="Medikation / Medikationseintrag / Einnahmedauer">
+                            <name language="de-DE">Startdatum Einnahme</name>
+                            <desc language="de-DE">Startdatum der Einnahme</desc>
+                            <datasetName language="de-DE">Patientenbezogener Medikationsplan Plus</datasetName>
+                            <projectName language="de-DE">Patientenbezogener Medikationsplan</projectName>
+                        </origconcept>
+                        <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.6100" effectiveDate="2017-06-04T15:54:39" refdisplay="pmp-dataelement2017-6100" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.4.1.3" datasetEffectiveDate="2017-06-04T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2017" datasetName="Patientenbezogener Medikationsplan Plus" ident="pmp-" elementId="2.16.840.1.113883.2.6.60.4.9.270" templateId="1.2.276.0.76.10.90023" templateEffectiveDate="2017-06-04T00:00:00" path="Medikation / Medikationseintrag / Einnahmedauer">
+                            <name language="de-DE">Dauer der Einnahme</name>
+                            <desc language="de-DE">Dauer (Intervall in Tagen, Wochen Monaten etc.) der Einnahme.</desc>
+                            <datasetName language="de-DE">Patientenbezogener Medikationsplan Plus</datasetName>
+                            <projectName language="de-DE">Patientenbezogener Medikationsplan</projectName>
+                        </origconcept>
+                    </staticAssociations>
+                </include>
+                <element name="hl7:routeCode" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" datatype="CE" id="2.16.840.1.113883.2.6.60.4.9.214">
+                    <desc language="de-DE">Art der Anwendung der Arznei</desc>
+                    <item original="false" label="medspmp"/>
+                    <vocabulary valueSet="2.16.840.1.113883.2.6.60.4.11.26" vsid="2.16.840.1.113883.2.6.60.4.11.26" vsname="EDQMRouteofAdministration" vsdisplayName="EDQMRouteofAdministration" vseffectiveDate="2018-05-09T00:00:00" vsstatusCode="draft" linkedartefactmissing="false"/>
+                </element>
+                <element name="hl7:consumable" minimumMultiplicity="1" maximumMultiplicity="1" contains="1.2.276.0.76.10.4025" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.215" tmid="1.2.276.0.76.10.4025" tmname="MedicationInformation" tmdisplayName="Medikament" tmeffectiveDate="2017-06-04T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="pmp-" linkedartefactmissing="false">
+                    <desc language="de-DE">Arzneimittel/Wirkstoff/Rezeptur</desc>
+                    <item original="false" label="medspmp"/>
+                </element>
+                <choice minimumMultiplicity="0" maximumMultiplicity="1">
+                    <desc language="de-DE">Autor, entweder:<ul>
+                            <li>Selbstmedikation (Quelle: Patient)</li>
+                            <li>verschreibender Gesundheitsdienstleister</li>
+                        </ul>
+                    </desc>
+                    <item original="false" label="medspmp"/>
+                    <element name="hl7:author" id="2.16.840.1.113883.2.6.60.4.9.216">
+                        <desc language="de-DE">Autor dieser Information ist ein Gesundheitsdienstleister</desc>
+                        <item original="false" label="medspmp"/>
+                        <example type="neutral" caption="Autor der Information ist ein Gesundheitsdienstleister">
+                            <author>
+                                <time value="20131221"/>
+                                <assignedAuthor>
+                                    <id root="1.2.276.0.76.4.16" extension="123456701"/>
+                                    <assignedPerson>
+                                        <name>
+                                            <given qualifier="IN">Jan H.</given>
+                                            <family>Ausarz</family>
+                                        </name>
+                                    </assignedPerson>
+                                </assignedAuthor>
+                            </author>
+                        </example>
+                        <include ref="1.2.276.0.76.10.90025" tmid="1.2.276.0.76.10.90025" tmname="AuthorBody" tmdisplayName="Author (Body)" tmeffectiveDate="2014-12-21T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                            <item original="false" label="medspmp"/>
+                            <attribute name="typeCode" value="AUT" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.726"/>
+                            <attribute name="contextControlCode" value="OP" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.727"/>
+                            <element name="hl7:functionCode" datatype="CE" id="2.16.840.1.113883.2.6.77.9.728" minimumMultiplicity="0" maximumMultiplicity="1">
+                                <item original="false" label="AuthorBody"/>
+                                <vocabulary valueSet="2.16.840.1.113883.1.11.10267" vsid="2.16.840.1.113883.1.11.10267" vsname="ParticipationFunction" vsdisplayName="ParticipationFunction" vsstatusCode="final" vseffectiveDate="2016-06-23T00:00:00" linkedartefactmissing="false"/>
+                            </element>
+                            <element name="hl7:time" datatype="TS" id="2.16.840.1.113883.2.6.77.9.729" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R">
+                                <item original="false" label="AuthorBody"/>
+                            </element>
+                            <element name="hl7:assignedAuthor" id="2.16.840.1.113883.2.6.77.9.730" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R">
+                                <item original="false" label="AuthorBody"/>
+                                <attribute name="classCode" value="ASSIGNED" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.731"/>
+                                <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="*" datatype="II" conformance="R" id="2.16.840.1.113883.2.6.77.9.732">
+                                    <item original="false" label="AuthorBody"/>
+                                </element>
+                                <element name="hl7:code" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.2.6.77.9.733">
+                                    <item original="false" label="AuthorBody"/>
+                                    <vocabulary codeSystem="2.16.840.1.113883.5.111"/>
+                                </element>
+                                <element name="hl7:addr" minimumMultiplicity="0" maximumMultiplicity="*" datatype="AD" id="2.16.840.1.113883.2.6.77.9.734">
+                                    <item original="false" label="AuthorBody"/>
+                                </element>
+                                <element name="hl7:telecom" minimumMultiplicity="0" maximumMultiplicity="*" datatype="TEL" id="2.16.840.1.113883.2.6.77.9.735">
+                                    <item original="false" label="AuthorBody"/>
+                                </element>
+                                <element name="hl7:assignedPerson" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.736">
+                                    <item original="false" label="AuthorBody"/>
+                                    <include ref="1.2.276.0.76.10.90010" tmid="1.2.276.0.76.10.90010" tmname="PersonElements" tmdisplayName="CDA Person Elements" tmeffectiveDate="2011-12-19T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                                        <item original="false" label="AuthorBody"/>
+                                        <attribute name="classCode" value="PSN" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.330"/>
+                                        <attribute name="determinerCode" value="INSTANCE" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.331"/>
+                                        <element name="hl7:name" datatype="PN" id="2.16.840.1.113883.2.6.77.9.332" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                                            <item original="false" label="PersonElements"/>
+                                        </element>
+                                        <staticAssociations/>
+                                    </include>
+                                </element>
+                                <element name="hl7:representedOrganization" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.737">
+                                    <item original="false" label="AuthorBody"/>
+                                    <include ref="1.2.276.0.76.10.90011" tmid="1.2.276.0.76.10.90011" tmname="OrganizationElements" tmdisplayName="CDA Organization Elements" tmeffectiveDate="2011-12-19T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                                        <item original="false" label="AuthorBody"/>
+                                        <attribute name="classCode" value="ORG" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.333"/>
+                                        <attribute name="determinerCode" value="INSTANCE" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.334"/>
+                                        <element name="hl7:id" datatype="II" id="2.16.840.1.113883.2.6.77.9.335" minimumMultiplicity="0" maximumMultiplicity="*">
+                                            <item original="false" label="OrganizationElements"/>
+                                        </element>
+                                        <element name="hl7:name" datatype="ON" id="2.16.840.1.113883.2.6.77.9.336" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                                            <item original="false" label="OrganizationElements"/>
+                                        </element>
+                                        <element name="hl7:telecom" datatype="TEL" id="2.16.840.1.113883.2.6.77.9.337" minimumMultiplicity="0" maximumMultiplicity="*">
+                                            <item original="false" label="OrganizationElements"/>
+                                        </element>
+                                        <element name="hl7:addr" datatype="AD" id="2.16.840.1.113883.2.6.77.9.338" minimumMultiplicity="0" maximumMultiplicity="1">
+                                            <item original="false" label="OrganizationElements"/>
+                                        </element>
+                                        <staticAssociations/>
+                                    </include>
+                                </element>
+                            </element>
+                            <staticAssociations/>
+                        </include>
+                    </element>
+                    <element name="hl7:participant[@typeCode='AUT']" id="2.16.840.1.113883.2.6.60.4.9.217">
+                        <desc language="de-DE">Autor dieser Information ist der Patient</desc>
+                        <item original="false" label="medspmp"/>
+                        <example type="neutral" caption="Autor der Information ist der Patient">
+                            <participant typeCode="AUT">
+                                <participantRole classCode="PAT"/>
+                            </participant>
+                        </example>
+                        <attribute name="typeCode" value="AUT" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.218"/>
+                        <element name="hl7:time" minimumMultiplicity="0" maximumMultiplicity="1" datatype="TS" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.219">
+                            <item original="false" label="medspmp"/>
+                        </element>
+                        <element name="hl7:participantRole" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.220">
+                            <item original="false" label="medspmp"/>
+                            <attribute name="classCode" value="PAT" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.221"/>
+                        </element>
+                    </element>
+                </choice>
+                <element name="hl7:informant" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.4.9.222">
+                    <desc language="de-DE">Informant dieser Information ist eine Kontaktperson/Angehöriger des Patienten</desc>
+                    <item original="false" label="medspmp"/>
+                    <example type="neutral" caption="Informant dieser Information ist eine Kontaktperson/Angehöriger des Patienten">
+                        <informant>
+                            <relatedEntity classCode="CON">
+                                <relatedPerson classCode="PSN" determinerCode="INSTANCE">
+                                    <name> ... </name>
+                                </relatedPerson>
+                            </relatedEntity>
+                        </informant>
+                    </example>
+                    <attribute name="typeCode" value="INF" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.223"/>
+                    <attribute name="contextControlCode" value="OP" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.224"/>
+                    <element name="hl7:relatedEntity" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.225">
+                        <item original="false" label="medspmp"/>
+                        <include ref="1.2.276.0.76.10.90020" tmid="1.2.276.0.76.10.90020" tmname="RelatedEntityBody" tmdisplayName="RelatedEntity (Body)" tmeffectiveDate="2014-08-25T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                            <item original="false" label="medspmp"/>
+                            <attribute name="classCode" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.77.9.720">
+                                <vocabulary valueSet="2.16.840.1.113883.1.11.19316" flexibility="dynamic" vsid="2.16.840.1.113883.1.11.19316" vsname="RoleClassMutualRelationship" vsdisplayName="RoleClassMutualRelationship" vseffectiveDate="2014-03-26T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1360-20160323" linkedartefactmissing="false"/>
+                            </attribute>
+                            <element name="hl7:code" datatype="CE" id="2.16.840.1.113883.2.6.77.9.721" minimumMultiplicity="0" maximumMultiplicity="1">
+                                <item original="false" label="RelatedEntityBody"/>
+                                <vocabulary valueSet="2.16.840.1.113883.1.11.19563" flexibility="dynamic" vsid="2.16.840.1.113883.1.11.19563" vsname="PersonalRelationshipRoleType" vsdisplayName="PersonalRelationshipRoleType" vseffectiveDate="2014-03-26T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1360-20160323" linkedartefactmissing="false"/>
+                            </element>
+                            <element name="hl7:addr" datatype="AD" id="2.16.840.1.113883.2.6.77.9.722" minimumMultiplicity="0" maximumMultiplicity="*">
+                                <item original="false" label="RelatedEntityBody"/>
+                            </element>
+                            <element name="hl7:telecom" datatype="TEL" id="2.16.840.1.113883.2.6.77.9.723" minimumMultiplicity="0" maximumMultiplicity="*">
+                                <item original="false" label="RelatedEntityBody"/>
+                            </element>
+                            <element name="hl7:effectiveTime" datatype="IVL_TS" id="2.16.840.1.113883.2.6.77.9.724" minimumMultiplicity="0" maximumMultiplicity="1">
+                                <item original="false" label="RelatedEntityBody"/>
+                            </element>
+                            <element name="hl7:relatedPerson" id="2.16.840.1.113883.2.6.77.9.725" minimumMultiplicity="0" maximumMultiplicity="1">
+                                <item original="false" label="RelatedEntityBody"/>
+                                <include ref="1.2.276.0.76.10.90010" tmid="1.2.276.0.76.10.90010" tmname="PersonElements" tmdisplayName="CDA Person Elements" tmeffectiveDate="2011-12-19T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                                    <item original="false" label="RelatedEntityBody"/>
+                                    <attribute name="classCode" value="PSN" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.330"/>
+                                    <attribute name="determinerCode" value="INSTANCE" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.331"/>
+                                    <element name="hl7:name" datatype="PN" id="2.16.840.1.113883.2.6.77.9.332" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                                        <item original="false" label="PersonElements"/>
+                                    </element>
+                                    <staticAssociations/>
+                                </include>
+                            </element>
+                            <staticAssociations/>
+                        </include>
+                    </element>
+                </element>
+                <element name="hl7:entryRelationship" minimumMultiplicity="0" maximumMultiplicity="5" contains="1.2.276.0.76.10.4023" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.226" tmid="1.2.276.0.76.10.4023" tmname="Einzeldosierungen" tmdisplayName="Einzeldosierungen" tmeffectiveDate="2018-11-01T00:00:00" tmstatusCode="draft" tmversionLabel="mpp 2018" url="http://art-decor.org/decor/services/" ident="pmp-" linkedartefactmissing="false">
+                    <desc language="en-US">Subordinate Substance Administration act that records split dose information.</desc>
+                    <desc language="de-DE">Einnahme: morgens, mittags, abends, zur Nacht</desc>
+                    <item original="false" label="medspmp"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.227"/>
+                    <element name="hl7:sequenceNumber" minimumMultiplicity="0" maximumMultiplicity="1" datatype="INT.POS" id="2.16.840.1.113883.2.6.60.4.9.733">
+                        <desc language="de-DE">Reihenfolge in der Liste der Dosierungsangaben</desc>
+                        <item original="false" label="medspmp"/>
+                    </element>
+                </element>
+                <element name="hl7:entryRelationship" minimumMultiplicity="0" maximumMultiplicity="1" contains="1.2.276.0.76.10.4024" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.228" tmid="1.2.276.0.76.10.4024" tmname="MedicationStatementDoseInstruction" tmdisplayName="Dosierung Freitext" tmeffectiveDate="2014-11-01T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="pmp-" linkedartefactmissing="false">
+                    <desc language="de-DE">Freitextliche Dosierinstruktionen</desc>
+                    <item original="false" label="medspmp"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.229"/>
+                    <element name="hl7:sequenceNumber" minimumMultiplicity="0" maximumMultiplicity="1" datatype="INT.POS" id="2.16.840.1.113883.2.6.60.4.9.734">
+                        <desc language="de-DE">Reihenfolge in der Liste der Dosierungsangaben</desc>
+                        <item original="false" label="medspmp"/>
+                    </element>
+                </element>
+                <element name="hl7:entryRelationship" minimumMultiplicity="0" maximumMultiplicity="*" contains="1.2.276.0.76.10.4026" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.230" tmid="1.2.276.0.76.10.4026" tmname="PatientInstructions" tmdisplayName="Patienteninstruktionen" tmeffectiveDate="2014-11-01T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="pmp-" linkedartefactmissing="false">
+                    <desc language="de-DE">Patienteninstruktionen</desc>
+                    <item original="false" label="medspmp"/>
+                    <attribute name="typeCode" value="SUBJ" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.231"/>
+                    <attribute name="inversionInd" value="true" isOptional="false" datatype="bl" id="2.16.840.1.113883.2.6.60.4.9.232"/>
+                </element>
+                <element name="hl7:entryRelationship" minimumMultiplicity="0" maximumMultiplicity="*" contains="1.2.276.0.76.10.4027" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.233" tmid="1.2.276.0.76.10.4027" tmname="Reasonformedication" tmdisplayName="Grund für Medikation" tmeffectiveDate="2016-01-31T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="pmp-" linkedartefactmissing="false">
+                    <desc language="de-DE">Grund für die Medikation</desc>
+                    <item original="false" label="medspmp"/>
+                    <attribute name="typeCode" value="RSON" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.234"/>
+                </element>
+                <element name="hl7:entryRelationship" minimumMultiplicity="0" maximumMultiplicity="*" contains="1.2.276.0.76.10.4028" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.235" tmid="1.2.276.0.76.10.4028" tmname="RelatedPrescription" tmdisplayName="Bezug zu Verordnung des Medikaments" tmeffectiveDate="2014-12-21T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="pmp-" linkedartefactmissing="false">
+                    <desc language="de-DE">Bezug zu einer Verordnung</desc>
+                    <item original="false" label="medspmp"/>
+                    <attribute name="typeCode" value="REFR" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.236"/>
+                </element>
+                <element name="hl7:entryRelationship" minimumMultiplicity="0" maximumMultiplicity="*" contains="1.2.276.0.76.10.4029" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.237" tmid="1.2.276.0.76.10.4029" tmname="RelatedDispense" tmdisplayName="Bezug zu Abgabe des Medikaments" tmeffectiveDate="2014-12-21T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="pmp-" linkedartefactmissing="false">
+                    <desc language="de-DE">Bezug zu einer Abgabe</desc>
+                    <item original="false" label="medspmp"/>
+                    <attribute name="typeCode" value="REFR" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.238"/>
+                </element>
+            </element>
+            <staticAssociations>
+                <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.6082" effectiveDate="2017-06-04T12:20:28" refdisplay="pmp-dataelement2017-6082" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.4.1.3" datasetEffectiveDate="2017-06-04T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2017" datasetName="Patientenbezogener Medikationsplan Plus" ident="pmp-" elementId="2.16.840.1.113883.2.6.60.4.9.208" templateId="1.2.276.0.76.10.4022" templateEffectiveDate="2017-06-04T00:00:00" path="Medikation / Medikationseintrag">
+                    <name language="de-DE">Identifikation</name>
+                    <desc language="de-DE"/>
+                    <datasetName language="de-DE">Patientenbezogener Medikationsplan Plus</datasetName>
+                    <projectName language="de-DE">Patientenbezogener Medikationsplan</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.6084" effectiveDate="2017-06-04T12:49:15" refdisplay="pmp-dataelement2017-6084" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.4.1.3" datasetEffectiveDate="2017-06-04T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2017" datasetName="Patientenbezogener Medikationsplan Plus" ident="pmp-" elementId="2.16.840.1.113883.2.6.60.4.9.213" templateId="1.2.276.0.76.10.4022" templateEffectiveDate="2017-06-04T00:00:00" path="Medikation / Medikationseintrag">
+                    <name language="de-DE">Status</name>
+                    <desc language="de-DE"/>
+                    <datasetName language="de-DE">Patientenbezogener Medikationsplan Plus</datasetName>
+                    <projectName language="de-DE">Patientenbezogener Medikationsplan</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.6083" effectiveDate="2017-06-04T12:25:03" refdisplay="pmp-dataelement2017-6083" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.4.1.3" datasetEffectiveDate="2017-06-04T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2017" datasetName="Patientenbezogener Medikationsplan Plus" ident="pmp-" elementId="2.16.840.1.113883.2.6.60.4.9.215" templateId="1.2.276.0.76.10.4022" templateEffectiveDate="2017-06-04T00:00:00" path="Medikation / Medikationseintrag">
+                    <name language="de-DE">Arzneimittel/Wirkstoff/Rezeptur</name>
+                    <desc language="de-DE"/>
+                    <datasetName language="de-DE">Patientenbezogener Medikationsplan Plus</datasetName>
+                    <projectName language="de-DE">Patientenbezogener Medikationsplan</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.6089" effectiveDate="2017-06-04T13:23:30" refdisplay="pmp-dataelement2017-6089" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.4.1.3" datasetEffectiveDate="2017-06-04T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2017" datasetName="Patientenbezogener Medikationsplan Plus" ident="pmp-" elementId="2.16.840.1.113883.2.6.60.4.9.733" templateId="1.2.276.0.76.10.4022" templateEffectiveDate="2017-06-04T00:00:00" path="Medikation / Medikationseintrag / Dosierung">
+                    <name language="de-DE">Reihenfolge</name>
+                    <desc language="de-DE">Sequenznummer des Dosierungseintrags</desc>
+                    <datasetName language="de-DE">Patientenbezogener Medikationsplan Plus</datasetName>
+                    <projectName language="de-DE">Patientenbezogener Medikationsplan</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.6089" effectiveDate="2017-06-04T13:23:30" refdisplay="pmp-dataelement2017-6089" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.4.1.3" datasetEffectiveDate="2017-06-04T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2017" datasetName="Patientenbezogener Medikationsplan Plus" ident="pmp-" elementId="2.16.840.1.113883.2.6.60.4.9.734" templateId="1.2.276.0.76.10.4022" templateEffectiveDate="2017-06-04T00:00:00" path="Medikation / Medikationseintrag / Dosierung">
+                    <name language="de-DE">Reihenfolge</name>
+                    <desc language="de-DE">Sequenznummer des Dosierungseintrags</desc>
+                    <datasetName language="de-DE">Patientenbezogener Medikationsplan Plus</datasetName>
+                    <projectName language="de-DE">Patientenbezogener Medikationsplan</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.6093" effectiveDate="2017-06-04T13:31:15" refdisplay="pmp-dataelement2017-6093" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.4.1.3" datasetEffectiveDate="2017-06-04T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2017" datasetName="Patientenbezogener Medikationsplan Plus" ident="pmp-" elementId="2.16.840.1.113883.2.6.60.4.9.214" templateId="1.2.276.0.76.10.4022" templateEffectiveDate="2017-06-04T00:00:00" path="Medikation / Medikationseintrag / Dosierung">
+                    <name language="de-DE">Art der Anwendung</name>
+                    <desc language="de-DE">Art der Anwendung des Arzneimittels</desc>
+                    <datasetName language="de-DE">Patientenbezogener Medikationsplan Plus</datasetName>
+                    <projectName language="de-DE">Patientenbezogener Medikationsplan</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.6082" effectiveDate="2019-01-27T00:00:00" refdisplay="pmp-dataelement2017-6082" conceptStatusCode="" datasetId="" datasetEffectiveDate="" datasetStatusCode="" datasetName="" ident="" elementId="2.16.840.1.113883.2.6.60.4.9.208" templateId="1.2.276.0.76.10.4022" templateEffectiveDate="2017-06-04T00:00:00" path=""/>
+                <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.6084" effectiveDate="2019-01-27T00:00:00" refdisplay="pmp-dataelement2017-6084" conceptStatusCode="" datasetId="" datasetEffectiveDate="" datasetStatusCode="" datasetName="" ident="" elementId="2.16.840.1.113883.2.6.60.4.9.213" templateId="1.2.276.0.76.10.4022" templateEffectiveDate="2017-06-04T00:00:00" path=""/>
+                <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.6083" effectiveDate="2019-01-27T00:00:00" refdisplay="pmp-dataelement2017-6083" conceptStatusCode="" datasetId="" datasetEffectiveDate="" datasetStatusCode="" datasetName="" ident="" elementId="2.16.840.1.113883.2.6.60.4.9.215" templateId="1.2.276.0.76.10.4022" templateEffectiveDate="2017-06-04T00:00:00" path=""/>
+                <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.6089" effectiveDate="2019-01-27T00:00:00" refdisplay="pmp-dataelement2017-6089" conceptStatusCode="" datasetId="" datasetEffectiveDate="" datasetStatusCode="" datasetName="" ident="" elementId="2.16.840.1.113883.2.6.60.4.9.733" templateId="1.2.276.0.76.10.4022" templateEffectiveDate="2017-06-04T00:00:00" path=""/>
+                <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.6089" effectiveDate="2019-01-27T00:00:00" refdisplay="pmp-dataelement2017-6089" conceptStatusCode="" datasetId="" datasetEffectiveDate="" datasetStatusCode="" datasetName="" ident="" elementId="2.16.840.1.113883.2.6.60.4.9.734" templateId="1.2.276.0.76.10.4022" templateEffectiveDate="2017-06-04T00:00:00" path=""/>
+                <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.6093" effectiveDate="2019-01-27T00:00:00" refdisplay="pmp-dataelement2017-6093" conceptStatusCode="" datasetId="" datasetEffectiveDate="" datasetStatusCode="" datasetName="" ident="" elementId="2.16.840.1.113883.2.6.60.4.9.214" templateId="1.2.276.0.76.10.4022" templateEffectiveDate="2017-06-04T00:00:00" path=""/>
+            </staticAssociations>
+            <uses type="contains" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.4023" name="Einzeldosierungen" displayName="Einzeldosierungen" effectiveDate="2018-11-01T00:00:00" statusCode="draft" versionLabel="mpp 2018" url="http://art-decor.org/decor/services/" ident="pmp-"/>
+            <uses type="contains" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.4024" name="MedicationStatementDoseInstruction" displayName="Dosierung Freitext" effectiveDate="2014-11-01T00:00:00" statusCode="draft" isClosed="false" url="http://art-decor.org/decor/services/" ident="pmp-"/>
+            <uses type="contains" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.4025" name="MedicationInformation" displayName="Medikament" effectiveDate="2017-06-04T00:00:00" statusCode="draft" url="http://art-decor.org/decor/services/" ident="pmp-"/>
+            <uses type="contains" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.4026" name="PatientInstructions" displayName="Patienteninstruktionen" effectiveDate="2014-11-01T00:00:00" statusCode="draft" isClosed="false" url="http://art-decor.org/decor/services/" ident="pmp-"/>
+            <uses type="contains" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.4027" name="Reasonformedication" displayName="Grund für Medikation" effectiveDate="2016-01-31T00:00:00" statusCode="draft" isClosed="false" url="http://art-decor.org/decor/services/" ident="pmp-"/>
+            <uses type="contains" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.4028" name="RelatedPrescription" displayName="Bezug zu Verordnung des Medikaments" effectiveDate="2014-12-21T00:00:00" statusCode="draft" url="http://art-decor.org/decor/services/" ident="pmp-"/>
+            <uses type="contains" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.4029" name="RelatedDispense" displayName="Bezug zu Abgabe des Medikaments" effectiveDate="2014-12-21T00:00:00" statusCode="draft" url="http://art-decor.org/decor/services/" ident="pmp-"/>
+            <uses type="include" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.90020" name="RelatedEntityBody" effectiveDate="2014-08-25T00:00:00" statusCode="draft" displayName="RelatedEntity (Body)" isClosed="false" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+            <uses type="include" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.90023" name="Einnahmedauer" displayName="Einnahmedauer" effectiveDate="2017-06-04T00:00:00" statusCode="draft" url="http://art-decor.org/decor/services/" ident="pmp-"/>
+            <uses type="include" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.90025" name="AuthorBody" effectiveDate="2014-12-21T00:00:00" statusCode="draft" displayName="Author (Body)" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+        </template>
+    </template>
+</result>

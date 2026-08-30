@@ -1,0 +1,23 @@
+<valueSets>
+    <repository url="http://art-decor.org/decor/services/" ident="ccda-" referencedFrom="DICOM-" projecttype="local">
+        <valueSet name="ProblemSeverity" displayName="Reaction Severity" id="2.16.840.1.113883.3.88.12.3221.6.8" effectiveDate="2017-10-16T22:33:06" statusCode="draft">
+            <sourceCodeSystem id="2.16.840.1.113883.6.96" identifierName="SNOMED Clinical Terms" canonicalUri="http://snomed.info/sct" canonicalUriDSTU2="http://snomed.info/sct" canonicalUriSTU3="http://snomed.info/sct" canonicalUriR4="http://snomed.info/sct" canonicalUriR4B="http://snomed.info/sct" canonicalUriR5="http://snomed.info/sct"/>
+            <publishingAuthority name="HL7 International" inherited="project">
+                <addrLine>Health Level Seven International</addrLine>
+                <addrLine>3300 Washtenaw Avenue</addrLine>
+                <addrLine>Suite 227</addrLine>
+                <addrLine>Ann Arbor, MI 48104- 4261</addrLine>
+                <addrLine>USA</addrLine>
+                <addrLine>T +1 734 677 7777 </addrLine>
+                <addrLine>F +1 734 677 6622</addrLine>
+                <addrLine>E info@hl7.org</addrLine>
+            </publishingAuthority>
+            <copyright language="en-US" inherited="true">This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.</copyright>
+            <conceptList>
+                <concept code="255604002" codeSystem="2.16.840.1.113883.6.96" displayName="Mild (qualifier value)" level="0" type="L"/>
+                <concept code="6736007" codeSystem="2.16.840.1.113883.6.96" displayName="Moderate (severity modifier) (qualifier value)" level="0" type="L"/>
+                <concept code="24484000" codeSystem="2.16.840.1.113883.6.96" displayName="Severe (severity modifier) (qualifier value)" level="0" type="L"/>
+            </conceptList>
+        </valueSet>
+    </repository>
+</valueSets>

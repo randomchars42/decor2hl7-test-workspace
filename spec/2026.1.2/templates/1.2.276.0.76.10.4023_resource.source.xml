@@ -1,0 +1,202 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:ukfc="http://fhir.hl7.de/ukfc" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.4023" name="Einzeldosierungen" displayName="Einzeldosierungen" effectiveDate="2018-11-01T00:00:00" statusCode="draft" versionLabel="mpp 2018" url="http://art-decor.org/decor/services/" ident="pmp-" ukfc:dummy-1="http://fhir.hl7.de/ukfc" sdtc:dummy-2="urn:hl7-org:sdtc" xhtml:dummy-3="http://www.w3.org/1999/xhtml" pharm:dummy-4="urn:hl7-org:pharm" xml:dummy-5="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-7="urn:hl7-org:v3" xsi:dummy-8="http://www.w3.org/2001/XMLSchema-instance">
+        <desc language="en-US"/>
+        <desc language="de-DE">Einzeldosierungen, Dosierschema:
+                <ul>
+    <li>Einnahme einmalig / Einnahmezeitpunkt unbekannt</li>
+    <li>Zeitelement zur Aufnahme des Einnahmezeitpunkts, ausgedrückt als Ergeignis (z. B: morgens, mittags, abends, zur Nacht), ggf. mit Offset</li>
+    <li>Zeitelement zur Aufnahme des Einnahmezeitpunkts, ausgedrückt als Phase, ggf. mit Wiederholungsintervall</li>
+    <li>Zeitelement zur Aufnahme des Einnahmezeitpunkts mit Wiederholungsintervall, ausgedrückt als Phase und Ereignis</li>
+                  <li>Zeitelement zur Aufnahme des Einnahmezeitpunkts ohne Wiederholung, ausgedrückt als Intervall und Ereignis</li>
+</ul>
+        </desc>
+        <classification type="cdaentrylevel"/>
+        <relationship type="SPEC" template="2.16.840.1.113883.10.12.308" flexibility="2005-09-07T00:00:00"/>
+        <relationship type="ADAPT" template="1.3.6.1.4.1.19376.1.5.3.1.4.9"/>
+        <context id="**"/>
+        <item label="medssdpmp"/>
+        <element name="hl7:substanceAdministration" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.2.6.60.4.9.94">
+            <attribute name="classCode" value="SBADM" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.721"/>
+            <attribute name="moodCode" value="EVN" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.722"/>
+            <element name="hl7:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.95">
+                <attribute name="root" value="1.2.276.0.76.10.4023" datatype="uid" id="2.16.840.1.113883.2.6.60.4.9.723"/>
+            </element>
+            <element name="hl7:text" datatype="ED" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.96">
+                <element name="hl7:reference" datatype="TEL" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.97">
+                    <attribute name="value" id="2.16.840.1.113883.2.6.60.4.9.724">
+                        <desc language="de-DE">#dosxx-{generierteID}, xx ist cm, cd, cv oder hs, z.B.: #doscm-1</desc>
+                    </attribute>
+                </element>
+            </element>
+            <choice maximumMultiplicity="1">
+                <element name="hl7:effectiveTime[@value or @nullFlavor]" datatype="TS" conformance="C" id="2.16.840.1.113883.2.6.60.4.9.725">
+                    <desc language="de-DE">Einnahme einmalig / Einnahmezeitpunkt unbekannt</desc>
+                    <example caption="Einnahme einmalig">
+                        <effectiveTime value="20170404"/>
+                    </example>
+                    <example caption="Einnahmezeitpunkt unbekannt">
+                        <effectiveTime nullFlavor="UNK"/>
+                    </example>
+                </element>
+                <element name="hl7:effectiveTime[@xsi:type='EIVL_TS']" datatype="EIVL_TS" conformance="C" id="2.16.840.1.113883.2.6.60.4.9.727">
+                    <desc language="de-DE">Zeitelement zur Aufnahme des Einnahmezeitpunkts, ausgedrückt als Ergeignis, ggf. mit Offset</desc>
+                    <example caption="mittags 10 mg">
+    <effectiveTime xsi:type="EIVL_TS">
+        <event code="CD"/>
+    </effectiveTime>
+    <doseQuantity value="10" unit="mg"/>
+</example>
+                    <example caption="morgens 1 (Stück)">
+    <effectiveTime xsi:type="EIVL_TS">
+        <event code="CM"/>
+    </effectiveTime>
+    <doseQuantity value="1" unit="{Stück}"/>
+</example>
+                    <example caption="abends 1-2 (Hübe)">
+    <effectiveTime xsi:type="EIVL_TS">
+        <event code="CV"/>
+    </effectiveTime>
+    <doseQuantity>
+        <low value="1" unit="{Hübe}"/>
+        <high value="2" unit="{Hübe}"/>
+    </doseQuantity>
+</example>
+                    <example caption="30 Minuten nach dem Abendessen 1 Stück">
+    <effectiveTime xsi:type="EIVL_TS">
+        <event code="PCV"/>
+        <offset value="30" unit="min"/>
+    </effectiveTime>
+    <doseQuantity value="1" unit="{Stück}"/>
+</example>
+                    <element name="hl7:event" datatype="CS" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.728">
+                        <vocabulary valueSet="1.2.276.0.76.11.463" flexibility="dynamic"/>
+                        <attribute name="code" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.729"/>
+                    </element>
+                    <element name="hl7:offset" datatype="IVL_PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.4.9.730">
+                        <attribute name="unit" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.731">
+                            <vocabulary valueSet="1.2.276.0.76.11.452"/>
+                        </attribute>
+                    </element>
+                </element>
+                <element name="hl7:effectiveTime[@xsi:type='PIVL_TS']" datatype="PIVL_TS" conformance="C" id="2.16.840.1.113883.3.1937.777.27.9.22">
+                    <desc language="de-DE">Zeitelement zur Aufnahme des Einnahmezeitpunkts, ausgedrückt als Phase, ggf. mit Wiederholungsintervall</desc>
+                    <example caption="Jeden Donnerstag 1 Stück">
+    <effectiveTime xsi:type="PIVL_TS">
+        <phase value="20180913"/>
+                                <!-- Jeden Donnerstag (der 13.9.2018 ist der erste Donnerstag innerhalb der Gebrauchsperiode) -->
+        <period value="1" unit="wk"/>
+                                <!-- Wiederholperiode 1 Woche -->
+    </effectiveTime>
+    <doseQuantity value="1" unit="{Stück}"/>
+</example>
+                    <element name="hl7:phase" datatype="IVL_TS" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.777.27.9.23"/>
+                    <element name="hl7:period" datatype="PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.27.9.24">
+                        <attribute name="unit" datatype="cs" id="2.16.840.1.113883.3.1937.777.27.9.25">
+                            <vocabulary valueSet="1.2.276.0.76.11.452"/>
+                        </attribute>
+                    </element>
+                </element>
+                <element name="hl7:effectiveTime[@xsi:type='SXPR_TS'][hl7:comp[@xsi:type='PIVL_TS']]" datatype="SXPR_TS" conformance="C" id="2.16.840.1.113883.3.1937.777.27.9.26">
+                    <desc language="de-DE">Zeitelement zur Aufnahme des Einnahmezeitpunkts mit Wiederholungsintervall, ausgedrückt als Phase und Ereignis</desc>
+                    <example caption="Jeden Donnerstag 30 Minuten vor dem Frühstück">
+                        <effectiveTime xsi:type="SXPR_TS">
+    <comp xsi:type="PIVL_TS">
+        <phase value="20180913"/>
+                                    <!-- Jeden Donnerstag (der 13.9.2018 ist der erste Donnerstag innerhalb der Gebrauchsperiode) -->
+        <period value="1" unit="wk"/>
+                                    <!-- Wiederholperiode 1 Woche -->
+    </comp>
+    <comp xsi:type="EIVL_TS" operator="A">
+                                    <!-- 30 Minuten vor dem Frühstück -->
+        <event code="ACM"/>
+        <offset value="30" unit="min"/>
+    </comp>
+</effectiveTime>
+                    </example>
+                    <element name="hl7:comp[@xsi:type='PIVL_TS']" datatype="PIVL_TS" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.777.27.9.27">
+                        <element name="hl7:phase" datatype="IVL_TS" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.777.27.9.28"/>
+                        <element name="hl7:period" datatype="PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.27.9.29">
+                            <attribute name="unit" datatype="cs" id="2.16.840.1.113883.3.1937.777.27.9.30">
+                                <vocabulary valueSet="1.2.276.0.76.11.452"/>
+                            </attribute>
+                        </element>
+                    </element>
+                    <element name="hl7:comp[@xsi:type='EIVL_TS']" datatype="EIVL_TS" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.777.27.9.31">
+                        <attribute name="operator" value="A" datatype="cs" id="2.16.840.1.113883.3.1937.777.27.9.36"/>
+                        <element name="hl7:event" datatype="CS" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.777.27.9.32">
+                            <vocabulary valueSet="1.2.276.0.76.11.463" flexibility="dynamic"/>
+                            <attribute name="code" datatype="cs" id="2.162.840.1.113883.3.1937.777.27.9.33"/>
+                        </element>
+                        <element name="hl7:offset" datatype="IVL_PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.27.9.34">
+                            <attribute name="unit" datatype="cs" id="2.16.840.1.113883.3.1937.777.27.9.35">
+                                <vocabulary valueSet="1.2.276.0.76.11.452"/>
+                            </attribute>
+                        </element>
+                    </element>
+                </element>
+              <element name="hl7:effectiveTime[@xsi:type='SXPR_TS'][hl7:comp[@xsi:type='IVL_TS']]" datatype="SXPR_TS" conformance="C" id="2.16.840.1.113883.3.1937.777.27.9.626">
+                    <desc language="de-DE">Zeitelement zur Aufnahme des (einmaligen) Einnahmezeitpunkts ohne Wiederholungen, ausgedrückt als Intervall und Ereignis</desc>
+                    <example caption="Am Donnerstag 13.9.2018 1x 30 Minuten vor dem Frühstück">
+                        <effectiveTime xsi:type="SXPR_TS">
+                          <!-- am 13.9.2018 -->
+                          <comp xsi:type="IVL_TS" value="20180913"/>
+    <comp xsi:type="EIVL_TS" operator="A">
+                                    <!-- 30 Minuten vor dem Frühstück -->
+        <event code="ACM"/>
+        <offset value="30" unit="min"/>
+    </comp>
+</effectiveTime>
+                    </example>
+                    <element name="hl7:comp[@xsi:type='IVL_TS']" datatype="IVL_TS" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.777.27.9.627">
+                    </element>
+                    <element name="hl7:comp[@xsi:type='EIVL_TS']" datatype="EIVL_TS" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.777.27.9.631">
+                        <attribute name="operator" value="A" datatype="cs" id="2.16.840.1.113883.3.1937.777.27.9.636"/>
+                        <element name="hl7:event" datatype="CS" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.777.27.9.632">
+                            <vocabulary valueSet="1.2.276.0.76.11.463" flexibility="dynamic"/>
+                            <attribute name="code" datatype="cs" id="2.162.840.1.113883.3.1937.777.27.9.633"/>
+                        </element>
+                        <element name="hl7:offset" datatype="IVL_PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.27.9.634">
+                            <attribute name="unit" datatype="cs" id="2.16.840.1.113883.3.1937.777.27.9.635">
+                                <vocabulary valueSet="1.2.276.0.76.11.452"/>
+                            </attribute>
+                        </element>
+                    </element>
+                </element>
+            </choice>
+            <element name="hl7:doseQuantity" datatype="IVL_PQ" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.100">
+                <example caption="25 mg">
+                    <doseQuantity value="25" unit="mg"/>
+                </example>
+                <example caption="1 bis 2 Tabletten">
+                    <doseQuantity>
+    <low value="1" unit="{tablet}"/>
+    <high value="2" unit="{tablet}"/>
+</doseQuantity>
+                </example>
+                <example caption="1 Tablette (mit Translation)">
+                    <doseQuantity value="1" unit="{tablet}">
+    <translation code="1" codeSystem="2.16.840.1.113883.2.6.60.4.5.4" displayName="Stück"/>
+</doseQuantity>
+                </example>
+                <example caption="Nur textliche Beschreibung der Dosis">
+                    <doseQuantity nullFlavor="OTH">
+    <translation>
+        <originalText>
+            <reference value="#text-ref-1"/>
+        </originalText>
+    </translation>
+</doseQuantity>
+                </example>
+                <element name="hl7:translation" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.841">
+                    <vocabulary valueSet="2.16.840.1.113883.2.6.60.4.11.23" flexibility="dynamic"/>
+                </element>
+            </element>
+            <element name="hl7:consumable" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.101">
+                <element name="hl7:manufacturedProduct" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.102">
+                    <element name="hl7:manufacturedMaterial" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.4.9.103">
+                        <attribute name="nullFlavor" value="NA" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.732"/>
+                    </element>
+                </element>
+            </element>
+            <include ref="1.2.276.0.76.10.90028" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R"/>
+        </element>
+    </template>

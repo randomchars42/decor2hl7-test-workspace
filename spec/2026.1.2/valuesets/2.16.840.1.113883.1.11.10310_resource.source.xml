@@ -1,0 +1,22 @@
+<valueSet xmlns:json="http://www.json.org" id="2.16.840.1.113883.1.11.10310" name="TargetAwareness" displayName="TargetAwareness" effectiveDate="2014-03-26T00:00:00" statusCode="final" versionLabel="DEFN=UV=VO=1360-20160323" url="http://art-decor.org/decor/services/" ident="ad2bbr-">
+    <desc json:array="true" language="en-US">&lt;p&gt;&lt;b&gt;History description 2014-03-26: &lt;/b&gt;Lock all vaue sets untouched since 2014-03-26 to trackingId 2014T1_2014_03_26&lt;/p&gt; &lt;b&gt;description: &lt;/b&gt; &lt;p&gt;A code specifying the extent to which the Entity playing the participating Role (usually as a target Participation) is aware of the associated Act.&lt;/p&gt; &lt;p&gt;&lt;i&gt;Examples:&lt;/i&gt; For diagnostic observations, is the patient,
+                    family member or other participant aware of his terminal illness?&lt;/p&gt; &lt;p&gt;&lt;i&gt;Discussion:&lt;/i&gt; If the awareness, denial, unconsciousness, etc. is the subject of medical considerations (e.g., part of the problem list), one should use explicit observations in these matters as well, and should not solely rely on this simple attribute in the Participation.&lt;/p&gt;</desc>
+    <sourceCodeSystem json:array="true" id="2.16.840.1.113883.5.137" identifierName="TargetAwareness" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-TargetAwareness" canonicalUriDSTU2="http://hl7.org/fhir/v3/TargetAwareness" canonicalUriSTU3="http://hl7.org/fhir/v3/TargetAwareness" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-TargetAwareness" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-TargetAwareness" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-TargetAwareness" context="external/hl7intl/v3/v3-TargetAwareness"/>
+    <publishingAuthority json:array="true" name="HL7" inherited="project">
+        <addrLine json:array="true">Health Level Seven International</addrLine>
+        <addrLine json:array="true">455 E. Eisenhower PKWY STE 300 # 025</addrLine>
+        <addrLine json:array="true">Ann Arbor, MI 48108</addrLine>
+        <addrLine json:array="true">USA</addrLine>
+        <addrLine json:array="true">T +1 734 677 7777</addrLine>
+        <addrLine json:array="true">F +1 734 677 6622</addrLine>
+        <addrLine json:array="true">E info@hl7.org</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="concept" code="D" codeSystem="2.16.840.1.113883.5.137" displayName="denying" level="0" type="L"/>
+    <items json:array="true" is="concept" code="F" codeSystem="2.16.840.1.113883.5.137" displayName="full awareness" level="0" type="L"/>
+    <items json:array="true" is="concept" code="I" codeSystem="2.16.840.1.113883.5.137" displayName="incapable" level="0" type="L"/>
+    <items json:array="true" is="concept" code="M" codeSystem="2.16.840.1.113883.5.137" displayName="marginal" level="0" type="L"/>
+    <items json:array="true" is="concept" code="P" codeSystem="2.16.840.1.113883.5.137" displayName="partial" level="0" type="L"/>
+    <items json:array="true" is="concept" code="U" codeSystem="2.16.840.1.113883.5.137" displayName="uninformed" level="0" type="L"/>
+</valueSet>

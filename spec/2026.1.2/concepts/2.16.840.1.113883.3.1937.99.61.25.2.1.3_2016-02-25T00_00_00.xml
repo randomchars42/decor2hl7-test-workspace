@@ -1,0 +1,65 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.99.61.25.1.1" effectiveDate="2016-02-25T00:00:00" statusCode="draft" lastModifiedDate="2023-09-13T11:55:57" prefix="narradcda-" shortName="radiologischer_befundbericht" iddisplay="narradcda-dataset-1" url="http://art-decor.org/decor/services/" ident="narradcda-"><!--
+ This is a view of the dataset "Radiologischer Befundbericht" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE" lastTranslated="2023-09-13T11:51:51">Radiologischer Befundbericht</name>
+    <desc language="de-DE" lastTranslated="2023-09-13T11:51:51">Radiologischer Befundbericht</desc>
+    <concept id="2.16.840.1.113883.3.1937.99.61.25.2.1.3" statusCode="draft" effectiveDate="2016-02-25T00:00:00" lastModifiedDate="2023-09-13T11:52:48" type="group" iddisplay="narradcda-dataelement-1.3" shortName="angaben_im_rahmen_der_strl_sch_v">
+        <implementation shortName="angaben_im_rahmen_der_strl_sch_v" markdown="Dieser Abschnitt darf nur für Untersuchungen verwendet werden, die der StrlSchV unterliegen. Auch für diese Untersuchungen ist er nicht vorgeschrieben. Wenn jedoch der Abschnitt in den Befundbericht aufgenommen wird, müssen alle Angaben entsprechend dieser Liste vorgenommen werden."/>
+        <name language="de-DE">Angaben im Rahmen der StrlSchV</name>
+        <desc language="de-DE">Dieser Abschnitt darf nur für Untersuchungen verwendet werden, die der StrlSchV unterliegen. Auch für diese Untersuchungen ist er nicht vorgeschrieben. Wenn jedoch der Abschnitt in den Befundbericht aufgenommen wird, müssen alle Angaben entsprechend dieser Liste vorgenommen werden. </desc>
+        <concept id="2.16.840.1.113883.3.1937.99.61.25.2.1.310" effectiveDate="2016-02-25T00:00:00" statusCode="draft" lastModifiedDate="2023-09-13T11:50:59" type="item" iddisplay="narradcda-dataelement-1.310" shortName="fruhere_untersuchungen">
+            <implementation shortName="fruhere_untersuchungen" markdown="Ergebnis der Befragung über frühere medizinische Anwendungen von radioaktiven Stoffen oder ionisierender Strahlung"/>
+            <name language="de-DE" lastTranslated="2023-09-13T11:50:59">Frühere Untersuchungen</name>
+            <desc language="de-DE" lastTranslated="2023-09-13T11:50:59">Ergebnis der Befragung über frühere medizinische Anwendungen von radioaktiven Stoffen oder ionisierender Strahlung</desc>
+            <valueDomain type="complex"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.99.61.25.2.1" effectiveDate="2023-09-13T11:51:35" statusCode="draft" lastModifiedDate="2023-09-13T11:51:51" type="item" iddisplay="narradcda-dataelement-1" shortName="schwangerschaft">
+            <implementation shortName="schwangerschaft" markdown="Ergebnis der Befragung über das Bestehen einer Schwangerschaft"/>
+            <inherit ref="2.16.840.1.113883.3.1937.99.61.25.2.1.220" effectiveDate="2016-02-25T00:00:00" prefix="narradcda-" datasetId="2.16.840.1.113883.3.1937.99.61.25.1.1" datasetEffectiveDate="2016-02-25T00:00:00" datasetStatusCode="draft" iType="item" iStatusCode="draft" iEffectiveDate="2016-02-25T00:00:00" iddisplay="narradcda-dataelement-1.220" refdisplay="narradcda-dataelement-1.220" localInherit="true"/>
+            <name language="de-DE" lastTranslated="2023-09-13T11:50:06">Schwangerschaft</name>
+            <desc language="de-DE" lastTranslated="2023-09-13T11:50:06">Ergebnis der Befragung über das Bestehen einer Schwangerschaft</desc>
+            <operationalization language="de-DE" lastTranslated="2023-09-13T11:50:06">Nur bei Frauen im gebärfähigen Alter</operationalization>
+            <valueDomain type="text"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.99.61.25.2.1.320" effectiveDate="2016-02-25T00:00:00" statusCode="cancelled" lastModifiedDate="2023-09-13T11:51:30" type="item" iddisplay="narradcda-dataelement-1.320" shortName="schwangerschaft_320">
+            <implementation shortName="schwangerschaft_320" markdown="Ergebnis der Befragung der Patientin, ob eine Schwangerschaft besteht oder bestehen könnte"/>
+            <name language="de-DE" lastTranslated="2023-09-13T11:51:30">Schwangerschaft</name>
+            <desc language="de-DE" lastTranslated="2023-09-13T11:51:30">Ergebnis der Befragung der Patientin, ob eine Schwangerschaft besteht oder bestehen könnte</desc>
+            <operationalization language="de-DE" lastTranslated="2023-09-13T11:51:30">Nur bei Frauen im gebärfähigen Alter</operationalization>
+            <valueDomain type="string"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.99.61.25.2.1.330" effectiveDate="2016-02-25T00:00:00" statusCode="draft" lastModifiedDate="2023-09-13T11:52:12" type="item" iddisplay="narradcda-dataelement-1.330" shortName="stillzeit">
+            <implementation shortName="stillzeit" markdown="Ergebnis der Befragung der Patientin, ob sie stillt"/>
+            <name language="de-DE" lastTranslated="2023-09-13T11:52:12">Stillzeit</name>
+            <desc language="de-DE" lastTranslated="2023-09-13T11:52:12">Ergebnis der Befragung der Patientin, ob sie stillt</desc>
+            <operationalization language="de-DE" lastTranslated="2023-09-13T11:52:12">Nur bei Frauen im gebärfähigen Alter</operationalization>
+            <valueDomain type="text"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.99.61.25.2.1.340" statusCode="draft" effectiveDate="2016-02-25T00:00:00" type="item" iddisplay="narradcda-dataelement-1.340" shortName="rechtfertigende_indikation">
+            <implementation shortName="rechtfertigende_indikation" markdown="Angaben zur rechtfertigenden Indikation"/>
+            <name language="de-DE">Rechtfertigende Indikation</name>
+            <desc language="de-DE">Angaben zur rechtfertigenden Indikation</desc>
+            <valueDomain type="string"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.99.61.25.2.1.350" effectiveDate="2016-02-25T00:00:00" statusCode="draft" lastModifiedDate="2023-09-13T11:52:22" type="item" iddisplay="narradcda-dataelement-1.350" shortName="indikationsstellender_arzt">
+            <implementation shortName="indikationsstellender_arzt" markdown="Name des Arztes, der die rechtfertigende Indikation gestellt hat"/>
+            <name language="de-DE" lastTranslated="2023-09-13T11:52:22">Indikationsstellender Arzt</name>
+            <desc language="de-DE" lastTranslated="2023-09-13T11:52:22">Name des Arztes, der die rechtfertigende Indikation gestellt hat</desc>
+            <valueDomain type="complex"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.99.61.25.2.1.360" effectiveDate="2016-02-25T00:00:00" statusCode="draft" lastModifiedDate="2023-09-13T11:52:37" type="item" iddisplay="narradcda-dataelement-1.360" shortName="verabreichter_radioaktiver_stoff">
+            <implementation shortName="verabreichter_radioaktiver_stoff" markdown="Angaben zu Art, chemischer Zusammensetzung, Applikationsform und Aktivität"/>
+            <name language="de-DE" lastTranslated="2023-09-13T11:52:37">Verabreichter radioaktiver Stoff</name>
+            <desc language="de-DE" lastTranslated="2023-09-13T11:52:37">Angaben zu Art, chemischer Zusammensetzung, Applikationsform und Aktivität</desc>
+            <valueDomain type="text"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.99.61.25.2.1.370" effectiveDate="2016-02-25T00:00:00" statusCode="draft" lastModifiedDate="2023-09-13T11:52:48" type="item" iddisplay="narradcda-dataelement-1.370" shortName="durchfuhrende_person">
+            <implementation shortName="durchfuhrende_person" markdown="Name der Person, die den radioaktiven Stoff verabreicht oder die ionisierende Strahlung angewandt hat"/>
+            <name language="de-DE" lastTranslated="2023-09-13T11:52:48">Durchführende Person</name>
+            <desc language="de-DE" lastTranslated="2023-09-13T11:52:48">Name der Person, die den radioaktiven Stoff verabreicht oder die ionisierende Strahlung angewandt hat</desc>
+            <valueDomain type="complex"/>
+        </concept>
+    </concept>
+</dataset>

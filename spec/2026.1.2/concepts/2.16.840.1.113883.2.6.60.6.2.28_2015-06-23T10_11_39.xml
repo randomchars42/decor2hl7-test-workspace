@@ -1,0 +1,18 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.2.6.60.6.1.1" effectiveDate="2015-06-18T18:17:24" statusCode="draft" versionLabel="2.0" prefix="psr-" shortName="" iddisplay="psr-dataset-1" url="http://art-decor.org/decor/services/" ident="psr-"><!--
+ This is a view of the dataset "" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE"/>
+    <desc language="de-DE"/>
+    <concept id="2.16.840.1.113883.2.6.60.6.2.28" statusCode="draft" effectiveDate="2015-06-23T10:11:39" type="item" iddisplay="psr-dataelement-28">
+        <implementation markdown="Symbol for TNM: Has this tumor formula been derived first at autopsy?"/>
+        <name language="de-DE" lastTranslated="2017-06-30T17:44:24">automatisch</name>
+        <desc language="de-DE" lastTranslated="2017-06-30T17:44:42">Tumorformel erstmals im Rahmen einer Autopsie erstellt</desc>
+        <valueDomain type="code">
+            <conceptList id="2.16.840.1.113883.2.6.60.6.2.28.20150623101139.0"/>
+            <property fixed="a"/>
+        </valueDomain>
+        <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.28" code="277646006" codeSystem="2.16.840.1.113883.6.96" displayName="a - At autopsy (tumor staging)" effectiveDate="2017-02-26T10:29:50" codeSystemName="SNOMED Clinical Terms"/>
+    </concept>
+</dataset>

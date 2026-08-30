@@ -1,0 +1,14 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.777.13.1.2" effectiveDate="2017-12-05T15:26:38" statusCode="draft" prefix="hl7ips-" shortName="centc_251_pr_en_17269" iddisplay="hl7ips-dataset-2" url="http://art-decor.org/decor/services/" ident="hl7ips-"><!--
+ This is a view of the dataset "CEN/TC 251 prEN 17269" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">CEN/TC 251 prEN 17269</name>
+    <desc language="de-DE">CEN/TC 251 prEN 17269</desc>
+    <concept id="2.16.840.1.113883.3.1937.777.13.2.6" effectiveDate="2017-12-05T17:39:17" statusCode="draft" type="item" iddisplay="hl7ips-dataelement-6">
+        <implementation markdown="Note, Patient Number is often used as a synonym, albeit that the identifier is not necessarily numeric; some jurisdictions use the Social Security Number as a healthcare identifier."/>
+        <name language="de-DE">Patient identifier</name>
+        <desc language="de-DE">Note, Patient Number is often used as a synonym, albeit that the identifier is not necessarily numeric; some jurisdictions use the Social Security Number as a healthcare identifier.</desc>
+        <valueDomain type="identifier"/>
+    </concept>
+</dataset>

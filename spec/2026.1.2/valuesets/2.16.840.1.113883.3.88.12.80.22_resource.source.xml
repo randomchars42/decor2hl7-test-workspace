@@ -1,0 +1,12 @@
+<valueSet xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.88.12.80.22" name="VaccineAdministeredValueSet" displayName="Vaccine Administered Value Set" effectiveDate="2019-11-01T09:29:23" statusCode="final" versionLabel="4.0.1" canonicalUri="http://hl7.org/fhir/ValueSet/vaccine-code" url="http://art-decor.org/decor/services/" ident="ad5bbr-">
+    <desc json:array="true" language="en-US">This identifies the vaccine substance administered - CVX codes.</desc>
+    <sourceCodeSystem json:array="true" id="1.2.36.1.2001.1005.17" identifierName="Australian Vaccine Code" canonicalUri="urn:oid:1.2.36.1.2001.1005.17" canonicalUriDSTU2="urn:oid:1.2.36.1.2001.1005.17" canonicalUriSTU3="urn:oid:1.2.36.1.2001.1005.17" canonicalUriR4="urn:oid:1.2.36.1.2001.1005.17" canonicalUriR4B="urn:oid:1.2.36.1.2001.1005.17" canonicalUriR5="urn:oid:1.2.36.1.2001.1005.17"/>
+    <sourceCodeSystem json:array="true" id="2.16.840.1.113883.6.59" identifierName="CVX" canonicalUri="urn:oid:2.16.840.1.113883.6.59" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.6.59" canonicalUriSTU3="urn:oid:2.16.840.1.113883.6.59" canonicalUriR4="urn:oid:2.16.840.1.113883.6.59" canonicalUriR4B="urn:oid:2.16.840.1.113883.6.59" canonicalUriR5="urn:oid:2.16.840.1.113883.6.59"/>
+    <publishingAuthority json:array="true" name="HL7 FHIR">
+        <addrLine json:array="true" type="uri">http://hl7.org/fhir</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="include" codeSystem="2.16.840.1.113883.6.59"/>
+    <items json:array="true" is="include" codeSystem="1.2.36.1.2001.1005.17"/>
+</valueSet>

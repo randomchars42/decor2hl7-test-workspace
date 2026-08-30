@@ -1,0 +1,268 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:pharmhl7="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.21.4.11" name="UVMedicationInformationdetail" displayName="UV Medication Information (detail)" effectiveDate="2023-02-03T13:03:38" versionLabel="2023" lastModifiedDate="2023-01-29T21:55:06" statusCode="draft" url="http://art-decor.org/decor/services/" ident="pharmcda-" pharmhl7:dummy-1="urn:hl7-org:pharm" xml:dummy-2="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-4="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">Universal Medication Information (detail)</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="VERSION" template="2.16.840.1.113883.10.21.4.11" flexibility="2017-05-10T00:00:00"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.312" flexibility="2005-09-07T00:00:00"/>
+            <relationship type="ADAPT" template="1.3.6.1.4.1.19376.1.9.1.3.1"/>
+            <context id="**"/>
+            <element name="hl7:manufacturedProduct" id="2.16.840.1.113883.3.1937.777.15.9.10757">
+                <attribute name="classCode" value="MANU" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10758"/>
+                <element name="hl7:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.3.1937.777.15.9.96">
+                    <attribute name="root" value="2.16.840.1.113883.10.21.4.11" datatype="uid" id="2.16.840.1.113883.3.1937.777.15.9.97"/>
+                </element>
+                <element name="hl7:manufacturedMaterial" id="2.16.840.1.113883.3.1937.777.15.9.93">
+                    <attribute name="classCode" value="MMAT" datatype="cs" isOptional="true" id="2.16.840.1.113883.3.1937.777.15.9.94"/>
+                    <attribute name="determinerCode" value="KIND" datatype="cs" isOptional="true" id="2.16.840.1.113883.3.1937.777.15.9.95"/>
+                    <element name="hl7:code" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.98">
+                        <desc language="en-US">The code describes the code of the medication. The medication may be either<ul>
+                                <li>a brand/product or</li>
+                                <li>described as a generic/scientific name or</li>
+                                <li>a descriptor of a magistral preparation/compound medicine</li>
+                            </ul>
+                        </desc>
+                        <element name="hl7:originalText" datatype="ED" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.99">
+                            <desc language="en-US">The originalText shoud contain a reference whose URI value points to the name and strength of the medication in the corresponding section.text, or just the name alone if strength is not relevant.</desc>
+                            <element name="hl7:reference" datatype="TEL" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.100"/>
+                        </element>
+                        <element name="hl7:translation" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10759">
+                            <desc language="en-US">Product code(s) from any organizational or juristdictional system</desc>
+                            <vocabulary domain="Product Code"/>
+                        </element>
+                    </element>
+                    <element name="hl7:name" datatype="EN" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.102">
+                        <desc language="en-US">The element SHOULD contain the name of the medication (e.g., "Adol 500mg Caplet"). The medication may be either<ul>
+                                <li>a brand/product or</li>
+                                <li>described as a generic/scientific name or</li>
+                                <li>a descriptor of a magistral preparation/compound medicine</li>
+                            </ul>
+                        </desc>
+                    </element>
+                    <element name="pharmhl7:desc" datatype="ED" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.11024"/>
+                    <element name="pharmhl7:formCode" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.104">
+                        <desc language="en-US">This code represents the pharmaceutical dose form (e.g., tablet, capsule, liquid) and SHOULD be present, if not implied by the product. It MAY be present if implied by the product. The value of this code may affect the units used in the substance administration quantity element.</desc>
+                    </element>
+                    <element name="hl7:lotNumberText" datatype="ST" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.105">
+                        <desc language="en-US">The lotNumberText element MAY be present and is a string representation of a lot number of this specific instance of the product. The provided lot number SHALL refer to the primary packaged item described in the Packaging element.</desc>
+                    </element>
+                    <element name="pharmhl7:expirationTime" datatype="TS" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.106">
+                        <desc language="en-US">The pharmhl7:expirationTime element MAY be present and SHALL contain a value attribute containing the date (e.g., specific date, specific date including time) of expiration of this specific instance of the product. The value given in the pharmhl7:expirationTime element SHALL refer to the primary packaged item described in the Medicine Packaging
+                            element.</desc>
+                        <attribute name="value" id="2.16.840.1.113883.3.1937.777.15.9.107"/>
+                    </element>
+                    <element name="pharmhl7:asContent" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.108">
+                        <desc language="en-US">This structure describes the packaging of the medication. It represents the primary description of the packaging of the medicine (e.g., the medicine is packaged in ampoules of 50ml volume each) and may include additional packaging information of how many of the primary packaged items are within an outer package (e.g., 5 ampoules are packaged in a
+                            box). <br clear="none"/>The primary description of the package should be consistent with the given pharmaceutical dose form (pharmhl7:formCode of the medication). Example: a consistent pharmaceutical dose form to the package form “Ampoules” would be e.g., “Solution for injection”. <br clear="none"/>In case the package describes a product, the pharmhl7:code element provides
+                            the code for the product. <br clear="none"/>In case the package describes a product, and the package has a brand name, it should be described in the pharmhl7:name element (e.g., Xylocaine 1% with Adrenaline Inj, 5 injections package). <br clear="none"/>The pharmhl7:formCode element represents the form of the product/contaner (e.g., tablet container, bottle, ...).<br clear="none"/>
+                            <br clear="none"/>
+                            <div class="yui-wk-div">The &lt;pharmhl7:capacityQuantity&gt; element describes the capacity of the packaging, while the &lt;pharmhl7:quantity&gt; the actual quantity of inner packaged items in the outer packaging container.<br clear="none"/>
+                                <br clear="none"/>
+                            </div>
+                            <div class="yui-wk-div">The product might have a single (30 pills bottle) or multiple (5 vials 10 ml; box with 2 blisters of 20 tablets) layers of packaging. In the latter case, the most inner (nested) item represents the most outer package item.</div>
+                            <div class="yui-wk-div">For example the case </div>
+                            <div class="yui-wk-div">  \--Box </div>
+                            <div class="yui-wk-div">  \-----2 blisters </div>
+                            <div class="yui-wk-div">  \--------20 tablets </div>
+                            <div class="yui-wk-div">is described as "20 tablets" contained by "a blister"; "2 blisters" contained by one box.</div>
+                            <div class="yui-wk-div">The most inner package represents the Packaged Medicinal Product.</div>
+                        </desc>
+                        <example type="neutral" caption="Packaged Medicinal Product with formCode">
+                            <asContent classCode="CONT">
+                                <containerPackagedProduct classCode="CONT" determinerCode="KIND">
+                                    <!-- Packaged Medicinal Product -->
+                                    <code codeSystem="1.999.999" code="PC_ID" displayName="Packaged Product Name"/>
+                                    <name>100 MIRACLE PILLS(TM)</name>
+                                    <formCode codeSystem="0.4.0.127.0.16.1.1.2.1" code="30009000" displayName="Box" CodeSystemName="EDQM"/>
+                                </containerPackagedProduct>
+                            </asContent>
+                        </example>
+                        <example caption="General example">
+                            <asContent classCode="CONT">
+                                <quantity value=" " unit=" "/>
+                                <containerPackagedProduct classCode="CONT" determinerCode="KIND">
+                                    <!-- Medicinal product code (package-level) -->
+                                    <code code=" " displayName=" " codeSystem=" " codeSystemName=" "/>
+                                    <!-- Brand name (package) -->
+                                    <name> . . . </name>
+                                    <formCode code=" " displayName=" " codeSystem=" " codeSystemName=" "/>
+                                    <capacityQuantity value=" " unit=" "/>
+                                    <asContent>
+                                        <containerPackagedProduct classCode="CONT" determinerCode="KIND">
+                                            <capacityQuantity value=" " unit=" "/>
+                                        </containerPackagedProduct>
+                                    </asContent>
+                                </containerPackagedProduct>
+                            </asContent>
+                        </example>
+                        <example caption="Medicinal product with pharmaceutical dose form ”Tablets”, available as a “Tablet container” with 30 tablets">
+                            <asContent classCode="CONT">
+                                <!-- 30 tablets in the package -->
+                                <quantity value="30" unit="{tablet}"/>
+                                <containerPackagedProduct classCode="CONT" determinerCode="KIND">
+                                    <!-- .. -->
+                                    <formCode code=" " displayName="Tablet container" codeSystem=" " codeSystemName=" "/>
+                                </containerPackagedProduct>
+                            </asContent>
+                        </example>
+                        <example caption="Medicinal product with pharmaceutical dose form 'Solution for injection', available as “Ampoules” with 50ml volume, packaged as 5 ampoules per box">
+                            <asContent classCode="CONT">
+                                <quantity value="50" unit="ml"/>
+                                <!-- 50ml per ampoule -->
+                                <containerPackagedProduct classCode="CONT" determinerCode="KIND">
+                                    <!-- .. -->
+                                    <formCode code=" " displayName="Ampoules" codeSystem=" " codeSystemName=" "/>
+                                    <asContent>
+                                        <!-- 5 ampoules in a box -->
+                                        <quantity value="5"/>
+                                        <containerPackagedProduct classCode="CONT" determinerCode="KIND">
+                                            <!-- .. -->
+                                        </containerPackagedProduct>
+                                    </asContent>
+                                </containerPackagedProduct>
+                            </asContent>
+                        </example>
+                        <example type="neutral" caption="Packaged Medicinal Product with multiple layers packaging">
+                            <asContent classCode="CONT">
+                                <containerPackagedProduct>
+                                    <!-- Inner Package -->
+                                    <code codeSystem="..." code="..." displayName="..."/>
+                                    <asContent>
+                                        <containerPackagedProduct>
+                                            <!-- Intermediate Package -->
+                                            <asContent>
+                                                <containerPackagedProduct>
+                                                    <!-- Outer Package / Packaged Medicinal Product -->
+                                                </containerPackagedProduct>
+                                            </asContent>
+                                        </containerPackagedProduct>
+                                    </asContent>
+                                </containerPackagedProduct>
+                            </asContent>
+                        </example>
+                        <attribute name="classCode" value="CONT" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.109"/>
+                        <include ref="2.16.840.1.113883.10.21.4.17" flexibility="dynamic"/>
+                    </element>
+                    <element name="pharmhl7:asSpecializedKind" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.126">
+                        <desc language="en-US">
+                            <div>The Medicinal Product can be classified according to various classification systems, which may be jurisdictional or international as for example  the WHO ATC drug code, or the IDMP Pharmaceutical Product Identifier(s) (PhPID Set) when it will be available for use.</div>
+                            <div>The generalizedMaterialKind/code element is used to covey these codes.<br clear="none"/>
+                            </div>
+                        </desc>
+                        <example>
+                            <asSpecializedKind classCode="GRIC">
+                                <generalizedMedicineClass classCode="MMAT">
+                                    <code code=" " displayName=" " codeSystem=" " codeSystemName=" "/>
+                                </generalizedMedicineClass>
+                            </asSpecializedKind>
+                        </example>
+                        <attribute name="classCode" value="GRIC" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.127"/>
+                        <include ref="2.16.840.1.113883.10.21.4.19" flexibility="dynamic"/>
+                    </element>
+                    <element name="pharmhl7:part" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10944">
+                        <attribute name="classCode" value="PART" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10945"/>
+                        <element name="pharmhl7:id" datatype="II" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10946"/>
+                        <element name="pharmhl7:quantity" datatype="PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10947"/>
+
+
+
+                        <element name="pharmhl7:partProduct" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10948">
+
+
+                            <element name="pharmhl7:code" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.11012"/>
+                            <element name="pharmhl7:name" datatype="EN" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.11013"/>
+                            <element name="pharmhl7:desc" datatype="ED" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.11014"/>
+                            <element name="pharmhl7:formCode" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.11015"/>
+
+                            <element name="pharmhl7:asContent" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10949">
+                                <attribute name="classCode" value="CONT" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10950"/>
+                                <include ref="2.16.840.1.113883.10.21.4.17" flexibility="dynamic"/>
+                            </element>
+                            <element name="pharmhl7:asSpecializedKind" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10951">
+                                <attribute name="classCode" value="GRIC" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10952"/>
+                                <include ref="2.16.840.1.113883.10.21.4.19" flexibility="dynamic"/>
+                            </element>
+                            <element name="pharmhl7:part" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10953">
+                                <attribute name="classCode" value="PART" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10954"/>
+                                <element name="pharmhl7:id" datatype="II" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10955"/>
+                                <element name="pharmhl7:quantity" datatype="PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10956"/>
+                                <element name="pharmhl7:partProduct" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10957">
+                                    <element name="pharmhl7:code" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.11016"/>
+                                    <element name="pharmhl7:name" datatype="EN" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.11017"/>
+                                    <element name="pharmhl7:desc" datatype="ED" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.11018"/>
+                                    <element name="pharmhl7:formCode" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.11019"/>
+                                    <element name="pharmhl7:asContent" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10958">
+                                        <attribute name="classCode" value="CONT" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10959"/>
+                                        <include ref="2.16.840.1.113883.10.21.4.17" flexibility="dynamic"/>
+                                    </element>
+                                    <element name="pharmhl7:asSpecializedKind" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10960">
+                                        <attribute name="classCode" value="GRIC" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10961"/>
+                                        <include ref="2.16.840.1.113883.10.21.4.19" flexibility="dynamic"/>
+                                    </element>
+                                    <element name="pharmhl7:part" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10962">
+                                        <attribute name="classCode" value="PART" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10963"/>
+                                        <element name="pharmhl7:id" datatype="II" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10964"/>
+                                        <element name="pharmhl7:quantity" datatype="PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10965"/>
+                                        <element name="pharmhl7:partProduct" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10966">
+                                            <element name="pharmhl7:code" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.11020"/>
+                                            <element name="pharmhl7:name" datatype="EN" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.11021"/>
+                                            <element name="pharmhl7:desc" datatype="ED" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.11022"/>
+                                            <element name="pharmhl7:formCode" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.11023"/>
+                                            <element name="pharmhl7:asContent" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10967">
+                                                <attribute name="classCode" value="CONT" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10968"/>
+                                                <include ref="2.16.840.1.113883.10.21.4.17" flexibility="dynamic"/>
+                                            </element>
+                                            <element name="pharmhl7:asSpecializedKind" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10969">
+                                                <attribute name="classCode" value="GRIC" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10970"/>
+                                                <include ref="2.16.840.1.113883.10.21.4.19" flexibility="dynamic"/>
+                                            </element>
+                                            <element name="pharmhl7:part" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10971">
+                                                <attribute name="classCode" value="PART" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10972"/>
+                                            </element>
+                                            <element name="pharmhl7:ingredient" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10973">
+                                                <attribute name="classCode" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10974">
+                                                    <vocabulary valueSet="2.16.840.1.113883.1.11.10430" flexibility="dynamic"/>
+                                                </attribute>
+                                                <include ref="2.16.840.1.113883.10.21.4.18" flexibility="dynamic"/>
+                                            </element>
+                                        </element>
+                                    </element>
+                                    <element name="pharmhl7:ingredient" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10975">
+                                        <attribute name="classCode" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10976">
+                                            <vocabulary valueSet="2.16.840.1.113883.1.11.10430" flexibility="dynamic"/>
+                                        </attribute>
+                                        <include ref="2.16.840.1.113883.10.21.4.18" flexibility="dynamic"/>
+                                    </element>
+                                </element>
+                            </element>
+                            <element name="pharmhl7:ingredient" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10977">
+                                <attribute name="classCode" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10978">
+                                    <vocabulary valueSet="2.16.840.1.113883.1.11.10430" flexibility="dynamic"/>
+                                </attribute>
+                                <include ref="2.16.840.1.113883.10.21.4.18" flexibility="dynamic"/>
+                            </element>
+                        </element>
+                    </element>
+                    <element name="pharmhl7:ingredient" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.132">
+                        <desc language="en-US">
+                            <div>This module provides the list of the ingredients (substances with a role) used for this product; one or more ingredients may be present.</div>
+                            <div>The classCode of "ACTI" indicates that this is an active ingredient.</div>
+                        </desc>
+                        <example>
+                            <pharmhl7:ingredient classCode="ACTI">
+                                <pharmhl7:quantity>
+                                    <cda:numerator type="PQ" value=" " unit=" "/>
+                                    <cda:denominator type="PQ" value=" " unit=" "/>
+                                </pharmhl7:quantity>
+                                <ingredientSubstance classCode="MMAT" determinerCode="KIND">
+                                    <code code=" " displayName=" " codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC WHO"/>
+                                </ingredientSubstance>
+                            </pharmhl7:ingredient>
+                        </example>
+                        <attribute name="classCode" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.133">
+                            <vocabulary valueSet="2.16.840.1.113883.1.11.10430" flexibility="dynamic"/>
+                        </attribute>
+                        <include ref="2.16.840.1.113883.10.21.4.18" flexibility="dynamic"/>
+                    </element>
+                </element>
+                <element name="hl7:manufacturerOrganization" contains="2.16.840.1.113883.10.12.151" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10766"/>
+            </element>
+        </template>

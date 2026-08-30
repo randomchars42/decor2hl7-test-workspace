@@ -1,0 +1,43 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.4091" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.4091" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="Safety Equipment Observation Organizer" ident="aktin-" name="SafetyEquipmentObservationOrganizer" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="draft" url="http://art-decor.org/decor/services/" effectiveDate="2017-02-01T00:00:00">
+            <desc language="en-US">Safety Equipment Observation Organizer</desc>
+            <desc language="de-DE">Sicherheitsequipment Observation Organizer</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.301" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.301" tmname="CDAAct" tmdisplayName="CDA Act" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <relationship type="ADAPT" template="2.16.840.1.113883.3.2898.10.215" flexibility="2015-09-09T00:00:00" url="http://art-decor.org/decor/services/" linkedartefactmissing="true"/>
+            <context id="**"/>
+            <example type="neutral">
+                <organizer classCode="CLUSTER" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4091"/>
+                    <statusCode code="completed"/>
+                    <component typeCode="COMP" contextConductionInd="true">
+                        <!--  -->
+                    </component>
+                </organizer>
+            </example>
+            <element name="hl7:organizer" id="2.16.840.1.113883.2.6.60.3.9.1631854">
+                <item original="false" label="SafetyEquipmentObservationOrganizer"/>
+                <attribute name="classCode" value="CLUSTER" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631855"/>
+                <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631856"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631857">
+                    <item original="false" label="SafetyEquipmentObservationOrganizer"/>
+                    <attribute name="root" value="1.2.276.0.76.10.4091" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.1631858"/>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CS" id="2.16.840.1.113883.2.6.60.3.9.1631859">
+                    <item original="false" label="SafetyEquipmentObservationOrganizer"/>
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:component" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" contains="1.2.276.0.76.10.4096" id="2.16.840.1.113883.2.6.60.3.9.1631860" tmid="1.2.276.0.76.10.4096" tmname="SafetyEquipmentUsedObservation" tmdisplayName="Safety Equipment Used Observation" tmeffectiveDate="2017-02-01T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <item original="false" label="SafetyEquipmentObservationOrganizer"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631861"/>
+                    <attribute name="contextConductionInd" value="true" isOptional="true" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1631862"/>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="dependency" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.3068" name="Injuryeventsummary" displayName="Unfallereignis" effectiveDate="2017-01-10T00:00:00" statusCode="draft" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4088" name="InjuryEventDetail" displayName="Injury Event Detail" effectiveDate="2017-02-01T00:00:00" statusCode="draft" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4096" name="SafetyEquipmentUsedObservation" displayName="Safety Equipment Used Observation" effectiveDate="2017-02-01T00:00:00" statusCode="draft" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+        </template>
+    </template>
+</result>

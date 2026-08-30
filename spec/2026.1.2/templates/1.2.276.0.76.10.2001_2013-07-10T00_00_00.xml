@@ -1,0 +1,347 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.2001" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pharm="urn:ihe:pharm" id="1.2.276.0.76.10.2001" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="CDA recordTarget" cda:dummy-4="urn:hl7-org:v3" ident="hl7de-" name="HeaderRecordTarget" xml:dummy-2="http://www.w3.org/XML/1998/namespace" pharm:dummy-1="urn:ihe:pharm" statusCode="active" url="http://art-decor.org/decor/services/" effectiveDate="2013-07-10T00:00:00">
+            <desc language="de-DE">Das recordTarget repräsentiert die Person, über die dokumentiert wird. recordTarget umfasst neben der Identifikation und dem Namen, Geschlecht, Adressen etc. auch optionale Zusatzangaben wie zum Beispiel Geburtsort und Sprachfähigkeiten.</desc>
+            <classification type="cdaheaderlevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.101" tmid="2.16.840.1.113883.10.12.101" tmname="CDArecordTarget" tmdisplayName="CDA recordTarget" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <example type="neutral" caption="Standard-Beispiel">
+                <recordTarget typeCode="RCT" contextControlCode="OP">
+                    <patientRole classCode="PAT">
+                        <id root="2.16.840.1.113883.3.37.6.2.23.3" extension="12345"/>
+                        <addr use="HP">
+                            <streetName>Musterstraße</streetName>
+                            <houseNumber>15</houseNumber>
+                            <postalCode>50825</postalCode>
+                            <city>Köln</city>
+                        </addr>
+                        <telecom use="HP" value="tel:+49(221)7812220"/>
+                        <patient classCode="PSN" determinerCode="INSTANCE">
+                            <name>
+                                <given>Marie</given>
+                                <family>Müller</family>
+                            </name>
+                            <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1"/>
+                            <birthTime value="19700924"/>
+                            <birthplace>
+                                <place>
+                                    <addr>
+                                        <city>Köln</city>
+                                    </addr>
+                                </place>
+                            </birthplace>
+                        </patient>
+                    </patientRole>
+                </recordTarget>
+            </example>
+            <example type="neutral" caption="Maximal-Beispiel">
+                <recordTarget typeCode="RCT" contextControlCode="OP">
+                    <patientRole classCode="PAT">
+                        <id root="2.16.840.1.113883.3.37.6.2.23.3" extension="12345"/>
+                        <id root="1.2.276.0.76.4.8" extension="8003004447"/>
+                        <addr use="HP">
+                            <streetName>Musterstraße</streetName>
+                            <houseNumber>15</houseNumber>
+                            <postalCode>50825</postalCode>
+                            <city>Köln</city>
+                        </addr>
+                        <telecom use="HP" value="tel:+49(221)7812220"/>
+                        <telecom use="HP" value="mailto:MuellerMar@gmx.de"/>
+                        <patient classCode="PSN" determinerCode="INSTANCE">
+                            <name>
+                                <given>Marie</given>
+                                <family>Müller</family>
+                            </name>
+                            <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1"/>
+                            <birthTime value="19700924"/>
+                            <!-- Familienstand des Patienten -->
+                            <maritalStatusCode code="M" displayName="Married" codeSystem="2.16.840.1.113883.5.2" codeSystemName="HL7 MaritalStatusCode"/>
+                            <!-- Religionszugehörigkeit des Patienten-->
+                            <religiousAffiliationCode code="1077" displayName="Protestant" codeSystem="2.16.840.1.113883.5.1076"/>
+                            <!-- Vormund/Sachwalter des Patienten -->
+                            <guardian>
+                                <addr use="HP">
+                                    <streetName>Musterstraße</streetName>
+                                    <houseNumber>15</houseNumber>
+                                    <postalCode>50825</postalCode>
+                                    <city>Köln</city>
+                                </addr>
+                                <telecom use="HP" value="..."/>
+                                <guardianPerson>
+                                    <name>
+                                        <given>Marius</given>
+                                        <family>Müller</family>
+                                    </name>
+                                </guardianPerson>
+                            </guardian>
+                            <birthplace>
+                                <place>
+                                    <addr>
+                                        <city>Köln</city>
+                                    </addr>
+                                </place>
+                            </birthplace>
+                            <languageCommunication>
+                                <languageCode code="EN"/>
+                                <modeCode code="ESP"/>
+                                <proficiencyLevelCode code="G"/>
+                                <preferenceInd value="true"/>
+                            </languageCommunication>
+                        </patient>
+                    </patientRole>
+                </recordTarget>
+            </example>
+            <example type="neutral" caption="Minimal-Beispiel">
+                <recordTarget typeCode="RCT" contextControlCode="OP">
+                    <patientRole classCode="PAT">
+                        <id root="2.16.840.1.113883.3.37.6.2.23.3" extension="12345"/>
+                    </patientRole>
+                </recordTarget>
+            </example>
+            <element name="hl7:recordTarget" id="2.16.840.1.113883.2.6.77.9.344">
+                <item original="false" label="HeaderRecordTarget"/>
+                <example type="neutral">
+                    <recordTarget typeCode="RCT" contextControlCode="OP">
+                        <patientRole classCode="PAT">
+                            <!-- ... -->
+                        </patientRole>
+                    </recordTarget>
+                </example>
+                <attribute name="typeCode" value="RCT" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.345"/>
+                <attribute name="contextControlCode" value="OP" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.346"/>
+                <element name="hl7:patientRole" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.347">
+                    <item original="false" label="HeaderRecordTarget"/>
+                    <example type="neutral">
+                        <patientRole classCode="PAT">
+                            <id extension="186245" root="1.2.276.0.76.3.1.139.3.871"/>
+                            <patient classCode="PSN" determinerCode="INSTANCE">
+                                <!-- ... -->
+                            </patient>
+                        </patientRole>
+                    </example>
+                    <attribute name="classCode" value="PAT" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.348"/>
+                    <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="*" datatype="II" id="2.16.840.1.113883.2.6.77.9.349">
+                        <item original="false" label="HeaderRecordTarget"/>
+                        <example type="neutral">
+                            <id extension="6245" root="2.16.840.1.113883.3.933"/>
+                            <id extension="1543627549" root="1.2.276.0.76.4.1"/>
+                        </example>
+                    </element>
+                    <element name="hl7:addr" minimumMultiplicity="0" maximumMultiplicity="*" datatype="AD" id="2.16.840.1.113883.2.6.77.9.350">
+                        <desc language="de-DE">Adresse des Patienten</desc>
+                        <item original="false" label="HeaderRecordTarget"/>
+                        <example type="neutral">
+                            <addr use="HP">
+                                <streetName>Dorfstraße</streetName>
+                                <houseNumber>54</houseNumber>
+                                <postalCode>51371</postalCode>
+                                <city>Leverkusen</city>
+                            </addr>
+                        </example>
+                    </element>
+                    <element name="hl7:telecom" minimumMultiplicity="0" maximumMultiplicity="*" datatype="TEL" id="2.16.840.1.113883.2.6.77.9.351">
+                        <desc language="de-DE">Kontaktdaten des Patienten</desc>
+                        <item original="false" label="HeaderRecordTarget"/>
+                        <example type="neutral">
+                            <telecom use="H" value="tel:+4930140400"/>
+                            <telecom use="MC" value="tel:+492211234567"/>
+                            <telecom value="mailto:herberthannes.mustermann@provider.de"/>
+                        </example>
+                    </element>
+                    <element name="hl7:patient" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.352">
+                        <item original="false" label="HeaderRecordTarget"/>
+                        <example type="neutral">
+                            <patient classCode="PSN" determinerCode="INSTANCE">
+                                <name>
+                                    <!-- ... -->
+                                </name>
+                                <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1"/>
+                                <birthTime value="19541223"/>
+                            </patient>
+                        </example>
+                        <attribute name="classCode" value="PSN" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.353"/>
+                        <attribute name="determinerCode" value="INSTANCE" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.354"/>
+                        <include ref="1.2.276.0.76.10.90030" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" tmid="1.2.276.0.76.10.90030" tmname="Personenname" tmdisplayName="Personenname" tmeffectiveDate="2018-04-11T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                            <item original="false" label="HeaderRecordTarget"/>
+                            <element name="hl7:name" datatype="PN" id="2.16.840.1.113883.3.1937.777.1.9.6351" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" conformance="R">
+                                <desc language="de-DE">Die Reihenfolge der Namensbestandteile soll der typischen Schreibweise entsprechen. Zu beachten ist, dass prefix- und suffix-Elemente mit einem Leerzeichen enden müssen, wenn sie nicht unmittelbar an den folgenden Namensbestandteil anschließen sollen.<br clear="none"/>
+                                </desc>
+                                <item original="false" label="Personenname"/>
+                                <example type="neutral" caption="Dr. med. Sine Johanna Gräfin von Oberberg">
+                                    <name>
+                                        <prefix qualifier="AC">Dr. med. </prefix>
+                                        <given>Sine Johanna</given>
+                                        <prefix qualifier="NB">Gräfin </prefix>
+                                        <prefix qualifier="VV">von </prefix>
+                                        <family>Oberberg</family>
+                                    </name>
+                                </example>
+                                <example type="neutral" caption="Prof. Dr. med. Dr. rer. nat. Fritz Julius Karl Freiherr von und zu Rathenburg vor der Isar, MdB">
+                                    <name>
+                                        <prefix qualifier="AC">Prof. Dr. med. Dr. rer. nat. </prefix>
+                                        <given>Fritz</given>
+                                        <given>Julius</given>
+                                        <given>Karl</given>
+                                        <prefix qualifier="NB">Freiherr </prefix>
+                                        <prefix qualifier="VV">von und zu </prefix>
+                                        <family>Rathenburg vor der
+                            Isar</family>
+                                        <suffix>, MdB</suffix>
+                                    </name>
+                                </example>
+                                <element name="hl7:prefix[@qualifier='AC']" datatype="ENXP" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.1.9.6352">
+                                    <desc language="de-DE">Titel</desc>
+                                    <item original="false" label="Personenname"/>
+                                    <attribute name="qualifier" value="AC" isOptional="false" datatype="set_cs" id="2.16.840.1.113883.3.1937.777.1.9.6355"/>
+                                </element>
+                                <element name="hl7:given" datatype="ENXP" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.1.9.6353">
+                                    <desc language="de-DE">Vorname</desc>
+                                    <item original="false" label="Personenname"/>
+                                </element>
+                                <element name="hl7:prefix[@qualifier='NB']" datatype="ENXP" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.1.9.6354">
+                                    <desc language="de-DE">Namenszusatz</desc>
+                                    <item original="false" label="Personenname"/>
+                                    <attribute name="qualifier" value="NB" isOptional="false" datatype="set_cs" id="2.16.840.1.113883.3.1937.777.1.9.6356"/>
+                                </element>
+                                <element name="hl7:prefix[@qualifier='VV']" datatype="ENXP" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.1.9.6357">
+                                    <desc language="de-DE">Vorsatzwort</desc>
+                                    <item original="false" label="Personenname"/>
+                                    <attribute name="qualifier" value="VV" isOptional="false" datatype="set_cs" id="2.16.840.1.113883.3.1937.777.1.9.6358"/>
+                                </element>
+                                <element name="hl7:family" datatype="ENXP" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.1.9.6359">
+                                    <desc language="de-DE">Nachname</desc>
+                                    <item original="false" label="Personenname"/>
+                                </element>
+                                <element name="hl7:suffix" datatype="ENXP" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.1.9.6360">
+                                    <desc language="de-DE">Suffix</desc>
+                                    <item original="false" label="Personenname"/>
+                                </element>
+                            </element>
+                            <staticAssociations/>
+                        </include>
+                        <element name="hl7:administrativeGenderCode" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="CE" id="2.16.840.1.113883.2.6.77.9.355">
+                            <desc language="de-DE">Geschlecht (administrativ) des Patienten</desc>
+                            <item original="false" label="HeaderRecordTarget"/>
+                            <example type="neutral">
+                                <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1"/>
+                            </example>
+                            <vocabulary valueSet="2.16.840.1.113883.1.11.1" vsid="2.16.840.1.113883.1.11.1" vsname="AdministrativeGender" vsdisplayName="Administrative Gender (HL7 V3)" vseffectiveDate="2016-06-23T00:00:00" vsstatusCode="final" linkedartefactmissing="false"/>
+                        </element>
+                        <element name="hl7:birthTime" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="TS.DATE.MIN" id="2.16.840.1.113883.2.6.77.9.356">
+                            <desc language="de-DE">Geburtsdatum des Patienten</desc>
+                            <item original="false" label="HeaderRecordTarget"/>
+                            <example type="neutral">
+                                <birthTime value="19491224"/>
+                            </example>
+                        </element>
+                        <element name="hl7:maritalStatusCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.2.6.77.9.357">
+                            <desc language="de-DE">Familienstand des Patienten</desc>
+                            <item original="false" label="HeaderRecordTarget"/>
+                            <example type="neutral">
+                                <maritalStatusCode code="S" displayName="Never Married" codeSystem="2.16.840.1.113883.5.2"/>
+                            </example>
+                            <vocabulary valueSet="2.16.840.1.113883.1.11.12212" vsid="2.16.840.1.113883.1.11.12212" vsname="MaritalStatus" vsdisplayName="Marital Status" vseffectiveDate="2016-06-23T00:00:00" vsstatusCode="final" linkedartefactmissing="false"/>
+                        </element>
+                        <element name="hl7:religiousAffiliationCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.2.6.77.9.358">
+                            <desc language="de-DE">Religionszugehörigkeit des Patienten</desc>
+                            <item original="false" label="HeaderRecordTarget"/>
+                            <example type="neutral">
+                                <religiousAffiliationCode code="1077" displayName="Protestant" codeSystem="2.16.840.1.113883.5.1076"/>
+                            </example>
+                            <vocabulary valueSet="2.16.840.1.113883.1.11.19185" vsid="2.16.840.1.113883.1.11.19185" vsname="ReligiousAffiliation" vsdisplayName="Religious Affiliation" vseffectiveDate="2016-06-23T00:00:00" vsstatusCode="final" linkedartefactmissing="false"/>
+                        </element>
+                        <element name="hl7:raceCode" conformance="NP" id="2.16.840.1.113883.2.6.77.9.359">
+                            <desc language="de-DE">darf nicht verwendet werden</desc>
+                            <item original="false" label="HeaderRecordTarget"/>
+                        </element>
+                        <element name="hl7:ethnicGroupCode" conformance="NP" id="2.16.840.1.113883.2.6.77.9.360">
+                            <desc language="de-DE">darf nicht verwendet werden</desc>
+                            <item original="false" label="HeaderRecordTarget"/>
+                        </element>
+                        <element name="hl7:guardian" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.2.6.77.9.361">
+                            <desc language="de-DE">Vormund/Sachwalter des Patienten</desc>
+                            <item original="false" label="HeaderRecordTarget"/>
+                            <element name="hl7:addr" minimumMultiplicity="0" maximumMultiplicity="1" datatype="AD" id="2.16.840.1.113883.2.6.77.9.362">
+                                <item original="false" label="HeaderRecordTarget"/>
+                            </element>
+                            <element name="hl7:telecom" minimumMultiplicity="0" maximumMultiplicity="*" datatype="TEL" id="2.16.840.1.113883.2.6.77.9.363">
+                                <item original="false" label="HeaderRecordTarget"/>
+                            </element>
+                            <choice minimumMultiplicity="1" maximumMultiplicity="1">
+                                <item original="false" label="HeaderRecordTarget"/>
+                                <element name="hl7:guardianPerson" id="2.16.840.1.113883.2.6.77.9.364">
+                                    <item original="false" label="HeaderRecordTarget"/>
+                                    <element name="hl7:name" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="PN" id="2.16.840.1.113883.2.6.77.9.365">
+                                        <item original="false" label="HeaderRecordTarget"/>
+                                    </element>
+                                </element>
+                                <element name="hl7:guardianOrganization" id="2.16.840.1.113883.2.6.77.9.366">
+                                    <item original="false" label="HeaderRecordTarget"/>
+                                    <element name="hl7:name" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="ON" id="2.16.840.1.113883.2.6.77.9.367">
+                                        <item original="false" label="HeaderRecordTarget"/>
+                                    </element>
+                                </element>
+                            </choice>
+                        </element>
+                        <element name="hl7:birthplace" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.368">
+                            <desc language="de-DE">Geburtsort des Patienten</desc>
+                            <item original="false" label="HeaderRecordTarget"/>
+                            <example type="neutral">
+                                <birthplace>
+                                    <place>
+                                        <addr>Hamburg</addr>
+                                    </place>
+                                </birthplace>
+                            </example>
+                            <element name="hl7:place" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.369">
+                                <item original="false" label="HeaderRecordTarget"/>
+                                <element name="hl7:addr" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="AD" id="2.16.840.1.113883.2.6.77.9.370">
+                                    <item original="false" label="HeaderRecordTarget"/>
+                                </element>
+                            </element>
+                        </element>
+                        <element name="hl7:languageCommunication" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.2.6.77.9.371">
+                            <item original="false" label="HeaderRecordTarget"/>
+                            <element name="hl7:languageCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CS" id="2.16.840.1.113883.2.6.77.9.372">
+                                <item original="false" label="HeaderRecordTarget"/>
+                                <vocabulary valueSet="2.16.840.1.113883.1.11.11526" vsid="2.16.840.1.113883.1.11.11526" vsname="HumanLanguage" vsdisplayName="HumanLanguage" vseffectiveDate="2014-03-26T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1360-20160323" linkedartefactmissing="false"/>
+                            </element>
+                            <element name="hl7:modeCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.2.6.77.9.373">
+                                <item original="false" label="HeaderRecordTarget"/>
+                                <vocabulary valueSet="2.16.840.1.113883.1.11.12249" vsid="2.16.840.1.113883.1.11.12249" vsname="LanguageAbilityMode" vsdisplayName="LanguageAbilityMode" vseffectiveDate="2016-06-23T00:00:00" vsstatusCode="final" linkedartefactmissing="false"/>
+                            </element>
+                            <element name="hl7:proficiencyLevelCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.2.6.77.9.374">
+                                <item original="false" label="HeaderRecordTarget"/>
+                                <vocabulary valueSet="2.16.840.1.113883.1.11.12199" vsid="2.16.840.1.113883.1.11.12199" vsname="LanguageAbilityProficiency" vsdisplayName="LanguageAbilityProficiency" vseffectiveDate="2016-06-23T00:00:00" vsstatusCode="final" linkedartefactmissing="false"/>
+                            </element>
+                            <element name="hl7:preferenceInd" minimumMultiplicity="0" maximumMultiplicity="1" datatype="BL" id="2.16.840.1.113883.2.6.77.9.375">
+                                <item original="false" label="HeaderRecordTarget"/>
+                            </element>
+                        </element>
+                    </element>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="include" prefix="dthsehcdemo-" flexibility="dynamic" id="1.2.276.0.76.3.1.85.200.77.10.47" name="eWundbericht" displayName="eWundbericht" effectiveDate="2016-01-27T14:55:40" statusCode="cancelled" isClosed="false" versionLabel="fehlerhafte Anlage ohne Basistemplate" ident="dthsehcdemo-"/>
+            <ref type="include" prefix="vomgt-" flexibility="2013-07-10T00:00:00" id="1.2.276.0.76.3.1.135.8.10.1" name="Test1" displayName="Test 1" effectiveDate="2015-12-02T11:47:17" statusCode="cancelled" ident="vomgt-"/>
+            <ref type="include" prefix="abde-" flexibility="dynamic" id="1.2.276.0.76.10.1013" name="Arztbrief" displayName="Arztbrief 2014/2015" effectiveDate="2014-08-25T00:00:00" statusCode="draft" versionLabel="v2.02" ident="abde-"/>
+            <ref type="include" prefix="abde-" flexibility="dynamic" id="1.2.276.0.76.10.1020" name="Arztbrief30" displayName="Arztbrief Plus" effectiveDate="2017-02-01T00:00:00" statusCode="draft" versionLabel="v3.00" ident="abde-"/>
+            <ref type="include" prefix="evthm-" flexibility="dynamic" id="1.2.276.0.76.10.1022" name="Livedatencda" displayName="Live-Daten-CDA Dokument" effectiveDate="2017-01-23T00:00:00" statusCode="draft" ident="evthm-"/>
+            <ref type="include" prefix="evthm-" flexibility="dynamic" id="1.2.276.0.76.10.1023" name="Ueberleitungsdatencda" displayName="Überleitungs-CDA Dokument" effectiveDate="2017-03-14T00:00:00" statusCode="draft" ident="evthm-"/>
+            <ref type="include" prefix="elmgmt-" flexibility="dynamic" id="1.2.276.0.76.10.1026" name="EntlassmanagementBrief" displayName="Entlassmanagement Brief" effectiveDate="2017-07-13T00:00:00" statusCode="draft" versionLabel="v1.1" ident="elmgmt-"/>
+            <ref type="include" prefix="teleneps-" flexibility="dynamic" id="1.2.276.0.76.10.1033" name="Arztbrieftelenepsambulant" displayName="Arztbrief Psychotraumatologie ambulant/stationär" effectiveDate="2019-06-02T00:00:00" statusCode="retired" versionLabel="v1.0" ident="teleneps-"/>
+            <ref type="include" prefix="teleneps-" flexibility="dynamic" id="1.2.276.0.76.10.1033" name="Arztbrieftelenepsambulant" displayName="Arztbrief Psychotraumatologie ambulant/stationär" effectiveDate="2020-12-18T00:00:00" statusCode="draft" versionLabel="v2.0" ident="teleneps-"/>
+            <ref type="include" prefix="einwde-" flexibility="dynamic" id="1.2.276.0.76.10.1034" name="eEinweisungsbrief" displayName="eEinweisungsbrief" effectiveDate="2020-06-18T00:00:00" statusCode="draft" versionLabel="v1.0" ident="einwde-"/>
+            <ref type="include" prefix="konsab-" flexibility="dynamic" id="1.2.276.0.76.10.1035" name="DermatologischesKonsil" displayName="Dermatologisches Konsil" effectiveDate="2020-02-17T14:18:24" statusCode="draft" ident="konsab-"/>
+            <ref type="include" prefix="konsab-" flexibility="dynamic" id="1.2.276.0.76.10.1036" name="KonsilPatientendaten" displayName="Dermatologisches Konsil Patientendaten" effectiveDate="2020-04-16T19:14:02" statusCode="draft" ident="konsab-"/>
+            <uses type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.90030" name="Personenname" displayName="Personenname" statusCode="active" effectiveDate="2018-04-11T00:00:00" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+            <ref type="include" prefix="evthm-" flexibility="dynamic" id="2.16.840.1.113883.2.6.60.12.10.113" name="Ueberleitungsdatencda02" displayName="Überleitungs-CDA (ambulant-stationär)" effectiveDate="2018-04-04T17:10:48" statusCode="draft" ident="evthm-"/>
+            <ref type="include" prefix="genea-" flexibility="dynamic" id="2.16.840.1.113883.2.6.60.13.10.1" name="GenetischerBefundbericht" displayName="Genetischer Befundbericht" effectiveDate="2018-08-09T17:52:59" statusCode="draft" ident="genea-"/>
+            <ref type="include" prefix="epflb-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.34.10.1" name="Pflegebericht" displayName="Patientenbezogener pflegerischer Verlegungs- oder Entlassungsbericht 2017/2018" statusCode="active" versionLabel="1.0" effectiveDate="2017-09-21T11:31:42" ident="epflb-"/>
+            <ref type="include" prefix="epflb-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.34.10.28" name="Pflegebericht_Entlassung" displayName="PflegerischerEntlassungsbericht" statusCode="cancelled" versionLabel="v1" effectiveDate="2018-04-18T14:01:46" ident="epflb-"/>
+            <ref type="include" prefix="smhh-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.44.10.8" name="CDAClinicalDocumentStructuredBody" displayName="CDA ClinicalDocument (with StructuredBody)" effectiveDate="2018-04-06T15:17:28" statusCode="draft" ident="smhh-"/>
+            <ref type="include" prefix="konsab-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.26.10.16" name="NephrologischeKonsilanfrage" displayName="Nephrologische Konsilanfrage" effectiveDate="2018-08-02T12:52:50" statusCode="draft" ident="konsab-"/>
+            <ref type="include" prefix="eImpfpass-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.35.10.63" name="CDAElektronischerImpfpass" displayName="CDA Elektronischer Impfpass" effectiveDate="2019-05-24T15:49:11" statusCode="draft" ident="eImpfpass-"/>
+            <ref type="include" prefix="ewundb-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.36.10.2" name="eWundbericht" displayName="eWundbericht" effectiveDate="2019-05-27T07:26:53" statusCode="draft" versionLabel="0.9" ident="ewundb-"/>
+        </template>
+    </template>
+</result>

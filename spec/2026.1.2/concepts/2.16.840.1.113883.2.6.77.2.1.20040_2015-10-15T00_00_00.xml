@@ -1,0 +1,30 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.2.6.77.1.1" effectiveDate="2015-10-15T00:00:00" statusCode="draft" versionLabel="1.0" lastModifiedDate="2024-02-07T11:32:47" prefix="hl7de-" shortName="demografische_angaben" iddisplay="hl7de-dataset-1" url="http://art-decor.org/decor/services/" ident="hl7de-"><!--
+ This is a view of the dataset "Demografische Angaben" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">Demografische Angaben</name>
+    <desc language="de-DE">Demografische Angaben</desc>
+    <concept id="2.16.840.1.113883.2.6.77.2.1.20040" statusCode="draft" effectiveDate="2015-10-15T00:00:00" type="item" iddisplay="hl7de-dataelement-1.20040" shortName="geschlecht">
+        <implementation shortName="geschlecht" markdown="Angabe zum Geschlecht der Person."/>
+        <name language="de-DE">Geschlecht</name>
+        <desc language="de-DE">Angabe zum Geschlecht der Person.</desc>
+        <valueDomain type="code">
+            <conceptList id="2.16.840.1.113883.2.6.77.2.1.20040.0">
+                <concept id="2.16.840.1.113883.2.6.77.2.1.20040.1">
+                    <name language="de-DE">männlich</name>
+                </concept>
+                <concept id="2.16.840.1.113883.2.6.77.2.1.20040.2">
+                    <name language="de-DE">weiblich</name>
+                </concept>
+                <concept id="2.16.840.1.113883.2.6.77.2.1.20040.3">
+                    <name language="de-DE">undifferenziert</name>
+                </concept>
+                <concept id="2.16.840.1.113883.2.6.77.2.1.20040.4" exception="true">
+                    <name language="de-DE">unbekannt</name>
+                </concept>
+            </conceptList>
+            <example type="neutral">weiblich</example>
+        </valueDomain>
+    </concept>
+</dataset>

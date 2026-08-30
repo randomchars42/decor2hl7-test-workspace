@@ -1,0 +1,161 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:ukfc="http://fhir.hl7.de/ukfc" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.4022" name="MedicationStatement" displayName="Medikation" effectiveDate="2017-06-04T00:00:00" statusCode="draft" isClosed="false" versionLabel="mpp 2017" url="http://art-decor.org/decor/services/" ident="pmp-" ukfc:dummy-1="http://fhir.hl7.de/ukfc" sdtc:dummy-2="urn:hl7-org:sdtc" xhtml:dummy-3="http://www.w3.org/1999/xhtml" pharm:dummy-4="urn:hl7-org:pharm" xml:dummy-5="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-7="urn:hl7-org:v3" xsi:dummy-8="http://www.w3.org/2001/XMLSchema-instance">
+    <desc language="de-DE">Medikations-Eintrag (Medication Statement)</desc>
+    <classification type="cdaentrylevel"/>
+    <relationship type="SPEC" template="2.16.840.1.113883.10.12.308" flexibility="2005-09-07T00:00:00"/>
+    <context id="**"/>
+    <item label="medspmp"/>
+    <example>
+        <substanceAdministration classCode="SBADM" moodCode="EVN">
+            <templateId root="1.2.276.0.76.10.4022"/>
+            <id root="1.2.3.999"/>
+            <code code="DRUG" codeSystem="2.16.840.1.113883.5.4"/>
+            <text>
+                <reference value="#med-1"/>
+            </text>
+            <statusCode code="active"/>
+            <effectiveTime xsi:type="IVL_TS">
+          <!-- Einnahmeperiode, optional -->
+            </effectiveTime>
+        <!-- Art der Anwendung -->
+            <routeCode code="20053000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Oral use" codeSystemName="EDQM"/>
+            <consumable typeCode="CSM">
+          <!-- Arzneimittel/Wirkstoff/Rezeptur -->
+            </consumable>
+            <author>
+          <!-- Autor des Medikationseintrags: verschreibender Gesundheitsdienstleister -->
+            </author>
+            <participant typeCode="AUT">
+          <!-- Selbstmedikation (Quelle: Patient) -->
+            </participant>
+            <informant typeCode="INF">
+          <!-- Informant dieser Information ist eine Kontaktperson/Angehöriger des Patienten -->
+            </informant>
+            <entryRelationship typeCode="COMP">
+          <!-- Einnahme: morgens, mittags, abends, nachts (template 1.2.276.0.76.10.4023) -->
+          <!-- oder Freitextliche Dosierinstruktionen (template 1.2.276.0.76.10.4024) -->
+            </entryRelationship>
+            <entryRelationship typeCode="SUBJ" inversionInd="true">
+          <!-- Patienteninstruktionen (template 2.16.840.1.113883.10.20.1.49) -->
+            </entryRelationship>
+            <entryRelationship typeCode="RSON">
+          <!-- Grund der Einnahme (template 2.16.840.1.113883.10.20.22.4.19) -->
+            </entryRelationship>
+        </substanceAdministration>
+    </example>
+    <element name="hl7:substanceAdministration" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.2.6.60.4.9.203">
+        <attribute name="classCode" value="SBADM" id="2.16.840.1.113883.2.6.60.4.9.204"/>
+        <attribute name="moodCode" value="EVN" id="2.16.840.1.113883.2.6.60.4.9.205"/>
+        <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.206">
+            <attribute name="root" value="1.2.276.0.76.10.4022" id="2.16.840.1.113883.2.6.60.4.9.207"/>
+        </element>
+        <element name="hl7:id" minimumMultiplicity="0" maximumMultiplicity="*" datatype="II" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.208"/>
+        <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CV" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.209">
+            <vocabulary code="DRUG" codeSystem="2.16.840.1.113883.5.4"/>
+        </element>
+        <element name="hl7:text" minimumMultiplicity="1" maximumMultiplicity="1" datatype="ED" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.210">
+            <element name="hl7:reference" minimumMultiplicity="1" maximumMultiplicity="1" datatype="TEL" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.211">
+                <attribute name="value" id="2.16.840.1.113883.2.6.60.4.9.212">
+                    <desc language="de-DE">#med-{generierteID}, z.B.: #med-1</desc>
+                </attribute>
+            </element>
+        </element>
+        <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CS" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.213">
+            <vocabulary valueSet="2.16.840.1.113883.2.6.60.4.11.25"/>
+        </element>
+        <include ref="1.2.276.0.76.10.90023" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R"/>
+        <element name="hl7:routeCode" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" datatype="CE" id="2.16.840.1.113883.2.6.60.4.9.214">
+            <desc language="de-DE">Art der Anwendung der Arznei</desc>
+            <vocabulary valueSet="2.16.840.1.113883.2.6.60.4.11.26"/>
+        </element>
+        <element name="hl7:consumable" minimumMultiplicity="1" maximumMultiplicity="1" contains="1.2.276.0.76.10.4025" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.215">
+            <desc language="de-DE">Arzneimittel/Wirkstoff/Rezeptur</desc>
+        </element>
+        <choice minimumMultiplicity="0" maximumMultiplicity="1">
+            <desc language="de-DE">Autor, entweder:<ul>
+                    <li>Selbstmedikation (Quelle: Patient)</li>
+                    <li>verschreibender Gesundheitsdienstleister</li>
+                </ul>
+            </desc>
+            <element name="hl7:author" id="2.16.840.1.113883.2.6.60.4.9.216">
+                <desc language="de-DE">Autor dieser Information ist ein Gesundheitsdienstleister</desc>
+                <example caption="Autor der Information ist ein Gesundheitsdienstleister">
+                    <author>
+                        <time value="20131221"/>
+                        <assignedAuthor>
+                            <id root="1.2.276.0.76.4.16" extension="123456701"/>
+                            <assignedPerson>
+                                <name>
+                                    <given qualifier="IN">Jan H.</given>
+                                    <family>Ausarz</family>
+                                </name>
+                            </assignedPerson>
+                        </assignedAuthor>
+                    </author>
+                </example>
+                <include ref="1.2.276.0.76.10.90025"/>
+            </element>
+            <element name="hl7:participant[@typeCode='AUT']" id="2.16.840.1.113883.2.6.60.4.9.217">
+                <desc language="de-DE">Autor dieser Information ist der Patient</desc>
+                <example caption="Autor der Information ist der Patient">
+                    <participant typeCode="AUT">
+                        <participantRole classCode="PAT"/>
+                    </participant>
+                </example>
+                <attribute name="typeCode" value="AUT" id="2.16.840.1.113883.2.6.60.4.9.218"/>
+                <element name="hl7:time" minimumMultiplicity="0" maximumMultiplicity="1" datatype="TS" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.219"/>
+                <element name="hl7:participantRole" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.220">
+                    <attribute name="classCode" value="PAT" id="2.16.840.1.113883.2.6.60.4.9.221"/>
+                </element>
+            </element>
+        </choice>
+        <element name="hl7:informant" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.4.9.222">
+            <desc language="de-DE">Informant dieser Information ist eine Kontaktperson/Angehöriger des Patienten</desc>
+            <example caption="Informant dieser Information ist eine Kontaktperson/Angehöriger des Patienten">
+                <informant>
+                    <relatedEntity classCode="CON">
+                        <relatedPerson classCode="PSN" determinerCode="INSTANCE">
+                            <name> ... </name>
+                        </relatedPerson>
+                    </relatedEntity>
+                </informant>
+            </example>
+            <attribute name="typeCode" value="INF" isOptional="true" id="2.16.840.1.113883.2.6.60.4.9.223"/>
+            <attribute name="contextControlCode" value="OP" isOptional="true" id="2.16.840.1.113883.2.6.60.4.9.224"/>
+            <element name="hl7:relatedEntity" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.225">
+                <include ref="1.2.276.0.76.10.90020"/>
+            </element>
+        </element>
+        <element name="hl7:entryRelationship" minimumMultiplicity="0" maximumMultiplicity="5" contains="1.2.276.0.76.10.4023" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.226">
+            <desc language="en-US">Subordinate Substance Administration act that records split dose information.</desc>
+            <desc language="de-DE">Einnahme: morgens, mittags, abends, zur Nacht</desc>
+            <attribute name="typeCode" value="COMP" id="2.16.840.1.113883.2.6.60.4.9.227"/>
+            <element name="hl7:sequenceNumber" minimumMultiplicity="0" maximumMultiplicity="1" datatype="INT.POS" id="2.16.840.1.113883.2.6.60.4.9.733">
+                <desc language="de-DE">Reihenfolge in der Liste der Dosierungsangaben</desc>
+            </element>
+        </element>
+        <element name="hl7:entryRelationship" minimumMultiplicity="0" maximumMultiplicity="1" contains="1.2.276.0.76.10.4024" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.228">
+            <desc language="de-DE">Freitextliche Dosierinstruktionen</desc>
+            <attribute name="typeCode" value="COMP" id="2.16.840.1.113883.2.6.60.4.9.229"/>
+            <element name="hl7:sequenceNumber" minimumMultiplicity="0" maximumMultiplicity="1" datatype="INT.POS" id="2.16.840.1.113883.2.6.60.4.9.734">
+                <desc language="de-DE">Reihenfolge in der Liste der Dosierungsangaben</desc>
+            </element>
+        </element>
+        <element name="hl7:entryRelationship" minimumMultiplicity="0" maximumMultiplicity="*" contains="1.2.276.0.76.10.4026" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.230">
+            <desc language="de-DE">Patienteninstruktionen</desc>
+            <attribute name="typeCode" value="SUBJ" id="2.16.840.1.113883.2.6.60.4.9.231"/>
+            <attribute name="inversionInd" value="true" id="2.16.840.1.113883.2.6.60.4.9.232"/>
+        </element>
+        <element name="hl7:entryRelationship" minimumMultiplicity="0" maximumMultiplicity="*" contains="1.2.276.0.76.10.4027" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.233">
+            <desc language="de-DE">Grund für die Medikation</desc>
+            <attribute name="typeCode" value="RSON" id="2.16.840.1.113883.2.6.60.4.9.234"/>
+        </element>
+        <element name="hl7:entryRelationship" minimumMultiplicity="0" maximumMultiplicity="*" contains="1.2.276.0.76.10.4028" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.235">
+            <desc language="de-DE">Bezug zu einer Verordnung</desc>
+            <attribute name="typeCode" value="REFR" id="2.16.840.1.113883.2.6.60.4.9.236"/>
+        </element>
+        <element name="hl7:entryRelationship" minimumMultiplicity="0" maximumMultiplicity="*" contains="1.2.276.0.76.10.4029" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.237">
+            <desc language="de-DE">Bezug zu einer Abgabe</desc>
+            <attribute name="typeCode" value="REFR" id="2.16.840.1.113883.2.6.60.4.9.238"/>
+        </element>
+    </element>
+</template>

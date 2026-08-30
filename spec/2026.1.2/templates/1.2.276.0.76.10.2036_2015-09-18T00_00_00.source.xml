@@ -1,0 +1,62 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.2036" name="CDAEncompassingEncounter" displayName="CDA encompassingEncounter Patientenkontakt" effectiveDate="2015-09-18T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" xml:dummy-1="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-3="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance">
+            <classification type="cdaheaderlevel"/>
+            <relationship type="ADAPT" template="1.2.276.0.76.10.2027" flexibility="2014-08-25T00:00:00"/>
+            <example>
+                <componentOf>
+                    <encompassingEncounter classCode="ENC" moodCode="EVN">
+                        <!-- Aufnahme-Identifikator -->
+                        <id root="1.2.276.0.76.3.87686" extension="657827456837"/>
+                        <effectiveTime>
+                            <!-- Aufnahmezeitpunkt (Datum und Zeit), Zeitangabe genau bis auf die Minute -->
+                            <low value="201503041234"/>
+                            <!-- Ende Patientenkontakt = Zeitpunkt der Verlegung/Entlassung -->
+                            <high value="201503041345"/>
+                        </effectiveTime>
+                        <!-- Entlassung des Patienten mit Entlassungsgrund -->
+                        <dischargeDispositionCode code="2" codeSystem="1.2.276.0.76.3.1.195.5.56" displayName="Entlassung gegen ärztlichen Rat"/>
+                    </encompassingEncounter>
+                </componentOf>
+            </example>
+            <element name="hl7:componentOf" id="2.16.840.1.113883.2.6.60.3.9.216">
+                <attribute name="typeCode" value="COMP" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.217"/>
+                <!-- Element encompassingEncounter -->
+                <element name="hl7:encompassingEncounter" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.218">
+                    <attribute name="classCode" value="ENC" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.219"/>
+                    <attribute name="moodCode" value="EVN" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.220"/>
+                    <element name="hl7:id" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.1631535">
+                        <desc language="de-DE">Identifikationselement zur Aufnahme der Aufenthalts-Indentifikation</desc>
+                    </element>
+                    <element name="hl7:effectiveTime" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="IVL_TS" id="2.16.840.1.113883.2.6.60.3.9.221">
+                        <element name="hl7:low" minimumMultiplicity="1" maximumMultiplicity="1" datatype="TS.DATE.MIN" id="2.16.840.1.113883.2.6.60.3.9.222">
+                            <desc language="de-DE">Aufnahmezeitpunkt (Datum und Zeit), Zeitangabe genau bis auf die Minute</desc>
+                        </element>
+                        <element name="hl7:high" minimumMultiplicity="0" maximumMultiplicity="1" datatype="TS.DATE.MIN" id="2.16.840.1.113883.2.6.60.3.9.223">
+                            <desc language="de-DE">Ende Patientenkontakt = Zeitpunkt der Verlegung/Entlassung</desc>
+                        </element>
+                    </element>
+                    <!-- Element responsibleParty -->
+                    <element name="hl7:dischargeDispositionCode" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" datatype="CV" id="2.16.840.1.113883.2.6.60.3.9.224">
+                        <vocabulary valueSet="1.2.276.0.76.11.56"/>
+                        <!--
+                        371828006   Patient deceased during stay (discharge status = dead) (finding)
+                        225928004	Patient self-discharge against medical advice (procedure)
+                        
+                        34596002    Patient discharge, elopement (procedure)
+                        oder
+                        258147002	Stopped by patient (situation)
+                        
+                        306689006	Discharge to home (procedure)
+                        
+                        118661008   Physician service (procedure)
+                        408730004   Procedure context (attribute)
+                        385660001   Not done (qualifier value)
+                        oder
+                        305660003   Seen by physician (finding)
+                        408729009   Finding context (attribute)
+                        385660001   Not done (qualifier value)
+                        -->
+                    </element>
+                    <assert role="error" test="not(hl7:dischargeDispositionCode and //hl7:act[hl7:templateId/@root = '1.2.276.0.76.10.4067'])">Patient entweder verlegt (encompassingEncounter.dischargeDispositionCode) oder entlassen (act Referralto template id 1.2.276.0.76.10.4067)</assert>
+                </element>
+            </element>
+        </template>

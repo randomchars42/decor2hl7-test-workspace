@@ -1,0 +1,163 @@
+<result xmlns:json="http://www.json.org">
+    <template id="2.16.840.1.113883.10.20.1.40" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.20.1.40" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="Comment" cda:dummy-4="urn:hl7-org:v3" ident="ccd1-" name="Comment" xml:dummy-2="http://www.w3.org/XML/1998/namespace" statusCode="pending" sdtc:dummy-1="urn:hl7-org:sdtc" url="http://art-decor.org/decor/services/" effectiveDate="2007-04-01T00:00:00">
+            <desc language="en-US">
+                <h2>4.3 Comments</h2>
+                <p>The template identifier for a comment is 2.16.840.1.113883.10.20.1.40.</p>
+                <p>Used to contain comments associated with any of the data within the document. Whereas ASTM CCR enumerates all comments in the CCR Footer, CCD defines the comments within the section where they occur. CDA R2 represents comments as Acts.</p>
+                <p>
+                    <b>CONF-502</b>: A CCD section <b>MAY</b> contain one or more comments, either as a clinical statement or nested under another clinical statement.<br/>
+                    <b>CONF-503</b>: A comment (templateId 2.16.840.1.113883.10.20.1.40) <b>SHALL</b> be represented with <b>Act</b>.<br/>
+                    <b>CONF-504</b>: The value for “<b>Act / @classCode</b>” in a comment <b>SHALL</b> be “ACT” 2.16.840.1.113883.5.6 ActClass <b>STATIC</b>.<br/>
+                    <b>CONF-505</b>: The value for “<b>Act / @moodCode</b>” in a comment <b>SHALL</b> be “EVN” 2.16.840.1.113883.5.1001 ActMood <b>STATIC</b>.<br/>
+                    <b>CONF-506</b>: A comment SHALL contain exactly one <b>Act / code</b>.<br/>
+                    <b>CONF-507</b>: The value for “<b>Act / code</b>” in a comment <b>SHALL</b> be 48767-8 “Annotation comment” 2.16.840.1.113883.6.1 LOINC <b>STATIC</b>. </p>
+            </desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.301" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.301" tmname="CDAAct" tmdisplayName="CDA Act" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <element name="hl7:act" id="2.16.840.1.113883.3.1937.777.4.9.1997">
+                <item label="CONF-503"/>
+                <attribute name="classCode" value="ACT" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.4.9.1998">
+                    <item label="CONF-504"/>
+                </attribute>
+                <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.4.9.1999">
+                    <item label="CONF-505"/>
+                </attribute>
+                <attribute name="negationInd" isOptional="true" datatype="bl" id="2.16.840.1.113883.3.1937.777.4.9.2000"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.3.1937.777.4.9.2001">
+                    <item original="false" label="CONF-503"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.1.40" isOptional="false" datatype="uid" id="2.16.840.1.113883.3.1937.777.4.9.2002"/>
+                </element>
+                <element name="hl7:id" minimumMultiplicity="0" maximumMultiplicity="*" datatype="II" id="2.16.840.1.113883.3.1937.777.4.9.2003">
+                    <item original="false" label="CONF-503"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="CD" isMandatory="true" id="2.16.840.1.113883.3.1937.777.4.9.2004">
+                    <item label="CONF-507"/>
+                    <vocabulary code="48767-8" codeSystem="2.16.840.1.113883.6.1" displayName="Annotation comment"/>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.3.1937.777.4.9.2005">
+                    <desc language="en-US">ccr:Description</desc>
+                    <item original="false" label="CONF-503"/>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CS" id="2.16.840.1.113883.3.1937.777.4.9.2006">
+                    <item original="false" label="CONF-503"/>
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.15933" vsid="2.16.840.1.113883.1.11.15933" vsname="ActStatus" vsdisplayName="ActStatus" vseffectiveDate="2014-03-26T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1360-20160323" linkedartefactmissing="false"/>
+                </element>
+                <element name="hl7:effectiveTime" minimumMultiplicity="0" maximumMultiplicity="1" datatype="IVL_TS" id="2.16.840.1.113883.3.1937.777.4.9.2007">
+                    <desc language="en-US">ccr:DateTime</desc>
+                    <item original="false" label="CONF-503"/>
+                </element>
+                <element name="hl7:priorityCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.4.9.2008">
+                    <item original="false" label="CONF-503"/>
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.16866" vsid="2.16.840.1.113883.1.11.16866" vsname="ActPriority" vsdisplayName="ActPriority" vseffectiveDate="2014-03-26T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1360-20160323" linkedartefactmissing="false"/>
+                </element>
+                <element name="hl7:languageCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CS" id="2.16.840.1.113883.3.1937.777.4.9.2009">
+                    <item original="false" label="CONF-503"/>
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.11526" vsid="2.16.840.1.113883.1.11.11526" vsname="HumanLanguage" vsdisplayName="HumanLanguage" vseffectiveDate="2014-03-26T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1360-20160323" linkedartefactmissing="false"/>
+                </element>
+                <element name="hl7:subject" minimumMultiplicity="0" maximumMultiplicity="1" contains="2.16.840.1.113883.3.1937.777.4.10.3" id="2.16.840.1.113883.3.1937.777.4.9.2010" tmid="2.16.840.1.113883.3.1937.777.4.10.3" tmname="CCDSubjectBody" tmdisplayName="CCD Subject (Body)" tmeffectiveDate="2007-04-01T00:00:00" tmstatusCode="pending" url="http://art-decor.org/decor/services/" ident="ccd1-" linkedartefactmissing="false">
+                    <item original="false" label="CONF-503"/>
+                </element>
+            </element>
+            <staticAssociations/>
+            <uses type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.4.10.3" name="CCDSubjectBody" displayName="CCD Subject (Body)" effectiveDate="2007-04-01T00:00:00" statusCode="pending" url="http://art-decor.org/decor/services/" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.4.10.44" name="PlanOfCareActivityAct" displayName="Plan of care activity (act)" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.4.10.45" name="PlanOfCareActivityEncounter" displayName="Plan of care activity (encounter)" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.4.10.46" name="PlanOfCareActivityObservation" displayName="Plan of care activity (observation)" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.4.10.47" name="PlanOfCareActivityProcedure" displayName="Plan of care activity (procedure)" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.4.10.48" name="PlanOfCareActivitySubstanceAdministration" displayName="Plan of care activity (substance administration)" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.4.10.49" name="PlanOfCareActivitySupply" displayName="Plan of care activity (supply)" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.4.10.50" name="ProcedureActivityAct" displayName="Procedure activity (act)" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.4.10.50" name="ProcedureActivityAct" displayName="Procedure activity (act)" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.4.10.51" name="ProcedureActivityObservation" displayName="Procedure activity (observation)" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.4.10.51" name="ProcedureActivityObservation" displayName="Procedure activity (observation)" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.4.10.52" name="ProcedureActivityProcedure" displayName="Procedure activity (procedure)" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.4.10.52" name="ProcedureActivityProcedure" displayName="Procedure activity (procedure)" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1" name="CCDClinicalDocument" displayName="CCD v1.0 Templates Root" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.1" name="AdvanceDirectivesSection" displayName="Advance directives section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.1" name="AdvanceDirectivesSection" displayName="Advance directives section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.2" name="AlertsSection" displayName="Alerts section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.2" name="AlertsSection" displayName="Alerts section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.3" name="EncountersSection" displayName="Encounters section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.3" name="EncountersSection" displayName="Encounters section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.4" name="FamilyHistorySection" displayName="Family history section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.4" name="FamilyHistorySection" displayName="Family history section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.5" name="FunctionalStatusSection" displayName="Functional status section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.5" name="FunctionalStatusSection" displayName="Functional status section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.6" name="ImmunizationSection" displayName="Immunization section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.6" name="ImmunizationSection" displayName="Immunization section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.7" name="MedicalEquipmentSection" displayName="Medical equipment section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.7" name="MedicalEquipmentSection" displayName="Medical equipment section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.8" name="MedicationSection" displayName="Medication section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.8" name="MedicationSection" displayName="Medication section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.9" name="PayersSection" displayName="Payers section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.9" name="PayersSection" displayName="Payers section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.10" name="PlanOfCareSection" displayName="Plan of care section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.10" name="PlanOfCareSection" displayName="Plan of care section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.11" name="ProblemSection" displayName="Problem section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.11" name="ProblemSection" displayName="Problem section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.12" name="ProceduresSection" displayName="Procedures section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.12" name="ProceduresSection" displayName="Procedures section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.13" name="PurposeSection" displayName="Purpose section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.13" name="PurposeSection" displayName="Purpose section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.14" name="ResultsSection" displayName="Results section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.14" name="ResultsSection" displayName="Results section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.15" name="SocialHistorySection" displayName="Social history section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.15" name="SocialHistorySection" displayName="Social history section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.16" name="VitalSignsSection" displayName="Vital signs section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.16" name="VitalSignsSection" displayName="Vital signs section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.17" name="AdvanceDirectiveObservation" displayName="Advance directive observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.17" name="AdvanceDirectiveObservation" displayName="Advance directive observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.18" name="AlertObservation" displayName="Alert observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.18" name="AlertObservation" displayName="Alert observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.19" name="AuthorizationActivity" displayName="Authorization activity" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.20" name="CoverageActivity" displayName="Coverage activity" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.20" name="CoverageActivity" displayName="Coverage activity" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.21" name="EncounterActivity" displayName="Encounter activity" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.21" name="EncounterActivity" displayName="Encounter activity" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.22" name="FamilyHistoryObservation" displayName="Family history observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.22" name="FamilyHistoryObservation" displayName="Family history observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.23" name="FamilyHistoryOrganizer" displayName="Family history organizer" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.23" name="FamilyHistoryOrganizer" displayName="Family history organizer" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.24" name="MedicationActivity" displayName="Medication activity" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.24" name="MedicationActivity" displayName="Medication activity" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.26" name="PolicyActivity" displayName="Policy activity" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.26" name="PolicyActivity" displayName="Policy activity" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.27" name="ProblemAct" displayName="Problem act" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.27" name="ProblemAct" displayName="Problem act" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.28" name="ProblemObservation" displayName="Problem observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.28" name="ProblemObservation" displayName="Problem observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.30" name="PurposeActivity" displayName="Purpose activity" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.31" name="ResultObservation" displayName="Result observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.31" name="ResultObservation" displayName="Result observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.32" name="ResultOrganizer" displayName="Result organizer" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.32" name="ResultOrganizer" displayName="Result organizer" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.33" name="SocialHistoryObservation" displayName="Social history observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.33" name="SocialHistoryObservation" displayName="Social history observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.34" name="SupplyActivity" displayName="Supply activity" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.34" name="SupplyActivity" displayName="Supply activity" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.35" name="VitalSignsOrganizer" displayName="Vital signs organizer" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.35" name="VitalSignsOrganizer" displayName="Vital signs organizer" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.37" name="AdvanceDirectiveStatusObservation" displayName="Advance directive status observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" isClosed="true" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.38" name="AgeObservation" displayName="Age observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.39" name="AlertStatusObservation" displayName="Alert status observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" isClosed="true" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.41" name="EpisodeObservation" displayName="Episode observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.41" name="EpisodeObservation" displayName="Episode observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.42" name="CauseOfDeathObservation" displayName="Cause of death observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.42" name="CauseOfDeathObservation" displayName="Cause of death observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.43" name="FulfillmentInstructions" displayName="Fulfillment instructions" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.44" name="FunctionalStatusObservation" displayName="Status of functional status observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" isClosed="true" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.46" name="MedicationSeriesNumberObservation" displayName="Medication series number observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.47" name="MedicationStatusObservation" displayName="Medication status observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" isClosed="true" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.49" name="PatientInstructions" displayName="Patient instructions" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.50" name="ProblemStatusObservation" displayName="Problem status observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" isClosed="true" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.51" name="ProblemHealthstatusObservation" displayName="Problem healthstatus observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" isClosed="true" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.54" name="ReactionObservation" displayName="Reaction observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.54" name="ReactionObservation" displayName="Reaction observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.55" name="SeverityObservation" displayName="Severity observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.56" name="SocialHistoryStatusObservation" displayName="Social history status observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" isClosed="true" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.57" name="StatusObservation" displayName="Status observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" isClosed="true" ident="ccd1-"/>
+        </template>
+    </template>
+</result>

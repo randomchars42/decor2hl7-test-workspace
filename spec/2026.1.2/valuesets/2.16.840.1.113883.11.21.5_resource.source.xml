@@ -1,0 +1,15 @@
+<valueSet xmlns:json="http://www.json.org" id="2.16.840.1.113883.11.21.5" name="Unknownorabsentmedication" displayName="Unknown or absent medication" statusCode="draft" effectiveDate="2018-03-21T00:00:00" url="http://art-decor.org/decor/services/" ident="pharmcda-">
+    <sourceCodeSystem json:array="true" id="2.16.840.1.113883.6.96" identifierName="SNOMED Clinical Terms" canonicalUri="http://snomed.info/sct" canonicalUriDSTU2="http://snomed.info/sct" canonicalUriSTU3="http://snomed.info/sct" canonicalUriR4="http://snomed.info/sct" canonicalUriR4B="http://snomed.info/sct" canonicalUriR5="http://snomed.info/sct"/>
+    <publishingAuthority json:array="true" name="HL7 International" inherited="project">
+        <addrLine json:array="true">Health Level Seven International</addrLine>
+        <addrLine json:array="true">455 E. Eisenhower PKWY STE 300 # 025</addrLine>
+        <addrLine json:array="true">Ann Arbor, MI 48108 USA</addrLine>
+        <addrLine json:array="true">USA</addrLine>
+        <addrLine json:array="true" type="phone">+1 734 677 7777 </addrLine>
+        <addrLine json:array="true" type="email">info@hl7.org</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="concept" code="182904002" codeSystem="2.16.840.1.113883.6.96" displayName="Drug treatment unknown (finding)" level="0" type="L"/>
+    <items json:array="true" is="concept" code="182849000" codeSystem="2.16.840.1.113883.6.96" displayName="No drug therapy prescribed (situation)" level="0" type="L"/>
+</valueSet>

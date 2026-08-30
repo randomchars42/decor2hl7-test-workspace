@@ -1,0 +1,40 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.3.1.195.10.25" ident="aktin-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.3.1.195.10.25" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" lastModifiedDate="2024-08-13T11:28:09" isClosed="false" displayName="MTS-Indikatoren GRÜN" ident="aktin-" name="mts-indikatoren-grun" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="draft" url="http://art-decor.org/decor/services/" effectiveDate="2024-08-13T10:50:15">
+            <desc language="de-DE" lastTranslated="2024-08-13T10:50:15">MTS-Indikatoren GRÜN</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.303" tmname="CDAObservation" tmdisplayName="CDA Observation" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <element name="hl7:observation" id="2.16.840.1.113883.2.6.60.3.9.16185">
+                <item original="false" label="mts-indikatoren-grun"/>
+                <attribute name="classCode" value="OBS" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.16186"/>
+                <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.16187"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.16188">
+                    <item original="false" label="mts-indikatoren-grun"/>
+                    <attribute name="root" value="1.2.276.0.76.3.1.195.10.25" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.16189"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.16190">
+                    <item original="false" label="mts-indikatoren-grun"/>
+                    <vocabulary code="SCTPOCC-394848005" codeSystem="1.2.276.0.76.3.1.195.5.99" displayName="MTS-Indikatoren GRÜN"/>
+                </element>
+                <element name="hl7:text" datatype="ED" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.16191">
+                    <desc language="de-DE" lastTranslated="2024-08-13T10:50:15">Lediglich reference in den Text der zugehörigen Section</desc>
+                    <item original="false" label="mts-indikatoren-grun"/>
+                    <element name="hl7:reference" datatype="TEL" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.16192">
+                        <item original="false" label="mts-indikatoren-grun"/>
+                    </element>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.16193">
+                    <item original="false" label="mts-indikatoren-grun"/>
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:value" datatype="CE" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.19196">
+                    <item original="false" label="mts-indikatoren-grun"/>
+                    <vocabulary valueSet="1.2.276.0.76.3.1.195.11.16" vsid="1.2.276.0.76.3.1.195.11.16" vsname="mts-indicators-green" vsdisplayName="MTS-Indikatoren GRÜN" vseffectiveDate="2024-07-22T16:51:10" vsstatusCode="draft" vsversionLabel="2024" linkedartefactmissing="false"/>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.19" name="manchester-triage-system" displayName="Manchester Triage System" effectiveDate="2024-08-13T14:38:45" statusCode="draft" lastModifiedDate="2024-12-02T11:19:19" ident="aktin-"/>
+        </template>
+    </template>
+</result>

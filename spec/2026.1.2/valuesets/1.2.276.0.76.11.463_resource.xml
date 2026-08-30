@@ -1,0 +1,95 @@
+<valueSets>
+    <project ident="pmp-">
+        <valueSet ref="1.2.276.0.76.11.463" name="TimingEvent" displayName="TimingEvent"/>
+    </project>
+    <repository url="http://art-decor.org/decor/services/" ident="hl7de-" referencedFrom="dguvbbr-" projecttype="local">
+        <valueSet id="1.2.276.0.76.11.463" name="TimingEvent" displayName="TimingEvent" effectiveDate="2018-09-11T21:05:52" statusCode="draft">
+            <desc language="de-DE">Original TimingEvent Value Set von HL7 mit deutschen Designationen</desc>
+            <sourceCodeSystem id="2.16.840.1.113883.3.1937.99.61.48.5.1" identifierName="medmgmt-codesystem-1" canonicalUri="urn:oid:2.16.840.1.113883.3.1937.99.61.48.5.1" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.3.1937.99.61.48.5.1" canonicalUriSTU3="urn:oid:2.16.840.1.113883.3.1937.99.61.48.5.1" canonicalUriR4="urn:oid:2.16.840.1.113883.3.1937.99.61.48.5.1" canonicalUriR4B="urn:oid:2.16.840.1.113883.3.1937.99.61.48.5.1" canonicalUriR5="urn:oid:2.16.840.1.113883.3.1937.99.61.48.5.1"/>
+            <sourceCodeSystem id="2.16.840.1.113883.5.139" identifierName="TimingEvent" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-TimingEvent" canonicalUriDSTU2="http://hl7.org/fhir/v3/TimingEvent" canonicalUriSTU3="http://hl7.org/fhir/v3/TimingEvent" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-TimingEvent" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-TimingEvent" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-TimingEvent" context="external/hl7intl/v3/v3-TimingEvent"/>
+            <publishingAuthority name="HL7 Deutschland e. V." inherited="project">
+                <addrLine>Anna-Louisa-Karsch-Str. 2</addrLine>
+                <addrLine>10178 Berlin</addrLine>
+                <addrLine type="phone">T 0700 77 77 67 67</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <concept code="AC" codeSystem="2.16.840.1.113883.5.139" displayName="AC" level="0" type="L">
+                    <designation language="de-DE" displayName="vor der Mahlzeit (vom lat. ante cibus)"/>
+                    <desc language="en-US">before meal (from lat. ante cibus)</desc>
+                </concept>
+                <concept code="ACD" codeSystem="2.16.840.1.113883.5.139" displayName="ACD" level="0" type="L">
+                    <designation language="de-DE" displayName="vor dem Mittagessen (vom lat. ante cibus diurnus)"/>
+                    <desc language="en-US">before lunch (from lat. ante cibus diurnus)</desc>
+                </concept>
+                <concept code="ACM" codeSystem="2.16.840.1.113883.5.139" displayName="ACM" level="0" type="L">
+                    <designation language="de-DE" displayName="vor dem Frühstück (vom lat. ante cibus matutinus)"/>
+                    <desc language="en-US">before breakfast (from lat. ante cibus matutinus)</desc>
+                </concept>
+                <concept code="ACV" codeSystem="2.16.840.1.113883.5.139" displayName="ACV" level="0" type="L">
+                    <designation language="de-DE" displayName="vor dem Abendessen (vom lat. ante cibus vespertinus)"/>
+                    <desc language="en-US">before dinner (from lat. ante cibus vespertinus)</desc>
+                </concept>
+                <concept code="C" codeSystem="2.16.840.1.113883.5.139" displayName="C" level="0" type="S">
+                    <designation language="de-DE" displayName="Mahlzeit (vom lat. cibus)"/>
+                    <desc language="en-US">meal (from lat. ante cibus)</desc>
+                </concept>
+                <concept code="CD" codeSystem="2.16.840.1.113883.5.139" displayName="CD" level="1" type="L">
+                    <designation language="de-DE" displayName="Mittagessen (vom llat. cibus diurnus)"/>
+                    <desc language="en-US">lunch (from lat. cibus diurnus)</desc>
+                </concept>
+                <concept code="CM" codeSystem="2.16.840.1.113883.5.139" displayName="CM" level="1" type="L">
+                    <designation language="de-DE" displayName="Frühstück (vom lat. cibus matutinus)"/>
+                    <desc language="en-US">breakfast (from lat. cibus matutinus)</desc>
+                </concept>
+                <concept code="CV" codeSystem="2.16.840.1.113883.5.139" displayName="CV" level="1" type="L">
+                    <designation language="de-DE" displayName="Abendessen (vom llat. cibus vespertinus)"/>
+                    <desc language="en-US">dinner (from lat. cibus vespertinus)</desc>
+                </concept>
+                <concept code="HS" codeSystem="2.16.840.1.113883.5.139" displayName="HS" level="0" type="L">
+                    <designation language="de-DE" displayName="Vor dem Schlafengehen (einer regulären Phase Schlaf, also kein Nickerchen)"/>
+                    <desc language="en-US">Prior to beginning a regular period of extended sleep (this would exclude naps). Note that this might occur at different times of day depending on a person's regular sleep schedule.</desc>
+                </concept>
+                <concept code="IC" codeSystem="2.16.840.1.113883.5.139" displayName="IC" level="0" type="L">
+                    <designation language="de-DE" displayName="zwischen Mahlzeiten (vom lat. inter cibus)"/>
+                    <desc language="en-US">between meals (from lat. inter cibus)</desc>
+                </concept>
+                <concept code="ICD" codeSystem="2.16.840.1.113883.5.139" displayName="ICD" level="0" type="L">
+                    <designation language="de-DE" displayName="zwischen Mittagessen und Abendessen"/>
+                    <desc language="en-US">between lunch and dinner</desc>
+                </concept>
+                <concept code="ICM" codeSystem="2.16.840.1.113883.5.139" displayName="ICM" level="0" type="L">
+                    <designation language="de-DE" displayName="zwischen Frühstück und Mittagessen"/>
+                    <desc language="en-US">between breakfast and lunch</desc>
+                </concept>
+                <concept code="ICV" codeSystem="2.16.840.1.113883.5.139" displayName="ICV" level="0" type="L">
+                    <designation language="de-DE" displayName="zwischen Abendessen und vor dem Schlafengehen"/>
+                    <desc language="en-US">between dinner and the hour of sleep</desc>
+                </concept>
+                <concept code="PC" codeSystem="2.16.840.1.113883.5.139" displayName="PC" level="0" type="L">
+                    <designation language="de-DE" displayName="nach der Mahlzeit (vom lat. post cibus)"/>
+                    <desc language="en-US">after meal (from lat. post cibus)</desc>
+                </concept>
+                <concept code="PCD" codeSystem="2.16.840.1.113883.5.139" displayName="PCD" level="0" type="L">
+                    <designation language="de-DE" displayName="nach dem Mittagessen (vom lat. post cibus diurnus)"/>
+                    <desc language="en-US">after lunch (from lat. post cibus diurnus)</desc>
+                </concept>
+                <concept code="PCM" codeSystem="2.16.840.1.113883.5.139" displayName="PCM" level="0" type="L">
+                    <designation language="de-DE" displayName="nach dem Frühstück (vom lat. post cibus matutinus)"/>
+                    <desc language="en-US">after breakfast (from lat. post cibus matutinus)</desc>
+                </concept>
+                <concept code="PCV" codeSystem="2.16.840.1.113883.5.139" displayName="PCV" level="0" type="L">
+                    <designation language="de-DE" displayName="nach dem Abendessen (vom lat. post cibus vespertinus)"/>
+                    <desc language="en-US">after dinner (from lat. post cibus vespertinus)</desc>
+                </concept>
+                <concept code="WAKE" codeSystem="2.16.840.1.113883.5.139" displayName="WAKE" level="0" type="L">
+                    <designation language="de-DE" displayName="Nach dem Aufwachen von einer regulären Phase Schlaf"/>
+                    <desc language="en-US">Upon waking up from a regular period of sleep, in order to start regular activities (this would exclude waking up from a nap or temporarily waking up during a period of sleep)</desc>
+                </concept>
+                <concept code="NOC" codeSystem="2.16.840.1.113883.3.1937.99.61.48.5.1" displayName="NOC" level="0" type="L">
+                    <designation language="de-DE" displayName="In der Nacht"/>
+                    <desc language="en-US">During a regular period of extended sleep (from lat. nocte). This would exclude naps). Note that this might occur at different times of day depending on a person's regular sleep schedule.</desc>
+                </concept>
+            </conceptList>
+        </valueSet>
+    </repository>
+</valueSets>

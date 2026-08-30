@@ -1,0 +1,36 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.3049" name="Initialacuityassessment" displayName="Ersteinschätzung" effectiveDate="2015-01-10T00:00:00" statusCode="active" isClosed="false" url="http://art-decor.org/decor/services/" ident="aktin-" xml:dummy-1="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-3="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="de-DE">Ersteinschätzung Section</desc>
+            <desc language="en-US">Initial Acuity Assessment Section</desc>
+            <classification type="cdasectionlevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.201" flexibility="2005-09-07T00:00:00"/>
+            <relationship type="ADAPT" template="1.3.6.1.4.1.19376.1.5.3.1.1.13.2.2"/>
+            <context id="**"/>
+            <example>
+                <section classCode="DOCSECT">
+                    <templateId root="1.2.276.0.76.10.3049"/>
+                    <code code="11283-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Acuity assessment"/>
+                    <title>Ersteinschätzung</title>
+                    <text>...</text>
+                    <entry>
+                        <!-- .. -->
+            </entry>
+                </section>
+            </example>
+            <element name="hl7:section" id="2.16.840.1.113883.2.6.60.3.9.186">
+                <attribute name="classCode" value="DOCSECT" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.187"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.188">
+                    <attribute name="root" value="1.2.276.0.76.10.3049" id="2.16.840.1.113883.2.6.60.3.9.189"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CD" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.190">
+                    <vocabulary code="11283-9" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:title" minimumMultiplicity="1" maximumMultiplicity="1" datatype="ST" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.191">
+                    <text>Ersteinschätzung</text>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="1" maximumMultiplicity="1" datatype="SD.TEXT" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.192"/>
+                <element name="hl7:entry" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" contains="1.2.276.0.76.10.4042" id="2.16.840.1.113883.2.6.60.3.9.193">
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.194"/>
+                    <attribute name="contextConductionInd" isOptional="true" datatype="bl" value="true" id="2.16.840.1.113883.2.6.60.3.9.195"/>
+                </element>
+            </element>
+        </template>

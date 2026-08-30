@@ -1,0 +1,148 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultLanguage="de-DE" id="1.2.276.0.76.10.4066" name="Allergyintoleranceobservation" displayName="Allergy / Intolerance Observation" effectiveDate="2015-09-18T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" xml:dummy-1="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-3="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance">
+    <desc language="de-DE"/>
+    <classification type="cdaentrylevel"/>
+    <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.303" tmname="CDAObservation" tmdisplayName="CDA Observation" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-"/>
+    <relationship type="ADAPT" template="2.16.840.1.113883.10.20.22.4.7" flexibility="2014-06-09T00:00:00" tmid="2.16.840.1.113883.10.20.22.4.7" tmname="Allergy-IntoleranceObservationV2" tmdisplayName="Allergy - Intolerance Observation (V2)" tmeffectiveDate="2014-06-09T00:00:00" tmstatusCode="draft" tmversionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-"/>
+    <relationship type="ADAPT" template="1.2.276.0.76.10.4257" flexibility="2017-06-04T00:00:00" tmid="1.2.276.0.76.10.4257" tmname="Allergyintoleranceobservation" tmdisplayName="Allergie/Unverträglichkeit Observation" tmeffectiveDate="2017-06-04T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+    <context id="**"/>
+    <example caption="Antibiotika-Allergie bekannt seit 2010">
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4066"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="4adc1020-7b14-11db-9fe1-0800200c9a66"/>
+                    <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+                    <statusCode code="completed"/>
+                    <effectiveTime>
+                        <low value="2010"/>
+                    </effectiveTime>
+                    <value xsi:type="CV" code="OINT" codeSystem="2.16.840.1.113883.5.4" displayName="adverse reaction upon exposure to an agent"/>
+                    <participant typeCode="CSM">
+                        <participantRole classCode="MANU">
+                            <playingEntity classCode="MMAT">
+                                <code code="A07AA" codeSystem="2.16.840.1.113883.6.73" displayName="Antibiotikum">
+                                    <originalText>
+                                        <reference value="#alg-1"/>
+                                    </originalText>
+                                </code>
+                            </playingEntity>
+                        </participantRole>
+                    </participant>
+                </observation>
+            </example>
+    <example caption="Keine Kontrastmittel-Allergie/Unverträglichkeit bekannt (negationInd=true)">
+                <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                    <templateId root="1.2.276.0.76.10.4066"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="4adc1020-7b14-11db-9fe1-0800200c9a66"/>
+                    <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+                    <statusCode code="completed"/>
+                    <effectiveTime nullFlavor="NA"/>
+                    <value xsi:type="CV" code="OINT" codeSystem="2.16.840.1.113883.5.4" displayName="adverse reaction upon exposure to an agent"/>
+                    <participant typeCode="CSM">
+                        <participantRole classCode="MANU">
+                            <playingEntity classCode="MMAT">
+                                <code code="V08" codeSystem="2.16.840.1.113883.6.73" displayName="Kontrastmittel">
+                                    <originalText>
+                                        <reference value="#alg-2"/>
+                                    </originalText>
+                                </code>
+                            </playingEntity>
+                        </participantRole>
+                    </participant>
+                </observation>
+            </example>
+    <example caption="Sonstige Allergie: Hühnereiweiss (Der Freitext steht im zugehörigen Section.text, hier referenziert durch #alg-4)">
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4066"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="4adc1020-7b14-11db-9fe1-0800200c9a66"/>
+                    <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+                    <statusCode code="completed"/>
+                    <effectiveTime nullFlavor="NA"/>
+                    <value xsi:type="CV" code="OINT" codeSystem="2.16.840.1.113883.5.4" displayName="adverse reaction upon exposure to an agent"/>
+                    <participant typeCode="CSM">
+                        <participantRole classCode="MANU">
+                            <playingEntity classCode="MMAT">
+                                <code nullFlavor="OTH">
+                                    <originalText>
+                                        <reference value="#alg-4"/>
+                                    </originalText>
+                                </code>
+                            </playingEntity>
+                        </participantRole>
+                    </participant>
+                </observation>
+            </example>
+    <example caption="Allergie: ja, Allergen nicht näher bezeichnet (im zugehörigen Section.text, hier referenziert durch #alg-4, kann der Text 'ja, n.n.b.' o.ä. wiedergegeben werden)">
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4066"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="55dc1020-7b14-11db-9fe1-0800200c9aab"/>
+                    <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+                    <statusCode code="completed"/>
+                    <effectiveTime nullFlavor="NA"/>
+                    <value xsi:type="CV" code="OINT" codeSystem="2.16.840.1.113883.5.4" displayName="adverse reaction upon exposure to an agent"/>
+                    <participant typeCode="CSM">
+                        <participantRole classCode="MANU">
+                            <playingEntity classCode="MMAT">
+                                <code code="ALGN" codeSystem="1.2.276.0.76.3.1.195.5.52" displayName="Allergen">
+                                    <originalText>
+                                        <reference value="#alg-4"/>
+                                    </originalText>
+                                </code>
+                            </playingEntity>
+                        </participantRole>
+                    </participant>
+                </observation>
+            </example>
+    <example caption="Keine Allergie/Unverträglichkeit bekannt (negationInd=true)">
+                <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                    <templateId root="1.2.276.0.76.10.4066"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="4adc1020-7b14-11db-9fe1-0800200c9a66"/>
+                    <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+                    <statusCode code="completed"/>
+                    <!-- N/A - author/time records when this assertion was made -->
+                    <effectiveTime nullFlavor="NA"/>
+                    <value xsi:type="CV" code="OINT" codeSystem="2.16.840.1.113883.5.4" displayName="adverse reaction upon exposure to an agent"/>
+                    <participant typeCode="CSM">
+                        <participantRole classCode="MANU">
+                            <playingEntity classCode="MMAT">
+                                <code code="ALGN" codeSystem="1.2.276.0.76.3.1.195.5.52" displayName="Allergen">
+                                    <originalText>
+                                        <reference value="#alg-4"/>
+                                    </originalText>
+                                </code>
+                            </playingEntity>
+                        </participantRole>
+                    </participant>
+                </observation>
+            </example>
+    <element name="hl7:observation" id="2.16.840.1.113883.2.6.60.3.9.601">
+                <attribute name="classCode" value="OBS" id="2.16.840.1.113883.2.6.60.3.9.602"/>
+                <attribute name="moodCode" value="EVN" id="2.16.840.1.113883.2.6.60.3.9.603"/>
+                <attribute name="negationInd" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.604"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.605">
+                    <attribute name="root" value="1.2.276.0.76.10.4066" id="2.16.840.1.113883.2.6.60.3.9.606"/>
+                </element>
+                <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="*" datatype="II" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.607"/>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CV" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.608">
+                    <vocabulary code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CS" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.609"/>
+                <element name="hl7:effectiveTime" minimumMultiplicity="1" maximumMultiplicity="1" datatype="IVL_TS" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.610">
+                    <element name="hl7:low" minimumMultiplicity="0" maximumMultiplicity="1" datatype="TS" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.611"/>
+                    <element name="hl7:high" minimumMultiplicity="0" maximumMultiplicity="1" datatype="TS" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.612"/>
+                </element>
+                <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CV" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.613">
+                    <vocabulary code="OINT" codeSystem="2.16.840.1.113883.5.4"/>
+                </element>
+                <element name="hl7:participant" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.614">
+                    <attribute name="typeCode" value="CSM" id="2.16.840.1.113883.2.6.60.3.9.615"/>
+                    <element name="hl7:participantRole" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.616">
+                        <attribute name="classCode" value="MANU" id="2.16.840.1.113883.2.6.60.3.9.617"/>
+                        <element name="hl7:playingEntity" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.618">
+                            <attribute name="classCode" value="MMAT" id="2.16.840.1.113883.2.6.60.3.9.619"/>
+                            <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CE" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.620">
+                                <vocabulary valueSet="1.2.276.0.76.11.52"/>
+                            </element>
+                        </element>
+                    </element>
+                </element>
+            </element>
+</template>

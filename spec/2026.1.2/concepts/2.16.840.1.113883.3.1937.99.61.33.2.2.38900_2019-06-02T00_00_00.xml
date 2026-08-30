@@ -1,0 +1,90 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.99.61.33.1.2" effectiveDate="2019-06-02T00:00:00" statusCode="final" versionLabel="V2020" lastModifiedDate="2026-04-30T19:04:13" prefix="traumareg-" shortName="trauma_register_dgu" iddisplay="traumareg-dataset-2" url="http://art-decor.org/decor/services/" ident="traumareg-"><!--
+ This is a view of the dataset "TraumaRegister DGU" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE" lastTranslated="2023-03-01T09:28:11">TraumaRegister DGU</name>
+    <desc language="de-DE" lastTranslated="2023-03-01T09:28:11">Traumaregister</desc>
+    <concept id="2.16.840.1.113883.3.1937.99.61.33.2.2.38900" effectiveDate="2019-06-02T00:00:00" statusCode="final" lastModifiedDate="2026-04-30T19:04:13" type="item" iddisplay="traumareg-dataelement-2.38900">
+        <implementation markdown="Unfallart - Stammdaten"/>
+        <name language="de-DE" lastTranslated="2023-03-20T10:54:22">Unfallart</name>
+        <desc language="de-DE" lastTranslated="2023-03-20T10:54:22">Unfallart - Stammdaten</desc>
+        <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.99.61.33.2.1.38900" flexibility="2015-12-16T00:00:00" prefix="traumareg-" datasetId="2.16.840.1.113883.3.1937.99.61.33.1.1" datasetEffectiveDate="2015-12-16T00:00:00" datasetStatusCode="final" datasetVersionLabel="V2015.1" iType="item" iEffectiveDate="2015-12-16T00:00:00" iStatusCode="final" refdisplay="traumareg-dataelement2015-38900">
+            <name language="de-DE">Unfallart</name>
+        </relationship>
+        <valueDomain type="code">
+            <conceptList id="2.16.840.1.113883.3.1937.99.61.33.2.2.38900.8">
+                <concept id="2.16.840.1.113883.3.1937.99.61.33.2.2.38900.20190602000000.10" exception="false" type="A" level="0">
+                    <name language="de-DE" lastTranslated="2023-03-20T10:54:22">Verkehr</name>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.99.61.33.2.2.38900.1" exception="false" type="L" level="1">
+                    <name language="de-DE" lastTranslated="2023-03-20T10:54:22">PKW-Insasse</name>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.99.61.33.2.2.38900.9" exception="false" type="L" level="1">
+                    <name language="de-DE" lastTranslated="2023-03-20T10:54:22">LKW-Insasse</name>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.99.61.33.2.2.38900.10" exception="false" type="L" level="1">
+                    <name language="de-DE" lastTranslated="2023-03-20T10:54:22">Bus-Insasse</name>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.99.61.33.2.2.38900.2" exception="false" type="L" level="1">
+                    <name language="de-DE" lastTranslated="2023-03-20T10:54:22">Motorradfahrer/-sozius</name>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.99.61.33.2.2.38900.3" exception="false" type="L" level="1">
+                    <name language="de-DE" lastTranslated="2023-03-20T10:54:22">Fahrrad</name>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.99.61.33.2.2.38900.11" exception="false" type="L" level="1">
+                    <name language="de-DE" lastTranslated="2023-03-20T10:54:22">unterstütztes Fahrrad</name>
+                    <desc language="de-DE" lastTranslated="2023-03-20T10:54:22">
+                        <p>E-Bike/Pedelec</p>
+                    </desc>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.99.61.33.2.2.38900.12" exception="false" type="L" level="1">
+                    <name language="de-DE" lastTranslated="2023-03-20T10:54:22">E-Scooter</name>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.99.61.33.2.2.38900.4" exception="false" type="L" level="1">
+                    <name language="de-DE" lastTranslated="2023-03-20T10:54:22">Fußgänger angefahren</name>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.99.61.33.2.2.38900.13" exception="true" type="L" level="1">
+                    <name language="de-DE" lastTranslated="2023-03-20T10:54:22">Sonstiger Verkehrsunfall</name>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.99.61.33.2.2.38900.20190602000000.11" exception="false" type="A" level="0">
+                    <name language="de-DE" lastTranslated="2023-03-20T10:54:22">Sturz</name>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.99.61.33.2.2.38900.5" exception="false" type="L" level="1">
+                    <name language="de-DE" lastTranslated="2023-03-20T10:54:22">Sturz mit Fallhöhe &gt;= 3m</name>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.99.61.33.2.2.38900.6" exception="false" type="L" level="1">
+                    <name language="de-DE" lastTranslated="2023-03-20T10:54:22">Sturz mit Fallhöhe &lt; 3m</name>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.99.61.33.2.2.38900.14" exception="false" type="L" level="1">
+                    <name language="de-DE" lastTranslated="2023-03-20T10:54:22">ebenerdiger Sturz</name>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.99.61.33.2.2.38900.20190602000000.12" exception="false" type="A" level="0">
+                    <name language="de-DE" lastTranslated="2023-03-20T10:54:22">Sonstige</name>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.99.61.33.2.2.38900.26" exception="false" type="L" level="1">
+                    <name language="de-DE" lastTranslated="2023-03-20T10:54:22">Schlagverletzung</name>
+                    <desc language="de-DE" lastTranslated="2023-03-20T10:54:22">Gegenstand, Ast, ...</desc>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.99.61.33.2.2.38900.25" exception="false" type="L" level="1">
+                    <name language="de-DE" lastTranslated="2023-03-20T10:54:22">Schussverletzung</name>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.99.61.33.2.2.38900.24" exception="false" type="L" level="1">
+                    <name language="de-DE" lastTranslated="2023-03-20T10:54:22">Stichverletzung</name>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.99.61.33.2.2.38900.23" exception="false" type="L" level="1">
+                    <name language="de-DE" lastTranslated="2023-03-20T10:54:22">Explosion/Verpuffung</name>
+                    <desc language="de-DE" lastTranslated="2023-03-20T10:56:44">
+                        <p>Thermomechanische Kombinationsverletzung</p>
+                    </desc>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.99.61.33.2.2.38900.22" exception="false" type="L" level="1">
+                    <name language="de-DE" lastTranslated="2023-03-20T10:54:22">Verschüttung</name>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.99.61.33.2.2.38900.7" exception="true" type="L" level="1">
+                    <name language="de-DE" lastTranslated="2023-03-20T10:54:22">andere Unfallarten</name>
+                </concept>
+            </conceptList>
+        </valueDomain>
+    </concept>
+</dataset>

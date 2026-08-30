@@ -1,0 +1,155 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:local="http://art-decor.org/local" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.20.22.4.17" name="MedicationSupplyOrderV2" displayName="Medication Supply Order (V2)" effectiveDate="2014-06-09T00:00:00" statusCode="draft" versionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-" sdtc:dummy-1="urn:hl7-org:sdtc" local:dummy-2="http://art-decor.org/local" xml:dummy-3="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-5="urn:hl7-org:v3" xsi:dummy-6="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">This template records the intent to supply a patient with medications.</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.309" flexibility="2005-09-07T00:00:00"/>
+            <relationship type="VERSION" template="2.16.840.1.113883.10.20.22.4.17" flexibility="2013-01-31T00:00:00"/>
+            <context id="**"/>
+            <element name="cda:supply" id="2.16.840.1.113883.3.1937.99.3.9.3690">
+                <attribute name="classCode" value="SPLY" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.3691">
+                    <desc language="en-US">SHALL contain exactly one [1..1] @classCode="SPLY" (CodeSystem: HL7ActClass urn:oid:2.16.840.1.113883.5.6 STATIC) (CONF:1098-7427).</desc>
+                    <item label="CONF:1098-7427"/>
+                </attribute>
+                <attribute name="moodCode" value="INT" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.3692">
+                    <desc language="en-US">SHALL contain exactly one [1..1] @moodCode="INT" (CodeSystem: ActMood urn:oid:2.16.840.1.113883.5.1001 STATIC) (CONF:1098-7428).</desc>
+                    <item label="CONF:1098-7428"/>
+                </attribute>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                    <desc language="en-US">C-CDA R1.1 templateId root without an extension</desc>
+                    <item label="CONF:1198-32936"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.22.4.17" datatype="uid"/>
+                </element>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.3693">
+                    <desc language="en-US">SHALL contain exactly one [1..1] templateId (CONF:1098-7429) such that it</desc>
+                    <item label="CONF:1098-7429"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.22.4.17" datatype="uid" id="2.16.840.1.113883.3.1937.99.3.9.3694">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.22.4.17" (CONF:1098-10507).</desc>
+                        <item label="CONF:1098-10507"/>
+                    </attribute>
+                    <attribute name="extension" value="2014-06-09" datatype="st" id="2.16.840.1.113883.3.1937.99.3.9.3695">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @extension="2014-06-09" (CONF:1098-32578).</desc>
+                        <item label="CONF:1098-32578"/>
+                    </attribute>
+                </element>
+                <element name="cda:id" datatype="II" minimumMultiplicity="1" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.3696">
+                    <desc language="en-US">SHALL contain at least one [1..*] id (CONF:1098-7430).</desc>
+                    <item label="CONF:1098-7430"/>
+                </element>
+                <element name="cda:statusCode" datatype="CS" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.3697">
+                    <desc language="en-US">SHALL contain exactly one [1..1] statusCode (CONF:1098-7432).</desc>
+                    <item label="CONF:1098-7432">
+                        <desc language="en-US">
+                    <p style="margin: 0px; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Helvetica; min-height: 14px;">
+                        <span style="font-stretch: normal; font-size: 8px; line-height: normal;">
+                            <b>SHALL </b>
+                        </span>
+                        <span style="font-size: 10px;">contain exactly one [1..1] </span>
+                        <span style="font-size: 10px; font-stretch: normal; line-height: normal; font-family: &#34;Courier New&#34;;">
+                            <b>statusCode </b>
+                        </span>
+                        <span style="font-size: 10px;">(CONF:1098-7432).</span>
+                        <span style="font-size: 10px;"> </span>
+                    </p>
+                    <div>
+                        <br clear="none"/>
+                    </div>
+                </desc>
+                    </item>
+                    <attribute name="code" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.5860">
+                        <desc language="en-US">
+                    <span style="text-indent: -24px;">This statusCode </span>
+                    <span class="keyword" style="text-indent: -24px;">
+                        <span style="font-size: 8pt;">SHALL</span>
+                    </span>
+                    <span style="text-indent: -24px;"> contain exactly one [1..1] </span>
+                    <span class="XMLnameBold" style="text-indent: -24px;">@code</span>
+                    <span style="text-indent: -24px;">, which </span>
+                    <span class="keyword" style="text-indent: -24px;">
+                        <span style="font-size: 8pt;">SHALL</span>
+                    </span>
+                    <span style="text-indent: -24px;"> be selected from ValueSet </span>
+                    <a class="warning-localfile" href="file:///C:/Users/lisa.nelson/Documents/05%20P20170701%20SEQUOIA/01%20C-CDA%20Errata%20Processing%20R2-1/Consolidated%20CDA%20Templates%20for%20Clinical%20Notes%20(US%20Realm)%20DSTU%20R2.1%20(2).docx#ActStatus" style="text-indent: -24px;">
+                        <span class="HyperlinkCourierBold">ActStatus</span>
+                    </a>
+                    <span class="XMLname" style="text-indent: -24px;"> urn:oid:2.16.840.1.113883.1.11.15933</span>
+                    <span class="keyword" style="text-indent: -24px;">
+                        <span style="font-size: 8pt;"> DYNAMIC</span>
+                    </span>
+                    <a name="C_1098-32362" style="text-indent: -24px;">
+                        <span style="text-indent: -24px;"> (CONF:1098-32362).</span>
+                        <br clear="none"/>
+                    </a>
+                </desc>
+                        <item label="CONF:1098-32362">
+                            <desc language="en-US">
+                        <p style="margin: 0px; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Helvetica; min-height: 14px;">
+                            <span style="font-size: 10px;">a. This statusCode </span>
+                            <span style="font-stretch: normal; font-size: 8px; line-height: normal;">
+                                <b>SHALL </b>
+                            </span>
+                            <span style="font-size: 10px;">contain exactly one [1..1] </span>
+                            <span style="font-size: 10px; font-stretch: normal; line-height: normal; font-family: &#34;Courier New&#34;;">
+                                <b>@code</b>
+                            </span>
+                            <span style="font-size: 10px;">, which </span>
+                            <span style="font-stretch: normal; font-size: 8px; line-height: normal;">
+                                <b>SHALL </b>
+                            </span>
+                            <span style="font-size: 10px;">be selected from ValueSet </span>
+                            <span style="font-size: 10px; font-stretch: normal; line-height: normal; font-family: &#34;Courier New&#34;;">
+                                <b>ActStatus </b>urn:oid:2.16.840.1.113883.1.11.15933 </span>
+                            <span style="font-stretch: normal; font-size: 8px; line-height: normal;">
+                                <b>DYNAMIC </b>
+                            </span>
+                            <span style="font-size: 10px;">(CONF:1098-32362).</span>
+                            <span style="font-size: 10px;"> </span>
+                            <br clear="none"/>
+                        </p>
+                        <div>
+                            <br clear="none"/>
+                        </div>
+                    </desc>
+                        </item>
+                        <vocabulary valueSet="2.16.840.1.113883.1.11.15933" flexibility="dynamic"/>
+                    </attribute>
+                </element>
+                <element name="cda:effectiveTime" datatype="IVL_TS" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.3698">
+                    <desc language="en-US">SHOULD contain zero or one [0..1] effectiveTime (CONF:1098-15143) such that it</desc>
+                    <item label="CONF:1098-15143"/>
+                    <element name="cda:high" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.3699">
+                        <desc language="en-US">SHALL contain exactly one [1..1] high (CONF:1098-15144).</desc>
+                        <item label="CONF:1098-15144"/>
+                    </element>
+                </element>
+                <element name="cda:repeatNumber" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.3700">
+                    <desc language="en-US">SHOULD contain zero or one [0..1] repeatNumber (CONF:1098-7434).<p>In "INT" (intent) mood, the repeatNumber defines the number of allowed administrations. For example, a repeatNumber of "3" means that the substance can be administered up to 3 times. In "EVN" (event) mood, the repeatNumber is the number of occurrences. For example, a repeatNumber of "3" in
+                            a substance administration event means that the current administration is the 3rd in a series.</p>
+            </desc>
+                    <item label="CONF:1098-7434"/>
+                </element>
+                <element name="cda:quantity" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.3701">
+                    <desc language="en-US">SHOULD contain zero or one [0..1] quantity (CONF:1098-7436).</desc>
+                    <item label="CONF:1098-7436"/>
+                </element>
+                <element name="cda:product" contains="2.16.840.1.113883.10.20.22.4.23" flexibility="2014-06-09T00:00:00" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.3702">
+                    <item label="CONF:1098-7439"/>
+                </element>
+                <element name="cda:product" contains="2.16.840.1.113883.10.20.22.4.54" flexibility="2014-06-09T00:00:00" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.3703">
+                    <item label="CONF:1098-9334"/>
+                </element>
+                <element name="cda:author" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.3704">
+                    <desc language="en-US">MAY contain zero or one [0..1] author (CONF:1098-7438).</desc>
+                    <item label="CONF:1098-7438"/>
+                </element>
+                <element name="cda:entryRelationship" contains="2.16.840.1.113883.10.20.22.4.20" flexibility="2014-06-09T00:00:00" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.3705">
+                    <item label="CONF:1098-7442"/>
+                    <attribute name="typeCode" value="SUBJ" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.3706">
+                        <desc language="en-US">The entryRelationship, if present, SHALL contain exactly one [1..1] @typeCode="SUBJ" (CodeSystem: HL7ActRelationshipType urn:oid:2.16.840.1.113883.5.1002 STATIC) (CONF:1098-7444).</desc>
+                        <item label="CONF:1098-7444"/>
+                    </attribute>
+                    <attribute name="inversionInd" value="true" datatype="bl" id="2.16.840.1.113883.3.1937.99.3.9.3707">
+                        <desc language="en-US">The entryRelationship, if present, SHALL contain exactly one [1..1] @inversionInd="true" True (CONF:1098-7445).</desc>
+                        <item label="CONF:1098-7445"/>
+                    </attribute>
+                </element>
+            </element>
+        </template>

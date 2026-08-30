@@ -1,0 +1,92 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultLanguage="de-DE" id="1.2.276.0.76.10.4073" name="ProblemobservationMDRO" displayName="Problem Observation (Multidrug-resistant organism)" effectiveDate="2017-03-01T00:00:00" statusCode="draft" url="http://art-decor.org/decor/services/" ident="aktin-" xml:dummy-1="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-3="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance">
+    <desc language="en-US"/>
+    <desc language="de-DE">Besiedlung mit multiresistenten Keimen</desc>
+    <classification type="cdaentrylevel"/>
+    <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.303" tmname="CDAObservation" tmdisplayName="CDA Observation" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-"/>
+    <relationship type="ADAPT" template="2.16.840.1.113883.10.20.22.4.4" tmid="2.16.840.1.113883.10.20.22.4.4" tmname="ProblemObservationV3" tmdisplayName="Problem Observation (V3)" tmeffectiveDate="2015-08-01T00:00:00" tmstatusCode="draft" tmversionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-"/>
+    <relationship type="VERSION" template="1.2.276.0.76.10.4073" flexibility="2016-08-02T00:00:00" tmid="1.2.276.0.76.10.4073" tmname="ProblemobservationMDRO" tmdisplayName="Problem Observation (Multidrug-resistant organism)" tmeffectiveDate="2016-08-02T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+    <context id="**"/>
+    <example caption="MRSA">
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4073"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="3564b7c0-2111-43f2-a784-9a5fdfaa67f2"/>
+                    <code code="COND" codeSystem="2.16.840.1.113883.5.4" displayName="Condition"/>
+                    <text>
+                        <reference value="#mdro-1"/>
+                    </text>
+                    <statusCode code="completed"/>
+                    <effectiveTime>
+                        <low value="20150304"/>
+                    </effectiveTime>
+                    <value xsi:type="CD" code="MRSA" codeSystem="1.2.276.0.76.5.441" displayName="MRSA"/>
+                </observation>
+            </example>
+    <example caption="Keine multiresistenten Keime">
+                <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                    <templateId root="1.2.276.0.76.10.4073"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="4464b7c0-2111-43f2-a784-9a5fdfaa67f7"/>
+                    <code code="COND" codeSystem="2.16.840.1.113883.5.4" displayName="Condition"/>
+                    <text>
+                        <reference value="#mdro-1"/>
+                    </text>
+                    <statusCode code="completed"/>
+                    <effectiveTime>
+                        <low value="20150304"/>
+                    </effectiveTime>
+                    <value xsi:type="CD" code="AMRO" codeSystem="1.2.276.0.76.5.441" displayName="Multiresistenter Keim"/>
+                </observation>
+            </example>
+    <element name="hl7:observation" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.312">
+                <attribute name="classCode" value="OBS" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.313"/>
+                <attribute name="moodCode" value="EVN" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.314"/>
+                <attribute name="negationInd" datatype="cs" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.15592">
+                    <desc language="de-DE">Wenn angegeben soll, dass der in observation.value angegebene Keim NICHT vorliegt, wird observation.@negationInd="true" gesetzt.</desc>
+                </attribute>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.315">
+                    <attribute name="root" value="1.2.276.0.76.10.4073" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.316"/>
+                </element>
+                <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="*" isMandatory="true" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.317"/>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CE" id="2.16.840.1.113883.2.6.60.3.9.318">
+                    <vocabulary code="COND" codeSystem="2.16.840.1.113883.5.4"/>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.2.6.60.3.9.319">
+                    <desc language="de-DE">Textform, enthält hier lediglich reference in den Text der Section</desc>
+                    <element name="hl7:reference" minimumMultiplicity="1" maximumMultiplicity="1" datatype="URL" id="2.16.840.1.113883.2.6.60.3.9.320"/>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CS" id="2.16.840.1.113883.2.6.60.3.9.321">
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:effectiveTime" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" datatype="IVL_TS" id="2.16.840.1.113883.2.6.60.3.9.322">
+                    <desc language="de-DE">effectiveTime wird auch als "biologisch relevante Zeit" bezeichnet und ist der Zeitpunkt oder Zeitraum, für den die Beobachtung für den Patienten gilt.</desc>
+                    <element name="hl7:low" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="TS" id="2.16.840.1.113883.2.6.60.3.9.323"/>
+                    <element name="hl7:high" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" datatype="TS" id="2.16.840.1.113883.2.6.60.3.9.324"/>
+                </element>
+                <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="CD" id="2.16.840.1.113883.2.6.60.3.9.325">
+                    <desc language="de-DE">Multiresistenter Keim Ja/Nein/Verdacht; wenn angegeben soll, dass der in observation.value angegebene Keim NICHT vorliegt, wird observation.@negationInd="true" gesetzt. Bei "Verdacht" ist der Befundstatus in observation.value.qualifier entsprechend zu setzen.</desc>
+                    <example caption="MRSA">
+                        <value xsi:type="CD" code="MRSA" codeSystem="1.2.276.0.76.5.441" displayName="MRSA"/>
+                    </example>
+                    <example caption="Verdacht auf 4MRGN">
+                        <value xsi:type="CD" code="MRSA" codeSystem="1.2.276.0.76.5.441" displayName="MRSA">
+                            <qualifier>
+                                <name code="FSTAT" codeSystem="1.2.276.0.76.3.1.195.5.72" displayName="Befundstatus"/>
+                                <value code="SUSP" codeSystem="1.2.276.0.76.3.1.195.5.73" displayName="Verdacht"/>
+                            </qualifier>
+                        </value>
+                    </example>
+                    <vocabulary valueSet="1.2.276.0.76.11.60"/>
+                    <element name="hl7:qualifier[hl7:name/@code='FSTAT']" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CR" id="2.16.840.1.113883.2.6.60.3.9.15589">
+                        <desc language="de-DE">Optionale Angabe des Befundstatus (finding status) des Problems.</desc>
+                        <element name="hl7:name" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" datatype="CV" id="2.16.840.1.113883.2.6.60.3.9.15590">
+                            <vocabulary code="FSTAT" codeSystem="1.2.276.0.76.3.1.195.5.72"/>
+                        </element>
+                        <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" datatype="CV" id="2.16.840.1.113883.2.6.60.3.9.15591">
+                            <vocabulary valueSet="1.2.276.0.76.11.73"/>
+                        </element>
+                    </element>
+                </element>
+                <let name="seq" value="//hl7:observation [hl7:templateId/@root = '1.2.276.0.76.10.4073']/hl7:value"/>
+                <assert role="error" test="empty($seq[count(index-of($seq/@code|$seq/@nullFlavor,./@code|./@nullFlavor)) &gt; 1])">Nur eine Angabe pro Erreger bei multiresistenten Keimen</assert>
+                <assert role="error" test="not(@negationInd='true' and hl7:value/hl7:qualifier/hl7:name/@code='FSTAT')">Befundstatus Verdacht/Gesichert kann nicht gleichzeitig mit Negation (negationInd=true) verwendet werden</assert>
+            </element>
+</template>

@@ -1,0 +1,319 @@
+<result xmlns:json="http://www.json.org">
+    <template id="2.16.840.1.113883.10.20.22.4.14" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:local="http://art-decor.org/local" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.20.22.4.14" hl7:dummy-default="urn:hl7-org:v3" local:dummy-2="http://art-decor.org/local" displayName="Procedure Activity Procedure (V2)" cda:dummy-5="urn:hl7-org:v3" xml:dummy-3="http://www.w3.org/XML/1998/namespace" url="http://art-decor.org/decor/services/" xsi:dummy-6="http://www.w3.org/2001/XMLSchema-instance" versionLabel="2.1" isClosed="false" ident="ccda-" name="ProcedureActivityProcedureV2" statusCode="draft" sdtc:dummy-1="urn:hl7-org:sdtc" effectiveDate="2014-06-09T00:00:00">
+            <desc language="en-US">The common notion of "procedure" is broader than that specified by the HL7 Version 3 Reference Information Model (RIM). Therefore procedure templates can be represented with various RIM classes: act (e.g., dressing change), observation (e.g., EEG), procedure (e.g., splenectomy). This template represents procedures whose immediate and primary outcome
+                (post-condition) is the alteration of the physical condition of the patient. Examples of these procedures are an appendectomy, hip replacement, and a creation of a gastrostomy. This template can be used with a contained Product Instance template to represent a device in or on a patient. In this case, targetSiteCode is used to record the location of the device in or on the patient's
+                body. Equipment supplied to the patient (e.g., pumps, inhalers, wheelchairs) is represented by the Non-Medicinal Supply Activity (V2) template.</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.306" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.306" tmname="CDAProcedure" tmdisplayName="CDA Procedure" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <relationship type="VERSION" template="2.16.840.1.113883.10.20.22.4.14" flexibility="2013-01-31T00:00:00" tmid="2.16.840.1.113883.10.20.22.4.14" tmname="ProcedureActivityProcedure" tmdisplayName="Procedure Activity Procedure" tmeffectiveDate="2013-01-31T00:00:00" tmstatusCode="draft" tmversionLabel="1.1" url="http://art-decor.org/decor/services/" ident="ccda-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <element name="cda:procedure" id="2.16.840.1.113883.3.1937.99.3.9.3022">
+                <item original="false" label="ProcedureActivityProcedureV2"/>
+                <attribute name="classCode" value="PROC" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.3023">
+                    <desc language="en-US">SHALL contain exactly one [1..1] @classCode="PROC" Procedure (CodeSystem: HL7ActClass urn:oid:2.16.840.1.113883.5.6 STATIC) (CONF:1098-7652).</desc>
+                    <item label="CONF:1098-7652"/>
+                </attribute>
+                <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.3024">
+                    <desc language="en-US">SHALL contain exactly one [1..1] @moodCode="EVN" Event (CodeSystem: ActMood urn:oid:2.16.840.1.113883.5.1001 STATIC) (CONF:1098-7653).</desc>
+                    <item label="CONF:1098-7653"/>
+                </attribute>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                    <desc language="en-US">C-CDA R1.1 templateId root without an extension</desc>
+                    <item label="CONF:1198-32936"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.22.4.14" isOptional="false" datatype="uid"/>
+                </element>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.3025">
+                    <desc language="en-US">SHALL contain exactly one [1..1] templateId (CONF:1098-7654) such that it</desc>
+                    <item label="CONF:1098-7654"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.22.4.14" isOptional="false" datatype="uid" id="2.16.840.1.113883.3.1937.99.3.9.3026">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.22.4.14" (CONF:1098-10521).</desc>
+                        <item label="CONF:1098-10521"/>
+                    </attribute>
+                    <attribute name="extension" value="2014-06-09" isOptional="false" datatype="st" id="2.16.840.1.113883.3.1937.99.3.9.3027">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @extension="2014-06-09" (CONF:1098-32506).</desc>
+                        <item label="CONF:1098-32506"/>
+                    </attribute>
+                </element>
+                <element name="cda:id" datatype="II" minimumMultiplicity="1" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.3028">
+                    <desc language="en-US">SHALL contain at least one [1..*] id (CONF:1098-7655).</desc>
+                    <item label="CONF:1098-7655"/>
+                </element>
+                <element name="cda:code" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.3029">
+                    <desc language="en-US">SHALL contain exactly one [1..1] code (CONF:1098-7656).</desc>
+                    <item label="CONF:1098-7656"/>
+                    <element name="cda:originalText" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.3030">
+                        <desc language="en-US">This code SHOULD contain zero or one [0..1] originalText (CONF:1098-19203).</desc>
+                        <item label="CONF:1098-19203"/>
+                        <element name="cda:reference" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.3031">
+                            <desc language="en-US">The originalText, if present, SHOULD contain zero or one [0..1] reference (CONF:1098-19204).</desc>
+                            <item label="CONF:1098-19204"/>
+                            <attribute name="value" isOptional="true" id="2.16.840.1.113883.3.1937.99.3.9.3032">
+                                <desc language="en-US">The reference, if present, SHOULD contain zero or one [0..1] @value (CONF:1098-19205).</desc>
+                                <item label="CONF:1098-19205"/>
+                            </attribute>
+                            <assert role="error" test="not(@value) or starts-with(@value, '#')">This reference/@value *SHALL* begin with a '#' and *SHALL* point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1).</assert>
+                        </element>
+                    </element>
+                </element>
+                <element name="cda:statusCode" datatype="CS" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.3033">
+                    <desc language="en-US">SHALL contain exactly one [1..1] statusCode (CONF:1098-7661).</desc>
+                    <item label="CONF:1098-7661"/>
+                </element>
+                <element name="cda:effectiveTime" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.3034">
+                    <desc language="en-US">SHOULD contain zero or one [0..1] effectiveTime (CONF:1098-7662).</desc>
+                    <item label="CONF:1098-7662"/>
+                </element>
+                <element name="cda:priorityCode" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.3035">
+                    <desc language="en-US">MAY contain zero or one [0..1] priorityCode, which SHALL be selected from ValueSet Act Priority urn:oid:2.16.840.1.113883.1.11.16866 DYNAMIC (CONF:1098-7668).</desc>
+                    <item label="CONF:1098-7668"/>
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.16866" vsid="2.16.840.1.113883.1.11.16866" vsname="ActPriority" vsdisplayName="ActPriority" vseffectiveDate="2016-06-23T00:00:00" vsstatusCode="final" linkedartefactmissing="false"/>
+                </element>
+                <element name="cda:methodCode" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.3036">
+                    <desc language="en-US">MAY contain zero or one [0..1] methodCode (CONF:1098-7670).</desc>
+                    <item label="CONF:1098-7670"/>
+                    <constraint language="en-US">methodCode *SHALL NOT* conflict with the method inherent in Procedure / code.</constraint>
+                </element>
+                <element name="cda:targetSiteCode" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.3037">
+                    <desc language="en-US">
+                        <p>In the case of an implanted medical device, targetSiteCode is used to record the location of the device, in or on the patient's body.<br clear="none"/>
+                            <br clear="none"/>
+                            <span style="font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px;">SHOULD contain zero or more [0..*] targetSiteCode, </span>
+                            <span style="font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px;">which SHALL be selected from ValueSe</span>
+                            <span style="font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px;">t Body Site urn:oid:2.16.840.1.113883.3.88.12.3221.8.9 DYNAMIC (CONF:1098-7683)<br clear="none"/>
+                            </span>
+                            <br clear="none"/>
+                            <br clear="none" style="font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px;"/>
+                        </p>
+                    </desc>
+                    <item label="CONF:1098-7683"/>
+                    <vocabulary valueSet="2.16.840.1.113883.3.88.12.3221.8.9" vsid="2.16.840.1.113883.3.88.12.3221.8.9" vsname="BodySite" vsdisplayName="Body Site" vseffectiveDate="2013-01-31T00:00:00" vsstatusCode="final" linkedartefactmissing="false"/>
+                </element>
+                <element name="cda:specimen" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.3039">
+                    <desc language="en-US">MAY contain zero or more [0..*] specimen (CONF:1098-7697).</desc>
+                    <item label="CONF:1098-7697"/>
+                    <constraint language="en-US">This specimen is for representing specimens obtained from a procedure.</constraint>
+                    <element name="cda:specimenRole" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.3040">
+                        <desc language="en-US">The specimen, if present, SHALL contain exactly one [1..1] specimenRole (CONF:1098-7704).</desc>
+                        <item label="CONF:1098-7704"/>
+                        <element name="cda:id" datatype="II" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.3041">
+                            <desc language="en-US">This specimenRole SHOULD contain zero or more [0..*] id (CONF:1098-7716).</desc>
+                            <item label="CONF:1098-7716"/>
+                            <constraint language="en-US">If you want to indicate that the Procedure and the Results are referring to the same specimen, the Procedure/specimen/specimenRole/id *SHOULD* be set to equal an Organizer/specimen/ specimenRole/id</constraint>
+                        </element>
+                    </element>
+                </element>
+                <element name="cda:performer" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.3042">
+                    <desc language="en-US">SHOULD contain zero or more [0..*] performer (CONF:1098-7718) such that it</desc>
+                    <item label="CONF:1098-7718"/>
+                    <element name="cda:assignedEntity" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.3043">
+                        <desc language="en-US">SHALL contain exactly one [1..1] assignedEntity (CONF:1098-7720).</desc>
+                        <item label="CONF:1098-7720"/>
+                        <element name="cda:id" datatype="II" minimumMultiplicity="1" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.3044">
+                            <desc language="en-US">This assignedEntity SHALL contain at least one [1..*] id (CONF:1098-7722).</desc>
+                            <item label="CONF:1098-7722"/>
+                        </element>
+                        <element name="cda:addr" datatype="AD" minimumMultiplicity="1" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.3045">
+                            <desc language="en-US">This assignedEntity SHALL contain at least one [1..*] addr (CONF:1098-7731).</desc>
+                            <item label="CONF:1098-7731"/>
+                        </element>
+                        <element name="cda:telecom" datatype="TEL" minimumMultiplicity="1" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.3046">
+                            <desc language="en-US">This assignedEntity SHALL contain at least one [1..*] telecom (CONF:1098-7732).</desc>
+                            <item label="CONF:1098-7732"/>
+                        </element>
+                        <element name="cda:representedOrganization" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.3047">
+                            <desc language="en-US">This assignedEntity SHOULD contain zero or one [0..1] representedOrganization (CONF:1098-7733).</desc>
+                            <item label="CONF:1098-7733"/>
+                            <element name="cda:id" datatype="II" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.3048">
+                                <desc language="en-US">The representedOrganization, if present, SHOULD contain zero or more [0..*] id (CONF:1098-7734).</desc>
+                                <item label="CONF:1098-7734"/>
+                            </element>
+                            <element name="cda:name" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.3049">
+                                <desc language="en-US">The representedOrganization, if present, MAY contain zero or more [0..*] name (CONF:1098-7735).</desc>
+                                <item label="CONF:1098-7735"/>
+                            </element>
+                            <element name="cda:telecom" datatype="TEL" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.3050">
+                                <desc language="en-US">The representedOrganization, if present, SHALL contain exactly one [1..1] telecom (CONF:1098-7737).</desc>
+                                <item label="CONF:1098-7737"/>
+                            </element>
+                            <element name="cda:addr" datatype="AD" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.3051">
+                                <desc language="en-US">The representedOrganization, if present, SHALL contain exactly one [1..1] addr (CONF:1098-7736).</desc>
+                                <item label="CONF:1098-7736"/>
+                            </element>
+                        </element>
+                    </element>
+                </element>
+                <element name="cda:author" contains="2.16.840.1.113883.10.20.22.4.119" flexibility="2015-08-13T00:00:00" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.3052" tmid="2.16.840.1.113883.10.20.22.4.119" tmname="AuthorParticipation" tmeffectiveDate="2015-08-13T00:00:00" tmstatusCode="draft" tmdisplayName="Author Participation" tmversionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-" linkedartefactmissing="false">
+                    <desc language="en-US">
+                        <span style="font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: small;">SHOULD contain zero or more [0..*] Author Participation (identifier: urn:oid:2.16.840.1.113883.10.20.22.4.119) (CONF:1098-32479).</span>
+                        <span style="font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12.000000953674316px;"/>
+                        <p/>
+                    </desc>
+                    <item label="CONF:1098-32479"/>
+                </element>
+                <element name="cda:participant" contains="2.16.840.1.113883.10.20.22.4.37" flexibility="2015-08-13T00:00:00" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.3053" tmid="2.16.840.1.113883.10.20.22.4.37" tmname="ProductInstance" tmeffectiveDate="2015-08-13T00:00:00" tmstatusCode="draft" tmdisplayName="Product Instance" tmversionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-" linkedartefactmissing="false">
+                    <item label="CONF:1098-7751"/>
+                    <attribute name="typeCode" value="DEV" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.3054">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @typeCode="DEV" Device (CodeSystem: HL7ActRelationshipType urn:oid:2.16.840.1.113883.5.1002 STATIC) (CONF:1098-7752).</desc>
+                        <item label="CONF:1098-7752"/>
+                    </attribute>
+                </element>
+                <element name="cda:participant" contains="2.16.840.1.113883.10.20.22.4.32" flexibility="2015-08-13T00:00:00" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.3055" tmid="2.16.840.1.113883.10.20.22.4.32" tmname="ServiceDeliveryLocation" tmeffectiveDate="2015-08-13T00:00:00" tmstatusCode="draft" tmdisplayName="Service Delivery Location" tmversionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-" linkedartefactmissing="false">
+                    <item label="CONF:1098-7765"/>
+                    <attribute name="typeCode" value="LOC" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.3056">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @typeCode="LOC" Location (CodeSystem: HL7ParticipationType urn:oid:2.16.840.1.113883.5.90 STATIC) (CONF:1098-7766).</desc>
+                        <item label="CONF:1098-7766"/>
+                    </attribute>
+                </element>
+                <element name="cda:entryRelationship" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.3057">
+                    <desc language="en-US">MAY contain zero or more [0..*] entryRelationship (CONF:1098-7768) such that it</desc>
+                    <item label="CONF:1098-7768"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.3058">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @typeCode="COMP" Has Component (CodeSystem: HL7ActRelationshipType urn:oid:2.16.840.1.113883.5.1002 STATIC) (CONF:1098-7769).</desc>
+                        <item label="CONF:1098-7769"/>
+                    </attribute>
+                    <attribute name="inversionInd" value="true" isOptional="false" datatype="bl" id="2.16.840.1.113883.3.1937.99.3.9.3059">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @inversionInd="true" true (CONF:1098-8009).</desc>
+                        <item label="CONF:1098-8009"/>
+                    </attribute>
+                    <element name="cda:encounter" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.3060">
+                        <desc language="en-US">SHALL contain exactly one [1..1] encounter (CONF:1098-7770).</desc>
+                        <item label="CONF:1098-7770"/>
+                        <attribute name="classCode" value="ENC" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.3061">
+                            <desc language="en-US">This encounter SHALL contain exactly one [1..1] @classCode="ENC" Encounter (CodeSystem: HL7ActClass urn:oid:2.16.840.1.113883.5.6 STATIC) (CONF:1098-7771).</desc>
+                            <item label="CONF:1098-7771"/>
+                        </attribute>
+                        <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.3062">
+                            <desc language="en-US">This encounter SHALL contain exactly one [1..1] @moodCode="EVN" Event (CodeSystem: ActMood urn:oid:2.16.840.1.113883.5.1001 STATIC) (CONF:1098-7772).</desc>
+                            <item label="CONF:1098-7772"/>
+                        </attribute>
+                        <element name="cda:id" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.3063">
+                            <desc language="en-US">This encounter SHALL contain exactly one [1..1] id (CONF:1098-7773).</desc>
+                            <item label="CONF:1098-7773"/>
+                            <constraint language="en-US">Set the encounter ID to the ID of an encounter in another section to signify they are the same encounter.</constraint>
+                        </element>
+                    </element>
+                </element>
+                <element name="cda:entryRelationship" contains="2.16.840.1.113883.10.20.22.4.20" flexibility="2014-06-09T00:00:00" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.3064" tmid="2.16.840.1.113883.10.20.22.4.20" tmname="InstructionV2" tmeffectiveDate="2014-06-09T00:00:00" tmstatusCode="draft" tmdisplayName="Instruction (V2)" tmversionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-" linkedartefactmissing="false">
+                    <item label="CONF:1098-7775"/>
+                    <attribute name="typeCode" value="SUBJ" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.3065">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @typeCode="SUBJ" Has Subject (CodeSystem: HL7ActRelationshipType urn:oid:2.16.840.1.113883.5.1002 STATIC) (CONF:1098-7776).</desc>
+                        <item label="CONF:1098-7776"/>
+                    </attribute>
+                    <attribute name="inversionInd" value="true" isOptional="false" datatype="bl" id="2.16.840.1.113883.3.1937.99.3.9.3066">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @inversionInd="true" true (CONF:1098-7777).</desc>
+                        <item label="CONF:1098-7777"/>
+                    </attribute>
+                </element>
+                <element name="cda:entryRelationship" contains="2.16.840.1.113883.10.20.22.4.19" flexibility="2014-06-09T00:00:00" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.3067" tmid="2.16.840.1.113883.10.20.22.4.19" tmname="IndicationV2" tmeffectiveDate="2014-06-09T00:00:00" tmstatusCode="draft" tmdisplayName="Indication (V2)" tmversionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-" linkedartefactmissing="false">
+                    <item label="CONF:1098-7779"/>
+                    <attribute name="typeCode" value="RSON" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.3068">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @typeCode="RSON" Has Reason (CodeSystem: HL7ActRelationshipType urn:oid:2.16.840.1.113883.5.1002 STATIC) (CONF:1098-7780).</desc>
+                        <item label="CONF:1098-7780"/>
+                    </attribute>
+                </element>
+                <element name="cda:entryRelationship" contains="2.16.840.1.113883.10.20.22.4.16" flexibility="2014-06-09T00:00:00" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.3069" tmid="2.16.840.1.113883.10.20.22.4.16" tmname="MedicationActivityV2" tmdisplayName="Medication Activity (V2)" tmeffectiveDate="2014-06-09T00:00:00" tmstatusCode="draft" tmversionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-" linkedartefactmissing="false">
+                    <item label="CONF:1098-7886"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.3070">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @typeCode="COMP" Has Component (CodeSystem: HL7ActRelationshipType urn:oid:2.16.840.1.113883.5.1002 STATIC) (CONF:1098-7887).</desc>
+                        <item label="CONF:1098-7887"/>
+                    </attribute>
+                </element>
+                <element name="cda:entryRelationship" contains="2.16.840.1.113883.10.20.22.4.9" flexibility="2014-06-09T00:00:00" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.3071" tmid="2.16.840.1.113883.10.20.22.4.9" tmname="ReactionObservationV2" tmdisplayName="Reaction Observation (V2)" tmeffectiveDate="2014-06-09T00:00:00" tmstatusCode="draft" tmversionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-" linkedartefactmissing="false">
+                    <item label="CONF:1098-32473"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.3072">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @typeCode="COMP" Has Component (CodeSystem: HL7ActRelationshipType urn:oid:2.16.840.1.113883.5.1002) (CONF:1098-32474).</desc>
+                        <item label="CONF:1098-32474"/>
+                    </attribute>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="dependency" prefix="vomgt-" flexibility="2015-08-13T00:00:00" id="1.2.276.0.76.3.1.135.8.10.4" name="MedicalEquipmentSectionV2" displayName="Medical Equipment Section (V2)" effectiveDate="2015-12-02T12:50:20" statusCode="draft" versionLabel="2.1" ident="vomgt-"/>
+            <ref type="contains" prefix="vomgt-" flexibility="2014-06-09T00:00:00" id="1.2.276.0.76.3.1.135.8.10.4" name="MedicalEquipmentSectionV2" displayName="Medical Equipment Section (V2)" effectiveDate="2015-12-02T12:50:20" statusCode="draft" versionLabel="2.1" ident="vomgt-"/>
+            <ref type="dependency" prefix="vomgt-" flexibility="dynamic" id="1.2.276.0.76.3.1.135.8.10.99" name="F16eRezept" displayName="16: eRezept" statusCode="cancelled" versionLabel="duplicate" effectiveDate="2018-11-02T09:37:45" ident="vomgt-"/>
+            <ref type="dependency" prefix="vomgt-" flexibility="2014-06-09T00:00:00" id="1.2.276.0.76.10.3117" name="F06MedicationsSectionentriesoptionalV2" displayName="Medications Section (entries optional) (V2) (06)" effectiveDate="2016-09-06T17:26:48" statusCode="draft" versionLabel="2.1" ident="vomgt-"/>
+            <ref type="dependency" prefix="dlra-" flexibility="dynamic" id="1.3.6.1.4.1.32722.77.77.1.10.7" name="dlra-pre-treatment" displayName="Radiotherapeutische Longregistratie voor aanvang behandeling" effectiveDate="2013-02-20T00:00:00" statusCode="draft" isClosed="true" ident="dlra-"/>
+            <ref type="dependency" prefix="bccdapilot-" flexibility="2019-03-16T21:12:43" id="2.16.840.1.113883.3.51.60.2.4" name="BCCDADischargeSummaryV3" displayName="BC CDA ClinicalDocumentDischargeSummary (V3)" statusCode="pending" isClosed="false" versionLabel="2.1" effectiveDate="2019-03-19T14:15:51" ident="bccdapilot-"/>
+            <ref type="contains" prefix="ehdi-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.8.10.3.4" name="ProceduresSectionentriesrequired" effectiveDate="2014-02-04T13:13:02" statusCode="draft" displayName="Procedures Section (entries required)" ident="ehdi-"/>
+            <ref type="dependency" prefix="ehdi-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.8.10.3.4" name="ProceduresSectionentriesrequired" effectiveDate="2014-02-04T13:13:02" statusCode="draft" displayName="Procedures Section (entries required)" ident="ehdi-"/>
+            <ref type="dependency" prefix="shnhf-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.17.10.2" name="SHNStructuredBody" displayName="SHN StructuredBody" effectiveDate="2015-05-09T11:18:02" statusCode="draft" isClosed="false" ident="shnhf-"/>
+            <ref type="dependency" prefix="shnhf-" flexibility="2015-05-09T11:18:02" id="2.16.840.1.113883.3.1937.99.61.17.10.3" name="SHNcomponent" displayName="SHN component" effectiveDate="2015-05-09T11:28:46" statusCode="draft" isClosed="false" ident="shnhf-"/>
+            <ref type="dependency" prefix="shl7ru-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.18.10.6" name="ВыписерйЭпикриз" displayName="Выписной эпикриз" effectiveDate="2015-06-06T14:32:25" statusCode="draft" isClosed="false" ident="shl7ru-"/>
+            <ref type="dependency" prefix="phcrg-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.3.1937.99.61.20.10.9" name="MedicationsSectionentriesrequiredV2" displayName="Medications Section (entries required) (V2)" effectiveDate="2015-11-03T08:58:06" statusCode="draft" versionLabel="2.1" ident="phcrg-"/>
+            <ref type="dependency" prefix="bccdapilot-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.3.1937.99.61.26.10.54" name="ProcedureActivityProcedureV2" displayName="Procedure Activity Procedure (V2)" statusCode="rejected" versionLabel="2.1" effectiveDate="2019-03-06T15:52:43" ident="bccdapilot-"/>
+            <ref type="dependency" prefix="bccdapilot-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.3.1937.99.61.26.10.55" name="Allergy-IntoleranceObservationV2" displayName="Allergy - Intolerance Observation (V2)" effectiveDate="2019-03-08T04:36:16" statusCode="draft" versionLabel="2.1" ident="bccdapilot-"/>
+            <ref type="dependency" prefix="bccdapilot-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.3.1937.99.61.26.10.61" name="AllergyConcernActV3" displayName="Allergy Concern Act (V3)" effectiveDate="2019-03-09T13:34:13" statusCode="draft" versionLabel="2.1" ident="bccdapilot-"/>
+            <ref type="dependency" prefix="bccdapilot-" flexibility="2015-08-01T00:00:00" id="2.16.840.1.113883.3.1937.99.61.26.10.62" name="AllergiesandIntolerancesSectionentriesoptionalV3" displayName="Allergies and Intolerances Section (entries optional) (V3)" statusCode="rejected" versionLabel="2.1" effectiveDate="2019-03-09T13:37:11" ident="bccdapilot-"/>
+            <ref type="dependency" prefix="bccdapilot-" flexibility="2015-08-01T00:00:00" id="2.16.840.1.113883.3.1937.99.61.26.10.112" name="AdverseEventsSectionentriesoptionalV3" displayName="Adverse Events Section (entries optional) (V3)" statusCode="rejected" versionLabel="2.1" effectiveDate="2019-03-25T06:01:02" ident="bccdapilot-"/>
+            <ref type="dependency" prefix="bccdapilot-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.3.1937.99.61.26.10.114" name="MedicationActivityV2" displayName="Medication Activity (V2)" statusCode="rejected" versionLabel="2.1" effectiveDate="2019-03-31T19:39:09" ident="bccdapilot-"/>
+            <ref type="dependency" prefix="slatam-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.3.1937.99.61.28.10.3" name="CDAConsulta" displayName="CDA de Consulta" effectiveDate="2017-04-22T23:20:01" statusCode="draft" versionLabel="1" ident="slatam-"/>
+            <ref type="dependency" prefix="shl7it-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.3.1937.99.61.30.10.54" name="PCHealthConcernAct" displayName="Health Concern Act (harmonized)" statusCode="cancelled" versionLabel="0.1" effectiveDate="2020-10-08T10:55:41" ident="shl7it-"/>
+            <ref type="dependency" prefix="shl7it-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.3.1937.99.61.30.10.58" name="PCAllergy-IntoleranceObservation" displayName="_Allergy - Intolerance Observation (harmonization))" effectiveDate="2020-10-16T15:17:11" statusCode="draft" versionLabel="wip" ident="shl7it-"/>
+            <ref type="dependency" prefix="shl7it-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.3.1937.99.61.30.10.60" name="ImmunizationIpsVsCcda" displayName="_Immunization (harmonized)" effectiveDate="2021-07-06T09:55:32" statusCode="draft" versionLabel="IAT" ident="shl7it-"/>
+            <ref type="dependency" prefix="sxehealth-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.3.1937.99.61.67.10.24" name="XeHAlertAct" displayName="XeH Alert Act" statusCode="cancelled" effectiveDate="2021-04-20T10:00:04" ident="sxehealth-"/>
+            <ref type="dependency" prefix="sxehealth-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.3.1937.99.61.67.10.25" name="XeHRiskConcernAct" displayName="XeH Risk Concern Act" statusCode="cancelled" effectiveDate="2021-04-20T10:06:56" ident="sxehealth-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2015-08-01T00:00:00" id="2.16.840.1.113883.10.20.21.2.3" name="InterventionsSectionV3" effectiveDate="2015-08-01T00:00:00" statusCode="draft" displayName="Interventions Section (V3)" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.1.2" name="ContinuityofCareDocumentCCDV3" displayName="Continuity of Care Document (CCD) (V3)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.1.3" name="HistoryandPhysicalV3" displayName="History and Physical (V3)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.1.4" name="ConsultationNoteV3" displayName="Consultation Note (V3)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.1.6" name="ProcedureNoteV3" displayName="Procedure Note (V3)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.1.7" name="OperativeNoteV3" displayName="Operative Note (V3)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.1.8" name="DischargeSummaryV3" displayName="Discharge Summary (V3)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.1.9" name="ProgressNoteV3" displayName="Progress Note (V3)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.1.13" name="TransferSummaryV2" displayName="Transfer Summary (V2)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.1.14" name="ReferralNoteV2" displayName="Referral Note (V2)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2015-08-01T00:00:00" id="2.16.840.1.113883.10.20.22.1.15" name="CarePlanV2" displayName="Care Plan (V2)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.2.1" name="MedicationsSectionentriesoptionalV2" statusCode="draft" displayName="Medications Section (entries optional) (V2)" versionLabel="2.1" effectiveDate="2014-06-09T00:00:00" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.2.1.1" name="MedicationsSectionentriesrequiredV2" displayName="Medications Section (entries required) (V2)" effectiveDate="2014-06-09T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2015-08-01T00:00:00" id="2.16.840.1.113883.10.20.22.2.2" name="ImmunizationsSectionentriesoptionalV3" effectiveDate="2015-08-01T00:00:00" statusCode="draft" displayName="Immunizations Section (entries optional) (V3)" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2015-08-01T00:00:00" id="2.16.840.1.113883.10.20.22.2.2.1" name="ImmunizationsSectionentriesrequiredV3" displayName="Immunizations Section (entries required) (V3)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2015-08-01T00:00:00" id="2.16.840.1.113883.10.20.22.2.6" name="AllergiesandIntolerancesSectionentriesoptionalV3" effectiveDate="2015-08-01T00:00:00" statusCode="draft" displayName="Allergies and Intolerances Section (entries optional) (V3)" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2015-08-01T00:00:00" id="2.16.840.1.113883.10.20.22.2.6.1" name="AllergiesandIntolerancesSectionentriesrequiredV3" displayName="Allergies and Intolerances Section (entries required) (V3)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="contains" prefix="dlra-" flexibility="dynamic" id="2.16.840.1.113883.10.20.22.2.7" name="ProceduresSectionentriesoptional" effectiveDate="2012-01-12T00:00:00" statusCode="draft" displayName="Procedures Section (entries optional)" ident="dlra-"/>
+            <ref type="contains" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.2.7" name="ProceduresSectionentriesoptionalV2" effectiveDate="2014-06-09T00:00:00" statusCode="draft" displayName="Procedures Section (entries optional) (V2)" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.2.7" name="ProceduresSectionentriesoptionalV2" effectiveDate="2014-06-09T00:00:00" statusCode="draft" displayName="Procedures Section (entries optional) (V2)" versionLabel="2.1" ident="ccda-"/>
+            <ref type="contains" prefix="bccdapilot-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.2.7" name="ProceduresSectionentriesoptionalV2" displayName="Procedures Section (entries optional) (V2)" statusCode="pending" versionLabel="2.1" effectiveDate="2019-03-16T21:12:43" ident="bccdapilot-"/>
+            <ref type="dependency" prefix="bccdapilot-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.2.7" name="ProceduresSectionentriesoptionalV2" displayName="Procedures Section (entries optional) (V2)" statusCode="pending" versionLabel="2.1" effectiveDate="2019-03-16T21:12:43" ident="bccdapilot-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.2.7.1" name="ProceduresSectionentriesrequiredV2" displayName="Procedures Section (entries required) (V2)" effectiveDate="2014-06-09T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="contains" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.2.7.1" name="ProceduresSectionentriesrequiredV2" displayName="Procedures Section (entries required) (V2)" effectiveDate="2014-06-09T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2016-03-01T00:00:00" id="2.16.840.1.113883.10.20.22.2.11" name="DischargeMedicationsSectionentriesoptionalV3" displayName="Discharge Medications Section (entries optional) (V3)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2016-03-01T00:00:00" id="2.16.840.1.113883.10.20.22.2.11.1" name="DischargeMedicationsSectionentriesrequiredV3" displayName="Discharge Medications Section (entries required) (V3)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2015-08-13T00:00:00" id="2.16.840.1.113883.10.20.22.2.23" name="MedicalEquipmentSectionV2" effectiveDate="2014-06-09T00:00:00" statusCode="draft" displayName="Medical Equipment Section (V2)" versionLabel="2.1" ident="ccda-"/>
+            <ref type="contains" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.2.23" name="MedicalEquipmentSectionV2" effectiveDate="2014-06-09T00:00:00" statusCode="draft" displayName="Medical Equipment Section (V2)" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.2.25" name="AnesthesiaSectionV2" effectiveDate="2014-06-09T00:00:00" statusCode="draft" displayName="Anesthesia Section (V2)" versionLabel="2.1" ident="ccda-"/>
+            <ref type="contains" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.2.25" name="AnesthesiaSectionV2" effectiveDate="2014-06-09T00:00:00" statusCode="draft" displayName="Anesthesia Section (V2)" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.2.38" name="MedicationsAdministeredSectionV2" effectiveDate="2014-06-09T00:00:00" statusCode="draft" displayName="Medications Administered Section (V2)" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.2.44" name="AdmissionMedicationsSectionentriesoptionalV3" effectiveDate="2015-08-01T00:00:00" statusCode="draft" displayName="Admission Medications Section (entries optional) (V3)" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2015-08-01T00:00:00" id="2.16.840.1.113883.10.20.22.2.58" name="HealthConcernsSectionV2" displayName="Health Concerns Section (V2)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="bccdapilot-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.2.78" name="BCCDAMedicationActivityV2" displayName="BC CDA Medication Activity (V2)" effectiveDate="2019-03-15T14:29:33" statusCode="draft" versionLabel="2.1" ident="bccdapilot-"/>
+            <ref type="dependency" prefix="bccdapilot-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.2.101" name="BCCDAReferralNoteV2" displayName="BC CDA Referral Note (V2)" effectiveDate="2019-04-06T02:03:17" statusCode="draft" versionLabel="2.1" ident="bccdapilot-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.4.7" name="Allergy-IntoleranceObservationV2" displayName="Allergy - Intolerance Observation (V2)" effectiveDate="2014-06-09T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.4.9" name="ReactionObservationV2" displayName="Reaction Observation (V2)" effectiveDate="2014-06-09T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <uses type="contains" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.4.9" name="ReactionObservationV2" displayName="Reaction Observation (V2)" effectiveDate="2014-06-09T00:00:00" statusCode="draft" versionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-"/>
+            <ref type="contains" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.4.9" name="ReactionObservationV2" displayName="Reaction Observation (V2)" effectiveDate="2014-06-09T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.4.12" name="ProcedureActivityActV2" displayName="Procedure Activity Act (V2)" effectiveDate="2014-06-09T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.4.13" name="ProcedureActivityObservationV2" displayName="Procedure Activity Observation (V2)" effectiveDate="2014-06-09T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.4.14" name="ProcedureActivityProcedureV2" displayName="Procedure Activity Procedure (V2)" effectiveDate="2014-06-09T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.4.16" name="MedicationActivityV2" displayName="Medication Activity (V2)" effectiveDate="2014-06-09T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <uses type="contains" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.4.16" name="MedicationActivityV2" displayName="Medication Activity (V2)" effectiveDate="2014-06-09T00:00:00" statusCode="draft" versionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-"/>
+            <uses type="contains" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.4.19" name="IndicationV2" effectiveDate="2014-06-09T00:00:00" statusCode="draft" displayName="Indication (V2)" versionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-"/>
+            <uses type="contains" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.4.20" name="InstructionV2" effectiveDate="2014-06-09T00:00:00" statusCode="draft" displayName="Instruction (V2)" versionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.4.30" name="AllergyConcernActV3" effectiveDate="2015-08-01T00:00:00" statusCode="draft" displayName="Allergy Concern Act (V3)" versionLabel="2.1" ident="ccda-"/>
+            <uses type="contains" prefix="ccda-" flexibility="2015-08-13T00:00:00" id="2.16.840.1.113883.10.20.22.4.32" name="ServiceDeliveryLocation" effectiveDate="2015-08-13T00:00:00" statusCode="draft" displayName="Service Delivery Location" versionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.4.35" name="DischargeMedicationV2" displayName="Discharge Medication (V3)" statusCode="cancelled" versionLabel="2.1" effectiveDate="2014-06-09T00:00:00" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.4.35" name="DischargeMedicationV3" displayName="Discharge Medication (V3)" effectiveDate="2016-03-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.4.36" name="AdmissionMedicationV2" displayName="Admission Medication (V2)" effectiveDate="2014-06-09T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <uses type="contains" prefix="ccda-" flexibility="2015-08-13T00:00:00" id="2.16.840.1.113883.10.20.22.4.37" name="ProductInstance" effectiveDate="2015-08-13T00:00:00" statusCode="draft" displayName="Product Instance" versionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.4.52" name="ImmunizationActivityV3" displayName="Immunization Activity (V3)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <uses type="contains" prefix="ccda-" flexibility="2015-08-13T00:00:00" id="2.16.840.1.113883.10.20.22.4.119" name="AuthorParticipation" effectiveDate="2015-08-13T00:00:00" statusCode="draft" displayName="Author Participation" versionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.4.131" name="InterventionActV2" displayName="Intervention Act (V2)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="contains" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.4.131" name="InterventionActV2" displayName="Intervention Act (V2)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.4.132" name="HealthConcernActV2" displayName="Health Concern Act (V2)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="contains" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.4.135" name="MedicalEquipmentOrganizer" effectiveDate="2015-08-13T00:00:00" statusCode="draft" displayName="Medical Equipment Organizer" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.4.136" name="RiskConcernActV2" displayName="Risk Concern Act (V2)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.4.146" name="PlannedInterventionActV2" displayName="Planned Intervention Act (V2)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="contains" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.4.146" name="PlannedInterventionActV2" displayName="Planned Intervention Act (V2)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.24.3.90" name="SubstanceorDeviceAllergy-IntoleranceObservationV2" displayName="Substance or Device Allergy - Intolerance Observation (V2)" effectiveDate="2014-06-09T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+        </template>
+    </template>
+</result>

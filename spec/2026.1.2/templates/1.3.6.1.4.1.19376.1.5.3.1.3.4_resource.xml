@@ -1,0 +1,44 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.3.6.1.4.1.19376.1.5.3.1.3.4" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:local="http://art-decor.org/local" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.3.6.1.4.1.19376.1.5.3.1.3.4" hl7:dummy-default="urn:hl7-org:v3" local:dummy-2="http://art-decor.org/local" displayName="History of Present Illness Section" cda:dummy-5="urn:hl7-org:v3" xml:dummy-3="http://www.w3.org/XML/1998/namespace" url="http://art-decor.org/decor/services/" xsi:dummy-6="http://www.w3.org/2001/XMLSchema-instance" versionLabel="2.1" isClosed="false" ident="ccda-" name="HistoryofPresentIllnessSection" statusCode="draft" sdtc:dummy-1="urn:hl7-org:sdtc" effectiveDate="2015-08-13T00:00:00">
+            <desc language="en-US">The History of Present Illness section describes the history related to the reason for the encounter. It contains the historical details leading up to and pertaining to the patient’s current complaint or reason for seeking medical care.</desc>
+            <classification type="cdasectionlevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.201" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.201" tmname="CDASection" tmdisplayName="CDA Section" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <element name="cda:section" id="2.16.840.1.113883.3.1937.99.3.9.2445">
+                <item original="false" label="HistoryofPresentIllnessSection"/>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.2446">
+                    <desc language="en-US">SHALL contain exactly one [1..1] templateId (CONF:81-7848) such that it</desc>
+                    <item label="CONF:81-7848"/>
+                    <attribute name="root" value="1.3.6.1.4.1.19376.1.5.3.1.3.4" isOptional="false" datatype="uid" id="2.16.840.1.113883.3.1937.99.3.9.2447">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @root="1.3.6.1.4.1.19376.1.5.3.1.3.4" (CONF:81-10458).</desc>
+                        <item label="CONF:81-10458"/>
+                    </attribute>
+                </element>
+                <element name="cda:code" datatype="CE" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.2448">
+                    <desc language="en-US">SHALL contain exactly one [1..1] code (CONF:81-15477).</desc>
+                    <item label="CONF:81-15477"/>
+                    <vocabulary code="10164-2" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="cda:title" datatype="ST" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="false" id="2.16.840.1.113883.3.1937.99.3.9.2449">
+                    <desc language="en-US">SHALL contain exactly one [1..1] title (CONF:81-7850).</desc>
+                    <item label="CONF:81-7850"/>
+                </element>
+                <element name="cda:text" datatype="SD.TEXT" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.2450">
+                    <desc language="en-US">SHALL contain exactly one [1..1] text (CONF:81-7851).</desc>
+                    <item label="CONF:81-7851"/>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="contains" prefix="shl7ru-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.18.10.6" name="ВыписерйЭпикриз" displayName="Выписной эпикриз" effectiveDate="2015-06-06T14:32:25" statusCode="draft" isClosed="false" ident="shl7ru-"/>
+            <ref type="contains" prefix="slatam-" flexibility="2015-08-13T00:00:00" id="2.16.840.1.113883.3.1937.99.61.28.10.3" name="CDAConsulta" displayName="CDA de Consulta" effectiveDate="2017-04-22T23:20:01" statusCode="draft" versionLabel="1" ident="slatam-"/>
+            <ref type="contains" prefix="ccda-" flexibility="2015-08-13T00:00:00" id="2.16.840.1.113883.10.20.22.1.3" name="HistoryandPhysicalV3" displayName="History and Physical (V3)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="contains" prefix="ccda-" flexibility="2015-08-13T00:00:00" id="2.16.840.1.113883.10.20.22.1.4" name="ConsultationNoteV3" displayName="Consultation Note (V3)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="contains" prefix="ccda-" flexibility="2015-08-13T00:00:00" id="2.16.840.1.113883.10.20.22.1.6" name="ProcedureNoteV3" displayName="Procedure Note (V3)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="contains" prefix="ccda-" flexibility="2015-08-13T00:00:00" id="2.16.840.1.113883.10.20.22.1.8" name="DischargeSummaryV3" displayName="Discharge Summary (V3)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="contains" prefix="ccda-" flexibility="2015-08-13T00:00:00" id="2.16.840.1.113883.10.20.22.1.13" name="TransferSummaryV2" displayName="Transfer Summary (V2)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="contains" prefix="ccda-" flexibility="2015-08-13T00:00:00" id="2.16.840.1.113883.10.20.22.1.14" name="ReferralNoteV2" displayName="Referral Note (V2)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="contains" prefix="bccdapilot-" flexibility="2015-08-13T00:00:00" id="2.16.840.1.113883.10.20.22.2.101" name="BCCDAReferralNoteV2" displayName="BC CDA Referral Note (V2)" effectiveDate="2019-04-06T02:03:17" statusCode="draft" versionLabel="2.1" ident="bccdapilot-"/>
+        </template>
+    </template>
+</result>

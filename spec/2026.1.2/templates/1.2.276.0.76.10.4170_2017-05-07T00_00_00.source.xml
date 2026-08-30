@@ -1,0 +1,39 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:pharm="urn:ihe:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.4170" name="Koerpertemperatur" displayName="Körpertemperatur" effectiveDate="2017-05-07T00:00:00" statusCode="draft" url="http://art-decor.org/decor/services/" ident="hl7de-" pharm:dummy-1="urn:ihe:pharm" xml:dummy-2="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-4="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="de-DE">Körpertemperatur</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00"/>
+            <context id="**"/>
+            <example type="neutral">
+        <observation classCode="OBS" moodCode="EVN">
+            <templateId root="1.2.276.0.76.10.4170"/>
+            <id root="1.2.276.0.76.4.17.57384597" extension="dd1eb111-93b0-4c84-8e55-98f2098b7954"/>
+            <code code="8310-5" displayName="Body temperature" codeSystem="2.16.840.1.113883.6.1"/>
+            <statusCode code="completed"/>
+            <effectiveTime value="20170608104741"/>
+            <value xsi:type="PQ" value="38.5" unit="Cel"/>
+        </observation>
+    </example>
+            <element name="hl7:observation" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="1.2.276.0.76.9.4170.3">
+                <attribute name="classCode" value="OBS" datatype="cs" id="2.16.840.1.113883.2.6.77.9.845"/>
+                <attribute name="moodCode" value="EVN" datatype="cs" id="2.16.840.1.113883.2.6.77.9.846"/>
+                <element name="hl7:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.847">
+                    <attribute name="root" value="1.2.276.0.76.10.4170" datatype="uid" id="2.16.840.1.113883.2.6.77.9.848"/>
+                </element>
+                <element name="hl7:id" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.77.9.849"/>
+                <element name="hl7:code" datatype="CD" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.850">
+                    <vocabulary valueSet="1.2.276.0.76.11.432" flexibility="dynamic"/>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.2.6.77.9.851">
+                    <desc language="de-DE">Lediglich reference in den Text der zugehörigen Section</desc>
+                    <element name="hl7:reference" minimumMultiplicity="1" maximumMultiplicity="1" datatype="URL" id="2.16.840.1.113883.2.6.77.9.852"/>
+                </element>
+                <element name="hl7:statusCode" datatype="CS" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.853">
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:effectiveTime" datatype="TS" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="1.2.276.0.76.9.4170.2"/>
+                <element name="hl7:value" datatype="PQ" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="1.2.276.0.76.9.4170.1">
+                    <property minInclude="0.0" maxInclude="45.0"/>
+                    <attribute name="unit" value="Cel" id="2.16.840.1.113883.2.6.77.9.854"/>
+                </element>
+            </element>
+        </template>

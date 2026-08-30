@@ -1,0 +1,250 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.4025" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:ukfc="http://fhir.hl7.de/ukfc" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" id="1.2.276.0.76.10.4025" hl7:dummy-default="urn:hl7-org:v3" displayName="Medikament" xml:dummy-5="http://www.w3.org/XML/1998/namespace" cda:dummy-7="urn:hl7-org:v3" ukfc:dummy-1="http://fhir.hl7.de/ukfc" url="http://art-decor.org/decor/services/" pharm:dummy-4="urn:hl7-org:pharm" xsi:dummy-8="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" ident="pmp-" name="MedicationInformation" sdtc:dummy-2="urn:hl7-org:sdtc" xhtml:dummy-3="http://www.w3.org/1999/xhtml" statusCode="draft" effectiveDate="2017-06-04T00:00:00">
+            <desc language="de-DE">Arzneimittel/Wirkstoff/Rezeptur</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.312" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.312" tmname="CDAManufacturedProduct" tmdisplayName="CDA ManufacturedProduct" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <relationship type="SPEC" template="1.3.6.1.4.1.19376.1.5.3.1.4.7.2" tmid="1.3.6.1.4.1.19376.1.5.3.1.4.7.2" tmname="IHEProductEntry" tmdisplayName="IHE Product Entry" tmeffectiveDate="2016-01-08T12:51:58" tmstatusCode="active" tmversionLabel="2014" url="https://art-decor.ihe-europe.net/decor/services/" ident="IHE-PCC-" linkedartefactmissing="false"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.20.1.53" tmid="2.16.840.1.113883.10.20.1.53" tmname="Product" tmdisplayName="Product" tmeffectiveDate="2007-04-01T00:00:00" tmstatusCode="pending" url="http://art-decor.org/decor/services/" ident="ccd1-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <item label="medinfpmp"/>
+            <example type="neutral">
+                <manufacturedProduct classCode="MANU">
+                    <templateId root="1.2.276.0.76.10.4025"/>
+                    <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                        <!-- .. -->
+                    </manufacturedMaterial>
+                </manufacturedProduct>
+            </example>
+            <element name="hl7:manufacturedProduct" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.2.6.60.4.9.239">
+                <item original="false" label="medinfpmp"/>
+                <attribute name="classCode" value="MANU" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.240"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.241">
+                    <item original="false" label="medinfpmp"/>
+                    <attribute name="root" value="1.2.276.0.76.10.4025" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.60.4.9.242"/>
+                </element>
+                <include ref="1.2.276.0.76.10.90022" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" tmid="1.2.276.0.76.10.90022" tmname="Material" tmdisplayName="Material" tmeffectiveDate="2018-12-04T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="pmp-" linkedartefactmissing="false">
+                    <item original="false" label="medinfpmp"/>
+                    <element name="hl7:manufacturedMaterial" id="2.16.840.1.113883.2.6.60.4.9.119" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" conformance="R">
+                        <item original="false" label="Material"/>
+                        <attribute name="classCode" value="MMAT" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.243"/>
+                        <attribute name="determinerCode" value="KIND" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.244"/>
+                        <element name="hl7:code" datatype="CD" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.120">
+                            <desc language="de-DE">Pharmazentralnummer der Arznei, zugelassene nullFlavor:<ul>
+                                    <li>NI Arznei hat keine PZN</li>
+                                    <li>NA Arznei ist eine Rezeptur</li>
+                                    <li>UNK Arznei hat eine PZN, diese ist jedoch unbekannt</li>
+                                </ul>
+                            </desc>
+                            <item original="false" label="Material"/>
+                            <example type="neutral" caption="Arznei mit PZN">
+                                <code code="10333719" codeSystem="1.2.276.0.76.4.6" displayName="Ibu-LysinHEXAL® 684 mg"/>
+                            </example>
+                            <example type="neutral" caption="Arznei hat keine PZN">
+                                <code nullFlavor="NI"/>
+                            </example>
+                            <example type="neutral" caption="Rezeptur (ohne PZN)">
+                                <code nullFlavor="NA">
+                                    <originalText>
+                                        <reference value="#rezeptur-17"/>
+                                    </originalText>
+                                </code>
+                            </example>
+                            <example type="neutral" caption="Arznei, unbekannte PZN">
+                                <code nullFlavor="UNK"/>
+                            </example>
+                            <vocabulary codeSystem="1.2.276.0.76.4.6"/>
+                            <attribute name="nullFlavor" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.245">
+                                <vocabulary code="NA"/>
+                                <vocabulary code="NI"/>
+                                <vocabulary code="UNK"/>
+                            </attribute>
+                            <element name="hl7:originalText" datatype="ED" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.121">
+                                <item original="false" label="Material"/>
+                                <element name="hl7:reference" datatype="TEL" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.122">
+                                    <item original="false" label="Material"/>
+                                    <attribute name="value" isOptional="false" id="2.16.840.1.113883.2.6.60.4.9.246">
+                                        <desc language="de-DE">z.B. #rezeptur-{generierteID}, z.B.: #rezeptur-1</desc>
+                                    </attribute>
+                                </element>
+                            </element>
+                            <element name="hl7:translation" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.123">
+                                <desc language="de-DE">Optionale Übersetzung des Codes in ein anderes Codesystem</desc>
+                                <item original="false" label="Material"/>
+                            </element>
+                        </element>
+                        <element name="hl7:name" datatype="EN" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.124">
+                            <desc language="de-DE">Bezeichnung der Arznei<br/> Zugelassenes nullFlavor:<ul>
+                                    <li>NA Arznei ist eine Rezeptur</li>
+                                </ul>
+                            </desc>
+                            <item original="false" label="Material"/>
+                            <example type="neutral" caption="Name der Arznei">
+                                <name>Limasin 500mg</name>
+                            </example>
+                            <example type="neutral" caption="Rezeptur ohne Handelsname">
+                                <name nullFlavor="NA"/>
+                            </example>
+                            <attribute name="nullFlavor" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.247">
+                                <vocabulary code="NA"/>
+                            </attribute>
+                        </element>
+                        <element name="pharm:formCode" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.125">
+                            <desc language="de-DE">Darreichungsform</desc>
+                            <item original="false" label="Material"/>
+                            <vocabulary valueSet="2.16.840.1.113883.2.6.60.4.11.27" vsid="2.16.840.1.113883.2.6.60.4.11.27" vsname="EDQMDoseForm" vsdisplayName="EDQMDoseForm" vseffectiveDate="2018-05-09T00:00:00" vsstatusCode="draft" linkedartefactmissing="false"/>
+                            <element name="hl7:translation" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.248">
+                                <desc language="de-DE">Optionale Übersetzung des Codes in ein anderes Codesystem</desc>
+                                <item original="false" label="Material"/>
+                                <vocabulary valueSet="1.2.276.0.76.11.454" flexibility="dynamic" vsid="1.2.276.0.76.11.454" vsname="S_BMP_DARREICHUNGSFORM" vsdisplayName="S_BMP_DARREICHUNGSFORM" vseffectiveDate="2021-04-01T00:00:00" vsstatusCode="final" vsversionLabel="1.03" linkedartefactmissing="false"/>
+                            </element>
+                        </element>
+                        <element name="pharm:asContent" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.126">
+                            <desc language="de-DE">Angaben zur Packung</desc>
+                            <item original="false" label="Material"/>
+                            <attribute name="classCode" value="CONT" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.249"/>
+                            <element name="pharm:containerPackagedProduct" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.250">
+                                <item original="false" label="Material"/>
+                                <attribute name="classCode" value="CONT" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.251"/>
+                                <attribute name="determinerCode" value="INSTANCE" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.252"/>
+                                <element name="pharm:code" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.253">
+                                    <desc language="de-DE">Pharmazentralnummer der Arznei</desc>
+                                    <item original="false" label="Material"/>
+                                    <vocabulary codeSystem="1.2.276.0.76.4.6"/>
+                                    <element name="hl7:originalText" datatype="ED" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.4.9.254">
+                                        <item original="false" label="Material"/>
+                                    </element>
+                                </element>
+                                <element name="pharm:name" datatype="EN" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.255">
+                                    <item original="false" label="Material"/>
+                                </element>
+                                <element name="pharm:formCode" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.256">
+                                    <desc language="de-DE">Typ der Packung</desc>
+                                    <item original="false" label="Material"/>
+                                </element>
+                                <element name="pharm:capacityQuantity" datatype="PQ" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.257">
+                                    <item original="false" label="Material"/>
+                                </element>
+                            </element>
+                        </element>
+                        <element name="pharm:asSpecializedKind" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.258">
+                            <desc language="de-DE">Angabe des ATC Codes (WHO, DIMDI etc.)</desc>
+                            <item original="false" label="Material"/>
+                            <example type="neutral">
+                                <pharm:asSpecializedKind classCode="GRIC">
+                                    <pharm:generalizedMaterialKind classCode="MMAT">
+                                <!-- Pharmaceutical Substance (ATC Code)-->
+                                        <pharm:code code=" " codeSystem="2.16.840.1.113883.6.73" displayName=" " codeSystemName="WHO ATC"/>
+                                    </pharm:generalizedMaterialKind>
+                                </pharm:asSpecializedKind>
+                            </example>
+                            <attribute name="classCode" value="GRIC" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.259"/>
+                            <element name="pharm:generalizedMaterialKind" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.260">
+                                <item original="false" label="Material"/>
+                                <attribute name="classCode" value="MMAT" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.261"/>
+                                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CD" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.262">
+                                    <desc language="de-DE">Codes aus Codesystem 2.16.840.1.113883.6.73 (WHO ATC) oder z. B. einem der DIMDI ATC Kataloge wie 1.2.276.0.76.5.482 (atcgm2019)</desc>
+                                    <item original="false" label="Material"/>
+                                </element>
+                                <element name="hl7:name" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ST" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.263">
+                                    <item original="false" label="Material"/>
+                                </element>
+                            </element>
+                        </element>
+                        <element name="pharm:ingredient" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.132">
+                            <desc language="de-DE">Angaben zu aktiven Wirkstoffen</desc>
+                            <item original="false" label="Material"/>
+                            <attribute name="classCode" value="ACTI" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.264"/>
+                            <element name="pharm:quantity" datatype="IVL_PQ" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.133">
+                                <item original="false" label="Material"/>
+                                <example type="neutral" caption="Wirkstärke von 10 mg Inhaltsstoff per ml des Medikaments">
+                                    <pharm:quantity>
+                                        <numerator xsi:type="PQ" value="10" unit="mg"/>
+                                        <denominator xsi:type="PQ" value="1" unit="ml"/>
+                                    </pharm:quantity>
+                                </example>
+                                <example type="neutral" caption="Wirkstärke des Inhaltsstoffs in 1 Einheit der verabreichten Medikation: 2% des Inhaltsstoffs">
+                                    <pharm:quantity>
+                                        <numerator xsi:type="PQ" value="2" unit="%"/>
+                                        <denominator xsi:type="PQ" value="1"/>
+                                    </pharm:quantity>
+                                </example>
+                                <element name="hl7:numerator" datatype="PQ" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.134">
+                                    <item original="false" label="Material"/>
+                                    <example type="neutral">
+                                        <numerator xsi:type="PQ" value="5" unit="mg">
+                                            <translation value="5" code="v" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="mg"/>
+                                        </numerator>
+                                    </example>
+                                    <element name="hl7:translation" datatype="PQR" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.265">
+                                        <desc language="de-DE">Optionale Übersetzung der Einheiten in ein anderes Einheitensystem</desc>
+                                        <item original="false" label="Material"/>
+                                        <vocabulary valueSet="1.2.276.0.76.11.455" flexibility="dynamic" vsid="1.2.276.0.76.11.455" vsname="S_BMP_DOSIEREINHEIT" vsdisplayName="S_BMP_DOSIEREINHEIT" vseffectiveDate="2019-01-01T00:00:00" vsstatusCode="final" vsversionLabel="1.01" linkedartefactmissing="false"/>
+                                    </element>
+                                </element>
+                                <element name="hl7:denominator" datatype="PQ" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.135">
+                                    <item original="false" label="Material"/>
+                                </element>
+                            </element>
+                            <element name="pharm:ingredientSubstance" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.136">
+                                <desc language="de-DE">Code und Name des aktiven Wirkstoffs</desc>
+                                <item original="false" label="Material"/>
+                                <element name="pharm:code" datatype="CE" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.137">
+                                    <item original="false" label="Material"/>
+                                    <vocabulary codeSystem="2.16.840.1.113883.6.73"/>
+                                    <vocabulary codeSystem="0.4.0.127.0.16.1.1.2.1"/>
+                                    <element name="hl7:originalText" datatype="ED" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.138">
+                                        <item original="false" label="Material"/>
+                                    </element>
+                                    <element name="hl7:translation" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.139">
+                                        <item original="false" label="Material"/>
+                                    </element>
+                                </element>
+                                <element name="pharm:name" datatype="EN" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.140">
+                                    <item original="false" label="Material"/>
+                                </element>
+                            </element>
+                        </element>
+                    </element>
+                    <staticAssociations/>
+                </include>
+            </element>
+            <staticAssociations/>
+            <ref type="dependency" prefix="vomgt-" flexibility="2020-05-08T11:31:04" id="1.2.276.0.76.3.1.135.8.10.134" name="F02BKrankenhausbehandlung" displayName="02B: Krankenhausbehandlung - Verordnung" effectiveDate="2020-05-07T13:27:32" statusCode="draft" ident="vomgt-"/>
+            <ref type="dependency" prefix="vomgt-" flexibility="2020-05-13T16:03:13" id="1.2.276.0.76.3.1.135.8.10.136" name="BisherigeMassnahmen02" displayName="Bisherige Maßnahmen" effectiveDate="2020-05-08T11:31:04" statusCode="draft" ident="vomgt-"/>
+            <ref type="contains" prefix="vomgt-" flexibility="dynamic" id="1.2.276.0.76.3.1.135.8.10.143" name="MedicationStatement02" displayName="Medikation" effectiveDate="2020-05-13T16:03:13" statusCode="draft" isClosed="false" ident="vomgt-"/>
+            <ref type="contains" prefix="dguvbbr-" flexibility="dynamic" id="1.2.276.0.76.3.1.261.1.10.4.6" name="MedicationStatement" displayName="Medikation" effectiveDate="2018-02-06T09:09:31" statusCode="draft" isClosed="false" ident="dguvbbr-"/>
+            <ref type="dependency" prefix="abde-" flexibility="2017-02-01T00:00:00" id="1.2.276.0.76.10.1020" name="Arztbrief30" displayName="Arztbrief Plus" effectiveDate="2017-02-01T00:00:00" statusCode="draft" versionLabel="v3.00" ident="abde-"/>
+            <ref type="dependency" prefix="evthm-" flexibility="2017-04-24T00:00:00" id="1.2.276.0.76.10.1022" name="Livedatencda" displayName="Live-Daten-CDA Dokument" effectiveDate="2017-01-23T00:00:00" statusCode="draft" ident="evthm-"/>
+            <ref type="dependency" prefix="evthm-" flexibility="2017-04-24T00:00:00" id="1.2.276.0.76.10.1023" name="Ueberleitungsdatencda" displayName="Überleitungs-CDA Dokument" effectiveDate="2017-03-14T00:00:00" statusCode="draft" ident="evthm-"/>
+            <ref type="dependency" prefix="einwde-" flexibility="2017-02-01T00:00:00" id="1.2.276.0.76.10.1034" name="eEinweisungsbrief" displayName="eEinweisungsbrief" effectiveDate="2020-06-18T00:00:00" statusCode="draft" versionLabel="v1.0" ident="einwde-"/>
+            <ref type="dependency" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.3029" name="Admissionmedicationsection" displayName="Medikation bei Einweisung (Historie)" effectiveDate="2017-02-01T00:00:00" statusCode="draft" isClosed="false" ident="hl7de-"/>
+            <ref type="dependency" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.3030" name="Medicationduringstaysection" displayName="Verabreichte Medikation während des Aufenthalts" effectiveDate="2017-02-01T00:00:00" statusCode="draft" isClosed="false" ident="hl7de-"/>
+            <ref type="dependency" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.3031" name="Dischargemedicationsection" displayName="Medikation bei Entlassung" effectiveDate="2017-02-01T00:00:00" statusCode="draft" isClosed="false" ident="hl7de-"/>
+            <ref type="dependency" prefix="uelmgmt-" flexibility="dynamic" id="1.2.276.0.76.10.3066" name="Einweisungsmedikation" displayName="Einweisungsmedikation" effectiveDate="2015-12-29T00:00:00" statusCode="draft" ident="uelmgmt-"/>
+            <ref type="dependency" prefix="evthm-" flexibility="dynamic" id="1.2.276.0.76.10.3085" effectiveDate="2017-04-24T00:00:00" name="Medikation" displayName="Medikation" statusCode="draft" ident="evthm-"/>
+            <ref type="dependency" prefix="evthm-" flexibility="2017-05-16T00:00:00" id="1.2.276.0.76.10.3088" effectiveDate="2017-04-24T00:00:00" name="pflegerischemassnahmen" displayName="Pflegerische Maßnahmen" statusCode="draft" ident="evthm-"/>
+            <ref type="dependency" prefix="konsab-" flexibility="dynamic" id="1.2.276.0.76.10.3157" name="Currentmedicationsection" displayName="Aktuelle Medikation" effectiveDate="2020-03-26T20:49:29" statusCode="draft" isClosed="false" ident="konsab-"/>
+            <ref type="contains" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.4022" name="MedicationStatement" displayName="Medikation" effectiveDate="2017-06-04T00:00:00" statusCode="draft" isClosed="false" versionLabel="mpp 2017" ident="pmp-"/>
+            <ref type="contains" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.4022" name="MedicationStatement" displayName="Medikation" effectiveDate="2018-11-01T00:00:00" statusCode="draft" isClosed="false" versionLabel="v2019" ident="pmp-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4083" name="MedicationStatement" displayName="Medikation" effectiveDate="2016-04-01T00:00:00" statusCode="retired" isClosed="false" ident="aktin-"/>
+            <ref type="dependency" prefix="evthm-" flexibility="2017-05-16T00:00:00" id="1.2.276.0.76.10.4214" effectiveDate="2017-05-16T00:00:00" name="SekretmanagementGruppeEntry" displayName="Sekretmanagement Gruppe Entry" statusCode="draft" ident="evthm-"/>
+            <ref type="dependency" prefix="evthm-" flexibility="dynamic" id="1.2.276.0.76.10.4218" name="Inhalationen" displayName="Inhalationen" effectiveDate="2017-05-16T00:00:00" statusCode="draft" ident="evthm-"/>
+            <ref type="dependency" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.4261" name="Medicationstatementlist" displayName="Medikation Gruppierung" effectiveDate="2017-07-05T00:00:00" statusCode="draft" ident="pmp-"/>
+            <ref type="contains" prefix="vomgt-" flexibility="dynamic" id="1.2.276.0.76.10.4283" name="MedicationStatement" displayName="Medikation" statusCode="cancelled" isClosed="false" effectiveDate="2018-02-26T05:37:38" ident="vomgt-"/>
+            <ref type="contains" prefix="vomgt-" flexibility="dynamic" id="1.2.276.0.76.10.4298" name="MedikationVerordnungEntry16" displayName="Medikation Verordnung Entry (16)" effectiveDate="2018-11-21T13:08:27" statusCode="draft" ident="vomgt-"/>
+            <uses type="include" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.90022" name="Material" displayName="Material" effectiveDate="2018-12-04T00:00:00" statusCode="draft" isClosed="false" url="http://art-decor.org/decor/services/" ident="pmp-"/>
+            <ref type="dependency" prefix="evthm-" flexibility="dynamic" id="2.16.840.1.113883.2.6.60.12.10.102" effectiveDate="2017-05-31T15:54:33" name="Entlassmedikation" displayName="Entlassmedikation" statusCode="cancelled" ident="evthm-"/>
+            <ref type="dependency" prefix="evthm-" flexibility="2017-04-24T00:00:00" id="2.16.840.1.113883.2.6.60.12.10.113" name="Ueberleitungsdatencda02" displayName="Überleitungs-CDA (ambulant-stationär)" effectiveDate="2018-04-04T17:10:48" statusCode="draft" ident="evthm-"/>
+            <ref type="contains" prefix="ssmith-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.41.10.9" name="MedicationStatement1" displayName="Medikation" effectiveDate="2019-03-04T15:44:27" statusCode="draft" isClosed="false" versionLabel="v2019" ident="ssmith-"/>
+            <ref type="contains" prefix="medmgmt-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.48.10.3" name="MedicationStatementmedmgmt" displayName="Medikation (medmgmt)" statusCode="pending" isClosed="false" effectiveDate="2018-11-02T00:00:00" ident="medmgmt-"/>
+            <ref type="contains" prefix="medmgmt-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.48.10.3" name="MedicationStatementmedmgmt" displayName="Medikation (medmgmt)" statusCode="pending" isClosed="false" effectiveDate="2019-10-25T11:01:47" ident="medmgmt-"/>
+            <ref type="contains" prefix="medmgmt-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.48.10.3" name="MedicationStatementmedmgmt" displayName="Medikation (medmgmt)" effectiveDate="2020-06-09T10:00:10" statusCode="draft" isClosed="false" ident="medmgmt-"/>
+            <ref type="dependency" prefix="sgevko-" flexibility="2020-05-08T11:31:04" id="2.16.840.1.113883.3.1937.99.61.53.10.249" name="M02BKrankenhausbehandlung" displayName="02B: Krankenhausbehandlung - Verordnung - Test" effectiveDate="2020-05-14T22:10:35" statusCode="draft" ident="sgevko-"/>
+            <ref type="dependency" prefix="ewundb-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.36.10.40" name="VerwendeteProdukte" displayName="Produkte" effectiveDate="2019-05-27T13:50:36" statusCode="draft" isClosed="false" versionLabel="0.9" ident="ewundb-"/>
+            <ref type="dependency" prefix="ewundb-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.36.10.59" name="Kausaltherapiemaßnahme" displayName="Diagnostik- oder Therapiemaßnahme - Procedure" effectiveDate="2019-06-04T09:59:01" statusCode="draft" versionLabel="0.9" ident="ewundb-"/>
+            <ref type="dependency" prefix="ewundb-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.36.10.61" name="Schmerzmanagement" displayName="Schmerzmanagement" effectiveDate="2019-06-04T10:25:36" statusCode="draft" versionLabel="0.9" ident="ewundb-"/>
+            <ref type="dependency" prefix="ewundb-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.36.10.66" name="Debridement" displayName="Debridement" effectiveDate="2019-06-04T11:10:28" statusCode="draft" versionLabel="0.9" ident="ewundb-"/>
+        </template>
+    </template>
+</result>

@@ -1,0 +1,46 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultLanguage="de-DE" id="1.2.276.0.76.10.4030" name="RespiratoryRate" displayName="Atemfrequenz" effectiveDate="2014-09-16T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" xml:dummy-1="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-3="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance">
+    <desc language="de-DE">Atemfrequenz</desc>
+    <desc language="en-US">Respiratory Rate</desc>
+    <classification type="cdaentrylevel"/>
+    <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.303" tmname="CDAObservation" tmdisplayName="CDA Observation" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-"/>
+    <context id="**"/>
+    <example>
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4030"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="10c1eb7e-dc2d-4d1f-806a-2ad65eba0396"/>
+                    <code code="9279-1" codeSystem="2.16.840.1.113883.6.1" displayName="Respiratory Rate"/>
+                    <statusCode code="completed"/>
+                    <effectiveTime value="20131219"/>
+                    <value xsi:type="PQ" value="17" unit="/min"/>
+                </observation>
+            </example>
+    <element name="hl7:observation" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.1631635">
+                <attribute name="classCode" value="OBS" id="2.16.840.1.113883.2.6.60.3.9.1631636"/>
+                <attribute name="moodCode" value="EVN" id="2.16.840.1.113883.2.6.60.3.9.1631637"/>
+                <!-- Element templateId -->
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.1631638">
+                    <attribute name="root" value="1.2.276.0.76.10.4030" id="2.16.840.1.113883.2.6.60.3.9.1631639"/>
+                </element>
+                <!-- Element id -->
+                <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.1631640"/>
+                <!-- Element code -->
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CE" id="2.16.840.1.113883.2.6.60.3.9.1631641">
+                    <vocabulary code="9279-1" codeSystem="2.16.840.1.113883.6.1"/>
+                    <element name="hl7:originalText" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.2.6.60.3.9.1631642"/>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.2.6.60.3.9.1631643">
+                    <desc language="de-DE">Lediglich reference in den Text der zugehörigen Section</desc>
+                    <element name="hl7:reference" minimumMultiplicity="1" maximumMultiplicity="1" datatype="URL" id="2.16.840.1.113883.2.6.60.3.9.1631644"/>
+                </element>
+                <!-- Element statusCode -->
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CS" id="2.16.840.1.113883.2.6.60.3.9.1631645">
+                    <vocabulary code="completed"/>
+                </element>
+                <!-- Element effectiveTime -->
+                <element name="hl7:effectiveTime" minimumMultiplicity="0" maximumMultiplicity="1" datatype="TS" id="2.16.840.1.113883.2.6.60.3.9.1631646"/>
+                <!-- Element value -->
+                <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="PQ" id="2.16.840.1.113883.2.6.60.3.9.14">
+                    <property unit="/min"/>
+                </element>
+            </element>
+</template>

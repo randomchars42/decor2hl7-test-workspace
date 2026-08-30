@@ -1,0 +1,14 @@
+<valueSet xmlns:json="http://www.json.org" id="2.16.840.1.113883.1.11.20.12" name="ProblemHealthStatusCode" displayName="ProblemHealthStatusCode" effectiveDate="2006-10-17T00:00:00" statusCode="draft" url="http://art-decor.org/decor/services/" ident="ccd1-">
+    <sourceCodeSystem json:array="true" id="2.16.840.1.113883.6.96" identifierName="SNOMED Clinical Terms" canonicalUri="http://snomed.info/sct" canonicalUriDSTU2="http://snomed.info/sct" canonicalUriSTU3="http://snomed.info/sct" canonicalUriR4="http://snomed.info/sct" canonicalUriR4B="http://snomed.info/sct" canonicalUriR5="http://snomed.info/sct"/>
+    <publishingAuthority json:array="true" name="ASTM" inherited="project"/>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="concept" code="81323004" codeSystem="2.16.840.1.113883.6.96" displayName="Alive and well" type="L" level="0"/>
+    <items json:array="true" is="concept" code="313386006" codeSystem="2.16.840.1.113883.6.96" displayName="In remission" type="L" level="0"/>
+    <items json:array="true" is="concept" code="162467007" codeSystem="2.16.840.1.113883.6.96" displayName="Symptom free" type="L" level="0"/>
+    <items json:array="true" is="concept" code="161901003" codeSystem="2.16.840.1.113883.6.96" displayName="Chronically ill" type="L" level="0"/>
+    <items json:array="true" is="concept" code="271593001" codeSystem="2.16.840.1.113883.6.96" displayName="Severely ill" type="L" level="0"/>
+    <items json:array="true" is="concept" code="21134002" codeSystem="2.16.840.1.113883.6.96" displayName="Disabled" type="L" level="0"/>
+    <items json:array="true" is="concept" code="161045001" codeSystem="2.16.840.1.113883.6.96" displayName="Severely disabled" type="L" level="0"/>
+    <items json:array="true" is="concept" code="419099009" codeSystem="2.16.840.1.113883.6.96" displayName="Deceased" type="L" level="0"/>
+</valueSet>

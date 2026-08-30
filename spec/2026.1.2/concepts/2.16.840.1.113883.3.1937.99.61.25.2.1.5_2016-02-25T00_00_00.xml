@@ -1,0 +1,31 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.99.61.25.1.1" effectiveDate="2016-02-25T00:00:00" statusCode="draft" lastModifiedDate="2023-09-13T11:55:57" prefix="narradcda-" shortName="radiologischer_befundbericht" iddisplay="narradcda-dataset-1" url="http://art-decor.org/decor/services/" ident="narradcda-"><!--
+ This is a view of the dataset "Radiologischer Befundbericht" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE" lastTranslated="2023-09-13T11:51:51">Radiologischer Befundbericht</name>
+    <desc language="de-DE" lastTranslated="2023-09-13T11:51:51">Radiologischer Befundbericht</desc>
+    <concept id="2.16.840.1.113883.3.1937.99.61.25.2.1.5" statusCode="draft" effectiveDate="2016-02-25T00:00:00" lastModifiedDate="2023-09-13T11:54:29" type="group" iddisplay="narradcda-dataelement-1.5" shortName="angaben_zum_anlass_der_anwendung_der_bildgebenden_oder_bildgestutzten_verfahren">
+        <implementation shortName="angaben_zum_anlass_der_anwendung_der_bildgebenden_oder_bildgestutzten_verfahren" markdown="0"/>
+        <name language="de-DE">Angaben zum Anlass der Anwendung der bildgebenden oder bildgestützten Verfahren</name>
+        <desc language="de-DE">0</desc>
+        <concept id="2.16.840.1.113883.3.1937.99.61.25.2.1.510" effectiveDate="2016-02-25T00:00:00" statusCode="draft" lastModifiedDate="2023-09-13T11:54:10" type="item" iddisplay="narradcda-dataelement-1.510" shortName="uberweiser">
+            <implementation shortName="uberweiser" markdown="Bezeichnung der überweisenden Institution oder Name des überweisenden Arztes"/>
+            <name language="de-DE" lastTranslated="2023-09-13T11:54:10">Überweiser </name>
+            <desc language="de-DE" lastTranslated="2023-09-13T11:54:10">Bezeichnung der überweisenden Institution oder Name des überweisenden Arztes</desc>
+            <valueDomain type="complex"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.99.61.25.2.1.520" effectiveDate="2016-02-25T00:00:00" statusCode="draft" lastModifiedDate="2023-09-13T11:54:19" type="item" iddisplay="narradcda-dataelement-1.520" shortName="klinische_angaben">
+            <implementation shortName="klinische_angaben" markdown="Klinische Angaben zu dem Patienten, sofern sie für die medizinische Wertung relevant sind"/>
+            <name language="de-DE" lastTranslated="2023-09-13T11:54:19">Klinische Angaben</name>
+            <desc language="de-DE" lastTranslated="2023-09-13T11:54:19">Klinische Angaben zu dem Patienten, sofern sie für die medizinische Wertung relevant sind</desc>
+            <valueDomain type="text"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.99.61.25.2.1.530" effectiveDate="2016-02-25T00:00:00" statusCode="draft" lastModifiedDate="2023-09-13T11:54:29" type="item" iddisplay="narradcda-dataelement-1.530" shortName="fragestellung">
+            <implementation shortName="fragestellung" markdown="Die vom Überweiser formulierte Fragestellung, die auch als Basis der rechtfertigenden Indikation geführt hat."/>
+            <name language="de-DE" lastTranslated="2023-09-13T11:54:29">Fragestellung </name>
+            <desc language="de-DE" lastTranslated="2023-09-13T11:54:29">Die vom Überweiser formulierte Fragestellung, die auch als Basis der rechtfertigenden Indikation geführt hat.</desc>
+            <valueDomain type="text"/>
+        </concept>
+    </concept>
+</dataset>

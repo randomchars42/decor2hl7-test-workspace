@@ -1,0 +1,49 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.4048" name="Problemconcernacteddiagnoses" displayName="Problem Concern Act (Abschlussdiagnosen)" effectiveDate="2015-03-03T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" xml:dummy-1="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-3="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="de-DE">Sammelkontainer für Beschwerden, Symptome, Diagnose, Probleme etc., hier: Abschlussdiagnosen ggf. mit ICD10-Kodes</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.301" flexibility="2005-09-07T00:00:00"/>
+            <relationship type="ADAPT" template="2.16.840.1.113883.10.20.22.4.3"/>
+            <relationship type="ADAPT" template="1.2.276.0.76.10.4002"/>
+            <context id="**"/>
+            <example>
+                <act classCode="ACT" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4048"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="afe65ff8-ed4b-4f7e-82c3-e98e58b45dbb"/>
+                    <code code="CONC" codeSystem="2.16.840.1.113883.5.6" displayName="Concern"/>
+                    <statusCode code="active"/>
+                    <effectiveTime>
+                        <low value="20150304"/>
+                    </effectiveTime>
+                    <entryRelationship typeCode="SUBJ">
+                        <sequenceNumber value="1"/>
+                        <!-- Problem observation template -->
+                    </entryRelationship>
+                </act>
+            </example>
+            <element name="hl7:act" id="2.16.840.1.113883.2.6.60.3.9.1250">
+                <attribute name="classCode" value="ACT" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1251"/>
+                <attribute name="moodCode" value="EVN" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1252"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.1253">
+                    <attribute name="root" value="1.2.276.0.76.10.4048" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.1254"/>
+                </element>
+                <element name="hl7:id" datatype="II" minimumMultiplicity="1" maximumMultiplicity="*" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1255"/>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CE" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1256">
+                    <vocabulary code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CS" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1257">
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.15933"/>
+                </element>
+                <element name="hl7:effectiveTime" minimumMultiplicity="1" maximumMultiplicity="1" datatype="IVL_TS" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1258">
+                    <element name="hl7:low" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1259"/>
+                    <element name="hl7:high" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1260"/>
+                </element>
+                <element name="hl7:entryRelationship" minimumMultiplicity="1" maximumMultiplicity="*" contains="1.2.276.0.76.10.4049" flexibility="2015-09-18T00:00:00" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1261">
+                    <desc language="de-DE">Abschlussdiagnose, als Text und/oder ICD10-kodiert</desc>
+                    <attribute name="typeCode" value="SUBJ" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1262"/>
+                    <element name="hl7:sequenceNumber" minimumMultiplicity="0" maximumMultiplicity="*" datatype="INT.POS" id="2.16.840.1.113883.2.6.60.3.9.1263">
+                        <desc language="de-DE">Sequenznummer wird weggelassen bei ungeordneten/gleichwertigen Diagnosen ohne führende Diagnose;<br/> zur Andeutung einer führenden Diagnose wird die Sequenznummer "1" verwendet (maximal einmal), alle weiteren Diagnosen sollten dann eine Sequenznummern &gt; 1 haben oder keine Sequenznummern aufweisen.</desc>
+                    </element>
+                </element>
+                <assert role="error" test="count(hl7:entryRelationship[hl7:sequenceNumber/@value='1'])&lt;=1">Sequenznummer = 1 (führende Abschlussdiagnose) kann höchstens einmal vergeben werden</assert>
+            </element>
+        </template>

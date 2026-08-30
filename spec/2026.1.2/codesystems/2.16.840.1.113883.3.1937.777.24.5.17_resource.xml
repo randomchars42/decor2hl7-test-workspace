@@ -1,0 +1,26 @@
+<codeSystems>
+    <project ident="mide-">
+        <codeSystem id="2.16.840.1.113883.3.1937.777.24.5.17" name="MII_Oncology_Rektum_MRT_Dunnschicht_CT" displayName="MII Onkologie: Rektum: MRT oder Dünnschicht-CT durchgeführt mit Angabe Abstand mesorektale Faszie" effectiveDate="2023-08-08T16:15:44" statusCode="draft" lastModifiedDate="2023-08-08T16:16:35" language="de-DE">
+            <desc language="de-DE" lastTranslated="2023-08-08T16:15:44">
+                <p>Angabe des Abstands des Tumors zur mesorektalen Faszie, wenn eine MRT oder<br/>Dünnschicht-CT Untersuchung durchgeführt wird.</p>
+            </desc>
+            <publishingAuthority name="Konsortium DIFUTURE" inherited="project">
+                <addrLine type="uri">https://difuture.de</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <codedConcept code="(n)" statusCode="draft" level="0" type="L">
+                    <desc language="de-DE" lastTranslated="2023-08-08T16:16:35">Abstand zur mesorektalen Faszie in mm (natürliche Zahl)</desc>
+                </codedConcept>
+                <codedConcept code="D" statusCode="draft" level="0" type="L">
+                    <desc language="de-DE" lastTranslated="2023-08-08T16:16:35">durchgeführt, aber Abstand nicht angegeben</desc>
+                </codedConcept>
+                <codedConcept code="N" statusCode="draft" level="0" type="L">
+                    <desc language="de-DE" lastTranslated="2023-08-08T16:16:35">Nein (MRT/CT nicht durchgeführt)</desc>
+                </codedConcept>
+                <codedConcept code="U" statusCode="draft" level="0" type="L">
+                    <desc language="de-DE" lastTranslated="2023-08-08T16:16:35">Unbekannt</desc>
+                </codedConcept>
+            </conceptList>
+        </codeSystem>
+    </project>
+</codeSystems>

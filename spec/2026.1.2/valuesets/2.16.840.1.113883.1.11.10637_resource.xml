@@ -1,0 +1,29 @@
+<valueSets>
+    <repository url="http://art-decor.org/decor/services/" ident="ccda-" referencedFrom="DICOM-" projecttype="local">
+        <valueSet id="2.16.840.1.113883.1.11.10637" name="PostalAddressUse" displayName="PostalAddressUse" effectiveDate="2016-06-23T00:00:00" statusCode="final">
+            <sourceCodeSystem id="2.16.840.1.113883.5.1119" identifierName="Address Use" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-AddressUse" canonicalUriDSTU2="http://hl7.org/fhir/v3/AddressUse" canonicalUriSTU3="http://hl7.org/fhir/v3/AddressUse" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-AddressUse" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-AddressUse" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-AddressUse" context="external/hl7intl/v3/v3-AddressUse"/>
+            <publishingAuthority name="HL7 International" inherited="project">
+                <addrLine>Health Level Seven International</addrLine>
+                <addrLine>3300 Washtenaw Avenue</addrLine>
+                <addrLine>Suite 227</addrLine>
+                <addrLine>Ann Arbor, MI 48104- 4261</addrLine>
+                <addrLine>USA</addrLine>
+                <addrLine>T +1 734 677 7777 </addrLine>
+                <addrLine>F +1 734 677 6622</addrLine>
+                <addrLine>E info@hl7.org</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <concept code="BAD" codeSystem="2.16.840.1.113883.5.1119" displayName="bad address" level="0" type="L"/>
+                <concept code="DIR" codeSystem="2.16.840.1.113883.5.1119" displayName="direct" level="0" type="L"/>
+                <concept code="H" codeSystem="2.16.840.1.113883.5.1119" displayName="home address" level="0" type="L"/>
+                <concept code="HP" codeSystem="2.16.840.1.113883.5.1119" displayName="primary home" level="0" type="L"/>
+                <concept code="HV" codeSystem="2.16.840.1.113883.5.1119" displayName="vacation home" level="0" type="L"/>
+                <concept code="PHYS" codeSystem="2.16.840.1.113883.5.1119" displayName="physical visit address" level="0" type="L"/>
+                <concept code="PST" codeSystem="2.16.840.1.113883.5.1119" displayName="postal address" level="0" type="L"/>
+                <concept code="PUB" codeSystem="2.16.840.1.113883.5.1119" displayName="public" level="0" type="L"/>
+                <concept code="TMP" codeSystem="2.16.840.1.113883.5.1119" displayName="temporary address" level="0" type="L"/>
+                <concept code="WP" codeSystem="2.16.840.1.113883.5.1119" displayName="work place" level="0" type="L"/>
+            </conceptList>
+        </valueSet>
+    </repository>
+</valueSets>

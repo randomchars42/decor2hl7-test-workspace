@@ -1,0 +1,4 @@
+<codeSystem xmlns:json="http://www.json.org" id="2.16.840.1.113883.5.1064" effectiveDate="2021-08-10T00:00:00" statusCode="final" versionLabel="4.0.0" experimental="true" name="participation_mode" displayName="ParticipationMode">
+    <copyright json:array="true" language="en-US">License text</copyright>
+    <issueAssociation json:array="true" count="0"/>
+</codeSystem>

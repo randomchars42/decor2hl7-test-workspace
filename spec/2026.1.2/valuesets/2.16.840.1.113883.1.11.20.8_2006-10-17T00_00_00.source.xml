@@ -1,0 +1,15 @@
+<valueSet xmlns:json="http://www.json.org" id="2.16.840.1.113883.1.11.20.8" name="MedicationTypeCode" displayName="MedicationTypeCode" effectiveDate="2006-10-17T00:00:00" statusCode="draft" url="http://art-decor.org/decor/services/" ident="ccd1-">
+    <sourceCodeSystem json:array="true" id="2.16.840.1.113883.6.96" identifierName="SNOMED Clinical Terms" canonicalUri="http://snomed.info/sct" canonicalUriDSTU2="http://snomed.info/sct" canonicalUriSTU3="http://snomed.info/sct" canonicalUriR4="http://snomed.info/sct" canonicalUriR4B="http://snomed.info/sct" canonicalUriR5="http://snomed.info/sct"/>
+    <publishingAuthority json:array="true" name="ASTM" inherited="project"/>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="concept" code="373873005" codeSystem="2.16.840.1.113883.6.96" displayName="Medication" type="L" level="0"/>
+    <items json:array="true" is="concept" code="354078009" codeSystem="2.16.840.1.113883.6.96" displayName="IV Fluid" type="L" level="0"/>
+    <items json:array="true" is="concept" code="327838005" codeSystem="2.16.840.1.113883.6.96" displayName="Parenteral Nutrition" type="L" level="0"/>
+    <items json:array="true" is="concept" code="108961000" codeSystem="2.16.840.1.113883.6.96" displayName="Supplemental Nutrition" type="L" level="0"/>
+    <items json:array="true" is="concept" code="350326008" codeSystem="2.16.840.1.113883.6.96" displayName="Immunization" type="L" level="0"/>
+    <items json:array="true" is="concept" code="425398004" codeSystem="2.16.840.1.113883.6.96" displayName="Supplies" type="L" level="0"/>
+    <items json:array="true" is="concept" code="49062001" codeSystem="2.16.840.1.113883.6.96" displayName="Device" type="L" level="0"/>
+    <items json:array="true" is="concept" code="40388003" codeSystem="2.16.840.1.113883.6.96" displayName="Implantable Device" type="L" level="0"/>
+    <items json:array="true" is="concept" code="425399007" codeSystem="2.16.840.1.113883.6.96" displayName="Durable Medical Equipment" type="L" level="0"/>
+</valueSet>

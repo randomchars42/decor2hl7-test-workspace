@@ -1,0 +1,38 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.3.1.195.10.64" ident="aktin-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.3.1.195.10.64" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" lastModifiedDate="2024-08-14T18:02:56" isClosed="false" displayName="Medikamentöse Therapie" ident="aktin-" name="medikamentose-therapie" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="draft" url="http://art-decor.org/decor/services/" effectiveDate="2024-08-14T18:02:56">
+            <desc language="de-DE" lastTranslated="2024-08-14T18:02:56">Informationen zur medikamentösen Therapie</desc>
+            <classification type="cdasectionlevel"/>
+            <relationship type="SPEC" template="1.2.276.0.76.10.3030" flexibility="2017-02-01T00:00:00" tmid="1.2.276.0.76.10.3030" tmname="Medicationduringstaysection" tmdisplayName="Verabreichte Medikation während des Aufenthalts" tmeffectiveDate="2017-02-01T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.201" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.201" tmname="CDASection" tmdisplayName="CDA Section" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <element name="hl7:section" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.2.6.77.9.592">
+                <item original="false" label="medikamentose-therapie"/>
+                <element name="hl7:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.77.9.593">
+                    <item original="false" label="medikamentose-therapie"/>
+                    <attribute name="root" value="1.2.276.0.76.3.1.195.10.64" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.77.9.594"/>
+                </element>
+                <element name="hl7:code" datatype="CE" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.595">
+                    <item original="false" label="medikamentose-therapie"/>
+                    <vocabulary code="29549-3" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:title" datatype="ST" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.596">
+                    <item original="false" label="medikamentose-therapie"/>
+                    <text>Informationen zur medikamentösen Therapie</text>
+                </element>
+                <element name="hl7:text" datatype="SD.TEXT" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.597">
+                    <item original="false" label="medikamentose-therapie"/>
+                </element>
+                <element name="hl7:entry" contains="1.2.276.0.76.3.1.195.10.67" minimumMultiplicity="0" maximumMultiplicity="*" tmid="1.2.276.0.76.3.1.195.10.67" tmname="Medikation" tmdisplayName="Medikation" tmeffectiveDate="2023-12-03T00:00:00" tmstatusCode="draft" tmversionLabel="2023" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <item original="false" label="medikamentose-therapie"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs"/>
+                    <attribute name="contextConductionInd" value="true" isOptional="true" datatype="bl"/>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.2" name="episodenzusammenfassung-notaufnahmeregister" displayName="Episodenzusammenfassung Notaufnahmeregister" effectiveDate="2024-03-21T00:00:00" statusCode="draft" versionLabel="2024" lastModifiedDate="2024-08-20T14:08:22" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.67" name="Medikation" displayName="Medikation" effectiveDate="2023-12-03T00:00:00" statusCode="draft" versionLabel="2023" lastModifiedDate="2024-08-14T18:38:41" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="2024-08-14T18:02:56" id="1.2.276.0.76.3.1.195.10.92" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2025-11-12T00:00:00" statusCode="retired" versionLabel="v3transit" lastModifiedDate="2026-03-25T11:04:45" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="2024-08-14T18:02:56" id="1.2.276.0.76.3.1.195.10.93" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2026-03-25T11:04:07" statusCode="draft" versionLabel="v4transit" lastModifiedDate="2026-04-29T18:39:46" ident="aktin-"/>
+        </template>
+    </template>
+</result>

@@ -1,0 +1,140 @@
+<valueSets>
+    <project ident="pmp-">
+        <valueSet id="2.16.840.1.113883.2.6.60.4.11.5" name="Hinweise" displayName="AKdÄ Hinweise" effectiveDate="2013-12-15T00:00:00" statusCode="deprecated">
+            <sourceCodeSystem id="2.16.840.1.113883.2.6.60.4.5.5" identifierName="pmp-codesystem-5" canonicalUri="urn:oid:2.16.840.1.113883.2.6.60.4.5.5" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.2.6.60.4.5.5" canonicalUriSTU3="urn:oid:2.16.840.1.113883.2.6.60.4.5.5" canonicalUriR4="urn:oid:2.16.840.1.113883.2.6.60.4.5.5" canonicalUriR4B="urn:oid:2.16.840.1.113883.2.6.60.4.5.5" canonicalUriR5="urn:oid:2.16.840.1.113883.2.6.60.4.5.5"/>
+            <publishingAuthority name="HL7 Deutschland e. V." inherited="project">
+                <addrLine>HL7 Deutschland e. V.</addrLine>
+                <addrLine>An der Schanz 1</addrLine>
+                <addrLine>50735 Köln</addrLine>
+                <addrLine>T 0700 77 77 67 67</addrLine>
+                <addrLine>F 0700 77 77 67 61</addrLine>
+                <addrLine type="uri">W hl7.de</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <concept code="A0" codeSystem="2.16.840.1.113883.2.6.60.4.5.5" displayName="Dünn auf die Haut auftragen!" level="0" type="L">
+                    <desc language="de-DE"/>
+                </concept>
+                <concept code="A1" codeSystem="2.16.840.1.113883.2.6.60.4.5.5" displayName="Pflaster wechseln" level="0" type="L">
+                    <desc language="de-DE"/>
+                </concept>
+                <concept code="A2" codeSystem="2.16.840.1.113883.2.6.60.4.5.5" displayName="Nicht mehr als" level="0" type="L">
+                    <desc language="de-DE"/>
+                </concept>
+                <concept code="A3" codeSystem="2.16.840.1.113883.2.6.60.4.5.5" displayName="Tablette nicht zerkleinern, teilen oder zerkauen" level="0" type="L">
+                    <desc language="de-DE"/>
+                </concept>
+                <concept code="A3" codeSystem="2.16.840.1.113883.2.6.60.4.5.5" displayName="Tbl. nicht zerkleinern, teilen oder zerkauen" level="0" type="L">
+                    <desc language="de-DE"/>
+                </concept>
+                <concept code="A4" codeSystem="2.16.840.1.113883.2.6.60.4.5.5" displayName="nicht teilen" level="0" type="L">
+                    <desc language="de-DE"/>
+                </concept>
+                <concept code="A5" codeSystem="2.16.840.1.113883.2.6.60.4.5.5" displayName="Mund ausspülen" level="0" type="L">
+                    <desc language="de-DE"/>
+                </concept>
+                <concept code="A6" codeSystem="2.16.840.1.113883.2.6.60.4.5.5" displayName="Zähne putzen" level="0" type="L">
+                    <desc language="de-DE"/>
+                </concept>
+                <concept code="A7" codeSystem="2.16.840.1.113883.2.6.60.4.5.5" displayName="mit Flüssigkeit einnehmen" level="0" type="L">
+                    <desc language="de-DE"/>
+                </concept>
+                <concept code="A8" codeSystem="2.16.840.1.113883.2.6.60.4.5.5" displayName="etwas Essen" level="0" type="L">
+                    <desc language="de-DE"/>
+                </concept>
+                <concept code="A9" codeSystem="2.16.840.1.113883.2.6.60.4.5.5" displayName="sub cutan" level="0" type="L">
+                    <desc language="de-DE"/>
+                </concept>
+                <concept code="A9" codeSystem="2.16.840.1.113883.2.6.60.4.5.5" displayName="unter die Haut" level="0" type="L">
+                    <desc language="de-DE"/>
+                </concept>
+                <concept code="B1" codeSystem="2.16.840.1.113883.2.6.60.4.5.5" displayName="akut" level="0" type="L">
+                    <desc language="de-DE"/>
+                </concept>
+                <concept code="B2" codeSystem="2.16.840.1.113883.2.6.60.4.5.5" displayName="im Notfall" level="0" type="L">
+                    <desc language="de-DE"/>
+                </concept>
+                <concept code="B3" codeSystem="2.16.840.1.113883.2.6.60.4.5.5" displayName="nur unter Aufsicht" level="0" type="L">
+                    <desc language="de-DE"/>
+                </concept>
+                <concept code="B4" codeSystem="2.16.840.1.113883.2.6.60.4.5.5" displayName="bei Bedarf" level="0" type="L">
+                    <desc language="de-DE"/>
+                </concept>
+                <concept code="B5" codeSystem="2.16.840.1.113883.2.6.60.4.5.5" displayName="bei Übelkeit" level="0" type="L">
+                    <desc language="de-DE"/>
+                </concept>
+                <concept code="B5" codeSystem="2.16.840.1.113883.2.6.60.4.5.5" displayName="kontaktieren Sie einen Arzt oder Apotheker" level="0" type="L">
+                    <desc language="de-DE"/>
+                </concept>
+                <concept code="E1" codeSystem="2.16.840.1.113883.2.6.60.4.5.5" displayName="vor dem Essen" level="0" type="L">
+                    <desc language="de-DE">30 Minuten vor den Mahlzeiten, nüchtern</desc>
+                </concept>
+                <concept code="E1" codeSystem="2.16.840.1.113883.2.6.60.4.5.5" displayName="vor den Mahlzeiten" level="0" type="L">
+                    <desc language="de-DE">30 Minuten vor den Mahlzeiten, nüchtern</desc>
+                </concept>
+                <concept code="E10" codeSystem="2.16.840.1.113883.2.6.60.4.5.5" displayName="absetzen am" level="0" type="L">
+                    <desc language="de-DE"/>
+                </concept>
+                <concept code="E2" codeSystem="2.16.840.1.113883.2.6.60.4.5.5" displayName="während der Mahlzeiten" level="0" type="L">
+                    <desc language="de-DE"/>
+                </concept>
+                <concept code="E2" codeSystem="2.16.840.1.113883.2.6.60.4.5.5" displayName="zu den Mahlzeiten" level="0" type="L">
+                    <desc language="de-DE"/>
+                </concept>
+                <concept code="E3" codeSystem="2.16.840.1.113883.2.6.60.4.5.5" displayName="nach dem Essen" level="0" type="L">
+                    <desc language="de-DE">60 Minuten nach der Mahlzeit, nüchtern</desc>
+                </concept>
+                <concept code="E3" codeSystem="2.16.840.1.113883.2.6.60.4.5.5" displayName="nach der Mahlzeit" level="0" type="L">
+                    <desc language="de-DE">60 Minuten nach der Mahlzeit, nüchtern</desc>
+                </concept>
+                <concept code="E4" codeSystem="2.16.840.1.113883.2.6.60.4.5.5" displayName="pro Tag" level="0" type="L">
+                    <desc language="de-DE">einmal pro Tag</desc>
+                </concept>
+                <concept code="E5" codeSystem="2.16.840.1.113883.2.6.60.4.5.5" displayName="innerhalb von" level="0" type="L">
+                    <desc language="de-DE"/>
+                </concept>
+                <concept code="E6" codeSystem="2.16.840.1.113883.2.6.60.4.5.5" displayName="nach Anbruch" level="0" type="L">
+                    <desc language="de-DE"/>
+                </concept>
+                <concept code="E7" codeSystem="2.16.840.1.113883.2.6.60.4.5.5" displayName="Einnahme in 8-std. Abständen" level="0" type="L">
+                    <desc language="de-DE"/>
+                </concept>
+                <concept code="E8" codeSystem="2.16.840.1.113883.2.6.60.4.5.5" displayName="Einnahme nüchtern" level="0" type="L">
+                    <desc language="de-DE"/>
+                </concept>
+                <concept code="E9" codeSystem="2.16.840.1.113883.2.6.60.4.5.5" displayName="zur Nacht" level="0" type="L">
+                    <desc language="de-DE"/>
+                </concept>
+                <concept code="L1" codeSystem="2.16.840.1.113883.2.6.60.4.5.5" displayName="fertige Suspension 14 Tage haltbar" level="0" type="L">
+                    <desc language="de-DE"/>
+                </concept>
+                <concept code="L2" codeSystem="2.16.840.1.113883.2.6.60.4.5.5" displayName="haltbar" level="0" type="L">
+                    <desc language="de-DE"/>
+                </concept>
+                <concept code="L3" codeSystem="2.16.840.1.113883.2.6.60.4.5.5" displayName="Haltbarkeit prüfen" level="0" type="L">
+                    <desc language="de-DE"/>
+                </concept>
+                <concept code="L4" codeSystem="2.16.840.1.113883.2.6.60.4.5.5" displayName="Bitte kühl lagern" level="0" type="L">
+                    <desc language="de-DE"/>
+                </concept>
+                <concept code="L5" codeSystem="2.16.840.1.113883.2.6.60.4.5.5" displayName="Packung nicht dem direkten Sonnenlicht aussetzen" level="0" type="L">
+                    <desc language="de-DE"/>
+                </concept>
+                <concept code="L6" codeSystem="2.16.840.1.113883.2.6.60.4.5.5" displayName="direkte Wärme / Sonnenlicht vermeiden" level="0" type="L">
+                    <desc language="de-DE"/>
+                </concept>
+                <concept code="Z1" codeSystem="2.16.840.1.113883.2.6.60.4.5.5" displayName="vor Gebrauch gut schütteln" level="0" type="L">
+                    <desc language="de-DE"/>
+                </concept>
+                <concept code="Z2" codeSystem="2.16.840.1.113883.2.6.60.4.5.5" displayName="halten Sie die Flasche vor Gebrauch senkrecht" level="0" type="L">
+                    <desc language="de-DE"/>
+                </concept>
+                <concept code="Z3" codeSystem="2.16.840.1.113883.2.6.60.4.5.5" displayName="kräftig schütteln" level="0" type="L">
+                    <desc language="de-DE"/>
+                </concept>
+                <concept code="Z4" codeSystem="2.16.840.1.113883.2.6.60.4.5.5" displayName="schütteln Sie das Pulver vor Wasserzugabe gut auf" level="0" type="L">
+                    <desc language="de-DE"/>
+                </concept>
+            </conceptList>
+        </valueSet>
+    </project>
+</valueSets>

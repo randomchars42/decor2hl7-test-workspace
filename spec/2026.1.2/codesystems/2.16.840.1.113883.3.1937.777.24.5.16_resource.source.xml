@@ -1,0 +1,32 @@
+<codeSystem xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.777.24.5.16" name="MII_Oncology_Rektum_Qualitats_des_TME_Praparats" displayName="MII Onkologie: Rektum: Qualität des TME-Präparats" effectiveDate="2023-08-08T16:11:07" statusCode="draft" lastModifiedDate="2023-08-08T16:12:35" language="de-DE" url="http://art-decor.org/decor/services/" ident="mide-">
+    <desc json:array="true" language="de-DE" lastTranslated="2023-08-08T16:11:07">
+                 &lt;p&gt;Qualität des TME-Präparats&lt;/p&gt; 
+            </desc>
+    <publishingAuthority json:array="true" name="Konsortium DIFUTURE" inherited="project">
+        <addrLine json:array="true" type="uri">https://difuture.de</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <conceptList json:array="true">
+        <codedConcept json:array="true" code="1" statusCode="draft" level="0" type="L">
+            <desc json:array="true" language="de-DE" lastTranslated="2023-08-08T16:12:35">Grad 1 (gut)</desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="2" statusCode="draft" level="0" type="L">
+            <desc json:array="true" language="de-DE" lastTranslated="2023-08-08T16:12:35">Grad 2 (moderat)</desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="3" statusCode="draft" level="0" type="L">
+            <desc json:array="true" language="de-DE" lastTranslated="2023-08-08T16:12:35">Grad 3 (schlecht)</desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="P" statusCode="draft" level="0" type="L">
+            <desc json:array="true" language="de-DE" lastTranslated="2023-08-08T16:12:35">PME durchgeführt</desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="L" statusCode="draft" level="0" type="L">
+            <desc json:array="true" language="de-DE" lastTranslated="2023-08-08T16:12:35">Lokale Exzision durchgeführt</desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="A" statusCode="draft" level="0" type="L">
+            <desc json:array="true" language="de-DE" lastTranslated="2023-08-08T16:12:35">Andere Operation durchgeführt</desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="U" statusCode="draft" level="0" type="L">
+            <desc json:array="true" language="de-DE" lastTranslated="2023-08-08T16:12:35">Unbekannt</desc>
+        </codedConcept>
+    </conceptList>
+</codeSystem>

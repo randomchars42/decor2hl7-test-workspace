@@ -1,0 +1,28 @@
+<valueSets>
+    <project ident="pmp-">
+        <valueSet ref="2.16.840.1.113883.1.11.12249" name="LanguageAbilityMode" displayName="LanguageAbilityMode"/>
+    </project>
+    <repository url="http://art-decor.org/decor/services/" ident="ccda-" referencedFrom="DICOM-" projecttype="local">
+        <valueSet id="2.16.840.1.113883.1.11.12249" name="LanguageAbilityMode" displayName="LanguageAbilityMode" effectiveDate="2016-06-23T00:00:00" statusCode="final">
+            <sourceCodeSystem id="2.16.840.1.113883.5.60" identifierName="Language Ability Mode" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-LanguageAbilityMode" canonicalUriDSTU2="http://hl7.org/fhir/v3/LanguageAbilityMode" canonicalUriSTU3="http://hl7.org/fhir/v3/LanguageAbilityMode" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-LanguageAbilityMode" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-LanguageAbilityMode" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-LanguageAbilityMode" context="external/hl7intl/v3/v3-LanguageAbilityMode"/>
+            <publishingAuthority name="HL7 International" inherited="project">
+                <addrLine>Health Level Seven International</addrLine>
+                <addrLine>3300 Washtenaw Avenue</addrLine>
+                <addrLine>Suite 227</addrLine>
+                <addrLine>Ann Arbor, MI 48104- 4261</addrLine>
+                <addrLine>USA</addrLine>
+                <addrLine>T +1 734 677 7777 </addrLine>
+                <addrLine>F +1 734 677 6622</addrLine>
+                <addrLine>E info@hl7.org</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <concept code="ESGN" codeSystem="2.16.840.1.113883.5.60" displayName="Expressed signed" level="0" type="L"/>
+                <concept code="ESP" codeSystem="2.16.840.1.113883.5.60" displayName="Expressed spoken" level="0" type="L"/>
+                <concept code="EWR" codeSystem="2.16.840.1.113883.5.60" displayName="Expressed written" level="0" type="L"/>
+                <concept code="RSGN" codeSystem="2.16.840.1.113883.5.60" displayName="Received signed" level="0" type="L"/>
+                <concept code="RSP" codeSystem="2.16.840.1.113883.5.60" displayName="Received spoken" level="0" type="L"/>
+                <concept code="RWR" codeSystem="2.16.840.1.113883.5.60" displayName="Received written" level="0" type="L"/>
+            </conceptList>
+        </valueSet>
+    </repository>
+</valueSets>

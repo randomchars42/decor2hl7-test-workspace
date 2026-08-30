@@ -1,0 +1,78 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.3047" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.3047" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="Klinische Basisinformationen" ident="aktin-" name="ClinicalInformation" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="active" url="http://art-decor.org/decor/services/" effectiveDate="2015-01-10T00:00:00">
+            <desc language="de-DE">Klinische Basisinformationen Section</desc>
+            <desc language="en-US">Clinical Information Section</desc>
+            <classification type="cdasectionlevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.201" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.201" tmname="CDASection" tmdisplayName="CDA Section" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <example type="neutral">
+                <section classCode="DOCSECT">
+                    <templateId root="1.2.276.0.76.10.3047"/>
+                    <code code="55752-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Clinical information"/>
+                    <title>Klinische Basisinformationen</title>
+                    <text>
+                        <list>
+                            <item>Schwanger: nein</item>
+                            <item>Tetanusschutz: ja</item>
+                            <item>Rankin Skala Score: 1</item>
+                        </list>
+                        <caption>Multiresistente Keime:</caption>
+                        <list>
+                            <item ID="mdro-1">MRSA</item>
+                            <item ID="mdro-2">Verdacht auf 4MRGN</item>
+                        </list>
+                    </text>
+                    <entry>
+                        <!-- .. -->
+                    </entry>
+                </section>
+            </example>
+            <element name="hl7:section" id="2.16.840.1.113883.2.6.60.3.9.85">
+                <item original="false" label="ClinicalInformation"/>
+                <attribute name="classCode" value="DOCSECT" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.86"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.87">
+                    <item original="false" label="ClinicalInformation"/>
+                    <attribute name="root" value="1.2.276.0.76.10.3047" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.88"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CD" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.89">
+                    <item original="false" label="ClinicalInformation"/>
+                    <vocabulary code="55752-0" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:title" minimumMultiplicity="1" maximumMultiplicity="1" datatype="ST" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.90">
+                    <item original="false" label="ClinicalInformation"/>
+                    <text>Klinische Basisinformationen</text>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="1" maximumMultiplicity="1" datatype="SD.TEXT" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.91">
+                    <item original="false" label="ClinicalInformation"/>
+                </element>
+                <element name="hl7:entry" minimumMultiplicity="0" maximumMultiplicity="1" conformance="C" contains="1.2.276.0.76.10.4043" id="2.16.840.1.113883.2.6.60.3.9.92" tmid="1.2.276.0.76.10.4043" tmname="Pregnancystatus" tmdisplayName="Status Schwangerschaft" tmeffectiveDate="2015-03-03T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <item original="false" label="ClinicalInformation"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.93"/>
+                    <attribute name="contextConductionInd" value="true" isOptional="true" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.94"/>
+                </element>
+                <element name="hl7:entry" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" contains="1.2.276.0.76.10.4044" id="2.16.840.1.113883.2.6.60.3.9.95" tmid="1.2.276.0.76.10.4044" tmname="Clostridiumtetaniimmunization" tmdisplayName="Immunisierung Clostridium tetani" tmeffectiveDate="2015-09-18T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <item original="false" label="ClinicalInformation"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.96"/>
+                    <attribute name="contextConductionInd" value="true" isOptional="true" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.97"/>
+                </element>
+                <element name="hl7:entry" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" contains="1.2.276.0.76.10.4045" id="2.16.840.1.113883.2.6.60.3.9.98" tmid="1.2.276.0.76.10.4045" tmname="Modifiedrankinscale" tmdisplayName="Modified Rankin Scale" tmeffectiveDate="2015-03-03T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <item original="false" label="ClinicalInformation"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.99"/>
+                    <attribute name="contextConductionInd" value="true" isOptional="true" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.100"/>
+                </element>
+                <element name="hl7:entry" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" contains="1.2.276.0.76.10.4072" flexibility="2015-06-01T00:00:00" id="2.16.840.1.113883.2.6.60.3.9.101" tmid="1.2.276.0.76.10.4072" tmname="ProblemconcernactMDRO" tmdisplayName="Problem Concern Act (Multidrug-resistant organism)" tmeffectiveDate="2015-06-01T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <item original="false" label="ClinicalInformation"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.102"/>
+                    <attribute name="contextConductionInd" value="true" isOptional="true" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.103"/>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="contains" prefix="aktin-" flexibility="2015-01-10T00:00:00" id="1.2.276.0.76.10.1015" name="EmergencymedicineNoteCDAdocumentv1" displayName="Emergency medicine Note CDA document" effectiveDate="2014-09-18T00:00:00" statusCode="active" versionLabel="v1" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4043" name="Pregnancystatus" displayName="Status Schwangerschaft" effectiveDate="2015-03-03T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4044" name="Clostridiumtetaniimmunization" displayName="Immunisierung Clostridium tetani" effectiveDate="2015-09-18T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4045" name="Modifiedrankinscale" displayName="Modified Rankin Scale" effectiveDate="2015-03-03T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="2015-06-01T00:00:00" id="1.2.276.0.76.10.4072" name="ProblemconcernactMDRO" displayName="Problem Concern Act (Multidrug-resistant organism)" effectiveDate="2015-06-01T00:00:00" statusCode="active" isClosed="false" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+        </template>
+    </template>
+</result>

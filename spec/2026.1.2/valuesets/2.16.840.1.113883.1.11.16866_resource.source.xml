@@ -1,0 +1,30 @@
+<valueSet xmlns:json="http://www.json.org" id="2.16.840.1.113883.1.11.16866" name="ActPriority" displayName="ActPriority" effectiveDate="2016-06-23T00:00:00" statusCode="final" url="http://art-decor.org/decor/services/" ident="ccda-">
+    <sourceCodeSystem json:array="true" id="2.16.840.1.113883.5.7" identifierName="Act Priority" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-ActPriority" canonicalUriDSTU2="http://hl7.org/fhir/v3/ActPriority" canonicalUriSTU3="http://hl7.org/fhir/v3/ActPriority" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-ActPriority" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-ActPriority" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-ActPriority" context="external/hl7intl/v3/v3-ActPriority"/>
+    <publishingAuthority json:array="true" name="HL7 International" inherited="project">
+        <addrLine json:array="true">Health Level Seven International</addrLine>
+        <addrLine json:array="true">3300 Washtenaw Avenue</addrLine>
+        <addrLine json:array="true">Suite 227</addrLine>
+        <addrLine json:array="true">Ann Arbor, MI 48104- 4261</addrLine>
+        <addrLine json:array="true">USA</addrLine>
+        <addrLine json:array="true">T +1 734 677 7777 </addrLine>
+        <addrLine json:array="true">F +1 734 677 6622</addrLine>
+        <addrLine json:array="true">E info@hl7.org</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="concept" code="A" codeSystem="2.16.840.1.113883.5.7" displayName="ASAP" level="0" type="L"/>
+    <items json:array="true" is="concept" code="CR" codeSystem="2.16.840.1.113883.5.7" displayName="callback results" level="0" type="L"/>
+    <items json:array="true" is="concept" code="CS" codeSystem="2.16.840.1.113883.5.7" displayName="callback for scheduling" level="0" type="L"/>
+    <items json:array="true" is="concept" code="CSP" codeSystem="2.16.840.1.113883.5.7" displayName="callback placer for scheduling" level="0" type="L"/>
+    <items json:array="true" is="concept" code="CSR" codeSystem="2.16.840.1.113883.5.7" displayName="contact recipient for scheduling" level="0" type="L"/>
+    <items json:array="true" is="concept" code="EL" codeSystem="2.16.840.1.113883.5.7" displayName="elective" level="0" type="L"/>
+    <items json:array="true" is="concept" code="EM" codeSystem="2.16.840.1.113883.5.7" displayName="emergency" level="0" type="L"/>
+    <items json:array="true" is="concept" code="P" codeSystem="2.16.840.1.113883.5.7" displayName="preop" level="0" type="L"/>
+    <items json:array="true" is="concept" code="PRN" codeSystem="2.16.840.1.113883.5.7" displayName="as needed" level="0" type="L"/>
+    <items json:array="true" is="concept" code="R" codeSystem="2.16.840.1.113883.5.7" displayName="routine" level="0" type="L"/>
+    <items json:array="true" is="concept" code="RR" codeSystem="2.16.840.1.113883.5.7" displayName="rush reporting" level="0" type="L"/>
+    <items json:array="true" is="concept" code="S" codeSystem="2.16.840.1.113883.5.7" displayName="stat" level="0" type="L"/>
+    <items json:array="true" is="concept" code="T" codeSystem="2.16.840.1.113883.5.7" displayName="timing critical" level="0" type="L"/>
+    <items json:array="true" is="concept" code="UD" codeSystem="2.16.840.1.113883.5.7" displayName="use as directed" level="0" type="L"/>
+    <items json:array="true" is="concept" code="UR" codeSystem="2.16.840.1.113883.5.7" displayName="urgent" level="0" type="L"/>
+</valueSet>

@@ -1,0 +1,56 @@
+<valueSets>
+    <project ident="aktin-">
+        <valueSet id="1.2.276.0.76.3.1.195.11.20" name="esi-triagefactors" displayName="ESI Triage-Faktoren" effectiveDate="2024-07-22T16:51:10" statusCode="draft" canonicalUri="http://aktin.org/fhir/ValueSet/aktin-vs-esi-triagefactors" lastModifiedDate="2024-07-22T16:51:10">
+            <sourceCodeSystem id="1.2.276.0.76.3.1.195.5.103" identifierName="ESI-Triagefaktoren" canonicalUri="http://aktin.org/fhir/CodeSystem/aktin-cs-esi-triage-factors" canonicalUriDSTU2="http://aktin.org/fhir/CodeSystem/aktin-cs-esi-triage-factors" canonicalUriSTU3="http://aktin.org/fhir/CodeSystem/aktin-cs-esi-triage-factors" canonicalUriR4="http://aktin.org/fhir/CodeSystem/aktin-cs-esi-triage-factors" canonicalUriR4B="http://aktin.org/fhir/CodeSystem/aktin-cs-esi-triage-factors" canonicalUriR5="http://aktin.org/fhir/CodeSystem/aktin-cs-esi-triage-factors" context="projects/aktin-/esi-triage-factors-1.2.276.0.76.3.1.195.5.103"/>
+            <publishingAuthority name="AKTIN e. V." inherited="project">
+                <addrLine>c/o Uniklinik RWTH Aachen</addrLine>
+                <addrLine>Institut für Medizinische Informatik</addrLine>
+                <addrLine>Pauwelsstraße 35</addrLine>
+                <addrLine>52074 Aachen</addrLine>
+                <addrLine type="phone">Tel. +49 391 67 28186</addrLine>
+                <addrLine type="email">office@aktin.org</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <concept code="1" codeSystem="1.2.276.0.76.3.1.195.5.103" codeSystemName="ESI-Triagefaktoren" codeSystemVersion="2019-08-15T00:00:00" displayName="sofortige lebensrettende Maßnahme notwendig" level="0" type="L">
+                    <designation displayName="sofortige lebensrettende Maßnahme notwendig" type="preferred" language="de-DE"/>
+                </concept>
+                <concept code="2" codeSystem="1.2.276.0.76.3.1.195.5.103" codeSystemName="ESI-Triagefaktoren" codeSystemVersion="2019-08-15T00:00:00" displayName="Hochrisikosituation" level="0" type="L">
+                    <designation displayName="Hochrisikosituation" type="preferred" language="de-DE"/>
+                </concept>
+                <concept code="3" codeSystem="1.2.276.0.76.3.1.195.5.103" codeSystemName="ESI-Triagefaktoren" codeSystemVersion="2019-08-15T00:00:00" displayName="verwirrt" level="0" type="L">
+                    <designation displayName="verwirrt" type="preferred" language="de-DE"/>
+                </concept>
+                <concept code="4" codeSystem="1.2.276.0.76.3.1.195.5.103" codeSystemName="ESI-Triagefaktoren" codeSystemVersion="2019-08-15T00:00:00" displayName="lethargisch" level="0" type="L">
+                    <designation displayName="lethargisch" type="preferred" language="de-DE"/>
+                </concept>
+                <concept code="5" codeSystem="1.2.276.0.76.3.1.195.5.103" codeSystemName="ESI-Triagefaktoren" codeSystemVersion="2019-08-15T00:00:00" displayName="desorientiert" level="0" type="L">
+                    <designation displayName="desorientiert" type="preferred" language="de-DE"/>
+                </concept>
+                <concept code="6" codeSystem="1.2.276.0.76.3.1.195.5.103" codeSystemName="ESI-Triagefaktoren" codeSystemVersion="2019-08-15T00:00:00" displayName="starke Schmerzen" level="0" type="L">
+                    <designation displayName="starke Schmerzen" type="preferred" language="de-DE"/>
+                </concept>
+                <concept code="7" codeSystem="1.2.276.0.76.3.1.195.5.103" codeSystemName="ESI-Triagefaktoren" codeSystemVersion="2019-08-15T00:00:00" displayName="starkes Unwohlsein" level="0" type="L">
+                    <designation displayName="starkes Unwohlsein" type="preferred" language="de-DE"/>
+                </concept>
+                <concept code="8" codeSystem="1.2.276.0.76.3.1.195.5.103" codeSystemName="ESI-Triagefaktoren" codeSystemVersion="2019-08-15T00:00:00" displayName="großes kindliches Leid" level="0" type="L">
+                    <designation displayName="großes kindliches Leid" type="preferred" language="de-DE"/>
+                </concept>
+                <concept code="9" codeSystem="1.2.276.0.76.3.1.195.5.103" codeSystemName="ESI-Triagefaktoren" codeSystemVersion="2019-08-15T00:00:00" displayName="mehr als eine Ressource benötigt" level="0" type="L">
+                    <designation displayName="mehr als eine Ressource benötigt" type="preferred" language="de-DE"/>
+                </concept>
+                <concept code="10" codeSystem="1.2.276.0.76.3.1.195.5.103" codeSystemName="ESI-Triagefaktoren" codeSystemVersion="2019-08-15T00:00:00" displayName="Vitalzeichen in der Gefahrenzone" level="0" type="L">
+                    <designation displayName="Vitalzeichen in der Gefahrenzone" type="preferred" language="de-DE"/>
+                </concept>
+                <concept code="11" codeSystem="1.2.276.0.76.3.1.195.5.103" codeSystemName="ESI-Triagefaktoren" codeSystemVersion="2019-08-15T00:00:00" displayName="Vitalzeichen nicht in der Gefahrenzone" level="0" type="L">
+                    <designation displayName="Vitalzeichen nicht in der Gefahrenzone" type="preferred" language="de-DE"/>
+                </concept>
+                <concept code="12" codeSystem="1.2.276.0.76.3.1.195.5.103" codeSystemName="ESI-Triagefaktoren" codeSystemVersion="2019-08-15T00:00:00" displayName="eine Ressource benötigt" level="0" type="L">
+                    <designation displayName="eine Ressource benötigt" type="preferred" language="de-DE"/>
+                </concept>
+                <concept code="13" codeSystem="1.2.276.0.76.3.1.195.5.103" codeSystemName="ESI-Triagefaktoren" codeSystemVersion="2019-08-15T00:00:00" displayName="keine Ressourcen benötigt" level="0" type="L">
+                    <designation displayName="keine Ressourcen benötigt" type="preferred" language="de-DE"/>
+                </concept>
+            </conceptList>
+        </valueSet>
+    </project>
+</valueSets>

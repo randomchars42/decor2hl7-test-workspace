@@ -1,0 +1,107 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.777.21.1.1" effectiveDate="2018-05-07T19:19:12" statusCode="draft" versionLabel="ASIC Dataset" prefix="asic-" shortName="asicdataset" iddisplay="asic-dataset-1" url="http://art-decor.org/decor/services/" ident="asic-"><!--
+ This is a view of the dataset "ASIC-Dataset" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">ASIC-Dataset</name>
+    <desc language="de-DE"/>
+    <concept id="2.16.840.1.113883.3.1937.777.21.2.151" effectiveDate="2018-06-29T10:36:15" statusCode="draft" type="group" iddisplay="asic-dataelement-151">
+        <implementation markdown="Werte und Indizes zum Schlagvolumen (SV)&#xA;&#xA;Zur Info - Bolus vs kontinuierlich:&#xA;&#xA;Bolus oder kontinuierliche Messung sind klinisch und im Forschungskontext relevant unterschiedlich.&#xA;Für die meisten Fragestellungen im Forschungskontext lassen sich nur Boluswerte verwenden.&#xA;&#xA;Die Unterscheidung der Werte aus den Primärsystemen ist u.U. problematisch.&#xA;&#xA;Manche Geräte grundsätzlich nur Boluswerte (z.B. CCO-Pulmonaliskatheter). &#xA;Bei anderen Geräten (z.B. PICCO) lassen sich die Boluswerte dadurch identifizieren, dass sie grundsätzlich zeitgleich mit Werten auftreten, die sich nur per Thermodilution ermitteln lassen (z.B. EVLWI).&#xA;&#xA;Grundsätzlich gilt:&#xA;Kann ein Wert aus einem Primärsystem nicht sicher als Boluswert identifiziert werden, dann wird er auf den entsprechenden kontinuierlichen Wert gemappt."/>
+        <name language="de-DE">Schlagvolumen</name>
+        <desc language="de-DE" lastTranslated="2019-01-16T10:02:15">Werte und Indizes zum Schlagvolumen (SV)<br clear="none"/>
+            <br clear="none"/>Zur Info - Bolus vs kontinuierlich:<br clear="none"/>
+            <br clear="none"/>Bolus oder kontinuierliche Messung sind klinisch und im Forschungskontext relevant unterschiedlich.<br clear="none"/>Für die meisten Fragestellungen im Forschungskontext lassen sich nur Boluswerte verwenden.<br clear="none"/>
+            <br clear="none"/>Die Unterscheidung der Werte aus den Primärsystemen ist u.U. problematisch.<br clear="none"/>
+            <br clear="none"/>Manche Geräte grundsätzlich nur Boluswerte (z.B. CCO-Pulmonaliskatheter). <br clear="none"/>Bei anderen Geräten (z.B. PICCO) lassen sich die Boluswerte dadurch identifizieren, dass sie grundsätzlich zeitgleich mit Werten auftreten, die sich nur per Thermodilution ermitteln lassen (z.B. EVLWI).<br clear="none"/>
+            <br clear="none"/>Grundsätzlich gilt:<br clear="none"/>Kann ein Wert aus einem Primärsystem nicht sicher als Boluswert identifiziert werden, dann wird er auf den entsprechenden kontinuierlichen Wert gemappt.<br clear="none"/>
+            <font face="Times New Roman">
+                <font size="3">
+                    <font face="Calibri">
+                        <br clear="none"/>
+                    </font>
+                </font>
+            </font>
+        </desc>
+        <concept id="2.16.840.1.113883.3.1937.777.21.2.63" effectiveDate="2018-05-15T09:18:45" statusCode="draft" type="item" iddisplay="asic-dataelement-63" shortName="sv_kont">
+            <implementation shortName="sv_kont" markdown="Schlagvolumen (SV), kontinuierliche Messu&#xA;[mL]"/>
+            <name language="de-DE" lastTranslated="2019-01-16T11:09:57">SV kont.</name>
+            <desc language="de-DE" lastTranslated="2019-01-16T11:10:10">Schlagvolumen (SV), kontinuierliche Messu<br clear="none"/>[mL]<br clear="none"/>
+                <br clear="none"/>
+                <br clear="none"/>
+            </desc>
+            <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.777.24.2.212" flexibility="2018-07-20T14:21:57" prefix="mide-" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" iType="group" iEffectiveDate="2018-07-20T14:21:57" iStatusCode="draft" refdisplay="mide-dataelement-212">
+                <name language="de-DE" lastTranslated="2019-02-07T13:00:12">Monitoring und Vitaldaten </name>
+                <name language="en-US" lastTranslated="2018-10-01T15:05:32">Monitoring data</name>
+            </relationship>
+            <valueDomain type="quantity">
+                <property unit="mL" default="mL"/>
+                <example type="neutral">70 mL</example>
+                <example type="neutral">100 mL</example>
+            </valueDomain>
+            <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.63" conceptFlexibility="2018-05-15T09:18:45" code="20562-5" codeSystem="2.16.840.1.113883.6.1" displayName="Left ventricular Stroke volume" effectiveDate="2018-05-17T10:46:34" codeSystemName="Logical Observation Identifier Names and Codes"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.21.2.432" effectiveDate="2019-01-16T15:16:07" statusCode="draft" type="item" iddisplay="asic-dataelement-432" shortName="sv_bolus">
+            <implementation shortName="sv_bolus" markdown="Schlagvolumen (SV), Bolusmessung (Thermodilution)&#xA;[mL]"/>
+            <name language="de-DE">SV bolus</name>
+            <desc language="de-DE" lastTranslated="2019-01-16T15:19:10">Schlagvolumen (SV), Bolusmessung (Thermodilution)<br clear="none"/>[mL]<br clear="none"/>
+            </desc>
+            <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.777.24.2.212" flexibility="2018-07-20T14:21:57" prefix="mide-" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" iType="group" iEffectiveDate="2018-07-20T14:21:57" iStatusCode="draft" refdisplay="mide-dataelement-212">
+                <name language="de-DE" lastTranslated="2019-02-07T13:00:12">Monitoring und Vitaldaten </name>
+                <name language="en-US" lastTranslated="2018-10-01T15:05:32">Monitoring data</name>
+            </relationship>
+            <valueDomain type="quantity">
+                <property unit="mL" minInclude="mL"/>
+                <example type="neutral">50 mL</example>
+            </valueDomain>
+            <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.432" conceptFlexibility="2019-01-16T15:16:07" code="8771-8" codeSystem="2.16.840.1.113883.6.1" displayName="Left ventricular Stroke volume by Indicator dilution" effectiveDate="2019-01-16T15:44:30" codeSystemName="Logical Observation Identifier Names and Codes"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.21.2.64" statusCode="cancelled" effectiveDate="2018-05-15T09:20:08" type="item" iddisplay="asic-dataelement-64" shortName="schlagvolumen_kont">
+            <implementation shortName="schlagvolumen_kont" markdown="Schlagvolumen SV (kontinuierlich)"/>
+            <name language="de-DE" lastTranslated="2018-08-21T14:16:37">Schlagvolumen kont.</name>
+            <desc language="de-DE" lastTranslated="2018-08-21T14:16:51">Schlagvolumen SV (kontinuierlich)<br clear="none"/>
+                <br clear="none"/>
+            </desc>
+            <valueDomain type="quantity">
+                <property unit="mL/min"/>
+            </valueDomain>
+            <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.64" conceptFlexibility="2018-05-15T09:20:08" code="20562-5" codeSystem="2.16.840.1.113883.6.1" displayName="Left ventricular Stroke volume" effectiveDate="2018-05-17T10:54:45" codeSystemName="Logical Observation Identifier Names and Codes"/>
+            <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.64" conceptFlexibility="2018-05-15T09:20:08" code="90096001" codeSystem="2.16.840.1.113883.6.96" displayName="Stroke volume (observable entity)" effectiveDate="2018-05-17T10:54:22" codeSystemName="SNOMED Clinical Terms"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.21.2.152" effectiveDate="2018-06-29T10:41:16" statusCode="draft" type="item" iddisplay="asic-dataelement-152" shortName="svi_kont">
+            <implementation shortName="svi_kont" markdown="Schlagvolumen-Index (SVI), kontinuierliche Messung&#xA;[mL/m2]"/>
+            <name language="de-DE" lastTranslated="2019-01-16T11:05:42">SVI kont.</name>
+            <desc language="de-DE" lastTranslated="2019-01-16T11:08:04">Schlagvolumen-Index (SVI), kontinuierliche Messung<br clear="none"/>[mL/m2]<br clear="none"/>
+            </desc>
+            <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.777.24.2.212" flexibility="2018-07-20T14:21:57" prefix="mide-" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" iType="group" iEffectiveDate="2018-07-20T14:21:57" iStatusCode="draft" refdisplay="mide-dataelement-212">
+                <name language="de-DE" lastTranslated="2019-02-07T13:00:12">Monitoring und Vitaldaten </name>
+                <name language="en-US" lastTranslated="2018-10-01T15:05:32">Monitoring data</name>
+            </relationship>
+            <valueDomain type="quantity">
+                <property unit="mL/m2"/>
+                <example type="neutral">0.05 mL/m2</example>
+            </valueDomain>
+            <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.152" conceptFlexibility="2018-06-29T10:41:16" code="76297-1" codeSystem="2.16.840.1.113883.6.1" displayName="Left ventricular Stroke volume index" effectiveDate="2019-01-17T15:50:41" codeSystemName="Logical Observation Identifier Names and Codes"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.21.2.433" effectiveDate="2019-01-16T15:24:23" statusCode="draft" type="item" iddisplay="asic-dataelement-433" shortName="svi_bolus">
+            <implementation shortName="svi_bolus" markdown="Schlagvolumenindex (SVI), Bolusmessung (Thermodilution)"/>
+            <name language="de-DE">SVI bolus</name>
+            <desc language="de-DE" lastTranslated="2019-01-16T15:26:07">Schlagvolumenindex (SVI), Bolusmessung (Thermodilution)<br clear="none"/>
+            </desc>
+            <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.777.24.2.212" flexibility="2018-07-20T14:21:57" prefix="mide-" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" iType="group" iEffectiveDate="2018-07-20T14:21:57" iStatusCode="draft" refdisplay="mide-dataelement-212">
+                <name language="de-DE" lastTranslated="2019-02-07T13:00:12">Monitoring und Vitaldaten </name>
+                <name language="en-US" lastTranslated="2018-10-01T15:05:32">Monitoring data</name>
+            </relationship>
+            <valueDomain type="quantity">
+                <property unit="mL/m2"/>
+                <example type="neutral">1 mL/m2</example>
+            </valueDomain>
+            <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.433" conceptFlexibility="2019-01-16T15:24:23" code="8791-6" codeSystem="2.16.840.1.113883.6.1" displayName="Left ventricular Stroke volume index by Indicator dilution" effectiveDate="2019-01-16T15:42:07" codeSystemName="Logical Observation Identifier Names and Codes"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.21.2.153" statusCode="cancelled" effectiveDate="2018-06-29T10:42:28" type="item" iddisplay="asic-dataelement-153" shortName="schlagvolumenindex_kont">
+            <implementation shortName="schlagvolumenindex_kont" markdown="SVI Schlagvolumen-Index kontinuierlich"/>
+            <name language="de-DE" lastTranslated="2018-08-21T14:19:14">Schlagvolumenindex kont.</name>
+            <desc language="de-DE" lastTranslated="2018-08-21T14:20:24">SVI Schlagvolumen-Index kontinuierlich</desc>
+            <valueDomain type="quantity"/>
+        </concept>
+    </concept>
+</dataset>

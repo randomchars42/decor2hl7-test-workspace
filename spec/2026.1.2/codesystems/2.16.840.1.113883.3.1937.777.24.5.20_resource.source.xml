@@ -1,0 +1,20 @@
+<codeSystem xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.777.24.5.20" name="MII_Oncology_Rektumkarzinom_Anastomoseninsuffizienz" displayName="MII Onkologie: Rektumkarzinom: Anastomoseninsuffizienz" effectiveDate="2023-08-08T16:24:05" statusCode="draft" lastModifiedDate="2023-08-08T16:24:56" language="de-DE" url="http://art-decor.org/decor/services/" ident="mide-">
+    <publishingAuthority json:array="true" name="Konsortium DIFUTURE" inherited="project">
+        <addrLine json:array="true" type="uri">https://difuture.de</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <conceptList json:array="true">
+        <codedConcept json:array="true" code="B" statusCode="draft" level="0" type="L">
+            <desc json:array="true" language="en-US" lastTranslated="2023-08-08T16:24:56">B = Anastomoseninsuffizienz Grad B</desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="C" statusCode="draft" level="0" type="L">
+            <desc json:array="true" language="en-US" lastTranslated="2023-08-08T16:24:56">C = Anastomoseninsuffizienz Grad C</desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="K" statusCode="draft" level="0" type="L">
+            <desc json:array="true" language="en-US" lastTranslated="2023-08-08T16:24:56">K = keine Insuffizienz oder höchstens Grad A</desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="U" statusCode="draft" level="0" type="L">
+            <desc json:array="true" language="en-US" lastTranslated="2023-08-08T16:24:56">Unbekannt</desc>
+        </codedConcept>
+    </conceptList>
+</codeSystem>

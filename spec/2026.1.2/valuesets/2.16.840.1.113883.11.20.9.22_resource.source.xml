@@ -1,0 +1,20 @@
+<valueSet xmlns:json="http://www.json.org" id="2.16.840.1.113883.11.20.9.22" displayName="ProcedureAct statusCode" effectiveDate="2019-01-03T00:00:00" statusCode="final" name="ProcedureActstatusCode" url="http://art-decor.org/decor/services/" ident="ccda-">
+    <desc json:array="true" language="en-US">(Clinical Focus: Status of a procedure activity),(Data Element Scope: ),(Inclusion Criteria: ),(Exclusion Criteria: ) This value set was imported on 4/24/2019 with a version of 20190103.</desc>
+    <sourceCodeSystem json:array="true" id="2.16.840.1.113883.5.14" identifierName="ActStatus" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-ActStatus" canonicalUriDSTU2="http://hl7.org/fhir/v3/ActStatus" canonicalUriSTU3="http://hl7.org/fhir/v3/ActStatus" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-ActStatus" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-ActStatus" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-ActStatus" context="external/hl7intl/v3/v3-ActStatus"/>
+    <publishingAuthority json:array="true" name="HL7 International" inherited="project">
+        <addrLine json:array="true">Health Level Seven International</addrLine>
+        <addrLine json:array="true">3300 Washtenaw Avenue</addrLine>
+        <addrLine json:array="true">Suite 227</addrLine>
+        <addrLine json:array="true">Ann Arbor, MI 48104- 4261</addrLine>
+        <addrLine json:array="true">USA</addrLine>
+        <addrLine json:array="true">T +1 734 677 7777 </addrLine>
+        <addrLine json:array="true">F +1 734 677 6622</addrLine>
+        <addrLine json:array="true">E info@hl7.org</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="concept" code="aborted" codeSystem="2.16.840.1.113883.5.14" displayName="aborted" level="0" type="L"/>
+    <items json:array="true" is="concept" code="active" codeSystem="2.16.840.1.113883.5.14" displayName="active" level="0" type="L"/>
+    <items json:array="true" is="concept" code="cancelled" codeSystem="2.16.840.1.113883.5.14" displayName="cancelled" level="0" type="L"/>
+    <items json:array="true" is="concept" code="completed" codeSystem="2.16.840.1.113883.5.14" displayName="completed" level="0" type="L"/>
+</valueSet>

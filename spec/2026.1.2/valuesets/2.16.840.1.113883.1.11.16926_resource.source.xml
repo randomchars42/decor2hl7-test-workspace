@@ -1,0 +1,18 @@
+<valueSet xmlns:json="http://www.json.org" id="2.16.840.1.113883.1.11.16926" name="HL7BasicConfidentialityKind" displayName="HL7 BasicConfidentialityKind" effectiveDate="2016-06-23T00:00:00" statusCode="final" ident="ccda-" url="http://art-decor.org/decor/services/" referencedFrom="dguvbbr-">
+    <sourceCodeSystem json:array="true" id="2.16.840.1.113883.5.25" identifierName="Confidentiality" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-Confidentiality" canonicalUriDSTU2="http://hl7.org/fhir/v3/Confidentiality" canonicalUriSTU3="http://hl7.org/fhir/v3/Confidentiality" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-Confidentiality" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-Confidentiality" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-Confidentiality" context="external/hl7intl/v3/v3-Confidentiality"/>
+    <publishingAuthority json:array="true" name="HL7 International" inherited="project">
+        <addrLine json:array="true">Health Level Seven International</addrLine>
+        <addrLine json:array="true">3300 Washtenaw Avenue</addrLine>
+        <addrLine json:array="true">Suite 227</addrLine>
+        <addrLine json:array="true">Ann Arbor, MI 48104- 4261</addrLine>
+        <addrLine json:array="true">USA</addrLine>
+        <addrLine json:array="true">T +1 734 677 7777 </addrLine>
+        <addrLine json:array="true">F +1 734 677 6622</addrLine>
+        <addrLine json:array="true">E info@hl7.org</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="concept" code="N" codeSystem="2.16.840.1.113883.5.25" displayName="normal" level="0" type="L"/>
+    <items json:array="true" is="concept" code="R" codeSystem="2.16.840.1.113883.5.25" displayName="restricted" level="0" type="L"/>
+    <items json:array="true" is="concept" code="V" codeSystem="2.16.840.1.113883.5.25" displayName="very restricted" level="0" type="L"/>
+</valueSet>

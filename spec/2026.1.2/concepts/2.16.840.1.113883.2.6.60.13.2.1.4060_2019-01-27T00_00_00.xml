@@ -1,0 +1,14 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.2.6.60.13.1.2" effectiveDate="2019-01-27T00:00:00" statusCode="draft" prefix="genea-" shortName="gene_alyse_datensatz" iddisplay="genea-dataset-2" url="http://art-decor.org/decor/services/" ident="genea-"><!--
+ This is a view of the dataset "GENeALYSE Datensatz" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">GENeALYSE Datensatz</name>
+    <desc language="de-DE">GENeALYSE Datensatz</desc>
+    <concept id="2.16.840.1.113883.2.6.60.13.2.1.4060" effectiveDate="2019-01-27T00:00:00" statusCode="draft" type="item" iddisplay="genea-dataelement-1.4060">
+        <implementation markdown="Trivialname (Kurzform)"/>
+        <name language="de-DE">Trivialname (Kurzform)</name>
+        <desc language="de-DE">Trivialname (Kurzform)</desc>
+        <valueDomain type="string"/>
+    </concept>
+</dataset>

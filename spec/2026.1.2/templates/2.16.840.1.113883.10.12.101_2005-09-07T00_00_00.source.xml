@@ -1,0 +1,84 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.12.101" name="CDArecordTarget" displayName="CDA recordTarget" effectiveDate="2005-09-07T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" sdtc:dummy-1="urn:hl7-org:sdtc" xml:dummy-2="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-4="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">Template CDA recordTarget (prototype, directly derived from POCD_RM000040 MIF)</desc>
+            <desc language="nl-NL">Template CDA recordTarget (prototype, direct afgeleid uit POCD_RM000040 MIF)</desc>
+            <desc language="de-DE">Template CDA recordTarget (Prototyp, direkt abgeleitet aus POCD_RM000040 MIF)</desc>
+            <classification type="cdaheaderlevel"/>
+            <element name="hl7:recordTarget" minimumMultiplicity="1" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.1.9.72">
+                <attribute name="typeCode" value="RCT" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.73"/>
+                <attribute name="contextControlCode" value="OP" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.74"/>
+                <element name="hl7:patientRole" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.1.9.75">
+                    <attribute name="classCode" value="PAT" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.76"/>
+                    <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="*" datatype="II" id="2.16.840.1.113883.3.1937.777.1.9.77"/>
+                    <element name="hl7:addr" minimumMultiplicity="0" maximumMultiplicity="*" datatype="AD" id="2.16.840.1.113883.3.1937.777.1.9.78"/>
+                    <element name="hl7:telecom" minimumMultiplicity="0" maximumMultiplicity="*" datatype="TEL" id="2.16.840.1.113883.3.1937.777.1.9.79"/>
+                    <element name="hl7:patient" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.1.9.80">
+                        <attribute name="classCode" value="PSN" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.81"/>
+                        <attribute name="determinerCode" value="INSTANCE" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.82"/>
+                        <element name="hl7:id" minimumMultiplicity="0" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.3.1937.777.1.9.83"/>
+                        <element name="hl7:name" minimumMultiplicity="0" maximumMultiplicity="*" datatype="PN" id="2.16.840.1.113883.3.1937.777.1.9.84"/>
+                        <element name="hl7:administrativeGenderCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.1.9.85">
+                            <!--valueSet name="AdministrativeGender"-->
+                            <vocabulary valueSet="2.16.840.1.113883.1.11.1"/>
+                        </element>
+                        <element name="hl7:birthTime" minimumMultiplicity="0" maximumMultiplicity="1" datatype="TS" id="2.16.840.1.113883.3.1937.777.1.9.86"/>
+                        <element name="hl7:maritalStatusCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.1.9.87">
+                            <!--valueSet name="MaritalStatus"-->
+                            <vocabulary valueSet="2.16.840.1.113883.1.11.12212"/>
+                        </element>
+                        <element name="hl7:religiousAffiliationCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.1.9.88">
+                            <!--valueSet name="ReligiousAffiliation"-->
+                            <vocabulary valueSet="2.16.840.1.113883.1.11.19185"/>
+                        </element>
+                        <element name="hl7:raceCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.1.9.89">
+                            <!--valueSet name="Race"-->
+                            <vocabulary valueSet="2.16.840.1.113883.1.11.14914"/>
+                        </element>
+                        <element name="hl7:ethnicGroupCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.1.9.90">
+                            <!--valueSet name="Ethnicity"-->
+                            <vocabulary valueSet="2.16.840.1.113883.1.11.15836"/>
+                        </element>
+                        <element name="hl7:guardian" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.1.9.91">
+                            <attribute name="classCode" value="GUARD" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.92"/>
+                            <element name="hl7:id" minimumMultiplicity="0" maximumMultiplicity="*" datatype="II" id="2.16.840.1.113883.3.1937.777.1.9.93"/>
+                            <element name="hl7:code" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.1.9.94">
+                                <vocabulary domain="RoleCode"/>
+                            </element>
+                            <element name="hl7:addr" minimumMultiplicity="0" maximumMultiplicity="*" datatype="AD" id="2.16.840.1.113883.3.1937.777.1.9.95"/>
+                            <element name="hl7:telecom" minimumMultiplicity="0" maximumMultiplicity="*" datatype="TEL" id="2.16.840.1.113883.3.1937.777.1.9.96"/>
+                            <choice minimumMultiplicity="1" maximumMultiplicity="1">
+                                <!--contains name="CDAPerson"-->
+                                <element name="hl7:guardianPerson" contains="2.16.840.1.113883.10.12.152" id="2.16.840.1.113883.3.1937.777.1.9.97"/>
+                                <!--contains name="CDAOrganization"-->
+                                <element name="hl7:guardianOrganization" contains="2.16.840.1.113883.10.12.151" id="2.16.840.1.113883.3.1937.777.1.9.98"/>
+                            </choice>
+                        </element>
+                        <element name="hl7:birthplace" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.1.9.99">
+                            <attribute name="classCode" value="BIRTHPL" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.100"/>
+                            <element name="hl7:place" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.1.9.101">
+                                <attribute name="classCode" value="PLC" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.102"/>
+                                <attribute name="determinerCode" value="INSTANCE" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.103"/>
+                                <element name="hl7:name" minimumMultiplicity="0" maximumMultiplicity="1" datatype="EN" id="2.16.840.1.113883.3.1937.777.1.9.104"/>
+                                <element name="hl7:addr" minimumMultiplicity="0" maximumMultiplicity="1" datatype="AD" id="2.16.840.1.113883.3.1937.777.1.9.105"/>
+                            </element>
+                        </element>
+                        <element name="hl7:languageCommunication" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.1.9.106">
+                            <element name="hl7:languageCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CS" id="2.16.840.1.113883.3.1937.777.1.9.107">
+                                <!--valueSet name="HumanLanguage"-->
+                                <vocabulary valueSet="2.16.840.1.113883.1.11.11526"/>
+                            </element>
+                            <element name="hl7:modeCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.1.9.108">
+                                <!--valueSet name="LanguageAbilityMode"-->
+                                <vocabulary valueSet="2.16.840.1.113883.1.11.12249"/>
+                            </element>
+                            <element name="hl7:proficiencyLevelCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.1.9.109">
+                                <!--valueSet name="LanguageAbilityProficiency"-->
+                                <vocabulary valueSet="2.16.840.1.113883.1.11.12199"/>
+                            </element>
+                            <element name="hl7:preferenceInd" minimumMultiplicity="0" maximumMultiplicity="1" datatype="BL" id="2.16.840.1.113883.3.1937.777.1.9.110"/>
+                        </element>
+                    </element>
+                    <!--contains name="CDAOrganization"-->
+                    <element name="hl7:providerOrganization" minimumMultiplicity="0" maximumMultiplicity="1" contains="2.16.840.1.113883.10.12.151" id="2.16.840.1.113883.3.1937.777.1.9.111"/>
+                </element>
+            </element>
+        </template>

@@ -1,0 +1,106 @@
+<result xmlns:json="http://www.json.org">
+    <template id="2.16.840.1.113883.10.20.1.48" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.20.1.48" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="Patient awareness" cda:dummy-4="urn:hl7-org:v3" ident="ccd1-" name="PatientAwareness" xml:dummy-2="http://www.w3.org/XML/1998/namespace" statusCode="pending" sdtc:dummy-1="urn:hl7-org:sdtc" url="http://art-decor.org/decor/services/" effectiveDate="2007-04-01T00:00:00">
+            <desc language="en-US">
+                <p>
+                    <b>CONF-178</b>: Patient awareness (templateId 2.16.840.1.113883.10.20.1.48) of a problem, observation, or other clinical statement <b>SHALL</b> be represented with participant.<br/>
+                    <b>CONF-179</b>: A problem act <b>MAY</b> contain exactly one patient awareness.<br/>
+                    <b>CONF-180</b>: A problem observation <b>MAY</b> contain exactly one patient awareness.<br/>
+                    <b>CONF-181</b>: The value for “<b>participant / @typeCode</b>” in a patient awareness SHALL be “SBJ” “Subject” 2.16.840.1.113883.5.90 ParticipationType <b>STATIC</b>.<br/>
+                    <b>CONF-182</b>: Patient awareness <b>SHALL</b> contain exactly one <b>participant / awarenessCode</b>.<br/>
+                    <b>CONF-183</b>: Patient awareness <b>SHALL</b> contain exactly one <b>participant / participantRole / id</b>, which <b>SHALL</b> have exactly one value, which SHALL also be present in <b>ClinicalDocument / recordTarget / patientRole / id</b>. </p>
+            </desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.321" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.321" tmname="CDAParticipantBody" tmdisplayName="CDA Participant (Body)" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <context id="*"/>
+            <attribute name="typeCode" value="SBJ" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.4.9.2266">
+                <item label="CONF-181"/>
+            </attribute>
+            <attribute name="contextControlCode" value="OP" isOptional="true" datatype="cs" id="2.16.840.1.113883.3.1937.777.4.9.2267"/>
+            <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.3.1937.777.4.9.2268">
+                <item label="CONF-178"/>
+                <attribute name="root" value="2.16.840.1.113883.10.20.1.48" isOptional="false" datatype="uid" id="2.16.840.1.113883.3.1937.777.4.9.2269"/>
+            </element>
+            <element name="hl7:time" minimumMultiplicity="0" maximumMultiplicity="1" datatype="IVL_TS" id="2.16.840.1.113883.3.1937.777.4.9.2270">
+                <item original="false" label="PatientAwareness"/>
+            </element>
+            <element name="hl7:awarenessCode" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CE" isMandatory="true" id="2.16.840.1.113883.3.1937.777.4.9.2271">
+                <item label="CONF-182"/>
+                <vocabulary valueSet="2.16.840.1.113883.1.11.10310" vsid="2.16.840.1.113883.1.11.10310" vsname="TargetAwareness" vsdisplayName="TargetAwareness" vseffectiveDate="2014-03-26T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1360-20160323" linkedartefactmissing="false"/>
+            </element>
+            <element name="hl7:participantRole" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.4.9.2272">
+                <item original="false" label="PatientAwareness"/>
+                <attribute name="classCode" isOptional="true" datatype="cs" id="2.16.840.1.113883.3.1937.777.4.9.2273">
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.11555" vsid="2.16.840.1.113883.1.11.11555" vsname="RoleClass" vsdisplayName="RoleClass" vseffectiveDate="2014-03-26T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1360-20160323" linkedartefactmissing="false"/>
+                </attribute>
+                <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" isMandatory="true" id="2.16.840.1.113883.3.1937.777.4.9.2274">
+                    <item label="CONF-183"/>
+                    <assert role="error" test=".[concat(@root,'#',@extension)=ancestor::hl7:ClinicalDocument/hl7:recordTarget/hl7:patient/hl7:id/concat(@root,'#',@extension)]">Patient awareness SHALL contain exactly one participant / participantRole / id, which SHALL have exactly one value, which SHALL also be present in ClinicalDocument / recordTarget / patientRole / id.</assert>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.4.9.2275">
+                    <item original="false" label="PatientAwareness"/>
+                    <vocabulary domain="RoleCode"/>
+                </element>
+                <element name="hl7:addr" minimumMultiplicity="0" maximumMultiplicity="*" datatype="AD" id="2.16.840.1.113883.3.1937.777.4.9.2276">
+                    <item original="false" label="PatientAwareness"/>
+                </element>
+                <element name="hl7:telecom" minimumMultiplicity="0" maximumMultiplicity="*" datatype="TEL" id="2.16.840.1.113883.3.1937.777.4.9.2277">
+                    <item original="false" label="PatientAwareness"/>
+                </element>
+                <choice minimumMultiplicity="0" maximumMultiplicity="1">
+                    <item original="false" label="PatientAwareness"/>
+                    <element name="hl7:playingDevice" contains="2.16.840.1.113883.3.1937.777.4.10.6" id="2.16.840.1.113883.3.1937.777.4.9.2278" tmid="2.16.840.1.113883.3.1937.777.4.10.6" tmname="CCDDevice" tmdisplayName="CCD Device" tmeffectiveDate="2007-04-01T00:00:00" tmstatusCode="pending" url="http://art-decor.org/decor/services/" ident="ccd1-" linkedartefactmissing="false">
+                        <item original="false" label="PatientAwareness"/>
+                    </element>
+                    <element name="hl7:playingEntity" contains="2.16.840.1.113883.3.1937.777.4.10.10" id="2.16.840.1.113883.3.1937.777.4.9.2279" tmid="2.16.840.1.113883.3.1937.777.4.10.10" tmname="CCDPlayingEntity" tmdisplayName="CCD PlayingEntity" tmeffectiveDate="2007-04-01T00:00:00" tmstatusCode="pending" url="http://art-decor.org/decor/services/" ident="ccd1-" linkedartefactmissing="false">
+                        <item original="false" label="PatientAwareness"/>
+                    </element>
+                </choice>
+                <element name="hl7:scopingEntity" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.4.9.2280">
+                    <item original="false" label="PatientAwareness"/>
+                    <attribute name="classCode" isOptional="true" datatype="cs" id="2.16.840.1.113883.3.1937.777.4.9.2281">
+                        <vocabulary valueSet="2.16.840.1.113883.1.11.10882" vsid="2.16.840.1.113883.1.11.10882" vsname="EntityClass" vsdisplayName="EntityClass" vseffectiveDate="2014-03-26T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1360-20160323" linkedartefactmissing="false"/>
+                    </attribute>
+                    <attribute name="determinerCode" value="INSTANCE" isOptional="true" datatype="cs" id="2.16.840.1.113883.3.1937.777.4.9.2282"/>
+                    <element name="hl7:id" minimumMultiplicity="0" maximumMultiplicity="*" datatype="II" id="2.16.840.1.113883.3.1937.777.4.9.2283">
+                        <item original="false" label="PatientAwareness"/>
+                    </element>
+                    <element name="hl7:code" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.4.9.2284">
+                        <item original="false" label="PatientAwareness"/>
+                        <vocabulary domain="EntityCode"/>
+                    </element>
+                    <element name="hl7:desc" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.3.1937.777.4.9.2285">
+                        <item original="false" label="PatientAwareness"/>
+                    </element>
+                </element>
+            </element>
+            <staticAssociations/>
+            <uses type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.4.10.6" name="CCDDevice" displayName="CCD Device" effectiveDate="2007-04-01T00:00:00" statusCode="pending" url="http://art-decor.org/decor/services/" ident="ccd1-"/>
+            <uses type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.4.10.10" name="CCDPlayingEntity" displayName="CCD PlayingEntity" effectiveDate="2007-04-01T00:00:00" statusCode="pending" url="http://art-decor.org/decor/services/" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.4.10.50" name="ProcedureActivityAct" displayName="Procedure activity (act)" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.4.10.51" name="ProcedureActivityObservation" displayName="Procedure activity (observation)" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.4.10.52" name="ProcedureActivityProcedure" displayName="Procedure activity (procedure)" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1" name="CCDClinicalDocument" displayName="CCD v1.0 Templates Root" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.2" name="AlertsSection" displayName="Alerts section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.5" name="FunctionalStatusSection" displayName="Functional status section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.6" name="ImmunizationSection" displayName="Immunization section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.7" name="MedicalEquipmentSection" displayName="Medical equipment section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.8" name="MedicationSection" displayName="Medication section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.11" name="ProblemSection" displayName="Problem section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.12" name="ProceduresSection" displayName="Procedures section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.14" name="ResultsSection" displayName="Results section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.15" name="SocialHistorySection" displayName="Social history section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.16" name="VitalSignsSection" displayName="Vital signs section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.18" name="AlertObservation" displayName="Alert observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.24" name="MedicationActivity" displayName="Medication activity" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.27" name="ProblemAct" displayName="Problem act" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.27" name="ProblemAct" displayName="Problem act" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.28" name="ProblemObservation" displayName="Problem observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.32" name="ResultOrganizer" displayName="Result organizer" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.33" name="SocialHistoryObservation" displayName="Social history observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.35" name="VitalSignsOrganizer" displayName="Vital signs organizer" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.41" name="EpisodeObservation" displayName="Episode observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.54" name="ReactionObservation" displayName="Reaction observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+        </template>
+    </template>
+</result>

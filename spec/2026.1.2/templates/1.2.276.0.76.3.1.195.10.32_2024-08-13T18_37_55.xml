@@ -1,0 +1,36 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.3.1.195.10.32" ident="aktin-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.3.1.195.10.32" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" lastModifiedDate="2024-08-13T18:37:55" isClosed="false" displayName="Substanz-Einfluss" ident="aktin-" name="substanz-einfluss" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="draft" url="http://art-decor.org/decor/services/" effectiveDate="2024-08-13T18:37:55">
+            <desc language="de-DE" lastTranslated="2024-08-13T18:37:55">Verdacht auf Alkohol-, Drogen-, Medikamenteneinfluss?</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="1.2.276.0.76.10.4095" flexibility="2017-02-01T00:00:00" tmid="1.2.276.0.76.10.4095" tmname="PrimaryInjuryCauseObservation" tmdisplayName="Primary Injury Cause Observation" tmeffectiveDate="2017-02-01T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.303" tmname="CDAObservation" tmdisplayName="CDA Observation" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <relationship type="ADAPT" template="2.16.840.1.113883.3.2898.10.2121" flexibility="2014-06-09T00:00:00" url="http://art-decor.org/decor/services/" linkedartefactmissing="true"/>
+            <context id="**"/>
+            <element name="hl7:observation" id="2.16.840.1.113883.2.6.60.3.9.163127">
+                <item original="false" label="substanz-einfluss"/>
+                <attribute name="classCode" value="OBS" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.163128"/>
+                <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.163129"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.163130">
+                    <item original="false" label="substanz-einfluss"/>
+                    <attribute name="root" value="1.2.276.0.76.3.1.195.10.32" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.163131"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.163132">
+                    <item original="false" label="substanz-einfluss"/>
+                    <vocabulary code="88068-2" codeSystem="2.16.840.1.113883.6.1" displayName="Cause of intoxication"/>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.163133">
+                    <item original="false" label="substanz-einfluss"/>
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:value" datatype="CE" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.163134">
+                    <item original="false" label="substanz-einfluss"/>
+                    <vocabulary valueSet="1.2.276.0.76.3.1.195.11.23" vsid="1.2.276.0.76.3.1.195.11.23" vsname="substance-used" vsdisplayName="Substanz-Einfluss" vseffectiveDate="2024-07-22T16:51:10" vsstatusCode="draft" linkedartefactmissing="false"/>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="contains" prefix="aktin-" flexibility="2024-08-13T18:37:55" id="1.2.276.0.76.3.1.195.10.27" name="notfallanamnese-section" displayName="Notfallanamnese" effectiveDate="2024-08-13T18:22:01" statusCode="draft" versionLabel="2024" isClosed="false" lastModifiedDate="2025-05-25T20:26:34" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="2024-08-13T18:37:55" id="1.2.276.0.76.10.3053" name="HistoryofPresentIllnessSection" displayName="Notfallanamnese" effectiveDate="2025-12-01T00:00:00" statusCode="draft" versionLabel="2025" isClosed="false" lastModifiedDate="2025-12-18T13:48:42" ident="aktin-"/>
+        </template>
+    </template>
+</result>

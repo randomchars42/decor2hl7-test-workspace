@@ -1,0 +1,21 @@
+<valueSet xmlns:json="http://www.json.org" id="2.16.840.1.113883.11.21.1" name="MedicationTimeUnits" displayName="Medication Time Units (UCUM)" effectiveDate="2023-02-01T11:12:08" statusCode="final" versionLabel="3.0" lastModifiedDate="2023-02-01T11:13:32" url="http://art-decor.org/decor/services/" ident="pharmcda-">
+    <desc json:array="true" language="en-US" lastTranslated="2023-02-01T11:12:08">Medication Time Units, expressed in UCUM</desc>
+    <sourceCodeSystem json:array="true" id="2.16.840.1.113883.6.8" identifierName="Unified Code for Units of Measure" canonicalUri="http://unitsofmeasure.org" canonicalUriDSTU2="http://unitsofmeasure.org" canonicalUriSTU3="http://unitsofmeasure.org" canonicalUriR4="http://unitsofmeasure.org" canonicalUriR4B="http://unitsofmeasure.org" canonicalUriR5="http://unitsofmeasure.org"/>
+    <publishingAuthority json:array="true" name="HL7 International" inherited="project">
+        <addrLine json:array="true">Health Level Seven International</addrLine>
+        <addrLine json:array="true">455 E. Eisenhower PKWY STE 300 # 025</addrLine>
+        <addrLine json:array="true">Ann Arbor, MI 48108 USA</addrLine>
+        <addrLine json:array="true">USA</addrLine>
+        <addrLine json:array="true" type="phone">+1 734 677 7777 </addrLine>
+        <addrLine json:array="true" type="email">info@hl7.org</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="concept" code="a" codeSystem="2.16.840.1.113883.6.8" displayName="Year" level="0" type="L"/>
+    <items json:array="true" is="concept" code="d" codeSystem="2.16.840.1.113883.6.8" displayName="Day" level="0" type="L"/>
+    <items json:array="true" is="concept" code="h" codeSystem="2.16.840.1.113883.6.8" displayName="Hour" level="0" type="L"/>
+    <items json:array="true" is="concept" code="min" codeSystem="2.16.840.1.113883.6.8" displayName="Minute" level="0" type="L"/>
+    <items json:array="true" is="concept" code="mo" codeSystem="2.16.840.1.113883.6.8" displayName="Month" level="0" type="L"/>
+    <items json:array="true" is="concept" code="s" codeSystem="2.16.840.1.113883.6.8" displayName="Second" level="0" type="L"/>
+    <items json:array="true" is="concept" code="wk" codeSystem="2.16.840.1.113883.6.8" displayName="Week" level="0" type="L"/>
+</valueSet>

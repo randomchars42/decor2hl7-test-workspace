@@ -1,0 +1,23 @@
+<valueSets>
+    <repository url="http://art-decor.org/decor/services/" ident="aktin-" referencedFrom="dguvbbr-" projecttype="local">
+        <valueSet id="1.2.276.0.76.11.87" name="ASAscore" displayName="ASA physical status classification" effectiveDate="2017-01-06T00:00:00" statusCode="draft">
+            <sourceCodeSystem id="1.2.276.0.76.5.87" identifierName="" canonicalUri="urn:oid:1.2.276.0.76.5.87" canonicalUriDSTU2="urn:oid:1.2.276.0.76.5.87" canonicalUriSTU3="urn:oid:1.2.276.0.76.5.87" canonicalUriR4="urn:oid:1.2.276.0.76.5.87" canonicalUriR4B="urn:oid:1.2.276.0.76.5.87" canonicalUriR5="urn:oid:1.2.276.0.76.5.87"/>
+            <publishingAuthority name="AKTIN e. V." inherited="project">
+                <addrLine>c/o Uniklinik RWTH Aachen</addrLine>
+                <addrLine>Institut für Medizinische Informatik</addrLine>
+                <addrLine>Pauwelsstraße 35</addrLine>
+                <addrLine>52074 Aachen</addrLine>
+                <addrLine type="phone">Tel. +49 391 67 28186</addrLine>
+                <addrLine type="email">office@aktin.org</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <concept code="1" codeSystem="1.2.276.0.76.5.87" displayName="ASA 1" level="0" type="L"/>
+                <concept code="2" codeSystem="1.2.276.0.76.5.87" displayName="ASA 2" level="0" type="L"/>
+                <concept code="3" codeSystem="1.2.276.0.76.5.87" displayName="ASA 3" level="0" type="L"/>
+                <concept code="4" codeSystem="1.2.276.0.76.5.87" displayName="ASA 4" level="0" type="L"/>
+                <concept code="5" codeSystem="1.2.276.0.76.5.87" displayName="ASA 5" level="0" type="L"/>
+                <concept code="6" codeSystem="1.2.276.0.76.5.87" displayName="ASA 6" level="0" type="L"/>
+            </conceptList>
+        </valueSet>
+    </repository>
+</valueSets>

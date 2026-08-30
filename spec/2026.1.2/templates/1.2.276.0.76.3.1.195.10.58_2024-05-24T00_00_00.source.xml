@@ -1,0 +1,27 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultLanguage="de-DE" id="1.2.276.0.76.3.1.195.10.58" name="ct_thorax_durchgefuhrt" displayName="CT Thorax durchgeführt" effectiveDate="2024-05-24T00:00:00" statusCode="draft" isClosed="false" versionLabel="2024" url="http://art-decor.org/decor/services/" ident="aktin-" xml:dummy-1="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-3="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance">
+    <desc language="de-DE">Abgeleitete Informationen über Diagnostik zur Weitergabe - Wurde ein CT des Thorax durchgeführt?</desc>
+    <classification type="cdaentrylevel"/>
+    <relationship type="SPEC" template="2.16.840.1.113883.10.12.306" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.306" tmname="CDAProcedure" tmdisplayName="CDA Procedure" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-"/>
+    <context id="**"/>
+    <element name="hl7:procedure" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true">
+                <attribute name="classCode" value="PROC"/>
+                <attribute name="moodCode" value="EVN"/>
+                <attribute name="negationInd" isOptional="false">
+                    <desc language="de-DE">Wenn durchgeführt: negationInd=false, wenn nicht durchgeführt: negationInd=true</desc>
+                </attribute>
+                <element name="hl7:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1">
+                    <attribute name="root" value="1.2.276.0.76.3.1.195.10.58" datatype="uid"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CE" conformance="R" isMandatory="true">
+                    <vocabulary code="169069000" codeSystem="2.16.840.1.113883.6.96" displayName="Computed tomography of chest (procedure)"/>
+                </element>
+                <element name="hl7:text" datatype="ED" minimumMultiplicity="0" maximumMultiplicity="1">
+                    <desc language="de-DE" lastTranslated="2024-08-13T10:50:15">Lediglich reference in den Text der zugehörigen Section</desc>
+                    <element name="hl7:reference" datatype="TEL" minimumMultiplicity="1" maximumMultiplicity="1"/>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CS" conformance="R" isMandatory="true">
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:effectiveTime" datatype="TS" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R"/>
+            </element>
+</template>

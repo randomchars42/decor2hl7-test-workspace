@@ -1,0 +1,461 @@
+<codeSystems>
+    <project ident="mide-">
+        <codeSystem id="2.16.840.1.113883.3.1937.777.24.5.26" name="EQ-5D-5L" displayName="EQ-5D-5L" effectiveDate="2024-09-02T10:07:59" statusCode="draft" lastModifiedDate="2024-09-02T17:58:57" language="de-DE">
+            <desc language="en-US" lastTranslated="2024-09-02T12:09:13">
+                <p>
+                    <strong>Health Questionnaire</strong>
+                </p>
+                <p>
+                    <strong>English version for the UK</strong>
+                </p>
+            </desc>
+            <desc language="de-DE" lastTranslated="2024-09-02T12:07:57">
+                <p>
+                    <strong>Gesundheitsfragebogen</strong>
+                </p>
+                <p>
+                    <strong>Deutsche Version für Deutschland</strong>
+                </p>
+                <p>
+                    <strong>(German version for Germany)</strong>
+                </p>
+            </desc>
+            <publishingAuthority name="Konsortium DIFUTURE" inherited="project">
+                <addrLine type="uri">https://difuture.de</addrLine>
+            </publishingAuthority>
+            <copyright language="en-US" lastTranslated="2024-09-02T12:15:13">
+                <p>© 2009 EuroQol Research Foundation. EQ-5DTM is a trade mark of the EuroQol Research Foundation. UK (English) v1.2</p>
+            </copyright>
+            <copyright language="de-DE" lastTranslated="2024-09-02T12:14:48">
+                <p>© 2017 EuroQol Research Foundation. EQ-5DTM is a trade mark of the EuroQol Research Foundation. Germany (German) v1.0 </p>
+            </copyright>
+            <conceptList>
+                <codedConcept code="EQ-5D-5L_Instructions" statusCode="draft" level="0" type="A">
+                    <designation language="en-US" type="fsn" displayName="INSTRUCTIONS"/>
+                    <designation language="de-DE" type="fsn" displayName="INSTRUKTIONEN"/>
+                    <desc language="en-US" lastTranslated="2024-09-02T12:03:42">
+                        <p>Under each heading, please tick the ONE box that best describes your health TODAY.</p>
+                    </desc>
+                    <desc language="de-DE" lastTranslated="2024-09-02T12:03:42">
+                        <p>Bitte kreuze unter jeder Überschrift EIN Kästchen an, das deine Gesundheit HEUTE am besten beschreibt.</p>
+                    </desc>
+                </codedConcept>
+                <codedConcept code="EQ-5D-5L_Mobility" statusCode="draft" level="0" type="A">
+                    <designation language="en-US" type="fsn" displayName="MOBILITY"/>
+                    <designation language="de-DE" type="fsn" displayName="BEWEGUNG"/>
+                    <desc language="en-US" lastTranslated="2024-09-02T11:24:17">
+                        <p>
+                            <strong>MOBILITY</strong>
+                        </p>
+                    </desc>
+                    <desc language="de-DE" lastTranslated="2024-09-02T11:24:17">
+                        <p>
+                            <strong>BEWEGUNG</strong>
+                            <em>(herumlaufen)</em>
+                        </p>
+                    </desc>
+                </codedConcept>
+                <codedConcept code="EQ-5D-5L_Q1.1" statusCode="draft" level="1" type="L">
+                    <designation language="en-US" type="fsn" displayName="I have no problems in walking about"/>
+                    <designation language="de-DE" type="fsn" displayName="Ich habe keine Schwierigkeiten herumzulaufen"/>
+                    <desc language="en-US" lastTranslated="2024-09-02T11:24:17">
+                        <p>I have no problems in walking about</p>
+                    </desc>
+                    <desc language="de-DE" lastTranslated="2024-09-02T11:24:17">
+                        <p>Ich habe <u>keine</u> Schwierigkeiten herumzulaufen</p>
+                    </desc>
+                    <parent code="EQ-5D-5L_Mobility"/>
+                </codedConcept>
+                <codedConcept code="EQ-5D-5L_Q1.2" statusCode="draft" level="1" type="L">
+                    <designation language="en-US" type="fsn" displayName="I have slight problems in walking about"/>
+                    <designation language="de-DE" type="fsn" displayName="Ich habe leichte Schwierigkeiten herumzulaufen"/>
+                    <desc language="en-US" lastTranslated="2024-09-02T11:59:24">
+                        <p>I have slight problems in walking about</p>
+                    </desc>
+                    <desc language="de-DE" lastTranslated="2024-09-02T11:59:24">
+                        <p>Ich habe <u>leichte</u> Schwierigkeiten herumzulaufen</p>
+                    </desc>
+                    <parent code="EQ-5D-5L_Mobility"/>
+                </codedConcept>
+                <codedConcept code="EQ-5D-5L_Q1.3" statusCode="draft" level="1" type="L">
+                    <designation language="en-US" type="fsn" displayName="I have moderate problems in walking about"/>
+                    <designation language="de-DE" type="fsn" displayName="Ich habe einige Schwierigkeiten herumzulaufen"/>
+                    <desc language="en-US" lastTranslated="2024-09-02T11:59:24">
+                        <p>I have moderate problems in walking about</p>
+                    </desc>
+                    <desc language="de-DE" lastTranslated="2024-09-02T11:59:24">
+                        <p>Ich habe <u>einige</u> Schwierigkeiten herumzulaufen</p>
+                    </desc>
+                    <parent code="EQ-5D-5L_Mobility"/>
+                </codedConcept>
+                <codedConcept code="EQ-5D-5L_Q1.4" statusCode="draft" level="1" type="L">
+                    <designation language="en-US" type="fsn" displayName="I have severe problems in walking about"/>
+                    <designation language="de-DE" type="fsn" displayName="Ich habe große Schwierigkeiten herumzulaufen"/>
+                    <desc language="en-US" lastTranslated="2024-09-02T11:59:24">
+                        <p>I have severe problems in walking about</p>
+                    </desc>
+                    <desc language="de-DE" lastTranslated="2024-09-02T11:59:24">
+                        <p>Ich habe <u>große</u> Schwierigkeiten herumzulaufen</p>
+                    </desc>
+                    <parent code="EQ-5D-5L_Mobility"/>
+                </codedConcept>
+                <codedConcept code="EQ-5D-5L_Q1.5" statusCode="draft" level="1" type="L">
+                    <designation language="en-US" type="fsn" displayName="I am unable to walk about"/>
+                    <designation language="de-DE" type="fsn" displayName="Ich kann nicht herumlaufen"/>
+                    <desc language="en-US" lastTranslated="2024-09-02T11:59:24">
+                        <p>I am unable to walk about</p>
+                    </desc>
+                    <desc language="de-DE" lastTranslated="2024-09-02T11:59:24">
+                        <p>Ich kann nicht herumlaufen</p>
+                    </desc>
+                    <parent code="EQ-5D-5L_Mobility"/>
+                </codedConcept>
+                <codedConcept code="EQ-5D-5L_Self-Care" statusCode="draft" level="0" type="A">
+                    <designation language="en-US" type="fsn" displayName="SELF-CARE"/>
+                    <designation language="de-DE" type="fsn" displayName="FÜR MICH SELBST SORGEN"/>
+                    <desc language="en-US" lastTranslated="2024-09-02T11:24:17">
+                        <p>
+                            <strong>SELF-CARE</strong>
+                        </p>
+                    </desc>
+                    <desc language="de-DE" lastTranslated="2024-09-02T11:24:17">
+                        <p>
+                            <strong>FÜR MICH SELBST SORGEN</strong>
+                        </p>
+                    </desc>
+                </codedConcept>
+                <codedConcept code="EQ-5D-5L_Q2.1" statusCode="draft" level="1" type="L">
+                    <designation language="en-US" type="fsn" displayName="I have no problems washing or dressing myself"/>
+                    <designation language="de-DE" type="fsn" displayName="Ich habe keine Schwierigkeiten, mich selber zu waschen oder anzuziehen"/>
+                    <desc language="en-US" lastTranslated="2024-09-02T11:59:24">
+                        <p>I have no problems washing or dressing myself</p>
+                    </desc>
+                    <desc language="de-DE" lastTranslated="2024-09-02T11:59:24">
+                        <p>Ich habe <u>keine</u> Schwierigkeiten, mich selber zu waschen oder anzuziehen</p>
+                    </desc>
+                    <parent code="EQ-5D-5L_Self-Care"/>
+                </codedConcept>
+                <codedConcept code="EQ-5D-5L_Q2.2" statusCode="draft" level="1" type="L">
+                    <designation language="en-US" type="fsn" displayName="I have slight problems washing or dressing myself"/>
+                    <designation language="de-DE" type="fsn" displayName="Ich habe leichte Schwierigkeiten, mich selber zu waschen oder anzuziehen"/>
+                    <desc language="en-US" lastTranslated="2024-09-02T11:59:24">
+                        <p>I have slight problems washing or dressing myself</p>
+                    </desc>
+                    <desc language="de-DE" lastTranslated="2024-09-02T11:59:24">
+                        <p>Ich habe <u>leichte</u> Schwierigkeiten, mich selber zu waschen oder anzuziehen</p>
+                    </desc>
+                    <parent code="EQ-5D-5L_Self-Care"/>
+                </codedConcept>
+                <codedConcept code="EQ-5D-5L_Q2.3" statusCode="draft" level="1" type="L">
+                    <designation language="en-US" type="fsn" displayName="I have moderate problems washing or dressing myself"/>
+                    <designation language="de-DE" type="fsn" displayName="Ich habe einige Schwierigkeiten, mich selber zu waschen oder anzuziehen"/>
+                    <desc language="en-US" lastTranslated="2024-09-02T11:59:24">
+                        <p>I have moderate problems washing or dressing myself</p>
+                    </desc>
+                    <desc language="de-DE" lastTranslated="2024-09-02T11:59:24">
+                        <p>Ich habe <u>einige</u> Schwierigkeiten, mich selber zu waschen oder anzuziehen</p>
+                    </desc>
+                    <parent code="EQ-5D-5L_Self-Care"/>
+                </codedConcept>
+                <codedConcept code="EQ-5D-5L_Q2.4" statusCode="draft" level="1" type="L">
+                    <designation language="en-US" type="fsn" displayName="I have severe problems washing or dressing myself"/>
+                    <designation language="de-DE" type="fsn" displayName="Ich habe große Schwierigkeiten, mich selber zu waschen oder anzuziehen"/>
+                    <desc language="en-US" lastTranslated="2024-09-02T11:59:24">
+                        <p>I have severe problems washing or dressing myself</p>
+                    </desc>
+                    <desc language="de-DE" lastTranslated="2024-09-02T11:59:24">
+                        <p>Ich habe <u>große</u> Schwierigkeiten, mich selber zu waschen oder anzuziehen</p>
+                    </desc>
+                    <parent code="EQ-5D-5L_Self-Care"/>
+                </codedConcept>
+                <codedConcept code="EQ-5D-5L_Q2.5" statusCode="draft" level="1" type="L">
+                    <designation language="en-US" type="fsn" displayName="I am unable to wash or dress myself"/>
+                    <designation language="de-DE" type="fsn" displayName="Ich kann mich nicht selber waschen oder anziehen"/>
+                    <desc language="en-US" lastTranslated="2024-09-02T11:59:24">
+                        <p>I am unable to wash or dress myself</p>
+                    </desc>
+                    <desc language="de-DE" lastTranslated="2024-09-02T11:59:24">
+                        <p>Ich <u>kann mich nicht</u> selber waschen oder anziehen</p>
+                    </desc>
+                    <parent code="EQ-5D-5L_Self-Care"/>
+                </codedConcept>
+                <codedConcept code="EQ-5D-5L_Usual_Activities" statusCode="draft" level="0" type="A">
+                    <designation language="en-US" type="fsn" displayName="USUAL ACTIVITIES"/>
+                    <designation language="de-DE" type="fsn" displayName="WAS ICH NORMALERWEISE TUE"/>
+                    <desc language="en-US" lastTranslated="2024-09-02T11:24:17">
+                        <p>
+                            <strong>USUAL ACTIVITIES</strong>
+                            <em>(e.g. work, study, housework, family or leisure activities)</em>
+                        </p>
+                    </desc>
+                    <desc language="de-DE" lastTranslated="2024-09-02T11:24:17">
+                        <p>
+                            <strong>WAS ICH NORMALERWEISE TUE</strong>
+                            <em>(zum Beispiel: in die Schule gehen, Hobbys, Sport, Spielen, Dinge mit Familie und Freunden machen)</em>
+                        </p>
+                    </desc>
+                </codedConcept>
+                <codedConcept code="EQ-5D-5L_Q3.1" statusCode="draft" level="1" type="L">
+                    <designation language="en-US" type="fsn" displayName="I have no problems doing my usual activities"/>
+                    <designation language="de-DE" type="fsn" displayName="Ich habe keine Schwierigkeiten das zu tun, was ich normalerweise tue"/>
+                    <desc language="en-US" lastTranslated="2024-09-02T11:59:24">
+                        <p>I have no problems doing my usual activities</p>
+                    </desc>
+                    <desc language="de-DE" lastTranslated="2024-09-02T11:59:24">
+                        <p>Ich habe <u>keine</u> Schwierigkeiten das zu tun, was ich normalerweise tue</p>
+                    </desc>
+                    <parent code="EQ-5D-5L_Usual_Activities"/>
+                </codedConcept>
+                <codedConcept code="EQ-5D-5L_Q3.2" statusCode="draft" level="1" type="L">
+                    <designation language="en-US" type="fsn" displayName="I have slight problems doing my usual activities"/>
+                    <designation language="de-DE" type="fsn" displayName="Ich habe leichte Schwierigkeiten das zu tun, was ich normalerweise tue"/>
+                    <desc language="en-US" lastTranslated="2024-09-02T11:59:24">
+                        <p>I have slight problems doing my usual activities</p>
+                    </desc>
+                    <desc language="de-DE" lastTranslated="2024-09-02T11:59:24">
+                        <p>Ich habe <u>leichte</u> Schwierigkeiten das zu tun, was ich normalerweise tue</p>
+                    </desc>
+                    <parent code="EQ-5D-5L_Usual_Activities"/>
+                </codedConcept>
+                <codedConcept code="EQ-5D-5L_Q3.3" statusCode="draft" level="1" type="L">
+                    <designation language="en-US" type="fsn" displayName="I have moderate problems doing my usual activities"/>
+                    <designation language="de-DE" type="fsn" displayName="Ich habe einige Schwierigkeiten das zu tun, was ich normalerweise tue"/>
+                    <desc language="en-US" lastTranslated="2024-09-02T11:59:24">
+                        <p>I have moderate problems doing my usual activities</p>
+                    </desc>
+                    <desc language="de-DE" lastTranslated="2024-09-02T11:59:24">
+                        <p>Ich habe <u>einige</u> Schwierigkeiten das zu tun, was ich normalerweise tue</p>
+                    </desc>
+                    <parent code="EQ-5D-5L_Usual_Activities"/>
+                </codedConcept>
+                <codedConcept code="EQ-5D-5L_Q3.4" statusCode="draft" level="1" type="L">
+                    <designation language="en-US" type="fsn" displayName="I have severe problems doing my usual activities"/>
+                    <designation language="de-DE" type="fsn" displayName="Ich habe große Schwierigkeiten das zu tun, was ich normalerweise tue"/>
+                    <desc language="en-US" lastTranslated="2024-09-02T11:59:24">
+                        <p>I have severe problems doing my usual activities</p>
+                    </desc>
+                    <desc language="de-DE" lastTranslated="2024-09-02T11:59:24">
+                        <p>Ich habe <u>große</u> Schwierigkeiten das zu tun, was ich normalerweise tue</p>
+                    </desc>
+                    <parent code="EQ-5D-5L_Usual_Activities"/>
+                </codedConcept>
+                <codedConcept code="EQ-5D-5L_Q3.5" statusCode="draft" level="1" type="L">
+                    <designation language="en-US" type="fsn" displayName="I am unable to do my usual activities"/>
+                    <designation language="de-DE" type="fsn" displayName="Ich kann nicht das tun, was ich normalerweise tue"/>
+                    <desc language="en-US" lastTranslated="2024-09-02T11:59:24">
+                        <p>I am unable to do my usual activities</p>
+                    </desc>
+                    <desc language="de-DE" lastTranslated="2024-09-02T11:59:24">
+                        <p>Ich <u>kann nicht</u> das tun, was ich normalerweise tue</p>
+                    </desc>
+                    <parent code="EQ-5D-5L_Usual_Activities"/>
+                </codedConcept>
+                <codedConcept code="EQ-5D-5L_Pain-Discomfort" statusCode="draft" level="0" type="A">
+                    <designation language="en-US" type="fsn" displayName="PAIN / DISCOMFORT"/>
+                    <designation language="de-DE" type="fsn" displayName="SCHMERZEN ODER KÖRPERLICHE BESCHWERDEN"/>
+                    <desc language="en-US" lastTranslated="2024-09-02T11:24:17">
+                        <p>
+                            <strong>PAIN / DISCOMFORT</strong>
+                        </p>
+                    </desc>
+                    <desc language="de-DE" lastTranslated="2024-09-02T11:24:17">
+                        <p>
+                            <strong>SCHMERZEN ODER KÖRPERLICHE BESCHWERDEN</strong>
+                        </p>
+                    </desc>
+                </codedConcept>
+                <codedConcept code="EQ-5D-5L_Q4.1" statusCode="draft" level="1" type="L">
+                    <designation language="en-US" type="fsn" displayName="I have no pain or discomfort"/>
+                    <designation language="de-DE" type="fsn" displayName="Ich habe keine Schmerzen oder körperlichen Beschwerden"/>
+                    <desc language="en-US" lastTranslated="2024-09-02T11:59:24">
+                        <p>I have no pain or discomfort</p>
+                    </desc>
+                    <desc language="de-DE" lastTranslated="2024-09-02T11:59:24">
+                        <p>Ich habe <u>keine</u> Schmerzen oder körperlichen Beschwerden</p>
+                    </desc>
+                    <parent code="EQ-5D-5L_Pain-Discomfort"/>
+                </codedConcept>
+                <codedConcept code="EQ-5D-5L_Q4.2" statusCode="draft" level="1" type="L">
+                    <designation language="en-US" type="fsn" displayName="I have slight pain or discomfort"/>
+                    <designation language="de-DE" type="fsn" displayName="Ich habe leichte Schmerzen oder körperlichen Beschwerden"/>
+                    <desc language="en-US" lastTranslated="2024-09-02T11:59:24">
+                        <p>I have slight pain or discomfort</p>
+                    </desc>
+                    <desc language="de-DE" lastTranslated="2024-09-02T11:59:24">
+                        <p>Ich habe <u>leichte</u> Schmerzen oder körperlichen Beschwerden</p>
+                    </desc>
+                    <parent code="EQ-5D-5L_Pain-Discomfort"/>
+                </codedConcept>
+                <codedConcept code="EQ-5D-5L_Q4.3" statusCode="draft" level="1" type="L">
+                    <designation language="en-US" type="fsn" displayName="I have moderate pain or discomfort"/>
+                    <designation language="de-DE" type="fsn" displayName="Ich habe einige Schmerzen oder körperlichen Beschwerden"/>
+                    <desc language="en-US" lastTranslated="2024-09-02T11:59:24">
+                        <p>I have moderate pain or discomfort</p>
+                    </desc>
+                    <desc language="de-DE" lastTranslated="2024-09-02T11:59:24">
+                        <p>Ich habe <u>einige</u> Schmerzen oder körperlichen Beschwerden</p>
+                    </desc>
+                    <parent code="EQ-5D-5L_Pain-Discomfort"/>
+                </codedConcept>
+                <codedConcept code="EQ-5D-5L_Q4.4" statusCode="draft" level="1" type="L">
+                    <designation language="en-US" type="fsn" displayName="I have severe pain or discomfort"/>
+                    <designation language="de-DE" type="fsn" displayName="Ich habe große Schmerzen oder körperlichen Beschwerden"/>
+                    <desc language="en-US" lastTranslated="2024-09-02T11:59:24">
+                        <p>I have severe pain or discomfort</p>
+                    </desc>
+                    <desc language="de-DE" lastTranslated="2024-09-02T11:59:24">
+                        <p>Ich habe <u>große</u> Schmerzen oder körperlichen Beschwerden</p>
+                    </desc>
+                    <parent code="EQ-5D-5L_Pain-Discomfort"/>
+                </codedConcept>
+                <codedConcept code="EQ-5D-5L_Q4.5" statusCode="draft" level="1" type="L">
+                    <designation language="en-US" type="fsn" displayName="I have extreme pain or discomfort"/>
+                    <designation language="de-DE" type="fsn" displayName="Ich habe extreme Schmerzen oder körperlichen Beschwerden"/>
+                    <desc language="en-US" lastTranslated="2024-09-02T11:59:24">
+                        <p>I have extreme pain or discomfort</p>
+                    </desc>
+                    <desc language="de-DE" lastTranslated="2024-09-02T11:59:24">
+                        <p>Ich habe <u>extreme</u> Schmerzen oder körperlichen Beschwerden</p>
+                    </desc>
+                    <parent code="EQ-5D-5L_Pain-Discomfort"/>
+                </codedConcept>
+                <codedConcept code="EQ-5D-5L_Anxiety-Depression" statusCode="draft" level="0" type="A">
+                    <designation language="en-US" type="fsn" displayName="ANXIETY / DEPRESSION"/>
+                    <designation language="de-DE" type="fsn" displayName="SICH UNGLÜCKLICH, TRAURIG ODER BESORT FÜHLEN"/>
+                    <desc language="en-US" lastTranslated="2024-09-02T11:24:17">
+                        <p>
+                            <strong>ANXIETY / DEPRESSION</strong>
+                        </p>
+                    </desc>
+                    <desc language="de-DE" lastTranslated="2024-09-02T11:24:17">
+                        <p>
+                            <strong>SICH UNGLÜCKLICH, TRAURIG ODER BESORT FÜHLEN</strong>
+                        </p>
+                        <p>Default: http://hl7.org/fhir/StructureDefinition/ordinalValue.valueDecimal = 9 (Missing value)</p>
+                        <p>Variable:<br/>http://hl7.org/fhir/StructureDefinition/variable.variableExpression.name =
+                            "Anxiety"<br/>http://hl7.org/fhir/StructureDefinition/variable.variableExpression.language = "text/fhirpath"<br/>http://hl7.org/fhir/StructureDefinition/variable.variableExpression.expression = "%resource.repeat(item).where(linkId='EQ-5D-5L_Anxiety-Depression').item.answer.value"</p>
+                        <p/>
+                    </desc>
+                </codedConcept>
+                <codedConcept code="EQ-5D-5L_Q5.1" statusCode="draft" level="1" type="L">
+                    <designation language="en-US" type="fsn" displayName="I am not anxious or depressed"/>
+                    <designation language="de-DE" type="fsn" displayName="Ich bin nicht unglücklich, traurig oder besorgt"/>
+                    <desc language="en-US" lastTranslated="2024-09-02T11:59:24">
+                        <p>I am not anxious or depressed</p>
+                    </desc>
+                    <desc language="de-DE" lastTranslated="2024-09-02T11:59:24">
+                        <p>Ich bin <u>nicht</u> unglücklich, traurig oder besorgt</p>
+                        <p>http://hl7.org/fhir/StructureDefinition/ordinalValue.valueDecimal = 1 (Not anxious)</p>
+                    </desc>
+                    <parent code="EQ-5D-5L_Anxiety-Depression"/>
+                </codedConcept>
+                <codedConcept code="EQ-5D-5L_Q5.2" statusCode="draft" level="1" type="L">
+                    <designation language="en-US" type="fsn" displayName="I am slightly anxious or depressed"/>
+                    <designation language="de-DE" type="fsn" displayName="Ich bin ein bisschen unglücklich, traurig oder besorgt"/>
+                    <desc language="en-US" lastTranslated="2024-09-02T11:59:24">
+                        <p>I am slightly anxious or depressed</p>
+                    </desc>
+                    <desc language="de-DE" lastTranslated="2024-09-02T11:59:24">
+                        <p>Ich bin <u>ein bisschen</u> unglücklich, traurig oder besorgt</p>
+                        <p>http://hl7.org/fhir/StructureDefinition/ordinalValue.valueDecimal = 2 (Slightly anxious)</p>
+                    </desc>
+                    <parent code="EQ-5D-5L_Anxiety-Depression"/>
+                </codedConcept>
+                <codedConcept code="EQ-5D-5L_Q5.3" statusCode="draft" level="1" type="L">
+                    <designation language="en-US" type="fsn" displayName="I am moderately anxious or depressed"/>
+                    <designation language="de-DE" type="fsn" displayName="Ich bin etwas unglücklich, traurig oder besorgt"/>
+                    <desc language="en-US" lastTranslated="2024-09-02T11:59:24">
+                        <p>I am moderately anxious or depressed</p>
+                    </desc>
+                    <desc language="de-DE" lastTranslated="2024-09-02T11:59:24">
+                        <p>Ich bin <u>etwas</u> unglücklich, traurig oder besorgt</p>
+                        <p>http://hl7.org/fhir/StructureDefinition/ordinalValue.valueDecimal = 3 (Moderately</p>
+                        <p> anxious)</p>
+                    </desc>
+                    <parent code="EQ-5D-5L_Anxiety-Depression"/>
+                </codedConcept>
+                <codedConcept code="EQ-5D-5L_Q5.4" statusCode="draft" level="1" type="L">
+                    <designation language="en-US" type="fsn" displayName="I am severely anxious or depressed"/>
+                    <designation language="de-DE" type="fsn" displayName="Ich bin sehr unglücklich, traurig oder besorgt"/>
+                    <desc language="en-US" lastTranslated="2024-09-02T11:59:24">
+                        <p>I am severely anxious or depressed</p>
+                    </desc>
+                    <desc language="de-DE" lastTranslated="2024-09-02T11:59:24">
+                        <p>Ich bin <u>sehr</u> unglücklich, traurig oder besorgt</p>
+                        <p>http://hl7.org/fhir/StructureDefinition/ordinalValue.valueDecimal = 4 (Severely anxious)</p>
+                    </desc>
+                    <parent code="EQ-5D-5L_Anxiety-Depression"/>
+                </codedConcept>
+                <codedConcept code="EQ-5D-5L_Q5.5" statusCode="draft" level="1" type="L">
+                    <designation language="en-US" type="fsn" displayName="I am extremely anxious or depressed"/>
+                    <designation language="de-DE" type="fsn" displayName="Ich bin extrem unglücklich, traurig oder besorgt"/>
+                    <desc language="en-US" lastTranslated="2024-09-02T11:59:24">
+                        <p>I am extremely anxious or depressed</p>
+                    </desc>
+                    <desc language="de-DE" lastTranslated="2024-09-02T11:59:24">
+                        <p>Ich bin <u>extrem</u> unglücklich, traurig oder besorgt</p>
+                        <p>http://hl7.org/fhir/StructureDefinition/ordinalValue.valueDecimal = 5 (Extremely anxious)</p>
+                    </desc>
+                    <parent code="EQ-5D-5L_Anxiety-Depression"/>
+                </codedConcept>
+                <codedConcept code="EQ-5D-5L_Health_Today" statusCode="draft" level="0" type="A">
+                    <designation language="en-US" type="fsn" displayName="HEALTY TODAY"/>
+                    <designation language="de-DE" type="fsn" displayName="GESUNDHEIT HEUTE"/>
+                    <desc language="en-US" lastTranslated="2024-09-02T11:59:24">
+                        <p>HEALTH TODAY</p>
+                    </desc>
+                    <desc language="de-DE" lastTranslated="2024-09-02T11:59:24">
+                        <p>GESUNDHEIT HEUTE</p>
+                    </desc>
+                </codedConcept>
+                <codedConcept code="EQ-5D-5L_Q6.1" statusCode="draft" level="1" type="L">
+                    <designation language="en-US" type="fsn" displayName="YOUR HEALTH TODAY"/>
+                    <designation language="de-DE" type="fsn" displayName="DEINE GESUNDHEIT HEUTE"/>
+                    <desc language="en-US" lastTranslated="2024-09-02T11:59:24">
+                        <ul>
+                            <li>
+                                <p>We would like to know how good or bad your health is TODAY.</p>
+                            </li>
+                            <li>
+                                <p>This scale is numbered from 0 to 100.</p>
+                            </li>
+                            <li>
+                                <p>100 means the best health you can imagine.<br/>0 means the worst health you can imagine.</p>
+                            </li>
+                            <li>
+                                <p>Please mark an X on the scale to indicate how your health is TODAY.
+                                    </p>
+                            </li>
+                            <li>
+                                <p>Now, write the number you marked on the scale in the box below. </p>
+                            </li>
+                        </ul>
+                        <p> </p>
+                    </desc>
+                    <desc language="de-DE" lastTranslated="2024-09-02T11:59:24">
+                        <ul>
+                            <li>
+                                <p>Wir wollen herausfinden, wie gut oder schlecht deine Gesundheit HEUTE ist. </p>
+                            </li>
+                            <li>
+                                <p>Wir haben darum diese Linie aufgezeichnet mit Nummern von 0 bis 100. </p>
+                            </li>
+                            <li>
+                                <p>100 ist die beste Gesundheit, die du dir vorstellen kannst. </p>
+                                <p>0 (Null) ist die schlechteste Gesundheit, die du dir vorstellen
+                                    kannst.</p>
+                            </li>
+                            <li>
+                                <p>Bitte kreuze den Punkt auf der Linie an, der beschreibt wie gut oder<br/>schlecht deine Gesundheit HEUTE ist.</p>
+                            </li>
+                            <li>
+                                <p>Jetzt trage bitte die Zahl, die du auf der Linie angekreuzt hast, in das Kästchen unten ein. </p>
+                            </li>
+                        </ul>
+                    </desc>
+                    <parent code="EQ-5D-5L_Health_Today"/>
+                </codedConcept>
+            </conceptList>
+        </codeSystem>
+    </project>
+</codeSystems>

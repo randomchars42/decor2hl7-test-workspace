@@ -1,0 +1,79 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:pharm="urn:ihe:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.2027" name="HeaderEncompassingEncounter" displayName="CDA encompassingEncounter Patientenkontakt" statusCode="review" versionLabel="1.1" effectiveDate="2014-08-25T00:00:00" url="http://art-decor.org/decor/services/" ident="hl7de-" pharm:dummy-1="urn:ihe:pharm" xml:dummy-2="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-4="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="de-DE">Diese Klasse repräsentiert Informationen, in welchem Rahmen der Patientenkontakt, der dokumentiert wird, stattgefunden hat. Dokumente werden nicht notwendigerweise immer während eines Patientenkontakts erstellt, sondern ggf. auch zu einem späteren Zeitpunkt, wenn beispielsweise ein Arzt wegen eines pathologischen Laborwertes den Patienten vergeblich versucht zu
+                erreichen und dennoch seine Verlaufsdokumentation fortführt.<br/>Wenn die Dokumentation ein Entlass- oder Verlegungsdokument ist, sollte die Information in dieser Klasse inklusive der Dauer des Aufenthalts und der Einrichtung, wo der Patientenaufenthalt stattfand mitgegeben werden. Dies gilt nicht nur stationäre Aufenthalte, sondern in gegebenem Kontext in übertragenem Sinn auch
+                für einen beendeten Patientenkontakt in der Praxis eines Niedergelassenen.</desc>
+            <classification type="cdaheaderlevel"/>
+            <example>
+        <componentOf>
+            <encompassingEncounter>
+                        <!-- Aufenthalts-Identifikation -->
+                <id root="1.2.276.0.76.3.87686" extension="657827456837"/>
+                        <!-- Codierung des Patientenkontakts -->
+                <code code="IMP" displayName="Inpatient encounter" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7 ActCode"/>
+                        <!-- Zeitraum des Patientenkontakts -->
+                <effectiveTime>
+                    <low value="20081224082015"/>
+                    <high value="20081225113000"/>
+                </effectiveTime>
+                        <!-- Verantwortliche Person für den Patientenkontakt -->
+                <responsibleParty>
+                    <assignedEntity>
+                                <!-- ... -->
+                    </assignedEntity>
+                </responsibleParty>
+                        <!--
+                            Organisation, in deren Verantwortungsbereich der
+                            Patientenkontakt stattfand
+                        -->
+                <location>
+                    <healthCareFacility>
+                        <serviceProviderOrganization>
+                                    <!-- ... -->
+                        </serviceProviderOrganization>
+                    </healthCareFacility>
+                </location>
+            </encompassingEncounter>
+        </componentOf>
+    </example>
+            <element name="hl7:componentOf" id="2.16.840.1.113883.2.6.77.9.162">
+                <attribute name="typeCode" value="COMP" datatype="cs" isOptional="true" id="2.16.840.1.113883.2.6.77.9.163"/>
+                <element name="hl7:encompassingEncounter" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.77.9.164">
+                    <attribute name="classCode" value="ENC" datatype="cs" isOptional="true" id="2.16.840.1.113883.2.6.77.9.165"/>
+                    <attribute name="moodCode" value="EVN" datatype="cs" isOptional="true" id="2.16.840.1.113883.2.6.77.9.166"/>
+                    <element name="hl7:id" datatype="II" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.167">
+                        <desc language="de-DE">Identifikationselement zur Aufnahme der Aufenthalts-Identifikation<br clear="none"/>
+                </desc>
+                    </element>
+                    <element name="hl7:code" datatype="CE" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.168">
+                        <example>
+                    <code code="IMP" codeSystem="2.16.840.1.113883.5.4"/>
+                </example>
+                        <vocabulary valueSet="2.16.840.1.113883.1.11.13955"/>
+                    </element>
+                    <choice minimumMultiplicity="1" maximumMultiplicity="1">
+                        <element name="hl7:effectiveTime[hl7:high]" datatype="IVL_TS" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.5.9.22">
+                            <desc language="de-DE">Zeitraum</desc>
+                            <example caption="Vom 7. Juni 2011 11:24 Uhr bis zum 11. Juni 2011 16:54 Uhr">
+                        <effectiveTime>
+                            <low value="201106071124"/>
+                            <high value="201106111654"/>
+                        </effectiveTime>
+                    </example>
+                        </element>
+                        <element name="hl7:effectiveTime[@value]" datatype="TS" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.77.9.169">
+                            <desc language="de-DE">Bestimmter Tag</desc>
+                            <example caption="Am 7. Juni 2011 (ambulanter Besuch ohne genauere Zeitangaben des Tages)">
+                        <effectiveTime value="20110607"/>
+                    </example>
+                            <attribute name="value" id="2.16.840.1.113883.2.6.77.9.170"/>
+                        </element>
+                    </choice>
+                    <element name="hl7:responsibleParty" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.171">
+                        <element name="hl7:assignedEntity" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.172">
+                            <include ref="1.2.276.0.76.10.90012" flexibility="dynamic"/>
+                        </element>
+                    </element>
+                    <include ref="1.2.276.0.76.10.90021" flexibility="dynamic" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R"/>
+                </element>
+            </element>
+        </template>

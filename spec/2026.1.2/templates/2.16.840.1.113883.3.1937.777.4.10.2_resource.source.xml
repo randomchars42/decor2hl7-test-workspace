@@ -1,0 +1,36 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.3.1937.777.4.10.2" name="CCDOrganization" displayName="CCD Organization" effectiveDate="2007-04-01T00:00:00" statusCode="pending" url="http://art-decor.org/decor/services/" ident="ccd1-" sdtc:dummy-1="urn:hl7-org:sdtc" xml:dummy-2="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-4="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance">
+    <desc language="en-US">Deactivated hl7:asOrganizationPartOf association to break recursion</desc>
+    <classification type="cdaheaderlevel"/>
+    <relationship type="SPEC" template="2.16.840.1.113883.10.12.151" flexibility="2005-09-07T00:00:00"/>
+    <attribute name="classCode" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.2516">
+                <!--valueSet name="EntityClassOrganization"-->
+        <vocabulary valueSet="2.16.840.1.113883.1.11.10889"/>
+    </attribute>
+    <attribute name="determinerCode" value="INSTANCE" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.2517"/>
+    <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.3.1937.777.4.9.2518">
+        <attribute name="root" value="2.16.840.1.113883.10.12.151" isOptional="false" id="2.16.840.1.113883.3.1937.777.4.9.2519"/>
+    </element>
+    <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="*" datatype="II" id="2.16.840.1.113883.3.1937.777.4.9.2520">
+        <desc language="en-US">ccr:ActorObjectID</desc>
+    </element>
+    <element name="hl7:name" minimumMultiplicity="0" maximumMultiplicity="*" datatype="ON" id="2.16.840.1.113883.3.1937.777.4.9.2521"/>
+    <element name="hl7:telecom" minimumMultiplicity="0" maximumMultiplicity="*" datatype="TEL" id="2.16.840.1.113883.3.1937.777.4.9.2522"/>
+    <element name="hl7:addr" minimumMultiplicity="0" maximumMultiplicity="*" datatype="AD" id="2.16.840.1.113883.3.1937.777.4.9.2523"/>
+    <element name="hl7:standardIndustryClassCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.4.9.2524">
+        <vocabulary domain="OrganizationIndustryClass"/>
+    </element>
+            <!--<element name="hl7:asOrganizationPartOf" minimumMultiplicity="0" maximumMultiplicity="1">
+                <attribute name="classCode" isOptional="true">
+                    <vocabulary valueSet="RoleClassPart"/>
+                </attribute>
+                <element name="hl7:id" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" datatype="II"/>
+                <element name="hl7:code" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE">
+                    <vocabulary domain="RoleCode"/>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CS">
+                    <vocabulary valueSet="RoleStatus"/>
+                </element>
+                <element name="hl7:effectiveTime" minimumMultiplicity="0" maximumMultiplicity="1" datatype="IVL_TS"/>
+                <element name="hl7:wholeOrganization" minimumMultiplicity="0" maximumMultiplicity="1" contains="CDAOrganization"/>
+            </element>-->
+</template>

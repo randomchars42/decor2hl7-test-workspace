@@ -1,0 +1,4 @@
+<codeSystem xmlns:json="http://www.json.org" id="2.16.840.1.113883.6.1" effectiveDate="2026-02-24T00:00:00" statusCode="final" versionLabel="2.82" name="loinc" displayName="LOINC">
+    <copyright json:array="true" language="en-US">&amp;quot;</copyright>
+    <issueAssociation json:array="true" count="0"/>
+</codeSystem>

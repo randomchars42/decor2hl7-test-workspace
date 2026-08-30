@@ -1,0 +1,19 @@
+<valueSet xmlns:json="http://www.json.org" id="2.16.840.1.113883.1.11.19708" name="ActSubstanceAdministrationCode" displayName="ActSubstanceAdministrationCode" effectiveDate="2014-03-26T00:00:00" statusCode="final" versionLabel="DEFN=UV=VO=1360-20160323" url="http://art-decor.org/decor/services/" ident="ad2bbr-">
+    <desc json:array="true" language="en-US">&lt;p&gt;&lt;b&gt;History description 2014-03-26: &lt;/b&gt;Lock all vaue sets untouched since 2014-03-26 to trackingId 2014T1_2014_03_26&lt;/p&gt; &lt;b&gt;description: &lt;/b&gt; &lt;p&gt;Describes the type of substance administration being performed.&lt;/p&gt;</desc>
+    <sourceCodeSystem json:array="true" id="2.16.840.1.113883.5.4" identifierName="Act Code" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-ActCode" canonicalUriDSTU2="http://hl7.org/fhir/v3/ActCode" canonicalUriSTU3="http://hl7.org/fhir/v3/ActCode" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-ActCode" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-ActCode" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-ActCode" context="external/hl7intl/v3/v3-ActCode"/>
+    <publishingAuthority json:array="true" name="HL7" inherited="project">
+        <addrLine json:array="true">Health Level Seven International</addrLine>
+        <addrLine json:array="true">455 E. Eisenhower PKWY STE 300 # 025</addrLine>
+        <addrLine json:array="true">Ann Arbor, MI 48108</addrLine>
+        <addrLine json:array="true">USA</addrLine>
+        <addrLine json:array="true">T +1 734 677 7777</addrLine>
+        <addrLine json:array="true">F +1 734 677 6622</addrLine>
+        <addrLine json:array="true">E info@hl7.org</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="concept" code="_ActSubstanceAdministrationCode" codeSystem="2.16.840.1.113883.5.4" displayName="ActSubstanceAdministrationCode" level="0" type="A"/>
+    <items json:array="true" is="concept" code="DRUG" codeSystem="2.16.840.1.113883.5.4" displayName="Drug therapy" level="1" type="L"/>
+    <items json:array="true" is="concept" code="FD" codeSystem="2.16.840.1.113883.5.4" displayName="food" level="1" type="L"/>
+    <items json:array="true" is="concept" code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4" displayName="Immunization" level="1" type="S"/>
+</valueSet>

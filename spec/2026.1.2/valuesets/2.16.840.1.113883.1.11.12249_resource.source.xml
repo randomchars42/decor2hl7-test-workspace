@@ -1,0 +1,21 @@
+<valueSet xmlns:json="http://www.json.org" id="2.16.840.1.113883.1.11.12249" name="LanguageAbilityMode" displayName="LanguageAbilityMode" effectiveDate="2016-06-23T00:00:00" statusCode="final" url="http://art-decor.org/decor/services/" ident="ccda-">
+    <sourceCodeSystem json:array="true" id="2.16.840.1.113883.5.60" identifierName="Language Ability Mode" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-LanguageAbilityMode" canonicalUriDSTU2="http://hl7.org/fhir/v3/LanguageAbilityMode" canonicalUriSTU3="http://hl7.org/fhir/v3/LanguageAbilityMode" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-LanguageAbilityMode" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-LanguageAbilityMode" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-LanguageAbilityMode" context="external/hl7intl/v3/v3-LanguageAbilityMode"/>
+    <publishingAuthority json:array="true" name="HL7 International" inherited="project">
+        <addrLine json:array="true">Health Level Seven International</addrLine>
+        <addrLine json:array="true">3300 Washtenaw Avenue</addrLine>
+        <addrLine json:array="true">Suite 227</addrLine>
+        <addrLine json:array="true">Ann Arbor, MI 48104- 4261</addrLine>
+        <addrLine json:array="true">USA</addrLine>
+        <addrLine json:array="true">T +1 734 677 7777 </addrLine>
+        <addrLine json:array="true">F +1 734 677 6622</addrLine>
+        <addrLine json:array="true">E info@hl7.org</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="concept" code="ESGN" codeSystem="2.16.840.1.113883.5.60" displayName="Expressed signed" level="0" type="L"/>
+    <items json:array="true" is="concept" code="ESP" codeSystem="2.16.840.1.113883.5.60" displayName="Expressed spoken" level="0" type="L"/>
+    <items json:array="true" is="concept" code="EWR" codeSystem="2.16.840.1.113883.5.60" displayName="Expressed written" level="0" type="L"/>
+    <items json:array="true" is="concept" code="RSGN" codeSystem="2.16.840.1.113883.5.60" displayName="Received signed" level="0" type="L"/>
+    <items json:array="true" is="concept" code="RSP" codeSystem="2.16.840.1.113883.5.60" displayName="Received spoken" level="0" type="L"/>
+    <items json:array="true" is="concept" code="RWR" codeSystem="2.16.840.1.113883.5.60" displayName="Received written" level="0" type="L"/>
+</valueSet>

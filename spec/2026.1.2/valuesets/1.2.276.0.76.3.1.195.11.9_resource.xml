@@ -1,0 +1,104 @@
+<valueSets>
+    <project ident="aktin-">
+        <valueSet id="1.2.276.0.76.3.1.195.11.9" name="age-in-categories" displayName="Alter in Kategorien" effectiveDate="2024-02-11T21:16:52" statusCode="draft" canonicalUri="http://aktin.org/fhir/ValueSet/aktin-vs-age-in-categories" versionLabel="2024" lastModifiedDate="2024-08-19T21:06:30">
+            <desc language="de-DE" lastTranslated="2024-08-19T21:06:30">
+                <p>Alter in Kategorien (NoKeDa)</p>
+            </desc>
+            <sourceCodeSystem id="1.2.276.0.76.3.1.195.5.100" identifierName="Alter in Kategorien" canonicalUri="http://aktin.org/fhir/CodeSystem/aktin-cs-alter-in-kategorien" canonicalUriDSTU2="http://aktin.org/fhir/CodeSystem/aktin-cs-alter-in-kategorien" canonicalUriSTU3="http://aktin.org/fhir/CodeSystem/aktin-cs-alter-in-kategorien" canonicalUriR4="http://aktin.org/fhir/CodeSystem/aktin-cs-alter-in-kategorien" canonicalUriR4B="http://aktin.org/fhir/CodeSystem/aktin-cs-alter-in-kategorien" canonicalUriR5="http://aktin.org/fhir/CodeSystem/aktin-cs-alter-in-kategorien" context="projects/aktin-/alter-in-kategorien-1.2.276.0.76.3.1.195.5.100"/>
+            <publishingAuthority name="AKTIN e. V." inherited="project">
+                <addrLine>c/o Uniklinik RWTH Aachen</addrLine>
+                <addrLine>Institut für Medizinische Informatik</addrLine>
+                <addrLine>Pauwelsstraße 35</addrLine>
+                <addrLine>52074 Aachen</addrLine>
+                <addrLine type="phone">Tel. +49 391 67 28186</addrLine>
+                <addrLine type="email">office@aktin.org</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <concept code="0" codeSystem="1.2.276.0.76.3.1.195.5.100" codeSystemName="Alter in Kategorien" codeSystemVersion="2019-12-30T00:00:00" displayName="0 Jahre" level="0" type="L">
+                    <designation displayName="0 Jahre" type="preferred" language="de-DE"/>
+                    <designation displayName="0 years" type="preferred" language="en-US"/>
+                </concept>
+                <concept code="1" codeSystem="1.2.276.0.76.3.1.195.5.100" codeSystemName="Alter in Kategorien" codeSystemVersion="2019-12-30T00:00:00" displayName="1 Jahr" level="0" type="L">
+                    <designation displayName="1 Jahr" type="preferred" language="de-DE"/>
+                    <designation displayName="1 year" type="preferred" language="en-US"/>
+                </concept>
+                <concept code="2" codeSystem="1.2.276.0.76.3.1.195.5.100" codeSystemName="Alter in Kategorien" codeSystemVersion="2019-12-30T00:00:00" displayName="2 Jahre" level="0" type="L">
+                    <designation displayName="2 Jahre" type="preferred" language="de-DE"/>
+                    <designation displayName="2 years" type="preferred" language="en-US"/>
+                </concept>
+                <concept code="3" codeSystem="1.2.276.0.76.3.1.195.5.100" codeSystemName="Alter in Kategorien" codeSystemVersion="2019-12-30T00:00:00" displayName="3 Jahre" level="0" type="L">
+                    <designation displayName="3 Jahre" type="preferred" language="de-DE"/>
+                    <designation displayName="3 years" type="preferred" language="en-US"/>
+                </concept>
+                <concept code="4" codeSystem="1.2.276.0.76.3.1.195.5.100" codeSystemName="Alter in Kategorien" codeSystemVersion="2019-12-30T00:00:00" displayName="4 Jahre" level="0" type="L">
+                    <designation displayName="4 Jahre" type="preferred" language="de-DE"/>
+                    <designation displayName="4 years" type="preferred" language="en-US"/>
+                </concept>
+                <concept code="5-9" codeSystem="1.2.276.0.76.3.1.195.5.100" codeSystemName="Alter in Kategorien" codeSystemVersion="2019-12-30T00:00:00" displayName="5-9 Jahre" level="0" type="L">
+                    <designation displayName="5-9 Jahre" type="preferred" language="de-DE"/>
+                    <designation displayName="5-9 years" type="preferred" language="en-US"/>
+                </concept>
+                <concept code="10-14" codeSystem="1.2.276.0.76.3.1.195.5.100" codeSystemName="Alter in Kategorien" codeSystemVersion="2019-12-30T00:00:00" displayName="10-14 Jahre" level="0" type="L">
+                    <designation displayName="10-14 Jahre" type="preferred" language="de-DE"/>
+                    <designation displayName="10-14 years" type="preferred" language="en-US"/>
+                </concept>
+                <concept code="15-19" codeSystem="1.2.276.0.76.3.1.195.5.100" codeSystemName="Alter in Kategorien" codeSystemVersion="2019-12-30T00:00:00" displayName="15-19 Jahre" level="0" type="L">
+                    <designation displayName="15-19 Jahre" type="preferred" language="de-DE"/>
+                    <designation displayName="15-19 years" type="preferred" language="en-US"/>
+                </concept>
+                <concept code="20-24" codeSystem="1.2.276.0.76.3.1.195.5.100" codeSystemName="Alter in Kategorien" codeSystemVersion="2019-12-30T00:00:00" displayName="20-24 Jahre" level="0" type="L">
+                    <designation displayName="20-24 Jahre" type="preferred" language="de-DE"/>
+                    <designation displayName="20-24 years" type="preferred" language="en-US"/>
+                </concept>
+                <concept code="25-29" codeSystem="1.2.276.0.76.3.1.195.5.100" codeSystemName="Alter in Kategorien" codeSystemVersion="2019-12-30T00:00:00" displayName="25-29 Jahre" level="0" type="L">
+                    <designation displayName="25-29 Jahre" type="preferred" language="de-DE"/>
+                    <designation displayName="25-29 years" type="preferred" language="en-US"/>
+                </concept>
+                <concept code="30-34" codeSystem="1.2.276.0.76.3.1.195.5.100" codeSystemName="Alter in Kategorien" codeSystemVersion="2019-12-30T00:00:00" displayName="30-34  Jahre" level="0" type="L">
+                    <designation displayName="30-34  Jahre" type="preferred" language="de-DE"/>
+                    <designation displayName="30-34  years" type="preferred" language="en-US"/>
+                </concept>
+                <concept code="35-39" codeSystem="1.2.276.0.76.3.1.195.5.100" codeSystemName="Alter in Kategorien" codeSystemVersion="2019-12-30T00:00:00" displayName="35-39 Jahre" level="0" type="L">
+                    <designation displayName="35-39 Jahre" type="preferred" language="de-DE"/>
+                    <designation displayName="35-39 years" type="preferred" language="en-US"/>
+                </concept>
+                <concept code="40-44" codeSystem="1.2.276.0.76.3.1.195.5.100" codeSystemName="Alter in Kategorien" codeSystemVersion="2019-12-30T00:00:00" displayName="40-44 Jahre" level="0" type="L">
+                    <designation displayName="40-44 Jahre" type="preferred" language="de-DE"/>
+                    <designation displayName="40-44 years" type="preferred" language="en-US"/>
+                </concept>
+                <concept code="45-49" codeSystem="1.2.276.0.76.3.1.195.5.100" codeSystemName="Alter in Kategorien" codeSystemVersion="2019-12-30T00:00:00" displayName="45-49 Jahre" level="0" type="L">
+                    <designation displayName="45-49 Jahre" type="preferred" language="de-DE"/>
+                    <designation displayName="45-49 years" type="preferred" language="en-US"/>
+                </concept>
+                <concept code="50-54" codeSystem="1.2.276.0.76.3.1.195.5.100" codeSystemName="Alter in Kategorien" codeSystemVersion="2019-12-30T00:00:00" displayName="50-54 Jahre" level="0" type="L">
+                    <designation displayName="50-54 Jahre" type="preferred" language="de-DE"/>
+                    <designation displayName="50-54 years" type="preferred" language="en-US"/>
+                </concept>
+                <concept code="55-59" codeSystem="1.2.276.0.76.3.1.195.5.100" codeSystemName="Alter in Kategorien" codeSystemVersion="2019-12-30T00:00:00" displayName="55-59 Jahre" level="0" type="L">
+                    <designation displayName="55-59 Jahre" type="preferred" language="de-DE"/>
+                    <designation displayName="55-59 years" type="preferred" language="en-US"/>
+                </concept>
+                <concept code="60-64" codeSystem="1.2.276.0.76.3.1.195.5.100" codeSystemName="Alter in Kategorien" codeSystemVersion="2019-12-30T00:00:00" displayName="60-64 Jahre" level="0" type="L">
+                    <designation displayName="60-64 Jahre" type="preferred" language="de-DE"/>
+                    <designation displayName="60-64 years" type="preferred" language="en-US"/>
+                </concept>
+                <concept code="65-69" codeSystem="1.2.276.0.76.3.1.195.5.100" codeSystemName="Alter in Kategorien" codeSystemVersion="2019-12-30T00:00:00" displayName="65-69 Jahre" level="0" type="L">
+                    <designation displayName="65-69 Jahre" type="preferred" language="de-DE"/>
+                    <designation displayName="65-69 years" type="preferred" language="en-US"/>
+                </concept>
+                <concept code="70-74" codeSystem="1.2.276.0.76.3.1.195.5.100" codeSystemName="Alter in Kategorien" codeSystemVersion="2019-12-30T00:00:00" displayName="70-74 Jahre" level="0" type="L">
+                    <designation displayName="70-74 Jahre" type="preferred" language="de-DE"/>
+                    <designation displayName="70-74 years" type="preferred" language="en-US"/>
+                </concept>
+                <concept code="75-79" codeSystem="1.2.276.0.76.3.1.195.5.100" codeSystemName="Alter in Kategorien" codeSystemVersion="2019-12-30T00:00:00" displayName="75-79 Jahre" level="0" type="L">
+                    <designation displayName="75-79 Jahre" type="preferred" language="de-DE"/>
+                    <designation displayName="75-79 years" type="preferred" language="en-US"/>
+                </concept>
+                <concept code="80+" codeSystem="1.2.276.0.76.3.1.195.5.100" codeSystemName="Alter in Kategorien" codeSystemVersion="2019-12-30T00:00:00" displayName="80+ Jahre" level="0" type="L">
+                    <designation displayName="80+ Jahre" type="preferred" language="de-DE"/>
+                    <designation displayName="80+ years" type="preferred" language="en-US"/>
+                </concept>
+            </conceptList>
+        </valueSet>
+    </project>
+</valueSets>

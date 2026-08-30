@@ -1,0 +1,10 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:local="http://art-decor.org/local" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.20.22.5.1.1" name="USRealmPersonNamePNUSFIELDED" effectiveDate="2015-08-13T00:00:00" statusCode="draft" displayName="US Realm Person Name (PN.US.FIELDED)" versionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-" sdtc:dummy-1="urn:hl7-org:sdtc" local:dummy-2="http://art-decor.org/local" xml:dummy-3="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-5="urn:hl7-org:v3" xsi:dummy-6="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">The US Realm Clinical Document Person Name datatype flavor is a set of reusable constraints that can be used for Persons.</desc>
+            <classification type="datatypelevel" format="hl7v3xml1"/>
+            <element name="cda:name" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.2706">
+                <desc language="en-US">SHALL contain exactly one [1..1] name (CONF:81-9368).</desc>
+                <item label="CONF:81-9368"/>
+                <assert role="error" test="@nullFlavor or (cda:given and cda:family) or (not(*) and string-length(normalize-space(string(.)))!=0)">The content of name *SHALL* be either a conformant Patient Name (PTN.US.FIELDED), or a string</assert>
+                <assert role="error" test="@nullFlavor or (cda:given and cda:family) or (not(*))">The string *SHALL NOT* contain name parts</assert>
+            </element>
+        </template>

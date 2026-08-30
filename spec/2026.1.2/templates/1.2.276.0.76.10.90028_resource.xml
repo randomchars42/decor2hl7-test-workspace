@@ -1,0 +1,106 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.90028" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:ukfc="http://fhir.hl7.de/ukfc" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" id="1.2.276.0.76.10.90028" hl7:dummy-default="urn:hl7-org:v3" displayName="Medikation Vorbedingung" xml:dummy-5="http://www.w3.org/XML/1998/namespace" cda:dummy-7="urn:hl7-org:v3" ukfc:dummy-1="http://fhir.hl7.de/ukfc" url="http://art-decor.org/decor/services/" pharm:dummy-4="urn:hl7-org:pharm" xsi:dummy-8="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" ident="pmp-" name="MedicationPrecondition" sdtc:dummy-2="urn:hl7-org:sdtc" xhtml:dummy-3="http://www.w3.org/1999/xhtml" statusCode="draft" effectiveDate="2017-06-04T00:00:00">
+            <desc language="de-DE">Medikation Vorbedingung (codiert oder nur Text)</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.329" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.329" tmname="CDAPrecondition" tmdisplayName="CDA Precondition" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <example type="neutral" caption="Vorbedingung 'bei Bedarf'">
+                <precondition>
+                    <criterion>
+                        <code code="PRN" codeSystem="2.16.840.1.113883.5.4" displayName="bei Bedarf"/>
+                        <text>
+                            <reference value="#prec-1"/>
+                        </text>
+                    </criterion>
+                </precondition>
+            </example>
+            <example type="neutral" caption="Vorbedingung (ohne Code, nur Text)">
+                <precondition>
+                    <criterion>
+                        <code nullFlavor="OTH">
+                            <originalText>bei Sonnenaufgang</originalText>
+                        </code>
+                        <text>
+                            <reference value="#prec-1"/>
+                        </text>
+                    </criterion>
+                </precondition>
+            </example>
+            <element name="hl7:precondition" id="2.16.840.1.113883.2.6.60.4.9.718">
+                <item original="false" label="MedicationPrecondition"/>
+                <attribute name="typeCode" value="PRCN" isOptional="true" datatype="cs" id="2.16.840.1.113883.3.1937.777.1.9.711"/>
+                <element name="hl7:criterion" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.1.9.712">
+                    <item original="false" label="MedicationPrecondition"/>
+                    <attribute name="classCode" value="OBS" isOptional="true" datatype="cs" id="2.16.840.1.113883.3.1937.777.1.9.713"/>
+                    <attribute name="moodCode" value="EVN.CRT" isOptional="true" datatype="cs" id="2.16.840.1.113883.3.1937.777.1.9.714"/>
+                    <element name="hl7:code" datatype="CD" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.1.9.715">
+                        <item original="false" label="MedicationPrecondition"/>
+                        <vocabulary valueSet="1.2.276.0.76.11.453" vsid="1.2.276.0.76.11.453" vsname="VorbedingungenMedikation" vsdisplayName="Vorbedingungen Medikation" vseffectiveDate="2017-04-02T00:00:00" vsstatusCode="draft" linkedartefactmissing="false"/>
+                        <element name="hl7:originalText" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.719">
+                            <item original="false" label="MedicationPrecondition"/>
+                        </element>
+                    </element>
+                    <element name="hl7:text" datatype="ED" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.1.9.716">
+                        <item original="false" label="MedicationPrecondition"/>
+                        <element name="hl7:reference" minimumMultiplicity="1" maximumMultiplicity="1" datatype="TEL" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.717">
+                            <item original="false" label="MedicationPrecondition"/>
+                            <attribute name="value" isOptional="false" id="2.16.840.1.113883.2.6.60.4.9.720">
+                                <desc language="de-DE">#prec-{generierteID}, z.B.: #prec-1</desc>
+                            </attribute>
+                        </element>
+                    </element>
+                </element>
+            </element>
+            <staticAssociations>
+                <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.6092" effectiveDate="2017-06-04T13:30:40" refdisplay="pmp-dataelement2017-6092" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.4.1.3" datasetEffectiveDate="2017-06-04T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2017" datasetName="Patientenbezogener Medikationsplan Plus" ident="pmp-" elementId="2.16.840.1.113883.3.1937.777.1.9.715" templateId="1.2.276.0.76.10.90028" templateEffectiveDate="2017-06-04T00:00:00" path="Medikation / Medikationseintrag / Dosierung">
+                    <name language="de-DE">Einnahme bei Bedarf</name>
+                    <desc language="de-DE">Einnahme des Medikaments bei Bedarf</desc>
+                    <datasetName language="de-DE">Patientenbezogener Medikationsplan Plus</datasetName>
+                    <projectName language="de-DE">Patientenbezogener Medikationsplan</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.6092" effectiveDate="2019-01-27T00:00:00" refdisplay="pmp-dataelement2017-6092" conceptStatusCode="" datasetId="" datasetEffectiveDate="" datasetStatusCode="" datasetName="" ident="" elementId="2.16.840.1.113883.3.1937.777.1.9.715" templateId="1.2.276.0.76.10.90028" templateEffectiveDate="2017-06-04T00:00:00" path=""/>
+            </staticAssociations>
+            <ref type="dependency" prefix="vomgt-" flexibility="2020-05-08T11:31:04" id="1.2.276.0.76.3.1.135.8.10.134" name="F02BKrankenhausbehandlung" displayName="02B: Krankenhausbehandlung - Verordnung" effectiveDate="2020-05-07T13:27:32" statusCode="draft" ident="vomgt-"/>
+            <ref type="dependency" prefix="vomgt-" flexibility="2020-05-13T16:03:13" id="1.2.276.0.76.3.1.135.8.10.136" name="BisherigeMassnahmen02" displayName="Bisherige Maßnahmen" effectiveDate="2020-05-08T11:31:04" statusCode="draft" ident="vomgt-"/>
+            <ref type="dependency" prefix="vomgt-" flexibility="dynamic" id="1.2.276.0.76.3.1.135.8.10.143" name="MedicationStatement02" displayName="Medikation" effectiveDate="2020-05-13T16:03:13" statusCode="draft" isClosed="false" ident="vomgt-"/>
+            <ref type="dependency" prefix="dguvbbr-" flexibility="dynamic" id="1.2.276.0.76.3.1.261.1.10.4.6" name="MedicationStatement" displayName="Medikation" effectiveDate="2018-02-06T09:09:31" statusCode="draft" isClosed="false" ident="dguvbbr-"/>
+            <ref type="dependency" prefix="abde-" flexibility="2017-02-01T00:00:00" id="1.2.276.0.76.10.1020" name="Arztbrief30" displayName="Arztbrief Plus" effectiveDate="2017-02-01T00:00:00" statusCode="draft" versionLabel="v3.00" ident="abde-"/>
+            <ref type="dependency" prefix="evthm-" flexibility="2017-04-24T00:00:00" id="1.2.276.0.76.10.1022" name="Livedatencda" displayName="Live-Daten-CDA Dokument" effectiveDate="2017-01-23T00:00:00" statusCode="draft" ident="evthm-"/>
+            <ref type="dependency" prefix="einwde-" flexibility="2017-02-01T00:00:00" id="1.2.276.0.76.10.1034" name="eEinweisungsbrief" displayName="eEinweisungsbrief" effectiveDate="2020-06-18T00:00:00" statusCode="draft" versionLabel="v1.0" ident="einwde-"/>
+            <ref type="dependency" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.3029" name="Admissionmedicationsection" displayName="Medikation bei Einweisung (Historie)" effectiveDate="2017-02-01T00:00:00" statusCode="draft" isClosed="false" ident="hl7de-"/>
+            <ref type="dependency" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.3030" name="Medicationduringstaysection" displayName="Verabreichte Medikation während des Aufenthalts" effectiveDate="2017-02-01T00:00:00" statusCode="draft" isClosed="false" ident="hl7de-"/>
+            <ref type="dependency" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.3031" name="Dischargemedicationsection" displayName="Medikation bei Entlassung" effectiveDate="2017-02-01T00:00:00" statusCode="draft" isClosed="false" ident="hl7de-"/>
+            <ref type="dependency" prefix="uelmgmt-" flexibility="dynamic" id="1.2.276.0.76.10.3066" name="Einweisungsmedikation" displayName="Einweisungsmedikation" effectiveDate="2015-12-29T00:00:00" statusCode="draft" ident="uelmgmt-"/>
+            <ref type="dependency" prefix="evthm-" flexibility="dynamic" id="1.2.276.0.76.10.3085" effectiveDate="2017-04-24T00:00:00" name="Medikation" displayName="Medikation" statusCode="draft" ident="evthm-"/>
+            <ref type="dependency" prefix="evthm-" flexibility="2017-05-16T00:00:00" id="1.2.276.0.76.10.3088" effectiveDate="2017-04-24T00:00:00" name="pflegerischemassnahmen" displayName="Pflegerische Maßnahmen" statusCode="draft" ident="evthm-"/>
+            <ref type="dependency" prefix="konsab-" flexibility="dynamic" id="1.2.276.0.76.10.3157" name="Currentmedicationsection" displayName="Aktuelle Medikation" effectiveDate="2020-03-26T20:49:29" statusCode="draft" isClosed="false" ident="konsab-"/>
+            <ref type="dependency" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.4022" name="MedicationStatement" displayName="Medikation" effectiveDate="2017-06-04T00:00:00" statusCode="draft" isClosed="false" versionLabel="mpp 2017" ident="pmp-"/>
+            <ref type="dependency" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.4022" name="MedicationStatement" displayName="Medikation" effectiveDate="2018-11-01T00:00:00" statusCode="draft" isClosed="false" versionLabel="v2019" ident="pmp-"/>
+            <ref type="include" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.4023" name="MedicationStatementSplitDose" displayName="Einzeldosierungen" effectiveDate="2017-06-04T00:00:00" statusCode="draft" versionLabel="mpp 2017" ident="pmp-"/>
+            <ref type="include" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.4023" name="Einzeldosierungen" displayName="Einzeldosierungen" effectiveDate="2018-11-01T00:00:00" statusCode="draft" versionLabel="mpp 2018" ident="pmp-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4083" name="MedicationStatement" displayName="Medikation" effectiveDate="2016-04-01T00:00:00" statusCode="retired" isClosed="false" ident="aktin-"/>
+            <ref type="dependency" prefix="evthm-" flexibility="2017-05-16T00:00:00" id="1.2.276.0.76.10.4214" effectiveDate="2017-05-16T00:00:00" name="SekretmanagementGruppeEntry" displayName="Sekretmanagement Gruppe Entry" statusCode="draft" ident="evthm-"/>
+            <ref type="dependency" prefix="evthm-" flexibility="dynamic" id="1.2.276.0.76.10.4218" name="Inhalationen" displayName="Inhalationen" effectiveDate="2017-05-16T00:00:00" statusCode="draft" ident="evthm-"/>
+            <ref type="dependency" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.4261" name="Medicationstatementlist" displayName="Medikation Gruppierung" effectiveDate="2017-07-05T00:00:00" statusCode="draft" ident="pmp-"/>
+            <ref type="dependency" prefix="vomgt-" flexibility="dynamic" id="1.2.276.0.76.10.4298" name="MedikationVerordnungEntry16" displayName="Medikation Verordnung Entry (16)" effectiveDate="2018-11-21T13:08:27" statusCode="draft" ident="vomgt-"/>
+            <ref type="dependency" prefix="evthm-" flexibility="dynamic" id="2.16.840.1.113883.2.6.60.12.10.102" effectiveDate="2017-05-31T15:54:33" name="Entlassmedikation" displayName="Entlassmedikation" statusCode="cancelled" ident="evthm-"/>
+            <ref type="include" prefix="sdguv-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.38.10.16" name="MedicationStatementSplitDose" displayName="Einzeldosierungen" effectiveDate="2018-02-06T09:05:18" statusCode="draft" ident="sdguv-"/>
+            <ref type="dependency" prefix="sdguv-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.38.10.17" name="MedicationStatement" displayName="Medikation" effectiveDate="2018-02-06T09:09:31" statusCode="draft" isClosed="false" ident="sdguv-"/>
+            <ref type="dependency" prefix="ssmith-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.41.10.9" name="MedicationStatement1" displayName="Medikation" effectiveDate="2019-03-04T15:44:27" statusCode="draft" isClosed="false" versionLabel="v2019" ident="ssmith-"/>
+            <ref type="include" prefix="medmgmt-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.48.10.3" name="MedicationStatementmedmgmt" displayName="Medikation (medmgmt)" statusCode="pending" isClosed="false" effectiveDate="2018-11-02T00:00:00" ident="medmgmt-"/>
+            <ref type="include" prefix="medmgmt-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.48.10.3" name="MedicationStatementmedmgmt" displayName="Medikation (medmgmt)" statusCode="pending" isClosed="false" effectiveDate="2019-10-25T11:01:47" ident="medmgmt-"/>
+            <ref type="include" prefix="medmgmt-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.48.10.3" name="MedicationStatementmedmgmt" displayName="Medikation (medmgmt)" effectiveDate="2020-06-09T10:00:10" statusCode="draft" isClosed="false" ident="medmgmt-"/>
+            <ref type="include" prefix="medmgmt-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.48.10.28" name="EinzeldosierungenMedmgmt" displayName="Einzeldosierungen (medmgmt)" statusCode="pending" effectiveDate="2019-09-17T11:57:54" ident="medmgmt-"/>
+            <ref type="include" prefix="medmgmt-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.48.10.28" name="EinzeldosierungenMedmgmt" displayName="Einzeldosierungen (medmgmt)" effectiveDate="2019-10-23T13:48:37" statusCode="draft" ident="medmgmt-"/>
+            <ref type="dependency" prefix="sgevko-" flexibility="2020-05-08T11:31:04" id="2.16.840.1.113883.3.1937.99.61.53.10.249" name="M02BKrankenhausbehandlung" displayName="02B: Krankenhausbehandlung - Verordnung - Test" effectiveDate="2020-05-14T22:10:35" statusCode="draft" ident="sgevko-"/>
+            <ref type="dependency" prefix="mide-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.24.10.13" name="MedicationStatementB" displayName="MedikationB" statusCode="cancelled" isClosed="false" effectiveDate="2019-01-16T10:35:01" ident="mide-"/>
+            <ref type="dependency" prefix="mide-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.24.10.28" name="MedicationStatementC" displayName="MedikationC" effectiveDate="2019-02-14T16:52:39" statusCode="draft" isClosed="false" ident="mide-"/>
+            <ref type="include" prefix="hauskomet-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.27.10.6" name="MedicationStatement" displayName="Medikation" effectiveDate="2018-09-07T00:00:00" statusCode="draft" isClosed="false" ident="hauskomet-"/>
+            <ref type="include" prefix="hauskomet-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.27.10.8" name="Einzeldosierungen" displayName="Einzeldosierungen" effectiveDate="2018-09-13T00:00:00" statusCode="draft" ident="hauskomet-"/>
+            <ref type="dependency" prefix="ewundb-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.36.10.40" name="VerwendeteProdukte" displayName="Produkte" effectiveDate="2019-05-27T13:50:36" statusCode="draft" isClosed="false" versionLabel="0.9" ident="ewundb-"/>
+            <ref type="dependency" prefix="ewundb-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.36.10.59" name="Kausaltherapiemaßnahme" displayName="Diagnostik- oder Therapiemaßnahme - Procedure" effectiveDate="2019-06-04T09:59:01" statusCode="draft" versionLabel="0.9" ident="ewundb-"/>
+            <ref type="dependency" prefix="ewundb-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.36.10.61" name="Schmerzmanagement" displayName="Schmerzmanagement" effectiveDate="2019-06-04T10:25:36" statusCode="draft" versionLabel="0.9" ident="ewundb-"/>
+            <ref type="dependency" prefix="ewundb-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.36.10.66" name="Debridement" displayName="Debridement" effectiveDate="2019-06-04T11:10:28" statusCode="draft" versionLabel="0.9" ident="ewundb-"/>
+        </template>
+    </template>
+</result>

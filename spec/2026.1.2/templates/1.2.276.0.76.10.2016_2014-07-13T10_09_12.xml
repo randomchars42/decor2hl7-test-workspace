@@ -1,0 +1,49 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.2016" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pharm="urn:ihe:pharm" id="1.2.276.0.76.10.2016" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="Dienstleistung" cda:dummy-4="urn:hl7-org:v3" ident="hl7de-" name="HeaderDocumentationOf" xml:dummy-2="http://www.w3.org/XML/1998/namespace" pharm:dummy-1="urn:ihe:pharm" statusCode="draft" url="http://art-decor.org/decor/services/" effectiveDate="2014-07-13T10:09:12">
+            <desc language="de-DE">Zeitraum, in dem die Dienstleistung/Untersuchung stattgefunden hat</desc>
+            <classification type="cdaheaderlevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.110" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.110" tmname="CDAdocumentationOf" tmdisplayName="CDA documentationOf" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <example type="neutral" caption="Untersuchungsdatum: am 11. Juli 2014">
+                <documentationOf typeCode="DOC">
+                    <serviceEvent>
+                        <effectiveTime value="20140711"/>
+                    </serviceEvent>
+                </documentationOf>
+            </example>
+            <example type="neutral" caption="Behandlungsbegin (Zeitpunkt), am 11. März 2015 um 10:56 Uhr">
+                <documentationOf typeCode="DOC">
+                    <serviceEvent>
+                        <effectiveTime value="201503111056"/>
+                    </serviceEvent>
+                </documentationOf>
+            </example>
+            <example type="neutral" caption="Untersuchungszeitraum von zwei Tagen: vom 11. Juli bis 12. Juli 2014. Um Missverständnissen in Bezug auf Intervallen vorzubeugen wird bei den Zeitraumgrenzen in Tagen immer 0000 bei low und 2359 bei high mit angegeben. Damit                 wird angedeutet, dass es sich um Tage 'inklusive' handelt, z. B. 'inklusive dem 12. Juli'.">
+                <documentationOf typeCode="DOC">
+                    <serviceEvent>
+                        <effectiveTime>
+                            <low value="201407110000"/>
+                            <high value="201407122359"/>
+                        </effectiveTime>
+                    </serviceEvent>
+                </documentationOf>
+            </example>
+            <element name="hl7:documentationOf" id="2.16.840.1.113883.2.6.77.9.219">
+                <item original="false" label="HeaderDocumentationOf"/>
+                <attribute name="typeCode" value="DOC" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.77.9.220"/>
+                <element name="hl7:serviceEvent" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.77.9.221">
+                    <item original="false" label="HeaderDocumentationOf"/>
+                    <attribute name="classCode" value="ACT" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.77.9.222"/>
+                    <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.77.9.223"/>
+                    <element name="hl7:effectiveTime" datatype="IVL_TS" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.224">
+                        <desc language="de-DE">Erbringungszeitraum/zeitpunkt der Dienstleistung/Untersuchung</desc>
+                        <item original="false" label="HeaderDocumentationOf"/>
+                    </element>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="include" prefix="ifsgm-" flexibility="dynamic" id="1.2.276.0.76.10.1011" name="Labormeldung7123IfSG" displayName="Labormeldung nach §7 Abs. 1, 2 und 3" effectiveDate="2014-07-13T00:00:00" statusCode="draft" versionLabel="v1.0" ident="ifsgm-"/>
+            <ref type="include" prefix="ifsgm-" flexibility="dynamic" id="2.16.840.1.113883.2.6.60.11.10.1" name="Labormeldung7a3IfSG" displayName="Labormeldung nach §7 Abs. 3" statusCode="cancelled" versionLabel="v1.0" effectiveDate="2018-01-29T13:35:02" ident="ifsgm-"/>
+        </template>
+    </template>
+</result>

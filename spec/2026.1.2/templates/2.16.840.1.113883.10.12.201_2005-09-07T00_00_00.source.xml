@@ -1,0 +1,51 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.12.201" name="CDASection" displayName="CDA Section" effectiveDate="2005-09-07T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" sdtc:dummy-1="urn:hl7-org:sdtc" xml:dummy-2="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-4="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">Template CDA Section (prototype, directly derived from POCD_RM000040 MIF)</desc>
+            <desc language="nl-NL">Template CDA Section (prototype, direct afgeleid uit POCD_RM000040 MIF)</desc>
+            <desc language="de-DE">Template CDA Section (Prototyp, direkt abgeleitet aus POCD_RM000040 MIF)</desc>
+            <classification type="cdasectionlevel"/>
+            <context id="**"/>
+            <element name="hl7:section" id="2.16.840.1.113883.3.1937.777.1.9.269">
+                <attribute name="classCode" value="DOCSECT" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.270"/>
+                <attribute name="moodCode" value="EVN" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.271"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.3.1937.777.1.9.272">
+                    <attribute name="root" value="2.16.840.1.113883.10.12.201" id="2.16.840.1.113883.3.1937.777.1.9.273"/>
+                </element>
+                <element name="hl7:id" minimumMultiplicity="0" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.3.1937.777.1.9.274"/>
+                <element name="hl7:code" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.1.9.275">
+                    <!--valueSet name="DocumentSectionType"-->
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.10871"/>
+                </element>
+                <element name="hl7:title" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ST" id="2.16.840.1.113883.3.1937.777.1.9.276"/>
+                <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" datatype="SD.TEXT" id="2.16.840.1.113883.3.1937.777.1.9.277"/>
+                <element name="hl7:confidentialityCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.1.9.278">
+                    <!--valueSet name="x_BasicConfidentialityKind"-->
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.16926"/>
+                </element>
+                <element name="hl7:languageCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CS" id="2.16.840.1.113883.3.1937.777.1.9.279">
+                    <!--valueSet name="HumanLanguage"-->
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.11526"/>
+                </element>
+                <!--contains name="CDASubjectBody"-->
+                <element name="hl7:subject" minimumMultiplicity="0" maximumMultiplicity="1" contains="2.16.840.1.113883.10.12.320" id="2.16.840.1.113883.3.1937.777.1.9.280"/>
+                <!--contains name="CDAAuthorBody"-->
+                <element name="hl7:author" minimumMultiplicity="0" maximumMultiplicity="*" contains="2.16.840.1.113883.10.12.318" id="2.16.840.1.113883.3.1937.777.1.9.281"/>
+                <!--contains name="CDAinformantBody"-->
+                <element name="hl7:informant" minimumMultiplicity="0" maximumMultiplicity="*" contains="2.16.840.1.113883.10.12.319" id="2.16.840.1.113883.3.1937.777.1.9.282"/>
+                <!--contains name="CDAClinicalStatement"-->
+                <element name="hl7:entry" minimumMultiplicity="0" maximumMultiplicity="*" contains="2.16.840.1.113883.10.12.300" id="2.16.840.1.113883.3.1937.777.1.9.283">
+                    <attribute name="typeCode" datatype="cs" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.284">
+                        <desc language="en-US">Default value is COMP</desc>
+                        <desc language="nl-NL">Standaardwaarde is COMP</desc>
+                        <desc language="de-DE">Standardwert ist COMP</desc>
+                        <!--valueSet name="ActRelationshipEntry"-->
+                        <vocabulary valueSet="2.16.840.1.113883.1.11.19446"/>
+                    </attribute>
+                    <attribute name="contextConductionInd" datatype="bl" value="true" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.285"/>
+                </element>
+                <!--contains name="CDASection"-->
+                <element name="hl7:component" minimumMultiplicity="0" maximumMultiplicity="*" contains="2.16.840.1.113883.10.12.201" id="2.16.840.1.113883.3.1937.777.1.9.286">
+                    <attribute name="typeCode" value="COMP" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.287"/>
+                    <attribute name="contextConductionInd" datatype="bl" value="true" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.288"/>
+                </element>
+            </element>
+        </template>

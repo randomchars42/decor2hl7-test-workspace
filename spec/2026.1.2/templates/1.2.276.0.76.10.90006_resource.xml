@@ -1,0 +1,103 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.90006" ident="aktin-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.90006" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="CDA effectiveTime" ident="aktin-" name="CDAeffectiveTime" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="draft" url="http://art-decor.org/decor/services/" effectiveDate="2012-12-12T00:00:00">
+            <desc language="en-US">Date report was created, precise to the second</desc>
+            <desc language="de-DE">Datum an dem das Dokument erzeugt wurde, Angabe bis auf die Sekunde genau</desc>
+            <classification type="cdaheaderlevel"/>
+            <example type="neutral">
+                <effectiveTime value="20120611083422"/>
+            </example>
+            <element name="hl7:effectiveTime" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="TS.DATETIME.MIN" id="2.16.840.1.113883.2.6.77.9.12">
+                <item original="false" label="CDAeffectiveTime"/>
+            </element>
+            <staticAssociations>
+                <origconcept ref="1.2.276.0.76.3.1.135.8.2.850" effectiveDate="2020-06-25T15:19:39" refdisplay="vomgt-dataelement-850" conceptStatusCode="draft" datasetId="1.2.276.0.76.3.1.135.8.1.1" datasetEffectiveDate="2015-12-02T09:18:17" datasetStatusCode="draft" datasetName="KV-Mustersammlung" ident="vomgt-" elementId="2.16.840.1.113883.2.6.77.9.12" templateId="1.2.276.0.76.10.90006" templateEffectiveDate="2012-12-12T00:00:00" path="AR-Antrag / Document Data / Topicality">
+                    <name language="de-DE">Date Created</name>
+                    <desc language="de-DE">
+                        <span style="color: rgb(51, 51, 51); font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px;">Date on which the document was generated</span>
+                    </desc>
+                    <datasetName language="de-DE">KV-Mustersammlung</datasetName>
+                    <projectName language="de-DE">Verordnungsmanagement</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.10.2.1.1050" effectiveDate="2021-02-25T00:00:00" refdisplay="abde-dataelement-1.1050" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.10.1.1" datasetEffectiveDate="2014-08-25T00:00:00" datasetStatusCode="draft" datasetName="Arztbrief" ident="abde-" elementId="2.16.840.1.113883.2.6.77.9.12" templateId="1.2.276.0.76.10.90006" templateEffectiveDate="2012-12-12T00:00:00" path="">
+                    <name language="de-DE">Datum Dokument</name>
+                    <desc language="de-DE">Datum an dem das Dokument erzeugt wurde, Angabe bis auf die Sekunde genau</desc>
+                    <datasetName language="de-DE">Arztbrief</datasetName>
+                    <projectName language="de-DE">eArztbrief</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.12.2.389" effectiveDate="2016-11-06T13:52:18" refdisplay="evthm-dataelement-389" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.12.1.1" datasetEffectiveDate="2016-06-27T11:19:09" datasetStatusCode="draft" datasetVersionLabel="1.0" datasetName="eVent@home" ident="evthm-" elementId="2.16.840.1.113883.2.6.77.9.12" templateId="1.2.276.0.76.10.90006" templateEffectiveDate="2012-12-12T00:00:00" path="Dokumenteninformation">
+                    <name language="de-DE">Datum</name>
+                    <desc language="de-DE"/>
+                    <datasetName language="de-DE">eVent@home</datasetName>
+                    <projectName language="de-DE">eVent@home</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.4.2.1.5060" effectiveDate="2014-10-27T00:00:00" refdisplay="pmp-dataelementR1-5060" conceptStatusCode="final" conceptVersionLabel="Release 1" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" datasetName="Patientenbezogener Medikationsplan" ident="pmp-" elementId="2.16.840.1.113883.2.6.77.9.12" templateId="1.2.276.0.76.10.90006" templateEffectiveDate="2012-12-12T00:00:00" path="Identifikation">
+                    <name language="de-DE">Ausdruckdatum</name>
+                    <desc language="de-DE">Ausdruckdatum</desc>
+                    <datasetName language="de-DE">Patientenbezogener Medikationsplan</datasetName>
+                    <projectName language="de-DE">Patientenbezogener Medikationsplan</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.5060" effectiveDate="2017-06-04T00:00:00" refdisplay="pmp-dataelement2017-5060" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.4.1.3" datasetEffectiveDate="2017-06-04T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2017" datasetName="Patientenbezogener Medikationsplan Plus" ident="pmp-" elementId="2.16.840.1.113883.2.6.77.9.12" templateId="1.2.276.0.76.10.90006" templateEffectiveDate="2012-12-12T00:00:00" path="Identifikation">
+                    <name language="de-DE">Ausdruckdatum</name>
+                    <desc language="de-DE">Ausdruckdatum</desc>
+                    <datasetName language="de-DE">Patientenbezogener Medikationsplan Plus</datasetName>
+                    <projectName language="de-DE">Patientenbezogener Medikationsplan</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.5060" effectiveDate="2019-01-27T00:00:00" refdisplay="pmp-dataelement2017-5060" conceptStatusCode="" datasetId="" datasetEffectiveDate="" datasetStatusCode="" datasetName="" ident="" elementId="2.16.840.1.113883.2.6.77.9.12" templateId="1.2.276.0.76.10.90006" templateEffectiveDate="2012-12-12T00:00:00" path=""/>
+                <origconcept ref="2.16.840.1.113883.3.1937.99.61.45.2.7" effectiveDate="2018-04-16T10:46:56" refdisplay="smul-dataelement-7" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.99.61.45.1.1" datasetEffectiveDate="2018-04-12T11:21:28" datasetStatusCode="draft" datasetName="Dataset Sandbox Medizin Uni Leipzig" ident="smul-" elementId="2.16.840.1.113883.2.6.77.9.12" templateId="1.2.276.0.76.10.90006" templateEffectiveDate="2012-12-12T00:00:00" path="Adipositas Studie">
+                    <name language="en-US" lastTranslated="2018-04-25T09:39:47">Date</name>
+                    <name language="de-DE" lastTranslated="2018-04-25T09:39:45">Datum</name>
+                    <desc language="en-US"/>
+                    <datasetName language="en-US">Dataset Sandbox Medizin Uni Leipzig</datasetName>
+                    <datasetName language="de-DE" lastTranslated="2018-05-02T10:27:22">Dataset Sandbox Medizin Uni Leipzig</datasetName>
+                    <projectName language="en-US">Sandbox Medizin Uni Leipzig</projectName>
+                    <projectName language="de-DE">Sandbox Medizin Uni Leipzig</projectName>
+                </origconcept>
+            </staticAssociations>
+            <ref type="include" prefix="dthsehcdemo-" flexibility="dynamic" id="1.2.276.0.76.3.1.85.200.77.10.47" name="eWundbericht" displayName="eWundbericht" effectiveDate="2016-01-27T14:55:40" statusCode="cancelled" isClosed="false" versionLabel="fehlerhafte Anlage ohne Basistemplate" ident="dthsehcdemo-"/>
+            <ref type="include" prefix="vomgt-" flexibility="dynamic" id="1.2.276.0.76.3.1.135.8.10.146" name="AR_Antrag_Anschlussrehabilitation" displayName="(AR-A) Antrag auf Anschlussrehabilitation" effectiveDate="2020-06-17T15:59:27" statusCode="draft" isClosed="false" ident="vomgt-"/>
+            <ref type="include" prefix="vomgt-" flexibility="dynamic" id="1.2.276.0.76.3.1.135.8.10.173" name="AR_BefundberichtDoc" displayName="(AR-B) Ärztlicher Befundbericht" effectiveDate="2020-06-18T16:35:14" statusCode="draft" ident="vomgt-"/>
+            <ref type="include" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.2" name="episodenzusammenfassung-notaufnahmeregister" displayName="Episodenzusammenfassung Notaufnahmeregister" effectiveDate="2024-03-21T00:00:00" statusCode="draft" versionLabel="2024" lastModifiedDate="2024-08-20T14:08:22" ident="aktin-"/>
+            <ref type="include" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.92" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2025-11-12T00:00:00" statusCode="retired" versionLabel="v3transit" lastModifiedDate="2026-03-25T11:04:45" ident="aktin-"/>
+            <ref type="include" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.93" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2026-03-25T11:04:07" statusCode="draft" versionLabel="v4transit" lastModifiedDate="2026-04-29T18:39:46" ident="aktin-"/>
+            <ref type="include" prefix="ifsgm-" flexibility="dynamic" id="1.2.276.0.76.10.1010" name="Arztmeldung6IfSG" displayName="Arztmeldung nach §6 IfSG" effectiveDate="2013-07-15T00:00:00" statusCode="draft" versionLabel="v1.0" ident="ifsgm-"/>
+            <ref type="include" prefix="ifsgm-" flexibility="dynamic" id="1.2.276.0.76.10.1011" name="Labormeldung7123IfSG" displayName="Labormeldung nach §7 Abs. 1, 2 und 3" effectiveDate="2014-07-13T00:00:00" statusCode="draft" versionLabel="v1.0" ident="ifsgm-"/>
+            <ref type="include" prefix="abde-" flexibility="dynamic" id="1.2.276.0.76.10.1013" name="Arztbrief" displayName="Arztbrief 2014/2015" effectiveDate="2014-08-25T00:00:00" statusCode="draft" versionLabel="v2.02" ident="abde-"/>
+            <ref type="include" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.1014" name="PersonalMedicationList" displayName="Patientenbezogener Medikationsplan CDA document" effectiveDate="2014-10-20T00:00:00" statusCode="draft" versionLabel="v2015" ident="pmp-"/>
+            <ref type="include" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.1015" name="EmergencymedicineNoteCDAdocumentv1" displayName="Emergency medicine Note CDA document" effectiveDate="2014-09-18T00:00:00" statusCode="active" versionLabel="v1" ident="aktin-"/>
+            <ref type="include" prefix="uelmgmt-" flexibility="dynamic" id="1.2.276.0.76.10.1016" name="AerztlicherKurzberichtKrankenhaus90a" displayName="Ärztlicher Kurzbericht vom Krankenhaus nach §90a SGB V" effectiveDate="2015-03-27T00:00:00" statusCode="draft" ident="uelmgmt-"/>
+            <ref type="include" prefix="uelmgmt-" flexibility="dynamic" id="1.2.276.0.76.10.1017" name="AerztlicherKurzberichtNiedergelassenerArzt90a" displayName="Ärztlicher Kurzbericht Niedergelassener Arzt nach §90a SGB V" effectiveDate="2015-12-11T00:00:00" statusCode="draft" ident="uelmgmt-"/>
+            <ref type="include" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.1019" name="EmergencymedicineNoteCDAdocumentv2" displayName="Emergency medicine Note CDA document" effectiveDate="2016-06-01T00:00:00" statusCode="active" versionLabel="v2" ident="aktin-"/>
+            <ref type="include" prefix="abde-" flexibility="dynamic" id="1.2.276.0.76.10.1020" name="Arztbrief30" displayName="Arztbrief Plus" effectiveDate="2017-02-01T00:00:00" statusCode="draft" versionLabel="v3.00" ident="abde-"/>
+            <ref type="include" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.1021" name="TraumaSummaryCDAdocument" displayName="Trauma Summary CDA document" effectiveDate="2016-11-01T00:00:00" statusCode="draft" versionLabel="v1" ident="aktin-"/>
+            <ref type="include" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.1024" name="PersonalMedicationListPlus" displayName="Patientenbezogener Medikationsplan Plus" effectiveDate="2017-07-07T00:00:00" statusCode="draft" versionLabel="v2017" ident="pmp-"/>
+            <ref type="include" prefix="elmgmt-" flexibility="dynamic" id="1.2.276.0.76.10.1026" name="EntlassmanagementBrief" displayName="Entlassmanagement Brief" effectiveDate="2017-07-13T00:00:00" statusCode="draft" versionLabel="v1.1" ident="elmgmt-"/>
+            <ref type="include" prefix="teleneps-" flexibility="dynamic" id="1.2.276.0.76.10.1033" name="Arztbrieftelenepsambulant" displayName="Arztbrief Psychotraumatologie ambulant/stationär" effectiveDate="2019-06-02T00:00:00" statusCode="retired" versionLabel="v1.0" ident="teleneps-"/>
+            <ref type="include" prefix="teleneps-" flexibility="dynamic" id="1.2.276.0.76.10.1033" name="Arztbrieftelenepsambulant" displayName="Arztbrief Psychotraumatologie ambulant/stationär" effectiveDate="2020-12-18T00:00:00" statusCode="draft" versionLabel="v2.0" ident="teleneps-"/>
+            <ref type="include" prefix="einwde-" flexibility="dynamic" id="1.2.276.0.76.10.1034" name="eEinweisungsbrief" displayName="eEinweisungsbrief" effectiveDate="2020-06-18T00:00:00" statusCode="draft" versionLabel="v1.0" ident="einwde-"/>
+            <ref type="include" prefix="ifsgm-" flexibility="dynamic" id="2.16.840.1.113883.2.6.60.11.10.1" name="Labormeldung7a3IfSG" displayName="Labormeldung nach §7 Abs. 3" statusCode="cancelled" versionLabel="v1.0" effectiveDate="2018-01-29T13:35:02" ident="ifsgm-"/>
+            <ref type="include" prefix="epflb-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.34.10.1" name="Pflegebericht" displayName="Patientenbezogener pflegerischer Verlegungs- oder Entlassungsbericht 2017/2018" statusCode="active" versionLabel="1.0" effectiveDate="2017-09-21T11:31:42" ident="epflb-"/>
+            <ref type="include" prefix="epflb-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.34.10.27" name="NursingDiagnosis-Entry" displayName="Pflegediagnose - Entry" statusCode="active" isClosed="false" versionLabel="1.0" effectiveDate="2018-04-18T12:15:26" ident="epflb-"/>
+            <ref type="include" prefix="epflb-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.34.10.28" name="Pflegebericht_Entlassung" displayName="PflegerischerEntlassungsbericht" statusCode="cancelled" versionLabel="v1" effectiveDate="2018-04-18T14:01:46" ident="epflb-"/>
+            <ref type="include" prefix="epflb-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.34.10.29" name="NursingScore-Entry" displayName="Score - Entry" statusCode="active" isClosed="false" versionLabel="1.0" effectiveDate="2018-04-18T14:17:36" ident="epflb-"/>
+            <ref type="include" prefix="epflb-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.34.10.30" name="NursingIntervention-Entry" displayName="Pflegeintervention - Entry" statusCode="active" isClosed="false" versionLabel="1.0" effectiveDate="2018-04-18T14:30:38" ident="epflb-"/>
+            <ref type="include" prefix="epflb-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.34.10.31" name="NursingOutcome-Entry" displayName="Pflegeergebnis - Entry" statusCode="active" isClosed="false" versionLabel="1.0" effectiveDate="2018-04-18T14:45:18" ident="epflb-"/>
+            <ref type="include" prefix="epflb-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.34.10.32" name="NursingGoal-Entry" displayName="Pflegeziel - Entry" statusCode="active" isClosed="false" versionLabel="1.0" effectiveDate="2018-04-18T14:55:50" ident="epflb-"/>
+            <ref type="include" prefix="epflb-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.34.10.36" name="AdvancedDirectives-Entry" displayName="Verfügungen - Entry" statusCode="active" isClosed="false" versionLabel="1.0" effectiveDate="2018-04-24T13:59:06" ident="epflb-"/>
+            <ref type="include" prefix="epflb-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.34.10.38" name="Supply-L3" displayName="Hilfsmittel - Entry" statusCode="active" isClosed="false" versionLabel="1.0" effectiveDate="2018-04-24T14:40:06" ident="epflb-"/>
+            <ref type="include" prefix="epflb-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.34.10.41" name="LivingArrangement-L3" displayName="Wohnform - Entry" statusCode="active" isClosed="false" versionLabel="1.0" effectiveDate="2018-04-24T15:14:21" ident="epflb-"/>
+            <ref type="include" prefix="smul-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.45.10.20" name="CDAAdipositasStudie" displayName="Dok1 Adipositas Studie" effectiveDate="2018-04-24T11:01:24" statusCode="draft" ident="smul-"/>
+            <ref type="include" prefix="smul-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.45.10.24" name="CDAAdipositasStudie2" displayName="Dok2 Adipositas Studie" effectiveDate="2018-04-26T16:56:54" statusCode="draft" ident="smul-"/>
+            <ref type="include" prefix="smul-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.45.10.27" name="CDAAdipositasStudie3" displayName="Dok3 Adipositas Studie" effectiveDate="2018-04-27T15:17:54" statusCode="draft" ident="smul-"/>
+            <ref type="include" prefix="smul-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.45.10.40" name="AdipositasStudie4" displayName="Dok4 Adipositas Studie" effectiveDate="2018-05-03T10:09:46" statusCode="draft" ident="smul-"/>
+            <ref type="include" prefix="smul-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.45.10.44" name="ASIC" displayName="Anwendungsfall ASIC" effectiveDate="2018-05-08T15:20:09" statusCode="draft" ident="smul-"/>
+            <ref type="include" prefix="medmgmt-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.48.10.1" name="CDAMedikationsmanagement" displayName="CDA Medikationsmanagement" statusCode="retired" versionLabel="1.07" effectiveDate="2018-10-13T16:20:07" ident="medmgmt-"/>
+            <ref type="include" prefix="medmgmt-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.48.10.1" name="CDAMedikationsmanagement" displayName="CDA Medikationsmanagement" effectiveDate="2019-10-22T20:07:49" statusCode="draft" ident="medmgmt-"/>
+            <ref type="include" prefix="medmgmt-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.48.10.1" name="CDAMedikationsmanagement" displayName="CDA Medikationsmanagement" statusCode="pending" effectiveDate="2019-10-22T20:08:16" ident="medmgmt-"/>
+            <ref type="include" prefix="medmgmt-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.48.10.35" name="CDAMedikationsmanagementHauskomet" displayName="CDA Medikationsmanagement Hauskomet" statusCode="pending" isClosed="true" effectiveDate="2019-09-30T14:49:27" ident="medmgmt-"/>
+            <ref type="include" prefix="medmgmt-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.48.10.35" name="CDAMedikationsmanagementHauskomet" displayName="CDA Medikationsmanagement Hauskomet" effectiveDate="2019-12-15T19:27:07" statusCode="draft" isClosed="true" ident="medmgmt-"/>
+            <ref type="include" prefix="hauskomet-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.27.10.1" name="Hauskometmedikationsinformationen" displayName="Hauskomet - zentrale Medikationsinformationen" effectiveDate="2018-09-07T00:00:00" statusCode="draft" ident="hauskomet-"/>
+            <ref type="include" prefix="ewundb-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.36.10.2" name="eWundbericht" displayName="eWundbericht" effectiveDate="2019-05-27T07:26:53" statusCode="draft" versionLabel="0.9" ident="ewundb-"/>
+        </template>
+    </template>
+</result>

@@ -1,0 +1,68 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.3.1.195.10.4" ident="aktin-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.3.1.195.10.4" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" lastModifiedDate="2024-08-09T10:49:23" versionLabel="2024" isClosed="false" displayName="Hauptkostenträger" ident="aktin-" name="hauptkostentrager" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="draft" url="http://art-decor.org/decor/services/" effectiveDate="2024-08-09T10:35:24">
+            <desc language="de-DE" lastTranslated="2024-08-09T10:35:24">Kostenträger/Versicherter/Versicherung mit der Angabe des Versicherungsnehmers sowie der damit verbundene Kostenträger (Versicherung). Im Kontext der Krebsregister ist die Versicherungsnummer sowie die Identifikation des Kostenträgers von Interesse.</desc>
+            <classification type="cdaheaderlevel"/>
+            <relationship type="SPEC" template="1.2.276.0.76.10.2022" flexibility="2014-08-25T00:00:00" tmid="1.2.276.0.76.10.2022" tmname="HeaderParticipantKostentraeger" tmdisplayName="CDA participant Kostentraeger" tmstatusCode="active" tmeffectiveDate="2014-08-25T00:00:00" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false"/>
+            <relationship type="SPEC" template="1.2.276.0.76.10.2024" tmid="1.2.276.0.76.10.2024" tmname="HeaderParticipant" tmdisplayName="CDA participant Weitere Beteiligte" tmstatusCode="active" tmeffectiveDate="2014-08-25T00:00:00" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.108" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.108" tmname="CDAparticipant" tmdisplayName="CDA participant" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <example type="neutral">
+                <participant typeCode="HLD">
+                    <templateId root="1.2.276.0.76.3.1.195.10.4"/>
+                    <associatedEntity classCode="POLHOLD">
+                        <!-- KV Fall? -->
+                        <code code="KV" codeSystem="1.2.276.0.76.3.1.195.5.97" displayName="KV-Fall"/>
+                        <scopingOrganization>
+                            <!-- IK-NR -->
+                            <id extension="987654321" root="1.2.276.0.76.4.5"/>
+                            <!-- VK-NR -->
+                            <id extension="54321" root="1.2.276.0.76.4.7"/>
+                            <name>AOK Süd-Ostwestfalen Nord</name>
+                        </scopingOrganization>
+                    </associatedEntity>
+                </participant>
+            </example>
+            <element name="hl7:participant[hl7:templateId[@root='1.2.276.0.76.3.1.195.10.4']]" id="2.16.840.1.113883.2.6.77.9.19">
+                <item original="false" label="hauptkostentrager"/>
+                <attribute name="typeCode" value="HLD" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.77.9.20"/>
+                <element name="hl7:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.21">
+                    <item original="false" label="hauptkostentrager"/>
+                    <attribute name="root" value="1.2.276.0.76.3.1.195.10.4" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.77.9.22"/>
+                </element>
+                <element name="hl7:associatedEntity" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.24">
+                    <item original="false" label="hauptkostentrager"/>
+                    <attribute name="classCode" value="POLHOLD" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.77.9.25"/>
+                    <element name="hl7:code" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.27">
+                        <desc language="de-DE" lastTranslated="2024-08-09T10:35:24">Versichertenstatus: als KV Fall abgerechnet?</desc>
+                        <item original="false" label="hauptkostentrager"/>
+                        <vocabulary valueSet="1.2.276.0.76.3.1.195.11.19" vsid="1.2.276.0.76.3.1.195.11.19" vsname="kvfall" vsdisplayName="KV-Fall" vseffectiveDate="2024-08-08T20:33:01" vsstatusCode="draft" linkedartefactmissing="false"/>
+                    </element>
+                    <element name="hl7:scopingOrganization" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.77.9.31">
+                        <desc language="de-DE" lastTranslated="2024-08-09T10:35:24">
+                            <p>In scopingOrganization wird im <code>id</code> Element das Institutionskennzeichen (IKNR) des Kostenträgers mit <code>@extension</code> = die eigentliche IKNR und <code>@roo</code>t = "1.2.276.0.76.4.5" (Dies ist die OID für IK-Nummern in Deutschland) angegeben. Möglich ist auch Nummer + Typ Nummer der
+                                Europäische Krankenversicherungskarte EHIC Feld 7 'Identification number of the institution'</p>
+                            <p/>
+                        </desc>
+                        <item original="false" label="hauptkostentrager"/>
+                        <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1632160">
+                            <desc language="de-DE" lastTranslated="2024-08-09T10:47:56">
+                                <p>Identifikation der Versicherungsgesellschaft</p>
+                            </desc>
+                            <item original="false" label="hauptkostentrager"/>
+                        </element>
+                        <element name="hl7:name" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1632161">
+                            <desc language="de-DE" lastTranslated="2024-08-09T10:47:56">
+                                <p>Name der Versicherungsgesellschaft</p>
+                            </desc>
+                            <item original="false" label="hauptkostentrager"/>
+                        </element>
+                    </element>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="include" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.2" name="episodenzusammenfassung-notaufnahmeregister" displayName="Episodenzusammenfassung Notaufnahmeregister" effectiveDate="2024-03-21T00:00:00" statusCode="draft" versionLabel="2024" lastModifiedDate="2024-08-20T14:08:22" ident="aktin-"/>
+            <ref type="include" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.92" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2025-11-12T00:00:00" statusCode="retired" versionLabel="v3transit" lastModifiedDate="2026-03-25T11:04:45" ident="aktin-"/>
+            <ref type="include" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.93" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2026-03-25T11:04:07" statusCode="draft" versionLabel="v4transit" lastModifiedDate="2026-04-29T18:39:46" ident="aktin-"/>
+        </template>
+    </template>
+</result>

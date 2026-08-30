@@ -1,0 +1,346 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.4257" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pharm="urn:ihe:pharm" id="1.2.276.0.76.10.4257" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="Allergie/Unverträglichkeit Observation" cda:dummy-4="urn:hl7-org:v3" ident="hl7de-" name="Allergyintoleranceobservation" xml:dummy-2="http://www.w3.org/XML/1998/namespace" pharm:dummy-1="urn:ihe:pharm" statusCode="draft" url="http://art-decor.org/decor/services/" effectiveDate="2017-06-04T00:00:00">
+            <desc language="de-DE"/>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.303" tmname="CDAObservation" tmdisplayName="CDA Observation" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <relationship type="ADAPT" template="2.16.840.1.113883.10.20.22.4.7" flexibility="2014-06-09T00:00:00" tmid="2.16.840.1.113883.10.20.22.4.7" tmname="Allergy-IntoleranceObservationV2" tmdisplayName="Allergy - Intolerance Observation (V2)" tmeffectiveDate="2014-06-09T00:00:00" tmstatusCode="draft" tmversionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <example type="neutral" caption="Antibiotika-Allergie bekannt seit 2010">
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4257"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="4adc1020-7b14-11db-9fe1-0800200c9a66"/>
+                    <code code="OINT" codeSystem="2.16.840.1.113883.5.4" displayName="adverse reaction upon exposure to an agent"/>
+                    <statusCode code="completed"/>
+                    <effectiveTime>
+                        <low value="2010"/>
+                    </effectiveTime>
+                    <participant typeCode="CSM">
+                        <participantRole classCode="MANU">
+                            <playingEntity classCode="MMAT">
+                                <code code="A07AA" codeSystem="2.16.840.1.113883.6.73" displayName="Antibiotikum">
+                                    <originalText>
+                                        <reference value="#alg-1"/>
+                                    </originalText>
+                                </code>
+                            </playingEntity>
+                        </participantRole>
+                    </participant>
+                </observation>
+            </example>
+            <example type="neutral" caption="Keine Kontrastmittel-Allergie/Unverträglichkeit bekannt (negationInd=true)">
+                <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                    <templateId root="1.2.276.0.76.10.4257"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="4adc1020-7b14-11db-9fe1-0800200c9a66"/>
+                    <code code="OINT" codeSystem="2.16.840.1.113883.5.4" displayName="adverse reaction upon exposure to an agent"/>
+                    <statusCode code="completed"/>
+                    <effectiveTime nullFlavor="NA"/>
+                    <participant typeCode="CSM">
+                        <participantRole classCode="MANU">
+                            <playingEntity classCode="MMAT">
+                                <code code="V08" codeSystem="2.16.840.1.113883.6.73" displayName="Kontrastmittel">
+                                    <originalText>
+                                        <reference value="#alg-2"/>
+                                    </originalText>
+                                </code>
+                            </playingEntity>
+                        </participantRole>
+                    </participant>
+                </observation>
+            </example>
+            <example type="neutral" caption="Sonstige Allergie: Hühnereiweiss (Der Freitext steht im zugehörigen Section.text, hier referenziert durch #alg-4)">
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4257"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="4adc1020-7b14-11db-9fe1-0800200c9a66"/>
+                    <code code="OINT" codeSystem="2.16.840.1.113883.5.4" displayName="adverse reaction upon exposure to an agent"/>
+                    <statusCode code="completed"/>
+                    <effectiveTime nullFlavor="NA"/>
+                    <participant typeCode="CSM">
+                        <participantRole classCode="MANU">
+                            <playingEntity classCode="MMAT">
+                                <code nullFlavor="OTH">
+                                    <originalText>
+                                        <reference value="#alg-4"/>
+                                    </originalText>
+                                </code>
+                            </playingEntity>
+                        </participantRole>
+                    </participant>
+                </observation>
+            </example>
+            <example type="neutral" caption="Allergie: ja, Allergen nicht näher bezeichnet (im zugehörigen Section.text, hier referenziert durch #alg-4, kann der Text 'ja, n.n.b.' o.ä. wiedergegeben werden)">
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4257"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="55dc1020-7b14-11db-9fe1-0800200c9aab"/>
+                    <code code="OINT" codeSystem="2.16.840.1.113883.5.4" displayName="adverse reaction upon exposure to an agent"/>
+                    <statusCode code="completed"/>
+                    <effectiveTime nullFlavor="NA"/>
+                    <participant typeCode="CSM">
+                        <participantRole classCode="MANU">
+                            <playingEntity classCode="MMAT">
+                                <code code="ALGN" codeSystem="1.2.276.0.76.3.1.195.5.52" displayName="Allergen">
+                                    <originalText>
+                                        <reference value="#alg-4"/>
+                                    </originalText>
+                                </code>
+                            </playingEntity>
+                        </participantRole>
+                    </participant>
+                </observation>
+            </example>
+            <example type="neutral" caption="Keine Allergie/Unverträglichkeit bekannt (negationInd=true)">
+                <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                    <templateId root="1.2.276.0.76.10.4257"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="4adc1020-7b14-11db-9fe1-0800200c9a66"/>
+                    <code code="OINT" codeSystem="2.16.840.1.113883.5.4" displayName="adverse reaction upon exposure to an agent"/>
+                    <statusCode code="completed"/>
+                    <!-- N/A - author/time records when this assertion was made -->
+                    <effectiveTime nullFlavor="NA"/>
+                </observation>
+            </example>
+            <example type="neutral" caption="Allergie/Unverträglichkeit nicht erfragt (nullFlavor=NASK)">
+                <observation classCode="OBS" moodCode="EVN" nullFlavor="NASK">
+                    <templateId root="1.2.276.0.76.10.4257"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="4adc1020-7b14-11db-9fe1-0800200c9a66"/>
+                    <code code="OINT" codeSystem="2.16.840.1.113883.5.4" displayName="adverse reaction upon exposure to an agent"/>
+                    <statusCode code="completed"/>
+                    <!-- N/A - author/time records when this assertion was made -->
+                    <effectiveTime nullFlavor="NA"/>
+                </observation>
+            </example>
+            <element name="hl7:observation" id="2.16.840.1.113883.2.6.77.9.926">
+                <item original="false" label="Allergyintoleranceobservation"/>
+                <attribute name="classCode" value="OBS" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.77.9.927"/>
+                <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.77.9.928"/>
+                <attribute name="negationInd" isOptional="true" datatype="bl" id="2.16.840.1.113883.2.6.77.9.929"/>
+                <attribute name="nullFlavor" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.1014">
+                    <vocabulary code="NASK"/>
+                </attribute>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.930">
+                    <item original="false" label="Allergyintoleranceobservation"/>
+                    <attribute name="root" value="1.2.276.0.76.10.4257" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.77.9.931"/>
+                </element>
+                <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="*" datatype="II" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.932">
+                    <item original="false" label="Allergyintoleranceobservation"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CV" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.933">
+                    <item original="false" label="Allergyintoleranceobservation"/>
+                    <vocabulary code="ALG" codeSystem="2.16.840.1.113883.5.4"/>
+                    <vocabulary code="OINT" codeSystem="2.16.840.1.113883.5.4"/>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CS" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.934">
+                    <item original="false" label="Allergyintoleranceobservation"/>
+                </element>
+                <element name="hl7:effectiveTime" minimumMultiplicity="1" maximumMultiplicity="1" datatype="IVL_TS" conformance="R" id="2.16.840.1.113883.2.6.77.9.935">
+                    <item original="false" label="Allergyintoleranceobservation"/>
+                    <element name="hl7:low" minimumMultiplicity="0" maximumMultiplicity="1" datatype="TS" conformance="R" id="2.16.840.1.113883.2.6.77.9.936">
+                        <item original="false" label="Allergyintoleranceobservation"/>
+                    </element>
+                    <element name="hl7:high" minimumMultiplicity="0" maximumMultiplicity="1" datatype="TS" conformance="R" id="2.16.840.1.113883.2.6.77.9.937">
+                        <item original="false" label="Allergyintoleranceobservation"/>
+                    </element>
+                </element>
+                <element name="hl7:value" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CD" conformance="C" id="2.16.840.1.113883.2.6.77.9.938">
+                    <desc language="de-DE">Code für die Allergie/Intoleranz</desc>
+                    <item original="false" label="Allergyintoleranceobservation"/>
+                    <vocabulary valueSet="1.2.276.0.76.11.12" vsid="1.2.276.0.76.11.12" vsname="AllergiesIntolerances" vsdisplayName="Allergien und Unverträglichkeiten" vseffectiveDate="2016-10-05T00:00:00" vsstatusCode="draft" linkedartefactmissing="false"/>
+                </element>
+                <choice minimumMultiplicity="0" maximumMultiplicity="1">
+                    <desc language="de-DE">Angabe, woher die Information zur Allergie oder Unverträglichkeit des Patienten stammt</desc>
+                    <item original="false" label="Allergyintoleranceobservation"/>
+                    <element name="hl7:author" id="2.16.840.1.113883.2.6.77.9.1016">
+                        <desc language="de-DE">Autor dieser Information ist ein Gesundheitsdienstleister</desc>
+                        <item original="false" label="Allergyintoleranceobservation"/>
+                        <example type="neutral" caption="Autor der Information ist ein Gesundheitsdienstleister">
+                            <author>
+                                <time value="20131221"/>
+                                <assignedAuthor>
+                                    <id root="1.2.276.0.76.4.16" extension="123456701"/>
+                                    <assignedPerson>
+                                        <name>
+                                            <given qualifier="IN">Jan H.</given>
+                                            <family>Ausarz</family>
+                                        </name>
+                                    </assignedPerson>
+                                </assignedAuthor>
+                            </author>
+                        </example>
+                        <include ref="1.2.276.0.76.10.90025" tmid="1.2.276.0.76.10.90025" tmname="AuthorBody" tmdisplayName="Author (Body)" tmeffectiveDate="2014-12-21T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                            <item original="false" label="Allergyintoleranceobservation"/>
+                            <attribute name="typeCode" value="AUT" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.726"/>
+                            <attribute name="contextControlCode" value="OP" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.727"/>
+                            <element name="hl7:functionCode" datatype="CE" id="2.16.840.1.113883.2.6.77.9.728" minimumMultiplicity="0" maximumMultiplicity="1">
+                                <item original="false" label="AuthorBody"/>
+                                <vocabulary valueSet="2.16.840.1.113883.1.11.10267" vsid="2.16.840.1.113883.1.11.10267" vsname="ParticipationFunction" vsdisplayName="ParticipationFunction" vsstatusCode="final" vseffectiveDate="2016-06-23T00:00:00" linkedartefactmissing="false"/>
+                            </element>
+                            <element name="hl7:time" datatype="TS" id="2.16.840.1.113883.2.6.77.9.729" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R">
+                                <item original="false" label="AuthorBody"/>
+                            </element>
+                            <element name="hl7:assignedAuthor" id="2.16.840.1.113883.2.6.77.9.730" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R">
+                                <item original="false" label="AuthorBody"/>
+                                <attribute name="classCode" value="ASSIGNED" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.731"/>
+                                <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="*" datatype="II" conformance="R" id="2.16.840.1.113883.2.6.77.9.732">
+                                    <item original="false" label="AuthorBody"/>
+                                </element>
+                                <element name="hl7:code" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.2.6.77.9.733">
+                                    <item original="false" label="AuthorBody"/>
+                                    <vocabulary codeSystem="2.16.840.1.113883.5.111"/>
+                                </element>
+                                <element name="hl7:addr" minimumMultiplicity="0" maximumMultiplicity="*" datatype="AD" id="2.16.840.1.113883.2.6.77.9.734">
+                                    <item original="false" label="AuthorBody"/>
+                                </element>
+                                <element name="hl7:telecom" minimumMultiplicity="0" maximumMultiplicity="*" datatype="TEL" id="2.16.840.1.113883.2.6.77.9.735">
+                                    <item original="false" label="AuthorBody"/>
+                                </element>
+                                <element name="hl7:assignedPerson" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.736">
+                                    <item original="false" label="AuthorBody"/>
+                                    <include ref="1.2.276.0.76.10.90010" tmid="1.2.276.0.76.10.90010" tmname="PersonElements" tmdisplayName="CDA Person Elements" tmeffectiveDate="2011-12-19T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                                        <item original="false" label="AuthorBody"/>
+                                        <attribute name="classCode" value="PSN" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.330"/>
+                                        <attribute name="determinerCode" value="INSTANCE" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.331"/>
+                                        <element name="hl7:name" datatype="PN" id="2.16.840.1.113883.2.6.77.9.332" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                                            <item original="false" label="PersonElements"/>
+                                        </element>
+                                        <staticAssociations/>
+                                    </include>
+                                </element>
+                                <element name="hl7:representedOrganization" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.737">
+                                    <item original="false" label="AuthorBody"/>
+                                    <include ref="1.2.276.0.76.10.90011" tmid="1.2.276.0.76.10.90011" tmname="OrganizationElements" tmdisplayName="CDA Organization Elements" tmeffectiveDate="2011-12-19T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                                        <item original="false" label="AuthorBody"/>
+                                        <attribute name="classCode" value="ORG" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.333"/>
+                                        <attribute name="determinerCode" value="INSTANCE" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.334"/>
+                                        <element name="hl7:id" datatype="II" id="2.16.840.1.113883.2.6.77.9.335" minimumMultiplicity="0" maximumMultiplicity="*">
+                                            <item original="false" label="OrganizationElements"/>
+                                        </element>
+                                        <element name="hl7:name" datatype="ON" id="2.16.840.1.113883.2.6.77.9.336" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                                            <item original="false" label="OrganizationElements"/>
+                                        </element>
+                                        <element name="hl7:telecom" datatype="TEL" id="2.16.840.1.113883.2.6.77.9.337" minimumMultiplicity="0" maximumMultiplicity="*">
+                                            <item original="false" label="OrganizationElements"/>
+                                        </element>
+                                        <element name="hl7:addr" datatype="AD" id="2.16.840.1.113883.2.6.77.9.338" minimumMultiplicity="0" maximumMultiplicity="1">
+                                            <item original="false" label="OrganizationElements"/>
+                                        </element>
+                                        <staticAssociations/>
+                                    </include>
+                                </element>
+                            </element>
+                            <staticAssociations/>
+                        </include>
+                    </element>
+                    <element name="hl7:informant" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.1022">
+                        <desc language="de-DE">Informant dieser Information ist eine Kontaktperson/Angehöriger des Patienten</desc>
+                        <item original="false" label="Allergyintoleranceobservation"/>
+                        <example type="neutral" caption="Informant dieser Information ist eine Kontaktperson/Angehöriger des Patienten">
+                            <informant>
+                                <relatedEntity classCode="CON">
+                                    <relatedPerson classCode="PSN" determinerCode="INSTANCE">
+                                        <name> ... </name>
+                                    </relatedPerson>
+                                </relatedEntity>
+                            </informant>
+                        </example>
+                        <attribute name="typeCode" value="INF" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.1023"/>
+                        <attribute name="contextControlCode" value="OP" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.1024"/>
+                        <element name="hl7:relatedEntity" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.1025">
+                            <item original="false" label="Allergyintoleranceobservation"/>
+                            <include ref="1.2.276.0.76.10.90020" tmid="1.2.276.0.76.10.90020" tmname="RelatedEntityBody" tmdisplayName="RelatedEntity (Body)" tmeffectiveDate="2014-08-25T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                                <item original="false" label="Allergyintoleranceobservation"/>
+                                <attribute name="classCode" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.77.9.720">
+                                    <vocabulary valueSet="2.16.840.1.113883.1.11.19316" flexibility="dynamic" vsid="2.16.840.1.113883.1.11.19316" vsname="RoleClassMutualRelationship" vsdisplayName="RoleClassMutualRelationship" vseffectiveDate="2014-03-26T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1360-20160323" linkedartefactmissing="false"/>
+                                </attribute>
+                                <element name="hl7:code" datatype="CE" id="2.16.840.1.113883.2.6.77.9.721" minimumMultiplicity="0" maximumMultiplicity="1">
+                                    <item original="false" label="RelatedEntityBody"/>
+                                    <vocabulary valueSet="2.16.840.1.113883.1.11.19563" flexibility="dynamic" vsid="2.16.840.1.113883.1.11.19563" vsname="PersonalRelationshipRoleType" vsdisplayName="PersonalRelationshipRoleType" vseffectiveDate="2014-03-26T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1360-20160323" linkedartefactmissing="false"/>
+                                </element>
+                                <element name="hl7:addr" datatype="AD" id="2.16.840.1.113883.2.6.77.9.722" minimumMultiplicity="0" maximumMultiplicity="*">
+                                    <item original="false" label="RelatedEntityBody"/>
+                                </element>
+                                <element name="hl7:telecom" datatype="TEL" id="2.16.840.1.113883.2.6.77.9.723" minimumMultiplicity="0" maximumMultiplicity="*">
+                                    <item original="false" label="RelatedEntityBody"/>
+                                </element>
+                                <element name="hl7:effectiveTime" datatype="IVL_TS" id="2.16.840.1.113883.2.6.77.9.724" minimumMultiplicity="0" maximumMultiplicity="1">
+                                    <item original="false" label="RelatedEntityBody"/>
+                                </element>
+                                <element name="hl7:relatedPerson" id="2.16.840.1.113883.2.6.77.9.725" minimumMultiplicity="0" maximumMultiplicity="1">
+                                    <item original="false" label="RelatedEntityBody"/>
+                                    <include ref="1.2.276.0.76.10.90010" tmid="1.2.276.0.76.10.90010" tmname="PersonElements" tmdisplayName="CDA Person Elements" tmeffectiveDate="2011-12-19T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                                        <item original="false" label="RelatedEntityBody"/>
+                                        <attribute name="classCode" value="PSN" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.330"/>
+                                        <attribute name="determinerCode" value="INSTANCE" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.331"/>
+                                        <element name="hl7:name" datatype="PN" id="2.16.840.1.113883.2.6.77.9.332" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                                            <item original="false" label="PersonElements"/>
+                                        </element>
+                                        <staticAssociations/>
+                                    </include>
+                                </element>
+                                <staticAssociations/>
+                            </include>
+                        </element>
+                    </element>
+                    <element name="hl7:participant[@typeCode='AUT']" id="2.16.840.1.113883.2.6.77.9.1017">
+                        <desc language="de-DE">Autor dieser Information ist der Patient</desc>
+                        <item original="false" label="Allergyintoleranceobservation"/>
+                        <example type="neutral" caption="Autor der Information ist der Patient">
+                            <participant typeCode="AUT">
+                                <participantRole classCode="PAT"/>
+                            </participant>
+                        </example>
+                        <attribute name="typeCode" value="AUT" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.77.9.1018"/>
+                        <element name="hl7:time" minimumMultiplicity="0" maximumMultiplicity="1" datatype="TS" conformance="R" id="2.16.840.1.113883.2.6.77.9.1019">
+                            <item original="false" label="Allergyintoleranceobservation"/>
+                        </element>
+                        <element name="hl7:participantRole" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.1020">
+                            <item original="false" label="Allergyintoleranceobservation"/>
+                            <attribute name="classCode" value="PAT" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.77.9.1021"/>
+                        </element>
+                    </element>
+                </choice>
+                <element name="hl7:participant[@typeCode='CSM']" minimumMultiplicity="0" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.2.6.77.9.939">
+                    <item original="false" label="Allergyintoleranceobservation"/>
+                    <attribute name="typeCode" value="CSM" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.77.9.940"/>
+                    <element name="hl7:participantRole" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.941">
+                        <item original="false" label="Allergyintoleranceobservation"/>
+                        <attribute name="classCode" value="MANU" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.617"/>
+                        <element name="hl7:playingEntity" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.942">
+                            <item original="false" label="Allergyintoleranceobservation"/>
+                            <attribute name="classCode" value="MMAT" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.77.9.943"/>
+                            <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CE" conformance="R" id="2.16.840.1.113883.2.6.77.9.944">
+                                <desc language="de-DE">Auslösendes Agens: Substanzen (ATC)</desc>
+                                <item original="false" label="Allergyintoleranceobservation"/>
+                                <vocabulary codeSystem="2.16.840.1.113883.6.73"/>
+                            </element>
+                        </element>
+                    </element>
+                </element>
+                <assert role="error" test="hl7:value[@code] or hl7:participant/hl7:participantRole">Wenn das observation/value Element und mit einem Code versehen ist, dann MUSS das observation/participant Element weggelassen werden</assert>
+                <element name="hl7:entryRelationship" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" contains="1.2.276.0.76.10.4258" id="2.16.840.1.113883.2.6.77.9.945" tmid="1.2.276.0.76.10.4258" tmname="ReactionManifestation" tmdisplayName="Reaktion/Manifestation" tmeffectiveDate="2017-06-04T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                    <item original="false" label="Allergyintoleranceobservation"/>
+                    <attribute name="typeCode" value="MFST" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.77.9.946"/>
+                </element>
+                <element name="hl7:entryRelationship" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" contains="1.2.276.0.76.10.4259" id="2.16.840.1.113883.2.6.77.9.947" tmid="1.2.276.0.76.10.4259" tmname="Criticality" tmdisplayName="Kritikalität" tmeffectiveDate="2017-06-04T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                    <item original="false" label="Allergyintoleranceobservation"/>
+                    <attribute name="typeCode" value="SUBJ" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.77.9.948"/>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="dependency" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.1024" name="PersonalMedicationListPlus" displayName="Patientenbezogener Medikationsplan Plus" effectiveDate="2017-07-07T00:00:00" statusCode="draft" versionLabel="v2017" ident="pmp-"/>
+            <ref type="dependency" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.3040" name="AllergienUnvertraeglichkeiten" displayName="Allergien und Unverträglichkeiten" effectiveDate="2017-06-04T00:00:00" statusCode="draft" ident="pmp-"/>
+            <ref type="contains" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.4256" name="Allergyconcernact" effectiveDate="2017-06-04T00:00:00" displayName="Allergie/Unverträglichkeit Concern Act" statusCode="draft" ident="hl7de-"/>
+            <uses type="contains" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.4258" name="ReactionManifestation" displayName="Reaktion/Manifestation" effectiveDate="2017-06-04T00:00:00" statusCode="draft" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+            <uses type="contains" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.4259" name="Criticality" displayName="Kritikalität" effectiveDate="2017-06-04T00:00:00" statusCode="draft" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+            <uses type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.90020" name="RelatedEntityBody" effectiveDate="2014-08-25T00:00:00" statusCode="draft" displayName="RelatedEntity (Body)" isClosed="false" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+            <uses type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.90025" name="AuthorBody" effectiveDate="2014-12-21T00:00:00" statusCode="draft" displayName="Author (Body)" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+        </template>
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pharm="urn:ihe:pharm" ref="1.2.276.0.76.10.4257" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="Allergie/Unverträglichkeit Observation" cda:dummy-4="urn:hl7-org:v3" ident="hl7de-" name="Allergyintoleranceobservation" xml:dummy-2="http://www.w3.org/XML/1998/namespace" pharm:dummy-1="urn:ihe:pharm" statusCode="draft" url="http://art-decor.org/decor/services/" effectiveDate="2017-06-04T00:00:00">
+            <ref type="dependency" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.1024" name="PersonalMedicationListPlus" displayName="Patientenbezogener Medikationsplan Plus" effectiveDate="2017-07-07T00:00:00" statusCode="draft" versionLabel="v2017" ident="pmp-"/>
+            <ref type="dependency" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.3040" name="AllergienUnvertraeglichkeiten" displayName="Allergien und Unverträglichkeiten" effectiveDate="2017-06-04T00:00:00" statusCode="draft" ident="pmp-"/>
+            <ref type="contains" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.4256" name="Allergyconcernact" effectiveDate="2017-06-04T00:00:00" displayName="Allergie/Unverträglichkeit Concern Act" statusCode="draft" ident="hl7de-"/>
+            <uses type="contains" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.4258" name="ReactionManifestation" displayName="Reaktion/Manifestation" effectiveDate="2017-06-04T00:00:00" statusCode="draft" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+            <uses type="contains" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.4259" name="Criticality" displayName="Kritikalität" effectiveDate="2017-06-04T00:00:00" statusCode="draft" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+            <uses type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.90020" name="RelatedEntityBody" effectiveDate="2014-08-25T00:00:00" statusCode="draft" displayName="RelatedEntity (Body)" isClosed="false" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+            <uses type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.90025" name="AuthorBody" effectiveDate="2014-12-21T00:00:00" statusCode="draft" displayName="Author (Body)" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+        </template>
+    </template>
+</result>

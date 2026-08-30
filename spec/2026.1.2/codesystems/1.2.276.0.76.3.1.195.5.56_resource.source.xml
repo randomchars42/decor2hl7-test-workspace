@@ -1,0 +1,17 @@
+<codeSystem xmlns:json="http://www.json.org" id="1.2.276.0.76.3.1.195.5.56" name="andere-entlassungsarten" displayName="Andere Entlassungsarten" effectiveDate="2015-09-18T00:00:00" statusCode="draft" versionLabel="2024" canonicalUri="http://aktin.org/fhir/CodeSystem/aktin-cs-andere-entlassungsarten" lastModifiedDate="2024-08-18T16:28:41" language="de-DE" url="http://art-decor.org/decor/services/" ident="aktin-">
+    <desc json:array="true" language="en-US" lastTranslated="2024-08-18T16:19:44">&lt;p&gt;Entlassungsart (discharge disposition code) für "kein Arztkontakt" - AKTIN Notfalldokumentation&lt;/p&gt;</desc>
+    <publishingAuthority json:array="true" name="AKTIN e. V." inherited="project">
+        <addrLine json:array="true">c/o Uniklinik RWTH Aachen</addrLine>
+        <addrLine json:array="true">Institut für Medizinische Informatik</addrLine>
+        <addrLine json:array="true">Pauwelsstraße 35</addrLine>
+        <addrLine json:array="true">52074 Aachen</addrLine>
+        <addrLine json:array="true" type="phone">Tel. +49 391 67 28186</addrLine>
+        <addrLine json:array="true" type="email">office@aktin.org</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <conceptList json:array="true">
+        <codedConcept json:array="true" code="6" statusCode="draft" level="0" type="L">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Entlassung gegen ärztlichen Rat"/>
+        </codedConcept>
+    </conceptList>
+</codeSystem>

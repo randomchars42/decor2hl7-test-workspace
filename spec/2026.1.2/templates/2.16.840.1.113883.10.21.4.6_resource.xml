@@ -1,0 +1,174 @@
+<result xmlns:json="http://www.json.org">
+    <template id="2.16.840.1.113883.10.21.4.6" ident="aktin-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.21.4.6" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" lastModifiedDate="2023-01-30T09:40:52" versionLabel="2023" isClosed="false" displayName="UV Subordinate Substance Administration" ident="aktin-" name="UVSubordinateadministration" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="draft" url="http://art-decor.org/decor/services/" effectiveDate="2023-01-30T09:36:00">
+            <desc language="en-US">Universal Subordinate Substance Administration to convey information about dosages</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="VERSION" template="2.16.840.1.113883.10.21.4.6" flexibility="2017-04-30T00:00:00" tmid="2.16.840.1.113883.10.21.4.6" tmname="UVSubordinateadministration" tmdisplayName="UV Subordinate Substance Administration" tmstatusCode="pending" tmversionLabel="R1-STU2-ballot" tmeffectiveDate="2017-04-30T00:00:00" url="http://art-decor.org/decor/services/" ident="pharmcda-" linkedartefactmissing="false"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.308" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.308" tmname="CDASubstanceAdministration" tmdisplayName="CDA SubstanceAdministration" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <example type="neutral">
+                <substanceAdministration classCode="SBADM" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.21.4.6"/>
+                    <statusCode code="active"/>
+                    <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true">
+                        <period value="12" unit="h"/>
+                    </effectiveTime>
+                    <doseQuantity xsi:type="IVL_PQ" value="2" unit="{puff}"/>
+                    <consumable>
+                        <manufacturedProduct>
+                            <manufacturedMaterial nullFlavor="NA"/>
+                        </manufacturedProduct>
+                    </consumable>
+                </substanceAdministration>
+            </example>
+            <element name="hl7:substanceAdministration" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.183">
+                <item original="false" label="UVSubordinateadministration"/>
+                <attribute name="classCode" value="SBADM" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.184"/>
+                <attribute name="moodCode" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.185">
+                    <desc language="en-US">If the subordinate substance administration refers to Medication Order then a substance administration request (moodCode is 'RQO') is used.<br clear="none"/>If it refers to a Medication Statement, the moodCode shall be set to event/intent (moodCode is 'EVN' or 'INT').</desc>
+                    <vocabulary valueSet="2.16.840.1.113883.11.21.4" flexibility="dynamic" vsid="2.16.840.1.113883.11.21.4" vsname="MoodCodeEvnIntRqo" vsdisplayName="Mood Code Evn Int Rqo" vsstatusCode="draft" vseffectiveDate="2018-03-21T00:00:00" url="http://art-decor.org/decor/services/" ident="pharmcda-" linkedartefactmissing="false"/>
+                </attribute>
+                <constraint language="en-US">The moodCode of this subordinate substance administration SHALL be the same of the parent substance administration</constraint>
+                <element name="hl7:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.3.1937.777.15.9.186">
+                    <item original="false" label="UVSubordinateadministration"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.21.4.6" isOptional="false" datatype="uid" id="2.16.840.1.113883.3.1937.777.15.9.187"/>
+                </element>
+                <element name="hl7:statusCode" datatype="CS" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.3.1937.777.15.9.188">
+                    <item original="false" label="UVSubordinateadministration"/>
+                    <vocabulary valueSet="2.16.840.1.113883.11.21.2" flexibility="dynamic" vsid="2.16.840.1.113883.11.21.2" vsname="ActStatusCodeActiveCompletedAbortedSuspended" vsdisplayName="ActStatusActiveCompletedAbortedSuspended" vseffectiveDate="2017-03-06T00:00:00" vsstatusCode="draft" url="http://art-decor.org/decor/services/" ident="pharmcda-" linkedartefactmissing="false"/>
+                    <constraint language="en-US">The statusCode of this subordinate substance administration SHALL be the same of that of the parent substance administration.</constraint>
+                </element>
+                <choice minimumMultiplicity="1" maximumMultiplicity="1">
+                    <item original="false" label="UVSubordinateadministration"/>
+                    <element name="hl7:effectiveTime[@value or @nullFlavor]" datatype="TS" minimumMultiplicity="0" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.3.1937.777.15.9.9114">
+                        <desc language="en-US">This required element describes the frequency of intakes. If not known it shall be valued with the nullflavor "UNK"</desc>
+                        <item original="false" label="UVSubordinateadministration"/>
+                        <example type="neutral" caption="Once (known date)">
+                            <effectiveTime value="20170404"/>
+                        </example>
+                        <example type="neutral" caption="Unknown">
+                            <effectiveTime nullFlavor="UNK"/>
+                        </example>
+                    </element>
+                    <element name="hl7:effectiveTime[@xsi:type='PIVL_TS']" datatype="PIVL_TS" minimumMultiplicity="0" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.3.1937.777.15.9.9244">
+                        <desc language="en-US">Periodic Time Interval</desc>
+                        <item original="false" label="UVSubordinateadministration"/>
+                        <example type="neutral" caption="Every 4 hours">
+                            <effectiveTime xsi:type="PIVL_TS" institutionSpecified="false">
+                                <period value="4" unit="h"/>
+                            </effectiveTime>
+                        </example>
+                        <example type="neutral" caption="Twice a day">
+                            <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true">
+                                <period value="12" unit="h"/>
+                            </effectiveTime>
+                        </example>
+                    </element>
+                    <element name="hl7:effectiveTime[@xsi:type='EIVL_TS']" datatype="EIVL_TS" minimumMultiplicity="0" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.3.1937.777.15.9.9245">
+                        <desc language="en-US">Event Related Time Interval</desc>
+                        <item original="false" label="UVSubordinateadministration"/>
+                        <example type="neutral" caption="After meal">
+                            <effectiveTime xsi:type="EIVL_TS">
+                                <event code="PC" codeSystem="2.16.840.1.113883.5.139"/>
+                            </effectiveTime>
+                        </example>
+                        <example type="neutral" caption="One hour before breakfast">
+                            <effectiveTime xsi:type="EIVL_TS">
+                                <event code="ACM" codeSystem="2.16.840.1.113883.5.139"/>
+                                <offset>
+                                    <low value="1" unit="h"/>
+                                </offset>
+                            </effectiveTime>
+                        </example>
+                        <element name="hl7:event" datatype="EIVL.event" minimumMultiplicity="0" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.3.1937.777.15.9.9246">
+                            <item original="false" label="UVSubordinateadministration"/>
+                            <attribute name="code" isOptional="true" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.9247">
+                                <vocabulary valueSet="2.16.840.1.113883.1.11.10706" flexibility="dynamic" vsid="2.16.840.1.113883.1.11.10706" vsname="TimingEvent" vsdisplayName="TimingEvent" vseffectiveDate="2014-03-26T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1360-20160323" url="http://art-decor.org/decor/services/" ident="ad2bbr-" linkedartefactmissing="false"/>
+                            </attribute>
+                        </element>
+                    </element>
+                    <element name="hl7:effectiveTime[@xsi:type='SXPR_TS']" datatype="SXPR_TS" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.9248">
+                        <desc language="en-US">Combined Time Interval</desc>
+                        <item original="false" label="UVSubordinateadministration"/>
+                    </element>
+                </choice>
+                <element name="hl7:doseQuantity" datatype="IVL_PQ" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.9115">
+                    <desc language="en-US">The doseQuantity describes the amount of the medication given (the dosage).<br clear="none"/>
+                        <br clear="none"/>If a dose range is given (e.g., 1-2 tablets, or 325-750mg), then the &lt;low&gt; and &lt;high&gt; bounds are specified in their respective elements; otherwise only one physical quantity is specified (e.g. 2 drops) <br clear="none"/>
+                        <br clear="none"/>The dose can be in some known and measurable unit, such as grams, milligrams,or described in "administration" units (unit of presentation, such as capsules). <br clear="none"/>
+                        <br clear="none"/>If the dose is in countable items (tablets, caplets, "eaches"), then the unit could be omitted or valorized using the UCUM annotations for describing the type of
+                        countable items (e.g. .{tablet}, {puff},..). <br clear="none"/>
+                        <br clear="none"/>The unit attribute – when expresses unit of measures- shall be derived from the UCUM code system. <br clear="none"/>The used elements should contain a &lt;translation&gt; element that provides a reference to the originalText found in the narrative body of the document. </desc>
+                    <item original="false" label="UVSubordinateadministration"/>
+                    <example type="neutral" caption="Not pre-coordinated consumable">
+                        <doseQuantity value="25" unit="mg"/>
+                    </example>
+                    <example type="neutral" caption="Pre-coordinated consumable - Dose Range">
+                        <doseQuantity>
+                            <low value="1" unit="{tablet}"/>
+                            <high value="2" unit="{tablet}"/>
+                        </doseQuantity>
+                    </example>
+                    <example type="neutral" caption="Pre-coordinated consumable">
+                        <doseQuantity value="2" unit="{puff}"/>
+                    </example>
+                    <example type="neutral" caption="Pre-coordinated consumable with text reference">
+                        <doseQuantity value="2" unit="{puff}">
+                            <translation nullFlavor="NI">
+                                <originalText>
+                                    <reference value="#text-ref-1"/>
+                                </originalText>
+                            </translation>
+                        </doseQuantity>
+                    </example>
+                    <example type="neutral" caption="Textual dosage">
+                        <doseQuantity nullFlavor="NI">
+                            <translation nullFlavor="NI">
+                                <originalText>
+                                    <reference value="#text-ref-1"/>
+                                </originalText>
+                            </translation>
+                        </doseQuantity>
+                    </example>
+                    <attribute name="unit" isOptional="true" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.9124"/>
+                </element>
+                <element name="hl7:rateQuantity" datatype="IVL_PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.192">
+                    <item original="false" label="UVSubordinateadministration"/>
+                </element>
+                <element name="hl7:maxDoseQuantity" datatype="RTO_PQ_PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.933">
+                    <item original="false" label="UVSubordinateadministration"/>
+                </element>
+                <element name="hl7:administrationUnitCode" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.34">
+                    <item original="false" label="UVSubordinateadministration"/>
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.14570" vsid="2.16.840.1.113883.1.11.14570" vsname="AdministrableDrugForm" vsdisplayName="AdministrableDrugForm" vseffectiveDate="2014-03-26T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1360-20160323" url="http://art-decor.org/decor/services/" ident="ad2bbr-" linkedartefactmissing="false"/>
+                </element>
+                <element name="hl7:consumable" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.193">
+                    <item original="false" label="UVSubordinateadministration"/>
+                    <element name="hl7:manufacturedProduct" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.194">
+                        <item original="false" label="UVSubordinateadministration"/>
+                        <element name="hl7:manufacturedMaterial" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.195">
+                            <item original="false" label="UVSubordinateadministration"/>
+                            <attribute name="nullFlavor" value="NA" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.196"/>
+                        </element>
+                    </element>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.67" name="Medikation" displayName="Medikation" effectiveDate="2023-12-03T00:00:00" statusCode="draft" versionLabel="2023" lastModifiedDate="2024-08-14T18:38:41" ident="aktin-"/>
+            <ref type="contains" prefix="eehrxf-" flexibility="dynamic" id="2.16.840.1.113883.2.51.10.40" name="XeHMedicationStatement" displayName="XeH Medication Statement" statusCode="active" lastModifiedDate="2023-12-13T09:56:46" versionLabel="1.0" effectiveDate="2021-10-19T11:09:33" ident="eehrxf-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.1" name="UVSubstanceadministrationrequest" displayName="UV Medication Order" statusCode="pending" versionLabel="STU1" effectiveDate="2015-10-07T00:00:00" ident="pharmcda-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.1" name="UVSubstanceadministrationrequest" displayName="UV Medication Order" statusCode="pending" versionLabel="R1-STU2-ballot" lastModifiedDate="2023-01-31T10:52:39" effectiveDate="2021-08-04T17:03:38" ident="pharmcda-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.1" name="UVSubstanceadministrationrequest" displayName="UV Medication Order" effectiveDate="2023-01-30T08:30:30" statusCode="draft" versionLabel="2023" lastModifiedDate="2023-01-30T08:30:30" ident="pharmcda-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.1" name="UVSubstanceadministrationrequest" displayName="UV Medication Order" effectiveDate="2023-01-31T10:52:39" statusCode="draft" versionLabel="2023" lastModifiedDate="2023-01-31T10:52:39" ident="pharmcda-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.1" name="UVSubstanceadministrationrequest" displayName="UV Medication Order" effectiveDate="2023-01-31T11:29:28" statusCode="draft" versionLabel="2023" lastModifiedDate="2023-01-31T11:36:01" ident="pharmcda-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.7" name="UVMedicationstatement" displayName="UV Medication Statement" statusCode="pending" versionLabel="STU1" effectiveDate="2017-05-01T00:00:00" ident="pharmcda-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.7" name="UVMedicationstatement" displayName="UV Medication Statement" statusCode="pending" versionLabel="R1-STU2-ballot" lastModifiedDate="2023-01-30T08:32:34" effectiveDate="2021-08-04T14:09:15" ident="pharmcda-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.7" name="UVMedicationstatement" displayName="UV Medication Statement" effectiveDate="2023-01-30T08:32:34" statusCode="draft" versionLabel="2023" lastModifiedDate="2023-01-31T19:49:33" ident="pharmcda-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.13" name="UVMedicationadministration" displayName="UV Medication Administration" statusCode="pending" lastModifiedDate="2023-01-30T08:31:37" versionLabel="R1-STU2-ballot" effectiveDate="2019-02-17T00:00:00" ident="pharmcda-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.13" name="UVMedicationadministration" displayName="UV Medication Administration" effectiveDate="2023-01-30T08:31:37" statusCode="draft" versionLabel="2023" lastModifiedDate="2023-01-30T08:31:37" ident="pharmcda-"/>
+            <ref type="contains" prefix="hl7ips-" flexibility="dynamic" id="2.16.840.1.113883.10.22.4.4" name="IPSMedicationStatement" displayName="IPS Medication Statement" effectiveDate="2021-09-02T12:17:54" statusCode="draft" versionLabel="2021" ident="hl7ips-"/>
+            <ref type="contains" prefix="hl7ips-" flexibility="dynamic" id="2.16.840.1.113883.10.22.4.4" name="IPSMedicationStatement" displayName="IPS Medication Statement" effectiveDate="2024-08-04T10:41:54" statusCode="draft" versionLabel="STU2" lastModifiedDate="2026-03-25T09:54:17" ident="hl7ips-"/>
+            <ref type="contains" prefix="hl7ips-" flexibility="dynamic" id="2.16.840.1.113883.10.22.4.15" name="IPSImmunization" displayName="IPS Immunization" effectiveDate="2024-08-04T21:20:24" statusCode="draft" versionLabel="STU2" lastModifiedDate="2024-08-04T21:21:37" ident="hl7ips-"/>
+        </template>
+    </template>
+</result>

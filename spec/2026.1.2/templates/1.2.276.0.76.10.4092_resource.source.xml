@@ -1,0 +1,40 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.4092" name="TraumaticInjuryObservation" displayName="Traumatic Injury Observation" effectiveDate="2017-02-01T00:00:00" statusCode="draft" url="http://art-decor.org/decor/services/" ident="aktin-" xml:dummy-1="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-3="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">Traumatic Injury Observation</desc>
+            <desc language="de-DE">Verletzungsmuster</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00"/>
+            <relationship type="ADAPT" template="2.16.840.1.113883.3.2898.10.2111" flexibility="2014-06-09T00:00:00"/>
+            <context id="**"/>
+            <example>
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4092"/>
+                    <code code="11374-6" codeSystem="2.16.840.1.113883.6.1" displayName="Injury incident description"/>
+                    <statusCode code="completed"/>
+                    <value xsi:type="CE" nullFlavor="OTH">
+                        <originalText>
+                            <!-- Referenz zu section.text: Durch die Rettungsleitstelle angemeldetes Verletzungsmuster -->
+                            <reference value="#avm"/>
+                        </originalText>
+                    </value>
+                </observation>
+            </example>
+            <element name="hl7:observation" id="2.16.840.1.113883.2.6.60.3.9.163091">
+                <attribute name="classCode" value="OBS" id="2.16.840.1.113883.2.6.60.3.9.163092"/>
+                <attribute name="moodCode" value="EVN" id="2.16.840.1.113883.2.6.60.3.9.163093"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.163094">
+                    <attribute name="root" value="1.2.276.0.76.10.4092" id="2.16.840.1.113883.2.6.60.3.9.163095"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.163096">
+                    <vocabulary code="11374-6" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.163097">
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="CE" id="2.16.840.1.113883.2.6.60.3.9.163098">
+                    <attribute name="nullFlavor" value="OTH" isOptional="false" id="2.16.840.1.113883.2.6.60.3.9.163099"/>
+                    <element name="hl7:originalText" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="ED" id="2.16.840.1.113883.2.6.60.3.9.163100">
+                        <element name="hl7:reference" minimumMultiplicity="1" maximumMultiplicity="1" datatype="URL" id="2.16.840.1.113883.2.6.60.3.9.163101"/>
+                    </element>
+                </element>
+            </element>
+        </template>

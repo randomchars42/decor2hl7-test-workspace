@@ -1,0 +1,206 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.2027" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pharm="urn:ihe:pharm" id="1.2.276.0.76.10.2027" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance" versionLabel="1.1" isClosed="false" displayName="CDA encompassingEncounter Patientenkontakt" cda:dummy-4="urn:hl7-org:v3" ident="hl7de-" name="HeaderEncompassingEncounter" xml:dummy-2="http://www.w3.org/XML/1998/namespace" pharm:dummy-1="urn:ihe:pharm" statusCode="review" url="http://art-decor.org/decor/services/" effectiveDate="2014-08-25T00:00:00">
+            <desc language="de-DE">Diese Klasse repräsentiert Informationen, in welchem Rahmen der Patientenkontakt, der dokumentiert wird, stattgefunden hat. Dokumente werden nicht notwendigerweise immer während eines Patientenkontakts erstellt, sondern ggf. auch zu einem späteren Zeitpunkt, wenn beispielsweise ein Arzt wegen eines pathologischen Laborwertes den Patienten vergeblich versucht zu
+                erreichen und dennoch seine Verlaufsdokumentation fortführt.<br/>Wenn die Dokumentation ein Entlass- oder Verlegungsdokument ist, sollte die Information in dieser Klasse inklusive der Dauer des Aufenthalts und der Einrichtung, wo der Patientenaufenthalt stattfand mitgegeben werden. Dies gilt nicht nur stationäre Aufenthalte, sondern in gegebenem Kontext in übertragenem Sinn auch
+                für einen beendeten Patientenkontakt in der Praxis eines Niedergelassenen.</desc>
+            <classification type="cdaheaderlevel"/>
+            <example type="neutral">
+                <componentOf>
+                    <encompassingEncounter>
+                        <!-- Aufenthalts-Identifikation -->
+                        <id root="1.2.276.0.76.3.87686" extension="657827456837"/>
+                        <!-- Codierung des Patientenkontakts -->
+                        <code code="IMP" displayName="Inpatient encounter" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7 ActCode"/>
+                        <!-- Zeitraum des Patientenkontakts -->
+                        <effectiveTime>
+                            <low value="20081224082015"/>
+                            <high value="20081225113000"/>
+                        </effectiveTime>
+                        <!-- Verantwortliche Person für den Patientenkontakt -->
+                        <responsibleParty>
+                            <assignedEntity>
+                                <!-- ... -->
+                            </assignedEntity>
+                        </responsibleParty>
+                        <!--
+                            Organisation, in deren Verantwortungsbereich der
+                            Patientenkontakt stattfand
+                        -->
+                        <location>
+                            <healthCareFacility>
+                                <serviceProviderOrganization>
+                                    <!-- ... -->
+                                </serviceProviderOrganization>
+                            </healthCareFacility>
+                        </location>
+                    </encompassingEncounter>
+                </componentOf>
+            </example>
+            <element name="hl7:componentOf" id="2.16.840.1.113883.2.6.77.9.162">
+                <item original="false" label="HeaderEncompassingEncounter"/>
+                <attribute name="typeCode" value="COMP" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.163"/>
+                <element name="hl7:encompassingEncounter" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.77.9.164">
+                    <item original="false" label="HeaderEncompassingEncounter"/>
+                    <attribute name="classCode" value="ENC" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.165"/>
+                    <attribute name="moodCode" value="EVN" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.166"/>
+                    <element name="hl7:id" datatype="II" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.167">
+                        <desc language="de-DE">Identifikationselement zur Aufnahme der Aufenthalts-Identifikation<br clear="none"/>
+                        </desc>
+                        <item original="false" label="HeaderEncompassingEncounter"/>
+                    </element>
+                    <element name="hl7:code" datatype="CE" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.168">
+                        <item original="false" label="HeaderEncompassingEncounter"/>
+                        <example type="neutral">
+                            <code code="IMP" codeSystem="2.16.840.1.113883.5.4"/>
+                        </example>
+                        <vocabulary valueSet="2.16.840.1.113883.1.11.13955" vsid="2.16.840.1.113883.1.11.13955" vsname="ActEncounterCode" vsdisplayName="ActEncounterCode" vseffectiveDate="2017-12-17T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1402-20171217" linkedartefactmissing="false"/>
+                    </element>
+                    <choice minimumMultiplicity="1" maximumMultiplicity="1">
+                        <item original="false" label="HeaderEncompassingEncounter"/>
+                        <element name="hl7:effectiveTime[hl7:high]" datatype="IVL_TS" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.5.9.22">
+                            <desc language="de-DE">Zeitraum</desc>
+                            <item original="false" label="HeaderEncompassingEncounter"/>
+                            <example type="neutral" caption="Vom 7. Juni 2011 11:24 Uhr bis zum 11. Juni 2011 16:54 Uhr">
+                                <effectiveTime>
+                                    <low value="201106071124"/>
+                                    <high value="201106111654"/>
+                                </effectiveTime>
+                            </example>
+                        </element>
+                        <element name="hl7:effectiveTime[@value]" datatype="TS" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.77.9.169">
+                            <desc language="de-DE">Bestimmter Tag</desc>
+                            <item original="false" label="HeaderEncompassingEncounter"/>
+                            <example type="neutral" caption="Am 7. Juni 2011 (ambulanter Besuch ohne genauere Zeitangaben des Tages)">
+                                <effectiveTime value="20110607"/>
+                            </example>
+                            <attribute name="value" isOptional="false" id="2.16.840.1.113883.2.6.77.9.170"/>
+                        </element>
+                    </choice>
+                    <element name="hl7:responsibleParty" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.171">
+                        <item original="false" label="HeaderEncompassingEncounter"/>
+                        <element name="hl7:assignedEntity" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.172">
+                            <item original="false" label="HeaderEncompassingEncounter"/>
+                            <include ref="1.2.276.0.76.10.90012" flexibility="dynamic" tmid="1.2.276.0.76.10.90012" tmname="AssignedEntityElements" tmdisplayName="CDA Assigned Entity Elements" tmeffectiveDate="2011-12-19T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                                <item original="false" label="HeaderEncompassingEncounter"/>
+                                <element name="hl7:id" datatype="II" id="2.16.840.1.113883.2.6.77.9.339" minimumMultiplicity="1" maximumMultiplicity="*" conformance="R">
+                                    <item original="false" label="AssignedEntityElements"/>
+                                </element>
+                                <element name="hl7:addr" datatype="AD" id="2.16.840.1.113883.2.6.77.9.340" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R">
+                                    <item original="false" label="AssignedEntityElements"/>
+                                </element>
+                                <element name="hl7:telecom" datatype="TEL" id="2.16.840.1.113883.2.6.77.9.341" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R">
+                                    <item original="false" label="AssignedEntityElements"/>
+                                </element>
+                                <element name="hl7:assignedPerson" id="2.16.840.1.113883.2.6.77.9.342" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                                    <item original="false" label="AssignedEntityElements"/>
+                                    <include ref="1.2.276.0.76.10.90010" tmid="1.2.276.0.76.10.90010" tmname="PersonElements" tmdisplayName="CDA Person Elements" tmeffectiveDate="2011-12-19T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                                        <item original="false" label="AssignedEntityElements"/>
+                                        <attribute name="classCode" value="PSN" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.330"/>
+                                        <attribute name="determinerCode" value="INSTANCE" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.331"/>
+                                        <element name="hl7:name" datatype="PN" id="2.16.840.1.113883.2.6.77.9.332" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                                            <item original="false" label="PersonElements"/>
+                                        </element>
+                                        <staticAssociations/>
+                                    </include>
+                                </element>
+                                <element name="hl7:representedOrganization" id="2.16.840.1.113883.2.6.77.9.343" minimumMultiplicity="0" maximumMultiplicity="1">
+                                    <item original="false" label="AssignedEntityElements"/>
+                                    <include ref="1.2.276.0.76.10.90011" tmid="1.2.276.0.76.10.90011" tmname="OrganizationElements" tmdisplayName="CDA Organization Elements" tmeffectiveDate="2011-12-19T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                                        <item original="false" label="AssignedEntityElements"/>
+                                        <attribute name="classCode" value="ORG" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.333"/>
+                                        <attribute name="determinerCode" value="INSTANCE" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.334"/>
+                                        <element name="hl7:id" datatype="II" id="2.16.840.1.113883.2.6.77.9.335" minimumMultiplicity="0" maximumMultiplicity="*">
+                                            <item original="false" label="OrganizationElements"/>
+                                        </element>
+                                        <element name="hl7:name" datatype="ON" id="2.16.840.1.113883.2.6.77.9.336" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                                            <item original="false" label="OrganizationElements"/>
+                                        </element>
+                                        <element name="hl7:telecom" datatype="TEL" id="2.16.840.1.113883.2.6.77.9.337" minimumMultiplicity="0" maximumMultiplicity="*">
+                                            <item original="false" label="OrganizationElements"/>
+                                        </element>
+                                        <element name="hl7:addr" datatype="AD" id="2.16.840.1.113883.2.6.77.9.338" minimumMultiplicity="0" maximumMultiplicity="1">
+                                            <item original="false" label="OrganizationElements"/>
+                                        </element>
+                                        <staticAssociations/>
+                                    </include>
+                                </element>
+                                <staticAssociations/>
+                            </include>
+                        </element>
+                    </element>
+                    <include ref="1.2.276.0.76.10.90021" flexibility="dynamic" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" tmid="1.2.276.0.76.10.90021" tmname="EncounterLocation" tmdisplayName="Encounter Location" tmeffectiveDate="2014-08-25T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                        <item original="false" label="HeaderEncompassingEncounter"/>
+                        <element name="hl7:location" id="2.16.840.1.113883.2.6.77.9.738" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R">
+                            <item original="false" label="EncounterLocation"/>
+                            <example type="neutral">
+                                <location typeCode="LOC">
+                                    <healthCareFacility classCode="SDLOC">
+                            <!-- ... -->
+                                    </healthCareFacility>
+                                </location>
+                            </example>
+                            <attribute name="typeCode" value="LOC" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.739"/>
+                            <element name="hl7:healthCareFacility" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.740">
+                                <item original="false" label="EncounterLocation"/>
+                                <example type="neutral">
+                                    <healthCareFacility classCode="SDLOC">
+                                        <serviceProviderOrganization classCode="ORG" determinerCode="INSTANCE">
+                                <!-- ... -->
+                                        </serviceProviderOrganization>
+                                    </healthCareFacility>
+                                </example>
+                                <attribute name="classCode" value="SDLOC" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.741"/>
+                                <element name="hl7:serviceProviderOrganization" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.742">
+                                    <item original="false" label="EncounterLocation"/>
+                                    <example type="neutral">
+                                        <serviceProviderOrganization classCode="ORG" determinerCode="INSTANCE">
+                                            <name/>
+                                            <addr>
+                                    <!-- ... -->
+                                            </addr>
+                                        </serviceProviderOrganization>
+                                    </example>
+                                    <attribute name="classCode" value="ORG" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.743"/>
+                                    <attribute name="determinerCode" value="INSTANCE" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.744"/>
+                                    <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="*" conformance="R" datatype="II" id="2.16.840.1.113883.2.6.77.9.745">
+                                        <item original="false" label="EncounterLocation"/>
+                                    </element>
+                                    <element name="hl7:name" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="ON" id="2.16.840.1.113883.2.6.77.9.746">
+                                        <item original="false" label="EncounterLocation"/>
+                                    </element>
+                                    <element name="hl7:telecom" minimumMultiplicity="1" maximumMultiplicity="*" isMandatory="true" datatype="TEL" id="2.16.840.1.113883.2.6.77.9.747">
+                                        <item original="false" label="EncounterLocation"/>
+                                    </element>
+                                    <element name="hl7:addr" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="AD" id="2.16.840.1.113883.2.6.77.9.748">
+                                        <item original="false" label="EncounterLocation"/>
+                                    </element>
+                                </element>
+                            </element>
+                        </element>
+                        <staticAssociations/>
+                    </include>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="include" prefix="vomgt-" flexibility="dynamic" id="1.2.276.0.76.3.1.135.8.10.173" name="AR_BefundberichtDoc" displayName="(AR-B) Ärztlicher Befundbericht" effectiveDate="2020-06-18T16:35:14" statusCode="draft" ident="vomgt-"/>
+            <ref type="include" prefix="dguvbbr-" flexibility="dynamic" id="1.2.276.0.76.3.1.261.1.10.1.2" name="StationaererEntlassbericht" displayName="Stationärer Entlassungsbericht" effectiveDate="2018-08-24T09:48:53" statusCode="draft" ident="dguvbbr-"/>
+            <ref type="include" prefix="dguvbbr-" flexibility="dynamic" id="1.2.276.0.76.3.1.261.1.10.1.3" name="Operationsbericht" displayName="Operationsbericht" effectiveDate="2022-02-06T06:42:37" statusCode="draft" ident="dguvbbr-"/>
+            <ref type="include" prefix="abde-" flexibility="dynamic" id="1.2.276.0.76.10.1013" name="Arztbrief" displayName="Arztbrief 2014/2015" effectiveDate="2014-08-25T00:00:00" statusCode="draft" versionLabel="v2.02" ident="abde-"/>
+            <ref type="include" prefix="abde-" flexibility="dynamic" id="1.2.276.0.76.10.1020" name="Arztbrief30" displayName="Arztbrief Plus" effectiveDate="2017-02-01T00:00:00" statusCode="draft" versionLabel="v3.00" ident="abde-"/>
+            <ref type="include" prefix="evthm-" flexibility="dynamic" id="1.2.276.0.76.10.1022" name="Livedatencda" displayName="Live-Daten-CDA Dokument" effectiveDate="2017-01-23T00:00:00" statusCode="draft" ident="evthm-"/>
+            <ref type="include" prefix="evthm-" flexibility="dynamic" id="1.2.276.0.76.10.1023" name="Ueberleitungsdatencda" displayName="Überleitungs-CDA Dokument" effectiveDate="2017-03-14T00:00:00" statusCode="draft" ident="evthm-"/>
+            <ref type="include" prefix="elmgmt-" flexibility="dynamic" id="1.2.276.0.76.10.1026" name="EntlassmanagementBrief" displayName="Entlassmanagement Brief" effectiveDate="2017-07-13T00:00:00" statusCode="draft" versionLabel="v1.1" ident="elmgmt-"/>
+            <ref type="include" prefix="vomgt-" flexibility="dynamic" id="1.2.276.0.76.10.1028" name="Laborueberweisung" displayName="10: Laborüberweisung" effectiveDate="2018-02-06T10:57:10" statusCode="draft" isClosed="true" ident="vomgt-"/>
+            <ref type="include" prefix="vomgt-" flexibility="dynamic" id="1.2.276.0.76.10.1029" name="Laboranforderung" displayName="10A: Laboranforderung" effectiveDate="2018-04-06T12:01:44" statusCode="draft" ident="vomgt-"/>
+            <ref type="include" prefix="teleneps-" flexibility="dynamic" id="1.2.276.0.76.10.1033" name="Arztbrieftelenepsambulant" displayName="Arztbrief Psychotraumatologie ambulant/stationär" effectiveDate="2019-06-02T00:00:00" statusCode="retired" versionLabel="v1.0" ident="teleneps-"/>
+            <ref type="include" prefix="teleneps-" flexibility="dynamic" id="1.2.276.0.76.10.1033" name="Arztbrieftelenepsambulant" displayName="Arztbrief Psychotraumatologie ambulant/stationär" effectiveDate="2020-12-18T00:00:00" statusCode="draft" versionLabel="v2.0" ident="teleneps-"/>
+            <ref type="include" prefix="einwde-" flexibility="dynamic" id="1.2.276.0.76.10.1034" name="eEinweisungsbrief" displayName="eEinweisungsbrief" effectiveDate="2020-06-18T00:00:00" statusCode="draft" versionLabel="v1.0" ident="einwde-"/>
+            <ref type="include" prefix="konsab-" flexibility="dynamic" id="1.2.276.0.76.10.1035" name="DermatologischesKonsil" displayName="Dermatologisches Konsil" effectiveDate="2020-02-17T14:18:24" statusCode="draft" ident="konsab-"/>
+            <uses type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.90012" name="AssignedEntityElements" displayName="CDA Assigned Entity Elements" statusCode="active" effectiveDate="2011-12-19T00:00:00" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+            <uses type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.90021" name="EncounterLocation" displayName="Encounter Location" statusCode="active" effectiveDate="2014-08-25T00:00:00" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+            <ref type="include" prefix="evthm-" flexibility="dynamic" id="2.16.840.1.113883.2.6.60.12.10.113" name="Ueberleitungsdatencda02" displayName="Überleitungs-CDA (ambulant-stationär)" effectiveDate="2018-04-04T17:10:48" statusCode="draft" ident="evthm-"/>
+            <ref type="include" prefix="genea-" flexibility="dynamic" id="2.16.840.1.113883.2.6.60.13.10.1" name="GenetischerBefundbericht" displayName="Genetischer Befundbericht" effectiveDate="2018-08-09T17:52:59" statusCode="draft" ident="genea-"/>
+        </template>
+    </template>
+</result>

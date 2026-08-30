@@ -1,0 +1,67 @@
+<codeSystems>
+    <project ident="aktin-">
+        <codeSystem id="1.2.276.0.76.3.1.195.5.99" name="snomed-postcoordinations" displayName="SNOMED-CT Postkoordinierte Terme" effectiveDate="2023-12-30T00:00:00" statusCode="draft" canonicalUri="http://aktin.org/fhir/CodeSystem/aktin-cs-snomed-postcoordinations" lastModifiedDate="2025-12-22T19:27:41" language="de-DE">
+            <desc language="en-US" lastTranslated="2024-07-19T15:54:00">
+                <p>Dieses Codessystem umfasst proprietäre Codes zur Nutzung in der Notfalldokumentation, die Kandidaten für SNOMED-CT Postkoordinierte Terme darstellen.</p>
+                <p>
+                    <strong>Hintergrund</strong>
+                </p>
+                <p>In der Notfalldokumentation werden SNOMED-CT Postkoordinierte Terme verwendet, was an sich kein problem darstellt, wenn diese als
+                    "String-Konstanten" in Value Sets oder Terminologieassoziationen aufgefasst werden. Allerdings sind die meisten dieser Begriffe Kandidaten, um in SNOMED International als präkoordinierte aufgenommen zu werden. Um eine sofortige Nutzung von SNOMED-CT Postkoordinierten Terme zu gewährleisten und sie dennoch zu einem späteren Zeitpunkt nach der Einführung der präkoordinierten
+                    Termen übergangsmäßig zugleich zu verwenden und eine Eindeutige Zuordnung zu allen Zeiten zu erlauben, werden die meisten SNOMED-CT Postkoordinierte Terme zur Nutzung in der Notfalldokumentation hier mit einem "Notfall"-Code versehen.</p>
+                <p>Die Ersatz-Terme sind zusammengesetzt aus "SCT-POCC" für SNOMED-CT Postkoordiniertes Konzept, einem Bindestrich und dem Fokuskonzept oder
+                    Differenzierungskonzept aus dem SNOMED-CT Ausdruck.</p>
+            </desc>
+            <publishingAuthority name="AKTIN e. V." inherited="project">
+                <addrLine>c/o Uniklinik RWTH Aachen</addrLine>
+                <addrLine>Institut für Medizinische Informatik</addrLine>
+                <addrLine>Pauwelsstraße 35</addrLine>
+                <addrLine>52074 Aachen</addrLine>
+                <addrLine type="phone">Tel. +49 391 67 28186</addrLine>
+                <addrLine type="email">office@aktin.org</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <codedConcept code="SCTPOCC-44301001" statusCode="draft" level="0" type="L" effectiveDate="2023-12-30T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Verdacht auf Suizid"/>
+                    <designation language="en-US" type="preferred" displayName="Suspected suicide"/>
+                    <desc language="de-DE" lastTranslated="2024-07-24T21:35:33">413350009:246090004=44301001,408729009=415684004 |Finding with explicit context|:|Associated finding|=|Suicide|,|Finding context|=|Suspected|</desc>
+                </codedConcept>
+                <codedConcept code="SCTPOCC-52684005" statusCode="draft" level="0" type="L" effectiveDate="2023-12-30T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Verdacht auf Gewaltverbrechen"/>
+                    <designation language="en-US" type="preferred" displayName="Suspected assault"/>
+                    <desc language="de-DE" lastTranslated="2024-07-24T21:35:33">413350009:246090004=52684005,408729009=415684004 |Finding with explicit context|:|Associated finding|=|Assault|,|Finding context|=|Suspected|</desc>
+                </codedConcept>
+                <codedConcept code="SCTPOCC-49499008" statusCode="draft" level="0" type="L" effectiveDate="2023-12-30T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="MTS-Indikatoren ROT"/>
+                    <designation language="en-US" type="preferred" displayName="MTS Indicators RED"/>
+                    <desc language="de-DE" lastTranslated="2024-07-24T21:35:33">713011005:363702006=225334002,260870009=49499008 |Assessment using Manchester Triage System|:|Has focus|=|Intervention regime|,|Priority|=|Stat|</desc>
+                </codedConcept>
+                <codedConcept code="SCTPOCC-25876001" statusCode="draft" level="0" type="L" effectiveDate="2023-12-30T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="MTS-Indikatoren ORANGE"/>
+                    <designation language="en-US" type="preferred" displayName="MTS Indicators ORANGE"/>
+                    <desc language="de-DE" lastTranslated="2024-07-24T21:35:33">713011005:363702006=225334002,260870009=25876001 |Assessment using Manchester Triage System|:|Has focus|=|Intervention regime|,|Priority|=|Emergency|</desc>
+                </codedConcept>
+                <codedConcept code="SCTPOCC-103391001" statusCode="draft" level="0" type="L" effectiveDate="2023-12-30T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="MTS-Indikatoren GELB"/>
+                    <designation language="en-US" type="preferred" displayName="MTS Indicators YELLOW"/>
+                    <desc language="de-DE" lastTranslated="2024-07-24T21:35:33">713011005:363702006=225334002,260870009=103391001 |Assessment using Manchester Triage System|:|Has focus|=|Intervention regime|,|Priority|=|Urgency|</desc>
+                </codedConcept>
+                <codedConcept code="SCTPOCC-394848005" statusCode="draft" level="0" type="L" effectiveDate="2023-12-30T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="MTS-Indikatoren GRÜN"/>
+                    <designation language="en-US" type="preferred" displayName="MTS Indicators GREEN"/>
+                    <desc language="de-DE" lastTranslated="2024-07-24T21:35:33">713011005:363702006=225334002,260870009=394848005 |Assessment using Manchester Triage System|:|Has focus|=|Intervention regime|,|Priority|=|Normal priority|</desc>
+                </codedConcept>
+                <codedConcept code="SCTPOCC-1269489004" statusCode="draft" level="0" type="L" effectiveDate="2023-12-30T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="MTS-Präsentationsdiagramm"/>
+                    <designation language="en-US" type="preferred" displayName="MTS Presentation diagramm"/>
+                    <desc language="de-DE" lastTranslated="2024-07-24T21:35:33">713011005:116680003=1269489004 |Assessment using Manchester Triage System|:|Is a|=|Chief complaint|</desc>
+                </codedConcept>
+                <codedConcept code="SCTPOCC-713012003" statusCode="draft" level="0" type="L" effectiveDate="2023-12-30T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="ESI-Triagefaktoren"/>
+                    <designation language="en-US" type="preferred" displayName="ESI Triage factors"/>
+                    <desc language="de-DE" lastTranslated="2024-07-24T21:35:33">713012003:116680003=1269489004 |Assessment using Emergency Severity Index |:|Is a|=|Chief complaint|</desc>
+                </codedConcept>
+            </conceptList>
+        </codeSystem>
+    </project>
+</codeSystems>

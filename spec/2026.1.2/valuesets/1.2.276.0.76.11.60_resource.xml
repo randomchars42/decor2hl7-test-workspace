@@ -1,0 +1,41 @@
+<valueSets>
+    <project ident="aktin-">
+        <valueSet id="1.2.276.0.76.11.60" name="Multiresistantorganisms" displayName="Multiresistant Organisms (Carrier)" effectiveDate="2015-09-18T00:00:00" statusCode="draft">
+            <desc language="de-DE">Die folgenden Codes werden genutzt, um anzugeben, dass der Patient <b>Träger</b> eines Multi-resistenten Keimes ist.</desc>
+            <sourceCodeSystem id="1.2.276.0.76.5.441" identifierName="Signifikante Pathogene" canonicalUri="urn:oid:1.2.276.0.76.5.441" canonicalUriDSTU2="urn:oid:1.2.276.0.76.5.441" canonicalUriSTU3="urn:oid:1.2.276.0.76.5.441" canonicalUriR4="urn:oid:1.2.276.0.76.5.441" canonicalUriR4B="urn:oid:1.2.276.0.76.5.441" canonicalUriR5="urn:oid:1.2.276.0.76.5.441"/>
+            <sourceCodeSystem id="2.16.840.1.113883.5.1008" identifierName="Null Flavor" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriDSTU2="http://hl7.org/fhir/v3/NullFlavor" canonicalUriSTU3="http://hl7.org/fhir/v3/NullFlavor" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" context="external/hl7intl/v3/v3-NullFlavor"/>
+            <publishingAuthority name="AKTIN e. V." inherited="project">
+                <addrLine>c/o Uniklinik RWTH Aachen</addrLine>
+                <addrLine>Institut für Medizinische Informatik</addrLine>
+                <addrLine>Pauwelsstraße 35</addrLine>
+                <addrLine>52074 Aachen</addrLine>
+                <addrLine type="phone">Tel. +49 391 67 28186</addrLine>
+                <addrLine type="email">office@aktin.org</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <concept code="AMRO" codeSystem="1.2.276.0.76.5.441" displayName="Multiresistenter Keim" level="0" type="L">
+                    <desc language="de-DE">Träger eines Multi-resistenten Keims, nicht näher bezeichnet</desc>
+                </concept>
+                <concept code="MRSA" codeSystem="1.2.276.0.76.5.441" displayName="MRSA" level="1" type="L">
+                    <desc language="de-DE">Träger Methicillin-resistenter Staphylococcus aureus (MRSA)<br clear="none"/>
+                    </desc>
+                </concept>
+                <concept code="3MRGN" codeSystem="1.2.276.0.76.5.441" displayName="gramnegative Stäbchen, bei der noch eine der Antibiotikagruppen wirksam ist" level="1" type="L">
+                    <desc language="de-DE">Träger 3MRGN<br clear="none"/>
+                    </desc>
+                </concept>
+                <concept code="4MRGN" codeSystem="1.2.276.0.76.5.441" displayName="gramnegative Stäbchen, die gegen alle vier Gruppen resistent sind" level="1" type="L">
+                    <desc language="de-DE">Träger 4MRGN<br clear="none"/>
+                    </desc>
+                </concept>
+                <concept code="VRE" codeSystem="1.2.276.0.76.5.441" displayName="VRE" level="1" type="L">
+                    <desc language="de-DE">Träger Vancomycin-resistenten Enterokokken (VRE)</desc>
+                </concept>
+                <exception code="OTH" codeSystem="2.16.840.1.113883.5.1008" displayName="Andere" level="0" type="L">
+                    <desc language="de-DE">Träger eines anderen Multi-resistenten Keims<br clear="none"/>
+                    </desc>
+                </exception>
+            </conceptList>
+        </valueSet>
+    </project>
+</valueSets>

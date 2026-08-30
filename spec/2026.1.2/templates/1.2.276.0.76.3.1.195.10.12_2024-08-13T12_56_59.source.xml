@@ -1,0 +1,23 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultLanguage="de-DE" id="1.2.276.0.76.3.1.195.10.12" name="medizinische-begleitung" displayName="Medizinische Begleitung" effectiveDate="2024-08-13T12:56:59" statusCode="draft" versionLabel="2024" lastModifiedDate="2024-08-13T12:57:14" url="http://art-decor.org/decor/services/" ident="aktin-" xml:dummy-1="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-3="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance">
+    <desc language="de-DE" lastTranslated="2024-08-13T11:45:19">Medizinische Begleitung</desc>
+    <classification type="cdaentrylevel"/>
+    <relationship type="SPEC" template="2.16.840.1.113883.10.12.306" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.306" tmname="CDAProcedure" tmdisplayName="CDA Procedure" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-"/>
+    <context id="**"/>
+    <element name="hl7:procedure" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.659">
+                <attribute name="classCode" value="PROC" id="2.16.840.1.113883.2.6.60.3.9.660"/>
+                <attribute name="moodCode" value="EVN" id="2.16.840.1.113883.2.6.60.3.9.661"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.662">
+                    <attribute name="root" value="1.2.276.0.76.3.1.195.10.12" id="2.16.840.1.113883.2.6.60.3.9.663"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CV" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.665">
+                    <vocabulary valueSet="1.2.276.0.76.3.1.195.11.2" flexibility="dynamic"/>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.2.6.60.3.9.666">
+                    <desc language="de-DE">Lediglich reference in den Text der zugehörigen Section</desc>
+                    <element name="hl7:reference" minimumMultiplicity="1" maximumMultiplicity="1" datatype="URL" id="2.16.840.1.113883.2.6.60.3.9.667"/>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CS" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.668">
+                    <vocabulary code="completed"/>
+                </element>
+            </element>
+</template>

@@ -1,0 +1,42 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.2.6.77.1.2" effectiveDate="2015-10-15T00:00:00" statusCode="draft" versionLabel="1.0" prefix="hl7de-" shortName="versicherungsangaben" iddisplay="hl7de-dataset-2" url="http://art-decor.org/decor/services/" ident="hl7de-"><!--
+ This is a view of the dataset "Versicherungs-Angaben" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">Versicherungs-Angaben</name>
+    <desc language="de-DE">Versicherungs-Angaben</desc>
+    <concept id="2.16.840.1.113883.2.6.77.2.2.60200" statusCode="draft" effectiveDate="2015-10-15T00:00:00" type="group" iddisplay="hl7de-dataelement-2.60200" shortName="versicherungsverhaltnis">
+        <implementation shortName="versicherungsverhaltnis" markdown="Versicherungsverhältnis"/>
+        <name language="de-DE">Versicherungsverhältnis</name>
+        <desc language="de-DE">Versicherungsverhältnis</desc>
+        <concept id="2.16.840.1.113883.2.6.77.2.2.60210" statusCode="draft" effectiveDate="2015-10-15T00:00:00" type="item" iddisplay="hl7de-dataelement-2.60210" shortName="identifikation">
+            <implementation shortName="identifikation" markdown="Identifikation des Versicherungsverhältnisses, Versichertennummer"/>
+            <name language="de-DE">Identifikation</name>
+            <desc language="de-DE">Identifikation des Versicherungsverhältnisses, Versichertennummer</desc>
+            <valueDomain type="identifier"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.77.2.2.60220" statusCode="draft" effectiveDate="2015-10-15T00:00:00" type="group" iddisplay="hl7de-dataelement-2.60220" shortName="gultigkeit">
+            <implementation shortName="gultigkeit" markdown="Gültigkeit des Versicherungsverhältnisses, Versichertenstatus"/>
+            <name language="de-DE">Gültigkeit</name>
+            <desc language="de-DE">Gültigkeit des Versicherungsverhältnisses, Versichertenstatus</desc>
+            <concept id="2.16.840.1.113883.2.6.77.2.2.60221" statusCode="draft" effectiveDate="2015-10-15T00:00:00" type="item" iddisplay="hl7de-dataelement-2.60221" shortName="gultigkeit_von">
+                <implementation shortName="gultigkeit_von" markdown="Gültigkeit von"/>
+                <name language="de-DE">Gültigkeit von</name>
+                <desc language="de-DE">Gültigkeit von</desc>
+                <valueDomain type="date"/>
+            </concept>
+            <concept id="2.16.840.1.113883.2.6.77.2.2.60222" statusCode="draft" effectiveDate="2015-10-15T00:00:00" type="item" iddisplay="hl7de-dataelement-2.60222" shortName="gultigkeit_bis">
+                <implementation shortName="gultigkeit_bis" markdown="Gültigkeit bis"/>
+                <name language="de-DE">Gültigkeit bis</name>
+                <desc language="de-DE">Gültigkeit bis</desc>
+                <valueDomain type="date"/>
+            </concept>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.77.2.2.60230" statusCode="draft" effectiveDate="2015-10-15T00:00:00" type="item" iddisplay="hl7de-dataelement-2.60230" shortName="status">
+            <implementation shortName="status" markdown="Status des Versicherungsverhältnisses, Versichertenstatus"/>
+            <name language="de-DE">Status</name>
+            <desc language="de-DE">Status des Versicherungsverhältnisses, Versichertenstatus</desc>
+            <valueDomain type="identifier"/>
+        </concept>
+    </concept>
+</dataset>

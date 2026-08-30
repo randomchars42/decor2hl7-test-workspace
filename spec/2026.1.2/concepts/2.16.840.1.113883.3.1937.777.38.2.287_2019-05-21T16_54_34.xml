@@ -1,0 +1,17 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.777.38.1.1" effectiveDate="2018-07-15T16:14:56" statusCode="draft" prefix="ehr4cr-" shortName="ehr4cr_basic_data_elements" iddisplay="ehr4cr-dataset-1" url="http://art-decor.org/decor/services/" ident="ehr4cr-"><!--
+ This is a view of the dataset "EHR4CR Basic Data Elements" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">EHR4CR Basic Data Elements</name>
+    <desc language="de-DE"/>
+    <concept id="2.16.840.1.113883.3.1937.777.38.2.287" effectiveDate="2019-05-21T16:54:34" statusCode="draft" type="item" iddisplay="ehr4cr-dataelement-287">
+        <implementation markdown=""/>
+        <name language="de-DE">ECOG</name>
+        <desc language="de-DE"/>
+        <valueDomain type="code">
+            <conceptList id="2.16.840.1.113883.3.1937.777.38.2.287.20190521165434.0"/>
+        </valueDomain>
+        <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.38.2.287" conceptFlexibility="2019-05-21T16:54:34" code="C1520224" codeSystem="2.16.840.1.113883.6.86" effectiveDate="2019-05-21T22:58:01" codeSystemName="Unified Medical Language System"/>
+    </concept>
+</dataset>

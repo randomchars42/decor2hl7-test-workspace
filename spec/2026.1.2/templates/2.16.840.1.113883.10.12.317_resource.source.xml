@@ -1,0 +1,10 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.12.317" name="CDAPlace" displayName="CDA Place" effectiveDate="2005-09-07T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" sdtc:dummy-1="urn:hl7-org:sdtc" xml:dummy-2="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-4="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">Template CDA Place (prototype, directly derived from POCD_RM000040 MIF)</desc>
+            <desc language="nl-NL">Template CDA Place (prototype, direct afgeleid uit POCD_RM000040 MIF)</desc>
+            <desc language="de-DE">Template CDA Place (Prototyp, direkt abgeleitet aus POCD_RM000040 MIF)</desc>
+            <classification type="cdaentrylevel"/>
+            <attribute name="classCode" value="PLC" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.615"/>
+            <attribute name="determinerCode" value="INSTANCE" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.616"/>
+            <element name="hl7:name" minimumMultiplicity="0" maximumMultiplicity="1" datatype="EN" id="2.16.840.1.113883.3.1937.777.1.9.617"/>
+            <element name="hl7:addr" minimumMultiplicity="0" maximumMultiplicity="1" datatype="AD" id="2.16.840.1.113883.3.1937.777.1.9.618"/>
+        </template>

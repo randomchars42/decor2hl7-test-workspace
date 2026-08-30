@@ -1,0 +1,41 @@
+<codeSystems>
+    <project ident="mide-">
+        <codeSystem id="2.16.840.1.113883.3.1937.777.24.5.2" name="MiiConsentAnswerCodeSystem" displayName="MII Consent Answer CodeSystem" effectiveDate="2023-04-18T15:06:15" statusCode="final" versionLabel="1.6.1" canonicalUri="https://www.medizininformatik-initiative.de/fhir/CodeSystem/MiiConsentAnswerCodeSystem" lastModifiedDate="2023-04-18T15:10:40" language="de-DE">
+            <desc language="en-US" lastTranslated="2023-03-28T14:12:57">
+                <p>This CodeSystem contains the possible answers to the questions of the MII Consent.</p>
+            </desc>
+            <desc language="de-DE" lastTranslated="2023-03-28T14:12:57">
+                <p>Dieses CodeSystem enthält die möglichen Antworten auf die Fragen des MII Broad Consent</p>
+            </desc>
+            <publishingAuthority id="1" name="Medizininformatik-Initiative">
+                <addrLine type="uri">https://www.medizininformatik-initiative.de/</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <codedConcept code="1" statusCode="active" level="0" type="L">
+                    <designation language="de-DE" type="fsn" displayName="gültig"/>
+                    <designation language="en-US" type="fsn" displayName="valid"/>
+                    <designation language="de-DE" type="preferred" displayName="gültig"/>
+                    <designation language="en-US" type="preferred" displayName="valid"/>
+                    <desc language="en-US" lastTranslated="2023-03-28T14:11:31">valid</desc>
+                    <desc language="de-DE" lastTranslated="2023-03-28T14:06:59">gültig</desc>
+                </codedConcept>
+                <codedConcept code="2" statusCode="active" level="0" type="L">
+                    <designation language="de-DE" type="fsn" displayName="nicht gültig"/>
+                    <designation language="en-US" type="fsn" displayName="not valid"/>
+                    <designation language="de-DE" type="preferred" displayName="nicht gültig"/>
+                    <designation language="en-US" type="preferred" displayName="not valid"/>
+                    <desc language="en-US" lastTranslated="2023-03-28T14:25:53">not valid</desc>
+                    <desc language="de-DE" lastTranslated="2023-03-28T14:25:53">nicht gültig</desc>
+                </codedConcept>
+                <codedConcept code="3" statusCode="active" level="0" type="L">
+                    <designation language="de-DE" type="fsn" displayName="unbekannt"/>
+                    <designation language="en-US" type="fsn" displayName="unknown"/>
+                    <designation language="de-DE" type="preferred" displayName="unbekannt"/>
+                    <designation language="en-US" type="preferred" displayName="unknown"/>
+                    <desc language="en-US" lastTranslated="2023-03-28T14:26:56">unknown</desc>
+                    <desc language="de-DE" lastTranslated="2023-03-28T14:26:56">unbekannt</desc>
+                </codedConcept>
+            </conceptList>
+        </codeSystem>
+    </project>
+</codeSystems>

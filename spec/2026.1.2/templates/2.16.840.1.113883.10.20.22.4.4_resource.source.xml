@@ -1,0 +1,140 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:local="http://art-decor.org/local" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.20.22.4.4" name="ProblemObservationV3" displayName="Problem Observation (V3)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-" sdtc:dummy-1="urn:hl7-org:sdtc" local:dummy-2="http://art-decor.org/local" xml:dummy-3="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-5="urn:hl7-org:v3" xsi:dummy-6="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">This template reflects a discrete observation about a patient's problem. Because it is a discrete observation, it will have a statusCode of "completed". The effectiveTime, also referred to as the “biologically relevant time” is the time at which the observation holds for the patient. For a provider seeing a patient in the clinic today, observing a history of
+                heart attack that occurred five years ago, the effectiveTime is five years ago. The effectiveTime of the Problem Observation is the definitive indication of whether or not the underlying condition is resolved. If the problem is known to be resolved, then an effectiveTime/high would be present. If the date of resolution is not known, then effectiveTime/high will be present with a
+                nullFlavor of "UNK".</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00"/>
+            <relationship type="VERSION" template="2.16.840.1.113883.10.20.22.4.4" flexibility="2013-01-31T00:00:00"/>
+            <context id="**"/>
+            <element name="cda:observation" id="2.16.840.1.113883.3.1937.99.3.9.4267">
+                <attribute name="classCode" value="OBS" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.4268">
+                    <desc language="en-US">SHALL contain exactly one [1..1] @classCode="OBS" Observation (CodeSystem: HL7ActClass urn:oid:2.16.840.1.113883.5.6 STATIC) (CONF:1198-9041).</desc>
+                    <item label="CONF:1198-9041"/>
+                </attribute>
+                <attribute name="moodCode" value="EVN" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.4269">
+                    <desc language="en-US">SHALL contain exactly one [1..1] @moodCode="EVN" Event (CodeSystem: ActMood urn:oid:2.16.840.1.113883.5.1001 STATIC) (CONF:1198-9042).</desc>
+                    <item label="CONF:1198-9042"/>
+                </attribute>
+                <attribute name="negationInd" datatype="bl" isOptional="true" id="2.16.840.1.113883.3.1937.99.3.9.4270">
+                    <desc language="en-US">MAY contain zero or one [0..1] @negationInd (CONF:1198-10139).</desc>
+                    <item label="CONF:1198-10139"/>
+                </attribute>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.56103">
+                    <desc language="en-US">C-CDA R1.1 templateId root without an extension</desc>
+                    <item label="CONF:1198-32936"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.22.4.4" datatype="uid" id="2.16.840.1.113883.3.1937.99.3.9.56104"/>
+                </element>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.4271">
+                    <desc language="en-US">SHALL contain exactly one [1..1] templateId (CONF:1198-14926) such that it</desc>
+                    <item label="CONF:1198-14926"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.22.4.4" datatype="uid" id="2.16.840.1.113883.3.1937.99.3.9.4272">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.22.4.4" (CONF:1198-14927).</desc>
+                        <item label="CONF:1198-14927"/>
+                    </attribute>
+                    <attribute name="extension" value="2015-08-01" datatype="st" id="2.16.840.1.113883.3.1937.99.3.9.4273">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @extension="2015-08-01" (CONF:1198-32508).</desc>
+                        <item label="CONF:1198-32508"/>
+                    </attribute>
+                </element>
+                <element name="cda:id" datatype="II" minimumMultiplicity="1" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.4274">
+                    <desc language="en-US">SHALL contain at least one [1..*] id (CONF:1198-9043).</desc>
+                    <item label="CONF:1198-9043"/>
+                </element>
+                <element name="cda:code" datatype="CD" strength="extensible" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.4275">
+                    <!--<desc language="en-US">SHALL contain exactly one [1..1] code, which SHOULD be selected from ValueSet Problem Type urn:oid:2.16.840.1.113883.3.88.12.3221.7.2 DYNAMIC (CONF:1198-9045).
+                    </desc>-->
+                    <desc language="en-US">SHALL contain exactly one [1..1] code, which SHOULD be selected from ValueSet Problem Type (SNOMEDCT) 2.16.840.1.113883.3.88.12.3221.7.2 DYNAMIC (CONF:1198-9045). <p/>a. If code is selected from ValueSet Problem Type (SNOMEDCT) 2.16.840.1.113883.3.88.12.3221.7.2 DYNAMIC, then it SHALL have at least one [1..*] translation, which SHOULD be selected from
+                        ValueSet Problem Type (LOINC) 2.16.840.1.113762.1.4.1099.28 DYNAMIC (CONF:1198-32950).</desc>
+                    <item label="CONF:1198-9045"/>
+                    <vocabulary valueSet="2.16.840.1.113883.3.88.12.3221.7.2" flexibility="dynamic"/>
+                    <element name="hl7:translation" datatype="CD" strength="extensible" minimumMultiplicity="0" maximumMultiplicity="*" conformance="C" id="2.16.840.1.113883.3.1937.99.3.9.5866">
+                        <desc language="en-US">
+                    <span style="font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px;">If code is selected from ValueSet Problem Type (SNOMEDCT) 2.16.840.1.113883.3.88.12.3221.7.2 DYNAMIC, then it SHALL have at least one [1..*] translation, which SHOULD be selected from ValueSet Problem Type (LOINC) 2.16.840.1.113762.1.4.1099.28 DYNAMIC (CONF:1198-32950).
+                                (CONF:1198-32950)</span>
+                    <br clear="none"/>
+                </desc>
+                        <vocabulary valueSet="2.16.840.1.113762.1.4.1099.28" flexibility="dynamic"/>
+                        <assert role="warning" test="not(../cda:code/@codeSystem='2.16.840.1.113883.6.96') or cda:translation">If code is selected from ValueSet Problem Type (SNOMEDCT) 2.16.840.1.113883.3.88.12.3221.7.2 DYNAMIC, then it SHALL have at least one [1..*] translation, which SHOULD be selected from ValueSet Problem Type (LOINC) 2.16.840.1.113762.1.4.1099.28 DYNAMIC (CONF:1198-32950).
+                        </assert>
+                    </element>
+                </element>
+                <element name="cda:statusCode" datatype="CS" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.4277">
+                    <desc language="en-US">SHALL contain exactly one [1..1] statusCode (CONF:1198-9049).</desc>
+                    <item label="CONF:1198-9049"/>
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="cda:effectiveTime" datatype="IVL_TS" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.4278">
+                    <desc language="en-US">SHALL contain exactly one [1..1] effectiveTime (CONF:1198-9050).<p/>If the problem is known to be resolved, but the date of resolution is not known, then the high element SHALL be present, and the nullFlavor attribute SHALL be set to 'UNK'. Therefore, the existence of an high element within a problem does indicate that the problem has been
+                        resolved.</desc>
+                    <item label="CONF:1198-9050"/>
+                    <element name="cda:low" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.4279">
+                        <desc language="en-US">This effectiveTime SHALL contain exactly one [1..1] low (CONF:1198-15603).<p/>The effectiveTime/low (a.k.a. "onset date") asserts when the condition became biologically active.</desc>
+                        <item label="CONF:1198-15603"/>
+                    </element>
+                    <element name="cda:high" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.4280">
+                        <desc language="en-US">This effectiveTime MAY contain zero or one [0..1] high (CONF:1198-15604).<p/>The effectiveTime/high (a.k.a. "resolution date") asserts when the condition became biologically resolved.</desc>
+                        <item label="CONF:1198-15604"/>
+                    </element>
+                </element>
+                <element name="cda:value" datatype="CD" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.4281" strength="extensible">
+                    <item label="CONF:1198-9058"/>
+                    <vocabulary valueSet="2.16.840.1.113883.3.88.12.3221.7.4"/>
+                    <attribute name="code" isOptional="true" id="2.16.840.1.113883.3.1937.99.3.9.4282">
+                        <desc language="en-US">This value MAY contain zero or one [0..1] @code (CONF:1198-31871).</desc>
+                        <item label="CONF:1198-31871"/>
+                    </attribute>
+                    <element name="cda:qualifier" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.4283">
+                        <desc language="en-US">This value MAY contain zero or more [0..*] qualifier (CONF:1198-31870).<p/>The observation/value and all the qualifiers together (often referred to as a post-coordinated expression) make up one concept. Qualifiers constrain the meaning of the primary code, and cannot negate it or change its meaning. Qualifiers can only be used according to
+                            well-defined rules of post-coordination and only if the underlying code system defines the use of such qualifiers or if there is a third code system that specifies how other code systems may be combined. For example, SNOMED CT allows constructing concepts as a combination of multiple codes. SNOMED CT defines a concept "pneumonia (disorder)" (233604007) an attribute
+                            "finding site" (363698007) and another concept "left lower lobe of lung (body structure)" (41224006). SNOMED CT allows one to combine these codes in a code phrase, as shown in the sample XML.</desc>
+                        <item label="CONF:1198-31870"/>
+                    </element>
+                    <element name="cda:translation" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.4284">
+                        <desc language="en-US">This value MAY contain zero or more [0..*] translation (CONF:1198-16749) such that it</desc>
+                        <item label="CONF:1198-16749"/>
+                        <attribute name="code" isOptional="true" id="2.16.840.1.113883.3.1937.99.3.9.4285">
+                            <desc language="en-US">MAY contain zero or one [0..1] @code (CodeSystem: ICD10CM urn:oid:2.16.840.1.113883.6.90 STATIC) (CONF:1198-16750).</desc>
+                            <item label="CONF:1198-16750"/>
+                        </attribute>
+                    </element>
+                </element>
+                <element name="cda:author" contains="2.16.840.1.113883.10.20.22.4.119" flexibility="2015-08-13T00:00:00" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.4286">
+                    <desc language="en-US">SHOULD contain zero or more [0..*] Author Participation (identifier: urn:oid:2.16.840.1.113883.10.20.22.4.119) (CONF:1198-31147).</desc>
+                    <item label="CONF:1198-31147"/>
+                </element>
+                <element name="cda:entryRelationship" contains="2.16.840.1.113883.10.20.22.4.31" flexibility="2015-08-13T00:00:00" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.4287">
+                    <item label="CONF:1198-9059"/>
+                    <attribute name="typeCode" value="SUBJ" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.4288">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @typeCode="SUBJ" Has subject (CodeSystem: HL7ActRelationshipType urn:oid:2.16.840.1.113883.5.1002 STATIC) (CONF:1198-9060).</desc>
+                        <item label="CONF:1198-9060"/>
+                    </attribute>
+                    <attribute name="inversionInd" value="true" datatype="bl" id="2.16.840.1.113883.3.1937.99.3.9.4289">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @inversionInd="true" True (CONF:1198-9069).</desc>
+                        <item label="CONF:1198-9069"/>
+                    </attribute>
+                </element>
+                <element name="cda:entryRelationship" contains="2.16.840.1.113883.10.20.22.4.113" flexibility="2015-08-13T00:00:00" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.4290">
+                    <item label="CONF:1198-29951"/>
+                    <attribute name="typeCode" value="REFR" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.4291">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @typeCode="REFR" Refers to (CodeSystem: HL7ActRelationshipType urn:oid:2.16.840.1.113883.5.1002) (CONF:1198-31531).</desc>
+                        <item label="CONF:1198-31531"/>
+                    </attribute>
+                </element>
+                <element name="cda:entryRelationship" contains="2.16.840.1.113883.10.20.22.4.143" flexibility="2015-08-13T00:00:00" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.4292">
+                    <item label="CONF:1198-31063"/>
+                    <attribute name="typeCode" value="REFR" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.4293">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @typeCode="REFR" Refers to (CodeSystem: HL7ActRelationshipType urn:oid:2.16.840.1.113883.5.1002) (CONF:1198-31532).</desc>
+                        <item label="CONF:1198-31532"/>
+                    </attribute>
+                </element>
+                <element name="cda:entryRelationship" contains="2.16.840.1.113883.10.20.22.4.6" flexibility="2014-06-09T00:00:00" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.4294">
+                    <desc language="en-US">MAY contain zero or one [0..1] entryRelationship (CONF:1198-9063) such that it <p/>SHALL contain exactly one [1..1] @typeCode="REFR" Refers to (CodeSystem: HL7ActRelationshipType urn:oid:2.16.840.1.113883.5.1002) (CONF:1198-9068). <p/>SHALL contain exactly one [1..1] Problem Status (identifier: urn:oid:2.16.840.1.113883.10.20.22.4.6)
+                        (CONF:1198-15591).</desc>
+                    <item label="CONF:1198-9063"/>
+                    <attribute name="typeCode" value="REFR" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.4295">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @typeCode="REFR" Refers to (CodeSystem: HL7ActRelationshipType urn:oid:2.16.840.1.113883.5.1002) (CONF:1198-9068).</desc>
+                        <item label="CONF:1198-9068"/>
+                    </attribute>
+                </element>
+            </element>
+        </template>

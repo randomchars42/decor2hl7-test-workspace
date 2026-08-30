@@ -1,0 +1,35 @@
+<valueSets>
+    <repository url="http://art-decor.org/decor/services/" ident="ccda-" referencedFrom="DICOM-" projecttype="local">
+        <valueSet id="2.16.840.1.113883.3.88.12.3221.7.2" name="ProblemType" displayName="Problem Type" effectiveDate="2016-06-23T00:00:00" statusCode="cancelled">
+            <sourceCodeSystem id="2.16.840.1.113883.6.1" identifierName="Logical Observation Identifier Names and Codes" canonicalUri="http://loinc.org" canonicalUriDSTU2="http://loinc.org" canonicalUriSTU3="http://loinc.org" canonicalUriR4="http://loinc.org" canonicalUriR4B="http://loinc.org" canonicalUriR5="http://loinc.org"/>
+            <publishingAuthority name="HL7 International" inherited="project">
+                <addrLine>Health Level Seven International</addrLine>
+                <addrLine>3300 Washtenaw Avenue</addrLine>
+                <addrLine>Suite 227</addrLine>
+                <addrLine>Ann Arbor, MI 48104- 4261</addrLine>
+                <addrLine>USA</addrLine>
+                <addrLine>T +1 734 677 7777 </addrLine>
+                <addrLine>F +1 734 677 6622</addrLine>
+                <addrLine>E info@hl7.org</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <concept code="29308-4" codeSystem="2.16.840.1.113883.6.1" displayName="Diagnosis" level="0" type="L"/>
+                <concept code="75275-8" codeSystem="2.16.840.1.113883.6.1" displayName="Cognitive function HL7.CCDAR2" level="0" type="L"/>
+                <concept code="75312-9" codeSystem="2.16.840.1.113883.6.1" displayName="Clinical finding family member" level="0" type="L"/>
+                <concept code="75313-7" codeSystem="2.16.840.1.113883.6.1" displayName="Complaint family member" level="0" type="L"/>
+                <concept code="75314-5" codeSystem="2.16.840.1.113883.6.1" displayName="Diagnosis family member" level="0" type="L"/>
+                <concept code="75315-2" codeSystem="2.16.840.1.113883.6.1" displayName="Condition family member" level="0" type="L"/>
+                <concept code="75316-0" codeSystem="2.16.840.1.113883.6.1" displayName="Functional performance family member" level="0" type="L"/>
+                <concept code="75317-8" codeSystem="2.16.840.1.113883.6.1" displayName="Symptom family member" level="0" type="L"/>
+                <concept code="75318-6" codeSystem="2.16.840.1.113883.6.1" displayName="Problem family member" level="0" type="L"/>
+                <concept code="75319-4" codeSystem="2.16.840.1.113883.6.1" displayName="Mental function family member" level="0" type="L"/>
+                <concept code="75321-0" codeSystem="2.16.840.1.113883.6.1" displayName="Clinical finding" level="0" type="L"/>
+                <concept code="75322-8" codeSystem="2.16.840.1.113883.6.1" displayName="Complaint" level="0" type="L"/>
+                <concept code="75323-6" codeSystem="2.16.840.1.113883.6.1" displayName="Condition" level="0" type="L"/>
+                <concept code="75324-4" codeSystem="2.16.840.1.113883.6.1" displayName="Functional performance" level="0" type="L"/>
+                <concept code="75325-1" codeSystem="2.16.840.1.113883.6.1" displayName="Symptom" level="0" type="L"/>
+                <concept code="75326-9" codeSystem="2.16.840.1.113883.6.1" displayName="Problem" level="0" type="L"/>
+            </conceptList>
+        </valueSet>
+    </repository>
+</valueSets>

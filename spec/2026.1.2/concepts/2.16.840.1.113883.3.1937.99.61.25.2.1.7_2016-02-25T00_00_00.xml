@@ -1,0 +1,43 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.99.61.25.1.1" effectiveDate="2016-02-25T00:00:00" statusCode="draft" lastModifiedDate="2023-09-13T11:55:57" prefix="narradcda-" shortName="radiologischer_befundbericht" iddisplay="narradcda-dataset-1" url="http://art-decor.org/decor/services/" ident="narradcda-"><!--
+ This is a view of the dataset "Radiologischer Befundbericht" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE" lastTranslated="2023-09-13T11:51:51">Radiologischer Befundbericht</name>
+    <desc language="de-DE" lastTranslated="2023-09-13T11:51:51">Radiologischer Befundbericht</desc>
+    <concept id="2.16.840.1.113883.3.1937.99.61.25.2.1.7" statusCode="draft" effectiveDate="2016-02-25T00:00:00" lastModifiedDate="2023-09-13T11:55:57" type="group" iddisplay="narradcda-dataelement-1.7" shortName="angaben_zu_autor_und_unterzeichnern">
+        <implementation shortName="angaben_zu_autor_und_unterzeichnern" markdown="0"/>
+        <name language="de-DE">Angaben zu Autor und Unterzeichnern</name>
+        <desc language="de-DE">0</desc>
+        <concept id="2.16.840.1.113883.3.1937.99.61.25.2.1.710" effectiveDate="2016-02-25T00:00:00" statusCode="draft" lastModifiedDate="2023-09-13T11:55:12" type="item" iddisplay="narradcda-dataelement-1.710" shortName="angaben_zum_autor">
+            <implementation shortName="angaben_zum_autor" markdown="Bezeichnung des Autors des Befundberichts"/>
+            <name language="de-DE" lastTranslated="2023-09-13T11:55:12">Angaben zum Autor</name>
+            <desc language="de-DE" lastTranslated="2023-09-13T11:55:12">Bezeichnung des Autors des Befundberichts</desc>
+            <valueDomain type="complex"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.99.61.25.2.1.720" effectiveDate="2016-02-25T00:00:00" statusCode="draft" lastModifiedDate="2023-09-13T11:55:25" type="item" iddisplay="narradcda-dataelement-1.720" shortName="unterzeichner_neben_dem_verantwortlichen_unterzeichner">
+            <implementation shortName="unterzeichner_neben_dem_verantwortlichen_unterzeichner" markdown="Bezeichnung weitere Unterzeichner des Befundberichtes. Es sind mehrere Personen möglich"/>
+            <name language="de-DE" lastTranslated="2023-09-13T11:55:25">Unterzeichner neben dem verantwortlichen Unterzeichner</name>
+            <desc language="de-DE" lastTranslated="2023-09-13T11:55:25">Bezeichnung weitere Unterzeichner des Befundberichtes. Es sind mehrere Personen möglich</desc>
+            <valueDomain type="complex"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.99.61.25.2.1.730" effectiveDate="2016-02-25T00:00:00" statusCode="draft" lastModifiedDate="2023-09-13T11:55:34" type="item" iddisplay="narradcda-dataelement-1.730" shortName="angaben_zu_dem_verantwortlichen_unterzeichner">
+            <implementation shortName="angaben_zu_dem_verantwortlichen_unterzeichner" markdown="Bezeichnung des für den Inhalt verantwortlichen Unterzeichners  des Befundberichts"/>
+            <name language="de-DE" lastTranslated="2023-09-13T11:55:34">Angaben zu dem verantwortlichen Unterzeichner</name>
+            <desc language="de-DE" lastTranslated="2023-09-13T11:55:34">Bezeichnung des für den Inhalt verantwortlichen Unterzeichners  des Befundberichts</desc>
+            <valueDomain type="complex"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.99.61.25.2.1.740" effectiveDate="2016-02-25T00:00:00" statusCode="draft" lastModifiedDate="2023-09-13T11:55:47" type="item" iddisplay="narradcda-dataelement-1.740" shortName="datum_der_signatur">
+            <implementation shortName="datum_der_signatur" markdown="Datum der Signatur"/>
+            <name language="de-DE" lastTranslated="2023-09-13T11:55:47">Datum der Signatur</name>
+            <desc language="de-DE" lastTranslated="2023-09-13T11:55:47">Datum der Signatur</desc>
+            <valueDomain type="date"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.99.61.25.2.1.750" effectiveDate="2016-02-25T00:00:00" statusCode="draft" lastModifiedDate="2023-09-13T11:55:57" type="item" iddisplay="narradcda-dataelement-1.750" shortName="uhrzeit_der_signatur">
+            <implementation shortName="uhrzeit_der_signatur" markdown="Uhrzeit der Signatur"/>
+            <name language="de-DE" lastTranslated="2023-09-13T11:55:57">Uhrzeit der Signatur</name>
+            <desc language="de-DE" lastTranslated="2023-09-13T11:55:57">Uhrzeit der Signatur</desc>
+            <valueDomain type="time"/>
+        </concept>
+    </concept>
+</dataset>

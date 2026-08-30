@@ -1,0 +1,72 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.3053" ident="aktin-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.3053" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" lastModifiedDate="2025-12-18T13:48:42" versionLabel="2025" isClosed="false" displayName="Notfallanamnese" ident="aktin-" name="HistoryofPresentIllnessSection" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="draft" url="http://art-decor.org/decor/services/" effectiveDate="2025-12-01T00:00:00">
+            <desc language="en-US" lastTranslated="2025-12-01T00:00:00">History of present illness section</desc>
+            <desc language="de-DE" lastTranslated="2025-12-01T00:00:00">Notfallanamnese / relevante Eigenmedikation / körperliche Untersuchung Section</desc>
+            <classification type="cdasectionlevel"/>
+            <relationship type="VERSION" template="1.2.276.0.76.10.3053" flexibility="2015-01-10T00:00:00" tmid="1.2.276.0.76.10.3053" tmname="HistoryofPresentIllnessSection" tmdisplayName="Notfallanamnese" tmeffectiveDate="2015-01-10T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.201" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.201" tmname="CDASection" tmdisplayName="CDA Section" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <relationship type="ADAPT" template="1.3.6.1.4.1.19376.1.5.3.1.3.4" tmid="1.3.6.1.4.1.19376.1.5.3.1.3.4" tmname="HistoryofPresentIllnessSection" tmeffectiveDate="2015-08-13T00:00:00" tmstatusCode="draft" tmdisplayName="History of Present Illness Section" tmversionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <example type="neutral">
+                <section classCode="DOCSECT">
+                    <templateId root="1.2.276.0.76.10.3053"/>
+                    <code code="10164-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of present illness"/>
+                    <title>Notfallanamnese</title>
+                    <text>...</text>
+                </section>
+            </example>
+            <element name="hl7:section" id="2.16.840.1.113883.2.6.60.3.9.68">
+                <item original="false" label="HistoryofPresentIllnessSection"/>
+                <attribute name="classCode" value="DOCSECT" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.69"/>
+                <element name="hl7:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.70">
+                    <item original="false" label="HistoryofPresentIllnessSection"/>
+                    <attribute name="root" value="1.2.276.0.76.10.3053" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.71"/>
+                </element>
+                <element name="hl7:code" datatype="CD" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.72">
+                    <item original="false" label="HistoryofPresentIllnessSection"/>
+                    <vocabulary code="10164-2" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:title" datatype="ST" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.73">
+                    <item original="false" label="HistoryofPresentIllnessSection"/>
+                    <text>Notfallanamnese</text>
+                </element>
+                <element name="hl7:text" datatype="SD.TEXT" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.74">
+                    <item original="false" label="HistoryofPresentIllnessSection"/>
+                </element>
+                <element name="hl7:entry" contains="1.2.276.0.76.3.1.195.10.28" flexibility="2024-08-13T18:34:56" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.1.9.283" tmid="1.2.276.0.76.3.1.195.10.28" tmname="unfall-anamnese" tmdisplayName="Unfall-Anamnese" tmeffectiveDate="2024-08-13T18:34:56" tmstatusCode="draft" tmversionLabel="2024" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <item original="false" label="HistoryofPresentIllnessSection"/>
+                    <attribute name="typeCode" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1642240"/>
+                    <attribute name="contextConductionInd" isOptional="true" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1642241"/>
+                </element>
+                <element name="hl7:entry" contains="1.2.276.0.76.3.1.195.10.32" flexibility="2024-08-13T18:37:55" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.1642239" tmid="1.2.276.0.76.3.1.195.10.32" tmname="substanz-einfluss" tmdisplayName="Substanz-Einfluss" tmeffectiveDate="2024-08-13T18:37:55" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <item original="false" label="HistoryofPresentIllnessSection"/>
+                    <attribute name="typeCode" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1642242"/>
+                    <attribute name="contextConductionInd" isOptional="true" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1642243"/>
+                </element>
+            </element>
+            <staticAssociations>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.2.10030" effectiveDate="2015-01-15T00:00:00" refdisplay="aktin-dataelement2015(1)-10030" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.2" datasetEffectiveDate="2015-01-15T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.1-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.68" templateId="1.2.276.0.76.10.3053" templateEffectiveDate="2025-12-01T00:00:00" path="">
+                    <name language="de-DE">Notfallanamnese</name>
+                    <desc language="de-DE">Notfallanamnese</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.3.10030" effectiveDate="2015-11-01T00:00:00" refdisplay="aktin-dataelement2015(2)-10030" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.3" datasetEffectiveDate="2015-11-01T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.2-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.68" templateId="1.2.276.0.76.10.3053" templateEffectiveDate="2025-12-01T00:00:00" path="">
+                    <name language="de-DE">Notfallanamnese</name>
+                    <desc language="de-DE">Notfallanamnese</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+            </staticAssociations>
+            <uses type="contains" prefix="aktin-" flexibility="2024-08-13T18:34:56" id="1.2.276.0.76.3.1.195.10.28" name="unfall-anamnese" displayName="Unfall-Anamnese" effectiveDate="2024-08-13T18:34:56" statusCode="draft" versionLabel="2024" lastModifiedDate="2026-04-04T13:43:55" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="2024-08-13T18:37:55" id="1.2.276.0.76.3.1.195.10.32" name="substanz-einfluss" displayName="Substanz-Einfluss" effectiveDate="2024-08-13T18:37:55" statusCode="draft" lastModifiedDate="2024-08-13T18:37:55" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.92" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2025-11-12T00:00:00" statusCode="retired" versionLabel="v3transit" lastModifiedDate="2026-03-25T11:04:45" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.93" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2026-03-25T11:04:07" statusCode="draft" versionLabel="v4transit" lastModifiedDate="2026-04-29T18:39:46" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.1015" name="EmergencymedicineNoteCDAdocumentv1" displayName="Emergency medicine Note CDA document" effectiveDate="2014-09-18T00:00:00" statusCode="active" versionLabel="v1" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.1019" name="EmergencymedicineNoteCDAdocumentv2" displayName="Emergency medicine Note CDA document" effectiveDate="2016-06-01T00:00:00" statusCode="active" versionLabel="v2" ident="aktin-"/>
+        </template>
+    </template>
+</result>

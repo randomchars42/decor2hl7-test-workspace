@@ -1,0 +1,23 @@
+<codeSystems>
+    <project ident="mide-">
+        <codeSystem id="2.16.840.1.113883.3.1937.777.24.5.20" name="MII_Oncology_Rektumkarzinom_Anastomoseninsuffizienz" displayName="MII Onkologie: Rektumkarzinom: Anastomoseninsuffizienz" effectiveDate="2023-08-08T16:24:05" statusCode="draft" lastModifiedDate="2023-08-08T16:24:56" language="de-DE">
+            <publishingAuthority name="Konsortium DIFUTURE" inherited="project">
+                <addrLine type="uri">https://difuture.de</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <codedConcept code="B" statusCode="draft" level="0" type="L">
+                    <desc language="en-US" lastTranslated="2023-08-08T16:24:56">B = Anastomoseninsuffizienz Grad B</desc>
+                </codedConcept>
+                <codedConcept code="C" statusCode="draft" level="0" type="L">
+                    <desc language="en-US" lastTranslated="2023-08-08T16:24:56">C = Anastomoseninsuffizienz Grad C</desc>
+                </codedConcept>
+                <codedConcept code="K" statusCode="draft" level="0" type="L">
+                    <desc language="en-US" lastTranslated="2023-08-08T16:24:56">K = keine Insuffizienz oder höchstens Grad A</desc>
+                </codedConcept>
+                <codedConcept code="U" statusCode="draft" level="0" type="L">
+                    <desc language="en-US" lastTranslated="2023-08-08T16:24:56">Unbekannt</desc>
+                </codedConcept>
+            </conceptList>
+        </codeSystem>
+    </project>
+</codeSystems>

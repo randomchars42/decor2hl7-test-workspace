@@ -1,0 +1,34 @@
+<codeSystems>
+    <project ident="aktin-">
+        <codeSystem id="1.2.276.0.76.5.437" name="emergencyseverityindex" displayName="Emergency Severity Index" effectiveDate="2015-03-03T00:00:00" statusCode="draft" canonicalUri="http://aktin.org/fhir/CodeSystem/aktin-cs-emergencyseverityindex" language="de-DE">
+            <desc language="en-US" lastTranslated="2024-08-16T17:19:48">
+                <p>Emergency Severity Index</p>
+            </desc>
+            <publishingAuthority name="AKTIN e. V." inherited="project">
+                <addrLine>c/o Uniklinik RWTH Aachen</addrLine>
+                <addrLine>Institut für Medizinische Informatik</addrLine>
+                <addrLine>Pauwelsstraße 35</addrLine>
+                <addrLine>52074 Aachen</addrLine>
+                <addrLine type="phone">Tel. +49 391 67 28186</addrLine>
+                <addrLine type="email">office@aktin.org</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <codedConcept code="1" statusCode="active" level="0" type="L" effectiveDate="2015-03-03T00:00:00">
+                    <designation language="en-US" type="preferred" displayName="Resuscitation - Immediate, life-saving intervention required without delay"/>
+                </codedConcept>
+                <codedConcept code="2" statusCode="active" level="0" type="L" effectiveDate="2015-03-03T00:00:00">
+                    <designation language="en-US" type="preferred" displayName="Emergent - High risk of deterioration, or signs of a time-critical problem"/>
+                </codedConcept>
+                <codedConcept code="3" statusCode="active" level="0" type="L" effectiveDate="2015-03-03T00:00:00">
+                    <designation language="en-US" type="preferred" displayName="Urgent - Stable, with multiple types of resources needed to investigate or treat (such as lab tests plus X-ray imaging)"/>
+                </codedConcept>
+                <codedConcept code="4" statusCode="active" level="0" type="L" effectiveDate="2015-03-03T00:00:00">
+                    <designation language="en-US" type="preferred" displayName="Less Urgent - Stable, with only one type of resource anticipated (such as only an X-ray, or only sutures)"/>
+                </codedConcept>
+                <codedConcept code="5" statusCode="active" level="0" type="L" effectiveDate="2015-03-03T00:00:00">
+                    <designation language="en-US" type="preferred" displayName="Nonurgent - Stable, with no resources anticipated except oral or topical medications, or prescriptions"/>
+                </codedConcept>
+            </conceptList>
+        </codeSystem>
+    </project>
+</codeSystems>

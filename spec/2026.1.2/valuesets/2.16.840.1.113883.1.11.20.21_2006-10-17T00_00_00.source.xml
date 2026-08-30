@@ -1,0 +1,8 @@
+<valueSet xmlns:json="http://www.json.org" id="2.16.840.1.113883.1.11.20.21" name="FamilyHistoryPersonCode" displayName="FamilyHistoryPersonCode" effectiveDate="2006-10-17T00:00:00" statusCode="draft" url="http://art-decor.org/decor/services/" ident="ccd1-">
+    <desc json:array="true" language="en-US">Any subtype of 303071001 “Person in the family”</desc>
+    <sourceCodeSystem json:array="true" id="2.16.840.1.113883.6.96" identifierName="SNOMED Clinical Terms" canonicalUri="http://snomed.info/sct" canonicalUriDSTU2="http://snomed.info/sct" canonicalUriSTU3="http://snomed.info/sct" canonicalUriR4="http://snomed.info/sct" canonicalUriR4B="http://snomed.info/sct" canonicalUriR5="http://snomed.info/sct"/>
+    <publishingAuthority json:array="true" name="ASTM" inherited="project"/>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="include" codeSystem="2.16.840.1.113883.6.96"/>
+</valueSet>

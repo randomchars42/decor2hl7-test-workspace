@@ -1,0 +1,17 @@
+<codeSystem xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.777.24.5.24" name="MII_Oncology_Sicherheitsabstand_Primartumor" displayName="MII Onkologie: Sicherheitsabstand Primärtumor" effectiveDate="2023-08-08T16:33:43" statusCode="draft" lastModifiedDate="2023-08-08T16:34:20" language="de-DE" url="http://art-decor.org/decor/services/" ident="mide-">
+    <publishingAuthority json:array="true" name="Konsortium DIFUTURE" inherited="project">
+        <addrLine json:array="true" type="uri">https://difuture.de</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <conceptList json:array="true">
+        <codedConcept json:array="true" code="-1" statusCode="draft" level="0" type="L">
+            <desc json:array="true" language="en-US" lastTranslated="2023-08-08T16:34:20">-1 = nicht zu beurteilen </desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="0" statusCode="draft" level="0" type="L">
+            <desc json:array="true" language="en-US" lastTranslated="2023-08-08T16:34:20">0 = kein Abstand </desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="n" statusCode="draft" level="0" type="L">
+            <desc json:array="true" language="en-US" lastTranslated="2023-08-08T16:34:20">n = Abstand in mm (natürliche Zahl)</desc>
+        </codedConcept>
+    </conceptList>
+</codeSystem>

@@ -1,0 +1,50 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:local="http://art-decor.org/local" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.20.22.4.23" name="MedicationInformation" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" displayName="Medication Information" url="http://art-decor.org/decor/services/" ident="ccda-" sdtc:dummy-1="urn:hl7-org:sdtc" local:dummy-2="http://art-decor.org/local" xml:dummy-3="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-5="urn:hl7-org:v3" xsi:dummy-6="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">The medication can be recorded as a pre-coordinated product strength, product form, or product concentration (e.g., “metoprolol 25mg tablet”, “amoxicillin 400mg/5mL suspension”) or not pre-coordinated (e.g., “metoprolol product”).</desc>
+            <classification type="cdaentrylevel"/>
+            <context id="**"/>
+            <element name="cda:manufacturedProduct" id="2.16.840.1.113883.3.1937.99.3.9.449">
+                <attribute name="classCode" value="MANU" id="2.16.840.1.113883.3.1937.99.3.9.450">
+                    <item label="conf-7408"/>
+                </attribute>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.451">
+                    <desc language="en-US">SHALL contain exactly one [1..1] templateId (CONF:7409) such that it</desc>
+                    <item label="conf-7409"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.22.4.23" id="2.16.840.1.113883.3.1937.99.3.9.452">
+                        <item label="conf-10506"/>
+                    </attribute>
+                </element>
+                <element name="cda:id" datatype="II" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.453">
+                    <desc language="en-US">MAY contain zero or more [0..*] id (CONF:7410).</desc>
+                    <item label="conf-7410"/>
+                </element>
+                <element name="cda:manufacturedMaterial" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.454">
+                    <desc language="en-US">SHALL contain exactly one [1..1] manufacturedMaterial (CONF:7411).</desc>
+                    <item label="conf-7411"/>
+                    <element name="cda:code" datatype="CE" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="false" id="2.16.840.1.113883.3.1937.99.3.9.455">
+                        <desc language="en-US">This manufacturedMaterial SHALL contain exactly one [1..1] code, which SHALL be selected from ValueSet Medication Clinical Drug Name Value Set 2.16.840.1.113883.3.88.12.80.17 DYNAMIC (CONF:7412).</desc>
+                        <item label="conf-7412"/>
+                        <vocabulary valueSet="2.16.840.1.113883.3.88.12.80.17"/>
+                        <element name="cda:originalText" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.456">
+                            <desc language="en-US">This code SHOULD contain zero or one [0..1] originalText (CONF:7413).</desc>
+                            <item label="conf-7413"/>
+                            <element name="cda:reference" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.457">
+                                <desc language="en-US">The originalText, if present, SHOULD contain zero or one [0..1] reference (CONF:15986).<p/>This reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1)</desc>
+                                <item label="conf-15986"/>
+                                <attribute name="value" isOptional="true" id="2.16.840.1.113883.3.1937.99.3.9.458">
+                                    <item label="conf-15987"/>
+                                </attribute>
+                                <assert role="error" test="not(@value) or starts-with(@value, '#')">This reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1)</assert>
+                            </element>
+                        </element>
+                        <element name="cda:translation" minimumMultiplicity="0" maximumMultiplicity="*" datatype="CD" id="2.16.840.1.113883.3.1937.99.3.9.459">
+                            <desc language="en-US">This code MAY contain zero or more [0..*] translation (CONF:7414).<p/>Translations can be used to represent generic product name, packaged product code, etc.</desc>
+                            <item label="conf-7414"/>
+                        </element>
+                    </element>
+                </element>
+                <element name="cda:manufacturerOrganization" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.460">
+                    <desc language="en-US">MAY contain zero or one [0..1] manufacturerOrganization (CONF:7416).</desc>
+                    <item label="conf-7416"/>
+                </element>
+            </element>
+        </template>

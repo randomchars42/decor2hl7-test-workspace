@@ -1,0 +1,217 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.20.1.28" name="ProblemObservation" displayName="Problem observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" url="http://art-decor.org/decor/services/" ident="ccd1-" sdtc:dummy-1="urn:hl7-org:sdtc" xml:dummy-2="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-4="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance">
+    <desc language="en-US">
+        <p>
+            <b>CONF-128</b>: A problem observation or result observation in the functional status section <b>SHALL</b> contain exactly one <b>observation / code</b>.<br/>
+            <b>CONF-135</b>: A problem observation or result observation in the functional status section <b>MAY</b> use codes from the International Classification of Functioning, Disability, and Health (ICF, <a href="http://www.who.int/classifications/icf/en/">http://www.who.int/classifications/icf/en/</a>) (codeSystem 2.16.840.1.113883.6.254).<br/>
+            <b>CONF-136</b>: A problem observation in the functional status section <b>SHALL</b> contain exactly one status of functional status observation. </p>
+        <p>...</p>
+        <h5>3.5.2.1.2 Problem observation</h5>
+        <p>
+            <b>CONF-154</b>: A problem observation (templateId 2.16.840.1.113883.10.20.1.28) <b>SHALL</b> be represented with <b>Observation</b>. <b>CONF-155</b>: The value for “<b>Observation / @moodCode</b>” in a problem observation <b>SHALL</b> be “EVN” 2.16.840.1.113883.5.1001 ActMood <b>STATIC</b>. <b>CONF-156</b>: A problem observation <b>SHALL</b> include exactly one <b>Observation / statusCode</b>. <b>CONF-157</b>: The value for “<b>Observation / statusCode</b>” in a problem observation <b>SHALL</b> be “completed” 2.16.840.1.113883.5.14 ActStatus <b>STATIC</b>. <b>CONF-158</b>:
+                    A problem observation <b>SHOULD</b> contain exactly one <b>Observation / effectiveTime</b>, to indicate the biological timing of condition (e.g. the time the condition started, the onset of the illness or symptom, the duration of a condition). <b>CONF-159</b>: The value for “<b>Observation / code</b>” in a problem observation <b>MAY</b> be selected from ValueSet 2.16.840.1.113883.1.11.20.14 ProblemTypeCode <b>STATIC</b> 20061017. <b>CONF-160</b>: The value for “<b>Observation / entryRelationship / @typeCode</b>” in a problem observation <b>MAY</b> be “SUBJ” “Subject”
+                    2.16.840.1.113883.5.1002 ActRelationshipType <b>STATIC</b> to reference an age observation (templateId 2.16.840.1.113883.10.20.1.38). <b>CONF-161</b>: A problem observation <b>SHALL</b> contain one or more sources of information, as defined in section <b>5.2 Source</b>.</p>
+    </desc>
+    <classification type="cdaentrylevel"/>
+    <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00"/>
+    <context id="**"/>
+    <element name="hl7:observation" id="2.16.840.1.113883.3.1937.777.4.9.1300">
+        <attribute name="classCode" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.1301">
+                    <!--valueSet name="ActClassObservation"-->
+            <vocabulary valueSet="2.16.840.1.113883.1.11.11529"/>
+        </attribute>
+        <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.4.9.1302">
+            <item label="CONF-155"/>
+        </attribute>
+        <attribute name="negationInd" datatype="bl" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.1303"/>
+        <assert role="warning" test="hl7:informant or hl7:reference[@typeCode='XCRPT'] or hl7:entryRelationship[@typeCode='REFR']/hl7:observation[@classCode='OBS'][@moodCode='EVN'][hl7:statusCode/@code='completed'][hl7:code[@code='48766-0'][@codeSystem='2.16.840.1.113883.6.1'][@displayName='Information source']][hl7:value]">CONF-161: A problem observation SHALL contain one or more sources of information, as defined in section 5.2 Source.</assert>
+        <assert role="error" test="(not(hl7:entryRelationship[hl7:observation/hl7:templateId/@root='2.16.840.1.113883.10.20.1.44']) or ancestor::hl7:section[hl7:templateId/@root='2.16.840.1.113883.10.20.1.5']) and (not(ancestor::hl7:section[hl7:templateId/@root='2.16.840.1.113883.10.20.1.5']) or hl7:entryRelationship[hl7:observation/hl7:templateId/@root='2.16.840.1.113883.10.20.1.44'])">CONF-136: A problem observation in the functional status section SHALL contain exactly one status of functional status observation.</assert>
+        <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.3.1937.777.4.9.1304">
+            <attribute name="root" value="2.16.840.1.113883.10.20.1.28" isOptional="false" id="2.16.840.1.113883.3.1937.777.4.9.1305"/>
+        </element>
+        <element name="hl7:id" minimumMultiplicity="0" maximumMultiplicity="*" datatype="II" id="2.16.840.1.113883.3.1937.777.4.9.1306"/>
+        <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="CD" id="2.16.840.1.113883.3.1937.777.4.9.1307">
+            <desc language="en-US">
+                <p>
+                    <b>CONF-129</b>: The value for “<b>Observation / code</b>” in a problem observation or result observation in the functional status section <b>MAY</b> be selected from ValueSet 2.16.840.1.113883.1.11.20.6 FunctionalStatusTypeCode <b>STATIC</b> 20061017.<br/>
+                    <b>CONF-159</b>: The value for “<b>Observation / code</b>” in a problem observation <b>MAY</b> be selected from ValueSet 2.16.840.1.113883.1.11.20.14 ProblemTypeCode <b>STATIC</b> 20061017.</p>
+            </desc>
+            <item label="CONF-128"/>
+        </element>
+        <element name="hl7:derivationExpr" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ST" id="2.16.840.1.113883.3.1937.777.4.9.1308"/>
+        <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.3.1937.777.4.9.1309"/>
+        <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CS" isMandatory="true" id="2.16.840.1.113883.3.1937.777.4.9.1310">
+            <item label="CONF-156 / CONF-157"/>
+            <vocabulary code="completed"/>
+        </element>
+        <element name="hl7:effectiveTime" minimumMultiplicity="1" maximumMultiplicity="1" datatype="IVL_TS" conformance="R" id="2.16.840.1.113883.3.1937.777.4.9.1311"/>
+        <element name="hl7:priorityCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.4.9.1312">
+                    <!--valueSet name="ActPriority"-->
+            <vocabulary valueSet="2.16.840.1.113883.1.11.16866"/>
+        </element>
+        <element name="hl7:repeatNumber" minimumMultiplicity="0" maximumMultiplicity="1" datatype="IVL_INT" id="2.16.840.1.113883.3.1937.777.4.9.1313"/>
+        <element name="hl7:languageCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CS" id="2.16.840.1.113883.3.1937.777.4.9.1314">
+                    <!--valueSet name="HumanLanguage"-->
+            <vocabulary valueSet="2.16.840.1.113883.1.11.11526"/>
+        </element>
+        <element name="hl7:value" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.4.9.1315"/>
+        <element name="hl7:interpretationCode" minimumMultiplicity="0" maximumMultiplicity="*" datatype="CE" id="2.16.840.1.113883.3.1937.777.4.9.1316">
+                    <!--valueSet name="ObservationInterpretation"-->
+            <vocabulary valueSet="2.16.840.1.113883.1.11.78"/>
+        </element>
+        <element name="hl7:methodCode" minimumMultiplicity="0" maximumMultiplicity="*" datatype="CE" id="2.16.840.1.113883.3.1937.777.4.9.1317">
+                    <!--valueSet name="ObservationMethod"-->
+            <vocabulary valueSet="2.16.840.1.113883.1.11.14079"/>
+        </element>
+        <element name="hl7:targetSiteCode" minimumMultiplicity="0" maximumMultiplicity="*" datatype="CD" id="2.16.840.1.113883.3.1937.777.4.9.1318">
+            <vocabulary domain="ActSite"/>
+        </element>
+                <!-- begin CS associations -->
+                <!--contains name="CCDSubjectBody"-->
+        <element name="hl7:subject" minimumMultiplicity="0" maximumMultiplicity="1" contains="2.16.840.1.113883.3.1937.777.4.10.3" id="2.16.840.1.113883.3.1937.777.4.9.1319"/>
+                <!--<element name="hl7:specimen" minimumMultiplicity="0" maximumMultiplicity="*" contains="CDASpecimen"/>-->
+                <!--<element name="hl7:performer" minimumMultiplicity="0" maximumMultiplicity="*" contains="CCDPerformerBody"/>-->
+                <!--<element name="hl7:author" minimumMultiplicity="0" maximumMultiplicity="*" contains="CDAAuthorBody"/>-->
+                <!--contains name="CCDinformantBody"-->
+        <element name="hl7:informant" minimumMultiplicity="0" maximumMultiplicity="*" contains="2.16.840.1.113883.3.1937.777.4.10.20" id="2.16.840.1.113883.3.1937.777.4.9.1320">
+            <item label="CONF-161"/>
+        </element>
+                <!--contains name="PatientAwareness"-->
+        <element name="hl7:participant" minimumMultiplicity="0" maximumMultiplicity="1" contains="2.16.840.1.113883.10.20.1.48" id="2.16.840.1.113883.3.1937.777.4.9.1321">
+            <item label="CONF-178 / CONF-179 / CONF-180"/>
+        </element>
+                <!--<element name="hl7:participant" minimumMultiplicity="0" maximumMultiplicity="*" contains="CCDParticipantBody"/>-->
+                <!--contains name="FunctionalStatusObservation"-->
+        <element name="hl7:entryRelationship" minimumMultiplicity="0" maximumMultiplicity="1" contains="2.16.840.1.113883.10.20.1.44" id="2.16.840.1.113883.3.1937.777.4.9.1322">
+            <item label="CONF-136"/>
+            <attribute name="typeCode" value="REFR" isOptional="false" id="2.16.840.1.113883.3.1937.777.4.9.1323">
+                <item label="CONF-509"/>
+            </attribute>
+            <attribute name="contextConductionInd" datatype="bl" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.1324"/>
+            <attribute name="inversionInd" datatype="bl" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.1325"/>
+            <attribute name="negationInd" datatype="bl" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.1326"/>
+            <element name="hl7:sequenceNumber" minimumMultiplicity="0" maximumMultiplicity="1" datatype="INT" id="2.16.840.1.113883.3.1937.777.4.9.1327"/>
+            <element name="hl7:seperatableInd" minimumMultiplicity="0" maximumMultiplicity="1" datatype="BL" id="2.16.840.1.113883.3.1937.777.4.9.1328"/>
+        </element>
+                <!--contains name="AgeObservation"-->
+        <element name="hl7:entryRelationship" minimumMultiplicity="0" maximumMultiplicity="1" contains="2.16.840.1.113883.10.20.1.38" id="2.16.840.1.113883.3.1937.777.4.9.1329">
+            <item label="CONF-160"/>
+            <attribute name="typeCode" value="SUBJ" isOptional="false" id="2.16.840.1.113883.3.1937.777.4.9.1330">
+                <item label="CONF-160"/>
+            </attribute>
+            <attribute name="contextConductionInd" datatype="bl" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.1331"/>
+            <attribute name="inversionInd" datatype="bl" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.1332"/>
+            <attribute name="negationInd" datatype="bl" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.1333"/>
+            <element name="hl7:sequenceNumber" minimumMultiplicity="0" maximumMultiplicity="1" datatype="INT" id="2.16.840.1.113883.3.1937.777.4.9.1334"/>
+            <element name="hl7:seperatableInd" minimumMultiplicity="0" maximumMultiplicity="1" datatype="BL" id="2.16.840.1.113883.3.1937.777.4.9.1335"/>
+        </element>
+                <!--contains name="ProblemStatusObservation"-->
+        <element name="hl7:entryRelationship" minimumMultiplicity="0" maximumMultiplicity="1" contains="2.16.840.1.113883.10.20.1.50" id="2.16.840.1.113883.3.1937.777.4.9.1336">
+            <item label="CONF-162"/>
+            <attribute name="typeCode" value="REFR" isOptional="false" id="2.16.840.1.113883.3.1937.777.4.9.1337">
+                <item label="CONF-509"/>
+            </attribute>
+            <attribute name="contextConductionInd" datatype="bl" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.1338"/>
+            <attribute name="inversionInd" datatype="bl" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.1339"/>
+            <attribute name="negationInd" datatype="bl" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.1340"/>
+            <element name="hl7:sequenceNumber" minimumMultiplicity="0" maximumMultiplicity="1" datatype="INT" id="2.16.840.1.113883.3.1937.777.4.9.1341"/>
+            <element name="hl7:seperatableInd" minimumMultiplicity="0" maximumMultiplicity="1" datatype="BL" id="2.16.840.1.113883.3.1937.777.4.9.1342"/>
+        </element>
+                <!--contains name="ProblemHealthstatusObservation"-->
+        <element name="hl7:entryRelationship" minimumMultiplicity="0" maximumMultiplicity="1" contains="2.16.840.1.113883.10.20.1.51" id="2.16.840.1.113883.3.1937.777.4.9.1343">
+            <item label="CONF-165"/>
+            <attribute name="typeCode" value="REFR" isOptional="false" id="2.16.840.1.113883.3.1937.777.4.9.1344">
+                <item label="CONF-509"/>
+            </attribute>
+            <attribute name="contextConductionInd" datatype="bl" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.1345"/>
+            <attribute name="inversionInd" datatype="bl" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.1346"/>
+            <attribute name="negationInd" datatype="bl" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.1347"/>
+            <element name="hl7:sequenceNumber" minimumMultiplicity="0" maximumMultiplicity="1" datatype="INT" id="2.16.840.1.113883.3.1937.777.4.9.1348"/>
+            <element name="hl7:seperatableInd" minimumMultiplicity="0" maximumMultiplicity="1" datatype="BL" id="2.16.840.1.113883.3.1937.777.4.9.1349"/>
+        </element>
+                <!--contains name="Comment"-->
+        <element name="hl7:entryRelationship" minimumMultiplicity="0" maximumMultiplicity="*" contains="2.16.840.1.113883.10.20.1.40" id="2.16.840.1.113883.3.1937.777.4.9.1350">
+            <item label="CONF-502"/>
+            <attribute name="typeCode" datatype="cs" isOptional="false" id="2.16.840.1.113883.3.1937.777.4.9.1351">
+                        <!--valueSet name="x_ActRelationshipEntryRelationship"-->
+                <vocabulary valueSet="2.16.840.1.113883.1.11.19447"/>
+            </attribute>
+            <attribute name="contextConductionInd" datatype="bl" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.1352"/>
+            <attribute name="inversionInd" datatype="bl" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.1353"/>
+            <attribute name="negationInd" datatype="bl" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.1354"/>
+            <element name="hl7:sequenceNumber" minimumMultiplicity="0" maximumMultiplicity="1" datatype="INT" id="2.16.840.1.113883.3.1937.777.4.9.1355"/>
+            <element name="hl7:seperatableInd" minimumMultiplicity="0" maximumMultiplicity="1" datatype="BL" id="2.16.840.1.113883.3.1937.777.4.9.1356"/>
+        </element>
+        <element name="hl7:entryRelationship" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.4.9.1357">
+                    <!--<element name="hl7:entryRelationship[hl7:observation[hl7:code[@code='48766-0'][@codeSystem='2.16.840.1.113883.6.1']]]" minimumMultiplicity="0" maximumMultiplicity="*">-->
+            <item label="CONF-161"/>
+            <attribute name="typeCode" value="REFR" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.4.9.1358">
+                <item label="CONF-524"/>
+            </attribute>
+            <attribute name="contextConductionInd" datatype="bl" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.1359"/>
+            <attribute name="inversionInd" datatype="bl" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.1360"/>
+            <attribute name="negationInd" datatype="bl" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.1361"/>
+            <element name="hl7:sequenceNumber" minimumMultiplicity="0" maximumMultiplicity="1" datatype="INT" id="2.16.840.1.113883.3.1937.777.4.9.1362"/>
+            <element name="hl7:seperatableInd" minimumMultiplicity="0" maximumMultiplicity="1" datatype="BL" id="2.16.840.1.113883.3.1937.777.4.9.1363"/>
+            <element name="hl7:observation" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.4.9.1364">
+                <item label="CONF-523 / CONF-525"/>
+                <attribute name="classCode" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.1365">
+                    <item label="CONF-526"/>
+                            <!--valueSet name="ActClassObservation"-->
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.11529"/>
+                </attribute>
+                <attribute name="moodCode" value="EVN" isOptional="false" id="2.16.840.1.113883.3.1937.777.4.9.1366">
+                    <item label="CONF-527"/>
+                </attribute>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CD" isMandatory="true" id="2.16.840.1.113883.3.1937.777.4.9.1367">
+                    <item label="CONF-530 / CONF-531"/>
+                    <vocabulary code="48766-0" codeSystem="2.16.840.1.113883.6.1" displayName="Information source"/>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CS" isMandatory="true" id="2.16.840.1.113883.3.1937.777.4.9.1368">
+                    <item label="CONF-528 / CONF-529"/>
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.777.4.9.1369">
+                    <item label="CONF-532 / CONF-533"/>
+                </element>
+            </element>
+        </element>
+                <!--<element name="hl7:entryRelationship" minimumMultiplicity="0" maximumMultiplicity="*" contains="CCDClinicalStatement">
+                    <attribute name="typeCode" datatype="cs" isOptional="false">
+                        <vocabulary valueSet="x_ActRelationshipEntryRelationship"/>
+                    </attribute>
+                    <attribute name="contextConductionInd" datatype="bl" isOptional="true"/>
+                    <attribute name="inversionInd" datatype="bl" isOptional="true"/>
+                    <attribute name="negationInd" datatype="bl" isOptional="true"/>
+                    <element name="hl7:sequenceNumber" minimumMultiplicity="0" maximumMultiplicity="1" datatype="INT"/>
+                    <element name="hl7:seperatableInd" minimumMultiplicity="0" maximumMultiplicity="1" datatype="BL"/>
+                </element>-->
+        <element name="hl7:reference[@typeCode='XCRPT']" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.4.9.1370">
+            <item label="CONF-161"/>
+        </element>
+                <!--<element name="hl7:reference" minimumMultiplicity="0" maximumMultiplicity="*" contains="CDAReference"/>-->
+                <!--<element name="hl7:precondition" minimumMultiplicity="0" maximumMultiplicity="*" contains="CCDPrecondition"/>-->
+                <!-- end CS associations -->
+        <element name="hl7:referenceRange" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.4.9.1371">
+            <attribute name="typeCode" value="REFV" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.1372"/>
+            <element name="hl7:observationRange" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.4.9.1373">
+                <attribute name="classCode" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.1374">
+                            <!--valueSet name="ActClassObservation"-->
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.11529"/>
+                </attribute>
+                <attribute name="moodCode" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.1375">
+                            <!--valueSet name="ActMoodEventCriterion"-->
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.20268"/>
+                </attribute>
+                <element name="hl7:code" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CD" id="2.16.840.1.113883.3.1937.777.4.9.1376">
+                    <vocabulary domain="ActCode"/>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.3.1937.777.4.9.1377"/>
+                <element name="hl7:value" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.4.9.1378"/>
+                <element name="hl7:interpretationCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.4.9.1379">
+                            <!--valueSet name="ObservationInterpretation"-->
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.78"/>
+                </element>
+            </element>
+        </element>
+    </element>
+</template>

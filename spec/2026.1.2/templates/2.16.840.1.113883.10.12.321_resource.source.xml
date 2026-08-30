@@ -1,0 +1,41 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.12.321" name="CDAParticipantBody" displayName="CDA Participant (Body)" effectiveDate="2005-09-07T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" sdtc:dummy-1="urn:hl7-org:sdtc" xml:dummy-2="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-4="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">Template CDA Participant (Body) (prototype, directly derived from POCD_RM000040 MIF)</desc>
+            <desc language="nl-NL">Template CDA Participant (Body) (prototype, direct afgeleid uit POCD_RM000040 MIF)</desc>
+            <desc language="de-DE">Template CDA Participant (Body) (Prototyp, direkt abgeleitet aus POCD_RM000040 MIF)</desc>
+            <classification type="cdaentrylevel"/>
+            <attribute name="typeCode" datatype="cs" id="2.16.840.1.113883.3.1937.777.1.9.650">
+                <!--valueSet name="ParticipationType"-->
+                <vocabulary valueSet="2.16.840.1.113883.1.11.10901"/>
+            </attribute>
+            <attribute name="contextControlCode" value="OP" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.651"/>
+            <element name="hl7:time" minimumMultiplicity="0" maximumMultiplicity="1" datatype="IVL_TS" id="2.16.840.1.113883.3.1937.777.1.9.652"/>
+            <element name="hl7:awarenessCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.1.9.653">
+                <!--valueSet name="TargetAwareness"-->
+                <vocabulary valueSet="2.16.840.1.113883.1.11.10310"/>
+            </element>
+            <element name="hl7:participantRole" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.1.9.654">
+                <attribute name="classCode" value="ROL" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.655"/>
+                <element name="hl7:id" minimumMultiplicity="0" maximumMultiplicity="*" datatype="II" id="2.16.840.1.113883.3.1937.777.1.9.656"/>
+                <element name="hl7:code" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.1.9.657">
+                    <vocabulary domain="RoleCode"/>
+                </element>
+                <element name="hl7:addr" minimumMultiplicity="0" maximumMultiplicity="*" datatype="AD" id="2.16.840.1.113883.3.1937.777.1.9.658"/>
+                <element name="hl7:telecom" minimumMultiplicity="0" maximumMultiplicity="*" datatype="TEL" id="2.16.840.1.113883.3.1937.777.1.9.659"/>
+                <choice minimumMultiplicity="0" maximumMultiplicity="1">
+                    <!--contains name="CDADevice"-->
+                    <element name="hl7:playingDevice" contains="2.16.840.1.113883.10.12.315" id="2.16.840.1.113883.3.1937.777.1.9.660"/>
+                    <!--contains name="CDAPlayingEntity"-->
+                    <element name="hl7:playingEntity" contains="2.16.840.1.113883.10.12.313" id="2.16.840.1.113883.3.1937.777.1.9.661"/>
+                </choice>
+                <element name="hl7:scopingEntity" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.1.9.662">
+                    <attribute name="classCode" value="ENT" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.663"/>
+                    <attribute name="determinerCode" value="INSTANCE" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.664"/>
+                    <element name="hl7:id" minimumMultiplicity="0" maximumMultiplicity="*" datatype="II" id="2.16.840.1.113883.3.1937.777.1.9.665"/>
+                    <element name="hl7:code" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.1.9.666">
+                        <!--valueSet name="EntityCode"-->
+                        <vocabulary valueSet="2.16.840.1.113883.1.11.16040"/>
+                    </element>
+                    <element name="hl7:desc" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.3.1937.777.1.9.667"/>
+                </element>
+            </element>
+        </template>

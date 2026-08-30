@@ -1,0 +1,149 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.1019" name="EmergencymedicineNoteCDAdocumentv2" displayName="Emergency medicine Note CDA document" effectiveDate="2016-06-01T00:00:00" statusCode="active" versionLabel="v2" url="http://art-decor.org/decor/services/" ident="aktin-" xml:dummy-1="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-3="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="de-DE">Informationen im Rahmen des AKTIN Basismoduls als CDA Dokument</desc>
+            <classification type="cdadocumentlevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.1" flexibility="2005-09-07T00:00:00"/>
+            <relationship type="VERSION" template="1.2.276.0.76.10.1015" flexibility="2014-09-18T00:00:00"/>
+            <context path="/"/>
+            <item label="basismdoc"/>
+            <example>
+                <ClinicalDocument xmlns="urn:hl7-org:v3">
+                    <!-- CDA Header -->
+                    <realmCode code="DE"/>
+                    <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+                    <templateId root="1.2.276.0.76.10.1019"/>
+                    <id extension="38457384973598" root="2.16.840.1.113883.3.1937.99.3.2.56754657.1"/>
+                    <code code="68552-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Emergency medicine Emergency department Admission evaluation note"/>
+                    <hl7:effectiveTime value="20140908123456"/>
+                    <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+                    <recordTarget>
+                        <!-- .. -->
+            </recordTarget>
+                    <author>
+                        <!-- .. -->
+            </author>
+                    <custodian>
+                        <!-- .. -->
+            </custodian>
+                    <participant>
+                        <!-- .. -->
+            </participant>
+                    <!-- CDA Body -->
+                    <component>
+                        <structuredBody>
+                            <component>
+                                <!-- .. -->
+                    </component>
+                        </structuredBody>
+                    </component>
+                </ClinicalDocument>
+            </example>
+            <element name="hl7:ClinicalDocument" id="2.16.840.1.113883.2.6.60.3.9.1631447">
+
+                <!-- Element realmCode -->
+                <include ref="1.2.276.0.76.10.90002" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true"/>
+                <!-- Element typeId -->
+                <include ref="1.2.276.0.76.10.90003" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.1631448">
+                    <example>
+                        <templateId root="1.2.276.0.76.10.1019"/>
+                    </example>
+                    <attribute name="root" value="1.2.276.0.76.10.1019" id="2.16.840.1.113883.2.6.60.3.9.1631449"/>
+                </element>
+                <include ref="1.2.276.0.76.10.90004" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true"/>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CE" id="2.16.840.1.113883.2.6.60.3.9.1631450">
+                    <vocabulary code="68552-9" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <include ref="1.2.276.0.76.10.90005" minimumMultiplicity="0" maximumMultiplicity="1">
+                    <example>
+                        <title>Emergency medicine Note 2014-09-08 12:34:56</title>
+                    </example>
+                </include>
+                <include ref="1.2.276.0.76.10.90006" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true"/>
+                <include ref="1.2.276.0.76.10.90007"/>
+                <include ref="1.2.276.0.76.10.90008"/>
+                <include ref="1.2.276.0.76.10.90009"/>
+                <!-- 
+                    Participants
+                -->
+                <include ref="1.2.276.0.76.10.2032" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true"/>
+                <include ref="1.2.276.0.76.10.2033" minimumMultiplicity="1" maximumMultiplicity="*" isMandatory="true"/>
+                <include ref="1.2.276.0.76.10.2034" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true"/>
+                <include ref="1.2.276.0.76.10.2005" minimumMultiplicity="0" maximumMultiplicity="*"/>
+                <include ref="1.2.276.0.76.10.2022" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R"/>
+                <include ref="1.2.276.0.76.10.2035" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true"/>
+                <include ref="1.2.276.0.76.10.2036" flexibility="2016-06-01T00:00:00" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true"/>
+                <element name="hl7:component" id="2.16.840.1.113883.2.6.60.3.9.1631451">
+                    <attribute name="typeCode" value="COMP" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.1631452"/>
+                    <attribute name="contextConductionInd" value="true" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.1631453"/>
+                    <element name="hl7:structuredBody" id="2.16.840.1.113883.2.6.60.3.9.1631454">
+                        <attribute name="classCode" value="DOCBODY" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.1631455"/>
+                        <attribute name="moodCode" value="EVN" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.1631456"/>
+                        <element name="hl7:component" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" contains="1.2.276.0.76.10.3045" id="2.16.840.1.113883.2.6.60.3.9.1631457">
+                            <desc language="de-DE">Section: Transportmittel</desc>
+                            <attribute name="typeCode" value="COMP" id="2.16.840.1.113883.2.6.60.3.9.1631458"/>
+                            <attribute name="contextConductionInd" value="true" id="2.16.840.1.113883.2.6.60.3.9.1631459"/>
+                        </element>
+                        <element name="hl7:component" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" contains="1.2.276.0.76.10.3046" id="2.16.840.1.113883.2.6.60.3.9.1631460">
+                            <desc language="de-DE">Section: Zuweisung</desc>
+                            <attribute name="typeCode" value="COMP" id="2.16.840.1.113883.2.6.60.3.9.1631461"/>
+                            <attribute name="contextConductionInd" value="true" id="2.16.840.1.113883.2.6.60.3.9.1631462"/>
+                        </element>
+                        <element name="hl7:component" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" contains="1.2.276.0.76.10.3053" id="2.16.840.1.113883.2.6.60.3.9.1631463">
+                            <desc language="de-DE">Section: Notfallanamnese</desc>
+                            <attribute name="typeCode" value="COMP" id="2.16.840.1.113883.2.6.60.3.9.1631464"/>
+                            <attribute name="contextConductionInd" value="true" id="2.16.840.1.113883.2.6.60.3.9.1631465"/>
+                        </element>
+                        <element name="hl7:component" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" contains="1.2.276.0.76.10.3048" id="2.16.840.1.113883.2.6.60.3.9.1631466">
+                            <desc language="de-DE">Section: Beschwerden bei Vorstellung / Grund der Vorstellung</desc>
+                            <attribute name="typeCode" value="COMP" id="2.16.840.1.113883.2.6.60.3.9.1631467"/>
+                            <attribute name="contextConductionInd" value="true" id="2.16.840.1.113883.2.6.60.3.9.1631468"/>
+                        </element>
+                        <element name="hl7:component" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" contains="1.2.276.0.76.10.3047" flexibility="2016-08-02T00:00:00" id="2.16.840.1.113883.2.6.60.3.9.1631469">
+                            <desc language="de-DE">Section: Klinische Basisinformationen</desc>
+                            <attribute name="typeCode" value="COMP" id="2.16.840.1.113883.2.6.60.3.9.1631470"/>
+                            <attribute name="contextConductionInd" value="true" id="2.16.840.1.113883.2.6.60.3.9.1631471"/>
+                        </element>
+                        <element name="hl7:component" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" contains="1.2.276.0.76.10.3044" id="2.16.840.1.113883.2.6.60.3.9.1631472">
+                            <desc language="de-DE">Section: Vitalparameter</desc>
+                            <attribute name="typeCode" value="COMP" id="2.16.840.1.113883.2.6.60.3.9.1631473"/>
+                            <attribute name="contextConductionInd" value="true" id="2.16.840.1.113883.2.6.60.3.9.1631474"/>
+                        </element>
+                        <element name="hl7:component" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" contains="1.2.276.0.76.10.3050" id="2.16.840.1.113883.2.6.60.3.9.1631475">
+                            <desc language="de-DE">Section: Diagnostik</desc>
+                            <attribute name="typeCode" value="COMP" id="2.16.840.1.113883.2.6.60.3.9.1631476"/>
+                            <attribute name="contextConductionInd" value="true" id="2.16.840.1.113883.2.6.60.3.9.1631477"/>
+                        </element>
+                        <element name="hl7:component" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" contains="1.2.276.0.76.10.3051" id="2.16.840.1.113883.2.6.60.3.9.1631478">
+                            <desc language="de-DE">Section: Allergien und Unverträglichkeiten</desc>
+                            <attribute name="typeCode" value="COMP" id="2.16.840.1.113883.2.6.60.3.9.1631479"/>
+                            <attribute name="contextConductionInd" value="true" id="2.16.840.1.113883.2.6.60.3.9.1631480"/>
+                        </element>
+                        <element name="hl7:component" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" contains="1.2.276.0.76.10.3054" id="2.16.840.1.113883.2.6.60.3.9.1631481">
+                            <desc language="de-DE">Section: Befunde/Therapie</desc>
+                            <attribute name="typeCode" value="COMP" id="2.16.840.1.113883.2.6.60.3.9.1631482"/>
+                            <attribute name="contextConductionInd" value="true" id="2.16.840.1.113883.2.6.60.3.9.1631483"/>
+                        </element>
+                        <element name="hl7:component" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" contains="1.2.276.0.76.10.3055" id="2.16.840.1.113883.2.6.60.3.9.1631484">
+                            <desc language="de-DE">Section: Abschlussdiagnosen</desc>
+                            <attribute name="typeCode" value="COMP" id="2.16.840.1.113883.2.6.60.3.9.1631485"/>
+                            <attribute name="contextConductionInd" value="true" id="2.16.840.1.113883.2.6.60.3.9.1631486"/>
+                        </element>
+                        <element name="hl7:component" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" contains="1.2.276.0.76.10.3049" id="2.16.840.1.113883.2.6.60.3.9.1631487">
+                            <desc language="de-DE">Section: Ersteinschätzung</desc>
+                            <attribute name="typeCode" value="COMP" id="2.16.840.1.113883.2.6.60.3.9.1631488"/>
+                            <attribute name="contextConductionInd" value="true" id="2.16.840.1.113883.2.6.60.3.9.1631489"/>
+                        </element>
+                        <element name="hl7:component" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" contains="1.2.276.0.76.10.3056" id="2.16.840.1.113883.2.6.60.3.9.1631490">
+                            <desc language="de-DE">Section: Weiteres Procedere / Therapieempfehlung / Weiterbehandler</desc>
+                            <attribute name="typeCode" value="COMP" id="2.16.840.1.113883.2.6.60.3.9.1631491"/>
+                            <attribute name="contextConductionInd" value="true" id="2.16.840.1.113883.2.6.60.3.9.1631492"/>
+                        </element>
+                        <element name="hl7:component" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" contains="1.2.276.0.76.10.3057" id="2.16.840.1.113883.2.6.60.3.9.1631493">
+                            <desc language="de-DE">Section: Zusatzmodule (weitere Dokumentation)</desc>
+                            <attribute name="typeCode" value="COMP" id="2.16.840.1.113883.2.6.60.3.9.1631494"/>
+                            <attribute name="contextConductionInd" value="true" id="2.16.840.1.113883.2.6.60.3.9.1631495"/>
+                        </element>
+                    </element>
+                </element>
+            </element>
+        </template>

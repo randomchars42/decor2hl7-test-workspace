@@ -1,0 +1,87 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.4043" ident="aktin-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.4043" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="Status Schwangerschaft" ident="aktin-" name="Pregnancystatus" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="active" url="http://art-decor.org/decor/services/" effectiveDate="2015-03-03T00:00:00">
+            <desc language="de-DE">Status Schwangerschaft</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.303" tmname="CDAObservation" tmdisplayName="CDA Observation" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <relationship type="ADAPT" template="1.3.6.1.4.1.19376.1.5.3.1.4.13.5" tmid="1.3.6.1.4.1.19376.1.5.3.1.4.13.5" tmname="IHEPregnancyObservation" tmdisplayName="IHE Pregnancy Observation" tmeffectiveDate="2016-10-21T14:59:35" tmstatusCode="active" tmversionLabel="2014" url="https://art-decor.ihe-europe.net/decor/services/" ident="IHE-PCC-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <example type="neutral">
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4043"/>
+                    <code code="11449-6" codeSystem="2.16.840.1.113883.6.1" displayName="Pregnancy status"/>
+                    <statusCode code="completed"/>
+                    <value xsi:type="CV" code="0" codeSystem="1.2.276.0.76.3.1.195.5.46" displayName="Patient nicht schwanger"/>
+                </observation>
+            </example>
+            <element name="hl7:observation" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.253">
+                <item original="false" label="Pregnancystatus"/>
+                <attribute name="classCode" value="OBS" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.254"/>
+                <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.255"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.256">
+                    <item original="false" label="Pregnancystatus"/>
+                    <attribute name="root" value="1.2.276.0.76.10.4043" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.257"/>
+                </element>
+                <element name="hl7:id" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.258">
+                    <item original="false" label="Pregnancystatus"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CE" id="2.16.840.1.113883.2.6.60.3.9.259">
+                    <item original="false" label="Pregnancystatus"/>
+                    <vocabulary code="11449-6" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.2.6.60.3.9.260">
+                    <desc language="de-DE">Lediglich reference in den Text der zugehörigen Section</desc>
+                    <item original="false" label="Pregnancystatus"/>
+                    <element name="hl7:reference" minimumMultiplicity="1" maximumMultiplicity="1" datatype="URL" id="2.16.840.1.113883.2.6.60.3.9.261">
+                        <item original="false" label="Pregnancystatus"/>
+                    </element>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CS" id="2.16.840.1.113883.2.6.60.3.9.262">
+                    <item original="false" label="Pregnancystatus"/>
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:effectiveTime" minimumMultiplicity="0" maximumMultiplicity="1" datatype="TS" id="2.16.840.1.113883.2.6.60.3.9.263">
+                    <item original="false" label="Pregnancystatus"/>
+                </element>
+                <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="CV" id="2.16.840.1.113883.2.6.60.3.9.264">
+                    <item original="false" label="Pregnancystatus"/>
+                    <vocabulary valueSet="1.2.276.0.76.11.46" vsid="1.2.276.0.76.11.46" vsname="Pregnancystatus" vsdisplayName="Schwangerschafts-Status" vsstatusCode="draft" vseffectiveDate="2015-11-17T00:00:00" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false"/>
+                </element>
+            </element>
+            <staticAssociations>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.2.5" effectiveDate="2015-01-15T00:00:00" refdisplay="aktin-dataelement2015(1)-5" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.2" datasetEffectiveDate="2015-01-15T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.1-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.264" templateId="1.2.276.0.76.10.4043" templateEffectiveDate="2015-03-03T00:00:00" path="Klinische Basisdaten Patient">
+                    <name language="de-DE">Schwanger</name>
+                    <desc language="de-DE">Patient ist schwanger, bzw. die Möglichkeit einer Schwangerschaft kann nicht ausgeschlossen werden.</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.3.5" effectiveDate="2015-11-01T00:00:00" refdisplay="aktin-dataelement2015(2)-5" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.3" datasetEffectiveDate="2015-11-01T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.2-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.264" templateId="1.2.276.0.76.10.4043" templateEffectiveDate="2015-03-03T00:00:00" path="Klinische Basisdaten Patient">
+                    <name language="de-DE">Schwanger</name>
+                    <desc language="de-DE">Patient ist schwanger, bzw. die Möglichkeit einer Schwangerschaft kann nicht ausgeschlossen werden.</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.3.1937.777.24.2.416" effectiveDate="2018-07-30T10:16:40" refdisplay="mide-dataelement-416" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" datasetName="MI Dataset" ident="mide-" elementId="2.16.840.1.113883.2.6.60.3.9.253" templateId="1.2.276.0.76.10.4043" templateEffectiveDate="2015-03-03T00:00:00" path="Erweiterungsmodule / Klinische Dokumentation / Basisdaten">
+                    <name language="de-DE" lastTranslated="2018-07-30T11:13:28">Schwangerschaftsstatus</name>
+                    <name language="en-US" lastTranslated="2018-07-30T11:13:36">Pregnancy status</name>
+                    <desc language="de-DE" lastTranslated="2018-07-30T11:15:00">Schwangerschaftsbefund:<br clear="none"/>schwanger - nicht schwanger - unbekannt<br clear="none"/>
+                    </desc>
+                    <desc language="en-US" lastTranslated="2018-07-30T11:15:47">Pregnancy finding:<br clear="none"/>Patient is pregnant - not pregnant - Status unknown<br clear="none"/>
+                    </desc>
+                    <datasetName language="en-US" lastTranslated="2022-11-18T11:46:16">MI Dataset</datasetName>
+                    <datasetName language="de-DE" lastTranslated="2022-11-18T11:46:16">MI Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2023-03-28T18:04:57">MII Core Data Set</projectName>
+                    <projectName language="de-DE" lastTranslated="2023-03-28T18:04:57">MII-Kerndatensatz</projectName>
+                </origconcept>
+            </staticAssociations>
+            <ref type="dependency" prefix="aktin-" flexibility="2016-08-02T00:00:00" id="1.2.276.0.76.3.1.195.10.92" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2025-11-12T00:00:00" statusCode="retired" versionLabel="v3transit" lastModifiedDate="2026-03-25T11:04:45" ident="aktin-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="2016-08-02T00:00:00" id="1.2.276.0.76.3.1.195.10.93" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2026-03-25T11:04:07" statusCode="draft" versionLabel="v4transit" lastModifiedDate="2026-04-29T18:39:46" ident="aktin-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="2015-01-10T00:00:00" id="1.2.276.0.76.10.1015" name="EmergencymedicineNoteCDAdocumentv1" displayName="Emergency medicine Note CDA document" effectiveDate="2014-09-18T00:00:00" statusCode="active" versionLabel="v1" ident="aktin-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="2016-08-02T00:00:00" id="1.2.276.0.76.10.1019" name="EmergencymedicineNoteCDAdocumentv2" displayName="Emergency medicine Note CDA document" effectiveDate="2016-06-01T00:00:00" statusCode="active" versionLabel="v2" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.3047" name="ClinicalInformation" displayName="Klinische Basisinformationen" effectiveDate="2015-01-10T00:00:00" statusCode="active" isClosed="false" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.3047" name="ClinicalInformation" displayName="Klinische Basisinformationen" effectiveDate="2016-08-02T00:00:00" statusCode="active" isClosed="false" ident="aktin-"/>
+        </template>
+    </template>
+</result>

@@ -1,0 +1,4 @@
+<codeSystem xmlns:json="http://www.json.org" id="2.16.840.1.113883.5.14" effectiveDate="2019-03-20T00:00:00" statusCode="final" versionLabel="3.0.0" experimental="true" name="act_status" displayName="ActStatus">
+    <copyright json:array="true" language="en-US">License text</copyright>
+    <issueAssociation json:array="true" count="0"/>
+</codeSystem>

@@ -1,0 +1,68 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.2.6.60.6.1.1" effectiveDate="2015-06-18T18:17:24" statusCode="draft" versionLabel="2.0" prefix="psr-" shortName="" iddisplay="psr-dataset-1" url="http://art-decor.org/decor/services/" ident="psr-"><!--
+ This is a view of the dataset "" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE"/>
+    <desc language="de-DE"/>
+    <concept id="2.16.840.1.113883.2.6.60.6.2.104" statusCode="draft" effectiveDate="2017-04-02T11:48:40" type="item" iddisplay="psr-dataelement-104">
+        <implementation markdown="Differentiation of a malignant tumor, both as grading in a 4-tiered grading system (WHO-grading) and as immunophenotype for malignant lymphomas and some leukemias"/>
+        <name language="de-DE" lastTranslated="2017-06-29T16:50:54">Grading/Immunphänotyp</name>
+        <desc language="de-DE" lastTranslated="2017-06-29T16:50:42">Codierung des Grading oder des Immunphänotyps</desc>
+        <valueDomain type="code">
+            <conceptList id="2.16.840.1.113883.2.6.60.6.2.104.20170402114840.0"/>
+        </valueDomain>
+        <valueSet id="1.3.6.1.4.1.19376.1.3.11.35" name="icd-o-3-differentiation" displayName="ICD-O-3 Differentiation" effectiveDate="2015-11-13T19:07:32" statusCode="draft" versionLabel="1st rev. (2013)">
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.104.20170402114840.0" valueSet="1.3.6.1.4.1.19376.1.3.11.35" flexibility="dynamic" effectiveDate="2017-04-02T11:58:39" valueSetName="ICD-O-3 Differentiation" valueSetStatusCode="draft" valueSetVersionLabel="1st rev. (2013)" valueSetEffectiveDate="2015-11-13T19:07:32"/>
+            <desc language="en-US">Coding the cellular differentiation of malignant tumors, either the grade of malignancy (differentiation), or the cell line differentiation, coded by the second digit after the slash in ICD-O-3 Morphology axi</desc>
+            <sourceCodeSystem id="2.16.840.1.113883.5.1008" identifierName="Null Flavor" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriDSTU2="http://hl7.org/fhir/v3/NullFlavor" canonicalUriSTU3="http://hl7.org/fhir/v3/NullFlavor" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" context="external/hl7intl/v3/v3-NullFlavor"/>
+            <sourceCodeSystem id="2.16.840.1.113883.6.43.1" identifierName="International Classification of Diseases for Oncology, version 3." canonicalUri="http://terminology.hl7.org/CodeSystem/icd-o-3" canonicalUriDSTU2="http://terminology.hl7.org/CodeSystem/icd-o-3" canonicalUriSTU3="http://terminology.hl7.org/CodeSystem/icd-o-3" canonicalUriR4="http://terminology.hl7.org/CodeSystem/icd-o-3" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/icd-o-3" canonicalUriR5="http://terminology.hl7.org/CodeSystem/icd-o-3" context="projects/pathdv-/ICD-O-3-2.rev-BfArM-2.16.840.1.113883.6.43.1"/>
+            <publishingAuthority name="IHE International" inherited="project">
+                <addrLine type="email">http://www.ihe.net</addrLine>
+            </publishingAuthority>
+            <conceptList id="2.16.840.1.113883.2.6.60.6.2.104.20170402114840.0">
+                <concept localId="1" code="1" codeSystem="2.16.840.1.113883.6.43.1" displayName="1" level="0" type="L">
+                    <name language="en-US">1</name>
+                    <desc language="en-US">well (highly) differentiated</desc>
+                </concept>
+                <concept localId="2" code="2" codeSystem="2.16.840.1.113883.6.43.1" displayName="2" level="0" type="L">
+                    <name language="en-US">2</name>
+                    <desc language="en-US">moderately differentiated</desc>
+                </concept>
+                <concept localId="3" code="3" codeSystem="2.16.840.1.113883.6.43.1" displayName="3" level="0" type="L">
+                    <name language="en-US">3</name>
+                    <desc language="en-US">poorly differentiated</desc>
+                </concept>
+                <concept localId="4" code="4" codeSystem="2.16.840.1.113883.6.43.1" displayName="4" level="0" type="L">
+                    <name language="en-US">4</name>
+                    <desc language="en-US">undifferentiated resp. anaplastic</desc>
+                </concept>
+                <concept localId="5" code="5" codeSystem="2.16.840.1.113883.6.43.1" displayName="5" level="0" type="L">
+                    <name language="en-US">5</name>
+                    <desc language="en-US">T-cell differentiation in lymphomas and leukemias</desc>
+                </concept>
+                <concept localId="6" code="6" codeSystem="2.16.840.1.113883.6.43.1" displayName="6" level="0" type="L">
+                    <name language="en-US">6</name>
+                    <desc language="en-US">B-cell differentiation, pre-B-cells, B-precursor cells in lymphomas and leukemias</desc>
+                </concept>
+                <concept localId="7" code="7" codeSystem="2.16.840.1.113883.6.43.1" displayName="7" level="0" type="L">
+                    <name language="en-US">7</name>
+                    <desc language="en-US">Null-cell, non-B-nonT-cell differentiation in lymphomas and leukemias</desc>
+                </concept>
+                <concept localId="8" code="8" codeSystem="2.16.840.1.113883.6.43.1" displayName="8" level="0" type="L">
+                    <name language="en-US">8</name>
+                    <desc language="en-US">NK (natural killer)-cell differentiation in lymphomas and leukemias</desc>
+                </concept>
+                <concept localId="9" code="9" codeSystem="2.16.840.1.113883.6.43.1" displayName="9" level="0" type="L">
+                    <name language="en-US">9</name>
+                    <desc language="en-US">grading not applied, not applicable, unknown; cell type not assessed or unknown</desc>
+                </concept>
+                <exception localId="10" code="ASKU" codeSystem="2.16.840.1.113883.5.1008" displayName="Asked but unknown" level="0" type="L">
+                    <name language="en-US">Asked but unknown</name>
+                </exception>
+            </conceptList>
+        </valueSet>
+        <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.104" code="21858-6" codeSystem="2.16.840.1.113883.6.1" displayName="Grade Cancer" effectiveDate="2017-04-02T11:58:18" codeSystemName="Logical Observation Identifier Names and Codes"/>
+        <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.104.20170402114840.0" valueSet="1.3.6.1.4.1.19376.1.3.11.35" flexibility="dynamic" effectiveDate="2017-04-02T11:58:39" valueSetName="ICD-O-3 Differentiation" valueSetStatusCode="draft" valueSetVersionLabel="1st rev. (2013)" valueSetEffectiveDate="2015-11-13T19:07:32"/>
+    </concept>
+</dataset>

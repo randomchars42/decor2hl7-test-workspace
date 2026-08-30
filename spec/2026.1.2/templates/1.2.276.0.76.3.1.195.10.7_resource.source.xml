@@ -1,0 +1,29 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.3.1.195.10.7" name="demografische-informationen" displayName="Demografische Informationen" effectiveDate="2024-08-13T10:46:17" statusCode="draft" versionLabel="2024" lastModifiedDate="2025-12-22T18:07:07" url="http://art-decor.org/decor/services/" ident="aktin-" xml:dummy-1="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-3="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US" lastTranslated="2024-08-13T10:46:17">Demografic information section</desc>
+            <desc language="de-DE" lastTranslated="2024-08-13T10:46:17">Demografische Informationen</desc>
+            <classification type="cdasectionlevel"/>
+            <relationship type="SPEC" template="1.2.276.0.76.10.3068" flexibility="2017-01-10T00:00:00"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.201" flexibility="2005-09-07T00:00:00"/>
+            <context id="**"/>
+            <element name="hl7:section" id="2.16.840.1.113883.2.6.60.3.9.15593">
+                <attribute name="classCode" value="DOCSECT" datatype="cs" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.15594"/>
+                <element name="hl7:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.15595">
+                    <attribute name="root" value="1.2.276.0.76.3.1.195.10.7" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.15596"/>
+                </element>
+                <element name="hl7:code" datatype="CE" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.15597">
+                    <vocabulary code="45970-1" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:title" datatype="ST" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.15598">
+                    <text>Demographische Informationen</text>
+                </element>
+                <element name="hl7:text" datatype="SD.TEXT" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.15599"/>
+                <element name="hl7:entry" contains="1.2.276.0.76.3.1.195.10.8" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1632197">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1632198"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.1632199"/>
+                </element>
+                <element name="hl7:entry" contains="1.2.276.0.76.3.1.195.10.9" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1632200">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1632201"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.1632202"/>
+                </element>
+            </element>
+        </template>

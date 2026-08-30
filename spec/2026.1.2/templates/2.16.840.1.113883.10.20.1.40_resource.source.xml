@@ -1,0 +1,74 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.20.1.40" name="Comment" displayName="Comment" effectiveDate="2007-04-01T00:00:00" statusCode="pending" url="http://art-decor.org/decor/services/" ident="ccd1-" sdtc:dummy-1="urn:hl7-org:sdtc" xml:dummy-2="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-4="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance">
+    <desc language="en-US">
+        <h2>4.3 Comments</h2>
+        <p>The template identifier for a comment is 2.16.840.1.113883.10.20.1.40.</p>
+        <p>Used to contain comments associated with any of the data within the document. Whereas ASTM CCR enumerates all comments in the CCR Footer, CCD defines the comments within the section where they occur. CDA R2 represents comments as Acts.</p>
+        <p>
+            <b>CONF-502</b>: A CCD section <b>MAY</b> contain one or more comments, either as a clinical statement or nested under another clinical statement.<br/>
+            <b>CONF-503</b>: A comment (templateId 2.16.840.1.113883.10.20.1.40) <b>SHALL</b> be represented with <b>Act</b>.<br/>
+            <b>CONF-504</b>: The value for “<b>Act / @classCode</b>” in a comment <b>SHALL</b> be “ACT” 2.16.840.1.113883.5.6 ActClass <b>STATIC</b>.<br/>
+            <b>CONF-505</b>: The value for “<b>Act / @moodCode</b>” in a comment <b>SHALL</b> be “EVN” 2.16.840.1.113883.5.1001 ActMood <b>STATIC</b>.<br/>
+            <b>CONF-506</b>: A comment SHALL contain exactly one <b>Act / code</b>.<br/>
+            <b>CONF-507</b>: The value for “<b>Act / code</b>” in a comment <b>SHALL</b> be 48767-8 “Annotation comment” 2.16.840.1.113883.6.1 LOINC <b>STATIC</b>. </p>
+    </desc>
+    <classification type="cdaentrylevel"/>
+    <relationship type="SPEC" template="2.16.840.1.113883.10.12.301" flexibility="2005-09-07T00:00:00"/>
+    <context id="**"/>
+    <element name="hl7:act" id="2.16.840.1.113883.3.1937.777.4.9.1997">
+        <item label="CONF-503"/>
+        <attribute name="classCode" value="ACT" isOptional="false" id="2.16.840.1.113883.3.1937.777.4.9.1998">
+            <item label="CONF-504"/>
+        </attribute>
+        <attribute name="moodCode" value="EVN" isOptional="false" id="2.16.840.1.113883.3.1937.777.4.9.1999">
+            <item label="CONF-505"/>
+        </attribute>
+        <attribute name="negationInd" datatype="bl" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.2000"/>
+        <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.3.1937.777.4.9.2001">
+            <attribute name="root" value="2.16.840.1.113883.10.20.1.40" isOptional="false" id="2.16.840.1.113883.3.1937.777.4.9.2002"/>
+        </element>
+        <element name="hl7:id" minimumMultiplicity="0" maximumMultiplicity="*" datatype="II" id="2.16.840.1.113883.3.1937.777.4.9.2003"/>
+        <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="CD" isMandatory="true" id="2.16.840.1.113883.3.1937.777.4.9.2004">
+            <item label="CONF-507"/>
+            <vocabulary code="48767-8" codeSystem="2.16.840.1.113883.6.1" displayName="Annotation comment"/>
+        </element>
+        <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.3.1937.777.4.9.2005">
+            <desc language="en-US">ccr:Description</desc>
+        </element>
+        <element name="hl7:statusCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CS" id="2.16.840.1.113883.3.1937.777.4.9.2006">
+                    <!--valueSet name="ActStatus"-->
+            <vocabulary valueSet="2.16.840.1.113883.1.11.15933"/>
+        </element>
+        <element name="hl7:effectiveTime" minimumMultiplicity="0" maximumMultiplicity="1" datatype="IVL_TS" id="2.16.840.1.113883.3.1937.777.4.9.2007">
+            <desc language="en-US">ccr:DateTime</desc>
+        </element>
+        <element name="hl7:priorityCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.4.9.2008">
+                    <!--valueSet name="ActPriority"-->
+            <vocabulary valueSet="2.16.840.1.113883.1.11.16866"/>
+        </element>
+        <element name="hl7:languageCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CS" id="2.16.840.1.113883.3.1937.777.4.9.2009">
+                    <!--valueSet name="HumanLanguage"-->
+            <vocabulary valueSet="2.16.840.1.113883.1.11.11526"/>
+        </element>
+                <!-- begin CS associations -->
+                <!--contains name="CCDSubjectBody"-->
+        <element name="hl7:subject" minimumMultiplicity="0" maximumMultiplicity="1" contains="2.16.840.1.113883.3.1937.777.4.10.3" id="2.16.840.1.113883.3.1937.777.4.9.2010"/>
+                <!--<element name="hl7:specimen" minimumMultiplicity="0" maximumMultiplicity="*" contains="CDASpecimen"/>-->
+                <!--<element name="hl7:performer" minimumMultiplicity="0" maximumMultiplicity="*" contains="CCDPerformerBody"/>-->
+                <!--<element name="hl7:author" minimumMultiplicity="0" maximumMultiplicity="*" contains="CDAAuthorBody"/>-->
+                <!--<element name="hl7:informant" minimumMultiplicity="0" maximumMultiplicity="*" contains="CCDinformantBody"/>-->
+                <!--<element name="hl7:participant" minimumMultiplicity="0" maximumMultiplicity="*" contains="CCDParticipantBody"/>-->
+                <!--<element name="hl7:entryRelationship" minimumMultiplicity="0" maximumMultiplicity="*" contains="CCDClinicalStatement">
+                    <attribute name="typeCode" datatype="cs" isOptional="false">
+                        <vocabulary valueSet="x_ActRelationshipEntryRelationship"/>
+                    </attribute>
+                    <attribute name="contextConductionInd" datatype="bl" isOptional="true"/>
+                    <attribute name="inversionInd" datatype="bl" isOptional="true"/>
+                    <attribute name="negationInd" datatype="bl" isOptional="true"/>
+                    <element name="hl7:sequenceNumber" minimumMultiplicity="0" maximumMultiplicity="1" datatype="INT"/>
+                    <element name="hl7:seperatableInd" minimumMultiplicity="0" maximumMultiplicity="1" datatype="BL"/>
+                </element>-->
+                <!--<element name="hl7:reference" minimumMultiplicity="0" maximumMultiplicity="*" contains="CDAReference"/>-->
+                <!--<element name="hl7:precondition" minimumMultiplicity="0" maximumMultiplicity="*" contains="CCDPrecondition"/>-->
+                <!-- end CS associations -->
+    </element>
+</template>

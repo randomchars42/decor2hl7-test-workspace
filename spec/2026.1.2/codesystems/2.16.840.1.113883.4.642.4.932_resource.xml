@@ -1,0 +1,112 @@
+<codeSystems>
+    <repository url="http://art-decor.org/decor/services/" ident="ad5bbr-" referencedFrom="sxehealth-" projecttype="local">
+        <codeSystem id="2.16.840.1.113883.4.642.4.932" name="QuestionnaireItemUIControlCodes" displayName="Questionnaire Item UI Control Codes" effectiveDate="2019-10-30T00:00:00" statusCode="draft" versionLabel="4.0.1" canonicalUri="http://hl7.org/fhir/questionnaire-item-control" caseSensitive="true" language="de-DE">
+            <desc language="en-US">Starter set of user interface control/display mechanisms that might be used when rendering an item in a questionnaire.</desc>
+            <publishingAuthority name="HL7 International - Patient Care WG">
+                <addrLine type="uri">http://www.hl7.org/Special/committees/patientcare</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <codedConcept code="group" level="0" type="A" statusCode="active">
+                    <designation displayName="group" language="en-US" type="preferred"/>
+                    <desc language="en-US">UI controls relevant to organizing groups of questions</desc>
+                </codedConcept>
+                <codedConcept code="list" level="1" type="L" statusCode="active">
+                    <designation displayName="List" language="en-US" type="preferred"/>
+                    <desc language="en-US">Questions within the group should be listed sequentially</desc>
+                </codedConcept>
+                <codedConcept code="table" level="1" type="L" statusCode="active">
+                    <designation displayName="Vertical Answer Table" language="en-US" type="preferred"/>
+                    <desc language="en-US">Questions within the group are rows in the table with possible answers as columns. Used for 'choice' questions.</desc>
+                </codedConcept>
+                <codedConcept code="htable" level="1" type="L" statusCode="active">
+                    <designation displayName="Horizontal Answer Table" language="en-US" type="preferred"/>
+                    <desc language="en-US">Questions within the group are columns in the table with possible answers as rows. Used for 'choice' questions.</desc>
+                </codedConcept>
+                <codedConcept code="gtable" level="1" type="L" statusCode="active">
+                    <designation displayName="Group Table" language="en-US" type="preferred"/>
+                    <desc language="en-US">Questions within the group are columns in the table with each group repetition as a row. Used for single-answer questions.</desc>
+                </codedConcept>
+                <codedConcept code="atable" level="1" type="L" statusCode="active">
+                    <designation displayName="Answer Table" language="en-US" type="preferred"/>
+                    <desc language="en-US">This table has one row - for the question. Permitted answers are columns. Used for choice questions.</desc>
+                </codedConcept>
+                <codedConcept code="header" level="1" type="L" statusCode="active">
+                    <designation displayName="Header" language="en-US" type="preferred"/>
+                    <desc language="en-US">The group is to be continuously visible at the top of the questionnaire</desc>
+                </codedConcept>
+                <codedConcept code="footer" level="1" type="L" statusCode="active">
+                    <designation displayName="Footer" language="en-US" type="preferred"/>
+                    <desc language="en-US">The group is to be continuously visible at the bottom of the questionnaire</desc>
+                </codedConcept>
+                <codedConcept code="text" level="0" type="A" statusCode="active">
+                    <designation displayName="text" language="en-US" type="preferred"/>
+                    <desc language="en-US">UI controls relevant to rendering questionnaire text items</desc>
+                </codedConcept>
+                <codedConcept code="inline" level="1" type="L" statusCode="active">
+                    <designation displayName="In-line" language="en-US" type="preferred"/>
+                    <desc language="en-US">Text is displayed as a paragraph in a sequential position between sibling items (default behavior)</desc>
+                </codedConcept>
+                <codedConcept code="prompt" level="1" type="L" statusCode="active">
+                    <designation displayName="Prompt" language="en-US" type="preferred"/>
+                    <desc language="en-US">Text is displayed immediately below or within the answer-entry area of the containing question item (typically as a guide for what to enter)</desc>
+                </codedConcept>
+                <codedConcept code="unit" level="1" type="L" statusCode="active">
+                    <designation displayName="Unit" language="en-US" type="preferred"/>
+                    <desc language="en-US">Text is displayed adjacent (horizontally or vertically) to the answer space for the parent question, typically to indicate a unit of measure</desc>
+                </codedConcept>
+                <codedConcept code="lower" level="1" type="L" statusCode="active">
+                    <designation displayName="Lower-bound" language="en-US" type="preferred"/>
+                    <desc language="en-US">Text is displayed to the left of the set of answer choices or a scaling control for the parent question item to indicate the meaning of the 'lower' bound. E.g. 'Strongly disagree'</desc>
+                </codedConcept>
+                <codedConcept code="upper" level="1" type="L" statusCode="active">
+                    <designation displayName="Upper-bound" language="en-US" type="preferred"/>
+                    <desc language="en-US">Text is displayed to the right of the set of answer choices or a scaling control for the parent question item to indicate the meaning of the 'upper' bound. E.g. 'Strongly agree'</desc>
+                </codedConcept>
+                <codedConcept code="flyover" level="1" type="L" statusCode="active">
+                    <designation displayName="Fly-over" language="en-US" type="preferred"/>
+                    <desc language="en-US">Text is temporarily visible over top of an item if the mouse is positioned over top of the text for the containing item</desc>
+                </codedConcept>
+                <codedConcept code="help" level="1" type="L" statusCode="active">
+                    <designation displayName="Help-Button" language="en-US" type="preferred"/>
+                    <desc language="en-US">Text is displayed in a dialog box or similar control if invoked by pushing a button or some other UI-appropriate action to request 'help' for a question, group or the questionnaire as a whole (depending what the text is nested within)</desc>
+                </codedConcept>
+                <codedConcept code="question" level="0" type="A" statusCode="active">
+                    <designation displayName="question" language="en-US" type="preferred"/>
+                    <desc language="en-US">UI controls relevant to capturing question data</desc>
+                </codedConcept>
+                <codedConcept code="autocomplete" level="1" type="L" statusCode="active">
+                    <designation displayName="Auto-complete" language="en-US" type="preferred"/>
+                    <desc language="en-US">A control which provides a list of potential matches based on text entered into a control. Used for large choice sets where text-matching is an appropriate discovery mechanism.</desc>
+                </codedConcept>
+                <codedConcept code="drop-down" level="1" type="L" statusCode="active">
+                    <designation displayName="Drop down" language="en-US" type="preferred"/>
+                    <desc language="en-US">A control where an item (or multiple items) can be selected from a list that is only displayed when the user is editing the field.</desc>
+                </codedConcept>
+                <codedConcept code="check-box" level="1" type="L" statusCode="active">
+                    <designation displayName="Check-box" language="en-US" type="preferred"/>
+                    <desc language="en-US">A control where choices are listed with a box beside them. The box can be toggled to select or de-select a given choice. Multiple selections may be possible.</desc>
+                </codedConcept>
+                <codedConcept code="lookup" level="1" type="L" statusCode="active">
+                    <designation displayName="Lookup" language="en-US" type="preferred"/>
+                    <desc language="en-US">A control where editing an item spawns a separate dialog box or screen permitting a user to navigate, filter or otherwise discover an appropriate match. Useful for large choice sets where text matching is not an appropriate discovery mechanism. Such screens must generally be tuned for the specific choice list structure.</desc>
+                </codedConcept>
+                <codedConcept code="radio-button" level="1" type="L" statusCode="active">
+                    <designation displayName="Radio Button" language="en-US" type="preferred"/>
+                    <desc language="en-US">A control where choices are listed with a button beside them. The button can be toggled to select or de-select a given choice. Selecting one item deselects all others.</desc>
+                </codedConcept>
+                <codedConcept code="slider" level="1" type="L" statusCode="active">
+                    <designation displayName="Slider" language="en-US" type="preferred"/>
+                    <desc language="en-US">A control where an axis is displayed between the high and low values and the control can be visually manipulated to select a value anywhere on the axis.</desc>
+                </codedConcept>
+                <codedConcept code="spinner" level="1" type="L" statusCode="active">
+                    <designation displayName="Spinner" language="en-US" type="preferred"/>
+                    <desc language="en-US">A control where a list of numeric or other ordered values can be scrolled through via arrows.</desc>
+                </codedConcept>
+                <codedConcept code="text-box" level="1" type="L" statusCode="active">
+                    <designation displayName="Text Box" language="en-US" type="preferred"/>
+                    <desc language="en-US">A control where a user can type in their answer freely.</desc>
+                </codedConcept>
+            </conceptList>
+        </codeSystem>
+    </repository>
+</codeSystems>

@@ -1,0 +1,49 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:local="http://art-decor.org/local" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.20.22.4.115" name="ExternalDocumentReference" effectiveDate="2014-06-09T00:00:00" statusCode="draft" displayName="External Document Reference" versionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-" sdtc:dummy-1="urn:hl7-org:sdtc" local:dummy-2="http://art-decor.org/local" xml:dummy-3="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-5="urn:hl7-org:v3" xsi:dummy-6="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">Where it is necessary to reference an external clinical document, the External Document Reference template can be used to reference this external document. However, if the containing document is replacing or appending to another document in the same set, that relationship is set in the header, using ClinicalDocument/relatedDocument.</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.328" flexibility="2005-09-07T00:00:00"/>
+            <context id="**"/>
+            <element name="cda:externalDocument" id="2.16.840.1.113883.3.1937.99.3.9.3971">
+                <attribute name="classCode" value="DOCCLIN" id="2.16.840.1.113883.3.1937.99.3.9.3972">
+                    <desc language="en-US">SHALL contain exactly one [1..1] @classCode="DOCCLIN" Clinical Document (CodeSystem: HL7ActClass urn:oid:2.16.840.1.113883.5.6) (CONF:1098-31931).</desc>
+                    <item label="CONF:1098-31931"/>
+                </attribute>
+                <attribute name="moodCode" value="EVN" id="2.16.840.1.113883.3.1937.99.3.9.3973">
+                    <desc language="en-US">SHALL contain exactly one [1..1] @moodCode="EVN" Event (CodeSystem: ActMood urn:oid:2.16.840.1.113883.5.1001) (CONF:1098-31932).</desc>
+                    <item label="CONF:1098-31932"/>
+                </attribute>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                    <desc language="en-US">C-CDA R1.1 templateId root without an extension</desc>
+                    <item label="CONF:1198-32936"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.22.4.115" datatype="uid"/>
+                </element>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.3974">
+                    <desc language="en-US">SHALL contain exactly one [1..1] templateId (CONF:1098-32748) such that it</desc>
+                    <item label="CONF:1098-32748"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.22.4.115" id="2.16.840.1.113883.3.1937.99.3.9.3975">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.22.4.115" (CONF:1098-32750).</desc>
+                        <item label="CONF:1098-32750"/>
+                    </attribute>
+                    <attribute name="extension" value="2014-06-09" id="2.16.840.1.113883.3.1937.99.3.9.3976">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @extension="2014-06-09" (CONF:1098-32749).</desc>
+                        <item label="CONF:1098-32749"/>
+                    </attribute>
+                </element>
+                <element name="cda:id" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="false" id="2.16.840.1.113883.3.1937.99.3.9.3977">
+                    <desc language="en-US">SHALL contain exactly one [1..1] id (CONF:1098-32751).</desc>
+                    <item label="CONF:1098-32751"/>
+                </element>
+                <element name="cda:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="false" id="2.16.840.1.113883.3.1937.99.3.9.3978">
+                    <desc language="en-US">SHALL contain exactly one [1..1] code (CONF:1098-31933).</desc>
+                    <item label="CONF:1098-31933"/>
+                </element>
+                <element name="cda:setId" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.3979">
+                    <desc language="en-US">SHOULD contain zero or one [0..1] setId (CONF:1098-32752).</desc>
+                    <item label="CONF:1098-32752"/>
+                </element>
+                <element name="cda:versionNumber" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.3980">
+                    <desc language="en-US">SHOULD contain zero or one [0..1] versionNumber (CONF:1098-32753).</desc>
+                    <item label="CONF:1098-32753"/>
+                </element>
+            </element>
+        </template>

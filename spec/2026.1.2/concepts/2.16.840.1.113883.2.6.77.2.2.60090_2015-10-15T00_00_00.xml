@@ -1,0 +1,28 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.2.6.77.1.2" effectiveDate="2015-10-15T00:00:00" statusCode="draft" versionLabel="1.0" prefix="hl7de-" shortName="versicherungsangaben" iddisplay="hl7de-dataset-2" url="http://art-decor.org/decor/services/" ident="hl7de-"><!--
+ This is a view of the dataset "Versicherungs-Angaben" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">Versicherungs-Angaben</name>
+    <desc language="de-DE">Versicherungs-Angaben</desc>
+    <concept id="2.16.840.1.113883.2.6.77.2.2.60090" statusCode="draft" effectiveDate="2015-10-15T00:00:00" type="group" iddisplay="hl7de-dataelement-2.60090" shortName="versicherungsgesellschaft">
+        <implementation shortName="versicherungsgesellschaft" markdown="Versicherungsgesellschaft"/>
+        <name language="de-DE">Versicherungsgesellschaft</name>
+        <desc language="de-DE">Versicherungsgesellschaft</desc>
+        <concept id="2.16.840.1.113883.2.6.77.2.2.60100" statusCode="draft" effectiveDate="2015-10-15T00:00:00" type="item" iddisplay="hl7de-dataelement-2.60100" shortName="name">
+            <implementation shortName="name" markdown="Name der Versicherungsgesellschaft"/>
+            <name language="de-DE">Name</name>
+            <desc language="de-DE">Name der Versicherungsgesellschaft</desc>
+            <valueDomain type="string">
+                <example type="neutral">Wirzahlnalls</example>
+            </valueDomain>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.77.2.2.60110" statusCode="draft" effectiveDate="2015-10-15T00:00:00" type="item" iddisplay="hl7de-dataelement-2.60110" shortName="identifikation">
+            <implementation shortName="identifikation" markdown="Identifikation der Versicherungsgesellschaft"/>
+            <name language="de-DE">Identifikation</name>
+            <desc language="de-DE">Identifikation der Versicherungsgesellschaft</desc>
+            <comment language="de-DE">zum Beispiel Nummer + Typ Nummer EHIC Feld 7 'Identification number of the institution'</comment>
+            <valueDomain type="identifier"/>
+        </concept>
+    </concept>
+</dataset>

@@ -1,0 +1,56 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultLanguage="de-DE" id="1.2.276.0.76.10.2032" name="CDArecordTargetnnar" displayName="CDA recordTarget (nnar)" effectiveDate="2014-09-17T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" xml:dummy-1="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-3="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance">
+    <desc language="de-DE">Patient</desc>
+    <classification type="cdaheaderlevel"/>
+    <relationship type="SPEC" template="2.16.840.1.113883.10.12.101" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.101" tmname="CDArecordTarget" tmdisplayName="CDA recordTarget" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-"/>
+    <relationship type="ADAPT" template="1.2.276.0.76.10.2001" flexibility="2013-07-10T00:00:00" tmid="1.2.276.0.76.10.2001" tmname="HeaderRecordTarget" tmdisplayName="CDA recordTarget" tmeffectiveDate="2013-07-10T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+    <example>
+                <recordTarget>
+                    <patientRole>
+                        <id root="2.16.840.1.113883.2.4.6.3" extension="100202020"/>
+                        <addr use="H">
+                            <streetAddressLine>Raiffeisenstr. 30</streetAddressLine>
+                            <postalCode>39112</postalCode>
+                            <city>Magdeburg</city>
+                        </addr>
+                        <telecom value="tel:++493916367866"/>
+                        <patient>
+                            <name>
+                                <given>Jan</given>
+                                <family>Schmitz</family>
+                            </name>
+                            <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1"/>
+                            <birthTime value="19620219"/>
+                        </patient>
+                    </patientRole>
+                </recordTarget>
+            </example>
+    <element name="hl7:recordTarget" id="2.16.840.1.113883.2.6.60.3.9.1">
+                <attribute name="typeCode" value="RCT" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.25"/>
+                <attribute name="contextControlCode" value="OP" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.26"/>
+                <element name="hl7:patientRole" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.2">
+                    <attribute name="classCode" value="PAT" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.27"/>
+                    <include ref="1.2.276.0.76.10.90024" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R"/>
+                    <element name="hl7:addr" minimumMultiplicity="0" maximumMultiplicity="1" datatype="AD" id="2.16.840.1.113883.2.6.60.3.9.7"/>
+                    <element name="hl7:telecom" minimumMultiplicity="0" maximumMultiplicity="*" datatype="TEL" id="2.16.840.1.113883.2.6.60.3.9.28"/>
+                    <element name="hl7:patient" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.3">
+                        <example>
+                            <patient classCode="PSN" determinerCode="INSTANCE">
+                                <name><!-- ... --></name>
+                                <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1"/>
+                                <birthTime value="19620219"/>
+                            </patient>
+                        </example>
+                        <attribute name="classCode" value="PSN" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.29"/>
+                        <attribute name="determinerCode" value="INSTANCE" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.30"/>
+                        <!-- Element name -->
+                        <element name="hl7:name" minimumMultiplicity="1" maximumMultiplicity="*" conformance="R" datatype="PN" id="2.16.840.1.113883.2.6.60.3.9.4"/>
+                        <!-- Element administrativeGenderCode -->
+                        <element name="hl7:administrativeGenderCode" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="CE" id="2.16.840.1.113883.2.6.60.3.9.5">
+                            <vocabulary valueSet="2.16.840.1.113883.1.11.1"/>
+                        </element>
+                        <!-- Element birthTime -->
+                        <element name="hl7:birthTime" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="TS" id="2.16.840.1.113883.2.6.60.3.9.6"/>
+                    </element>
+                </element>
+            </element>
+</template>

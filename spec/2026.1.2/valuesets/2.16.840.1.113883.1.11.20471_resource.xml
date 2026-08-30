@@ -1,0 +1,193 @@
+<valueSets>
+    <repository url="http://art-decor.org/decor/services/" ident="ad2bbr-" referencedFrom="ch-pcc-" projecttype="local">
+        <valueSet id="2.16.840.1.113883.1.11.20471" name="SecurityControlObservationValue" displayName="SecurityControlObservationValue" effectiveDate="2018-08-12T00:00:00" statusCode="final" versionLabel="DEFN=UV=VO=1422-20180812">
+            <desc language="en-US">
+                <p>
+                    <b>History description 2014-03-26: </b>Lock all vaue sets untouched since 2014-03-26 to trackingId 2014T1_2014_03_26</p>
+                <b>description: </b>
+                <p>Security observation values used to indicate security control metadata. V:SecurityControl is the union of V:SecurityPolicy,V:ObligationPolicy, V:RefrainPolicy, V:PurposeOfUse, and V:GeneralPurpose of Use used to
+                    populate the SecurityControlObservationValue attribute in order to convey one or more nonhierarchical security control metadata dictating handling caveats, purpose of use, dissemination controls and other refrain policies, and obligations to which a custodian or receiver is required to comply.</p>
+            </desc>
+            <sourceCodeSystem id="2.16.840.1.113883.5.4" identifierName="Act Code" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-ActCode" canonicalUriDSTU2="http://hl7.org/fhir/v3/ActCode" canonicalUriSTU3="http://hl7.org/fhir/v3/ActCode" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-ActCode" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-ActCode" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-ActCode" context="external/hl7intl/v3/v3-ActCode"/>
+            <sourceCodeSystem id="2.16.840.1.113883.5.8" identifierName="Act Reason" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-ActReason" canonicalUriDSTU2="http://hl7.org/fhir/v3/ActReason" canonicalUriSTU3="http://hl7.org/fhir/v3/ActReason" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-ActReason" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-ActReason" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-ActReason" context="external/hl7intl/v3/v3-ActReason"/>
+            <publishingAuthority name="HL7" inherited="project">
+                <addrLine>Health Level Seven International</addrLine>
+                <addrLine>455 E. Eisenhower PKWY STE 300 # 025</addrLine>
+                <addrLine>Ann Arbor, MI 48108</addrLine>
+                <addrLine>USA</addrLine>
+                <addrLine>T +1 734 677 7777</addrLine>
+                <addrLine>F +1 734 677 6622</addrLine>
+                <addrLine>E info@hl7.org</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <concept code="SecurityPolicy" codeSystem="2.16.840.1.113883.5.4" displayName="security policy" level="0" type="S"/>
+                <concept code="AUTHPOL" codeSystem="2.16.840.1.113883.5.4" displayName="authorization policy" level="1" type="S"/>
+                <concept code="ACCESSCONSCHEME" codeSystem="2.16.840.1.113883.5.4" displayName="access control scheme" level="2" type="L"/>
+                <concept code="DELEPOL" codeSystem="2.16.840.1.113883.5.4" displayName="delegation policy" level="1" type="L"/>
+                <concept code="ObligationPolicy" codeSystem="2.16.840.1.113883.5.4" displayName="obligation policy" level="1" type="S"/>
+                <concept code="ANONY" codeSystem="2.16.840.1.113883.5.4" displayName="anonymize" level="2" type="L"/>
+                <concept code="AOD" codeSystem="2.16.840.1.113883.5.4" displayName="accounting of disclosure" level="2" type="L"/>
+                <concept code="AUDIT" codeSystem="2.16.840.1.113883.5.4" displayName="audit" level="2" type="L"/>
+                <concept code="AUDTR" codeSystem="2.16.840.1.113883.5.4" displayName="audit trail" level="2" type="L"/>
+                <concept code="CPLYCC" codeSystem="2.16.840.1.113883.5.4" displayName="comply with confidentiality code" level="2" type="L"/>
+                <concept code="CPLYCD" codeSystem="2.16.840.1.113883.5.4" displayName="comply with consent directive" level="2" type="L"/>
+                <concept code="CPLYJPP" codeSystem="2.16.840.1.113883.5.4" displayName="comply with jurisdictional privacy policy" level="2" type="L"/>
+                <concept code="CPLYOPP" codeSystem="2.16.840.1.113883.5.4" displayName="comply with organizational privacy policy" level="2" type="L"/>
+                <concept code="CPLYOSP" codeSystem="2.16.840.1.113883.5.4" displayName="comply with organizational security policy" level="2" type="L"/>
+                <concept code="CPLYPOL" codeSystem="2.16.840.1.113883.5.4" displayName="comply with policy" level="2" type="L"/>
+                <concept code="DECLASSIFYLABEL" codeSystem="2.16.840.1.113883.5.4" displayName="declassify security label" level="2" type="L"/>
+                <concept code="DEID" codeSystem="2.16.840.1.113883.5.4" displayName="deidentify" level="2" type="L"/>
+                <concept code="DELAU" codeSystem="2.16.840.1.113883.5.4" displayName="delete after use" level="2" type="L"/>
+                <concept code="DOWNGRDLABEL" codeSystem="2.16.840.1.113883.5.4" displayName="downgrade security label" level="2" type="L"/>
+                <concept code="DRIVLABEL" codeSystem="2.16.840.1.113883.5.4" displayName="derive security label" level="2" type="L"/>
+                <concept code="ENCRYPT" codeSystem="2.16.840.1.113883.5.4" displayName="encrypt" level="2" type="S"/>
+                <concept code="ENCRYPTR" codeSystem="2.16.840.1.113883.5.4" displayName="encrypt at rest" level="3" type="L"/>
+                <concept code="ENCRYPTT" codeSystem="2.16.840.1.113883.5.4" displayName="encrypt in transit" level="3" type="L"/>
+                <concept code="ENCRYPTU" codeSystem="2.16.840.1.113883.5.4" displayName="encrypt in use" level="3" type="L"/>
+                <concept code="HUAPRV" codeSystem="2.16.840.1.113883.5.4" displayName="human approval" level="2" type="L"/>
+                <concept code="LABEL" codeSystem="2.16.840.1.113883.5.4" displayName="assign security label" level="2" type="L"/>
+                <concept code="MASK" codeSystem="2.16.840.1.113883.5.4" displayName="mask" level="2" type="L"/>
+                <concept code="MINEC" codeSystem="2.16.840.1.113883.5.4" displayName="minimum necessary" level="2" type="L"/>
+                <concept code="PERSISTLABEL" codeSystem="2.16.840.1.113883.5.4" displayName="persist security label" level="2" type="L"/>
+                <concept code="PRIVMARK" codeSystem="2.16.840.1.113883.5.4" displayName="privacy mark" level="2" type="L"/>
+                <concept code="PSEUD" codeSystem="2.16.840.1.113883.5.4" displayName="pseudonymize" level="2" type="L"/>
+                <concept code="REDACT" codeSystem="2.16.840.1.113883.5.4" displayName="redact" level="2" type="L"/>
+                <concept code="UPGRDLABEL" codeSystem="2.16.840.1.113883.5.4" displayName="upgrade security label" level="2" type="L"/>
+                <concept code="RefrainPolicy" codeSystem="2.16.840.1.113883.5.4" displayName="refrain policy" level="1" type="S"/>
+                <concept code="NOAUTH" codeSystem="2.16.840.1.113883.5.4" displayName="no disclosure without subject authorization" level="2" type="L"/>
+                <concept code="NOCOLLECT" codeSystem="2.16.840.1.113883.5.4" displayName="no collection" level="2" type="L"/>
+                <concept code="NODSCLCD" codeSystem="2.16.840.1.113883.5.4" displayName="no disclosure without consent directive" level="2" type="L"/>
+                <concept code="NODSCLCDS" codeSystem="2.16.840.1.113883.5.4" displayName="no disclosure without information subject's consent directive" level="2" type="L"/>
+                <concept code="NOINTEGRATE" codeSystem="2.16.840.1.113883.5.4" displayName="no integration" level="2" type="L"/>
+                <concept code="NOLIST" codeSystem="2.16.840.1.113883.5.4" displayName="no unlisted entity disclosure" level="2" type="L"/>
+                <concept code="NOMOU" codeSystem="2.16.840.1.113883.5.4" displayName="no disclosure without MOU" level="2" type="L"/>
+                <concept code="NOORGPOL" codeSystem="2.16.840.1.113883.5.4" displayName="no disclosure without organizational authorization" level="2" type="L"/>
+                <concept code="NOPAT" codeSystem="2.16.840.1.113883.5.4" displayName="no disclosure to patient, family or caregivers without attending provider's authorization" level="2" type="L"/>
+                <concept code="NOPERSISTP" codeSystem="2.16.840.1.113883.5.4" displayName="no collection beyond purpose of use" level="2" type="L"/>
+                <concept code="NORDSCLCD" codeSystem="2.16.840.1.113883.5.4" displayName="no redisclosure without consent directive" level="2" type="L"/>
+                <concept code="NORDSCLCDS" codeSystem="2.16.840.1.113883.5.4" displayName="no redisclosure without information subject's consent directive" level="2" type="L"/>
+                <concept code="NORDSCLW" codeSystem="2.16.840.1.113883.5.4" displayName="no disclosure without jurisdictional authorization" level="2" type="L"/>
+                <concept code="NORELINK" codeSystem="2.16.840.1.113883.5.4" displayName="no relinking" level="2" type="L"/>
+                <concept code="NOREUSE" codeSystem="2.16.840.1.113883.5.4" displayName="no reuse beyond purpose of use" level="2" type="L"/>
+                <concept code="NOVIP" codeSystem="2.16.840.1.113883.5.4" displayName="no unauthorized VIP disclosure" level="2" type="L"/>
+                <concept code="ORCON" codeSystem="2.16.840.1.113883.5.4" displayName="no disclosure without originator authorization" level="2" type="L"/>
+                <concept code="ObligationPolicy" codeSystem="2.16.840.1.113883.5.4" displayName="obligation policy" level="0" type="S"/>
+                <concept code="ANONY" codeSystem="2.16.840.1.113883.5.4" displayName="anonymize" level="1" type="L"/>
+                <concept code="AOD" codeSystem="2.16.840.1.113883.5.4" displayName="accounting of disclosure" level="1" type="L"/>
+                <concept code="AUDIT" codeSystem="2.16.840.1.113883.5.4" displayName="audit" level="1" type="L"/>
+                <concept code="AUDTR" codeSystem="2.16.840.1.113883.5.4" displayName="audit trail" level="1" type="L"/>
+                <concept code="CPLYCC" codeSystem="2.16.840.1.113883.5.4" displayName="comply with confidentiality code" level="1" type="L"/>
+                <concept code="CPLYCD" codeSystem="2.16.840.1.113883.5.4" displayName="comply with consent directive" level="1" type="L"/>
+                <concept code="CPLYJPP" codeSystem="2.16.840.1.113883.5.4" displayName="comply with jurisdictional privacy policy" level="1" type="L"/>
+                <concept code="CPLYOPP" codeSystem="2.16.840.1.113883.5.4" displayName="comply with organizational privacy policy" level="1" type="L"/>
+                <concept code="CPLYOSP" codeSystem="2.16.840.1.113883.5.4" displayName="comply with organizational security policy" level="1" type="L"/>
+                <concept code="CPLYPOL" codeSystem="2.16.840.1.113883.5.4" displayName="comply with policy" level="1" type="L"/>
+                <concept code="DECLASSIFYLABEL" codeSystem="2.16.840.1.113883.5.4" displayName="declassify security label" level="1" type="L"/>
+                <concept code="DEID" codeSystem="2.16.840.1.113883.5.4" displayName="deidentify" level="1" type="L"/>
+                <concept code="DELAU" codeSystem="2.16.840.1.113883.5.4" displayName="delete after use" level="1" type="L"/>
+                <concept code="DOWNGRDLABEL" codeSystem="2.16.840.1.113883.5.4" displayName="downgrade security label" level="1" type="L"/>
+                <concept code="DRIVLABEL" codeSystem="2.16.840.1.113883.5.4" displayName="derive security label" level="1" type="L"/>
+                <concept code="ENCRYPT" codeSystem="2.16.840.1.113883.5.4" displayName="encrypt" level="1" type="S"/>
+                <concept code="ENCRYPTR" codeSystem="2.16.840.1.113883.5.4" displayName="encrypt at rest" level="2" type="L"/>
+                <concept code="ENCRYPTT" codeSystem="2.16.840.1.113883.5.4" displayName="encrypt in transit" level="2" type="L"/>
+                <concept code="ENCRYPTU" codeSystem="2.16.840.1.113883.5.4" displayName="encrypt in use" level="2" type="L"/>
+                <concept code="HUAPRV" codeSystem="2.16.840.1.113883.5.4" displayName="human approval" level="1" type="L"/>
+                <concept code="LABEL" codeSystem="2.16.840.1.113883.5.4" displayName="assign security label" level="1" type="L"/>
+                <concept code="MASK" codeSystem="2.16.840.1.113883.5.4" displayName="mask" level="1" type="L"/>
+                <concept code="MINEC" codeSystem="2.16.840.1.113883.5.4" displayName="minimum necessary" level="1" type="L"/>
+                <concept code="PERSISTLABEL" codeSystem="2.16.840.1.113883.5.4" displayName="persist security label" level="1" type="L"/>
+                <concept code="PRIVMARK" codeSystem="2.16.840.1.113883.5.4" displayName="privacy mark" level="1" type="L"/>
+                <concept code="PSEUD" codeSystem="2.16.840.1.113883.5.4" displayName="pseudonymize" level="1" type="L"/>
+                <concept code="REDACT" codeSystem="2.16.840.1.113883.5.4" displayName="redact" level="1" type="L"/>
+                <concept code="UPGRDLABEL" codeSystem="2.16.840.1.113883.5.4" displayName="upgrade security label" level="1" type="L"/>
+                <concept code="RefrainPolicy" codeSystem="2.16.840.1.113883.5.4" displayName="refrain policy" level="0" type="S"/>
+                <concept code="NOAUTH" codeSystem="2.16.840.1.113883.5.4" displayName="no disclosure without subject authorization" level="1" type="L"/>
+                <concept code="NOCOLLECT" codeSystem="2.16.840.1.113883.5.4" displayName="no collection" level="1" type="L"/>
+                <concept code="NODSCLCD" codeSystem="2.16.840.1.113883.5.4" displayName="no disclosure without consent directive" level="1" type="L"/>
+                <concept code="NODSCLCDS" codeSystem="2.16.840.1.113883.5.4" displayName="no disclosure without information subject's consent directive" level="1" type="L"/>
+                <concept code="NOINTEGRATE" codeSystem="2.16.840.1.113883.5.4" displayName="no integration" level="1" type="L"/>
+                <concept code="NOLIST" codeSystem="2.16.840.1.113883.5.4" displayName="no unlisted entity disclosure" level="1" type="L"/>
+                <concept code="NOMOU" codeSystem="2.16.840.1.113883.5.4" displayName="no disclosure without MOU" level="1" type="L"/>
+                <concept code="NOORGPOL" codeSystem="2.16.840.1.113883.5.4" displayName="no disclosure without organizational authorization" level="1" type="L"/>
+                <concept code="NOPAT" codeSystem="2.16.840.1.113883.5.4" displayName="no disclosure to patient, family or caregivers without attending provider's authorization" level="1" type="L"/>
+                <concept code="NOPERSISTP" codeSystem="2.16.840.1.113883.5.4" displayName="no collection beyond purpose of use" level="1" type="L"/>
+                <concept code="NORDSCLCD" codeSystem="2.16.840.1.113883.5.4" displayName="no redisclosure without consent directive" level="1" type="L"/>
+                <concept code="NORDSCLCDS" codeSystem="2.16.840.1.113883.5.4" displayName="no redisclosure without information subject's consent directive" level="1" type="L"/>
+                <concept code="NORDSCLW" codeSystem="2.16.840.1.113883.5.4" displayName="no disclosure without jurisdictional authorization" level="1" type="L"/>
+                <concept code="NORELINK" codeSystem="2.16.840.1.113883.5.4" displayName="no relinking" level="1" type="L"/>
+                <concept code="NOREUSE" codeSystem="2.16.840.1.113883.5.4" displayName="no reuse beyond purpose of use" level="1" type="L"/>
+                <concept code="NOVIP" codeSystem="2.16.840.1.113883.5.4" displayName="no unauthorized VIP disclosure" level="1" type="L"/>
+                <concept code="ORCON" codeSystem="2.16.840.1.113883.5.4" displayName="no disclosure without originator authorization" level="1" type="L"/>
+                <concept code="PurposeOfUse" codeSystem="2.16.840.1.113883.5.8" displayName="purpose of use" level="0" type="S"/>
+                <concept code="HMARKT" codeSystem="2.16.840.1.113883.5.8" displayName="healthcare marketing" level="1" type="L"/>
+                <concept code="HOPERAT" codeSystem="2.16.840.1.113883.5.8" displayName="healthcare operations" level="1" type="S"/>
+                <concept code="CAREMGT" codeSystem="2.16.840.1.113883.5.8" displayName="care management" level="2" type="L"/>
+                <concept code="DONAT" codeSystem="2.16.840.1.113883.5.8" displayName="donation" level="2" type="L"/>
+                <concept code="FRAUD" codeSystem="2.16.840.1.113883.5.8" displayName="fraud" level="2" type="L"/>
+                <concept code="GOV" codeSystem="2.16.840.1.113883.5.8" displayName="government" level="2" type="L"/>
+                <concept code="HACCRED" codeSystem="2.16.840.1.113883.5.8" displayName="health accreditation" level="2" type="L"/>
+                <concept code="HCOMPL" codeSystem="2.16.840.1.113883.5.8" displayName="health compliance" level="2" type="L"/>
+                <concept code="HDECD" codeSystem="2.16.840.1.113883.5.8" displayName="decedent" level="2" type="L"/>
+                <concept code="HDIRECT" codeSystem="2.16.840.1.113883.5.8" displayName="directory" level="2" type="L"/>
+                <concept code="HDM" codeSystem="2.16.840.1.113883.5.8" displayName="healthcare delivery management" level="2" type="L"/>
+                <concept code="HLEGAL" codeSystem="2.16.840.1.113883.5.8" displayName="legal" level="2" type="L"/>
+                <concept code="HOUTCOMS" codeSystem="2.16.840.1.113883.5.8" displayName="health outcome measure" level="2" type="L"/>
+                <concept code="HPRGRP" codeSystem="2.16.840.1.113883.5.8" displayName="health program reporting" level="2" type="L"/>
+                <concept code="HQUALIMP" codeSystem="2.16.840.1.113883.5.8" displayName="health quality improvement" level="2" type="L"/>
+                <concept code="HSYSADMIN" codeSystem="2.16.840.1.113883.5.8" displayName="health system administration" level="2" type="S"/>
+                <concept code="LABELING" codeSystem="2.16.840.1.113883.5.8" displayName="labeling" level="3" type="L"/>
+                <concept code="METAMGT" codeSystem="2.16.840.1.113883.5.8" displayName="metadata management" level="3" type="L"/>
+                <concept code="MEMADMIN" codeSystem="2.16.840.1.113883.5.8" displayName="member administration" level="2" type="L"/>
+                <concept code="MILCDM" codeSystem="2.16.840.1.113883.5.8" displayName="military command" level="2" type="L"/>
+                <concept code="PATADMIN" codeSystem="2.16.840.1.113883.5.8" displayName="patient administration" level="2" type="L"/>
+                <concept code="PATSFTY" codeSystem="2.16.840.1.113883.5.8" displayName="patient safety" level="2" type="L"/>
+                <concept code="PERFMSR" codeSystem="2.16.840.1.113883.5.8" displayName="performance measure" level="2" type="L"/>
+                <concept code="RECORDMGT" codeSystem="2.16.840.1.113883.5.8" displayName="records management" level="2" type="L"/>
+                <concept code="SYSDEV" codeSystem="2.16.840.1.113883.5.8" displayName="system development" level="2" type="S"/>
+                <concept code="HTEST" codeSystem="2.16.840.1.113883.5.8" displayName="test health data" level="3" type="L"/>
+                <concept code="TRAIN" codeSystem="2.16.840.1.113883.5.8" displayName="training" level="2" type="L"/>
+                <concept code="HPAYMT" codeSystem="2.16.840.1.113883.5.8" displayName="healthcare payment" level="1" type="S"/>
+                <concept code="CLMATTCH" codeSystem="2.16.840.1.113883.5.8" displayName="claim attachment" level="2" type="L"/>
+                <concept code="COVAUTH" codeSystem="2.16.840.1.113883.5.8" displayName="coverage authorization" level="2" type="L"/>
+                <concept code="COVERAGE" codeSystem="2.16.840.1.113883.5.8" displayName="coverage under policy or program" level="2" type="S"/>
+                <concept code="ELIGDTRM" codeSystem="2.16.840.1.113883.5.8" displayName="eligibility determination" level="3" type="L"/>
+                <concept code="ELIGVER" codeSystem="2.16.840.1.113883.5.8" displayName="eligibility verification" level="3" type="L"/>
+                <concept code="ENROLLM" codeSystem="2.16.840.1.113883.5.8" displayName="enrollment" level="3" type="L"/>
+                <concept code="MILDCRG" codeSystem="2.16.840.1.113883.5.8" displayName="military discharge" level="3" type="L"/>
+                <concept code="REMITADV" codeSystem="2.16.840.1.113883.5.8" displayName="remittance advice" level="2" type="L"/>
+                <concept code="HRESCH" codeSystem="2.16.840.1.113883.5.8" displayName="healthcare research" level="1" type="S"/>
+                <concept code="BIORCH" codeSystem="2.16.840.1.113883.5.8" displayName="biomedical research" level="2" type="L"/>
+                <concept code="CLINTRCH" codeSystem="2.16.840.1.113883.5.8" displayName="clinical trial research" level="2" type="S"/>
+                <concept code="CLINTRCHNPC" codeSystem="2.16.840.1.113883.5.8" displayName="clinical trial research without patient care" level="3" type="L"/>
+                <concept code="CLINTRCHPC" codeSystem="2.16.840.1.113883.5.8" displayName="clinical trial research with patient care" level="3" type="L"/>
+                <concept code="PRECLINTRCH" codeSystem="2.16.840.1.113883.5.8" displayName="preclinical trial research" level="3" type="L"/>
+                <concept code="DSRCH" codeSystem="2.16.840.1.113883.5.8" displayName="disease specific healthcare research" level="2" type="L"/>
+                <concept code="POARCH" codeSystem="2.16.840.1.113883.5.8" displayName="population origins or ancestry healthcare research" level="2" type="L"/>
+                <concept code="TRANSRCH" codeSystem="2.16.840.1.113883.5.8" displayName="translational healthcare research" level="2" type="L"/>
+                <concept code="PATRQT" codeSystem="2.16.840.1.113883.5.8" displayName="patient requested" level="1" type="S"/>
+                <concept code="FAMRQT" codeSystem="2.16.840.1.113883.5.8" displayName="family requested" level="2" type="L"/>
+                <concept code="PWATRNY" codeSystem="2.16.840.1.113883.5.8" displayName="power of attorney" level="2" type="L"/>
+                <concept code="SUPNWK" codeSystem="2.16.840.1.113883.5.8" displayName="support network" level="2" type="L"/>
+                <concept code="PUBHLTH" codeSystem="2.16.840.1.113883.5.8" displayName="public health" level="1" type="S"/>
+                <concept code="DISASTER" codeSystem="2.16.840.1.113883.5.8" displayName="disaster" level="2" type="L"/>
+                <concept code="THREAT" codeSystem="2.16.840.1.113883.5.8" displayName="threat" level="2" type="L"/>
+                <concept code="TREAT" codeSystem="2.16.840.1.113883.5.8" displayName="treatment" level="1" type="S"/>
+                <concept code="CLINTRL" codeSystem="2.16.840.1.113883.5.8" displayName="clinical trial" level="2" type="L"/>
+                <concept code="COC" codeSystem="2.16.840.1.113883.5.8" displayName="coordination of care" level="2" type="L"/>
+                <concept code="ETREAT" codeSystem="2.16.840.1.113883.5.8" displayName="Emergency Treatment" level="2" type="S"/>
+                <concept code="BTG" codeSystem="2.16.840.1.113883.5.8" displayName="break the glass" level="3" type="L"/>
+                <concept code="ERTREAT" codeSystem="2.16.840.1.113883.5.8" displayName="emergency room treatment" level="3" type="L"/>
+                <concept code="POPHLTH" codeSystem="2.16.840.1.113883.5.8" displayName="population health" level="2" type="L"/>
+                <concept code="COVERAGE" codeSystem="2.16.840.1.113883.5.8" displayName="coverage under policy or program" level="0" type="S"/>
+                <concept code="ETREAT" codeSystem="2.16.840.1.113883.5.8" displayName="Emergency Treatment" level="0" type="L"/>
+                <concept code="HMARKT" codeSystem="2.16.840.1.113883.5.8" displayName="healthcare marketing" level="0" type="L"/>
+                <concept code="HOPERAT" codeSystem="2.16.840.1.113883.5.8" displayName="healthcare operations" level="0" type="S"/>
+                <concept code="HPAYMT" codeSystem="2.16.840.1.113883.5.8" displayName="healthcare payment" level="0" type="S"/>
+                <concept code="HRESCH" codeSystem="2.16.840.1.113883.5.8" displayName="healthcare research" level="0" type="S"/>
+                <concept code="PATRQT" codeSystem="2.16.840.1.113883.5.8" displayName="patient requested" level="0" type="S"/>
+                <concept code="PUBHLTH" codeSystem="2.16.840.1.113883.5.8" displayName="public health" level="0" type="S"/>
+                <concept code="TREAT" codeSystem="2.16.840.1.113883.5.8" displayName="treatment" level="0" type="S"/>
+            </conceptList>
+        </valueSet>
+    </repository>
+</valueSets>

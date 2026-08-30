@@ -1,0 +1,23 @@
+<valueSets>
+    <repository url="http://art-decor.org/decor/services/" ident="aktin-" referencedFrom="dguvbbr-" projecttype="local">
+        <valueSet id="1.2.276.0.76.11.74" name="Unfallursache-icd" displayName="Unfallursache (ICD)" statusCode="draft" effectiveDate="2017-03-01T00:00:00">
+            <desc language="de-DE">ICD10 Codes (Kategorien) für Unfallursache</desc>
+            <sourceCodeSystem id="1.2.276.0.76.5.74" identifierName="" canonicalUri="urn:oid:1.2.276.0.76.5.74" canonicalUriDSTU2="urn:oid:1.2.276.0.76.5.74" canonicalUriSTU3="urn:oid:1.2.276.0.76.5.74" canonicalUriR4="urn:oid:1.2.276.0.76.5.74" canonicalUriR4B="urn:oid:1.2.276.0.76.5.74" canonicalUriR5="urn:oid:1.2.276.0.76.5.74"/>
+            <sourceCodeSystem id="2.16.840.1.113883.5.1008" identifierName="Null Flavor" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriDSTU2="http://hl7.org/fhir/v3/NullFlavor" canonicalUriSTU3="http://hl7.org/fhir/v3/NullFlavor" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" context="external/hl7intl/v3/v3-NullFlavor"/>
+            <publishingAuthority name="AKTIN e. V." inherited="project">
+                <addrLine>c/o Uniklinik RWTH Aachen</addrLine>
+                <addrLine>Institut für Medizinische Informatik</addrLine>
+                <addrLine>Pauwelsstraße 35</addrLine>
+                <addrLine>52074 Aachen</addrLine>
+                <addrLine type="phone">Tel. +49 391 67 28186</addrLine>
+                <addrLine type="email">office@aktin.org</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <concept code="V01-X59" codeSystem="1.2.276.0.76.5.74" displayName="Unfall" level="0" type="L"/>
+                <concept code="X60-X84" codeSystem="1.2.276.0.76.5.74" displayName="Vorsätzliche Selbstbeschädigung" level="0" type="L"/>
+                <concept code="X85-Y09" codeSystem="1.2.276.0.76.5.74" displayName="Tätlicher Angriff" level="0" type="L"/>
+                <exception code="OTH" codeSystem="2.16.840.1.113883.5.1008" displayName="Andere" level="0" type="L"/>
+            </conceptList>
+        </valueSet>
+    </repository>
+</valueSets>

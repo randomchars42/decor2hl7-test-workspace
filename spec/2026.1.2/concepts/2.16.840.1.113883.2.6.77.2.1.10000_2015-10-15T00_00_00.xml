@@ -1,0 +1,77 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.2.6.77.1.1" effectiveDate="2015-10-15T00:00:00" statusCode="draft" versionLabel="1.0" lastModifiedDate="2024-02-07T11:32:47" prefix="hl7de-" shortName="demografische_angaben" iddisplay="hl7de-dataset-1" url="http://art-decor.org/decor/services/" ident="hl7de-"><!--
+ This is a view of the dataset "Demografische Angaben" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">Demografische Angaben</name>
+    <desc language="de-DE">Demografische Angaben</desc>
+    <concept id="2.16.840.1.113883.2.6.77.2.1.10000" statusCode="draft" effectiveDate="2015-10-15T00:00:00" lastModifiedDate="2024-02-07T11:23:24" type="group" iddisplay="hl7de-dataelement-1.10000" shortName="namen">
+        <implementation shortName="namen" markdown="Details zum Namen"/>
+        <name language="de-DE">Namen</name>
+        <desc language="de-DE">Details zum Namen</desc>
+        <concept id="2.16.840.1.113883.2.6.77.2.1.10010" statusCode="draft" effectiveDate="2015-10-15T00:00:00" type="item" iddisplay="hl7de-dataelement-1.10010" shortName="anrede">
+            <implementation shortName="anrede" markdown="Anrede"/>
+            <name language="de-DE">Anrede</name>
+            <desc language="de-DE">Anrede</desc>
+            <valueDomain type="string">
+                <example type="neutral">Herr</example>
+            </valueDomain>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.77.2.1.10020" statusCode="draft" effectiveDate="2015-10-15T00:00:00" type="item" iddisplay="hl7de-dataelement-1.10020" shortName="vornamen">
+            <implementation shortName="vornamen" markdown="Sammlung offizieller Vornamen"/>
+            <name language="de-DE">Vornamen</name>
+            <desc language="de-DE">Sammlung offizieller Vornamen</desc>
+            <valueDomain type="string">
+                <example type="neutral">Johanna Henriette Maria</example>
+            </valueDomain>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.77.2.1.10040" statusCode="draft" effectiveDate="2015-10-15T00:00:00" type="item" iddisplay="hl7de-dataelement-1.10040" shortName="rufname">
+            <implementation shortName="rufname" markdown="Name einer Person, der kein offizieller Name ist"/>
+            <name language="de-DE">Rufname</name>
+            <desc language="de-DE">Name einer Person, der kein offizieller Name ist</desc>
+            <valueDomain type="string">
+                <example type="neutral">Günni</example>
+            </valueDomain>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.77.2.1.10050" statusCode="draft" effectiveDate="2015-10-15T00:00:00" lastModifiedDate="2024-02-07T11:23:24" type="group" iddisplay="hl7de-dataelement-1.10050" shortName="nachnamen">
+            <implementation shortName="nachnamen" markdown="Nachnamen"/>
+            <name language="de-DE">Nachnamen</name>
+            <desc language="de-DE">Nachnamen</desc>
+            <concept id="2.16.840.1.113883.2.6.77.2.1.10060" statusCode="draft" effectiveDate="2015-10-15T00:00:00" type="item" iddisplay="hl7de-dataelement-1.10060" shortName="type_name">
+                <implementation shortName="type_name" markdown="Angabe zur Funktion des Namens"/>
+                <name language="de-DE">Type Name</name>
+                <desc language="de-DE">Angabe zur Funktion des Namens</desc>
+                <valueDomain type="code">
+                    <conceptList id="2.16.840.1.113883.2.6.77.2.1.10060.0"/>
+                    <example type="neutral">Geburtsname</example>
+                </valueDomain>
+            </concept>
+            <concept id="2.16.840.1.113883.2.6.77.2.1.10070" statusCode="draft" effectiveDate="2015-10-15T00:00:00" type="item" iddisplay="hl7de-dataelement-1.10070" shortName="vorsatz">
+                <implementation shortName="vorsatz" markdown="Teil vom Nachname, die als Präfix vorangestellt werden"/>
+                <name language="de-DE">Vorsatz</name>
+                <desc language="de-DE">Teil vom Nachname, die als Präfix vorangestellt werden</desc>
+                <valueDomain type="string">
+                    <example type="neutral">von</example>
+                </valueDomain>
+            </concept>
+            <concept id="2.16.840.1.113883.2.6.77.2.1.10080" effectiveDate="2015-10-15T00:00:00" statusCode="draft" lastModifiedDate="2024-02-07T11:23:24" type="item" iddisplay="hl7de-dataelement-1.10080" shortName="nachname">
+                <implementation shortName="nachname" markdown="Der Nachname der Person. Abhängig vom Typ des Namens kann das ein Geburtsname oder Partnername sein."/>
+                <name language="de-DE" lastTranslated="2024-02-07T11:23:24">Nachname</name>
+                <desc language="de-DE" lastTranslated="2024-02-07T11:23:24">Der Nachname der Person. Abhängig vom Typ des Namens kann das ein Geburtsname oder Partnername sein.</desc>
+                <valueDomain type="string">
+                    <example type="neutral">Schmitz</example>
+                </valueDomain>
+            </concept>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.77.2.1.10100" statusCode="draft" effectiveDate="2015-10-15T00:00:00" type="item" iddisplay="hl7de-dataelement-1.10100" shortName="titel_akademischer_grad">
+            <implementation shortName="titel_akademischer_grad" markdown="Titel, akademischer Grad"/>
+            <name language="de-DE">Titel, akademischer Grad</name>
+            <desc language="de-DE">Titel, akademischer Grad</desc>
+            <valueDomain type="code">
+                <conceptList id="2.16.840.1.113883.2.6.77.2.1.10100.0"/>
+                <example type="neutral">Baron</example>
+                <example type="neutral">Dr.</example>
+            </valueDomain>
+        </concept>
+    </concept>
+</dataset>

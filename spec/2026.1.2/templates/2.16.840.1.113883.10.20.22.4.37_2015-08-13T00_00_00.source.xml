@@ -1,0 +1,44 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:local="http://art-decor.org/local" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.20.22.4.37" name="ProductInstance" effectiveDate="2015-08-13T00:00:00" statusCode="draft" displayName="Product Instance" versionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-" sdtc:dummy-1="urn:hl7-org:sdtc" local:dummy-2="http://art-decor.org/local" xml:dummy-3="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-5="urn:hl7-org:v3" xsi:dummy-6="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">This clinical statement represents a particular device that was placed in a patient or used as part of a procedure or other act. This provides a record of the identifier and other details about the given product that was used. For example, it is important to have a record that indicates not just that a hip prostheses was placed in a patient but that it was a
+                particular hip prostheses number with a unique identifier. The FDA Amendments Act specifies the creation of a Unique Device Identification (UDI) System that requires the label of devices to bear a unique identifier that will standardize device identification and identify the device through distribution and use. The FDA permits an issuing agency to designate that their Device
+                Identifier (DI) + Production Identifier (PI) format qualifies as a UDI through a process of accreditation. Currently, there are three FDA-accredited issuing agencies that are allowed to call their format a UDI. These organizations are GS1, HIBCC, and ICCBBA. For additional information on technical formats that qualify as UDI from each of the issuing agencies see the UDI Appendix.
+                When communicating only the issuing agency device identifier (i.e., subcomponent of the UDI), the use of the issuing agency OID is appropriate. However, when communicating the unique device identifier (DI + PI), the FDA OID (2.16.840.1.113883.3.3719) must be used. When sending a UDI, populate the participantRole/id/@root with the FDA OID (2.16.840.1.113883.3.3719) and
+                participantRole/id/@extension with the UDI. When sending a DI, populate the participantRole/id/@root with the appropriate assigning agency OID and participantRole/id/@extension with the DI. The scopingEntity/id should correspond to FDA or the appropriate issuing agency.</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.321" flexibility="2005-09-07T00:00:00"/>
+            <context id="**"/>
+            <element name="cda:participantRole" id="2.16.840.1.113883.3.1937.99.3.9.2412">
+                <attribute name="classCode" value="MANU" id="2.16.840.1.113883.3.1937.99.3.9.2413">
+                    <desc language="en-US">SHALL contain exactly one [1..1] @classCode="MANU" Manufactured Product (CodeSystem: RoleClass urn:oid:2.16.840.1.113883.5.110 STATIC) (CONF:81-7900).</desc>
+                    <item label="CONF:81-7900"/>
+                </attribute>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.2414">
+                    <desc language="en-US">SHALL contain exactly one [1..1] templateId (CONF:81-7901) such that it</desc>
+                    <item label="CONF:81-7901"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.22.4.37" id="2.16.840.1.113883.3.1937.99.3.9.2415">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.22.4.37" (CONF:81-10522).</desc>
+                        <item label="CONF:81-10522"/>
+                    </attribute>
+                </element>
+                <element name="cda:id" datatype="II" minimumMultiplicity="1" maximumMultiplicity="*" isMandatory="false" id="2.16.840.1.113883.3.1937.99.3.9.2416">
+                    <desc language="en-US">SHALL contain at least one [1..*] id (CONF:81-7902).</desc>
+                    <item label="CONF:81-7902"/>
+                </element>
+                <element name="cda:playingDevice" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.2417">
+                    <desc language="en-US">SHALL contain exactly one [1..1] playingDevice (CONF:81-7903).</desc>
+                    <item label="CONF:81-7903"/>
+                    <element name="cda:code" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.2418">
+                        <desc language="en-US">This playingDevice SHOULD contain zero or one [0..1] code (CONF:81-16837).</desc>
+                        <item label="CONF:81-16837"/>
+                    </element>
+                </element>
+                <element name="cda:scopingEntity" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.2419">
+                    <desc language="en-US">SHALL contain exactly one [1..1] scopingEntity (CONF:81-7905).</desc>
+                    <item label="CONF:81-7905"/>
+                    <element name="cda:id" datatype="II" minimumMultiplicity="1" maximumMultiplicity="*" isMandatory="false" id="2.16.840.1.113883.3.1937.99.3.9.2420">
+                        <desc language="en-US">This scopingEntity SHALL contain at least one [1..*] id (CONF:81-7908).</desc>
+                        <item label="CONF:81-7908"/>
+                    </element>
+                </element>
+            </element>
+        </template>

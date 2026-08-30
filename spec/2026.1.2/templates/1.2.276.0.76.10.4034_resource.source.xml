@@ -1,0 +1,127 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultLanguage="de-DE" id="1.2.276.0.76.10.4034" name="GlasgowComaScale" displayName="Glasgow Coma Scale" effectiveDate="2014-09-16T00:00:00" statusCode="active" isClosed="false" url="http://art-decor.org/decor/services/" ident="aktin-" xml:dummy-1="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-3="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance">
+    <desc language="de-DE">Glasgow Coma Scale (GCS) als Summe und mit den drei Achsen Augenöffnen, verbale Antwort und motorische Antwort</desc>
+    <desc language="en-US">Glasgow Coma Scale (GCS)</desc>
+    <classification type="cdaentrylevel"/>
+    <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.303" tmname="CDAObservation" tmdisplayName="CDA Observation" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-"/>
+    <context id="**"/>
+    <example>
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4034"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="98c1eb7e-dc2d-4d1f-806a-2ad65eba0351"/>
+                    <code code="9269-2" codeSystem="2.16.840.1.113883.6.1" displayName="Glasgow coma score total"/>
+                    <statusCode code="completed"/>
+                    <effectiveTime value="20141019"/>
+                    <value xsi:type="PQ" value="9" unit="{score}"/>
+                    <entryRelationship typeCode="COMP" contextConductionInd="true">
+                        <observation classCode="OBS" moodCode="EVN">
+                            <code code="9267-6" codeSystem="2.16.840.1.113883.6.1" displayName="Glasgow coma score eye opening"/>
+                            <statusCode code="completed"/>
+                            <value xsi:type="PQ" value="4" unit="{score}"/>
+                        </observation>
+                    </entryRelationship>
+                    <entryRelationship typeCode="COMP" contextConductionInd="true">
+                        <observation classCode="OBS" moodCode="EVN">
+                            <code code="9270-0" codeSystem="2.16.840.1.113883.6.1" displayName="Glasgow coma score verbal"/>
+                            <statusCode code="completed"/>
+                            <value xsi:type="PQ" value="3" unit="{score}"/>
+                        </observation>
+                    </entryRelationship>
+                    <entryRelationship typeCode="COMP" contextConductionInd="true">
+                        <observation classCode="OBS" moodCode="EVN">
+                            <code code="9268-4" codeSystem="2.16.840.1.113883.6.1" displayName="Glasgow coma score motor"/>
+                            <statusCode code="completed"/>
+                            <value xsi:type="PQ" value="2" unit="{score}"/>
+                        </observation>
+                    </entryRelationship>
+                </observation>
+            </example>
+    <element name="hl7:observation" id="2.16.840.1.113883.2.6.60.3.9.15">
+                <attribute name="classCode" value="OBS" id="2.16.840.1.113883.2.6.60.3.9.1631647"/>
+                <attribute name="moodCode" value="EVN" id="2.16.840.1.113883.2.6.60.3.9.1631648"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631649">
+                    <attribute name="root" value="1.2.276.0.76.10.4034" id="2.16.840.1.113883.2.6.60.3.9.1631650"/>
+                </element>
+                <element name="hl7:id" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1631651"/>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CE" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631652">
+                    <vocabulary code="9269-2" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.2.6.60.3.9.1631653">
+                    <desc language="de-DE">Lediglich reference in den Text der zugehörigen Section</desc>
+                    <element name="hl7:reference" minimumMultiplicity="1" maximumMultiplicity="1" datatype="URL" id="2.16.840.1.113883.2.6.60.3.9.1631654"/>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CS" id="2.16.840.1.113883.2.6.60.3.9.1631655">
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:effectiveTime" minimumMultiplicity="0" maximumMultiplicity="1" datatype="TS" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1631656"/>
+                <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" datatype="PQ" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.16">
+                    <property minInclude="3" maxInclude="15"/>
+                    <attribute name="value" id="2.16.840.1.113883.2.6.60.3.9.1631657">
+                        <desc language="de-DE">Score</desc>
+                    </attribute>
+                    <attribute name="unit" value="{score}" id="2.16.840.1.113883.2.6.60.3.9.1631658"/>
+                </element>
+                <element name="hl7:entryRelationship[hl7:observation/hl7:code/@code='9267-6']" minimumMultiplicity="0" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.2.6.60.3.9.1631659">
+                    <attribute name="typeCode" value="COMP" id="2.16.840.1.113883.2.6.60.3.9.1631660"/>
+                    <attribute name="contextConductionInd" value="true" id="2.16.840.1.113883.2.6.60.3.9.1631661"/>
+                    <element name="hl7:observation" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631662">
+                        <attribute name="classCode" value="OBS" id="2.16.840.1.113883.2.6.60.3.9.1631663"/>
+                        <attribute name="moodCode" value="EVN" id="2.16.840.1.113883.2.6.60.3.9.1631664"/>
+                        <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CE" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631665">
+                            <vocabulary code="9267-6" codeSystem="2.16.840.1.113883.6.1"/>
+                        </element>
+                        <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CS" id="2.16.840.1.113883.2.6.60.3.9.1631666">
+                            <vocabulary code="completed"/>
+                        </element>
+                        <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" datatype="PQ" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.17">
+                            <property minInclude="1" maxInclude="4"/>
+                            <attribute name="value" id="2.16.840.1.113883.2.6.60.3.9.1631667">
+                                <desc language="de-DE">Score</desc>
+                            </attribute>
+                            <attribute name="unit" value="{score}" id="2.16.840.1.113883.2.6.60.3.9.1631668"/>
+                        </element>
+                    </element>
+                </element>
+                <element name="hl7:entryRelationship[hl7:observation/hl7:code/@code='9270-0']" minimumMultiplicity="0" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.2.6.60.3.9.1631669">
+                    <attribute name="typeCode" value="COMP" id="2.16.840.1.113883.2.6.60.3.9.1631670"/>
+                    <attribute name="contextConductionInd" value="true" id="2.16.840.1.113883.2.6.60.3.9.1631671"/>
+                    <element name="hl7:observation" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631672">
+                        <attribute name="classCode" value="OBS" id="2.16.840.1.113883.2.6.60.3.9.1631673"/>
+                        <attribute name="moodCode" value="EVN" id="2.16.840.1.113883.2.6.60.3.9.1631674"/>
+                        <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CE" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631675">
+                            <vocabulary code="9270-0" codeSystem="2.16.840.1.113883.6.1"/>
+                        </element>
+                        <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CS" id="2.16.840.1.113883.2.6.60.3.9.1631676">
+                            <vocabulary code="completed"/>
+                        </element>
+                        <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" datatype="PQ" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.18">
+                            <property minInclude="1" maxInclude="5"/>
+                            <attribute name="value" id="2.16.840.1.113883.2.6.60.3.9.1631677">
+                                <desc language="de-DE">Score</desc>
+                            </attribute>
+                            <attribute name="unit" value="{score}" id="2.16.840.1.113883.2.6.60.3.9.1631678"/>
+                        </element>
+                    </element>
+                </element>
+                <element name="hl7:entryRelationship[hl7:observation/hl7:code/@code='9268-4']" minimumMultiplicity="0" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.2.6.60.3.9.1631679">
+                    <attribute name="typeCode" value="COMP" id="2.16.840.1.113883.2.6.60.3.9.1631680"/>
+                    <attribute name="contextConductionInd" value="true" id="2.16.840.1.113883.2.6.60.3.9.1631681"/>
+                    <element name="hl7:observation" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631682">
+                        <attribute name="classCode" value="OBS" id="2.16.840.1.113883.2.6.60.3.9.1631683"/>
+                        <attribute name="moodCode" value="EVN" id="2.16.840.1.113883.2.6.60.3.9.1631684"/>
+                        <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CE" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631685">
+                            <vocabulary code="9268-4" codeSystem="2.16.840.1.113883.6.1"/>
+                        </element>
+                        <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CS" id="2.16.840.1.113883.2.6.60.3.9.1631686">
+                            <vocabulary code="completed"/>
+                        </element>
+                        <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" datatype="PQ" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.19">
+                            <property minInclude="1" maxInclude="6"/>
+                            <attribute name="value" id="2.16.840.1.113883.2.6.60.3.9.1631687">
+                                <desc language="de-DE">Score</desc>
+                            </attribute>
+                            <attribute name="unit" value="{score}" id="2.16.840.1.113883.2.6.60.3.9.1631688"/>
+                        </element>
+                    </element>
+                </element>
+            </element>
+</template>

@@ -1,0 +1,102 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:local="http://art-decor.org/local" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.20.22.4.123" name="DrugMonitoringAct" displayName="Drug Monitoring Act" effectiveDate="2015-08-13T00:00:00" statusCode="draft" versionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-" sdtc:dummy-1="urn:hl7-org:sdtc" local:dummy-2="http://art-decor.org/local" xml:dummy-3="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-5="urn:hl7-org:v3" xsi:dummy-6="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">This template represents the act of monitoring the patient's medication and includes a participation to record the person responsible for monitoring the medication. The prescriber of the medication is not necessarily the same person or persons monitoring the drug. The effectiveTime indicates the time when the activity is intended to take place. For example, a
+                cardiologist may prescribe a patient Warfarin. The patient's primary care provider may monitor the patient's INR and adjust the dosing of the Warfarin based on these lab results. Here the person designated to monitor the drug is the primary care provider.</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.301" flexibility="2005-09-07T00:00:00"/>
+            <context id="**"/>
+            <element name="cda:act" id="2.16.840.1.113883.3.1937.99.3.9.2918">
+                <attribute name="classCode" value="ACT" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.2919">
+                    <desc language="en-US">SHALL contain exactly one [1..1] @classCode="ACT" act (CodeSystem: HL7ActClass urn:oid:2.16.840.1.113883.5.6) (CONF:1098-30823).</desc>
+                    <item label="CONF:1098-30823"/>
+                </attribute>
+                <attribute name="moodCode" value="INT" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.2920">
+                    <desc language="en-US">SHALL contain exactly one [1..1] @moodCode="INT" (CONF:1098-28656).</desc>
+                    <item label="CONF:1098-28656"/>
+                </attribute>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.2921">
+                    <desc language="en-US">SHALL contain exactly one [1..1] templateId (CONF:1098-28657) such that it</desc>
+                    <item label="CONF:1098-28657"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.22.4.123" datatype="uid" id="2.16.840.1.113883.3.1937.99.3.9.2922">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.22.4.123" (CONF:1098-28658).</desc>
+                        <item label="CONF:1098-28658"/>
+                    </attribute>
+                </element>
+                <element name="cda:id" datatype="II" minimumMultiplicity="1" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.2923">
+                    <desc language="en-US">SHALL contain at least one [1..*] id (CONF:1098-31920).</desc>
+                    <item label="CONF:1098-31920"/>
+                </element>
+                <element name="cda:code" datatype="CD" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.2924">
+                    <desc language="en-US">SHALL contain exactly one [1..1] code (CONF:1098-28660).</desc>
+                    <item label="CONF:1098-28660"/>
+                    <vocabulary code="395170001" codeSystem="2.16.840.1.113883.6.96"/>
+                </element>
+                <element name="cda:statusCode" datatype="CS" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="false" id="2.16.840.1.113883.3.1937.99.3.9.2925">
+                    <desc language="en-US">SHALL contain exactly one [1..1] statusCode (CONF:1098-31921).</desc>
+                    <item label="CONF:1098-31921"/>
+                    <attribute name="code" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.5857">
+                        <desc language="en-US">
+                    <span style="text-indent: -24px;">This statusCode </span>
+                    <span class="keyword" style="text-indent: -24px;">
+                        <span style="font-size: 8pt;">SHALL</span>
+                    </span>
+                    <span style="text-indent: -24px;"> contain exactly one [1..1] </span>
+                    <span class="XMLnameBold" style="text-indent: -24px;">@code</span>
+                    <span style="text-indent: -24px;">, which </span>
+                    <span class="keyword" style="text-indent: -24px;">
+                        <span style="font-size: 8pt;">SHALL</span>
+                    </span>
+                    <span style="text-indent: -24px;"> be selected from ValueSet </span>
+                    <a class="warning-localfile" href="file:///C:/Users/lisa.nelson/Documents/05%20P20170701%20SEQUOIA/01%20C-CDA%20Errata%20Processing%20R2-1/Consolidated%20CDA%20Templates%20for%20Clinical%20Notes%20(US%20Realm)%20DSTU%20R2.1%20(2).docx#ActStatus" style="text-indent: -24px;">
+                        <span class="HyperlinkCourierBold">ActStatus</span>
+                    </a>
+                    <span class="XMLname" style="text-indent: -24px;"> urn:oid:2.16.840.1.113883.1.11.15933</span>
+                    <span class="keyword" style="text-indent: -24px;">
+                        <span style="font-size: 8pt;"> DYNAMIC</span>
+                    </span>
+                    <a name="C_1098-32358" style="text-indent: -24px;">
+                        <span style="text-indent: -24px;"> (CONF:1098-32358).</span>
+                        <br clear="none"/>
+                    </a>
+                </desc>
+                        <item label="CONF:1098-32358"/>
+                        <vocabulary valueSet="2.16.840.1.113883.1.11.15933" flexibility="dynamic"/>
+                    </attribute>
+                </element>
+                <element name="cda:effectiveTime" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.2926">
+                    <desc language="en-US">SHALL contain exactly one [1..1] effectiveTime (CONF:1098-31922).</desc>
+                    <item label="CONF:1098-31922"/>
+                </element>
+                <element name="cda:participant" minimumMultiplicity="1" maximumMultiplicity="*" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.2927">
+                    <desc language="en-US">SHALL contain at least one [1..*] participant (CONF:1098-28661) such that it</desc>
+                    <item label="CONF:1098-28661"/>
+                    <attribute name="typeCode" value="RESP" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.2928">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @typeCode="RESP" (CONF:1098-28663).</desc>
+                        <item label="CONF:1098-28663"/>
+                    </attribute>
+                    <element name="cda:participantRole" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.2929">
+                        <desc language="en-US">SHALL contain exactly one [1..1] participantRole (CONF:1098-28662).</desc>
+                        <item label="CONF:1098-28662"/>
+                        <attribute name="classCode" value="ASSIGNED" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.2930">
+                            <desc language="en-US">This participantRole SHALL contain exactly one [1..1] @classCode="ASSIGNED" (CONF:1098-28664).</desc>
+                            <item label="CONF:1098-28664"/>
+                        </attribute>
+                        <element name="cda:id" datatype="II" minimumMultiplicity="1" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.2931">
+                            <desc language="en-US">This participantRole SHALL contain at least one [1..*] id (CONF:1098-28665).</desc>
+                            <item label="CONF:1098-28665"/>
+                        </element>
+                        <element name="cda:playingEntity" contains="2.16.840.1.113883.10.20.22.5.1.1" flexibility="2015-08-13T00:00:00" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.2932">
+                            <desc language="en-US">
+                        <span style="color: rgb(51, 51, 51); font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px;">This playingEntity SHALL contain exactly one [1..1] US Realm Person Name (PN.US.FIELDED) (identifier: urn:oid:2.16.840.1.113883.10.20.22.5.1.1) STATIC 2015-08-13 </span>
+                        <span style="color: rgb(51, 51, 51); font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px;">(CONF:1098-28669).</span>
+                        <br clear="none"/>
+                    </desc>
+                            <item label="CONF:1098-28667"/>
+                            <attribute name="classCode" value="PSN" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.2933">
+                                <desc language="en-US">This playingEntity SHALL contain exactly one [1..1] @classCode="PSN" (CONF:1098-28668).</desc>
+                                <item label="CONF:1098-28668"/>
+                            </attribute>
+                        </element>
+                    </element>
+                </element>
+            </element>
+        </template>

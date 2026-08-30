@@ -1,0 +1,45 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.3.1.195.10.91" ident="aktin-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.3.1.195.10.91" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" lastModifiedDate="2024-08-13T15:15:40" versionLabel="2024" isClosed="false" displayName="CT-/MR-/DS-Angiographie" ident="aktin-" name="ct-mr-ds-angiographie" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="draft" url="http://art-decor.org/decor/services/" effectiveDate="2024-05-24T00:00:00">
+            <desc language="de-DE" lastTranslated="2024-08-13T15:15:40">Wurde und wenn wann wurde ein CT-/MR-/DS-Angiographie im Vergleich zur nativen Bildgebung durchgeführt worden?</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.303" tmname="CDAObservation" tmdisplayName="CDA Observation" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <element name="hl7:observation" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true">
+                <item original="false" label="ct-mr-ds-angiographie"/>
+                <attribute name="classCode" value="OBS" isOptional="false" datatype="cs"/>
+                <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs"/>
+                <element name="hl7:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.188">
+                    <item original="false" label="ct-mr-ds-angiographie"/>
+                    <attribute name="root" value="1.2.276.0.76.3.1.195.10.91" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.189"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CE" conformance="R" isMandatory="true">
+                    <item original="false" label="ct-mr-ds-angiographie"/>
+                    <vocabulary code="FLN-122" codeSystem="1.2.276.0.76.3.1.195.5.98" displayName="Wurde und wenn wann wurde ein CT-/MR-/DS-Angiographie im Vergleich zur nativen Bildgebung durchgeführt worden?"/>
+                </element>
+                <element name="hl7:text" datatype="ED" minimumMultiplicity="0" maximumMultiplicity="1">
+                    <desc language="de-DE" lastTranslated="2024-08-13T10:50:15">Lediglich reference in den Text der zugehörigen Section</desc>
+                    <item original="false" label="ct-mr-ds-angiographie"/>
+                    <element name="hl7:reference" datatype="TEL" minimumMultiplicity="1" maximumMultiplicity="1">
+                        <item original="false" label="ct-mr-ds-angiographie"/>
+                    </element>
+                </element>
+                <element name="hl7:statusCode" datatype="CS" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true">
+                    <item original="false" label="ct-mr-ds-angiographie"/>
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:effectiveTime" datatype="TS" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R">
+                    <item original="false" label="ct-mr-ds-angiographie"/>
+                </element>
+                <element name="hl7:value" datatype="CV" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R">
+                    <item original="false" label="ct-mr-ds-angiographie"/>
+                    <vocabulary valueSet="1.2.276.0.76.3.1.195.11.24" vsid="1.2.276.0.76.3.1.195.11.24" vsname="ct-mr-ds-angiographie" vsdisplayName="CT-/MR-/DS-Angiographie" vseffectiveDate="2024-07-22T16:51:10" vsstatusCode="draft" linkedartefactmissing="false"/>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.62" name="diagnostik" displayName="Diagnostik" effectiveDate="2024-08-14T13:04:22" statusCode="retired" versionLabel="2024" isClosed="false" lastModifiedDate="2026-04-24T12:12:09" ident="aktin-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="2025-12-01T00:00:00" id="1.2.276.0.76.3.1.195.10.93" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2026-03-25T11:04:07" statusCode="draft" versionLabel="v4transit" lastModifiedDate="2026-04-29T18:39:46" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="2024-05-24T00:00:00" id="1.2.276.0.76.10.3050" name="Relevantdiagnostictestsorlaboratorydata" displayName="Diagnostik" effectiveDate="2025-12-01T00:00:00" statusCode="draft" isClosed="false" lastModifiedDate="2026-04-29T18:34:48" ident="aktin-"/>
+        </template>
+    </template>
+</result>

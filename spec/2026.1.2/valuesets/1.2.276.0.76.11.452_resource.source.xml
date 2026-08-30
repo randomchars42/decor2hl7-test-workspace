@@ -1,0 +1,17 @@
+<valueSet xmlns:json="http://www.json.org" id="1.2.276.0.76.11.452" name="Zeiteinheiten" displayName="Zeiteinheiten (UCUM)" effectiveDate="2017-04-01T00:00:00" statusCode="draft" url="http://art-decor.org/decor/services/" ident="hl7de-">
+    <sourceCodeSystem json:array="true" id="2.16.840.1.113883.6.8" identifierName="Unified Code for Units of Measure" canonicalUri="http://unitsofmeasure.org" canonicalUriDSTU2="http://unitsofmeasure.org" canonicalUriSTU3="http://unitsofmeasure.org" canonicalUriR4="http://unitsofmeasure.org" canonicalUriR4B="http://unitsofmeasure.org" canonicalUriR5="http://unitsofmeasure.org"/>
+    <publishingAuthority json:array="true" name="HL7 Deutschland e. V." inherited="project">
+        <addrLine json:array="true">Anna-Louisa-Karsch-Str. 2</addrLine>
+        <addrLine json:array="true">10178 Berlin</addrLine>
+        <addrLine json:array="true" type="phone">T 0700 77 77 67 67</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="concept" code="d" codeSystem="2.16.840.1.113883.6.8" displayName="Day" level="0" type="L"/>
+    <items json:array="true" is="concept" code="a" codeSystem="2.16.840.1.113883.6.8" displayName="Year" level="0" type="L"/>
+    <items json:array="true" is="concept" code="h" codeSystem="2.16.840.1.113883.6.8" displayName="Hour" level="0" type="L"/>
+    <items json:array="true" is="concept" code="min" codeSystem="2.16.840.1.113883.6.8" displayName="Minute" level="0" type="L"/>
+    <items json:array="true" is="concept" code="mo" codeSystem="2.16.840.1.113883.6.8" displayName="Month" level="0" type="L"/>
+    <items json:array="true" is="concept" code="s" codeSystem="2.16.840.1.113883.6.8" displayName="Second" level="0" type="L"/>
+    <items json:array="true" is="concept" code="wk" codeSystem="2.16.840.1.113883.6.8" displayName="Week" level="0" type="L"/>
+</valueSet>

@@ -1,0 +1,55 @@
+<codeSystem xmlns:json="http://www.json.org" id="1.2.276.0.76.3.1.195.5.103" name="esi-triage-factors" displayName="ESI-Triagefaktoren" effectiveDate="2019-08-15T00:00:00" statusCode="draft" canonicalUri="http://aktin.org/fhir/CodeSystem/aktin-cs-esi-triage-factors" lastModifiedDate="2024-08-19T21:23:29" language="de-DE" url="http://art-decor.org/decor/services/" ident="aktin-">
+    <desc json:array="true" language="en-US" lastTranslated="2024-07-19T18:44:21">
+                 &lt;p&gt;ESI-Triage&lt;/p&gt; 
+            </desc>
+    <publishingAuthority json:array="true" name="AKTIN e. V." inherited="project">
+        <addrLine json:array="true">c/o Uniklinik RWTH Aachen</addrLine>
+        <addrLine json:array="true">Institut für Medizinische Informatik</addrLine>
+        <addrLine json:array="true">Pauwelsstraße 35</addrLine>
+        <addrLine json:array="true">52074 Aachen</addrLine>
+        <addrLine json:array="true" type="phone">Tel. +49 391 67 28186</addrLine>
+        <addrLine json:array="true" type="email">office@aktin.org</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <conceptList json:array="true">
+        <codedConcept json:array="true" code="1" statusCode="active" level="0" type="L" effectiveDate="2019-08-15T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="sofortige lebensrettende Maßnahme notwendig"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="2" statusCode="active" level="0" type="L" effectiveDate="2019-08-15T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Hochrisikosituation"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="3" statusCode="active" level="0" type="L" effectiveDate="2019-08-15T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="verwirrt"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="4" statusCode="active" level="0" type="L" effectiveDate="2019-08-15T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="lethargisch"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="5" statusCode="active" level="0" type="L" effectiveDate="2019-08-15T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="desorientiert"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="6" statusCode="active" level="0" type="L" effectiveDate="2019-08-15T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="starke Schmerzen"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="7" statusCode="active" level="0" type="L" effectiveDate="2019-08-15T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="starkes Unwohlsein"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="8" statusCode="active" level="0" type="L" effectiveDate="2019-08-15T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="großes kindliches Leid"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="9" statusCode="active" level="0" type="L" effectiveDate="2019-08-15T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="mehr als eine Ressource benötigt"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="10" statusCode="active" level="0" type="L" effectiveDate="2019-08-15T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Vitalzeichen in der Gefahrenzone"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="11" statusCode="active" level="0" type="L" effectiveDate="2019-08-15T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Vitalzeichen nicht in der Gefahrenzone"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="12" statusCode="active" level="0" type="L" effectiveDate="2019-08-15T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="eine Ressource benötigt"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="13" statusCode="active" level="0" type="L" effectiveDate="2019-08-15T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="keine Ressourcen benötigt"/>
+        </codedConcept>
+    </conceptList>
+</codeSystem>

@@ -1,0 +1,22 @@
+<valueSets>
+    <repository url="http://art-decor.org/decor/services/" ident="ccda-" referencedFrom="dguvbbr-" projecttype="local">
+        <valueSet id="2.16.840.1.113883.1.11.16926" name="HL7BasicConfidentialityKind" displayName="HL7 BasicConfidentialityKind" effectiveDate="2016-06-23T00:00:00" statusCode="final">
+            <sourceCodeSystem id="2.16.840.1.113883.5.25" identifierName="Confidentiality" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-Confidentiality" canonicalUriDSTU2="http://hl7.org/fhir/v3/Confidentiality" canonicalUriSTU3="http://hl7.org/fhir/v3/Confidentiality" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-Confidentiality" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-Confidentiality" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-Confidentiality" context="external/hl7intl/v3/v3-Confidentiality"/>
+            <publishingAuthority name="HL7 International" inherited="project">
+                <addrLine>Health Level Seven International</addrLine>
+                <addrLine>3300 Washtenaw Avenue</addrLine>
+                <addrLine>Suite 227</addrLine>
+                <addrLine>Ann Arbor, MI 48104- 4261</addrLine>
+                <addrLine>USA</addrLine>
+                <addrLine>T +1 734 677 7777 </addrLine>
+                <addrLine>F +1 734 677 6622</addrLine>
+                <addrLine>E info@hl7.org</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <concept code="N" codeSystem="2.16.840.1.113883.5.25" displayName="normal" level="0" type="L"/>
+                <concept code="R" codeSystem="2.16.840.1.113883.5.25" displayName="restricted" level="0" type="L"/>
+                <concept code="V" codeSystem="2.16.840.1.113883.5.25" displayName="very restricted" level="0" type="L"/>
+            </conceptList>
+        </valueSet>
+    </repository>
+</valueSets>

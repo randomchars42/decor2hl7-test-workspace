@@ -1,0 +1,25 @@
+<codeSystems>
+    <repository url="http://art-decor.org/decor/services/" ident="ad5bbr-" referencedFrom="sxehealth-" projecttype="local">
+        <codeSystem id="2.16.840.1.113883.4.642.4.319" name="ListMode" displayName="ListMode" effectiveDate="2019-11-01T09:29:23" statusCode="draft" versionLabel="4.0.1" canonicalUri="http://hl7.org/fhir/list-mode" caseSensitive="true" language="de-DE">
+            <desc language="en-US">The processing mode that applies to this list.</desc>
+            <publishingAuthority name="HL7 (FHIR Project)">
+                <addrLine type="uri">http://hl7.org/fhir</addrLine>
+                <addrLine type="email">fhir@lists.hl7.org</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <codedConcept code="working" level="0" type="L" statusCode="active">
+                    <designation displayName="Working List" language="en-US" type="preferred"/>
+                    <desc language="en-US">This list is the master list, maintained in an ongoing fashion with regular updates as the real world list it is tracking changes.</desc>
+                </codedConcept>
+                <codedConcept code="snapshot" level="0" type="L" statusCode="active">
+                    <designation displayName="Snapshot List" language="en-US" type="preferred"/>
+                    <desc language="en-US">This list was prepared as a snapshot. It should not be assumed to be current.</desc>
+                </codedConcept>
+                <codedConcept code="changes" level="0" type="L" statusCode="active">
+                    <designation displayName="Change List" language="en-US" type="preferred"/>
+                    <desc language="en-US">A point-in-time list that shows what changes have been made or recommended. E.g. a discharge medication list showing what was added and removed during an encounter.</desc>
+                </codedConcept>
+            </conceptList>
+        </codeSystem>
+    </repository>
+</codeSystems>

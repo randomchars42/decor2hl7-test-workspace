@@ -1,0 +1,45 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.4096" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.4096" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="Safety Equipment Used Observation" ident="aktin-" name="SafetyEquipmentUsedObservation" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="draft" url="http://art-decor.org/decor/services/" effectiveDate="2017-02-01T00:00:00">
+            <desc language="en-US">Safety Equipment Used Observation</desc>
+            <desc language="de-DE">Sicherheits-Equipment benutzt</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.303" tmname="CDAObservation" tmdisplayName="CDA Observation" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <relationship type="ADAPT" template="2.16.840.1.113883.3.2898.10.2152" flexibility="2014-06-09T00:00:00" url="http://art-decor.org/decor/services/" linkedartefactmissing="true"/>
+            <context id="**"/>
+            <example type="neutral">
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4096"/>
+                    <code code="67499-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Safety equipment"/>
+                    <statusCode code="completed"/>
+                    <value xsi:type="BL" value="true"/>
+                </observation>
+            </example>
+            <element name="hl7:observation" id="2.16.840.1.113883.2.6.60.3.9.163102">
+                <item original="false" label="SafetyEquipmentUsedObservation"/>
+                <attribute name="classCode" value="OBS" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.163103"/>
+                <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.163104"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.163105">
+                    <item original="false" label="SafetyEquipmentUsedObservation"/>
+                    <attribute name="root" value="1.2.276.0.76.10.4096" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.163106"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.163107">
+                    <item original="false" label="SafetyEquipmentUsedObservation"/>
+                    <vocabulary code="67499-4" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.163108">
+                    <item original="false" label="SafetyEquipmentUsedObservation"/>
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="BL" id="2.16.840.1.113883.2.6.60.3.9.163109">
+                    <desc language="de-DE">Wenn Sicherheits-Equipment benutzt wurde = true</desc>
+                    <item original="false" label="SafetyEquipmentUsedObservation"/>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="dependency" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.3068" name="Injuryeventsummary" displayName="Unfallereignis" effectiveDate="2017-01-10T00:00:00" statusCode="draft" ident="aktin-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4088" name="InjuryEventDetail" displayName="Injury Event Detail" effectiveDate="2017-02-01T00:00:00" statusCode="draft" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4091" name="SafetyEquipmentObservationOrganizer" displayName="Safety Equipment Observation Organizer" effectiveDate="2017-02-01T00:00:00" statusCode="draft" ident="aktin-"/>
+        </template>
+    </template>
+</result>

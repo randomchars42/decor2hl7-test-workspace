@@ -1,0 +1,20 @@
+<valueSet xmlns:json="http://www.json.org" id="2.16.840.1.113883.1.11.20471" name="SecurityControlObservationValue" displayName="SecurityControlObservationValue" effectiveDate="2018-08-12T00:00:00" statusCode="final" versionLabel="DEFN=UV=VO=1422-20180812" url="http://art-decor.org/decor/services/" ident="ad2bbr-">
+    <desc json:array="true" language="en-US">&lt;p&gt;&lt;b&gt;History description 2014-03-26: &lt;/b&gt;Lock all vaue sets untouched since 2014-03-26 to trackingId 2014T1_2014_03_26&lt;/p&gt; &lt;b&gt;description: &lt;/b&gt; &lt;p&gt;Security observation values used to indicate security control metadata. V:SecurityControl is the union of V:SecurityPolicy,V:ObligationPolicy, V:RefrainPolicy, V:PurposeOfUse, and V:GeneralPurpose of Use used to
+                    populate the SecurityControlObservationValue attribute in order to convey one or more nonhierarchical security control metadata dictating handling caveats, purpose of use, dissemination controls and other refrain policies, and obligations to which a custodian or receiver is required to comply.&lt;/p&gt;</desc>
+    <publishingAuthority json:array="true" name="HL7" inherited="project">
+        <addrLine json:array="true">Health Level Seven International</addrLine>
+        <addrLine json:array="true">455 E. Eisenhower PKWY STE 300 # 025</addrLine>
+        <addrLine json:array="true">Ann Arbor, MI 48108</addrLine>
+        <addrLine json:array="true">USA</addrLine>
+        <addrLine json:array="true">T +1 734 677 7777</addrLine>
+        <addrLine json:array="true">F +1 734 677 6622</addrLine>
+        <addrLine json:array="true">E info@hl7.org</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="include" ref="2.16.840.1.113883.1.11.20444" flexibility="2018-04-01T00:00:00" exception="false"/>
+    <items json:array="true" is="include" ref="2.16.840.1.113883.1.11.20445" flexibility="2014-03-26T00:00:00" exception="false"/>
+    <items json:array="true" is="include" ref="2.16.840.1.113883.1.11.20446" flexibility="2014-03-26T00:00:00" exception="false"/>
+    <items json:array="true" is="include" ref="2.16.840.1.113883.1.11.20448" flexibility="2018-04-01T00:00:00" exception="false"/>
+    <items json:array="true" is="include" ref="2.16.840.1.113883.1.11.20449" flexibility="2014-03-26T00:00:00" exception="false"/>
+</valueSet>

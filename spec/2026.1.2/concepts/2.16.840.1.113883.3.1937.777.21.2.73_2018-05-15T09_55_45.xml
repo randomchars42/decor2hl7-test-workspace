@@ -1,0 +1,58 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.777.21.1.1" effectiveDate="2018-05-07T19:19:12" statusCode="draft" versionLabel="ASIC Dataset" prefix="asic-" shortName="asicdataset" iddisplay="asic-dataset-1" url="http://art-decor.org/decor/services/" ident="asic-"><!--
+ This is a view of the dataset "ASIC-Dataset" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">ASIC-Dataset</name>
+    <desc language="de-DE"/>
+    <concept id="2.16.840.1.113883.3.1937.777.21.2.73" effectiveDate="2018-05-15T09:55:45" statusCode="draft" type="group" iddisplay="asic-dataelement-73">
+        <implementation markdown="Atemfrequenz&#xA;&#xA;Zahl der Atemzüge pro Zeiteinheit, die meist pro Minute angegeben wird.                   &#xA;Norm: Erwachsenen etwa 12-18 Atemzüge/min                                            &#xA;im Rahmen der lungenprotektiven Beatmung geht die ausreichende Oxygenierung auf Kosten des CO2-Haushaltes; &#xA;der CO2-Anstieg wird kompensiert durch eine unphysiologische Steigerung der Atemfrequenz (15-25/min)&#xA;&#xA; *Zu prüfen: *  *&#xA;*  *Für den ASIC Uses Case kann es spontane und eingestellte Atemfrequenzen geben, auch unterscheidbar sein müssen (-&gt; eigener SNOMED Code oder Post-Koordination über Metadaten?)*"/>
+        <name language="de-DE" lastTranslated="2018-08-21T15:36:30">Atemfrequenz (AF)</name>
+        <desc language="de-DE" lastTranslated="2018-08-28T14:55:30">Atemfrequenz<br clear="none"/>
+            <br clear="none"/>Zahl der Atemzüge pro Zeiteinheit, die meist pro Minute angegeben wird.                   <br clear="none"/>Norm: Erwachsenen etwa 12-18 Atemzüge/min                                            <br clear="none"/>im Rahmen der lungenprotektiven Beatmung geht die ausreichende Oxygenierung auf Kosten des CO2-Haushaltes; <br clear="none"/>der CO2-Anstieg wird kompensiert durch eine unphysiologische Steigerung der Atemfrequenz (15-25/min)<br clear="none"/>
+            <br clear="none"/>
+            <i>Zu prüfen: <br clear="none"/>Für den ASIC Uses Case kann es spontane und eingestellte Atemfrequenzen geben, auch unterscheidbar sein müssen (-&gt; eigener SNOMED Code oder Post-Koordination über Metadaten?)</i>
+            <br clear="none"/>
+        </desc>
+        <source language="de-DE">Dokumentierendes System: UKA ICCA</source>
+        <property name="Verwendung" md5="d2357dac92a8f9efe2297faead24afa8">Observation<br clear="none"/>
+        </property>
+        <property name="Sample Rate" md5="373777ce16629916f961a4c1b81a3006">minütlich<br clear="none"/>
+        </property>
+        <property name="Messgerät" md5="c4d90736c89bcf7212ffffb994d16b3a"/>
+        <property name="Messwertqualität" md5="b1c572fe14c4b5b55db6c70198883404"/>
+        <property name="Umgang mit Missing Values" md5="0adcb5417218971ed4a40832feada387"/>
+        <concept id="2.16.840.1.113883.3.1937.777.21.2.411" effectiveDate="2018-11-08T16:12:44" statusCode="draft" type="item" iddisplay="asic-dataelement-411" shortName="af_gerat">
+            <implementation shortName="af_gerat" markdown="Vom Beatmungsgerät vorgegebene Atemfrequenz"/>
+            <name language="de-DE">AF Gerät</name>
+            <desc language="de-DE" lastTranslated="2018-11-08T16:14:19">
+                <span style="display: inline !important; float: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: arial,helvetica,clean,sans-serif; font-size: 13px; font-size-adjust: none; font-stretch: normal; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 15.86px; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">Vom Beatmungsgerät vorgegebene Atemfrequenz</span>
+                <br clear="none"/>
+            </desc>
+            <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.777.24.2.212" flexibility="2018-07-20T14:21:57" prefix="mide-" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" iType="group" iEffectiveDate="2018-07-20T14:21:57" iStatusCode="draft" refdisplay="mide-dataelement-212">
+                <name language="de-DE" lastTranslated="2019-02-07T13:00:12">Monitoring und Vitaldaten </name>
+                <name language="en-US" lastTranslated="2018-10-01T15:05:32">Monitoring data</name>
+            </relationship>
+            <valueDomain type="quantity">
+                <property unit="/min"/>
+                <example type="neutral" caption="Normal adult respiration rate">15 {breaths}/min</example>
+            </valueDomain>
+            <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.411" conceptFlexibility="2018-11-08T16:12:44" code="33438-3" codeSystem="2.16.840.1.113883.6.1" displayName="Breath rate mechanical --on ventilator" effectiveDate="2018-11-08T16:17:38" codeSystemName="Logical Observation Identifier Names and Codes"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.21.2.410" effectiveDate="2018-11-08T16:05:00" statusCode="draft" type="item" iddisplay="asic-dataelement-410" shortName="af_spontan">
+            <implementation shortName="af_spontan" markdown="Atemfrequenz spontan"/>
+            <name language="de-DE" lastTranslated="2018-11-08T16:05:36">AF spontan</name>
+            <desc language="de-DE" lastTranslated="2018-11-08T16:06:11">Atemfrequenz spontan<br clear="none"/>
+            </desc>
+            <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.777.24.2.212" flexibility="2018-07-20T14:21:57" prefix="mide-" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" iType="group" iEffectiveDate="2018-07-20T14:21:57" iStatusCode="draft" refdisplay="mide-dataelement-212">
+                <name language="de-DE" lastTranslated="2019-02-07T13:00:12">Monitoring und Vitaldaten </name>
+                <name language="en-US" lastTranslated="2018-10-01T15:05:32">Monitoring data</name>
+            </relationship>
+            <valueDomain type="quantity">
+                <property unit="/min"/>
+                <example type="neutral" caption="Normal adult breath rate">18 {breaths}/min</example>
+            </valueDomain>
+            <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.410" conceptFlexibility="2018-11-08T16:05:00" code="19839-0" codeSystem="2.16.840.1.113883.6.1" displayName="Breath rate spontaneous --on ventilator" effectiveDate="2018-11-08T16:10:39" codeSystemName="Logical Observation Identifier Names and Codes"/>
+        </concept>
+    </concept>
+</dataset>

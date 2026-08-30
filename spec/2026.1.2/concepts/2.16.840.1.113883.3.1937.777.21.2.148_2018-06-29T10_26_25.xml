@@ -1,0 +1,61 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.777.21.1.1" effectiveDate="2018-05-07T19:19:12" statusCode="draft" versionLabel="ASIC Dataset" prefix="asic-" shortName="asicdataset" iddisplay="asic-dataset-1" url="http://art-decor.org/decor/services/" ident="asic-"><!--
+ This is a view of the dataset "ASIC-Dataset" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">ASIC-Dataset</name>
+    <desc language="de-DE"/>
+    <concept id="2.16.840.1.113883.3.1937.777.21.2.148" effectiveDate="2018-06-29T10:26:25" statusCode="draft" type="group" iddisplay="asic-dataelement-148">
+        <implementation markdown="Pulmoarterieller Blutdruck. Gemessen über Pulmonalarterien-Katheter. "/>
+        <name language="de-DE">Pulmoarterieller Druck</name>
+        <desc language="de-DE">Pulmoarterieller Blutdruck. Gemessen über Pulmonalarterien-Katheter. </desc>
+        <concept id="2.16.840.1.113883.3.1937.777.21.2.56" effectiveDate="2018-05-15T09:05:09" statusCode="draft" type="item" iddisplay="asic-dataelement-56" shortName="systolischer_pap">
+            <implementation shortName="systolischer_pap" markdown="Systolischer pulmonalarterieller Druck (SPAP)&#xA;mm[Hg]"/>
+            <name language="de-DE" lastTranslated="2018-08-21T14:33:40">Systolischer PAP</name>
+            <desc language="de-DE" lastTranslated="2018-08-21T14:39:41">Systolischer pulmonalarterieller Druck (SPAP)<br clear="none"/>mm[Hg]<br clear="none"/>
+            </desc>
+            <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.777.24.2.212" flexibility="2018-07-20T14:21:57" prefix="mide-" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" iType="group" iEffectiveDate="2018-07-20T14:21:57" iStatusCode="draft" refdisplay="mide-dataelement-212">
+                <name language="de-DE" lastTranslated="2019-02-07T13:00:12">Monitoring und Vitaldaten </name>
+                <name language="en-US" lastTranslated="2018-10-01T15:05:32">Monitoring data</name>
+            </relationship>
+            <valueDomain type="quantity">
+                <property unit="mm[Hg]"/>
+                <example type="neutral">15 mm[Hg]</example>
+                <example type="neutral">28 mm[Hg]</example>
+            </valueDomain>
+            <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.56" conceptFlexibility="2018-05-15T09:05:09" code="8440-0" codeSystem="2.16.840.1.113883.6.1" displayName="Pulmonary artery Systolic blood pressure" effectiveDate="2018-05-17T09:26:49" codeSystemName="Logical Observation Identifier Names and Codes"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.21.2.58" effectiveDate="2018-05-15T09:08:34" statusCode="draft" type="item" iddisplay="asic-dataelement-58" shortName="diastolischer_pap">
+            <implementation shortName="diastolischer_pap" markdown="Diastolischer pulmoarterieller Druck DPA&#xA;mm[Hg]"/>
+            <name language="de-DE" lastTranslated="2018-08-21T14:40:33">Diastolischer PAP</name>
+            <desc language="de-DE" lastTranslated="2018-08-21T14:40:46">Diastolischer pulmoarterieller Druck DPA<br clear="none"/>mm[Hg]<br clear="none"/>
+            </desc>
+            <relationship type="ADAPT" ref="2.16.840.1.113883.3.1937.777.24.2.212" flexibility="2018-07-20T14:21:57" prefix="mide-" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" iType="group" iEffectiveDate="2018-07-20T14:21:57" iStatusCode="draft" refdisplay="mide-dataelement-212">
+                <name language="de-DE" lastTranslated="2019-02-07T13:00:12">Monitoring und Vitaldaten </name>
+                <name language="en-US" lastTranslated="2018-10-01T15:05:32">Monitoring data</name>
+            </relationship>
+            <valueDomain type="quantity">
+                <property unit="mm[Hg]"/>
+                <example type="neutral">6 mm[Hg]</example>
+                <example type="neutral">16 mm[Hg]</example>
+            </valueDomain>
+            <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.58" conceptFlexibility="2018-05-15T09:08:34" code="8385-7" codeSystem="2.16.840.1.113883.6.1" displayName="Pulmonary artery Diastolic blood pressure" effectiveDate="2018-05-17T09:39:09" codeSystemName="Logical Observation Identifier Names and Codes"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.21.2.57" effectiveDate="2018-05-15T09:06:44" statusCode="draft" type="item" iddisplay="asic-dataelement-57" shortName="mittlerer_pulmonalart_blutdruck_mpap">
+            <implementation shortName="mittlerer_pulmonalart_blutdruck_mpap" markdown="Mittlerer pulmonalarterieller Druck (MPAP)&#xA;mm[Hg]"/>
+            <name language="de-DE" lastTranslated="2019-08-08T12:18:54">Mittlerer pulmonalart. Blutdruck (MPAP)</name>
+            <desc language="de-DE" lastTranslated="2018-08-21T14:42:23">Mittlerer pulmonalarterieller Druck (MPAP)<br clear="none"/>mm[Hg]<br clear="none"/>
+            </desc>
+            <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.777.24.2.212" flexibility="2018-07-20T14:21:57" prefix="mide-" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" iType="group" iEffectiveDate="2018-07-20T14:21:57" iStatusCode="draft" refdisplay="mide-dataelement-212">
+                <name language="de-DE" lastTranslated="2019-02-07T13:00:12">Monitoring und Vitaldaten </name>
+                <name language="en-US" lastTranslated="2018-10-01T15:05:32">Monitoring data</name>
+            </relationship>
+            <valueDomain type="quantity">
+                <property unit="mm[Hg]"/>
+                <example type="neutral">10 mm[Hg]</example>
+                <example type="neutral">11 mm[Hg]</example>
+            </valueDomain>
+            <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.57" conceptFlexibility="2018-05-15T09:06:44" code="8414-5" codeSystem="2.16.840.1.113883.6.1" displayName="Pulmonary artery Mean blood pressure" effectiveDate="2018-05-17T09:36:30" codeSystemName="Logical Observation Identifier Names and Codes"/>
+        </concept>
+    </concept>
+</dataset>

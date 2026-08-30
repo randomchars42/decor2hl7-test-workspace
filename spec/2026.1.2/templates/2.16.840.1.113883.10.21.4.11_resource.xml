@@ -1,0 +1,1095 @@
+<result xmlns:json="http://www.json.org">
+    <template id="2.16.840.1.113883.10.21.4.11" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:pharmhl7="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.21.4.11" hl7:dummy-default="urn:hl7-org:v3" lastModifiedDate="2023-01-29T21:55:06" displayName="UV Medication Information (detail)" cda:dummy-4="urn:hl7-org:v3" xml:dummy-2="http://www.w3.org/XML/1998/namespace" url="http://art-decor.org/decor/services/" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance" versionLabel="2023" isClosed="false" ident="pharmcda-" name="UVMedicationInformationdetail" statusCode="draft" pharmhl7:dummy-1="urn:hl7-org:pharm" effectiveDate="2023-02-03T13:03:38">
+            <desc language="en-US">Universal Medication Information (detail)</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="VERSION" template="2.16.840.1.113883.10.21.4.11" flexibility="2017-05-10T00:00:00" tmid="2.16.840.1.113883.10.21.4.11" tmname="UVMedicationInformationdetail" tmdisplayName="UV Medication Information (detail)" tmstatusCode="pending" tmversionLabel="STU1" tmeffectiveDate="2017-05-10T00:00:00" url="http://art-decor.org/decor/services/" ident="pharmcda-" linkedartefactmissing="false"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.312" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.312" tmname="CDAManufacturedProduct" tmdisplayName="CDA ManufacturedProduct" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <relationship type="ADAPT" template="1.3.6.1.4.1.19376.1.9.1.3.1" url="http://art-decor.org/decor/services/" linkedartefactmissing="true"/>
+            <context id="**"/>
+            <element name="hl7:manufacturedProduct" id="2.16.840.1.113883.3.1937.777.15.9.10757">
+                <item original="false" label="UVMedicationInformationdetail"/>
+                <attribute name="classCode" value="MANU" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10758"/>
+                <element name="hl7:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.3.1937.777.15.9.96">
+                    <item original="false" label="UVMedicationInformationdetail"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.21.4.11" isOptional="false" datatype="uid" id="2.16.840.1.113883.3.1937.777.15.9.97"/>
+                </element>
+                <element name="hl7:manufacturedMaterial" id="2.16.840.1.113883.3.1937.777.15.9.93">
+                    <item original="false" label="UVMedicationInformationdetail"/>
+                    <attribute name="classCode" value="MMAT" isOptional="true" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.94"/>
+                    <attribute name="determinerCode" value="KIND" isOptional="true" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.95"/>
+                    <element name="hl7:code" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.98">
+                        <desc language="en-US">The code describes the code of the medication. The medication may be either<ul>
+                                <li>a brand/product or</li>
+                                <li>described as a generic/scientific name or</li>
+                                <li>a descriptor of a magistral preparation/compound medicine</li>
+                            </ul>
+                        </desc>
+                        <item original="false" label="UVMedicationInformationdetail"/>
+                        <element name="hl7:originalText" datatype="ED" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.99">
+                            <desc language="en-US">The originalText shoud contain a reference whose URI value points to the name and strength of the medication in the corresponding section.text, or just the name alone if strength is not relevant.</desc>
+                            <item original="false" label="UVMedicationInformationdetail"/>
+                            <element name="hl7:reference" datatype="TEL" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.100">
+                                <item original="false" label="UVMedicationInformationdetail"/>
+                            </element>
+                        </element>
+                        <element name="hl7:translation" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10759">
+                            <desc language="en-US">Product code(s) from any organizational or juristdictional system</desc>
+                            <item original="false" label="UVMedicationInformationdetail"/>
+                            <vocabulary domain="Product Code"/>
+                        </element>
+                    </element>
+                    <element name="hl7:name" datatype="EN" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.102">
+                        <desc language="en-US">The element SHOULD contain the name of the medication (e.g., "Adol 500mg Caplet"). The medication may be either<ul>
+                                <li>a brand/product or</li>
+                                <li>described as a generic/scientific name or</li>
+                                <li>a descriptor of a magistral preparation/compound medicine</li>
+                            </ul>
+                        </desc>
+                        <item original="false" label="UVMedicationInformationdetail"/>
+                    </element>
+                    <element name="pharmhl7:desc" datatype="ED" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.11024">
+                        <item original="false" label="UVMedicationInformationdetail"/>
+                    </element>
+                    <element name="pharmhl7:formCode" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.104">
+                        <desc language="en-US">This code represents the pharmaceutical dose form (e.g., tablet, capsule, liquid) and SHOULD be present, if not implied by the product. It MAY be present if implied by the product. The value of this code may affect the units used in the substance administration quantity element.</desc>
+                        <item original="false" label="UVMedicationInformationdetail"/>
+                    </element>
+                    <element name="hl7:lotNumberText" datatype="ST" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.105">
+                        <desc language="en-US">The lotNumberText element MAY be present and is a string representation of a lot number of this specific instance of the product. The provided lot number SHALL refer to the primary packaged item described in the Packaging element.</desc>
+                        <item original="false" label="UVMedicationInformationdetail"/>
+                    </element>
+                    <element name="pharmhl7:expirationTime" datatype="TS" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.106">
+                        <desc language="en-US">The pharmhl7:expirationTime element MAY be present and SHALL contain a value attribute containing the date (e.g., specific date, specific date including time) of expiration of this specific instance of the product. The value given in the pharmhl7:expirationTime element SHALL refer to the primary packaged item described in the Medicine Packaging
+                            element.</desc>
+                        <item original="false" label="UVMedicationInformationdetail"/>
+                        <attribute name="value" isOptional="false" id="2.16.840.1.113883.3.1937.777.15.9.107"/>
+                    </element>
+                    <element name="pharmhl7:asContent" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.108">
+                        <desc language="en-US">This structure describes the packaging of the medication. It represents the primary description of the packaging of the medicine (e.g., the medicine is packaged in ampoules of 50ml volume each) and may include additional packaging information of how many of the primary packaged items are within an outer package (e.g., 5 ampoules are packaged in a
+                            box). <br clear="none"/>The primary description of the package should be consistent with the given pharmaceutical dose form (pharmhl7:formCode of the medication). Example: a consistent pharmaceutical dose form to the package form “Ampoules” would be e.g., “Solution for injection”. <br clear="none"/>In case the package describes a product, the pharmhl7:code element provides
+                            the code for the product. <br clear="none"/>In case the package describes a product, and the package has a brand name, it should be described in the pharmhl7:name element (e.g., Xylocaine 1% with Adrenaline Inj, 5 injections package). <br clear="none"/>The pharmhl7:formCode element represents the form of the product/contaner (e.g., tablet container, bottle, ...).<br clear="none"/>
+                            <br clear="none"/>
+                            <div class="yui-wk-div">The &lt;pharmhl7:capacityQuantity&gt; element describes the capacity of the packaging, while the &lt;pharmhl7:quantity&gt; the actual quantity of inner packaged items in the outer packaging container.<br clear="none"/>
+                                <br clear="none"/>
+                            </div>
+                            <div class="yui-wk-div">The product might have a single (30 pills bottle) or multiple (5 vials 10 ml; box with 2 blisters of 20 tablets) layers of packaging. In the latter case, the most inner (nested) item represents the most outer package item.</div>
+                            <div class="yui-wk-div">For example the case </div>
+                            <div class="yui-wk-div">  \--Box </div>
+                            <div class="yui-wk-div">  \-----2 blisters </div>
+                            <div class="yui-wk-div">  \--------20 tablets </div>
+                            <div class="yui-wk-div">is described as "20 tablets" contained by "a blister"; "2 blisters" contained by one box.</div>
+                            <div class="yui-wk-div">The most inner package represents the Packaged Medicinal Product.</div>
+                        </desc>
+                        <item original="false" label="UVMedicationInformationdetail"/>
+                        <example type="neutral" caption="Packaged Medicinal Product with formCode">
+                            <asContent classCode="CONT">
+                                <containerPackagedProduct classCode="CONT" determinerCode="KIND">
+                                    <!-- Packaged Medicinal Product -->
+                                    <code codeSystem="1.999.999" code="PC_ID" displayName="Packaged Product Name"/>
+                                    <name>100 MIRACLE PILLS(TM)</name>
+                                    <formCode codeSystem="0.4.0.127.0.16.1.1.2.1" code="30009000" displayName="Box" CodeSystemName="EDQM"/>
+                                </containerPackagedProduct>
+                            </asContent>
+                        </example>
+                        <example type="neutral" caption="General example">
+                            <asContent classCode="CONT">
+                                <quantity value=" " unit=" "/>
+                                <containerPackagedProduct classCode="CONT" determinerCode="KIND">
+                                    <!-- Medicinal product code (package-level) -->
+                                    <code code=" " displayName=" " codeSystem=" " codeSystemName=" "/>
+                                    <!-- Brand name (package) -->
+                                    <name> . . . </name>
+                                    <formCode code=" " displayName=" " codeSystem=" " codeSystemName=" "/>
+                                    <capacityQuantity value=" " unit=" "/>
+                                    <asContent>
+                                        <containerPackagedProduct classCode="CONT" determinerCode="KIND">
+                                            <capacityQuantity value=" " unit=" "/>
+                                        </containerPackagedProduct>
+                                    </asContent>
+                                </containerPackagedProduct>
+                            </asContent>
+                        </example>
+                        <example type="neutral" caption="Medicinal product with pharmaceutical dose form ”Tablets”, available as a “Tablet container” with 30 tablets">
+                            <asContent classCode="CONT">
+                                <!-- 30 tablets in the package -->
+                                <quantity value="30" unit="{tablet}"/>
+                                <containerPackagedProduct classCode="CONT" determinerCode="KIND">
+                                    <!-- .. -->
+                                    <formCode code=" " displayName="Tablet container" codeSystem=" " codeSystemName=" "/>
+                                </containerPackagedProduct>
+                            </asContent>
+                        </example>
+                        <example type="neutral" caption="Medicinal product with pharmaceutical dose form 'Solution for injection', available as “Ampoules” with 50ml volume, packaged as 5 ampoules per box">
+                            <asContent classCode="CONT">
+                                <quantity value="50" unit="ml"/>
+                                <!-- 50ml per ampoule -->
+                                <containerPackagedProduct classCode="CONT" determinerCode="KIND">
+                                    <!-- .. -->
+                                    <formCode code=" " displayName="Ampoules" codeSystem=" " codeSystemName=" "/>
+                                    <asContent>
+                                        <!-- 5 ampoules in a box -->
+                                        <quantity value="5"/>
+                                        <containerPackagedProduct classCode="CONT" determinerCode="KIND">
+                                            <!-- .. -->
+                                        </containerPackagedProduct>
+                                    </asContent>
+                                </containerPackagedProduct>
+                            </asContent>
+                        </example>
+                        <example type="neutral" caption="Packaged Medicinal Product with multiple layers packaging">
+                            <asContent classCode="CONT">
+                                <containerPackagedProduct>
+                                    <!-- Inner Package -->
+                                    <code codeSystem="..." code="..." displayName="..."/>
+                                    <asContent>
+                                        <containerPackagedProduct>
+                                            <!-- Intermediate Package -->
+                                            <asContent>
+                                                <containerPackagedProduct>
+                                                    <!-- Outer Package / Packaged Medicinal Product -->
+                                                </containerPackagedProduct>
+                                            </asContent>
+                                        </containerPackagedProduct>
+                                    </asContent>
+                                </containerPackagedProduct>
+                            </asContent>
+                        </example>
+                        <attribute name="classCode" value="CONT" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.109"/>
+                        <include ref="2.16.840.1.113883.10.21.4.17" flexibility="dynamic" tmid="2.16.840.1.113883.10.21.4.17" tmname="UVasContent" tmdisplayName="UV Content" tmeffectiveDate="2022-03-18T08:28:51" tmstatusCode="pending" tmversionLabel="R1-STU2-ballot" url="http://art-decor.org/decor/services/" ident="pharmcda-" linkedartefactmissing="false">
+                            <item original="false" label="UVMedicationInformationdetail"/>
+                            <element name="pharmhl7:quantity" datatype="PQ" id="2.16.840.1.113883.3.1937.777.15.9.10898" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R">
+                                <desc language="en-US">The quantity which specified how many inner packaged content entities are in an outer packaging container entity.<br clear="none"/>
+                </desc>
+                                <item original="false" label="UVasContent"/>
+                            </element>
+                            <element name="pharmhl7:containerPackagedProduct" id="2.16.840.1.113883.3.1937.777.15.9.10899" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R">
+                                <desc language="en-US"/>
+                                <item original="false" label="UVasContent"/>
+                                <attribute name="classCode" value="CONT" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10900"/>
+                                <attribute name="determinerCode" value="KIND" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10901"/>
+                                <element name="pharmhl7:code" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10902">
+                                    <desc language="en-US">
+                        <div class="yui-wk-div">It represents the code of the Package Item or of the Packaged Medicinal Product.</div>
+                        <div class="yui-wk-div">If this is also the most outer &lt;pharmhl7:containerPackagedProduct&gt; than this element can be used to convey the Packaged Medicinal Product ID.</div>
+                    </desc>
+                                    <item original="false" label="UVasContent"/>
+                                </element>
+                                <element name="pharmhl7:name" datatype="EN" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10903">
+                                    <desc language="en-US">
+                        <div>It represents the Name of the Package Item or of the Packaged Medicinal Product.</div>
+                        <div>If this is also the most outer &lt;pharmhl7:containerPackagedProduct&gt; than this element can be used for the brand name.</div>
+                    </desc>
+                                    <item original="false" label="UVasContent"/>
+                                </element>
+                                <element name="pharmhl7:formCode" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10904">
+                                    <desc language="en-US">This element encodes the type of the most inner package item or of the or the Packaged Medicinal Product.<br clear="none"/>
+                    </desc>
+                                    <item original="false" label="UVasContent"/>
+                                </element>
+                                <element name="pharmhl7:capacityQuantity" datatype="PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10905">
+                                    <desc language="en-US">Captures the number of product units the package would contain if fully loaded.<br clear="none"/>
+                    </desc>
+                                    <item original="false" label="UVasContent"/>
+                                    <attribute name="value" isOptional="false" id="2.16.840.1.113883.3.1937.777.15.9.10906"/>
+                                    <attribute name="unit" isOptional="true" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10907"/>
+                                </element>
+                                <element name="pharmhl7:asContent" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10908">
+                                    <desc language="en-US">In case of multiple layers of packaging (5 vials 10 ml; box with 2 blisters of 20 tablets) this element can be used for describing the intermediate Packaged Medicinal Product Item or the Packaged Medicinal Product.<br clear="none"/>
+                        <br clear="none"/>For example in the case <br clear="none"/>  \--Box <br clear="none"/>  \-----2 blisters <br clear="none"/>  \--------20 tablets <br clear="none"/>it describes the "2 blisters" <br clear="none"/>
+                        <br clear="none"/>In the case of <br clear="none"/>  \--Box <br clear="none"/>  \-----5 vials<br clear="none"/>it represents the Packaged Medicinal Product. </desc>
+                                    <item original="false" label="UVasContent"/>
+                                    <attribute name="classCode" value="CONT" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10909"/>
+                                    <element name="pharmhl7:quantity" datatype="PQ" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10910">
+                                        <desc language="en-US">The quantity which specified how many inner packaged content entities are in an outer packaging container entity.<br clear="none"/>
+                        </desc>
+                                        <item original="false" label="UVasContent"/>
+                                    </element>
+                                    <element name="pharmhl7:containerPackagedProduct" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10911">
+                                        <desc language="en-US">It represents the intermediate Package Item or the Packaged Medicinal Product<br clear="none"/>
+                        </desc>
+                                        <item original="false" label="UVasContent"/>
+                                        <attribute name="classCode" value="CONT" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10912"/>
+                                        <attribute name="determinerCode" value="KIND" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10913"/>
+                                        <element name="pharmhl7:code" datatype="CD" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10914">
+                                            <desc language="en-US">
+                                <div>It represents the code of the Package Item or of the Packaged Medicinal Product.</div>
+                                <div>If this is also the most outer &lt;pharmhl7:containerPackagedProduct&gt; than this element can be used to convey the Packaged Medicinal Product ID.</div>
+                            </desc>
+                                            <item original="false" label="UVasContent"/>
+                                        </element>
+                                        <element name="pharmhl7:name" datatype="ST" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10915">
+                                            <desc language="en-US">It represents the Name of the Package Item or of the Packaged Medicinal Product.<br clear="none"/>If this is also the most outer &lt;pharmhl7:containerPackagedProduct&gt; than this element can be used for the brand name.</desc>
+                                            <item original="false" label="UVasContent"/>
+                                        </element>
+                                        <element name="pharmhl7:formCode" datatype="CE" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10916">
+                                            <desc language="en-US">This element encodes the type of the intermediate package item or of the or the Packaged Medicinal Product.<br clear="none"/>
+                            </desc>
+                                            <item original="false" label="UVasContent"/>
+                                        </element>
+                                        <element name="pharmhl7:capacityQuantity" datatype="PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10917">
+                                            <desc language="en-US">Captures the number of product units the package would contain if fully loaded. <br clear="none"/>
+                            </desc>
+                                            <item original="false" label="UVasContent"/>
+                                            <attribute name="value" isOptional="false" id="2.16.840.1.113883.3.1937.777.15.9.10918"/>
+                                            <attribute name="unit" isOptional="true" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10919"/>
+                                        </element>
+                                        <element name="pharmhl7:asContent" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10920">
+                                            <desc language="en-US">
+                                <div>In case of multiple layers of packaging (box with 2 blisters of 20 tablets) this element is used for describing the most outer Packaged Medicinal Product Item or the Packaged Medicinal Product.</div>
+                                <div>For example in the case </div>
+                                <div>  \--Box </div>
+                                <div>  \-----2 blisters </div>
+                                <div>  \--------20 tablets </div>
+                                <div>it describes the Packaged Medicinal Product. </div>
+                            </desc>
+                                            <item original="false" label="UVasContent"/>
+                                            <attribute name="classCode" value="CONT" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10921"/>
+                                            <element name="pharmhl7:quantity" datatype="PQ" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10922">
+                                                <desc language="en-US"/>
+                                                <item original="false" label="UVasContent"/>
+                                            </element>
+                                            <element name="pharmhl7:containerPackagedProduct" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10923">
+                                                <desc language="en-US">When present, it represents the Packaged Medicinal Product</desc>
+                                                <item original="false" label="UVasContent"/>
+                                                <attribute name="classCode" value="CONT" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10924"/>
+                                                <attribute name="determinerCode" value="KIND" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10925"/>
+                                                <element name="pharmhl7:code" datatype="CD" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10926">
+                                                    <desc language="en-US">When present, it can be used to convey the Packaged Medicinal Product ID.<br clear="none"/>
+                                    </desc>
+                                                    <item original="false" label="UVasContent"/>
+                                                </element>
+                                                <element name="pharmhl7:name" datatype="ST" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10927">
+                                                    <desc language="en-US"/>
+                                                    <item original="false" label="UVasContent"/>
+                                                </element>
+                                                <element name="pharmhl7:formCode" datatype="CE" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10928">
+                                                    <desc language="en-US"/>
+                                                    <item original="false" label="UVasContent"/>
+                                                </element>
+                                                <element name="pharmhl7:capacityQuantity" datatype="PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10929">
+                                                    <desc language="en-US">Captures the number of product units the package would contain if fully loaded.<br clear="none"/>
+                                    </desc>
+                                                    <item original="false" label="UVasContent"/>
+                                                    <attribute name="value" isOptional="false" id="2.16.840.1.113883.3.1937.777.15.9.10930"/>
+                                                    <attribute name="unit" isOptional="true" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10931"/>
+                                                </element>
+                                            </element>
+                                        </element>
+                                    </element>
+                                </element>
+                            </element>
+                            <staticAssociations/>
+                        </include>
+                    </element>
+                    <element name="pharmhl7:asSpecializedKind" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.126">
+                        <desc language="en-US">
+                            <div>The Medicinal Product can be classified according to various classification systems, which may be jurisdictional or international as for example  the WHO ATC drug code, or the IDMP Pharmaceutical Product Identifier(s) (PhPID Set) when it will be available for use.</div>
+                            <div>The generalizedMaterialKind/code element is used to covey these codes.<br clear="none"/>
+                            </div>
+                        </desc>
+                        <item original="false" label="UVMedicationInformationdetail"/>
+                        <example type="neutral">
+                            <asSpecializedKind classCode="GRIC">
+                                <generalizedMedicineClass classCode="MMAT">
+                                    <code code=" " displayName=" " codeSystem=" " codeSystemName=" "/>
+                                </generalizedMedicineClass>
+                            </asSpecializedKind>
+                        </example>
+                        <attribute name="classCode" value="GRIC" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.127"/>
+                        <include ref="2.16.840.1.113883.10.21.4.19" flexibility="dynamic" tmid="2.16.840.1.113883.10.21.4.19" tmname="UVgeneralizedMedicineClass" tmdisplayName="UV Generalized Medicine Class" tmeffectiveDate="2023-01-29T21:57:12" tmstatusCode="draft" tmversionLabel="2023" url="http://art-decor.org/decor/services/" ident="pharmcda-" linkedartefactmissing="false">
+                            <item original="false" label="UVMedicationInformationdetail"/>
+                            <element name="pharmhl7:generalizedMedicineKind" id="2.16.840.1.113883.3.1937.777.15.9.10940" minimumMultiplicity="0" maximumMultiplicity="*">
+                                <item original="false" label="UVgeneralizedMedicineClass"/>
+                                <attribute name="classCode" value="MMAT" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10941"/>
+                                <attribute name="determinerCode" value="KIND" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10979"/>
+                                <element name="pharmhl7:code" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10942">
+                                    <item original="false" label="UVgeneralizedMedicineClass"/>
+                                </element>
+                                <element name="pharmhl7:name" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10943">
+                                    <item original="false" label="UVgeneralizedMedicineClass"/>
+                                </element>
+                            </element>
+                            <staticAssociations/>
+                        </include>
+                    </element>
+                    <element name="pharmhl7:part" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10944">
+                        <item original="false" label="UVMedicationInformationdetail"/>
+                        <attribute name="classCode" value="PART" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10945"/>
+                        <element name="pharmhl7:id" datatype="II" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10946">
+                            <item original="false" label="UVMedicationInformationdetail"/>
+                        </element>
+                        <element name="pharmhl7:quantity" datatype="PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10947">
+                            <item original="false" label="UVMedicationInformationdetail"/>
+                        </element>
+                        <element name="pharmhl7:partProduct" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10948">
+                            <item original="false" label="UVMedicationInformationdetail"/>
+                            <element name="pharmhl7:code" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.11012">
+                                <item original="false" label="UVMedicationInformationdetail"/>
+                            </element>
+                            <element name="pharmhl7:name" datatype="EN" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.11013">
+                                <item original="false" label="UVMedicationInformationdetail"/>
+                            </element>
+                            <element name="pharmhl7:desc" datatype="ED" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.11014">
+                                <item original="false" label="UVMedicationInformationdetail"/>
+                            </element>
+                            <element name="pharmhl7:formCode" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.11015">
+                                <item original="false" label="UVMedicationInformationdetail"/>
+                            </element>
+                            <element name="pharmhl7:asContent" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10949">
+                                <item original="false" label="UVMedicationInformationdetail"/>
+                                <attribute name="classCode" value="CONT" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10950"/>
+                                <include ref="2.16.840.1.113883.10.21.4.17" flexibility="dynamic" tmid="2.16.840.1.113883.10.21.4.17" tmname="UVasContent" tmdisplayName="UV Content" tmeffectiveDate="2022-03-18T08:28:51" tmstatusCode="pending" tmversionLabel="R1-STU2-ballot" url="http://art-decor.org/decor/services/" ident="pharmcda-" linkedartefactmissing="false">
+                                    <item original="false" label="UVMedicationInformationdetail"/>
+                                    <element name="pharmhl7:quantity" datatype="PQ" id="2.16.840.1.113883.3.1937.777.15.9.10898" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R">
+                                        <desc language="en-US">The quantity which specified how many inner packaged content entities are in an outer packaging container entity.<br clear="none"/>
+                </desc>
+                                        <item original="false" label="UVasContent"/>
+                                    </element>
+                                    <element name="pharmhl7:containerPackagedProduct" id="2.16.840.1.113883.3.1937.777.15.9.10899" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R">
+                                        <desc language="en-US"/>
+                                        <item original="false" label="UVasContent"/>
+                                        <attribute name="classCode" value="CONT" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10900"/>
+                                        <attribute name="determinerCode" value="KIND" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10901"/>
+                                        <element name="pharmhl7:code" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10902">
+                                            <desc language="en-US">
+                        <div class="yui-wk-div">It represents the code of the Package Item or of the Packaged Medicinal Product.</div>
+                        <div class="yui-wk-div">If this is also the most outer &lt;pharmhl7:containerPackagedProduct&gt; than this element can be used to convey the Packaged Medicinal Product ID.</div>
+                    </desc>
+                                            <item original="false" label="UVasContent"/>
+                                        </element>
+                                        <element name="pharmhl7:name" datatype="EN" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10903">
+                                            <desc language="en-US">
+                        <div>It represents the Name of the Package Item or of the Packaged Medicinal Product.</div>
+                        <div>If this is also the most outer &lt;pharmhl7:containerPackagedProduct&gt; than this element can be used for the brand name.</div>
+                    </desc>
+                                            <item original="false" label="UVasContent"/>
+                                        </element>
+                                        <element name="pharmhl7:formCode" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10904">
+                                            <desc language="en-US">This element encodes the type of the most inner package item or of the or the Packaged Medicinal Product.<br clear="none"/>
+                    </desc>
+                                            <item original="false" label="UVasContent"/>
+                                        </element>
+                                        <element name="pharmhl7:capacityQuantity" datatype="PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10905">
+                                            <desc language="en-US">Captures the number of product units the package would contain if fully loaded.<br clear="none"/>
+                    </desc>
+                                            <item original="false" label="UVasContent"/>
+                                            <attribute name="value" isOptional="false" id="2.16.840.1.113883.3.1937.777.15.9.10906"/>
+                                            <attribute name="unit" isOptional="true" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10907"/>
+                                        </element>
+                                        <element name="pharmhl7:asContent" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10908">
+                                            <desc language="en-US">In case of multiple layers of packaging (5 vials 10 ml; box with 2 blisters of 20 tablets) this element can be used for describing the intermediate Packaged Medicinal Product Item or the Packaged Medicinal Product.<br clear="none"/>
+                        <br clear="none"/>For example in the case <br clear="none"/>  \--Box <br clear="none"/>  \-----2 blisters <br clear="none"/>  \--------20 tablets <br clear="none"/>it describes the "2 blisters" <br clear="none"/>
+                        <br clear="none"/>In the case of <br clear="none"/>  \--Box <br clear="none"/>  \-----5 vials<br clear="none"/>it represents the Packaged Medicinal Product. </desc>
+                                            <item original="false" label="UVasContent"/>
+                                            <attribute name="classCode" value="CONT" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10909"/>
+                                            <element name="pharmhl7:quantity" datatype="PQ" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10910">
+                                                <desc language="en-US">The quantity which specified how many inner packaged content entities are in an outer packaging container entity.<br clear="none"/>
+                        </desc>
+                                                <item original="false" label="UVasContent"/>
+                                            </element>
+                                            <element name="pharmhl7:containerPackagedProduct" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10911">
+                                                <desc language="en-US">It represents the intermediate Package Item or the Packaged Medicinal Product<br clear="none"/>
+                        </desc>
+                                                <item original="false" label="UVasContent"/>
+                                                <attribute name="classCode" value="CONT" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10912"/>
+                                                <attribute name="determinerCode" value="KIND" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10913"/>
+                                                <element name="pharmhl7:code" datatype="CD" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10914">
+                                                    <desc language="en-US">
+                                <div>It represents the code of the Package Item or of the Packaged Medicinal Product.</div>
+                                <div>If this is also the most outer &lt;pharmhl7:containerPackagedProduct&gt; than this element can be used to convey the Packaged Medicinal Product ID.</div>
+                            </desc>
+                                                    <item original="false" label="UVasContent"/>
+                                                </element>
+                                                <element name="pharmhl7:name" datatype="ST" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10915">
+                                                    <desc language="en-US">It represents the Name of the Package Item or of the Packaged Medicinal Product.<br clear="none"/>If this is also the most outer &lt;pharmhl7:containerPackagedProduct&gt; than this element can be used for the brand name.</desc>
+                                                    <item original="false" label="UVasContent"/>
+                                                </element>
+                                                <element name="pharmhl7:formCode" datatype="CE" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10916">
+                                                    <desc language="en-US">This element encodes the type of the intermediate package item or of the or the Packaged Medicinal Product.<br clear="none"/>
+                            </desc>
+                                                    <item original="false" label="UVasContent"/>
+                                                </element>
+                                                <element name="pharmhl7:capacityQuantity" datatype="PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10917">
+                                                    <desc language="en-US">Captures the number of product units the package would contain if fully loaded. <br clear="none"/>
+                            </desc>
+                                                    <item original="false" label="UVasContent"/>
+                                                    <attribute name="value" isOptional="false" id="2.16.840.1.113883.3.1937.777.15.9.10918"/>
+                                                    <attribute name="unit" isOptional="true" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10919"/>
+                                                </element>
+                                                <element name="pharmhl7:asContent" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10920">
+                                                    <desc language="en-US">
+                                <div>In case of multiple layers of packaging (box with 2 blisters of 20 tablets) this element is used for describing the most outer Packaged Medicinal Product Item or the Packaged Medicinal Product.</div>
+                                <div>For example in the case </div>
+                                <div>  \--Box </div>
+                                <div>  \-----2 blisters </div>
+                                <div>  \--------20 tablets </div>
+                                <div>it describes the Packaged Medicinal Product. </div>
+                            </desc>
+                                                    <item original="false" label="UVasContent"/>
+                                                    <attribute name="classCode" value="CONT" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10921"/>
+                                                    <element name="pharmhl7:quantity" datatype="PQ" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10922">
+                                                        <desc language="en-US"/>
+                                                        <item original="false" label="UVasContent"/>
+                                                    </element>
+                                                    <element name="pharmhl7:containerPackagedProduct" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10923">
+                                                        <desc language="en-US">When present, it represents the Packaged Medicinal Product</desc>
+                                                        <item original="false" label="UVasContent"/>
+                                                        <attribute name="classCode" value="CONT" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10924"/>
+                                                        <attribute name="determinerCode" value="KIND" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10925"/>
+                                                        <element name="pharmhl7:code" datatype="CD" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10926">
+                                                            <desc language="en-US">When present, it can be used to convey the Packaged Medicinal Product ID.<br clear="none"/>
+                                    </desc>
+                                                            <item original="false" label="UVasContent"/>
+                                                        </element>
+                                                        <element name="pharmhl7:name" datatype="ST" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10927">
+                                                            <desc language="en-US"/>
+                                                            <item original="false" label="UVasContent"/>
+                                                        </element>
+                                                        <element name="pharmhl7:formCode" datatype="CE" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10928">
+                                                            <desc language="en-US"/>
+                                                            <item original="false" label="UVasContent"/>
+                                                        </element>
+                                                        <element name="pharmhl7:capacityQuantity" datatype="PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10929">
+                                                            <desc language="en-US">Captures the number of product units the package would contain if fully loaded.<br clear="none"/>
+                                    </desc>
+                                                            <item original="false" label="UVasContent"/>
+                                                            <attribute name="value" isOptional="false" id="2.16.840.1.113883.3.1937.777.15.9.10930"/>
+                                                            <attribute name="unit" isOptional="true" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10931"/>
+                                                        </element>
+                                                    </element>
+                                                </element>
+                                            </element>
+                                        </element>
+                                    </element>
+                                    <staticAssociations/>
+                                </include>
+                            </element>
+                            <element name="pharmhl7:asSpecializedKind" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10951">
+                                <item original="false" label="UVMedicationInformationdetail"/>
+                                <attribute name="classCode" value="GRIC" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10952"/>
+                                <include ref="2.16.840.1.113883.10.21.4.19" flexibility="dynamic" tmid="2.16.840.1.113883.10.21.4.19" tmname="UVgeneralizedMedicineClass" tmdisplayName="UV Generalized Medicine Class" tmeffectiveDate="2023-01-29T21:57:12" tmstatusCode="draft" tmversionLabel="2023" url="http://art-decor.org/decor/services/" ident="pharmcda-" linkedartefactmissing="false">
+                                    <item original="false" label="UVMedicationInformationdetail"/>
+                                    <element name="pharmhl7:generalizedMedicineKind" id="2.16.840.1.113883.3.1937.777.15.9.10940" minimumMultiplicity="0" maximumMultiplicity="*">
+                                        <item original="false" label="UVgeneralizedMedicineClass"/>
+                                        <attribute name="classCode" value="MMAT" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10941"/>
+                                        <attribute name="determinerCode" value="KIND" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10979"/>
+                                        <element name="pharmhl7:code" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10942">
+                                            <item original="false" label="UVgeneralizedMedicineClass"/>
+                                        </element>
+                                        <element name="pharmhl7:name" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10943">
+                                            <item original="false" label="UVgeneralizedMedicineClass"/>
+                                        </element>
+                                    </element>
+                                    <staticAssociations/>
+                                </include>
+                            </element>
+                            <element name="pharmhl7:part" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10953">
+                                <item original="false" label="UVMedicationInformationdetail"/>
+                                <attribute name="classCode" value="PART" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10954"/>
+                                <element name="pharmhl7:id" datatype="II" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10955">
+                                    <item original="false" label="UVMedicationInformationdetail"/>
+                                </element>
+                                <element name="pharmhl7:quantity" datatype="PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10956">
+                                    <item original="false" label="UVMedicationInformationdetail"/>
+                                </element>
+                                <element name="pharmhl7:partProduct" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10957">
+                                    <item original="false" label="UVMedicationInformationdetail"/>
+                                    <element name="pharmhl7:code" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.11016">
+                                        <item original="false" label="UVMedicationInformationdetail"/>
+                                    </element>
+                                    <element name="pharmhl7:name" datatype="EN" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.11017">
+                                        <item original="false" label="UVMedicationInformationdetail"/>
+                                    </element>
+                                    <element name="pharmhl7:desc" datatype="ED" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.11018">
+                                        <item original="false" label="UVMedicationInformationdetail"/>
+                                    </element>
+                                    <element name="pharmhl7:formCode" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.11019">
+                                        <item original="false" label="UVMedicationInformationdetail"/>
+                                    </element>
+                                    <element name="pharmhl7:asContent" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10958">
+                                        <item original="false" label="UVMedicationInformationdetail"/>
+                                        <attribute name="classCode" value="CONT" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10959"/>
+                                        <include ref="2.16.840.1.113883.10.21.4.17" flexibility="dynamic" tmid="2.16.840.1.113883.10.21.4.17" tmname="UVasContent" tmdisplayName="UV Content" tmeffectiveDate="2022-03-18T08:28:51" tmstatusCode="pending" tmversionLabel="R1-STU2-ballot" url="http://art-decor.org/decor/services/" ident="pharmcda-" linkedartefactmissing="false">
+                                            <item original="false" label="UVMedicationInformationdetail"/>
+                                            <element name="pharmhl7:quantity" datatype="PQ" id="2.16.840.1.113883.3.1937.777.15.9.10898" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R">
+                                                <desc language="en-US">The quantity which specified how many inner packaged content entities are in an outer packaging container entity.<br clear="none"/>
+                </desc>
+                                                <item original="false" label="UVasContent"/>
+                                            </element>
+                                            <element name="pharmhl7:containerPackagedProduct" id="2.16.840.1.113883.3.1937.777.15.9.10899" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R">
+                                                <desc language="en-US"/>
+                                                <item original="false" label="UVasContent"/>
+                                                <attribute name="classCode" value="CONT" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10900"/>
+                                                <attribute name="determinerCode" value="KIND" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10901"/>
+                                                <element name="pharmhl7:code" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10902">
+                                                    <desc language="en-US">
+                        <div class="yui-wk-div">It represents the code of the Package Item or of the Packaged Medicinal Product.</div>
+                        <div class="yui-wk-div">If this is also the most outer &lt;pharmhl7:containerPackagedProduct&gt; than this element can be used to convey the Packaged Medicinal Product ID.</div>
+                    </desc>
+                                                    <item original="false" label="UVasContent"/>
+                                                </element>
+                                                <element name="pharmhl7:name" datatype="EN" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10903">
+                                                    <desc language="en-US">
+                        <div>It represents the Name of the Package Item or of the Packaged Medicinal Product.</div>
+                        <div>If this is also the most outer &lt;pharmhl7:containerPackagedProduct&gt; than this element can be used for the brand name.</div>
+                    </desc>
+                                                    <item original="false" label="UVasContent"/>
+                                                </element>
+                                                <element name="pharmhl7:formCode" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10904">
+                                                    <desc language="en-US">This element encodes the type of the most inner package item or of the or the Packaged Medicinal Product.<br clear="none"/>
+                    </desc>
+                                                    <item original="false" label="UVasContent"/>
+                                                </element>
+                                                <element name="pharmhl7:capacityQuantity" datatype="PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10905">
+                                                    <desc language="en-US">Captures the number of product units the package would contain if fully loaded.<br clear="none"/>
+                    </desc>
+                                                    <item original="false" label="UVasContent"/>
+                                                    <attribute name="value" isOptional="false" id="2.16.840.1.113883.3.1937.777.15.9.10906"/>
+                                                    <attribute name="unit" isOptional="true" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10907"/>
+                                                </element>
+                                                <element name="pharmhl7:asContent" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10908">
+                                                    <desc language="en-US">In case of multiple layers of packaging (5 vials 10 ml; box with 2 blisters of 20 tablets) this element can be used for describing the intermediate Packaged Medicinal Product Item or the Packaged Medicinal Product.<br clear="none"/>
+                        <br clear="none"/>For example in the case <br clear="none"/>  \--Box <br clear="none"/>  \-----2 blisters <br clear="none"/>  \--------20 tablets <br clear="none"/>it describes the "2 blisters" <br clear="none"/>
+                        <br clear="none"/>In the case of <br clear="none"/>  \--Box <br clear="none"/>  \-----5 vials<br clear="none"/>it represents the Packaged Medicinal Product. </desc>
+                                                    <item original="false" label="UVasContent"/>
+                                                    <attribute name="classCode" value="CONT" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10909"/>
+                                                    <element name="pharmhl7:quantity" datatype="PQ" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10910">
+                                                        <desc language="en-US">The quantity which specified how many inner packaged content entities are in an outer packaging container entity.<br clear="none"/>
+                        </desc>
+                                                        <item original="false" label="UVasContent"/>
+                                                    </element>
+                                                    <element name="pharmhl7:containerPackagedProduct" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10911">
+                                                        <desc language="en-US">It represents the intermediate Package Item or the Packaged Medicinal Product<br clear="none"/>
+                        </desc>
+                                                        <item original="false" label="UVasContent"/>
+                                                        <attribute name="classCode" value="CONT" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10912"/>
+                                                        <attribute name="determinerCode" value="KIND" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10913"/>
+                                                        <element name="pharmhl7:code" datatype="CD" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10914">
+                                                            <desc language="en-US">
+                                <div>It represents the code of the Package Item or of the Packaged Medicinal Product.</div>
+                                <div>If this is also the most outer &lt;pharmhl7:containerPackagedProduct&gt; than this element can be used to convey the Packaged Medicinal Product ID.</div>
+                            </desc>
+                                                            <item original="false" label="UVasContent"/>
+                                                        </element>
+                                                        <element name="pharmhl7:name" datatype="ST" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10915">
+                                                            <desc language="en-US">It represents the Name of the Package Item or of the Packaged Medicinal Product.<br clear="none"/>If this is also the most outer &lt;pharmhl7:containerPackagedProduct&gt; than this element can be used for the brand name.</desc>
+                                                            <item original="false" label="UVasContent"/>
+                                                        </element>
+                                                        <element name="pharmhl7:formCode" datatype="CE" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10916">
+                                                            <desc language="en-US">This element encodes the type of the intermediate package item or of the or the Packaged Medicinal Product.<br clear="none"/>
+                            </desc>
+                                                            <item original="false" label="UVasContent"/>
+                                                        </element>
+                                                        <element name="pharmhl7:capacityQuantity" datatype="PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10917">
+                                                            <desc language="en-US">Captures the number of product units the package would contain if fully loaded. <br clear="none"/>
+                            </desc>
+                                                            <item original="false" label="UVasContent"/>
+                                                            <attribute name="value" isOptional="false" id="2.16.840.1.113883.3.1937.777.15.9.10918"/>
+                                                            <attribute name="unit" isOptional="true" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10919"/>
+                                                        </element>
+                                                        <element name="pharmhl7:asContent" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10920">
+                                                            <desc language="en-US">
+                                <div>In case of multiple layers of packaging (box with 2 blisters of 20 tablets) this element is used for describing the most outer Packaged Medicinal Product Item or the Packaged Medicinal Product.</div>
+                                <div>For example in the case </div>
+                                <div>  \--Box </div>
+                                <div>  \-----2 blisters </div>
+                                <div>  \--------20 tablets </div>
+                                <div>it describes the Packaged Medicinal Product. </div>
+                            </desc>
+                                                            <item original="false" label="UVasContent"/>
+                                                            <attribute name="classCode" value="CONT" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10921"/>
+                                                            <element name="pharmhl7:quantity" datatype="PQ" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10922">
+                                                                <desc language="en-US"/>
+                                                                <item original="false" label="UVasContent"/>
+                                                            </element>
+                                                            <element name="pharmhl7:containerPackagedProduct" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10923">
+                                                                <desc language="en-US">When present, it represents the Packaged Medicinal Product</desc>
+                                                                <item original="false" label="UVasContent"/>
+                                                                <attribute name="classCode" value="CONT" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10924"/>
+                                                                <attribute name="determinerCode" value="KIND" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10925"/>
+                                                                <element name="pharmhl7:code" datatype="CD" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10926">
+                                                                    <desc language="en-US">When present, it can be used to convey the Packaged Medicinal Product ID.<br clear="none"/>
+                                    </desc>
+                                                                    <item original="false" label="UVasContent"/>
+                                                                </element>
+                                                                <element name="pharmhl7:name" datatype="ST" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10927">
+                                                                    <desc language="en-US"/>
+                                                                    <item original="false" label="UVasContent"/>
+                                                                </element>
+                                                                <element name="pharmhl7:formCode" datatype="CE" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10928">
+                                                                    <desc language="en-US"/>
+                                                                    <item original="false" label="UVasContent"/>
+                                                                </element>
+                                                                <element name="pharmhl7:capacityQuantity" datatype="PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10929">
+                                                                    <desc language="en-US">Captures the number of product units the package would contain if fully loaded.<br clear="none"/>
+                                    </desc>
+                                                                    <item original="false" label="UVasContent"/>
+                                                                    <attribute name="value" isOptional="false" id="2.16.840.1.113883.3.1937.777.15.9.10930"/>
+                                                                    <attribute name="unit" isOptional="true" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10931"/>
+                                                                </element>
+                                                            </element>
+                                                        </element>
+                                                    </element>
+                                                </element>
+                                            </element>
+                                            <staticAssociations/>
+                                        </include>
+                                    </element>
+                                    <element name="pharmhl7:asSpecializedKind" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10960">
+                                        <item original="false" label="UVMedicationInformationdetail"/>
+                                        <attribute name="classCode" value="GRIC" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10961"/>
+                                        <include ref="2.16.840.1.113883.10.21.4.19" flexibility="dynamic" tmid="2.16.840.1.113883.10.21.4.19" tmname="UVgeneralizedMedicineClass" tmdisplayName="UV Generalized Medicine Class" tmeffectiveDate="2023-01-29T21:57:12" tmstatusCode="draft" tmversionLabel="2023" url="http://art-decor.org/decor/services/" ident="pharmcda-" linkedartefactmissing="false">
+                                            <item original="false" label="UVMedicationInformationdetail"/>
+                                            <element name="pharmhl7:generalizedMedicineKind" id="2.16.840.1.113883.3.1937.777.15.9.10940" minimumMultiplicity="0" maximumMultiplicity="*">
+                                                <item original="false" label="UVgeneralizedMedicineClass"/>
+                                                <attribute name="classCode" value="MMAT" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10941"/>
+                                                <attribute name="determinerCode" value="KIND" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10979"/>
+                                                <element name="pharmhl7:code" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10942">
+                                                    <item original="false" label="UVgeneralizedMedicineClass"/>
+                                                </element>
+                                                <element name="pharmhl7:name" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10943">
+                                                    <item original="false" label="UVgeneralizedMedicineClass"/>
+                                                </element>
+                                            </element>
+                                            <staticAssociations/>
+                                        </include>
+                                    </element>
+                                    <element name="pharmhl7:part" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10962">
+                                        <item original="false" label="UVMedicationInformationdetail"/>
+                                        <attribute name="classCode" value="PART" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10963"/>
+                                        <element name="pharmhl7:id" datatype="II" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10964">
+                                            <item original="false" label="UVMedicationInformationdetail"/>
+                                        </element>
+                                        <element name="pharmhl7:quantity" datatype="PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10965">
+                                            <item original="false" label="UVMedicationInformationdetail"/>
+                                        </element>
+                                        <element name="pharmhl7:partProduct" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10966">
+                                            <item original="false" label="UVMedicationInformationdetail"/>
+                                            <element name="pharmhl7:code" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.11020">
+                                                <item original="false" label="UVMedicationInformationdetail"/>
+                                            </element>
+                                            <element name="pharmhl7:name" datatype="EN" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.11021">
+                                                <item original="false" label="UVMedicationInformationdetail"/>
+                                            </element>
+                                            <element name="pharmhl7:desc" datatype="ED" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.11022">
+                                                <item original="false" label="UVMedicationInformationdetail"/>
+                                            </element>
+                                            <element name="pharmhl7:formCode" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.11023">
+                                                <item original="false" label="UVMedicationInformationdetail"/>
+                                            </element>
+                                            <element name="pharmhl7:asContent" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10967">
+                                                <item original="false" label="UVMedicationInformationdetail"/>
+                                                <attribute name="classCode" value="CONT" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10968"/>
+                                                <include ref="2.16.840.1.113883.10.21.4.17" flexibility="dynamic" tmid="2.16.840.1.113883.10.21.4.17" tmname="UVasContent" tmdisplayName="UV Content" tmeffectiveDate="2022-03-18T08:28:51" tmstatusCode="pending" tmversionLabel="R1-STU2-ballot" url="http://art-decor.org/decor/services/" ident="pharmcda-" linkedartefactmissing="false">
+                                                    <item original="false" label="UVMedicationInformationdetail"/>
+                                                    <element name="pharmhl7:quantity" datatype="PQ" id="2.16.840.1.113883.3.1937.777.15.9.10898" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R">
+                                                        <desc language="en-US">The quantity which specified how many inner packaged content entities are in an outer packaging container entity.<br clear="none"/>
+                </desc>
+                                                        <item original="false" label="UVasContent"/>
+                                                    </element>
+                                                    <element name="pharmhl7:containerPackagedProduct" id="2.16.840.1.113883.3.1937.777.15.9.10899" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R">
+                                                        <desc language="en-US"/>
+                                                        <item original="false" label="UVasContent"/>
+                                                        <attribute name="classCode" value="CONT" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10900"/>
+                                                        <attribute name="determinerCode" value="KIND" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10901"/>
+                                                        <element name="pharmhl7:code" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10902">
+                                                            <desc language="en-US">
+                        <div class="yui-wk-div">It represents the code of the Package Item or of the Packaged Medicinal Product.</div>
+                        <div class="yui-wk-div">If this is also the most outer &lt;pharmhl7:containerPackagedProduct&gt; than this element can be used to convey the Packaged Medicinal Product ID.</div>
+                    </desc>
+                                                            <item original="false" label="UVasContent"/>
+                                                        </element>
+                                                        <element name="pharmhl7:name" datatype="EN" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10903">
+                                                            <desc language="en-US">
+                        <div>It represents the Name of the Package Item or of the Packaged Medicinal Product.</div>
+                        <div>If this is also the most outer &lt;pharmhl7:containerPackagedProduct&gt; than this element can be used for the brand name.</div>
+                    </desc>
+                                                            <item original="false" label="UVasContent"/>
+                                                        </element>
+                                                        <element name="pharmhl7:formCode" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10904">
+                                                            <desc language="en-US">This element encodes the type of the most inner package item or of the or the Packaged Medicinal Product.<br clear="none"/>
+                    </desc>
+                                                            <item original="false" label="UVasContent"/>
+                                                        </element>
+                                                        <element name="pharmhl7:capacityQuantity" datatype="PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10905">
+                                                            <desc language="en-US">Captures the number of product units the package would contain if fully loaded.<br clear="none"/>
+                    </desc>
+                                                            <item original="false" label="UVasContent"/>
+                                                            <attribute name="value" isOptional="false" id="2.16.840.1.113883.3.1937.777.15.9.10906"/>
+                                                            <attribute name="unit" isOptional="true" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10907"/>
+                                                        </element>
+                                                        <element name="pharmhl7:asContent" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10908">
+                                                            <desc language="en-US">In case of multiple layers of packaging (5 vials 10 ml; box with 2 blisters of 20 tablets) this element can be used for describing the intermediate Packaged Medicinal Product Item or the Packaged Medicinal Product.<br clear="none"/>
+                        <br clear="none"/>For example in the case <br clear="none"/>  \--Box <br clear="none"/>  \-----2 blisters <br clear="none"/>  \--------20 tablets <br clear="none"/>it describes the "2 blisters" <br clear="none"/>
+                        <br clear="none"/>In the case of <br clear="none"/>  \--Box <br clear="none"/>  \-----5 vials<br clear="none"/>it represents the Packaged Medicinal Product. </desc>
+                                                            <item original="false" label="UVasContent"/>
+                                                            <attribute name="classCode" value="CONT" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10909"/>
+                                                            <element name="pharmhl7:quantity" datatype="PQ" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10910">
+                                                                <desc language="en-US">The quantity which specified how many inner packaged content entities are in an outer packaging container entity.<br clear="none"/>
+                        </desc>
+                                                                <item original="false" label="UVasContent"/>
+                                                            </element>
+                                                            <element name="pharmhl7:containerPackagedProduct" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10911">
+                                                                <desc language="en-US">It represents the intermediate Package Item or the Packaged Medicinal Product<br clear="none"/>
+                        </desc>
+                                                                <item original="false" label="UVasContent"/>
+                                                                <attribute name="classCode" value="CONT" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10912"/>
+                                                                <attribute name="determinerCode" value="KIND" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10913"/>
+                                                                <element name="pharmhl7:code" datatype="CD" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10914">
+                                                                    <desc language="en-US">
+                                <div>It represents the code of the Package Item or of the Packaged Medicinal Product.</div>
+                                <div>If this is also the most outer &lt;pharmhl7:containerPackagedProduct&gt; than this element can be used to convey the Packaged Medicinal Product ID.</div>
+                            </desc>
+                                                                    <item original="false" label="UVasContent"/>
+                                                                </element>
+                                                                <element name="pharmhl7:name" datatype="ST" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10915">
+                                                                    <desc language="en-US">It represents the Name of the Package Item or of the Packaged Medicinal Product.<br clear="none"/>If this is also the most outer &lt;pharmhl7:containerPackagedProduct&gt; than this element can be used for the brand name.</desc>
+                                                                    <item original="false" label="UVasContent"/>
+                                                                </element>
+                                                                <element name="pharmhl7:formCode" datatype="CE" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10916">
+                                                                    <desc language="en-US">This element encodes the type of the intermediate package item or of the or the Packaged Medicinal Product.<br clear="none"/>
+                            </desc>
+                                                                    <item original="false" label="UVasContent"/>
+                                                                </element>
+                                                                <element name="pharmhl7:capacityQuantity" datatype="PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10917">
+                                                                    <desc language="en-US">Captures the number of product units the package would contain if fully loaded. <br clear="none"/>
+                            </desc>
+                                                                    <item original="false" label="UVasContent"/>
+                                                                    <attribute name="value" isOptional="false" id="2.16.840.1.113883.3.1937.777.15.9.10918"/>
+                                                                    <attribute name="unit" isOptional="true" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10919"/>
+                                                                </element>
+                                                                <element name="pharmhl7:asContent" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10920">
+                                                                    <desc language="en-US">
+                                <div>In case of multiple layers of packaging (box with 2 blisters of 20 tablets) this element is used for describing the most outer Packaged Medicinal Product Item or the Packaged Medicinal Product.</div>
+                                <div>For example in the case </div>
+                                <div>  \--Box </div>
+                                <div>  \-----2 blisters </div>
+                                <div>  \--------20 tablets </div>
+                                <div>it describes the Packaged Medicinal Product. </div>
+                            </desc>
+                                                                    <item original="false" label="UVasContent"/>
+                                                                    <attribute name="classCode" value="CONT" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10921"/>
+                                                                    <element name="pharmhl7:quantity" datatype="PQ" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10922">
+                                                                        <desc language="en-US"/>
+                                                                        <item original="false" label="UVasContent"/>
+                                                                    </element>
+                                                                    <element name="pharmhl7:containerPackagedProduct" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10923">
+                                                                        <desc language="en-US">When present, it represents the Packaged Medicinal Product</desc>
+                                                                        <item original="false" label="UVasContent"/>
+                                                                        <attribute name="classCode" value="CONT" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10924"/>
+                                                                        <attribute name="determinerCode" value="KIND" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10925"/>
+                                                                        <element name="pharmhl7:code" datatype="CD" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10926">
+                                                                            <desc language="en-US">When present, it can be used to convey the Packaged Medicinal Product ID.<br clear="none"/>
+                                    </desc>
+                                                                            <item original="false" label="UVasContent"/>
+                                                                        </element>
+                                                                        <element name="pharmhl7:name" datatype="ST" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10927">
+                                                                            <desc language="en-US"/>
+                                                                            <item original="false" label="UVasContent"/>
+                                                                        </element>
+                                                                        <element name="pharmhl7:formCode" datatype="CE" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10928">
+                                                                            <desc language="en-US"/>
+                                                                            <item original="false" label="UVasContent"/>
+                                                                        </element>
+                                                                        <element name="pharmhl7:capacityQuantity" datatype="PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10929">
+                                                                            <desc language="en-US">Captures the number of product units the package would contain if fully loaded.<br clear="none"/>
+                                    </desc>
+                                                                            <item original="false" label="UVasContent"/>
+                                                                            <attribute name="value" isOptional="false" id="2.16.840.1.113883.3.1937.777.15.9.10930"/>
+                                                                            <attribute name="unit" isOptional="true" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10931"/>
+                                                                        </element>
+                                                                    </element>
+                                                                </element>
+                                                            </element>
+                                                        </element>
+                                                    </element>
+                                                    <staticAssociations/>
+                                                </include>
+                                            </element>
+                                            <element name="pharmhl7:asSpecializedKind" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10969">
+                                                <item original="false" label="UVMedicationInformationdetail"/>
+                                                <attribute name="classCode" value="GRIC" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10970"/>
+                                                <include ref="2.16.840.1.113883.10.21.4.19" flexibility="dynamic" tmid="2.16.840.1.113883.10.21.4.19" tmname="UVgeneralizedMedicineClass" tmdisplayName="UV Generalized Medicine Class" tmeffectiveDate="2023-01-29T21:57:12" tmstatusCode="draft" tmversionLabel="2023" url="http://art-decor.org/decor/services/" ident="pharmcda-" linkedartefactmissing="false">
+                                                    <item original="false" label="UVMedicationInformationdetail"/>
+                                                    <element name="pharmhl7:generalizedMedicineKind" id="2.16.840.1.113883.3.1937.777.15.9.10940" minimumMultiplicity="0" maximumMultiplicity="*">
+                                                        <item original="false" label="UVgeneralizedMedicineClass"/>
+                                                        <attribute name="classCode" value="MMAT" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10941"/>
+                                                        <attribute name="determinerCode" value="KIND" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10979"/>
+                                                        <element name="pharmhl7:code" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10942">
+                                                            <item original="false" label="UVgeneralizedMedicineClass"/>
+                                                        </element>
+                                                        <element name="pharmhl7:name" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10943">
+                                                            <item original="false" label="UVgeneralizedMedicineClass"/>
+                                                        </element>
+                                                    </element>
+                                                    <staticAssociations/>
+                                                </include>
+                                            </element>
+                                            <element name="pharmhl7:part" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10971">
+                                                <item original="false" label="UVMedicationInformationdetail"/>
+                                                <attribute name="classCode" value="PART" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10972"/>
+                                            </element>
+                                            <element name="pharmhl7:ingredient" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10973">
+                                                <item original="false" label="UVMedicationInformationdetail"/>
+                                                <attribute name="classCode" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10974">
+                                                    <vocabulary valueSet="2.16.840.1.113883.1.11.10430" flexibility="dynamic" vsid="2.16.840.1.113883.1.11.10430" vsname="RoleClassIngredientEntity" vsdisplayName="RoleClassIngredientEntity" vseffectiveDate="2014-03-26T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1360-20160323" linkedartefactmissing="false"/>
+                                                </attribute>
+                                                <include ref="2.16.840.1.113883.10.21.4.18" flexibility="dynamic" tmid="2.16.840.1.113883.10.21.4.18" tmname="UVIngredient" tmdisplayName="UV Ingredient" tmeffectiveDate="2022-03-18T08:34:40" tmstatusCode="pending" tmversionLabel="R1-STU2-ballot" url="http://art-decor.org/decor/services/" ident="pharmcda-" linkedartefactmissing="false">
+                                                    <item original="false" label="UVMedicationInformationdetail"/>
+                                                    <element name="pharmhl7:quantity" datatype="RTO_PQ_PQ" id="2.16.840.1.113883.3.1937.777.15.9.10932" minimumMultiplicity="0" maximumMultiplicity="1">
+                                                        <desc language="en-US"/>
+                                                        <item original="false" label="UVIngredient"/>
+                                                        <example type="neutral" caption="10 mg of the ingredient per ml">
+                    <pharmhl7:quantity>
+                        <cda:numerator xsi:type="PQ" value="10" unit="mg"/>
+                        <cda:denominator xsi:type="PQ" value="1" unit="ml"/>
+                    </pharmhl7:quantity>
+                </example>
+                                                        <example type="neutral" caption="2% of the ingredient">
+                    <pharmhl7:quantity>
+                        <cda:numerator xsi:type="PQ" value="2" unit="%"/>
+                        <cda:denominator xsi:type="PQ" value="1"/>
+                    </pharmhl7:quantity>
+                </example>
+                                                        <example type="neutral" caption="5mg of the ingredient">
+                    <pharmhl7:quantity>
+                        <cda:numerator xsi:type="PQ" value="5" unit="mg"/>
+                        <cda:denominator xsi:type="PQ" value="1"/>
+                    </pharmhl7:quantity>
+                </example>
+                                                        <element name="cda:numerator" datatype="PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10933">
+                                                            <item original="false" label="UVIngredient"/>
+                                                        </element>
+                                                        <element name="cda:denominator" datatype="PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10934">
+                                                            <item original="false" label="UVIngredient"/>
+                                                        </element>
+                                                    </element>
+                                                    <element name="pharmhl7:ingredientSubstance" id="2.16.840.1.113883.3.1937.777.15.9.10935" minimumMultiplicity="0" maximumMultiplicity="1">
+                                                        <desc language="en-US">
+                                                            <div>The substance used for this product plying the role indicated in the ingredient classCode.</div>
+                    <div>The &lt;code&gt; element contains the coded representation of the ingredient and the &lt;name&gt; element may be used for the plain text representation.</div>
+                </desc>
+                                                        <item original="false" label="UVIngredient"/>
+                                                        <attribute name="classCode" value="MMAT" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10936"/>
+                                                        <attribute name="determinerCode" value="KIND" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10937"/>
+                                                        <element name="pharmhl7:code" datatype="CD" minimumMultiplicity="0" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.3.1937.777.15.9.10938">
+                                                            <item original="false" label="UVIngredient"/>
+                                                        </element>
+                                                        <element name="pharmhl7:name" datatype="EN" minimumMultiplicity="0" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.3.1937.777.15.9.10939">
+                                                            <item original="false" label="UVIngredient"/>
+                                                        </element>
+                                                        <assert role="error" test="pharmhl7:code or pharmhl7:name">Either the name or the code of the substance (or both) shall be provided</assert>
+                                                    </element>
+                                                    <staticAssociations/>
+                                                </include>
+                                            </element>
+                                        </element>
+                                    </element>
+                                    <element name="pharmhl7:ingredient" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10975">
+                                        <item original="false" label="UVMedicationInformationdetail"/>
+                                        <attribute name="classCode" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10976">
+                                            <vocabulary valueSet="2.16.840.1.113883.1.11.10430" flexibility="dynamic" vsid="2.16.840.1.113883.1.11.10430" vsname="RoleClassIngredientEntity" vsdisplayName="RoleClassIngredientEntity" vseffectiveDate="2014-03-26T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1360-20160323" linkedartefactmissing="false"/>
+                                        </attribute>
+                                        <include ref="2.16.840.1.113883.10.21.4.18" flexibility="dynamic" tmid="2.16.840.1.113883.10.21.4.18" tmname="UVIngredient" tmdisplayName="UV Ingredient" tmeffectiveDate="2022-03-18T08:34:40" tmstatusCode="pending" tmversionLabel="R1-STU2-ballot" url="http://art-decor.org/decor/services/" ident="pharmcda-" linkedartefactmissing="false">
+                                            <item original="false" label="UVMedicationInformationdetail"/>
+                                            <element name="pharmhl7:quantity" datatype="RTO_PQ_PQ" id="2.16.840.1.113883.3.1937.777.15.9.10932" minimumMultiplicity="0" maximumMultiplicity="1">
+                                                <desc language="en-US"/>
+                                                <item original="false" label="UVIngredient"/>
+                                                <example type="neutral" caption="10 mg of the ingredient per ml">
+                    <pharmhl7:quantity>
+                        <cda:numerator xsi:type="PQ" value="10" unit="mg"/>
+                        <cda:denominator xsi:type="PQ" value="1" unit="ml"/>
+                    </pharmhl7:quantity>
+                </example>
+                                                <example type="neutral" caption="2% of the ingredient">
+                    <pharmhl7:quantity>
+                        <cda:numerator xsi:type="PQ" value="2" unit="%"/>
+                        <cda:denominator xsi:type="PQ" value="1"/>
+                    </pharmhl7:quantity>
+                </example>
+                                                <example type="neutral" caption="5mg of the ingredient">
+                    <pharmhl7:quantity>
+                        <cda:numerator xsi:type="PQ" value="5" unit="mg"/>
+                        <cda:denominator xsi:type="PQ" value="1"/>
+                    </pharmhl7:quantity>
+                </example>
+                                                <element name="cda:numerator" datatype="PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10933">
+                                                    <item original="false" label="UVIngredient"/>
+                                                </element>
+                                                <element name="cda:denominator" datatype="PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10934">
+                                                    <item original="false" label="UVIngredient"/>
+                                                </element>
+                                            </element>
+                                            <element name="pharmhl7:ingredientSubstance" id="2.16.840.1.113883.3.1937.777.15.9.10935" minimumMultiplicity="0" maximumMultiplicity="1">
+                                                <desc language="en-US">
+                                                    <div>The substance used for this product plying the role indicated in the ingredient classCode.</div>
+                    <div>The &lt;code&gt; element contains the coded representation of the ingredient and the &lt;name&gt; element may be used for the plain text representation.</div>
+                </desc>
+                                                <item original="false" label="UVIngredient"/>
+                                                <attribute name="classCode" value="MMAT" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10936"/>
+                                                <attribute name="determinerCode" value="KIND" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10937"/>
+                                                <element name="pharmhl7:code" datatype="CD" minimumMultiplicity="0" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.3.1937.777.15.9.10938">
+                                                    <item original="false" label="UVIngredient"/>
+                                                </element>
+                                                <element name="pharmhl7:name" datatype="EN" minimumMultiplicity="0" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.3.1937.777.15.9.10939">
+                                                    <item original="false" label="UVIngredient"/>
+                                                </element>
+                                                <assert role="error" test="pharmhl7:code or pharmhl7:name">Either the name or the code of the substance (or both) shall be provided</assert>
+                                            </element>
+                                            <staticAssociations/>
+                                        </include>
+                                    </element>
+                                </element>
+                            </element>
+                            <element name="pharmhl7:ingredient" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10977">
+                                <item original="false" label="UVMedicationInformationdetail"/>
+                                <attribute name="classCode" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10978">
+                                    <vocabulary valueSet="2.16.840.1.113883.1.11.10430" flexibility="dynamic" vsid="2.16.840.1.113883.1.11.10430" vsname="RoleClassIngredientEntity" vsdisplayName="RoleClassIngredientEntity" vseffectiveDate="2014-03-26T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1360-20160323" linkedartefactmissing="false"/>
+                                </attribute>
+                                <include ref="2.16.840.1.113883.10.21.4.18" flexibility="dynamic" tmid="2.16.840.1.113883.10.21.4.18" tmname="UVIngredient" tmdisplayName="UV Ingredient" tmeffectiveDate="2022-03-18T08:34:40" tmstatusCode="pending" tmversionLabel="R1-STU2-ballot" url="http://art-decor.org/decor/services/" ident="pharmcda-" linkedartefactmissing="false">
+                                    <item original="false" label="UVMedicationInformationdetail"/>
+                                    <element name="pharmhl7:quantity" datatype="RTO_PQ_PQ" id="2.16.840.1.113883.3.1937.777.15.9.10932" minimumMultiplicity="0" maximumMultiplicity="1">
+                                        <desc language="en-US"/>
+                                        <item original="false" label="UVIngredient"/>
+                                        <example type="neutral" caption="10 mg of the ingredient per ml">
+                    <pharmhl7:quantity>
+                        <cda:numerator xsi:type="PQ" value="10" unit="mg"/>
+                        <cda:denominator xsi:type="PQ" value="1" unit="ml"/>
+                    </pharmhl7:quantity>
+                </example>
+                                        <example type="neutral" caption="2% of the ingredient">
+                    <pharmhl7:quantity>
+                        <cda:numerator xsi:type="PQ" value="2" unit="%"/>
+                        <cda:denominator xsi:type="PQ" value="1"/>
+                    </pharmhl7:quantity>
+                </example>
+                                        <example type="neutral" caption="5mg of the ingredient">
+                    <pharmhl7:quantity>
+                        <cda:numerator xsi:type="PQ" value="5" unit="mg"/>
+                        <cda:denominator xsi:type="PQ" value="1"/>
+                    </pharmhl7:quantity>
+                </example>
+                                        <element name="cda:numerator" datatype="PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10933">
+                                            <item original="false" label="UVIngredient"/>
+                                        </element>
+                                        <element name="cda:denominator" datatype="PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10934">
+                                            <item original="false" label="UVIngredient"/>
+                                        </element>
+                                    </element>
+                                    <element name="pharmhl7:ingredientSubstance" id="2.16.840.1.113883.3.1937.777.15.9.10935" minimumMultiplicity="0" maximumMultiplicity="1">
+                                        <desc language="en-US">
+                                            <div>The substance used for this product plying the role indicated in the ingredient classCode.</div>
+                    <div>The &lt;code&gt; element contains the coded representation of the ingredient and the &lt;name&gt; element may be used for the plain text representation.</div>
+                </desc>
+                                        <item original="false" label="UVIngredient"/>
+                                        <attribute name="classCode" value="MMAT" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10936"/>
+                                        <attribute name="determinerCode" value="KIND" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10937"/>
+                                        <element name="pharmhl7:code" datatype="CD" minimumMultiplicity="0" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.3.1937.777.15.9.10938">
+                                            <item original="false" label="UVIngredient"/>
+                                        </element>
+                                        <element name="pharmhl7:name" datatype="EN" minimumMultiplicity="0" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.3.1937.777.15.9.10939">
+                                            <item original="false" label="UVIngredient"/>
+                                        </element>
+                                        <assert role="error" test="pharmhl7:code or pharmhl7:name">Either the name or the code of the substance (or both) shall be provided</assert>
+                                    </element>
+                                    <staticAssociations/>
+                                </include>
+                            </element>
+                        </element>
+                    </element>
+                    <element name="pharmhl7:ingredient" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.132">
+                        <desc language="en-US">
+                            <div>This module provides the list of the ingredients (substances with a role) used for this product; one or more ingredients may be present.</div>
+                            <div>The classCode of "ACTI" indicates that this is an active ingredient.</div>
+                        </desc>
+                        <item original="false" label="UVMedicationInformationdetail"/>
+                        <example type="neutral">
+                            <pharmhl7:ingredient classCode="ACTI">
+                                <pharmhl7:quantity>
+                                    <cda:numerator type="PQ" value=" " unit=" "/>
+                                    <cda:denominator type="PQ" value=" " unit=" "/>
+                                </pharmhl7:quantity>
+                                <ingredientSubstance classCode="MMAT" determinerCode="KIND">
+                                    <code code=" " displayName=" " codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC WHO"/>
+                                </ingredientSubstance>
+                            </pharmhl7:ingredient>
+                        </example>
+                        <attribute name="classCode" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.133">
+                            <vocabulary valueSet="2.16.840.1.113883.1.11.10430" flexibility="dynamic" vsid="2.16.840.1.113883.1.11.10430" vsname="RoleClassIngredientEntity" vsdisplayName="RoleClassIngredientEntity" vseffectiveDate="2014-03-26T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1360-20160323" linkedartefactmissing="false"/>
+                        </attribute>
+                        <include ref="2.16.840.1.113883.10.21.4.18" flexibility="dynamic" tmid="2.16.840.1.113883.10.21.4.18" tmname="UVIngredient" tmdisplayName="UV Ingredient" tmeffectiveDate="2022-03-18T08:34:40" tmstatusCode="pending" tmversionLabel="R1-STU2-ballot" url="http://art-decor.org/decor/services/" ident="pharmcda-" linkedartefactmissing="false">
+                            <item original="false" label="UVMedicationInformationdetail"/>
+                            <element name="pharmhl7:quantity" datatype="RTO_PQ_PQ" id="2.16.840.1.113883.3.1937.777.15.9.10932" minimumMultiplicity="0" maximumMultiplicity="1">
+                                <desc language="en-US"/>
+                                <item original="false" label="UVIngredient"/>
+                                <example type="neutral" caption="10 mg of the ingredient per ml">
+                    <pharmhl7:quantity>
+                        <cda:numerator xsi:type="PQ" value="10" unit="mg"/>
+                        <cda:denominator xsi:type="PQ" value="1" unit="ml"/>
+                    </pharmhl7:quantity>
+                </example>
+                                <example type="neutral" caption="2% of the ingredient">
+                    <pharmhl7:quantity>
+                        <cda:numerator xsi:type="PQ" value="2" unit="%"/>
+                        <cda:denominator xsi:type="PQ" value="1"/>
+                    </pharmhl7:quantity>
+                </example>
+                                <example type="neutral" caption="5mg of the ingredient">
+                    <pharmhl7:quantity>
+                        <cda:numerator xsi:type="PQ" value="5" unit="mg"/>
+                        <cda:denominator xsi:type="PQ" value="1"/>
+                    </pharmhl7:quantity>
+                </example>
+                                <element name="cda:numerator" datatype="PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10933">
+                                    <item original="false" label="UVIngredient"/>
+                                </element>
+                                <element name="cda:denominator" datatype="PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10934">
+                                    <item original="false" label="UVIngredient"/>
+                                </element>
+                            </element>
+                            <element name="pharmhl7:ingredientSubstance" id="2.16.840.1.113883.3.1937.777.15.9.10935" minimumMultiplicity="0" maximumMultiplicity="1">
+                                <desc language="en-US">
+                                    <div>The substance used for this product plying the role indicated in the ingredient classCode.</div>
+                    <div>The &lt;code&gt; element contains the coded representation of the ingredient and the &lt;name&gt; element may be used for the plain text representation.</div>
+                </desc>
+                                <item original="false" label="UVIngredient"/>
+                                <attribute name="classCode" value="MMAT" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10936"/>
+                                <attribute name="determinerCode" value="KIND" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10937"/>
+                                <element name="pharmhl7:code" datatype="CD" minimumMultiplicity="0" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.3.1937.777.15.9.10938">
+                                    <item original="false" label="UVIngredient"/>
+                                </element>
+                                <element name="pharmhl7:name" datatype="EN" minimumMultiplicity="0" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.3.1937.777.15.9.10939">
+                                    <item original="false" label="UVIngredient"/>
+                                </element>
+                                <assert role="error" test="pharmhl7:code or pharmhl7:name">Either the name or the code of the substance (or both) shall be provided</assert>
+                            </element>
+                            <staticAssociations/>
+                        </include>
+                    </element>
+                </element>
+                <element name="hl7:manufacturerOrganization" contains="2.16.840.1.113883.10.12.151" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10766" tmid="2.16.840.1.113883.10.12.151" tmname="CDAOrganization" tmdisplayName="CDA Organization" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false">
+                    <item original="false" label="UVMedicationInformationdetail"/>
+                </element>
+            </element>
+            <staticAssociations/>
+            <uses type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.12.151" name="CDAOrganization" displayName="CDA Organization" effectiveDate="2005-09-07T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.1" name="UVSubstanceadministrationrequest" displayName="UV Medication Order" statusCode="pending" versionLabel="STU1" effectiveDate="2015-10-07T00:00:00" ident="pharmcda-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.1" name="UVSubstanceadministrationrequest" displayName="UV Medication Order" statusCode="pending" versionLabel="R1-STU2-ballot" lastModifiedDate="2023-01-31T10:52:39" effectiveDate="2021-08-04T17:03:38" ident="pharmcda-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.1" name="UVSubstanceadministrationrequest" displayName="UV Medication Order" effectiveDate="2023-01-30T08:30:30" statusCode="draft" versionLabel="2023" lastModifiedDate="2023-01-30T08:30:30" ident="pharmcda-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.1" name="UVSubstanceadministrationrequest" displayName="UV Medication Order" effectiveDate="2023-01-31T10:52:39" statusCode="draft" versionLabel="2023" lastModifiedDate="2023-01-31T10:52:39" ident="pharmcda-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.1" name="UVSubstanceadministrationrequest" displayName="UV Medication Order" effectiveDate="2023-01-31T11:29:28" statusCode="draft" versionLabel="2023" lastModifiedDate="2023-01-31T11:36:01" ident="pharmcda-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.7" name="UVMedicationstatement" displayName="UV Medication Statement" statusCode="pending" versionLabel="STU1" effectiveDate="2017-05-01T00:00:00" ident="pharmcda-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.7" name="UVMedicationstatement" displayName="UV Medication Statement" statusCode="pending" versionLabel="R1-STU2-ballot" lastModifiedDate="2023-01-30T08:32:34" effectiveDate="2021-08-04T14:09:15" ident="pharmcda-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.7" name="UVMedicationstatement" displayName="UV Medication Statement" effectiveDate="2023-01-30T08:32:34" statusCode="draft" versionLabel="2023" lastModifiedDate="2023-01-31T19:49:33" ident="pharmcda-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.13" name="UVMedicationadministration" displayName="UV Medication Administration" statusCode="pending" lastModifiedDate="2023-01-30T08:31:37" versionLabel="R1-STU2-ballot" effectiveDate="2019-02-17T00:00:00" ident="pharmcda-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.13" name="UVMedicationadministration" displayName="UV Medication Administration" effectiveDate="2023-01-30T08:31:37" statusCode="draft" versionLabel="2023" lastModifiedDate="2023-01-30T08:31:37" ident="pharmcda-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.15" name="UVMedicationDispense" displayName="UV Medication Dispense" statusCode="pending" versionLabel="R1-STU2-ballot" lastModifiedDate="2023-01-30T08:33:47" effectiveDate="2021-08-04T16:35:09" ident="pharmcda-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.15" name="UVMedicationDispense" displayName="UV Medication Dispense" effectiveDate="2023-01-30T08:28:25" statusCode="draft" versionLabel="2023" lastModifiedDate="2023-01-30T08:28:25" ident="pharmcda-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.15" name="UVMedicationDispense" displayName="UV Medication Dispense" effectiveDate="2023-01-30T08:33:47" statusCode="draft" versionLabel="2023" lastModifiedDate="2023-01-31T11:52:39" ident="pharmcda-"/>
+            <uses type="include" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.17" name="UVasContent" displayName="UV Content" statusCode="pending" isClosed="false" lastModifiedDate="2023-01-29T21:55:06" versionLabel="R1-STU2-ballot" effectiveDate="2022-03-18T08:28:51" url="http://art-decor.org/decor/services/" ident="pharmcda-"/>
+            <uses type="include" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.18" name="UVIngredient" displayName="UV Ingredient" statusCode="pending" isClosed="false" lastModifiedDate="2023-01-29T21:55:06" versionLabel="R1-STU2-ballot" effectiveDate="2022-03-18T08:34:40" url="http://art-decor.org/decor/services/" ident="pharmcda-"/>
+            <uses type="include" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.19" name="UVgeneralizedMedicineClass" displayName="UV Generalized Medicine Class" effectiveDate="2023-01-29T21:57:12" statusCode="draft" isClosed="false" versionLabel="2023" lastModifiedDate="2023-01-29T21:57:12" url="http://art-decor.org/decor/services/" ident="pharmcda-"/>
+        </template>
+    </template>
+</result>

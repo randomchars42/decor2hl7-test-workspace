@@ -1,0 +1,18 @@
+<valueSets>
+    <project ident="aktin-">
+        <valueSet id="1.2.276.0.76.3.1.195.11.15" name="mts-indicators-yellow" displayName="MTS-Indikatoren GELB" effectiveDate="2024-07-22T16:51:10" statusCode="draft" versionLabel="2024" canonicalUri="http://aktin.org/fhir/ValueSet/aktin-vs-mts-indicators-yellow" lastModifiedDate="2024-07-22T16:51:10">
+            <sourceCodeSystem id="1.2.276.0.76.3.1.195.5.102" identifierName="MTS-Indikatoren" canonicalUri="http://aktin.org/fhir/CodeSystem/aktin-cs-mts-indicators" canonicalUriDSTU2="http://aktin.org/fhir/CodeSystem/aktin-cs-mts-indicators" canonicalUriSTU3="http://aktin.org/fhir/CodeSystem/aktin-cs-mts-indicators" canonicalUriR4="http://aktin.org/fhir/CodeSystem/aktin-cs-mts-indicators" canonicalUriR4B="http://aktin.org/fhir/CodeSystem/aktin-cs-mts-indicators" canonicalUriR5="http://aktin.org/fhir/CodeSystem/aktin-cs-mts-indicators" context="projects/aktin-/mts-indicators-1.2.276.0.76.3.1.195.5.102"/>
+            <publishingAuthority name="AKTIN e. V." inherited="project">
+                <addrLine>c/o Uniklinik RWTH Aachen</addrLine>
+                <addrLine>Institut für Medizinische Informatik</addrLine>
+                <addrLine>Pauwelsstraße 35</addrLine>
+                <addrLine>52074 Aachen</addrLine>
+                <addrLine type="phone">Tel. +49 391 67 28186</addrLine>
+                <addrLine type="email">office@aktin.org</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <include op="descendent-of" code="yellow" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="yellow"/>
+            </conceptList>
+        </valueSet>
+    </project>
+</valueSets>

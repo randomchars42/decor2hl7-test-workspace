@@ -1,0 +1,3 @@
+<codeSystem xmlns:json="http://www.json.org" id="2.16.840.1.113883.6.43.1" effectiveDate="2025-04-03T14:06:06" statusCode="draft" versionLabel="2026-03-31" experimental="true" name="icdo32revbf_ar_m" displayName="ICD-O-3-2.rev-BfArM">
+    <issueAssociation json:array="true" count="0"/>
+</codeSystem>

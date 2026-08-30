@@ -1,0 +1,219 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.2033" ident="aktin-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.2033" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="CDA author" ident="aktin-" name="CDAauthor" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="active" url="http://art-decor.org/decor/services/" effectiveDate="2014-09-17T00:00:00">
+            <desc language="de-DE">Autor des Dokuments</desc>
+            <classification type="cdaheaderlevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.102" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.102" tmname="CDAauthor" tmdisplayName="CDA author" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <relationship type="ADAPT" template="1.2.276.0.76.10.2002" flexibility="2013-07-10T00:00:00" tmid="1.2.276.0.76.10.2002" tmname="HeaderAuthor" tmdisplayName="CDA author" tmeffectiveDate="2013-07-10T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false"/>
+            <example type="neutral">
+                <author>
+                    <time value="20131020"/>
+                    <assignedAuthor>
+                        <id extension="HCP89567" root="2.16.840.1.113883.3.1937.99.3.1.997788"/>
+                        <assignedPerson>
+                            <name>
+                                <given>Kai</given>
+                                <family>Heitmann</family>
+                            </name>
+                        </assignedPerson>
+                        <representedOrganization>
+                            <name>The World's Best Vaccination Service Delivery Location</name>
+                        </representedOrganization>
+                    </assignedAuthor>
+                </author>
+            </example>
+            <element name="hl7:author" minimumMultiplicity="1" maximumMultiplicity="*" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631521">
+                <item original="false" label="CDAauthor"/>
+                <attribute name="typeCode" value="AUT" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631522"/>
+                <element name="hl7:time" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="TS.DATE.MIN" id="2.16.840.1.113883.2.6.60.3.9.1631523">
+                    <item original="false" label="CDAauthor"/>
+                </element>
+                <element name="hl7:assignedAuthor" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631524">
+                    <item original="false" label="CDAauthor"/>
+                    <attribute name="classCode" value="ASSIGNED" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631525"/>
+                    <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.1631526">
+                        <item original="false" label="CDAauthor"/>
+                    </element>
+                    <element name="hl7:assignedPerson" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.1631527">
+                        <item original="false" label="CDAauthor"/>
+                        <include ref="1.2.276.0.76.10.90010" tmid="1.2.276.0.76.10.90010" tmname="PersonElements" tmdisplayName="CDA Person Elements" tmeffectiveDate="2011-12-19T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                            <item original="false" label="CDAauthor"/>
+                            <attribute name="classCode" value="PSN" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.330"/>
+                            <attribute name="determinerCode" value="INSTANCE" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.331"/>
+                            <element name="hl7:name" datatype="PN" id="2.16.840.1.113883.2.6.77.9.332" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                                <item original="false" label="PersonElements"/>
+                            </element>
+                            <staticAssociations>
+                                <origconcept ref="2.16.840.1.113883.3.1937.777.26.2.128" effectiveDate="2020-03-03T09:27:47" refdisplay="konsab-dataelement-128" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.777.26.1.1" datasetEffectiveDate="2018-07-10T12:22:31" datasetStatusCode="draft" datasetName="Datensatz" ident="konsab-" elementId="2.16.840.1.113883.2.6.77.9.332" templateId="1.2.276.0.76.10.90010" templateEffectiveDate="2011-12-19T00:00:00" path="Dermatologisches Konsil / Patient">
+                                    <name language="de-DE">Name</name>
+                                    <desc language="de-DE"/>
+                                    <datasetName language="de-DE">Datensatz</datasetName>
+                                    <projectName language="de-DE">Konsilanfrage und Bericht</projectName>
+                                </origconcept>
+                                <origconcept ref="2.16.840.1.113883.3.1937.777.35.2.367" effectiveDate="2019-05-28T19:34:23" refdisplay="eImpfpass-dataelement-367" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.777.35.1.1" datasetEffectiveDate="2019-05-17T08:08:51" datasetStatusCode="draft" datasetName="Impfpass" ident="eImpfpass-" elementId="2.16.840.1.113883.2.6.77.9.332" templateId="1.2.276.0.76.10.90010" templateEffectiveDate="2011-12-19T00:00:00" path="Elektronischer Impfpass / Behandelnder Arzt">
+                                    <datasetName language="de-DE">Impfpass</datasetName>
+                                    <projectName language="de-DE">Elektronischer Impfpass</projectName>
+                                </origconcept>
+                                <origconcept ref="2.16.840.1.113883.3.1937.777.35.2.423" effectiveDate="2019-07-04T12:09:35" refdisplay="eImpfpass-dataelement-423" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.777.35.1.1" datasetEffectiveDate="2019-05-17T08:08:51" datasetStatusCode="draft" datasetName="Impfpass" ident="eImpfpass-" elementId="2.16.840.1.113883.2.6.77.9.332" templateId="1.2.276.0.76.10.90010" templateEffectiveDate="2011-12-19T00:00:00" path="Elektronischer Impfpass Konzepte / Dokumentierender">
+                                    <name language="de-DE">Name</name>
+                                    <desc language="de-DE"/>
+                                    <datasetName language="de-DE">Impfpass</datasetName>
+                                    <projectName language="de-DE">Elektronischer Impfpass</projectName>
+                                </origconcept>
+                            </staticAssociations>
+                        </include>
+                    </element>
+                    <element name="hl7:representedOrganization" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.1631528">
+                        <item original="false" label="CDAauthor"/>
+                        <include ref="1.2.276.0.76.10.90011" tmid="1.2.276.0.76.10.90011" tmname="OrganizationElements" tmdisplayName="CDA Organization Elements" tmeffectiveDate="2011-12-19T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                            <item original="false" label="CDAauthor"/>
+                            <attribute name="classCode" value="ORG" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.333"/>
+                            <attribute name="determinerCode" value="INSTANCE" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.334"/>
+                            <element name="hl7:id" datatype="II" id="2.16.840.1.113883.2.6.77.9.335" minimumMultiplicity="0" maximumMultiplicity="*">
+                                <item original="false" label="OrganizationElements"/>
+                            </element>
+                            <element name="hl7:name" datatype="ON" id="2.16.840.1.113883.2.6.77.9.336" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                                <item original="false" label="OrganizationElements"/>
+                            </element>
+                            <element name="hl7:telecom" datatype="TEL" id="2.16.840.1.113883.2.6.77.9.337" minimumMultiplicity="0" maximumMultiplicity="*">
+                                <item original="false" label="OrganizationElements"/>
+                            </element>
+                            <element name="hl7:addr" datatype="AD" id="2.16.840.1.113883.2.6.77.9.338" minimumMultiplicity="0" maximumMultiplicity="1">
+                                <item original="false" label="OrganizationElements"/>
+                            </element>
+                            <staticAssociations>
+                                <origconcept ref="1.2.276.0.76.3.1.135.8.2.770" effectiveDate="2020-06-25T13:18:40" refdisplay="vomgt-dataelement-770" conceptStatusCode="draft" datasetId="1.2.276.0.76.3.1.135.8.1.1" datasetEffectiveDate="2015-12-02T09:18:17" datasetStatusCode="draft" datasetName="KV-Mustersammlung" ident="vomgt-" elementId="2.16.840.1.113883.2.6.77.9.333" templateId="1.2.276.0.76.10.90011" templateEffectiveDate="2011-12-19T00:00:00" path="AR-Antrag / Patient Data">
+                                    <name language="de-DE">Hospital Information</name>
+                                    <desc language="de-DE"/>
+                                    <datasetName language="de-DE">KV-Mustersammlung</datasetName>
+                                    <projectName language="de-DE">Verordnungsmanagement</projectName>
+                                </origconcept>
+                                <origconcept ref="1.2.276.0.76.3.1.261.1.77.1.2.2.529" effectiveDate="2018-05-24T00:00:00" refdisplay="dguvbbr-dataelement2-529" conceptStatusCode="draft" datasetId="1.2.276.0.76.3.1.261.1.77.1.1.2" datasetEffectiveDate="2018-05-24T00:00:00" datasetStatusCode="draft" datasetName="Stationärer Entlassungsbericht" ident="dguvbbr-" elementId="2.16.840.1.113883.2.6.77.9.335" templateId="1.2.276.0.76.10.90011" templateEffectiveDate="2011-12-19T00:00:00" path="Beteiligte Sozialversicherungsträger / Krankenkasse">
+                                    <name language="de-DE">IK-Nummer</name>
+                                    <desc language="de-DE">Die Institutionskennzeichen (kurz: IK) sind bundesweit eindeutige, neunstellige Zahlen, mit deren Hilfe Abrechnungen und Qualitätssicherungsmaßnahmen im Bereich der deutschen <span class="yui-non">Sozialversicherung</span> einrichtungsübergreifend abgewickelt werden können. Hierbei erhalten alle Einrichtungen, die Leistungen nach dem <span class="yui-non">Sozialgesetzbuch</span> (SGB) erbringen, auf Antrag ein IK. Damit ist die Grundlage der Abrechnung mittels elektronischer Datenverarbeitung gelegt. Das IK ist ein eindeutiges Merkmal für die Abrechnung mit den Trägern der Sozialversicherung.</desc>
+                                    <datasetName language="de-DE">Stationärer Entlassungsbericht</datasetName>
+                                    <projectName language="de-DE" lastTranslated="2022-12-07T18:52:23">DGUV BBR</projectName>
+                                </origconcept>
+                                <origconcept ref="1.2.276.0.76.3.1.261.1.77.1.2.2.556" effectiveDate="2018-05-24T00:00:00" refdisplay="dguvbbr-dataelement2-556" conceptStatusCode="draft" datasetId="1.2.276.0.76.3.1.261.1.77.1.1.2" datasetEffectiveDate="2018-05-24T00:00:00" datasetStatusCode="draft" datasetName="Stationärer Entlassungsbericht" ident="dguvbbr-" elementId="2.16.840.1.113883.2.6.77.9.335" templateId="1.2.276.0.76.10.90011" templateEffectiveDate="2011-12-19T00:00:00" path="Beteiligte Sozialversicherungsträger / Pflegekasse">
+                                    <name language="de-DE">IK-Nummer</name>
+                                    <desc language="de-DE"/>
+                                    <datasetName language="de-DE">Stationärer Entlassungsbericht</datasetName>
+                                    <projectName language="de-DE" lastTranslated="2022-12-07T18:52:23">DGUV BBR</projectName>
+                                </origconcept>
+                                <origconcept ref="1.2.276.0.76.3.1.261.1.77.1.2.2.663" effectiveDate="2018-07-05T14:49:15" refdisplay="dguvbbr-dataelement2-663" conceptStatusCode="draft" datasetId="1.2.276.0.76.3.1.261.1.77.1.1.2" datasetEffectiveDate="2018-05-24T00:00:00" datasetStatusCode="draft" datasetName="Stationärer Entlassungsbericht" ident="dguvbbr-" elementId="2.16.840.1.113883.2.6.77.9.335" templateId="1.2.276.0.76.10.90011" templateEffectiveDate="2011-12-19T00:00:00" path="Aufenthaltsinformationen / Behandelnde Einrichtung">
+                                    <name language="de-DE">IK-Nummer</name>
+                                    <desc language="de-DE"/>
+                                    <datasetName language="de-DE">Stationärer Entlassungsbericht</datasetName>
+                                    <projectName language="de-DE" lastTranslated="2022-12-07T18:52:23">DGUV BBR</projectName>
+                                </origconcept>
+                                <origconcept ref="1.2.276.0.76.3.1.261.1.77.1.2.2.666" effectiveDate="2018-07-09T15:28:24" refdisplay="dguvbbr-dataelement2-666" conceptStatusCode="draft" datasetId="1.2.276.0.76.3.1.261.1.77.1.1.2" datasetEffectiveDate="2018-05-24T00:00:00" datasetStatusCode="draft" datasetName="Stationärer Entlassungsbericht" ident="dguvbbr-" elementId="2.16.840.1.113883.2.6.77.9.335" templateId="1.2.276.0.76.10.90011" templateEffectiveDate="2011-12-19T00:00:00" path="Beteiligte Sozialversicherungsträger / UV Träger">
+                                    <name language="de-DE">IK-Nummer</name>
+                                    <desc language="de-DE">IK des UV-Trägers</desc>
+                                    <datasetName language="de-DE">Stationärer Entlassungsbericht</datasetName>
+                                    <projectName language="de-DE" lastTranslated="2022-12-07T18:52:23">DGUV BBR</projectName>
+                                </origconcept>
+                                <origconcept ref="2.16.840.1.113883.3.1937.777.26.2.145" effectiveDate="2020-03-18T00:10:08" refdisplay="konsab-dataelement-145" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.777.26.1.1" datasetEffectiveDate="2018-07-10T12:22:31" datasetStatusCode="draft" datasetName="Datensatz" ident="konsab-" elementId="2.16.840.1.113883.2.6.77.9.337" templateId="1.2.276.0.76.10.90011" templateEffectiveDate="2011-12-19T00:00:00" path="Dermatologisches Konsil / Konsiliararzt">
+                                    <name language="de-DE">Telefonnummer</name>
+                                    <desc language="de-DE">Die Telefonnummer des Konsiliararztes</desc>
+                                    <datasetName language="de-DE">Datensatz</datasetName>
+                                    <projectName language="de-DE">Konsilanfrage und Bericht</projectName>
+                                </origconcept>
+                                <origconcept ref="2.16.840.1.113883.3.1937.777.26.2.146" effectiveDate="2020-03-18T00:12:37" refdisplay="konsab-dataelement-146" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.777.26.1.1" datasetEffectiveDate="2018-07-10T12:22:31" datasetStatusCode="draft" datasetName="Datensatz" ident="konsab-" elementId="2.16.840.1.113883.2.6.77.9.337" templateId="1.2.276.0.76.10.90011" templateEffectiveDate="2011-12-19T00:00:00" path="Dermatologisches Konsil / Konsiliararzt">
+                                    <name language="de-DE">Faxnummer</name>
+                                    <desc language="de-DE">Die Faxnummer des Konsiliararztes</desc>
+                                    <datasetName language="de-DE">Datensatz</datasetName>
+                                    <projectName language="de-DE">Konsilanfrage und Bericht</projectName>
+                                </origconcept>
+                                <origconcept ref="2.16.840.1.113883.3.1937.777.26.2.89" effectiveDate="2020-02-18T11:06:24" refdisplay="konsab-dataelement-89" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.777.26.1.1" datasetEffectiveDate="2018-07-10T12:22:31" datasetStatusCode="draft" datasetName="Datensatz" ident="konsab-" elementId="2.16.840.1.113883.2.6.77.9.335" templateId="1.2.276.0.76.10.90011" templateEffectiveDate="2011-12-19T00:00:00" path="Dermatologisches Konsil / Beauftragender Arzt">
+                                    <name language="de-DE">BSNR</name>
+                                    <desc language="de-DE">Die Betriebsstättennummer des beauftragenden Arztes</desc>
+                                    <datasetName language="de-DE">Datensatz</datasetName>
+                                    <projectName language="de-DE">Konsilanfrage und Bericht</projectName>
+                                </origconcept>
+                                <origconcept ref="2.16.840.1.113883.3.1937.777.26.2.90" effectiveDate="2020-02-18T11:07:59" refdisplay="konsab-dataelement-90" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.777.26.1.1" datasetEffectiveDate="2018-07-10T12:22:31" datasetStatusCode="draft" datasetName="Datensatz" ident="konsab-" elementId="2.16.840.1.113883.2.6.77.9.335" templateId="1.2.276.0.76.10.90011" templateEffectiveDate="2011-12-19T00:00:00" path="Dermatologisches Konsil / Konsiliararzt">
+                                    <name language="de-DE">BSNR</name>
+                                    <desc language="de-DE">Die Betriebsstättennummer des Konsiliars</desc>
+                                    <datasetName language="de-DE">Datensatz</datasetName>
+                                    <projectName language="de-DE">Konsilanfrage und Bericht</projectName>
+                                </origconcept>
+                                <origconcept ref="2.16.840.1.113883.3.1937.777.26.2.93" effectiveDate="2020-02-25T09:13:40" refdisplay="konsab-dataelement-93" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.777.26.1.1" datasetEffectiveDate="2018-07-10T12:22:31" datasetStatusCode="draft" datasetName="Datensatz" ident="konsab-" elementId="2.16.840.1.113883.2.6.77.9.337" templateId="1.2.276.0.76.10.90011" templateEffectiveDate="2011-12-19T00:00:00" path="Dermatologisches Konsil / Beauftragender Arzt">
+                                    <name language="de-DE">Telefonnummer</name>
+                                    <desc language="de-DE">Telefonnummer des beauftragenden Arztes</desc>
+                                    <datasetName language="de-DE">Datensatz</datasetName>
+                                    <projectName language="de-DE">Konsilanfrage und Bericht</projectName>
+                                </origconcept>
+                                <origconcept ref="2.16.840.1.113883.3.1937.777.26.2.94" effectiveDate="2020-02-25T09:15:01" refdisplay="konsab-dataelement-94" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.777.26.1.1" datasetEffectiveDate="2018-07-10T12:22:31" datasetStatusCode="draft" datasetName="Datensatz" ident="konsab-" elementId="2.16.840.1.113883.2.6.77.9.337" templateId="1.2.276.0.76.10.90011" templateEffectiveDate="2011-12-19T00:00:00" path="Dermatologisches Konsil / Beauftragender Arzt">
+                                    <name language="de-DE">Faxnummer</name>
+                                    <desc language="de-DE">Faxnummer des beauftragenden Arztes</desc>
+                                    <datasetName language="de-DE">Datensatz</datasetName>
+                                    <projectName language="de-DE">Konsilanfrage und Bericht</projectName>
+                                </origconcept>
+                                <origconcept ref="2.16.840.1.113883.3.1937.777.35.2.325" effectiveDate="2019-05-28T19:16:28" refdisplay="eImpfpass-dataelement-325" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.777.35.1.1" datasetEffectiveDate="2019-05-17T08:08:51" datasetStatusCode="draft" datasetName="Impfpass" ident="eImpfpass-" elementId="2.16.840.1.113883.2.6.77.9.335" templateId="1.2.276.0.76.10.90011" templateEffectiveDate="2011-12-19T00:00:00" path="Elektronischer Impfpass / Behandelnde Praxis">
+                                    <name language="de-DE">Betriebsstättennummer</name>
+                                    <desc language="de-DE"/>
+                                    <datasetName language="de-DE">Impfpass</datasetName>
+                                    <projectName language="de-DE">Elektronischer Impfpass</projectName>
+                                </origconcept>
+                                <origconcept ref="2.16.840.1.113883.3.1937.777.35.2.326" effectiveDate="2019-05-28T19:16:28" refdisplay="eImpfpass-dataelement-326" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.777.35.1.1" datasetEffectiveDate="2019-05-17T08:08:51" datasetStatusCode="draft" datasetName="Impfpass" ident="eImpfpass-" elementId="2.16.840.1.113883.2.6.77.9.336" templateId="1.2.276.0.76.10.90011" templateEffectiveDate="2011-12-19T00:00:00" path="Elektronischer Impfpass / Behandelnde Praxis">
+                                    <name language="de-DE">Name</name>
+                                    <desc language="de-DE"/>
+                                    <datasetName language="de-DE">Impfpass</datasetName>
+                                    <projectName language="de-DE">Elektronischer Impfpass</projectName>
+                                </origconcept>
+                                <origconcept ref="2.16.840.1.113883.3.1937.777.35.2.327" effectiveDate="2019-05-28T19:16:28" refdisplay="eImpfpass-dataelement-327" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.777.35.1.1" datasetEffectiveDate="2019-05-17T08:08:51" datasetStatusCode="draft" datasetName="Impfpass" ident="eImpfpass-" elementId="2.16.840.1.113883.2.6.77.9.337" templateId="1.2.276.0.76.10.90011" templateEffectiveDate="2011-12-19T00:00:00" path="Elektronischer Impfpass / Behandelnde Praxis">
+                                    <name language="de-DE">Telefonnummer</name>
+                                    <desc language="de-DE"/>
+                                    <datasetName language="de-DE">Impfpass</datasetName>
+                                    <projectName language="de-DE">Elektronischer Impfpass</projectName>
+                                </origconcept>
+                                <origconcept ref="2.16.840.1.113883.3.1937.777.35.2.328" effectiveDate="2019-05-28T19:18:15" refdisplay="eImpfpass-dataelement-328" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.777.35.1.1" datasetEffectiveDate="2019-05-17T08:08:51" datasetStatusCode="draft" datasetName="Impfpass" ident="eImpfpass-" elementId="2.16.840.1.113883.2.6.77.9.338" templateId="1.2.276.0.76.10.90011" templateEffectiveDate="2011-12-19T00:00:00" path="Elektronischer Impfpass / Behandelnde Praxis">
+                                    <datasetName language="de-DE">Impfpass</datasetName>
+                                    <projectName language="de-DE">Elektronischer Impfpass</projectName>
+                                </origconcept>
+                                <origconcept ref="2.16.840.1.113883.3.1937.99.61.48.2.1010" effectiveDate="2019-02-08T00:00:00" refdisplay="medmgmt-dataelement-1010" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.99.61.48.1.2" datasetEffectiveDate="2019-02-08T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2019" datasetName="Datensatz eMedikation" ident="medmgmt-" elementId="2.16.840.1.113883.2.6.77.9.335" templateId="1.2.276.0.76.10.90011" templateEffectiveDate="2011-12-19T00:00:00" path="Leistungserbringer / Organisation">
+                                    <name language="de-DE">BSNR</name>
+                                    <desc language="de-DE">BSNR</desc>
+                                    <datasetName language="de-DE">Datensatz eMedikation</datasetName>
+                                    <projectName language="de-DE">Medikationsmanagement</projectName>
+                                </origconcept>
+                                <origconcept ref="2.16.840.1.113883.3.1937.99.61.48.2.1012" effectiveDate="2019-02-08T00:00:00" refdisplay="medmgmt-dataelement-1012" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.99.61.48.1.2" datasetEffectiveDate="2019-02-08T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2019" datasetName="Datensatz eMedikation" ident="medmgmt-" elementId="2.16.840.1.113883.2.6.77.9.335" templateId="1.2.276.0.76.10.90011" templateEffectiveDate="2011-12-19T00:00:00" path="Leistungserbringer / Organisation">
+                                    <name language="de-DE">Institutskennzeichen Krankenhaus</name>
+                                    <desc language="de-DE">Institutskennzeichen Krankenhaus</desc>
+                                    <datasetName language="de-DE">Datensatz eMedikation</datasetName>
+                                    <projectName language="de-DE">Medikationsmanagement</projectName>
+                                </origconcept>
+                                <origconcept ref="2.16.840.1.113883.3.1937.99.61.48.2.1013" effectiveDate="2019-02-08T00:00:00" refdisplay="medmgmt-dataelement-1013" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.99.61.48.1.2" datasetEffectiveDate="2019-02-08T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2019" datasetName="Datensatz eMedikation" ident="medmgmt-" elementId="2.16.840.1.113883.2.6.77.9.335" templateId="1.2.276.0.76.10.90011" templateEffectiveDate="2011-12-19T00:00:00" path="Leistungserbringer / Organisation">
+                                    <name language="de-DE">Institutskennzeichen Apotheke</name>
+                                    <desc language="de-DE">Institutskennzeichen Apotheke</desc>
+                                    <datasetName language="de-DE">Datensatz eMedikation</datasetName>
+                                    <projectName language="de-DE">Medikationsmanagement</projectName>
+                                </origconcept>
+                                <origconcept ref="2.16.840.1.113883.3.1937.99.61.48.2.1014" effectiveDate="2019-02-08T00:00:00" refdisplay="medmgmt-dataelement-1014" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.99.61.48.1.2" datasetEffectiveDate="2019-02-08T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2019" datasetName="Datensatz eMedikation" ident="medmgmt-" elementId="2.16.840.1.113883.2.6.77.9.336" templateId="1.2.276.0.76.10.90011" templateEffectiveDate="2011-12-19T00:00:00" path="Leistungserbringer / Organisation">
+                                    <name language="de-DE">Name Institution</name>
+                                    <desc language="de-DE">Name Institution</desc>
+                                    <datasetName language="de-DE">Datensatz eMedikation</datasetName>
+                                    <projectName language="de-DE">Medikationsmanagement</projectName>
+                                </origconcept>
+                                <origconcept ref="2.16.840.1.113883.3.1937.99.61.48.2.1208" effectiveDate="2019-02-08T00:00:00" refdisplay="medmgmt-dataelement-1208" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.99.61.48.1.2" datasetEffectiveDate="2019-02-08T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2019" datasetName="Datensatz eMedikation" ident="medmgmt-" elementId="2.16.840.1.113883.2.6.77.9.335" templateId="1.2.276.0.76.10.90011" templateEffectiveDate="2011-12-19T00:00:00" path="Leistungserbringer / Organisation">
+                                    <name language="de-DE">Apotheken-IDF</name>
+                                    <desc language="de-DE">Apothekenidentifikationsnummer</desc>
+                                    <datasetName language="de-DE">Datensatz eMedikation</datasetName>
+                                    <projectName language="de-DE">Medikationsmanagement</projectName>
+                                </origconcept>
+                            </staticAssociations>
+                        </include>
+                    </element>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="include" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.2" name="episodenzusammenfassung-notaufnahmeregister" displayName="Episodenzusammenfassung Notaufnahmeregister" effectiveDate="2024-03-21T00:00:00" statusCode="draft" versionLabel="2024" lastModifiedDate="2024-08-20T14:08:22" ident="aktin-"/>
+            <ref type="include" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.92" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2025-11-12T00:00:00" statusCode="retired" versionLabel="v3transit" lastModifiedDate="2026-03-25T11:04:45" ident="aktin-"/>
+            <ref type="include" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.93" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2026-03-25T11:04:07" statusCode="draft" versionLabel="v4transit" lastModifiedDate="2026-04-29T18:39:46" ident="aktin-"/>
+            <ref type="include" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.1015" name="EmergencymedicineNoteCDAdocumentv1" displayName="Emergency medicine Note CDA document" effectiveDate="2014-09-18T00:00:00" statusCode="active" versionLabel="v1" ident="aktin-"/>
+            <ref type="include" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.1019" name="EmergencymedicineNoteCDAdocumentv2" displayName="Emergency medicine Note CDA document" effectiveDate="2016-06-01T00:00:00" statusCode="active" versionLabel="v2" ident="aktin-"/>
+            <ref type="include" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.1021" name="TraumaSummaryCDAdocument" displayName="Trauma Summary CDA document" effectiveDate="2016-11-01T00:00:00" statusCode="draft" versionLabel="v1" ident="aktin-"/>
+            <uses type="include" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.90010" name="PersonElements" displayName="CDA Person Elements" statusCode="active" effectiveDate="2011-12-19T00:00:00" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+            <uses type="include" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.90011" name="OrganizationElements" displayName="CDA Organization Elements" statusCode="active" effectiveDate="2011-12-19T00:00:00" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+        </template>
+    </template>
+</result>

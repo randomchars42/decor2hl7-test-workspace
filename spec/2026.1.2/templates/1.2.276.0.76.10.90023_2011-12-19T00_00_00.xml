@@ -1,0 +1,18 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.90023" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:ukfc="http://fhir.hl7.de/ukfc" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" id="1.2.276.0.76.10.90023" hl7:dummy-default="urn:hl7-org:v3" displayName="Einnahmedauer" xml:dummy-5="http://www.w3.org/XML/1998/namespace" cda:dummy-7="urn:hl7-org:v3" ukfc:dummy-1="http://fhir.hl7.de/ukfc" url="http://art-decor.org/decor/services/" pharm:dummy-4="urn:hl7-org:pharm" xsi:dummy-8="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" ident="pmp-" name="Einnahmedauer" sdtc:dummy-2="urn:hl7-org:sdtc" xhtml:dummy-3="http://www.w3.org/1999/xhtml" statusCode="draft" effectiveDate="2011-12-19T00:00:00">
+            <classification type="cdaentrylevel"/>
+            <element name="hl7:effectiveTime[1]" datatype="IVL_TS" id="2.16.840.1.113883.2.6.60.4.9.91">
+                <desc language="de-DE">Zeitelement zur Dokumentation der Einnahmedauer</desc>
+                <item original="false" label="Einnahmedauer"/>
+                <element name="hl7:low" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="TS.DATE.MIN" id="2.16.840.1.113883.2.6.60.4.9.92">
+                    <item original="false" label="Einnahmedauer"/>
+                </element>
+                <element name="hl7:high" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="TS.DATE.MIN" id="2.16.840.1.113883.2.6.60.4.9.93">
+                    <item original="false" label="Einnahmedauer"/>
+                </element>
+            </element>
+            <staticAssociations/>
+        </template>
+    </template>
+</result>

@@ -1,0 +1,31 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultLanguage="de-DE" id="1.2.276.0.76.3.1.195.10.40" name="pulsfrequenz" displayName="Pulsfrequenz" effectiveDate="2024-08-14T10:13:56" versionLabel="2024" statusCode="draft" url="http://art-decor.org/decor/services/" ident="aktin-" xml:dummy-1="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-3="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance">
+    <desc language="de-DE">Puls des Patienten per manuellem Auszählen, Pulsoximeter oder invasiver Druckmessung gemessen</desc>
+    <classification type="cdaentrylevel"/>
+    <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.303" tmname="CDAObservation" tmdisplayName="CDA Observation" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-"/>
+    <context id="**"/>
+    <element name="hl7:observation" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.877">
+                <attribute name="classCode" value="OBS" id="2.16.840.1.113883.2.6.77.9.878"/>
+                <attribute name="moodCode" value="EVN" id="2.16.840.1.113883.2.6.77.9.879"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.2.6.77.9.880">
+                    <attribute name="root" value="1.2.276.0.76.3.1.195.10.40" id="2.16.840.1.113883.2.6.77.9.881"/>
+                </element>
+                <element name="hl7:id" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.882"/>
+                <element name="hl7:code" datatype="CD" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                    <vocabulary code="78564009" codeSystem="2.16.840.1.113883.6.96" displayName="Heart rate measured at systemic artery (observable entity)"/>
+                    <element name="hl7:translation" datatype="CE" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                        <vocabulary code="8893-0" codeSystem="2.16.840.1.113883.6.1" displayName="Heart rate Peripheral artery by palpation"/>
+                    </element>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.2.6.77.9.873">
+                    <desc language="de-DE">Lediglich reference in den Text der zugehörigen Section</desc>
+                    <element name="hl7:reference" minimumMultiplicity="1" maximumMultiplicity="1" datatype="URL" id="2.16.840.1.113883.2.6.77.9.874"/>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CS" id="2.16.840.1.113883.2.6.77.9.875">
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:effectiveTime" datatype="TS" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R"/>
+                <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="PQ" id="2.16.840.1.113883.2.6.77.9.888">
+                    <property unit="/min"/>
+                </element>
+            </element>
+</template>

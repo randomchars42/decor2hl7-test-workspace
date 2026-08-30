@@ -1,0 +1,37 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.3.1.195.10.9" name="geburtsjahr" displayName="Geburtsjahr des Patienten" effectiveDate="2024-08-13T11:30:44" statusCode="draft" lastModifiedDate="2024-11-18T15:56:07" url="http://art-decor.org/decor/services/" ident="aktin-" xml:dummy-1="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-3="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="de-DE" lastTranslated="2024-08-13T10:50:15">
+        <p>Geburtsjahr des Patienten, abgeleitet aus Geburtsdatum</p>
+    </desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="1.2.276.0.76.3.1.195.10.8" flexibility="2024-08-13T10:50:15"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00"/>
+            <context id="**"/>
+            <element name="hl7:observation" id="2.16.840.1.113883.2.6.60.3.9.16185">
+                <attribute name="classCode" value="OBS" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.16186"/>
+                <attribute name="moodCode" value="EVN" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.16187"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.16188">
+                    <attribute name="root" value="1.2.276.0.76.3.1.195.10.9" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.16189"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.16190">
+                    <vocabulary code="80904-6" codeSystem="2.16.840.1.113883.6.1" displayName="Birth year"/>
+                </element>
+                <element name="hl7:text" datatype="ED" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.16191">
+                    <desc language="de-DE" lastTranslated="2024-08-13T10:50:15">Lediglich reference in den Text der zugehörigen Section</desc>
+                    <element name="hl7:reference" datatype="TEL" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.16192"/>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.16193">
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:value" datatype="INT" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.16195">
+                    <desc language="de-DE" lastTranslated="2024-08-13T10:57:40">
+                <p>Automatisch abgeleitet aus Geburtsdatum, keine Benutzereingabe.</p>
+            </desc>
+                    <example type="neutral">
+                <value value="1984"/>
+                    </example>
+                </element>
+                <element name="hl7:effectiveTime" datatype="TS" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.16194">
+                    <desc language="de-DE" lastTranslated="2024-08-13T10:50:15">Zeitpunkt der Altersbestimmung</desc>
+                </element>
+            </element>
+        </template>

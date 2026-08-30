@@ -1,0 +1,138 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultLanguage="de-DE" id="1.2.276.0.76.10.3050" name="Relevantdiagnostictestsorlaboratorydata" displayName="Diagnostik" effectiveDate="2025-12-01T00:00:00" statusCode="draft" isClosed="false" lastModifiedDate="2025-12-18T14:07:17" url="http://art-decor.org/decor/services/" ident="aktin-" xml:dummy-1="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-3="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance">
+    <desc language="en-US" lastTranslated="2025-12-18T14:01:11">Relevant diagnostic tests &amp;/or laboratory data Section</desc>
+    <desc language="de-DE" lastTranslated="2025-12-18T14:01:11">Diagnostik Section</desc>
+    <classification type="cdasectionlevel"/>
+    <relationship type="VERSION" template="1.2.276.0.76.10.3050" flexibility="2015-01-10T00:00:00" tmid="1.2.276.0.76.10.3050" tmname="Relevantdiagnostictestsorlaboratorydata" tmdisplayName="Diagnostik" tmeffectiveDate="2015-01-10T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+    <relationship type="SPEC" template="2.16.840.1.113883.10.12.201" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.201" tmname="CDASection" tmdisplayName="CDA Section" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-"/>
+    <context id="**"/>
+    <example>
+                <section classCode="DOCSECT">
+                    <templateId root="1.2.276.0.76.10.3050"/>
+                    <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Relevant diagnostic tests &amp;or laboratory data"/>
+                    <title>Diagnostik</title>
+                    <text>...</text>
+                    <entry>
+                        <!-- .. -->
+            </entry>
+                </section>
+            </example>
+    <element name="hl7:section" id="2.16.840.1.113883.2.6.60.3.9.104">
+                <attribute name="classCode" value="DOCSECT" datatype="cs" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.105"/>
+                <element name="hl7:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.106">
+                    <attribute name="root" value="1.2.276.0.76.10.3050" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.107"/>
+                </element>
+                <element name="hl7:code" datatype="CD" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.108">
+                    <vocabulary code="30954-2" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:title" datatype="ST" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.109">
+                    <text>Diagnostik</text>
+                </element>
+                <element name="hl7:text" datatype="SD.TEXT" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.110">
+                    <desc language="de-DE" lastTranslated="2025-12-18T14:01:11">Durchgeführte Diganostik als Schnellübersicht</desc>
+                </element>
+                <element name="hl7:entry" contains="1.2.276.0.76.3.1.195.10.51" flexibility="2024-05-24T00:00:00" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1642295">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1642296"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.1642297"/>
+                </element>
+                <element name="hl7:entry" contains="1.2.276.0.76.10.4050" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.111">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.112"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.113"/>
+                </element>
+                <element name="hl7:entry" contains="1.2.276.0.76.10.4051" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.114">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.115"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.116"/>
+                </element>
+                <element name="hl7:entry" contains="1.2.276.0.76.10.4052" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.117">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.118"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.119"/>
+                </element>
+                <element name="hl7:entry" contains="1.2.276.0.76.10.4053" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.120">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.121"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.122"/>
+                </element>
+                <element name="hl7:entry" contains="1.2.276.0.76.10.4054" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.123">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.124"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.125"/>
+                </element>
+                <element name="hl7:entry" contains="1.2.276.0.76.10.4055" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.126">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.127"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.128"/>
+                </element>
+                <element name="hl7:entry" contains="1.2.276.0.76.10.4056" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.129">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.130"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.131"/>
+                </element>
+                <element name="hl7:entry" contains="1.2.276.0.76.3.1.195.10.59" flexibility="2024-05-24T00:00:00" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1642271">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1642272"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.1642273"/>
+                </element>
+                <element name="hl7:entry" contains="1.2.276.0.76.3.1.195.10.60" flexibility="2024-05-24T00:00:00" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1642274">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1642275"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.1642276"/>
+                </element>
+                <element name="hl7:entry" contains="1.2.276.0.76.3.1.195.10.57" flexibility="2024-05-24T00:00:00" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1642277">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1642278"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.1642279"/>
+                </element>
+                <element name="hl7:entry" contains="1.2.276.0.76.3.1.195.10.58" flexibility="2024-05-24T00:00:00" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1642280">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1642281"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.1642282"/>
+                </element>
+                <element name="hl7:entry" contains="1.2.276.0.76.10.4063" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.150">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.151"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.152"/>
+                </element>
+                <element name="hl7:entry" contains="1.2.276.0.76.10.4058" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.135">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.136"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.137"/>
+                </element>
+                <element name="hl7:entry" contains="1.2.276.0.76.3.1.195.10.91" flexibility="2024-05-24T00:00:00" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1642283">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1642284"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.1642285"/>
+                </element>
+                <element name="hl7:entry" contains="1.2.276.0.76.10.4057" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.132">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.133"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.134"/>
+                </element>
+                <element name="hl7:entry" contains="1.2.276.0.76.3.1.195.10.47" flexibility="2024-05-24T00:00:00" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1642262">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1642263"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.1642264"/>
+                </element>
+                <element name="hl7:entry" contains="1.2.276.0.76.3.1.195.10.48" flexibility="2024-05-24T00:00:00" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1642265">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1642266"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.1642267"/>
+                </element>
+                <element name="hl7:entry" contains="1.2.276.0.76.10.4059" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.138">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.139"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.140"/>
+                </element>
+                <element name="hl7:entry" contains="1.2.276.0.76.10.4060" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.141">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.142"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.143"/>
+                </element>
+                <element name="hl7:entry" contains="1.2.276.0.76.3.1.195.10.49" flexibility="2024-05-24T00:00:00" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1642268">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1642269"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.1642270"/>
+                </element>
+                <element name="hl7:entry" contains="1.2.276.0.76.10.4061" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.144">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.145"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.146"/>
+                </element>
+                <element name="hl7:entry" contains="1.2.276.0.76.10.4064" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.153">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.154"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.155"/>
+                </element>
+                <element name="hl7:entry" contains="1.2.276.0.76.3.1.195.10.50" flexibility="2024-05-24T00:00:00" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1642298">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1642299"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.1642300"/>
+                </element>
+                <element name="hl7:entry" contains="1.2.276.0.76.10.4062" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.147">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.148"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.149"/>
+                </element>
+                <element name="hl7:entry" contains="1.2.276.0.76.3.1.195.10.89" flexibility="2024-08-18T21:50:30" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1642301">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1642302"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.1642303"/>
+                </element>
+            </element>
+</template>

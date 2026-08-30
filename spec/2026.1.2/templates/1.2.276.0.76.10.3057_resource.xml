@@ -1,0 +1,85 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.3057" ident="aktin-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.3057" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="Zusatzmodule (weitere Dokumentation)" ident="aktin-" name="Additionalmodulessection" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="active" url="http://art-decor.org/decor/services/" effectiveDate="2015-03-30T00:00:00">
+            <desc language="de-DE">Zusatzmodule Section (weitere Dokumentation)</desc>
+            <classification type="cdasectionlevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.201" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.201" tmname="CDASection" tmdisplayName="CDA Section" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <example type="neutral">
+                <section classCode="DOCSECT">
+                    <templateId root="1.2.276.0.76.10.3057"/>
+                    <code code="11516-2" codeSystem="2.16.840.1.113883.6.1" displayName="Physician Records total Encounter"/>
+                    <title>Zusatzmodule</title>
+                    <text>
+                        <list>
+                            <item>Traumamodul</item>
+                            <item>Konsil</item>
+                        </list>
+                    </text>
+                    <entry>
+                        <!-- .. -->
+                    </entry>
+                </section>
+            </example>
+            <element name="hl7:section" id="2.16.840.1.113883.2.6.60.3.9.206">
+                <item original="false" label="Additionalmodulessection"/>
+                <attribute name="classCode" value="DOCSECT" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.207"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.208">
+                    <item original="false" label="Additionalmodulessection"/>
+                    <attribute name="root" value="1.2.276.0.76.10.3057" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.209"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CD" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.210">
+                    <item original="false" label="Additionalmodulessection"/>
+                    <vocabulary code="11516-2" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:title" minimumMultiplicity="1" maximumMultiplicity="1" datatype="ST" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.211">
+                    <item original="false" label="Additionalmodulessection"/>
+                    <text>Zusatzmodule</text>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="1" maximumMultiplicity="1" datatype="SD.TEXT" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.212">
+                    <item original="false" label="Additionalmodulessection"/>
+                </element>
+                <element name="hl7:entry" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" contains="1.2.276.0.76.10.4070" id="2.16.840.1.113883.2.6.60.3.9.213" tmid="1.2.276.0.76.10.4070" tmname="Additionalexternalocuments" tmdisplayName="Zusätzliche externe Dokumentation" tmeffectiveDate="2015-03-30T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <item original="false" label="Additionalmodulessection"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.214"/>
+                    <attribute name="contextConductionInd" value="true" isOptional="true" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.215"/>
+                </element>
+            </element>
+            <staticAssociations>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.2.10008" effectiveDate="2015-01-15T00:00:00" refdisplay="aktin-dataelement2015(1)-10008" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.2" datasetEffectiveDate="2015-01-15T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.1-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.206" templateId="1.2.276.0.76.10.3057" templateEffectiveDate="2015-03-30T00:00:00" path="">
+                    <name language="de-DE">Zusatzmodule</name>
+                    <desc language="de-DE">Zusatzmodule angelegt</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.2.40" effectiveDate="2015-01-15T00:00:00" refdisplay="aktin-dataelement2015(1)-40" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.2" datasetEffectiveDate="2015-01-15T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.1-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.212" templateId="1.2.276.0.76.10.3057" templateEffectiveDate="2015-03-30T00:00:00" path="Notfallanamnese">
+                    <name language="de-DE">Notfallanamnese des Patienten</name>
+                    <desc language="de-DE">Notfallanamnese des Patienten</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.3.10008" effectiveDate="2015-11-01T00:00:00" refdisplay="aktin-dataelement2015(2)-10008" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.3" datasetEffectiveDate="2015-11-01T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.2-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.206" templateId="1.2.276.0.76.10.3057" templateEffectiveDate="2015-03-30T00:00:00" path="">
+                    <name language="de-DE">Zusatzmodule</name>
+                    <desc language="de-DE">Zusatzmodule angelegt</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.3.40" effectiveDate="2015-11-01T00:00:00" refdisplay="aktin-dataelement2015(2)-40" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.3" datasetEffectiveDate="2015-11-01T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.2-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.212" templateId="1.2.276.0.76.10.3057" templateEffectiveDate="2015-03-30T00:00:00" path="Notfallanamnese">
+                    <name language="de-DE">Notfallanamnese des Patienten</name>
+                    <desc language="de-DE">Notfallanamnese des Patienten</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+            </staticAssociations>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.92" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2025-11-12T00:00:00" statusCode="retired" versionLabel="v3transit" lastModifiedDate="2026-03-25T11:04:45" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.93" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2026-03-25T11:04:07" statusCode="draft" versionLabel="v4transit" lastModifiedDate="2026-04-29T18:39:46" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.1015" name="EmergencymedicineNoteCDAdocumentv1" displayName="Emergency medicine Note CDA document" effectiveDate="2014-09-18T00:00:00" statusCode="active" versionLabel="v1" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.1019" name="EmergencymedicineNoteCDAdocumentv2" displayName="Emergency medicine Note CDA document" effectiveDate="2016-06-01T00:00:00" statusCode="active" versionLabel="v2" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4070" name="Additionalexternalocuments" displayName="Zusätzliche externe Dokumentation" effectiveDate="2015-03-30T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+        </template>
+    </template>
+</result>

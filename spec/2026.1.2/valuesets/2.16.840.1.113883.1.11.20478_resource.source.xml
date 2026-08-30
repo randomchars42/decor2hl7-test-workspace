@@ -1,0 +1,26 @@
+<valueSet xmlns:json="http://www.json.org" id="2.16.840.1.113883.1.11.20478" name="Compartment" displayName="Compartment" effectiveDate="2017-07-31T00:00:00" statusCode="final" versionLabel="DEFN=UV=VO=1397-20170731" url="http://art-decor.org/decor/services/" ident="ad2bbr-">
+    <desc json:array="true" language="en-US">&lt;p&gt;&lt;b&gt;History description 2014-03-26: &lt;/b&gt;Lock all vaue sets untouched since 2014-03-26 to trackingId 2014T1_2014_03_26&lt;/p&gt; &lt;b&gt;description: &lt;/b&gt; &lt;p&gt;A named tag set for metadata used to populate a security category label field that "segments" an IT resource per policy by indicating that access and use is restricted to members of a defined community or project. (HL7
+                    Healthcare Privacy and Security Classification System)&lt;/p&gt; &lt;p&gt;&lt;i&gt;Usage Note:&lt;/i&gt; This is the healthcare analog to the US Intelligence Community's concept of a Special Access Program. Compartment codes may be used in as a field value in an initiator's clearance to indicate permission to access and use an IT Resource with a security label having the same compartment value in
+                    security category label field.&lt;/p&gt; &lt;p&gt;Map: Aligns with ISO 2382-8 definition of Compartment - "A division of data into isolated blocks with separate security controls for the purpose of reducing risk."&lt;/p&gt;</desc>
+    <sourceCodeSystem json:array="true" id="2.16.840.1.113883.5.4" identifierName="Act Code" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-ActCode" canonicalUriDSTU2="http://hl7.org/fhir/v3/ActCode" canonicalUriSTU3="http://hl7.org/fhir/v3/ActCode" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-ActCode" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-ActCode" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-ActCode" context="external/hl7intl/v3/v3-ActCode"/>
+    <publishingAuthority json:array="true" name="HL7" inherited="project">
+        <addrLine json:array="true">Health Level Seven International</addrLine>
+        <addrLine json:array="true">455 E. Eisenhower PKWY STE 300 # 025</addrLine>
+        <addrLine json:array="true">Ann Arbor, MI 48108</addrLine>
+        <addrLine json:array="true">USA</addrLine>
+        <addrLine json:array="true">T +1 734 677 7777</addrLine>
+        <addrLine json:array="true">F +1 734 677 6622</addrLine>
+        <addrLine json:array="true">E info@hl7.org</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="concept" code="COMPT" codeSystem="2.16.840.1.113883.5.4" displayName="compartment" level="0" type="S"/>
+    <items json:array="true" is="concept" code="ACOCOMPT" codeSystem="2.16.840.1.113883.5.4" displayName="accountable care organization compartment" level="1" type="L"/>
+    <items json:array="true" is="concept" code="CTCOMPT" codeSystem="2.16.840.1.113883.5.4" displayName="care team compartment" level="1" type="L"/>
+    <items json:array="true" is="concept" code="FMCOMPT" codeSystem="2.16.840.1.113883.5.4" displayName="financial management compartment" level="1" type="L"/>
+    <items json:array="true" is="concept" code="HRCOMPT" codeSystem="2.16.840.1.113883.5.4" displayName="human resource compartment" level="1" type="L"/>
+    <items json:array="true" is="concept" code="LRCOMPT" codeSystem="2.16.840.1.113883.5.4" displayName="legitimate relationship compartment" level="1" type="L"/>
+    <items json:array="true" is="concept" code="PACOMPT" codeSystem="2.16.840.1.113883.5.4" displayName="patient administration compartment" level="1" type="L"/>
+    <items json:array="true" is="concept" code="RESCOMPT" codeSystem="2.16.840.1.113883.5.4" displayName="research project compartment" level="1" type="L"/>
+    <items json:array="true" is="concept" code="RMGTCOMPT" codeSystem="2.16.840.1.113883.5.4" displayName="records management compartment" level="1" type="L"/>
+</valueSet>

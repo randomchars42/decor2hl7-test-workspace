@@ -1,0 +1,18 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.3.1937.777.4.10.13" name="CCDClinicalStatement" displayName="CCD Clinical Statement" effectiveDate="2007-04-01T00:00:00" statusCode="pending" url="http://art-decor.org/decor/services/" ident="ccd1-" sdtc:dummy-1="urn:hl7-org:sdtc" xml:dummy-2="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-4="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance">
+    <desc language="en-US">Template CDA Clinical Statement (prototype, directly derived from POCD_RM000040 MIF)</desc>
+    <desc language="nl-NL">Template CDA Clinical Statement (prototype, direct afgeleid uit POCD_RM000040 MIF)</desc>
+    <desc language="de-DE">Template CDA Clinical Statement (Prototyp, direkt abgeleitet aus POCD_RM000040 MIF)</desc>
+    <classification type="cdaentrylevel"/>
+    <relationship type="COPY" template="2.16.840.1.113883.10.12.300" flexibility="2005-09-07T00:00:00"/>
+    <choice minimumMultiplicity="1" maximumMultiplicity="1">
+        <element name="hl7:act" id="2.16.840.1.113883.3.1937.777.4.9.2636"/>
+        <element name="hl7:encounter" id="2.16.840.1.113883.3.1937.777.4.9.2637"/>
+        <element name="hl7:observation" id="2.16.840.1.113883.3.1937.777.4.9.2638"/>
+        <element name="hl7:observationMedia" id="2.16.840.1.113883.3.1937.777.4.9.2639"/>
+        <element name="hl7:organizer" id="2.16.840.1.113883.3.1937.777.4.9.2640"/>
+        <element name="hl7:procedure" id="2.16.840.1.113883.3.1937.777.4.9.2641"/>
+        <element name="hl7:regionOfInterest" id="2.16.840.1.113883.3.1937.777.4.9.2642"/>
+        <element name="hl7:substanceAdministration" id="2.16.840.1.113883.3.1937.777.4.9.2643"/>
+        <element name="hl7:supply" id="2.16.840.1.113883.3.1937.777.4.9.2644"/>
+    </choice>
+</template>

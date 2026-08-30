@@ -1,0 +1,65 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:pharmhl7="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.21.4.10" name="UVMedicationInformationsimple" displayName="UV Medication Information (simple)" statusCode="pending" versionLabel="R1-STU2-ballot" lastModifiedDate="2023-01-29T21:55:06" effectiveDate="2021-09-29T19:15:16" url="http://art-decor.org/decor/services/" ident="pharmcda-" pharmhl7:dummy-1="urn:hl7-org:pharm" xml:dummy-2="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-4="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">Universal Medication Information (simple)</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="VERSION" template="2.16.840.1.113883.10.21.4.10" flexibility="2017-05-10T00:00:00"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.312" flexibility="2005-09-07T00:00:00"/>
+            <relationship type="ADAPT" template="2.16.840.1.113883.10.20.22.4.54" flexibility="2014-06-09T00:00:00"/>
+            <context id="**"/>
+            <example type="neutral" caption="US RxNorm Code">
+        <hl7:manufacturedProduct classCode="MANU">
+                    <hl7:templateId root="2.16.840.1.113883.10.21.4.10"/>
+                    <hl7:manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                        <hl7:code code="243670" codeSystem="2.16.840.1.113883.6.88" displayName="Aspirin 81 MG Oral Tablet"/>
+                    </hl7:manufacturedMaterial>
+                </hl7:manufacturedProduct>
+    </example>
+            <example type="neutral" caption="Dutch G-Standaard Artikel Code">
+        <hl7:manufacturedProduct classCode="MANU">
+                    <hl7:templateId root="2.16.840.1.113883.10.21.4.10"/>
+                    <hl7:manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                        <hl7:code code="14145839" codeSystem="2.16.840.1.113883.2.4.4.8" codeSystemName="G-Standaard Artikel" displayName="FUROSEMIDE CF 40MG TABLET"/>
+                    </hl7:manufacturedMaterial>
+                </hl7:manufacturedProduct>
+    </example>
+            <example type="neutral" caption="German Pharmaceutical Product Code">
+        <hl7:manufacturedProduct classCode="MANU">
+                    <hl7:templateId root="2.16.840.1.113883.10.21.4.10"/>
+                    <hl7:manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                        <hl7:code code="4213974" codeSystem="1.2.276.0.76.4.6" displayName="RAMIPRIL STADA 5 mg"/>
+                        <hl7:lotNumberText>675-86574</hl7:lotNumberText>
+                    </hl7:manufacturedMaterial>
+                    <hl7:manufacturerOrganization>
+                        <hl7:name>STADA GmbH</hl7:name>
+                    </hl7:manufacturerOrganization>
+                </hl7:manufacturedProduct>
+    </example>
+            <element name="hl7:manufacturedProduct" id="2.16.840.1.113883.3.1937.777.15.9.10767">
+                <attribute name="classCode" value="MANU" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10768"/>
+                <element name="hl7:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.777.15.9.10769">
+                    <attribute name="root" value="2.16.840.1.113883.10.21.4.10" datatype="uid" id="2.16.840.1.113883.3.1937.777.15.9.10770"/>
+                </element>
+                <element name="hl7:manufacturedMaterial" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.777.15.9.10771">
+                    <attribute name="classCode" value="MMAT" datatype="cs" isOptional="true" id="2.16.840.1.113883.3.1937.777.15.9.10772"/>
+                    <attribute name="determinerCode" value="KIND" datatype="cs" isOptional="true" id="2.16.840.1.113883.3.1937.777.15.9.10773"/>
+                    <element name="hl7:code" datatype="CD" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10774">
+                        <desc language="en-US">
+                    <div class="yui-wk-div">The code element describes the code of the medication. The medication may be either</div>
+                    <div class="yui-wk-div">
+                        <ul>
+                            <li>a brand/product or</li>
+                            <li>described as a generic/scientific name or</li>
+                            <li>a descriptor of a magistral preparation/compound medicine</li>
+                        </ul>
+                    </div>
+                    <div class="yui-wk-div">If the medicine has no code / is
+                                uncoded (e.g., magistral preparations, compound medicine, ...) nullFlavor="NA" SHALL be used.</div>
+                </desc>
+                        <element name="hl7:translation" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10775">
+                            <vocabulary domain="Product Code"/>
+                        </element>
+                    </element>
+                    <element name="hl7:lotNumberText" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10776"/>
+                </element>
+                <element name="hl7:manufacturerOrganization" contains="2.16.840.1.113883.10.12.151" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10777"/>
+            </element>
+        </template>

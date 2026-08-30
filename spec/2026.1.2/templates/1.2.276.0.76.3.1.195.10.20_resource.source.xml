@@ -1,0 +1,36 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultLanguage="de-DE" id="1.2.276.0.76.3.1.195.10.20" name="emergency-severity-index" displayName="Emergency Severity Index" effectiveDate="2024-08-13T14:38:45" statusCode="draft" lastModifiedDate="2024-08-13T14:41:19" url="http://art-decor.org/decor/services/" ident="aktin-" xml:dummy-1="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-3="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance">
+    <desc language="de-DE" lastTranslated="2024-08-13T14:38:45">Emergency Severity Index</desc>
+    <classification type="cdaentrylevel"/>
+    <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.303" tmname="CDAObservation" tmdisplayName="CDA Observation" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-"/>
+    <context id="**"/>
+    <element name="hl7:observation" id="2.16.840.1.113883.3.1937.777.1.9.357">
+                <attribute name="classCode" value="OBS" datatype="cs" id="2.16.840.1.113883.3.1937.777.1.9.358"/>
+                <attribute name="moodCode" value="EVN" datatype="cs" id="2.16.840.1.113883.3.1937.777.1.9.359"/>
+                <element name="hl7:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.1.9.361">
+                    <attribute name="root" value="1.2.276.0.76.3.1.195.10.20" datatype="uid" id="2.16.840.1.113883.3.1937.777.1.9.362"/>
+                </element>
+                <element name="hl7:id" datatype="II" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.1.9.363"/>
+                <element name="hl7:code" datatype="CD" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.1.9.364">
+                    <vocabulary code="1255873000" codeSystem="2.16.840.1.113883.6.96" displayName="Emergency Severity Index score (observable entity)"/>
+                </element>
+                <element name="hl7:text" datatype="ED" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.1631709">
+                    <desc language="de-DE" lastTranslated="2024-08-13T11:45:19">Lediglich reference in den Text der zugehörigen Section</desc>
+                    <element name="hl7:reference" datatype="URL" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.1631710"/>
+                </element>
+                <element name="hl7:statusCode" datatype="CS" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631711">
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:effectiveTime" datatype="TS" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1631712">
+                    <desc language="de-DE" lastTranslated="2024-08-13T11:45:19">Zeitpunkt</desc>
+                </element>
+                <element name="hl7:value" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.1.9.372">
+                    <desc language="de-DE" lastTranslated="2024-08-13T11:45:19">ESI Score, hier optional da übergeordnet schon angegeben</desc>
+                    <vocabulary valueSet="1.2.276.0.76.11.45"/>
+                </element>
+                <element name="hl7:entryRelationship" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" contains="1.2.276.0.76.3.1.195.10.26">
+                    <desc language="de-DE">ESI-Triagefaktoren</desc>
+                    <attribute name="typeCode" value="COMP"/>
+                    <attribute name="contextConductionInd" datatype="bl" isOptional="true"/>
+                </element>
+            </element>
+</template>

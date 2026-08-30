@@ -1,0 +1,86 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.4072" ident="aktin-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.4072" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="Problem Concern Act (Multidrug-resistant organism)" ident="aktin-" name="ProblemconcernactMDRO" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="active" url="http://art-decor.org/decor/services/" effectiveDate="2017-03-01T00:00:00">
+            <desc language="en-US"/>
+            <desc language="de-DE">Sammelkontainer für Multiresistente Keime</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.301" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.301" tmname="CDAAct" tmdisplayName="CDA Act" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <relationship type="ADAPT" template="2.16.840.1.113883.10.20.22.4.3" tmid="2.16.840.1.113883.10.20.22.4.3" tmname="ProblemConcernActV3" tmdisplayName="Problem Concern Act (V3)" tmeffectiveDate="2015-08-01T00:00:00" tmstatusCode="draft" tmversionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-" linkedartefactmissing="false"/>
+            <relationship type="ADAPT" template="1.2.276.0.76.10.4002" url="http://art-decor.org/decor/services/" linkedartefactmissing="true"/>
+            <context id="**"/>
+            <example type="neutral">
+                <act classCode="ACT" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4072"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="dd8a6ff8-ed4b-4f7e-82c3-e98e58b45de6"/>
+                    <code code="CONC" codeSystem="2.16.840.1.113883.5.6" displayName="Concern"/>
+                    <statusCode code="completed"/>
+                    <effectiveTime>
+                        <low value="20150304"/>
+                    </effectiveTime>
+                    <entryRelationship typeCode="SUBJ">
+                        <!-- Problem Observation (Multidrug-resistant organism) -->
+                    </entryRelationship>
+                </act>
+            </example>
+            <element name="hl7:act" id="2.16.840.1.113883.2.6.60.3.9.299">
+                <item original="false" label="ProblemconcernactMDRO"/>
+                <attribute name="classCode" value="ACT" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.300"/>
+                <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.301"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.302">
+                    <item original="false" label="ProblemconcernactMDRO"/>
+                    <attribute name="root" value="1.2.276.0.76.10.4072" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.303"/>
+                </element>
+                <element name="hl7:id" datatype="II" minimumMultiplicity="1" maximumMultiplicity="*" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.304">
+                    <item original="false" label="ProblemconcernactMDRO"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CE" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.305">
+                    <item original="false" label="ProblemconcernactMDRO"/>
+                    <vocabulary code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CS" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.306">
+                    <item original="false" label="ProblemconcernactMDRO"/>
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:effectiveTime" minimumMultiplicity="0" maximumMultiplicity="1" datatype="IVL_TS" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.307">
+                    <item original="false" label="ProblemconcernactMDRO"/>
+                    <element name="hl7:low" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.308">
+                        <item original="false" label="ProblemconcernactMDRO"/>
+                    </element>
+                    <element name="hl7:high" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.309">
+                        <item original="false" label="ProblemconcernactMDRO"/>
+                    </element>
+                </element>
+                <element name="hl7:entryRelationship" minimumMultiplicity="1" maximumMultiplicity="*" contains="1.2.276.0.76.10.4073" flexibility="2017-03-01T00:00:00" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.310" tmid="1.2.276.0.76.10.4073" tmname="ProblemobservationMDRO" tmdisplayName="Problem Observation (Multidrug-resistant organism)" tmeffectiveDate="2017-03-01T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <desc language="de-DE">Multiresistente Keime</desc>
+                    <item original="false" label="ProblemconcernactMDRO"/>
+                    <attribute name="typeCode" value="SUBJ" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.311"/>
+                </element>
+            </element>
+            <staticAssociations>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.2.10035" effectiveDate="2015-01-15T00:00:00" refdisplay="aktin-dataelement2015(1)-10035" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.2" datasetEffectiveDate="2015-01-15T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.1-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.299" templateId="1.2.276.0.76.10.4072" templateEffectiveDate="2017-03-01T00:00:00" path="Klinische Basisdaten Patient">
+                    <name language="de-DE">multiresistente Erreger</name>
+                    <desc language="de-DE">multiresistente Erreger</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.3.10035" effectiveDate="2015-11-01T00:00:00" refdisplay="aktin-dataelement2015(2)-10035" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.3" datasetEffectiveDate="2015-11-01T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.2-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.299" templateId="1.2.276.0.76.10.4072" templateEffectiveDate="2017-03-01T00:00:00" path="Klinische Basisdaten Patient">
+                    <name language="de-DE">multiresistente Erreger</name>
+                    <desc language="de-DE">multiresistente Erreger</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+            </staticAssociations>
+            <ref type="dependency" prefix="aktin-" flexibility="2016-08-02T00:00:00" id="1.2.276.0.76.3.1.195.10.92" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2025-11-12T00:00:00" statusCode="retired" versionLabel="v3transit" lastModifiedDate="2026-03-25T11:04:45" ident="aktin-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="2016-08-02T00:00:00" id="1.2.276.0.76.3.1.195.10.93" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2026-03-25T11:04:07" statusCode="draft" versionLabel="v4transit" lastModifiedDate="2026-04-29T18:39:46" ident="aktin-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="2016-08-02T00:00:00" id="1.2.276.0.76.10.1019" name="EmergencymedicineNoteCDAdocumentv2" displayName="Emergency medicine Note CDA document" effectiveDate="2016-06-01T00:00:00" statusCode="active" versionLabel="v2" ident="aktin-"/>
+            <ref type="dependency" prefix="evthm-" flexibility="2017-04-24T00:00:00" id="1.2.276.0.76.10.1022" name="Livedatencda" displayName="Live-Daten-CDA Dokument" effectiveDate="2017-01-23T00:00:00" statusCode="draft" ident="evthm-"/>
+            <ref type="dependency" prefix="evthm-" flexibility="2017-04-24T00:00:00" id="1.2.276.0.76.10.1023" name="Ueberleitungsdatencda" displayName="Überleitungs-CDA Dokument" effectiveDate="2017-03-14T00:00:00" statusCode="draft" ident="evthm-"/>
+            <ref type="contains" prefix="aktin-" flexibility="2017-03-01T00:00:00" id="1.2.276.0.76.10.3047" name="ClinicalInformation" displayName="Klinische Basisinformationen" effectiveDate="2016-08-02T00:00:00" statusCode="active" isClosed="false" ident="aktin-"/>
+            <ref type="contains" prefix="evthm-" flexibility="dynamic" id="1.2.276.0.76.10.3088" effectiveDate="2017-04-24T00:00:00" name="pflegerischemassnahmen" displayName="Pflegerische Maßnahmen" statusCode="draft" ident="evthm-"/>
+            <uses type="contains" prefix="aktin-" flexibility="2017-03-01T00:00:00" id="1.2.276.0.76.10.4073" name="ProblemobservationMDRO" displayName="Problem Observation (Multidrug-resistant organism)" effectiveDate="2017-03-01T00:00:00" statusCode="draft" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <ref type="dependency" prefix="evthm-" flexibility="2017-04-24T00:00:00" id="2.16.840.1.113883.2.6.60.12.10.113" name="Ueberleitungsdatencda02" displayName="Überleitungs-CDA (ambulant-stationär)" effectiveDate="2018-04-04T17:10:48" statusCode="draft" ident="evthm-"/>
+        </template>
+    </template>
+</result>

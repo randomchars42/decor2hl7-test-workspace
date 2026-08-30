@@ -1,0 +1,171 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.2.6.60.6.1.1" effectiveDate="2015-06-18T18:17:24" statusCode="draft" versionLabel="2.0" prefix="psr-" shortName="" iddisplay="psr-dataset-1" url="http://art-decor.org/decor/services/" ident="psr-"><!--
+ This is a view of the dataset "" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE"/>
+    <desc language="de-DE"/>
+    <concept id="2.16.840.1.113883.2.6.60.6.2.2" statusCode="draft" effectiveDate="2015-06-19T13:20:23" type="group" iddisplay="psr-dataelement-2">
+        <implementation markdown="Patient is the person, from whom the specimen under investigation comes. It is the recordTarget. It is a role for a person"/>
+        <name language="de-DE">Patient</name>
+        <desc language="de-DE" lastTranslated="2017-06-20T18:27:14">Patient ist die Person, von dem die Probe stammt. </desc>
+        <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.2" conceptFlexibility="2015-06-19T13:20:23" code="116154003" codeSystem="2.16.840.1.113883.6.96" displayName="Patient (person)" effectiveDate="2020-12-14T15:48:59" equivalence="equal" codeSystemName="SNOMED Clinical Terms"/>
+        <concept id="2.16.840.1.113883.2.6.60.6.2.105" statusCode="draft" effectiveDate="2017-06-09T10:23:28" type="item" iddisplay="psr-dataelement-105" shortName="geburtsdatum">
+            <implementation shortName="geburtsdatum" markdown="Date of birth of the patient"/>
+            <name language="de-DE" lastTranslated="2017-06-20T18:27:53">Geburtsdatum</name>
+            <desc language="de-DE" lastTranslated="2017-06-20T18:28:03">Geburtsdatum</desc>
+            <valueDomain type="date">
+                <property timeStampPrecision="YMD"/>
+            </valueDomain>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.105" conceptFlexibility="2017-06-09T10:23:28" code="184099003" codeSystem="2.16.840.1.113883.6.96" displayName="Date of birth (observable entity)" effectiveDate="2020-12-14T15:49:36" equivalence="equal" codeSystemName="SNOMED Clinical Terms"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.6.2.27" effectiveDate="2015-06-23T10:06:44" statusCode="draft" type="item" iddisplay="psr-dataelement-27" shortName="administratives_geschlecht">
+            <implementation shortName="administratives_geschlecht" markdown="(administrative) Gender"/>
+            <name language="de-DE">(administratives) Geschlecht</name>
+            <desc language="de-DE" lastTranslated="2017-06-20T18:29:09">(administratives) Geschlecht, nicht identisch mit dem biologischen Geschlecht.</desc>
+            <valueDomain type="code">
+                <conceptList id="2.16.840.1.113883.2.6.60.6.2.27.0">
+                    <concept id="2.16.840.1.113883.2.6.60.6.2.27.1">
+                        <name language="de-DE">Female</name>
+                        <desc language="de-DE">Weiblich (W)</desc>
+                    </concept>
+                    <concept id="2.16.840.1.113883.2.6.60.6.2.27.2">
+                        <name language="de-DE">Male</name>
+                        <desc language="de-DE">Männlich (M)</desc>
+                    </concept>
+                    <concept id="2.16.840.1.113883.2.6.60.6.2.27.4">
+                        <name language="de-DE">Other</name>
+                        <desc language="de-DE">Divers (D)</desc>
+                    </concept>
+                    <concept id="2.16.840.1.113883.2.6.60.6.2.27.3">
+                        <name language="de-DE">Unknown</name>
+                        <desc language="de-DE">Unbekannt</desc>
+                    </concept>
+                </conceptList>
+            </valueDomain>
+            <valueSet id="2.16.840.1.113883.1.11.1" name="AdministrativeGender" displayName="Administrative Gender (HL7 V3)" effectiveDate="2016-06-23T00:00:00" statusCode="final" strength="example">
+                <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.27.0" valueSet="2.16.840.1.113883.1.11.1" flexibility="dynamic" strength="example" effectiveDate="2017-04-12T10:34:38" valueSetName="AdministrativeGender" valueSetStatusCode="draft" valueSetEffectiveDate="2017-06-21T11:54:27"/>
+                <sourceCodeSystem id="2.16.840.1.113883.5.1" identifierName="Administrative Gender" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender" canonicalUriDSTU2="http://hl7.org/fhir/v3/AdministrativeGender" canonicalUriSTU3="http://hl7.org/fhir/v3/AdministrativeGender" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender" context="external/hl7intl/v3/v3-AdministrativeGender"/>
+                <publishingAuthority name="HL7 International" inherited="project">
+                    <addrLine>Health Level Seven International</addrLine>
+                    <addrLine>3300 Washtenaw Avenue</addrLine>
+                    <addrLine>Suite 227</addrLine>
+                    <addrLine>Ann Arbor, MI 48104- 4261</addrLine>
+                    <addrLine>USA</addrLine>
+                    <addrLine>T +1 734 677 7777 </addrLine>
+                    <addrLine>F +1 734 677 6622</addrLine>
+                    <addrLine>E info@hl7.org</addrLine>
+                </publishingAuthority>
+                <conceptList id="2.16.840.1.113883.2.6.60.6.2.27.0">
+                    <concept localId="1" code="F" codeSystem="2.16.840.1.113883.5.1" displayName="Female" level="0" type="L" equivalence="equal">
+                        <name language="en-US">Female</name>
+                    </concept>
+                    <concept localId="2" code="M" codeSystem="2.16.840.1.113883.5.1" displayName="Male" level="0" type="L" equivalence="equal">
+                        <name language="en-US">Male</name>
+                    </concept>
+                    <concept localId="3" code="UN" codeSystem="2.16.840.1.113883.5.1" displayName="Undifferentiated" level="0" type="L" equivalence="equal">
+                        <name language="en-US">Undifferentiated</name>
+                    </concept>
+                </conceptList>
+            </valueSet>
+            <valueSet id="2.16.840.1.113883.4.642.3.1" name="DocumentEntry.sourcePatientInfo.PID-8" displayName="DocumentEntry.sourcePatientInfo.PID-8" statusCode="final" versionLabel="202306.0-stable" lastModifiedDate="2023-05-31T21:03:34" effectiveDate="2023-05-22T17:38:37" strength="extensible">
+                <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.27.0" valueSet="2.16.840.1.113883.4.642.3.1" flexibility="dynamic" strength="extensible" effectiveDate="2022-07-24T19:13:19" valueSetName="DocumentEntry.sourcePatientInfo.PID-8" valueSetStatusCode="final" valueSetVersionLabel="202306.0-stable" valueSetEffectiveDate="2023-05-22T17:38:37"/>
+                <desc language="de-CH">Geschlecht der Patientin oder des Patienten gemäss Anhang 3 EPDV-EDI.</desc>
+                <desc language="en-US">Patient’s gender as per Annex 3; EPRO-FDHA.</desc>
+                <desc language="fr-CH">Sexe du patient selon l'annexe 3 ODEP-DFI.</desc>
+                <desc language="it-CH">Sesso del paziente secondo l'allegato 3 OCIP-DFI.</desc>
+                <sourceCodeSystem id="2.16.840.1.113883.4.642.1.2" identifierName="AdministrativeGender" canonicalUri="http://hl7.org/fhir/administrative-gender" canonicalUriDSTU2="http://hl7.org/fhir/administrative-gender" canonicalUriSTU3="http://hl7.org/fhir/administrative-gender" canonicalUriR4="http://hl7.org/fhir/administrative-gender" canonicalUriR4B="http://hl7.org/fhir/administrative-gender" canonicalUriR5="http://hl7.org/fhir/administrative-gender"/>
+                <publishingAuthority name="eHealth Suisse" inherited="project">
+                    <addrLine>Schwarzenburgstrasse 165</addrLine>
+                    <addrLine>CH-3003 Bern</addrLine>
+                    <addrLine type="uri">www.e-health-suisse.ch</addrLine>
+                </publishingAuthority>
+                <conceptList id="2.16.840.1.113883.2.6.60.6.2.27.0">
+                    <concept localId="1" code="female" codeSystem="2.16.840.1.113883.4.642.1.2" codeSystemName="AdministrativeGender" displayName="Female" level="0" type="L">
+                        <name language="en-US">Female</name>
+                        <designation language="en-US" type="preferred" displayName="Female"/>
+                    </concept>
+                    <concept localId="2" code="male" codeSystem="2.16.840.1.113883.4.642.1.2" codeSystemName="AdministrativeGender" displayName="Male" level="0" type="L">
+                        <name language="en-US">Male</name>
+                        <designation language="en-US" type="preferred" displayName="Male"/>
+                    </concept>
+                    <concept localId="3" code="other" codeSystem="2.16.840.1.113883.4.642.1.2" codeSystemName="AdministrativeGender" displayName="Other" level="0" type="L">
+                        <name language="en-US">Other</name>
+                        <designation language="en-US" type="preferred" displayName="Other"/>
+                    </concept>
+                    <concept localId="4" code="unknown" codeSystem="2.16.840.1.113883.4.642.1.2" codeSystemName="AdministrativeGender" displayName="Unknown" level="0" type="L">
+                        <name language="en-US">Unknown</name>
+                        <designation language="en-US" type="preferred" displayName="Unknown"/>
+                    </concept>
+                </conceptList>
+            </valueSet>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.27" conceptFlexibility="2015-06-23T10:06:44" code="76691-5" codeSystem="2.16.840.1.113883.6.1" displayName="Gender identity" effectiveDate="2022-07-24T16:26:27" equivalence="equal" codeSystemName="Logical Observation Identifier Names and Codes"/>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.27" conceptFlexibility="2015-06-23T10:06:44" code="263495000" codeSystem="2.16.840.1.113883.6.96" displayName="Gender (observable entity)" effectiveDate="2022-07-24T16:15:55" equivalence="equal" codeSystemName="SNOMED Clinical Terms"/>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.27.0" valueSet="2.16.840.1.113883.1.11.1" flexibility="dynamic" strength="example" effectiveDate="2017-04-12T10:34:38" valueSetName="AdministrativeGender" valueSetStatusCode="draft" valueSetEffectiveDate="2017-06-21T11:54:27"/>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.27.0" valueSet="2.16.840.1.113883.4.642.3.1" flexibility="dynamic" strength="extensible" effectiveDate="2022-07-24T19:13:19" valueSetName="DocumentEntry.sourcePatientInfo.PID-8" valueSetStatusCode="final" valueSetVersionLabel="202306.0-stable" valueSetEffectiveDate="2023-05-22T17:38:37"/>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.27.1" code="female" codeSystem="2.16.840.1.113883.4.642.4.2" displayName="Female" effectiveDate="2022-07-24T19:14:21" equivalence="equal" codeSystemName="http://hl7.org/fhir/administrative-gender"/>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.27.1" code="F" codeSystem="2.16.840.1.113883.5.1" displayName="Female" effectiveDate="2017-04-12T10:36:22" equivalence="equal" codeSystemName="Administrative Gender"/>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.27.2" code="male" codeSystem="2.16.840.1.113883.4.642.4.2" displayName="Male" effectiveDate="2022-07-24T19:13:52" equivalence="equal" codeSystemName="http://hl7.org/fhir/administrative-gender"/>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.27.2" code="M" codeSystem="2.16.840.1.113883.5.1" displayName="Male" effectiveDate="2017-04-12T10:36:22" equivalence="equal" codeSystemName="Administrative Gender"/>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.27.3" code="unknown" codeSystem="2.16.840.1.113883.4.642.4.2" displayName="Unknown" effectiveDate="2022-07-24T19:14:40" equivalence="equal" codeSystemName="http://hl7.org/fhir/administrative-gender"/>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.27.3" code="UN" codeSystem="2.16.840.1.113883.5.1" displayName="Undifferentiated" effectiveDate="2017-04-12T10:36:22" equivalence="equal" codeSystemName="Administrative Gender"/>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.27.4" code="other" codeSystem="2.16.840.1.113883.4.642.4.2" displayName="Other" effectiveDate="2022-07-24T19:13:34" equivalence="equal" codeSystemName="http://hl7.org/fhir/administrative-gender"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.6.2.18" statusCode="draft" effectiveDate="2015-06-22T14:46:20" type="group" iddisplay="psr-dataelement-18" shortName="adresse">
+            <implementation shortName="adresse" markdown="(Postal) Address"/>
+            <name language="de-DE" lastTranslated="2017-06-20T18:29:48">Adresse </name>
+            <desc language="de-DE" lastTranslated="2017-06-20T18:30:18">(Postalische) Adresse</desc>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.18" conceptFlexibility="2015-06-22T14:46:20" code="184097001" codeSystem="2.16.840.1.113883.6.96" displayName="Patient address (observable entity)" effectiveDate="2020-12-14T15:52:02" equivalence="equal" codeSystemName="SNOMED Clinical Terms"/>
+            <concept id="2.16.840.1.113883.2.6.60.6.2.22" statusCode="draft" effectiveDate="2015-06-22T14:47:55" type="item" iddisplay="psr-dataelement-22" shortName="land">
+                <implementation shortName="land" markdown="Country"/>
+                <name language="de-DE">Land</name>
+                <desc language="de-DE" lastTranslated="2017-06-20T18:31:14">Land</desc>
+                <valueDomain type="string"/>
+            </concept>
+            <concept id="2.16.840.1.113883.2.6.60.6.2.21" statusCode="draft" effectiveDate="2015-06-22T14:47:34" type="item" iddisplay="psr-dataelement-21" shortName="stadt">
+                <implementation shortName="stadt" markdown="City"/>
+                <name language="de-DE">Stadt</name>
+                <desc language="de-DE" lastTranslated="2017-06-20T18:31:48">Ort / Stadt</desc>
+                <valueDomain type="string"/>
+            </concept>
+            <concept id="2.16.840.1.113883.2.6.60.6.2.20" statusCode="draft" effectiveDate="2015-06-22T14:47:14" type="item" iddisplay="psr-dataelement-20" shortName="plz">
+                <implementation shortName="plz" markdown="ZIP Code for postal address"/>
+                <name language="de-DE">PLZ</name>
+                <desc language="de-DE" lastTranslated="2017-06-20T18:32:32">Postleitzahl</desc>
+                <valueDomain type="code">
+                    <conceptList id="2.16.840.1.113883.2.6.60.6.2.20.0"/>
+                </valueDomain>
+            </concept>
+            <concept id="2.16.840.1.113883.2.6.60.6.2.19" statusCode="draft" effectiveDate="2015-06-22T14:46:50" type="item" iddisplay="psr-dataelement-19" shortName="strase">
+                <implementation shortName="strase" markdown="Street as part of the address"/>
+                <name language="de-DE">Straße</name>
+                <desc language="de-DE" lastTranslated="2017-06-20T18:33:16">Straße als Adress-Teil</desc>
+                <valueDomain type="string"/>
+            </concept>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.6.2.5" statusCode="draft" effectiveDate="2015-06-22T10:00:33" type="group" iddisplay="psr-dataelement-5" shortName="name">
+            <implementation shortName="name" markdown="Name, built of several name parts"/>
+            <name language="de-DE" lastTranslated="2017-06-20T18:33:44">Name</name>
+            <desc language="de-DE" lastTranslated="2017-06-20T18:34:22">Name, bestehend aus Namensteilen</desc>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.5" conceptFlexibility="2015-06-22T10:00:33" code="703503000" codeSystem="2.16.840.1.113883.6.96" displayName="Name (observable entity)" effectiveDate="2020-12-14T15:52:40" equivalence="equal" codeSystemName="SNOMED Clinical Terms"/>
+            <concept id="2.16.840.1.113883.2.6.60.6.2.10" statusCode="draft" effectiveDate="2015-06-22T10:02:52" type="item" iddisplay="psr-dataelement-10" shortName="vorname">
+                <implementation shortName="vorname" markdown="Surname, given name"/>
+                <name language="de-DE">Vorname</name>
+                <desc language="de-DE" lastTranslated="2017-06-20T18:35:03">Vorname</desc>
+                <valueDomain type="string"/>
+            </concept>
+            <concept id="2.16.840.1.113883.2.6.60.6.2.9" statusCode="draft" effectiveDate="2015-06-22T10:02:30" type="item" iddisplay="psr-dataelement-9" shortName="familienname">
+                <implementation shortName="familienname" markdown="Family name (name)"/>
+                <name language="de-DE">Familienname</name>
+                <desc language="de-DE" lastTranslated="2017-06-20T18:35:41">Familienname</desc>
+                <valueDomain type="string"/>
+            </concept>
+            <concept id="2.16.840.1.113883.2.6.60.6.2.14" statusCode="draft" effectiveDate="2015-06-22T14:33:12" type="item" iddisplay="psr-dataelement-14" shortName="titel">
+                <implementation shortName="titel" markdown="Academic title"/>
+                <name language="de-DE">Titel</name>
+                <desc language="de-DE" lastTranslated="2017-06-20T18:36:20">Akademischer Titel</desc>
+                <valueDomain type="string"/>
+            </concept>
+        </concept>
+    </concept>
+</dataset>

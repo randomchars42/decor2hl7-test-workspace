@@ -1,0 +1,188 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.4049" name="Problemobservationeddiagnosis" displayName="Problem Observation (Abschlussdiagnose)" effectiveDate="2015-09-18T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" xml:dummy-1="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-3="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="de-DE">Beschwerden, Symptome, Diagnose, Probleme etc., hier: Abschlussdiagnose ggf. mit ICD10-Kode</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00"/>
+            <relationship type="ADAPT" template="2.16.840.1.113883.10.20.22.4.4"/>
+            <context id="**"/>
+            <example caption="Botulismus">
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4049"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="dc7cc806-f5e9-4045-85e4-9adb6e44d4d9"/>
+                    <code code="DX" codeSystem="2.16.840.1.113883.5.4" displayName="Diagnosis"/>
+                    <text>
+                        <reference value="#compl-1"/>
+                    </text>
+                    <statusCode code="completed"/>
+                    <effectiveTime>
+                        <low value="20150304"/>
+                    </effectiveTime>
+                    <value xsi:type="CD" code="A05.1" codeSystem="1.2.276.0.76.5.413" displayName="Botulismus"/>
+                </observation>
+            </example>
+            <example caption="Botulismus, gesichert (§295 SGB V)">
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4049"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="6d2a17bb-6b58-43c0-a54e-bcb6d163a748"/>
+                    <code code="DX" codeSystem="2.16.840.1.113883.5.4" displayName="Diagnosis"/>
+                    <text>
+                        <reference value="#compl-1"/>
+                    </text>
+                    <statusCode code="completed"/>
+                    <effectiveTime>
+                        <low value="20150304"/>
+                    </effectiveTime>
+                    <value xsi:type="CD" code="A05.1" codeSystem="1.2.276.0.76.5.413" displayName="Botulismus">
+                        <qualifier>
+                            <name code="8" codeSystem="2.16.840.1.113883.3.7.1.0"/>
+                            <value code="G" codeSystem="1.2.276.0.76.3.1.1.5.1.21"/>
+                        </qualifier>
+                    </value>
+                    <participant typeCode="AUTHEN">
+                        <time nullFlavor="UNK"/>
+                        <participantRole nullFlavor="NA"/>
+                    </participant>
+                </observation>
+            </example>
+            <example caption="Verdacht auf Botulismus">
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4049"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="119a71af-53a4-4530-83b6-f348cd69ab1c"/>
+                    <code code="DX" codeSystem="2.16.840.1.113883.5.4" displayName="Diagnosis"/>
+                    <text>
+                        <reference value="#compl-1"/>
+                    </text>
+                    <statusCode code="completed"/>
+                    <effectiveTime>
+                        <low value="20150304"/>
+                    </effectiveTime>
+                    <value xsi:type="CD" code="SUSP" codeSystem="1.2.276.0.76.3.1.195.5.51" displayName="Verdacht">
+                        <qualifier>
+                            <name code="IBB" codeSystem="1.2.276.0.76.3.1.195.5.1" displayName="in Bezug auf Befund"/>
+                            <value code="A05.1" codeSystem="1.2.276.0.76.5.413" displayName="Botulismus">
+                                <qualifier>
+                                    <name code="8" codeSystem="2.16.840.1.113883.3.7.1.0"/>
+                                    <value code="V" codeSystem="1.2.276.0.76.3.1.1.5.1.21"/>
+                                </qualifier>
+                            </value>
+                        </qualifier>
+                    </value>
+                </observation>
+            </example>
+            <example caption="Ausschluss von Botulismus (Negation)">
+                <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                    <templateId root="1.2.276.0.76.10.4049"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="d31b4dfe-9ecc-47fb-bdad-94e8924bbcbc"/>
+                    <code code="DX" codeSystem="2.16.840.1.113883.5.4" displayName="Diagnosis"/>
+                    <text>
+                        <reference value="#compl-1"/>
+                    </text>
+                    <statusCode code="completed"/>
+                    <effectiveTime>
+                        <low value="UNK"/>
+                    </effectiveTime>
+                    <value xsi:type="CD" code="A05.1" codeSystem="1.2.276.0.76.5.413" displayName="Botulismus">
+                        <qualifier>
+                            <name code="8" codeSystem="2.16.840.1.113883.3.7.1.0"/>
+                            <value code="A" codeSystem="1.2.276.0.76.3.1.1.5.1.21"/>
+                        </qualifier>
+                    </value>
+                </observation>
+            </example>
+            <example caption="Abgeschlossenes Problem, Zustand nach Botulismus (effectiveTime.high gesetzt)">
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4049"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="201021aa-8fc9-4c62-9bae-8df3178dd98f"/>
+                    <code code="DX" codeSystem="2.16.840.1.113883.5.4" displayName="Diagnosis"/>
+                    <text>
+                        <reference value="#compl-1"/>
+                    </text>
+                    <statusCode code="completed"/>
+                    <effectiveTime>
+                        <low value="20150304"/>
+                        <high vlaue="20150324"/>
+                    </effectiveTime>
+                    <value xsi:type="CD" code="A05.1" codeSystem="1.2.276.0.76.5.413" displayName="Botulismus">
+                        <qualifier>
+                            <name code="8" codeSystem="2.16.840.1.113883.3.7.1.0"/>
+                            <value code="Z" codeSystem="1.2.276.0.76.3.1.1.5.1.21"/>
+                        </qualifier>
+                    </value>
+                </observation>
+            </example>
+            <element name="hl7:observation" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.621">
+                <attribute name="classCode" value="OBS" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.622"/>
+                <attribute name="moodCode" value="EVN" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.623"/>
+                <attribute name="negationInd" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.624">
+                    <desc language="de-DE">Zur Angabe eines Ausschlusses einer Diagnose wird negationInd=true gesetzt</desc>
+                </attribute>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.625">
+                    <attribute name="root" value="1.2.276.0.76.10.4049" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.626"/>
+                </element>
+                <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="*" datatype="II" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.627"/>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CE" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.628">
+                    <vocabulary code="DX" codeSystem="2.16.840.1.113883.5.4"/>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.2.6.60.3.9.629">
+                    <desc language="de-DE">Textform, enthält hier lediglich reference in den Text der Section</desc>
+                    <element name="hl7:reference" minimumMultiplicity="1" maximumMultiplicity="1" datatype="URL" id="2.16.840.1.113883.2.6.60.3.9.630">
+                        <attribute name="value" id="2.16.840.1.113883.2.6.60.3.9.1557">
+                            <desc language="de-DE">#diag-{generierteID}, z.B.: #diag-1</desc>
+                        </attribute>
+                    </element>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CS" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.631">
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:effectiveTime" minimumMultiplicity="1" maximumMultiplicity="1" datatype="IVL_TS" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.632">
+                    <desc language="de-DE">effectiveTime wird auch als "biologisch relevante Zeit" bezeichnet und ist der Zeitpunkt oder Zeitraum, für den die Beobachtung für den Patienten gilt.<br/> Beispiel: Für Gesundheitsdienstleister, die einen Patienten heute in der Klinik sehen anamenstisch einen Herzinfarkt erheben, der vor fünf Jahren stattgefunden hat, ist effectiveTime: vor fünf
+                        Jahren.<br/> Die effectiveTime hier ist die definitive Angabe, ob die zugrunde liegende Erkrankung behoben ist. effectiveTime.low ist der Beginn des Problems für den Patienten. Wenn das Problem noch nicht gelöst ist, wird effectiveTime.high nicht gesetzt. Wenn bekannt ist, dass das Problem gelöst werden kann, dann ist effectiveTime.high vorhanden. Wenn der genaue Zeitpunkt
+                        der Lösung des Problems nicht bekannt ist, dann ist effectiveTime.high vorhanden und auf nullFlavor "UNK" gesetzt. </desc>
+                    <element name="hl7:low" minimumMultiplicity="1" maximumMultiplicity="1" datatype="TS" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.633"/>
+                    <element name="hl7:high" minimumMultiplicity="0" maximumMultiplicity="1" datatype="TS" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.634"/>
+                </element>
+                <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CD" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.635">
+                    <desc language="de-DE">ICD-10 Kode</desc>
+                    <example>
+                        <value xsi:type="CE" code="A05.1" codeSystem="1.2.276.0.76.5.413" displayName="Botulismus">
+                            <originalText>Fleisch- / Wurstvergiftung</originalText>
+                        </value>
+                    </example>
+                    <vocabulary domain="ICD-10 GM"/>
+                    <constraint language="de-DE">Internationale statistische Klassifikation der Krankheiten und verwandter Gesundheitsprobleme (ICD), 10. Revision, German Modification, jeweils aktuelle Fassung</constraint>
+                    <element name="hl7:originalText" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ST" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1555">
+                        <desc language="de-DE">Abschlussdiagnose (Freitext)</desc>
+                    </element>
+                    <element name="hl7:qualifier" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CR" id="2.16.840.1.113883.2.6.60.3.9.1231717">
+                        <desc language="de-DE">Optionale Angabe der Diagnosesicherheit (laut §295 SGB V) als Kind-Element des value-Elements des Problems (Diagnose).</desc>
+                        <example>
+                            <qualifier>
+                                <name code="8" codeSystem="2.16.840.1.113883.3.7.1.0"/>
+                                <value code="G" codeSystem="1.2.276.0.76.3.1.1.5.1.21"/>
+                            </qualifier>
+                        </example>
+                        <element name="hl7:name" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" datatype="CV" id="2.16.840.1.113883.2.6.60.3.9.1631718">
+                            <vocabulary code="8" codeSystem="2.16.840.1.113883.3.7.1.0"/>
+                        </element>
+                        <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" datatype="CV" id="2.16.840.1.113883.2.6.60.3.9.1631719">
+                            <vocabulary valueSet="1.2.276.0.76.11.121"/>
+                        </element>
+                    </element>
+                </element>
+                <element name="hl7:participant" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.1631720">
+                    <desc language="de-DE">Optionale Angabe der Diagnosesicherheit (laut §295 SGB V: gesicherte Diagnose) als Verifier des Problems (Diagnose); diese Konstruktion wird zur Angabe "gesichert" verwendet, Z (Zustand nach), V (Verdacht auf) und A (Ausschluss) werden in anderen Strukturen der Diagnose dargestellt.</desc>
+                    <example>
+                        <participant typeCode="AUTHEN">
+                            <time nullFlavor="UNK"/>
+                            <participantRole nullFlavor="NA"/>
+                        </participant>
+                    </example>
+                    <attribute name="typeCode" value="AUTHEN" id="2.16.840.1.113883.2.6.60.3.9.1631721"/>
+                    <element name="hl7:time" minimumMultiplicity="1" maximumMultiplicity="1" datatype="TS" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1631722">
+                        <desc language="de-DE">Verifikationszeitpunkt wenn bekannt, sonst nullFlavor="UNK"</desc>
+                    </element>
+                    <element name="hl7:participantRole" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1631723">
+                        <attribute name="nullFlavor" value="NA" id="2.16.840.1.113883.2.6.60.3.9.1631724"/>
+                    </element>
+                </element>
+            </element>
+        </template>

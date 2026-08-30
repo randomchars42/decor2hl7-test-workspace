@@ -1,0 +1,753 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.777.21.1.1" effectiveDate="2018-05-07T19:19:12" statusCode="draft" versionLabel="ASIC Dataset" prefix="asic-" shortName="asicdataset" iddisplay="asic-dataset-1" url="http://art-decor.org/decor/services/" ident="asic-" inheritanceIssues="3"><!--
+ This is a view of the dataset "ASIC-Dataset" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">ASIC-Dataset</name>
+    <desc language="de-DE"/>
+    <concept id="2.16.840.1.113883.3.1937.777.21.2.12" effectiveDate="2018-05-14T15:28:52" statusCode="draft" type="group" iddisplay="asic-dataelement-12">
+        <implementation markdown="Verabreichte Medikamente &#xA; *(UKA ICCA liefert Wirkstoffe)* &#xA;&#xA;Metadaten: &#xA;Eine Medikamentengabe definiert sich durch folgende Attribute (Quelle: AKTIN Projekt):&#xA;&#xA;* Wirkstoff (codiert)&#xA;&#xA;*  *Handelsname (codiert)* &#xA;&#xA;* Dosis und Dosiseinheit (z.B. 50 mg, 500 ml etc.)&#xA;&#xA;* Applikationsform&#xA;* Applikationsart &#xA;&#xA;* Applikationszeit:&#xA;&#xA;    * Zeitpunkt der Gabe&#xA;&#xA;    * Startzeitpunkt der zeitabhängigen Gabe (Infusionsbeginn/Perfusorbeginn) mit Laufrate&#xA;&#xA;    * Laufraten und deren Zeitpunkte bei Änderungen&#xA;&#xA;    * Stoppzeitpunkt der zeitabhängigen Gabe&#xA;&#xA;*  *evtl. Grund der Gabe (z.B. Diagnose)*"/>
+        <name language="de-DE" lastTranslated="2019-08-20T15:34:53">Medikamente</name>
+        <desc language="de-DE" lastTranslated="2018-08-28T12:11:49">Verabreichte Medikamente <br clear="none"/>
+            <span style="text-align: left; color: rgb(0, 0, 0); text-transform: none; line-height: 15.86px; text-indent: 0px; letter-spacing: normal; font-family: arial,helvetica,clean,sans-serif; font-size: 13px; font-variant: normal; font-weight: 400; text-decoration: none; word-spacing: 0px; display: inline !important; white-space: normal; orphans: 2; font-size-adjust: none; font-stretch: normal; float: none; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+                <i>(UKA ICCA liefert Wirkstoffe)</i>
+            </span>
+            <br clear="none" style="background-color: transparent; color: rgb(0, 0, 0); font-family: arial,helvetica,clean,sans-serif; font-size: 13px; font-size-adjust: none; font-stretch: normal; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 15.86px; orphans: 2; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;"/>
+            <span style="display: inline !important; float: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: arial,helvetica,clean,sans-serif; font-size: 13px; font-size-adjust: none; font-stretch: normal; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 15.86px; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">
+                <br clear="none"/>
+                <span style="display: inline !important; float: none; background-color: transparent; color: rgb(51, 51, 51); font-family: Arial,Helvetica,Geneva,sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; zoom: 1;">Metadaten: <br clear="none"/>Eine Medikamentengabe definiert sich durch folgende Attribute (Quelle: AKTIN Projekt):</span>
+                <br clear="none" style="background-attachment: scroll; background-clip: border-box; background-color: transparent; background-image: none; background-origin: padding-box; background-position-x: 0%; background-position-y: 0%; background-repeat: repeat; background-size: auto; border-collapse: separate; border-spacing: 2px 2px; color: rgb(51, 51, 51); font-family: Arial,Helvetica,Geneva,sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; max-width: none; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;"/>
+                <span style="display: inline !important; float: none; background-color: transparent; color: rgb(51, 51, 51); font-family: Arial,Helvetica,Geneva,sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; zoom: 1;">
+                    <div style="background-color: transparent; color: rgb(51, 51, 51); font-family: Arial,Helvetica,Geneva,sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; zoom: 1;">
+                        <ul style="list-style-type: square; margin-bottom: 10px; margin-left: 25px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">
+                            <li style="line-height: 20px;">Wirkstoff (codiert)<br clear="none" style="line-height: 20px;"/>
+                            </li>
+                            <li style="line-height: 20px;">
+                                <i>Handelsname (codiert)</i>
+                                <br clear="none" style="line-height: 20px;"/>
+                            </li>
+                            <li style="line-height: 20px;">Dosis und Dosiseinheit (z.B. 50 mg, 500 ml etc.)<br clear="none" style="line-height: 20px;"/>
+                            </li>
+                            <li style="line-height: 20px;">Applikationsform</li>
+                            <li style="line-height: 20px;">Applikationsart <br clear="none" style="line-height: 20px;"/>
+                            </li>
+                            <li style="line-height: 20px;">Applikationszeit:<br clear="none" style="line-height: 20px;"/>
+                                <ul style="list-style-type: square; margin-bottom: 0px; margin-left: 25px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">
+                                    <li style="line-height: 20px;">Zeitpunkt der Gabe<br clear="none" style="line-height: 20px;"/>
+                                    </li>
+                                    <li style="line-height: 20px;">Startzeitpunkt der zeitabhängigen Gabe (Infusionsbeginn/Perfusorbeginn) mit Laufrate<br clear="none" style="line-height: 20px;"/>
+                                    </li>
+                                    <li style="line-height: 20px;">Laufraten und deren Zeitpunkte bei Änderungen<br clear="none" style="line-height: 20px;"/>
+                                    </li>
+                                    <li style="line-height: 20px;">Stoppzeitpunkt der zeitabhängigen Gabe<br clear="none" style="line-height: 20px;"/>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <span style="display: inline !important; float: none; background-color: transparent; color: rgb(51, 51, 51); font-family: Arial,Helvetica,Geneva,sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; zoom: 1;">
+                        <div style="text-align: left; color: rgb(51, 51, 51); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: Arial,Helvetica,Geneva,sans-serif; font-size: 12px; font-variant: normal; font-weight: 400; text-decoration: none; word-spacing: 0px; white-space: normal; zoom: 1; orphans: 2; -webkit-text-stroke-width: 0px; background-color: transparent;">
+                            <ul style="list-style-type: square; margin-bottom: 10px; margin-left: 25px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">
+                                <li style="line-height: 20px;">
+                                    <i>evtl. Grund der Gabe (z.B. Diagnose)</i>
+                                    <br clear="none"/>
+                                </li>
+                            </ul>
+                        </div>
+                    </span>
+                </span>
+            </span>
+        </desc>
+        <concept id="2.16.840.1.113883.3.1937.777.21.2.1600" effectiveDate="2019-08-20T15:21:45" statusCode="draft" type="group" iddisplay="asic-dataelement-1600" shortName="medikamente_struktur">
+            <implementation shortName="medikamente_struktur" markdown="Strukturdefinition der Medikamentengaben"/>
+            <name language="de-DE">Medikamente - Struktur</name>
+            <desc language="de-DE">Strukturdefinition der Medikamentengaben</desc>
+            <concept id="2.16.840.1.113883.3.1937.777.21.2.1601" effectiveDate="2019-08-20T15:26:59" statusCode="draft" type="group" iddisplay="asic-dataelement-1601" shortName="medikament">
+                <implementation shortName="medikament" markdown="Medikamentenstammdaten"/>
+                <name language="de-DE">Medikament</name>
+                <desc language="de-DE" lastTranslated="2019-08-20T15:28:09">
+                    <span style="display: inline !important; float: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: arial,helvetica,clean,sans-serif; font-size: 13px; font-size-adjust: none; font-stretch: normal; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 15.86px; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">Medikamentenstammdaten</span>
+                    <br clear="none"/>
+                </desc>
+                <comment language="de-DE" lastTranslated="2019-08-26T14:57:26">Medication<br clear="none"/>
+                </comment>
+                <concept id="2.16.840.1.113883.3.1937.777.21.2.1604" effectiveDate="2019-08-21T10:11:21" statusCode="draft" type="group" iddisplay="asic-dataelement-1604" shortName="identifier">
+                    <implementation shortName="identifier" markdown="Resource id"/>
+                    <inherit ref="2.16.840.1.113883.3.1937.777.21.2.688" effectiveDate="2019-08-08T14:49:59" prefix="asic-" datasetId="2.16.840.1.113883.3.1937.777.21.1.1" datasetEffectiveDate="2018-05-07T19:19:12" datasetStatusCode="draft" datasetVersionLabel="ASIC Dataset" iType="group" iStatusCode="draft" iEffectiveDate="2019-08-08T14:49:59" iddisplay="asic-dataelement-688" refdisplay="asic-dataelement-688" localInherit="true"/>
+                    <name language="de-DE">Identifier</name>
+                    <desc language="de-DE" lastTranslated="2019-08-08T14:51:14">Resource id<br clear="none"/>
+                    </desc>
+                    <comment language="de-DE" lastTranslated="2019-08-26T15:15:31">Resource.identifier<br clear="none"/>
+                    </comment>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.21.2.1605" effectiveDate="2019-08-21T10:12:53" statusCode="draft" type="group" iddisplay="asic-dataelement-1605" shortName="code">
+                    <implementation shortName="code" markdown="Code für den Datentyp"/>
+                    <inherit ref="2.16.840.1.113883.3.1937.777.21.2.690" effectiveDate="2019-08-08T15:11:20" prefix="asic-" datasetId="2.16.840.1.113883.3.1937.777.21.1.1" datasetEffectiveDate="2018-05-07T19:19:12" datasetStatusCode="draft" datasetVersionLabel="ASIC Dataset" iType="group" iStatusCode="draft" iEffectiveDate="2019-08-08T15:11:20" iddisplay="asic-dataelement-690" refdisplay="asic-dataelement-690" localInherit="true" inheritanceIssues="true" inheritExtraConcepts="3" currentExtraConcepts="0"/>
+                    <name language="de-DE">Code</name>
+                    <desc language="de-DE" lastTranslated="2019-08-26T15:42:36">Code für den Datentyp<br clear="none"/>
+                    </desc>
+                    <comment language="de-DE" lastTranslated="2019-08-26T15:43:07">Resource.code.Coding.system<br clear="none"/>
+                        <span style="display: inline !important; float: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: arial,helvetica,clean,sans-serif; font-size: 13px; font-size-adjust: none; font-stretch: normal; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 15.86px; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">Resource.code.Coding.code<br clear="none"/>
+                            <span style="display: inline !important; float: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: arial,helvetica,clean,sans-serif; font-size: 13px; font-size-adjust: none; font-stretch: normal; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 15.86px; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">Resource.code.Coding.display</span>
+                        </span>
+                        <b>
+                            <i>
+                                <u>
+                                    <sub>
+                                        <sup>
+                                            <br clear="none"/>
+                                        </sup>
+                                    </sub>
+                                </u>
+                            </i>
+                        </b>
+                    </comment>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.21.2.1606" effectiveDate="2019-08-21T10:17:43" statusCode="draft" type="item" iddisplay="asic-dataelement-1606" shortName="status">
+                    <implementation shortName="status" markdown="Medikationsstatus"/>
+                    <name language="de-DE">Status</name>
+                    <desc language="de-DE" lastTranslated="2019-08-26T15:00:54">Medikationsstatus<br clear="none"/>
+                    </desc>
+                    <comment language="de-DE" lastTranslated="2019-08-26T15:02:20">Medication.status (active, inactive, entered-in-error)<br clear="none"/>
+                    </comment>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.777.21.2.689" flexibility="2019-08-08T14:52:06" prefix="asic-" datasetId="2.16.840.1.113883.3.1937.777.21.1.1" datasetEffectiveDate="2018-05-07T19:19:12" datasetStatusCode="draft" datasetVersionLabel="ASIC Dataset" iType="item" iEffectiveDate="2019-08-08T14:52:06" iStatusCode="draft" refdisplay="asic-dataelement-689">
+                        <name language="de-DE">Status</name>
+                        <name language="en-US" lastTranslated="2019-08-08T14:52:49">Status</name>
+                    </relationship>
+                    <valueDomain type="code">
+                        <conceptList id="2.16.840.1.113883.3.1937.777.21.2.1606.20190821101743.0"/>
+                        <example type="neutral">active</example>
+                        <example type="neutral">inactive</example>
+                        <example type="neutral">entered-in-error</example>
+                    </valueDomain>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.21.2.1607" effectiveDate="2019-08-21T10:26:29" statusCode="draft" type="group" iddisplay="asic-dataelement-1607" shortName="medikationsform">
+                    <implementation shortName="medikationsform" markdown="Form des Medikaments, z.B. Infusionslösung"/>
+                    <name language="de-DE" lastTranslated="2019-08-21T10:29:15">Medikationsform</name>
+                    <desc language="de-DE" lastTranslated="2019-08-21T10:28:22">Form des Medikaments, z.B. Infusionslösung<br clear="none"/>
+                    </desc>
+                    <comment language="de-DE" lastTranslated="2019-08-26T15:04:50">Medication.form<br clear="none"/>
+                    </comment>
+                    <concept id="2.16.840.1.113883.3.1937.777.21.2.1608" effectiveDate="2019-08-21T10:35:14" statusCode="draft" type="group" iddisplay="asic-dataelement-1608" shortName="code">
+                        <implementation shortName="code" markdown="Code für den Datentyp"/>
+                        <inherit ref="2.16.840.1.113883.3.1937.777.21.2.690" effectiveDate="2019-08-08T15:11:20" prefix="asic-" datasetId="2.16.840.1.113883.3.1937.777.21.1.1" datasetEffectiveDate="2018-05-07T19:19:12" datasetStatusCode="draft" datasetVersionLabel="ASIC Dataset" iType="group" iStatusCode="draft" iEffectiveDate="2019-08-08T15:11:20" iddisplay="asic-dataelement-690" refdisplay="asic-dataelement-690" localInherit="true" inheritanceIssues="true" inheritExtraConcepts="3" currentExtraConcepts="0"/>
+                        <name language="de-DE">Code</name>
+                        <desc language="de-DE" lastTranslated="2019-08-26T15:42:36">Code für den Datentyp<br clear="none"/>
+                        </desc>
+                        <comment language="de-DE" lastTranslated="2019-08-26T15:43:07">Resource.code.Coding.system<br clear="none"/>
+                            <span style="display: inline !important; float: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: arial,helvetica,clean,sans-serif; font-size: 13px; font-size-adjust: none; font-stretch: normal; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 15.86px; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">Resource.code.Coding.code<br clear="none"/>
+                                <span style="display: inline !important; float: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: arial,helvetica,clean,sans-serif; font-size: 13px; font-size-adjust: none; font-stretch: normal; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 15.86px; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">Resource.code.Coding.display</span>
+                            </span>
+                            <b>
+                                <i>
+                                    <u>
+                                        <sub>
+                                            <sup>
+                                                <br clear="none"/>
+                                            </sup>
+                                        </sub>
+                                    </u>
+                                </i>
+                            </b>
+                        </comment>
+                    </concept>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.21.2.1609" effectiveDate="2019-08-21T10:48:03" statusCode="draft" type="group" iddisplay="asic-dataelement-1609" shortName="inhaltsstoffe">
+                    <implementation shortName="inhaltsstoffe" markdown="Wirk- und Zusatzstoffe des Medikaments"/>
+                    <name language="de-DE" lastTranslated="2019-08-21T11:02:20">Inhaltsstoffe</name>
+                    <desc language="de-DE" lastTranslated="2019-08-21T10:51:10">Wirk- und Zusatzstoffe des Medikaments<br clear="none"/>
+                    </desc>
+                    <comment language="de-DE" lastTranslated="2019-08-26T15:06:40">Medication.ingredient<br clear="none"/>
+                    </comment>
+                    <concept id="2.16.840.1.113883.3.1937.777.21.2.1610" effectiveDate="2019-08-21T10:52:25" statusCode="draft" type="group" iddisplay="asic-dataelement-1610" shortName="code">
+                        <implementation shortName="code" markdown="Code für den Datentyp"/>
+                        <inherit ref="2.16.840.1.113883.3.1937.777.21.2.690" effectiveDate="2019-08-08T15:11:20" prefix="asic-" datasetId="2.16.840.1.113883.3.1937.777.21.1.1" datasetEffectiveDate="2018-05-07T19:19:12" datasetStatusCode="draft" datasetVersionLabel="ASIC Dataset" iType="group" iStatusCode="draft" iEffectiveDate="2019-08-08T15:11:20" iddisplay="asic-dataelement-690" refdisplay="asic-dataelement-690" localInherit="true" inheritanceIssues="true" inheritExtraConcepts="3" currentExtraConcepts="0"/>
+                        <name language="de-DE">Code</name>
+                        <desc language="de-DE" lastTranslated="2019-08-26T15:42:36">Code für den Datentyp<br clear="none"/>
+                        </desc>
+                        <comment language="de-DE" lastTranslated="2019-08-26T15:43:07">Resource.code.Coding.system<br clear="none"/>
+                            <span style="display: inline !important; float: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: arial,helvetica,clean,sans-serif; font-size: 13px; font-size-adjust: none; font-stretch: normal; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 15.86px; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">Resource.code.Coding.code<br clear="none"/>
+                                <span style="display: inline !important; float: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: arial,helvetica,clean,sans-serif; font-size: 13px; font-size-adjust: none; font-stretch: normal; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 15.86px; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">Resource.code.Coding.display</span>
+                            </span>
+                            <b>
+                                <i>
+                                    <u>
+                                        <sub>
+                                            <sup>
+                                                <br clear="none"/>
+                                            </sup>
+                                        </sub>
+                                    </u>
+                                </i>
+                            </b>
+                        </comment>
+                    </concept>
+                    <concept id="2.16.840.1.113883.3.1937.777.21.2.1611" effectiveDate="2019-08-21T10:55:43" statusCode="draft" type="item" iddisplay="asic-dataelement-1611" shortName="ist_aktiv">
+                        <implementation shortName="ist_aktiv" markdown="Aktivkennzeichen zur Unterscheidung von Wirk- und Zusatzstoffen"/>
+                        <name language="de-DE" lastTranslated="2019-08-21T10:57:08">IstAktiv</name>
+                        <desc language="de-DE" lastTranslated="2019-08-21T10:58:12">Aktivkennzeichen zur Unterscheidung von Wirk- und Zusatzstoffen</desc>
+                        <valueDomain type="boolean">
+                            <example type="neutral">true</example>
+                            <example type="neutral">false</example>
+                        </valueDomain>
+                    </concept>
+                </concept>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.21.2.1602" effectiveDate="2019-08-20T15:28:59" statusCode="draft" type="group" iddisplay="asic-dataelement-1602" shortName="anordnung">
+                <implementation shortName="anordnung" markdown="Verordnung"/>
+                <name language="de-DE">Anordnung</name>
+                <desc language="de-DE" lastTranslated="2019-08-20T15:29:47">Verordnung<br clear="none"/>
+                </desc>
+                <comment language="de-DE" lastTranslated="2019-08-26T15:10:43">MedicationRequest<br clear="none"/>
+                </comment>
+                <concept id="2.16.840.1.113883.3.1937.777.21.2.1612" effectiveDate="2019-08-21T11:11:55" statusCode="draft" type="group" iddisplay="asic-dataelement-1612" shortName="identifier">
+                    <implementation shortName="identifier" markdown="Resource id"/>
+                    <inherit ref="2.16.840.1.113883.3.1937.777.21.2.688" effectiveDate="2019-08-08T14:49:59" prefix="asic-" datasetId="2.16.840.1.113883.3.1937.777.21.1.1" datasetEffectiveDate="2018-05-07T19:19:12" datasetStatusCode="draft" datasetVersionLabel="ASIC Dataset" iType="group" iStatusCode="draft" iEffectiveDate="2019-08-08T14:49:59" iddisplay="asic-dataelement-688" refdisplay="asic-dataelement-688" localInherit="true"/>
+                    <name language="de-DE">Identifier</name>
+                    <desc language="de-DE" lastTranslated="2019-08-08T14:51:14">Resource id<br clear="none"/>
+                    </desc>
+                    <comment language="de-DE" lastTranslated="2019-08-26T15:15:31">Resource.identifier<br clear="none"/>
+                    </comment>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.21.2.1613" effectiveDate="2019-08-21T11:13:00" statusCode="draft" type="item" iddisplay="asic-dataelement-1613" shortName="status">
+                    <implementation shortName="status" markdown="Status der Anordnung"/>
+                    <name language="de-DE">Status</name>
+                    <desc language="de-DE" lastTranslated="2019-08-08T15:10:26">Status der Anordnung<br clear="none"/>
+                    </desc>
+                    <comment language="de-DE">MedicationRequest.status<br clear="none"/>
+                    </comment>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.777.21.2.689" flexibility="2019-08-08T14:52:06" prefix="asic-" datasetId="2.16.840.1.113883.3.1937.777.21.1.1" datasetEffectiveDate="2018-05-07T19:19:12" datasetStatusCode="draft" datasetVersionLabel="ASIC Dataset" iType="item" iEffectiveDate="2019-08-08T14:52:06" iStatusCode="draft" refdisplay="asic-dataelement-689">
+                        <name language="de-DE">Status</name>
+                        <name language="en-US" lastTranslated="2019-08-08T14:52:49">Status</name>
+                    </relationship>
+                    <valueDomain type="code">
+                        <conceptList id="2.16.840.1.113883.3.1937.777.21.2.1613.20190821111300.0"/>
+                        <example type="neutral">active</example>
+                        <example type="neutral">on-hold</example>
+                        <example type="neutral">completed</example>
+                        <example type="neutral">stopped</example>
+                        <example type="neutral">unknown</example>
+                    </valueDomain>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.21.2.1614" effectiveDate="2019-08-21T11:19:46" statusCode="draft" type="item" iddisplay="asic-dataelement-1614" shortName="zweck">
+                    <implementation shortName="zweck" markdown="Art der Anordnung (Vorschlag, Anordnung, Option ....)"/>
+                    <name language="de-DE">Zweck</name>
+                    <desc language="de-DE">Art der Anordnung (Vorschlag, Anordnung, Option ....)</desc>
+                    <comment language="de-DE" lastTranslated="2019-08-26T15:21:46">MedicationRequest.intent<br clear="none"/>
+                    </comment>
+                    <valueDomain type="code">
+                        <conceptList id="2.16.840.1.113883.3.1937.777.21.2.1614.20190821111946.0"/>
+                        <example type="neutral">order</example>
+                        <example type="neutral">plan</example>
+                        <example type="neutral">proposal</example>
+                        <example type="neutral">option</example>
+                    </valueDomain>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.21.2.1615" effectiveDate="2019-08-21T11:26:50" statusCode="draft" type="item" iddisplay="asic-dataelement-1615" shortName="zeitpunkt_der_verordnung">
+                    <implementation shortName="zeitpunkt_der_verordnung" markdown=""/>
+                    <name language="de-DE">Zeitpunkt der Verordnung</name>
+                    <desc language="de-DE"/>
+                    <comment language="de-DE" lastTranslated="2019-08-26T15:25:04">MedicationRequest.authoredOn<br clear="none"/>
+                    </comment>
+                    <valueDomain type="datetime">
+                        <property timeStampPrecision="YMDHM"/>
+                    </valueDomain>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.21.2.1616" effectiveDate="2019-08-21T11:31:08" statusCode="draft" type="group" iddisplay="asic-dataelement-1616" shortName="dosierungsanweisung">
+                    <implementation shortName="dosierungsanweisung" markdown="Dosierungsanweisung"/>
+                    <name language="de-DE">Dosierungsanweisung</name>
+                    <desc language="de-DE">Dosierungsanweisung</desc>
+                    <comment language="de-DE" lastTranslated="2019-08-26T15:27:37">MedicationRequest.dosageInstruction<br clear="none"/>
+                    </comment>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.21.2.1896" effectiveDate="2019-08-26T15:28:05" statusCode="draft" type="group" iddisplay="asic-dataelement-1896" shortName="zusatzinformationen">
+                    <implementation shortName="zusatzinformationen" markdown="Zusatzinformationen"/>
+                    <name language="de-DE">Zusatzinformationen</name>
+                    <desc language="de-DE" lastTranslated="2019-08-26T15:29:54">Zusatzinformationen<br clear="none"/>
+                    </desc>
+                    <comment language="de-DE" lastTranslated="2019-08-26T15:30:20">MedicationRequest.note<br clear="none"/>
+                    </comment>
+                </concept>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.21.2.1603" effectiveDate="2019-08-20T15:30:27" statusCode="draft" type="group" iddisplay="asic-dataelement-1603" shortName="gabe">
+                <implementation shortName="gabe" markdown="Medikamentengabe"/>
+                <name language="de-DE">Gabe</name>
+                <desc language="de-DE" lastTranslated="2019-08-20T15:31:31">Medikamentengabe<br clear="none"/>
+                </desc>
+                <concept id="2.16.840.1.113883.3.1937.777.21.2.1617" effectiveDate="2019-08-21T11:37:29" statusCode="draft" type="group" iddisplay="asic-dataelement-1617" shortName="identifier">
+                    <implementation shortName="identifier" markdown="Resource id"/>
+                    <inherit ref="2.16.840.1.113883.3.1937.777.21.2.688" effectiveDate="2019-08-08T14:49:59" prefix="asic-" datasetId="2.16.840.1.113883.3.1937.777.21.1.1" datasetEffectiveDate="2018-05-07T19:19:12" datasetStatusCode="draft" datasetVersionLabel="ASIC Dataset" iType="group" iStatusCode="draft" iEffectiveDate="2019-08-08T14:49:59" iddisplay="asic-dataelement-688" refdisplay="asic-dataelement-688" localInherit="true"/>
+                    <name language="de-DE">Identifier</name>
+                    <desc language="de-DE" lastTranslated="2019-08-08T14:51:14">Resource id<br clear="none"/>
+                    </desc>
+                    <comment language="de-DE" lastTranslated="2019-08-26T15:15:31">Resource.identifier<br clear="none"/>
+                    </comment>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.21.2.1618" effectiveDate="2019-08-21T11:38:29" statusCode="draft" type="item" iddisplay="asic-dataelement-1618" shortName="status">
+                    <implementation shortName="status" markdown="Status"/>
+                    <name language="de-DE">Status</name>
+                    <desc language="de-DE" lastTranslated="2019-08-21T11:39:17">Status<br clear="none"/>
+                    </desc>
+                    <comment language="de-DE">MedicationAdministration.status<br clear="none"/>
+                    </comment>
+                    <valueDomain type="code">
+                        <conceptList id="2.16.840.1.113883.3.1937.777.21.2.1618.20190821113829.0"/>
+                        <example type="neutral">in-progress</example>
+                        <example type="neutral">unknown</example>
+                        <example type="neutral">on-hold</example>
+                        <example type="neutral">stopped</example>
+                    </valueDomain>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.21.2.1619" effectiveDate="2019-08-21T11:42:57" statusCode="draft" type="group" iddisplay="asic-dataelement-1619" shortName="effective_date_time">
+                    <implementation shortName="effective_date_time" markdown="Start- und Endezeit der Gabe"/>
+                    <name language="de-DE">Effective DateTime</name>
+                    <desc language="de-DE" lastTranslated="2019-08-21T11:44:10">Start- und Endezeit der Gabe<br clear="none"/>
+                    </desc>
+                    <comment language="de-DE" lastTranslated="2019-08-26T15:37:19">MedicationAministration.effective [x]<br clear="none"/>
+                    </comment>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.21.2.1620" effectiveDate="2019-08-21T11:47:59" statusCode="draft" type="group" iddisplay="asic-dataelement-1620" shortName="dosierung">
+                    <implementation shortName="dosierung" markdown="Dosierung"/>
+                    <name language="de-DE">Dosierung</name>
+                    <desc language="de-DE" lastTranslated="2019-08-21T11:49:41">Dosierung<br clear="none"/>
+                    </desc>
+                    <comment language="de-DE" lastTranslated="2019-08-26T15:39:26">MedicationAdministration.dosage<br clear="none"/>
+                    </comment>
+                </concept>
+            </concept>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.21.2.1599" effectiveDate="2019-08-20T15:13:25" statusCode="draft" type="group" iddisplay="asic-dataelement-1599" shortName="asic_medikamente">
+            <implementation shortName="asic_medikamente" markdown="Liste der Medikamente mit ASIC Relevanz"/>
+            <name language="de-DE">ASIC Medikamente</name>
+            <desc language="de-DE">Liste der Medikamente mit ASIC Relevanz</desc>
+            <concept id="2.16.840.1.113883.3.1937.777.21.2.386" effectiveDate="2018-08-27T16:18:59" statusCode="draft" type="group" iddisplay="asic-dataelement-386" shortName="iv_kontinuierlich">
+                <implementation shortName="iv_kontinuierlich" markdown="Medikamente, die kontinuierlich intravenös verabreicht werden"/>
+                <name language="de-DE">IV kontinuierlich</name>
+                <desc language="de-DE">Medikamente, die kontinuierlich intravenös verabreicht werden</desc>
+                <concept id="2.16.840.1.113883.3.1937.777.21.2.35" effectiveDate="2018-05-14T16:46:04" statusCode="draft" type="item" iddisplay="asic-dataelement-35" shortName="dobutamin">
+                    <implementation shortName="dobutamin" markdown="Dubotamin  (Vasopressor)&#xA;ug/kg[bodyweight]/min"/>
+                    <name language="de-DE" lastTranslated="2018-08-27T16:28:08">Dobutamin</name>
+                    <desc language="de-DE" lastTranslated="2018-08-27T16:28:19">Dubotamin  (Vasopressor)<br clear="none"/>ug/kg[bodyweight]/min<br clear="none"/>
+                    </desc>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.777.24.2.78" flexibility="2018-06-08T07:45:46" prefix="mide-" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" iType="group" iEffectiveDate="2018-06-08T07:45:46" iStatusCode="draft" refdisplay="mide-dataelement-78">
+                        <name language="de-DE">Medikation</name>
+                        <name language="en-US">Medication</name>
+                    </relationship>
+                    <valueDomain type="quantity">
+                        <property unit="ug/kg[bodyweight]/min"/>
+                    </valueDomain>
+                    <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.35" conceptFlexibility="2018-05-14T16:46:04" code="13326" codeSystem="1.2.276.0.76.5.308" displayName="Dobutamin" effectiveDate="2019-01-17T11:26:34" codeSystemName="ASK-Nummer der Rechtsverbindlichen Stoffbezeichnungen gemäß §10 Abs. 6 Nr. 1 Arzneimittelgesetz (AMG)"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.21.2.36" effectiveDate="2018-05-14T16:46:42" statusCode="draft" type="item" iddisplay="asic-dataelement-36" shortName="epinephrin">
+                    <implementation shortName="epinephrin" markdown="Epinephrin (Vasopressor)&#xA;ug/kg {body\`wt}/min"/>
+                    <name language="de-DE" lastTranslated="2018-08-27T16:31:57">Epinephrin</name>
+                    <desc language="de-DE" lastTranslated="2018-08-27T16:32:09">Epinephrin (Vasopressor)<br clear="none"/>
+                        <span style="display: inline !important; float: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); cursor: text; font-family: sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: pre-wrap; word-spacing: 0px; word-wrap: break-word;">ug/kg {body`wt}/min</span>
+                        <br clear="none"/>
+                    </desc>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.777.24.2.78" flexibility="2018-06-08T07:45:46" prefix="mide-" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" iType="group" iEffectiveDate="2018-06-08T07:45:46" iStatusCode="draft" refdisplay="mide-dataelement-78">
+                        <name language="de-DE">Medikation</name>
+                        <name language="en-US">Medication</name>
+                    </relationship>
+                    <valueDomain type="quantity">
+                        <property unit="ug/kg {body`wt}/min "/>
+                    </valueDomain>
+                    <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.36" conceptFlexibility="2018-05-14T16:46:42" code="00003" codeSystem="1.2.276.0.76.5.308" displayName="Epinephrin" effectiveDate="2019-01-17T11:27:39" codeSystemName="ASK-Nummer der Rechtsverbindlichen Stoffbezeichnungen gemäß §10 Abs. 6 Nr. 1 Arzneimittelgesetz (AMG)"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.21.2.37" effectiveDate="2018-05-14T16:57:36" statusCode="draft" type="item" iddisplay="asic-dataelement-37" shortName="norepinephrin">
+                    <implementation shortName="norepinephrin" markdown="Norepinephrin (Vasopressor)&#xA;ug/kg {body\`wt}/min"/>
+                    <name language="de-DE" lastTranslated="2018-08-27T16:32:50">Norepinephrin</name>
+                    <desc language="de-DE" lastTranslated="2018-08-27T16:33:04">Norepinephrin (Vasopressor)<br clear="none"/>ug/kg {body`wt}/min<br clear="none"/>
+                    </desc>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.777.24.2.78" flexibility="2018-06-08T07:45:46" prefix="mide-" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" iType="group" iEffectiveDate="2018-06-08T07:45:46" iStatusCode="draft" refdisplay="mide-dataelement-78">
+                        <name language="de-DE">Medikation</name>
+                        <name language="en-US">Medication</name>
+                    </relationship>
+                    <valueDomain type="quantity">
+                        <property unit="ug/kg {body`wt}/min"/>
+                    </valueDomain>
+                    <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.37" conceptFlexibility="2018-05-14T16:57:36" code="00441" codeSystem="1.2.276.0.76.5.308" displayName="Norepinephrin" effectiveDate="2019-01-17T11:29:39" codeSystemName="ASK-Nummer der Rechtsverbindlichen Stoffbezeichnungen gemäß §10 Abs. 6 Nr. 1 Arzneimittelgesetz (AMG)"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.21.2.38" effectiveDate="2018-05-14T16:59:07" statusCode="draft" type="item" iddisplay="asic-dataelement-38" shortName="vasopressin">
+                    <implementation shortName="vasopressin" markdown="Vasopressin (Vasopressor)&#xA;ug/kg {body\`wt}/min"/>
+                    <name language="de-DE" lastTranslated="2018-08-27T16:33:51">Vasopressin </name>
+                    <desc language="de-DE" lastTranslated="2018-08-27T16:34:03">Vasopressin (Vasopressor)<br clear="none"/>ug/kg {body`wt}/min<br clear="none"/>
+                    </desc>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.777.24.2.78" flexibility="2018-06-08T07:45:46" prefix="mide-" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" iType="group" iEffectiveDate="2018-06-08T07:45:46" iStatusCode="draft" refdisplay="mide-dataelement-78">
+                        <name language="de-DE">Medikation</name>
+                        <name language="en-US">Medication</name>
+                    </relationship>
+                    <valueDomain type="quantity">
+                        <property unit="ug/kg {body`wt}/min"/>
+                    </valueDomain>
+                    <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.38" conceptFlexibility="2018-05-14T16:59:07" code="12826" codeSystem="1.2.276.0.76.5.308" displayName="Vasopressin" effectiveDate="2019-01-17T11:32:35" codeSystemName="ASK-Nummer der Rechtsverbindlichen Stoffbezeichnungen gemäß §10 Abs. 6 Nr. 1 Arzneimittelgesetz (AMG)"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.21.2.40" effectiveDate="2018-05-14T17:00:29" statusCode="draft" type="item" iddisplay="asic-dataelement-40" shortName="levosimendan">
+                    <implementation shortName="levosimendan" markdown="Levosimendan&#xA;ug/kg {body\`wt}/min"/>
+                    <name language="de-DE" lastTranslated="2018-08-27T16:28:56">Levosimendan</name>
+                    <desc language="de-DE" lastTranslated="2018-08-27T16:29:07">Levosimendan<br clear="none"/>ug/kg {body`wt}/min<br clear="none"/>
+                    </desc>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.777.24.2.78" flexibility="2018-06-08T07:45:46" prefix="mide-" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" iType="group" iEffectiveDate="2018-06-08T07:45:46" iStatusCode="draft" refdisplay="mide-dataelement-78">
+                        <name language="de-DE">Medikation</name>
+                        <name language="en-US">Medication</name>
+                    </relationship>
+                    <valueDomain type="quantity">
+                        <property unit="ug/kg {body`wt}/min"/>
+                    </valueDomain>
+                    <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.40" conceptFlexibility="2018-05-14T17:00:29" code="27286" codeSystem="1.2.276.0.76.5.308" displayName="Levosimendan" effectiveDate="2019-01-17T11:34:42" codeSystemName="ASK-Nummer der Rechtsverbindlichen Stoffbezeichnungen gemäß §10 Abs. 6 Nr. 1 Arzneimittelgesetz (AMG)"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.21.2.39" effectiveDate="2018-05-14T16:59:58" statusCode="draft" type="item" iddisplay="asic-dataelement-39" shortName="milrinon">
+                    <implementation shortName="milrinon" markdown="Milrinon&#xA;ug/kg {body\`wt}/min"/>
+                    <name language="de-DE" lastTranslated="2018-08-27T16:34:51">Milrinon</name>
+                    <desc language="de-DE" lastTranslated="2018-08-27T16:35:01">Milrinon<br clear="none"/>ug/kg {body`wt}/min<br clear="none"/>
+                    </desc>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.777.24.2.78" flexibility="2018-06-08T07:45:46" prefix="mide-" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" iType="group" iEffectiveDate="2018-06-08T07:45:46" iStatusCode="draft" refdisplay="mide-dataelement-78">
+                        <name language="de-DE">Medikation</name>
+                        <name language="en-US">Medication</name>
+                    </relationship>
+                    <valueDomain type="quantity">
+                        <property unit="ug/kg {body`wt}/min"/>
+                    </valueDomain>
+                    <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.39" conceptFlexibility="2018-05-14T16:59:58" code="22796" codeSystem="1.2.276.0.76.5.308" displayName="Milrinon" effectiveDate="2019-01-17T11:33:47" codeSystemName="ASK-Nummer der Rechtsverbindlichen Stoffbezeichnungen gemäß §10 Abs. 6 Nr. 1 Arzneimittelgesetz (AMG)"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.21.2.389" effectiveDate="2018-08-28T10:26:24" statusCode="draft" type="item" iddisplay="asic-dataelement-389" shortName="propofol">
+                    <implementation shortName="propofol" markdown="Propofol &#xA;[mg/h]&#xA;&#xA;- intravenöses Anästhetikum"/>
+                    <name language="de-DE" lastTranslated="2018-08-28T10:26:57">Propofol</name>
+                    <desc language="de-DE" lastTranslated="2018-08-28T10:38:13">
+                        <span style="display: inline !important; float: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: arial,helvetica,clean,sans-serif; font-size: 13px; font-size-adjust: none; font-stretch: normal; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 15.86px; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">Propofol</span> <br clear="none"/>[mg/h]<br clear="none"/>
+                        <br clear="none" style="background-color: transparent; color: rgb(0, 0, 0); font-family: arial,helvetica,clean,sans-serif; font-size: 13px; font-size-adjust: none; font-stretch: normal; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 15.86px; orphans: 2; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;"/>
+                        <span style="display: inline !important; float: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: arial,helvetica,clean,sans-serif; font-size: 13px; font-size-adjust: none; font-stretch: normal; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 15.86px; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">- intravenöses Anästhetikum</span>
+                        <br clear="none"/>
+                    </desc>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.777.24.2.78" flexibility="2018-06-08T07:45:46" prefix="mide-" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" iType="group" iEffectiveDate="2018-06-08T07:45:46" iStatusCode="draft" refdisplay="mide-dataelement-78">
+                        <name language="de-DE">Medikation</name>
+                        <name language="en-US">Medication</name>
+                    </relationship>
+                    <valueDomain type="quantity">
+                        <property unit="mg/h"/>
+                    </valueDomain>
+                    <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.389" conceptFlexibility="2018-08-28T10:26:24" code="22898" codeSystem="1.2.276.0.76.5.308" displayName="Propofol" effectiveDate="2019-01-17T11:35:24" codeSystemName="ASK-Nummer der Rechtsverbindlichen Stoffbezeichnungen gemäß §10 Abs. 6 Nr. 1 Arzneimittelgesetz (AMG)"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.21.2.390" effectiveDate="2018-08-28T10:32:13" statusCode="draft" type="item" iddisplay="asic-dataelement-390" shortName="midazolam">
+                    <implementation shortName="midazolam" markdown="Midazolam&#xA;[mg/h]&#xA;- Sedativum"/>
+                    <name language="de-DE" lastTranslated="2018-08-28T10:32:34">Midazolam</name>
+                    <desc language="de-DE" lastTranslated="2018-08-28T10:39:22">Midazolam<br clear="none"/>[mg/h]<br clear="none"/>- Sedativum<br clear="none"/>
+                    </desc>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.99.61.34.2.15" flexibility="2018-09-19T11:41:31" prefix="epflb-" datasetId="2.16.840.1.113883.3.1937.99.61.34.1.1" datasetEffectiveDate="2017-04-29T10:53:01" datasetStatusCode="draft" iType="group" iEffectiveDate="2018-09-19T11:41:31" iStatusCode="draft" refdisplay="epflb-dataelement-15">
+                        <name language="de-DE">Medikation</name>
+                    </relationship>
+                    <valueDomain type="quantity">
+                        <property unit="mg/h"/>
+                    </valueDomain>
+                    <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.390" conceptFlexibility="2018-08-28T10:32:13" code="22661" codeSystem="1.2.276.0.76.5.308" displayName="Midazolam" effectiveDate="2019-01-17T11:36:24" codeSystemName="ASK-Nummer der Rechtsverbindlichen Stoffbezeichnungen gemäß §10 Abs. 6 Nr. 1 Arzneimittelgesetz (AMG)"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.21.2.391" effectiveDate="2018-08-28T10:40:29" statusCode="draft" type="item" iddisplay="asic-dataelement-391" shortName="clonidin">
+                    <implementation shortName="clonidin" markdown="Clonidin&#xA;- central alpha-adrenoceptor agonist"/>
+                    <name language="de-DE" lastTranslated="2018-08-28T10:44:07">Clonidin</name>
+                    <desc language="de-DE" lastTranslated="2018-08-28T10:51:07">Clonidin<br clear="none"/>
+                        <span style="display: inline !important; float: none; background-color: transparent; color: rgb(51, 51, 51); font-family: &#34;Helvetica Neue&#34;,Helvetica,Arial,sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 17.14px; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">- central alpha-adrenoceptor agonist </span>
+                        <br clear="none"/>
+                    </desc>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.777.24.2.78" flexibility="2018-06-08T07:45:46" prefix="mide-" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" iType="group" iEffectiveDate="2018-06-08T07:45:46" iStatusCode="draft" refdisplay="mide-dataelement-78">
+                        <name language="de-DE">Medikation</name>
+                        <name language="en-US">Medication</name>
+                    </relationship>
+                    <valueDomain type="quantity">
+                        <property unit="ug/h"/>
+                    </valueDomain>
+                    <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.391" conceptFlexibility="2018-08-28T10:40:29" code="07234" codeSystem="1.2.276.0.76.5.308" displayName="Clonidin" effectiveDate="2019-01-17T11:37:04" codeSystemName="ASK-Nummer der Rechtsverbindlichen Stoffbezeichnungen gemäß §10 Abs. 6 Nr. 1 Arzneimittelgesetz (AMG)"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.21.2.392" effectiveDate="2018-08-28T10:52:25" statusCode="draft" type="item" iddisplay="asic-dataelement-392" shortName="dexmedetomidin">
+                    <implementation shortName="dexmedetomidin" markdown="Dexmedetomidin&#xA;- Sedativum"/>
+                    <name language="de-DE" lastTranslated="2018-08-28T10:54:04">Dexmedetomidin </name>
+                    <desc language="de-DE" lastTranslated="2018-08-28T10:54:35">Dexmedetomidin<br clear="none"/>- Sedativum<br clear="none"/>
+                    </desc>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.777.24.2.78" flexibility="2018-06-08T07:45:46" prefix="mide-" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" iType="group" iEffectiveDate="2018-06-08T07:45:46" iStatusCode="draft" refdisplay="mide-dataelement-78">
+                        <name language="de-DE">Medikation</name>
+                        <name language="en-US">Medication</name>
+                    </relationship>
+                    <valueDomain type="quantity">
+                        <property unit="mg/h"/>
+                    </valueDomain>
+                    <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.392" conceptFlexibility="2018-08-28T10:52:25" code="26790" codeSystem="1.2.276.0.76.5.308" displayName="Dexmedetomidin" effectiveDate="2019-01-17T11:39:45" codeSystemName="ASK-Nummer der Rechtsverbindlichen Stoffbezeichnungen gemäß §10 Abs. 6 Nr. 1 Arzneimittelgesetz (AMG)"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.21.2.396" effectiveDate="2018-08-28T11:24:44" statusCode="draft" type="item" iddisplay="asic-dataelement-396" shortName="morphin">
+                    <implementation shortName="morphin" markdown="Morphin, Morphium&#xA;- Analgetikum"/>
+                    <name language="de-DE" lastTranslated="2018-08-28T11:25:13">Morphin</name>
+                    <desc language="de-DE" lastTranslated="2018-08-28T11:26:45">Morphin, Morphium<br clear="none"/>- Analgetikum<br clear="none"/>
+                    </desc>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.777.24.2.78" flexibility="2018-06-08T07:45:46" prefix="mide-" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" iType="group" iEffectiveDate="2018-06-08T07:45:46" iStatusCode="draft" refdisplay="mide-dataelement-78">
+                        <name language="de-DE">Medikation</name>
+                        <name language="en-US">Medication</name>
+                    </relationship>
+                    <valueDomain type="quantity">
+                        <property unit="mg/h"/>
+                    </valueDomain>
+                    <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.396" conceptFlexibility="2018-08-28T11:24:44" code="07650" codeSystem="1.2.276.0.76.5.308" displayName="Morphin" effectiveDate="2019-01-17T11:45:06" codeSystemName="ASK-Nummer der Rechtsverbindlichen Stoffbezeichnungen gemäß §10 Abs. 6 Nr. 1 Arzneimittelgesetz (AMG)"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.21.2.393" effectiveDate="2018-08-28T11:01:41" statusCode="draft" type="item" iddisplay="asic-dataelement-393" shortName="ketanest">
+                    <implementation shortName="ketanest" markdown="Ketanest, Ketamin&#xA;- Anästhetikum&#xA;- Analgetikum"/>
+                    <name language="de-DE" lastTranslated="2019-01-17T12:38:26">Ketanest</name>
+                    <desc language="de-DE" lastTranslated="2018-08-28T11:07:41">Ketanest, Ketamin<br clear="none"/>- Anästhetikum<br clear="none"/>- Analgetikum<br clear="none"/>
+                    </desc>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.777.24.2.78" flexibility="2018-06-08T07:45:46" prefix="mide-" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" iType="group" iEffectiveDate="2018-06-08T07:45:46" iStatusCode="draft" refdisplay="mide-dataelement-78">
+                        <name language="de-DE">Medikation</name>
+                        <name language="en-US">Medication</name>
+                    </relationship>
+                    <valueDomain type="quantity">
+                        <property unit="mg/h"/>
+                    </valueDomain>
+                    <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.393" conceptFlexibility="2018-08-28T11:01:41" code="06049" codeSystem="1.2.276.0.76.5.308" displayName="Ketanest" effectiveDate="2019-01-17T11:41:01" codeSystemName="ASK-Nummer der Rechtsverbindlichen Stoffbezeichnungen gemäß §10 Abs. 6 Nr. 1 Arzneimittelgesetz (AMG)"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.21.2.395" effectiveDate="2018-08-28T11:17:47" statusCode="draft" type="item" iddisplay="asic-dataelement-395" shortName="fentanyl">
+                    <implementation shortName="fentanyl" markdown="Fentanyl&#xA;- Analgetikum&#xA;- Anästhetikum"/>
+                    <name language="de-DE" lastTranslated="2018-08-28T11:18:45">Fentanyl</name>
+                    <desc language="de-DE" lastTranslated="2018-08-28T11:19:58">Fentanyl<br clear="none"/>- Analgetikum<br clear="none"/>- Anästhetikum<br clear="none"/>
+                    </desc>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.777.24.2.78" flexibility="2018-06-08T07:45:46" prefix="mide-" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" iType="group" iEffectiveDate="2018-06-08T07:45:46" iStatusCode="draft" refdisplay="mide-dataelement-78">
+                        <name language="de-DE">Medikation</name>
+                        <name language="en-US">Medication</name>
+                    </relationship>
+                    <valueDomain type="quantity">
+                        <property unit="ug/h"/>
+                    </valueDomain>
+                    <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.395" conceptFlexibility="2018-08-28T11:17:47" code="06903" codeSystem="1.2.276.0.76.5.308" displayName="Fentanyl" effectiveDate="2019-01-17T11:44:24" codeSystemName="ASK-Nummer der Rechtsverbindlichen Stoffbezeichnungen gemäß §10 Abs. 6 Nr. 1 Arzneimittelgesetz (AMG)"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.21.2.394" effectiveDate="2018-08-28T11:12:27" statusCode="draft" type="item" iddisplay="asic-dataelement-394" shortName="sufentanil">
+                    <implementation shortName="sufentanil" markdown="Sufentanil&#xA;- Analgetikum"/>
+                    <name language="de-DE" lastTranslated="2018-08-28T11:13:19">Sufentanil</name>
+                    <desc language="de-DE" lastTranslated="2018-08-28T11:13:39">Sufentanil<br clear="none"/>- Analgetikum<br clear="none"/>
+                    </desc>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.777.24.2.78" flexibility="2018-06-08T07:45:46" prefix="mide-" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" iType="group" iEffectiveDate="2018-06-08T07:45:46" iStatusCode="draft" refdisplay="mide-dataelement-78">
+                        <name language="de-DE">Medikation</name>
+                        <name language="en-US">Medication</name>
+                    </relationship>
+                    <valueDomain type="quantity">
+                        <property unit="ug/h"/>
+                    </valueDomain>
+                    <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.394" conceptFlexibility="2018-08-28T11:12:27" code="20170" codeSystem="1.2.276.0.76.5.308" displayName="Sufentanil" effectiveDate="2019-01-17T11:43:42" codeSystemName="ASK-Nummer der Rechtsverbindlichen Stoffbezeichnungen gemäß §10 Abs. 6 Nr. 1 Arzneimittelgesetz (AMG)"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.21.2.397" effectiveDate="2018-08-28T11:35:39" statusCode="draft" type="item" iddisplay="asic-dataelement-397" shortName="furosemid">
+                    <implementation shortName="furosemid" markdown="Furosemid&#xA;- Sulfonamid-Diuretikum zum Ausschwemmen von Ödemen"/>
+                    <name language="de-DE" lastTranslated="2018-08-28T11:40:29">Furosemid</name>
+                    <desc language="de-DE" lastTranslated="2018-08-28T11:52:55">Furosemid<br clear="none"/>- Sulfonamid-Diuretikum zum Ausschwemmen von Ödemen<br clear="none"/>
+                    </desc>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.777.24.2.78" flexibility="2018-06-08T07:45:46" prefix="mide-" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" iType="group" iEffectiveDate="2018-06-08T07:45:46" iStatusCode="draft" refdisplay="mide-dataelement-78">
+                        <name language="de-DE">Medikation</name>
+                        <name language="en-US">Medication</name>
+                    </relationship>
+                    <valueDomain type="quantity">
+                        <property unit="mg/h"/>
+                    </valueDomain>
+                    <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.397" conceptFlexibility="2018-08-28T11:35:39" code="00603" codeSystem="1.2.276.0.76.5.308" displayName="Furosemid" effectiveDate="2019-01-17T11:46:45" codeSystemName="ASK-Nummer der Rechtsverbindlichen Stoffbezeichnungen gemäß §10 Abs. 6 Nr. 1 Arzneimittelgesetz (AMG)"/>
+                </concept>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.21.2.412" effectiveDate="2018-11-12T09:19:00" statusCode="draft" type="group" iddisplay="asic-dataelement-412" shortName="iv_bolusweise">
+                <implementation shortName="iv_bolusweise" markdown="Gruppe von Medikamenten, die intravenös bolusweise verabreicht werden"/>
+                <name language="de-DE" lastTranslated="2018-11-12T09:20:00">IV bolusweise</name>
+                <desc language="de-DE" lastTranslated="2018-11-12T09:20:29">Gruppe von Medikamenten, die intravenös bolusweise verabreicht werden<br clear="none"/>
+                </desc>
+                <concept id="2.16.840.1.113883.3.1937.777.21.2.413" effectiveDate="2018-11-12T09:24:28" statusCode="draft" type="item" iddisplay="asic-dataelement-413" shortName="rocuronium">
+                    <implementation shortName="rocuronium" markdown="Muskelrelaxanz"/>
+                    <name language="de-DE" lastTranslated="2018-11-12T09:24:58">Rocuronium</name>
+                    <desc language="de-DE" lastTranslated="2018-11-12T09:28:58">Muskelrelaxanz<br clear="none"/>
+                    </desc>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.777.24.2.78" flexibility="2018-06-08T07:45:46" prefix="mide-" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" iType="group" iEffectiveDate="2018-06-08T07:45:46" iStatusCode="draft" refdisplay="mide-dataelement-78">
+                        <name language="de-DE">Medikation</name>
+                        <name language="en-US">Medication</name>
+                    </relationship>
+                    <valueDomain type="quantity">
+                        <property unit="mg"/>
+                    </valueDomain>
+                    <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.413" conceptFlexibility="2018-11-12T09:24:28" code="36784" codeSystem="1.2.276.0.76.5.308" displayName="Rocuronium" effectiveDate="2019-01-17T11:45:56" codeSystemName="ASK-Nummer der Rechtsverbindlichen Stoffbezeichnungen gemäß §10 Abs. 6 Nr. 1 Arzneimittelgesetz (AMG)"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.21.2.424" effectiveDate="2019-01-15T09:15:31" statusCode="draft" type="item" iddisplay="asic-dataelement-424" shortName="hydrocortison">
+                    <implementation shortName="hydrocortison" markdown="Hydrocortison IV bolusweise&#xA;[mg]"/>
+                    <name language="de-DE" lastTranslated="2019-01-15T09:16:25">Hydrocortison</name>
+                    <desc language="de-DE" lastTranslated="2019-01-15T09:17:00">Hydrocortison IV bolusweise<br clear="none"/>[mg]<br clear="none"/>
+                    </desc>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.777.24.2.78" flexibility="2018-06-08T07:45:46" prefix="mide-" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" iType="group" iEffectiveDate="2018-06-08T07:45:46" iStatusCode="draft" refdisplay="mide-dataelement-78">
+                        <name language="de-DE">Medikation</name>
+                        <name language="en-US">Medication</name>
+                    </relationship>
+                    <valueDomain type="quantity">
+                        <property unit="mg"/>
+                        <example type="neutral">50 mg</example>
+                    </valueDomain>
+                    <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.424" conceptFlexibility="2019-01-15T09:15:31" code="00758" codeSystem="1.2.276.0.76.5.308" displayName="Hydrocortison" effectiveDate="2019-01-17T11:47:50" codeSystemName="ASK-Nummer der Rechtsverbindlichen Stoffbezeichnungen gemäß §10 Abs. 6 Nr. 1 Arzneimittelgesetz (AMG)"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.21.2.425" effectiveDate="2019-01-15T09:19:03" statusCode="draft" type="item" iddisplay="asic-dataelement-425" shortName="prednisolon">
+                    <implementation shortName="prednisolon" markdown="Prednisolon IV bolusweise &#xA;[mg]"/>
+                    <name language="de-DE" lastTranslated="2019-01-15T09:20:43">Prednisolon</name>
+                    <desc language="de-DE" lastTranslated="2019-01-15T09:22:59">
+                        <span style="display: inline !important; float: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: arial,helvetica,clean,sans-serif; font-size: 13px; font-size-adjust: none; font-stretch: normal; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 15.86px; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">Prednisolon IV bolusweise</span> <br clear="none" style="background-color: transparent; color: rgb(0, 0, 0); font-family: arial,helvetica,clean,sans-serif; font-size: 13px; font-size-adjust: none; font-stretch: normal; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 15.86px; orphans: 2; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;"/>
+                        <span style="display: inline !important; float: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: arial,helvetica,clean,sans-serif; font-size: 13px; font-size-adjust: none; font-stretch: normal; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 15.86px; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">[mg]</span>
+                        <br clear="none"/>
+                    </desc>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.777.24.2.78" flexibility="2018-06-08T07:45:46" prefix="mide-" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" iType="group" iEffectiveDate="2018-06-08T07:45:46" iStatusCode="draft" refdisplay="mide-dataelement-78">
+                        <name language="de-DE">Medikation</name>
+                        <name language="en-US">Medication</name>
+                    </relationship>
+                    <valueDomain type="quantity">
+                        <property unit="mg"/>
+                        <example type="neutral">25 mg</example>
+                    </valueDomain>
+                    <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.425" conceptFlexibility="2019-01-15T09:19:03" code="00994" codeSystem="1.2.276.0.76.5.308" displayName="Prednisolon" effectiveDate="2019-01-17T11:49:19" codeSystemName="ASK-Nummer der Rechtsverbindlichen Stoffbezeichnungen gemäß §10 Abs. 6 Nr. 1 Arzneimittelgesetz (AMG)"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.21.2.426" effectiveDate="2019-01-15T09:23:32" statusCode="draft" type="item" iddisplay="asic-dataelement-426" shortName="dexamethason">
+                    <implementation shortName="dexamethason" markdown="Dexamethason IV bolusweise&#xA;[mg]"/>
+                    <name language="de-DE" lastTranslated="2019-01-15T09:24:27">Dexamethason</name>
+                    <desc language="de-DE" lastTranslated="2019-01-15T09:24:49">Dexamethason IV bolusweise<br clear="none"/>[mg]<br clear="none"/>
+                    </desc>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.777.24.2.78" flexibility="2018-06-08T07:45:46" prefix="mide-" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" iType="group" iEffectiveDate="2018-06-08T07:45:46" iStatusCode="draft" refdisplay="mide-dataelement-78">
+                        <name language="de-DE">Medikation</name>
+                        <name language="en-US">Medication</name>
+                    </relationship>
+                    <valueDomain type="quantity">
+                        <property unit="mg"/>
+                        <example type="neutral">10 mg</example>
+                    </valueDomain>
+                    <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.426" conceptFlexibility="2019-01-15T09:23:32" code="00993" codeSystem="1.2.276.0.76.5.308" displayName="Dexamethason" effectiveDate="2019-01-17T11:49:57" codeSystemName="ASK-Nummer der Rechtsverbindlichen Stoffbezeichnungen gemäß §10 Abs. 6 Nr. 1 Arzneimittelgesetz (AMG)"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.21.2.427" effectiveDate="2019-01-15T09:25:45" statusCode="draft" type="item" iddisplay="asic-dataelement-427" shortName="terlipressin">
+                    <implementation shortName="terlipressin" markdown="Terlipressin IV bolusweise&#xA;[mg]"/>
+                    <name language="de-DE" lastTranslated="2019-01-15T09:27:23">Terlipressin</name>
+                    <desc language="de-DE" lastTranslated="2019-01-15T09:27:44">
+                        <span style="display: inline !important; float: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: arial,helvetica,clean,sans-serif; font-size: 13px; font-size-adjust: none; font-stretch: normal; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 15.86px; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">Terlipressin IV bolusweise</span>
+                        <br clear="none" style="background-color: transparent; color: rgb(0, 0, 0); font-family: arial,helvetica,clean,sans-serif; font-size: 13px; font-size-adjust: none; font-stretch: normal; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 15.86px; orphans: 2; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;"/>
+                        <span style="display: inline !important; float: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: arial,helvetica,clean,sans-serif; font-size: 13px; font-size-adjust: none; font-stretch: normal; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 15.86px; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">[mg]</span>
+                        <br clear="none"/>
+                    </desc>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.777.24.2.78" flexibility="2018-06-08T07:45:46" prefix="mide-" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" iType="group" iEffectiveDate="2018-06-08T07:45:46" iStatusCode="draft" refdisplay="mide-dataelement-78">
+                        <name language="de-DE">Medikation</name>
+                        <name language="en-US">Medication</name>
+                    </relationship>
+                    <valueDomain type="quantity">
+                        <property unit="mg"/>
+                        <example type="neutral">12.5 mg</example>
+                    </valueDomain>
+                    <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.427" conceptFlexibility="2019-01-15T09:25:45" code="12827" codeSystem="1.2.276.0.76.5.308" displayName="Terlipressin" effectiveDate="2019-01-17T11:52:37" codeSystemName="ASK-Nummer der Rechtsverbindlichen Stoffbezeichnungen gemäß §10 Abs. 6 Nr. 1 Arzneimittelgesetz (AMG)"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.21.2.434" effectiveDate="2019-01-17T11:56:14" statusCode="draft" type="item" iddisplay="asic-dataelement-434" shortName="fludrocortison">
+                    <implementation shortName="fludrocortison" markdown="Fludrocortison&#xA;[mg]"/>
+                    <name language="de-DE">Fludrocortison</name>
+                    <desc language="de-DE" lastTranslated="2019-01-17T12:43:45">Fludrocortison<br clear="none"/>[mg]<br clear="none"/>
+                    </desc>
+                    <relationship type="ADAPT" ref="2.16.840.1.113883.3.1937.777.24.2.78" flexibility="2018-06-08T07:45:46" prefix="mide-" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" iType="group" iEffectiveDate="2018-06-08T07:45:46" iStatusCode="draft" refdisplay="mide-dataelement-78">
+                        <name language="de-DE">Medikation</name>
+                        <name language="en-US">Medication</name>
+                    </relationship>
+                    <valueDomain type="quantity">
+                        <property unit="mg"/>
+                        <example type="neutral">12 mg</example>
+                    </valueDomain>
+                    <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.434" conceptFlexibility="2019-01-17T11:56:14" code="03512" codeSystem="1.2.276.0.76.5.308" displayName="Fludrocortison" effectiveDate="2019-01-17T12:01:32" codeSystemName="ASK-Nummer der Rechtsverbindlichen Stoffbezeichnungen gemäß §10 Abs. 6 Nr. 1 Arzneimittelgesetz (AMG)"/>
+                </concept>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.21.2.385" effectiveDate="2018-08-27T16:09:25" statusCode="draft" type="group" iddisplay="asic-dataelement-385" shortName="inhalativ">
+                <implementation shortName="inhalativ" markdown="Gruppe der inhalierten Wirkstoffe"/>
+                <name language="de-DE">Inhalativ</name>
+                <desc language="de-DE" lastTranslated="2018-08-27T16:11:05">Gruppe der inhalierten Wirkstoffe<br clear="none"/>
+                </desc>
+                <concept id="2.16.840.1.113883.3.1937.777.21.2.34" effectiveDate="2018-05-14T16:44:58" statusCode="draft" type="item" iddisplay="asic-dataelement-34" shortName="iloprost">
+                    <implementation shortName="iloprost" markdown="Iloprost&#xA;ug"/>
+                    <name language="de-DE" lastTranslated="2018-08-27T16:13:55">Iloprost</name>
+                    <desc language="de-DE" lastTranslated="2018-08-27T16:14:06">Iloprost<br clear="none"/>ug<br clear="none"/>
+                    </desc>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.777.24.2.78" flexibility="2018-06-08T07:45:46" prefix="mide-" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" iType="group" iEffectiveDate="2018-06-08T07:45:46" iStatusCode="draft" refdisplay="mide-dataelement-78">
+                        <name language="de-DE">Medikation</name>
+                        <name language="en-US">Medication</name>
+                    </relationship>
+                    <valueDomain type="quantity">
+                        <property unit="ug"/>
+                    </valueDomain>
+                    <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.34" conceptFlexibility="2018-05-14T16:44:58" code="22261" codeSystem="1.2.276.0.76.5.308" displayName="Iloprost" effectiveDate="2019-01-17T11:24:58" codeSystemName="ASK-Nummer der Rechtsverbindlichen Stoffbezeichnungen gemäß §10 Abs. 6 Nr. 1 Arzneimittelgesetz (AMG)"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.21.2.387" effectiveDate="2018-08-28T09:43:59" statusCode="draft" type="item" iddisplay="asic-dataelement-387" shortName="isofluran">
+                    <implementation shortName="isofluran" markdown="Isofluran&#xA;- volatiles Anaesthetikum&#xA;- muskelrelaxierend&#xA;&#xA;[ml/h]&#xA;&#xA;UKA Aachen: Intervention &#34;Anaconda&#34;"/>
+                    <name language="de-DE" lastTranslated="2018-08-28T09:44:20">Isofluran</name>
+                    <desc language="de-DE" lastTranslated="2018-08-28T09:46:31">Isofluran<br clear="none"/>- volatiles Anaesthetikum<br clear="none"/>- muskelrelaxierend<br clear="none"/>
+                        <br clear="none"/>[ml/h]<br clear="none"/>
+                        <br clear="none"/>UKA Aachen: Intervention "Anaconda"</desc>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.777.24.2.78" flexibility="2018-06-08T07:45:46" prefix="mide-" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" iType="group" iEffectiveDate="2018-06-08T07:45:46" iStatusCode="draft" refdisplay="mide-dataelement-78">
+                        <name language="de-DE">Medikation</name>
+                        <name language="en-US">Medication</name>
+                    </relationship>
+                    <valueDomain type="quantity">
+                        <property unit="mL/h"/>
+                    </valueDomain>
+                    <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.387" conceptFlexibility="2018-08-28T09:43:59" code="21975" codeSystem="1.2.276.0.76.5.308" displayName="Isofluran" effectiveDate="2019-01-17T11:42:01" codeSystemName="ASK-Nummer der Rechtsverbindlichen Stoffbezeichnungen gemäß §10 Abs. 6 Nr. 1 Arzneimittelgesetz (AMG)"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.21.2.388" effectiveDate="2018-08-28T10:04:46" statusCode="draft" type="item" iddisplay="asic-dataelement-388" shortName="sevofluran">
+                    <implementation shortName="sevofluran" markdown="Sevofluran&#xA;- volatiles Anästhetikum"/>
+                    <name language="de-DE" lastTranslated="2018-08-28T10:05:26">Sevofluran</name>
+                    <desc language="de-DE" lastTranslated="2018-08-28T10:06:14">Sevofluran<br clear="none"/>- volatiles Anästhetikum<br clear="none"/>
+                        <br clear="none"/>
+                    </desc>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.777.24.2.78" flexibility="2018-06-08T07:45:46" prefix="mide-" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" iType="group" iEffectiveDate="2018-06-08T07:45:46" iStatusCode="draft" refdisplay="mide-dataelement-78">
+                        <name language="de-DE">Medikation</name>
+                        <name language="en-US">Medication</name>
+                    </relationship>
+                    <valueDomain type="quantity">
+                        <property unit="mL/h"/>
+                    </valueDomain>
+                    <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.388" conceptFlexibility="2018-08-28T10:04:46" code="26960" codeSystem="1.2.276.0.76.5.308" displayName="Sevofluran" effectiveDate="2019-01-17T11:42:53" codeSystemName="ASK-Nummer der Rechtsverbindlichen Stoffbezeichnungen gemäß §10 Abs. 6 Nr. 1 Arzneimittelgesetz (AMG)"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.21.2.33" effectiveDate="2018-05-14T16:44:20" statusCode="draft" type="item" iddisplay="asic-dataelement-33" shortName="stickstoffoxid_no">
+                    <implementation shortName="stickstoffoxid_no" markdown="Stickstoffoxid (NO)&#xA;ppm (parts per Million)&#xA;&#xA;Achtung: Das Stickstoffoxid wird im UKA ICCA analog zu den Beatmungsparametern gespeichert, nicht wie ein Medikament."/>
+                    <name language="de-DE" lastTranslated="2018-08-27T16:16:07">Stickstoffoxid (NO)</name>
+                    <desc language="de-DE" lastTranslated="2018-08-27T16:16:22">Stickstoffoxid (NO)<br clear="none"/>ppm (parts per Million)<br clear="none"/>
+                        <br clear="none"/>Achtung: Das Stickstoffoxid wird im UKA ICCA analog zu den Beatmungsparametern gespeichert, nicht wie ein Medikament.<br clear="none"/>
+                    </desc>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.777.24.2.78" flexibility="2018-06-08T07:45:46" prefix="mide-" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" iType="group" iEffectiveDate="2018-06-08T07:45:46" iStatusCode="draft" refdisplay="mide-dataelement-78">
+                        <name language="de-DE">Medikation</name>
+                        <name language="en-US">Medication</name>
+                    </relationship>
+                    <valueDomain type="quantity">
+                        <property unit="ppm"/>
+                    </valueDomain>
+                    <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.33" conceptFlexibility="2018-05-14T16:44:20" code="05825" codeSystem="1.2.276.0.76.5.308" displayName="Nitrogen oxide" effectiveDate="2019-01-17T11:22:01" codeSystemName="ASK-Nummer der Rechtsverbindlichen Stoffbezeichnungen gemäß §10 Abs. 6 Nr. 1 Arzneimittelgesetz (AMG)"/>
+                </concept>
+            </concept>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.21.2.113" statusCode="cancelled" versionLabel="xxx" effectiveDate="2018-05-28T13:26:36" type="item" iddisplay="asic-dataelement-113" shortName="dopamin">
+            <implementation shortName="dopamin" markdown="Dopamin&#xA;&#xA;Der Wirkstoff Dopamin gehört zur Gruppe der Katecholamine und wird therapeutisch bei Schockzuständen eingesetzt.&#xA;Der Stoff kommt auch natürlicherweise im Körper als wichtiger Botenstoff im Gehirn (Neurotransmitter).&#xA;&#xA;Dopamin kann die Durchblutung in bestimmten Körperregionen (wie zum Beispiel den Nieren) steigern. &#xA;Es wird daher bei Schockzuständen, niedrigem Blutdruck und Nierenversagen angewendet."/>
+            <name language="de-DE">Dopamin</name>
+            <desc language="de-DE">Dopamin<br clear="none"/>
+                <br clear="none"/>Der Wirkstoff Dopamin gehört zur Gruppe der Katecholamine und wird therapeutisch bei Schockzuständen eingesetzt.<br clear="none"/>Der Stoff kommt auch natürlicherweise im Körper als wichtiger Botenstoff im Gehirn (Neurotransmitter).<br clear="none"/>
+                <br clear="none"/>
+                <span style="text-align: left; text-transform: none; line-height: 26px; text-indent: 0px; letter-spacing: normal; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; word-spacing: 0px; display: inline !important; white-space: normal; orphans: 2; float: none; -webkit-text-stroke-width: 0px; background-color: transparent;">Dopamin kann die Durchblutung in bestimmten Körperregionen (wie zum Beispiel den Nieren) steigern. <br clear="none"/>Es wird daher bei Schockzuständen, niedrigem Blutdruck und Nierenversagen angewendet.</span>
+                <br clear="none"/>
+            </desc>
+            <source language="de-DE">Dokumentierendes System: UKA ICCA</source>
+            <property name="Verwendung" md5="c9619a6e78f2da6c4ad1b848692e0249">Protokollierung<br clear="none"/>
+            </property>
+            <property name="Umgang mit Missing Values" md5="72c02c393559bc322e8da2504c818484">-<br clear="none"/>
+            </property>
+            <valueDomain type="quantity"/>
+            <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.113" conceptFlexibility="2018-05-28T13:26:36" code="412383006" codeSystem="2.16.840.1.113883.6.96" displayName="Dopamine (substance)" effectiveDate="2018-05-28T13:37:19" codeSystemName="SNOMED Clinical Terms"/>
+            <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.113" conceptFlexibility="2018-05-28T13:26:36" code="59187003" codeSystem="2.16.840.1.113883.6.96" displayName="Dopamine (substance)" effectiveDate="2018-05-28T13:37:28" codeSystemName="SNOMED Clinical Terms"/>
+            <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.113" conceptFlexibility="2018-05-28T13:26:36" code="400220005" codeSystem="2.16.840.1.113883.6.96" displayName="Dopamine hydrochloride 40mg/mL injection solution 100mL vial (product)" effectiveDate="2018-06-14T16:18:55" codeSystemName="SNOMED Clinical Terms"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.21.2.127" statusCode="cancelled" effectiveDate="2018-06-29T09:07:22" type="group" iddisplay="asic-dataelement-127" shortName="sedativa">
+            <implementation shortName="sedativa" markdown="Seditiva"/>
+            <name language="de-DE" lastTranslated="2018-08-21T09:11:25">Sedativa</name>
+            <desc language="de-DE">Seditiva</desc>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.21.2.128" statusCode="cancelled" effectiveDate="2018-06-29T09:09:24" type="group" iddisplay="asic-dataelement-128" shortName="analgetika">
+            <implementation shortName="analgetika" markdown="Analgesie"/>
+            <name language="de-DE" lastTranslated="2018-08-21T09:13:05">Analgetika</name>
+            <desc language="de-DE">Analgesie</desc>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.21.2.129" statusCode="cancelled" effectiveDate="2018-06-29T09:10:40" type="group" iddisplay="asic-dataelement-129" shortName="muskelrelaxanzien">
+            <implementation shortName="muskelrelaxanzien" markdown="Muskelrelaxantien"/>
+            <name language="de-DE" lastTranslated="2018-08-21T09:15:21">Muskelrelaxanzien</name>
+            <desc language="de-DE">Muskelrelaxantien</desc>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.21.2.130" statusCode="cancelled" effectiveDate="2018-06-29T09:12:14" type="group" iddisplay="asic-dataelement-130" shortName="diuretika">
+            <implementation shortName="diuretika" markdown="Diuretika"/>
+            <name language="de-DE">Diuretika</name>
+            <desc language="de-DE">Diuretika</desc>
+        </concept>
+    </concept>
+</dataset>

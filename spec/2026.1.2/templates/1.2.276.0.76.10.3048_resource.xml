@@ -1,0 +1,103 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.3048" ident="aktin-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.3048" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="Beschwerden bei Vorstellung" ident="aktin-" name="Chiefcomplaintreasonforvisit" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="active" url="http://art-decor.org/decor/services/" effectiveDate="2015-01-10T00:00:00">
+            <desc language="de-DE">Beschwerden bei Vorstellung / Grund der Vorstellung</desc>
+            <desc language="en-US">Chief complaint+Reason for visit section</desc>
+            <classification type="cdasectionlevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.201" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.201" tmname="CDASection" tmdisplayName="CDA Section" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <relationship type="ADAPT" template="2.16.840.1.113883.10.20.22.2.13" tmid="2.16.840.1.113883.10.20.22.2.13" tmname="ChiefComplaintandReasonforVisitSection" tmeffectiveDate="2015-08-13T00:00:00" tmstatusCode="draft" tmdisplayName="Chief Complaint and Reason for Visit Section" tmversionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <example type="neutral">
+                <section classCode="DOCSECT">
+                    <templateId root="1.2.276.0.76.10.3048"/>
+                    <code code="46239-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Chief complaint+Reason for visit"/>
+                    <title>Beschwerden bei Vorstellung</title>
+                    <text>...</text>
+                    <entry>
+                        <!-- .. -->
+                    </entry>
+                </section>
+            </example>
+            <element name="hl7:section" id="2.16.840.1.113883.2.6.60.3.9.75">
+                <item original="false" label="Chiefcomplaintreasonforvisit"/>
+                <attribute name="classCode" value="DOCSECT" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.76"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.77">
+                    <item original="false" label="Chiefcomplaintreasonforvisit"/>
+                    <attribute name="root" value="1.2.276.0.76.10.3048" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.78"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CD" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.79">
+                    <item original="false" label="Chiefcomplaintreasonforvisit"/>
+                    <vocabulary code="46239-0" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:title" minimumMultiplicity="1" maximumMultiplicity="1" datatype="ST" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.80">
+                    <item original="false" label="Chiefcomplaintreasonforvisit"/>
+                    <text>Beschwerden bei Vorstellung</text>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="1" maximumMultiplicity="1" datatype="SD.TEXT" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.81">
+                    <item original="false" label="Chiefcomplaintreasonforvisit"/>
+                </element>
+                <element name="hl7:entry" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" contains="1.2.276.0.76.10.4039" id="2.16.840.1.113883.2.6.60.3.9.82" tmid="1.2.276.0.76.10.4039" tmname="Problemconcernactcedis" tmdisplayName="Problem Concern Act (Text/CEDIS)" tmeffectiveDate="2015-03-03T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <item original="false" label="Chiefcomplaintreasonforvisit"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.83"/>
+                    <attribute name="contextConductionInd" value="true" isOptional="true" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.84"/>
+                </element>
+            </element>
+            <staticAssociations>
+                <origconcept ref="1.2.276.0.76.3.1.261.1.77.1.2.2.199" effectiveDate="2018-05-24T00:00:00" refdisplay="dguvbbr-dataelement2-199" conceptStatusCode="draft" datasetId="1.2.276.0.76.3.1.261.1.77.1.1.2" datasetEffectiveDate="2018-05-24T00:00:00" datasetStatusCode="draft" datasetName="Stationärer Entlassungsbericht" ident="dguvbbr-" elementId="2.16.840.1.113883.2.6.60.3.9.75" templateId="1.2.276.0.76.10.3048" templateEffectiveDate="2015-01-10T00:00:00" path="">
+                    <name language="de-DE">Unfallhergang/Beschwerden bei Aufnahme</name>
+                    <desc language="de-DE">Von der versicherten Person und/oder Angehörigen vorgetragener Unfallhergang und alle beklagten subjektiven Beschwerden</desc>
+                    <datasetName language="de-DE">Stationärer Entlassungsbericht</datasetName>
+                    <projectName language="de-DE" lastTranslated="2022-12-07T18:52:23">DGUV BBR</projectName>
+                </origconcept>
+                <origconcept ref="1.2.276.0.76.3.1.261.1.77.1.2.2.210" effectiveDate="2018-05-24T00:00:00" refdisplay="dguvbbr-dataelement2-210" conceptStatusCode="draft" datasetId="1.2.276.0.76.3.1.261.1.77.1.1.2" datasetEffectiveDate="2018-05-24T00:00:00" datasetStatusCode="draft" datasetName="Stationärer Entlassungsbericht" ident="dguvbbr-" elementId="2.16.840.1.113883.2.6.60.3.9.81" templateId="1.2.276.0.76.10.3048" templateEffectiveDate="2015-01-10T00:00:00" path="Unfallhergang/Beschwerden bei Aufnahme">
+                    <name language="de-DE">Freitext zu Unfallhergang/Beschwerden bei Aufnahme</name>
+                    <desc language="de-DE"/>
+                    <datasetName language="de-DE">Stationärer Entlassungsbericht</datasetName>
+                    <projectName language="de-DE" lastTranslated="2022-12-07T18:52:23">DGUV BBR</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.2.10034" effectiveDate="2015-01-15T00:00:00" refdisplay="aktin-dataelement2015(1)-10034" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.2" datasetEffectiveDate="2015-01-15T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.1-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.75" templateId="1.2.276.0.76.10.3048" templateEffectiveDate="2015-01-10T00:00:00" path="">
+                    <name language="de-DE">Beschwerden bei Vorstellung</name>
+                    <desc language="de-DE">Beschwerden bei Vorstellung</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.2.36" effectiveDate="2015-01-15T00:00:00" refdisplay="aktin-dataelement2015(1)-36" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.2" datasetEffectiveDate="2015-01-15T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.1-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.81" templateId="1.2.276.0.76.10.3048" templateEffectiveDate="2015-01-10T00:00:00" path="Beschwerden bei Vorstellung">
+                    <name language="de-DE">Beschwerden bei Vorstellung (Freitext)</name>
+                    <desc language="de-DE">Beschwerden, die der Patient bei der Vorstellung in der Notaufnahme vorbringt, synonym Grund der Vorstellung.</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.3.10034" effectiveDate="2015-11-01T00:00:00" refdisplay="aktin-dataelement2015(2)-10034" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.3" datasetEffectiveDate="2015-11-01T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.2-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.75" templateId="1.2.276.0.76.10.3048" templateEffectiveDate="2015-01-10T00:00:00" path="">
+                    <name language="de-DE">Beschwerden bei Vorstellung</name>
+                    <desc language="de-DE">
+                    <span class="xforms-group xforms-visited" id="xf-761">
+                        <span class="xforms-group xforms-visited" id="xf-818">Beschwerden, die den Patienten in die Notaufnahme geführt haben.<br clear="none"/>
+                                <br clear="none"/>Ursprünglich bis 29.09.2017: </span>
+                    </span>
+                    <span class="xforms-group xforms-visited" id="xf-761">
+                        <span class="xforms-group xforms-visited" id="xf-818">Beschwerden, die der Patient bei der Vorstellung in der Notaufnahme vorbringt, synonym Grund der Vorstellung.<br clear="none"/>
+                            </span>
+                    </span>
+                </desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.3.36" effectiveDate="2015-11-01T00:00:00" refdisplay="aktin-dataelement2015(2)-36" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.3" datasetEffectiveDate="2015-11-01T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.2-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.81" templateId="1.2.276.0.76.10.3048" templateEffectiveDate="2015-01-10T00:00:00" path="Beschwerden bei Vorstellung">
+                    <name language="de-DE">Beschwerden bei Vorstellung (Freitext)</name>
+                    <desc language="de-DE">Beschwerden, die der Patient bei der Vorstellung in der Notaufnahme vorbringt, synonym Grund der Vorstellung.</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+            </staticAssociations>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.92" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2025-11-12T00:00:00" statusCode="retired" versionLabel="v3transit" lastModifiedDate="2026-03-25T11:04:45" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.93" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2026-03-25T11:04:07" statusCode="draft" versionLabel="v4transit" lastModifiedDate="2026-04-29T18:39:46" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.1015" name="EmergencymedicineNoteCDAdocumentv1" displayName="Emergency medicine Note CDA document" effectiveDate="2014-09-18T00:00:00" statusCode="active" versionLabel="v1" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.1019" name="EmergencymedicineNoteCDAdocumentv2" displayName="Emergency medicine Note CDA document" effectiveDate="2016-06-01T00:00:00" statusCode="active" versionLabel="v2" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4039" name="Problemconcernactcedis" displayName="Problem Concern Act (Text/CEDIS)" effectiveDate="2015-03-03T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+        </template>
+    </template>
+</result>

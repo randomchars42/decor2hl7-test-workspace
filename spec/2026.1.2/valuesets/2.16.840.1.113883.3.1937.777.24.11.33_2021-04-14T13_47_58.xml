@@ -1,0 +1,16 @@
+<valueSets>
+    <project ident="mide-">
+        <valueSet id="2.16.840.1.113883.3.1937.777.24.11.33" name="SpecimenContainerType" displayName="Specimen Container Type" effectiveDate="2021-04-14T13:47:58" statusCode="draft" canonicalUri="http://hl7.org/fhir/ValueSet/specimen-container-type">
+            <sourceCodeSystem id="2.16.840.1.1138836.96" identifierName="" canonicalUri="urn:oid:2.16.840.1.1138836.96" canonicalUriDSTU2="urn:oid:2.16.840.1.1138836.96" canonicalUriSTU3="urn:oid:2.16.840.1.1138836.96" canonicalUriR4="urn:oid:2.16.840.1.1138836.96" canonicalUriR4B="urn:oid:2.16.840.1.1138836.96" canonicalUriR5="urn:oid:2.16.840.1.1138836.96"/>
+            <publishingAuthority name="Konsortium DIFUTURE" inherited="project">
+                <addrLine type="uri">https://difuture.de</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <include op="descendent-of" code="706041008" codeSystem="2.16.840.1.1138836.96" displayName=" Device for body fluid and tissue collection/transfer/processing (physical object)"/>
+                <include code="433467007" codeSystem="2.16.840.1.1138836.96" displayName=" Histology laboratory equipment (physical object)" op="descendent-of" exception="false"/>
+                <include code="433466003" codeSystem="2.16.840.1.1138836.96" displayName=" Microscope slide (physical object)" op="is-a" exception="false"/>
+                <include code="433472003" codeSystem="2.16.840.1.1138836.96" displayName="Microscope slide coverslip (physical object)" op="is-a" exception="false"/>
+            </conceptList>
+        </valueSet>
+    </project>
+</valueSets>

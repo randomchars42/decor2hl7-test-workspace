@@ -1,0 +1,20 @@
+<codeSystem xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.777.24.5.6" name="MII_Oncology_Organfunktion-HepatischeEnzephalopathie" displayName="MII Onkologie: Organfunktion - Hepatische Enzephalopathie" effectiveDate="2023-01-25T21:44:42" statusCode="draft" lastModifiedDate="2023-08-08T16:18:00" language="de-DE" url="http://art-decor.org/decor/services/" ident="mide-">
+    <publishingAuthority json:array="true" name="Konsortium DIFUTURE" inherited="project">
+        <addrLine json:array="true" type="uri">https://difuture.de</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <conceptList json:array="true">
+        <codedConcept json:array="true" code="1" statusCode="draft" level="0" type="L">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="1: Nicht vorhanden"/>
+            <desc json:array="true" language="de-DE" lastTranslated="2023-01-25T21:46:01">Es ist keine hepatische Enzephalopathie vorhanden.</desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="2" statusCode="draft" level="0" type="L">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="2: Stadium I bis II oder medikamentös behandelt"/>
+            <desc json:array="true" language="de-DE" lastTranslated="2023-01-25T21:46:01">Es ist ein Grad I oder II einer hepatischen Enzephalopathie vorhanden oder die hepatische Enzephalopathie wird medikamentös behandelt.</desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="3" statusCode="draft" level="0" type="L">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="3: Stadium III bis IV oder refraktär"/>
+            <desc json:array="true" language="de-DE" lastTranslated="2023-01-25T21:46:01">Es ist ein Grad III oder IV einer hepatischen Enzephalopathie vorhanden oder die hepatische Enzephalopathie ist refraktär.</desc>
+        </codedConcept>
+    </conceptList>
+</codeSystem>

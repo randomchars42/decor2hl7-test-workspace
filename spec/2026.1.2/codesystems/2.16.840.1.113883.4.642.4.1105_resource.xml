@@ -1,0 +1,48 @@
+<codeSystems>
+    <repository url="http://art-decor.org/decor/services/" ident="ad5bbr-" referencedFrom="sxehealth-" projecttype="local">
+        <codeSystem id="2.16.840.1.113883.4.642.4.1105" name="ExampleUseCodesForList" displayName="Example Use Codes for List" effectiveDate="2019-10-30T00:00:00" statusCode="draft" versionLabel="4.0.1" canonicalUri="http://terminology.hl7.org/CodeSystem/list-example-use-codes" caseSensitive="true" language="de-DE">
+            <desc language="en-US">Example use codes for the List resource - typical kinds of use.</desc>
+            <publishingAuthority name="FHIR Project">
+                <addrLine type="uri">http://hl7.org/fhir</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <codedConcept code="alerts" level="0" type="L" statusCode="active">
+                    <designation displayName="Alerts" language="en-US" type="preferred"/>
+                    <desc language="en-US">A list of alerts for the patient.</desc>
+                </codedConcept>
+                <codedConcept code="adverserxns" level="0" type="L" statusCode="active">
+                    <designation displayName="Adverse Reactions" language="en-US" type="preferred"/>
+                    <desc language="en-US">A list of part adverse reactions.</desc>
+                </codedConcept>
+                <codedConcept code="allergies" level="0" type="L" statusCode="active">
+                    <designation displayName="Allergies" language="en-US" type="preferred"/>
+                    <desc language="en-US">A list of Allergies for the patient.</desc>
+                </codedConcept>
+                <codedConcept code="medications" level="0" type="L" statusCode="active">
+                    <designation displayName="Medication List" language="en-US" type="preferred"/>
+                    <desc language="en-US">A list of medication statements for the patient.</desc>
+                </codedConcept>
+                <codedConcept code="problems" level="0" type="L" statusCode="active">
+                    <designation displayName="Problem List" language="en-US" type="preferred"/>
+                    <desc language="en-US">A list of problems that the patient is known of have (or have had in the past).</desc>
+                </codedConcept>
+                <codedConcept code="worklist" level="0" type="L" statusCode="active">
+                    <designation displayName="Worklist" language="en-US" type="preferred"/>
+                    <desc language="en-US">A list of items that constitute a set of work to be performed (typically this code would be specialized for more specific uses, such as a ward round list).</desc>
+                </codedConcept>
+                <codedConcept code="waiting" level="0" type="L" statusCode="active">
+                    <designation displayName="Waiting List" language="en-US" type="preferred"/>
+                    <desc language="en-US">A list of items waiting for an event (perhaps a surgical patient waiting list).</desc>
+                </codedConcept>
+                <codedConcept code="protocols" level="0" type="L" statusCode="active">
+                    <designation displayName="Protocols" language="en-US" type="preferred"/>
+                    <desc language="en-US">A set of protocols to be followed.</desc>
+                </codedConcept>
+                <codedConcept code="plans" level="0" type="L" statusCode="active">
+                    <designation displayName="Care Plans" language="en-US" type="preferred"/>
+                    <desc language="en-US">A set of care plans that apply in a particular context of care.</desc>
+                </codedConcept>
+            </conceptList>
+        </codeSystem>
+    </repository>
+</codeSystems>

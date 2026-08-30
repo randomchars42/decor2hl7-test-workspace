@@ -1,0 +1,20 @@
+<codeSystem xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.777.24.5.12" name="MII_Oncology_Her2neu_Status" displayName="MII Onkologie: Her2neu Status" effectiveDate="2023-08-08T15:41:38" statusCode="draft" lastModifiedDate="2023-08-08T16:18:23" language="de-DE" url="http://art-decor.org/decor/services/" ident="mide-">
+    <desc json:array="true" language="de-DE" lastTranslated="2023-08-08T15:41:38">
+                 &lt;p&gt;Rezeptorstatus Positiv/Negativ (gemäß immunreaktiven Scores nach Leitlinie)&lt;/p&gt; 
+            </desc>
+    <publishingAuthority json:array="true" name="Konsortium DIFUTURE" inherited="project">
+        <addrLine json:array="true" type="uri">https://difuture.de</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <conceptList json:array="true">
+        <codedConcept json:array="true" code="P" statusCode="draft" level="0" type="L">
+            <desc json:array="true" language="de-DE" lastTranslated="2023-08-08T15:43:04">positiv, d. h. IHC +++ oder IHC ++ und ISH (FISH, CISH o. Ä.) positiv</desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="N" statusCode="draft" level="0" type="L">
+            <desc json:array="true" language="de-DE" lastTranslated="2023-08-08T15:43:04">negativ</desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="U" statusCode="draft" level="0" type="L">
+            <desc json:array="true" language="de-DE" lastTranslated="2023-08-08T15:43:04">unbekannt</desc>
+        </codedConcept>
+    </conceptList>
+</codeSystem>

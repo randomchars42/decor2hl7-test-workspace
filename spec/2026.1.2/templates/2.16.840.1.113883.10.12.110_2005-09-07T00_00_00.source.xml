@@ -1,0 +1,31 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.12.110" name="CDAdocumentationOf" displayName="CDA documentationOf" effectiveDate="2005-09-07T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" sdtc:dummy-1="urn:hl7-org:sdtc" xml:dummy-2="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-4="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">Template CDA documentationOf (prototype, directly derived from POCD_RM000040 MIF)</desc>
+            <desc language="nl-NL">Template CDA documentationOf (prototype, direct afgeleid uit POCD_RM000040 MIF)</desc>
+            <desc language="de-DE">Template CDA documentationOf (Prototyp, direkt abgeleitet aus POCD_RM000040 MIF)</desc>
+            <classification type="cdaheaderlevel"/>
+            <element name="hl7:documentationOf" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.1.9.183">
+                <attribute name="typeCode" value="DOC" id="2.16.840.1.113883.3.1937.777.1.9.184"/>
+                <element name="hl7:serviceEvent" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.1.9.185">
+                    <attribute name="classCode" value="ACT" id="2.16.840.1.113883.3.1937.777.1.9.186"/>
+                    <attribute name="moodCode" value="EVN" id="2.16.840.1.113883.3.1937.777.1.9.187"/>
+                    <element name="hl7:id" minimumMultiplicity="0" maximumMultiplicity="*" datatype="II" id="2.16.840.1.113883.3.1937.777.1.9.188"/>
+                    <element name="hl7:code" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.1.9.189">
+                        <vocabulary domain="ActCode"/>
+                    </element>
+                    <element name="hl7:effectiveTime" minimumMultiplicity="0" maximumMultiplicity="1" datatype="IVL_TS" id="2.16.840.1.113883.3.1937.777.1.9.190"/>
+                    <element name="hl7:performer" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.1.9.191">
+                        <attribute name="typeCode" datatype="cs" id="2.16.840.1.113883.3.1937.777.1.9.192">
+                            <!--valueSet name="ServiceEventPerformer"-->
+                            <vocabulary valueSet="2.16.840.1.113883.1.11.19601"/>
+                        </attribute>
+                        <element name="hl7:functionCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.1.9.193">
+                            <!--valueSet name="ParticipationFunction"-->
+                            <vocabulary valueSet="2.16.840.1.113883.1.11.10267"/>
+                        </element>
+                        <element name="hl7:time" minimumMultiplicity="0" maximumMultiplicity="1" datatype="IVL_TS" id="2.16.840.1.113883.3.1937.777.1.9.194"/>
+                        <!--contains name="CDAAssignedEntity"-->
+                        <element name="hl7:assignedEntity" minimumMultiplicity="1" maximumMultiplicity="1" contains="2.16.840.1.113883.10.12.153" id="2.16.840.1.113883.3.1937.777.1.9.195"/>
+                    </element>
+                </element>
+            </element>
+        </template>

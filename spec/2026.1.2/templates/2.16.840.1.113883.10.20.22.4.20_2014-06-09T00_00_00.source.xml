@@ -1,0 +1,45 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:local="http://art-decor.org/local" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.20.22.4.20" name="InstructionV2" effectiveDate="2014-06-09T00:00:00" statusCode="draft" displayName="Instruction (V2)" versionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-" sdtc:dummy-1="urn:hl7-org:sdtc" local:dummy-2="http://art-decor.org/local" xml:dummy-3="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-5="urn:hl7-org:v3" xsi:dummy-6="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">The Instruction template can be used in several ways, such as to record patient instructions within a Medication Activity or to record fill instructions within a supply order. The template's moodCode can only be INT. If an instruction was already be given, the Procedure Activity Act template (instead of this template) should be used to represent the already
+                occurred instruction. The act/code defines the type of instruction. Though not defined in this template, a Vaccine Information Statement (VIS) document could be referenced through act/reference/externalDocument, and patient awareness of the instructions can be represented with the generic participant and the participant/awarenessCode.</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.301" flexibility="2005-09-07T00:00:00"/>
+            <relationship type="VERSION" template="2.16.840.1.113883.10.20.22.4.20" flexibility="2013-01-31T00:00:00"/>
+            <context id="**"/>
+            <element name="cda:act" id="2.16.840.1.113883.3.1937.99.3.9.3860">
+                <attribute name="classCode" value="ACT" id="2.16.840.1.113883.3.1937.99.3.9.3861">
+                    <desc language="en-US">SHALL contain exactly one [1..1] @classCode="ACT" (CodeSystem: HL7ActClass urn:oid:2.16.840.1.113883.5.6 STATIC) (CONF:1098-7391).</desc>
+                    <item label="CONF:1098-7391"/>
+                </attribute>
+                <attribute name="moodCode" value="INT" id="2.16.840.1.113883.3.1937.99.3.9.3862">
+                    <desc language="en-US">SHALL contain exactly one [1..1] @moodCode="INT" (CodeSystem: ActMood urn:oid:2.16.840.1.113883.5.1001 STATIC) (CONF:1098-7392).</desc>
+                    <item label="CONF:1098-7392"/>
+                </attribute>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.56089">
+                    <desc language="en-US">C-CDA R1.1 templateId root without an extension</desc>
+                    <item label="CONF:1198-32936"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.22.4.20" datatype="uid" id="2.16.840.1.113883.3.1937.99.3.9.56090"/>
+                </element>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.3863">
+                    <desc language="en-US">SHALL contain exactly one [1..1] templateId (CONF:1098-7393) such that it</desc>
+                    <item label="CONF:1098-7393"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.22.4.20" id="2.16.840.1.113883.3.1937.99.3.9.3864">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.22.4.20" (CONF:1098-10503).</desc>
+                        <item label="CONF:1098-10503"/>
+                    </attribute>
+                    <attribute name="extension" value="2014-06-09" id="2.16.840.1.113883.3.1937.99.3.9.3865">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @extension="2014-06-09" (CONF:1098-32598).</desc>
+                        <item label="CONF:1098-32598"/>
+                    </attribute>
+                </element>
+                <element name="cda:code" datatype="CD" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="false" id="2.16.840.1.113883.3.1937.99.3.9.3866" strength="extensible">
+                    <desc language="en-US">SHALL contain exactly one [1..1] code, which SHOULD be selected from ValueSet Patient Education urn:oid:2.16.840.1.113883.11.20.9.34 DYNAMIC (CONF:1098-16884).</desc>
+                    <item label="CONF:1098-16884"/>
+                    <vocabulary valueSet="2.16.840.1.113883.11.20.9.34"/>
+                </element>
+                <element name="cda:statusCode" datatype="CS" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.3867">
+                    <desc language="en-US">SHALL contain exactly one [1..1] statusCode (CONF:1098-7396).</desc>
+                    <item label="CONF:1098-7396"/>
+                    <vocabulary code="completed"/>
+                </element>
+            </element>
+        </template>

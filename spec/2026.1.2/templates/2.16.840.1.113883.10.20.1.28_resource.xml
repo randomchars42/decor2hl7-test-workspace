@@ -1,0 +1,274 @@
+<result xmlns:json="http://www.json.org">
+    <template id="2.16.840.1.113883.10.20.1.28" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.20.1.28" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="Problem observation" cda:dummy-4="urn:hl7-org:v3" ident="ccd1-" name="ProblemObservation" xml:dummy-2="http://www.w3.org/XML/1998/namespace" statusCode="pending" sdtc:dummy-1="urn:hl7-org:sdtc" url="http://art-decor.org/decor/services/" effectiveDate="2007-04-01T00:00:00">
+            <desc language="en-US">
+                <p>
+                    <b>CONF-128</b>: A problem observation or result observation in the functional status section <b>SHALL</b> contain exactly one <b>observation / code</b>.<br/>
+                    <b>CONF-135</b>: A problem observation or result observation in the functional status section <b>MAY</b> use codes from the International Classification of Functioning, Disability, and Health (ICF, <a href="http://www.who.int/classifications/icf/en/">http://www.who.int/classifications/icf/en/</a>) (codeSystem 2.16.840.1.113883.6.254).<br/>
+                    <b>CONF-136</b>: A problem observation in the functional status section <b>SHALL</b> contain exactly one status of functional status observation. </p>
+                <p>...</p>
+                <h5>3.5.2.1.2 Problem observation</h5>
+                <p>
+                    <b>CONF-154</b>: A problem observation (templateId 2.16.840.1.113883.10.20.1.28) <b>SHALL</b> be represented with <b>Observation</b>. <b>CONF-155</b>: The value for “<b>Observation / @moodCode</b>” in a problem observation <b>SHALL</b> be “EVN” 2.16.840.1.113883.5.1001 ActMood <b>STATIC</b>. <b>CONF-156</b>: A problem observation <b>SHALL</b> include exactly one <b>Observation / statusCode</b>. <b>CONF-157</b>: The value for “<b>Observation / statusCode</b>” in a problem observation <b>SHALL</b> be “completed” 2.16.840.1.113883.5.14 ActStatus <b>STATIC</b>. <b>CONF-158</b>:
+                    A problem observation <b>SHOULD</b> contain exactly one <b>Observation / effectiveTime</b>, to indicate the biological timing of condition (e.g. the time the condition started, the onset of the illness or symptom, the duration of a condition). <b>CONF-159</b>: The value for “<b>Observation / code</b>” in a problem observation <b>MAY</b> be selected from ValueSet 2.16.840.1.113883.1.11.20.14 ProblemTypeCode <b>STATIC</b> 20061017. <b>CONF-160</b>: The value for “<b>Observation / entryRelationship / @typeCode</b>” in a problem observation <b>MAY</b> be “SUBJ” “Subject”
+                    2.16.840.1.113883.5.1002 ActRelationshipType <b>STATIC</b> to reference an age observation (templateId 2.16.840.1.113883.10.20.1.38). <b>CONF-161</b>: A problem observation <b>SHALL</b> contain one or more sources of information, as defined in section <b>5.2 Source</b>.</p>
+            </desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.303" tmname="CDAObservation" tmdisplayName="CDA Observation" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <element name="hl7:observation" id="2.16.840.1.113883.3.1937.777.4.9.1300">
+                <item original="false" label="ProblemObservation"/>
+                <attribute name="classCode" isOptional="true" datatype="cs" id="2.16.840.1.113883.3.1937.777.4.9.1301">
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.11529" vsid="2.16.840.1.113883.1.11.11529" vsname="ActClassObservation" vsdisplayName="ActClassObservation" vseffectiveDate="2014-03-26T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1360-20160323" linkedartefactmissing="false"/>
+                </attribute>
+                <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.4.9.1302">
+                    <item label="CONF-155"/>
+                </attribute>
+                <attribute name="negationInd" isOptional="true" datatype="bl" id="2.16.840.1.113883.3.1937.777.4.9.1303"/>
+                <assert role="warning" test="hl7:informant or hl7:reference[@typeCode='XCRPT'] or hl7:entryRelationship[@typeCode='REFR']/hl7:observation[@classCode='OBS'][@moodCode='EVN'][hl7:statusCode/@code='completed'][hl7:code[@code='48766-0'][@codeSystem='2.16.840.1.113883.6.1'][@displayName='Information source']][hl7:value]">CONF-161: A problem observation SHALL contain one or more sources of information, as defined in section 5.2 Source.</assert>
+                <assert role="error" test="(not(hl7:entryRelationship[hl7:observation/hl7:templateId/@root='2.16.840.1.113883.10.20.1.44']) or ancestor::hl7:section[hl7:templateId/@root='2.16.840.1.113883.10.20.1.5']) and (not(ancestor::hl7:section[hl7:templateId/@root='2.16.840.1.113883.10.20.1.5']) or hl7:entryRelationship[hl7:observation/hl7:templateId/@root='2.16.840.1.113883.10.20.1.44'])">CONF-136: A problem observation in the functional status section SHALL contain exactly one status of functional status observation.</assert>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.3.1937.777.4.9.1304">
+                    <item original="false" label="ProblemObservation"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.1.28" isOptional="false" datatype="uid" id="2.16.840.1.113883.3.1937.777.4.9.1305"/>
+                </element>
+                <element name="hl7:id" minimumMultiplicity="0" maximumMultiplicity="*" datatype="II" id="2.16.840.1.113883.3.1937.777.4.9.1306">
+                    <item original="false" label="ProblemObservation"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="CD" id="2.16.840.1.113883.3.1937.777.4.9.1307">
+                    <desc language="en-US">
+                        <p>
+                            <b>CONF-129</b>: The value for “<b>Observation / code</b>” in a problem observation or result observation in the functional status section <b>MAY</b> be selected from ValueSet 2.16.840.1.113883.1.11.20.6 FunctionalStatusTypeCode <b>STATIC</b> 20061017.<br/>
+                            <b>CONF-159</b>: The value for “<b>Observation / code</b>” in a problem observation <b>MAY</b> be selected from ValueSet 2.16.840.1.113883.1.11.20.14 ProblemTypeCode <b>STATIC</b> 20061017.</p>
+                    </desc>
+                    <item label="CONF-128"/>
+                </element>
+                <element name="hl7:derivationExpr" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ST" id="2.16.840.1.113883.3.1937.777.4.9.1308">
+                    <item original="false" label="ProblemObservation"/>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.3.1937.777.4.9.1309">
+                    <item original="false" label="ProblemObservation"/>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CS" isMandatory="true" id="2.16.840.1.113883.3.1937.777.4.9.1310">
+                    <item label="CONF-156 / CONF-157"/>
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:effectiveTime" minimumMultiplicity="1" maximumMultiplicity="1" datatype="IVL_TS" conformance="R" id="2.16.840.1.113883.3.1937.777.4.9.1311">
+                    <item original="false" label="ProblemObservation"/>
+                </element>
+                <element name="hl7:priorityCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.4.9.1312">
+                    <item original="false" label="ProblemObservation"/>
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.16866" vsid="2.16.840.1.113883.1.11.16866" vsname="ActPriority" vsdisplayName="ActPriority" vseffectiveDate="2014-03-26T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1360-20160323" linkedartefactmissing="false"/>
+                </element>
+                <element name="hl7:repeatNumber" minimumMultiplicity="0" maximumMultiplicity="1" datatype="IVL_INT" id="2.16.840.1.113883.3.1937.777.4.9.1313">
+                    <item original="false" label="ProblemObservation"/>
+                </element>
+                <element name="hl7:languageCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CS" id="2.16.840.1.113883.3.1937.777.4.9.1314">
+                    <item original="false" label="ProblemObservation"/>
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.11526" vsid="2.16.840.1.113883.1.11.11526" vsname="HumanLanguage" vsdisplayName="HumanLanguage" vseffectiveDate="2014-03-26T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1360-20160323" linkedartefactmissing="false"/>
+                </element>
+                <element name="hl7:value" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.4.9.1315">
+                    <item original="false" label="ProblemObservation"/>
+                </element>
+                <element name="hl7:interpretationCode" minimumMultiplicity="0" maximumMultiplicity="*" datatype="CE" id="2.16.840.1.113883.3.1937.777.4.9.1316">
+                    <item original="false" label="ProblemObservation"/>
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.78" vsid="2.16.840.1.113883.1.11.78" vsname="ObservationInterpretation" vsdisplayName="ObservationInterpretation" vseffectiveDate="2017-12-17T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1402-20171217" linkedartefactmissing="false"/>
+                </element>
+                <element name="hl7:methodCode" minimumMultiplicity="0" maximumMultiplicity="*" datatype="CE" id="2.16.840.1.113883.3.1937.777.4.9.1317">
+                    <item original="false" label="ProblemObservation"/>
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.14079" vsid="2.16.840.1.113883.1.11.14079" vsname="ObservationMethod" vsdisplayName="ObservationMethod" vseffectiveDate="2014-03-26T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1360-20160323" linkedartefactmissing="false"/>
+                </element>
+                <element name="hl7:targetSiteCode" minimumMultiplicity="0" maximumMultiplicity="*" datatype="CD" id="2.16.840.1.113883.3.1937.777.4.9.1318">
+                    <item original="false" label="ProblemObservation"/>
+                    <vocabulary domain="ActSite"/>
+                </element>
+                <element name="hl7:subject" minimumMultiplicity="0" maximumMultiplicity="1" contains="2.16.840.1.113883.3.1937.777.4.10.3" id="2.16.840.1.113883.3.1937.777.4.9.1319" tmid="2.16.840.1.113883.3.1937.777.4.10.3" tmname="CCDSubjectBody" tmdisplayName="CCD Subject (Body)" tmeffectiveDate="2007-04-01T00:00:00" tmstatusCode="pending" url="http://art-decor.org/decor/services/" ident="ccd1-" linkedartefactmissing="false">
+                    <item original="false" label="ProblemObservation"/>
+                </element>
+                <element name="hl7:informant" minimumMultiplicity="0" maximumMultiplicity="*" contains="2.16.840.1.113883.3.1937.777.4.10.20" id="2.16.840.1.113883.3.1937.777.4.9.1320" tmid="2.16.840.1.113883.3.1937.777.4.10.20" tmname="CCDinformantBody" tmdisplayName="CCD Informant (Body)" tmeffectiveDate="2007-04-01T00:00:00" tmstatusCode="pending" url="http://art-decor.org/decor/services/" ident="ccd1-" linkedartefactmissing="false">
+                    <item label="CONF-161"/>
+                </element>
+                <element name="hl7:participant" minimumMultiplicity="0" maximumMultiplicity="1" contains="2.16.840.1.113883.10.20.1.48" id="2.16.840.1.113883.3.1937.777.4.9.1321" tmid="2.16.840.1.113883.10.20.1.48" tmname="PatientAwareness" tmdisplayName="Patient awareness" tmeffectiveDate="2007-04-01T00:00:00" tmstatusCode="pending" url="http://art-decor.org/decor/services/" ident="ccd1-" linkedartefactmissing="false">
+                    <item label="CONF-178 / CONF-179 / CONF-180"/>
+                </element>
+                <element name="hl7:entryRelationship" minimumMultiplicity="0" maximumMultiplicity="1" contains="2.16.840.1.113883.10.20.1.44" id="2.16.840.1.113883.3.1937.777.4.9.1322" tmid="2.16.840.1.113883.10.20.1.44" tmname="FunctionalStatusObservation" tmdisplayName="Status of functional status observation" tmeffectiveDate="2007-04-01T00:00:00" tmstatusCode="pending" url="http://art-decor.org/decor/services/" ident="ccd1-" linkedartefactmissing="false">
+                    <item label="CONF-136"/>
+                    <attribute name="typeCode" value="REFR" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.4.9.1323">
+                        <item label="CONF-509"/>
+                    </attribute>
+                    <attribute name="contextConductionInd" isOptional="true" datatype="bl" id="2.16.840.1.113883.3.1937.777.4.9.1324"/>
+                    <attribute name="inversionInd" isOptional="true" datatype="bl" id="2.16.840.1.113883.3.1937.777.4.9.1325"/>
+                    <attribute name="negationInd" isOptional="true" datatype="bl" id="2.16.840.1.113883.3.1937.777.4.9.1326"/>
+                    <element name="hl7:sequenceNumber" minimumMultiplicity="0" maximumMultiplicity="1" datatype="INT" id="2.16.840.1.113883.3.1937.777.4.9.1327">
+                        <item original="false" label="CONF-136"/>
+                    </element>
+                    <element name="hl7:seperatableInd" minimumMultiplicity="0" maximumMultiplicity="1" datatype="BL" id="2.16.840.1.113883.3.1937.777.4.9.1328">
+                        <item original="false" label="CONF-136"/>
+                    </element>
+                </element>
+                <element name="hl7:entryRelationship" minimumMultiplicity="0" maximumMultiplicity="1" contains="2.16.840.1.113883.10.20.1.38" id="2.16.840.1.113883.3.1937.777.4.9.1329" tmid="2.16.840.1.113883.10.20.1.38" tmname="AgeObservation" tmdisplayName="Age observation" tmeffectiveDate="2007-04-01T00:00:00" tmstatusCode="pending" url="http://art-decor.org/decor/services/" ident="ccd1-" linkedartefactmissing="false">
+                    <item label="CONF-160"/>
+                    <attribute name="typeCode" value="SUBJ" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.4.9.1330">
+                        <item label="CONF-160"/>
+                    </attribute>
+                    <attribute name="contextConductionInd" isOptional="true" datatype="bl" id="2.16.840.1.113883.3.1937.777.4.9.1331"/>
+                    <attribute name="inversionInd" isOptional="true" datatype="bl" id="2.16.840.1.113883.3.1937.777.4.9.1332"/>
+                    <attribute name="negationInd" isOptional="true" datatype="bl" id="2.16.840.1.113883.3.1937.777.4.9.1333"/>
+                    <element name="hl7:sequenceNumber" minimumMultiplicity="0" maximumMultiplicity="1" datatype="INT" id="2.16.840.1.113883.3.1937.777.4.9.1334">
+                        <item original="false" label="CONF-160"/>
+                    </element>
+                    <element name="hl7:seperatableInd" minimumMultiplicity="0" maximumMultiplicity="1" datatype="BL" id="2.16.840.1.113883.3.1937.777.4.9.1335">
+                        <item original="false" label="CONF-160"/>
+                    </element>
+                </element>
+                <element name="hl7:entryRelationship" minimumMultiplicity="0" maximumMultiplicity="1" contains="2.16.840.1.113883.10.20.1.50" id="2.16.840.1.113883.3.1937.777.4.9.1336" tmid="2.16.840.1.113883.10.20.1.50" tmname="ProblemStatusObservation" tmdisplayName="Problem status observation" tmeffectiveDate="2007-04-01T00:00:00" tmstatusCode="pending" url="http://art-decor.org/decor/services/" ident="ccd1-" linkedartefactmissing="false">
+                    <item label="CONF-162"/>
+                    <attribute name="typeCode" value="REFR" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.4.9.1337">
+                        <item label="CONF-509"/>
+                    </attribute>
+                    <attribute name="contextConductionInd" isOptional="true" datatype="bl" id="2.16.840.1.113883.3.1937.777.4.9.1338"/>
+                    <attribute name="inversionInd" isOptional="true" datatype="bl" id="2.16.840.1.113883.3.1937.777.4.9.1339"/>
+                    <attribute name="negationInd" isOptional="true" datatype="bl" id="2.16.840.1.113883.3.1937.777.4.9.1340"/>
+                    <element name="hl7:sequenceNumber" minimumMultiplicity="0" maximumMultiplicity="1" datatype="INT" id="2.16.840.1.113883.3.1937.777.4.9.1341">
+                        <item original="false" label="CONF-162"/>
+                    </element>
+                    <element name="hl7:seperatableInd" minimumMultiplicity="0" maximumMultiplicity="1" datatype="BL" id="2.16.840.1.113883.3.1937.777.4.9.1342">
+                        <item original="false" label="CONF-162"/>
+                    </element>
+                </element>
+                <element name="hl7:entryRelationship" minimumMultiplicity="0" maximumMultiplicity="1" contains="2.16.840.1.113883.10.20.1.51" id="2.16.840.1.113883.3.1937.777.4.9.1343" tmid="2.16.840.1.113883.10.20.1.51" tmname="ProblemHealthstatusObservation" tmdisplayName="Problem healthstatus observation" tmeffectiveDate="2007-04-01T00:00:00" tmstatusCode="pending" url="http://art-decor.org/decor/services/" ident="ccd1-" linkedartefactmissing="false">
+                    <item label="CONF-165"/>
+                    <attribute name="typeCode" value="REFR" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.4.9.1344">
+                        <item label="CONF-509"/>
+                    </attribute>
+                    <attribute name="contextConductionInd" isOptional="true" datatype="bl" id="2.16.840.1.113883.3.1937.777.4.9.1345"/>
+                    <attribute name="inversionInd" isOptional="true" datatype="bl" id="2.16.840.1.113883.3.1937.777.4.9.1346"/>
+                    <attribute name="negationInd" isOptional="true" datatype="bl" id="2.16.840.1.113883.3.1937.777.4.9.1347"/>
+                    <element name="hl7:sequenceNumber" minimumMultiplicity="0" maximumMultiplicity="1" datatype="INT" id="2.16.840.1.113883.3.1937.777.4.9.1348">
+                        <item original="false" label="CONF-165"/>
+                    </element>
+                    <element name="hl7:seperatableInd" minimumMultiplicity="0" maximumMultiplicity="1" datatype="BL" id="2.16.840.1.113883.3.1937.777.4.9.1349">
+                        <item original="false" label="CONF-165"/>
+                    </element>
+                </element>
+                <element name="hl7:entryRelationship" minimumMultiplicity="0" maximumMultiplicity="*" contains="2.16.840.1.113883.10.20.1.40" id="2.16.840.1.113883.3.1937.777.4.9.1350" tmid="2.16.840.1.113883.10.20.1.40" tmname="Comment" tmdisplayName="Comment" tmeffectiveDate="2007-04-01T00:00:00" tmstatusCode="pending" url="http://art-decor.org/decor/services/" ident="ccd1-" linkedartefactmissing="false">
+                    <item label="CONF-502"/>
+                    <attribute name="typeCode" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.4.9.1351">
+                        <vocabulary valueSet="2.16.840.1.113883.1.11.19447" vsid="2.16.840.1.113883.1.11.19447" vsname="x_ActRelationshipEntryRelationship" vsdisplayName="x_ActRelationshipEntryRelationship" vseffectiveDate="2014-03-26T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1360-20160323" linkedartefactmissing="false"/>
+                    </attribute>
+                    <attribute name="contextConductionInd" isOptional="true" datatype="bl" id="2.16.840.1.113883.3.1937.777.4.9.1352"/>
+                    <attribute name="inversionInd" isOptional="true" datatype="bl" id="2.16.840.1.113883.3.1937.777.4.9.1353"/>
+                    <attribute name="negationInd" isOptional="true" datatype="bl" id="2.16.840.1.113883.3.1937.777.4.9.1354"/>
+                    <element name="hl7:sequenceNumber" minimumMultiplicity="0" maximumMultiplicity="1" datatype="INT" id="2.16.840.1.113883.3.1937.777.4.9.1355">
+                        <item original="false" label="CONF-502"/>
+                    </element>
+                    <element name="hl7:seperatableInd" minimumMultiplicity="0" maximumMultiplicity="1" datatype="BL" id="2.16.840.1.113883.3.1937.777.4.9.1356">
+                        <item original="false" label="CONF-502"/>
+                    </element>
+                </element>
+                <element name="hl7:entryRelationship" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.4.9.1357">
+                    <item label="CONF-161"/>
+                    <attribute name="typeCode" value="REFR" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.4.9.1358">
+                        <item label="CONF-524"/>
+                    </attribute>
+                    <attribute name="contextConductionInd" isOptional="true" datatype="bl" id="2.16.840.1.113883.3.1937.777.4.9.1359"/>
+                    <attribute name="inversionInd" isOptional="true" datatype="bl" id="2.16.840.1.113883.3.1937.777.4.9.1360"/>
+                    <attribute name="negationInd" isOptional="true" datatype="bl" id="2.16.840.1.113883.3.1937.777.4.9.1361"/>
+                    <element name="hl7:sequenceNumber" minimumMultiplicity="0" maximumMultiplicity="1" datatype="INT" id="2.16.840.1.113883.3.1937.777.4.9.1362">
+                        <item original="false" label="CONF-161"/>
+                    </element>
+                    <element name="hl7:seperatableInd" minimumMultiplicity="0" maximumMultiplicity="1" datatype="BL" id="2.16.840.1.113883.3.1937.777.4.9.1363">
+                        <item original="false" label="CONF-161"/>
+                    </element>
+                    <element name="hl7:observation" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.4.9.1364">
+                        <item label="CONF-523 / CONF-525"/>
+                        <attribute name="classCode" isOptional="true" datatype="cs" id="2.16.840.1.113883.3.1937.777.4.9.1365">
+                            <item label="CONF-526"/>
+                            <vocabulary valueSet="2.16.840.1.113883.1.11.11529" vsid="2.16.840.1.113883.1.11.11529" vsname="ActClassObservation" vsdisplayName="ActClassObservation" vseffectiveDate="2014-03-26T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1360-20160323" linkedartefactmissing="false"/>
+                        </attribute>
+                        <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.4.9.1366">
+                            <item label="CONF-527"/>
+                        </attribute>
+                        <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CD" isMandatory="true" id="2.16.840.1.113883.3.1937.777.4.9.1367">
+                            <item label="CONF-530 / CONF-531"/>
+                            <vocabulary code="48766-0" codeSystem="2.16.840.1.113883.6.1" displayName="Information source"/>
+                        </element>
+                        <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CS" isMandatory="true" id="2.16.840.1.113883.3.1937.777.4.9.1368">
+                            <item label="CONF-528 / CONF-529"/>
+                            <vocabulary code="completed"/>
+                        </element>
+                        <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.777.4.9.1369">
+                            <item label="CONF-532 / CONF-533"/>
+                        </element>
+                    </element>
+                </element>
+                <element name="hl7:reference[@typeCode='XCRPT']" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.4.9.1370">
+                    <item label="CONF-161"/>
+                </element>
+                <element name="hl7:referenceRange" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.4.9.1371">
+                    <item original="false" label="ProblemObservation"/>
+                    <attribute name="typeCode" value="REFV" isOptional="true" datatype="cs" id="2.16.840.1.113883.3.1937.777.4.9.1372"/>
+                    <element name="hl7:observationRange" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.4.9.1373">
+                        <item original="false" label="ProblemObservation"/>
+                        <attribute name="classCode" isOptional="true" datatype="cs" id="2.16.840.1.113883.3.1937.777.4.9.1374">
+                            <vocabulary valueSet="2.16.840.1.113883.1.11.11529" vsid="2.16.840.1.113883.1.11.11529" vsname="ActClassObservation" vsdisplayName="ActClassObservation" vseffectiveDate="2014-03-26T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1360-20160323" linkedartefactmissing="false"/>
+                        </attribute>
+                        <attribute name="moodCode" isOptional="true" datatype="cs" id="2.16.840.1.113883.3.1937.777.4.9.1375">
+                            <vocabulary valueSet="2.16.840.1.113883.1.11.20268" vsid="2.16.840.1.113883.1.11.20268" vsname="ActMoodEventCriterion" vsdisplayName="ActMoodEventCriterion" vseffectiveDate="2014-03-26T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1360-20160323" linkedartefactmissing="false"/>
+                        </attribute>
+                        <element name="hl7:code" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CD" id="2.16.840.1.113883.3.1937.777.4.9.1376">
+                            <item original="false" label="ProblemObservation"/>
+                            <vocabulary domain="ActCode"/>
+                        </element>
+                        <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.3.1937.777.4.9.1377">
+                            <item original="false" label="ProblemObservation"/>
+                        </element>
+                        <element name="hl7:value" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.4.9.1378">
+                            <item original="false" label="ProblemObservation"/>
+                        </element>
+                        <element name="hl7:interpretationCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.4.9.1379">
+                            <item original="false" label="ProblemObservation"/>
+                            <vocabulary valueSet="2.16.840.1.113883.1.11.78" vsid="2.16.840.1.113883.1.11.78" vsname="ObservationInterpretation" vsdisplayName="ObservationInterpretation" vseffectiveDate="2017-12-17T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1402-20171217" linkedartefactmissing="false"/>
+                        </element>
+                    </element>
+                </element>
+            </element>
+            <staticAssociations/>
+            <uses type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.4.10.3" name="CCDSubjectBody" displayName="CCD Subject (Body)" effectiveDate="2007-04-01T00:00:00" statusCode="pending" url="http://art-decor.org/decor/services/" ident="ccd1-"/>
+            <uses type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.4.10.20" name="CCDinformantBody" displayName="CCD Informant (Body)" effectiveDate="2007-04-01T00:00:00" statusCode="pending" url="http://art-decor.org/decor/services/" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.4.10.50" name="ProcedureActivityAct" displayName="Procedure activity (act)" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="include" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.4.10.50" name="ProcedureActivityAct" displayName="Procedure activity (act)" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="include" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.4.10.51" name="ProcedureActivityObservation" displayName="Procedure activity (observation)" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.4.10.51" name="ProcedureActivityObservation" displayName="Procedure activity (observation)" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="include" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.4.10.52" name="ProcedureActivityProcedure" displayName="Procedure activity (procedure)" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.4.10.52" name="ProcedureActivityProcedure" displayName="Procedure activity (procedure)" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1" name="CCDClinicalDocument" displayName="CCD v1.0 Templates Root" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.2" name="AlertsSection" displayName="Alerts section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="include" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.5" name="FunctionalStatusSection" displayName="Functional status section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.5" name="FunctionalStatusSection" displayName="Functional status section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.6" name="ImmunizationSection" displayName="Immunization section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.7" name="MedicalEquipmentSection" displayName="Medical equipment section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.8" name="MedicationSection" displayName="Medication section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.11" name="ProblemSection" displayName="Problem section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.12" name="ProceduresSection" displayName="Procedures section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.14" name="ResultsSection" displayName="Results section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.15" name="SocialHistorySection" displayName="Social history section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.16" name="VitalSignsSection" displayName="Vital signs section" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.18" name="AlertObservation" displayName="Alert observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.24" name="MedicationActivity" displayName="Medication activity" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="include" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.24" name="MedicationActivity" displayName="Medication activity" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="include" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.27" name="ProblemAct" displayName="Problem act" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.27" name="ProblemAct" displayName="Problem act" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.32" name="ResultOrganizer" displayName="Result organizer" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.33" name="SocialHistoryObservation" displayName="Social history observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.35" name="VitalSignsOrganizer" displayName="Vital signs organizer" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <uses type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.38" name="AgeObservation" displayName="Age observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" url="http://art-decor.org/decor/services/" ident="ccd1-"/>
+            <uses type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.40" name="Comment" displayName="Comment" effectiveDate="2007-04-01T00:00:00" statusCode="pending" url="http://art-decor.org/decor/services/" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.41" name="EpisodeObservation" displayName="Episode observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+            <uses type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.44" name="FunctionalStatusObservation" displayName="Status of functional status observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" isClosed="true" url="http://art-decor.org/decor/services/" ident="ccd1-"/>
+            <uses type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.48" name="PatientAwareness" displayName="Patient awareness" effectiveDate="2007-04-01T00:00:00" statusCode="pending" url="http://art-decor.org/decor/services/" ident="ccd1-"/>
+            <uses type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.50" name="ProblemStatusObservation" displayName="Problem status observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" isClosed="true" url="http://art-decor.org/decor/services/" ident="ccd1-"/>
+            <uses type="contains" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.51" name="ProblemHealthstatusObservation" displayName="Problem healthstatus observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" isClosed="true" url="http://art-decor.org/decor/services/" ident="ccd1-"/>
+            <ref type="dependency" prefix="ccd1-" flexibility="dynamic" id="2.16.840.1.113883.10.20.1.54" name="ReactionObservation" displayName="Reaction observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" ident="ccd1-"/>
+        </template>
+    </template>
+</result>

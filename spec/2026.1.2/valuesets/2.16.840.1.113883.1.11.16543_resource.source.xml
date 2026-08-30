@@ -1,0 +1,21 @@
+<valueSet xmlns:json="http://www.json.org" id="2.16.840.1.113883.1.11.16543" name="ParticipationMode" displayName="ParticipationMode" effectiveDate="2014-03-26T00:00:00" statusCode="final" versionLabel="DEFN=UV=VO=1360-20160323" url="http://art-decor.org/decor/services/" ident="ad2bbr-">
+    <desc json:array="true" language="en-US">&lt;p&gt;&lt;b&gt;History description 2014-03-26: &lt;/b&gt;Lock all vaue sets untouched since 2014-03-26 to trackingId 2014T1_2014_03_26&lt;/p&gt; &lt;b&gt;description: &lt;/b&gt; &lt;p&gt;Identifies the primary means by which an Entity participates in an Act.&lt;/p&gt;</desc>
+    <sourceCodeSystem json:array="true" id="2.16.840.1.113883.5.1064" identifierName="Participation Mode" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-ParticipationMode" canonicalUriDSTU2="http://hl7.org/fhir/v3/ParticipationMode" canonicalUriSTU3="http://hl7.org/fhir/v3/ParticipationMode" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-ParticipationMode" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-ParticipationMode" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-ParticipationMode" context="external/hl7intl/v3/v3-ParticipationMode"/>
+    <publishingAuthority json:array="true" name="HL7" inherited="project">
+        <addrLine json:array="true">Health Level Seven International</addrLine>
+        <addrLine json:array="true">455 E. Eisenhower PKWY STE 300 # 025</addrLine>
+        <addrLine json:array="true">Ann Arbor, MI 48108</addrLine>
+        <addrLine json:array="true">USA</addrLine>
+        <addrLine json:array="true">T +1 734 677 7777</addrLine>
+        <addrLine json:array="true">F +1 734 677 6622</addrLine>
+        <addrLine json:array="true">E info@hl7.org</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="concept" code="PHYSICAL" codeSystem="2.16.840.1.113883.5.1064" displayName="physical presence" level="0" type="L"/>
+    <items json:array="true" is="concept" code="REMOTE" codeSystem="2.16.840.1.113883.5.1064" displayName="remote presence" level="0" type="L"/>
+    <items json:array="true" is="include" ref="2.16.840.1.113883.1.11.16544" flexibility="2014-03-26T00:00:00" exception="false"/>
+    <items json:array="true" is="include" ref="2.16.840.1.113883.1.11.16549" flexibility="2014-03-26T00:00:00" exception="false"/>
+    <items json:array="true" is="include" ref="2.16.840.1.113883.1.11.16554" flexibility="2014-03-26T00:00:00" exception="false"/>
+    <items json:array="true" is="include" ref="2.16.840.1.113883.1.11.19739" flexibility="2014-03-26T00:00:00" exception="false"/>
+</valueSet>

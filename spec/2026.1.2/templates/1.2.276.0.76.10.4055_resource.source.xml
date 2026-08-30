@@ -1,0 +1,60 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultLanguage="de-DE" id="1.2.276.0.76.10.4055" name="Computedtomographyofentirehead" displayName="CT Kopf durchgeführt" effectiveDate="2015-09-18T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" xml:dummy-1="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-3="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance">
+    <desc language="de-DE">Diagnostik Template Computed tomography of entire head in Emergency Department</desc>
+    <classification type="cdaentrylevel"/>
+    <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.303" tmname="CDAObservation" tmdisplayName="CDA Observation" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-"/>
+    <relationship type="SPEC" template="2.16.840.1.113883.10.20.22.4.13" flexibility="2014-06-09T00:00:00" tmid="2.16.840.1.113883.10.20.22.4.13" tmname="ProcedureActivityObservationV2" tmdisplayName="Procedure Activity Observation (V2)" tmeffectiveDate="2014-06-09T00:00:00" tmstatusCode="draft" tmversionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-"/>
+    <context id="**"/>
+    <example>
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4055"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="2c2f8f44-1b89-4071-851b-45a6ccd0a1e1"/>
+                    <code code="24725-4" codeSystem="2.16.840.1.113883.6.1" displayName="Head CT"/>
+                    <text>
+                        <reference value="#proc-6"/>
+                    </text>
+                    <statusCode code="completed"/>
+                    <effectiveTime value="201503261234"/>
+                    <value xsi:type="CE" code="OPB" codeSystem="1.2.276.0.76.3.1.195.5.51" displayName="ohne path. Befund"/>
+                    <participant typeCode="LOC">
+                        <participantRole classCode="SDLOC">
+                            <code code="ER" codeSystem="2.16.840.1.113883.5.111" displayName="Notaufnahme"/>
+                        </participantRole>
+                    </participant>
+                </observation>
+            </example>
+    <element name="hl7:observation" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.448">
+                <attribute name="classCode" value="OBS" id="2.16.840.1.113883.2.6.60.3.9.449"/>
+                <attribute name="moodCode" value="EVN" id="2.16.840.1.113883.2.6.60.3.9.450"/>
+                <attribute name="negationInd" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.451"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.452">
+                    <attribute name="root" value="1.2.276.0.76.10.4055" id="2.16.840.1.113883.2.6.60.3.9.453"/>
+                </element>
+                <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="*" isMandatory="true" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.454"/>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CE" id="2.16.840.1.113883.2.6.60.3.9.455">
+                    <vocabulary code="24725-4" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.2.6.60.3.9.456">
+                    <desc language="de-DE">Textform, enthält hier lediglich reference in den Text der Section</desc>
+                    <element name="hl7:reference" minimumMultiplicity="1" maximumMultiplicity="1" datatype="URL" id="2.16.840.1.113883.2.6.60.3.9.457"/>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CS" id="2.16.840.1.113883.2.6.60.3.9.458">
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:effectiveTime" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="TS" id="2.16.840.1.113883.2.6.60.3.9.459">
+                    <desc language="de-DE">Zeitpunkt der Untersuchung</desc>
+                </element>
+                <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="CE" id="2.16.840.1.113883.2.6.60.3.9.460">
+                    <desc language="de-DE">Befund</desc>
+                    <vocabulary valueSet="1.2.276.0.76.11.51"/>
+                </element>
+                <element name="hl7:participant" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.461">
+                    <attribute name="typeCode" value="LOC" id="2.16.840.1.113883.2.6.60.3.9.462"/>
+                    <element name="hl7:participantRole" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.463">
+                        <attribute name="classCode" value="SDLOC" id="2.16.840.1.113883.2.6.60.3.9.464"/>
+                        <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CE" id="2.16.840.1.113883.2.6.60.3.9.465">
+                            <vocabulary code="ER" codeSystem="2.16.840.1.113883.5.111"/>
+                        </element>
+                    </element>
+                </element>
+            </element>
+</template>

@@ -1,0 +1,63 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultLanguage="de-DE" id="1.2.276.0.76.10.2035" name="CDADocumentationOf" displayName="Dienstleistung/Behandlung (Basis)" effectiveDate="2014-09-17T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" xml:dummy-1="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-3="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance">
+    <desc language="de-DE">Dienstleistung/Behandlung</desc>
+    <classification type="cdaheaderlevel"/>
+    <relationship type="SPEC" template="2.16.840.1.113883.10.12.110" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.110" tmname="CDAdocumentationOf" tmdisplayName="CDA documentationOf" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-"/>
+    <relationship type="ADAPT" template="1.2.276.0.76.10.2016" flexibility="2014-07-13T10:09:12" tmid="1.2.276.0.76.10.2016" tmname="HeaderDocumentationOf" tmdisplayName="Dienstleistung" tmeffectiveDate="2014-07-13T10:09:12" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+    <example type="neutral" caption="Start der Therapie 12. Oktober 2014 13:01 Uhr, Verlegungs-/Entlassungszeitpunkt 13:45 Uhr">
+                <documentationOf typeCode="DOC">
+                    <serviceEvent classCode="ACT" moddCode="EVN">
+                        <effectiveTime>
+                            <!-- Zeitpunkt Therapiebeginn (Datum und Zeit) -->
+                            <low value="201410121301"/>
+                        </effectiveTime>
+                        <performer typeCode="PRF">
+                            <functionCode code="ATTPHYS" codeSystem="2.16.840.1.113883.5.88" displayName="admitting physician"/>
+                            <!-- Erster Arzt, Arztkontakt Beginn und Ende -->
+                            <time>
+                                <!-- Begin des Arztkontaktes -->
+                                <low value="201410121306"/>
+                            </time>
+                            <assignedEntity classCode="ASSIGNED">
+                                <id nullFlavor="NA"/>
+                            </assignedEntity>
+                        </performer>
+                    </serviceEvent>
+                </documentationOf>
+            </example>
+    <element name="hl7:documentationOf" id="2.16.840.1.113883.2.6.60.3.9.21">
+                <attribute name="typeCode" value="DOC" id="2.16.840.1.113883.2.6.60.3.9.31"/>
+                <element name="hl7:functionCode" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" datatype="CE" id="2.16.840.1.113883.2.6.60.3.9.1631534">
+                    <vocabulary code="ATTPHYS" codeSystem="2.16.840.1.113883.5.88"/>
+                </element>
+                <element name="hl7:serviceEvent" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.32">
+                    <attribute name="classCode" value="ACT" id="2.16.840.1.113883.2.6.60.3.9.33"/>
+                    <attribute name="moodCode" value="EVN" id="2.16.840.1.113883.2.6.60.3.9.34"/>
+                    <element name="hl7:effectiveTime" minimumMultiplicity="1" maximumMultiplicity="1" datatype="IVL_TS" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.35">
+                        <element name="cda:low" minimumMultiplicity="1" maximumMultiplicity="1" datatype="TS.DATETIME.MIN" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.22">
+                            <desc language="de-DE">Zeitpunkt Therapiebeginn (Datum und Zeit), Zeitangabe genau bis auf die Minute</desc>
+                        </element>
+                        <element name="cda:high" minimumMultiplicity="0" maximumMultiplicity="1" datatype="TS.DATETIME.MIN" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.24">
+                            <desc language="de-DE">Zeitpunkt Therapieende, Verlegungs-/Entlassungszeitpunkt (Datum und Zeit), Zeitangabe genau bis auf die Minute; muss, wenn angegeben, hier identisch sein mit encompassingEncounter.effectiveTime.high</desc>
+                        </element>
+                    </element>
+                    <element name="hl7:performer" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.36">
+                        <attribute name="typeCode" value="PRF" id="2.16.840.1.113883.2.6.60.3.9.37"/>
+                        <element name="hl7:time" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="IVL_TS" id="2.16.840.1.113883.2.6.60.3.9.38">
+                            <desc language="de-DE">Erster Arzt, Arztkontakt Beginn (in low) bis Ende (in high)</desc>
+                            <element name="hl7:low" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="TS" id="2.16.840.1.113883.2.6.60.3.9.39">
+                                <desc language="de-DE">Begin des Arztkontaktes</desc>
+                            </element>
+                            <element name="hl7:high" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" datatype="TS" id="2.16.840.1.113883.2.6.60.3.9.40">
+                                <desc language="de-DE">Ende des Arztkontaktes</desc>
+                            </element>
+                        </element>
+                        <element name="hl7:assignedEntity" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.41">
+                            <attribute name="classCode" value="ASSIGNED" id="2.16.840.1.113883.2.6.60.3.9.42"/>
+                            <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.43">
+                                <attribute name="nullFlavor" value="NA" id="2.16.840.1.113883.2.6.60.3.9.44"/>
+                            </element>
+                        </element>
+                    </element>
+                </element>
+            </element>
+</template>

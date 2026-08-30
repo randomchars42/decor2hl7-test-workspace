@@ -1,0 +1,18 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.3.1937.777.4.10.10" name="CCDPlayingEntity" displayName="CCD PlayingEntity" effectiveDate="2007-04-01T00:00:00" statusCode="pending" url="http://art-decor.org/decor/services/" ident="ccd1-" sdtc:dummy-1="urn:hl7-org:sdtc" xml:dummy-2="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-4="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance">
+    <desc language="en-US">Template CDA PlayingEntity (prototype, directly derived from POCD_RM000040 MIF)</desc>
+    <desc language="nl-NL">Template CDA PlayingEntity (prototype, direct afgeleid uit POCD_RM000040 MIF)</desc>
+    <desc language="de-DE">Template CDA PlayingEntity (Prototyp, direkt abgeleitet aus POCD_RM000040 MIF)</desc>
+    <classification type="cdaentrylevel"/>
+    <relationship type="COPY" template="2.16.840.1.113883.10.12.313" flexibility="2005-09-07T00:00:00"/>
+    <attribute name="classCode" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.2603">
+                <!--valueSet name="EntityClass"-->
+        <vocabulary valueSet="2.16.840.1.113883.1.11.10882"/>
+    </attribute>
+    <attribute name="determinerCode" value="INSTANCE" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.2604"/>
+    <element name="hl7:code" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.4.9.2605">
+        <vocabulary domain="EntityCode"/>
+    </element>
+    <element name="hl7:quantity" minimumMultiplicity="0" maximumMultiplicity="*" datatype="PQ" id="2.16.840.1.113883.3.1937.777.4.9.2606"/>
+    <element name="hl7:name" minimumMultiplicity="0" maximumMultiplicity="*" datatype="PN" id="2.16.840.1.113883.3.1937.777.4.9.2607"/>
+    <element name="hl7:desc" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.3.1937.777.4.9.2608"/>
+</template>

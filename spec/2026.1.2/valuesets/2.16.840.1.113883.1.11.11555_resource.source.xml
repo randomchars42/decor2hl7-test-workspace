@@ -1,0 +1,124 @@
+<valueSet xmlns:json="http://www.json.org" id="2.16.840.1.113883.1.11.11555" name="RoleClass" displayName="RoleClass" effectiveDate="2014-03-26T00:00:00" statusCode="final" versionLabel="DEFN=UV=VO=1360-20160323" url="http://art-decor.org/decor/services/" ident="ad2bbr-">
+    <desc json:array="true" language="en-US">&lt;p&gt;&lt;b&gt;History description 2014-03-26: &lt;/b&gt;Lock all vaue sets untouched since 2014-03-26 to trackingId 2014T1_2014_03_26&lt;/p&gt; &lt;b&gt;description: &lt;/b&gt; &lt;p&gt;This table includes codes for the Role class hierarchy. The values in this hierarchy, represent a Role which is an association or relationship between two entities - the entity that plays the role and the entity that
+                    scopes the role. Roles names are derived from the name of the playing entity in that role.&lt;/p&gt; &lt;p&gt;The role hierarchy stems from three core concepts, or abstract domains:&lt;/p&gt; &lt;ul&gt;&lt;li&gt;&lt;p&gt;&lt;b&gt;RoleClassOntological&lt;/b&gt; is an abstract domain that collects roles in which the playing entity is defined or specified by the scoping entity.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;b&gt;RoleClassPartitive&lt;/b&gt; collects
+                            roles in which the playing entity is in some sense a "part" of the scoping entity.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;b&gt;RoleClassAssociative&lt;/b&gt; collects all of the remaining forms of association between the playing entity and the scoping entity. This set of roles is further partitioned between:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;&lt;b&gt;RoleClassPassive&lt;/b&gt; which are roles in which the playing entity is used,
+                                    known, treated, handled, built, or destroyed, etc. under the auspices of the scoping entity. The playing entity is passive in these roles in that the role exists without an agreement from the playing entity.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;b&gt;RoleClassMutualRelationship&lt;/b&gt; which are relationships based on mutual behavior of the two entities. The basis of these relationship may
+                                    be formal agreements or they may be &lt;i&gt;de facto&lt;/i&gt; behavior. Thus, this sub-domain is further divided into:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;&lt;b&gt;RoleClassRelationshipFormal&lt;/b&gt; in which the relationship is formally defined, frequently by a contract or agreement.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;b&gt;Personal relationship&lt;/b&gt; which inks two people in a personal
+                        relationship.&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt; &lt;p&gt;The hierarchy discussed above is represented In the current vocabulary tables as a set of abstract domains, with the exception of the "Personal relationship" which is a leaf concept.&lt;/p&gt;</desc>
+    <sourceCodeSystem json:array="true" id="2.16.840.1.113883.5.110" identifierName="Role Class" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-RoleClass" canonicalUriDSTU2="http://hl7.org/fhir/v3/RoleClass" canonicalUriSTU3="http://hl7.org/fhir/v3/RoleClass" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-RoleClass" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-RoleClass" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-RoleClass" context="external/hl7intl/v3/v3-RoleClass"/>
+    <publishingAuthority json:array="true" name="HL7" inherited="project">
+        <addrLine json:array="true">Health Level Seven International</addrLine>
+        <addrLine json:array="true">455 E. Eisenhower PKWY STE 300 # 025</addrLine>
+        <addrLine json:array="true">Ann Arbor, MI 48108</addrLine>
+        <addrLine json:array="true">USA</addrLine>
+        <addrLine json:array="true">T +1 734 677 7777</addrLine>
+        <addrLine json:array="true">F +1 734 677 6622</addrLine>
+        <addrLine json:array="true">E info@hl7.org</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="concept" code="ROL" codeSystem="2.16.840.1.113883.5.110" displayName="role" level="0" type="S"/>
+    <items json:array="true" is="concept" code="_RoleClassAssociative" codeSystem="2.16.840.1.113883.5.110" displayName="RoleClassAssociative" level="1" type="A"/>
+    <items json:array="true" is="concept" code="_RoleClassMutualRelationship" codeSystem="2.16.840.1.113883.5.110" displayName="RoleClassMutualRelationship" level="2" type="A"/>
+    <items json:array="true" is="concept" code="_RoleClassRelationshipFormal" codeSystem="2.16.840.1.113883.5.110" displayName="RoleClassRelationshipFormal" level="3" type="A"/>
+    <items json:array="true" is="concept" code="AFFL" codeSystem="2.16.840.1.113883.5.110" displayName="affiliate" level="4" type="L"/>
+    <items json:array="true" is="concept" code="AGNT" codeSystem="2.16.840.1.113883.5.110" displayName="agent" level="4" type="S"/>
+    <items json:array="true" is="concept" code="ASSIGNED" codeSystem="2.16.840.1.113883.5.110" displayName="assigned entity" level="5" type="S"/>
+    <items json:array="true" is="concept" code="COMPAR" codeSystem="2.16.840.1.113883.5.110" displayName="commissioning party" level="6" type="L"/>
+    <items json:array="true" is="concept" code="SGNOFF" codeSystem="2.16.840.1.113883.5.110" displayName="signing authority or officer" level="6" type="L"/>
+    <items json:array="true" is="concept" code="CON" codeSystem="2.16.840.1.113883.5.110" displayName="contact" level="5" type="S"/>
+    <items json:array="true" is="concept" code="ECON" codeSystem="2.16.840.1.113883.5.110" displayName="emergency contact" level="6" type="L"/>
+    <items json:array="true" is="concept" code="NOK" codeSystem="2.16.840.1.113883.5.110" displayName="next of kin" level="6" type="L"/>
+    <items json:array="true" is="concept" code="GUARD" codeSystem="2.16.840.1.113883.5.110" displayName="guardian" level="5" type="L"/>
+    <items json:array="true" is="concept" code="CIT" codeSystem="2.16.840.1.113883.5.110" displayName="citizen" level="4" type="L"/>
+    <items json:array="true" is="concept" code="COVPTY" codeSystem="2.16.840.1.113883.5.110" displayName="covered party" level="4" type="S"/>
+    <items json:array="true" is="concept" code="CLAIM" codeSystem="2.16.840.1.113883.5.110" displayName="claimant" level="5" type="L"/>
+    <items json:array="true" is="concept" code="NAMED" codeSystem="2.16.840.1.113883.5.110" displayName="named insured" level="5" type="S"/>
+    <items json:array="true" is="concept" code="DEPEN" codeSystem="2.16.840.1.113883.5.110" displayName="dependent" level="6" type="L"/>
+    <items json:array="true" is="concept" code="INDIV" codeSystem="2.16.840.1.113883.5.110" displayName="individual" level="6" type="L"/>
+    <items json:array="true" is="concept" code="SUBSCR" codeSystem="2.16.840.1.113883.5.110" displayName="subscriber" level="6" type="L"/>
+    <items json:array="true" is="concept" code="PROG" codeSystem="2.16.840.1.113883.5.110" displayName="program eligible" level="5" type="L"/>
+    <items json:array="true" is="concept" code="CRINV" codeSystem="2.16.840.1.113883.5.110" displayName="clinical research investigator" level="4" type="L"/>
+    <items json:array="true" is="concept" code="CRSPNSR" codeSystem="2.16.840.1.113883.5.110" displayName="clinical research sponsor" level="4" type="L"/>
+    <items json:array="true" is="concept" code="EMP" codeSystem="2.16.840.1.113883.5.110" displayName="employee" level="4" type="S"/>
+    <items json:array="true" is="concept" code="MIL" codeSystem="2.16.840.1.113883.5.110" displayName="military person" level="5" type="L"/>
+    <items json:array="true" is="concept" code="GUAR" codeSystem="2.16.840.1.113883.5.110" displayName="guarantor GuarantorRole" level="4" type="L"/>
+    <items json:array="true" is="concept" code="INVSBJ" codeSystem="2.16.840.1.113883.5.110" displayName="Investigation Subject" level="4" type="S"/>
+    <items json:array="true" is="concept" code="CASEBJ" codeSystem="2.16.840.1.113883.5.110" displayName="Case Subject" level="5" type="L"/>
+    <items json:array="true" is="concept" code="RESBJ" codeSystem="2.16.840.1.113883.5.110" displayName="research subject" level="5" type="L"/>
+    <items json:array="true" is="concept" code="LIC" codeSystem="2.16.840.1.113883.5.110" displayName="licensed entity" level="4" type="S"/>
+    <items json:array="true" is="concept" code="NOT" codeSystem="2.16.840.1.113883.5.110" displayName="notary public" level="5" type="L"/>
+    <items json:array="true" is="concept" code="PROV" codeSystem="2.16.840.1.113883.5.110" displayName="healthcare provider" level="5" type="L"/>
+    <items json:array="true" is="concept" code="PAT" codeSystem="2.16.840.1.113883.5.110" displayName="patient" level="4" type="L"/>
+    <items json:array="true" is="concept" code="PAYEE" codeSystem="2.16.840.1.113883.5.110" displayName="payee" level="4" type="L"/>
+    <items json:array="true" is="concept" code="PAYOR" codeSystem="2.16.840.1.113883.5.110" displayName="invoice payor" level="4" type="L"/>
+    <items json:array="true" is="concept" code="POLHOLD" codeSystem="2.16.840.1.113883.5.110" displayName="policy holder" level="4" type="L"/>
+    <items json:array="true" is="concept" code="QUAL" codeSystem="2.16.840.1.113883.5.110" displayName="qualified entity" level="4" type="L"/>
+    <items json:array="true" is="concept" code="SPNSR" codeSystem="2.16.840.1.113883.5.110" displayName="coverage sponsor" level="4" type="L"/>
+    <items json:array="true" is="concept" code="STD" codeSystem="2.16.840.1.113883.5.110" displayName="student" level="4" type="L"/>
+    <items json:array="true" is="concept" code="UNDWRT" codeSystem="2.16.840.1.113883.5.110" displayName="underwriter" level="4" type="L"/>
+    <items json:array="true" is="concept" code="CAREGIVER" codeSystem="2.16.840.1.113883.5.110" displayName="caregiver" level="3" type="L"/>
+    <items json:array="true" is="concept" code="PRS" codeSystem="2.16.840.1.113883.5.110" displayName="personal relationship" level="3" type="L"/>
+    <items json:array="true" is="concept" code="_RoleClassPassive" codeSystem="2.16.840.1.113883.5.110" displayName="RoleClassPassive" level="2" type="A"/>
+    <items json:array="true" is="concept" code="ACCESS" codeSystem="2.16.840.1.113883.5.110" displayName="access" level="3" type="L"/>
+    <items json:array="true" is="concept" code="ADJY" codeSystem="2.16.840.1.113883.5.110" displayName="adjacency" level="3" type="S"/>
+    <items json:array="true" is="concept" code="CONC" codeSystem="2.16.840.1.113883.5.110" displayName="connection" level="4" type="S"/>
+    <items json:array="true" is="concept" code="BOND" codeSystem="2.16.840.1.113883.5.110" displayName="molecular bond" level="5" type="L"/>
+    <items json:array="true" is="concept" code="CONY" codeSystem="2.16.840.1.113883.5.110" displayName="continuity" level="5" type="L"/>
+    <items json:array="true" is="concept" code="ADMM" codeSystem="2.16.840.1.113883.5.110" displayName="Administerable Material" level="3" type="L"/>
+    <items json:array="true" is="concept" code="BIRTHPL" codeSystem="2.16.840.1.113883.5.110" displayName="birthplace" level="3" type="L"/>
+    <items json:array="true" is="concept" code="DEATHPLC" codeSystem="2.16.840.1.113883.5.110" displayName="place of death" level="3" type="L"/>
+    <items json:array="true" is="concept" code="DST" codeSystem="2.16.840.1.113883.5.110" displayName="distributed material" level="3" type="S"/>
+    <items json:array="true" is="concept" code="RET" codeSystem="2.16.840.1.113883.5.110" displayName="retailed material" level="4" type="L"/>
+    <items json:array="true" is="concept" code="EXLOC" codeSystem="2.16.840.1.113883.5.110" displayName="event location" level="3" type="S"/>
+    <items json:array="true" is="concept" code="SDLOC" codeSystem="2.16.840.1.113883.5.110" displayName="service delivery location" level="4" type="S"/>
+    <items json:array="true" is="concept" code="DSDLOC" codeSystem="2.16.840.1.113883.5.110" displayName="dedicated service delivery location health care facility" level="5" type="L"/>
+    <items json:array="true" is="concept" code="ISDLOC" codeSystem="2.16.840.1.113883.5.110" displayName="incidental service delivery location" level="5" type="L"/>
+    <items json:array="true" is="concept" code="EXPR" codeSystem="2.16.840.1.113883.5.110" displayName="exposed entity" level="3" type="L"/>
+    <items json:array="true" is="concept" code="HLD" codeSystem="2.16.840.1.113883.5.110" displayName="held entity" level="3" type="L"/>
+    <items json:array="true" is="concept" code="HLTHCHRT" codeSystem="2.16.840.1.113883.5.110" displayName="health chart" level="3" type="L"/>
+    <items json:array="true" is="concept" code="IDENT" codeSystem="2.16.840.1.113883.5.110" displayName="identified entity" level="3" type="L"/>
+    <items json:array="true" is="concept" code="MANU" codeSystem="2.16.840.1.113883.5.110" displayName="manufactured product" level="3" type="S"/>
+    <items json:array="true" is="concept" code="THER" codeSystem="2.16.840.1.113883.5.110" displayName="therapeutic agent" level="4" type="L"/>
+    <items json:array="true" is="concept" code="MNT" codeSystem="2.16.840.1.113883.5.110" displayName="maintained entity" level="3" type="L"/>
+    <items json:array="true" is="concept" code="OWN" codeSystem="2.16.840.1.113883.5.110" displayName="owned entity" level="3" type="L"/>
+    <items json:array="true" is="concept" code="RGPR" codeSystem="2.16.840.1.113883.5.110" displayName="regulated product" level="3" type="L"/>
+    <items json:array="true" is="concept" code="TERR" codeSystem="2.16.840.1.113883.5.110" displayName="territory of authority" level="3" type="L"/>
+    <items json:array="true" is="concept" code="USED" codeSystem="2.16.840.1.113883.5.110" displayName="used entity" level="3" type="L"/>
+    <items json:array="true" is="concept" code="WRTE" codeSystem="2.16.840.1.113883.5.110" displayName="warranted product" level="3" type="L"/>
+    <items json:array="true" is="concept" code="_RoleClassOntological" codeSystem="2.16.840.1.113883.5.110" displayName="RoleClassOntological" level="1" type="A"/>
+    <items json:array="true" is="concept" code="EQUIV" codeSystem="2.16.840.1.113883.5.110" displayName="equivalent entity" level="2" type="S"/>
+    <items json:array="true" is="concept" code="SAME" codeSystem="2.16.840.1.113883.5.110" displayName="same" level="3" type="L"/>
+    <items json:array="true" is="concept" code="SUBY" codeSystem="2.16.840.1.113883.5.110" displayName="subsumed by" level="3" type="L"/>
+    <items json:array="true" is="concept" code="GEN" codeSystem="2.16.840.1.113883.5.110" displayName="has generalization" level="2" type="S"/>
+    <items json:array="true" is="concept" code="GRIC" codeSystem="2.16.840.1.113883.5.110" displayName="has generic" level="3" type="L"/>
+    <items json:array="true" is="concept" code="INST" codeSystem="2.16.840.1.113883.5.110" displayName="instance" level="2" type="L"/>
+    <items json:array="true" is="concept" code="_RoleClassPartitive" codeSystem="2.16.840.1.113883.5.110" displayName="RoleClassPartitive" level="1" type="A"/>
+    <items json:array="true" is="concept" code="CONT" codeSystem="2.16.840.1.113883.5.110" displayName="content" level="2" type="L"/>
+    <items json:array="true" is="concept" code="EXPAGTCAR" codeSystem="2.16.840.1.113883.5.110" displayName="exposure agent carrier" level="2" type="S"/>
+    <items json:array="true" is="concept" code="EXPVECTOR" codeSystem="2.16.840.1.113883.5.110" displayName="exposure vector" level="3" type="L"/>
+    <items json:array="true" is="concept" code="FOMITE" codeSystem="2.16.840.1.113883.5.110" displayName="fomite" level="3" type="L"/>
+    <items json:array="true" is="concept" code="INGR" codeSystem="2.16.840.1.113883.5.110" displayName="ingredient" level="2" type="S"/>
+    <items json:array="true" is="concept" code="ACTI" codeSystem="2.16.840.1.113883.5.110" displayName="active ingredient" level="3" type="S"/>
+    <items json:array="true" is="concept" code="ACTIB" codeSystem="2.16.840.1.113883.5.110" displayName="active ingredient - basis of strength" level="4" type="L"/>
+    <items json:array="true" is="concept" code="ACTIM" codeSystem="2.16.840.1.113883.5.110" displayName="active ingredient - moiety is basis of strength" level="4" type="L"/>
+    <items json:array="true" is="concept" code="ACTIR" codeSystem="2.16.840.1.113883.5.110" displayName="active ingredient - reference substance is basis of strength" level="4" type="L"/>
+    <items json:array="true" is="concept" code="ADJV" codeSystem="2.16.840.1.113883.5.110" displayName="adjuvant" level="3" type="L"/>
+    <items json:array="true" is="concept" code="ADTV" codeSystem="2.16.840.1.113883.5.110" displayName="additive" level="3" type="L"/>
+    <items json:array="true" is="concept" code="BASE" codeSystem="2.16.840.1.113883.5.110" displayName="base" level="3" type="L"/>
+    <items json:array="true" is="concept" code="CNTM" codeSystem="2.16.840.1.113883.5.110" displayName="contaminant ingredient" level="3" type="L"/>
+    <items json:array="true" is="concept" code="IACT" codeSystem="2.16.840.1.113883.5.110" displayName="inactive ingredient" level="3" type="S"/>
+    <items json:array="true" is="concept" code="COLR" codeSystem="2.16.840.1.113883.5.110" displayName="color additive color" level="4" type="L"/>
+    <items json:array="true" is="concept" code="FLVR" codeSystem="2.16.840.1.113883.5.110" displayName="flavor additive flavor" level="4" type="L"/>
+    <items json:array="true" is="concept" code="PRSV" codeSystem="2.16.840.1.113883.5.110" displayName="preservative" level="4" type="L"/>
+    <items json:array="true" is="concept" code="STBL" codeSystem="2.16.840.1.113883.5.110" displayName="stabilizer" level="4" type="L"/>
+    <items json:array="true" is="concept" code="MECH" codeSystem="2.16.840.1.113883.5.110" displayName="mechanical ingredient" level="3" type="L"/>
+    <items json:array="true" is="concept" code="LOCE" codeSystem="2.16.840.1.113883.5.110" displayName="located entity" level="2" type="S"/>
+    <items json:array="true" is="concept" code="STOR" codeSystem="2.16.840.1.113883.5.110" displayName="stored entity" level="3" type="L"/>
+    <items json:array="true" is="concept" code="MBR" codeSystem="2.16.840.1.113883.5.110" displayName="member" level="2" type="L"/>
+    <items json:array="true" is="concept" code="PART" codeSystem="2.16.840.1.113883.5.110" displayName="part" level="2" type="S"/>
+    <items json:array="true" is="concept" code="ACTM" codeSystem="2.16.840.1.113883.5.110" displayName="active moiety" level="3" type="L"/>
+    <items json:array="true" is="concept" code="SPEC" codeSystem="2.16.840.1.113883.5.110" displayName="specimen" level="2" type="S"/>
+    <items json:array="true" is="concept" code="ALQT" codeSystem="2.16.840.1.113883.5.110" displayName="aliquot" level="3" type="L"/>
+    <items json:array="true" is="concept" code="ISLT" codeSystem="2.16.840.1.113883.5.110" displayName="isolate" level="3" type="L"/>
+</valueSet>

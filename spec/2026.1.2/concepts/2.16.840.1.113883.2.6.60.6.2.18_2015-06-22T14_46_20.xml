@@ -1,0 +1,40 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.2.6.60.6.1.1" effectiveDate="2015-06-18T18:17:24" statusCode="draft" versionLabel="2.0" prefix="psr-" shortName="" iddisplay="psr-dataset-1" url="http://art-decor.org/decor/services/" ident="psr-"><!--
+ This is a view of the dataset "" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE"/>
+    <desc language="de-DE"/>
+    <concept id="2.16.840.1.113883.2.6.60.6.2.18" statusCode="draft" effectiveDate="2015-06-22T14:46:20" type="group" iddisplay="psr-dataelement-18">
+        <implementation markdown="(Postal) Address"/>
+        <name language="de-DE" lastTranslated="2017-06-20T18:29:48">Adresse </name>
+        <desc language="de-DE" lastTranslated="2017-06-20T18:30:18">(Postalische) Adresse</desc>
+        <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.18" conceptFlexibility="2015-06-22T14:46:20" code="184097001" codeSystem="2.16.840.1.113883.6.96" displayName="Patient address (observable entity)" effectiveDate="2020-12-14T15:52:02" equivalence="equal" codeSystemName="SNOMED Clinical Terms"/>
+        <concept id="2.16.840.1.113883.2.6.60.6.2.22" statusCode="draft" effectiveDate="2015-06-22T14:47:55" type="item" iddisplay="psr-dataelement-22" shortName="land">
+            <implementation shortName="land" markdown="Country"/>
+            <name language="de-DE">Land</name>
+            <desc language="de-DE" lastTranslated="2017-06-20T18:31:14">Land</desc>
+            <valueDomain type="string"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.6.2.21" statusCode="draft" effectiveDate="2015-06-22T14:47:34" type="item" iddisplay="psr-dataelement-21" shortName="stadt">
+            <implementation shortName="stadt" markdown="City"/>
+            <name language="de-DE">Stadt</name>
+            <desc language="de-DE" lastTranslated="2017-06-20T18:31:48">Ort / Stadt</desc>
+            <valueDomain type="string"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.6.2.20" statusCode="draft" effectiveDate="2015-06-22T14:47:14" type="item" iddisplay="psr-dataelement-20" shortName="plz">
+            <implementation shortName="plz" markdown="ZIP Code for postal address"/>
+            <name language="de-DE">PLZ</name>
+            <desc language="de-DE" lastTranslated="2017-06-20T18:32:32">Postleitzahl</desc>
+            <valueDomain type="code">
+                <conceptList id="2.16.840.1.113883.2.6.60.6.2.20.0"/>
+            </valueDomain>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.6.2.19" statusCode="draft" effectiveDate="2015-06-22T14:46:50" type="item" iddisplay="psr-dataelement-19" shortName="strase">
+            <implementation shortName="strase" markdown="Street as part of the address"/>
+            <name language="de-DE">Straße</name>
+            <desc language="de-DE" lastTranslated="2017-06-20T18:33:16">Straße als Adress-Teil</desc>
+            <valueDomain type="string"/>
+        </concept>
+    </concept>
+</dataset>

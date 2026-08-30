@@ -1,0 +1,334 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.4049" ident="aktin-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.4049" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="Problem Observation (Abschlussdiagnose)" ident="aktin-" name="Problemobservationeddiagnosis" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="draft" url="http://art-decor.org/decor/services/" effectiveDate="2017-02-13T00:00:00">
+            <desc language="de-DE">Beschwerden, Symptome, Diagnose, Probleme etc., hier: Abschlussdiagnose ggf. mit ICD10-Kode</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.303" tmname="CDAObservation" tmdisplayName="CDA Observation" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <relationship type="ADAPT" template="2.16.840.1.113883.10.20.22.4.4" tmid="2.16.840.1.113883.10.20.22.4.4" tmname="ProblemObservationV3" tmdisplayName="Problem Observation (V3)" tmeffectiveDate="2015-08-01T00:00:00" tmstatusCode="draft" tmversionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <example type="neutral" caption="Botulismus">
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4049"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="dc7cc806-f5e9-4045-85e4-9adb6e44d4d9"/>
+                    <code code="29308-4" codeSystem="2.16.840.1.113883.6.1" displayName="Diagnosis"/>
+                    <text>
+                        <reference value="#compl-1"/>
+                    </text>
+                    <statusCode code="completed"/>
+                    <effectiveTime>
+                        <low value="20150304"/>
+                    </effectiveTime>
+                    <value xsi:type="CD" code="A05.1" codeSystem="1.2.276.0.76.5.413" displayName="Botulismus"/>
+                </observation>
+            </example>
+            <example type="neutral" caption="Botulismus, gesichert (§295 SGB V)">
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4049"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="6d2a17bb-6b58-43c0-a54e-bcb6d163a748"/>
+                    <code code="29308-4" codeSystem="2.16.840.1.113883.6.1" displayName="Diagnosis"/>
+                    <text>
+                        <reference value="#compl-1"/>
+                    </text>
+                    <statusCode code="completed"/>
+                    <effectiveTime>
+                        <low value="20150304"/>
+                    </effectiveTime>
+                    <value xsi:type="CD" code="A05.1" codeSystem="1.2.276.0.76.5.413" displayName="Botulismus">
+                        <qualifier>
+                            <name code="8" codeSystem="2.16.840.1.113883.3.7.1.0"/>
+                            <value code="G" codeSystem="1.2.276.0.76.3.1.1.5.1.21"/>
+                        </qualifier>
+                        <qualifier>
+                            <name code="FSTAT" codeSystem="1.2.276.0.76.3.1.195.5.72" displayName="Befundstatus"/>
+                            <value code="CONF" codeSystem="1.2.276.0.76.3.1.195.5.69" displayName="Gesichert"/>
+                        </qualifier>
+                    </value>
+                </observation>
+            </example>
+            <example type="neutral" caption="Verdacht auf Botulismus">
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4049"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="119a71af-53a4-4530-83b6-f348cd69ab1c"/>
+                    <code code="29308-4" codeSystem="2.16.840.1.113883.6.1" displayName="Diagnosis"/>
+                    <text>
+                        <reference value="#compl-1"/>
+                    </text>
+                    <statusCode code="completed"/>
+                    <effectiveTime>
+                        <low value="20150304"/>
+                    </effectiveTime>
+                    <value xsi:type="CD" code="A05.1" codeSystem="1.2.276.0.76.5.413" displayName="Botulismus">
+                        <qualifier>
+                            <name code="8" codeSystem="2.16.840.1.113883.3.7.1.0"/>
+                            <value code="V" codeSystem="1.2.276.0.76.3.1.1.5.1.21"/>
+                        </qualifier>
+                        <qualifier>
+                            <name code="FSTAT" codeSystem="1.2.276.0.76.3.1.195.5.72" displayName="Befundstatus"/>
+                            <value code="SUSP" codeSystem="1.2.276.0.76.3.1.195.5.73" displayName="Verdacht"/>
+                        </qualifier>
+                    </value>
+                </observation>
+            </example>
+            <example type="neutral" caption="Ausschluss von Botulismus (Negation)">
+                <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                    <templateId root="1.2.276.0.76.10.4049"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="d31b4dfe-9ecc-47fb-bdad-94e8924bbcbc"/>
+                    <code code="29308-4" codeSystem="2.16.840.1.113883.6.1" displayName="Diagnosis"/>
+                    <text>
+                        <reference value="#compl-1"/>
+                    </text>
+                    <statusCode code="completed"/>
+                    <effectiveTime>
+                        <low value="UNK"/>
+                    </effectiveTime>
+                    <value xsi:type="CD" code="A05.1" codeSystem="1.2.276.0.76.5.413" displayName="Botulismus">
+                        <qualifier>
+                            <name code="8" codeSystem="2.16.840.1.113883.3.7.1.0"/>
+                            <value code="A" codeSystem="1.2.276.0.76.3.1.1.5.1.21"/>
+                        </qualifier>
+                    </value>
+                </observation>
+            </example>
+            <example type="neutral" caption="Abgeschlossenes Problem, Zustand nach Botulismus (effectiveTime.high gesetzt)">
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4049"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="201021aa-8fc9-4c62-9bae-8df3178dd98f"/>
+                    <code code="29308-4" codeSystem="2.16.840.1.113883.6.1" displayName="Diagnosis"/>
+                    <text>
+                        <reference value="#compl-1"/>
+                    </text>
+                    <statusCode code="completed"/>
+                    <effectiveTime>
+                        <low value="20150304"/>
+                        <high vlaue="20150324"/>
+                    </effectiveTime>
+                    <value xsi:type="CD" code="A05.1" codeSystem="1.2.276.0.76.5.413" displayName="Botulismus">
+                        <qualifier>
+                            <name code="8" codeSystem="2.16.840.1.113883.3.7.1.0"/>
+                            <value code="Z" codeSystem="1.2.276.0.76.3.1.1.5.1.21"/>
+                        </qualifier>
+                    </value>
+                </observation>
+            </example>
+            <element name="hl7:observation" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.621">
+                <item original="false" label="Problemobservationeddiagnosis"/>
+                <attribute name="classCode" value="OBS" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.622"/>
+                <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.623"/>
+                <attribute name="negationInd" isOptional="true" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.624">
+                    <desc language="de-DE">Zur Angabe eines Ausschlusses einer Diagnose wird negationInd=true gesetzt</desc>
+                </attribute>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.625">
+                    <item original="false" label="Problemobservationeddiagnosis"/>
+                    <attribute name="root" value="1.2.276.0.76.10.4049" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.626"/>
+                </element>
+                <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="*" datatype="II" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.627">
+                    <item original="false" label="Problemobservationeddiagnosis"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CE" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.628">
+                    <item original="false" label="Problemobservationeddiagnosis"/>
+                    <vocabulary code="29308-4" codeSystem="2.16.840.1.113883.6.1"/>
+                    <vocabulary code="75324-4" codeSystem="2.16.840.1.113883.6.1"/>
+                    <report role="warning" test="@code='75324-4'">Code LOINC 75324-4 sollte durch LOINC 29308-4 ersetzt werden.</report>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.2.6.60.3.9.629">
+                    <desc language="de-DE">Textform, enthält hier lediglich reference in den Text der Section</desc>
+                    <item original="false" label="Problemobservationeddiagnosis"/>
+                    <element name="hl7:reference" minimumMultiplicity="1" maximumMultiplicity="1" datatype="URL" id="2.16.840.1.113883.2.6.60.3.9.630">
+                        <item original="false" label="Problemobservationeddiagnosis"/>
+                        <attribute name="value" isOptional="false" id="2.16.840.1.113883.2.6.60.3.9.1557">
+                            <desc language="de-DE">#diag-{generierteID}, z.B.: #diag-1</desc>
+                        </attribute>
+                    </element>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CS" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.631">
+                    <item original="false" label="Problemobservationeddiagnosis"/>
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:effectiveTime" minimumMultiplicity="1" maximumMultiplicity="1" datatype="IVL_TS" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.632">
+                    <desc language="de-DE">effectiveTime wird auch als "biologisch relevante Zeit" bezeichnet und ist der Zeitpunkt oder Zeitraum, für den die Beobachtung für den Patienten gilt.<br/> Beispiel: Für Gesundheitsdienstleister, die einen Patienten heute in der Klinik sehen anamenstisch einen Herzinfarkt erheben, der vor fünf Jahren stattgefunden hat, ist effectiveTime: vor fünf
+                        Jahren.<br/> Die effectiveTime hier ist die definitive Angabe, ob die zugrunde liegende Erkrankung behoben ist. effectiveTime.low ist der Beginn des Problems für den Patienten. Wenn das Problem noch nicht gelöst ist, wird effectiveTime.high nicht gesetzt. Wenn bekannt ist, dass das Problem gelöst werden kann, dann ist effectiveTime.high vorhanden. Wenn der genaue Zeitpunkt
+                        der Lösung des Problems nicht bekannt ist, dann ist effectiveTime.high vorhanden und auf nullFlavor "UNK" gesetzt. </desc>
+                    <item original="false" label="Problemobservationeddiagnosis"/>
+                    <element name="hl7:low" minimumMultiplicity="1" maximumMultiplicity="1" datatype="TS" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.633">
+                        <item original="false" label="Problemobservationeddiagnosis"/>
+                    </element>
+                    <element name="hl7:high" minimumMultiplicity="0" maximumMultiplicity="1" datatype="TS" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.634">
+                        <item original="false" label="Problemobservationeddiagnosis"/>
+                    </element>
+                </element>
+                <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CD" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.635">
+                    <desc language="de-DE">ICD-10 Kode</desc>
+                    <item original="false" label="Problemobservationeddiagnosis"/>
+                    <example type="neutral">
+                        <value xsi:type="CE" code="A05.1" codeSystem="1.2.276.0.76.5.413" displayName="Botulismus">
+                            <originalText>Fleisch- / Wurstvergiftung</originalText>
+                        </value>
+                    </example>
+                    <vocabulary domain="ICD-10 GM"/>
+                    <constraint language="de-DE">Internationale statistische Klassifikation der Krankheiten und verwandter Gesundheitsprobleme (ICD), 10. Revision, German Modification, jeweils aktuelle Fassung</constraint>
+                    <element name="hl7:originalText" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ST" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1555">
+                        <desc language="de-DE">Abschlussdiagnose (Freitext)</desc>
+                        <item original="false" label="Problemobservationeddiagnosis"/>
+                    </element>
+                    <include ref="1.2.276.0.76.10.90027" tmid="1.2.276.0.76.10.90027" tmname="Certainty" tmdisplayName="Diagnosesicherheit" tmeffectiveDate="2017-03-02T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                        <item original="false" label="Problemobservationeddiagnosis"/>
+                        <element name="hl7:qualifier[hl7:name/@code='8']" datatype="CR" id="2.16.840.1.113883.2.6.77.9.298" minimumMultiplicity="0" maximumMultiplicity="1">
+                            <desc language="de-DE">Optionale Angabe der Diagnosesicherheit (laut §295 SGB V) als Qualifier-Kind-Element des value-Elements des Problems (Diagnose).</desc>
+                            <item original="false" label="Certainty"/>
+                            <example type="neutral">
+                                <qualifier>
+                                    <name code="8" codeSystem="2.16.840.1.113883.3.7.1.0"/>
+                                    <value code="G" codeSystem="1.2.276.0.76.3.1.1.5.1.21"/>
+                                </qualifier>
+                            </example>
+                            <element name="hl7:name" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" datatype="CV" id="2.16.840.1.113883.2.6.77.9.299">
+                                <item original="false" label="Certainty"/>
+                                <vocabulary code="8" codeSystem="2.16.840.1.113883.3.7.1.0"/>
+                            </element>
+                            <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" datatype="CV" id="2.16.840.1.113883.2.6.77.9.300">
+                                <item original="false" label="Certainty"/>
+                                <vocabulary valueSet="1.2.276.0.76.11.121" vsid="1.2.276.0.76.11.121" vsname="S_ICD_DIAGNOSESICHERHEIT" vsdisplayName="S_ICD_DIAGNOSESICHERHEIT" vseffectiveDate="2005-08-01T00:00:00" vsstatusCode="final" url="http://art-decor.org/decor/services/" ident="kbvde-" linkedartefactmissing="false"/>
+                            </element>
+                        </element>
+                        <staticAssociations>
+                            <origconcept ref="1.2.276.0.76.3.1.135.8.2.745" effectiveDate="2019-07-18T16:14:13" refdisplay="vomgt-dataelement-745" conceptStatusCode="draft" datasetId="1.2.276.0.76.3.1.135.8.1.1" datasetEffectiveDate="2015-12-02T09:18:17" datasetStatusCode="draft" datasetName="KV-Mustersammlung" ident="vomgt-" elementId="2.16.840.1.113883.2.6.77.9.298" templateId="1.2.276.0.76.10.90027" templateEffectiveDate="2017-03-02T00:00:00" path="Muster 02a: Verordnung von Krankenhausbehandlung / Diagnosen/Begründung der Notwendigkeit / Diagnose-Liste">
+                                <name language="de-DE">Sicherheit</name>
+                                <desc language="de-DE"/>
+                                <datasetName language="de-DE">KV-Mustersammlung</datasetName>
+                                <projectName language="de-DE">Verordnungsmanagement</projectName>
+                            </origconcept>
+                            <origconcept ref="1.2.276.0.76.3.1.261.1.77.1.2.1.53" effectiveDate="2018-03-01T14:29:58" refdisplay="dguvbbr-dataelement1-53" conceptStatusCode="draft" datasetId="1.2.276.0.76.3.1.261.1.77.1.1.1" datasetEffectiveDate="2018-03-02T10:10:49" datasetStatusCode="draft" datasetName="Mini-Entlassbrief" ident="dguvbbr-" elementId="2.16.840.1.113883.2.6.77.9.300" templateId="1.2.276.0.76.10.90027" templateEffectiveDate="2017-03-02T00:00:00" path="Diagnosen / Hauptdiagnose">
+                                <name language="de-DE">Diagnosensicherheit</name>
+                                <desc language="de-DE"/>
+                                <datasetName language="de-DE">Mini-Entlassbrief</datasetName>
+                                <projectName language="de-DE" lastTranslated="2022-12-07T18:52:23">DGUV BBR</projectName>
+                            </origconcept>
+                            <origconcept ref="1.2.276.0.76.3.1.261.1.77.1.2.1.56" effectiveDate="2018-03-01T14:32:11" refdisplay="dguvbbr-dataelement1-56" conceptStatusCode="draft" datasetId="1.2.276.0.76.3.1.261.1.77.1.1.1" datasetEffectiveDate="2018-03-02T10:10:49" datasetStatusCode="draft" datasetName="Mini-Entlassbrief" ident="dguvbbr-" elementId="2.16.840.1.113883.2.6.77.9.300" templateId="1.2.276.0.76.10.90027" templateEffectiveDate="2017-03-02T00:00:00" path="Diagnosen / Nebendiagnose">
+                                <name language="de-DE">Diagnosesicherheit</name>
+                                <desc language="de-DE"/>
+                                <datasetName language="de-DE">Mini-Entlassbrief</datasetName>
+                                <projectName language="de-DE" lastTranslated="2022-12-07T18:52:23">DGUV BBR</projectName>
+                            </origconcept>
+                            <origconcept ref="1.2.276.0.76.3.1.261.1.77.1.2.2.253" effectiveDate="2018-05-24T00:00:00" refdisplay="dguvbbr-dataelement2-253" conceptStatusCode="draft" datasetId="1.2.276.0.76.3.1.261.1.77.1.1.2" datasetEffectiveDate="2018-05-24T00:00:00" datasetStatusCode="draft" datasetName="Stationärer Entlassungsbericht" ident="dguvbbr-" elementId="2.16.840.1.113883.2.6.77.9.298" templateId="1.2.276.0.76.10.90027" templateEffectiveDate="2017-03-02T00:00:00" path="Diagnosen/Probleme / Diagnose/Problem (ICD10)">
+                                <name language="de-DE">Sicherheit</name>
+                                <desc language="de-DE"/>
+                                <datasetName language="de-DE">Stationärer Entlassungsbericht</datasetName>
+                                <projectName language="de-DE" lastTranslated="2022-12-07T18:52:23">DGUV BBR</projectName>
+                            </origconcept>
+                            <origconcept ref="2.16.840.1.113883.3.1937.777.24.2.37" effectiveDate="2018-06-05T22:32:50" refdisplay="mide-dataelement-37" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" datasetName="MI Dataset" ident="mide-" elementId="2.16.840.1.113883.2.6.77.9.298" templateId="1.2.276.0.76.10.90027" templateEffectiveDate="2017-03-02T00:00:00" path="Basismodule / Diagnose / ICD-10-GM Diagnose kodiert">
+                                <name language="de-DE">Diagnosensicherheit</name>
+                                <name language="en-US">Diagnosis certainty</name>
+                                <desc language="de-DE">Die Diagnosensicherheit, d.h. wie sicher die Diagnose im Einzelfall zu werten ist, kann unterschiedlich angegeben werden. Für Abrechnungszwecke in der ambulanten Versorgung muss obligatorisch ein Zusatzkennzeichen für die Diagnosensicherheit (A, G, V oder Z) angegeben werden, d. h. die Angabe ist obligatorisch. In der stationären Versorgung sind
+                                diese Zusatzkennzeichen für die Angabe der Diagnosensicherheit für Abrechnungszwecke dagegen nicht zulässig.</desc>
+                                <desc language="en-US">The level of diagnosis certainty is given here.  For billing purposes in outpatients the indicator for diagnosis certainty (A, G, V or Z) is obligatory.  However for inpatients, for billing purposes, the indicators for diagnosis certainty are not permitted.</desc>
+                                <datasetName language="en-US" lastTranslated="2022-11-18T11:46:16">MI Dataset</datasetName>
+                                <datasetName language="de-DE" lastTranslated="2022-11-18T11:46:16">MI Datensatz</datasetName>
+                                <projectName language="en-US" lastTranslated="2023-03-28T18:04:57">MII Core Data Set</projectName>
+                                <projectName language="de-DE" lastTranslated="2023-03-28T18:04:57">MII-Kerndatensatz</projectName>
+                            </origconcept>
+                            <origconcept ref="2.16.840.1.113883.3.1937.99.61.38.2.2.53" effectiveDate="2018-03-01T14:29:58" refdisplay="sdguv-dataelement2-53" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.99.61.38.1.2" datasetEffectiveDate="2018-03-02T10:10:49" datasetStatusCode="draft" datasetName="Mini-Entlassbrief" ident="sdguv-" elementId="2.16.840.1.113883.2.6.77.9.300" templateId="1.2.276.0.76.10.90027" templateEffectiveDate="2017-03-02T00:00:00" path="Diagnosen / Hauptdiagnose">
+                                <name language="de-DE">Diagnosensicherheit</name>
+                                <desc language="de-DE"/>
+                                <datasetName language="de-DE">Mini-Entlassbrief</datasetName>
+                                <projectName language="de-DE">DGUV Sandbox</projectName>
+                            </origconcept>
+                            <origconcept ref="2.16.840.1.113883.3.1937.99.61.38.2.2.56" effectiveDate="2018-03-01T14:32:11" refdisplay="sdguv-dataelement2-56" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.99.61.38.1.2" datasetEffectiveDate="2018-03-02T10:10:49" datasetStatusCode="draft" datasetName="Mini-Entlassbrief" ident="sdguv-" elementId="2.16.840.1.113883.2.6.77.9.300" templateId="1.2.276.0.76.10.90027" templateEffectiveDate="2017-03-02T00:00:00" path="Diagnosen / Nebendiagnose">
+                                <name language="de-DE">Diagnosesicherheit</name>
+                                <desc language="de-DE"/>
+                                <datasetName language="de-DE">Mini-Entlassbrief</datasetName>
+                                <projectName language="de-DE">DGUV Sandbox</projectName>
+                            </origconcept>
+                        </staticAssociations>
+                    </include>
+                    <element name="hl7:qualifier[hl7:name/@code='FSTAT']" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CR" id="2.16.840.1.113883.2.6.60.3.9.1631731">
+                        <desc language="de-DE">Optionale Angabe des Befundstatus (finding status) des Problems (Diagnose).</desc>
+                        <item original="false" label="Problemobservationeddiagnosis"/>
+                        <example type="neutral">
+                            <qualifier>
+                                <name code="FSTAT" codeSystem="1.2.276.0.76.3.1.195.5.72" displayName="Befundstatus"/>
+                                <value code="SUSP" codeSystem="1.2.276.0.76.3.1.195.5.73" displayName="Verdacht"/>
+                            </qualifier>
+                        </example>
+                        <element name="hl7:name" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" datatype="CV" id="2.16.840.1.113883.2.6.60.3.9.1631732">
+                            <item original="false" label="Problemobservationeddiagnosis"/>
+                            <vocabulary code="FSTAT" codeSystem="1.2.276.0.76.3.1.195.5.72"/>
+                        </element>
+                        <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" datatype="CV" id="2.16.840.1.113883.2.6.60.3.9.1631733">
+                            <item original="false" label="Problemobservationeddiagnosis"/>
+                            <vocabulary valueSet="1.2.276.0.76.11.73" vsid="1.2.276.0.76.11.73" vsname="Befundstatusverdachtgesichert" vsdisplayName="Befundstatus Verdacht/Gesichert" vsstatusCode="draft" vseffectiveDate="2016-08-02T00:00:00" linkedartefactmissing="false"/>
+                        </element>
+                    </element>
+                    <include ref="1.2.276.0.76.10.90026" tmid="1.2.276.0.76.10.90026" tmname="Laterality" tmdisplayName="Lateralität" tmeffectiveDate="2017-02-13T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                        <item original="false" label="Problemobservationeddiagnosis"/>
+                        <element name="hl7:qualifier[hl7:name/@code='20228-3']" datatype="CR" id="2.16.840.1.113883.2.6.77.9.98" minimumMultiplicity="0" maximumMultiplicity="1">
+                            <desc language="de-DE">Seitenlokalisation</desc>
+                            <item original="false" label="Laterality"/>
+                            <example type="neutral">
+                                <qualifier>
+                                    <name code="20228-3" codeSystem="2.16.840.1.113883.6.1"/>
+                                    <value code="L" codeSystem="1.2.276.0.76.5.412"/>
+                                </qualifier>
+                            </example>
+                            <element name="hl7:name" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" datatype="CV" id="2.16.840.1.113883.2.6.77.9.99">
+                                <item original="false" label="Laterality"/>
+                                <vocabulary code="20228-3" codeSystem="2.16.840.1.113883.6.1"/>
+                            </element>
+                            <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="CV" id="2.16.840.1.113883.2.6.77.9.100">
+                                <item original="false" label="Laterality"/>
+                                <vocabulary valueSet="1.2.276.0.76.11.412" vsid="1.2.276.0.76.11.412" vsname="Laterality" vsdisplayName="Lateralität" vseffectiveDate="2017-02-08T00:00:00" vsstatusCode="draft" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false"/>
+                            </element>
+                        </element>
+                        <staticAssociations>
+                            <origconcept ref="1.2.276.0.76.3.1.135.8.2.744" effectiveDate="2019-07-18T16:13:47" refdisplay="vomgt-dataelement-744" conceptStatusCode="draft" datasetId="1.2.276.0.76.3.1.135.8.1.1" datasetEffectiveDate="2015-12-02T09:18:17" datasetStatusCode="draft" datasetName="KV-Mustersammlung" ident="vomgt-" elementId="2.16.840.1.113883.2.6.77.9.98" templateId="1.2.276.0.76.10.90026" templateEffectiveDate="2017-02-13T00:00:00" path="Muster 02a: Verordnung von Krankenhausbehandlung / Diagnosen/Begründung der Notwendigkeit / Diagnose-Liste">
+                                <name language="de-DE">Lateralität</name>
+                                <desc language="de-DE"/>
+                                <datasetName language="de-DE">KV-Mustersammlung</datasetName>
+                                <projectName language="de-DE">Verordnungsmanagement</projectName>
+                            </origconcept>
+                            <origconcept ref="1.2.276.0.76.3.1.135.8.2.916" effectiveDate="2020-06-26T16:19:43" refdisplay="vomgt-dataelement-916" conceptStatusCode="draft" datasetId="1.2.276.0.76.3.1.135.8.1.1" datasetEffectiveDate="2015-12-02T09:18:17" datasetStatusCode="draft" datasetName="KV-Mustersammlung" ident="vomgt-" elementId="2.16.840.1.113883.2.6.77.9.98" templateId="1.2.276.0.76.10.90026" templateEffectiveDate="2017-02-13T00:00:00" path="AR-Antrag / Clinical Data / AR_B_(Befundbericht) / Funktionsdiagnosen">
+                                <name language="de-DE">DiagnoseSeitenlokalisation</name>
+                                <desc language="de-DE"/>
+                                <datasetName language="de-DE">KV-Mustersammlung</datasetName>
+                                <projectName language="de-DE">Verordnungsmanagement</projectName>
+                            </origconcept>
+                            <origconcept ref="1.2.276.0.76.3.1.261.1.77.1.2.1.54" effectiveDate="2018-03-01T14:30:59" refdisplay="dguvbbr-dataelement1-54" conceptStatusCode="draft" datasetId="1.2.276.0.76.3.1.261.1.77.1.1.1" datasetEffectiveDate="2018-03-02T10:10:49" datasetStatusCode="draft" datasetName="Mini-Entlassbrief" ident="dguvbbr-" elementId="2.16.840.1.113883.2.6.77.9.100" templateId="1.2.276.0.76.10.90026" templateEffectiveDate="2017-02-13T00:00:00" path="Diagnosen / Hauptdiagnose">
+                                <name language="de-DE">Seitigkeit</name>
+                                <desc language="de-DE"/>
+                                <datasetName language="de-DE">Mini-Entlassbrief</datasetName>
+                                <projectName language="de-DE" lastTranslated="2022-12-07T18:52:23">DGUV BBR</projectName>
+                            </origconcept>
+                            <origconcept ref="1.2.276.0.76.3.1.261.1.77.1.2.1.55" effectiveDate="2018-03-01T14:31:38" refdisplay="dguvbbr-dataelement1-55" conceptStatusCode="draft" datasetId="1.2.276.0.76.3.1.261.1.77.1.1.1" datasetEffectiveDate="2018-03-02T10:10:49" datasetStatusCode="draft" datasetName="Mini-Entlassbrief" ident="dguvbbr-" elementId="2.16.840.1.113883.2.6.77.9.100" templateId="1.2.276.0.76.10.90026" templateEffectiveDate="2017-02-13T00:00:00" path="Diagnosen / Nebendiagnose">
+                                <name language="de-DE">Seitigkeit</name>
+                                <desc language="de-DE"/>
+                                <datasetName language="de-DE">Mini-Entlassbrief</datasetName>
+                                <projectName language="de-DE" lastTranslated="2022-12-07T18:52:23">DGUV BBR</projectName>
+                            </origconcept>
+                            <origconcept ref="1.2.276.0.76.3.1.261.1.77.1.2.2.254" effectiveDate="2018-05-24T00:00:00" refdisplay="dguvbbr-dataelement2-254" conceptStatusCode="draft" datasetId="1.2.276.0.76.3.1.261.1.77.1.1.2" datasetEffectiveDate="2018-05-24T00:00:00" datasetStatusCode="draft" datasetName="Stationärer Entlassungsbericht" ident="dguvbbr-" elementId="2.16.840.1.113883.2.6.77.9.98" templateId="1.2.276.0.76.10.90026" templateEffectiveDate="2017-02-13T00:00:00" path="Diagnosen/Probleme / Diagnose/Problem (ICD10)">
+                                <name language="de-DE">Seitigkeit</name>
+                                <desc language="de-DE"/>
+                                <datasetName language="de-DE">Stationärer Entlassungsbericht</datasetName>
+                                <projectName language="de-DE" lastTranslated="2022-12-07T18:52:23">DGUV BBR</projectName>
+                            </origconcept>
+                            <origconcept ref="2.16.840.1.113883.3.1937.99.61.38.2.2.54" effectiveDate="2018-03-01T14:30:59" refdisplay="sdguv-dataelement2-54" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.99.61.38.1.2" datasetEffectiveDate="2018-03-02T10:10:49" datasetStatusCode="draft" datasetName="Mini-Entlassbrief" ident="sdguv-" elementId="2.16.840.1.113883.2.6.77.9.100" templateId="1.2.276.0.76.10.90026" templateEffectiveDate="2017-02-13T00:00:00" path="Diagnosen / Hauptdiagnose">
+                                <name language="de-DE">Seitigkeit</name>
+                                <desc language="de-DE"/>
+                                <datasetName language="de-DE">Mini-Entlassbrief</datasetName>
+                                <projectName language="de-DE">DGUV Sandbox</projectName>
+                            </origconcept>
+                            <origconcept ref="2.16.840.1.113883.3.1937.99.61.38.2.2.55" effectiveDate="2018-03-01T14:31:38" refdisplay="sdguv-dataelement2-55" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.99.61.38.1.2" datasetEffectiveDate="2018-03-02T10:10:49" datasetStatusCode="draft" datasetName="Mini-Entlassbrief" ident="sdguv-" elementId="2.16.840.1.113883.2.6.77.9.100" templateId="1.2.276.0.76.10.90026" templateEffectiveDate="2017-02-13T00:00:00" path="Diagnosen / Nebendiagnose">
+                                <name language="de-DE">Seitigkeit</name>
+                                <desc language="de-DE"/>
+                                <datasetName language="de-DE">Mini-Entlassbrief</datasetName>
+                                <projectName language="de-DE">DGUV Sandbox</projectName>
+                            </origconcept>
+                        </staticAssociations>
+                    </include>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4048" name="Problemconcernacteddiagnoses" displayName="Problem Concern Act (Abschlussdiagnosen)" effectiveDate="2016-06-22T00:00:00" statusCode="active" ident="aktin-"/>
+            <uses type="include" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.90026" name="Laterality" displayName="Lateralität" effectiveDate="2017-02-13T00:00:00" statusCode="draft" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+            <uses type="include" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.90027" name="Certainty" displayName="Diagnosesicherheit" effectiveDate="2017-03-02T00:00:00" statusCode="draft" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+        </template>
+    </template>
+</result>

@@ -1,0 +1,61 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:ukfc="http://fhir.hl7.de/ukfc" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.4024" name="MedicationStatementDoseInstruction" displayName="Dosierung Freitext" effectiveDate="2014-11-01T00:00:00" statusCode="draft" isClosed="false" url="http://art-decor.org/decor/services/" ident="pmp-" ukfc:dummy-1="http://fhir.hl7.de/ukfc" sdtc:dummy-2="urn:hl7-org:sdtc" xhtml:dummy-3="http://www.w3.org/1999/xhtml" pharm:dummy-4="urn:hl7-org:pharm" xml:dummy-5="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-7="urn:hl7-org:v3" xsi:dummy-8="http://www.w3.org/2001/XMLSchema-instance">
+    <desc language="de-DE">Dosierung Freitext: freitextliche Dosierungen werden in der zugehörigen Section.text aufgenommen und entsprechend mit einem Tag versehen (siehe Beispiel). Die freitextliche Dosierung wird hier nur unter text.reference referenziert</desc>
+    <classification type="cdaentrylevel"/>
+    <relationship type="SPEC" template="2.16.840.1.113883.10.12.308" flexibility="2005-09-07T00:00:00"/>
+    <context id="**"/>
+    <item label="medsdipmp"/>
+    <example>
+        <substanceAdministration classCode="SBADM" moodCode="INT">
+            <templateId root="1.2.276.0.76.10.4024"/>
+            <text>
+                <reference value="#dosinst-23"/>
+            </text>
+            <consumable>
+                <manufacturedProduct>
+                    <manufacturedMaterial nullFlavor="NA"/>
+                </manufacturedProduct>
+            </consumable>
+        </substanceAdministration>
+    </example>
+    <example caption="Zusammenschau section.text und freitextliche Dosierung">
+        <section>
+        <!-- .. -->
+            <text>...<content ID="dosinst-23">2 bis 3 Stck tgl.</content>
+            </text>
+        </section>
+        <entry>
+            <substanceAdministration classCode="SBADM" moodCode="INT">
+                <templateId root="1.2.276.0.76.10.4024"/>
+                <text>
+                    <reference value="#dosinst-23"/>
+                </text>
+                <consumable>
+                    <manufacturedProduct>
+                        <manufacturedMaterial nullFlavor="NA"/>
+                    </manufacturedProduct>
+                </consumable>
+            </substanceAdministration>
+        </entry>
+    </example>
+    <element name="hl7:substanceAdministration" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.2.6.60.4.9.84">
+        <attribute name="classCode" value="SBADM"/>
+        <attribute name="moodCode" value="EVN"/>
+        <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.85">
+            <attribute name="root" value="1.2.276.0.76.10.4024"/>
+        </element>
+        <element name="hl7:text" minimumMultiplicity="1" maximumMultiplicity="1" datatype="ED" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.86">
+            <element name="hl7:reference" minimumMultiplicity="1" maximumMultiplicity="1" datatype="TEL" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.87">
+                <attribute name="value">
+                    <desc language="de-DE">#dosinst-{generierteID}, z.B.: #dosinst-1</desc>
+                </attribute>
+            </element>
+        </element>
+        <element name="hl7:consumable" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.88">
+            <element name="hl7:manufacturedProduct" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.89">
+                <element name="hl7:manufacturedMaterial" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.4.9.90">
+                    <attribute name="nullFlavor" value="NA"/>
+                </element>
+            </element>
+        </element>
+    </element>
+</template>

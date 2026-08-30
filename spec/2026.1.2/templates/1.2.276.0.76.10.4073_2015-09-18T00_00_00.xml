@@ -1,0 +1,153 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.4073" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.4073" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="Problem Observation (Multidrug-resistant organism)" ident="aktin-" name="ProblemobservationMDRO" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="active" url="http://art-decor.org/decor/services/" effectiveDate="2015-09-18T00:00:00">
+            <desc language="de-DE">Besiedlung mit multiresistenten Keimen</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.303" tmname="CDAObservation" tmdisplayName="CDA Observation" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <relationship type="ADAPT" template="2.16.840.1.113883.10.20.22.4.4" tmid="2.16.840.1.113883.10.20.22.4.4" tmname="ProblemObservationV3" tmdisplayName="Problem Observation (V3)" tmeffectiveDate="2015-08-01T00:00:00" tmstatusCode="draft" tmversionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <example type="neutral" caption="MRSA">
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4073"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="3564b7c0-2111-43f2-a784-9a5fdfaa67f2"/>
+                    <code code="COND" codeSystem="2.16.840.1.113883.5.4" displayName="Condition"/>
+                    <text>
+                        <reference value="#mdro-1"/>
+                    </text>
+                    <statusCode code="completed"/>
+                    <effectiveTime>
+                        <low value="20150304"/>
+                    </effectiveTime>
+                    <value xsi:type="CD" code="PB" codeSystem="1.2.276.0.76.3.1.195.5.51" displayName="path. Befund">
+                        <qualifier>
+                            <name code="IBB" codeSystem="1.2.276.0.76.3.1.195.5.1" displayName="in Bezug auf Befund"/>
+                            <value code="BACP" codeSystem="1.2.276.0.76.3.1.195.5.1" displayName="Bakterienbesiedelung"/>
+                        </qualifier>
+                        <qualifier>
+                            <name code="URAG" codeSystem="1.2.276.0.76.3.1.195.5.1" displayName="Auslösendes Agenz"/>
+                            <value code="MRSA" codeSystem="1.2.276.0.76.5.441" displayName="MRSA"/>
+                        </qualifier>
+                    </value>
+                </observation>
+            </example>
+            <example type="neutral" caption="Keine multiresistenten Keime">
+                <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                    <templateId root="1.2.276.0.76.10.4073"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="4464b7c0-2111-43f2-a784-9a5fdfaa67f7"/>
+                    <code code="COND" codeSystem="2.16.840.1.113883.5.4" displayName="Condition"/>
+                    <text>
+                        <reference value="#mdro-1"/>
+                    </text>
+                    <statusCode code="completed"/>
+                    <effectiveTime>
+                        <low value="20150304"/>
+                    </effectiveTime>
+                    <value xsi:type="CD" code="PB" codeSystem="1.2.276.0.76.3.1.195.5.51" displayName="path. Befund">
+                        <qualifier>
+                            <name code="IBB" codeSystem="1.2.276.0.76.3.1.195.5.1" displayName="in Bezug auf Befund"/>
+                            <value code="BACP" codeSystem="1.2.276.0.76.3.1.195.5.1" displayName="Bakterienbesiedelung"/>
+                        </qualifier>
+                        <qualifier>
+                            <name code="URAG" codeSystem="1.2.276.0.76.3.1.195.5.1" displayName="Auslösendes Agenz"/>
+                            <value code="AMRO" codeSystem="1.2.276.0.76.5.441" displayName="Multiresistenter Keim"/>
+                        </qualifier>
+                    </value>
+                </observation>
+            </example>
+            <element name="hl7:observation" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.312">
+                <item original="false" label="ProblemobservationMDRO"/>
+                <attribute name="classCode" value="OBS" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.313"/>
+                <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.314"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.315">
+                    <item original="false" label="ProblemobservationMDRO"/>
+                    <attribute name="root" value="1.2.276.0.76.10.4073" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.316"/>
+                </element>
+                <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="*" isMandatory="true" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.317">
+                    <item original="false" label="ProblemobservationMDRO"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CE" id="2.16.840.1.113883.2.6.60.3.9.318">
+                    <item original="false" label="ProblemobservationMDRO"/>
+                    <vocabulary code="COND" codeSystem="2.16.840.1.113883.5.4"/>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.2.6.60.3.9.319">
+                    <desc language="de-DE">Textform, enthält hier lediglich reference in den Text der Section</desc>
+                    <item original="false" label="ProblemobservationMDRO"/>
+                    <element name="hl7:reference" minimumMultiplicity="1" maximumMultiplicity="1" datatype="URL" id="2.16.840.1.113883.2.6.60.3.9.320">
+                        <item original="false" label="ProblemobservationMDRO"/>
+                    </element>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CS" id="2.16.840.1.113883.2.6.60.3.9.321">
+                    <item original="false" label="ProblemobservationMDRO"/>
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:effectiveTime" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" datatype="IVL_TS" id="2.16.840.1.113883.2.6.60.3.9.322">
+                    <desc language="de-DE">effectiveTime wird auch als "biologisch relevante Zeit" bezeichnet und ist der Zeitpunkt oder Zeitraum, für den die Beobachtung für den Patienten gilt.</desc>
+                    <item original="false" label="ProblemobservationMDRO"/>
+                    <element name="hl7:low" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="TS" id="2.16.840.1.113883.2.6.60.3.9.323">
+                        <item original="false" label="ProblemobservationMDRO"/>
+                    </element>
+                    <element name="hl7:high" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" datatype="TS" id="2.16.840.1.113883.2.6.60.3.9.324">
+                        <item original="false" label="ProblemobservationMDRO"/>
+                    </element>
+                </element>
+                <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="CD" id="2.16.840.1.113883.2.6.60.3.9.325">
+                    <desc language="de-DE">Multiresistenter Keim Ja/Nein/Verdacht</desc>
+                    <item original="false" label="ProblemobservationMDRO"/>
+                    <example type="neutral" caption="MRSA">
+                        <value xsi:type="CD" code="PB" codeSystem="1.2.276.0.76.3.1.195.5.51" displayName="path. Befund">
+                            <qualifier>
+                                <name code="IBB" codeSystem="1.2.276.0.76.3.1.195.5.1" displayName="in Bezug auf Befund"/>
+                                <value code="BACP" codeSystem="1.2.276.0.76.3.1.195.5.1" displayName="Bakterienbesiedelung"/>
+                            </qualifier>
+                            <qualifier>
+                                <name code="URAG" codeSystem="1.2.276.0.76.3.1.195.5.1" displayName="Auslösendes Agenz"/>
+                                <value code="MRSA" codeSystem="1.2.276.0.76.5.441" displayName="MRSA"/>
+                            </qualifier>
+                        </value>
+                    </example>
+                    <example type="neutral" caption="Verdacht auf 4MRGN">
+                        <value xsi:type="CD" code="SUSP" codeSystem="1.2.276.0.76.3.1.195.5.51" displayName="Verdacht">
+                            <qualifier>
+                                <name code="IBB" codeSystem="1.2.276.0.76.3.1.195.5.1" displayName="in Bezug auf Befund"/>
+                                <value code="BACP" codeSystem="1.2.276.0.76.3.1.195.5.1" displayName="Bakterienbesiedelung"/>
+                            </qualifier>
+                            <qualifier>
+                                <name code="URAG" codeSystem="1.2.276.0.76.3.1.195.5.1" displayName="Auslösendes Agenz"/>
+                                <value code="4MRGN" codeSystem="1.2.276.0.76.5.441" displayName="gramnegative Stäbchen, die gegen alle vier Gruppen resistent sind"/>
+                            </qualifier>
+                        </value>
+                    </example>
+                    <vocabulary valueSet="1.2.276.0.76.11.51" vsid="1.2.276.0.76.11.51" vsname="Findingsituation" vsdisplayName="Finding situation" vsstatusCode="draft" vseffectiveDate="2015-11-17T00:00:00" linkedartefactmissing="false"/>
+                    <element name="hl7:qualifier[hl7:name/@code='IBB']" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.326">
+                        <item original="false" label="ProblemobservationMDRO"/>
+                        <element name="hl7:name" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CV" id="2.16.840.1.113883.2.6.60.3.9.327">
+                            <item original="false" label="ProblemobservationMDRO"/>
+                            <vocabulary code="IBB" codeSystem="1.2.276.0.76.3.1.195.5.1"/>
+                        </element>
+                        <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CV" id="2.16.840.1.113883.2.6.60.3.9.328">
+                            <item original="false" label="ProblemobservationMDRO"/>
+                            <vocabulary code="BACP" codeSystem="1.2.276.0.76.3.1.195.5.1"/>
+                        </element>
+                    </element>
+                    <element name="hl7:qualifier[hl7:name/@code='URAG']" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.329">
+                        <item original="false" label="ProblemobservationMDRO"/>
+                        <element name="hl7:name" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CV" id="2.16.840.1.113883.2.6.60.3.9.330">
+                            <item original="false" label="ProblemobservationMDRO"/>
+                            <vocabulary code="URAG" codeSystem="1.2.276.0.76.3.1.195.5.1"/>
+                        </element>
+                        <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="CV" id="2.16.840.1.113883.2.6.60.3.9.331">
+                            <item original="false" label="ProblemobservationMDRO"/>
+                            <vocabulary valueSet="1.2.276.0.76.11.60" vsid="1.2.276.0.76.11.60" vsname="Multiresistantorganisms" vsdisplayName="Multiresistant Organisms (Carrier)" vseffectiveDate="2015-09-18T00:00:00" vsstatusCode="draft" linkedartefactmissing="false"/>
+                        </element>
+                    </element>
+                </element>
+                <let name="seq" value="//hl7:observation [hl7:templateId/@root = '1.2.276.0.76.10.4073']/hl7:value/hl7:qualifier [hl7:name/@code = 'URAG']/hl7:value"/>
+                <assert role="error" test="empty($seq[count(index-of($seq/@code|$seq/@nullFlavor,./@code|./@nullFlavor)) &gt; 1])">Nur eine Angabe pro Erreger bei multiresistenten Keimen</assert>
+            </element>
+            <staticAssociations/>
+            <ref type="dependency" prefix="aktin-" flexibility="2015-01-10T00:00:00" id="1.2.276.0.76.10.1015" name="EmergencymedicineNoteCDAdocumentv1" displayName="Emergency medicine Note CDA document" effectiveDate="2014-09-18T00:00:00" statusCode="active" versionLabel="v1" ident="aktin-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="2015-06-01T00:00:00" id="1.2.276.0.76.10.3047" name="ClinicalInformation" displayName="Klinische Basisinformationen" effectiveDate="2015-01-10T00:00:00" statusCode="active" isClosed="false" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="2015-09-18T00:00:00" id="1.2.276.0.76.10.4072" name="ProblemconcernactMDRO" displayName="Problem Concern Act (Multidrug-resistant organism)" effectiveDate="2015-06-01T00:00:00" statusCode="active" isClosed="false" ident="aktin-"/>
+        </template>
+    </template>
+</result>

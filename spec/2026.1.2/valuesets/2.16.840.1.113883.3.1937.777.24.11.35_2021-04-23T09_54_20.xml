@@ -1,0 +1,13 @@
+<valueSets>
+    <project ident="mide-">
+        <valueSet id="2.16.840.1.113883.3.1937.777.24.11.35" name="SNOMED_CT_Substances" displayName="SNOMED CT Substances" effectiveDate="2021-04-23T09:54:20" statusCode="draft">
+            <sourceCodeSystem id="2.16.840.1.1138836.96" identifierName="" canonicalUri="urn:oid:2.16.840.1.1138836.96" canonicalUriDSTU2="urn:oid:2.16.840.1.1138836.96" canonicalUriSTU3="urn:oid:2.16.840.1.1138836.96" canonicalUriR4="urn:oid:2.16.840.1.1138836.96" canonicalUriR4B="urn:oid:2.16.840.1.1138836.96" canonicalUriR5="urn:oid:2.16.840.1.1138836.96"/>
+            <publishingAuthority name="Konsortium DIFUTURE" inherited="project">
+                <addrLine type="uri">https://difuture.de</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <include code="105590001" codeSystem="2.16.840.1.1138836.96" displayName="Substance (substance)" op="descendent-of" exception="false"/>
+            </conceptList>
+        </valueSet>
+    </project>
+</valueSets>

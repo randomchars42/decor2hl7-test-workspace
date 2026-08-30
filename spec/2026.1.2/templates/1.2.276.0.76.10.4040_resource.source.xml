@@ -1,0 +1,89 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultLanguage="de-DE" id="1.2.276.0.76.10.4040" name="Problemobservationcedis" displayName="Problem Observation (Text/CEDIS)" effectiveDate="2015-09-18T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" xml:dummy-1="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-3="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance">
+    <desc language="de-DE">Beschwerden, Symptome, Diagnose, Probleme etc., hier: für Text Symptom und ggf. CEDIS-Kode</desc>
+    <classification type="cdaentrylevel"/>
+    <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.303" tmname="CDAObservation" tmdisplayName="CDA Observation" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-"/>
+    <relationship type="ADAPT" template="2.16.840.1.113883.10.20.22.4.4" tmid="2.16.840.1.113883.10.20.22.4.4" tmname="ProblemObservationV3" tmdisplayName="Problem Observation (V3)" tmeffectiveDate="2015-08-01T00:00:00" tmstatusCode="draft" tmversionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-"/>
+    <context id="**"/>
+    <example>
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4040"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="08edb7c0-2111-43f2-a784-9a5fdfaa67f0"/>
+                    <code code="75322-8" codeSystem="2.16.840.1.113883.6.1" displayName="Complaint"/>
+                    <text>
+                        <reference value="#compl-1"/>
+                    </text>
+                    <statusCode code="completed"/>
+                    <effectiveTime>
+                        <width value="2" unit="h"/>
+                    </effectiveTime>
+                    <value xsi:type="CE" code="651" codeSystem="1.2.276.0.76.5.439" displayName="Shortness of breath">
+                        <originalText>Kurzatmigkeit</originalText>
+                    </value>
+                </observation>
+            </example>
+    <element name="hl7:observation" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.238">
+                <attribute name="classCode" value="OBS" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.239"/>
+                <attribute name="moodCode" value="EVN" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.240"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.242">
+                    <attribute name="root" value="1.2.276.0.76.10.4040" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.243"/>
+                </element>
+                <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="*" datatype="II" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.244"/>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CE" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.245">
+                    <vocabulary code="75322-8" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.2.6.60.3.9.246">
+                    <desc language="de-DE">Textform, enthält hier lediglich reference in den Text der Section</desc>
+                    <element name="hl7:reference" minimumMultiplicity="1" maximumMultiplicity="1" datatype="URL" id="2.16.840.1.113883.2.6.60.3.9.247"/>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CS" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.248">
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:effectiveTime" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="IVL_TS" id="2.16.840.1.113883.2.6.60.3.9.1249">
+                    <example caption="Seit 2 Stunden">
+                        <effectiveTime>
+                            <width value="2" unit="h"/>
+                        </effectiveTime>
+                    </example>
+                    <example caption="Unbekannt, seit wann">
+                        <effectiveTime>
+                            <width nullFlavor="UNK"/>
+                        </effectiveTime>
+                    </example>
+                    <element name="hl7:width" minimumMultiplicity="1" maximumMultiplicity="1" datatype="PQ" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.249">
+                        <property unit="h"/>
+                    </element>
+                </element>
+                <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CE" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.252">
+                    <desc language="de-DE">CEDIS Kode</desc>
+                    <example type="neutral" caption="CEDIS-Code und Freitext">
+                        <value xsi:type="CE" code="007" codeSystem="1.2.276.0.76.5.439">
+                            <originalText>Allgemeine Schwäche</originalText>
+                        </value>
+                    </example>
+                    <example type="neutral" caption="CEDIS-Code mit displayName und Freitext">
+                        <value xsi:type="CE" code="006" codeSystem="1.2.276.0.76.5.439" displayName="Hypertonie">
+                            <originalText>Bluthochdruck</originalText>
+                        </value>
+                    </example>
+                    <example type="neutral" caption="CEDIS-Code nicht angegeben, nur Freitext">
+                        <value xsi:type="CE" nullFlavor="OTH">
+                            <originalText>Ohrensausen</originalText>
+                        </value>
+                    </example>
+                    <example type="neutral" caption="Vorstellungsgrund (CEDIS-Code) unbekannt">
+                        <value xsi:type="CE" nullFlavor="UNK"/>
+                    </example>
+                    <example type="neutral" caption="Vorstellungsgrund (CEDIS-Code) angegeben, aber kein (zusätzlicher) Freitext">
+                        <value xsi:type="CE" code="006" codeSystem="1.2.276.0.76.5.439" displayName="Hypertonie">
+                            <originalText nullFlavor="UNK"/>
+                        </value>
+                    </example>
+                    <vocabulary valueSet="1.2.276.0.76.11.61"/>
+                    <element name="hl7:originalText" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ST" conformance="C" id="2.16.840.1.113883.2.6.60.3.9.1556">
+                        <desc language="de-DE">Beschwerden bei Vorstellung (Freitext)</desc>
+                        <constraint language="de-DE">Sollte ab Version 2 (2016) immer angegeben werden oder als unbekannt markiert werden.</constraint>
+                    </element>
+                    <assert role="error" test="//hl7:templateId[@root='1.2.276.0.76.10.1015'] or @nullFlavor='UNK' or hl7:originalText">Der Vorstellungsgrund soll in value.originalText angegeben sein oder als unbekannt markiert werden.</assert>
+                </element>
+            </element>
+</template>

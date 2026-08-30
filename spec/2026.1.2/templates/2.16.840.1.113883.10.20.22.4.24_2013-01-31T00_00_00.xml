@@ -1,0 +1,77 @@
+<result xmlns:json="http://www.json.org">
+    <template id="2.16.840.1.113883.10.20.22.4.24" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:local="http://art-decor.org/local" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.20.22.4.24" hl7:dummy-default="urn:hl7-org:v3" local:dummy-2="http://art-decor.org/local" displayName="Drug Vehicle" cda:dummy-5="urn:hl7-org:v3" xml:dummy-3="http://www.w3.org/XML/1998/namespace" url="http://art-decor.org/decor/services/" xsi:dummy-6="http://www.w3.org/2001/XMLSchema-instance" versionLabel="1.1" isClosed="false" ident="ccda-" name="DrugVehicle" statusCode="draft" sdtc:dummy-1="urn:hl7-org:sdtc" effectiveDate="2013-01-31T00:00:00">
+            <desc language="en-US">This template represents the vehicle (e.g. saline, dextrose) for administering a medication.</desc>
+            <classification type="cdaentrylevel"/>
+            <context id="**"/>
+            <element name="cda:participantRole" id="2.16.840.1.113883.3.1937.99.3.9.518">
+                <item original="false" label="DrugVehicle"/>
+                <attribute name="classCode" value="MANU" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.519">
+                    <item label="conf-7490"/>
+                </attribute>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.520">
+                    <desc language="en-US">SHALL contain exactly one [1..1] templateId (CONF:7495) such that it</desc>
+                    <item label="conf-7495"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.22.4.24" isOptional="false" datatype="uid" id="2.16.840.1.113883.3.1937.99.3.9.521">
+                        <item label="conf-10493"/>
+                    </attribute>
+                </element>
+                <element name="cda:code" datatype="CE" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.522">
+                    <desc language="en-US">SHALL contain exactly one [1..1] code (CONF:19137).</desc>
+                    <item label="conf-19137"/>
+                    <vocabulary code="412307009" codeSystem="2.16.840.1.113883.6.96"/>
+                </element>
+                <element name="cda:playingEntity" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.523">
+                    <desc language="en-US">SHALL contain exactly one [1..1] playingEntity (CONF:7492).</desc>
+                    <item label="conf-7492"/>
+                    <element name="cda:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="false" id="2.16.840.1.113883.3.1937.99.3.9.524">
+                        <desc language="en-US">This playingEntity SHALL contain exactly one [1..1] code (CONF:7493).</desc>
+                        <item label="conf-7493"/>
+                    </element>
+                    <element name="cda:name" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.525">
+                        <desc language="en-US">This playingEntity MAY contain zero or one [0..1] name (CONF:7494).<p/> This playingEntity/name MAY be used for the vehicle name in text, such as Normal Saline</desc>
+                        <item label="conf-7494"/>
+                    </element>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="dependency" prefix="bccdapilot-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.3.1937.99.61.26.10.52" name="ProcedureActivityProcedure" displayName="Procedure Activity Procedure" effectiveDate="2019-03-06T11:55:46" statusCode="draft" versionLabel="1.1" ident="bccdapilot-"/>
+            <ref type="dependency" prefix="ssmith-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.3.1937.99.61.41.10.4" name="DischargeSummary" displayName="Discharge Summary" effectiveDate="2018-02-19T15:30:38" statusCode="draft" versionLabel="1.1" ident="ssmith-"/>
+            <ref type="contains" prefix="mide-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.3.1937.777.24.10.14" name="MedicationActivity" displayName="Medication Activity" effectiveDate="2019-01-16T10:56:33" statusCode="draft" versionLabel="1.1" ident="mide-"/>
+            <ref type="dependency" prefix="mide-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.3.1937.777.24.10.14" name="MedicationActivity" displayName="Medication Activity" effectiveDate="2019-01-16T10:56:33" statusCode="draft" versionLabel="1.1" ident="mide-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.22.1.2" name="ContinuityofCareDocumentCCD" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" displayName="Continuity of Care Document (CCD)" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.22.1.3" name="HistoryandPhysical" displayName="History and Physical" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.22.1.4" name="ConsultationNote" displayName="Consultation Note" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.22.1.6" name="ProcedureNote" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" displayName="Procedure Note" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.22.1.7" name="OperativeNote" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" displayName="Operative Note" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.22.1.8" name="DischargeSummary" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" displayName="Discharge Summary" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.22.1.9" name="ProgressNote" displayName="Progress Note" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.22.2.1" name="MedicationsSectionentriesoptional" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" displayName="Medications Section (entries optional)" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.22.2.1.1" name="MedicationsSectionentriesrequired" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" displayName="Medications Section (entries required)" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.22.2.2" name="ImmunizationsSectionentriesoptional" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" displayName="Immunizations Section (entries optional)" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.22.2.2.1" name="ImmunizationsSectionentriesrequired" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" displayName="Immunizations Section (entries required)" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.22.2.6" name="AllergiesSectionentriesoptional" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" displayName="Allergies Section (entries optional)" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.22.2.6.1" name="AllergiesSectionentriesrequired" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" displayName="Allergies Section (entries required)" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.22.2.7" name="ProceduresSectionentriesoptional" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" displayName="Procedures Section (entries optional)" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.22.2.7.1" name="ProceduresSectionentriesrequired" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" displayName="Procedures Section (entries required)" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.22.2.11" name="HospitalDischargeMedicationsSectionentriesoptional" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" displayName="Hospital Discharge Medications Section (entries optional)" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.22.2.11.1" name="HospitalDischargeMedicationsSectionentriesrequired" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" displayName="Hospital Discharge Medications Section (entries required)" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.22.2.25" name="AnesthesiaSection" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" displayName="Anesthesia Section" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.22.2.38" name="MedicationsAdministeredSection" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" displayName="Medications Administered Section" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.22.2.44" name="HospitalAdmissionMedicationsSectionentriesoptional" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" displayName="Hospital Admission Medications Section (entries optional)" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.22.4.7" name="Allergy-IntoleranceObservation" displayName="Allergy - Intolerance Observation" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.22.4.9" name="ReactionObservation" displayName="Reaction Observation" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.22.4.12" name="ProcedureActivityAct" displayName="Procedure Activity Act" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.22.4.13" name="ProcedureActivityObservation" displayName="Procedure Activity Observation" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.22.4.14" name="ProcedureActivityProcedure" displayName="Procedure Activity Procedure" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" ident="ccda-"/>
+            <ref type="contains" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.22.4.16" name="MedicationActivity" displayName="Medication Activity" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.22.4.16" name="MedicationActivity" displayName="Medication Activity" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.22.4.30" name="AllergyProblemAct" displayName="Allergy Problem Act" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.22.4.35" name="DischargeMedication" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" displayName="Discharge Medication" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.22.4.36" name="AdmissionMedication" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" displayName="Admission Medication" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.22.4.52" name="ImmunizationActivity" displayName="Immunization Activity" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" ident="ccda-"/>
+            <ref type="contains" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.22.4.52" name="ImmunizationActivity" displayName="Immunization Activity" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.24.3.90" name="SubstanceorDeviceAllergy-IntoleranceObservation" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" displayName="Substance or Device Allergy - Intolerance Observation" ident="ccda-"/>
+        </template>
+    </template>
+</result>

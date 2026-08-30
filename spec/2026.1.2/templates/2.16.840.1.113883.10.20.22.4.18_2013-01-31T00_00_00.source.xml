@@ -1,0 +1,70 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:local="http://art-decor.org/local" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.20.22.4.18" name="MedicationDispense" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" displayName="Medication Dispense" url="http://art-decor.org/decor/services/" ident="ccda-" sdtc:dummy-1="urn:hl7-org:sdtc" local:dummy-2="http://art-decor.org/local" xml:dummy-3="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-5="urn:hl7-org:v3" xsi:dummy-6="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">This template records the act of supplying medications (i.e., dispensing).</desc>
+            <classification type="cdaentrylevel"/>
+            <context id="**"/>
+            <element name="cda:supply" id="2.16.840.1.113883.3.1937.99.3.9.478">
+                <desc language="en-US">A supply act SHALL contain one product/Medication Information or one product/Immunization Medication Information template</desc>
+                <attribute name="classCode" value="SPLY" id="2.16.840.1.113883.3.1937.99.3.9.479">
+                    <item label="conf-7451"/>
+                </attribute>
+                <attribute name="moodCode" value="EVN" id="2.16.840.1.113883.3.1937.99.3.9.480">
+                    <item label="conf-7452"/>
+                </attribute>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.481">
+                    <desc language="en-US">SHALL contain exactly one [1..1] templateId (CONF:7453) such that it</desc>
+                    <item label="conf-7453"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.22.4.18" id="2.16.840.1.113883.3.1937.99.3.9.482">
+                        <item label="conf-10505"/>
+                    </attribute>
+                </element>
+                <element name="cda:id" datatype="II" minimumMultiplicity="1" maximumMultiplicity="*" isMandatory="false" id="2.16.840.1.113883.3.1937.99.3.9.483">
+                    <desc language="en-US">SHALL contain at least one [1..*] id (CONF:7454).</desc>
+                    <item label="conf-7454"/>
+                </element>
+                <element name="cda:statusCode" datatype="CS" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.484">
+                    <desc language="en-US">SHALL contain exactly one [1..1] statusCode, which SHALL be selected from ValueSet Medication Fill Status 2.16.840.1.113883.3.88.12.80.64 DYNAMIC (CONF:7455).</desc>
+                    <item label="conf-7455"/>
+                    <vocabulary valueSet="2.16.840.1.113883.3.88.12.80.64"/>
+                </element>
+                <element name="cda:effectiveTime" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.485">
+                    <desc language="en-US">SHOULD contain zero or one [0..1] effectiveTime (CONF:7456).</desc>
+                    <item label="conf-7456"/>
+                </element>
+                <element name="cda:repeatNumber" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.486">
+                    <desc language="en-US">SHOULD contain zero or one [0..1] repeatNumber (CONF:7457).<p/>In "EVN" (event) mood, the repeatNumber is the number of occurrences. For example, a repeatNumber of "3" in a dispense act means that the current dispensation is the 3rd.</desc>
+                    <item label="conf-7457"/>
+                </element>
+                <element name="cda:quantity" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.487">
+                    <desc language="en-US">SHOULD contain zero or one [0..1] quantity (CONF:7458).</desc>
+                    <item label="conf-7458"/>
+                </element>
+                <choice minimumMultiplicity="1">
+                    <desc language="en-US">A supply act SHALL contain one product/Medication Information or one product/Immunization Medication Information template</desc>
+                    <element name="cda:product" minimumMultiplicity="0" maximumMultiplicity="1" contains="2.16.840.1.113883.10.20.22.4.23" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.3.1937.99.3.9.488">
+                        <item label="conf-7459"/>
+                    </element>
+                    <element name="cda:product" minimumMultiplicity="0" maximumMultiplicity="1" contains="2.16.840.1.113883.10.20.22.4.54" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.3.1937.99.3.9.489">
+                        <item label="conf-9331"/>
+                    </element>
+                </choice>
+                <element name="cda:performer" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.490">
+                    <desc language="en-US">MAY contain zero or one [0..1] performer (CONF:7461).</desc>
+                    <item label="conf-7461"/>
+                    <element name="cda:assignedEntity" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.491">
+                        <desc language="en-US">The performer, if present, SHALL contain exactly one [1..1] assignedEntity (CONF:7467).</desc>
+                        <item label="conf-7467"/>
+                        <element name="cda:addr" datatype="AD" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.492">
+                            <desc language="en-US">This assignedEntity SHOULD contain zero or one [0..1] addr (CONF:7468).<p/> The content of addr SHALL be a conformant US Realm Address (AD.US.FIELDED) (2.16.840.1.113883.10.20.22.5.2)</desc>
+                            <item label="conf-7468"/>
+                            <assert role="error" test="cda:streetAddressLine and cda:city and ((not(cda:country) or cda:country!='US') or (cda:country='US' and cda:state and cda:postalCode))"> The content of addr SHALL be a conformant US Realm Address (AD.US.FIELDED) (2.16.840.1.113883.10.20.22.5.2)</assert>
+                        </element>
+                    </element>
+                </element>
+                <element name="cda:entryRelationship" minimumMultiplicity="0" maximumMultiplicity="1" contains="2.16.840.1.113883.10.20.22.4.17" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.3.1937.99.3.9.493">
+                    <item label="conf-7473"/>
+                    <attribute name="typeCode" value="REFR" id="2.16.840.1.113883.3.1937.99.3.9.494">
+                        <item label="conf-7474"/>
+                    </attribute>
+                </element>
+            </element>
+        </template>

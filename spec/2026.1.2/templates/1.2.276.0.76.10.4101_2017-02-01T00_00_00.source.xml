@@ -1,0 +1,80 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.4101" name="VitalSignObservationsOrganizer" displayName="Vital Sign Observations Organizer" effectiveDate="2017-02-01T00:00:00" statusCode="draft" lastModifiedDate="2026-04-27T15:47:14" url="http://art-decor.org/decor/services/" ident="aktin-" xml:dummy-1="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-3="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US" lastTranslated="2026-04-27T15:47:14">Vital Sign Observations Organizer</desc>
+            <desc language="de-DE" lastTranslated="2026-04-27T15:47:14">Vitalzeichen Observations Organizer</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.301" flexibility="2005-09-07T00:00:00"/>
+            <relationship type="ADAPT" template="2.16.840.1.113883.10.20.22.4.26" flexibility="2015-08-01T00:00:00"/>
+            <context id="**"/>
+            <example>
+                <example>
+                    <organizer classCode="CLUSTER" moodCode="EVN">
+                        <templateId root="1.2.276.0.76.10.4101"/>
+                        <statusCode code="completed"/>
+                        <component typeCode="COMP" contextConductionInd="true">
+                            <!-- Vital Signs Observation -->
+                </component>
+                    </organizer>
+                </example>
+            </example>
+            <element name="hl7:organizer" id="2.16.840.1.113883.2.6.60.3.9.1631872">
+                <attribute name="classCode" value="CLUSTER" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631873"/>
+                <attribute name="moodCode" value="EVN" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631874"/>
+                <element name="hl7:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631875">
+                    <attribute name="root" value="1.2.276.0.76.10.4101" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.1631876"/>
+                </element>
+                <element name="hl7:statusCode" datatype="CS" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631877">
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:effectiveTime" datatype="TS" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1642361">
+                    <desc language="de-DE" lastTranslated="2026-04-27T15:47:14">
+                <p>Zeitpunkt der Messung aller Vital Sign Beobachtungen in diesem Container.</p>
+            </desc>
+                </element>
+                <element name="hl7:component" contains="1.2.276.0.76.10.4030" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1631878">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631879"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.1631880"/>
+                </element>
+                <element name="hl7:component" contains="1.2.276.0.76.10.4031" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1631881">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631882"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.1631883"/>
+                </element>
+                <element name="hl7:component" contains="1.2.276.0.76.10.4251" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1631884">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631885"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.1631886"/>
+                </element>
+                <element name="hl7:component" contains="1.2.276.0.76.10.4032" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1631887">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631888"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.1631889"/>
+                </element>
+                <element name="hl7:component" contains="1.2.276.0.76.10.4033" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1631890">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631891"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.1631892"/>
+                </element>
+                <element name="hl7:component" contains="1.2.276.0.76.10.4034" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1631893">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631894"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.1631895"/>
+                </element>
+                <assert role="error" test="count(hl7:component/hl7:observation [hl7:templateId[@root = '1.2.276.0.76.10.4046']][hl7:targetSiteCode[@code = 'L']])&lt;=1 and count(hl7:component/hl7:observation [hl7:templateId[@root = '1.2.276.0.76.10.4046']][hl7:targetSiteCode[@code = 'R']])&lt;=1">Pupillenweite max 1x link und 1x rechts angeben</assert>
+                <element name="hl7:component" contains="1.2.276.0.76.10.4046" minimumMultiplicity="0" maximumMultiplicity="2" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1631896">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631897"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.1631898"/>
+                </element>
+                <assert role="error" test="count(hl7:component/hl7:observation [hl7:templateId[@root='1.2.276.0.76.10.4047']][hl7:targetSiteCode[@code = 'L']])&lt;=1 and count(hl7:component/hl7:observation [hl7:templateId[@root = '1.2.276.0.76.10.4047']][hl7:targetSiteCode[@code = 'R']])&lt;=1">Pupillenreaktion max 1x link und 1x rechts angeben</assert>
+                <element name="hl7:component" contains="1.2.276.0.76.10.4047" minimumMultiplicity="0" maximumMultiplicity="2" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1631899">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631900"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.1631901"/>
+                </element>
+                <element name="hl7:component" contains="1.2.276.0.76.10.4035" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1631902">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631903"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.1631904"/>
+                </element>
+                <element name="hl7:component" contains="1.2.276.0.76.10.4036" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1631905">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631906"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.1631907"/>
+                </element>
+                <element name="hl7:component" contains="1.2.276.0.76.10.4103" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1631908">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631909"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.1631910"/>
+                </element>
+            </element>
+        </template>

@@ -1,0 +1,15 @@
+<valueSet xmlns:json="http://www.json.org" id="2.16.840.1.113762.1.4.1099.12" name="MedicationRouteCCDA" displayName="Medication Route" effectiveDate="2018-07-02T16:22:48" statusCode="draft" versionLabel="20170914" canonicalUri="https://vsac.nlm.nih.gov/" url="http://art-decor.org/decor/services/" ident="ccda-">
+    <desc json:array="true" language="en-US">Terms used to describe the path by which a substance is taken into the body. &lt;br clear="none"/&gt;</desc>
+    <publishingAuthority json:array="true" name="HL7 International" inherited="project">
+        <addrLine json:array="true">Health Level Seven International</addrLine>
+        <addrLine json:array="true">3300 Washtenaw Avenue</addrLine>
+        <addrLine json:array="true">Suite 227</addrLine>
+        <addrLine json:array="true">Ann Arbor, MI 48104- 4261</addrLine>
+        <addrLine json:array="true">USA</addrLine>
+        <addrLine json:array="true">T +1 734 677 7777 </addrLine>
+        <addrLine json:array="true">F +1 734 677 6622</addrLine>
+        <addrLine json:array="true">E info@hl7.org</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+</valueSet>

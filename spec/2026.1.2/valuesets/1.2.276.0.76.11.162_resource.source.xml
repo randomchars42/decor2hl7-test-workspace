@@ -1,0 +1,17 @@
+<valueSet xmlns:json="http://www.json.org" id="1.2.276.0.76.11.162" name="S_KBV_VERSICHERTENSTATUS" displayName="S_KBV_VERSICHERTENSTATUS" effectiveDate="2014-01-01T00:00:00" statusCode="final" ident="kbvde-" url="http://art-decor.org/decor/services/" referencedFrom="dguvbbr-">
+    <desc json:array="true" language="de-DE">Versichertenstatus gibt an, ob ein Versicherter ein Familienversicherter, Mitglied oder Rentner ist. Auf der KVK ist diese Angabe Teil des Feldes VERSICHERTENSTATUS - die 1. Stelle.</desc>
+    <sourceCodeSystem json:array="true" id="2.16.840.1.113883.3.7.1.1" identifierName="KBV_CS_SFHIR_KBV_VERSICHERTENSTATUS" canonicalUri="urn:oid:2.16.840.1.113883.3.7.1.1" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.3.7.1.1" canonicalUriSTU3="urn:oid:2.16.840.1.113883.3.7.1.1" canonicalUriR4="urn:oid:2.16.840.1.113883.3.7.1.1" canonicalUriR4B="urn:oid:2.16.840.1.113883.3.7.1.1" canonicalUriR5="urn:oid:2.16.840.1.113883.3.7.1.1"/>
+    <publishingAuthority json:array="true" name="Kassenärztliche Bundesvereinigung" inherited="project">
+        <addrLine json:array="true">Geschäftsstelle</addrLine>
+        <addrLine json:array="true">Herbert-Lewin-Platz 2</addrLine>
+        <addrLine json:array="true">10623 Berlin</addrLine>
+        <addrLine json:array="true" type="uri">http://www.kbv.de</addrLine>
+        <addrLine json:array="true" type="email">info@kbv.de</addrLine>
+        <addrLine json:array="true" type="phone">+49 30 4005-0</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="concept" code="1" codeSystem="2.16.840.1.113883.3.7.1.1" displayName="Mitglied" level="0" type="L"/>
+    <items json:array="true" is="concept" code="3" codeSystem="2.16.840.1.113883.3.7.1.1" displayName="Familienangehörige" level="0" type="L"/>
+    <items json:array="true" is="concept" code="5" codeSystem="2.16.840.1.113883.3.7.1.1" displayName="Rentner" level="0" type="L"/>
+</valueSet>

@@ -1,0 +1,23 @@
+<codeSystems>
+    <project ident="mide-">
+        <codeSystem id="2.16.840.1.113883.3.1937.777.24.5.5" name="MII_Oncology_Organfunktion-Aszites_im_Ultraschall_Score" displayName="MII Onkologie: Organfunktion - Aszites im Ultraschall Score" effectiveDate="2023-01-25T21:37:37" statusCode="draft" lastModifiedDate="2023-08-08T16:17:52" language="de-DE">
+            <publishingAuthority name="Konsortium DIFUTURE" inherited="project">
+                <addrLine type="uri">https://difuture.de</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <codedConcept code="1" statusCode="draft" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Nicht vorhanden"/>
+                    <desc language="de-DE" lastTranslated="2023-01-25T21:39:19">Es ist kein Aszites vorhanden.</desc>
+                </codedConcept>
+                <codedConcept code="2" statusCode="draft" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Leicht"/>
+                    <desc language="de-DE" lastTranslated="2023-01-25T21:39:19">Es ist ein leichter Aszites vorhanden.</desc>
+                </codedConcept>
+                <codedConcept code="3" statusCode="draft" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Mittelgradig bis massiv"/>
+                    <desc language="de-DE" lastTranslated="2023-01-25T21:39:19">Ein mittelgradiger bis massiver Aszites ist vorhanden.</desc>
+                </codedConcept>
+            </conceptList>
+        </codeSystem>
+    </project>
+</codeSystems>

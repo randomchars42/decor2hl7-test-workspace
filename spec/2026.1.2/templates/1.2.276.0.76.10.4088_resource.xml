@@ -1,0 +1,86 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.4088" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.4088" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="Injury Event Detail" ident="aktin-" name="InjuryEventDetail" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="draft" url="http://art-decor.org/decor/services/" effectiveDate="2017-02-01T00:00:00">
+            <desc language="en-US">Injury Event Detail</desc>
+            <desc language="de-DE">Unfallereignis Details</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.301" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.301" tmname="CDAAct" tmdisplayName="CDA Act" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <relationship type="ADAPT" template="2.16.840.1.113883.3.2898.10.23" flexibility="2015-09-09T00:00:00" url="http://art-decor.org/decor/services/" linkedartefactmissing="true"/>
+            <context id="**"/>
+            <example type="neutral">
+                <act classCode="ACT" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4088"/>
+                    <code code="74209-8" codeSystem="2.16.840.1.113883.6.1" displayName="Injury event summary"/>
+                    <!-- Unfalldatum und -zeit -->
+                    <effectiveTime>
+                        <value low="20170102"/>
+                    </effectiveTime>
+                    <entryRelationship typeCode="COMP" contextConductionInd="true">
+                        <!-- Trauma Injury Observation Organizer -->
+                    </entryRelationship>
+                    <entryRelationship typeCode="COMP" contextConductionInd="true">
+                        <!-- Injury Cause Observation Organizer -->
+                    </entryRelationship>
+                    <entryRelationship typeCode="COMP" contextConductionInd="true">
+                        <!-- Safety Equipment Observation Organizer -->
+                    </entryRelationship>
+                    <entryRelationship typeCode="COMP" contextConductionInd="true">
+                        <!-- Pre-trauma ASA score -->
+                    </entryRelationship>
+                </act>
+            </example>
+            <element name="hl7:act" id="2.16.840.1.113883.2.6.60.3.9.163110">
+                <item original="false" label="InjuryEventDetail"/>
+                <attribute name="classCode" value="ACT" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.163111"/>
+                <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.163112"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.163113">
+                    <item original="false" label="InjuryEventDetail"/>
+                    <attribute name="root" value="1.2.276.0.76.10.4088" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.163114"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CV" id="2.16.840.1.113883.2.6.60.3.9.163115">
+                    <item original="false" label="InjuryEventDetail"/>
+                    <vocabulary code="74209-8" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.2.6.60.3.9.1631141">
+                    <desc language="de-DE">Beschreibung, falls Verkehrsunfall, lediglich reference in den Text der zugehörigen Section</desc>
+                    <item original="false" label="InjuryEventDetail"/>
+                    <element name="hl7:reference" minimumMultiplicity="1" maximumMultiplicity="1" datatype="URL" id="2.16.840.1.113883.2.6.60.3.9.1631829">
+                        <item original="false" label="InjuryEventDetail"/>
+                    </element>
+                </element>
+                <element name="hl7:effectiveTime" minimumMultiplicity="1" maximumMultiplicity="1" datatype="IVL_TS" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.163116">
+                    <item original="false" label="InjuryEventDetail"/>
+                    <element name="hl7:low" minimumMultiplicity="1" maximumMultiplicity="1" datatype="TS" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.163117">
+                        <item original="false" label="InjuryEventDetail"/>
+                    </element>
+                </element>
+                <element name="hl7:entryRelationship" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" contains="1.2.276.0.76.10.4089" id="2.16.840.1.113883.2.6.60.3.9.163118" tmid="1.2.276.0.76.10.4089" tmname="TraumaInjuryObservationOrganizer" tmdisplayName="Trauma Injury Observation Organizer" tmeffectiveDate="2017-02-01T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <item original="false" label="InjuryEventDetail"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.163119"/>
+                    <attribute name="contextConductionInd" value="true" isOptional="true" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.163120"/>
+                </element>
+                <element name="hl7:entryRelationship" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" contains="1.2.276.0.76.10.4090" id="2.16.840.1.113883.2.6.60.3.9.163121" tmid="1.2.276.0.76.10.4090" tmname="InjuryCauseObservationOrganizer" tmdisplayName="Injury Cause Observation Organizer" tmeffectiveDate="2017-02-01T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <item original="false" label="InjuryEventDetail"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.163122"/>
+                    <attribute name="contextConductionInd" value="true" isOptional="true" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.163123"/>
+                </element>
+                <element name="hl7:entryRelationship" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" contains="1.2.276.0.76.10.4091" id="2.16.840.1.113883.2.6.60.3.9.163124" tmid="1.2.276.0.76.10.4091" tmname="SafetyEquipmentObservationOrganizer" tmdisplayName="Safety Equipment Observation Organizer" tmeffectiveDate="2017-02-01T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <item original="false" label="InjuryEventDetail"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.163125"/>
+                    <attribute name="contextConductionInd" value="true" isOptional="true" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.163126"/>
+                </element>
+                <element name="hl7:entryRelationship" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" contains="1.2.276.0.76.10.4169" id="2.16.840.1.113883.2.6.60.3.9.1631241" tmid="1.2.276.0.76.10.4169" tmname="PretraumaASA" tmdisplayName="Pre-trauma ASA score" tmeffectiveDate="2017-02-09T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <item original="false" label="InjuryEventDetail"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631252"/>
+                    <attribute name="contextConductionInd" value="true" isOptional="true" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1631263"/>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.3068" name="Injuryeventsummary" displayName="Unfallereignis" effectiveDate="2017-01-10T00:00:00" statusCode="draft" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4089" name="TraumaInjuryObservationOrganizer" displayName="Trauma Injury Observation Organizer" effectiveDate="2017-02-01T00:00:00" statusCode="draft" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4090" name="InjuryCauseObservationOrganizer" displayName="Injury Cause Observation Organizer" effectiveDate="2017-02-01T00:00:00" statusCode="draft" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4091" name="SafetyEquipmentObservationOrganizer" displayName="Safety Equipment Observation Organizer" effectiveDate="2017-02-01T00:00:00" statusCode="draft" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4169" name="PretraumaASA" displayName="Pre-trauma ASA score" effectiveDate="2017-02-09T00:00:00" statusCode="draft" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+        </template>
+    </template>
+</result>

@@ -1,0 +1,20 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.777.21.1.1" effectiveDate="2018-05-07T19:19:12" statusCode="draft" versionLabel="ASIC Dataset" prefix="asic-" shortName="asicdataset" iddisplay="asic-dataset-1" url="http://art-decor.org/decor/services/" ident="asic-"><!--
+ This is a view of the dataset "ASIC-Dataset" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">ASIC-Dataset</name>
+    <desc language="de-DE"/>
+    <concept id="2.16.840.1.113883.3.1937.777.21.2.75" statusCode="cancelled" versionLabel="xx" effectiveDate="2018-05-15T10:00:09" type="item" iddisplay="asic-dataelement-75">
+        <implementation markdown="Tidalvolumen bei volumenkontrollierter Beatmung mL"/>
+        <name language="de-DE">Vt Volumen</name>
+        <desc language="de-DE">
+            <span style="display: inline !important; float: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); cursor: text; font-family: arial,sans,sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: pre-wrap; word-spacing: 0px; word-wrap: break-word;">Tidalvolumen bei volumenkontrollierter Beatmung 
+mL
+</span>
+        </desc>
+        <valueDomain type="quantity">
+            <property unit="mL" fractionDigits="2"/>
+        </valueDomain>
+    </concept>
+</dataset>

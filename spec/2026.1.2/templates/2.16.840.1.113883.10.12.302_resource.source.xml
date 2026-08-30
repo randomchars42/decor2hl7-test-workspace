@@ -1,0 +1,62 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.12.302" name="CDAEncounter" displayName="CDA Encounter" effectiveDate="2005-09-07T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" sdtc:dummy-1="urn:hl7-org:sdtc" xml:dummy-2="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-4="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">Template CDA Encounter (prototype, directly derived from POCD_RM000040 MIF)</desc>
+            <desc language="nl-NL">Template CDA Encounter (prototype, direct afgeleid uit POCD_RM000040 MIF)</desc>
+            <desc language="de-DE">Template CDA Encounter (Prototyp, direkt abgeleitet aus POCD_RM000040 MIF)</desc>
+            <classification type="cdaentrylevel"/>
+            <context id="**"/>
+            <element name="hl7:encounter" id="2.16.840.1.113883.3.1937.777.1.9.331">
+                <attribute name="classCode" value="ENC" id="2.16.840.1.113883.3.1937.777.1.9.332"/>
+                <attribute name="moodCode" datatype="cs" id="2.16.840.1.113883.3.1937.777.1.9.333">
+                    <!--valueSet name="x_DocumentEncounterMood"-->
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.19459"/>
+                </attribute>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.3.1937.777.1.9.334">
+                    <attribute name="root" value="2.16.840.1.113883.10.12.302" id="2.16.840.1.113883.3.1937.777.1.9.335"/>
+                </element>
+                <element name="hl7:id" minimumMultiplicity="0" maximumMultiplicity="*" datatype="II" id="2.16.840.1.113883.3.1937.777.1.9.336"/>
+                <element name="hl7:code" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CD" id="2.16.840.1.113883.3.1937.777.1.9.337">
+                    <!--valueSet name="ActEncounterCode"-->
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.13955"/>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.3.1937.777.1.9.338"/>
+                <element name="hl7:statusCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CS" id="2.16.840.1.113883.3.1937.777.1.9.339">
+                    <!--valueSet name="ActStatus"-->
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.15933"/>
+                </element>
+                <element name="hl7:effectiveTime" minimumMultiplicity="0" maximumMultiplicity="1" datatype="IVL_TS" id="2.16.840.1.113883.3.1937.777.1.9.340"/>
+                <element name="hl7:priorityCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.1.9.341">
+                    <!--valueSet name="ActPriority"-->
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.16866"/>
+                </element>
+                <!-- begin CS associations -->
+                <!--contains name="CDASubjectBody"-->
+                <element name="hl7:subject" minimumMultiplicity="0" maximumMultiplicity="1" contains="2.16.840.1.113883.10.12.320" id="2.16.840.1.113883.3.1937.777.1.9.342"/>
+                <!--contains name="CDASpecimen"-->
+                <element name="hl7:specimen" minimumMultiplicity="0" maximumMultiplicity="*" contains="2.16.840.1.113883.10.12.322" id="2.16.840.1.113883.3.1937.777.1.9.343"/>
+                <!--contains name="CDAPerformerBody"-->
+                <element name="hl7:performer" minimumMultiplicity="0" maximumMultiplicity="*" contains="2.16.840.1.113883.10.12.323" id="2.16.840.1.113883.3.1937.777.1.9.344"/>
+                <!--contains name="CDAAuthorBody"-->
+                <element name="hl7:author" minimumMultiplicity="0" maximumMultiplicity="*" contains="2.16.840.1.113883.10.12.318" id="2.16.840.1.113883.3.1937.777.1.9.345"/>
+                <!--contains name="CDAinformantBody"-->
+                <element name="hl7:informant" minimumMultiplicity="0" maximumMultiplicity="*" contains="2.16.840.1.113883.10.12.319" id="2.16.840.1.113883.3.1937.777.1.9.346"/>
+                <!--contains name="CDAParticipantBody"-->
+                <element name="hl7:participant" minimumMultiplicity="0" maximumMultiplicity="*" contains="2.16.840.1.113883.10.12.321" id="2.16.840.1.113883.3.1937.777.1.9.347"/>
+                <!--contains name="CDAClinicalStatement"-->
+                <element name="hl7:entryRelationship" minimumMultiplicity="0" maximumMultiplicity="*" contains="2.16.840.1.113883.10.12.300" id="2.16.840.1.113883.3.1937.777.1.9.348">
+                    <attribute name="typeCode" datatype="cs" isOptional="false" id="2.16.840.1.113883.3.1937.777.1.9.349">
+                        <!--valueSet name="x_ActRelationshipEntryRelationship"-->
+                        <vocabulary valueSet="2.16.840.1.113883.1.11.19447"/>
+                    </attribute>
+                    <attribute name="contextConductionInd" datatype="bl" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.350"/>
+                    <attribute name="inversionInd" datatype="bl" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.351"/>
+                    <attribute name="negationInd" datatype="bl" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.352"/>
+                    <element name="hl7:sequenceNumber" minimumMultiplicity="0" maximumMultiplicity="1" datatype="INT" id="2.16.840.1.113883.3.1937.777.1.9.353"/>
+                    <element name="hl7:seperatableInd" minimumMultiplicity="0" maximumMultiplicity="1" datatype="BL" id="2.16.840.1.113883.3.1937.777.1.9.354"/>
+                </element>
+                <!--contains name="CDAReference"-->
+                <element name="hl7:reference" minimumMultiplicity="0" maximumMultiplicity="*" contains="2.16.840.1.113883.10.12.324" id="2.16.840.1.113883.3.1937.777.1.9.355"/>
+                <!--contains name="CDAPrecondition"-->
+                <element name="hl7:precondition" minimumMultiplicity="0" maximumMultiplicity="*" contains="2.16.840.1.113883.10.12.329" id="2.16.840.1.113883.3.1937.777.1.9.356"/>
+                <!-- end CS associations -->
+            </element>
+        </template>

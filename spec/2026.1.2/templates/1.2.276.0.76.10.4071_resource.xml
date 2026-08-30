@@ -1,0 +1,46 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.4071" ident="aktin-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.4071" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="External Document Reference" ident="aktin-" name="ExternalDocumentReference" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="active" url="http://art-decor.org/decor/services/" effectiveDate="2015-03-30T00:00:00">
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.328" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.328" tmname="CDAExternalDocument" tmdisplayName="CDA ExternalDocument" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <relationship type="ADAPT" template="2.16.840.1.113883.10.20.22.4.115" flexibility="2014-06-09T00:00:00" tmid="2.16.840.1.113883.10.20.22.4.115" tmname="ExternalDocumentReference" tmeffectiveDate="2014-06-09T00:00:00" tmstatusCode="draft" tmdisplayName="External Document Reference" tmversionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <example type="neutral">
+                <externalDocument classCode="DOC" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4071"/>
+                    <code code="53576-5" codeSystem="2.16.840.1.113883.6.1"/>
+                    <text>
+                        <reference value="#edoc-1"/>
+                    </text>
+                </externalDocument>
+            </example>
+            <element name="hl7:externalDocument" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631760">
+                <item original="false" label="ExternalDocumentReference"/>
+                <attribute name="classCode" value="DOC" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631761"/>
+                <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631762"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.1631763">
+                    <item original="false" label="ExternalDocumentReference"/>
+                    <attribute name="root" value="1.2.276.0.76.10.4071" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.1631764"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CV" id="2.16.840.1.113883.2.6.60.3.9.1631765">
+                    <item original="false" label="ExternalDocumentReference"/>
+                    <vocabulary valueSet="1.2.276.0.76.11.57" vsid="1.2.276.0.76.11.57" vsname="Modulesdocumenttypes" vsdisplayName="Modules document types" vseffectiveDate="2015-03-26T00:00:00" vsstatusCode="draft" linkedartefactmissing="false"/>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.2.6.60.3.9.1631766">
+                    <desc language="de-DE">Lediglich reference in den Text der zugehörigen Section</desc>
+                    <item original="false" label="ExternalDocumentReference"/>
+                    <element name="hl7:reference" minimumMultiplicity="1" maximumMultiplicity="1" datatype="URL" id="2.16.840.1.113883.2.6.60.3.9.1631767">
+                        <item original="false" label="ExternalDocumentReference"/>
+                    </element>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="dependency" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.92" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2025-11-12T00:00:00" statusCode="retired" versionLabel="v3transit" lastModifiedDate="2026-03-25T11:04:45" ident="aktin-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.93" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2026-03-25T11:04:07" statusCode="draft" versionLabel="v4transit" lastModifiedDate="2026-04-29T18:39:46" ident="aktin-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.1015" name="EmergencymedicineNoteCDAdocumentv1" displayName="Emergency medicine Note CDA document" effectiveDate="2014-09-18T00:00:00" statusCode="active" versionLabel="v1" ident="aktin-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.1019" name="EmergencymedicineNoteCDAdocumentv2" displayName="Emergency medicine Note CDA document" effectiveDate="2016-06-01T00:00:00" statusCode="active" versionLabel="v2" ident="aktin-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.3057" name="Additionalmodulessection" displayName="Zusatzmodule (weitere Dokumentation)" effectiveDate="2015-03-30T00:00:00" statusCode="active" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4070" name="Additionalexternalocuments" displayName="Zusätzliche externe Dokumentation" effectiveDate="2015-03-30T00:00:00" statusCode="active" ident="aktin-"/>
+        </template>
+    </template>
+</result>

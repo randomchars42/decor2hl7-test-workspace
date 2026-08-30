@@ -1,0 +1,18 @@
+<valueSet xmlns:json="http://www.json.org" id="1.2.276.0.76.11.121" name="S_ICD_DIAGNOSESICHERHEIT" displayName="S_ICD_DIAGNOSESICHERHEIT" effectiveDate="2005-08-01T00:00:00" statusCode="final" ident="kbvde-" url="http://art-decor.org/decor/services/" referencedFrom="dguvbbr-">
+    <desc json:array="true" language="de-DE">Die Diagnosesicherheit gibt an, wie sicher eine gestellte Diagnose ist. Es handelt sich hier um Zusatzkennzeichen zur Diagnose (ICD-10) im ambulanten Bereich. Die Angaben zur Diagnosesicherheit entsprechen der Vorgabe im KVDT.</desc>
+    <sourceCodeSystem json:array="true" id="1.2.276.0.76.3.1.1.5.1.21" identifierName="KBV_CS_SFHIR_ICD_DIAGNOSESICHERHEIT" canonicalUri="urn:oid:1.2.276.0.76.3.1.1.5.1.21" canonicalUriDSTU2="urn:oid:1.2.276.0.76.3.1.1.5.1.21" canonicalUriSTU3="urn:oid:1.2.276.0.76.3.1.1.5.1.21" canonicalUriR4="urn:oid:1.2.276.0.76.3.1.1.5.1.21" canonicalUriR4B="urn:oid:1.2.276.0.76.3.1.1.5.1.21" canonicalUriR5="urn:oid:1.2.276.0.76.3.1.1.5.1.21"/>
+    <publishingAuthority json:array="true" name="Kassenärztliche Bundesvereinigung" inherited="project">
+        <addrLine json:array="true">Geschäftsstelle</addrLine>
+        <addrLine json:array="true">Herbert-Lewin-Platz 2</addrLine>
+        <addrLine json:array="true">10623 Berlin</addrLine>
+        <addrLine json:array="true" type="uri">http://www.kbv.de</addrLine>
+        <addrLine json:array="true" type="email">info@kbv.de</addrLine>
+        <addrLine json:array="true" type="phone">+49 30 4005-0</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="concept" code="A" codeSystem="1.2.276.0.76.3.1.1.5.1.21" displayName="ausgeschlossen" level="0" type="L"/>
+    <items json:array="true" is="concept" code="G" codeSystem="1.2.276.0.76.3.1.1.5.1.21" displayName="gesicherte Diagnose" level="0" type="L"/>
+    <items json:array="true" is="concept" code="V" codeSystem="1.2.276.0.76.3.1.1.5.1.21" displayName="Verdacht auf / zum Ausschluss von" level="0" type="L"/>
+    <items json:array="true" is="concept" code="Z" codeSystem="1.2.276.0.76.3.1.1.5.1.21" displayName="Zustand nach" level="0" type="L"/>
+</valueSet>

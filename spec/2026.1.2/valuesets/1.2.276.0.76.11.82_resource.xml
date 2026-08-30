@@ -1,0 +1,41 @@
+<valueSets>
+    <repository url="http://art-decor.org/decor/services/" ident="aktin-" referencedFrom="dguvbbr-" projecttype="local">
+        <valueSet id="1.2.276.0.76.11.82" name="NACAscore" displayName="NACA Score" statusCode="draft" effectiveDate="2017-03-01T00:00:00">
+            <sourceCodeSystem id="1.2.276.0.76.5.82" identifierName="" canonicalUri="urn:oid:1.2.276.0.76.5.82" canonicalUriDSTU2="urn:oid:1.2.276.0.76.5.82" canonicalUriSTU3="urn:oid:1.2.276.0.76.5.82" canonicalUriR4="urn:oid:1.2.276.0.76.5.82" canonicalUriR4B="urn:oid:1.2.276.0.76.5.82" canonicalUriR5="urn:oid:1.2.276.0.76.5.82"/>
+            <publishingAuthority name="AKTIN e. V." inherited="project">
+                <addrLine>c/o Uniklinik RWTH Aachen</addrLine>
+                <addrLine>Institut für Medizinische Informatik</addrLine>
+                <addrLine>Pauwelsstraße 35</addrLine>
+                <addrLine>52074 Aachen</addrLine>
+                <addrLine type="phone">Tel. +49 391 67 28186</addrLine>
+                <addrLine type="email">office@aktin.org</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <concept code="0" codeSystem="1.2.276.0.76.5.82" displayName="NACA 0" level="0" type="L">
+                    <desc language="de-DE">Keine Verletzung oder Erkrankung.</desc>
+                </concept>
+                <concept code="I" codeSystem="1.2.276.0.76.5.82" displayName="NACA I" level="0" type="L">
+                    <desc language="de-DE">Geringfügige Störung. Keine ärztliche Intervention erforderlich.</desc>
+                </concept>
+                <concept code="II" codeSystem="1.2.276.0.76.5.82" displayName="NACA II" level="0" type="L">
+                    <desc language="de-DE">Leichte bis mäßig schwere Störung. Ambulante ärztliche Abklärung, in der Regel aber keine notärztlichen Maßnahmen erforderlich.</desc>
+                </concept>
+                <concept code="III" codeSystem="1.2.276.0.76.5.82" displayName="NACA III" level="0" type="L">
+                    <desc language="de-DE">Mäßige bis schwere, aber nicht lebensbedrohliche Störung. Stationäre Behandlung erforderlich, häufig auch notärztliche Maßnahmen vor Ort.</desc>
+                </concept>
+                <concept code="IV" codeSystem="1.2.276.0.76.5.82" displayName="NACA IV" level="0" type="L">
+                    <desc language="de-DE">Schwere Störung, bei der die kurzfristige Entwicklung einer Lebensbedrohung nicht ausgeschlossen werden kann; in den überwiegenden Fällen ist eine notärztliche Versorgung erforderlich.</desc>
+                </concept>
+                <concept code="V" codeSystem="1.2.276.0.76.5.82" displayName="NACA V" level="0" type="L">
+                    <desc language="de-DE">Akute Lebensgefahr.</desc>
+                </concept>
+                <concept code="VI" codeSystem="1.2.276.0.76.5.82" displayName="NACA VI" level="0" type="L">
+                    <desc language="de-DE">Reanimation.</desc>
+                </concept>
+                <concept code="VII" codeSystem="1.2.276.0.76.5.82" displayName="NACA VII" level="0" type="L">
+                    <desc language="de-DE">Tod.</desc>
+                </concept>
+            </conceptList>
+        </valueSet>
+    </repository>
+</valueSets>

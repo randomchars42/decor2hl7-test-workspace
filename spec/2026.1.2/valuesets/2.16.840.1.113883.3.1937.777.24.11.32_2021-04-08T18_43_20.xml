@@ -1,0 +1,13 @@
+<valueSets>
+    <project ident="mide-">
+        <valueSet id="2.16.840.1.113883.3.1937.777.24.11.32" name="SNOMED-CT-Specimen-Processing" displayName="SNOMED CT Specimen Processing" effectiveDate="2021-04-08T18:43:20" statusCode="draft">
+            <sourceCodeSystem id="2.16.840.1.1138836.96" identifierName="" canonicalUri="urn:oid:2.16.840.1.1138836.96" canonicalUriDSTU2="urn:oid:2.16.840.1.1138836.96" canonicalUriSTU3="urn:oid:2.16.840.1.1138836.96" canonicalUriR4="urn:oid:2.16.840.1.1138836.96" canonicalUriR4B="urn:oid:2.16.840.1.1138836.96" canonicalUriR5="urn:oid:2.16.840.1.1138836.96"/>
+            <publishingAuthority name="Konsortium DIFUTURE" inherited="project">
+                <addrLine type="uri">https://difuture.de</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <include code="108252007" codeSystem="2.16.840.1.1138836.96" displayName="Laboratory procedure (procedure)" op="descendent-of" exception="false"/>
+            </conceptList>
+        </valueSet>
+    </project>
+</valueSets>

@@ -1,0 +1,44 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.3.1.195.10.13" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.3.1.195.10.13" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" lastModifiedDate="2025-12-22T18:07:51" versionLabel="2024" isClosed="false" displayName="Wiedervorstellung" ident="aktin-" name="wiedervorstellung" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="draft" url="http://art-decor.org/decor/services/" effectiveDate="2024-08-13T11:44:56">
+            <desc language="de-DE" lastTranslated="2024-08-13T11:44:56">Wiedervorstellung</desc>
+            <classification type="cdasectionlevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.201" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.201" tmname="CDASection" tmdisplayName="CDA Section" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <element name="hl7:section" id="2.16.840.1.113883.2.6.60.3.9.45">
+                <item original="false" label="wiedervorstellung"/>
+                <attribute name="classCode" value="DOCSECT" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.46"/>
+                <element name="hl7:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.47">
+                    <item original="false" label="wiedervorstellung"/>
+                    <attribute name="root" value="1.2.276.0.76.3.1.195.10.13" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.48"/>
+                </element>
+                <element name="hl7:code" datatype="CD" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.49">
+                    <item original="false" label="wiedervorstellung"/>
+                    <vocabulary code="LA21590-7" codeSystem="2.16.840.1.113883.6.1" displayName="Follow-up visit"/>
+                </element>
+                <element name="hl7:title" datatype="ST" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.50">
+                    <item original="false" label="wiedervorstellung"/>
+                    <text>Wiedervorstellung</text>
+                </element>
+                <element name="hl7:text" datatype="SD.TEXT" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.51">
+                    <item original="false" label="wiedervorstellung"/>
+                </element>
+                <element name="hl7:entry" contains="1.2.276.0.76.3.1.195.10.14" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.52" tmid="1.2.276.0.76.3.1.195.10.14" tmname="ungeplante_wv_gleicher_vorstellungsgrund_binnen_28_tagen" tmdisplayName="Ungeplante Vorstellung zum gleichen Vorstellungsgrund innerhalb von 28 Tagen" tmeffectiveDate="2024-05-24T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <item original="false" label="wiedervorstellung"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.53"/>
+                    <attribute name="contextConductionInd" value="true" isOptional="true" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.54"/>
+                </element>
+                <element name="hl7:entry" contains="1.2.276.0.76.3.1.195.10.15" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1531717" tmid="1.2.276.0.76.3.1.195.10.15" tmname="zeit_seit_letzter_wv_gleicher_vorstellungsgrund" tmdisplayName="Zeit seit letzter Vorstellung zum gleichen Vorstellungsgrund" tmeffectiveDate="2024-05-24T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <item original="false" label="wiedervorstellung"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631716"/>
+                    <attribute name="contextConductionInd" value="true" isOptional="true" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1631717"/>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.2" name="episodenzusammenfassung-notaufnahmeregister" displayName="Episodenzusammenfassung Notaufnahmeregister" effectiveDate="2024-03-21T00:00:00" statusCode="draft" versionLabel="2024" lastModifiedDate="2024-08-20T14:08:22" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.14" name="ungeplante_wv_gleicher_vorstellungsgrund_binnen_28_tagen" displayName="Ungeplante Vorstellung zum gleichen Vorstellungsgrund innerhalb von 28 Tagen" effectiveDate="2024-05-24T00:00:00" statusCode="draft" isClosed="false" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.15" name="zeit_seit_letzter_wv_gleicher_vorstellungsgrund" displayName="Zeit seit letzter Vorstellung zum gleichen Vorstellungsgrund" effectiveDate="2024-05-24T00:00:00" statusCode="draft" isClosed="false" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="2024-08-13T11:44:56" id="1.2.276.0.76.3.1.195.10.92" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2025-11-12T00:00:00" statusCode="retired" versionLabel="v3transit" lastModifiedDate="2026-03-25T11:04:45" ident="aktin-"/>
+        </template>
+    </template>
+</result>

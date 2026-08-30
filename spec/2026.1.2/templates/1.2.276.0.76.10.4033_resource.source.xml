@@ -1,0 +1,45 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultLanguage="de-DE" id="1.2.276.0.76.10.4033" name="HeartRate" displayName="Herzfrequenz" effectiveDate="2014-09-16T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" xml:dummy-1="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-3="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance">
+    <desc language="de-DE">Herzfrequenz des Patienten [Schläge/min] per EKG abgeleitet</desc>
+    <desc language="en-US">Heart rate</desc>
+    <classification type="cdaentrylevel"/>
+    <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.303" tmname="CDAObservation" tmdisplayName="CDA Observation" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-"/>
+    <context id="**"/>
+    <example>
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4033"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="bbfb672e-a620-4aa4-9117-bdd8b2505aaa"/>
+                    <code code="8867-4" codeSystem="2.16.840.1.113883.6.1" displayName="Heart Rate"/>
+                    <statusCode code="completed"/>
+                    <effectiveTime value="20140919"/>
+                    <value xsi:type="PQ" value="67" unit="/min"/>
+                </observation>
+            </example>
+    <element name="hl7:observation" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.1631612">
+                <attribute name="classCode" value="OBS" id="2.16.840.1.113883.2.6.60.3.9.1631613"/>
+                <attribute name="moodCode" value="EVN" id="2.16.840.1.113883.2.6.60.3.9.1631614"/>
+                <!-- Element templateId -->
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.1631615">
+                    <attribute name="root" value="1.2.276.0.76.10.4033" id="2.16.840.1.113883.2.6.60.3.9.1631616"/>
+                </element>
+                <!-- Element id -->
+                <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.1631617"/>
+                <!-- Element code -->
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CE" id="2.16.840.1.113883.2.6.60.3.9.1631618">
+                    <vocabulary code="8867-4" codeSystem="2.16.840.1.113883.6.1" displayName="Heart Rate"/>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.2.6.60.3.9.1631619">
+                    <desc language="de-DE">Lediglich reference in den Text der zugehörigen Section</desc>
+                    <element name="hl7:reference" minimumMultiplicity="1" maximumMultiplicity="1" datatype="URL" id="2.16.840.1.113883.2.6.60.3.9.1631620"/>
+                </element>
+                <!-- Element statusCode -->
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CS" id="2.16.840.1.113883.2.6.60.3.9.1631621">
+                    <vocabulary code="completed"/>
+                </element>
+                <!-- Element effectiveTime -->
+                <element name="hl7:effectiveTime" minimumMultiplicity="0" maximumMultiplicity="1" datatype="TS" id="2.16.840.1.113883.2.6.60.3.9.1631622"/>
+                <!-- Element value -->
+                <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="PQ" id="2.16.840.1.113883.2.6.60.3.9.9">
+                    <property unit="/min"/>
+                </element>
+            </element>
+</template>

@@ -1,0 +1,56 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.4070" ident="aktin-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.4070" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="Zusätzliche externe Dokumentation" ident="aktin-" name="Additionalexternalocuments" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="active" url="http://art-decor.org/decor/services/" effectiveDate="2015-03-30T00:00:00">
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.301" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.301" tmname="CDAAct" tmdisplayName="CDA Act" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <relationship type="ADAPT" template="1.3.6.1.4.1.19376.1.5.3.1.4.4" tmid="1.3.6.1.4.1.19376.1.5.3.1.4.4" tmname="IHEExternalReferenceEntry" tmdisplayName="IHE External Reference Entry" tmeffectiveDate="2013-12-20T00:00:00" tmstatusCode="active" tmversionLabel="2014" url="https://art-decor.ihe-europe.net/decor/services/" ident="IHE-PCC-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <example type="neutral">
+                <act classCode="ACT" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4070"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="285e1c44-5027-4b2b-b21c-e987b55567ee"/>
+                    <code code="11516-2" codeSystem="2.16.840.1.113883.6.1"/>
+                    <reference typeCode="SPRT">
+                        <!-- 1.2.276.0.76.10.4071 ExternalDocumentReference .. -->
+                    </reference>
+                    <reference typeCode="SPRT">
+                        <!-- 1.2.276.0.76.10.4071 ExternalDocumentReference .. -->
+                    </reference>
+                </act>
+            </example>
+            <element name="hl7:act" id="2.16.840.1.113883.2.6.60.3.9.1631750">
+                <item original="false" label="Additionalexternalocuments"/>
+                <attribute name="classCode" value="ACT" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631751"/>
+                <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631752"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.1631753">
+                    <item original="false" label="Additionalexternalocuments"/>
+                    <attribute name="root" value="1.2.276.0.76.10.4070" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.1631754"/>
+                </element>
+                <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="*" isMandatory="true" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.1631755">
+                    <item original="false" label="Additionalexternalocuments"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" datatype="CV" id="2.16.840.1.113883.2.6.60.3.9.1631756">
+                    <item original="false" label="Additionalexternalocuments"/>
+                    <vocabulary code="11516-2" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.2.6.60.3.9.1631757">
+                    <desc language="de-DE">Lediglich reference in den Text der zugehörigen Section</desc>
+                    <item original="false" label="Additionalexternalocuments"/>
+                    <element name="hl7:reference" minimumMultiplicity="1" maximumMultiplicity="1" datatype="URL" id="2.16.840.1.113883.2.6.60.3.9.1631758">
+                        <item original="false" label="Additionalexternalocuments"/>
+                    </element>
+                </element>
+                <element name="hl7:reference" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" contains="1.2.276.0.76.10.4071" id="2.16.840.1.113883.2.6.60.3.9.1631759" tmid="1.2.276.0.76.10.4071" tmname="ExternalDocumentReference" tmdisplayName="External Document Reference" tmeffectiveDate="2015-03-30T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <item original="false" label="Additionalexternalocuments"/>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="dependency" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.92" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2025-11-12T00:00:00" statusCode="retired" versionLabel="v3transit" lastModifiedDate="2026-03-25T11:04:45" ident="aktin-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.93" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2026-03-25T11:04:07" statusCode="draft" versionLabel="v4transit" lastModifiedDate="2026-04-29T18:39:46" ident="aktin-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.1015" name="EmergencymedicineNoteCDAdocumentv1" displayName="Emergency medicine Note CDA document" effectiveDate="2014-09-18T00:00:00" statusCode="active" versionLabel="v1" ident="aktin-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.1019" name="EmergencymedicineNoteCDAdocumentv2" displayName="Emergency medicine Note CDA document" effectiveDate="2016-06-01T00:00:00" statusCode="active" versionLabel="v2" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.3057" name="Additionalmodulessection" displayName="Zusatzmodule (weitere Dokumentation)" effectiveDate="2015-03-30T00:00:00" statusCode="active" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4071" name="ExternalDocumentReference" displayName="External Document Reference" effectiveDate="2015-03-30T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+        </template>
+    </template>
+</result>

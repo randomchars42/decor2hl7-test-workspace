@@ -1,0 +1,151 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.2036" ident="aktin-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.2036" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="CDA encompassingEncounter Patientenkontakt (Basis)" ident="aktin-" name="CDAEncompassingEncounter" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="draft" url="http://art-decor.org/decor/services/" effectiveDate="2016-06-01T00:00:00">
+            <desc language="en-US"/>
+            <classification type="cdaheaderlevel"/>
+            <relationship type="ADAPT" template="1.2.276.0.76.10.2027" flexibility="2014-08-25T00:00:00" tmid="1.2.276.0.76.10.2027" tmname="HeaderEncompassingEncounter" tmdisplayName="CDA encompassingEncounter Patientenkontakt" tmstatusCode="review" tmversionLabel="1.1" tmeffectiveDate="2014-08-25T00:00:00" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false"/>
+            <example type="neutral">
+                <componentOf>
+                    <encompassingEncounter classCode="ENC" moodCode="EVN">
+                        <!-- Aufnahme-Identifikator -->
+                        <id root="1.2.276.0.76.3.87686.1.45" extension="657827456837"/>
+                        <!-- Abrechnung-Fallnummer -->
+                        <id root="1.2.276.0.76.3.87686.1.45" extension="21197154"/>
+                        <effectiveTime>
+                            <!-- Aufnahmezeitpunkt (Datum und Zeit), Zeitangabe genau bis auf die Minute -->
+                            <low value="201503041234"/>
+                            <!-- Ende Patientenkontakt = Zeitpunkt der Verlegung/Entlassung -->
+                            <high value="201503041345"/>
+                        </effectiveTime>
+                        <!-- Entlassung des Patienten mit Entlassungsgrund -->
+                        <dischargeDispositionCode code="2" codeSystem="1.2.276.0.76.3.1.195.5.56" displayName="Entlassung gegen ärztlichen Rat"/>
+                    </encompassingEncounter>
+                </componentOf>
+            </example>
+            <element name="hl7:componentOf" id="2.16.840.1.113883.2.6.60.3.9.216">
+                <item original="false" label="CDAEncompassingEncounter"/>
+                <attribute name="typeCode" value="COMP" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.217"/>
+                <element name="hl7:encompassingEncounter" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.218">
+                    <item original="false" label="CDAEncompassingEncounter"/>
+                    <attribute name="classCode" value="ENC" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.219"/>
+                    <attribute name="moodCode" value="EVN" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.220"/>
+                    <element name="hl7:id[1]" minimumMultiplicity="1" maximumMultiplicity="*" datatype="II" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1558">
+                        <desc language="de-DE">Identifikationselement (verpflichtend) zur Aufnahme der Aufenthalts-Identifikation als erste Id</desc>
+                        <item original="false" label="CDAEncompassingEncounter"/>
+                    </element>
+                    <element name="hl7:id[2]" minimumMultiplicity="0" maximumMultiplicity="1" datatype="II" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.15588">
+                        <desc language="de-DE">Abrechnungs-Fallnummer für das Zuordnen von §21-Daten (optional) als zweite Id</desc>
+                        <item original="false" label="CDAEncompassingEncounter"/>
+                    </element>
+                    <element name="hl7:effectiveTime" minimumMultiplicity="1" maximumMultiplicity="1" datatype="IVL_TS" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.221">
+                        <item original="false" label="CDAEncompassingEncounter"/>
+                        <element name="hl7:low" minimumMultiplicity="1" maximumMultiplicity="1" datatype="TS.DATE.MIN" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.222">
+                            <desc language="de-DE">Aufnahmezeitpunkt (Datum und Zeit), Zeitangabe genau bis auf die Minute</desc>
+                            <item original="false" label="CDAEncompassingEncounter"/>
+                        </element>
+                        <element name="hl7:high" minimumMultiplicity="0" maximumMultiplicity="1" datatype="TS.DATE.MIN" id="2.16.840.1.113883.2.6.60.3.9.223">
+                            <desc language="de-DE">Ende Patientenkontakt = Zeitpunkt der Verlegung/Entlassung</desc>
+                            <item original="false" label="CDAEncompassingEncounter"/>
+                        </element>
+                    </element>
+                    <element name="hl7:dischargeDispositionCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CV" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.224">
+                        <item original="false" label="CDAEncompassingEncounter"/>
+                        <vocabulary valueSet="1.2.276.0.76.11.56" flexibility="2015-11-17T00:00:00" vsid="1.2.276.0.76.11.56" vsname="Dischargedispositioncodes" vsdisplayName="Discharge Disposition Codes" vsstatusCode="draft" vseffectiveDate="2015-11-17T00:00:00" linkedartefactmissing="false"/>
+                    </element>
+                    <assert role="error" test="not(hl7:dischargeDispositionCode and //hl7:act[hl7:templateId/@root = '1.2.276.0.76.10.4067'])">Patient entweder verlegt (encompassingEncounter.dischargeDispositionCode) oder entlassen (act Referralto template id 1.2.276.0.76.10.4067)</assert>
+                </element>
+            </element>
+            <staticAssociations>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.2.10005" effectiveDate="2015-01-15T00:00:00" refdisplay="aktin-dataelement2015(1)-10005" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.2" datasetEffectiveDate="2015-01-15T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.1-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.218" templateId="1.2.276.0.76.10.2036" templateEffectiveDate="2016-06-01T00:00:00" path="">
+                    <name language="de-DE">Aufnahme</name>
+                    <desc language="de-DE">Aufnahme Informationen zum Patienten</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.2.20022" effectiveDate="2015-06-20T13:35:05" refdisplay="aktin-dataelement2015(1)-20022" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.2" datasetEffectiveDate="2015-01-15T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.1-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.224" templateId="1.2.276.0.76.10.2036" templateEffectiveDate="2016-06-01T00:00:00" path="Weiteres Procedere / Therapieempfehlung / Weiterbehandler">
+                    <name language="de-DE">Typ Entlassung</name>
+                    <desc language="de-DE">Typ Entlassung</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.2.57" effectiveDate="2015-01-15T00:00:00" refdisplay="aktin-dataelement2015(1)-57" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.2" datasetEffectiveDate="2015-01-15T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.1-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.222" templateId="1.2.276.0.76.10.2036" templateEffectiveDate="2016-06-01T00:00:00" path="Aufnahme">
+                    <name language="de-DE">Aufnahmedatum</name>
+                    <desc language="de-DE">Datum der Aufnahme</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.2.58" effectiveDate="2015-01-15T00:00:00" refdisplay="aktin-dataelement2015(1)-58" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.2" datasetEffectiveDate="2015-01-15T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.1-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.222" templateId="1.2.276.0.76.10.2036" templateEffectiveDate="2016-06-01T00:00:00" path="Aufnahme">
+                    <name language="de-DE">Aufnahmezeitpunkt</name>
+                    <desc language="de-DE">Uhrzeit des ersten Kontaktes mit der Person welche die administrative Aufnahme durchgeführt hat</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.2.882" effectiveDate="2015-01-15T00:00:00" refdisplay="aktin-dataelement2015(1)-882" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.2" datasetEffectiveDate="2015-01-15T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.1-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.223" templateId="1.2.276.0.76.10.2036" templateEffectiveDate="2016-06-01T00:00:00" path="Weiteres Procedere / Therapieempfehlung / Weiterbehandler">
+                    <name language="de-DE">Zeitpunkt Patient verlegt / entlassen nach</name>
+                    <desc language="de-DE">Wann wurde der Patient verlegt oder entlassen?</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.3.10005" effectiveDate="2015-11-01T00:00:00" refdisplay="aktin-dataelement2015(2)-10005" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.3" datasetEffectiveDate="2015-11-01T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.2-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.218" templateId="1.2.276.0.76.10.2036" templateEffectiveDate="2016-06-01T00:00:00" path="">
+                    <name language="de-DE">Aufnahme</name>
+                    <desc language="de-DE">Aufnahme Informationen zum Patienten</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.3.20022" effectiveDate="2015-11-01T00:00:00" refdisplay="aktin-dataelement2015(2)-20022" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.3" datasetEffectiveDate="2015-11-01T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.2-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.224" templateId="1.2.276.0.76.10.2036" templateEffectiveDate="2016-06-01T00:00:00" path="Weiteres Procedere / Therapieempfehlung / Weiterbehandler">
+                    <name language="de-DE">Typ Entlassung</name>
+                    <desc language="de-DE">Typ Entlassung</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.3.20093" effectiveDate="2017-01-09T12:27:56" refdisplay="aktin-dataelement2015(2)-20093" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.3" datasetEffectiveDate="2015-11-01T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.2-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.1558" templateId="1.2.276.0.76.10.2036" templateEffectiveDate="2016-06-01T00:00:00" path="Aufnahme">
+                    <name language="de-DE">Episodennummer</name>
+                    <desc language="de-DE">Diese Aufenthalts-Identifikation oder Episodennummer wird bei jedem Kontakt eines Patienten mit einer Notaufnahme neu vergeben. Damit können z.B. bei mehreren ambulanten Kontakten eines Patienten mit einer Notaufnahme, die mit einer ambulanten Fallnummer pro Quartal zusammengefasst werden, die einzelnen Episoden in der Notaufnahme identifiziert werden.<br clear="none"/>
+                    </desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.3.20094" effectiveDate="2017-01-09T12:28:33" refdisplay="aktin-dataelement2015(2)-20094" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.3" datasetEffectiveDate="2015-11-01T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.2-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.15588" templateId="1.2.276.0.76.10.2036" templateEffectiveDate="2016-06-01T00:00:00" path="Aufnahme">
+                    <name language="de-DE">Fallnummer</name>
+                    <desc language="de-DE">Krankenhausinternes Kennzeichen des Behandlungsfalles, vulgo Fallnummer, die zur Zuordnung von Dokumenten zu einem Behandlungsfall innerhalb eines Krankenhauses verwendet wird.<br clear="none"/>
+                    </desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.3.57" effectiveDate="2015-11-01T00:00:00" refdisplay="aktin-dataelement2015(2)-57" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.3" datasetEffectiveDate="2015-11-01T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.2-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.222" templateId="1.2.276.0.76.10.2036" templateEffectiveDate="2016-06-01T00:00:00" path="Aufnahme">
+                    <name language="de-DE">Aufnahmezeit</name>
+                    <desc language="de-DE">Datum und Uhrzeit der Aufnahme</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.3.58" effectiveDate="2015-11-01T00:00:00" refdisplay="aktin-dataelement2015(2)-58" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.3" datasetEffectiveDate="2015-11-01T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.2-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.222" templateId="1.2.276.0.76.10.2036" templateEffectiveDate="2016-06-01T00:00:00" path="Aufnahme">
+                    <name language="de-DE">Aufnahmezeitpunkt</name>
+                    <desc language="de-DE">Uhrzeit des ersten Kontaktes mit der Person welche die administrative Aufnahme durchgeführt hat</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.3.882" effectiveDate="2015-11-01T00:00:00" refdisplay="aktin-dataelement2015(2)-882" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.3" datasetEffectiveDate="2015-11-01T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.2-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.223" templateId="1.2.276.0.76.10.2036" templateEffectiveDate="2016-06-01T00:00:00" path="Weiteres Procedere / Therapieempfehlung / Weiterbehandler">
+                    <name language="de-DE">Zeitpunkt Patient verlegt / entlassen nach</name>
+                    <desc language="de-DE">Wann wurde der Patient verlegt oder entlassen?</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+            </staticAssociations>
+            <ref type="include" prefix="aktin-" flexibility="2016-06-01T00:00:00" id="1.2.276.0.76.3.1.195.10.92" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2025-11-12T00:00:00" statusCode="retired" versionLabel="v3transit" lastModifiedDate="2026-03-25T11:04:45" ident="aktin-"/>
+            <ref type="include" prefix="aktin-" flexibility="2016-06-01T00:00:00" id="1.2.276.0.76.3.1.195.10.93" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2026-03-25T11:04:07" statusCode="draft" versionLabel="v4transit" lastModifiedDate="2026-04-29T18:39:46" ident="aktin-"/>
+            <ref type="include" prefix="aktin-" flexibility="2016-06-01T00:00:00" id="1.2.276.0.76.10.1019" name="EmergencymedicineNoteCDAdocumentv2" displayName="Emergency medicine Note CDA document" effectiveDate="2016-06-01T00:00:00" statusCode="active" versionLabel="v2" ident="aktin-"/>
+        </template>
+    </template>
+</result>

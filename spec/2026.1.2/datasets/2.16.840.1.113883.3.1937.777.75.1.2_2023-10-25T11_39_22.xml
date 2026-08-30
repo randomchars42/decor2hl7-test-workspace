@@ -1,0 +1,1306 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.777.75.1.2" effectiveDate="2023-10-25T11:39:22" statusCode="draft" versionLabel="v0.1" lastModifiedDate="2024-08-08T18:05:58" prefix="iopcde-" shortName="bibliothek" iddisplay="iopcde-dataset-2" url="http://art-decor.org/decor/services/" ident="iopcde-"><!--
+ This is a view of the dataset "Bibliothek" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE" lastTranslated="2023-10-25T11:39:23">Bibliothek</name>
+    <desc language="de-DE" lastTranslated="2023-10-25T11:39:23">
+                <p>Bibliothek von Datensatz-Komponenten</p>
+            </desc>
+    <concept id="2.16.840.1.113883.3.1937.777.75.2.1.709" effectiveDate="2024-02-07T11:28:18" statusCode="draft" lastModifiedDate="2024-02-07T11:35:10" type="group" iddisplay="iopcde-dataelement-709" shortName="patientpatientin">
+        <implementation shortName="patientpatientin" markdown="Demographische Informationen zum Patienten / zur Patientin"/>
+        <name language="de-DE" lastTranslated="2024-02-07T11:28:35">Patient/Patientin</name>
+        <desc language="de-DE" lastTranslated="2024-02-07T11:28:35">
+            <p>Demographische Informationen zum Patienten / zur Patientin</p>
+        </desc>
+        <concept id="2.16.840.1.113883.3.1937.777.75.2.1.720" effectiveDate="2024-02-07T11:33:46" statusCode="draft" lastModifiedDate="2024-02-07T11:33:55" type="item" iddisplay="iopcde-dataelement-720" shortName="personenidentifikation">
+            <implementation shortName="personenidentifikation" markdown="Personen-Identifikation, z. B. e-GK Nummer"/>
+            <inherit ref="2.16.840.1.113883.2.6.77.2.1.10" effectiveDate="2015-10-15T00:00:00" prefix="hl7de-" datasetId="2.16.840.1.113883.2.6.77.1.1" datasetEffectiveDate="2015-10-15T00:00:00" datasetStatusCode="draft" datasetVersionLabel="1.0" iType="item" iStatusCode="draft" iEffectiveDate="2015-10-15T00:00:00" iddisplay="hl7de-dataelement-1.10" refdisplay="hl7de-dataelement-1.10" localInherit="false"/>
+            <name language="de-DE" lastTranslated="2022-11-07T08:55:35">Personen-Identifikation</name>
+            <desc language="de-DE" lastTranslated="2022-11-07T08:55:35">
+                <p>Personen-Identifikation, z. B. e-GK Nummer</p>
+            </desc>
+            <comment language="de-DE" lastTranslated="2022-11-07T08:55:35">Identifikation + Typ der Identifikation</comment>
+            <valueDomain type="identifier">
+                <example type="neutral" caption="eGK-Nummer (unveränderlicher Teil)">A123456789</example>
+            </valueDomain>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.75.2.1.711" effectiveDate="2024-02-07T11:33:19" statusCode="draft" lastModifiedDate="2024-02-07T11:33:36" type="group" iddisplay="iopcde-dataelement-711" shortName="namen">
+            <implementation shortName="namen" markdown="Details zum Namen"/>
+            <inherit ref="2.16.840.1.113883.2.6.77.2.1.10000" effectiveDate="2015-10-15T00:00:00" prefix="hl7de-" datasetId="2.16.840.1.113883.2.6.77.1.1" datasetEffectiveDate="2015-10-15T00:00:00" datasetStatusCode="draft" datasetVersionLabel="1.0" iType="group" iStatusCode="draft" iEffectiveDate="2015-10-15T00:00:00" iddisplay="hl7de-dataelement-1.10000" refdisplay="hl7de-dataelement-1.10000" localInherit="false"/>
+            <name language="de-DE">Namen</name>
+            <desc language="de-DE">Details zum Namen</desc>
+            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.712" effectiveDate="2024-02-07T11:33:35" statusCode="draft" lastModifiedDate="2024-02-07T11:33:36" type="item" iddisplay="iopcde-dataelement-712" shortName="anrede">
+                <implementation shortName="anrede" markdown="Anrede"/>
+                <inherit ref="2.16.840.1.113883.2.6.77.2.1.10010" effectiveDate="2015-10-15T00:00:00" prefix="hl7de-" datasetId="2.16.840.1.113883.2.6.77.1.1" datasetEffectiveDate="2015-10-15T00:00:00" datasetStatusCode="draft" datasetVersionLabel="1.0" iType="item" iStatusCode="draft" iEffectiveDate="2015-10-15T00:00:00" iddisplay="hl7de-dataelement-1.10010" refdisplay="hl7de-dataelement-1.10010" localInherit="false"/>
+                <name language="de-DE">Anrede</name>
+                <desc language="de-DE">Anrede</desc>
+                <valueDomain type="string">
+                    <example type="neutral">Herr</example>
+                </valueDomain>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.713" effectiveDate="2024-02-07T11:33:35" statusCode="draft" lastModifiedDate="2024-02-07T11:33:36" type="item" iddisplay="iopcde-dataelement-713" shortName="vornamen">
+                <implementation shortName="vornamen" markdown="Sammlung offizieller Vornamen"/>
+                <inherit ref="2.16.840.1.113883.2.6.77.2.1.10020" effectiveDate="2015-10-15T00:00:00" prefix="hl7de-" datasetId="2.16.840.1.113883.2.6.77.1.1" datasetEffectiveDate="2015-10-15T00:00:00" datasetStatusCode="draft" datasetVersionLabel="1.0" iType="item" iStatusCode="draft" iEffectiveDate="2015-10-15T00:00:00" iddisplay="hl7de-dataelement-1.10020" refdisplay="hl7de-dataelement-1.10020" localInherit="false"/>
+                <name language="de-DE">Vornamen</name>
+                <desc language="de-DE">Sammlung offizieller Vornamen</desc>
+                <valueDomain type="string">
+                    <example type="neutral">Johanna Henriette Maria</example>
+                </valueDomain>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.714" effectiveDate="2024-02-07T11:33:35" statusCode="draft" lastModifiedDate="2024-02-07T11:33:36" type="item" iddisplay="iopcde-dataelement-714" shortName="rufname">
+                <implementation shortName="rufname" markdown="Name einer Person, der kein offizieller Name ist"/>
+                <inherit ref="2.16.840.1.113883.2.6.77.2.1.10040" effectiveDate="2015-10-15T00:00:00" prefix="hl7de-" datasetId="2.16.840.1.113883.2.6.77.1.1" datasetEffectiveDate="2015-10-15T00:00:00" datasetStatusCode="draft" datasetVersionLabel="1.0" iType="item" iStatusCode="draft" iEffectiveDate="2015-10-15T00:00:00" iddisplay="hl7de-dataelement-1.10040" refdisplay="hl7de-dataelement-1.10040" localInherit="false"/>
+                <name language="de-DE">Rufname</name>
+                <desc language="de-DE">Name einer Person, der kein offizieller Name ist</desc>
+                <valueDomain type="string">
+                    <example type="neutral">Günni</example>
+                </valueDomain>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.715" effectiveDate="2024-02-07T11:33:35" statusCode="draft" lastModifiedDate="2024-02-07T11:33:36" type="group" iddisplay="iopcde-dataelement-715" shortName="nachnamen">
+                <implementation shortName="nachnamen" markdown="Nachnamen"/>
+                <inherit ref="2.16.840.1.113883.2.6.77.2.1.10050" effectiveDate="2015-10-15T00:00:00" prefix="hl7de-" datasetId="2.16.840.1.113883.2.6.77.1.1" datasetEffectiveDate="2015-10-15T00:00:00" datasetStatusCode="draft" datasetVersionLabel="1.0" iType="group" iStatusCode="draft" iEffectiveDate="2015-10-15T00:00:00" iddisplay="hl7de-dataelement-1.10050" refdisplay="hl7de-dataelement-1.10050" localInherit="false"/>
+                <name language="de-DE">Nachnamen</name>
+                <desc language="de-DE">Nachnamen</desc>
+                <concept id="2.16.840.1.113883.3.1937.777.75.2.1.716" effectiveDate="2024-02-07T11:33:35" statusCode="draft" lastModifiedDate="2024-02-07T11:33:36" type="item" iddisplay="iopcde-dataelement-716" shortName="type_name">
+                    <implementation shortName="type_name" markdown="Angabe zur Funktion des Namens"/>
+                    <inherit ref="2.16.840.1.113883.2.6.77.2.1.10060" effectiveDate="2015-10-15T00:00:00" prefix="hl7de-" datasetId="2.16.840.1.113883.2.6.77.1.1" datasetEffectiveDate="2015-10-15T00:00:00" datasetStatusCode="draft" datasetVersionLabel="1.0" iType="item" iStatusCode="draft" iEffectiveDate="2015-10-15T00:00:00" iddisplay="hl7de-dataelement-1.10060" refdisplay="hl7de-dataelement-1.10060" localInherit="false"/>
+                    <name language="de-DE">Type Name</name>
+                    <desc language="de-DE">Angabe zur Funktion des Namens</desc>
+                    <valueDomain type="code">
+                        <conceptList id="2.16.840.1.113883.2.6.77.2.1.10060.0"/>
+                        <example type="neutral">Geburtsname</example>
+                    </valueDomain>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.75.2.1.717" effectiveDate="2024-02-07T11:33:35" statusCode="draft" lastModifiedDate="2024-02-07T11:33:36" type="item" iddisplay="iopcde-dataelement-717" shortName="vorsatz">
+                    <implementation shortName="vorsatz" markdown="Teil vom Nachname, die als Präfix vorangestellt werden"/>
+                    <inherit ref="2.16.840.1.113883.2.6.77.2.1.10070" effectiveDate="2015-10-15T00:00:00" prefix="hl7de-" datasetId="2.16.840.1.113883.2.6.77.1.1" datasetEffectiveDate="2015-10-15T00:00:00" datasetStatusCode="draft" datasetVersionLabel="1.0" iType="item" iStatusCode="draft" iEffectiveDate="2015-10-15T00:00:00" iddisplay="hl7de-dataelement-1.10070" refdisplay="hl7de-dataelement-1.10070" localInherit="false"/>
+                    <name language="de-DE">Vorsatz</name>
+                    <desc language="de-DE">Teil vom Nachname, die als Präfix vorangestellt werden</desc>
+                    <valueDomain type="string">
+                        <example type="neutral">von</example>
+                    </valueDomain>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.75.2.1.718" effectiveDate="2024-02-07T11:33:35" statusCode="draft" lastModifiedDate="2024-02-07T11:33:36" type="item" iddisplay="iopcde-dataelement-718" shortName="nachname">
+                    <implementation shortName="nachname" markdown="Der Nachname der Person. Abhängig vom Typ des Namens kann das ein Geburtsname oder Partnername sein."/>
+                    <inherit ref="2.16.840.1.113883.2.6.77.2.1.10080" effectiveDate="2015-10-15T00:00:00" prefix="hl7de-" datasetId="2.16.840.1.113883.2.6.77.1.1" datasetEffectiveDate="2015-10-15T00:00:00" datasetStatusCode="draft" datasetVersionLabel="1.0" iType="item" iStatusCode="draft" iEffectiveDate="2015-10-15T00:00:00" iddisplay="hl7de-dataelement-1.10080" refdisplay="hl7de-dataelement-1.10080" localInherit="false"/>
+                    <name language="de-DE" lastTranslated="2024-02-07T11:23:24">Nachname</name>
+                    <desc language="de-DE" lastTranslated="2024-02-07T11:23:24">Der Nachname der Person. Abhängig vom Typ des Namens kann das ein Geburtsname oder Partnername sein.</desc>
+                    <valueDomain type="string">
+                        <example type="neutral">Schmitz</example>
+                    </valueDomain>
+                </concept>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.719" effectiveDate="2024-02-07T11:33:35" statusCode="draft" lastModifiedDate="2024-02-07T11:33:36" type="item" iddisplay="iopcde-dataelement-719" shortName="titel_akademischer_grad">
+                <implementation shortName="titel_akademischer_grad" markdown="Titel, akademischer Grad"/>
+                <inherit ref="2.16.840.1.113883.2.6.77.2.1.10100" effectiveDate="2015-10-15T00:00:00" prefix="hl7de-" datasetId="2.16.840.1.113883.2.6.77.1.1" datasetEffectiveDate="2015-10-15T00:00:00" datasetStatusCode="draft" datasetVersionLabel="1.0" iType="item" iStatusCode="draft" iEffectiveDate="2015-10-15T00:00:00" iddisplay="hl7de-dataelement-1.10100" refdisplay="hl7de-dataelement-1.10100" localInherit="false"/>
+                <name language="de-DE">Titel, akademischer Grad</name>
+                <desc language="de-DE">Titel, akademischer Grad</desc>
+                <valueDomain type="code">
+                    <conceptList id="2.16.840.1.113883.2.6.77.2.1.10100.0"/>
+                    <example type="neutral">Baron</example>
+                    <example type="neutral">Dr.</example>
+                </valueDomain>
+            </concept>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.75.2.1.721" effectiveDate="2024-02-07T11:34:08" statusCode="draft" lastModifiedDate="2024-02-07T11:34:24" type="item" iddisplay="iopcde-dataelement-721" shortName="geschlecht">
+            <implementation shortName="geschlecht" markdown="Angabe zum Geschlecht der Person."/>
+            <inherit ref="2.16.840.1.113883.2.6.77.2.1.20040" effectiveDate="2015-10-15T00:00:00" prefix="hl7de-" datasetId="2.16.840.1.113883.2.6.77.1.1" datasetEffectiveDate="2015-10-15T00:00:00" datasetStatusCode="draft" datasetVersionLabel="1.0" iType="item" iStatusCode="draft" iEffectiveDate="2015-10-15T00:00:00" iddisplay="hl7de-dataelement-1.20040" refdisplay="hl7de-dataelement-1.20040" localInherit="false"/>
+            <name language="de-DE">Geschlecht</name>
+            <desc language="de-DE">Angabe zum Geschlecht der Person.</desc>
+            <valueDomain type="code">
+                <conceptList id="2.16.840.1.113883.2.6.77.2.1.20040.0">
+                    <concept id="2.16.840.1.113883.2.6.77.2.1.20040.1">
+                        <name language="de-DE">männlich</name>
+                    </concept>
+                    <concept id="2.16.840.1.113883.2.6.77.2.1.20040.2">
+                        <name language="de-DE">weiblich</name>
+                    </concept>
+                    <concept id="2.16.840.1.113883.2.6.77.2.1.20040.3">
+                        <name language="de-DE">undifferenziert</name>
+                    </concept>
+                    <concept id="2.16.840.1.113883.2.6.77.2.1.20040.4" exception="true">
+                        <name language="de-DE">unbekannt</name>
+                    </concept>
+                </conceptList>
+                <example type="neutral">weiblich</example>
+            </valueDomain>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.75.2.1.722" effectiveDate="2024-02-07T11:34:35" statusCode="draft" lastModifiedDate="2024-02-07T11:35:10" type="item" iddisplay="iopcde-dataelement-722" shortName="geburtsdatum">
+            <implementation shortName="geburtsdatum" markdown="Datum (ggf. Zeit, z. B. bei Neugeborenen), wann die Person geboren wurde. Datumsangabe kann auch ungenau sein."/>
+            <inherit ref="2.16.840.1.113883.2.6.77.2.1.20010" effectiveDate="2015-10-15T00:00:00" prefix="hl7de-" datasetId="2.16.840.1.113883.2.6.77.1.1" datasetEffectiveDate="2015-10-15T00:00:00" datasetStatusCode="draft" datasetVersionLabel="1.0" iType="item" iStatusCode="draft" iEffectiveDate="2015-10-15T00:00:00" iddisplay="hl7de-dataelement-1.20010" refdisplay="hl7de-dataelement-1.20010" localInherit="false"/>
+            <name language="de-DE">Geburtsdatum</name>
+            <desc language="de-DE">Datum (ggf. Zeit, z. B. bei Neugeborenen), wann die Person geboren wurde. Datumsangabe kann auch ungenau sein.</desc>
+            <valueDomain type="datetime">
+                <example type="neutral">14.03.2001</example>
+            </valueDomain>
+        </concept>
+    </concept>
+    <concept id="2.16.840.1.113883.3.1937.777.75.2.1.482" effectiveDate="2023-12-27T14:10:52" statusCode="draft" lastModifiedDate="2024-08-08T18:05:58" type="group" iddisplay="iopcde-dataelement-482" shortName="medikation">
+        <implementation shortName="medikation" markdown="Medikation"/>
+        <name language="de-DE">Medikation</name>
+        <desc language="de-DE">Medikation</desc>
+        <concept id="2.16.840.1.113883.3.1937.777.75.2.1.483" effectiveDate="2023-12-27T14:15:11" statusCode="draft" lastModifiedDate="2024-08-08T18:05:58" type="group" iddisplay="iopcde-dataelement-483" shortName="medikament">
+            <implementation shortName="medikament" markdown="Ein Medikament definiert durch seine Eigenschaften zur medizinischen Dokumentation.&#xA;&#xA;* Wirkstoff-&gt; Text und kodiert als z.B. ATC&#xA;&#xA;* Handelsname-&gt; Text und kodiert z.B. als Pharmazentralnummer&#xA;&#xA;* Dosis und Dosiseinheit (z.B. 50 mg, etc.)&#xA;&#xA;* evtl Volumen und Volumeneinheit (z.B. 500ml)&#xA;&#xA;* Applikationsform (Spray, Tablette, etc.)&#xA;&#xA;* Applikationsart (po, iv, etc.)&#xA;&#xA;* Applikationszeit:&#xA;&#xA;    * Zeitpunkt der Gabe&#xA;&#xA;    * Startzeitpunkt der zeitabhängigen Gabe (Infusionsbeginn/Perfusorbeginn) mit Laufrate&#xA;&#xA;    * Zeitpunkt der Laufratenänderung und Laufratenänderung&#xA;&#xA;    * Stoppzeitpunkt der zeitabhängigen Gabe oder bei Perfusor Laufrate bei Übergabe&#xA;&#xA;* evtl Grund der Einnahme (z.B. Diagnose)"/>
+            <name language="de-DE" lastTranslated="2023-12-28T13:19:20">Medikament</name>
+            <desc language="de-DE" lastTranslated="2023-12-28T13:19:20">
+                <p>Ein Medikament definiert durch seine Eigenschaften zur medizinischen Dokumentation. <br/>
+                </p>
+                <ul>
+                    <li>
+                        <p>Wirkstoff-&gt; Text und kodiert als z.B. ATC<br/>
+                        </p>
+                    </li>
+                    <li>
+                        <p>Handelsname-&gt; Text und kodiert z.B. als Pharmazentralnummer<br/>
+                        </p>
+                    </li>
+                    <li>
+                        <p>Dosis und Dosiseinheit (z.B. 50 mg,
+                                    etc.)<br/>
+                        </p>
+                    </li>
+                    <li>
+                        <p>evtl Volumen und Volumeneinheit (z.B. 500ml)<br/>
+                        </p>
+                    </li>
+                    <li>
+                        <p>Applikationsform (Spray, Tablette, etc.)<br/>
+                        </p>
+                    </li>
+                    <li>
+                        <p>Applikationsart (po, iv, etc.)<br/>
+                        </p>
+                    </li>
+                    <li>
+                        <p>Applikationszeit:<br/>
+                        </p>
+                        <ul>
+                            <li>
+                                <p>Zeitpunkt der Gabe<br/>
+                                </p>
+                            </li>
+                            <li>
+                                <p>Startzeitpunkt der zeitabhängigen Gabe (Infusionsbeginn/Perfusorbeginn) mit
+                                            Laufrate<br/>
+                                </p>
+                            </li>
+                            <li>
+                                <p>Zeitpunkt der Laufratenänderung und Laufratenänderung<br/>
+                                </p>
+                            </li>
+                            <li>
+                                <p>Stoppzeitpunkt der zeitabhängigen Gabe oder bei Perfusor Laufrate bei Übergabe<br/>
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>evtl Grund der Einnahme (z.B. Diagnose)</p>
+                    </li>
+                </ul>
+            </desc>
+            <rationale language="de-DE" lastTranslated="2023-12-28T13:19:20">Aufnahme in Notaufnahmeprotokoll zur auswertbaren Medikamentendokumentation und Datenübernahme vom bundeseinheitlichen Medikationsplan entsprechend Sektionstreffen vom 30.10.2015</rationale>
+            <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.3.2.3.20092" flexibility="2016-01-12T19:55:35" prefix="aktin-" datasetId="2.16.840.1.113883.2.6.60.3.1.3" datasetEffectiveDate="2015-11-01T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.2-b" iType="group" iEffectiveDate="2016-01-12T19:55:35" iStatusCode="final" refdisplay="aktin-dataelement2015(2)-20092">
+                <name language="de-DE">Medikament</name>
+            </relationship>
+            <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.3.2.6.20092" flexibility="2018-01-25T00:00:00" prefix="aktin-" datasetId="2.16.840.1.113883.2.6.60.3.1.6" datasetEffectiveDate="2018-08-17T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2020.1" iType="group" iEffectiveDate="2018-01-25T00:00:00" iStatusCode="final" iVersionLabel="v2020.1" refdisplay="nap-dataelement2020(1)-20092">
+                <name language="de-DE">Medikament</name>
+            </relationship>
+            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.487" effectiveDate="2023-12-27T14:15:49" statusCode="draft" lastModifiedDate="2023-12-28T13:31:52" type="group" iddisplay="iopcde-dataelement-487" shortName="arzneimittel">
+                <implementation shortName="arzneimittel" markdown="Arzneimittel"/>
+                <name language="de-DE" lastTranslated="2023-12-28T13:26:38">Arzneimittel</name>
+                <desc language="de-DE" lastTranslated="2023-12-28T13:26:38">Arzneimittel</desc>
+                <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.3.2.20079" flexibility="2018-01-25T00:00:00" prefix="aktin-" datasetId="2.16.840.1.113883.2.6.60.3.1.6" datasetEffectiveDate="2018-08-17T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2020.1" iType="group" iEffectiveDate="2018-01-25T00:00:00" iStatusCode="final" iVersionLabel="v2020.1" refdisplay="aktin-dataelement-20079">
+                    <name language="de-DE">Arzneimittel</name>
+                </relationship>
+                <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.4.2.1.440" flexibility="2014-10-27T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" iType="group" iEffectiveDate="2014-10-27T00:00:00" iStatusCode="final" iVersionLabel="Release 1" refdisplay="pmp-dataelementR1-440">
+                    <name language="de-DE">Arzneimittel</name>
+                </relationship>
+                <concept id="2.16.840.1.113883.3.1937.777.75.2.1.488" effectiveDate="2023-12-27T14:15:49" statusCode="draft" lastModifiedDate="2023-12-28T13:26:42" type="item" iddisplay="iopcde-dataelement-488" shortName="arzneimittelname">
+                    <implementation shortName="arzneimittelname" markdown="Arzneimittelname oder auch Handelsname genannt. Bezeichnung eines Fertigarzneimittels"/>
+                    <name language="de-DE" lastTranslated="2023-12-28T13:26:42">Arzneimittel-Name</name>
+                    <desc language="de-DE" lastTranslated="2023-12-28T13:26:42">Arzneimittelname oder auch Handelsname genannt. Bezeichnung eines Fertigarzneimittels</desc>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.4.2.1.4310" flexibility="2014-10-27T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" iType="item" iEffectiveDate="2014-10-27T00:00:00" iStatusCode="final" iVersionLabel="Release 1" refdisplay="pmp-dataelementR1-4310">
+                        <name language="de-DE">Arzneimittel-Name</name>
+                    </relationship>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.3.2.20080" flexibility="2018-01-25T00:00:00" prefix="aktin-" datasetId="2.16.840.1.113883.2.6.60.3.1.6" datasetEffectiveDate="2018-08-17T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2020.1" iType="item" iEffectiveDate="2018-01-25T00:00:00" iStatusCode="final" iVersionLabel="v2020.1" refdisplay="aktin-dataelement-20080">
+                        <name language="de-DE">Arzneimittel-Name</name>
+                    </relationship>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.75.2.1.489" effectiveDate="2023-12-27T14:15:49" statusCode="draft" lastModifiedDate="2023-12-28T13:26:59" type="item" iddisplay="iopcde-dataelement-489" shortName="arzneimittelcode">
+                    <implementation shortName="arzneimittelcode" markdown="Identifikation eines Fertigarzneimittels durch seinen Code"/>
+                    <name language="de-DE" lastTranslated="2023-12-28T13:26:47">Arzneimittel-Code</name>
+                    <desc language="de-DE" lastTranslated="2023-12-28T13:26:47">Identifikation eines Fertigarzneimittels durch seinen Code</desc>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.3.2.20081" flexibility="2018-01-25T00:00:00" prefix="aktin-" datasetId="2.16.840.1.113883.2.6.60.3.1.6" datasetEffectiveDate="2018-08-17T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2020.1" iType="item" iEffectiveDate="2018-01-25T00:00:00" iStatusCode="final" iVersionLabel="v2020.1" refdisplay="aktin-dataelement-20081">
+                        <name language="de-DE">Arzneimittel-Code</name>
+                    </relationship>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.4.2.1.4320" flexibility="2014-10-27T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" iType="item" iEffectiveDate="2014-10-27T00:00:00" iStatusCode="final" iVersionLabel="Release 1" refdisplay="pmp-dataelementR1-4320">
+                        <name language="de-DE">Arzneimittel-Code</name>
+                    </relationship>
+                    <valueDomain type="code">
+                        <conceptList id="2.16.840.1.113883.3.1937.777.75.2.1.489.20231227141549.0"/>
+                    </valueDomain>
+                </concept>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.492" effectiveDate="2023-12-27T14:15:49" statusCode="draft" lastModifiedDate="2023-12-28T13:32:05" type="item" iddisplay="iopcde-dataelement-492" shortName="darreichungsform">
+                <implementation shortName="darreichungsform" markdown="Darreichungsform"/>
+                <name language="de-DE" lastTranslated="2023-12-28T13:32:05">Darreichungsform</name>
+                <desc language="de-DE" lastTranslated="2023-12-28T13:32:05">Darreichungsform</desc>
+                <source language="de-DE" lastTranslated="2023-12-28T13:32:05">AkdÄ MP 2.0: #26 Dafo-Code aus Anlage 6</source>
+                <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.4.2.1.4040" flexibility="2014-10-27T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" iType="item" iEffectiveDate="2014-10-27T00:00:00" iStatusCode="final" iVersionLabel="Release 1" refdisplay="pmp-dataelementR1-4040">
+                    <name language="de-DE">Darreichungsform</name>
+                </relationship>
+                <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.3.2.20078" flexibility="2018-01-25T00:00:00" prefix="aktin-" datasetId="2.16.840.1.113883.2.6.60.3.1.6" datasetEffectiveDate="2018-08-17T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2020.1" iType="item" iEffectiveDate="2018-01-25T00:00:00" iStatusCode="final" iVersionLabel="v2020.1" refdisplay="aktin-dataelement-20078">
+                    <name language="de-DE">Darreichungsform</name>
+                </relationship>
+                <valueDomain type="code">
+                    <conceptList id="2.16.840.1.113883.3.1937.777.75.2.1.492.20231227141549.0"/>
+                </valueDomain>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.484" effectiveDate="2023-12-27T14:15:49" statusCode="draft" lastModifiedDate="2023-12-28T13:32:00" type="group" iddisplay="iopcde-dataelement-484" shortName="wirkstoff">
+                <implementation shortName="wirkstoff" markdown="Wirkstoff"/>
+                <name language="de-DE" lastTranslated="2023-12-28T13:23:58">Wirkstoff</name>
+                <desc language="de-DE" lastTranslated="2023-12-28T13:23:58">Wirkstoff</desc>
+                <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.4.2.1.420" flexibility="2014-10-27T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" iType="group" iEffectiveDate="2014-10-27T00:00:00" iStatusCode="final" iVersionLabel="Release 1" refdisplay="pmp-dataelementR1-420">
+                    <name language="de-DE">Wirkstoff</name>
+                </relationship>
+                <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.3.2.20074" flexibility="2018-01-25T00:00:00" prefix="aktin-" datasetId="2.16.840.1.113883.2.6.60.3.1.6" datasetEffectiveDate="2018-08-17T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2020.1" iType="group" iEffectiveDate="2018-01-25T00:00:00" iStatusCode="final" iVersionLabel="v2020.1" refdisplay="aktin-dataelement-20074">
+                    <name language="de-DE">Wirkstoff</name>
+                </relationship>
+                <concept id="2.16.840.1.113883.3.1937.777.75.2.1.485" effectiveDate="2023-12-27T14:15:49" statusCode="draft" lastModifiedDate="2023-12-28T13:26:28" type="item" iddisplay="iopcde-dataelement-485" shortName="wirkstoffname">
+                    <implementation shortName="wirkstoffname" markdown="Bezeichnung eines Wirkstoffes, der aus einer Wirkstoffklassifikation entnommen wird"/>
+                    <name language="de-DE" lastTranslated="2023-12-28T13:26:28">Wirkstoff-Name</name>
+                    <desc language="de-DE" lastTranslated="2023-12-28T13:26:28">Bezeichnung eines Wirkstoffes, der aus einer Wirkstoffklassifikation entnommen wird</desc>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.4.2.1.4010" flexibility="2014-10-27T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" iType="item" iEffectiveDate="2014-10-27T00:00:00" iStatusCode="final" iVersionLabel="Release 1" refdisplay="pmp-dataelementR1-4010">
+                        <name language="de-DE">Wirkstoff-Name</name>
+                    </relationship>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.3.2.20075" flexibility="2018-01-25T00:00:00" prefix="aktin-" datasetId="2.16.840.1.113883.2.6.60.3.1.6" datasetEffectiveDate="2018-08-17T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2020.1" iType="item" iEffectiveDate="2018-01-25T00:00:00" iStatusCode="final" iVersionLabel="v2020.1" refdisplay="aktin-dataelement-20075">
+                        <name language="de-DE">Wirkstoff-Name</name>
+                    </relationship>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.75.2.1.486" effectiveDate="2023-12-27T14:15:49" statusCode="draft" lastModifiedDate="2023-12-28T13:26:32" type="item" iddisplay="iopcde-dataelement-486" shortName="wirkstoffcode">
+                    <implementation shortName="wirkstoffcode" markdown="Code eines Wirkstoffes, der aus einer Wirkstoffklassifikation entnommen wird"/>
+                    <name language="de-DE" lastTranslated="2023-12-28T13:26:32">Wirkstoff-Code</name>
+                    <desc language="de-DE" lastTranslated="2023-12-28T13:26:32">Code eines Wirkstoffes, der aus einer Wirkstoffklassifikation entnommen wird</desc>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.4.2.1.4020" flexibility="2014-10-27T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" iType="item" iEffectiveDate="2014-10-27T00:00:00" iStatusCode="final" iVersionLabel="Release 1" refdisplay="pmp-dataelementR1-4020">
+                        <name language="de-DE">Wirkstoff-Code</name>
+                    </relationship>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.3.2.20076" flexibility="2018-01-25T00:00:00" prefix="aktin-" datasetId="2.16.840.1.113883.2.6.60.3.1.6" datasetEffectiveDate="2018-08-17T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2020.1" iType="item" iEffectiveDate="2018-01-25T00:00:00" iStatusCode="final" iVersionLabel="v2020.1" refdisplay="aktin-dataelement-20076">
+                        <name language="de-DE">Wirkstoff-Code</name>
+                    </relationship>
+                    <valueDomain type="code">
+                        <conceptList id="2.16.840.1.113883.3.1937.777.75.2.1.486.20231227141549.0"/>
+                    </valueDomain>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.75.2.1.519" effectiveDate="2023-12-28T13:24:03" statusCode="draft" lastModifiedDate="2023-12-28T13:29:47" type="item" iddisplay="iopcde-dataelement-519" shortName="arzneilich_wirksamer_bestandteilq">
+                    <implementation shortName="arzneilich_wirksamer_bestandteilq" markdown="Arzneilich wirksamer Bestandteil (active ingredient)"/>
+                    <name language="de-DE" lastTranslated="2023-12-28T13:26:11">Arzneilich wirksamer Bestandteil?</name>
+                    <desc language="de-DE" lastTranslated="2023-12-28T13:26:11">
+                        <p>Arzneilich wirksamer Bestandteil (active ingredient)</p>
+                    </desc>
+                    <valueDomain type="boolean"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.75.2.1.493" effectiveDate="2023-12-27T14:15:49" statusCode="draft" lastModifiedDate="2023-12-28T13:32:00" type="item" iddisplay="iopcde-dataelement-493" shortName="wirkstarke">
+                    <implementation shortName="wirkstarke" markdown="Wirkstärke"/>
+                    <name language="de-DE" lastTranslated="2023-12-28T13:32:00">Wirkstärke</name>
+                    <desc language="de-DE" lastTranslated="2023-12-28T13:32:00">Wirkstärke</desc>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.3.2.20077" flexibility="2018-01-25T00:00:00" prefix="aktin-" datasetId="2.16.840.1.113883.2.6.60.3.1.6" datasetEffectiveDate="2018-08-17T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2020.1" iType="item" iEffectiveDate="2018-01-25T00:00:00" iStatusCode="final" iVersionLabel="v2020.1" refdisplay="aktin-dataelement-20077">
+                        <name language="de-DE">Wirkstärke</name>
+                    </relationship>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.4.2.1.4030" flexibility="2014-10-27T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" iType="item" iEffectiveDate="2014-10-27T00:00:00" iStatusCode="final" iVersionLabel="Release 1" refdisplay="pmp-dataelementR1-4030">
+                        <name language="de-DE">Wirkstärke</name>
+                    </relationship>
+                    <valueDomain type="string"/>
+                </concept>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.738" effectiveDate="2024-08-08T18:05:21" statusCode="draft" lastModifiedDate="2024-08-08T18:05:58" type="item" iddisplay="iopcde-dataelement-738" shortName="chargennummer">
+                <implementation shortName="chargennummer" markdown="Chargennummer / Losnummer des Medikaments"/>
+                <name language="de-DE" lastTranslated="2024-08-08T18:05:43">Chargennummer</name>
+                <desc language="de-DE" lastTranslated="2024-08-08T18:05:43">
+                    <p>Chargennummer / Losnummer des Medikaments</p>
+                </desc>
+                <valueDomain type="string"/>
+            </concept>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.75.2.1.496" effectiveDate="2023-12-27T14:15:49" statusCode="draft" lastModifiedDate="2023-12-28T14:17:50" type="group" iddisplay="iopcde-dataelement-496" shortName="anwendungszeiten">
+            <implementation shortName="anwendungszeiten" markdown="Applikationszeit, Zeitpunkt an dem oder oder Periode in der das Medikament genommen wird/wurde"/>
+            <name language="de-DE" lastTranslated="2023-12-28T13:32:29">Anwendungszeiten</name>
+            <desc language="de-DE" lastTranslated="2023-12-28T13:32:29">
+                <p>Applikationszeit, Zeitpunkt an dem oder oder Periode in der das Medikament genommen wird/wurde </p>
+            </desc>
+            <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.3.2.20088" flexibility="2016-07-27T16:46:16" prefix="aktin-" datasetId="2.16.840.1.113883.2.6.60.3.1.3" datasetEffectiveDate="2015-11-01T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.2-b" iType="group" iEffectiveDate="2016-07-27T16:46:16" iStatusCode="final" refdisplay="aktin-dataelement-20088">
+                <name language="de-DE">Applikationszeit</name>
+            </relationship>
+            <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.3.2.20088" flexibility="2018-01-25T00:00:00" prefix="aktin-" datasetId="2.16.840.1.113883.2.6.60.3.1.6" datasetEffectiveDate="2018-08-17T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2020.1" iType="group" iEffectiveDate="2018-01-25T00:00:00" iStatusCode="final" iVersionLabel="v2020.1" refdisplay="aktin-dataelement-20088">
+                <name language="de-DE">Applikationszeit</name>
+            </relationship>
+            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.497" effectiveDate="2023-12-27T14:15:49" statusCode="draft" lastModifiedDate="2023-12-28T14:17:50" type="item" iddisplay="iopcde-dataelement-497" shortName="startzeitpunkt_der_anwendung">
+                <implementation shortName="startzeitpunkt_der_anwendung" markdown="Zeitpunkt, an dem die Medikamentengabe begonnen wurde/werden soll, bzw. bei einmaliger Gabe wann wird/wurde das Medikament gegeben"/>
+                <name language="de-DE" lastTranslated="2023-12-28T13:32:33">(Start)zeitpunkt der Anwendung</name>
+                <desc language="de-DE" lastTranslated="2023-12-28T13:32:33">
+                    <p>Zeitpunkt, an dem die Medikamentengabe begonnen wurde/werden soll, bzw. bei einmaliger Gabe wann wird/wurde das Medikament gegeben</p>
+                </desc>
+                <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.3.2.20089" flexibility="2016-07-27T16:46:16" prefix="aktin-" datasetId="2.16.840.1.113883.2.6.60.3.1.3" datasetEffectiveDate="2015-11-01T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.2-b" iType="item" iEffectiveDate="2016-07-27T16:46:16" iStatusCode="final" refdisplay="aktin-dataelement-20089">
+                    <name language="de-DE">(Start)zeitpunkt der Applikation</name>
+                </relationship>
+                <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.3.2.20089" flexibility="2018-01-25T00:00:00" prefix="aktin-" datasetId="2.16.840.1.113883.2.6.60.3.1.6" datasetEffectiveDate="2018-08-17T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2020.1" iType="item" iEffectiveDate="2018-01-25T00:00:00" iStatusCode="final" iVersionLabel="v2020.1" refdisplay="aktin-dataelement-20089">
+                    <name language="de-DE">(Start)zeitpunkt der Applikation</name>
+                </relationship>
+                <valueDomain type="datetime">
+                    <property timeStampPrecision="YMDHM"/>
+                </valueDomain>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.498" effectiveDate="2023-12-27T14:15:49" statusCode="draft" lastModifiedDate="2023-12-28T14:17:20" type="item" iddisplay="iopcde-dataelement-498" shortName="stoppzeitpunkt_der_anwendung">
+                <implementation shortName="stoppzeitpunkt_der_anwendung" markdown="Zeitpunkt, an dem die Medikamentengabe beendet wurde/werden soll"/>
+                <name language="de-DE" lastTranslated="2023-12-28T13:32:37">Stoppzeitpunkt der Anwendung</name>
+                <desc language="de-DE" lastTranslated="2023-12-28T13:32:37">
+                    <p>Zeitpunkt, an dem die Medikamentengabe beendet wurde/werden soll</p>
+                </desc>
+                <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.3.2.20090" flexibility="2018-01-25T00:00:00" prefix="aktin-" datasetId="2.16.840.1.113883.2.6.60.3.1.6" datasetEffectiveDate="2018-08-17T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2020.1" iType="item" iEffectiveDate="2018-01-25T00:00:00" iStatusCode="final" iVersionLabel="v2020.1" refdisplay="aktin-dataelement-20090">
+                    <name language="de-DE">Stoppzeitpunkt der Applikation</name>
+                </relationship>
+                <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.3.2.20090" flexibility="2016-07-27T16:46:16" prefix="aktin-" datasetId="2.16.840.1.113883.2.6.60.3.1.3" datasetEffectiveDate="2015-11-01T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.2-b" iType="item" iEffectiveDate="2016-07-27T16:46:16" iStatusCode="final" refdisplay="aktin-dataelement-20090">
+                    <name language="de-DE">Stoppzeitpunkt der Applikation</name>
+                </relationship>
+                <operationalization language="de-DE" lastTranslated="2023-12-28T13:32:37">Bei einmaligen Medikamentengaben wie Tablette, Bolus, etc. muss der Stoppzeitpunkt nicht ausgefüllt werden.</operationalization>
+                <valueDomain type="datetime">
+                    <property timeStampPrecision="YMDHM"/>
+                </valueDomain>
+            </concept>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.75.2.1.522" effectiveDate="2023-12-28T13:49:56" statusCode="draft" lastModifiedDate="2023-12-28T14:21:16" type="group" iddisplay="iopcde-dataelement-522" shortName="dosierung">
+            <implementation shortName="dosierung"/>
+            <name language="de-DE" lastTranslated="2023-12-28T13:52:02">Dosierung</name>
+            <desc language="de-DE"/>
+            <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.4.2.3.6088" flexibility="2017-06-04T13:21:40" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.3" datasetEffectiveDate="2017-06-04T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2017" iType="group" iEffectiveDate="2017-06-04T13:21:40" iStatusCode="draft" refdisplay="pmp-dataelement2017-6088">
+                <name language="de-DE">Dosierung</name>
+            </relationship>
+            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.523" effectiveDate="2023-12-28T13:50:22" statusCode="draft" lastModifiedDate="2023-12-28T14:21:16" type="item" iddisplay="iopcde-dataelement-523" shortName="sequenznummer">
+                <implementation shortName="sequenznummer" markdown="Sequenznummer des Dosierungseintrags in der Reihenfolge der Dosierungen"/>
+                <name language="de-DE" lastTranslated="2023-12-28T13:52:43">Sequenznummer</name>
+                <desc language="de-DE" lastTranslated="2023-12-28T13:52:43">
+                    <p>Sequenznummer des Dosierungseintrags in der Reihenfolge der Dosierungen</p>
+                </desc>
+                <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.4.2.3.6089" flexibility="2017-06-04T13:23:30" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.3" datasetEffectiveDate="2017-06-04T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2017" iType="item" iEffectiveDate="2017-06-04T13:23:30" iStatusCode="draft" refdisplay="pmp-dataelement2017-6089">
+                    <name language="de-DE">Reihenfolge</name>
+                </relationship>
+                <valueDomain type="count"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.524" effectiveDate="2023-12-28T13:50:22" statusCode="draft" lastModifiedDate="2023-12-28T13:52:47" type="item" iddisplay="iopcde-dataelement-524" shortName="freitext">
+                <implementation shortName="freitext" markdown="Dosierung im Freitext, wenn diese nicht strukturiert angegeben wird"/>
+                <name language="de-DE" lastTranslated="2023-12-28T13:52:47">Freitext</name>
+                <desc language="de-DE" lastTranslated="2023-12-28T13:52:47">Dosierung im Freitext, wenn diese nicht strukturiert angegeben wird</desc>
+                <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.4.2.3.6090" flexibility="2017-06-04T13:25:48" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.3" datasetEffectiveDate="2017-06-04T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2017" iType="item" iEffectiveDate="2017-06-04T13:25:48" iStatusCode="draft" refdisplay="pmp-dataelement2017-6090">
+                    <name language="de-DE">Freitext</name>
+                </relationship>
+                <valueDomain type="string"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.533" effectiveDate="2023-12-28T14:09:10" statusCode="draft" lastModifiedDate="2023-12-28T14:11:01" type="item" iddisplay="iopcde-dataelement-533" shortName="zusatzliche_hinweise">
+                <implementation shortName="zusatzliche_hinweise" markdown="Zusätzliche Hinweise oder Warnungen an den Patiente, z. B. &#34;während der Mahlzeit&#34;, &#34;kann müde machen&#34;"/>
+                <name language="de-DE" lastTranslated="2023-12-28T14:10:53">Zusätzliche Hinweise</name>
+                <desc language="de-DE" lastTranslated="2023-12-28T14:10:53">
+                    <p>Zusätzliche Hinweise oder Warnungen an den Patiente, z. B. "während der Mahlzeit", "kann müde machen"</p>
+                </desc>
+                <valueDomain type="code">
+                    <conceptList id="2.16.840.1.113883.3.1937.777.75.2.1.533.20231228140910.0"/>
+                </valueDomain>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.534" effectiveDate="2023-12-28T14:11:55" statusCode="draft" lastModifiedDate="2023-12-28T14:12:20" type="item" iddisplay="iopcde-dataelement-534" shortName="anweisungen_zur_einnahme">
+                <implementation shortName="anweisungen_zur_einnahme" markdown="Anweisungen zur Einnahme für den Patienten"/>
+                <name language="de-DE" lastTranslated="2023-12-28T14:12:11">Anweisungen zur Einnahme</name>
+                <desc language="de-DE" lastTranslated="2023-12-28T14:12:11">
+                    <p>Anweisungen zur Einnahme für den Patienten</p>
+                </desc>
+                <valueDomain type="string"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.525" effectiveDate="2023-12-28T13:50:22" statusCode="draft" lastModifiedDate="2023-12-28T13:54:32" type="group" iddisplay="iopcde-dataelement-525" shortName="zeitangabe">
+                <implementation shortName="zeitangabe" markdown="Zeitangabe zur Einnahme als Teil des Dosierschemas"/>
+                <name language="de-DE" lastTranslated="2023-12-28T13:52:39">Zeitangabe</name>
+                <desc language="de-DE" lastTranslated="2023-12-28T13:52:39">Zeitangabe zur Einnahme als Teil des Dosierschemas</desc>
+                <source language="de-DE" lastTranslated="2023-12-28T13:52:39">AkdÄ MP 2.0: #27 Dosierschema X-Y-Z; Dosierschema W-X-Y-Z; Dosierschema als Freitext</source>
+                <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.4.2.3.465" flexibility="2017-06-04T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.3" datasetEffectiveDate="2017-06-04T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2017" iType="group" iEffectiveDate="2017-06-04T00:00:00" iStatusCode="draft" refdisplay="pmp-dataelement2017-465">
+                    <name language="de-DE">Zeitangabe</name>
+                </relationship>
+                <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.4.2.1.465" flexibility="2014-10-27T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" iType="item" iEffectiveDate="2014-10-27T00:00:00" iStatusCode="final" iVersionLabel="Release 1" refdisplay="pmp-dataelementR1-465">
+                    <name language="de-DE">Dosierschema</name>
+                </relationship>
+                <concept id="2.16.840.1.113883.3.1937.777.75.2.1.526" effectiveDate="2023-12-28T13:50:22" statusCode="draft" lastModifiedDate="2023-12-28T13:54:17" type="item" iddisplay="iopcde-dataelement-526" shortName="zeitpunkt">
+                    <implementation shortName="zeitpunkt"/>
+                    <name language="de-DE" lastTranslated="2023-12-28T13:54:17">Zeitpunkt</name>
+                    <desc language="de-DE"/>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.4.2.3.6097" flexibility="2017-06-04T13:41:31" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.3" datasetEffectiveDate="2017-06-04T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2017" iType="item" iEffectiveDate="2017-06-04T13:41:31" iStatusCode="draft" refdisplay="pmp-dataelement2017-6097">
+                        <name language="de-DE">Zeitpunkt</name>
+                    </relationship>
+                    <valueDomain type="datetime">
+                        <property timeStampPrecision="YMD"/>
+                    </valueDomain>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.75.2.1.527" effectiveDate="2023-12-28T13:50:22" statusCode="draft" lastModifiedDate="2023-12-28T13:54:32" type="group" iddisplay="iopcde-dataelement-527" shortName="ereignisbezogene_wiederholung">
+                    <implementation shortName="ereignisbezogene_wiederholung" markdown="Gibt ein periodisches Zeitintervall an, in dem die Wiederholung auf Aktivitäten des täglichen Lebens oder anderen wichtigen Ereignissen basiert, die zeitabhängig sind, jedoch nicht vollständig von der Zeit bestimmt werden"/>
+                    <name language="de-DE" lastTranslated="2023-12-28T13:54:23">Ereignisbezogene Wiederholung</name>
+                    <desc language="de-DE" lastTranslated="2023-12-28T13:54:23">Gibt ein periodisches Zeitintervall an, in dem die Wiederholung auf Aktivitäten des täglichen Lebens oder anderen wichtigen Ereignissen basiert, die zeitabhängig sind, jedoch nicht vollständig von der Zeit bestimmt werden</desc>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.4.2.3.6098" flexibility="2017-06-04T13:42:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.3" datasetEffectiveDate="2017-06-04T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2017" iType="group" iEffectiveDate="2017-06-04T13:42:00" iStatusCode="draft" refdisplay="pmp-dataelement2017-6098">
+                        <name language="de-DE">Ereignisbezogene Wiederholung</name>
+                    </relationship>
+                    <concept id="2.16.840.1.113883.3.1937.777.75.2.1.528" effectiveDate="2023-12-28T13:50:22" statusCode="draft" lastModifiedDate="2023-12-28T13:54:27" type="item" iddisplay="iopcde-dataelement-528" shortName="ereignis">
+                        <implementation shortName="ereignis" markdown="Ereignis, z. B. morgens, mittags, abends, zur Nacht"/>
+                        <name language="de-DE" lastTranslated="2023-12-28T13:54:27">Ereignis</name>
+                        <desc language="de-DE" lastTranslated="2023-12-28T13:54:27">Ereignis, z. B. morgens, mittags, abends, zur Nacht</desc>
+                        <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.4.2.3.6095" flexibility="2017-06-04T13:38:54" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.3" datasetEffectiveDate="2017-06-04T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2017" iType="item" iEffectiveDate="2017-06-04T13:38:54" iStatusCode="draft" refdisplay="pmp-dataelement2017-6095">
+                            <name language="de-DE">Ereignis</name>
+                        </relationship>
+                        <valueDomain type="code">
+                            <conceptList id="2.16.840.1.113883.3.1937.777.75.2.1.528.20231228135022.0"/>
+                        </valueDomain>
+                    </concept>
+                    <concept id="2.16.840.1.113883.3.1937.777.75.2.1.529" effectiveDate="2023-12-28T13:50:22" statusCode="draft" lastModifiedDate="2023-12-28T13:54:32" type="item" iddisplay="iopcde-dataelement-529" shortName="offset">
+                        <implementation shortName="offset" markdown="Offset zum Ereignis, z. B. 30 Minuten vorher"/>
+                        <name language="de-DE" lastTranslated="2023-12-28T13:54:32">Offset</name>
+                        <desc language="de-DE" lastTranslated="2023-12-28T13:54:32">Offset zum Ereignis, z. B. 30 Minuten vorher</desc>
+                        <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.4.2.3.6096" flexibility="2017-06-04T13:40:12" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.3" datasetEffectiveDate="2017-06-04T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2017" iType="item" iEffectiveDate="2017-06-04T13:40:12" iStatusCode="draft" refdisplay="pmp-dataelement2017-6096">
+                            <name language="de-DE">Offset</name>
+                        </relationship>
+                        <valueDomain type="quantity"/>
+                    </concept>
+                </concept>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.530" effectiveDate="2023-12-28T13:50:22" statusCode="draft" lastModifiedDate="2023-12-28T13:52:33" type="item" iddisplay="iopcde-dataelement-530" shortName="einnahme_bei_bedarf">
+                <implementation shortName="einnahme_bei_bedarf" markdown="Einnahme des Medikaments bei Bedarf"/>
+                <name language="de-DE" lastTranslated="2023-12-28T13:52:33">Einnahme bei Bedarf</name>
+                <desc language="de-DE" lastTranslated="2023-12-28T13:52:33">Einnahme des Medikaments bei Bedarf</desc>
+                <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.4.2.3.6092" flexibility="2017-06-04T13:30:40" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.3" datasetEffectiveDate="2017-06-04T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2017" iType="item" iEffectiveDate="2017-06-04T13:30:40" iStatusCode="draft" refdisplay="pmp-dataelement2017-6092">
+                    <name language="de-DE">Einnahme bei Bedarf</name>
+                </relationship>
+                <valueDomain type="boolean"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.535" effectiveDate="2023-12-28T14:14:47" statusCode="draft" lastModifiedDate="2023-12-28T14:15:42" type="item" iddisplay="iopcde-dataelement-535" shortName="korperstelle">
+                <implementation shortName="korperstelle" markdown="Körperstelle, an der das Medikament verabreicht werden soll"/>
+                <name language="de-DE" lastTranslated="2023-12-28T14:15:12">Körperstelle</name>
+                <desc language="de-DE" lastTranslated="2023-12-28T14:15:12">
+                    <p>Körperstelle, an der das Medikament verabreicht werden soll</p>
+                </desc>
+                <valueDomain type="code">
+                    <conceptList id="2.16.840.1.113883.3.1937.777.75.2.1.535.20231228141447.0"/>
+                </valueDomain>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.531" effectiveDate="2023-12-28T13:50:22" statusCode="draft" lastModifiedDate="2023-12-28T14:06:33" type="item" iddisplay="iopcde-dataelement-531" shortName="art_der_anwendung">
+                <implementation shortName="art_der_anwendung" markdown="Art der Anwendung des Medikaments, Applikationsart (po, iv, etc.), Verabreichungsweg, wie das Medikament in den Körper gebracht werden sollte"/>
+                <name language="de-DE" lastTranslated="2023-12-28T13:52:08">Art der Anwendung</name>
+                <desc language="de-DE" lastTranslated="2023-12-28T13:52:08">
+                    <p>Art der Anwendung des Medikaments, Applikationsart (po, iv, etc.), Verabreichungsweg, wie das Medikament in den Körper gebracht werden sollte</p>
+                </desc>
+                <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.4.2.3.6093" flexibility="2017-06-04T13:31:15" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.3" datasetEffectiveDate="2017-06-04T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2017" iType="item" iEffectiveDate="2017-06-04T13:31:15" iStatusCode="draft" refdisplay="pmp-dataelement2017-6093">
+                    <name language="de-DE">Art der Anwendung</name>
+                </relationship>
+                <valueDomain type="code">
+                    <conceptList id="2.16.840.1.113883.3.1937.777.75.2.1.531.20231228135022.0"/>
+                    <example type="neutral">intravenös</example>
+                    <example type="neutral">subkutan</example>
+                </valueDomain>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.532" effectiveDate="2023-12-28T14:03:06" statusCode="draft" lastModifiedDate="2023-12-28T14:05:42" type="item" iddisplay="iopcde-dataelement-532" shortName="methode_der_anwendung">
+                <implementation shortName="methode_der_anwendung" markdown="Methode/technik der Anwendung des Medikaments, z. B. kauen, einträufeln, inhalieren, lutschen"/>
+                <name language="de-DE" lastTranslated="2023-12-28T14:05:42">Methode der Anwendung</name>
+                <desc language="de-DE" lastTranslated="2023-12-28T14:05:42">
+                    <p>Methode/technik der Anwendung des Medikaments, z. B. kauen, einträufeln, inhalieren, lutschen</p>
+                </desc>
+                <valueDomain type="string"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.494" effectiveDate="2023-12-27T14:15:49" statusCode="draft" lastModifiedDate="2023-12-28T13:58:53" type="item" iddisplay="iopcde-dataelement-494" shortName="dosismenge_und_einheit">
+                <implementation shortName="dosismenge_und_einheit" markdown="Menge mit Einheit pro Dosis, kann auch einen Mengenbereich umfassen"/>
+                <name language="de-DE" lastTranslated="2023-12-28T13:32:18">Dosismenge und -einheit</name>
+                <desc language="de-DE" lastTranslated="2023-12-28T13:32:18">
+                    <p>Menge mit Einheit pro Dosis, kann auch einen Mengenbereich umfassen</p>
+                </desc>
+                <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.3.2.20084" flexibility="2016-07-27T16:46:16" prefix="aktin-" datasetId="2.16.840.1.113883.2.6.60.3.1.3" datasetEffectiveDate="2015-11-01T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.2-b" iType="item" iEffectiveDate="2016-07-27T16:46:16" iStatusCode="final" refdisplay="aktin-dataelement-20084">
+                    <name language="de-DE">Dosismenge und -einheit</name>
+                </relationship>
+                <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.3.2.20084" flexibility="2018-01-25T00:00:00" prefix="aktin-" datasetId="2.16.840.1.113883.2.6.60.3.1.6" datasetEffectiveDate="2018-08-17T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2020.1" iType="item" iEffectiveDate="2018-01-25T00:00:00" iStatusCode="final" iVersionLabel="v2020.1" refdisplay="aktin-dataelement-20084">
+                    <name language="de-DE">Dosismenge und -einheit</name>
+                </relationship>
+                <valueDomain type="quantity"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.495" effectiveDate="2023-12-27T14:15:49" statusCode="draft" lastModifiedDate="2023-12-28T13:59:28" type="item" iddisplay="iopcde-dataelement-495" shortName="kontinuierliche_gabe_rate">
+                <implementation shortName="kontinuierliche_gabe_rate" markdown="Menge mit Einheit pro Zeiteinheit bei kontinuierlicher Gabe (Rate)"/>
+                <name language="de-DE" lastTranslated="2023-12-28T13:32:22">Kontinuierliche Gabe (Rate)</name>
+                <desc language="de-DE" lastTranslated="2023-12-28T13:32:22">
+                    <p>Menge mit Einheit pro Zeiteinheit bei kontinuierlicher Gabe (Rate)</p>
+                </desc>
+                <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.3.2.20087" flexibility="2016-07-27T16:46:16" prefix="aktin-" datasetId="2.16.840.1.113883.2.6.60.3.1.3" datasetEffectiveDate="2015-11-01T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.2-b" iType="item" iEffectiveDate="2016-07-27T16:46:16" iStatusCode="final" refdisplay="aktin-dataelement-20087">
+                    <name language="de-DE">Kontinuierliche Gabe (Rate)</name>
+                </relationship>
+                <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.3.2.20087" flexibility="2018-01-25T00:00:00" prefix="aktin-" datasetId="2.16.840.1.113883.2.6.60.3.1.6" datasetEffectiveDate="2018-08-17T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2020.1" iType="item" iEffectiveDate="2018-01-25T00:00:00" iStatusCode="final" iVersionLabel="v2020.1" refdisplay="aktin-dataelement-20087">
+                    <name language="de-DE">Kontinuierliche Gabe (Rate)</name>
+                </relationship>
+                <operationalization language="de-DE" lastTranslated="2023-12-28T13:32:22">Vorzugsweise Volumen pro Zeiteinheit falls nicht anwendbar Dosis pro Zeiteinheit.</operationalization>
+                <valueDomain type="quantity">
+                    <property unit="ml/h"/>
+                    <property unit="l/h"/>
+                    <property unit="µg/h"/>
+                    <property unit="mg/h"/>
+                    <property unit="g/h"/>
+                    <example type="valid" caption="Perfusorlaufrate">12 ml/h Arterenol mit 60µg/ml</example>
+                    <example type="valid" caption="Infusionsrate">1000 ml/h E153</example>
+                    <example type="valid" caption="Applikationsrate">50 µg/h Fentanylpflaster</example>
+                </valueDomain>
+            </concept>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.75.2.1.520" effectiveDate="2023-12-28T13:33:17" statusCode="draft" lastModifiedDate="2023-12-28T14:20:29" type="group" iddisplay="iopcde-dataelement-520" shortName="grund_der_medikation">
+            <implementation shortName="grund_der_medikation" markdown="Grund der Medikation, z. B. Diagnose"/>
+            <name language="de-DE" lastTranslated="2023-12-28T13:33:38">Grund der Medikation</name>
+            <desc language="de-DE" lastTranslated="2023-12-28T13:33:38">
+                <p>Grund der Medikation, z. B. Diagnose</p>
+            </desc>
+            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.501" effectiveDate="2023-12-27T14:15:49" statusCode="draft" lastModifiedDate="2023-12-28T14:20:29" type="item" iddisplay="iopcde-dataelement-501" shortName="begrundungstext">
+                <implementation shortName="begrundungstext" markdown="Grund, warum wird das Medikament verordnet/abgegeben/eingenommen, z.B. Diagnose"/>
+                <name language="de-DE" lastTranslated="2023-12-28T13:33:50">Begründungstext</name>
+                <desc language="de-DE" lastTranslated="2023-12-28T13:33:50">
+                    <p>Grund, warum wird das Medikament verordnet/abgegeben/eingenommen, z.B. Diagnose</p>
+                </desc>
+                <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.3.2.3.20091" flexibility="2016-01-15T12:10:52" prefix="aktin-" datasetId="2.16.840.1.113883.2.6.60.3.1.3" datasetEffectiveDate="2015-11-01T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.2-b" iType="item" iEffectiveDate="2016-01-15T12:10:52" iStatusCode="final" refdisplay="aktin-dataelement2015(2)-20091">
+                    <name language="de-DE">Grund der Einnahme</name>
+                </relationship>
+                <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.3.2.6.20091" flexibility="2018-01-25T00:00:00" prefix="aktin-" datasetId="2.16.840.1.113883.2.6.60.3.1.6" datasetEffectiveDate="2018-08-17T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2020.1" iType="item" iEffectiveDate="2018-01-25T00:00:00" iStatusCode="final" iVersionLabel="v2020.1" refdisplay="nap-dataelement2020(1)-20091">
+                    <name language="de-DE">Grund der Einnahme</name>
+                </relationship>
+                <valueDomain type="string"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.521" effectiveDate="2023-12-28T13:34:40" statusCode="draft" lastModifiedDate="2023-12-28T14:20:12" type="item" iddisplay="iopcde-dataelement-521" shortName="kodierte_begrundung">
+                <implementation shortName="kodierte_begrundung" markdown="Z. B. Diagnose Code"/>
+                <name language="de-DE" lastTranslated="2023-12-28T13:35:00">Kodierte Begründung</name>
+                <desc language="de-DE" lastTranslated="2023-12-28T13:35:00">
+                    <p>Z. B. Diagnose Code</p>
+                </desc>
+                <valueDomain type="code">
+                    <conceptList id="2.16.840.1.113883.3.1937.777.75.2.1.521.20231228133440.0"/>
+                </valueDomain>
+            </concept>
+        </concept>
+    </concept>
+    <concept id="2.16.840.1.113883.3.1937.777.75.2.1.502" effectiveDate="2023-12-27T14:20:33" statusCode="draft" lastModifiedDate="2024-08-08T18:00:12" type="group" iddisplay="iopcde-dataelement-502" shortName="diagnose">
+        <implementation shortName="diagnose" markdown="Diagnose"/>
+        <name language="de-DE" lastTranslated="2023-12-27T14:20:52">Diagnose</name>
+        <desc language="de-DE" lastTranslated="2023-12-27T14:20:52">
+            <p>Diagnose</p>
+        </desc>
+        <concept id="2.16.840.1.113883.3.1937.777.75.2.1.503" effectiveDate="2023-12-27T14:21:45" statusCode="draft" lastModifiedDate="2023-12-28T14:18:17" type="item" iddisplay="iopcde-dataelement-503" shortName="freitextbeschreibung">
+            <implementation shortName="freitextbeschreibung" markdown="Diagnose im Klartext. Im Bereich der medizinischen Dokumentation sollte die Textbeschreibung obligatorisch sein."/>
+            <name language="de-DE" lastTranslated="2023-12-28T14:18:17">Freitextbeschreibung</name>
+            <desc language="de-DE" lastTranslated="2023-12-28T14:18:17">Diagnose im Klartext. Im Bereich der medizinischen Dokumentation sollte die Textbeschreibung obligatorisch sein.</desc>
+            <comment language="de-DE" lastTranslated="2023-12-28T14:18:17">Die freitextliche Beschreibung entspricht nicht notwendiger Weise dem mit dem Diagnosecode assoziierten Text, z.B. dem Text aus dem systematischen Verzeichnis des ICD-10.</comment>
+            <relationship type="SPEC" ref="2.16.840.1.113883.2.6.77.2.3.1000" flexibility="2015-12-11T00:00:00" prefix="hl7de-" datasetId="2.16.840.1.113883.2.6.77.1.3" datasetEffectiveDate="2015-12-11T00:00:00" datasetStatusCode="draft" datasetVersionLabel="1.0" iType="item" iEffectiveDate="2015-12-11T00:00:00" iStatusCode="draft" refdisplay="hl7de-dataelement-3.1000">
+                <name language="de-DE">Freitextbeschreibung</name>
+            </relationship>
+            <valueDomain type="string">
+                <example type="neutral">Allergisches Asthma</example>
+            </valueDomain>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.75.2.1.505" effectiveDate="2023-12-27T14:22:59" statusCode="draft" lastModifiedDate="2024-01-10T11:31:30" type="item" iddisplay="iopcde-dataelement-505" shortName="diagnosecode">
+            <implementation shortName="diagnosecode" markdown="Diagnosecode (mit Codesystem und Klartext der Diagnose)&#xA;&#xA;Im Bereich der administrativen und statistischen Auswertung wird die Diagnose mit Hilfe von Codiersystemen verschlüsselt. So wird z.B. bei der Abrechnung nach §301 und §295 SGB V die Codierung von Diagnosen mittels ICD-10 GM gesetzlich vorgeschrieben. Auch für eine fachgerechte medizinische/pflegerische Dokumentation können Diagnosecodes zur Anwendung kommen.&#xA;&#xA;Der Diagnosecode entstammt z. B. folgenden (jeweils zum Zeitpunkt der Dokumentation aktuellen) Codesystemen&#xA;&#xA;* ICD10 GM&#xA;* ICD-10 (International)&#xA;* Orphanet&#xA;* ALPHA-ID&#xA;* SNOMED-CT"/>
+            <name language="de-DE" lastTranslated="2023-12-27T14:23:43">Diagnosecode</name>
+            <desc language="de-DE" lastTranslated="2023-12-27T14:23:43">
+                <p>Diagnosecode (mit Codesystem und Klartext der Diagnose)</p>
+                <p>Im Bereich der administrativen und statistischen Auswertung wird die Diagnose mit Hilfe von Codiersystemen verschlüsselt. So wird z.B. bei der Abrechnung nach §301 und §295 SGB V die Codierung von Diagnosen mittels ICD-10 GM gesetzlich vorgeschrieben.
+                            Auch für eine fachgerechte medizinische/pflegerische Dokumentation können Diagnosecodes zur Anwendung kommen.</p>
+                <p>Der Diagnosecode entstammt z. B. folgenden (jeweils zum Zeitpunkt der Dokumentation aktuellen) Codesystemen</p>
+                <ul>
+                    <li>
+                        <p>ICD10 GM</p>
+                    </li>
+                    <li>
+                        <p>ICD-10
+                        (International)</p>
+                    </li>
+                    <li>
+                        <p>Orphanet</p>
+                    </li>
+                    <li>
+                        <p>ALPHA-ID</p>
+                    </li>
+                    <li>
+                        <p>SNOMED-CT</p>
+                    </li>
+                </ul>
+            </desc>
+            <relationship type="SPEC" ref="2.16.840.1.113883.2.6.77.2.3.1110" flexibility="2015-12-11T00:00:00" prefix="hl7de-" datasetId="2.16.840.1.113883.2.6.77.1.3" datasetEffectiveDate="2015-12-11T00:00:00" datasetStatusCode="draft" datasetVersionLabel="1.0" iType="item" iEffectiveDate="2015-12-11T00:00:00" iStatusCode="draft" refdisplay="hl7de-dataelement-3.1110">
+                <name language="de-DE">Diagnosecode</name>
+            </relationship>
+            <valueDomain type="code">
+                <conceptList id="2.16.840.1.113883.3.1937.777.75.2.1.505.20231227142259.0"/>
+                <example type="neutral">J45.0 (= Allergisches Asthma)</example>
+            </valueDomain>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.75.2.1.508" effectiveDate="2023-12-27T14:31:19" statusCode="draft" lastModifiedDate="2023-12-28T14:18:21" type="item" iddisplay="iopcde-dataelement-508" shortName="diagnosetyp">
+            <implementation shortName="diagnosetyp" markdown="Über den Diagnosetyp wird angegeben, um welche Art von Diagnose es sich handelt. Der Diagnosetyp wird codiert angegeben. Bei der Angabe des Diagnosetyps ist darauf zu achten, dass dieser auch im richtigen Kontext verwendet wird. Zum Beispiel wird es bei der Beschreibung einer Diagnose im Rahmen einer Überweisung nicht den Diagnosetyp „Entlassungsdiagnose&#34; geben."/>
+            <name language="de-DE" lastTranslated="2023-12-28T14:18:21">Diagnosetyp</name>
+            <desc language="de-DE" lastTranslated="2023-12-28T14:18:21">Über den Diagnosetyp wird angegeben, um welche Art von Diagnose es sich handelt. Der Diagnosetyp wird codiert angegeben. Bei der Angabe des Diagnosetyps ist darauf zu achten, dass dieser auch im richtigen Kontext verwendet wird. Zum Beispiel wird es bei der Beschreibung einer Diagnose im Rahmen einer Überweisung nicht
+                        den Diagnosetyp „Entlassungsdiagnose" geben.</desc>
+            <relationship type="SPEC" ref="2.16.840.1.113883.2.6.77.2.3.1300" flexibility="2015-12-11T00:00:00" prefix="hl7de-" datasetId="2.16.840.1.113883.2.6.77.1.3" datasetEffectiveDate="2015-12-11T00:00:00" datasetStatusCode="draft" datasetVersionLabel="1.0" iType="item" iEffectiveDate="2015-12-11T00:00:00" iStatusCode="draft" refdisplay="hl7de-dataelement-3.1300">
+                <name language="de-DE">Diagnosetyp</name>
+            </relationship>
+            <valueDomain type="string">
+                <example type="neutral">Entlassungsdiagnose</example>
+            </valueDomain>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.75.2.1.506" effectiveDate="2023-12-27T14:30:39" statusCode="draft" lastModifiedDate="2023-12-28T14:18:27" type="item" iddisplay="iopcde-dataelement-506" shortName="feststellungsdatum">
+            <implementation shortName="feststellungsdatum" markdown="Das Datum ist der Zeitpunkt, an dem eine Krankheit z. B. durch einen Arzt festgestellt wurde. Dies wird im Folgenden mit Diagnosedatum bezeichnet."/>
+            <name language="de-DE" lastTranslated="2023-12-28T14:18:27">Feststellungsdatum</name>
+            <desc language="de-DE" lastTranslated="2023-12-28T14:18:27">Das Datum ist der Zeitpunkt, an dem eine Krankheit z. B. durch einen Arzt festgestellt wurde. Dies wird im Folgenden mit Diagnosedatum bezeichnet.</desc>
+            <relationship type="SPEC" ref="2.16.840.1.113883.2.6.77.2.3.1400" flexibility="2015-12-11T00:00:00" prefix="hl7de-" datasetId="2.16.840.1.113883.2.6.77.1.3" datasetEffectiveDate="2015-12-11T00:00:00" datasetStatusCode="draft" datasetVersionLabel="1.0" iType="item" iEffectiveDate="2015-12-11T00:00:00" iStatusCode="draft" refdisplay="hl7de-dataelement-3.1400">
+                <name language="de-DE">Feststellungsdatum</name>
+            </relationship>
+            <valueDomain type="date">
+                <example type="neutral">1. November 2015</example>
+            </valueDomain>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.75.2.1.507" effectiveDate="2023-12-27T14:30:59" statusCode="draft" lastModifiedDate="2023-12-28T14:18:32" type="item" iddisplay="iopcde-dataelement-507" shortName="dokumentationsdatum">
+            <implementation shortName="dokumentationsdatum" markdown="Das Datum ist der Zeitpunkt, an dem eine Krankheit z. B. durch einen Arzt dokumentiert wurde. Hinweis: Wenn zwischen Feststellung der Diagnose und Dokumentationsdatum nicht unterschieden werden muss, ist das Datum der Feststellung der Diagnose (Diagnosedatum) anzugeben."/>
+            <name language="de-DE" lastTranslated="2023-12-28T14:18:32">Dokumentationsdatum</name>
+            <desc language="de-DE" lastTranslated="2023-12-28T14:18:32">Das Datum ist der Zeitpunkt, an dem eine Krankheit z. B. durch einen Arzt dokumentiert wurde. Hinweis: Wenn zwischen Feststellung der Diagnose und Dokumentationsdatum nicht unterschieden werden muss, ist das Datum der Feststellung der Diagnose (Diagnosedatum) anzugeben.</desc>
+            <relationship type="SPEC" ref="2.16.840.1.113883.2.6.77.2.3.1500" flexibility="2015-12-11T00:00:00" prefix="hl7de-" datasetId="2.16.840.1.113883.2.6.77.1.3" datasetEffectiveDate="2015-12-11T00:00:00" datasetStatusCode="draft" datasetVersionLabel="1.0" iType="item" iEffectiveDate="2015-12-11T00:00:00" iStatusCode="draft" refdisplay="hl7de-dataelement-3.1500">
+                <name language="de-DE">Dokumentationsdatum</name>
+            </relationship>
+            <valueDomain type="date">
+                <example type="neutral">1. November 2015</example>
+            </valueDomain>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.75.2.1.509" effectiveDate="2023-12-27T14:31:35" statusCode="draft" lastModifiedDate="2024-01-10T12:44:05" type="group" iddisplay="iopcde-dataelement-509" shortName="klinisch_relevanter_zeitraum">
+            <implementation shortName="klinisch_relevanter_zeitraum" markdown="Der Zeitraum wird durch zwei Datumsangaben beschrieben, das heißt, von wann bis wann ein Patient an der diagnostizierten Krankheit litt. Über den Zeitraum kann auch ausgedrückt werden, seit wann ein Patient an einer Krankheit leidet, indem nur das Startdatum des Zeitraums angegeben wird. Das Startdatum des Zeitraums kann abweichen von dem Diagnose¬datum. Datumsangaben zu Diagnosen können in unterschiedlicher Präzision vorhanden sein."/>
+            <name language="de-DE" lastTranslated="2023-12-28T14:18:36">Klinisch relevanter Zeitraum</name>
+            <desc language="de-DE" lastTranslated="2023-12-28T14:18:36">Der Zeitraum wird durch zwei Datumsangaben beschrieben, das heißt, von wann bis wann ein Patient an der diagnostizierten Krankheit litt. Über den Zeitraum kann auch ausgedrückt werden, seit wann ein Patient an einer Krankheit leidet, indem nur das Startdatum des Zeitraums angegeben wird. Das Startdatum des Zeitraums
+                        kann abweichen von dem Diagnose¬datum. Datumsangaben zu Diagnosen können in unterschiedlicher Präzision vorhanden sein.</desc>
+            <relationship type="SPEC" ref="2.16.840.1.113883.2.6.77.2.3.1600" flexibility="2015-12-11T00:00:00" prefix="hl7de-" datasetId="2.16.840.1.113883.2.6.77.1.3" datasetEffectiveDate="2015-12-11T00:00:00" datasetStatusCode="draft" datasetVersionLabel="1.0" iType="group" iEffectiveDate="2015-12-11T00:00:00" iStatusCode="draft" refdisplay="hl7de-dataelement-3.1600">
+                <name language="de-DE">Klinisch relevanter Zeitraum</name>
+            </relationship>
+            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.703" effectiveDate="2024-01-10T11:58:30" statusCode="draft" lastModifiedDate="2024-01-10T12:44:05" type="group" iddisplay="iopcde-dataelement-703" shortName="start">
+                <implementation shortName="start" markdown="Start des klinisch relevanten Zeitraums (des Problems)"/>
+                <name language="de-DE" lastTranslated="2024-01-10T11:58:59">Start</name>
+                <desc language="de-DE" lastTranslated="2024-01-10T11:58:59">
+                    <p>Start des klinisch relevanten Zeitraums (des Problems)</p>
+                </desc>
+                <concept id="2.16.840.1.113883.3.1937.777.75.2.1.510" effectiveDate="2023-12-27T14:31:45" statusCode="draft" lastModifiedDate="2024-01-10T12:01:33" type="item" iddisplay="iopcde-dataelement-510" shortName="vonam">
+                    <implementation shortName="vonam" markdown="Startdatum"/>
+                    <name language="de-DE" lastTranslated="2023-12-28T14:18:52">von/am</name>
+                    <desc language="de-DE" lastTranslated="2023-12-28T14:18:52">Startdatum</desc>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.2.6.77.2.3.1610" flexibility="2015-12-11T00:00:00" prefix="hl7de-" datasetId="2.16.840.1.113883.2.6.77.1.3" datasetEffectiveDate="2015-12-11T00:00:00" datasetStatusCode="draft" datasetVersionLabel="1.0" iType="item" iEffectiveDate="2015-12-11T00:00:00" iStatusCode="draft" refdisplay="hl7de-dataelement-3.1610">
+                        <name language="de-DE">von/am</name>
+                    </relationship>
+                    <valueDomain type="date">
+                        <example type="neutral">Diabetes seit 2006</example>
+                        <example type="neutral">Oberschenkelfraktur am 12. März 2007</example>
+                    </valueDomain>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.75.2.1.706" effectiveDate="2024-01-10T12:43:53" statusCode="draft" lastModifiedDate="2024-01-10T12:44:05" type="item" iddisplay="iopcde-dataelement-706" shortName="lebensphase">
+                    <implementation shortName="lebensphase" markdown="Lebensphase, nach Pschyrembel, adaptiert (https://www.pschyrembel.de/Lebensphasen/K0CMK)"/>
+                    <inherit ref="2.16.840.1.113883.3.1937.777.75.2.1.702" effectiveDate="2024-01-10T11:33:52" prefix="iopcde-" datasetId="2.16.840.1.113883.3.1937.777.75.1.2" datasetEffectiveDate="2023-10-25T11:39:22" datasetStatusCode="draft" datasetVersionLabel="v0.1" iType="item" iStatusCode="draft" iEffectiveDate="2024-01-10T11:33:52" iddisplay="iopcde-dataelement-702" refdisplay="iopcde-dataelement-702" localInherit="true"/>
+                    <name language="de-DE" lastTranslated="2024-01-10T11:34:04">Lebensphase</name>
+                    <desc language="de-DE" lastTranslated="2024-01-10T11:34:04">
+                        <p>Lebensphase, nach Pschyrembel, adaptiert (https://www.pschyrembel.de/Lebensphasen/K0CMK)</p>
+                    </desc>
+                    <valueDomain type="code">
+                        <conceptList id="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.0">
+                            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.11" exception="false" type="L" level="0">
+                                <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Baby</name>
+                                <synonym language="de-DE" lastTranslated="2024-01-10T12:48:44">Säugling</synonym>
+                                <desc language="de-DE" lastTranslated="2024-01-10T11:55:28">
+                                    <p>bis Ende 12. Monat</p>
+                                </desc>
+                            </concept>
+                            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.1" exception="false" type="L" level="1">
+                                <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Neugebores</name>
+                                <desc language="de-DE" lastTranslated="2024-01-10T11:55:28">
+                                    <p>bis 28 Tage</p>
+                                </desc>
+                            </concept>
+                            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.9" exception="false" type="L" level="2">
+                                <name language="de-DE" lastTranslated="2024-01-10T12:25:14">Frühes Neugeborenes</name>
+                                <desc language="de-DE" lastTranslated="2024-01-10T12:25:14">
+                                    <p>24h bis 7 Tage</p>
+                                </desc>
+                            </concept>
+                            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.10" exception="false" type="L" level="2">
+                                <name language="de-DE" lastTranslated="2024-01-10T12:25:14">Spätes Neugeborenes</name>
+                                <desc language="de-DE" lastTranslated="2024-01-10T12:25:14">
+                                    <p>7-28 Tag</p>
+                                </desc>
+                            </concept>
+                            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.3" exception="false" type="L" level="0">
+                                <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Kleinkind</name>
+                                <synonym language="de-DE" lastTranslated="2024-01-10T12:42:39">Kinder­gar­tenzeit</synonym>
+                                <desc language="de-DE" lastTranslated="2024-01-10T11:55:28">
+                                    <p>1-5 Jahre</p>
+                                </desc>
+                            </concept>
+                            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.4" exception="false" type="L" level="0">
+                                <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Kindheit</name>
+                                <synonym language="de-DE" lastTranslated="2024-01-10T11:55:28">Schulkind</synonym>
+                                <desc language="de-DE" lastTranslated="2024-01-10T11:55:28">
+                                    <p>6-13 Jahre</p>
+                                </desc>
+                            </concept>
+                            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.5" exception="false" type="L" level="0">
+                                <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Jugendlicher</name>
+                                <desc language="de-DE" lastTranslated="2024-01-10T11:55:28">
+                                    <p>14-18 Jahre</p>
+                                </desc>
+                            </concept>
+                            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.6" exception="false" type="L" level="0">
+                                <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Erwachsensein</name>
+                                <desc language="de-DE" lastTranslated="2024-01-10T11:55:28">
+                                    <p>ab 18 Jahre</p>
+                                </desc>
+                            </concept>
+                            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.7" exception="false" type="L" level="1">
+                                <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Mittleres Erwachsenenalter</name>
+                                <desc language="de-DE" lastTranslated="2024-01-10T11:55:28">
+                                    <p>ab 18 Jahre</p>
+                                </desc>
+                            </concept>
+                            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.8" exception="false" type="L" level="1">
+                                <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Alter</name>
+                                <synonym language="de-DE" lastTranslated="2024-01-10T11:55:28">Senium</synonym>
+                                <desc language="de-DE" lastTranslated="2024-01-10T11:55:28">
+                                    <p>ab ca. 60 Jahre</p>
+                                </desc>
+                            </concept>
+                        </conceptList>
+                    </valueDomain>
+                    <valueSet id="2.16.840.1.113883.3.1937.777.75.11.7" name="Lebensphasen" displayName="Lebensphasen" effectiveDate="2024-01-10T12:07:15" statusCode="draft" lastModifiedDate="2025-08-01T11:23:40">
+                        <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.0" valueSet="2.16.840.1.113883.3.1937.777.75.11.7" flexibility="2024-01-10T12:07:15" effectiveDate="2024-01-10T12:18:03" valueSetName="Lebensphasen" valueSetStatusCode="draft" valueSetEffectiveDate="2024-01-10T12:07:15"/>
+                        <desc language="de-DE" lastTranslated="2025-08-01T11:23:40">
+                            <p>Value Set (Expanded) :: is-a <strong>767023003 Period of life beginning after birth and ending before death (qualifier value) </strong>
+                            </p>
+                        </desc>
+                        <sourceCodeSystem id="2.16.840.1.113883.6.96" identifierName="SNOMED Clinical Terms" canonicalUri="http://snomed.info/sct" canonicalUriDSTU2="http://snomed.info/sct" canonicalUriSTU3="http://snomed.info/sct" canonicalUriR4="http://snomed.info/sct" canonicalUriR4B="http://snomed.info/sct" canonicalUriR5="http://snomed.info/sct"/>
+                        <publishingAuthority name="InteropCouncil" inherited="project"/>
+                        <copyright language="en-US" inherited="true">This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.</copyright>
+                        <conceptList id="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.0">
+                            <concept localId="1" code="3658006" codeSystem="2.16.840.1.113883.6.96" displayName="Infancy (qualifier value)" level="0" type="L">
+                                <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Baby</name>
+                                <designation language="de-DE" type="synonym" displayName="Säugling"/>
+                            </concept>
+                            <concept localId="2" code="255407002" codeSystem="2.16.840.1.113883.6.96" displayName="Neonatal (qualifier value)" level="1" type="L">
+                                <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Neugebores</name>
+                            </concept>
+                            <concept localId="3" code="303114002" codeSystem="2.16.840.1.113883.6.96" displayName="Early neonatal period (qualifier value)" level="2" type="L">
+                                <name language="de-DE" lastTranslated="2024-01-10T12:25:14">Frühes Neugeborenes</name>
+                            </concept>
+                            <concept localId="4" code="303115001" codeSystem="2.16.840.1.113883.6.96" displayName="Late neonatal period (qualifier value)" level="2" type="L">
+                                <name language="de-DE" lastTranslated="2024-01-10T12:25:14">Spätes Neugeborenes</name>
+                            </concept>
+                            <concept localId="5" code="263659003" codeSystem="2.16.840.1.113883.6.96" displayName="Adolescence (qualifier value)" level="0" type="L">
+                                <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Jugendlicher</name>
+                            </concept>
+                            <concept localId="6" code="255398004" codeSystem="2.16.840.1.113883.6.96" displayName="Childhood (qualifier value)" level="0" type="L">
+                                <name language="de-DE">Childhood (qualifier value)</name>
+                            </concept>
+                            <concept localId="7" code="713152004" codeSystem="2.16.840.1.113883.6.96" displayName="Early childhood (qualifier value)" level="1" type="L">
+                                <name language="de-DE">Early childhood (qualifier value)</name>
+                            </concept>
+                            <concept localId="8" code="713153009" codeSystem="2.16.840.1.113883.6.96" displayName="Toddler (qualifier value)" level="2" type="L">
+                                <name language="de-DE">Toddler (qualifier value)</name>
+                            </concept>
+                            <concept localId="9" code="41847000" codeSystem="2.16.840.1.113883.6.96" displayName="Adulthood (qualifier value)" level="0" type="L">
+                                <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Erwachsensein</name>
+                            </concept>
+                            <concept localId="10" code="764868004" codeSystem="2.16.840.1.113883.6.96" displayName="Middle age (qualifier value)" level="1" type="L">
+                                <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Mittleres Erwachsenenalter</name>
+                            </concept>
+                            <concept localId="11" code="271872005" codeSystem="2.16.840.1.113883.6.96" displayName="Old age (qualifier value)" level="1" type="L">
+                                <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Alter</name>
+                                <designation language="de-DE" type="synonym" displayName="Senium"/>
+                            </concept>
+                        </conceptList>
+                    </valueSet>
+                    <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.0" valueSet="2.16.840.1.113883.3.1937.777.75.11.7" flexibility="2024-01-10T12:07:15" effectiveDate="2024-01-10T12:18:03" valueSetName="Lebensphasen" valueSetStatusCode="draft" valueSetEffectiveDate="2024-01-10T12:07:15"/>
+                    <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.1" code="255407002" codeSystem="2.16.840.1.113883.6.96" displayName="Neonatal (qualifier value)" effectiveDate="2024-01-10T12:19:12" codeSystemName="SNOMED Clinical Terms"/>
+                    <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.5" code="263659003" codeSystem="2.16.840.1.113883.6.96" displayName="Adolescence (qualifier value)" effectiveDate="2024-01-10T12:18:48" codeSystemName="SNOMED Clinical Terms"/>
+                    <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.6" code="41847000" codeSystem="2.16.840.1.113883.6.96" displayName="Adulthood (qualifier value)" effectiveDate="2024-01-10T12:18:35" codeSystemName="SNOMED Clinical Terms"/>
+                    <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.7" code="764868004" codeSystem="2.16.840.1.113883.6.96" displayName="Middle age (qualifier value)" effectiveDate="2024-01-10T12:18:39" codeSystemName="SNOMED Clinical Terms"/>
+                    <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.8" code="271872005" codeSystem="2.16.840.1.113883.6.96" displayName="Old age (qualifier value)" effectiveDate="2024-01-10T12:18:43" codeSystemName="SNOMED Clinical Terms"/>
+                    <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.9" code="303114002" codeSystem="2.16.840.1.113883.6.96" displayName="Early neonatal period (qualifier value)" effectiveDate="2024-01-10T12:26:49" codeSystemName="SNOMED Clinical Terms"/>
+                    <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.10" code="303115001" codeSystem="2.16.840.1.113883.6.96" displayName="Late neonatal period (qualifier value)" effectiveDate="2024-01-10T12:26:56" codeSystemName="SNOMED Clinical Terms"/>
+                    <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.11" code="3658006" codeSystem="2.16.840.1.113883.6.96" displayName="Infancy (qualifier value)" effectiveDate="2024-01-10T12:29:07" codeSystemName="SNOMED Clinical Terms"/>
+                </concept>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.704" effectiveDate="2024-01-10T12:02:13" statusCode="draft" lastModifiedDate="2024-01-10T12:03:15" type="group" iddisplay="iopcde-dataelement-704" shortName="ende">
+                <implementation shortName="ende" markdown="Ende"/>
+                <name language="de-DE" lastTranslated="2024-01-10T12:02:28">Ende</name>
+                <desc language="de-DE" lastTranslated="2024-01-10T12:02:28">
+                    <p>Ende</p>
+                </desc>
+                <concept id="2.16.840.1.113883.3.1937.777.75.2.1.511" effectiveDate="2023-12-27T14:31:45" statusCode="draft" lastModifiedDate="2024-01-10T12:02:38" type="item" iddisplay="iopcde-dataelement-511" shortName="bis">
+                    <implementation shortName="bis" markdown="Enddatum"/>
+                    <name language="de-DE" lastTranslated="2023-12-28T14:18:56">bis</name>
+                    <desc language="de-DE" lastTranslated="2023-12-28T14:18:56">Enddatum</desc>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.2.6.77.2.3.1620" flexibility="2015-12-11T00:00:00" prefix="hl7de-" datasetId="2.16.840.1.113883.2.6.77.1.3" datasetEffectiveDate="2015-12-11T00:00:00" datasetStatusCode="draft" datasetVersionLabel="1.0" iType="item" iEffectiveDate="2015-12-11T00:00:00" iStatusCode="draft" refdisplay="hl7de-dataelement-3.1620">
+                        <name language="de-DE">bis</name>
+                    </relationship>
+                    <valueDomain type="date"/>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.75.2.1.705" effectiveDate="2024-01-10T12:03:03" statusCode="draft" lastModifiedDate="2024-01-10T12:03:15" type="item" iddisplay="iopcde-dataelement-705" shortName="lebensphase">
+                    <implementation shortName="lebensphase" markdown="Lebensphase, nach Pschyrembel, adaptiert (https://www.pschyrembel.de/Lebensphasen/K0CMK)"/>
+                    <inherit ref="2.16.840.1.113883.3.1937.777.75.2.1.702" effectiveDate="2024-01-10T11:33:52" prefix="iopcde-" datasetId="2.16.840.1.113883.3.1937.777.75.1.2" datasetEffectiveDate="2023-10-25T11:39:22" datasetStatusCode="draft" datasetVersionLabel="v0.1" iType="item" iStatusCode="draft" iEffectiveDate="2024-01-10T11:33:52" iddisplay="iopcde-dataelement-702" refdisplay="iopcde-dataelement-702" localInherit="true"/>
+                    <name language="de-DE" lastTranslated="2024-01-10T11:34:04">Lebensphase</name>
+                    <desc language="de-DE" lastTranslated="2024-01-10T11:34:04">
+                        <p>Lebensphase, nach Pschyrembel, adaptiert (https://www.pschyrembel.de/Lebensphasen/K0CMK)</p>
+                    </desc>
+                    <valueDomain type="code">
+                        <conceptList id="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.0">
+                            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.11" exception="false" type="L" level="0">
+                                <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Baby</name>
+                                <synonym language="de-DE" lastTranslated="2024-01-10T12:48:44">Säugling</synonym>
+                                <desc language="de-DE" lastTranslated="2024-01-10T11:55:28">
+                                    <p>bis Ende 12. Monat</p>
+                                </desc>
+                            </concept>
+                            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.1" exception="false" type="L" level="1">
+                                <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Neugebores</name>
+                                <desc language="de-DE" lastTranslated="2024-01-10T11:55:28">
+                                    <p>bis 28 Tage</p>
+                                </desc>
+                            </concept>
+                            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.9" exception="false" type="L" level="2">
+                                <name language="de-DE" lastTranslated="2024-01-10T12:25:14">Frühes Neugeborenes</name>
+                                <desc language="de-DE" lastTranslated="2024-01-10T12:25:14">
+                                    <p>24h bis 7 Tage</p>
+                                </desc>
+                            </concept>
+                            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.10" exception="false" type="L" level="2">
+                                <name language="de-DE" lastTranslated="2024-01-10T12:25:14">Spätes Neugeborenes</name>
+                                <desc language="de-DE" lastTranslated="2024-01-10T12:25:14">
+                                    <p>7-28 Tag</p>
+                                </desc>
+                            </concept>
+                            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.3" exception="false" type="L" level="0">
+                                <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Kleinkind</name>
+                                <synonym language="de-DE" lastTranslated="2024-01-10T12:42:39">Kinder­gar­tenzeit</synonym>
+                                <desc language="de-DE" lastTranslated="2024-01-10T11:55:28">
+                                    <p>1-5 Jahre</p>
+                                </desc>
+                            </concept>
+                            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.4" exception="false" type="L" level="0">
+                                <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Kindheit</name>
+                                <synonym language="de-DE" lastTranslated="2024-01-10T11:55:28">Schulkind</synonym>
+                                <desc language="de-DE" lastTranslated="2024-01-10T11:55:28">
+                                    <p>6-13 Jahre</p>
+                                </desc>
+                            </concept>
+                            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.5" exception="false" type="L" level="0">
+                                <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Jugendlicher</name>
+                                <desc language="de-DE" lastTranslated="2024-01-10T11:55:28">
+                                    <p>14-18 Jahre</p>
+                                </desc>
+                            </concept>
+                            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.6" exception="false" type="L" level="0">
+                                <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Erwachsensein</name>
+                                <desc language="de-DE" lastTranslated="2024-01-10T11:55:28">
+                                    <p>ab 18 Jahre</p>
+                                </desc>
+                            </concept>
+                            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.7" exception="false" type="L" level="1">
+                                <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Mittleres Erwachsenenalter</name>
+                                <desc language="de-DE" lastTranslated="2024-01-10T11:55:28">
+                                    <p>ab 18 Jahre</p>
+                                </desc>
+                            </concept>
+                            <concept id="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.8" exception="false" type="L" level="1">
+                                <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Alter</name>
+                                <synonym language="de-DE" lastTranslated="2024-01-10T11:55:28">Senium</synonym>
+                                <desc language="de-DE" lastTranslated="2024-01-10T11:55:28">
+                                    <p>ab ca. 60 Jahre</p>
+                                </desc>
+                            </concept>
+                        </conceptList>
+                    </valueDomain>
+                    <valueSet id="2.16.840.1.113883.3.1937.777.75.11.7" name="Lebensphasen" displayName="Lebensphasen" effectiveDate="2024-01-10T12:07:15" statusCode="draft" lastModifiedDate="2025-08-01T11:23:40">
+                        <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.0" valueSet="2.16.840.1.113883.3.1937.777.75.11.7" flexibility="2024-01-10T12:07:15" effectiveDate="2024-01-10T12:18:03" valueSetName="Lebensphasen" valueSetStatusCode="draft" valueSetEffectiveDate="2024-01-10T12:07:15"/>
+                        <desc language="de-DE" lastTranslated="2025-08-01T11:23:40">
+                            <p>Value Set (Expanded) :: is-a <strong>767023003 Period of life beginning after birth and ending before death (qualifier value) </strong>
+                            </p>
+                        </desc>
+                        <sourceCodeSystem id="2.16.840.1.113883.6.96" identifierName="SNOMED Clinical Terms" canonicalUri="http://snomed.info/sct" canonicalUriDSTU2="http://snomed.info/sct" canonicalUriSTU3="http://snomed.info/sct" canonicalUriR4="http://snomed.info/sct" canonicalUriR4B="http://snomed.info/sct" canonicalUriR5="http://snomed.info/sct"/>
+                        <publishingAuthority name="InteropCouncil" inherited="project"/>
+                        <copyright language="en-US" inherited="true">This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.</copyright>
+                        <conceptList id="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.0">
+                            <concept localId="1" code="3658006" codeSystem="2.16.840.1.113883.6.96" displayName="Infancy (qualifier value)" level="0" type="L">
+                                <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Baby</name>
+                                <designation language="de-DE" type="synonym" displayName="Säugling"/>
+                            </concept>
+                            <concept localId="2" code="255407002" codeSystem="2.16.840.1.113883.6.96" displayName="Neonatal (qualifier value)" level="1" type="L">
+                                <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Neugebores</name>
+                            </concept>
+                            <concept localId="3" code="303114002" codeSystem="2.16.840.1.113883.6.96" displayName="Early neonatal period (qualifier value)" level="2" type="L">
+                                <name language="de-DE" lastTranslated="2024-01-10T12:25:14">Frühes Neugeborenes</name>
+                            </concept>
+                            <concept localId="4" code="303115001" codeSystem="2.16.840.1.113883.6.96" displayName="Late neonatal period (qualifier value)" level="2" type="L">
+                                <name language="de-DE" lastTranslated="2024-01-10T12:25:14">Spätes Neugeborenes</name>
+                            </concept>
+                            <concept localId="5" code="263659003" codeSystem="2.16.840.1.113883.6.96" displayName="Adolescence (qualifier value)" level="0" type="L">
+                                <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Jugendlicher</name>
+                            </concept>
+                            <concept localId="6" code="255398004" codeSystem="2.16.840.1.113883.6.96" displayName="Childhood (qualifier value)" level="0" type="L">
+                                <name language="de-DE">Childhood (qualifier value)</name>
+                            </concept>
+                            <concept localId="7" code="713152004" codeSystem="2.16.840.1.113883.6.96" displayName="Early childhood (qualifier value)" level="1" type="L">
+                                <name language="de-DE">Early childhood (qualifier value)</name>
+                            </concept>
+                            <concept localId="8" code="713153009" codeSystem="2.16.840.1.113883.6.96" displayName="Toddler (qualifier value)" level="2" type="L">
+                                <name language="de-DE">Toddler (qualifier value)</name>
+                            </concept>
+                            <concept localId="9" code="41847000" codeSystem="2.16.840.1.113883.6.96" displayName="Adulthood (qualifier value)" level="0" type="L">
+                                <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Erwachsensein</name>
+                            </concept>
+                            <concept localId="10" code="764868004" codeSystem="2.16.840.1.113883.6.96" displayName="Middle age (qualifier value)" level="1" type="L">
+                                <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Mittleres Erwachsenenalter</name>
+                            </concept>
+                            <concept localId="11" code="271872005" codeSystem="2.16.840.1.113883.6.96" displayName="Old age (qualifier value)" level="1" type="L">
+                                <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Alter</name>
+                                <designation language="de-DE" type="synonym" displayName="Senium"/>
+                            </concept>
+                        </conceptList>
+                    </valueSet>
+                    <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.0" valueSet="2.16.840.1.113883.3.1937.777.75.11.7" flexibility="2024-01-10T12:07:15" effectiveDate="2024-01-10T12:18:03" valueSetName="Lebensphasen" valueSetStatusCode="draft" valueSetEffectiveDate="2024-01-10T12:07:15"/>
+                    <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.1" code="255407002" codeSystem="2.16.840.1.113883.6.96" displayName="Neonatal (qualifier value)" effectiveDate="2024-01-10T12:19:12" codeSystemName="SNOMED Clinical Terms"/>
+                    <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.5" code="263659003" codeSystem="2.16.840.1.113883.6.96" displayName="Adolescence (qualifier value)" effectiveDate="2024-01-10T12:18:48" codeSystemName="SNOMED Clinical Terms"/>
+                    <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.6" code="41847000" codeSystem="2.16.840.1.113883.6.96" displayName="Adulthood (qualifier value)" effectiveDate="2024-01-10T12:18:35" codeSystemName="SNOMED Clinical Terms"/>
+                    <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.7" code="764868004" codeSystem="2.16.840.1.113883.6.96" displayName="Middle age (qualifier value)" effectiveDate="2024-01-10T12:18:39" codeSystemName="SNOMED Clinical Terms"/>
+                    <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.8" code="271872005" codeSystem="2.16.840.1.113883.6.96" displayName="Old age (qualifier value)" effectiveDate="2024-01-10T12:18:43" codeSystemName="SNOMED Clinical Terms"/>
+                    <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.9" code="303114002" codeSystem="2.16.840.1.113883.6.96" displayName="Early neonatal period (qualifier value)" effectiveDate="2024-01-10T12:26:49" codeSystemName="SNOMED Clinical Terms"/>
+                    <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.10" code="303115001" codeSystem="2.16.840.1.113883.6.96" displayName="Late neonatal period (qualifier value)" effectiveDate="2024-01-10T12:26:56" codeSystemName="SNOMED Clinical Terms"/>
+                    <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.11" code="3658006" codeSystem="2.16.840.1.113883.6.96" displayName="Infancy (qualifier value)" effectiveDate="2024-01-10T12:29:07" codeSystemName="SNOMED Clinical Terms"/>
+                </concept>
+            </concept>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.75.2.1.736" effectiveDate="2024-08-08T17:49:20" statusCode="draft" lastModifiedDate="2024-08-08T17:54:18" type="item" iddisplay="iopcde-dataelement-736" shortName="klinischer_status">
+            <implementation shortName="klinischer_status" markdown="Klinischer Status"/>
+            <name language="de-DE" lastTranslated="2024-08-08T17:49:37">Klinischer Status</name>
+            <desc language="de-DE" lastTranslated="2024-08-08T17:49:37">Klinischer Status</desc>
+            <valueDomain type="code">
+                <conceptList id="2.16.840.1.113883.3.1937.777.75.2.1.736.20240808174920.0">
+                    <concept id="2.16.840.1.113883.3.1937.777.75.2.1.736.20240808174920.1" exception="false">
+                        <name language="de-DE" lastTranslated="2024-08-08T17:54:18">aktiv</name>
+                    </concept>
+                    <concept id="2.16.840.1.113883.3.1937.777.75.2.1.736.20240808174920.2" exception="false">
+                        <name language="de-DE" lastTranslated="2024-08-08T17:54:18">Rezidiv</name>
+                    </concept>
+                    <concept id="2.16.840.1.113883.3.1937.777.75.2.1.736.20240808174920.3" exception="false">
+                        <name language="de-DE" lastTranslated="2024-08-08T17:54:18">Rückfall</name>
+                    </concept>
+                    <concept id="2.16.840.1.113883.3.1937.777.75.2.1.736.20240808174920.4" exception="false">
+                        <name language="de-DE" lastTranslated="2024-08-08T17:54:18">inaktiv</name>
+                    </concept>
+                    <concept id="2.16.840.1.113883.3.1937.777.75.2.1.736.20240808174920.5" exception="false">
+                        <name language="de-DE" lastTranslated="2024-08-08T17:54:18">Remission</name>
+                    </concept>
+                    <concept id="2.16.840.1.113883.3.1937.777.75.2.1.736.20240808174920.6" exception="false">
+                        <name language="de-DE" lastTranslated="2024-08-08T17:54:18">abgeklungen</name>
+                    </concept>
+                    <concept id="2.16.840.1.113883.3.1937.777.75.2.1.736.20240808174920.7" exception="false">
+                        <name language="de-DE" lastTranslated="2024-08-08T17:54:18">unbekannt</name>
+                    </concept>
+                </conceptList>
+            </valueDomain>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.75.2.1.737" effectiveDate="2024-08-08T17:54:35" statusCode="draft" lastModifiedDate="2024-08-08T17:55:38" type="item" iddisplay="iopcde-dataelement-737" shortName="verifizierungsstatus">
+            <implementation shortName="verifizierungsstatus" markdown="Verifizierungsstatus"/>
+            <name language="de-DE" lastTranslated="2024-08-08T17:54:50">Verifizierungsstatus</name>
+            <desc language="de-DE" lastTranslated="2024-08-08T17:54:50">Verifizierungsstatus</desc>
+            <valueDomain type="code">
+                <conceptList id="2.16.840.1.113883.3.1937.777.75.2.1.737.20240808175435.0">
+                    <concept id="2.16.840.1.113883.3.1937.777.75.2.1.737.20240808175435.1" exception="false">
+                        <name language="de-DE" lastTranslated="2024-08-08T17:55:38">unbestätigt</name>
+                    </concept>
+                    <concept id="2.16.840.1.113883.3.1937.777.75.2.1.737.20240808175435.2" exception="false">
+                        <name language="de-DE" lastTranslated="2024-08-08T17:55:38">vorläufig</name>
+                    </concept>
+                    <concept id="2.16.840.1.113883.3.1937.777.75.2.1.737.20240808175435.3" exception="false">
+                        <name language="de-DE" lastTranslated="2024-08-08T17:55:38">differenziell</name>
+                    </concept>
+                    <concept id="2.16.840.1.113883.3.1937.777.75.2.1.737.20240808175435.4" exception="false">
+                        <name language="de-DE" lastTranslated="2024-08-08T17:55:38">bestätigt</name>
+                    </concept>
+                    <concept id="2.16.840.1.113883.3.1937.777.75.2.1.737.20240808175435.5" exception="false">
+                        <name language="de-DE" lastTranslated="2024-08-08T17:55:38">widerlegt</name>
+                    </concept>
+                    <concept id="2.16.840.1.113883.3.1937.777.75.2.1.737.20240808175435.6" exception="false">
+                        <name language="de-DE" lastTranslated="2024-08-08T17:55:38">fehlerhaft eingegeben</name>
+                    </concept>
+                </conceptList>
+            </valueDomain>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.75.2.1.512" effectiveDate="2023-12-27T14:32:05" statusCode="draft" lastModifiedDate="2024-08-08T18:00:12" type="item" iddisplay="iopcde-dataelement-512" shortName="zusatzkennzeichen">
+            <implementation shortName="zusatzkennzeichen" markdown="Die Diagnosesicherheit, d.h. wie sicher die Diagnose im Einzelfall zu werten ist, kann unterschiedlich angegeben werden. Für Abrechnungszwecke in der ambulanten Versorgung muss obligatorisch ein Zusatzkennzeichen für die Diagnosesicherheit (A, G, V oder Z) angegeben werden, d. h. die Angabe ist obligatorisch. In der stationären Versorgung sind diese Zusatzkennzeichen für die Angabe der Diagnosesicherheit für Abrechnungszwecke dagegen nicht zulässig.&#xA;&#xA;Unabhängig von den gesetzlichen Kodierrichtlinien können für Diagnosen Aussagen zum klinischen Status (clinical status) und möglicher Verifikation (verification status) der Diagnose enthalten.&#xA;&#xA;Klinischer Status (clinical status) kann z. B. aktiv (active) oder überwunden/behoben (resolved) sein.&#xA;&#xA;Die Verifikation einer Diagnose (verification status) wird z. B. ausgedrückt als widerlegt (refuted), bestätigt (confirmed) oder vorläufig (provisional).&#xA;&#xA;Diese beiden Eigenschaften sind in den entsprechenden Feldern der Diagnose entsprechend repräsentiert.&#xA;&#xA;Zusatzkennzeichen können aus diesen Angaben abgeleitet werden, wenn es gesetzlich erforderlich ist.&#xA;&#xA;| &#xA; **Zusatzkennzeichen** &#xA; | &#xA; **Klinischer Status** &#xA; | &#xA; **Verifikationsstatus** &#xA; |&#xA;| &#xA;A (ausgeschlossen)&#xA; | &#xA;-&#xA; | &#xA;refuted&#xA; |&#xA;| &#xA;G (gesicherte Diagnose)&#xA; | &#xA;active&#xA; | &#xA;confirmed&#xA; |&#xA;| &#xA;V (Verdacht auf / zum Ausschluss von)&#xA; | &#xA;active&#xA; | &#xA;provisional / differential&#xA; |&#xA;| &#xA;Z (Zustand nach)&#xA; | &#xA;resolved&#xA; | &#xA;confirmed&#xA; |"/>
+            <name language="de-DE" lastTranslated="2023-12-28T14:18:40">Zusatzkennzeichen</name>
+            <desc language="de-DE" lastTranslated="2023-12-28T14:18:40">
+                <p>Die Diagnosesicherheit, d.h. wie sicher die Diagnose im Einzelfall zu werten ist, kann unterschiedlich angegeben werden. Für Abrechnungszwecke in der ambulanten Versorgung muss obligatorisch ein Zusatzkennzeichen für die Diagnosesicherheit (A, G, V oder Z) angegeben werden, d. h. die Angabe ist obligatorisch. In der stationären Versorgung sind diese Zusatzkennzeichen für die Angabe der Diagnosesicherheit für Abrechnungszwecke dagegen nicht zulässig.</p>
+                <p>Unabhängig von den gesetzlichen Kodierrichtlinien können für Diagnosen Aussagen zum klinischen Status (clinical status) und möglicher Verifikation (verification status) der Diagnose enthalten.</p>
+                <p>Klinischer Status (clinical status) kann z. B. aktiv (active) oder überwunden/behoben (resolved) sein.</p>
+                <p>Die Verifikation einer Diagnose (verification status) wird z. B. ausgedrückt als widerlegt (refuted), bestätigt (confirmed) oder vorläufig (provisional).</p>
+                <p>Diese beiden Eigenschaften sind in den entsprechenden Feldern der Diagnose entsprechend repräsentiert. </p>
+                <p>Zusatzkennzeichen können aus diesen Angaben abgeleitet werden, wenn es gesetzlich erforderlich ist.</p>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>
+                                    <strong>Zusatzkennzeichen</strong>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    <strong>Klinischer Status</strong>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    <strong>Verifikationsstatus</strong>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>A (ausgeschlossen)</p>
+                            </td>
+                            <td>
+                                <p>-</p>
+                            </td>
+                            <td>
+                                <p>refuted</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>G (gesicherte Diagnose)</p>
+                            </td>
+                            <td>
+                                <p>active</p>
+                            </td>
+                            <td>
+                                <p>confirmed</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>V (Verdacht auf / zum Ausschluss von)</p>
+                            </td>
+                            <td>
+                                <p>active</p>
+                            </td>
+                            <td>
+                                <p>provisional / differential</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Z (Zustand nach)</p>
+                            </td>
+                            <td>
+                                <p>resolved</p>
+                            </td>
+                            <td>
+                                <p>confirmed</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </desc>
+            <relationship type="SPEC" ref="2.16.840.1.113883.2.6.77.2.3.1700" flexibility="2015-12-11T00:00:00" prefix="hl7de-" datasetId="2.16.840.1.113883.2.6.77.1.3" datasetEffectiveDate="2015-12-11T00:00:00" datasetStatusCode="draft" datasetVersionLabel="1.0" iType="item" iEffectiveDate="2015-12-11T00:00:00" iStatusCode="draft" refdisplay="hl7de-dataelement-3.1700">
+                <name language="de-DE">Diagnosesicherheit</name>
+            </relationship>
+            <valueDomain type="code">
+                <conceptList id="2.16.840.1.113883.3.1937.777.75.2.1.512.20231227143205.0">
+                    <concept id="2.16.840.1.113883.3.1937.777.75.2.1.512.20231227143205.1" exception="false">
+                        <name language="de-DE" lastTranslated="2024-08-08T17:39:50">Ausgeschlossen</name>
+                    </concept>
+                    <concept id="2.16.840.1.113883.3.1937.777.75.2.1.512.20231227143205.2" exception="false">
+                        <name language="de-DE" lastTranslated="2024-08-08T17:39:50">Gesichert</name>
+                    </concept>
+                    <concept id="2.16.840.1.113883.3.1937.777.75.2.1.512.20231227143205.3" exception="false">
+                        <name language="de-DE" lastTranslated="2024-08-08T17:39:50">Verdacht auf</name>
+                    </concept>
+                    <concept id="2.16.840.1.113883.3.1937.777.75.2.1.512.20231227143205.4" exception="false">
+                        <name language="de-DE" lastTranslated="2024-08-08T17:39:50">Zustand nach</name>
+                    </concept>
+                </conceptList>
+            </valueDomain>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.75.2.1.513" effectiveDate="2023-12-27T14:32:22" statusCode="draft" lastModifiedDate="2023-12-28T14:18:46" type="item" iddisplay="iopcde-dataelement-513" shortName="lokalisation">
+            <implementation shortName="lokalisation" markdown="Über die Lokalisation kann angegeben werden, in welchem Bereich des Körpers eine Krankheit diagnostiziert wurde (topographische Information). Die Beschreibung der Lokalisation kann sowohl im Klartext erfolgen, als auch über einen Codierungsschlüssel. Hier ist z.B. der in der Tumordokumentation benutzte Lokalisationsschlüssel, abgeleitet aus der ICD-O, zu nennen. Eine Zusatzangabe kann je nach Organ die Angabe der Körperseite (Seitenlokalisation) sein."/>
+            <name language="de-DE" lastTranslated="2023-12-28T14:18:46">Lokalisation</name>
+            <desc language="de-DE" lastTranslated="2023-12-28T14:18:46">Über die Lokalisation kann angegeben werden, in welchem Bereich des Körpers eine Krankheit diagnostiziert wurde (topographische Information). Die Beschreibung der Lokalisation kann sowohl im Klartext erfolgen, als auch über einen Codierungsschlüssel. Hier ist z.B. der in der Tumordokumentation benutzte
+                        Lokalisationsschlüssel, abgeleitet aus der ICD-O, zu nennen. Eine Zusatzangabe kann je nach Organ die Angabe der Körperseite (Seitenlokalisation) sein.</desc>
+            <relationship type="SPEC" ref="2.16.840.1.113883.2.6.77.2.3.1800" flexibility="2015-12-11T00:00:00" prefix="hl7de-" datasetId="2.16.840.1.113883.2.6.77.1.3" datasetEffectiveDate="2015-12-11T00:00:00" datasetStatusCode="draft" datasetVersionLabel="1.0" iType="item" iEffectiveDate="2015-12-11T00:00:00" iStatusCode="draft" refdisplay="hl7de-dataelement-3.1800">
+                <name language="de-DE">Lokalisation</name>
+            </relationship>
+            <valueDomain type="code">
+                <conceptList id="2.16.840.1.113883.3.1937.777.75.2.1.513.20231227143222.0"/>
+            </valueDomain>
+            <valueDomain type="string"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.75.2.1.514" effectiveDate="2023-12-27T14:32:45" statusCode="draft" lastModifiedDate="2023-12-27T14:33:35" type="item" iddisplay="iopcde-dataelement-514" shortName="ausloser">
+            <implementation shortName="ausloser" markdown="Auslöser (Ätiologie), z. B. welcher Erreger.&#xA;&#xA;Dies betrifft z. B. die Zusatzangabe zum Primärcode ICD-10, der Code für die Ätiologie einer Erkrankung wird in der ICD-Codierung mit einem Kreuz (†) gekennzeichnet."/>
+            <name language="de-DE" lastTranslated="2023-12-27T14:33:03">Auslöser</name>
+            <desc language="de-DE" lastTranslated="2023-12-27T14:33:03">
+                <p>Auslöser (Ätiologie), z. B. welcher Erreger. </p>
+                <p>Dies betrifft z. B. die Zusatzangabe zum Primärcode ICD-10, der Code für die Ätiologie einer Erkrankung wird in der ICD-Codierung mit einem Kreuz (†) gekennzeichnet.</p>
+            </desc>
+            <relationship type="SPEC" ref="2.16.840.1.113883.2.6.77.2.3.1900" flexibility="2015-12-11T00:00:00" prefix="hl7de-" datasetId="2.16.840.1.113883.2.6.77.1.3" datasetEffectiveDate="2015-12-11T00:00:00" datasetStatusCode="draft" datasetVersionLabel="1.0" iType="item" iEffectiveDate="2015-12-11T00:00:00" iStatusCode="draft" refdisplay="hl7de-dataelement-3.1900">
+                <name language="de-DE">Auslöser</name>
+            </relationship>
+            <valueDomain type="code">
+                <conceptList id="2.16.840.1.113883.3.1937.777.75.2.1.514.20231227143245.0"/>
+            </valueDomain>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.75.2.1.515" effectiveDate="2023-12-27T14:34:16" statusCode="draft" lastModifiedDate="2023-12-27T14:35:34" type="item" iddisplay="iopcde-dataelement-515" shortName="organmanifestationen">
+            <implementation shortName="organmanifestationen" markdown="Organmanifestationen&#xA;&#xA;Dies betrifft z. B. die Zusatzangabe zum Primärcode ICD-10,, der Code für die Organmanifestation einer Erkrankung wird in der ICD-Codierung mit einem Stern (\*) gekennzeichnet"/>
+            <name language="de-DE" lastTranslated="2023-12-27T14:34:29">Organmanifestationen</name>
+            <desc language="de-DE" lastTranslated="2023-12-27T14:34:29">
+                <p>Organmanifestationen</p>
+                <p>Dies betrifft z. B. die Zusatzangabe zum Primärcode ICD-10,, der Code für die Organmanifestation einer Erkrankung wird in der ICD-Codierung mit einem Stern (*) gekennzeichnet</p>
+            </desc>
+            <relationship type="SPEC" ref="2.16.840.1.113883.2.6.77.2.3.2000" flexibility="2015-12-11T00:00:00" prefix="hl7de-" datasetId="2.16.840.1.113883.2.6.77.1.3" datasetEffectiveDate="2015-12-11T00:00:00" datasetStatusCode="draft" datasetVersionLabel="1.0" iType="item" iEffectiveDate="2015-12-11T00:00:00" iStatusCode="draft" refdisplay="hl7de-dataelement-3.2000">
+                <name language="de-DE">Organmanifestationen</name>
+            </relationship>
+            <valueDomain type="code">
+                <conceptList id="2.16.840.1.113883.3.1937.777.75.2.1.515.20231227143416.0"/>
+            </valueDomain>
+        </concept>
+    </concept>
+    <concept id="2.16.840.1.113883.3.1937.777.75.2.1.702" effectiveDate="2024-01-10T11:33:52" statusCode="draft" lastModifiedDate="2024-01-10T12:49:24" type="item" iddisplay="iopcde-dataelement-702" shortName="lebensphase">
+        <implementation shortName="lebensphase" markdown="Lebensphase, nach Pschyrembel, adaptiert (https://www.pschyrembel.de/Lebensphasen/K0CMK)"/>
+        <name language="de-DE" lastTranslated="2024-01-10T11:34:04">Lebensphase</name>
+        <desc language="de-DE" lastTranslated="2024-01-10T11:34:04">
+            <p>Lebensphase, nach Pschyrembel, adaptiert (https://www.pschyrembel.de/Lebensphasen/K0CMK)</p>
+        </desc>
+        <valueDomain type="code">
+            <conceptList id="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.0">
+                <concept id="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.11" exception="false" type="L" level="0">
+                    <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Baby</name>
+                    <synonym language="de-DE" lastTranslated="2024-01-10T12:48:44">Säugling</synonym>
+                    <desc language="de-DE" lastTranslated="2024-01-10T11:55:28">
+                        <p>bis Ende 12. Monat</p>
+                    </desc>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.1" exception="false" type="L" level="1">
+                    <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Neugebores</name>
+                    <desc language="de-DE" lastTranslated="2024-01-10T11:55:28">
+                        <p>bis 28 Tage</p>
+                    </desc>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.9" exception="false" type="L" level="2">
+                    <name language="de-DE" lastTranslated="2024-01-10T12:25:14">Frühes Neugeborenes</name>
+                    <desc language="de-DE" lastTranslated="2024-01-10T12:25:14">
+                        <p>24h bis 7 Tage</p>
+                    </desc>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.10" exception="false" type="L" level="2">
+                    <name language="de-DE" lastTranslated="2024-01-10T12:25:14">Spätes Neugeborenes</name>
+                    <desc language="de-DE" lastTranslated="2024-01-10T12:25:14">
+                        <p>7-28 Tag</p>
+                    </desc>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.3" exception="false" type="L" level="0">
+                    <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Kleinkind</name>
+                    <synonym language="de-DE" lastTranslated="2024-01-10T12:42:39">Kinder­gar­tenzeit</synonym>
+                    <desc language="de-DE" lastTranslated="2024-01-10T11:55:28">
+                        <p>1-5 Jahre</p>
+                    </desc>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.4" exception="false" type="L" level="0">
+                    <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Kindheit</name>
+                    <synonym language="de-DE" lastTranslated="2024-01-10T11:55:28">Schulkind</synonym>
+                    <desc language="de-DE" lastTranslated="2024-01-10T11:55:28">
+                        <p>6-13 Jahre</p>
+                    </desc>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.5" exception="false" type="L" level="0">
+                    <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Jugendlicher</name>
+                    <desc language="de-DE" lastTranslated="2024-01-10T11:55:28">
+                        <p>14-18 Jahre</p>
+                    </desc>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.6" exception="false" type="L" level="0">
+                    <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Erwachsensein</name>
+                    <desc language="de-DE" lastTranslated="2024-01-10T11:55:28">
+                        <p>ab 18 Jahre</p>
+                    </desc>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.7" exception="false" type="L" level="1">
+                    <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Mittleres Erwachsenenalter</name>
+                    <desc language="de-DE" lastTranslated="2024-01-10T11:55:28">
+                        <p>ab 18 Jahre</p>
+                    </desc>
+                </concept>
+                <concept id="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.8" exception="false" type="L" level="1">
+                    <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Alter</name>
+                    <synonym language="de-DE" lastTranslated="2024-01-10T11:55:28">Senium</synonym>
+                    <desc language="de-DE" lastTranslated="2024-01-10T11:55:28">
+                        <p>ab ca. 60 Jahre</p>
+                    </desc>
+                </concept>
+            </conceptList>
+        </valueDomain>
+        <valueSet id="2.16.840.1.113883.3.1937.777.75.11.7" name="Lebensphasen" displayName="Lebensphasen" effectiveDate="2024-01-10T12:07:15" statusCode="draft" lastModifiedDate="2025-08-01T11:23:40">
+            <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.0" valueSet="2.16.840.1.113883.3.1937.777.75.11.7" flexibility="2024-01-10T12:07:15" effectiveDate="2024-01-10T12:18:03" valueSetName="Lebensphasen" valueSetStatusCode="draft" valueSetEffectiveDate="2024-01-10T12:07:15"/>
+            <desc language="de-DE" lastTranslated="2025-08-01T11:23:40">
+                <p>Value Set (Expanded) :: is-a <strong>767023003 Period of life beginning after birth and ending before death (qualifier value) </strong>
+                </p>
+            </desc>
+            <sourceCodeSystem id="2.16.840.1.113883.6.96" identifierName="SNOMED Clinical Terms" canonicalUri="http://snomed.info/sct" canonicalUriDSTU2="http://snomed.info/sct" canonicalUriSTU3="http://snomed.info/sct" canonicalUriR4="http://snomed.info/sct" canonicalUriR4B="http://snomed.info/sct" canonicalUriR5="http://snomed.info/sct"/>
+            <publishingAuthority name="InteropCouncil" inherited="project"/>
+            <copyright language="en-US" inherited="true">This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.</copyright>
+            <conceptList id="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.0">
+                <concept localId="1" code="3658006" codeSystem="2.16.840.1.113883.6.96" displayName="Infancy (qualifier value)" level="0" type="L">
+                    <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Baby</name>
+                    <designation language="de-DE" type="synonym" displayName="Säugling"/>
+                </concept>
+                <concept localId="2" code="255407002" codeSystem="2.16.840.1.113883.6.96" displayName="Neonatal (qualifier value)" level="1" type="L">
+                    <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Neugebores</name>
+                </concept>
+                <concept localId="3" code="303114002" codeSystem="2.16.840.1.113883.6.96" displayName="Early neonatal period (qualifier value)" level="2" type="L">
+                    <name language="de-DE" lastTranslated="2024-01-10T12:25:14">Frühes Neugeborenes</name>
+                </concept>
+                <concept localId="4" code="303115001" codeSystem="2.16.840.1.113883.6.96" displayName="Late neonatal period (qualifier value)" level="2" type="L">
+                    <name language="de-DE" lastTranslated="2024-01-10T12:25:14">Spätes Neugeborenes</name>
+                </concept>
+                <concept localId="5" code="263659003" codeSystem="2.16.840.1.113883.6.96" displayName="Adolescence (qualifier value)" level="0" type="L">
+                    <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Jugendlicher</name>
+                </concept>
+                <concept localId="6" code="255398004" codeSystem="2.16.840.1.113883.6.96" displayName="Childhood (qualifier value)" level="0" type="L">
+                    <name language="de-DE">Childhood (qualifier value)</name>
+                </concept>
+                <concept localId="7" code="713152004" codeSystem="2.16.840.1.113883.6.96" displayName="Early childhood (qualifier value)" level="1" type="L">
+                    <name language="de-DE">Early childhood (qualifier value)</name>
+                </concept>
+                <concept localId="8" code="713153009" codeSystem="2.16.840.1.113883.6.96" displayName="Toddler (qualifier value)" level="2" type="L">
+                    <name language="de-DE">Toddler (qualifier value)</name>
+                </concept>
+                <concept localId="9" code="41847000" codeSystem="2.16.840.1.113883.6.96" displayName="Adulthood (qualifier value)" level="0" type="L">
+                    <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Erwachsensein</name>
+                </concept>
+                <concept localId="10" code="764868004" codeSystem="2.16.840.1.113883.6.96" displayName="Middle age (qualifier value)" level="1" type="L">
+                    <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Mittleres Erwachsenenalter</name>
+                </concept>
+                <concept localId="11" code="271872005" codeSystem="2.16.840.1.113883.6.96" displayName="Old age (qualifier value)" level="1" type="L">
+                    <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Alter</name>
+                    <designation language="de-DE" type="synonym" displayName="Senium"/>
+                </concept>
+            </conceptList>
+        </valueSet>
+        <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.0" valueSet="2.16.840.1.113883.3.1937.777.75.11.7" flexibility="2024-01-10T12:07:15" effectiveDate="2024-01-10T12:18:03" valueSetName="Lebensphasen" valueSetStatusCode="draft" valueSetEffectiveDate="2024-01-10T12:07:15"/>
+        <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.1" code="255407002" codeSystem="2.16.840.1.113883.6.96" displayName="Neonatal (qualifier value)" effectiveDate="2024-01-10T12:19:12" codeSystemName="SNOMED Clinical Terms"/>
+        <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.5" code="263659003" codeSystem="2.16.840.1.113883.6.96" displayName="Adolescence (qualifier value)" effectiveDate="2024-01-10T12:18:48" codeSystemName="SNOMED Clinical Terms"/>
+        <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.6" code="41847000" codeSystem="2.16.840.1.113883.6.96" displayName="Adulthood (qualifier value)" effectiveDate="2024-01-10T12:18:35" codeSystemName="SNOMED Clinical Terms"/>
+        <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.7" code="764868004" codeSystem="2.16.840.1.113883.6.96" displayName="Middle age (qualifier value)" effectiveDate="2024-01-10T12:18:39" codeSystemName="SNOMED Clinical Terms"/>
+        <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.8" code="271872005" codeSystem="2.16.840.1.113883.6.96" displayName="Old age (qualifier value)" effectiveDate="2024-01-10T12:18:43" codeSystemName="SNOMED Clinical Terms"/>
+        <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.9" code="303114002" codeSystem="2.16.840.1.113883.6.96" displayName="Early neonatal period (qualifier value)" effectiveDate="2024-01-10T12:26:49" codeSystemName="SNOMED Clinical Terms"/>
+        <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.10" code="303115001" codeSystem="2.16.840.1.113883.6.96" displayName="Late neonatal period (qualifier value)" effectiveDate="2024-01-10T12:26:56" codeSystemName="SNOMED Clinical Terms"/>
+        <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.11" code="3658006" codeSystem="2.16.840.1.113883.6.96" displayName="Infancy (qualifier value)" effectiveDate="2024-01-10T12:29:07" codeSystemName="SNOMED Clinical Terms"/>
+    </concept>
+</dataset>

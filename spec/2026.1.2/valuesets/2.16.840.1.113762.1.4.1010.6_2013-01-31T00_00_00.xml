@@ -1,0 +1,23 @@
+<valueSets>
+    <repository url="http://art-decor.org/decor/services/" ident="ccda-" referencedFrom="DICOM-" projecttype="local">
+        <valueSet id="2.16.840.1.113762.1.4.1010.6" name="CVXVaccinesAdministeredVaccineSet" displayName="CVX Vaccines Administered - Vaccine Set" effectiveDate="2013-01-31T00:00:00" statusCode="final">
+            <desc language="en-US">Value Set: CVX Vaccines Administered - Vaccine Set 2.16.840.1.113762.1.4.1010.6 CVX vaccine concepts that represent actual vaccines types. This does not include the identifiers for CVX codes that do not represent vaccines.<br/> Value set intensionally defined from CVX (OID: 2.16.840.1.113883.12.292)<br/> FilterOnProperty(nonvaccine,FALSE). <p>Valueset Source: <a href="https://vsac.nlm.nih.gov/">https://vsac.nlm.nih.gov/</a>
+                </p>
+            </desc>
+            <sourceCodeSystem id="2.16.840.1.113883.12.292" identifierName="CDC Vaccine Code (CVX)" canonicalUri="http://hl7.org/fhir/sid/cvx" canonicalUriDSTU2="http://hl7.org/fhir/sid/cvx" canonicalUriSTU3="http://hl7.org/fhir/sid/cvx" canonicalUriR4="http://hl7.org/fhir/sid/cvx" canonicalUriR4B="http://hl7.org/fhir/sid/cvx" canonicalUriR5="http://hl7.org/fhir/sid/cvx"/>
+            <publishingAuthority name="HL7 International" inherited="project">
+                <addrLine>Health Level Seven International</addrLine>
+                <addrLine>3300 Washtenaw Avenue</addrLine>
+                <addrLine>Suite 227</addrLine>
+                <addrLine>Ann Arbor, MI 48104- 4261</addrLine>
+                <addrLine>USA</addrLine>
+                <addrLine>T +1 734 677 7777 </addrLine>
+                <addrLine>F +1 734 677 6622</addrLine>
+                <addrLine>E info@hl7.org</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <include codeSystem="2.16.840.1.113883.12.292"/>
+            </conceptList>
+        </valueSet>
+    </repository>
+</valueSets>

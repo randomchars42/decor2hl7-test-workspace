@@ -1,0 +1,62 @@
+<valueSets>
+    <repository url="http://art-decor.org/decor/services/" ident="ad2bbr-" referencedFrom="ch-pcc-" projecttype="local">
+        <valueSet id="2.16.840.1.113883.1.11.20481" name="SecurityIntegrityObservationValue" displayName="SecurityIntegrityObservationValue" effectiveDate="2014-03-26T00:00:00" statusCode="final" versionLabel="DEFN=UV=VO=1360-20160323">
+            <desc language="en-US">
+                <p>
+                    <b>History description 2014-03-26: </b>Lock all vaue sets untouched since 2014-03-26 to trackingId 2014T1_2014_03_26</p>
+            </desc>
+            <sourceCodeSystem id="2.16.840.1.113883.5.1063" identifierName="Observation Value" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-ObservationValue" canonicalUriDSTU2="http://hl7.org/fhir/v3/ObservationValue" canonicalUriSTU3="http://hl7.org/fhir/v3/ObservationValue" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-ObservationValue" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-ObservationValue" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-ObservationValue" context="external/hl7intl/v3/v3-ObservationValue"/>
+            <publishingAuthority name="HL7" inherited="project">
+                <addrLine>Health Level Seven International</addrLine>
+                <addrLine>455 E. Eisenhower PKWY STE 300 # 025</addrLine>
+                <addrLine>Ann Arbor, MI 48108</addrLine>
+                <addrLine>USA</addrLine>
+                <addrLine>T +1 734 677 7777</addrLine>
+                <addrLine>F +1 734 677 6622</addrLine>
+                <addrLine>E info@hl7.org</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <concept code="_SECALTINTOBV" codeSystem="2.16.840.1.113883.5.1063" displayName="alteration integrity" level="1" type="A"/>
+                <concept code="ABSTRED" codeSystem="2.16.840.1.113883.5.1063" displayName="abstracted" level="2" type="L"/>
+                <concept code="AGGRED" codeSystem="2.16.840.1.113883.5.1063" displayName="aggregated" level="2" type="L"/>
+                <concept code="ANONYED" codeSystem="2.16.840.1.113883.5.1063" displayName="anonymized" level="2" type="L"/>
+                <concept code="MAPPED" codeSystem="2.16.840.1.113883.5.1063" displayName="mapped" level="2" type="L"/>
+                <concept code="MASKED" codeSystem="2.16.840.1.113883.5.1063" displayName="masked" level="2" type="L"/>
+                <concept code="PSEUDED" codeSystem="2.16.840.1.113883.5.1063" displayName="pseudonymized" level="2" type="L"/>
+                <concept code="REDACTED" codeSystem="2.16.840.1.113883.5.1063" displayName="redacted" level="2" type="L"/>
+                <concept code="SUBSETTED" codeSystem="2.16.840.1.113883.5.1063" displayName="subsetted" level="2" type="L"/>
+                <concept code="SYNTAC" codeSystem="2.16.840.1.113883.5.1063" displayName="syntactic transform" level="2" type="L"/>
+                <concept code="TRSLT" codeSystem="2.16.840.1.113883.5.1063" displayName="translated" level="2" type="L"/>
+                <concept code="VERSIONED" codeSystem="2.16.840.1.113883.5.1063" displayName="versioned" level="2" type="L"/>
+                <concept code="_SECDATINTOBV" codeSystem="2.16.840.1.113883.5.1063" displayName="data integrity" level="1" type="A"/>
+                <concept code="CRYTOHASH" codeSystem="2.16.840.1.113883.5.1063" displayName="cryptographic hash function" level="2" type="L"/>
+                <concept code="DIGSIG" codeSystem="2.16.840.1.113883.5.1063" displayName="digital signature" level="2" type="L"/>
+                <concept code="_SECINTCONOBV" codeSystem="2.16.840.1.113883.5.1063" displayName="integrity confidence" level="1" type="A"/>
+                <concept code="HRELIABLE" codeSystem="2.16.840.1.113883.5.1063" displayName="highly reliable" level="2" type="L"/>
+                <concept code="RELIABLE" codeSystem="2.16.840.1.113883.5.1063" displayName="reliable" level="2" type="L"/>
+                <concept code="UNCERTREL" codeSystem="2.16.840.1.113883.5.1063" displayName="uncertain reliability" level="2" type="L"/>
+                <concept code="UNRELIABLE" codeSystem="2.16.840.1.113883.5.1063" displayName="unreliable" level="2" type="L"/>
+                <concept code="_SECINTPRVOBV" codeSystem="2.16.840.1.113883.5.1063" displayName="provenance" level="1" type="A"/>
+                <concept code="_SECINTPRVABOBV" codeSystem="2.16.840.1.113883.5.1063" displayName="provenance asserted by" level="2" type="A"/>
+                <concept code="CLINAST" codeSystem="2.16.840.1.113883.5.1063" displayName="clinician asserted" level="3" type="L"/>
+                <concept code="DEVAST" codeSystem="2.16.840.1.113883.5.1063" displayName="device asserted" level="3" type="L"/>
+                <concept code="HCPAST" codeSystem="2.16.840.1.113883.5.1063" displayName="healthcare professional asserted" level="3" type="L"/>
+                <concept code="PACQAST" codeSystem="2.16.840.1.113883.5.1063" displayName="patient acquaintance asserted" level="3" type="L"/>
+                <concept code="PATAST" codeSystem="2.16.840.1.113883.5.1063" displayName="patient asserted" level="3" type="L"/>
+                <concept code="PAYAST" codeSystem="2.16.840.1.113883.5.1063" displayName="payer asserted" level="3" type="L"/>
+                <concept code="PROAST" codeSystem="2.16.840.1.113883.5.1063" displayName="professional asserted" level="3" type="L"/>
+                <concept code="SDMAST" codeSystem="2.16.840.1.113883.5.1063" displayName="substitute decision maker asserted" level="3" type="L"/>
+                <concept code="_SECINTPRVRBOBV" codeSystem="2.16.840.1.113883.5.1063" displayName="provenance reported by" level="2" type="A"/>
+                <concept code="CLINRPT" codeSystem="2.16.840.1.113883.5.1063" displayName="clinician reported" level="3" type="L"/>
+                <concept code="DEVRPT" codeSystem="2.16.840.1.113883.5.1063" displayName="device reported" level="3" type="L"/>
+                <concept code="HCPRPT" codeSystem="2.16.840.1.113883.5.1063" displayName="healthcare professional reported" level="3" type="L"/>
+                <concept code="PACQRPT" codeSystem="2.16.840.1.113883.5.1063" displayName="patient acquaintance reported" level="3" type="L"/>
+                <concept code="PATRPT" codeSystem="2.16.840.1.113883.5.1063" displayName="patient reported" level="3" type="L"/>
+                <concept code="PAYRPT" codeSystem="2.16.840.1.113883.5.1063" displayName="payer reported" level="3" type="L"/>
+                <concept code="PRORPT" codeSystem="2.16.840.1.113883.5.1063" displayName="professional reported" level="3" type="L"/>
+                <concept code="SDMRPT" codeSystem="2.16.840.1.113883.5.1063" displayName="substitute decision maker reported" level="3" type="L"/>
+                <concept code="_SECINTSTOBV" codeSystem="2.16.840.1.113883.5.1063" displayName="integrity status" level="1" type="A"/>
+            </conceptList>
+        </valueSet>
+    </repository>
+</valueSets>

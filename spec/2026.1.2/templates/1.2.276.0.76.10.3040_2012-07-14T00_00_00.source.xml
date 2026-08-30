@@ -1,0 +1,43 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:ukfc="http://fhir.hl7.de/ukfc" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.3040" name="AllergienUnvertraeglichkeiten" displayName="Allergien und Unverträglichkeiten" effectiveDate="2012-07-14T00:00:00" statusCode="draft" url="http://art-decor.org/decor/services/" ident="pmp-" ukfc:dummy-1="http://fhir.hl7.de/ukfc" sdtc:dummy-2="urn:hl7-org:sdtc" xhtml:dummy-3="http://www.w3.org/1999/xhtml" pharm:dummy-4="urn:hl7-org:pharm" xml:dummy-5="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-7="urn:hl7-org:v3" xsi:dummy-8="http://www.w3.org/2001/XMLSchema-instance">
+    <desc language="de-DE">Beschreibung der Allergien und Medikamentenunverträglichkeiten und deren beobachteten Nebenwirkungen</desc>
+    <classification type="cdasectionlevel"/>
+    <relationship type="SPEC" template="2.16.840.1.113883.10.12.201" flexibility="2005-09-07T00:00:00"/>
+    <context id="**"/>
+    <item label="saurpmp"/>
+    <example>
+        <section classCode="DOCSECT">
+            <templateId root="1.2.276.0.76.10.3040"/>
+            <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/>
+            <title>Allergien und Unverträglichkeiten</title>
+            <text>
+                <list>
+                    <item ID="alg">Allergie: Penizillin</item>
+                    <item ID="int">Unverträglichkeit: Laktose</item>
+                </list>
+            </text>
+            <entry typeCode="COMP">
+                        <!-- .. -->
+            </entry>
+        </section>
+    </example>
+    <element name="hl7:section">
+        <attribute name="classCode" value="DOCSECT" isOptional="true"/>
+        <attribute name="moodCode" value="EVN" isOptional="true"/>
+        <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II">
+            <attribute name="root" value="1.2.276.0.76.10.3040"/>
+        </element>
+        <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CE">
+            <vocabulary code="48765-2" codeSystem="2.16.840.1.113883.6.1"/>
+        </element>
+        <element name="hl7:title" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="ST">
+            <text>Allergien und Unverträglichkeiten</text>
+        </element>
+        <element name="hl7:text" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="SD.TEXT"/>
+        <element name="hl7:entry" minimumMultiplicity="0" maximumMultiplicity="1" contains="1.2.276.0.76.10.4018" conformance="R">
+            <attribute name="typeCode" value="DRIV" datatype="cs"/>
+        </element>
+        <element name="hl7:entry" minimumMultiplicity="0" maximumMultiplicity="1" contains="1.2.276.0.76.10.4019" conformance="R">
+            <attribute name="typeCode" value="DRIV" datatype="cs"/>
+        </element>
+    </element>
+</template>

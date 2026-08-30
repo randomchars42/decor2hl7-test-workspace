@@ -1,0 +1,51 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.4296" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:ukfc="http://fhir.hl7.de/ukfc" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" id="1.2.276.0.76.10.4296" hl7:dummy-default="urn:hl7-org:v3" displayName="Bezug zur Therapie-Intention" xml:dummy-5="http://www.w3.org/XML/1998/namespace" cda:dummy-7="urn:hl7-org:v3" ukfc:dummy-1="http://fhir.hl7.de/ukfc" url="http://art-decor.org/decor/services/" pharm:dummy-4="urn:hl7-org:pharm" xsi:dummy-8="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" ident="pmp-" name="PlanofCareActivityReferenceSubstanceAdministration" sdtc:dummy-2="urn:hl7-org:sdtc" xhtml:dummy-3="http://www.w3.org/1999/xhtml" statusCode="draft" effectiveDate="2019-01-27T00:00:00">
+            <desc language="de-DE">Dieses Template referenziert (über die ID) eine medikamentöse Therapie Intention (Behandlungsplan)</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="ADAPT" template="2.16.840.1.113883.10.20.22.4.42" flexibility="2014-06-09T00:00:00" tmid="2.16.840.1.113883.10.20.22.4.42" tmname="PlannedMedicationActivityV2" tmdisplayName="Planned Medication Activity (V2)" tmeffectiveDate="2014-06-09T00:00:00" tmstatusCode="draft" tmversionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-" linkedartefactmissing="false"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.308" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.308" tmname="CDASubstanceAdministration" tmdisplayName="CDA SubstanceAdministration" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <example type="neutral">
+                <hl7:substanceAdministration classCode="SBADM" moodCode="INT">
+                    <hl7:templateId root="1.2.276.0.76.10.4296"/>
+                    <hl7:id root="1.2.3.999" extension="--example only--"/>
+                    <hl7:consumable>
+                        <hl7:manufacturedProduct>
+                            <hl7:manufacturedMaterial nullFlavor="NA"/>
+                        </hl7:manufacturedProduct>
+                    </hl7:consumable>
+                </hl7:substanceAdministration>
+            </example>
+            <element name="hl7:substanceAdministration" id="2.16.840.1.113883.2.6.60.4.9.876">
+                <item original="false" label="PlanofCareActivityReferenceSubstanceAdministration"/>
+                <attribute name="classCode" value="SBADM" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.881"/>
+                <attribute name="moodCode" value="INT" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.882"/>
+                <element name="hl7:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.877">
+                    <item original="false" label="PlanofCareActivityReferenceSubstanceAdministration"/>
+                    <attribute name="root" value="1.2.276.0.76.10.4296" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.60.4.9.869"/>
+                </element>
+                <element name="hl7:id" datatype="II" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.878">
+                    <desc language="de-DE">Referenz zu einer medikamentösen Therapie-Intention (Behandlungsplan)</desc>
+                    <item original="false" label="PlanofCareActivityReferenceSubstanceAdministration"/>
+                </element>
+                <element name="hl7:consumable" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.888">
+                    <item original="false" label="PlanofCareActivityReferenceSubstanceAdministration"/>
+                    <element name="hl7:manufacturedProduct" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.889">
+                        <item original="false" label="PlanofCareActivityReferenceSubstanceAdministration"/>
+                        <element name="hl7:manufacturedMaterial" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.4.9.890">
+                            <item original="false" label="PlanofCareActivityReferenceSubstanceAdministration"/>
+                            <attribute name="nullFlavor" value="NA" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.891"/>
+                        </element>
+                    </element>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="dependency" prefix="vomgt-" flexibility="2020-05-08T11:31:04" id="1.2.276.0.76.3.1.135.8.10.134" name="F02BKrankenhausbehandlung" displayName="02B: Krankenhausbehandlung - Verordnung" effectiveDate="2020-05-07T13:27:32" statusCode="draft" ident="vomgt-"/>
+            <ref type="dependency" prefix="vomgt-" flexibility="2020-05-13T16:03:13" id="1.2.276.0.76.3.1.135.8.10.136" name="BisherigeMassnahmen02" displayName="Bisherige Maßnahmen" effectiveDate="2020-05-08T11:31:04" statusCode="draft" ident="vomgt-"/>
+            <ref type="contains" prefix="vomgt-" flexibility="dynamic" id="1.2.276.0.76.3.1.135.8.10.143" name="MedicationStatement02" displayName="Medikation" effectiveDate="2020-05-13T16:03:13" statusCode="draft" isClosed="false" ident="vomgt-"/>
+            <ref type="contains" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.4022" name="MedicationStatement" displayName="Medikation" effectiveDate="2018-11-01T00:00:00" statusCode="draft" isClosed="false" versionLabel="v2019" ident="pmp-"/>
+            <ref type="contains" prefix="ssmith-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.41.10.9" name="MedicationStatement1" displayName="Medikation" effectiveDate="2019-03-04T15:44:27" statusCode="draft" isClosed="false" versionLabel="v2019" ident="ssmith-"/>
+            <ref type="dependency" prefix="sgevko-" flexibility="2020-05-08T11:31:04" id="2.16.840.1.113883.3.1937.99.61.53.10.249" name="M02BKrankenhausbehandlung" displayName="02B: Krankenhausbehandlung - Verordnung - Test" effectiveDate="2020-05-14T22:10:35" statusCode="draft" ident="sgevko-"/>
+        </template>
+    </template>
+</result>

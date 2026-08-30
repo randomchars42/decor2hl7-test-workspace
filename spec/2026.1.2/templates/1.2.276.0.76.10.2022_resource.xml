@@ -1,0 +1,394 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.2022" ident="aktin-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.2022" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="CDA participant Kostentraeger" ident="aktin-" name="HeaderParticipantKostentraeger" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="active" url="http://art-decor.org/decor/services/" effectiveDate="2014-08-25T00:00:00">
+            <desc language="de-DE">Kostenträger/Versicherter/Versicherung mit der Angabe des Versicherungsnehmers sowie der damit verbundene Kostenträger (Versicherung). Im Kontext der Krebsregister ist die Versicherungsnummer sowie die Identifikation des Kostenträgers von Interesse.</desc>
+            <classification type="cdaheaderlevel"/>
+            <relationship type="SPEC" template="1.2.276.0.76.10.2024" tmid="1.2.276.0.76.10.2024" tmname="HeaderParticipant" tmdisplayName="CDA participant Weitere Beteiligte" tmstatusCode="active" tmeffectiveDate="2014-08-25T00:00:00" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.108" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.108" tmname="CDAparticipant" tmdisplayName="CDA participant" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <example type="neutral">
+                <participant typeCode="HLD">
+                    <associatedEntity classCode="POLHOLD">
+                        <!-- eGK Nummer -->
+                        <id extension="A123456789" root="1.2.276.0.76.4.8"/>
+                        <!-- Versicherungsnummer -->
+                        <id extension="123456789" root="1.2.276.0.76.3.1.131.1.4.3.9999.9999.999955"/>
+                        <code code="SELF" codeSystem="2.16.840.1.113883.5.111" displayName="self"/>
+                        <associatedPerson>
+                            <name>
+                                <given>Fred</given>
+                                <family>Mustermann</family>
+                            </name>
+                        </associatedPerson>
+                        <scopingOrganization>
+                            <!-- IK-NR -->
+                            <id extension="987654321" root="1.2.276.0.76.4.5"/>
+                            <!-- VK-NR -->
+                            <id extension="54321" root="1.2.276.0.76.4.7"/>
+                            <name>AOK Süd-Ostwestfalen Nord</name>
+                        </scopingOrganization>
+                    </associatedEntity>
+                </participant>
+            </example>
+            <element name="hl7:participant[hl7:templateId[@root='1.2.276.0.76.10.2022']]" id="2.16.840.1.113883.2.6.77.9.19">
+                <item original="false" label="HeaderParticipantKostentraeger"/>
+                <attribute name="typeCode" value="HLD" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.77.9.20"/>
+                <element name="hl7:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="*" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.21">
+                    <item original="false" label="HeaderParticipantKostentraeger"/>
+                    <attribute name="root" value="1.2.276.0.76.10.2022" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.77.9.22"/>
+                </element>
+                <element name="hl7:time" datatype="IVL_TS" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.23">
+                    <desc language="de-DE">Hier muss immer ein Quartalsende angegeben sein (MM/YY) =&gt; YYYYMMDD, z. B. Quartal I/2016, Quartalsende ist demnach März 2016 und wird zu 20160331</desc>
+                    <item original="false" label="HeaderParticipantKostentraeger"/>
+                    <example type="neutral">
+                        <time>
+                            <high value="20131231"/>
+                        </time>
+                    </example>
+                </element>
+                <element name="hl7:associatedEntity" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.24">
+                    <item original="false" label="HeaderParticipantKostentraeger"/>
+                    <attribute name="classCode" value="POLHOLD" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.77.9.25"/>
+                    <element name="hl7:id" datatype="II" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.2.6.77.9.26">
+                        <desc language="de-DE">Versichertennummern</desc>
+                        <item original="false" label="HeaderParticipantKostentraeger"/>
+                    </element>
+                    <element name="hl7:code" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.27">
+                        <desc language="de-DE">Versichertenstatus<br clear="none"/>
+                        </desc>
+                        <item original="false" label="HeaderParticipantKostentraeger"/>
+                        <example type="neutral">
+                            <code code="SELF" codeSystem="2.16.840.1.113883.5.111" displayName="self">
+                                <translation code="1" codeSystem="2.16.840.1.113883.3.7.1.1" displayName="Mitglied"/>
+                            </code>
+                        </example>
+                        <vocabulary valueSet="1.2.276.0.76.11.68" vsid="1.2.276.0.76.11.68" vsname="InsuredAssocEntity" vsdisplayName="InsuredAssocEntity" vseffectiveDate="2011-12-19T00:00:00" vsstatusCode="final" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false"/>
+                        <element name="hl7:translation[@codeSystem='2.16.840.1.113883.3.7.1.1']" datatype="CV" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.178">
+                            <desc language="de-DE">Codierungen des Versichertenstatus im Rahmen der GKV</desc>
+                            <item original="false" label="HeaderParticipantKostentraeger"/>
+                            <vocabulary valueSet="1.2.276.0.76.11.162" flexibility="dynamic" vsid="1.2.276.0.76.11.162" vsname="S_KBV_VERSICHERTENSTATUS" vsdisplayName="S_KBV_VERSICHERTENSTATUS" vseffectiveDate="2014-01-01T00:00:00" vsstatusCode="final" url="http://art-decor.org/decor/services/" ident="kbvde-" linkedartefactmissing="false"/>
+                        </element>
+                        <element name="hl7:translation" datatype="CV" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.2.6.77.9.179">
+                            <desc language="de-DE">Weitere Codierungen des Versichertenstatus</desc>
+                            <item original="false" label="HeaderParticipantKostentraeger"/>
+                        </element>
+                    </element>
+                    <element name="hl7:addr" datatype="AD" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.28">
+                        <item original="false" label="HeaderParticipantKostentraeger"/>
+                    </element>
+                    <element name="hl7:telecom" datatype="TEL" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.2.6.77.9.29">
+                        <item original="false" label="HeaderParticipantKostentraeger"/>
+                    </element>
+                    <element name="hl7:associatedPerson" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.30">
+                        <item original="false" label="HeaderParticipantKostentraeger"/>
+                        <include ref="1.2.276.0.76.10.90010" tmid="1.2.276.0.76.10.90010" tmname="PersonElements" tmdisplayName="CDA Person Elements" tmeffectiveDate="2011-12-19T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                            <item original="false" label="HeaderParticipantKostentraeger"/>
+                            <attribute name="classCode" value="PSN" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.330"/>
+                            <attribute name="determinerCode" value="INSTANCE" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.331"/>
+                            <element name="hl7:name" datatype="PN" id="2.16.840.1.113883.2.6.77.9.332" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                                <item original="false" label="PersonElements"/>
+                            </element>
+                            <staticAssociations>
+                                <origconcept ref="2.16.840.1.113883.3.1937.777.26.2.128" effectiveDate="2020-03-03T09:27:47" refdisplay="konsab-dataelement-128" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.777.26.1.1" datasetEffectiveDate="2018-07-10T12:22:31" datasetStatusCode="draft" datasetName="Datensatz" ident="konsab-" elementId="2.16.840.1.113883.2.6.77.9.332" templateId="1.2.276.0.76.10.90010" templateEffectiveDate="2011-12-19T00:00:00" path="Dermatologisches Konsil / Patient">
+                                    <name language="de-DE">Name</name>
+                                    <desc language="de-DE"/>
+                                    <datasetName language="de-DE">Datensatz</datasetName>
+                                    <projectName language="de-DE">Konsilanfrage und Bericht</projectName>
+                                </origconcept>
+                                <origconcept ref="2.16.840.1.113883.3.1937.777.35.2.367" effectiveDate="2019-05-28T19:34:23" refdisplay="eImpfpass-dataelement-367" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.777.35.1.1" datasetEffectiveDate="2019-05-17T08:08:51" datasetStatusCode="draft" datasetName="Impfpass" ident="eImpfpass-" elementId="2.16.840.1.113883.2.6.77.9.332" templateId="1.2.276.0.76.10.90010" templateEffectiveDate="2011-12-19T00:00:00" path="Elektronischer Impfpass / Behandelnder Arzt">
+                                    <datasetName language="de-DE">Impfpass</datasetName>
+                                    <projectName language="de-DE">Elektronischer Impfpass</projectName>
+                                </origconcept>
+                                <origconcept ref="2.16.840.1.113883.3.1937.777.35.2.423" effectiveDate="2019-07-04T12:09:35" refdisplay="eImpfpass-dataelement-423" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.777.35.1.1" datasetEffectiveDate="2019-05-17T08:08:51" datasetStatusCode="draft" datasetName="Impfpass" ident="eImpfpass-" elementId="2.16.840.1.113883.2.6.77.9.332" templateId="1.2.276.0.76.10.90010" templateEffectiveDate="2011-12-19T00:00:00" path="Elektronischer Impfpass Konzepte / Dokumentierender">
+                                    <name language="de-DE">Name</name>
+                                    <desc language="de-DE"/>
+                                    <datasetName language="de-DE">Impfpass</datasetName>
+                                    <projectName language="de-DE">Elektronischer Impfpass</projectName>
+                                </origconcept>
+                            </staticAssociations>
+                        </include>
+                    </element>
+                    <assert role="error" test="not(hl7:code[@code='FAMDEP']) or hl7:associatedPerson">Wenn das Versicherungsverhältnis "familienversichert" ist, dann muss eine associatedPerson angegeben sein</assert>
+                    <element name="hl7:scopingOrganization" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.31">
+                        <desc language="de-DE">In scopingOrganization wird im id Attribut das Institutionskennzeichen (IKNR) des Kostenträgers mit @extension = die eigentliche IKNR und @root = "1.2.276.0.76.4.5" (Dies ist die OID für IK-Nummern in Deutschland) angegeben</desc>
+                        <item original="false" label="HeaderParticipantKostentraeger"/>
+                        <include ref="1.2.276.0.76.10.90011" tmid="1.2.276.0.76.10.90011" tmname="OrganizationElements" tmdisplayName="CDA Organization Elements" tmeffectiveDate="2011-12-19T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                            <item original="false" label="HeaderParticipantKostentraeger"/>
+                            <attribute name="classCode" value="ORG" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.333"/>
+                            <attribute name="determinerCode" value="INSTANCE" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.334"/>
+                            <element name="hl7:id" datatype="II" id="2.16.840.1.113883.2.6.77.9.335" minimumMultiplicity="0" maximumMultiplicity="*">
+                                <item original="false" label="OrganizationElements"/>
+                            </element>
+                            <element name="hl7:name" datatype="ON" id="2.16.840.1.113883.2.6.77.9.336" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                                <item original="false" label="OrganizationElements"/>
+                            </element>
+                            <element name="hl7:telecom" datatype="TEL" id="2.16.840.1.113883.2.6.77.9.337" minimumMultiplicity="0" maximumMultiplicity="*">
+                                <item original="false" label="OrganizationElements"/>
+                            </element>
+                            <element name="hl7:addr" datatype="AD" id="2.16.840.1.113883.2.6.77.9.338" minimumMultiplicity="0" maximumMultiplicity="1">
+                                <item original="false" label="OrganizationElements"/>
+                            </element>
+                            <staticAssociations>
+                                <origconcept ref="1.2.276.0.76.3.1.135.8.2.770" effectiveDate="2020-06-25T13:18:40" refdisplay="vomgt-dataelement-770" conceptStatusCode="draft" datasetId="1.2.276.0.76.3.1.135.8.1.1" datasetEffectiveDate="2015-12-02T09:18:17" datasetStatusCode="draft" datasetName="KV-Mustersammlung" ident="vomgt-" elementId="2.16.840.1.113883.2.6.77.9.333" templateId="1.2.276.0.76.10.90011" templateEffectiveDate="2011-12-19T00:00:00" path="AR-Antrag / Patient Data">
+                                    <name language="de-DE">Hospital Information</name>
+                                    <desc language="de-DE"/>
+                                    <datasetName language="de-DE">KV-Mustersammlung</datasetName>
+                                    <projectName language="de-DE">Verordnungsmanagement</projectName>
+                                </origconcept>
+                                <origconcept ref="1.2.276.0.76.3.1.261.1.77.1.2.2.529" effectiveDate="2018-05-24T00:00:00" refdisplay="dguvbbr-dataelement2-529" conceptStatusCode="draft" datasetId="1.2.276.0.76.3.1.261.1.77.1.1.2" datasetEffectiveDate="2018-05-24T00:00:00" datasetStatusCode="draft" datasetName="Stationärer Entlassungsbericht" ident="dguvbbr-" elementId="2.16.840.1.113883.2.6.77.9.335" templateId="1.2.276.0.76.10.90011" templateEffectiveDate="2011-12-19T00:00:00" path="Beteiligte Sozialversicherungsträger / Krankenkasse">
+                                    <name language="de-DE">IK-Nummer</name>
+                                    <desc language="de-DE">Die Institutionskennzeichen (kurz: IK) sind bundesweit eindeutige, neunstellige Zahlen, mit deren Hilfe Abrechnungen und Qualitätssicherungsmaßnahmen im Bereich der deutschen <span class="yui-non">Sozialversicherung</span> einrichtungsübergreifend abgewickelt werden können. Hierbei erhalten alle Einrichtungen, die Leistungen nach dem <span class="yui-non">Sozialgesetzbuch</span> (SGB) erbringen, auf Antrag ein IK. Damit ist die Grundlage der Abrechnung mittels elektronischer Datenverarbeitung gelegt. Das IK ist ein eindeutiges Merkmal für die Abrechnung mit den Trägern der Sozialversicherung.</desc>
+                                    <datasetName language="de-DE">Stationärer Entlassungsbericht</datasetName>
+                                    <projectName language="de-DE" lastTranslated="2022-12-07T18:52:23">DGUV BBR</projectName>
+                                </origconcept>
+                                <origconcept ref="1.2.276.0.76.3.1.261.1.77.1.2.2.556" effectiveDate="2018-05-24T00:00:00" refdisplay="dguvbbr-dataelement2-556" conceptStatusCode="draft" datasetId="1.2.276.0.76.3.1.261.1.77.1.1.2" datasetEffectiveDate="2018-05-24T00:00:00" datasetStatusCode="draft" datasetName="Stationärer Entlassungsbericht" ident="dguvbbr-" elementId="2.16.840.1.113883.2.6.77.9.335" templateId="1.2.276.0.76.10.90011" templateEffectiveDate="2011-12-19T00:00:00" path="Beteiligte Sozialversicherungsträger / Pflegekasse">
+                                    <name language="de-DE">IK-Nummer</name>
+                                    <desc language="de-DE"/>
+                                    <datasetName language="de-DE">Stationärer Entlassungsbericht</datasetName>
+                                    <projectName language="de-DE" lastTranslated="2022-12-07T18:52:23">DGUV BBR</projectName>
+                                </origconcept>
+                                <origconcept ref="1.2.276.0.76.3.1.261.1.77.1.2.2.663" effectiveDate="2018-07-05T14:49:15" refdisplay="dguvbbr-dataelement2-663" conceptStatusCode="draft" datasetId="1.2.276.0.76.3.1.261.1.77.1.1.2" datasetEffectiveDate="2018-05-24T00:00:00" datasetStatusCode="draft" datasetName="Stationärer Entlassungsbericht" ident="dguvbbr-" elementId="2.16.840.1.113883.2.6.77.9.335" templateId="1.2.276.0.76.10.90011" templateEffectiveDate="2011-12-19T00:00:00" path="Aufenthaltsinformationen / Behandelnde Einrichtung">
+                                    <name language="de-DE">IK-Nummer</name>
+                                    <desc language="de-DE"/>
+                                    <datasetName language="de-DE">Stationärer Entlassungsbericht</datasetName>
+                                    <projectName language="de-DE" lastTranslated="2022-12-07T18:52:23">DGUV BBR</projectName>
+                                </origconcept>
+                                <origconcept ref="1.2.276.0.76.3.1.261.1.77.1.2.2.666" effectiveDate="2018-07-09T15:28:24" refdisplay="dguvbbr-dataelement2-666" conceptStatusCode="draft" datasetId="1.2.276.0.76.3.1.261.1.77.1.1.2" datasetEffectiveDate="2018-05-24T00:00:00" datasetStatusCode="draft" datasetName="Stationärer Entlassungsbericht" ident="dguvbbr-" elementId="2.16.840.1.113883.2.6.77.9.335" templateId="1.2.276.0.76.10.90011" templateEffectiveDate="2011-12-19T00:00:00" path="Beteiligte Sozialversicherungsträger / UV Träger">
+                                    <name language="de-DE">IK-Nummer</name>
+                                    <desc language="de-DE">IK des UV-Trägers</desc>
+                                    <datasetName language="de-DE">Stationärer Entlassungsbericht</datasetName>
+                                    <projectName language="de-DE" lastTranslated="2022-12-07T18:52:23">DGUV BBR</projectName>
+                                </origconcept>
+                                <origconcept ref="2.16.840.1.113883.3.1937.777.26.2.145" effectiveDate="2020-03-18T00:10:08" refdisplay="konsab-dataelement-145" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.777.26.1.1" datasetEffectiveDate="2018-07-10T12:22:31" datasetStatusCode="draft" datasetName="Datensatz" ident="konsab-" elementId="2.16.840.1.113883.2.6.77.9.337" templateId="1.2.276.0.76.10.90011" templateEffectiveDate="2011-12-19T00:00:00" path="Dermatologisches Konsil / Konsiliararzt">
+                                    <name language="de-DE">Telefonnummer</name>
+                                    <desc language="de-DE">Die Telefonnummer des Konsiliararztes</desc>
+                                    <datasetName language="de-DE">Datensatz</datasetName>
+                                    <projectName language="de-DE">Konsilanfrage und Bericht</projectName>
+                                </origconcept>
+                                <origconcept ref="2.16.840.1.113883.3.1937.777.26.2.146" effectiveDate="2020-03-18T00:12:37" refdisplay="konsab-dataelement-146" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.777.26.1.1" datasetEffectiveDate="2018-07-10T12:22:31" datasetStatusCode="draft" datasetName="Datensatz" ident="konsab-" elementId="2.16.840.1.113883.2.6.77.9.337" templateId="1.2.276.0.76.10.90011" templateEffectiveDate="2011-12-19T00:00:00" path="Dermatologisches Konsil / Konsiliararzt">
+                                    <name language="de-DE">Faxnummer</name>
+                                    <desc language="de-DE">Die Faxnummer des Konsiliararztes</desc>
+                                    <datasetName language="de-DE">Datensatz</datasetName>
+                                    <projectName language="de-DE">Konsilanfrage und Bericht</projectName>
+                                </origconcept>
+                                <origconcept ref="2.16.840.1.113883.3.1937.777.26.2.89" effectiveDate="2020-02-18T11:06:24" refdisplay="konsab-dataelement-89" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.777.26.1.1" datasetEffectiveDate="2018-07-10T12:22:31" datasetStatusCode="draft" datasetName="Datensatz" ident="konsab-" elementId="2.16.840.1.113883.2.6.77.9.335" templateId="1.2.276.0.76.10.90011" templateEffectiveDate="2011-12-19T00:00:00" path="Dermatologisches Konsil / Beauftragender Arzt">
+                                    <name language="de-DE">BSNR</name>
+                                    <desc language="de-DE">Die Betriebsstättennummer des beauftragenden Arztes</desc>
+                                    <datasetName language="de-DE">Datensatz</datasetName>
+                                    <projectName language="de-DE">Konsilanfrage und Bericht</projectName>
+                                </origconcept>
+                                <origconcept ref="2.16.840.1.113883.3.1937.777.26.2.90" effectiveDate="2020-02-18T11:07:59" refdisplay="konsab-dataelement-90" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.777.26.1.1" datasetEffectiveDate="2018-07-10T12:22:31" datasetStatusCode="draft" datasetName="Datensatz" ident="konsab-" elementId="2.16.840.1.113883.2.6.77.9.335" templateId="1.2.276.0.76.10.90011" templateEffectiveDate="2011-12-19T00:00:00" path="Dermatologisches Konsil / Konsiliararzt">
+                                    <name language="de-DE">BSNR</name>
+                                    <desc language="de-DE">Die Betriebsstättennummer des Konsiliars</desc>
+                                    <datasetName language="de-DE">Datensatz</datasetName>
+                                    <projectName language="de-DE">Konsilanfrage und Bericht</projectName>
+                                </origconcept>
+                                <origconcept ref="2.16.840.1.113883.3.1937.777.26.2.93" effectiveDate="2020-02-25T09:13:40" refdisplay="konsab-dataelement-93" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.777.26.1.1" datasetEffectiveDate="2018-07-10T12:22:31" datasetStatusCode="draft" datasetName="Datensatz" ident="konsab-" elementId="2.16.840.1.113883.2.6.77.9.337" templateId="1.2.276.0.76.10.90011" templateEffectiveDate="2011-12-19T00:00:00" path="Dermatologisches Konsil / Beauftragender Arzt">
+                                    <name language="de-DE">Telefonnummer</name>
+                                    <desc language="de-DE">Telefonnummer des beauftragenden Arztes</desc>
+                                    <datasetName language="de-DE">Datensatz</datasetName>
+                                    <projectName language="de-DE">Konsilanfrage und Bericht</projectName>
+                                </origconcept>
+                                <origconcept ref="2.16.840.1.113883.3.1937.777.26.2.94" effectiveDate="2020-02-25T09:15:01" refdisplay="konsab-dataelement-94" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.777.26.1.1" datasetEffectiveDate="2018-07-10T12:22:31" datasetStatusCode="draft" datasetName="Datensatz" ident="konsab-" elementId="2.16.840.1.113883.2.6.77.9.337" templateId="1.2.276.0.76.10.90011" templateEffectiveDate="2011-12-19T00:00:00" path="Dermatologisches Konsil / Beauftragender Arzt">
+                                    <name language="de-DE">Faxnummer</name>
+                                    <desc language="de-DE">Faxnummer des beauftragenden Arztes</desc>
+                                    <datasetName language="de-DE">Datensatz</datasetName>
+                                    <projectName language="de-DE">Konsilanfrage und Bericht</projectName>
+                                </origconcept>
+                                <origconcept ref="2.16.840.1.113883.3.1937.777.35.2.325" effectiveDate="2019-05-28T19:16:28" refdisplay="eImpfpass-dataelement-325" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.777.35.1.1" datasetEffectiveDate="2019-05-17T08:08:51" datasetStatusCode="draft" datasetName="Impfpass" ident="eImpfpass-" elementId="2.16.840.1.113883.2.6.77.9.335" templateId="1.2.276.0.76.10.90011" templateEffectiveDate="2011-12-19T00:00:00" path="Elektronischer Impfpass / Behandelnde Praxis">
+                                    <name language="de-DE">Betriebsstättennummer</name>
+                                    <desc language="de-DE"/>
+                                    <datasetName language="de-DE">Impfpass</datasetName>
+                                    <projectName language="de-DE">Elektronischer Impfpass</projectName>
+                                </origconcept>
+                                <origconcept ref="2.16.840.1.113883.3.1937.777.35.2.326" effectiveDate="2019-05-28T19:16:28" refdisplay="eImpfpass-dataelement-326" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.777.35.1.1" datasetEffectiveDate="2019-05-17T08:08:51" datasetStatusCode="draft" datasetName="Impfpass" ident="eImpfpass-" elementId="2.16.840.1.113883.2.6.77.9.336" templateId="1.2.276.0.76.10.90011" templateEffectiveDate="2011-12-19T00:00:00" path="Elektronischer Impfpass / Behandelnde Praxis">
+                                    <name language="de-DE">Name</name>
+                                    <desc language="de-DE"/>
+                                    <datasetName language="de-DE">Impfpass</datasetName>
+                                    <projectName language="de-DE">Elektronischer Impfpass</projectName>
+                                </origconcept>
+                                <origconcept ref="2.16.840.1.113883.3.1937.777.35.2.327" effectiveDate="2019-05-28T19:16:28" refdisplay="eImpfpass-dataelement-327" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.777.35.1.1" datasetEffectiveDate="2019-05-17T08:08:51" datasetStatusCode="draft" datasetName="Impfpass" ident="eImpfpass-" elementId="2.16.840.1.113883.2.6.77.9.337" templateId="1.2.276.0.76.10.90011" templateEffectiveDate="2011-12-19T00:00:00" path="Elektronischer Impfpass / Behandelnde Praxis">
+                                    <name language="de-DE">Telefonnummer</name>
+                                    <desc language="de-DE"/>
+                                    <datasetName language="de-DE">Impfpass</datasetName>
+                                    <projectName language="de-DE">Elektronischer Impfpass</projectName>
+                                </origconcept>
+                                <origconcept ref="2.16.840.1.113883.3.1937.777.35.2.328" effectiveDate="2019-05-28T19:18:15" refdisplay="eImpfpass-dataelement-328" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.777.35.1.1" datasetEffectiveDate="2019-05-17T08:08:51" datasetStatusCode="draft" datasetName="Impfpass" ident="eImpfpass-" elementId="2.16.840.1.113883.2.6.77.9.338" templateId="1.2.276.0.76.10.90011" templateEffectiveDate="2011-12-19T00:00:00" path="Elektronischer Impfpass / Behandelnde Praxis">
+                                    <datasetName language="de-DE">Impfpass</datasetName>
+                                    <projectName language="de-DE">Elektronischer Impfpass</projectName>
+                                </origconcept>
+                                <origconcept ref="2.16.840.1.113883.3.1937.99.61.48.2.1010" effectiveDate="2019-02-08T00:00:00" refdisplay="medmgmt-dataelement-1010" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.99.61.48.1.2" datasetEffectiveDate="2019-02-08T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2019" datasetName="Datensatz eMedikation" ident="medmgmt-" elementId="2.16.840.1.113883.2.6.77.9.335" templateId="1.2.276.0.76.10.90011" templateEffectiveDate="2011-12-19T00:00:00" path="Leistungserbringer / Organisation">
+                                    <name language="de-DE">BSNR</name>
+                                    <desc language="de-DE">BSNR</desc>
+                                    <datasetName language="de-DE">Datensatz eMedikation</datasetName>
+                                    <projectName language="de-DE">Medikationsmanagement</projectName>
+                                </origconcept>
+                                <origconcept ref="2.16.840.1.113883.3.1937.99.61.48.2.1012" effectiveDate="2019-02-08T00:00:00" refdisplay="medmgmt-dataelement-1012" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.99.61.48.1.2" datasetEffectiveDate="2019-02-08T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2019" datasetName="Datensatz eMedikation" ident="medmgmt-" elementId="2.16.840.1.113883.2.6.77.9.335" templateId="1.2.276.0.76.10.90011" templateEffectiveDate="2011-12-19T00:00:00" path="Leistungserbringer / Organisation">
+                                    <name language="de-DE">Institutskennzeichen Krankenhaus</name>
+                                    <desc language="de-DE">Institutskennzeichen Krankenhaus</desc>
+                                    <datasetName language="de-DE">Datensatz eMedikation</datasetName>
+                                    <projectName language="de-DE">Medikationsmanagement</projectName>
+                                </origconcept>
+                                <origconcept ref="2.16.840.1.113883.3.1937.99.61.48.2.1013" effectiveDate="2019-02-08T00:00:00" refdisplay="medmgmt-dataelement-1013" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.99.61.48.1.2" datasetEffectiveDate="2019-02-08T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2019" datasetName="Datensatz eMedikation" ident="medmgmt-" elementId="2.16.840.1.113883.2.6.77.9.335" templateId="1.2.276.0.76.10.90011" templateEffectiveDate="2011-12-19T00:00:00" path="Leistungserbringer / Organisation">
+                                    <name language="de-DE">Institutskennzeichen Apotheke</name>
+                                    <desc language="de-DE">Institutskennzeichen Apotheke</desc>
+                                    <datasetName language="de-DE">Datensatz eMedikation</datasetName>
+                                    <projectName language="de-DE">Medikationsmanagement</projectName>
+                                </origconcept>
+                                <origconcept ref="2.16.840.1.113883.3.1937.99.61.48.2.1014" effectiveDate="2019-02-08T00:00:00" refdisplay="medmgmt-dataelement-1014" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.99.61.48.1.2" datasetEffectiveDate="2019-02-08T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2019" datasetName="Datensatz eMedikation" ident="medmgmt-" elementId="2.16.840.1.113883.2.6.77.9.336" templateId="1.2.276.0.76.10.90011" templateEffectiveDate="2011-12-19T00:00:00" path="Leistungserbringer / Organisation">
+                                    <name language="de-DE">Name Institution</name>
+                                    <desc language="de-DE">Name Institution</desc>
+                                    <datasetName language="de-DE">Datensatz eMedikation</datasetName>
+                                    <projectName language="de-DE">Medikationsmanagement</projectName>
+                                </origconcept>
+                                <origconcept ref="2.16.840.1.113883.3.1937.99.61.48.2.1208" effectiveDate="2019-02-08T00:00:00" refdisplay="medmgmt-dataelement-1208" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.99.61.48.1.2" datasetEffectiveDate="2019-02-08T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2019" datasetName="Datensatz eMedikation" ident="medmgmt-" elementId="2.16.840.1.113883.2.6.77.9.335" templateId="1.2.276.0.76.10.90011" templateEffectiveDate="2011-12-19T00:00:00" path="Leistungserbringer / Organisation">
+                                    <name language="de-DE">Apotheken-IDF</name>
+                                    <desc language="de-DE">Apothekenidentifikationsnummer</desc>
+                                    <datasetName language="de-DE">Datensatz eMedikation</datasetName>
+                                    <projectName language="de-DE">Medikationsmanagement</projectName>
+                                </origconcept>
+                            </staticAssociations>
+                        </include>
+                    </element>
+                </element>
+            </element>
+            <staticAssociations>
+                <origconcept ref="2.16.840.1.113883.2.6.60.10.2.1.1470" effectiveDate="2021-02-25T00:00:00" refdisplay="abde-dataelement-1.1470" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.10.1.1" datasetEffectiveDate="2014-08-25T00:00:00" datasetStatusCode="draft" datasetName="Arztbrief" ident="abde-" elementId="2.16.840.1.113883.2.6.77.9.19" templateId="1.2.276.0.76.10.2022" templateEffectiveDate="2014-08-25T00:00:00" path="">
+                    <name language="de-DE">Kostenträger</name>
+                    <desc language="de-DE">Kostenträger/Versicherter/Versicherung mit der Angabe des Versicherungsnehmers sowie der damit verbundene Kostenträger (Versicherung). Im Kontext der Krebsregister ist die Versicherungsnummer sowie die Identifikation des Kostenträgers von Interesse.</desc>
+                    <datasetName language="de-DE">Arztbrief</datasetName>
+                    <projectName language="de-DE">eArztbrief</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.12.2.353" effectiveDate="2016-11-06T13:07:48" refdisplay="evthm-dataelement-353" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.12.1.1" datasetEffectiveDate="2016-06-27T11:19:09" datasetStatusCode="draft" datasetVersionLabel="1.0" datasetName="eVent@home" ident="evthm-" elementId="2.16.840.1.113883.2.6.77.9.19" templateId="1.2.276.0.76.10.2022" templateEffectiveDate="2014-08-25T00:00:00" path="">
+                    <name language="de-DE">Kostenträger</name>
+                    <desc language="de-DE"/>
+                    <datasetName language="de-DE">eVent@home</datasetName>
+                    <projectName language="de-DE">eVent@home</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.12.2.354" effectiveDate="2016-11-06T13:09:08" refdisplay="evthm-dataelement-354" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.12.1.1" datasetEffectiveDate="2016-06-27T11:19:09" datasetStatusCode="draft" datasetVersionLabel="1.0" datasetName="eVent@home" ident="evthm-" elementId="2.16.840.1.113883.2.6.77.9.31" templateId="1.2.276.0.76.10.2022" templateEffectiveDate="2014-08-25T00:00:00" path="Kostenträger">
+                    <name language="de-DE">Versicherungsgesellschaft</name>
+                    <desc language="de-DE">Versicherungsgesellschaft</desc>
+                    <datasetName language="de-DE">eVent@home</datasetName>
+                    <projectName language="de-DE">eVent@home</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.12.2.355" effectiveDate="2016-11-06T13:09:44" refdisplay="evthm-dataelement-355" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.12.1.1" datasetEffectiveDate="2016-06-27T11:19:09" datasetStatusCode="draft" datasetVersionLabel="1.0" datasetName="eVent@home" ident="evthm-" elementId="2.16.840.1.113883.2.6.77.9.31" templateId="1.2.276.0.76.10.2022" templateEffectiveDate="2014-08-25T00:00:00" path="Kostenträger / Versicherungsgesellschaft">
+                    <name language="de-DE">Name</name>
+                    <desc language="de-DE">Name der Versicherungsgesellschaft</desc>
+                    <datasetName language="de-DE">eVent@home</datasetName>
+                    <projectName language="de-DE">eVent@home</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.12.2.356" effectiveDate="2016-11-06T13:09:44" refdisplay="evthm-dataelement-356" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.12.1.1" datasetEffectiveDate="2016-06-27T11:19:09" datasetStatusCode="draft" datasetVersionLabel="1.0" datasetName="eVent@home" ident="evthm-" elementId="2.16.840.1.113883.2.6.77.9.31" templateId="1.2.276.0.76.10.2022" templateEffectiveDate="2014-08-25T00:00:00" path="Kostenträger / Versicherungsgesellschaft">
+                    <name language="de-DE">Identifikation</name>
+                    <desc language="de-DE">Identifikation der Versicherungsgesellschaft</desc>
+                    <datasetName language="de-DE">eVent@home</datasetName>
+                    <projectName language="de-DE">eVent@home</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.12.2.357" effectiveDate="2016-11-06T13:10:31" refdisplay="evthm-dataelement-357" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.12.1.1" datasetEffectiveDate="2016-06-27T11:19:09" datasetStatusCode="draft" datasetVersionLabel="1.0" datasetName="eVent@home" ident="evthm-" elementId="2.16.840.1.113883.2.6.77.9.24" templateId="1.2.276.0.76.10.2022" templateEffectiveDate="2014-08-25T00:00:00" path="Kostenträger">
+                    <name language="de-DE">Versicherungsverhältnis</name>
+                    <desc language="de-DE">Versicherungsverhältnis</desc>
+                    <datasetName language="de-DE">eVent@home</datasetName>
+                    <projectName language="de-DE">eVent@home</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.12.2.358" effectiveDate="2016-11-06T13:10:51" refdisplay="evthm-dataelement-358" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.12.1.1" datasetEffectiveDate="2016-06-27T11:19:09" datasetStatusCode="draft" datasetVersionLabel="1.0" datasetName="eVent@home" ident="evthm-" elementId="2.16.840.1.113883.2.6.77.9.26" templateId="1.2.276.0.76.10.2022" templateEffectiveDate="2014-08-25T00:00:00" path="Kostenträger / Versicherungsverhältnis">
+                    <name language="de-DE">Identifikation</name>
+                    <desc language="de-DE">Identifikation des Versicherungsverhältnisses, Versichertennummer</desc>
+                    <datasetName language="de-DE">eVent@home</datasetName>
+                    <projectName language="de-DE">eVent@home</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.12.2.359" effectiveDate="2016-11-06T13:10:51" refdisplay="evthm-dataelement-359" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.12.1.1" datasetEffectiveDate="2016-06-27T11:19:09" datasetStatusCode="draft" datasetVersionLabel="1.0" datasetName="eVent@home" ident="evthm-" elementId="2.16.840.1.113883.2.6.77.9.23" templateId="1.2.276.0.76.10.2022" templateEffectiveDate="2014-08-25T00:00:00" path="Kostenträger / Versicherungsverhältnis">
+                    <name language="de-DE">Gültigkeit</name>
+                    <desc language="de-DE">Gültigkeit des Versicherungsverhältnisses, Versichertenstatus</desc>
+                    <datasetName language="de-DE">eVent@home</datasetName>
+                    <projectName language="de-DE">eVent@home</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.12.2.360" effectiveDate="2016-11-06T13:10:51" refdisplay="evthm-dataelement-360" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.12.1.1" datasetEffectiveDate="2016-06-27T11:19:09" datasetStatusCode="draft" datasetVersionLabel="1.0" datasetName="eVent@home" ident="evthm-" elementId="2.16.840.1.113883.2.6.77.9.23" templateId="1.2.276.0.76.10.2022" templateEffectiveDate="2014-08-25T00:00:00" path="Kostenträger / Versicherungsverhältnis / Gültigkeit">
+                    <name language="de-DE">Gültigkeit von</name>
+                    <desc language="de-DE">Gültigkeit von</desc>
+                    <datasetName language="de-DE">eVent@home</datasetName>
+                    <projectName language="de-DE">eVent@home</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.12.2.361" effectiveDate="2016-11-06T13:10:51" refdisplay="evthm-dataelement-361" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.12.1.1" datasetEffectiveDate="2016-06-27T11:19:09" datasetStatusCode="draft" datasetVersionLabel="1.0" datasetName="eVent@home" ident="evthm-" elementId="2.16.840.1.113883.2.6.77.9.23" templateId="1.2.276.0.76.10.2022" templateEffectiveDate="2014-08-25T00:00:00" path="Kostenträger / Versicherungsverhältnis / Gültigkeit">
+                    <name language="de-DE">Gültigkeit bis</name>
+                    <desc language="de-DE">Gültigkeit bis</desc>
+                    <datasetName language="de-DE">eVent@home</datasetName>
+                    <projectName language="de-DE">eVent@home</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.12.2.362" effectiveDate="2016-11-06T13:10:51" refdisplay="evthm-dataelement-362" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.12.1.1" datasetEffectiveDate="2016-06-27T11:19:09" datasetStatusCode="draft" datasetVersionLabel="1.0" datasetName="eVent@home" ident="evthm-" elementId="2.16.840.1.113883.2.6.77.9.27" templateId="1.2.276.0.76.10.2022" templateEffectiveDate="2014-08-25T00:00:00" path="Kostenträger / Versicherungsverhältnis">
+                    <name language="de-DE">Status</name>
+                    <desc language="de-DE">Status des Versicherungsverhältnisses, Versichertenstatus</desc>
+                    <datasetName language="de-DE">eVent@home</datasetName>
+                    <projectName language="de-DE">eVent@home</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.2.10003" effectiveDate="2015-01-15T00:00:00" refdisplay="aktin-dataelement2015(1)-10003" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.2" datasetEffectiveDate="2015-01-15T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.1-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.77.9.19" templateId="1.2.276.0.76.10.2022" templateEffectiveDate="2014-08-25T00:00:00" path="">
+                    <name language="de-DE">Versicherung</name>
+                    <desc language="de-DE">Versicherung zum Patienten</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.2.60" effectiveDate="2015-01-15T00:00:00" refdisplay="aktin-dataelement2015(1)-60" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.2" datasetEffectiveDate="2015-01-15T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.1-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.77.9.31" templateId="1.2.276.0.76.10.2022" templateEffectiveDate="2014-08-25T00:00:00" path="Versicherung">
+                    <name language="de-DE">Versicherungsname</name>
+                    <desc language="de-DE">Name der Versicherung</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.2.771" effectiveDate="2015-01-15T00:00:00" refdisplay="aktin-dataelement2015(1)-771" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.2" datasetEffectiveDate="2015-01-15T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.1-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.77.9.31" templateId="1.2.276.0.76.10.2022" templateEffectiveDate="2014-08-25T00:00:00" path="Versicherung">
+                    <name language="de-DE">Versicherungsträger</name>
+                    <desc language="de-DE">Versicherungsstatus des Patienten</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.2.808" effectiveDate="2015-01-15T00:00:00" refdisplay="aktin-dataelement2015(1)-808" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.2" datasetEffectiveDate="2015-01-15T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.1-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.77.9.26" templateId="1.2.276.0.76.10.2022" templateEffectiveDate="2014-08-25T00:00:00" path="Versicherung">
+                    <name language="de-DE">Versicherungsnummer</name>
+                    <desc language="de-DE">Nummer, die der (Kranken-)Versicherung des Patienten zugewiesen wurde. Diese findet sich z.B. auf der Mitgliedskarte der Krankenkasse.</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.3.10003" effectiveDate="2015-11-01T00:00:00" refdisplay="aktin-dataelement2015(2)-10003" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.3" datasetEffectiveDate="2015-11-01T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.2-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.77.9.19" templateId="1.2.276.0.76.10.2022" templateEffectiveDate="2014-08-25T00:00:00" path="">
+                    <name language="de-DE">Versicherung</name>
+                    <desc language="de-DE">Versicherung zum Patienten</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.3.60" effectiveDate="2015-11-01T00:00:00" refdisplay="aktin-dataelement2015(2)-60" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.3" datasetEffectiveDate="2015-11-01T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.2-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.77.9.31" templateId="1.2.276.0.76.10.2022" templateEffectiveDate="2014-08-25T00:00:00" path="Versicherung">
+                    <name language="de-DE">Versicherungsname</name>
+                    <desc language="de-DE">Name der Versicherung</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.3.771" effectiveDate="2015-11-01T00:00:00" refdisplay="aktin-dataelement2015(2)-771" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.3" datasetEffectiveDate="2015-11-01T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.2-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.77.9.31" templateId="1.2.276.0.76.10.2022" templateEffectiveDate="2014-08-25T00:00:00" path="Versicherung">
+                    <name language="de-DE">Versicherungsträger</name>
+                    <desc language="de-DE">Versicherungsstatus des Patienten</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.3.808" effectiveDate="2015-11-01T00:00:00" refdisplay="aktin-dataelement2015(2)-808" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.3" datasetEffectiveDate="2015-11-01T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.2-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.77.9.26" templateId="1.2.276.0.76.10.2022" templateEffectiveDate="2014-08-25T00:00:00" path="Versicherung">
+                    <name language="de-DE">Versicherungsnummer</name>
+                    <desc language="de-DE">Nummer, die der (Kranken-)Versicherung des Patienten zugewiesen wurde. Diese findet sich z.B. auf der Mitgliedskarte der Krankenkasse.</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+            </staticAssociations>
+            <ref type="include" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.92" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2025-11-12T00:00:00" statusCode="retired" versionLabel="v3transit" lastModifiedDate="2026-03-25T11:04:45" ident="aktin-"/>
+            <ref type="include" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.93" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2026-03-25T11:04:07" statusCode="draft" versionLabel="v4transit" lastModifiedDate="2026-04-29T18:39:46" ident="aktin-"/>
+            <ref type="include" prefix="abde-" flexibility="dynamic" id="1.2.276.0.76.10.1013" name="Arztbrief" displayName="Arztbrief 2014/2015" effectiveDate="2014-08-25T00:00:00" statusCode="draft" versionLabel="v2.02" ident="abde-"/>
+            <ref type="include" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.1015" name="EmergencymedicineNoteCDAdocumentv1" displayName="Emergency medicine Note CDA document" effectiveDate="2014-09-18T00:00:00" statusCode="active" versionLabel="v1" ident="aktin-"/>
+            <ref type="include" prefix="uelmgmt-" flexibility="dynamic" id="1.2.276.0.76.10.1016" name="AerztlicherKurzberichtKrankenhaus90a" displayName="Ärztlicher Kurzbericht vom Krankenhaus nach §90a SGB V" effectiveDate="2015-03-27T00:00:00" statusCode="draft" ident="uelmgmt-"/>
+            <ref type="include" prefix="uelmgmt-" flexibility="dynamic" id="1.2.276.0.76.10.1017" name="AerztlicherKurzberichtNiedergelassenerArzt90a" displayName="Ärztlicher Kurzbericht Niedergelassener Arzt nach §90a SGB V" effectiveDate="2015-12-11T00:00:00" statusCode="draft" ident="uelmgmt-"/>
+            <ref type="include" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.1019" name="EmergencymedicineNoteCDAdocumentv2" displayName="Emergency medicine Note CDA document" effectiveDate="2016-06-01T00:00:00" statusCode="active" versionLabel="v2" ident="aktin-"/>
+            <ref type="include" prefix="abde-" flexibility="dynamic" id="1.2.276.0.76.10.1020" name="Arztbrief30" displayName="Arztbrief Plus" effectiveDate="2017-02-01T00:00:00" statusCode="draft" versionLabel="v3.00" ident="abde-"/>
+            <ref type="include" prefix="teleneps-" flexibility="dynamic" id="1.2.276.0.76.10.1033" name="Arztbrieftelenepsambulant" displayName="Arztbrief Psychotraumatologie ambulant/stationär" effectiveDate="2019-06-02T00:00:00" statusCode="retired" versionLabel="v1.0" ident="teleneps-"/>
+            <ref type="include" prefix="teleneps-" flexibility="dynamic" id="1.2.276.0.76.10.1033" name="Arztbrieftelenepsambulant" displayName="Arztbrief Psychotraumatologie ambulant/stationär" effectiveDate="2020-12-18T00:00:00" statusCode="draft" versionLabel="v2.0" ident="teleneps-"/>
+            <ref type="include" prefix="einwde-" flexibility="dynamic" id="1.2.276.0.76.10.1034" name="eEinweisungsbrief" displayName="eEinweisungsbrief" effectiveDate="2020-06-18T00:00:00" statusCode="draft" versionLabel="v1.0" ident="einwde-"/>
+            <uses type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.90010" name="PersonElements" displayName="CDA Person Elements" statusCode="active" effectiveDate="2011-12-19T00:00:00" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+            <uses type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.90011" name="OrganizationElements" displayName="CDA Organization Elements" statusCode="active" effectiveDate="2011-12-19T00:00:00" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+            <ref type="include" prefix="genea-" flexibility="dynamic" id="2.16.840.1.113883.2.6.60.13.10.1" name="GenetischerBefundbericht" displayName="Genetischer Befundbericht" effectiveDate="2018-08-09T17:52:59" statusCode="draft" ident="genea-"/>
+        </template>
+    </template>
+</result>

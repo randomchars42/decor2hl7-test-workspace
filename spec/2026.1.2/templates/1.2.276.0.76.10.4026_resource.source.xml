@@ -1,0 +1,60 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:ukfc="http://fhir.hl7.de/ukfc" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.4026" name="PatientInstructions" displayName="Patienteninstruktionen" effectiveDate="2014-11-01T00:00:00" statusCode="draft" isClosed="false" url="http://art-decor.org/decor/services/" ident="pmp-" ukfc:dummy-1="http://fhir.hl7.de/ukfc" sdtc:dummy-2="urn:hl7-org:sdtc" xhtml:dummy-3="http://www.w3.org/1999/xhtml" pharm:dummy-4="urn:hl7-org:pharm" xml:dummy-5="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-7="urn:hl7-org:v3" xsi:dummy-8="http://www.w3.org/2001/XMLSchema-instance">
+    <desc language="de-DE">Patienteninstruktionen</desc>
+    <classification type="cdaentrylevel"/>
+    <relationship type="SPEC" template="2.16.840.1.113883.10.12.301" flexibility="2005-09-07T00:00:00"/>
+    <relationship type="SPEC" template="2.16.840.1.113883.10.20.1.49"/>
+    <relationship type="SPEC" template="1.3.6.1.4.1.19376.1.5.3.1.4.3"/>
+    <context id="**"/>
+    <item label="patinfopmp"/>
+    <example>
+        <act classCode="ACT" moodCode="INT">
+            <templateId root="1.2.276.0.76.10.4026"/>
+            <code code="PINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode"/>
+            <text>
+                <reference value="#patinfo-1"/>
+            </text>
+            <statusCode code="completed"/>
+            <entryRelationship typeCode="COMP">
+          <!-- .. -->
+            </entryRelationship>
+        </act>
+    </example>
+    <element name="hl7:act" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.112">
+        <attribute name="classCode" value="ACT" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.842"/>
+        <attribute name="moodCode" value="INT" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.843"/>
+        <element name="hl7:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.113">
+            <attribute name="root" value="1.2.276.0.76.10.4026" datatype="uid" id="2.16.840.1.113883.2.6.60.4.9.844"/>
+        </element>
+        <element name="hl7:code" datatype="CE" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.115">
+            <vocabulary code="PINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2"/>
+        </element>
+        <element name="hl7:text" datatype="ED" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.116">
+            <desc language="de-DE">Text Element (verweist auf die Stelle im narrativen Text-Bereich, an der die Zusatzinformationen für den Patienten, Informationen zur alternativen Einnahme und Informationen zur Arznei angeführt sind)</desc>
+            <element name="hl7:reference" datatype="TEL" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.117">
+                <attribute name="value" id="2.16.840.1.113883.2.6.60.4.9.845">
+                    <desc language="de-DE">#patinfo-{generierteID}, z.B.: #patinfo-1</desc>
+                </attribute>
+            </element>
+        </element>
+        <element name="hl7:statusCode" datatype="CS" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.118">
+            <vocabulary code="completed"/>
+        </element>
+        <element name="hl7:entryRelationship[hl7:act]" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.846">
+            <desc language="de-DE">Codierter Hinweis</desc>
+            <attribute name="typeCode" value="SUBJ" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.847"/>
+            <attribute name="inversionInd" value="true" datatype="bl" id="2.16.840.1.113883.2.6.60.4.9.848"/>
+            <element name="hl7:act" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.849">
+                <example>
+                    <act classCode="INFRM" moodCode="RQO">
+                        <code code="E2" codeSystem="2.16.840.1.113883.2.6.60.4.5.5" displayName="während der Mahlzeiten"/>
+                    </act>
+                </example>
+                <attribute name="classCode" value="INFRM" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.850"/>
+                <attribute name="moodCode" value="RQO" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.851"/>
+                <element name="hl7:code" datatype="CE" strength="example" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.852">
+                    <vocabulary valueSet="2.16.840.1.113883.2.6.60.4.11.5"/>
+                </element>
+            </element>
+        </element>
+    </element>
+</template>

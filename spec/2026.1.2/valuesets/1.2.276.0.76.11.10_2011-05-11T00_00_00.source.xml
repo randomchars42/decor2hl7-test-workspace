@@ -1,0 +1,11 @@
+<valueSet xmlns:json="http://www.json.org" id="1.2.276.0.76.11.10" name="uicc_localisation" displayName="TNM-Seitenlokalisation in der Tumordokumentation" effectiveDate="2011-05-11T00:00:00" statusCode="draft" url="http://art-decor.org/decor/services/" ident="hl7de-">
+    <sourceCodeSystem json:array="true" id="2.16.840.1.113883.15.6" identifierName="TNM Edition7 UICC" canonicalUri="urn:oid:2.16.840.1.113883.15.6" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.15.6" canonicalUriSTU3="urn:oid:2.16.840.1.113883.15.6" canonicalUriR4="urn:oid:2.16.840.1.113883.15.6" canonicalUriR4B="urn:oid:2.16.840.1.113883.15.6" canonicalUriR5="urn:oid:2.16.840.1.113883.15.6"/>
+    <publishingAuthority json:array="true" name="HL7 Deutschland e. V." inherited="project">
+        <addrLine json:array="true">Anna-Louisa-Karsch-Str. 2</addrLine>
+        <addrLine json:array="true">10178 Berlin</addrLine>
+        <addrLine json:array="true" type="phone">T 0700 77 77 67 67</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="include" codeSystem="2.16.840.1.113883.15.6"/>
+</valueSet>

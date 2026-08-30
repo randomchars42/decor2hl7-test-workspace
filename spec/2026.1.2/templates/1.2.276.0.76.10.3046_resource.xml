@@ -1,0 +1,53 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.3046" ident="aktin-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.3046" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="Zuweisung" ident="aktin-" name="Typeofreferralsource" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="active" url="http://art-decor.org/decor/services/" effectiveDate="2015-01-10T00:00:00">
+            <desc language="de-DE">Zuweisung Section</desc>
+            <desc language="en-US">Type of Referral source Source Section</desc>
+            <classification type="cdasectionlevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.201" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.201" tmname="CDASection" tmdisplayName="CDA Section" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <example type="neutral">
+                <section classCode="DOCSECT">
+                    <templateId root="1.2.276.0.76.10.3046"/>
+                    <code code="11293-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Type of Referral source"/>
+                    <title>Zuweisung</title>
+                    <text>...</text>
+                    <entry>
+                        <!-- .. -->
+                    </entry>
+                </section>
+            </example>
+            <element name="hl7:section" id="2.16.840.1.113883.2.6.60.3.9.1631536">
+                <item original="false" label="Typeofreferralsource"/>
+                <attribute name="classCode" value="DOCSECT" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631537"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.1631538">
+                    <item original="false" label="Typeofreferralsource"/>
+                    <attribute name="root" value="1.2.276.0.76.10.3046" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.1631539"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CD" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631540">
+                    <item original="false" label="Typeofreferralsource"/>
+                    <vocabulary code="11293-8" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:title" minimumMultiplicity="1" maximumMultiplicity="1" datatype="ST" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631541">
+                    <item original="false" label="Typeofreferralsource"/>
+                    <text>Zuweisung</text>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="1" maximumMultiplicity="1" datatype="SD.TEXT" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631542">
+                    <item original="false" label="Typeofreferralsource"/>
+                </element>
+                <element name="hl7:entry" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" contains="1.2.276.0.76.10.4038" id="2.16.840.1.113883.2.6.60.3.9.1631543" tmid="1.2.276.0.76.10.4038" tmname="Referralfrom" tmdisplayName="Zuweisung mit Zuweiser" tmeffectiveDate="2015-09-18T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <item original="false" label="Typeofreferralsource"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631544"/>
+                    <attribute name="contextConductionInd" value="true" isOptional="true" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1631545"/>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.2" name="episodenzusammenfassung-notaufnahmeregister" displayName="Episodenzusammenfassung Notaufnahmeregister" effectiveDate="2024-03-21T00:00:00" statusCode="draft" versionLabel="2024" lastModifiedDate="2024-08-20T14:08:22" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.92" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2025-11-12T00:00:00" statusCode="retired" versionLabel="v3transit" lastModifiedDate="2026-03-25T11:04:45" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.93" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2026-03-25T11:04:07" statusCode="draft" versionLabel="v4transit" lastModifiedDate="2026-04-29T18:39:46" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.1015" name="EmergencymedicineNoteCDAdocumentv1" displayName="Emergency medicine Note CDA document" effectiveDate="2014-09-18T00:00:00" statusCode="active" versionLabel="v1" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.1019" name="EmergencymedicineNoteCDAdocumentv2" displayName="Emergency medicine Note CDA document" effectiveDate="2016-06-01T00:00:00" statusCode="active" versionLabel="v2" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4038" name="Referralfrom" displayName="Zuweisung mit Zuweiser" effectiveDate="2015-09-18T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+        </template>
+    </template>
+</result>

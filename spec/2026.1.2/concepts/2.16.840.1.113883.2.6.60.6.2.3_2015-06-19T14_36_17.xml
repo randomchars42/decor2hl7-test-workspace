@@ -1,0 +1,1000 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.2.6.60.6.1.1" effectiveDate="2015-06-18T18:17:24" statusCode="draft" versionLabel="2.0" prefix="psr-" shortName="" iddisplay="psr-dataset-1" url="http://art-decor.org/decor/services/" ident="psr-"><!--
+ This is a view of the dataset "" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE"/>
+    <desc language="de-DE"/>
+    <concept id="2.16.840.1.113883.2.6.60.6.2.3" statusCode="draft" effectiveDate="2015-06-19T14:36:17" type="group" iddisplay="psr-dataelement-3">
+        <implementation markdown="Tumor formula including T-, M- and N-values as well as further details (staging) and grading, well known as TNM classification, hosted by UICC"/>
+        <name language="de-DE" lastTranslated="2017-06-30T17:41:18">Tumorformel</name>
+        <desc language="de-DE" lastTranslated="2017-06-30T17:41:52">Tumorformel (TNM-Klassifikation zum Staging und Grading maligner Tumoren)</desc>
+        <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.3" effectiveDate="2015-06-25T15:19:01" code="399588009" displayName="Pathologic TNM stage grouping (observable entity)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED Clinical Terms"/>
+        <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.3" effectiveDate="2015-06-25T15:19:27" code="399537006" displayName="Clinical TNM stage grouping (observable entity)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED Clinical Terms"/>
+        <concept id="2.16.840.1.113883.2.6.60.6.2.74" statusCode="draft" effectiveDate="2015-11-18T17:49:21" type="item" iddisplay="psr-dataelement-74" shortName="stadium">
+            <implementation shortName="stadium" markdown="Stage system (hosted by UICC) of a tumor disease, compiling the elements of TNM classification"/>
+            <name language="de-DE" lastTranslated="2017-06-30T17:42:22">Stadium</name>
+            <desc language="de-DE" lastTranslated="2017-06-30T17:42:54">Stadium einer Tumorerkrankung. Klassifikation nach WHO / UICC</desc>
+            <valueDomain type="code">
+                <conceptList id="2.16.840.1.113883.2.6.60.6.2.74.20151118174921.0"/>
+                <example type="neutral">IVB</example>
+            </valueDomain>
+            <valueSet id="1.3.6.1.4.1.19376.1.3.11.18" name="UICCstage" displayName="UICC Stage (7ed)" effectiveDate="2015-06-23T16:43:02" statusCode="draft">
+                <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.74.20151118174921.0" valueSet="1.3.6.1.4.1.19376.1.3.11.18" flexibility="dynamic" effectiveDate="2017-02-26T09:58:51" valueSetName="UICC Stage (7ed)" valueSetStatusCode="draft" valueSetEffectiveDate="2015-06-23T16:43:02"/>
+                <desc language="de-DE">UICC Stages</desc>
+                <sourceCodeSystem id="2.16.840.1.113883.15.6" identifierName="TNM Edition7 UICC" canonicalUri="urn:oid:2.16.840.1.113883.15.6" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.15.6" canonicalUriSTU3="urn:oid:2.16.840.1.113883.15.6" canonicalUriR4="urn:oid:2.16.840.1.113883.15.6" canonicalUriR4B="urn:oid:2.16.840.1.113883.15.6" canonicalUriR5="urn:oid:2.16.840.1.113883.15.6"/>
+                <publishingAuthority name="IHE International" inherited="project">
+                    <addrLine type="email">http://www.ihe.net</addrLine>
+                </publishingAuthority>
+                <conceptList id="2.16.840.1.113883.2.6.60.6.2.74.20151118174921.0">
+                    <concept localId="1" code="okk" codeSystem="2.16.840.1.113883.15.6" displayName="stage X" level="0" type="L">
+                        <name language="en-US">stage X</name>
+                        <desc language="en-US">TX, N0, M0 </desc>
+                    </concept>
+                    <concept localId="2" code="0" codeSystem="2.16.840.1.113883.15.6" displayName="stage 0" level="0" type="S">
+                        <name language="en-US">stage 0</name>
+                        <desc language="en-US">Tis N0 M0</desc>
+                    </concept>
+                    <concept localId="3" code="0a" codeSystem="2.16.840.1.113883.15.6" displayName="stage 0a" level="1" type="L">
+                        <name language="en-US">stage 0a</name>
+                        <desc language="en-US">in C67 only</desc>
+                    </concept>
+                    <concept localId="4" code="0is" codeSystem="2.16.840.1.113883.15.6" displayName="stage 0is" level="1" type="L">
+                        <name language="en-US">stage 0is</name>
+                        <desc language="en-US">in C67 only</desc>
+                    </concept>
+                    <concept localId="5" code="I" codeSystem="2.16.840.1.113883.15.6" displayName="stage I" level="0" type="S">
+                        <name language="en-US">stage I</name>
+                        <desc language="en-US">organ dependent</desc>
+                    </concept>
+                    <concept localId="6" code="IA1" codeSystem="2.16.840.1.113883.15.6" displayName="stage IA1" level="2" type="L">
+                        <name language="en-US">stage IA1</name>
+                        <desc language="en-US">organ dependent</desc>
+                    </concept>
+                    <concept localId="7" code="IA2" codeSystem="2.16.840.1.113883.15.6" displayName="stage IA2" level="2" type="L">
+                        <name language="en-US">stage IA2</name>
+                        <desc language="en-US">organ dependent</desc>
+                    </concept>
+                    <concept localId="8" code="IB" codeSystem="2.16.840.1.113883.15.6" displayName="stage IB" level="1" type="S">
+                        <name language="en-US">stage IB</name>
+                        <desc language="en-US">organ dependent</desc>
+                    </concept>
+                    <concept localId="9" code="IB1" codeSystem="2.16.840.1.113883.15.6" displayName="stage IB1" level="2" type="L">
+                        <name language="en-US">stage IB1</name>
+                        <desc language="en-US">organ dependent</desc>
+                    </concept>
+                    <concept localId="10" code="IB2" codeSystem="2.16.840.1.113883.15.6" displayName="stage IB2" level="2" type="L">
+                        <name language="en-US">stage IB2</name>
+                        <desc language="en-US">organ dependent</desc>
+                    </concept>
+                    <concept localId="11" code="IC" codeSystem="2.16.840.1.113883.15.6" displayName="stage IC" level="1" type="L">
+                        <name language="en-US">stage IC</name>
+                        <desc language="en-US">organ dependent</desc>
+                    </concept>
+                    <concept localId="12" code="IS" codeSystem="2.16.840.1.113883.15.6" displayName="stage IS" level="1" type="L">
+                        <name language="en-US">stage IS</name>
+                        <desc language="en-US">in C62 only</desc>
+                    </concept>
+                    <concept localId="13" code="II" codeSystem="2.16.840.1.113883.15.6" displayName="stage II" level="0" type="S">
+                        <name language="en-US">stage II</name>
+                        <desc language="en-US">organ dependent</desc>
+                    </concept>
+                    <concept localId="14" code="IIA" codeSystem="2.16.840.1.113883.15.6" displayName="stage IIA" level="2" type="L">
+                        <name language="en-US">stage IIA</name>
+                        <desc language="en-US">organ dependent<br clear="none"/>
+                        </desc>
+                    </concept>
+                    <concept localId="15" code="IIA1" codeSystem="2.16.840.1.113883.15.6" displayName="stage IIA1" level="2" type="L">
+                        <name language="en-US">stage IIA1</name>
+                        <desc language="en-US">organ dependent</desc>
+                    </concept>
+                    <concept localId="16" code="IIA2" codeSystem="2.16.840.1.113883.15.6" displayName="stage IIA2" level="2" type="L">
+                        <name language="en-US">stage IIA2</name>
+                        <desc language="en-US">organ dependent</desc>
+                    </concept>
+                    <concept localId="17" code="IIB" codeSystem="2.16.840.1.113883.15.6" displayName="stage IIB" level="1" type="L">
+                        <name language="en-US">stage IIB</name>
+                        <desc language="en-US">organ dependent</desc>
+                    </concept>
+                    <concept localId="18" code="IIC" codeSystem="2.16.840.1.113883.15.6" displayName="stage IIC" level="1" type="L">
+                        <name language="en-US">stage IIC</name>
+                        <desc language="en-US">organ dependent<br clear="none"/>
+                        </desc>
+                    </concept>
+                    <concept localId="19" code="III" codeSystem="2.16.840.1.113883.15.6" displayName="stage III" level="0" type="S">
+                        <name language="en-US">stage III</name>
+                        <desc language="en-US">organ dependent</desc>
+                    </concept>
+                    <concept localId="20" code="IIIA" codeSystem="2.16.840.1.113883.15.6" displayName="stage IIIA" level="1" type="L">
+                        <name language="en-US">stage IIIA</name>
+                        <desc language="en-US">organ dependent</desc>
+                    </concept>
+                    <concept localId="21" code="IIIB" codeSystem="2.16.840.1.113883.15.6" displayName="stage IIIB" level="1" type="L">
+                        <name language="en-US">stage IIIB</name>
+                        <desc language="en-US">organ dependent<br clear="none"/>
+                        </desc>
+                    </concept>
+                    <concept localId="22" code="IIIC" codeSystem="2.16.840.1.113883.15.6" displayName="stage IIIC" level="1" type="L">
+                        <name language="en-US">stage IIIC</name>
+                        <desc language="en-US">organ dependent</desc>
+                    </concept>
+                    <concept localId="23" code="IV" codeSystem="2.16.840.1.113883.15.6" displayName="stage IV" level="0" type="S">
+                        <name language="en-US">stage IV</name>
+                        <desc language="en-US">each T, each N, M1</desc>
+                    </concept>
+                    <concept localId="24" code="IVA" codeSystem="2.16.840.1.113883.15.6" displayName="stage IVA" level="1" type="L">
+                        <name language="en-US">stage IVA</name>
+                        <desc language="en-US">organ dependent</desc>
+                    </concept>
+                    <concept localId="25" code="IVB" codeSystem="2.16.840.1.113883.15.6" displayName="stage IVB" level="1" type="L">
+                        <name language="en-US">stage IVB</name>
+                        <desc language="en-US">organ dependent</desc>
+                    </concept>
+                    <concept localId="26" code="IVC" codeSystem="2.16.840.1.113883.15.6" displayName="stage IVC" level="1" type="L">
+                        <name language="en-US">stage IVC</name>
+                        <desc language="en-US">organ dependent</desc>
+                    </concept>
+                </conceptList>
+            </valueSet>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.74" code="21902-2" codeSystem="2.16.840.1.113883.6.1" displayName="Stage group.pathology Cancer" effectiveDate="2017-02-26T09:47:11" codeSystemName="Logical Observation Identifier Names and Codes"/>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.74.20151118174921.0" valueSet="1.3.6.1.4.1.19376.1.3.11.18" flexibility="dynamic" effectiveDate="2017-02-26T09:58:51" valueSetName="UICC Stage (7ed)" valueSetStatusCode="draft" valueSetEffectiveDate="2015-06-23T16:43:02"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.6.2.29" statusCode="draft" effectiveDate="2015-06-23T15:33:20" type="item" iddisplay="psr-dataelement-29" shortName="posttherapeutisch">
+            <implementation shortName="posttherapeutisch" markdown="Symbol for TNM: Is this Observation performed after a multimodal therapy?"/>
+            <name language="de-DE" lastTranslated="2017-06-30T17:43:23">posttherapeutisch</name>
+            <desc language="de-DE" lastTranslated="2017-06-30T17:43:50">Symbol für Tumorformel nach (multimodaler) Therapie</desc>
+            <valueDomain type="code">
+                <conceptList id="2.16.840.1.113883.2.6.60.6.2.29.20150623153320.0"/>
+                <property fixed="y"/>
+            </valueDomain>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.29" code="277649004" codeSystem="2.16.840.1.113883.6.96" displayName="y - During therapy/following treatment (tumor staging)" effectiveDate="2017-02-26T10:27:47" codeSystemName="SNOMED Clinical Terms"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.6.2.28" statusCode="draft" effectiveDate="2015-06-23T10:11:39" type="item" iddisplay="psr-dataelement-28" shortName="automatisch">
+            <implementation shortName="automatisch" markdown="Symbol for TNM: Has this tumor formula been derived first at autopsy?"/>
+            <name language="de-DE" lastTranslated="2017-06-30T17:44:24">automatisch</name>
+            <desc language="de-DE" lastTranslated="2017-06-30T17:44:42">Tumorformel erstmals im Rahmen einer Autopsie erstellt</desc>
+            <valueDomain type="code">
+                <conceptList id="2.16.840.1.113883.2.6.60.6.2.28.20150623101139.0"/>
+                <property fixed="a"/>
+            </valueDomain>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.28" code="277646006" codeSystem="2.16.840.1.113883.6.96" displayName="a - At autopsy (tumor staging)" effectiveDate="2017-02-26T10:29:50" codeSystemName="SNOMED Clinical Terms"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.6.2.59" statusCode="draft" effectiveDate="2015-10-24T17:36:32" type="item" iddisplay="psr-dataelement-59" shortName="postoperativ">
+            <implementation shortName="postoperativ" markdown="Qualifier (prefix)  for T, N, and M category: Is this Observation performed after operative therapy, i.e. information comes from the pathologist"/>
+            <name language="de-DE" lastTranslated="2017-06-30T17:45:09">postoperativ</name>
+            <desc language="de-DE" lastTranslated="2017-06-30T17:46:51">Tumorformel nach Operation, nach pathologischer Untersuchung des OP-Materials</desc>
+            <valueDomain type="boolean">
+                <property fixed="p"/>
+            </valueDomain>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.59" code="tnmCp" codeSystem="1.2.276.0.76.3.1.131.1.5.1" displayName="p-pathological" effectiveDate="2017-02-26T10:45:38"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.6.2.60" statusCode="draft" effectiveDate="2015-10-24T17:39:37" type="item" iddisplay="psr-dataelement-60" shortName="klinisch">
+            <implementation shortName="klinisch" markdown="Qualifier  (prefix) for T, N, and M category: Is this Observation performed by clinical methods?"/>
+            <name language="de-DE" lastTranslated="2017-06-30T17:45:51">klinisch</name>
+            <desc language="de-DE" lastTranslated="2017-06-30T17:46:10">Tumorformel mit klinischen Mitteln erhoben</desc>
+            <valueDomain type="code">
+                <conceptList id="2.16.840.1.113883.2.6.60.6.2.60.20151024173937.0"/>
+                <property fixed="c"/>
+            </valueDomain>
+            <valueSet id="1.3.6.1.4.1.19376.1.3.11.22" name="UICC-clinical-pathological" displayName="TNM_Praefix_CP_UICC" effectiveDate="2015-11-04T15:52:34" statusCode="draft" officialReleaseDate="2022-07-01T00:00:00" lastModifiedDate="2023-01-26T15:11:16">
+                <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.60.20151024173937.0" valueSet="1.3.6.1.4.1.19376.1.3.11.22" flexibility="dynamic" effectiveDate="2017-03-16T17:08:59" valueSetName="TNM_Praefix_CP_UICC" valueSetStatusCode="draft" valueSetEffectiveDate="2015-11-04T15:52:34"/>
+                <desc language="en-US" lastTranslated="2023-01-26T15:09:08">Qualifiers for each TNM category classifying the observation method and the time frame of observation in relation to treatment</desc>
+                <sourceCodeSystem id="2.16.840.1.113883.15.16" identifierName="TNM Edition8 UICC" canonicalUri="urn:oid:2.16.840.1.113883.15.16" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.15.16" canonicalUriSTU3="urn:oid:2.16.840.1.113883.15.16" canonicalUriR4="urn:oid:2.16.840.1.113883.15.16" canonicalUriR4B="urn:oid:2.16.840.1.113883.15.16" canonicalUriR5="urn:oid:2.16.840.1.113883.15.16"/>
+                <sourceCodeSystem id="2.16.840.1.113883.5.1008" identifierName="Null Flavor" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriDSTU2="http://hl7.org/fhir/v3/NullFlavor" canonicalUriSTU3="http://hl7.org/fhir/v3/NullFlavor" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" context="external/hl7intl/v3/v3-NullFlavor"/>
+                <publishingAuthority name="IHE International" inherited="project">
+                    <addrLine type="email">http://www.ihe.net</addrLine>
+                </publishingAuthority>
+                <conceptList id="2.16.840.1.113883.2.6.60.6.2.60.20151024173937.0">
+                    <concept localId="1" code="p" codeSystem="2.16.840.1.113883.15.16" displayName="p" level="0" type="L">
+                        <name language="en-US">p</name>
+                        <desc language="en-US" lastTranslated="2023-01-26T15:09:08">The pathological assessment of the primary tumor entails a resection of the primary tumor or a biopsy adequate to evaluate the highest T category. The pathological assessment of the regional lymph nodes entails a removal of lymph nodes adequate to validate the absence of regional lymph node metastasis or sufficient to
+                        evaluate the highest pN category. The pathological assessment of distant metastasis entails microscopic examination.</desc>
+                    </concept>
+                    <concept localId="2" code="c" codeSystem="2.16.840.1.113883.15.16" displayName="c" level="0" type="L">
+                        <name language="en-US">c</name>
+                        <desc language="en-US" lastTranslated="2023-01-26T15:09:08">The clinical classification is based on evidence acquired before treatment</desc>
+                    </concept>
+                    <exception localId="3" code="ASKU" codeSystem="2.16.840.1.113883.5.1008" displayName="Asked but unknown" level="0" type="L">
+                        <name language="en-US">Asked but unknown</name>
+                    </exception>
+                </conceptList>
+            </valueSet>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.60" code="tnmCp" codeSystem="1.2.276.0.76.3.1.131.1.5.1" displayName="c-clinical" effectiveDate="2017-02-26T10:46:06"/>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.60.20151024173937.0" valueSet="1.3.6.1.4.1.19376.1.3.11.22" flexibility="dynamic" effectiveDate="2017-03-16T17:08:59" valueSetName="TNM_Praefix_CP_UICC" valueSetStatusCode="draft" valueSetEffectiveDate="2015-11-04T15:52:34"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.6.2.61" statusCode="draft" effectiveDate="2015-10-24T17:40:53" type="item" iddisplay="psr-dataelement-61" shortName="multiplizitat">
+            <implementation shortName="multiplizitat" markdown="Qualifier for pT category: Are there multiple tumors in the specimen removed ***or*** how many multiple tumors are in the specimen? "/>
+            <name language="de-DE" lastTranslated="2017-06-30T17:47:31">Multiplizität</name>
+            <desc language="de-DE" lastTranslated="2017-06-30T17:47:52">Multiplizität eines Primärtumors</desc>
+            <valueDomain type="code">
+                <conceptList id="2.16.840.1.113883.2.6.60.6.2.61.20151024174053.0"/>
+                <example type="valid">pT2(m)</example>
+                <example type="valid">pT2(3)</example>
+            </valueDomain>
+            <valueSet id="1.3.6.1.4.1.19376.1.3.11.37" name="UICC-Multiplicity" displayName="UICC Multiplicity" effectiveDate="2015-11-06T10:44:54" statusCode="draft">
+                <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.61.20151024174053.0" valueSet="1.3.6.1.4.1.19376.1.3.11.37" flexibility="dynamic" effectiveDate="2017-03-08T18:32:35" valueSetName="UICC Multiplicity" valueSetStatusCode="draft" valueSetEffectiveDate="2015-11-06T10:44:54"/>
+                <sourceCodeSystem id="2.16.840.1.113883.15.16" identifierName="TNM Edition8 UICC" canonicalUri="urn:oid:2.16.840.1.113883.15.16" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.15.16" canonicalUriSTU3="urn:oid:2.16.840.1.113883.15.16" canonicalUriR4="urn:oid:2.16.840.1.113883.15.16" canonicalUriR4B="urn:oid:2.16.840.1.113883.15.16" canonicalUriR5="urn:oid:2.16.840.1.113883.15.16"/>
+                <sourceCodeSystem id="2.16.840.1.113883.5.1008" identifierName="Null Flavor" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriDSTU2="http://hl7.org/fhir/v3/NullFlavor" canonicalUriSTU3="http://hl7.org/fhir/v3/NullFlavor" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" context="external/hl7intl/v3/v3-NullFlavor"/>
+                <publishingAuthority name="IHE International" inherited="project">
+                    <addrLine type="email">http://www.ihe.net</addrLine>
+                </publishingAuthority>
+                <conceptList id="2.16.840.1.113883.2.6.60.6.2.61.20151024174053.0">
+                    <concept localId="1" code="m" codeSystem="2.16.840.1.113883.15.16" displayName="(m)" level="0" type="L">
+                        <name language="en-US">(m)</name>
+                        <desc language="en-US">Qualifier for T-category: multiple simultaneous tumors in one organ</desc>
+                    </concept>
+                    <concept localId="2" code="2" codeSystem="2.16.840.1.113883.15.16" displayName="(2)" level="0" type="L">
+                        <name language="en-US">(2)</name>
+                        <desc language="en-US">Qualifier for T-category: two simultaneous tumors in one organ</desc>
+                    </concept>
+                    <concept localId="3" code="3" codeSystem="2.16.840.1.113883.15.16" displayName="(3)" level="0" type="L">
+                        <name language="en-US">(3)</name>
+                        <desc language="en-US">Qualifier for T-category: three simultaneous tumors in one organ</desc>
+                    </concept>
+                    <concept localId="4" code="4" codeSystem="2.16.840.1.113883.15.16" displayName="(4)" level="0" type="L">
+                        <name language="en-US">(4)</name>
+                        <desc language="en-US">Qualifier for T-category: four simultaneous tumors in one organ</desc>
+                    </concept>
+                    <concept localId="5" code="5" codeSystem="2.16.840.1.113883.15.16" displayName="(5)" level="0" type="L">
+                        <name language="en-US">(5)</name>
+                        <desc language="en-US">Qualifier for T-category: five simultaneous tumors in one organ</desc>
+                    </concept>
+                    <concept localId="6" code="6" codeSystem="2.16.840.1.113883.15.16" displayName="(6)" level="0" type="L">
+                        <name language="en-US">(6)</name>
+                        <desc language="en-US">Qualifier for T-category: six simultaneous tumors in one organ</desc>
+                    </concept>
+                    <concept localId="7" code="7" codeSystem="2.16.840.1.113883.15.16" displayName="(7)" level="0" type="L">
+                        <name language="en-US">(7)</name>
+                        <desc language="en-US">Qualifier for T-category: seven simultaneous tumors in one organ</desc>
+                    </concept>
+                    <concept localId="8" code="8" codeSystem="2.16.840.1.113883.15.16" displayName="(8)" level="0" type="L">
+                        <name language="en-US">(8)</name>
+                        <desc language="en-US">Qualifier for T-category: eight simultaneous tumors in one organ</desc>
+                    </concept>
+                    <concept localId="9" code="9" codeSystem="2.16.840.1.113883.15.16" displayName="(9)" level="0" type="L">
+                        <name language="en-US">(9)</name>
+                        <desc language="en-US">Qualifier for T-category: nine simultaneous tumors in one organ</desc>
+                    </concept>
+                    <concept localId="10" code="10" codeSystem="2.16.840.1.113883.15.16" displayName="(10)" level="0" type="L">
+                        <name language="en-US">(10)</name>
+                        <desc language="en-US">Qualifier for T-category: ten simultaneous tumors in one organ</desc>
+                    </concept>
+                    <exception localId="11" code="ASKU" codeSystem="2.16.840.1.113883.5.1008" displayName="Asked but unknown" level="0" type="L">
+                        <name language="en-US">Asked but unknown</name>
+                    </exception>
+                </conceptList>
+            </valueSet>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.61" code="tnmMultiplicity" codeSystem="1.2.276.0.76.3.1.131.1.5.1" displayName="m-multiple tumors" effectiveDate="2017-02-26T10:47:05"/>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.61.20151024174053.0" valueSet="1.3.6.1.4.1.19376.1.3.11.37" flexibility="dynamic" effectiveDate="2017-03-08T18:32:35" valueSetName="UICC Multiplicity" valueSetStatusCode="draft" valueSetEffectiveDate="2015-11-06T10:44:54"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.6.2.62" statusCode="cancelled" effectiveDate="2015-10-24T17:47:30" versionLabel="1.1" type="item" iddisplay="psr-dataelement-62" shortName="multiple_tumors">
+            <implementation shortName="multiple_tumors" markdown="Qualifier for T category:Number of tumors more than one in the specimen removed."/>
+            <name language="de-DE">Multiple tumors</name>
+            <desc language="de-DE">
+                                    <span style="color: rgb(51, 51, 51); font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px; line-height: 17px;">Qualifier for T category: </span>
+                                    <font color="#333333" face="Arial, Helvetica, Geneva, sans-serif">
+                                        <span style="font-size: 12px; line-height: 17px;">Number of tumors more than one in the specimen removed.</span>
+                                    </font>
+                                </desc>
+            <valueDomain type="decimal">
+                <property minInclude="1"/>
+                <example type="neutral">pT2(3)</example>
+            </valueDomain>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.62" code="tnmMultiple" codeSystem="1.2.276.0.76.3.1.131.1.5.1" displayName="number of multiple tumors" effectiveDate="2017-02-26T10:48:22"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.6.2.26" statusCode="draft" effectiveDate="2015-06-23T09:59:36" type="item" iddisplay="psr-dataelement-26" shortName="rezidiv">
+            <implementation shortName="rezidiv" markdown="Symbol for TNM:Is this tumor recurring from a previous disease.."/>
+            <name language="de-DE" lastTranslated="2017-06-30T17:48:23">Rezidiv</name>
+            <desc language="de-DE" lastTranslated="2017-06-30T17:48:41">Tumorformel nach Rezidiv einer Tumorerkrankung</desc>
+            <valueDomain type="code">
+                <conceptList id="2.16.840.1.113883.2.6.60.6.2.26.20150623095936.0"/>
+                <property fixed="r"/>
+            </valueDomain>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.26" code="277647002" codeSystem="2.16.840.1.113883.6.96" displayName="r - Tumor recurrence (tumor staging)" effectiveDate="2017-02-26T14:38:48" codeSystemName="SNOMED Clinical Terms"/>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.26" code="r" codeSystem="2.16.840.1.113883.15.6" displayName="r" effectiveDate="2017-03-20T10:21:49" codeSystemName="TNM Edition7 UICC"/>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.26" code="r" codeSystem="2.16.840.1.113883.15.7" displayName="r" effectiveDate="2017-03-20T10:22:09" codeSystemName="TNM Edition6 UICC"/>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.26" code="r" codeSystem="2.16.840.1.113883.15.8" displayName="r" effectiveDate="2017-03-20T10:22:26" codeSystemName="TNM Edition5 UICC"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.6.2.13" statusCode="draft" effectiveDate="2015-06-22T14:31:44" type="item" iddisplay="psr-dataelement-13" shortName="zeitstempel_einer_beobachtung">
+            <implementation shortName="zeitstempel_einer_beobachtung" markdown="point in time when this observation was made"/>
+            <name language="de-DE" lastTranslated="2017-06-30T17:49:14">Zeitstempel einer Beobachtung</name>
+            <desc language="de-DE" lastTranslated="2017-06-30T17:49:23">Zeitstempel einer Beobachtung</desc>
+            <valueDomain type="datetime">
+                <property timeStampPrecision="YMD"/>
+            </valueDomain>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.6.2.12" statusCode="draft" effectiveDate="2015-06-22T14:29:50" type="item" iddisplay="psr-dataelement-12" shortName="befallene_lymphknoten">
+            <implementation shortName="befallene_lymphknoten" markdown="How many nodes are affected by tumor?"/>
+            <name language="de-DE" lastTranslated="2017-06-30T17:50:52">befallene Lymphknoten</name>
+            <desc language="de-DE" lastTranslated="2017-06-30T17:51:18">durch megastatisches Tumorgewebe befallene Lymphknoten</desc>
+            <valueDomain type="quantity"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.6.2.11" statusCode="draft" effectiveDate="2015-06-22T14:29:10" type="item" iddisplay="psr-dataelement-11" shortName="untersuchte_lymphknoten">
+            <implementation shortName="untersuchte_lymphknoten" markdown="number of nodes examined"/>
+            <name language="de-DE" lastTranslated="2017-06-30T17:51:47">untersuchte Lymphknoten</name>
+            <desc language="de-DE" lastTranslated="2017-06-30T17:52:07">auf megastatischen Tumorbefall hin untersuchte Lymphknoten</desc>
+            <valueDomain type="quantity"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.6.2.102" statusCode="draft" effectiveDate="2017-01-18T10:17:54" type="item" iddisplay="psr-dataelement-102" shortName="sentinellymphknoten">
+            <implementation shortName="sentinellymphknoten" markdown="Regional lymph nodes according the sentinel concept: first draining lymph node for a tumor site"/>
+            <name language="de-DE" lastTranslated="2017-06-30T17:52:38">Sentinel-Lymphknoten</name>
+            <desc language="de-DE" lastTranslated="2017-06-30T17:53:07">erster drainierender regionaler Lymphknoten aus Sicht des Primärtumors</desc>
+            <valueDomain type="code">
+                <conceptList id="2.16.840.1.113883.2.6.60.6.2.102.20170118101754.0"/>
+            </valueDomain>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.102" code="441709004" codeSystem="2.16.840.1.113883.6.96" displayName="Specimen from sentinel lymph node (specimen)" effectiveDate="2017-02-26T14:42:19" codeSystemName="SNOMED Clinical Terms"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.6.2.103" statusCode="draft" effectiveDate="2017-03-09T11:30:54" type="item" iddisplay="psr-dataelement-103" shortName="isolierte_tumorzellen">
+            <implementation shortName="isolierte_tumorzellen" markdown="Single tumor cells or small cluster of tumor cells, not larger than 0.2 mm in diameter, usually detected by immunohistochemistry or molecular pathology. No typical characteristics of metastases (stromal reaction, proliferation).&#xA;If such ITC are detected in lymph nodes, those are classified as pN0(i+) or pN0(mol+) (regional) or as pM0(i+) or pM0(mol+) (non-regional).&#xA;For negativity of immunohistochemical or molecular pathologic findings in lymph nodes the same rules are applied (i- or mol-)"/>
+            <name language="de-DE" lastTranslated="2017-06-30T17:53:44">isolierte Tumorzellen</name>
+            <desc language="de-DE" lastTranslated="2017-06-30T17:54:27">weniger als 200 metastatische Tumorzellen (Gesamtdurchmesser unter 200 Mikrometer.</desc>
+            <valueDomain type="code">
+                <conceptList id="2.16.840.1.113883.2.6.60.6.2.103.20170309113054.0"/>
+            </valueDomain>
+            <valueSet id="1.3.6.1.4.1.19376.1.3.11.38" name="UICCITC" displayName="UICC Isolated Tumor Cells" effectiveDate="2017-03-13T09:48:35" statusCode="draft" canonicalUri="http://fhir.de/onkologie/ValueSet/tnm-suffix-itc-uicc" lastModifiedDate="2023-01-26T18:01:11">
+                <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.103.20170309113054.0" valueSet="1.3.6.1.4.1.19376.1.3.11.38" flexibility="dynamic" effectiveDate="2017-03-13T09:51:30" valueSetName="UICC Isolated Tumor Cells" valueSetStatusCode="draft" valueSetEffectiveDate="2017-03-13T09:48:35"/>
+                <desc language="en-US" lastTranslated="2023-01-26T18:01:11">Codes for isolated tumor cells, detected by immunohistochemical or molecular pathology methods in regional and non-regional lymph nodes, used in qualifiers for N- and M-category in TNM</desc>
+                <sourceCodeSystem id="2.16.840.1.113883.15.16" identifierName="TNM Edition8 UICC" canonicalUri="urn:oid:2.16.840.1.113883.15.16" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.15.16" canonicalUriSTU3="urn:oid:2.16.840.1.113883.15.16" canonicalUriR4="urn:oid:2.16.840.1.113883.15.16" canonicalUriR4B="urn:oid:2.16.840.1.113883.15.16" canonicalUriR5="urn:oid:2.16.840.1.113883.15.16"/>
+                <sourceCodeSystem id="2.16.840.1.113883.5.1008" identifierName="Null Flavor" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriDSTU2="http://hl7.org/fhir/v3/NullFlavor" canonicalUriSTU3="http://hl7.org/fhir/v3/NullFlavor" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" context="external/hl7intl/v3/v3-NullFlavor"/>
+                <publishingAuthority name="IHE International" inherited="project">
+                    <addrLine type="email">http://www.ihe.net</addrLine>
+                </publishingAuthority>
+                <conceptList id="2.16.840.1.113883.2.6.60.6.2.103.20170309113054.0">
+                    <concept localId="1" code="i+" codeSystem="2.16.840.1.113883.15.16" displayName="(i+)" level="0" type="L">
+                        <name language="en-US">(i+)</name>
+                    </concept>
+                    <concept localId="2" code="i-" codeSystem="2.16.840.1.113883.15.16" displayName="(i-)" level="0" type="L">
+                        <name language="en-US">(i-)</name>
+                    </concept>
+                    <concept localId="3" code="mol+" codeSystem="2.16.840.1.113883.15.16" displayName="(mol+)" level="0" type="L">
+                        <name language="en-US">(mol+)</name>
+                    </concept>
+                    <concept localId="4" code="mol-" codeSystem="2.16.840.1.113883.15.16" displayName="(mol-)" level="0" type="L">
+                        <name language="en-US">(mol-)</name>
+                    </concept>
+                    <exception localId="5" code="ASKU" codeSystem="2.16.840.1.113883.5.1008" displayName="Asked but unknown" level="0" type="L">
+                        <name language="en-US">Asked but unknown</name>
+                    </exception>
+                </conceptList>
+            </valueSet>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.103.20170309113054.0" valueSet="1.3.6.1.4.1.19376.1.3.11.38" flexibility="dynamic" effectiveDate="2017-03-13T09:51:30" valueSetName="UICC Isolated Tumor Cells" valueSetStatusCode="draft" valueSetEffectiveDate="2017-03-13T09:48:35"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.6.2.106" effectiveDate="2017-11-29T18:24:16" statusCode="draft" type="item" iddisplay="psr-dataelement-106" shortName="micrometasis">
+            <implementation shortName="micrometasis" markdown="Micrometasis (equal or less than 0.2 mm in largest diameter) in regional or extra-regional lymph nodes (pN1 or pM1). Used as suffix for N- and M-category in TNM"/>
+            <name language="de-DE">Micrometasis</name>
+            <desc language="de-DE">Micrometasis (equal or less than 0.2 mm in largest diameter) in regional or extra-regional lymph nodes (pN1 or pM1). Used as suffix for N- and M-category in TNM</desc>
+            <valueDomain type="code">
+                <conceptList id="2.16.840.1.113883.2.6.60.6.2.106.20171129182416.0">
+                    <concept id="2.16.840.1.113883.2.6.60.6.2.106.20171129182416.1" level="0" type="L"/>
+                </conceptList>
+            </valueDomain>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.6.2.8" statusCode="draft" effectiveDate="2015-06-22T10:01:58" type="item" iddisplay="psr-dataelement-8" shortName="nkategorie">
+            <implementation shortName="nkategorie" markdown="N-category (regional lymph nodes) of the TNM classification"/>
+            <name language="de-DE" lastTranslated="2017-06-30T17:55:09">N-Kategorie</name>
+            <desc language="de-DE" lastTranslated="2017-06-30T17:55:32">N-Kategorie der TNM-Klassifikation</desc>
+            <valueDomain type="code">
+                <conceptList id="2.16.840.1.113883.2.6.60.6.2.8.0"/>
+            </valueDomain>
+            <valueSet id="1.3.6.1.4.1.19376.1.3.11.44" name="UICC_n_value_8ed" displayName="UICC N category" effectiveDate="2017-07-21T10:00:53" statusCode="draft" canonicalUri="http://fhir.de/onkologie/ValueSet/tnm-n-kategorie-uicc" officialReleaseDate="2022-07-01T00:00:00" lastModifiedDate="2023-01-27T13:53:01">
+                <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.8.0" valueSet="1.3.6.1.4.1.19376.1.3.11.44" flexibility="dynamic" effectiveDate="2017-12-21T19:20:04" valueSetName="UICC N category" valueSetStatusCode="draft" valueSetEffectiveDate="2017-07-21T10:00:53"/>
+                <desc language="en-US" lastTranslated="2023-01-27T13:52:51">UICC N category, 8th edition</desc>
+                <sourceCodeSystem id="2.16.840.1.113883.15.16" identifierName="TNM Edition8 UICC" canonicalUri="urn:oid:2.16.840.1.113883.15.16" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.15.16" canonicalUriSTU3="urn:oid:2.16.840.1.113883.15.16" canonicalUriR4="urn:oid:2.16.840.1.113883.15.16" canonicalUriR4B="urn:oid:2.16.840.1.113883.15.16" canonicalUriR5="urn:oid:2.16.840.1.113883.15.16"/>
+                <sourceCodeSystem id="2.16.840.1.113883.15.6" identifierName="TNM Edition7 UICC" canonicalUri="urn:oid:2.16.840.1.113883.15.6" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.15.6" canonicalUriSTU3="urn:oid:2.16.840.1.113883.15.6" canonicalUriR4="urn:oid:2.16.840.1.113883.15.6" canonicalUriR4B="urn:oid:2.16.840.1.113883.15.6" canonicalUriR5="urn:oid:2.16.840.1.113883.15.6"/>
+                <sourceCodeSystem id="2.16.840.1.113883.5.1008" identifierName="Null Flavor" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriDSTU2="http://hl7.org/fhir/v3/NullFlavor" canonicalUriSTU3="http://hl7.org/fhir/v3/NullFlavor" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" context="external/hl7intl/v3/v3-NullFlavor"/>
+                <publishingAuthority name="IHE International" inherited="project">
+                    <addrLine type="email">http://www.ihe.net</addrLine>
+                </publishingAuthority>
+                <conceptList id="2.16.840.1.113883.2.6.60.6.2.8.0">
+                    <concept localId="1" code="N0" codeSystem="2.16.840.1.113883.15.16" displayName="N0" level="0" type="L">
+                        <name language="en-US">N0</name>
+                    </concept>
+                    <concept localId="2" code="N1" codeSystem="2.16.840.1.113883.15.16" displayName="N1" level="0" type="L">
+                        <name language="en-US">N1</name>
+                    </concept>
+                    <concept localId="3" code="N1mi" codeSystem="2.16.840.1.113883.15.16" displayName="N1mi" level="1" type="L">
+                        <name language="en-US">N1mi</name>
+                    </concept>
+                    <concept localId="4" code="N1a" codeSystem="2.16.840.1.113883.15.16" displayName="N1a" level="1" type="L">
+                        <name language="en-US">N1a</name>
+                    </concept>
+                    <concept localId="5" code="N1b" codeSystem="2.16.840.1.113883.15.16" displayName="N1b" level="1" type="L">
+                        <name language="en-US">N1b</name>
+                    </concept>
+                    <concept localId="6" code="N1c" codeSystem="2.16.840.1.113883.15.16" displayName="N1c" level="1" type="L">
+                        <name language="en-US">N1c</name>
+                    </concept>
+                    <concept localId="7" code="N2" codeSystem="2.16.840.1.113883.15.16" displayName="N2" level="0" type="L">
+                        <name language="en-US">N2</name>
+                    </concept>
+                    <concept localId="8" code="N2a" codeSystem="2.16.840.1.113883.15.16" displayName="N2a" level="1" type="L">
+                        <name language="en-US">N2a</name>
+                    </concept>
+                    <concept localId="9" code="N2b" codeSystem="2.16.840.1.113883.15.16" displayName="N2b" level="1" type="L">
+                        <name language="en-US">N2b</name>
+                    </concept>
+                    <concept localId="10" code="N2c" codeSystem="2.16.840.1.113883.15.16" displayName="N2c" level="1" type="L">
+                        <name language="en-US">N2c</name>
+                    </concept>
+                    <concept localId="11" code="N3" codeSystem="2.16.840.1.113883.15.16" displayName="N3" level="0" type="L">
+                        <name language="en-US">N3</name>
+                    </concept>
+                    <concept localId="12" code="N3a" codeSystem="2.16.840.1.113883.15.16" displayName="N3a" level="1" type="L">
+                        <name language="en-US">N3a</name>
+                    </concept>
+                    <concept localId="13" code="N3b" codeSystem="2.16.840.1.113883.15.16" displayName="N3b" level="1" type="L">
+                        <name language="en-US">N3b</name>
+                    </concept>
+                    <concept localId="14" code="N3c" codeSystem="2.16.840.1.113883.15.16" displayName="N3c" level="1" type="L">
+                        <name language="en-US">N3c</name>
+                    </concept>
+                    <concept localId="15" code="NX" codeSystem="2.16.840.1.113883.15.16" displayName="Nx" level="0" type="L">
+                        <name language="en-US">Nx</name>
+                    </concept>
+                    <concept localId="16" code="N0" codeSystem="2.16.840.1.113883.15.6" displayName="N0" level="0" type="L">
+                        <name language="en-US">N0</name>
+                    </concept>
+                    <concept localId="17" code="N1" codeSystem="2.16.840.1.113883.15.6" displayName="N1" level="0" type="L">
+                        <name language="en-US">N1</name>
+                    </concept>
+                    <concept localId="18" code="N1mi" codeSystem="2.16.840.1.113883.15.6" displayName="N1mi" level="1" type="L">
+                        <name language="en-US">N1mi</name>
+                    </concept>
+                    <concept localId="19" code="N1a" codeSystem="2.16.840.1.113883.15.6" displayName="N1a" level="1" type="L">
+                        <name language="en-US">N1a</name>
+                    </concept>
+                    <concept localId="20" code="N1b" codeSystem="2.16.840.1.113883.15.6" displayName="N1b" level="1" type="L">
+                        <name language="en-US">N1b</name>
+                    </concept>
+                    <concept localId="21" code="N1c" codeSystem="2.16.840.1.113883.15.6" displayName="N1c" level="1" type="L">
+                        <name language="en-US">N1c</name>
+                    </concept>
+                    <concept localId="22" code="N2" codeSystem="2.16.840.1.113883.15.6" displayName="N2" level="0" type="L">
+                        <name language="en-US">N2</name>
+                    </concept>
+                    <concept localId="23" code="N2mi" codeSystem="2.16.840.1.113883.15.6" displayName="N2mi" level="1" type="L">
+                        <name language="en-US">N2mi</name>
+                    </concept>
+                    <concept localId="24" code="N2a" codeSystem="2.16.840.1.113883.15.6" displayName="N2a" level="1" type="L">
+                        <name language="en-US">N2a</name>
+                    </concept>
+                    <concept localId="25" code="N2b" codeSystem="2.16.840.1.113883.15.6" displayName="N2b" level="1" type="L">
+                        <name language="en-US">N2b</name>
+                    </concept>
+                    <concept localId="26" code="N2c" codeSystem="2.16.840.1.113883.15.6" displayName="N2c" level="1" type="L">
+                        <name language="en-US">N2c</name>
+                    </concept>
+                    <concept localId="27" code="N3" codeSystem="2.16.840.1.113883.15.6" displayName="N3" level="0" type="L">
+                        <name language="en-US">N3</name>
+                    </concept>
+                    <concept localId="28" code="N3mi" codeSystem="2.16.840.1.113883.15.6" displayName="N3mi" level="1" type="L">
+                        <name language="en-US">N3mi</name>
+                    </concept>
+                    <concept localId="29" code="N3a" codeSystem="2.16.840.1.113883.15.6" displayName="N3a" level="1" type="L">
+                        <name language="en-US">N3a</name>
+                    </concept>
+                    <concept localId="30" code="N3b" codeSystem="2.16.840.1.113883.15.6" displayName="N3b" level="1" type="L">
+                        <name language="en-US">N3b</name>
+                    </concept>
+                    <concept localId="31" code="N3c" codeSystem="2.16.840.1.113883.15.6" displayName="N3c" level="1" type="L">
+                        <name language="en-US">N3c</name>
+                    </concept>
+                    <concept localId="32" code="NX" codeSystem="2.16.840.1.113883.15.6" displayName="Nx" level="0" type="L">
+                        <name language="en-US">Nx</name>
+                    </concept>
+                    <exception localId="33" code="ASKU" codeSystem="2.16.840.1.113883.5.1008" displayName="Asked but unknown" level="0" type="L">
+                        <name language="en-US">Asked but unknown</name>
+                    </exception>
+                </conceptList>
+            </valueSet>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.8" code="21900-6" codeSystem="2.16.840.1.113883.6.1" displayName="Regional lymph nodes.pathology [Class] Cancer" effectiveDate="2017-02-27T10:09:12" codeSystemName="Logical Observation Identifier Names and Codes"/>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.8.0" valueSet="1.3.6.1.4.1.19376.1.3.11.44" flexibility="dynamic" effectiveDate="2017-12-21T19:20:04" valueSetName="UICC N category" valueSetStatusCode="draft" valueSetEffectiveDate="2017-07-21T10:00:53"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.6.2.7" statusCode="draft" effectiveDate="2015-06-22T10:01:39" type="item" iddisplay="psr-dataelement-7" shortName="mkategorie">
+            <implementation shortName="mkategorie" markdown="M-category (distant metastases) of the  TNM classification"/>
+            <name language="de-DE" lastTranslated="2017-06-30T17:56:01">M-Kategorie</name>
+            <desc language="de-DE" lastTranslated="2017-06-30T17:56:14">M-Kategorie der TNM-Klassifikation</desc>
+            <valueDomain type="code">
+                <conceptList id="2.16.840.1.113883.2.6.60.6.2.7.0"/>
+                <example type="neutral">M0, i.e. no distant metastases</example>
+            </valueDomain>
+            <valueSet id="1.3.6.1.4.1.19376.1.3.11.45" name="UICC-m-values-8ed" displayName="UICC M category" effectiveDate="2017-07-21T10:31:38" statusCode="draft">
+                <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.7.0" valueSet="1.3.6.1.4.1.19376.1.3.11.45" flexibility="dynamic" effectiveDate="2017-12-21T19:23:12" valueSetName="UICC M category" valueSetStatusCode="draft" valueSetEffectiveDate="2017-07-21T10:31:38"/>
+                <sourceCodeSystem id="2.16.840.1.113883.15.16" identifierName="TNM Edition8 UICC" canonicalUri="urn:oid:2.16.840.1.113883.15.16" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.15.16" canonicalUriSTU3="urn:oid:2.16.840.1.113883.15.16" canonicalUriR4="urn:oid:2.16.840.1.113883.15.16" canonicalUriR4B="urn:oid:2.16.840.1.113883.15.16" canonicalUriR5="urn:oid:2.16.840.1.113883.15.16"/>
+                <sourceCodeSystem id="2.16.840.1.113883.15.6" identifierName="TNM Edition7 UICC" canonicalUri="urn:oid:2.16.840.1.113883.15.6" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.15.6" canonicalUriSTU3="urn:oid:2.16.840.1.113883.15.6" canonicalUriR4="urn:oid:2.16.840.1.113883.15.6" canonicalUriR4B="urn:oid:2.16.840.1.113883.15.6" canonicalUriR5="urn:oid:2.16.840.1.113883.15.6"/>
+                <sourceCodeSystem id="2.16.840.1.113883.5.1008" identifierName="Null Flavor" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriDSTU2="http://hl7.org/fhir/v3/NullFlavor" canonicalUriSTU3="http://hl7.org/fhir/v3/NullFlavor" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" context="external/hl7intl/v3/v3-NullFlavor"/>
+                <publishingAuthority name="IHE International" inherited="project">
+                    <addrLine type="email">http://www.ihe.net</addrLine>
+                </publishingAuthority>
+                <conceptList id="2.16.840.1.113883.2.6.60.6.2.7.0">
+                    <concept localId="1" code="M0" codeSystem="2.16.840.1.113883.15.6" displayName="M0" level="0" type="L">
+                        <name language="en-US">M0</name>
+                    </concept>
+                    <concept localId="2" code="M1" codeSystem="2.16.840.1.113883.15.6" displayName="M1" level="0" type="L">
+                        <name language="en-US">M1</name>
+                    </concept>
+                    <concept localId="3" code="M1mi" codeSystem="2.16.840.1.113883.15.6" displayName="M1(mi)" level="1" type="L">
+                        <name language="en-US">M1(mi)</name>
+                    </concept>
+                    <concept localId="4" code="M1a" codeSystem="2.16.840.1.113883.15.6" displayName="M1a" level="1" type="L">
+                        <name language="en-US">M1a</name>
+                    </concept>
+                    <concept localId="5" code="M1b" codeSystem="2.16.840.1.113883.15.6" displayName="M1b" level="1" type="L">
+                        <name language="en-US">M1b</name>
+                    </concept>
+                    <concept localId="6" code="M1c" codeSystem="2.16.840.1.113883.15.6" displayName="M1c" level="1" type="L">
+                        <name language="en-US">M1c</name>
+                    </concept>
+                    <concept localId="7" code="M1d" codeSystem="2.16.840.1.113883.15.6" displayName="M1d" level="1" type="L">
+                        <name language="en-US">M1d</name>
+                    </concept>
+                    <concept localId="8" code="M1e" codeSystem="2.16.840.1.113883.15.6" displayName="M1e" level="1" type="L">
+                        <name language="en-US">M1e</name>
+                    </concept>
+                    <concept localId="9" code="M1cy" codeSystem="2.16.840.1.113883.15.6" displayName="M1(cy)" level="1" type="L">
+                        <name language="en-US">M1(cy)</name>
+                    </concept>
+                    <concept localId="10" code="MX" codeSystem="2.16.840.1.113883.15.6" displayName="MX" level="0" type="L">
+                        <name language="en-US">MX</name>
+                    </concept>
+                    <concept localId="11" code="M0" codeSystem="2.16.840.1.113883.15.16" displayName="M0" level="0" type="L">
+                        <name language="en-US">M0</name>
+                    </concept>
+                    <concept localId="12" code="M1" codeSystem="2.16.840.1.113883.15.16" displayName="M1" level="0" type="L">
+                        <name language="en-US">M1</name>
+                    </concept>
+                    <concept localId="13" code="M1a" codeSystem="2.16.840.1.113883.15.16" displayName="M1a" level="1" type="L">
+                        <name language="en-US">M1a</name>
+                    </concept>
+                    <concept localId="14" code="M1b" codeSystem="2.16.840.1.113883.15.16" displayName="M1b" level="1" type="L">
+                        <name language="en-US">M1b</name>
+                    </concept>
+                    <concept localId="15" code="M1c" codeSystem="2.16.840.1.113883.15.16" displayName="M1c" level="1" type="L">
+                        <name language="en-US">M1c</name>
+                    </concept>
+                    <concept localId="16" code="M1d" codeSystem="2.16.840.1.113883.15.16" displayName="M1d" level="1" type="L">
+                        <name language="en-US">M1d</name>
+                    </concept>
+                    <concept localId="17" code="M1cy" codeSystem="2.16.840.1.113883.15.16" displayName="M1(cy)" level="1" type="L">
+                        <name language="en-US">M1(cy)</name>
+                    </concept>
+                    <concept localId="18" code="MX" codeSystem="2.16.840.1.113883.15.16" displayName="MX" level="0" type="L">
+                        <name language="en-US">MX</name>
+                    </concept>
+                    <exception localId="19" code="ASKU" codeSystem="2.16.840.1.113883.5.1008" displayName="Asked but unknown" level="0" type="L">
+                        <name language="en-US">Asked but unknown</name>
+                    </exception>
+                </conceptList>
+            </valueSet>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.7" code="21901-4" codeSystem="2.16.840.1.113883.6.1" displayName="Distant metastases.pathology [Class] Cancer" effectiveDate="2017-02-26T14:45:08" codeSystemName="Logical Observation Identifier Names and Codes"/>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.7.0" valueSet="1.3.6.1.4.1.19376.1.3.11.45" flexibility="dynamic" effectiveDate="2017-12-21T19:23:12" valueSetName="UICC M category" valueSetStatusCode="draft" valueSetEffectiveDate="2017-07-21T10:31:38"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.6.2.6" statusCode="draft" effectiveDate="2015-06-22T10:01:13" type="item" iddisplay="psr-dataelement-6" shortName="tkategorie">
+            <implementation shortName="tkategorie" markdown="T-category of the TNM classification"/>
+            <name language="de-DE" lastTranslated="2017-06-30T17:56:37">T-Kategorie</name>
+            <desc language="de-DE" lastTranslated="2017-06-30T17:56:51">T-Kategorie der TNM-Klassifikation</desc>
+            <valueDomain type="code">
+                <conceptList id="2.16.840.1.113883.2.6.60.6.2.6.0"/>
+            </valueDomain>
+            <valueSet id="1.3.6.1.4.1.19376.1.3.11.43" name="UICC-t-value-8ed" displayName="UICC T category" effectiveDate="2017-07-07T15:06:39" statusCode="draft" officialReleaseDate="2022-07-01T00:00:00" lastModifiedDate="2023-01-26T18:22:04">
+                <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.6.0" valueSet="1.3.6.1.4.1.19376.1.3.11.43" flexibility="dynamic" effectiveDate="2017-12-21T19:22:18" valueSetName="UICC T category" valueSetStatusCode="draft" valueSetEffectiveDate="2017-07-07T15:06:39"/>
+                <desc language="en-US" lastTranslated="2023-01-26T18:22:04">T category in UICC/AJCC (TNM) 8th edition</desc>
+                <sourceCodeSystem id="2.16.840.1.113883.15.16" identifierName="TNM Edition8 UICC" canonicalUri="urn:oid:2.16.840.1.113883.15.16" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.15.16" canonicalUriSTU3="urn:oid:2.16.840.1.113883.15.16" canonicalUriR4="urn:oid:2.16.840.1.113883.15.16" canonicalUriR4B="urn:oid:2.16.840.1.113883.15.16" canonicalUriR5="urn:oid:2.16.840.1.113883.15.16"/>
+                <sourceCodeSystem id="2.16.840.1.113883.15.6" identifierName="TNM Edition7 UICC" canonicalUri="urn:oid:2.16.840.1.113883.15.6" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.15.6" canonicalUriSTU3="urn:oid:2.16.840.1.113883.15.6" canonicalUriR4="urn:oid:2.16.840.1.113883.15.6" canonicalUriR4B="urn:oid:2.16.840.1.113883.15.6" canonicalUriR5="urn:oid:2.16.840.1.113883.15.6"/>
+                <sourceCodeSystem id="2.16.840.1.113883.5.1008" identifierName="Null Flavor" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriDSTU2="http://hl7.org/fhir/v3/NullFlavor" canonicalUriSTU3="http://hl7.org/fhir/v3/NullFlavor" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" context="external/hl7intl/v3/v3-NullFlavor"/>
+                <publishingAuthority name="IHE International" inherited="project">
+                    <addrLine type="email">http://www.ihe.net</addrLine>
+                </publishingAuthority>
+                <conceptList id="2.16.840.1.113883.2.6.60.6.2.6.0">
+                    <concept localId="1" code="Ta" codeSystem="2.16.840.1.113883.15.6" displayName="Ta" level="0" type="L">
+                        <name language="en-US">Ta</name>
+                    </concept>
+                    <concept localId="2" code="Tis" codeSystem="2.16.840.1.113883.15.6" displayName="Tis" level="0" type="L">
+                        <name language="en-US">Tis</name>
+                    </concept>
+                    <concept localId="3" code="Tis(DCIS)" codeSystem="2.16.840.1.113883.15.6" displayName="Tis(DCIS)" level="1" type="L">
+                        <name language="en-US">Tis(DCIS)</name>
+                    </concept>
+                    <concept localId="4" code="Tis(LCIS)" codeSystem="2.16.840.1.113883.15.6" displayName="Tis(LCIS)" level="1" type="L">
+                        <name language="en-US">Tis(LCIS)</name>
+                    </concept>
+                    <concept localId="5" code="Tis(Paget)" codeSystem="2.16.840.1.113883.15.6" displayName="Tis(Paget)" level="1" type="L">
+                        <name language="en-US">Tis(Paget)</name>
+                    </concept>
+                    <concept localId="6" code="Tis(pu)" codeSystem="2.16.840.1.113883.15.6" displayName="Tis(pu)" level="1" type="L">
+                        <name language="en-US">Tis(pu)</name>
+                    </concept>
+                    <concept localId="7" code="Tis(pd)" codeSystem="2.16.840.1.113883.15.6" displayName="Tis(pd)" level="1" type="L">
+                        <name language="en-US">Tis(pd)</name>
+                    </concept>
+                    <concept localId="8" code="T0" codeSystem="2.16.840.1.113883.15.6" displayName="T0" level="0" type="L">
+                        <name language="en-US">T0</name>
+                    </concept>
+                    <concept localId="9" code="T1" codeSystem="2.16.840.1.113883.15.6" displayName="T1" level="0" type="L">
+                        <name language="en-US">T1</name>
+                    </concept>
+                    <concept localId="10" code="T1mi" codeSystem="2.16.840.1.113883.15.6" displayName="T1mi" level="1" type="L">
+                        <name language="en-US">T1mi</name>
+                    </concept>
+                    <concept localId="11" code="T1a" codeSystem="2.16.840.1.113883.15.6" displayName="T1a" level="1" type="L">
+                        <name language="en-US">T1a</name>
+                    </concept>
+                    <concept localId="12" code="T1a1" codeSystem="2.16.840.1.113883.15.6" displayName="T1a1" level="2" type="L">
+                        <name language="en-US">T1a1</name>
+                    </concept>
+                    <concept localId="13" code="T1a2" codeSystem="2.16.840.1.113883.15.6" displayName="T1a2" level="2" type="L">
+                        <name language="en-US">T1a2</name>
+                    </concept>
+                    <concept localId="14" code="T1b" codeSystem="2.16.840.1.113883.15.6" displayName="T1b" level="1" type="L">
+                        <name language="en-US">T1b</name>
+                    </concept>
+                    <concept localId="15" code="T1b1" codeSystem="2.16.840.1.113883.15.6" displayName="T1b1" level="2" type="L">
+                        <name language="en-US">T1b1</name>
+                    </concept>
+                    <concept localId="16" code="T1b2" codeSystem="2.16.840.1.113883.15.6" displayName="T1b2" level="2" type="L">
+                        <name language="en-US">T1b2</name>
+                    </concept>
+                    <concept localId="17" code="T1c" codeSystem="2.16.840.1.113883.15.6" displayName="T1c" level="1" type="L">
+                        <name language="en-US">T1c</name>
+                    </concept>
+                    <concept localId="18" code="T1d" codeSystem="2.16.840.1.113883.15.6" displayName="T1d" level="1" type="L">
+                        <name language="en-US">T1d</name>
+                    </concept>
+                    <concept localId="19" code="T2" codeSystem="2.16.840.1.113883.15.6" displayName="T2" level="0" type="L">
+                        <name language="en-US">T2</name>
+                    </concept>
+                    <concept localId="20" code="T2a" codeSystem="2.16.840.1.113883.15.6" displayName="T2a" level="1" type="L">
+                        <name language="en-US">T2a</name>
+                    </concept>
+                    <concept localId="21" code="T2a1" codeSystem="2.16.840.1.113883.15.6" displayName="T2a1" level="2" type="L">
+                        <name language="en-US">T2a1</name>
+                    </concept>
+                    <concept localId="22" code="T2a2" codeSystem="2.16.840.1.113883.15.6" displayName="T2a2" level="2" type="L">
+                        <name language="en-US">T2a2</name>
+                    </concept>
+                    <concept localId="23" code="T2b" codeSystem="2.16.840.1.113883.15.6" displayName="T2b" level="1" type="L">
+                        <name language="en-US">T2b</name>
+                    </concept>
+                    <concept localId="24" code="T2c" codeSystem="2.16.840.1.113883.15.6" displayName="T2c" level="1" type="L">
+                        <name language="en-US">T2c</name>
+                    </concept>
+                    <concept localId="25" code="T2d" codeSystem="2.16.840.1.113883.15.6" displayName="T2d" level="1" type="L">
+                        <name language="en-US">T2d</name>
+                    </concept>
+                    <concept localId="26" code="T3" codeSystem="2.16.840.1.113883.15.6" displayName="T3" level="0" type="L">
+                        <name language="en-US">T3</name>
+                    </concept>
+                    <concept localId="27" code="T3a" codeSystem="2.16.840.1.113883.15.6" displayName="T3a" level="1" type="L">
+                        <name language="en-US">T3a</name>
+                    </concept>
+                    <concept localId="28" code="T3b" codeSystem="2.16.840.1.113883.15.6" displayName="T3b" level="1" type="L">
+                        <name language="en-US">T3b</name>
+                    </concept>
+                    <concept localId="29" code="T3c" codeSystem="2.16.840.1.113883.15.6" displayName="T3c" level="1" type="L">
+                        <name language="en-US">T3c</name>
+                    </concept>
+                    <concept localId="30" code="T3d" codeSystem="2.16.840.1.113883.15.6" displayName="T3d" level="1" type="L">
+                        <name language="en-US">T3d</name>
+                    </concept>
+                    <concept localId="31" code="T4" codeSystem="2.16.840.1.113883.15.6" displayName="T4" level="0" type="L">
+                        <name language="en-US">T4</name>
+                    </concept>
+                    <concept localId="32" code="T4a" codeSystem="2.16.840.1.113883.15.6" displayName="T4a" level="1" type="L">
+                        <name language="en-US">T4a</name>
+                    </concept>
+                    <concept localId="33" code="T4b" codeSystem="2.16.840.1.113883.15.6" displayName="T4b" level="1" type="L">
+                        <name language="en-US">T4b</name>
+                    </concept>
+                    <concept localId="34" code="T4c" codeSystem="2.16.840.1.113883.15.6" displayName="T4c" level="1" type="L">
+                        <name language="en-US">T4c</name>
+                    </concept>
+                    <concept localId="35" code="T4d" codeSystem="2.16.840.1.113883.15.6" displayName="T4d" level="1" type="L">
+                        <name language="en-US">T4d</name>
+                    </concept>
+                    <concept localId="36" code="T4e" codeSystem="2.16.840.1.113883.15.6" displayName="T4e" level="1" type="L">
+                        <name language="en-US">T4e</name>
+                    </concept>
+                    <concept localId="37" code="Tx" codeSystem="2.16.840.1.113883.15.6" displayName="TX" level="0" type="L">
+                        <name language="en-US">TX</name>
+                    </concept>
+                    <concept localId="38" code="Ta" codeSystem="2.16.840.1.113883.15.16" displayName="Ta" level="0" type="L">
+                        <name language="en-US">Ta</name>
+                    </concept>
+                    <concept localId="39" code="Tis" codeSystem="2.16.840.1.113883.15.16" displayName="Tis" level="0" type="L">
+                        <name language="en-US">Tis</name>
+                    </concept>
+                    <concept localId="40" code="Tis(LAMN)" codeSystem="2.16.840.1.113883.15.16" displayName="Tis(LAMN)" level="1" type="L">
+                        <name language="en-US">Tis(LAMN)</name>
+                    </concept>
+                    <concept localId="41" code="Tis(DCIS)" codeSystem="2.16.840.1.113883.15.16" displayName="Tis(DCIS)" level="1" type="L">
+                        <name language="en-US">Tis(DCIS)</name>
+                    </concept>
+                    <concept localId="42" code="Tis(LCIS)" codeSystem="2.16.840.1.113883.15.16" displayName="Tis(LCIS)" level="1" type="L">
+                        <name language="en-US">Tis(LCIS)</name>
+                    </concept>
+                    <concept localId="43" code="Tis(Paget)" codeSystem="2.16.840.1.113883.15.16" displayName="Tis(Paget)" level="1" type="L">
+                        <name language="en-US">Tis(Paget)</name>
+                    </concept>
+                    <concept localId="44" code="Tis(pu)" codeSystem="2.16.840.1.113883.15.16" displayName="Tis(pu)" level="1" type="L">
+                        <name language="en-US">Tis(pu)</name>
+                    </concept>
+                    <concept localId="45" code="Tis(pd)" codeSystem="2.16.840.1.113883.15.16" displayName="Tis(pd)" level="1" type="L">
+                        <name language="en-US">Tis(pd)</name>
+                    </concept>
+                    <concept localId="46" code="T0" codeSystem="2.16.840.1.113883.15.16" displayName="T0" level="0" type="L">
+                        <name language="en-US">T0</name>
+                    </concept>
+                    <concept localId="47" code="T1" codeSystem="2.16.840.1.113883.15.16" displayName="T1" level="0" type="L">
+                        <name language="en-US">T1</name>
+                    </concept>
+                    <concept localId="48" code="T1mi" codeSystem="2.16.840.1.113883.15.16" displayName="T1mi" level="1" type="L">
+                        <name language="en-US">T1mi</name>
+                    </concept>
+                    <concept localId="49" code="T1a" codeSystem="2.16.840.1.113883.15.16" displayName="T1a" level="1" type="L">
+                        <name language="en-US">T1a</name>
+                    </concept>
+                    <concept localId="50" code="T1a1" codeSystem="2.16.840.1.113883.15.16" displayName="T1a1" level="2" type="L">
+                        <name language="en-US">T1a1</name>
+                    </concept>
+                    <concept localId="51" code="T1a2" codeSystem="2.16.840.1.113883.15.16" displayName="T1a2" level="2" type="L">
+                        <name language="en-US">T1a2</name>
+                    </concept>
+                    <concept localId="52" code="T1b" codeSystem="2.16.840.1.113883.15.16" displayName="T1b" level="1" type="L">
+                        <name language="en-US">T1b</name>
+                    </concept>
+                    <concept localId="53" code="T1b1" codeSystem="2.16.840.1.113883.15.16" displayName="T1b1" level="2" type="L">
+                        <name language="en-US">T1b1</name>
+                    </concept>
+                    <concept localId="54" code="T1b2" codeSystem="2.16.840.1.113883.15.16" displayName="T1b2" level="2" type="L">
+                        <name language="en-US">T1b2</name>
+                    </concept>
+                    <concept localId="55" code="T1c" codeSystem="2.16.840.1.113883.15.16" displayName="T1c" level="1" type="L">
+                        <name language="en-US">T1c</name>
+                    </concept>
+                    <concept localId="56" code="T1c1" codeSystem="2.16.840.1.113883.15.16" displayName="T1c1" level="2" type="L">
+                        <name language="en-US">T1c1</name>
+                    </concept>
+                    <concept localId="57" code="T1c2" codeSystem="2.16.840.1.113883.15.16" displayName="T1c2" level="2" type="L">
+                        <name language="en-US">T1c2</name>
+                    </concept>
+                    <concept localId="58" code="T1c3" codeSystem="2.16.840.1.113883.15.16" displayName="T1c3" level="2" type="L">
+                        <name language="en-US">T1c3</name>
+                    </concept>
+                    <concept localId="59" code="T1d" codeSystem="2.16.840.1.113883.15.16" displayName="T1d" level="1" type="L">
+                        <name language="en-US">T1d</name>
+                    </concept>
+                    <concept localId="60" code="T2" codeSystem="2.16.840.1.113883.15.16" displayName="T2" level="0" type="L">
+                        <name language="en-US">T2</name>
+                    </concept>
+                    <concept localId="61" code="T2a" codeSystem="2.16.840.1.113883.15.16" displayName="T2a" level="1" type="L">
+                        <name language="en-US">T2a</name>
+                    </concept>
+                    <concept localId="62" code="T2a1" codeSystem="2.16.840.1.113883.15.16" displayName="T2a1" level="2" type="L">
+                        <name language="en-US">T2a1</name>
+                    </concept>
+                    <concept localId="63" code="T2a2" codeSystem="2.16.840.1.113883.15.16" displayName="T2a2" level="2" type="L">
+                        <name language="en-US">T2a2</name>
+                    </concept>
+                    <concept localId="64" code="T2b" codeSystem="2.16.840.1.113883.15.16" displayName="T2b" level="1" type="L">
+                        <name language="en-US">T2b</name>
+                    </concept>
+                    <concept localId="65" code="T2c" codeSystem="2.16.840.1.113883.15.16" displayName="T2c" level="1" type="L">
+                        <name language="en-US">T2c</name>
+                    </concept>
+                    <concept localId="66" code="T2d" codeSystem="2.16.840.1.113883.15.16" displayName="T2d" level="1" type="L">
+                        <name language="en-US">T2d</name>
+                    </concept>
+                    <concept localId="67" code="T3" codeSystem="2.16.840.1.113883.15.16" displayName="T3" level="0" type="L">
+                        <name language="en-US">T3</name>
+                    </concept>
+                    <concept localId="68" code="T3a" codeSystem="2.16.840.1.113883.15.16" displayName="T3a" level="1" type="L">
+                        <name language="en-US">T3a</name>
+                    </concept>
+                    <concept localId="69" code="T3b" codeSystem="2.16.840.1.113883.15.16" displayName="T3b" level="1" type="L">
+                        <name language="en-US">T3b</name>
+                    </concept>
+                    <concept localId="70" code="T3c" codeSystem="2.16.840.1.113883.15.16" displayName="T3c" level="1" type="L">
+                        <name language="en-US">T3c</name>
+                    </concept>
+                    <concept localId="71" code="T3d" codeSystem="2.16.840.1.113883.15.16" displayName="T3d" level="1" type="L">
+                        <name language="en-US">T3d</name>
+                    </concept>
+                    <concept localId="72" code="T3e" codeSystem="2.16.840.1.113883.15.16" displayName="T3e" level="1" type="L">
+                        <name language="en-US">T3e</name>
+                    </concept>
+                    <concept localId="73" code="T4" codeSystem="2.16.840.1.113883.15.16" displayName="T4" level="0" type="L">
+                        <name language="en-US">T4</name>
+                    </concept>
+                    <concept localId="74" code="T4a" codeSystem="2.16.840.1.113883.15.16" displayName="T4a" level="1" type="L">
+                        <name language="en-US">T4a</name>
+                    </concept>
+                    <concept localId="75" code="T4b" codeSystem="2.16.840.1.113883.15.16" displayName="T4b" level="1" type="L">
+                        <name language="en-US">T4b</name>
+                    </concept>
+                    <concept localId="76" code="T4c" codeSystem="2.16.840.1.113883.15.16" displayName="T4c" level="1" type="L">
+                        <name language="en-US">T4c</name>
+                    </concept>
+                    <concept localId="77" code="T4d" codeSystem="2.16.840.1.113883.15.16" displayName="T4d" level="1" type="L">
+                        <name language="en-US">T4d</name>
+                    </concept>
+                    <concept localId="78" code="T4e" codeSystem="2.16.840.1.113883.15.16" displayName="T4e" level="1" type="L">
+                        <name language="en-US">T4e</name>
+                    </concept>
+                    <concept localId="79" code="TX" codeSystem="2.16.840.1.113883.15.16" displayName="TX" level="0" type="L">
+                        <name language="en-US">TX</name>
+                    </concept>
+                    <exception localId="80" code="ASKU" codeSystem="2.16.840.1.113883.5.1008" displayName="Asked, but unknown" level="0" type="L">
+                        <name language="en-US">Asked, but unknown</name>
+                    </exception>
+                </conceptList>
+            </valueSet>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.6" code="21899-0" codeSystem="2.16.840.1.113883.6.1" displayName="Primary tumor.pathology Cancer" effectiveDate="2017-02-26T14:46:10" codeSystemName="Logical Observation Identifier Names and Codes"/>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.6.0" valueSet="1.3.6.1.4.1.19376.1.3.11.43" flexibility="dynamic" effectiveDate="2017-12-21T19:22:18" valueSetName="UICC T category" valueSetStatusCode="draft" valueSetEffectiveDate="2017-07-07T15:06:39"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.6.2.46" statusCode="draft" effectiveDate="2015-06-30T12:48:09" type="item" iddisplay="psr-dataelement-46" shortName="residualtumorstatus">
+            <implementation shortName="residualtumorstatus" markdown="Status of residual tumor after any therapy"/>
+            <name language="de-DE" lastTranslated="2017-06-30T17:57:19">Residualtumorstatus</name>
+            <desc language="de-DE" lastTranslated="2017-06-30T17:57:52">Status hinsichtlich residuellen Tumorgewebes nach Behandlung</desc>
+            <valueDomain type="code">
+                <conceptList id="2.16.840.1.113883.2.6.60.6.2.46.0"/>
+            </valueDomain>
+            <valueSet id="1.3.6.1.4.1.19376.1.3.11.21" name="UICC-R-status" displayName="UICC Residual tumor (R) classification" effectiveDate="2015-06-25T11:23:51" statusCode="draft">
+                <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.46.0" effectiveDate="2015-08-05T12:09:40" valueSet="1.3.6.1.4.1.19376.1.3.11.21" flexibility="dynamic" valueSetName="UICC Residual tumor (R) classification" valueSetStatusCode="draft" valueSetEffectiveDate="2015-06-25T11:23:51"/>
+                <desc language="en-US">Value set for Residual tumor state with values for extended R-Klassifikation (TNM Suppl. 4th ed.)</desc>
+                <sourceCodeSystem id="1.2.276.0.76.3.1.131.1.5.120" identifierName="" canonicalUri="urn:oid:1.2.276.0.76.3.1.131.1.5.120" canonicalUriDSTU2="urn:oid:1.2.276.0.76.3.1.131.1.5.120" canonicalUriSTU3="urn:oid:1.2.276.0.76.3.1.131.1.5.120" canonicalUriR4="urn:oid:1.2.276.0.76.3.1.131.1.5.120" canonicalUriR4B="urn:oid:1.2.276.0.76.3.1.131.1.5.120" canonicalUriR5="urn:oid:1.2.276.0.76.3.1.131.1.5.120"/>
+                <sourceCodeSystem id="2.16.840.1.113883.15.16" identifierName="TNM Edition8 UICC" canonicalUri="urn:oid:2.16.840.1.113883.15.16" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.15.16" canonicalUriSTU3="urn:oid:2.16.840.1.113883.15.16" canonicalUriR4="urn:oid:2.16.840.1.113883.15.16" canonicalUriR4B="urn:oid:2.16.840.1.113883.15.16" canonicalUriR5="urn:oid:2.16.840.1.113883.15.16"/>
+                <sourceCodeSystem id="2.16.840.1.113883.15.6" identifierName="TNM Edition7 UICC" canonicalUri="urn:oid:2.16.840.1.113883.15.6" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.15.6" canonicalUriSTU3="urn:oid:2.16.840.1.113883.15.6" canonicalUriR4="urn:oid:2.16.840.1.113883.15.6" canonicalUriR4B="urn:oid:2.16.840.1.113883.15.6" canonicalUriR5="urn:oid:2.16.840.1.113883.15.6"/>
+                <sourceCodeSystem id="2.16.840.1.113883.5.1008" identifierName="Null Flavor" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriDSTU2="http://hl7.org/fhir/v3/NullFlavor" canonicalUriSTU3="http://hl7.org/fhir/v3/NullFlavor" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" context="external/hl7intl/v3/v3-NullFlavor"/>
+                <sourceCodeSystem id="2.16.840.1.113883.6.96" identifierName="SNOMED Clinical Terms" canonicalUri="http://snomed.info/sct" canonicalUriDSTU2="http://snomed.info/sct" canonicalUriSTU3="http://snomed.info/sct" canonicalUriR4="http://snomed.info/sct" canonicalUriR4B="http://snomed.info/sct" canonicalUriR5="http://snomed.info/sct"/>
+                <publishingAuthority name="IHE International" inherited="project">
+                    <addrLine type="email">http://www.ihe.net</addrLine>
+                </publishingAuthority>
+                <copyright language="en-US">This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or
+                info@snomed.org.<div data-source="inherited" style="border-top: 1px solid black">This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.</div>
+                </copyright>
+                <conceptList id="2.16.840.1.113883.2.6.60.6.2.46.0">
+                    <concept localId="1" code="258254000" codeSystem="2.16.840.1.113883.6.96" displayName="Residual tumor stage R0 (finding)" level="0" type="L">
+                        <name language="en-US">Residual tumor stage R0 (finding)</name>
+                    </concept>
+                    <concept localId="2" code="415675004" codeSystem="2.16.840.1.113883.6.96" displayName="Surgical circumferential margin is closest uninvolved margin to malignant neoplasm (finding)" level="1" type="L">
+                        <name language="en-US">Surgical circumferential margin is closest uninvolved margin to malignant neoplasm (finding)</name>
+                        <desc language="en-US">No residual tumor: R0 &gt; 1mm CRM negative</desc>
+                    </concept>
+                    <concept localId="3" code="278271003" codeSystem="2.16.840.1.113883.6.96" displayName="Residual tumor stage R1 (finding)" level="0" type="L">
+                        <name language="en-US">Residual tumor stage R1 (finding)</name>
+                    </concept>
+                    <concept localId="4" code="384620009" codeSystem="2.16.840.1.113883.6.96" displayName="Surgical circumferential margin involved by malignant neoplasm (tumor present 0-1 mm from circumferential resection margin) (finding)" level="1" type="L">
+                        <name language="en-US">Surgical circumferential margin involved by malignant neoplasm (tumor present 0-1 mm from circumferential resection margin) (finding)</name>
+                    </concept>
+                    <concept localId="5" code="278272005" codeSystem="2.16.840.1.113883.6.96" displayName="Residual tumor stage R2 (finding)" level="0" type="L">
+                        <name language="en-US">Residual tumor stage R2 (finding)</name>
+                    </concept>
+                    <concept localId="6" code="258253006" codeSystem="2.16.840.1.113883.6.96" displayName="Residual tumor stage RX (finding)" level="0" type="L">
+                        <name language="en-US">Residual tumor stage RX (finding)</name>
+                    </concept>
+                    <concept localId="7" code="RX" codeSystem="2.16.840.1.113883.15.16" displayName="RX" level="0" type="L">
+                        <name language="en-US">RX</name>
+                    </concept>
+                    <concept localId="8" code="R0&gt;1mm" codeSystem="2.16.840.1.113883.15.6" displayName="R0 &gt; 1mm" level="0" type="L">
+                        <name language="en-US">R0 &gt; 1mm</name>
+                    </concept>
+                    <concept localId="9" code="R0&lt;1mm" codeSystem="2.16.840.1.113883.15.6" displayName="R0 &lt; 1mm" level="0" type="L">
+                        <name language="en-US">R0 &lt; 1mm</name>
+                    </concept>
+                    <concept localId="10" code="R1" codeSystem="2.16.840.1.113883.15.16" displayName="R1" level="0" type="L">
+                        <name language="en-US">R1</name>
+                    </concept>
+                    <concept localId="11" code="R1-dir" codeSystem="2.16.840.1.113883.15.6" displayName="R1-dir" level="1" type="L">
+                        <name language="en-US">R1-dir</name>
+                    </concept>
+                    <concept localId="12" code="R1(is)" codeSystem="1.2.276.0.76.3.1.131.1.5.120" displayName="R1(is)" level="1" type="L">
+                        <name language="en-US">R1(is)</name>
+                    </concept>
+                    <concept localId="13" code="R1(cy)" codeSystem="1.2.276.0.76.3.1.131.1.5.120" displayName="R1(cy)" level="1" type="L">
+                        <name language="en-US">R1(cy)</name>
+                    </concept>
+                    <concept localId="14" code="R2" codeSystem="2.16.840.1.113883.15.16" displayName="R2" level="0" type="L">
+                        <name language="en-US">R2</name>
+                    </concept>
+                    <concept localId="15" code="R2a" codeSystem="2.16.840.1.113883.15.6" displayName="R2a" level="1" type="L">
+                        <name language="en-US">R2a</name>
+                    </concept>
+                    <concept localId="16" code="R2b" codeSystem="2.16.840.1.113883.15.6" displayName="R2b" level="1" type="L">
+                        <name language="en-US">R2b</name>
+                    </concept>
+                    <concept localId="17" code="R2c" codeSystem="2.16.840.1.113883.15.6" displayName="R2c" level="1" type="L">
+                        <name language="en-US">R2c</name>
+                    </concept>
+                    <concept localId="18" code="CRM+" codeSystem="2.16.840.1.113883.15.6" displayName="CRM positive" level="0" type="L">
+                        <name language="en-US">CRM positive</name>
+                    </concept>
+                    <concept localId="19" code="CRM-" codeSystem="2.16.840.1.113883.15.6" displayName="CRM negative" level="0" type="L">
+                        <name language="en-US">CRM negative</name>
+                    </concept>
+                    <exception localId="20" code="ASKU" codeSystem="2.16.840.1.113883.5.1008" displayName="Asked but unknown" level="0" type="L">
+                        <name language="en-US">Asked but unknown</name>
+                    </exception>
+                </conceptList>
+            </valueSet>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.46" code="445200009" codeSystem="2.16.840.1.113883.6.96" displayName="Status of residual neoplasm (observable entity)" effectiveDate="2017-02-26T14:48:34" codeSystemName="SNOMED Clinical Terms"/>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.46.0" effectiveDate="2015-08-05T12:09:40" valueSet="1.3.6.1.4.1.19376.1.3.11.21" flexibility="dynamic" valueSetName="UICC Residual tumor (R) classification" valueSetStatusCode="draft" valueSetEffectiveDate="2015-06-25T11:23:51"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.6.2.53" statusCode="draft" effectiveDate="2015-08-05T11:30:39" type="item" iddisplay="psr-dataelement-53" shortName="grad">
+            <implementation shortName="grad" markdown="Method of histopathology to describe semiquantitatively resp. to classify  the grade of differentiation / grade of malignancy of a malignant tumor. It results in four-tiered, three-tiered or two-tiered tumor grades. There is a tendency to reduce all systems to a two-tiered grading of low and high grade."/>
+            <name language="de-DE" lastTranslated="2017-06-30T17:58:18">Grad</name>
+            <desc language="de-DE" lastTranslated="2017-06-30T17:58:36">Differenzierung- bzw. Malignitätsgrad</desc>
+            <valueDomain type="code">
+                <conceptList id="2.16.840.1.113883.2.6.60.6.2.53.0"/>
+            </valueDomain>
+            <valueSet id="1.3.6.1.4.1.19376.1.3.11.31" name="UICCgrade-4" displayName="UICC Grade 4 tiered" effectiveDate="2015-11-13T19:46:53" statusCode="draft">
+                <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.53.0" valueSet="1.3.6.1.4.1.19376.1.3.11.31" flexibility="dynamic" effectiveDate="2017-02-26T14:55:16" valueSetName="UICC Grade 4 tiered" valueSetStatusCode="draft" valueSetEffectiveDate="2015-11-13T19:46:53"/>
+                <desc language="en-US">Coding of the grade of differentiation (malignancy) of tumors, coded by a four-tiered grading system, sometimes using the score of a special grading system for certain tumor types.</desc>
+                <sourceCodeSystem id="1.2.276.0.76.5.336" identifierName="" canonicalUri="urn:oid:1.2.276.0.76.5.336" canonicalUriDSTU2="urn:oid:1.2.276.0.76.5.336" canonicalUriSTU3="urn:oid:1.2.276.0.76.5.336" canonicalUriR4="urn:oid:1.2.276.0.76.5.336" canonicalUriR4B="urn:oid:1.2.276.0.76.5.336" canonicalUriR5="urn:oid:1.2.276.0.76.5.336"/>
+                <sourceCodeSystem id="2.16.840.1.113883.15.16" identifierName="TNM Edition8 UICC" canonicalUri="urn:oid:2.16.840.1.113883.15.16" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.15.16" canonicalUriSTU3="urn:oid:2.16.840.1.113883.15.16" canonicalUriR4="urn:oid:2.16.840.1.113883.15.16" canonicalUriR4B="urn:oid:2.16.840.1.113883.15.16" canonicalUriR5="urn:oid:2.16.840.1.113883.15.16"/>
+                <sourceCodeSystem id="2.16.840.1.113883.5.1008" identifierName="Null Flavor" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriDSTU2="http://hl7.org/fhir/v3/NullFlavor" canonicalUriSTU3="http://hl7.org/fhir/v3/NullFlavor" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" context="external/hl7intl/v3/v3-NullFlavor"/>
+                <publishingAuthority name="IHE International" inherited="project">
+                    <addrLine type="email">http://www.ihe.net</addrLine>
+                </publishingAuthority>
+                <conceptList id="2.16.840.1.113883.2.6.60.6.2.53.0">
+                    <concept localId="1" code="1" codeSystem="2.16.840.1.113883.15.16" displayName="G1" level="0" type="L">
+                        <name language="en-US">G1</name>
+                        <desc language="en-US">well (highly) differentiated</desc>
+                    </concept>
+                    <concept localId="2" code="2" codeSystem="2.16.840.1.113883.15.16" displayName="G2" level="0" type="L">
+                        <name language="en-US">G2</name>
+                        <desc language="en-US">moderately differentiated</desc>
+                    </concept>
+                    <concept localId="3" code="3" codeSystem="2.16.840.1.113883.15.16" displayName="G3" level="0" type="L">
+                        <name language="en-US">G3</name>
+                        <desc language="en-US">poorly differentiated</desc>
+                    </concept>
+                    <concept localId="4" code="4" codeSystem="2.16.840.1.113883.15.16" displayName="G4" level="0" type="L">
+                        <name language="en-US">G4</name>
+                        <desc language="en-US">undifferentiated resp. anaplastic</desc>
+                    </concept>
+                    <concept localId="5" code="X" codeSystem="2.16.840.1.113883.15.16" displayName="GX" level="0" type="L">
+                        <name language="en-US">GX</name>
+                        <desc language="en-US">cannot be assessed</desc>
+                    </concept>
+                    <concept localId="6" code="0" codeSystem="1.2.276.0.76.5.336" displayName="0" level="0" type="L">
+                        <name language="en-US">0</name>
+                        <desc language="en-US">Malignes Melanom der Konjunktiva</desc>
+                    </concept>
+                    <concept localId="7" code="X" codeSystem="1.2.276.0.76.5.336" displayName="X" level="0" type="L">
+                        <name language="en-US">X</name>
+                        <desc language="en-US">nicht bestimmbar</desc>
+                    </concept>
+                    <concept localId="8" code="L" codeSystem="1.2.276.0.76.5.336" displayName="lG" level="0" type="L">
+                        <name language="en-US">lG</name>
+                        <desc language="en-US">Low grade (G1 oder G2)</desc>
+                    </concept>
+                    <concept localId="9" code="M" codeSystem="1.2.276.0.76.5.336" displayName="mG" level="0" type="L">
+                        <name language="en-US">mG</name>
+                        <desc language="en-US">intermediate (G2 oder G3)</desc>
+                    </concept>
+                    <concept localId="10" code="H" codeSystem="1.2.276.0.76.5.336" displayName="hG" level="0" type="L">
+                        <name language="en-US">hG</name>
+                        <desc language="en-US">high grade (G3 oder G4)</desc>
+                    </concept>
+                    <concept localId="11" code="B" codeSystem="1.2.276.0.76.5.336" displayName="B" level="0" type="L">
+                        <name language="en-US">B</name>
+                        <desc language="en-US">Borderline-Malignität</desc>
+                    </concept>
+                    <concept localId="12" code="U" codeSystem="1.2.276.0.76.5.336" displayName="U" level="0" type="L">
+                        <name language="en-US">U</name>
+                        <desc language="en-US">unbekannt</desc>
+                    </concept>
+                    <concept localId="13" code="T" codeSystem="1.2.276.0.76.5.336" displayName="T" level="0" type="L">
+                        <name language="en-US">T</name>
+                        <desc language="en-US">trifft nicht zu</desc>
+                    </concept>
+                    <exception localId="14" code="ASKU" codeSystem="2.16.840.1.113883.5.1008" displayName="Asked but unknown" level="0" type="L">
+                        <name language="en-US">Asked but unknown</name>
+                    </exception>
+                </conceptList>
+            </valueSet>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.53" code="373372005" codeSystem="2.16.840.1.113883.6.96" displayName="Histological grade finding (finding)" effectiveDate="2017-02-26T14:51:17" codeSystemName="SNOMED Clinical Terms"/>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.53.0" valueSet="1.3.6.1.4.1.19376.1.3.11.31" flexibility="dynamic" effectiveDate="2017-02-26T14:55:16" valueSetName="UICC Grade 4 tiered" valueSetStatusCode="draft" valueSetEffectiveDate="2015-11-13T19:46:53"/>
+        </concept>
+    </concept>
+</dataset>

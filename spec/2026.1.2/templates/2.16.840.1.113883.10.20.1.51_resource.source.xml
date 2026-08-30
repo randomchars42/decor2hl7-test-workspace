@@ -1,0 +1,78 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.20.1.51" name="ProblemHealthstatusObservation" displayName="Problem healthstatus observation" effectiveDate="2007-04-01T00:00:00" statusCode="pending" isClosed="true" url="http://art-decor.org/decor/services/" ident="ccd1-" sdtc:dummy-1="urn:hl7-org:sdtc" xml:dummy-2="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-4="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance">
+    <desc language="en-US">
+        <p>
+            <b>CONF-166</b>: A problem healthstatus observation (templateId 2.16.840.1.113883.10.20.1.51) <b>SHALL</b> be a conformant status observation (templateId 2.16.840.1.113883.10.20.1.57) (as defined in section <i>5.1 “Type” and “Status” values</i>), except that the value for “<b>Observation / code</b>” in a problem healthstatus observation <b>SHALL</b> be “11323-3” “Health status” 2.16.840.1.113883.6.1 LOINC <b>STATIC</b>. </p>
+        <h2>5.1 “Type” and “Status” values</h2>
+        <p>The template identifier for a status observation is 2.16.840.1.113883.10.20.1.57.</p>
+        <p>ASTM CCR defines restricted Type and Status value sets to further define observations in many of the CCR sections. While the value sets differ between sections, the XML representation is constant. Those constraints that are constant across all the sections are defined here, and are then further specialized in the sections above.</p>
+        <p>A complete mapping between all ASTM CCR Type and Status values and their corresponding RIM (potentially coupled with SNOMED CT, LOINC, etc) representations is beyond the scope of this specification, and is a work item for a subsequent version. ASTM CCR Type values are represented as value sets, which can be conveyed in the code attribute of the various RIM classes (e.g. a value from the ProblemTypeCode value set can be conveyed in Observation.code). Where possible, ASTM CCR Status values have been mapped to HL7 ActStatus values, in which case they are conveyed in the
+                    statusCode attribute of the various RIM classes. Where the mapping is complex and incomplete, ASTM CCR Status values can be communicated as related status observations. </p>
+        <p>Often times, the Type or Status is implied by the codes used to characterize the observation (e.g. an observation of “Do Not Resuscitate” implies an Advance Directive Type “Resuscitation Status”), and/or by values asserted in other RIM attributes (e.g. an Observation.negationInd of “true” implies a Problem Status “Ruled out”). In no case should an ASTM CCR Type or Status value conflict with semantics carried in other RIM attributes.</p>
+        <p>
+            <b>CONF-508</b>: A status observation (templateId 2.16.840.1.113883.10.20.1.57) <b>SHALL</b> be represented with <b>Observation</b>.<br/>
+            <b>CONF-509</b>: A status observation <b>SHALL</b> be the target of an <b>entryRelationship</b> whose value for “<b>entryRelationship / @typeCode</b>” <b>SHALL</b> be “REFR” 2.16.840.1.113883.5.1002 ActRelationshipType <b>STATIC</b>.<br/>
+            <b>CONF-510</b>: The value for “<b>Observation / @classCode</b>” in a status observation <b>SHALL</b> be “OBS” 2.16.840.1.113883.5.6 ActClass <b>STATIC</b>.<br/>
+            <b>CONF-511</b>: The value for “<b>Observation / @moodCode</b>” in a status observation <b>SHALL</b> be “EVN” 2.16.840.1.113883.5.1001 ActMood <b>STATIC</b>.<br/>
+            <b>CONF-512</b>: A status observation <b>SHALL</b> contain exactly one <b>Observation / code</b>.<br/>
+            <b>CONF-513</b>: The value for “<b>Observation / code</b>” in a status observation <b>SHALL</b> be “33999-4” “Status” 2.16.840.1.113883.6.1 LOINC <b>STATIC</b>.<br/>
+            <b>CONF-514</b>: A status observation <b>SHALL</b> contain exactly one <b>Observation / statusCode</b>.<br/>
+            <b>CONF-515</b>: The value for “<b>Observation / statusCode</b>” in a status observation <b>SHALL</b> be “completed” 2.16.840.1.113883.5.14 ActStatus <b>STATIC</b>.<br/>
+            <b>CONF-516</b>: A status observation <b>SHALL</b> contain exactly one <b>Observation / value</b>, which <b>SHALL</b> be of datatype “CE”.<br/>
+            <b>CONF-517</b>: A status observation <b>SHALL NOT</b> contain any additional Observation attributes.<br/>
+            <b>CONF-518</b>: A status observation <b>SHALL NOT</b> contain any Observation participants.<br/>
+            <b>CONF-519</b>: A status observation <b>SHALL NOT</b> be the source of any Observation relationships.</p>
+    </desc>
+    <classification type="cdaentrylevel"/>
+    <relationship type="SPEC" template="2.16.840.1.113883.10.20.1.57" flexibility="2007-04-01T00:00:00"/>
+    <context id="**"/>
+    <element name="hl7:observation" id="2.16.840.1.113883.3.1937.777.4.9.2323">
+        <item label="CONF-508 / CONF-517 / CONF-518 / CONF-519"/>
+        <attribute name="classCode" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.2324">
+            <item label="CONF-510"/>
+                    <!--valueSet name="ActClassObservation"-->
+            <vocabulary valueSet="2.16.840.1.113883.1.11.11529"/>
+        </attribute>
+        <attribute name="moodCode" value="EVN" isOptional="false" id="2.16.840.1.113883.3.1937.777.4.9.2325">
+            <item label="CONF-511"/>
+        </attribute>
+        <attribute name="negationInd" datatype="bl" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.2326"/>
+        <assert role="error" test="parent::hl7:entryRelationship[@typeCode='REFR']">CONF-509: A status observation SHALL be the target of an entryRelationship whose value for “entryRelationship / @typeCode” SHALL be “REFR” 2.16.840.1.113883.5.1002 ActRelationshipType STATIC.</assert>
+        <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.3.1937.777.4.9.2327">
+            <attribute name="root" value="2.16.840.1.113883.10.20.1.51" isOptional="false" id="2.16.840.1.113883.3.1937.777.4.9.2328"/>
+        </element>
+                <!--<element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II">
+                    <item label="CONF-508"/>
+                    <attribute root="2.16.840.1.113883.10.20.1.57"/>
+                </element>-->
+        <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CD" id="2.16.840.1.113883.3.1937.777.4.9.2329">
+            <item label="CONF-166"/>
+            <vocabulary code="11323-3" codeSystem="2.16.840.1.113883.6.1" displayName="Health status"/>
+        </element>
+        <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CS" isMandatory="true" id="2.16.840.1.113883.3.1937.777.4.9.2330">
+            <item label="CONF-514 / CONF-515"/>
+            <vocabulary code="completed"/>
+        </element>
+        <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.4.9.2331">
+            <desc language="en-US">
+                <p>
+                    <b>CONF-167</b>: The value for “<b>Observation / value</b>” in a problem healthstatus observation <b>SHALL</b> be selected from ValueSet 2.16.840.1.113883.1.11.20.12 ProblemHealthStatusCode <b>STATIC</b> 20061017.</p>
+            </desc>
+            <item label="CONF-516 / CONF-167"/>
+                    <!--valueSet name="ProblemHealthStatusCode"-->
+            <vocabulary valueSet="2.16.840.1.113883.1.11.20.12" flexibility="2006-10-17T00:00:00"/>
+        </element>
+                <!--contains name="Comment"-->
+        <element name="hl7:entryRelationship" minimumMultiplicity="0" maximumMultiplicity="*" contains="2.16.840.1.113883.10.20.1.40" id="2.16.840.1.113883.3.1937.777.4.9.2332">
+            <item label="CONF-502"/>
+            <attribute name="typeCode" datatype="cs" isOptional="false" id="2.16.840.1.113883.3.1937.777.4.9.2333">
+                        <!--valueSet name="x_ActRelationshipEntryRelationship"-->
+                <vocabulary valueSet="2.16.840.1.113883.1.11.19447"/>
+            </attribute>
+            <attribute name="contextConductionInd" datatype="bl" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.2334"/>
+            <attribute name="inversionInd" datatype="bl" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.2335"/>
+            <attribute name="negationInd" datatype="bl" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.2336"/>
+            <element name="hl7:sequenceNumber" minimumMultiplicity="0" maximumMultiplicity="1" datatype="INT" id="2.16.840.1.113883.3.1937.777.4.9.2337"/>
+            <element name="hl7:seperatableInd" minimumMultiplicity="0" maximumMultiplicity="1" datatype="BL" id="2.16.840.1.113883.3.1937.777.4.9.2338"/>
+        </element>
+    </element>
+</template>

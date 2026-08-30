@@ -1,0 +1,59 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.777.21.1.1" effectiveDate="2018-05-07T19:19:12" statusCode="draft" versionLabel="ASIC Dataset" prefix="asic-" shortName="asicdataset" iddisplay="asic-dataset-1" url="http://art-decor.org/decor/services/" ident="asic-"><!--
+ This is a view of the dataset "ASIC-Dataset" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">ASIC-Dataset</name>
+    <desc language="de-DE"/>
+    <concept id="2.16.840.1.113883.3.1937.777.21.2.147" effectiveDate="2018-06-29T10:22:52" statusCode="draft" type="group" iddisplay="asic-dataelement-147">
+        <implementation markdown="Arterieller Blutdruck (ABP)&#xA;[mmHg]"/>
+        <name language="de-DE">Arterieller Blutdruck</name>
+        <desc language="de-DE" lastTranslated="2018-08-28T14:08:12">Arterieller Blutdruck (ABP)<br clear="none"/>[mmHg]<br clear="none"/>
+        </desc>
+        <concept id="2.16.840.1.113883.3.1937.777.21.2.52" effectiveDate="2018-05-15T08:52:30" statusCode="draft" type="item" iddisplay="asic-dataelement-52" shortName="systolischer_art_blutdruck_sap">
+            <implementation shortName="systolischer_art_blutdruck_sap" markdown="Systolischer arterieller Druck&#xA;mm[Hg]"/>
+            <name language="de-DE" lastTranslated="2018-08-21T14:25:07">Systolischer art. Blutdruck (SAP)</name>
+            <desc language="de-DE">Systolischer arterieller Druck<br clear="none"/>mm[Hg]<br clear="none"/>
+            </desc>
+            <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.777.24.2.212" flexibility="2018-07-20T14:21:57" prefix="mide-" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" iType="group" iEffectiveDate="2018-07-20T14:21:57" iStatusCode="draft" refdisplay="mide-dataelement-212">
+                <name language="de-DE" lastTranslated="2019-02-07T13:00:12">Monitoring und Vitaldaten </name>
+                <name language="en-US" lastTranslated="2018-10-01T15:05:32">Monitoring data</name>
+            </relationship>
+            <valueDomain type="quantity">
+                <property unit="mm[Hg]"/>
+                <example type="neutral">120 mmHg</example>
+            </valueDomain>
+            <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.52" conceptFlexibility="2018-05-15T08:52:30" code="8480-6" codeSystem="2.16.840.1.113883.6.1" displayName="Systolic blood pressure" effectiveDate="2018-05-17T09:15:58" codeSystemName="Logical Observation Identifier Names and Codes"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.21.2.54" effectiveDate="2018-05-15T09:01:20" statusCode="draft" type="item" iddisplay="asic-dataelement-54" shortName="diastolischer_art_blutdruck_dap">
+            <implementation shortName="diastolischer_art_blutdruck_dap" markdown="Diastolischer arterieller Druck&#xA;mm[Hg]"/>
+            <name language="de-DE" lastTranslated="2018-08-21T14:27:08">Diastolischer art. Blutdruck (DAP)</name>
+            <desc language="de-DE">Diastolischer arterieller Druck<br clear="none"/>mm[Hg]<br clear="none"/>
+            </desc>
+            <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.777.24.2.212" flexibility="2018-07-20T14:21:57" prefix="mide-" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" iType="group" iEffectiveDate="2018-07-20T14:21:57" iStatusCode="draft" refdisplay="mide-dataelement-212">
+                <name language="de-DE" lastTranslated="2019-02-07T13:00:12">Monitoring und Vitaldaten </name>
+                <name language="en-US" lastTranslated="2018-10-01T15:05:32">Monitoring data</name>
+            </relationship>
+            <valueDomain type="quantity">
+                <property unit="mm[Hg]"/>
+                <example type="neutral">80 mm[Hg]</example>
+            </valueDomain>
+            <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.54" conceptFlexibility="2018-05-15T09:01:20" code="8462-4" codeSystem="2.16.840.1.113883.6.1" displayName="Diastolic blood pressure" effectiveDate="2018-05-17T09:22:31" codeSystemName="Logical Observation Identifier Names and Codes"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.21.2.53" effectiveDate="2018-05-15T08:57:22" statusCode="draft" type="item" iddisplay="asic-dataelement-53" shortName="mittlerer_art_blutdruck_map">
+            <implementation shortName="mittlerer_art_blutdruck_map" markdown="Mittlerer arterieller Druck&#xA;mm[Hg]"/>
+            <name language="de-DE" lastTranslated="2018-08-21T14:28:57">Mittlerer art. Blutdruck (MAP)</name>
+            <desc language="de-DE">Mittlerer arterieller Druck<br clear="none"/>mm[Hg]<br clear="none"/>
+            </desc>
+            <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.777.24.2.212" flexibility="2018-07-20T14:21:57" prefix="mide-" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" iType="group" iEffectiveDate="2018-07-20T14:21:57" iStatusCode="draft" refdisplay="mide-dataelement-212">
+                <name language="de-DE" lastTranslated="2019-02-07T13:00:12">Monitoring und Vitaldaten </name>
+                <name language="en-US" lastTranslated="2018-10-01T15:05:32">Monitoring data</name>
+            </relationship>
+            <valueDomain type="quantity">
+                <property unit="mm[Hg]"/>
+                <example type="neutral">95 mm[Hg]</example>
+            </valueDomain>
+            <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.53" conceptFlexibility="2018-05-15T08:57:22" code="8478-0" codeSystem="2.16.840.1.113883.6.1" displayName="Mean blood pressure" effectiveDate="2018-05-17T09:17:44" codeSystemName="Logical Observation Identifier Names and Codes"/>
+        </concept>
+    </concept>
+</dataset>

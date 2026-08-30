@@ -1,0 +1,3 @@
+<codeSystem xmlns:json="http://www.json.org" ref="2.16.840.1.113883.15.6" name="uicc7" displayName="UICC 7. Auflage" effectiveDate="2011-05-11T00:00:00" language="de-DE" url="http://art-decor.org/decor/services/" ident="hl7de-" external="false">
+    <issueAssociation json:array="true" count="0"/>
+</codeSystem>

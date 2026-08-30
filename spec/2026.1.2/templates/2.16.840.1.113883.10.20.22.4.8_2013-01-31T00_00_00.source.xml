@@ -1,0 +1,49 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:local="http://art-decor.org/local" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.20.22.4.8" name="SeverityObservation" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" displayName="Severity Observation" url="http://art-decor.org/decor/services/" ident="ccda-" sdtc:dummy-1="urn:hl7-org:sdtc" local:dummy-2="http://art-decor.org/local" xml:dummy-3="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-5="urn:hl7-org:v3" xsi:dummy-6="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">This clinical statement represents the gravity of the problem, such as allergy or reaction, in terms of its actual or potential impact on the patient. The Severity Observation can be associated with an Allergy - Intolerance Observation, Substance or Device Allergy - Intolerance Observation, Reaction Observation or all. When the Severity Observation is associated
+                directly with an allergy it characterizes the allergy. When the Severity Observation is associated with a Reaction Observation it characterizes a Reaction. A person may manifest many symptoms in a reaction to a single substance, and each reaction to the substance can be represented. However, each reaction observation can have only one severity observation associated with it. For
+                example, someone may have a rash reaction observation as well as an itching reaction observation, but each can have only one level of severity.</desc>
+            <classification type="cdaentrylevel"/>
+            <context id="**"/>
+            <element name="cda:observation" id="2.16.840.1.113883.3.1937.99.3.9.377">
+                <attribute name="classCode" value="OBS" id="2.16.840.1.113883.3.1937.99.3.9.378">
+                    <item label="conf-7345"/>
+                </attribute>
+                <attribute name="moodCode" value="EVN" id="2.16.840.1.113883.3.1937.99.3.9.379">
+                    <item label="conf-7346"/>
+                </attribute>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.380">
+                    <desc language="en-US">SHALL contain exactly one [1..1] templateId (CONF:7347) such that it</desc>
+                    <item label="conf-7347"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.22.4.8" id="2.16.840.1.113883.3.1937.99.3.9.381">
+                        <item label="conf-10525"/>
+                    </attribute>
+                </element>
+                <element name="cda:code" datatype="CD" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.382">
+                    <desc language="en-US">SHALL contain exactly one [1..1] code (CONF:19168).</desc>
+                    <item label="conf-19168"/>
+                    <vocabulary code="SEV" codeSystem="2.16.840.1.113883.5.4"/>
+                </element>
+                <element name="cda:text" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.383">
+                    <desc language="en-US">SHOULD contain zero or one [0..1] text (CONF:7350).</desc>
+                    <item label="conf-7350"/>
+                    <element name="cda:reference" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.384">
+                        <desc language="en-US">The text, if present, SHOULD contain zero or one [0..1] reference (CONF:15928).<p/>This reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1)</desc>
+                        <item label="conf-15928"/>
+                        <attribute name="value" isOptional="true" id="2.16.840.1.113883.3.1937.99.3.9.385">
+                            <item label="conf-15929"/>
+                        </attribute>
+                        <assert role="error" test="not(@value) or starts-with(@value, '#')">This reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1)</assert>
+                    </element>
+                </element>
+                <element name="cda:statusCode" datatype="CS" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.386">
+                    <desc language="en-US">SHALL contain exactly one [1..1] statusCode (CONF:7352).</desc>
+                    <item label="conf-7352"/>
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="cda:value" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="false" datatype="CD" id="2.16.840.1.113883.3.1937.99.3.9.387">
+                    <desc language="en-US">SHALL contain exactly one [1..1] value with @xsi:type="CD", where the code SHALL be selected from ValueSet Problem Severity 2.16.840.1.113883.3.88.12.3221.6.8 DYNAMIC (CONF:7356).</desc>
+                    <item label="conf-7356"/>
+                    <vocabulary valueSet="2.16.840.1.113883.3.88.12.3221.6.8"/>
+                </element>
+            </element>
+        </template>

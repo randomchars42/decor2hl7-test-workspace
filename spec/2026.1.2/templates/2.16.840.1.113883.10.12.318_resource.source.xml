@@ -1,0 +1,30 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.12.318" name="CDAAuthorBody" displayName="CDA Author (Body)" effectiveDate="2005-09-07T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" sdtc:dummy-1="urn:hl7-org:sdtc" xml:dummy-2="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-4="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">Template CDA Author (prototype, directly derived from POCD_RM000040 MIF)</desc>
+            <desc language="nl-NL">Template CDA Author (prototype, direct afgeleid uit POCD_RM000040 MIF)</desc>
+            <desc language="de-DE">Template CDA Author (Prototyp, direkt abgeleitet aus POCD_RM000040 MIF)</desc>
+            <classification type="cdaentrylevel"/>
+            <attribute name="typeCode" value="AUT" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.619"/>
+            <attribute name="contextControlCode" value="OP" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.620"/>
+            <element name="hl7:functionCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.1.9.621">
+                <!--valueSet name="ParticipationFunction"-->
+                <vocabulary valueSet="2.16.840.1.113883.1.11.10267"/>
+            </element>
+            <element name="hl7:time" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="TS" id="2.16.840.1.113883.3.1937.777.1.9.622"/>
+            <element name="hl7:assignedAuthor" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.1.9.623">
+                <attribute name="classCode" value="ASSIGNED" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.624"/>
+                <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="*" conformance="R" datatype="II" id="2.16.840.1.113883.3.1937.777.1.9.625"/>
+                <element name="hl7:code" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.1.9.626">
+                    <vocabulary domain="RoleCode"/>
+                </element>
+                <element name="hl7:addr" minimumMultiplicity="0" maximumMultiplicity="*" datatype="AD" id="2.16.840.1.113883.3.1937.777.1.9.627"/>
+                <element name="hl7:telecom" minimumMultiplicity="0" maximumMultiplicity="*" datatype="TEL" id="2.16.840.1.113883.3.1937.777.1.9.628"/>
+                <choice minimumMultiplicity="0" maximumMultiplicity="1">
+                    <!--contains name="CDAPerson"-->
+                    <element name="hl7:assignedPerson" contains="2.16.840.1.113883.10.12.152" id="2.16.840.1.113883.3.1937.777.1.9.629"/>
+                    <!--contains name="CDADevice"-->
+                    <element name="hl7:assignedAuthoringDevice" contains="2.16.840.1.113883.10.12.315" id="2.16.840.1.113883.3.1937.777.1.9.630"/>
+                </choice>
+                <!--contains name="CDAOrganization"-->
+                <element name="hl7:representedOrganization" minimumMultiplicity="0" maximumMultiplicity="1" contains="2.16.840.1.113883.10.12.151" id="2.16.840.1.113883.3.1937.777.1.9.631"/>
+            </element>
+        </template>

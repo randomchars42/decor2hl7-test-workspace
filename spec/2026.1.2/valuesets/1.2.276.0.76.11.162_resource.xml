@@ -1,0 +1,21 @@
+<valueSets>
+    <repository url="http://art-decor.org/decor/services/" ident="kbvde-" referencedFrom="dguvbbr-" projecttype="local">
+        <valueSet id="1.2.276.0.76.11.162" name="S_KBV_VERSICHERTENSTATUS" displayName="S_KBV_VERSICHERTENSTATUS" effectiveDate="2014-01-01T00:00:00" statusCode="final">
+            <desc language="de-DE">Versichertenstatus gibt an, ob ein Versicherter ein Familienversicherter, Mitglied oder Rentner ist. Auf der KVK ist diese Angabe Teil des Feldes VERSICHERTENSTATUS - die 1. Stelle.</desc>
+            <sourceCodeSystem id="2.16.840.1.113883.3.7.1.1" identifierName="KBV_CS_SFHIR_KBV_VERSICHERTENSTATUS" canonicalUri="urn:oid:2.16.840.1.113883.3.7.1.1" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.3.7.1.1" canonicalUriSTU3="urn:oid:2.16.840.1.113883.3.7.1.1" canonicalUriR4="urn:oid:2.16.840.1.113883.3.7.1.1" canonicalUriR4B="urn:oid:2.16.840.1.113883.3.7.1.1" canonicalUriR5="urn:oid:2.16.840.1.113883.3.7.1.1"/>
+            <publishingAuthority name="Kassenärztliche Bundesvereinigung" inherited="project">
+                <addrLine>Geschäftsstelle</addrLine>
+                <addrLine>Herbert-Lewin-Platz 2</addrLine>
+                <addrLine>10623 Berlin</addrLine>
+                <addrLine type="uri">http://www.kbv.de</addrLine>
+                <addrLine type="email">info@kbv.de</addrLine>
+                <addrLine type="phone">+49 30 4005-0</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <concept code="1" codeSystem="2.16.840.1.113883.3.7.1.1" displayName="Mitglied" level="0" type="L"/>
+                <concept code="3" codeSystem="2.16.840.1.113883.3.7.1.1" displayName="Familienangehörige" level="0" type="L"/>
+                <concept code="5" codeSystem="2.16.840.1.113883.3.7.1.1" displayName="Rentner" level="0" type="L"/>
+            </conceptList>
+        </valueSet>
+    </repository>
+</valueSets>

@@ -1,0 +1,59 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:local="http://art-decor.org/local" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.20.22.4.19" name="IndicationV2" effectiveDate="2014-06-09T00:00:00" statusCode="draft" displayName="Indication (V2)" versionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-" sdtc:dummy-1="urn:hl7-org:sdtc" local:dummy-2="http://art-decor.org/local" xml:dummy-3="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-5="urn:hl7-org:v3" xsi:dummy-6="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">This template represents the rationale for an action such as an encounter, a medication administration, or a procedure. The id element can be used to reference a problem recorded elsewhere in the document, or can be used with a code and value to record the problem. Indications for treatment are not laboratory results; rather the problem associated with the
+                laboratory result should be sited (e.g., hypokalemia instead of a laboratory result of Potassium 2.0 mEq/L). Use the Drug Monitoring Act [[]templateId 2.16.840.1.113883.10.20.22.4.123] to indicate if a particular drug needs special monitoring (e.g., anticoagulant therapy). Use Precondition for Substance Administration (V2) [[]templateId 2.16.840.1.113883.10.20.22.4.25.2] to
+                represent that a medication is to be administered only when the associated criteria are met.</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00"/>
+            <relationship type="VERSION" template="2.16.840.1.113883.10.20.22.4.19" flexibility="2013-01-31T00:00:00"/>
+            <context id="**"/>
+            <element name="cda:observation" id="2.16.840.1.113883.3.1937.99.3.9.3569">
+                <attribute name="classCode" value="OBS" id="2.16.840.1.113883.3.1937.99.3.9.3570">
+                    <desc language="en-US">SHALL contain exactly one [1..1] @classCode="OBS" (CodeSystem: HL7ActClass urn:oid:2.16.840.1.113883.5.6 STATIC) (CONF:1098-7480).</desc>
+                    <item label="CONF:1098-7480"/>
+                </attribute>
+                <attribute name="moodCode" value="EVN" id="2.16.840.1.113883.3.1937.99.3.9.3571">
+                    <desc language="en-US">SHALL contain exactly one [1..1] @moodCode="EVN" (CodeSystem: ActMood urn:oid:2.16.840.1.113883.5.1001 STATIC) (CONF:1098-7481).</desc>
+                    <item label="CONF:1098-7481"/>
+                </attribute>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                    <desc language="en-US">C-CDA R1.1 templateId root without an extension</desc>
+                    <item label="CONF:1198-32936"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.22.4.19" datatype="uid"/>
+                </element>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.3572">
+                    <desc language="en-US">SHALL contain exactly one [1..1] templateId (CONF:1098-7482) such that it</desc>
+                    <item label="CONF:1098-7482"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.22.4.19" id="2.16.840.1.113883.3.1937.99.3.9.3573">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.22.4.19" (CONF:1098-10502).</desc>
+                        <item label="CONF:1098-10502"/>
+                    </attribute>
+                    <attribute name="extension" value="2014-06-09" id="2.16.840.1.113883.3.1937.99.3.9.3574">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @extension="2014-06-09" (CONF:1098-32570).</desc>
+                        <item label="CONF:1098-32570"/>
+                    </attribute>
+                </element>
+                <element name="cda:id" datatype="II" minimumMultiplicity="1" maximumMultiplicity="*" isMandatory="false" id="2.16.840.1.113883.3.1937.99.3.9.3575">
+                    <desc language="en-US">SHALL contain at least one [1..*] id (CONF:1098-7483).</desc>
+                    <item label="CONF:1098-7483"/>
+                </element>
+                <element name="cda:code" datatype="CD" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="false" strength="preferred" id="2.16.840.1.113883.3.1937.99.3.9.3576">
+                    <desc language="en-US">SHALL contain exactly one [1..1] code, which MAY be selected from ValueSet Problem Type urn:oid:2.16.840.1.113883.3.88.12.3221.7.2 DYNAMIC 2014-09-02 (CONF:1098-31229).</desc>
+                    <item label="CONF:1098-31229"/>
+                    <vocabulary valueSet="2.16.840.1.113883.3.88.12.3221.7.2" flexibility="dynamic"/>
+                </element>
+                <element name="cda:statusCode" datatype="CS" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.3577">
+                    <desc language="en-US">SHALL contain exactly one [1..1] statusCode (CONF:1098-7487).</desc>
+                    <item label="CONF:1098-7487"/>
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="cda:effectiveTime" datatype="IVL_TS" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.3578">
+                    <desc language="en-US">SHOULD contain zero or one [0..1] effectiveTime (CONF:1098-7488).</desc>
+                    <item label="CONF:1098-7488"/>
+                </element>
+                <element name="cda:value" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CD" strength="preferred" id="2.16.840.1.113883.3.1937.99.3.9.3579">
+                    <desc language="en-US">MAY contain zero or one [0..1] value with @xsi:type="CD", where the code SHOULD be selected from ValueSet Problem urn:oid:2.16.840.1.113883.3.88.12.3221.7.4 DYNAMIC (CONF:1098-7489).</desc>
+                    <item label="CONF:1098-7489"/>
+                    <vocabulary valueSet="2.16.840.1.113883.3.88.12.3221.7.4"/>
+                </element>
+            </element>
+        </template>

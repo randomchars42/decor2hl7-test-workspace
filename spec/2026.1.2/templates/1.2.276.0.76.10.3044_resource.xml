@@ -1,0 +1,101 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.3044" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.3044" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="Vitalparameter" ident="aktin-" name="VitalSignsSection" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="active" url="http://art-decor.org/decor/services/" effectiveDate="2015-09-18T00:00:00">
+            <desc language="de-DE">Vitalparameter und Scores Section</desc>
+            <desc language="en-US">Vital Signs Section</desc>
+            <classification type="cdasectionlevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.201" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.201" tmname="CDASection" tmdisplayName="CDA Section" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <relationship type="ADAPT" template="2.16.840.1.113883.17.3.10.1.23" url="http://art-decor.org/decor/services/" linkedartefactmissing="true"/>
+            <context id="**"/>
+            <example type="neutral">
+                <section classCode="DOCSECT">
+                    <templateId root="1.2.276.0.76.10.3044"/>
+                    <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital signs"/>
+                    <title>Vitalparameter</title>
+                    <text>...</text>
+                    <entry>
+                        <!-- .. -->
+                    </entry>
+                </section>
+            </example>
+            <element name="hl7:section" id="2.16.840.1.113883.2.6.60.3.9.20">
+                <item original="false" label="VitalSignsSection"/>
+                <attribute name="classCode" value="DOCSECT" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631579"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.1631580">
+                    <item original="false" label="VitalSignsSection"/>
+                    <attribute name="root" value="1.2.276.0.76.10.3044" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.1631581"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CD" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631582">
+                    <item original="false" label="VitalSignsSection"/>
+                    <vocabulary code="8716-3" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:title" minimumMultiplicity="1" maximumMultiplicity="1" datatype="ST" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631583">
+                    <item original="false" label="VitalSignsSection"/>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="1" maximumMultiplicity="1" datatype="SD.TEXT" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631584">
+                    <item original="false" label="VitalSignsSection"/>
+                </element>
+                <element name="hl7:entry" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" contains="1.2.276.0.76.10.4030" id="2.16.840.1.113883.2.6.60.3.9.1631585" tmid="1.2.276.0.76.10.4030" tmname="RespiratoryRate" tmdisplayName="Atemfrequenz" tmeffectiveDate="2014-09-16T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <item original="false" label="VitalSignsSection"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631586"/>
+                    <attribute name="contextConductionInd" value="true" isOptional="true" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1631587"/>
+                </element>
+                <element name="hl7:entry" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" contains="1.2.276.0.76.10.4031" id="2.16.840.1.113883.2.6.60.3.9.1631588" tmid="1.2.276.0.76.10.4031" tmname="OxygenSaturation" tmdisplayName="Sauerstoffsättigung" tmeffectiveDate="2014-09-16T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                    <item original="false" label="VitalSignsSection"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631589"/>
+                    <attribute name="contextConductionInd" value="true" isOptional="true" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1631590"/>
+                </element>
+                <element name="hl7:entry" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" contains="1.2.276.0.76.10.4032" id="2.16.840.1.113883.2.6.60.3.9.1631591" tmid="1.2.276.0.76.10.4032" tmname="Systolicbloodpressure" tmdisplayName="Blutdruck systolisch" tmeffectiveDate="2014-09-16T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                    <item original="false" label="VitalSignsSection"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631592"/>
+                    <attribute name="contextConductionInd" value="true" isOptional="true" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1631593"/>
+                </element>
+                <element name="hl7:entry" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" contains="1.2.276.0.76.10.4033" id="2.16.840.1.113883.2.6.60.3.9.1631594" tmid="1.2.276.0.76.10.4033" tmname="HeartRate" tmdisplayName="Herzfrequenz" tmeffectiveDate="2014-09-16T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <item original="false" label="VitalSignsSection"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631595"/>
+                    <attribute name="contextConductionInd" value="true" isOptional="true" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1631596"/>
+                </element>
+                <element name="hl7:entry" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" contains="1.2.276.0.76.10.4034" id="2.16.840.1.113883.2.6.60.3.9.1631597" tmid="1.2.276.0.76.10.4034" tmname="GlasgowComaScale" tmdisplayName="Glasgow Coma Scale" tmeffectiveDate="2014-09-16T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <item original="false" label="VitalSignsSection"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631598"/>
+                    <attribute name="contextConductionInd" value="true" isOptional="true" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1631599"/>
+                </element>
+                <assert role="error" test="count(hl7:entry/hl7:observation [hl7:templateId[@root = '1.2.276.0.76.10.4046']][hl7:targetSiteCode[@code = 'L']])&lt;=1 and count(hl7:entry/hl7:observation [hl7:templateId[@root = '1.2.276.0.76.10.4046']][hl7:targetSiteCode[@code = 'R']])&lt;=1">Pupillenweite max 1x link und 1x rechts angeben</assert>
+                <element name="hl7:entry" minimumMultiplicity="0" maximumMultiplicity="2" conformance="R" contains="1.2.276.0.76.10.4046" id="2.16.840.1.113883.2.6.60.3.9.1631600" tmid="1.2.276.0.76.10.4046" tmname="Pupilsize" tmdisplayName="Pupillenweite" tmeffectiveDate="2015-09-18T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <item original="false" label="VitalSignsSection"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631601"/>
+                    <attribute name="contextConductionInd" value="true" isOptional="true" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1631602"/>
+                </element>
+                <assert role="error" test="count(hl7:entry/hl7:observation [hl7:templateId[@root='1.2.276.0.76.10.4047']][hl7:targetSiteCode[@code = 'L']])&lt;=1 and count(hl7:entry/hl7:observation [hl7:templateId[@root = '1.2.276.0.76.10.4047']][hl7:targetSiteCode[@code = 'R']])&lt;=1">Pupillenreaktion max 1x link und 1x rechts angeben</assert>
+                <element name="hl7:entry" minimumMultiplicity="0" maximumMultiplicity="2" conformance="R" contains="1.2.276.0.76.10.4047" id="2.16.840.1.113883.2.6.60.3.9.1631603" tmid="1.2.276.0.76.10.4047" tmname="Pupilreaction" tmdisplayName="Pupillenreaktion" tmeffectiveDate="2015-09-18T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <item original="false" label="VitalSignsSection"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631604"/>
+                    <attribute name="contextConductionInd" value="true" isOptional="true" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1631605"/>
+                </element>
+                <element name="hl7:entry" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" contains="1.2.276.0.76.10.4035" id="2.16.840.1.113883.2.6.60.3.9.1631606" tmid="1.2.276.0.76.10.4035" tmname="BodyTemperatureCore" tmdisplayName="Körperkerntemperatur" tmeffectiveDate="2014-09-16T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <item original="false" label="VitalSignsSection"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631607"/>
+                    <attribute name="contextConductionInd" value="true" isOptional="true" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1631608"/>
+                </element>
+                <element name="hl7:entry" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" contains="1.2.276.0.76.10.4036" id="2.16.840.1.113883.2.6.60.3.9.1631609" tmid="1.2.276.0.76.10.4036" tmname="Painseverity" tmdisplayName="Schmerz" tmeffectiveDate="2014-09-16T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <item original="false" label="VitalSignsSection"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631610"/>
+                    <attribute name="contextConductionInd" value="true" isOptional="true" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1631611"/>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.92" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2025-11-12T00:00:00" statusCode="retired" versionLabel="v3transit" lastModifiedDate="2026-03-25T11:04:45" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.1015" name="EmergencymedicineNoteCDAdocumentv1" displayName="Emergency medicine Note CDA document" effectiveDate="2014-09-18T00:00:00" statusCode="active" versionLabel="v1" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.1019" name="EmergencymedicineNoteCDAdocumentv2" displayName="Emergency medicine Note CDA document" effectiveDate="2016-06-01T00:00:00" statusCode="active" versionLabel="v2" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4030" name="RespiratoryRate" displayName="Atemfrequenz" effectiveDate="2014-09-16T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4031" name="OxygenSaturation" displayName="Sauerstoffsättigung" effectiveDate="2014-09-16T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4032" name="Systolicbloodpressure" displayName="Blutdruck systolisch" effectiveDate="2014-09-16T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4033" name="HeartRate" displayName="Herzfrequenz" effectiveDate="2014-09-16T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4034" name="GlasgowComaScale" displayName="Glasgow Coma Scale" effectiveDate="2014-09-16T00:00:00" statusCode="active" isClosed="false" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4035" name="BodyTemperatureCore" displayName="Körperkerntemperatur" effectiveDate="2014-09-16T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4036" name="Painseverity" displayName="Schmerz" effectiveDate="2014-09-16T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4046" name="Pupilsize" displayName="Pupillenweite" effectiveDate="2015-09-18T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4047" name="Pupilreaction" displayName="Pupillenreaktion" effectiveDate="2015-09-18T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+        </template>
+    </template>
+</result>

@@ -1,0 +1,44 @@
+<codeSystems>
+    <repository url="http://art-decor.org/decor/services/" ident="ad5bbr-" referencedFrom="sxehealth-" projecttype="local">
+        <codeSystem id="2.16.840.1.113883.4.642.4.1377" name="medicationrequest_Status" displayName="Medicationrequest  status" effectiveDate="2019-10-30T00:00:00" statusCode="draft" versionLabel="4.0.1" canonicalUri="http://hl7.org/fhir/CodeSystem/medicationrequest-status" caseSensitive="true" language="de-DE">
+            <desc language="en-US">MedicationRequest Status Codes</desc>
+            <publishingAuthority name="FHIR Project team">
+                <addrLine type="uri">http://hl7.org/fhir</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <codedConcept code="active" level="0" type="L" statusCode="active">
+                    <designation displayName="Active" language="en-US" type="preferred"/>
+                    <desc language="en-US">The prescription is 'actionable', but not all actions that are implied by it have occurred yet.</desc>
+                </codedConcept>
+                <codedConcept code="on-hold" level="0" type="L" statusCode="active">
+                    <designation displayName="On Hold" language="en-US" type="preferred"/>
+                    <desc language="en-US">Actions implied by the prescription are to be temporarily halted, but are expected to continue later. May also be called 'suspended'.</desc>
+                </codedConcept>
+                <codedConcept code="cancelled" level="0" type="L" statusCode="active">
+                    <designation displayName="Cancelled" language="en-US" type="preferred"/>
+                    <desc language="en-US">The prescription has been withdrawn before any administrations have occurred</desc>
+                </codedConcept>
+                <codedConcept code="completed" level="0" type="L" statusCode="active">
+                    <designation displayName="Completed" language="en-US" type="preferred"/>
+                    <desc language="en-US">All actions that are implied by the prescription have occurred.</desc>
+                </codedConcept>
+                <codedConcept code="entered-in-error" level="0" type="L" statusCode="active">
+                    <designation displayName="Entered in Error" language="en-US" type="preferred"/>
+                    <desc language="en-US">Some of the actions that are implied by the medication request may have occurred. For example, the medication may have been dispensed and the patient may have taken some of the medication. Clinical decision support systems should take this status into account</desc>
+                </codedConcept>
+                <codedConcept code="stopped" level="0" type="L" statusCode="active">
+                    <designation displayName="Stopped" language="en-US" type="preferred"/>
+                    <desc language="en-US">Actions implied by the prescription are to be permanently halted, before all of the administrations occurred. This should not be used if the original order was entered in error</desc>
+                </codedConcept>
+                <codedConcept code="draft" level="0" type="L" statusCode="active">
+                    <designation displayName="Draft" language="en-US" type="preferred"/>
+                    <desc language="en-US">The prescription is not yet 'actionable', e.g. it is a work in progress, requires sign-off, verificationÂ orÂ needs to be run through decision support process.</desc>
+                </codedConcept>
+                <codedConcept code="unknown" level="0" type="L" statusCode="active">
+                    <designation displayName="Unknown" language="en-US" type="preferred"/>
+                    <desc language="en-US">The authoring/source system does not know which of the status values currently applies for this observation. Note: This concept is not to be used for 'other' - one of the listed statuses is presumed to apply, but the authoring/source system does not know which.</desc>
+                </codedConcept>
+            </conceptList>
+        </codeSystem>
+    </repository>
+</codeSystems>

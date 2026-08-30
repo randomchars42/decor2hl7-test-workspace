@@ -1,0 +1,41 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultLanguage="en-US" id="2.16.840.1.113883.10.12.151" name="CDAOrganization" displayName="CDA Organization" effectiveDate="2005-09-07T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" xml:dummy-1="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-3="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance">
+    <desc language="en-US">Template CDA Organization (prototype, directly derived from POCD_RM000040 MIF)</desc>
+    <desc language="nl-NL">Template CDA Organization (prototype, direct afgeleid uit POCD_RM000040 MIF)</desc>
+    <desc language="de-DE">Template CDA Organization (Prototyp, direkt abgeleitet aus POCD_RM000040 MIF)</desc>
+    <classification type="cdaheaderlevel"/>
+    <classification type="cdaentrylevel"/>
+    <attribute name="classCode" value="ORG" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.240"/>
+    <attribute name="determinerCode" value="INSTANCE" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.241"/>
+    <element name="hl7:id" minimumMultiplicity="0" maximumMultiplicity="*" datatype="II" id="2.16.840.1.113883.3.1937.777.1.9.242"/>
+    <element name="hl7:name" minimumMultiplicity="0" maximumMultiplicity="*" datatype="ON" id="2.16.840.1.113883.3.1937.777.1.9.243"/>
+    <element name="hl7:telecom" minimumMultiplicity="0" maximumMultiplicity="*" datatype="TEL" id="2.16.840.1.113883.3.1937.777.1.9.244"/>
+    <element name="hl7:addr" minimumMultiplicity="0" maximumMultiplicity="*" datatype="AD" id="2.16.840.1.113883.3.1937.777.1.9.245"/>
+    <element name="hl7:standardIndustryClassCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.1.9.246">
+                <desc language="en-US">SHALL be chosen from domain OrganizationIndustryClass</desc>
+            </element>
+    <element name="hl7:asOrganizationPartOf" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.1.9.247">
+                <attribute name="classCode" value="PART" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.248"/>
+                <element name="hl7:id" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" datatype="II" id="2.16.840.1.113883.3.1937.777.1.9.249"/>
+                <element name="hl7:code" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.1.9.250">
+                    <vocabulary domain="RoleCode"/>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CS" id="2.16.840.1.113883.3.1937.777.1.9.251">
+                    <!--valueSet name="RoleStatus"-->
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.15999"/>
+                </element>
+                <element name="hl7:effectiveTime" minimumMultiplicity="0" maximumMultiplicity="1" datatype="IVL_TS" id="2.16.840.1.113883.3.1937.777.1.9.252"/>
+                <!--contains name="CDAOrganization"-->
+                <element name="hl7:wholeOrganization" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.1.9.253">
+                    <!-- IS DEFINED RECURSIVELY -->
+                    <attribute name="classCode" value="ORG" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.254"/>
+                    <attribute name="determinerCode" value="INSTANCE" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.255"/>
+                    <element name="hl7:id" minimumMultiplicity="0" maximumMultiplicity="*" datatype="II" id="2.16.840.1.113883.3.1937.777.1.9.256"/>
+                    <element name="hl7:name" minimumMultiplicity="0" maximumMultiplicity="*" datatype="ON" id="2.16.840.1.113883.3.1937.777.1.9.257"/>
+                    <element name="hl7:telecom" minimumMultiplicity="0" maximumMultiplicity="*" datatype="TEL" id="2.16.840.1.113883.3.1937.777.1.9.258"/>
+                    <element name="hl7:addr" minimumMultiplicity="0" maximumMultiplicity="*" datatype="AD" id="2.16.840.1.113883.3.1937.777.1.9.259"/>
+                    <element name="hl7:standardIndustryClassCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.1.9.260">
+                        <desc language="en-US">SHALL be chosen from domain OrganizationIndustryClass</desc>
+                    </element>
+                </element>
+            </element>
+</template>

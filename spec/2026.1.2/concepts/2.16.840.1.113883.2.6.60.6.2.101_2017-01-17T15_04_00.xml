@@ -1,0 +1,25 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.2.6.60.6.1.1" effectiveDate="2015-06-18T18:17:24" statusCode="draft" versionLabel="2.0" prefix="psr-" shortName="" iddisplay="psr-dataset-1" url="http://art-decor.org/decor/services/" ident="psr-"><!--
+ This is a view of the dataset "" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE"/>
+    <desc language="de-DE"/>
+    <concept id="2.16.840.1.113883.2.6.60.6.2.101" statusCode="draft" effectiveDate="2017-01-17T15:04:00" type="group" iddisplay="psr-dataelement-101">
+        <implementation markdown="A single work order step in the Lab, as Specimen work order step for the Lab processors (e.g. immunostainer), issued by the LIS (Automation manager)"/>
+        <name language="de-DE" lastTranslated="2017-06-21T09:58:30">Arbeitsschrittauftrag</name>
+        <desc language="de-DE" lastTranslated="2017-06-21T09:58:57">Auftrag für einzelnen Arbeitsschritt, z.B. HE-Färbung</desc>
+        <concept id="2.16.840.1.113883.2.6.60.6.2.89" statusCode="draft" effectiveDate="2016-11-06T09:40:04" type="item" iddisplay="psr-dataelement-89" shortName="arbeitsschritt">
+            <implementation shortName="arbeitsschritt" markdown="For each Requested Procedure (see this in the dataset), the basic or special techniques involved in the processing of the corresponding specimen(s) may require different devices (automatons, image acquisition modality, etc). Each Requested Procedure may contain one or more Procedure Steps (Work Order and Specimen Work Order Step).  A Procedure Step is the smallest unit of work in the workflow that is scheduled (work to do) and/or performed (work done) by a person or a machine (automaton, image acquisition modality, etc) on an object (specimen, tissue sample, tissue section, etc) "/>
+            <name language="de-DE" lastTranslated="2017-06-21T10:01:23">Arbeitsschritt</name>
+            <desc language="de-DE" lastTranslated="2017-06-21T10:02:05">einzelner Arbeitsschritt</desc>
+            <valueDomain type="string"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.6.2.85" statusCode="draft" effectiveDate="2016-09-20T09:17:58" type="item" iddisplay="psr-dataelement-85" shortName="arbeitsschrittauftragsid">
+            <implementation shortName="arbeitsschrittauftragsid" markdown="This is the ID for a single work order step in the Lab, as Specimen work order step for the Lab processors (e.g. immunostainer), issued by the LIS (Automation manager)"/>
+            <name language="de-DE" lastTranslated="2017-06-21T11:41:47">Arbeitsschrittauftrags-ID</name>
+            <desc language="de-DE" lastTranslated="2017-06-21T11:42:08">ID eines einzelnen Arbeitsschrittauftrags</desc>
+            <valueDomain type="identifier"/>
+        </concept>
+    </concept>
+</dataset>

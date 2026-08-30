@@ -1,0 +1,23 @@
+<valueSets>
+    <project ident="aktin-">
+        <valueSet id="1.2.276.0.76.11.57" name="Modulesdocumenttypes" displayName="Modules document types" effectiveDate="2015-03-26T00:00:00" statusCode="draft">
+            <sourceCodeSystem id="2.16.840.1.113883.6.1" identifierName="Logical Observation Identifier Names and Codes" canonicalUri="http://loinc.org" canonicalUriDSTU2="http://loinc.org" canonicalUriSTU3="http://loinc.org" canonicalUriR4="http://loinc.org" canonicalUriR4B="http://loinc.org" canonicalUriR5="http://loinc.org"/>
+            <publishingAuthority name="AKTIN e. V." inherited="project">
+                <addrLine>c/o Uniklinik RWTH Aachen</addrLine>
+                <addrLine>Institut für Medizinische Informatik</addrLine>
+                <addrLine>Pauwelsstraße 35</addrLine>
+                <addrLine>52074 Aachen</addrLine>
+                <addrLine type="phone">Tel. +49 391 67 28186</addrLine>
+                <addrLine type="email">office@aktin.org</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <concept code="68552-9" codeSystem="2.16.840.1.113883.6.1" displayName="Emergency department Admission evaluation note" level="0" type="L"/>
+                <concept code="11488-4" codeSystem="2.16.840.1.113883.6.1" displayName="Consultation note" level="0" type="L"/>
+                <concept code="53576-5" codeSystem="2.16.840.1.113883.6.1" displayName="Personal health monitoring report" level="0" type="L"/>
+                <concept code="74198-3" codeSystem="2.16.840.1.113883.6.1" displayName="Trauma Summary registry report" level="0" type="L"/>
+                <concept code="34750-0" codeSystem="2.16.840.1.113883.6.1" displayName="Anesthesiology Note" level="0" type="L"/>
+                <concept code="34905-0" codeSystem="2.16.840.1.113883.6.1" displayName="Neurology Note" level="0" type="L"/>
+            </conceptList>
+        </valueSet>
+    </project>
+</valueSets>

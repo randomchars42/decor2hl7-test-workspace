@@ -1,0 +1,130 @@
+<result xmlns:json="http://www.json.org">
+    <template id="2.16.840.1.113883.10.21.4.3" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:pharmhl7="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.21.4.3" hl7:dummy-default="urn:hl7-org:v3" lastModifiedDate="2023-01-29T21:54:50" displayName="UV ClinicalStatement Observation" cda:dummy-4="urn:hl7-org:v3" xml:dummy-2="http://www.w3.org/XML/1998/namespace" url="http://art-decor.org/decor/services/" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance" versionLabel="R1-STU2-ballot" isClosed="false" ident="pharmcda-" name="UVClinicalStatementMinimalObservation" statusCode="pending" pharmhl7:dummy-1="urn:hl7-org:pharm" effectiveDate="2016-05-01T00:00:00">
+            <desc language="en-US">Universal Clinical Statement Minimal Observation</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.303" tmname="CDAObservation" tmdisplayName="CDA Observation" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <element name="hl7:observation" id="2.16.840.1.113883.3.1937.777.1.9.357">
+                <item original="false" label="UVClinicalStatementMinimalObservation"/>
+                <attribute name="classCode" value="OBS" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10791"/>
+                <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10792"/>
+                <attribute name="negationInd" isOptional="true" datatype="bl" id="2.16.840.1.113883.3.1937.777.1.9.360"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10793">
+                    <item original="false" label="UVClinicalStatementMinimalObservation"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.21.4.3" isOptional="false" datatype="uid" id="2.16.840.1.113883.3.1937.777.15.9.10794"/>
+                </element>
+                <element name="hl7:id" minimumMultiplicity="0" maximumMultiplicity="*" datatype="II" id="2.16.840.1.113883.3.1937.777.15.9.10795">
+                    <item original="false" label="UVClinicalStatementMinimalObservation"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="CD" id="2.16.840.1.113883.3.1937.777.15.9.10796">
+                    <desc language="en-US">This code (e.g. drawn from LOINC) specifies the type of observation, e.g. a lab value (creatinine) or a measurement of the body weight or a body surface.</desc>
+                    <item original="false" label="UVClinicalStatementMinimalObservation"/>
+                    <vocabulary domain="ObservationCode"/>
+                </element>
+                <element name="hl7:derivationExpr" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ST" id="2.16.840.1.113883.3.1937.777.15.9.10797">
+                    <item original="false" label="UVClinicalStatementMinimalObservation"/>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.3.1937.777.15.9.10798">
+                    <item original="false" label="UVClinicalStatementMinimalObservation"/>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CS" id="2.16.840.1.113883.3.1937.777.15.9.10799">
+                    <item original="false" label="UVClinicalStatementMinimalObservation"/>
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.15933" vsid="2.16.840.1.113883.1.11.15933" vsname="ActStatus" vsdisplayName="ActStatus" vseffectiveDate="2014-03-26T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1360-20160323" linkedartefactmissing="false"/>
+                </element>
+                <element name="hl7:effectiveTime" minimumMultiplicity="0" maximumMultiplicity="1" datatype="IVL_TS" id="2.16.840.1.113883.3.1937.777.15.9.10800">
+                    <item original="false" label="UVClinicalStatementMinimalObservation"/>
+                </element>
+                <element name="hl7:priorityCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.15.9.10801">
+                    <item original="false" label="UVClinicalStatementMinimalObservation"/>
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.16866" vsid="2.16.840.1.113883.1.11.16866" vsname="ActPriority" vsdisplayName="ActPriority" vseffectiveDate="2016-06-23T00:00:00" vsstatusCode="final" linkedartefactmissing="false"/>
+                </element>
+                <element name="hl7:repeatNumber" minimumMultiplicity="0" maximumMultiplicity="1" datatype="IVL_INT" id="2.16.840.1.113883.3.1937.777.15.9.10802">
+                    <item original="false" label="UVClinicalStatementMinimalObservation"/>
+                </element>
+                <element name="hl7:languageCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CS" id="2.16.840.1.113883.3.1937.777.15.9.10803">
+                    <item original="false" label="UVClinicalStatementMinimalObservation"/>
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.11526" vsid="2.16.840.1.113883.1.11.11526" vsname="HumanLanguage" vsdisplayName="HumanLanguage" vseffectiveDate="2014-03-26T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1360-20160323" linkedartefactmissing="false"/>
+                </element>
+                <element name="hl7:value" minimumMultiplicity="0" maximumMultiplicity="*" datatype="ANY" id="2.16.840.1.113883.3.1937.777.15.9.10804">
+                    <item original="false" label="UVClinicalStatementMinimalObservation"/>
+                </element>
+                <element name="hl7:interpretationCode" minimumMultiplicity="0" maximumMultiplicity="*" datatype="CE" id="2.16.840.1.113883.3.1937.777.15.9.10805">
+                    <item original="false" label="UVClinicalStatementMinimalObservation"/>
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.78" vsid="2.16.840.1.113883.1.11.78" vsname="ObservationInterpretation" vsdisplayName="ObservationInterpretation" vseffectiveDate="2017-12-17T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1402-20171217" linkedartefactmissing="false"/>
+                </element>
+                <element name="hl7:methodCode" minimumMultiplicity="0" maximumMultiplicity="*" datatype="CE" id="2.16.840.1.113883.3.1937.777.15.9.10806">
+                    <item original="false" label="UVClinicalStatementMinimalObservation"/>
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.14079" vsid="2.16.840.1.113883.1.11.14079" vsname="ObservationMethod" vsdisplayName="ObservationMethod" vseffectiveDate="2014-03-26T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1360-20160323" linkedartefactmissing="false"/>
+                </element>
+                <element name="hl7:targetSiteCode" minimumMultiplicity="0" maximumMultiplicity="*" datatype="CD" id="2.16.840.1.113883.3.1937.777.15.9.10807">
+                    <item original="false" label="UVClinicalStatementMinimalObservation"/>
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.19724" vsid="2.16.840.1.113883.1.11.19724" vsname="HumanSubstanceAdministrationSite" vsdisplayName="HumanSubstanceAdministrationSite" vseffectiveDate="2014-03-26T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1360-20160323" linkedartefactmissing="false"/>
+                </element>
+                <element name="hl7:subject" minimumMultiplicity="0" maximumMultiplicity="1" contains="2.16.840.1.113883.10.12.320" id="2.16.840.1.113883.3.1937.777.15.9.10808" tmid="2.16.840.1.113883.10.12.320" tmname="CDASubjectBody" tmdisplayName="CDA Subject (Body)" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false">
+                    <item original="false" label="UVClinicalStatementMinimalObservation"/>
+                </element>
+                <element name="hl7:specimen" minimumMultiplicity="0" maximumMultiplicity="*" contains="2.16.840.1.113883.10.12.322" id="2.16.840.1.113883.3.1937.777.15.9.10809" tmid="2.16.840.1.113883.10.12.322" tmname="CDASpecimen" tmdisplayName="CDA Specimen" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false">
+                    <item original="false" label="UVClinicalStatementMinimalObservation"/>
+                </element>
+                <element name="hl7:performer" minimumMultiplicity="0" maximumMultiplicity="*" contains="2.16.840.1.113883.10.12.323" id="2.16.840.1.113883.3.1937.777.15.9.10810" tmid="2.16.840.1.113883.10.12.323" tmname="CDAPerformerBody" tmdisplayName="CDA Performer (Body)" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false">
+                    <item original="false" label="UVClinicalStatementMinimalObservation"/>
+                </element>
+                <element name="hl7:author" minimumMultiplicity="0" maximumMultiplicity="*" contains="2.16.840.1.113883.10.12.318" id="2.16.840.1.113883.3.1937.777.15.9.10811" tmid="2.16.840.1.113883.10.12.318" tmname="CDAAuthorBody" tmdisplayName="CDA Author (Body)" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false">
+                    <item original="false" label="UVClinicalStatementMinimalObservation"/>
+                </element>
+                <element name="hl7:informant" minimumMultiplicity="0" maximumMultiplicity="*" contains="2.16.840.1.113883.10.12.319" id="2.16.840.1.113883.3.1937.777.15.9.10812" tmid="2.16.840.1.113883.10.12.319" tmname="CDAinformantBody" tmdisplayName="CDA Informant (Body)" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false">
+                    <item original="false" label="UVClinicalStatementMinimalObservation"/>
+                </element>
+                <element name="hl7:participant" minimumMultiplicity="0" maximumMultiplicity="*" contains="2.16.840.1.113883.10.12.321" id="2.16.840.1.113883.3.1937.777.15.9.10813" tmid="2.16.840.1.113883.10.12.321" tmname="CDAParticipantBody" tmdisplayName="CDA Participant (Body)" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false">
+                    <item original="false" label="UVClinicalStatementMinimalObservation"/>
+                </element>
+                <element name="hl7:reference" minimumMultiplicity="0" maximumMultiplicity="*" contains="2.16.840.1.113883.10.12.324" id="2.16.840.1.113883.3.1937.777.15.9.10814" tmid="2.16.840.1.113883.10.12.324" tmname="CDAReference" tmdisplayName="CDA Reference" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false">
+                    <item original="false" label="UVClinicalStatementMinimalObservation"/>
+                </element>
+                <element name="hl7:precondition" minimumMultiplicity="0" maximumMultiplicity="*" contains="2.16.840.1.113883.10.12.329" id="2.16.840.1.113883.3.1937.777.15.9.10815" tmid="2.16.840.1.113883.10.12.329" tmname="CDAPrecondition" tmdisplayName="CDA Precondition" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false">
+                    <item original="false" label="UVClinicalStatementMinimalObservation"/>
+                </element>
+                <element name="hl7:referenceRange" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10816">
+                    <item original="false" label="UVClinicalStatementMinimalObservation"/>
+                    <attribute name="typeCode" value="REFV" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.1.9.392"/>
+                    <element name="hl7:observationRange" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10817">
+                        <item original="false" label="UVClinicalStatementMinimalObservation"/>
+                        <attribute name="classCode" value="OBS" isOptional="true" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10818"/>
+                        <attribute name="moodCode" value="EVN.CRT" isOptional="true" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10819"/>
+                        <element name="hl7:code" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CD" id="2.16.840.1.113883.3.1937.777.15.9.10820">
+                            <item original="false" label="UVClinicalStatementMinimalObservation"/>
+                            <vocabulary codeSystem="2.16.840.1.113883.5.4"/>
+                        </element>
+                        <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.3.1937.777.15.9.10821">
+                            <item original="false" label="UVClinicalStatementMinimalObservation"/>
+                        </element>
+                        <element name="hl7:value" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ANY" id="2.16.840.1.113883.3.1937.777.15.9.10822">
+                            <item original="false" label="UVClinicalStatementMinimalObservation"/>
+                        </element>
+                        <element name="hl7:interpretationCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.15.9.10823">
+                            <item original="false" label="UVClinicalStatementMinimalObservation"/>
+                            <vocabulary valueSet="2.16.840.1.113883.1.11.78" vsid="2.16.840.1.113883.1.11.78" vsname="ObservationInterpretation" vsdisplayName="ObservationInterpretation" vseffectiveDate="2017-12-17T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1402-20171217" linkedartefactmissing="false"/>
+                        </element>
+                    </element>
+                </element>
+            </element>
+            <staticAssociations/>
+            <uses type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.12.318" name="CDAAuthorBody" displayName="CDA Author (Body)" effectiveDate="2005-09-07T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-"/>
+            <uses type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.12.319" name="CDAinformantBody" displayName="CDA Informant (Body)" effectiveDate="2005-09-07T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-"/>
+            <uses type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.12.320" name="CDASubjectBody" displayName="CDA Subject (Body)" effectiveDate="2005-09-07T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-"/>
+            <uses type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.12.321" name="CDAParticipantBody" displayName="CDA Participant (Body)" effectiveDate="2005-09-07T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-"/>
+            <uses type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.12.322" name="CDASpecimen" displayName="CDA Specimen" effectiveDate="2005-09-07T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-"/>
+            <uses type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.12.323" name="CDAPerformerBody" displayName="CDA Performer (Body)" effectiveDate="2005-09-07T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-"/>
+            <uses type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.12.324" name="CDAReference" displayName="CDA Reference" effectiveDate="2005-09-07T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-"/>
+            <uses type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.12.329" name="CDAPrecondition" displayName="CDA Precondition" effectiveDate="2005-09-07T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.1" name="UVSubstanceadministrationrequest" displayName="UV Medication Order" statusCode="pending" versionLabel="STU1" effectiveDate="2015-10-07T00:00:00" ident="pharmcda-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.1" name="UVSubstanceadministrationrequest" displayName="UV Medication Order" statusCode="pending" versionLabel="R1-STU2-ballot" lastModifiedDate="2023-01-31T10:52:39" effectiveDate="2021-08-04T17:03:38" ident="pharmcda-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.1" name="UVSubstanceadministrationrequest" displayName="UV Medication Order" effectiveDate="2023-01-30T08:30:30" statusCode="draft" versionLabel="2023" lastModifiedDate="2023-01-30T08:30:30" ident="pharmcda-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.1" name="UVSubstanceadministrationrequest" displayName="UV Medication Order" effectiveDate="2023-01-31T10:52:39" statusCode="draft" versionLabel="2023" lastModifiedDate="2023-01-31T10:52:39" ident="pharmcda-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.1" name="UVSubstanceadministrationrequest" displayName="UV Medication Order" effectiveDate="2023-01-31T11:29:28" statusCode="draft" versionLabel="2023" lastModifiedDate="2023-01-31T11:36:01" ident="pharmcda-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.7" name="UVMedicationstatement" displayName="UV Medication Statement" effectiveDate="2023-01-30T08:32:34" statusCode="draft" versionLabel="2023" lastModifiedDate="2023-01-31T19:49:33" ident="pharmcda-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.13" name="UVMedicationadministration" displayName="UV Medication Administration" effectiveDate="2023-01-30T08:31:37" statusCode="draft" versionLabel="2023" lastModifiedDate="2023-01-30T08:31:37" ident="pharmcda-"/>
+        </template>
+    </template>
+</result>

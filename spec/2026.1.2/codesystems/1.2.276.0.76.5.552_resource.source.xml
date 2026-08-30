@@ -1,0 +1,4 @@
+<codeSystem xmlns:json="http://www.json.org" id="1.2.276.0.76.5.552" effectiveDate="2023-11-16T16:00:05" statusCode="final" versionLabel="2024-01-01" name="codesystemkdl2024" displayName="codesystem-kdl-2024">
+    <copyright json:array="true" language="de-DE"/>
+    <issueAssociation json:array="true" count="2"/>
+</codeSystem>

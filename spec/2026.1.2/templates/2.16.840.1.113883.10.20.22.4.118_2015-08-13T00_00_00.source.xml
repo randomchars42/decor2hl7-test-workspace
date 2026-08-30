@@ -1,0 +1,42 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:local="http://art-decor.org/local" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.20.22.4.118" name="SubstanceAdministeredAct" effectiveDate="2015-08-13T00:00:00" statusCode="draft" displayName="Substance Administered Act" versionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-" sdtc:dummy-1="urn:hl7-org:sdtc" local:dummy-2="http://art-decor.org/local" xml:dummy-3="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-5="urn:hl7-org:v3" xsi:dummy-6="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">This template represents the administration course in a series. The entryRelationship/sequenceNumber in the containing template shows the order of this particular administration in that medication series.</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.301" flexibility="2005-09-07T00:00:00"/>
+            <context id="**"/>
+            <element name="cda:act" id="2.16.840.1.113883.3.1937.99.3.9.3908">
+                <attribute name="classCode" value="ACT" id="2.16.840.1.113883.3.1937.99.3.9.3909">
+                    <desc language="en-US">SHALL contain exactly one [1..1] @classCode="ACT" Act (CodeSystem: HL7ActClass urn:oid:2.16.840.1.113883.5.6) (CONF:1098-31500).</desc>
+                    <item label="CONF:1098-31500"/>
+                </attribute>
+                <attribute name="moodCode" value="EVN" id="2.16.840.1.113883.3.1937.99.3.9.3910">
+                    <desc language="en-US">SHALL contain exactly one [1..1] @moodCode="EVN" Event (CodeSystem: ActMood urn:oid:2.16.840.1.113883.5.1001) (CONF:1098-31501).</desc>
+                    <item label="CONF:1098-31501"/>
+                </attribute>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.3911">
+                    <desc language="en-US">SHALL contain exactly one [1..1] templateId (CONF:1098-31502) such that it</desc>
+                    <item label="CONF:1098-31502"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.22.4.118" id="2.16.840.1.113883.3.1937.99.3.9.3912">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.22.4.118" (CONF:1098-31503).</desc>
+                        <item label="CONF:1098-31503"/>
+                    </attribute>
+                </element>
+                <element name="cda:id" datatype="II" minimumMultiplicity="1" maximumMultiplicity="*" isMandatory="false" id="2.16.840.1.113883.3.1937.99.3.9.3913">
+                    <desc language="en-US">SHALL contain at least one [1..*] id (CONF:1098-31504).</desc>
+                    <item label="CONF:1098-31504"/>
+                </element>
+                <element name="cda:code" datatype="CD" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.3914">
+                    <desc language="en-US">SHALL contain exactly one [1..1] code (CONF:1098-31506).</desc>
+                    <item label="CONF:1098-31506"/>
+                    <vocabulary code="416118004" codeSystem="2.16.840.1.113883.6.96"/>
+                </element>
+                <element name="cda:statusCode" datatype="CS" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.3915">
+                    <desc language="en-US">SHALL contain exactly one [1..1] statusCode="completed" Completed (CodeSystem: ActStatus urn:oid:2.16.840.1.113883.5.14) (CONF:1098-31505).</desc>
+                    <item label="CONF:1098-31505"/>
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="cda:effectiveTime" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.3916">
+                    <desc language="en-US">MAY contain zero or one [0..1] effectiveTime (CONF:1098-31509).</desc>
+                    <item label="CONF:1098-31509"/>
+                </element>
+            </element>
+        </template>

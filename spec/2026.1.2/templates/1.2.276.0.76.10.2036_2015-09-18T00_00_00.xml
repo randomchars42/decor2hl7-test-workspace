@@ -1,0 +1,55 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.2036" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.2036" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="CDA encompassingEncounter Patientenkontakt" ident="aktin-" name="CDAEncompassingEncounter" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="active" url="http://art-decor.org/decor/services/" effectiveDate="2015-09-18T00:00:00">
+            <classification type="cdaheaderlevel"/>
+            <relationship type="ADAPT" template="1.2.276.0.76.10.2027" flexibility="2014-08-25T00:00:00" tmid="1.2.276.0.76.10.2027" tmname="HeaderEncompassingEncounter" tmdisplayName="CDA encompassingEncounter Patientenkontakt" tmstatusCode="review" tmversionLabel="1.1" tmeffectiveDate="2014-08-25T00:00:00" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false"/>
+            <example type="neutral">
+                <componentOf>
+                    <encompassingEncounter classCode="ENC" moodCode="EVN">
+                        <!-- Aufnahme-Identifikator -->
+                        <id root="1.2.276.0.76.3.87686" extension="657827456837"/>
+                        <effectiveTime>
+                            <!-- Aufnahmezeitpunkt (Datum und Zeit), Zeitangabe genau bis auf die Minute -->
+                            <low value="201503041234"/>
+                            <!-- Ende Patientenkontakt = Zeitpunkt der Verlegung/Entlassung -->
+                            <high value="201503041345"/>
+                        </effectiveTime>
+                        <!-- Entlassung des Patienten mit Entlassungsgrund -->
+                        <dischargeDispositionCode code="2" codeSystem="1.2.276.0.76.3.1.195.5.56" displayName="Entlassung gegen ärztlichen Rat"/>
+                    </encompassingEncounter>
+                </componentOf>
+            </example>
+            <element name="hl7:componentOf" id="2.16.840.1.113883.2.6.60.3.9.216">
+                <item original="false" label="CDAEncompassingEncounter"/>
+                <attribute name="typeCode" value="COMP" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.217"/>
+                <element name="hl7:encompassingEncounter" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.218">
+                    <item original="false" label="CDAEncompassingEncounter"/>
+                    <attribute name="classCode" value="ENC" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.219"/>
+                    <attribute name="moodCode" value="EVN" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.220"/>
+                    <element name="hl7:id" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.1631535">
+                        <desc language="de-DE">Identifikationselement zur Aufnahme der Aufenthalts-Indentifikation</desc>
+                        <item original="false" label="CDAEncompassingEncounter"/>
+                    </element>
+                    <element name="hl7:effectiveTime" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="IVL_TS" id="2.16.840.1.113883.2.6.60.3.9.221">
+                        <item original="false" label="CDAEncompassingEncounter"/>
+                        <element name="hl7:low" minimumMultiplicity="1" maximumMultiplicity="1" datatype="TS.DATE.MIN" id="2.16.840.1.113883.2.6.60.3.9.222">
+                            <desc language="de-DE">Aufnahmezeitpunkt (Datum und Zeit), Zeitangabe genau bis auf die Minute</desc>
+                            <item original="false" label="CDAEncompassingEncounter"/>
+                        </element>
+                        <element name="hl7:high" minimumMultiplicity="0" maximumMultiplicity="1" datatype="TS.DATE.MIN" id="2.16.840.1.113883.2.6.60.3.9.223">
+                            <desc language="de-DE">Ende Patientenkontakt = Zeitpunkt der Verlegung/Entlassung</desc>
+                            <item original="false" label="CDAEncompassingEncounter"/>
+                        </element>
+                    </element>
+                    <element name="hl7:dischargeDispositionCode" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" datatype="CV" id="2.16.840.1.113883.2.6.60.3.9.224">
+                        <item original="false" label="CDAEncompassingEncounter"/>
+                        <vocabulary valueSet="1.2.276.0.76.11.56" vsid="1.2.276.0.76.11.56" vsname="Dischargedispositioncodes" vsdisplayName="Discharge Disposition Codes" vsstatusCode="draft" vseffectiveDate="2015-11-17T00:00:00" linkedartefactmissing="false"/>
+                    </element>
+                    <assert role="error" test="not(hl7:dischargeDispositionCode and //hl7:act[hl7:templateId/@root = '1.2.276.0.76.10.4067'])">Patient entweder verlegt (encompassingEncounter.dischargeDispositionCode) oder entlassen (act Referralto template id 1.2.276.0.76.10.4067)</assert>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="include" prefix="aktin-" flexibility="2015-09-18T00:00:00" id="1.2.276.0.76.10.1015" name="EmergencymedicineNoteCDAdocumentv1" displayName="Emergency medicine Note CDA document" effectiveDate="2014-09-18T00:00:00" statusCode="active" versionLabel="v1" ident="aktin-"/>
+        </template>
+    </template>
+</result>

@@ -1,0 +1,34 @@
+<dataset xmlns:json="http://www.json.org" id="1.2.276.0.76.3.1.261.1.77.1.1.1" effectiveDate="2018-03-02T10:10:49" statusCode="draft" prefix="dguvbbr-" shortName="minientlassbrief" iddisplay="dguvbbr-dataset1-" url="http://art-decor.org/decor/services/" ident="dguvbbr-"><!--
+ This is a view of the dataset "Mini-Entlassbrief" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">Mini-Entlassbrief</name>
+    <desc language="de-DE">Mini-Entlassungsbrief aus stationärer Behandlung (DAV/VAV/SAV) als DEMO-Objekt zum Technologieverständnis</desc>
+    <property name="Demo-Object"/>
+    <concept id="1.2.276.0.76.3.1.261.1.77.1.2.1.51" effectiveDate="2018-02-19T09:02:49" statusCode="draft" type="group" iddisplay="dguvbbr-dataelement1-51">
+        <name language="de-DE">Dosierschema</name>
+        <desc language="de-DE"/>
+        <concept id="1.2.276.0.76.3.1.261.1.77.1.2.1.52" effectiveDate="2018-02-28T11:05:55" statusCode="draft" type="item" iddisplay="dguvbbr-dataelement1-52" shortName="zeitangabe">
+            <implementation shortName="zeitangabe" markdown=""/>
+            <name language="de-DE">Zeitangabe</name>
+            <desc language="de-DE"/>
+            <valueDomain type="code">
+                <conceptList id="1.2.276.0.76.3.1.261.1.77.1.2.1.35.20180228110555.0"/>
+            </valueDomain>
+        </concept>
+        <concept id="1.2.276.0.76.3.1.261.1.77.1.2.1.48" effectiveDate="2018-02-06T09:29:30" statusCode="draft" type="item" iddisplay="dguvbbr-dataelement1-48" shortName="dosiermenge_und_einheit">
+            <implementation shortName="dosiermenge_und_einheit" markdown=""/>
+            <name language="de-DE">Dosiermenge und -einheit</name>
+            <desc language="de-DE"/>
+            <valueDomain type="quantity">
+                <example type="neutral">25 mg</example>
+            </valueDomain>
+        </concept>
+        <concept id="1.2.276.0.76.3.1.261.1.77.1.2.1.10" statusCode="cancelled" effectiveDate="2018-02-15T10:03:00" type="item" iddisplay="dguvbbr-dataelement1-10" shortName="dosiereinheit">
+            <implementation shortName="dosiereinheit"/>
+            <name language="de-DE">Dosiereinheit</name>
+            <desc language="de-DE"/>
+        </concept>
+    </concept>
+</dataset>

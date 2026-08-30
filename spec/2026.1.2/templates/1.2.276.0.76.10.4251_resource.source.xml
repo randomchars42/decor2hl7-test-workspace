@@ -1,0 +1,40 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:pharm="urn:ihe:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.4251" name="OxygenPartialPressure" displayName="Sauerstoffpartialdruck" effectiveDate="2017-07-06T00:00:00" statusCode="draft" url="http://art-decor.org/decor/services/" ident="hl7de-" pharm:dummy-1="urn:ihe:pharm" xml:dummy-2="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-4="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="de-DE">Sauerstoffpartialdruck</desc>
+            <desc language="en-US">Oxygen [Partial pressure] in Blood</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00"/>
+            <context id="**"/>
+            <example>
+        <observation classCode="OBS" moodCode="EVN">
+            <templateId root="1.2.276.0.76.10.4251"/>
+            <id root="1.2.276.0.76.4.17.3439247" extension="889eb111-93b0-4c84-8e55-98f2098b7965"/>
+            <code code="11556-8" codeSystem="2.16.840.1.113883.6.1" displayName="Oxygen [Partial pressure] in Blood"/>
+            <statusCode code="completed"/>
+            <effectiveTime value="20161219"/>
+            <value xsi:type="PQ" value="86.0" unit="mm[Hg]"/>
+        </observation>
+    </example>
+            <element name="hl7:observation" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.196">
+                <attribute name="classCode" value="OBS" datatype="cs" id="2.16.840.1.113883.2.6.77.9.197"/>
+                <attribute name="moodCode" value="EVN" datatype="cs" id="2.16.840.1.113883.2.6.77.9.198"/>
+                <element name="hl7:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.199">
+                    <attribute name="root" value="1.2.276.0.76.10.4251" datatype="uid" id="2.16.840.1.113883.2.6.77.9.200"/>
+                </element>
+                <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.201"/>
+                <element name="hl7:code" datatype="CE" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.202">
+                    <vocabulary code="11556-8" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:text" datatype="ED" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.203">
+                    <desc language="de-DE">Lediglich reference in den Text der zugehörigen Section</desc>
+                    <element name="hl7:reference" datatype="URL" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.204"/>
+                </element>
+                <element name="hl7:statusCode" datatype="CS" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.205">
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:effectiveTime" datatype="TS" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.206"/>
+                <element name="hl7:value" datatype="PQ" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="1.2.276.0.76.9.4031.1">
+                    <property unit="mm[Hg]"/>
+                    <property unit="kPa"/>
+                </element>
+            </element>
+        </template>

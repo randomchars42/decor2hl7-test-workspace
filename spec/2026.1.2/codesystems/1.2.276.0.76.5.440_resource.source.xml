@@ -1,0 +1,20 @@
+<codeSystem xmlns:json="http://www.json.org" id="1.2.276.0.76.5.440" name="zuweiser" displayName="Zuweiser" effectiveDate="2015-09-18T00:00:00" statusCode="draft" canonicalUri="http://aktin.org/fhir/CodeSystem/aktin-cs-zuweiser" language="de-DE" url="http://art-decor.org/decor/services/" ident="aktin-">
+    <desc json:array="true" language="de-DE" lastTranslated="2024-08-16T17:19:48">&lt;p&gt;Zuweiser&lt;/p&gt;</desc>
+    <publishingAuthority json:array="true" name="AKTIN e. V." inherited="project">
+        <addrLine json:array="true">c/o Uniklinik RWTH Aachen</addrLine>
+        <addrLine json:array="true">Institut für Medizinische Informatik</addrLine>
+        <addrLine json:array="true">Pauwelsstraße 35</addrLine>
+        <addrLine json:array="true">52074 Aachen</addrLine>
+        <addrLine json:array="true" type="phone">Tel. +49 391 67 28186</addrLine>
+        <addrLine json:array="true" type="email">office@aktin.org</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <conceptList json:array="true">
+        <codedConcept json:array="true" code="KVNPIK" statusCode="active" level="0" type="L" effectiveDate="2015-09-18T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="KV-Notfallpraxis am Krankenhaus"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="KVNDAK" statusCode="active" level="0" type="L" effectiveDate="2015-09-18T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="KV-Notdienst außerhalb des Krankenhauses"/>
+        </codedConcept>
+    </conceptList>
+</codeSystem>

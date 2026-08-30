@@ -1,0 +1,38 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:pharmhl7="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.21.4.18" name="UVIngredient" displayName="UV Ingredient" statusCode="pending" isClosed="false" lastModifiedDate="2023-01-29T21:55:06" versionLabel="R1-STU2-ballot" effectiveDate="2022-03-18T08:34:40" url="http://art-decor.org/decor/services/" ident="pharmcda-" pharmhl7:dummy-1="urn:hl7-org:pharm" xml:dummy-2="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-4="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US"/>
+            <classification type="cdaentrylevel" format="hl7v3xml1"/>
+            <element name="pharmhl7:quantity" datatype="RTO_PQ_PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10932">
+                <desc language="en-US"/>
+                <example caption="10 mg of the ingredient per ml">
+                    <pharmhl7:quantity>
+                        <cda:numerator xsi:type="PQ" value="10" unit="mg"/>
+                        <cda:denominator xsi:type="PQ" value="1" unit="ml"/>
+                    </pharmhl7:quantity>
+                </example>
+                <example caption="2% of the ingredient">
+                    <pharmhl7:quantity>
+                        <cda:numerator xsi:type="PQ" value="2" unit="%"/>
+                        <cda:denominator xsi:type="PQ" value="1"/>
+                    </pharmhl7:quantity>
+                </example>
+                <example caption="5mg of the ingredient">
+                    <pharmhl7:quantity>
+                        <cda:numerator xsi:type="PQ" value="5" unit="mg"/>
+                        <cda:denominator xsi:type="PQ" value="1"/>
+                    </pharmhl7:quantity>
+                </example>
+                <element name="cda:numerator" datatype="PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10933"/>
+                <element name="cda:denominator" datatype="PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10934"/>
+            </element>
+            <element name="pharmhl7:ingredientSubstance" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10935">
+                <desc language="en-US">
+            <div>The substance used for this product plying the role indicated in the ingredient classCode.</div>
+                    <div>The &lt;code&gt; element contains the coded representation of the ingredient and the &lt;name&gt; element may be used for the plain text representation.</div>
+                </desc>
+                <attribute name="classCode" value="MMAT" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10936"/>
+                <attribute name="determinerCode" value="KIND" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10937"/>
+                <element name="pharmhl7:code" datatype="CD" minimumMultiplicity="0" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.3.1937.777.15.9.10938"/>
+                <element name="pharmhl7:name" datatype="EN" minimumMultiplicity="0" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.3.1937.777.15.9.10939"/>
+                <assert role="error" test="pharmhl7:code or pharmhl7:name">Either the name or the code of the substance (or both) shall be provided</assert>
+            </element>
+        </template>

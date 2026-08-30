@@ -1,0 +1,64 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.4103" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.4103" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="Endtidales CO2" ident="aktin-" name="Carbondioxideatendexpiration" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="draft" url="http://art-decor.org/decor/services/" effectiveDate="2017-02-01T00:00:00">
+            <desc language="en-US">Carbon dioxide at end expiration</desc>
+            <desc language="de-DE">Endtidales CO2</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.303" tmname="CDAObservation" tmdisplayName="CDA Observation" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <example type="neutral">
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4103"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="ef9eb111-93b0-4c84-8e55-98f2098b7950"/>
+                    <code code="19891-1" codeSystem="2.16.840.1.113883.6.1" displayName="Carbon dioxide [Partial pressure] in Exhaled gas --at end expiration"/>
+                    <statusCode code="completed"/>
+                    <effectiveTime value="20131219"/>
+                    <value xsi:type="PQ" value="35" unit="mm[Hg]"/>
+                </observation>
+            </example>
+            <element name="hl7:observation" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.15760">
+                <item original="false" label="Carbondioxideatendexpiration"/>
+                <attribute name="classCode" value="OBS" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.15761"/>
+                <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.15762"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.15763">
+                    <item original="false" label="Carbondioxideatendexpiration"/>
+                    <attribute name="root" value="1.2.276.0.76.10.4103" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.15764"/>
+                </element>
+                <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.15765">
+                    <item original="false" label="Carbondioxideatendexpiration"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CE" id="2.16.840.1.113883.2.6.60.3.9.15766">
+                    <item original="false" label="Carbondioxideatendexpiration"/>
+                    <vocabulary code="19891-1" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.2.6.60.3.9.15767">
+                    <desc language="de-DE">Lediglich reference in den Text der zugehörigen Section</desc>
+                    <item original="false" label="Carbondioxideatendexpiration"/>
+                    <element name="hl7:reference" minimumMultiplicity="1" maximumMultiplicity="1" datatype="URL" id="2.16.840.1.113883.2.6.60.3.9.15768">
+                        <item original="false" label="Carbondioxideatendexpiration"/>
+                    </element>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CS" id="2.16.840.1.113883.2.6.60.3.9.15769">
+                    <item original="false" label="Carbondioxideatendexpiration"/>
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:effectiveTime" minimumMultiplicity="0" maximumMultiplicity="1" datatype="TS" id="2.16.840.1.113883.2.6.60.3.9.15770">
+                    <item original="false" label="Carbondioxideatendexpiration"/>
+                </element>
+                <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="PQ" id="2.16.840.1.113883.2.6.60.3.9.15771">
+                    <item original="false" label="Carbondioxideatendexpiration"/>
+                    <property unit="mm[Hg]">
+                        <item original="false" label="Carbondioxideatendexpiration"/>
+                    </property>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="dependency" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.3069" name="Prehospitalsummary" displayName="Präklinik (Episode)" effectiveDate="2017-01-10T00:00:00" statusCode="draft" ident="aktin-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.3073" name="Clincalepisode" displayName="Klinik (Episode)" effectiveDate="2017-01-10T00:00:00" statusCode="draft" ident="aktin-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4097" name="PreHospitalEncounterEntry" displayName="PreHospital Encounter Entry" effectiveDate="2017-02-01T00:00:00" statusCode="draft" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4101" name="VitalSignObservationsOrganizer" displayName="Vital Sign Observations Organizer" effectiveDate="2017-02-01T00:00:00" statusCode="draft" lastModifiedDate="2026-04-27T15:47:14" ident="aktin-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4133" name="HospitalCareEpisodeEncounter" displayName="Hospital Care Episode Encounter" effectiveDate="2017-02-01T00:00:00" statusCode="draft" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4136" name="InpatientHospitalEncounterDetailObservationOrganizer" displayName="Inpatient Hospital Encounter Detail Observation Organizer" effectiveDate="2017-02-01T00:00:00" statusCode="draft" ident="aktin-"/>
+        </template>
+    </template>
+</result>

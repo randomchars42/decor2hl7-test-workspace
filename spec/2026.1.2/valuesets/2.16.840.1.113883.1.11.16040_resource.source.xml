@@ -1,0 +1,21 @@
+<valueSet xmlns:json="http://www.json.org" id="2.16.840.1.113883.1.11.16040" name="EntityCode" displayName="EntityCode" effectiveDate="2014-03-26T00:00:00" statusCode="final" versionLabel="DEFN=UV=VO=1360-20160323" url="http://art-decor.org/decor/services/" ident="ad2bbr-">
+    <desc json:array="true" language="en-US">&lt;p&gt;&lt;b&gt;History description 2014-03-26: &lt;/b&gt;Lock all vaue sets untouched since 2014-03-26 to trackingId 2014T1_2014_03_26&lt;/p&gt; &lt;b&gt;description: &lt;/b&gt; &lt;p&gt;A value representing the specific kind of Entity the instance represents.&lt;/p&gt; &lt;p&gt;&lt;i&gt;Examples:&lt;/i&gt; A medical building, a Doberman Pinscher, a blood collection tube, a tissue biopsy.&lt;/p&gt; &lt;p&gt;&lt;i&gt;Rationale:&lt;/i&gt; For each
+                    Entity, the value for this attribute is drawn from one of several coding systems depending on the Entity classCode, such as living subjects (animal and plant taxonomies), chemical substance (e.g., IUPAC code), organizations, insurance company, government agency, hospital, park, lake, syringe, etc. It is possible that Entity.code may be so fine grained that it represents a
+                    single instance. An example is the CDC vaccine manufacturer code, modeled as a concept vocabulary, when in fact each concept refers to a single instance.&lt;/p&gt;</desc>
+    <publishingAuthority json:array="true" name="HL7" inherited="project">
+        <addrLine json:array="true">Health Level Seven International</addrLine>
+        <addrLine json:array="true">455 E. Eisenhower PKWY STE 300 # 025</addrLine>
+        <addrLine json:array="true">Ann Arbor, MI 48108</addrLine>
+        <addrLine json:array="true">USA</addrLine>
+        <addrLine json:array="true">T +1 734 677 7777</addrLine>
+        <addrLine json:array="true">F +1 734 677 6622</addrLine>
+        <addrLine json:array="true">E info@hl7.org</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="include" ref="2.16.840.1.113883.1.11.16041" flexibility="2014-03-26T00:00:00" exception="false"/>
+    <items json:array="true" is="include" ref="2.16.840.1.113883.1.11.16100" flexibility="2014-03-26T00:00:00" exception="false"/>
+    <items json:array="true" is="include" ref="2.16.840.1.113883.1.11.19608" flexibility="2014-03-26T00:00:00" exception="false"/>
+    <items json:array="true" is="include" ref="2.16.840.1.113883.1.11.19652" flexibility="2014-03-26T00:00:00" exception="false"/>
+    <items json:array="true" is="include" ref="2.16.840.1.113883.1.11.19667" flexibility="2014-03-26T00:00:00" exception="false"/>
+</valueSet>

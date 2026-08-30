@@ -1,0 +1,190 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:local="http://art-decor.org/local" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.20.22.4.16" name="MedicationActivity" displayName="Medication Activity" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" url="http://art-decor.org/decor/services/" ident="ccda-" sdtc:dummy-1="urn:hl7-org:sdtc" local:dummy-2="http://art-decor.org/local" xml:dummy-3="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-5="urn:hl7-org:v3" xsi:dummy-6="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">A medication activity describes substance administrations that have actually occurred (e.g. pills ingested or injections given) or are intended to occur (e.g. "take 2 tablets twice a day for the next 10 days"). Medication activities in "INT" mood are reflections of what a clinician intends a patient to be taking. Medication activities in "EVN" mood reflect actual
+                use. Medication timing is complex. This template requires that there be a substanceAdministration/effectiveTime valued with a time interval, representing the start and stop dates. Additional effectiveTime elements are optional, and can be used to represent frequency and other aspects of more detailed dosing regimens.</desc>
+            <classification type="cdaentrylevel"/>
+            <context id="**"/>
+            <element name="cda:substanceAdministration" id="2.16.840.1.113883.3.1937.99.3.9.211">
+                <desc language="en-US">Medication Activity SHOULD include doseQuantity OR rateQuantity</desc>
+                <attribute name="classCode" value="SBADM" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.212">
+                    <item label="conf-7496"/>
+                </attribute>
+                <attribute name="moodCode" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.213">
+                    <item label="conf-7497"/>
+                    <vocabulary valueSet="2.16.840.1.113883.11.20.9.18"/>
+                </attribute>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.214">
+                    <desc language="en-US">SHALL contain exactly one [1..1] templateId (CONF:7499) such that it</desc>
+                    <item label="conf-7499"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.22.4.16" datatype="uid" id="2.16.840.1.113883.3.1937.99.3.9.215">
+                        <item label="conf-10504"/>
+                    </attribute>
+                </element>
+                <element name="cda:id" datatype="II" minimumMultiplicity="1" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.216">
+                    <desc language="en-US">SHALL contain at least one [1..*] id (CONF:7500).</desc>
+                    <item label="conf-7500"/>
+                </element>
+                <element name="cda:code" datatype="CD" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.217">
+                    <desc language="en-US">MAY contain zero or one [0..1] code (CONF:7506).</desc>
+                    <item label="conf-7506"/>
+                </element>
+                <element name="cda:text" datatype="ED" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.218">
+                    <desc language="en-US">SHOULD contain zero or one [0..1] text (CONF:7501).</desc>
+                    <item label="conf-7501"/>
+                    <element name="cda:reference" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.219">
+                        <desc language="en-US">The text, if present, SHOULD contain zero or one [0..1] reference (CONF:15977).<p/>This reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1)</desc>
+                        <item label="conf-15977"/>
+                        <attribute name="value" isOptional="true" id="2.16.840.1.113883.3.1937.99.3.9.220">
+                            <item label="conf-15978"/>
+                        </attribute>
+                        <assert role="error" test="not(@value) or starts-with(@value, '#')">This reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1)</assert>
+                    </element>
+                </element>
+                <element name="cda:statusCode" datatype="CS" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.221">
+                    <desc language="en-US">SHALL contain exactly one [1..1] statusCode (CONF:7507).</desc>
+                    <item label="conf-7507"/>
+                </element>
+                <choice minimumMultiplicity="1" maximumMultiplicity="1">
+                    <desc language="en-US">This effectiveTime SHALL contain either a low or a @value but not both (CONF:26528).<br clear="none"/>
+            </desc>
+                    <item label="conf-26528"/>
+                    <element name="cda:effectiveTime" datatype="TS" minimumMultiplicity="0" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.3.1937.99.3.9.5850">
+                        <desc language="en-US">Note: This effectiveTime represents either the medication duration (i.e., the time the medication was started and stopped) or the single-administration timestamp.<br clear="none"/>
+                </desc>
+                        <item label="conf-26525">
+                            <desc language="en-US">Note: indicates a single-administration timestamp [CONF:26525]<br clear="none"/>
+                    </desc>
+                        </item>
+                        <attribute name="value" datatype="ts" isOptional="true" id="2.16.840.1.113883.3.1937.99.3.9.5851"/>
+                    </element>
+                    <element name="cda:effectiveTime[not(@operator='A')]" datatype="IVL_TS" minimumMultiplicity="0" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.3.1937.99.3.9.222">
+                        <desc language="en-US">SHALL contain exactly one [1..1] effectiveTime (CONF:7508) such that it</desc>
+                        <item label="conf-7508"/>
+                        <element name="cda:low" datatype="TS" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.223">
+                            <desc language="en-US">SHALL contain exactly one [1..1] low (CONF:26526).<br clear="none"/>Note: indicates when medication started<br clear="none"/>
+                    </desc>
+                            <item label="conf-26526"/>
+                        </element>
+                        <element name="cda:high" datatype="TS" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.224">
+                            <desc language="en-US">SHALL contain exactly one [1..1] high (CONF:26527).<br clear="none"/>Note: indicates when medication stopped<br clear="none"/>
+                    </desc>
+                            <item label="conf-26527"/>
+                        </element>
+                    </element>
+                </choice>
+                <element name="cda:effectiveTime[@operator='A']" datatype="SXCM_TS" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.225">
+                    <desc language="en-US">SHOULD contain zero or one [0..1] effectiveTime (CONF:7513) such that it<p/> SHALL contain exactly one [1..1] @xsi:type=”PIVL_TS” or “EIVL_TS”</desc>
+                    <item label="conf-7513"/>
+                    <attribute name="operator" value="A" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.226">
+                        <item label="conf-9106"/>
+                    </attribute>
+                    <assert role="error" test="count(preceding-sibling::cda:effectiveTime) = 1 and .[@operator='A'][@xsi:type='PIVL_TS' or @xsi:type='EIVL_TS']">SHOULD contain zero or one [0..1] effectiveTime (CONF:7513) such that it</assert>
+                </element>
+                <element name="cda:repeatNumber" datatype="IVL_INT" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.227">
+                    <desc language="en-US">MAY contain zero or one [0..1] repeatNumber (CONF:7555).<p/>In "INT" (intent) mood, the repeatNumber defines the number of allowed administrations. For example, a repeatNumber of "3" means that the substance can be administered up to 3 times. In "EVN" (event) mood, the repeatNumber is the number of occurrences. For example, a repeatNumber of "3" in a
+                        substance administration event means that the current administration is the 3rd in a series.</desc>
+                    <item label="conf-7555"/>
+                </element>
+                <element name="cda:routeCode" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.228">
+                    <desc language="en-US">MAY contain zero or one [0..1] routeCode, which SHALL be selected from ValueSet Medication Route FDA 2.16.840.1.113883.3.88.12.3221.8.7 DYNAMIC (CONF:7514).</desc>
+                    <item label="conf-7514"/>
+                    <vocabulary valueSet="2.16.840.1.113883.3.88.12.3221.8.7"/>
+                </element>
+                <element name="cda:approachSiteCode" datatype="CD" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.229">
+                    <desc language="en-US">MAY contain zero or one [0..1] approachSiteCode, where the code SHALL be selected from ValueSet Body Site 2.16.840.1.113883.3.88.12.3221.8.9 DYNAMIC (CONF:7515).</desc>
+                    <item label="conf-7515"/>
+                    <vocabulary valueSet="2.16.840.1.113883.3.88.12.3221.8.9"/>
+                </element>
+                <choice minimumMultiplicity="0">
+                    <desc language="nl-NL">Medication Activity SHOULD include doseQuantity OR rateQuantity</desc>
+                    <element name="cda:doseQuantity" datatype="IVL_PQ" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.230">
+                        <desc language="en-US">SHOULD contain zero or one [0..1] doseQuantity (CONF:7516).<p/>Pre-coordinated consumable: If the consumable code is a pre-coordinated unit dose (e.g. "metoprolol 25mg tablet") then doseQuantity is a unitless number that indicates the number of products given per administration (e.g. "2", meaning 2 x "metoprolol 25mg tablet").<p/>Not pre-coordinated
+                            consumable: If the consumable code is not pre-coordinated (e.g. is simply "metoprolol"), then doseQuantity must represent a physical quantity with @unit, e.g. "25" and "mg", specifying the amount of product given per administration.</desc>
+                        <item label="conf-7516"/>
+                        <attribute name="unit" datatype="cs" isOptional="true" id="2.16.840.1.113883.3.1937.99.3.9.231">
+                            <item label="conf-7526"/>
+                            <vocabulary valueSet="2.16.840.1.113883.1.11.12839"/>
+                        </attribute>
+                    </element>
+                    <element name="cda:rateQuantity" datatype="IVL_PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.232">
+                        <desc language="en-US">MAY contain zero or one [0..1] rateQuantity (CONF:7517).</desc>
+                        <item label="conf-7517"/>
+                        <attribute name="unit" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.233">
+                            <item label="conf-7525"/>
+                            <vocabulary valueSet="2.16.840.1.113883.1.11.12839"/>
+                        </attribute>
+                    </element>
+                </choice>
+                <element name="cda:maxDoseQuantity" datatype="RTO_PQ_PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.234">
+                    <desc language="en-US">MAY contain zero or one [0..1] maxDoseQuantity (CONF:7518).</desc>
+                    <item label="conf-7518"/>
+                </element>
+                <element name="cda:administrationUnitCode" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.235">
+                    <desc language="en-US">
+                <span style="font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px;">MAY contain zero or one [0..1] administrationUnitCode, which SHALL be selected from ValueSet AdministrationUnitDoseForm 2.16.840.1.113762.1.4.1021.30 DYNAMIC (CONF:7519).</span>
+                <br clear="none"/>
+            </desc>
+                    <item label="conf-7519"/>
+                    <vocabulary valueSet="2.16.840.1.113762.1.4.1021.30" flexibility="dynamic"/>
+                </element>
+                <element name="cda:consumable" contains="2.16.840.1.113883.10.20.22.4.23" flexibility="2013-01-31T00:00:00" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="false" id="2.16.840.1.113883.3.1937.99.3.9.236">
+                    <item label="conf-7520"/>
+                </element>
+                <element name="cda:performer" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.237">
+                    <desc language="en-US">MAY contain zero or one [0..1] performer (CONF:7522).</desc>
+                    <item label="conf-7522"/>
+                </element>
+                <element name="cda:participant" contains="2.16.840.1.113883.10.20.22.4.24" flexibility="2013-01-31T00:00:00" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.238">
+                    <item label="conf-7523"/>
+                    <attribute name="typeCode" value="CSM" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.239">
+                        <item label="conf-7524"/>
+                    </attribute>
+                </element>
+                <element name="cda:entryRelationship" contains="2.16.840.1.113883.10.20.22.4.19" flexibility="2013-01-31T00:00:00" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.240">
+                    <item label="conf-7536"/>
+                    <attribute name="typeCode" value="RSON" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.241">
+                        <item label="conf-7537"/>
+                    </attribute>
+                </element>
+                <element name="cda:entryRelationship" contains="2.16.840.1.113883.10.20.22.4.20" flexibility="2013-01-31T00:00:00" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.242">
+                    <item label="conf-7539"/>
+                    <attribute name="typeCode" value="SUBJ" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.243">
+                        <item label="conf-7540"/>
+                    </attribute>
+                    <attribute name="inversionInd" value="true" datatype="bl" id="2.16.840.1.113883.3.1937.99.3.9.244">
+                        <item label="conf-7542"/>
+                    </attribute>
+                </element>
+                <element name="cda:entryRelationship" contains="2.16.840.1.113883.10.20.22.4.17" flexibility="2013-01-31T00:00:00" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.245">
+                    <item label="conf-7543"/>
+                    <attribute name="typeCode" value="REFR" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.246">
+                        <item label="conf-7547"/>
+                    </attribute>
+                </element>
+                <element name="cda:entryRelationship" contains="2.16.840.1.113883.10.20.22.4.18" flexibility="2013-01-31T00:00:00" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.247">
+                    <item label="conf-7549"/>
+                    <attribute name="typeCode" value="REFR" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.248">
+                        <item label="conf-7553"/>
+                    </attribute>
+                </element>
+                <element name="cda:entryRelationship" contains="2.16.840.1.113883.10.20.22.4.9" flexibility="2013-01-31T00:00:00" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.249">
+                    <item label="conf-7552"/>
+                    <attribute name="typeCode" value="CAUS" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.250">
+                        <item label="conf-7544"/>
+                    </attribute>
+                </element>
+                <element name="cda:entryRelationship" contains="2.16.840.1.113883.10.20.22.4.147" flexibility="2015-08-13T00:00:00" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.5846">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.5847">
+                        <item label="conf-32908">
+                            <desc language="en-US">SHALL contain exactly one [1..1] @typeCode="COMP" Has component (CodeSystem: HL7ActRelationshipType urn:oid:2.16.840.1.113883.5.1002) (CONF:32908).<br clear="none"/>
+                    </desc>
+                        </item>
+                    </attribute>
+                </element>
+                <element name="cda:precondition" contains="2.16.840.1.113883.10.20.22.4.25" flexibility="2013-01-31T00:00:00" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.5848">
+                    <item label="conf-7546"/>
+                    <attribute name="typeCode" value="PRCN" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.5849">
+                        <item label="conf-7550"/>
+                    </attribute>
+                </element>
+            </element>
+        </template>

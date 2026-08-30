@@ -1,0 +1,52 @@
+<result xmlns:json="http://www.json.org">
+    <template id="2.16.840.1.113883.10.22.4.31" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:cpm="urn:hl7-org:cpm" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pharm="urn:hl7-org:pharm" id="2.16.840.1.113883.10.22.4.31" hl7:dummy-default="urn:hl7-org:v3" displayName="IPS Internal Reference" cda:dummy-5="urn:hl7-org:v3" xml:dummy-3="http://www.w3.org/XML/1998/namespace" url="http://art-decor.org/decor/services/" cpm:dummy-1="urn:hl7-org:cpm" xsi:dummy-6="http://www.w3.org/2001/XMLSchema-instance" versionLabel="STU1" isClosed="false" ident="hl7ips-" name="IPSEntryInternalReference" pharm:dummy-2="urn:hl7-org:pharm" statusCode="pending" effectiveDate="2017-05-02T00:00:00">
+            <desc language="en-US">This template is used to reference (point to) information contained in other entries within the same document.</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="ADAPT" template="1.3.6.1.4.1.19376.1.5.3.1.4.4.1" flexibility="2013-12-20T00:00:00" tmid="1.3.6.1.4.1.19376.1.5.3.1.4.4.1" tmname="IHEInternalReferenceEntry" tmdisplayName="IHE Internal Reference Entry" tmeffectiveDate="2013-12-20T00:00:00" tmstatusCode="active" tmversionLabel="2014" url="https://art-decor.ihe-europe.net/decor/services/" ident="IHE-PCC-" linkedartefactmissing="false"/>
+            <example type="neutral" caption="Reference to an uncoded element">
+                <act classCode="ACT" moodCode="cs">
+                    <templateId root="2.16.840.1.113883.10.22.4.31"/>
+                    <id root="1.2.3.999" extension="__example only__"/>
+                    <code nullFlavor="NA"/>
+                </act>
+            </example>
+            <element name="hl7:act" conformance="R" id="2.16.840.1.113883.3.1937.777.11.9.456">
+                <item original="false" label="IPSEntryInternalReference"/>
+                <attribute name="classCode" value="ACT" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.11.9.457"/>
+                <attribute name="moodCode" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.11.9.458">
+                    <desc language="en-US">The @moodCode of the reference SHALL match the @moodCode of the referenced element</desc>
+                </attribute>
+                <let name="refMoodCode" value="@moodCode"/>
+                <let name="refID" value="concat(hl7:id[1]/@root,'#',hl7:id[1]/@extension)"/>
+                <let name="refCode" value="concat(hl7:code[1]/@code,'#',hl7:code[1]/@codeSystem)"/>
+                <let name="reffedObject" value="(ancestor::hl7:ClinicalDocument//*:id[concat(@root,'#',@extension)=$refID][not(preceding-sibling::hl7:templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.4.4.1')]/parent::*)[1]"/>
+                <assert role="error" test="not(exists($reffedObject)) or $reffedObject[@moodCode=$refMoodCode]">The @moodCode of the reference SHALL match the @moodCode of the referenced element</assert>
+                <assert role="error" test="exists($reffedObject)">The root and extension attributes SHALL identify an element defined elsewhere in the same document.</assert>
+                <assert role="error" test="not(exists($reffedObject)) or ($reffedObject[not(*:code/@code)] and hl7:code[@nullFlavor='NA']) or $reffedObject/*:code[concat(@code,'#',@codeSystem)=$refCode]">The code of the reference SHALL match the code of the referenced element</assert>
+                <element name="hl7:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.3.1937.777.13.9.215">
+                    <item original="false" label="IPSEntryInternalReference"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.22.4.31" isOptional="false" datatype="uid" id="2.16.840.1.113883.3.1937.777.13.9.216"/>
+                </element>
+                <element name="hl7:id" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.11.9.461">
+                    <desc language="en-US">This element shall be present. The root and extension attributes shall identify an element defined elsewhere in the same document.</desc>
+                    <item original="false" label="IPSEntryInternalReference"/>
+                </element>
+                <element name="hl7:code" datatype="CD" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.11.9.462">
+                    <desc language="en-US">This element shall be present. It shall be valued when the internal reference is to element that has a &lt;code&gt; element, and shall have the same attributes as the &lt;code&gt; element in the act it references. If the element it references does not have a &lt;code&gt; element, then the nullFlavor attribute should be set to "NA".</desc>
+                    <item original="false" label="IPSEntryInternalReference"/>
+                    <attribute name="nullFlavor" value="NA" isOptional="true" datatype="cs" id="2.16.840.1.113883.3.1937.777.11.9.463"/>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.1" name="UVSubstanceadministrationrequest" displayName="UV Medication Order" effectiveDate="2023-01-31T11:29:28" statusCode="draft" versionLabel="2023" lastModifiedDate="2023-01-31T11:36:01" ident="pharmcda-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.7" name="UVMedicationstatement" displayName="UV Medication Statement" effectiveDate="2023-01-30T08:32:34" statusCode="draft" versionLabel="2023" lastModifiedDate="2023-01-31T19:49:33" ident="pharmcda-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.13" name="UVMedicationadministration" displayName="UV Medication Administration" effectiveDate="2023-01-30T08:31:37" statusCode="draft" versionLabel="2023" lastModifiedDate="2023-01-30T08:31:37" ident="pharmcda-"/>
+            <ref type="contains" prefix="hl7ips-" flexibility="dynamic" id="2.16.840.1.113883.10.22.3.17" name="IPSAlertsSection" displayName="IPS Alerts Section" effectiveDate="2024-06-12T08:51:01" statusCode="draft" lastModifiedDate="2024-08-04T09:47:12" ident="hl7ips-"/>
+            <ref type="contains" prefix="hl7ips-" flexibility="dynamic" id="2.16.840.1.113883.10.22.4.17" name="IPSProcedureEntry" displayName="IPS Procedure Entry" statusCode="pending" isClosed="false" versionLabel="STU1" effectiveDate="2017-03-27T00:00:00" ident="hl7ips-"/>
+            <ref type="contains" prefix="hl7ips-" flexibility="dynamic" id="2.16.840.1.113883.10.22.4.17" name="IPSProcedureEntry" displayName="IPS Procedure Entry" effectiveDate="2020-07-14T16:35:58" statusCode="draft" isClosed="false" versionLabel="2021" ident="hl7ips-"/>
+            <ref type="contains" prefix="hl7ips-" flexibility="dynamic" id="2.16.840.1.113883.10.22.4.17" name="IPSProcedureEntry" displayName="IPS Procedure Entry" effectiveDate="2024-08-04T11:08:35" statusCode="draft" versionLabel="STU2" isClosed="false" lastModifiedDate="2026-03-24T15:23:21" ident="hl7ips-"/>
+            <ref type="contains" prefix="hl7ips-" flexibility="dynamic" id="2.16.840.1.113883.10.22.4.38" name="IPSPlannedProcedure" displayName="IPS Planned Procedure" statusCode="pending" isClosed="false" versionLabel="TI-2020" effectiveDate="2020-05-08T17:38:48" ident="hl7ips-"/>
+        </template>
+    </template>
+</result>

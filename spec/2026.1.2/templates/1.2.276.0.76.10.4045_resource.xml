@@ -1,0 +1,87 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.4045" ident="aktin-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.4045" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="Modified Rankin Scale" ident="aktin-" name="Modifiedrankinscale" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="active" url="http://art-decor.org/decor/services/" effectiveDate="2015-03-03T00:00:00">
+            <desc language="de-DE">Modified Rankin Skala</desc>
+            <desc language="en-US">Modified Rankin Skala - 0-6</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.303" tmname="CDAObservation" tmdisplayName="CDA Observation" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <example type="neutral">
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4045"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="10c1eb7e-dc2d-4d1f-806a-2ad65eba0396"/>
+                    <code code="75859-9" codeSystem="2.16.840.1.113883.6.1" displayName="Modified rankin scale"/>
+                    <statusCode code="completed"/>
+                    <effectiveTime value="20150303"/>
+                    <value xsi:type="PQ" value="2" unit="{score}"/>
+                </observation>
+            </example>
+            <element name="hl7:observation" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.285">
+                <item original="false" label="Modifiedrankinscale"/>
+                <attribute name="classCode" value="OBS" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.286"/>
+                <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.287"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.288">
+                    <item original="false" label="Modifiedrankinscale"/>
+                    <attribute name="root" value="1.2.276.0.76.10.4045" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.289"/>
+                </element>
+                <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.290">
+                    <item original="false" label="Modifiedrankinscale"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CE" id="2.16.840.1.113883.2.6.60.3.9.291">
+                    <item original="false" label="Modifiedrankinscale"/>
+                    <vocabulary code="75859-9" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.2.6.60.3.9.292">
+                    <desc language="de-DE">Lediglich reference in den Text der zugehörigen Section</desc>
+                    <item original="false" label="Modifiedrankinscale"/>
+                    <element name="hl7:reference" minimumMultiplicity="1" maximumMultiplicity="1" datatype="URL" id="2.16.840.1.113883.2.6.60.3.9.293">
+                        <item original="false" label="Modifiedrankinscale"/>
+                    </element>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CS" id="2.16.840.1.113883.2.6.60.3.9.294">
+                    <item original="false" label="Modifiedrankinscale"/>
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:effectiveTime" minimumMultiplicity="0" maximumMultiplicity="1" datatype="TS" id="2.16.840.1.113883.2.6.60.3.9.295">
+                    <item original="false" label="Modifiedrankinscale"/>
+                </element>
+                <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="PQ" id="2.16.840.1.113883.2.6.60.3.9.296">
+                    <item original="false" label="Modifiedrankinscale"/>
+                    <property minInclude="0" maxInclude="6">
+                        <item original="false" label="Modifiedrankinscale"/>
+                    </property>
+                    <attribute name="value" isOptional="false" id="2.16.840.1.113883.2.6.60.3.9.297">
+                        <desc language="de-DE">Score</desc>
+                    </attribute>
+                    <attribute name="unit" value="{score}" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.298"/>
+                </element>
+            </element>
+            <staticAssociations>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.2.114" effectiveDate="2015-01-15T00:00:00" refdisplay="aktin-dataelement2015(1)-114" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.2" datasetEffectiveDate="2015-01-15T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.1-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.296" templateId="1.2.276.0.76.10.4045" templateEffectiveDate="2015-03-03T00:00:00" path="Klinische Basisdaten Patient">
+                    <name language="de-DE">Rankin Skala Score</name>
+                    <desc language="de-DE">Die Rankin Skala ist eine einfache Ordinalskala, die die funktionelle Einschränkung eines Patienten beschreibt, vor einer Akuterkrankung aber auch als Outcome nach z.B. Rehabilitation. Sie reicht von 0 bis 5 Punkten, bei der modifizierten Rankin Skala wird Tod (als Outcome) mit 6 Punkten kodiert. - Keine Symptome, kann alle gewohnten Aufgaben und
+                        Aktivitäten verrichten (0 Punkte) - Keine wesentliche Funktionseinschränkung trotz Symptomen, kann alle gewohnten Aufgaben und Aktivitäten verrichten (1 Punkt) - Geringgradige Funktionseinschränkung, nicht alle früheren Aktivitäten möglich, aber unabhängig im täglichen Leben (2 Punkte) - Mäßiggradige Funktionseinschränkung, bedarf einiger Unterstützung, ist aber ohne Hilfe
+                        gehfähig (3 Punkte) - Mittelschwere Funktionseinschränkung, Hilfe zum Gehen und für eigene körperliche Bedürfnisse nötig (4 Punkte) - Schwere Funktionseinschränkung, bettlägrig, inkontinent, kontinuierliche Pflege notwendig (5 Punkte) Quelle: Rankin J. zerebral vascular accidents in people over the age of 60: Prognosis. Scott Med J. 1957;2:200-215</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.3.114" effectiveDate="2015-11-01T00:00:00" refdisplay="aktin-dataelement2015(2)-114" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.3" datasetEffectiveDate="2015-11-01T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.2-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.296" templateId="1.2.276.0.76.10.4045" templateEffectiveDate="2015-03-03T00:00:00" path="Klinische Basisdaten Patient">
+                    <name language="de-DE">Rankin Skala Score</name>
+                    <desc language="de-DE">Die Rankin Skala ist eine einfache Ordinalskala, die die funktionelle Einschränkung eines Patienten beschreibt, vor einer Akuterkrankung aber auch als Outcome nach z.B. Rehabilitation. Sie reicht von 0 bis 5 Punkten, bei der modifizierten Rankin Skala wird Tod (als Outcome) mit 6 Punkten kodiert. - Keine Symptome, kann alle gewohnten Aufgaben und
+                        Aktivitäten verrichten (0 Punkte) - Keine wesentliche Funktionseinschränkung trotz Symptomen, kann alle gewohnten Aufgaben und Aktivitäten verrichten (1 Punkt) - Geringgradige Funktionseinschränkung, nicht alle früheren Aktivitäten möglich, aber unabhängig im täglichen Leben (2 Punkte) - Mäßiggradige Funktionseinschränkung, bedarf einiger Unterstützung, ist aber ohne Hilfe
+                        gehfähig (3 Punkte) - Mittelschwere Funktionseinschränkung, Hilfe zum Gehen und für eigene körperliche Bedürfnisse nötig (4 Punkte) - Schwere Funktionseinschränkung, bettlägrig, inkontinent, kontinuierliche Pflege notwendig (5 Punkte) Quelle: Rankin J. zerebral vascular accidents in people over the age of 60: Prognosis. Scott Med J. 1957;2:200-215</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+            </staticAssociations>
+            <ref type="dependency" prefix="aktin-" flexibility="2016-08-02T00:00:00" id="1.2.276.0.76.3.1.195.10.92" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2025-11-12T00:00:00" statusCode="retired" versionLabel="v3transit" lastModifiedDate="2026-03-25T11:04:45" ident="aktin-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="2016-08-02T00:00:00" id="1.2.276.0.76.3.1.195.10.93" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2026-03-25T11:04:07" statusCode="draft" versionLabel="v4transit" lastModifiedDate="2026-04-29T18:39:46" ident="aktin-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="2015-01-10T00:00:00" id="1.2.276.0.76.10.1015" name="EmergencymedicineNoteCDAdocumentv1" displayName="Emergency medicine Note CDA document" effectiveDate="2014-09-18T00:00:00" statusCode="active" versionLabel="v1" ident="aktin-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="2016-08-02T00:00:00" id="1.2.276.0.76.10.1019" name="EmergencymedicineNoteCDAdocumentv2" displayName="Emergency medicine Note CDA document" effectiveDate="2016-06-01T00:00:00" statusCode="active" versionLabel="v2" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.3047" name="ClinicalInformation" displayName="Klinische Basisinformationen" effectiveDate="2015-01-10T00:00:00" statusCode="active" isClosed="false" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.3047" name="ClinicalInformation" displayName="Klinische Basisinformationen" effectiveDate="2016-08-02T00:00:00" statusCode="active" isClosed="false" ident="aktin-"/>
+        </template>
+    </template>
+</result>

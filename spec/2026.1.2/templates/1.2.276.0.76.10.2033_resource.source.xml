@@ -1,0 +1,39 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultLanguage="de-DE" id="1.2.276.0.76.10.2033" name="CDAauthor" displayName="CDA author" effectiveDate="2014-09-17T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" xml:dummy-1="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-3="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance">
+    <desc language="de-DE">Autor des Dokuments</desc>
+    <classification type="cdaheaderlevel"/>
+    <relationship type="SPEC" template="2.16.840.1.113883.10.12.102" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.102" tmname="CDAauthor" tmdisplayName="CDA author" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-"/>
+    <relationship type="ADAPT" template="1.2.276.0.76.10.2002" flexibility="2013-07-10T00:00:00" tmid="1.2.276.0.76.10.2002" tmname="HeaderAuthor" tmdisplayName="CDA author" tmeffectiveDate="2013-07-10T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+    <example>
+                <author>
+                    <time value="20131020"/>
+                    <assignedAuthor>
+                        <id extension="HCP89567" root="2.16.840.1.113883.3.1937.99.3.1.997788"/>
+                        <assignedPerson>
+                            <name>
+                                <given>Kai</given>
+                                <family>Heitmann</family>
+                            </name>
+                        </assignedPerson>
+                        <representedOrganization>
+                            <name>The World's Best Vaccination Service Delivery Location</name>
+                        </representedOrganization>
+                    </assignedAuthor>
+                </author>
+            </example>
+    <element name="hl7:author" minimumMultiplicity="1" maximumMultiplicity="*" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631521">
+                <attribute name="typeCode" value="AUT" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.1631522"/>
+                <!-- Element time -->
+                <element name="hl7:time" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="TS.DATE.MIN" id="2.16.840.1.113883.2.6.60.3.9.1631523"/>
+                <!-- Element assignedAuthor -->
+                <element name="hl7:assignedAuthor" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631524">
+                    <attribute name="classCode" value="ASSIGNED" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.1631525"/>
+                    <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.1631526"/>
+                    <element name="hl7:assignedPerson" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.1631527">
+                        <include ref="1.2.276.0.76.10.90010"/>
+                    </element>
+                    <element name="hl7:representedOrganization" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.1631528">
+                        <include ref="1.2.276.0.76.10.90011"/>
+                    </element>
+                </element>
+            </element>
+</template>

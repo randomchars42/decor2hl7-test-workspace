@@ -1,0 +1,70 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:local="http://art-decor.org/local" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.20.22.5.2" name="USRealmAddressADUSFIELDED" displayName="US Realm Address (AD.US.FIELDED)" effectiveDate="2015-08-13T00:00:00" statusCode="draft" versionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-" sdtc:dummy-1="urn:hl7-org:sdtc" local:dummy-2="http://art-decor.org/local" xml:dummy-3="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-5="urn:hl7-org:v3" xsi:dummy-6="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">Reusable address template, for use in US Realm CDA Header.</desc>
+            <classification type="datatypelevel" format="hl7v3xml1"/>
+            <element name="cda:addr" id="2.16.840.1.113883.3.1937.99.3.9.5873">
+                <attribute name="nullFlavor" datatype="cs" isOptional="true" id="2.16.840.1.113883.3.1937.99.3.9.5874"/>
+                <attribute name="use" datatype="set_cs" isOptional="true" id="2.16.840.1.113883.3.1937.99.3.9.2373">
+                    <desc language="en-US">SHOULD contain zero or one [0..1] @use, which SHALL be selected from ValueSet PostalAddressUse urn:oid:2.16.840.1.113883.1.11.10637 STATIC 2005-05-01 (CONF:81-7290).</desc>
+                    <item label="CONF:81-7290"/>
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.10637" flexibility="dynamic"/>
+                </attribute>
+                <constraint language="en-US">*SHALL NOT* have mixed content except for white space</constraint>
+                <element name="cda:country" datatype="ADXP" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.2374">
+                    <desc language="en-US">SHOULD contain zero or one [0..1] country, which SHALL be selected from ValueSet Country urn:oid:2.16.840.1.113883.3.88.12.80.63 DYNAMIC (CONF:81-7295).</desc>
+                    <item label="CONF:81-7295"/>
+                    <vocabulary valueSet="2.16.840.1.113883.3.88.12.80.63"/>
+                </element>
+                <element name="cda:state" datatype="ADXP" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.2375">
+                    <desc language="en-US">SHOULD contain zero or one [0..1] state (ValueSet: StateValueSet urn:oid:2.16.840.1.113883.3.88.12.80.1 DYNAMIC) (CONF:81-7293).</desc>
+                    <item label="CONF:81-7293">
+                        <desc language="en-US">
+                    <span style="text-indent: -24px; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &#34;Times New Roman&#34;;"> </span>
+                    <span style="text-indent: -24px;">If the country is US, the state element is required but</span>
+                    <span class="keyword" style="text-indent: -24px;">
+                        <span style="font-size: 8pt;"> SHOULD </span>
+                    </span>
+                    <span style="text-indent: -24px;">have @nullFlavor if the state is unknown. If country is not specified, it's assumed to be US. If country is something other than US, the state</span>
+                    <span class="keyword" style="text-indent: -24px;">
+                        <span style="font-size: 8pt;"> MAY </span>
+                    </span>
+                    <span style="text-indent: -24px;">be present but</span>
+                    <span class="keyword" style="text-indent: -24px;">
+                        <span style="font-size: 8pt;"> MAY </span>
+                    </span>
+                    <span style="text-indent: -24px;">be bound to different vocabularies (CONF:81-10024).</span>
+                    <br clear="none"/>
+                </desc>
+                    </item>
+                    <vocabulary valueSet="2.16.840.1.113883.3.88.12.80.1"/>
+                    <constraint language="en-US">State is required if the country is US. If country is not specified, it's assumed to be US. If country is something other than US, the state MAY be present but MAY be bound to different vocabularies <span style="font-size:10.0pt;mso-bidi-font-size:12.0pt; font-family:&#34;Bookman Old Style&#34;,serif;mso-fareast-font-family:&#34;Times New Roman&#34;; mso-bidi-font-family:&#34;Times New Roman&#34;;mso-ansi-language:EN-US;mso-fareast-language: EN-US;mso-bidi-language:AR-SA">(CONF:81-10024).</span>
+                <br clear="none"/>
+            </constraint>
+                </element>
+                <constraint language="en-US">If the country is US, the state element is required but SHOULD have @nullFlavor if the state is unknown. If country is not specified, it's assumed to be US. If country is something other than US, the state MAY be present but MAY be bound to different vocabularies (CONF:81-10024).</constraint>
+                <assert role="error" test="@nullFlavor or (cda:country='US' and cda:state) or (cda:country!='US') or (not(cda:country) and cda:state)">State is required if the country is US. If country is not specified, it's assumed to be US. If country is something other than US, the state MAY be present but MAY be bound to different vocabularies.</assert>
+                <element name="cda:city" datatype="ADXP" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.2376">
+                    <desc language="en-US">SHALL contain exactly one [1..1] city (CONF:81-7292).</desc>
+                    <item label="CONF:81-7292"/>
+                </element>
+                <element name="cda:postalCode" datatype="ADXP" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.2377">
+                    <desc language="en-US">SHOULD contain zero or one [0..1] postalCode, which SHOULD be selected from ValueSet PostalCode urn:oid:2.16.840.1.113883.3.88.12.80.2 DYNAMIC (CONF:81-7294). <br clear="none"/>
+            </desc>
+                    <item label="CONF:81-7294"/>
+                    <vocabulary valueSet="2.16.840.1.113883.3.88.12.80.2"/>
+                    <constraint language="en-US">If the country is US, the postalCode element is required but SHOULD have @nullFlavor if the postalCode is unknown. If country is not specified, it's assumed to be US. If country is something other than US, the postalCode MAY be present but MAY be bound to different vocabularies (CONF:81-10025).<br clear="none"/>
+            </constraint>
+                    <assert role="error" test="@nullFlavor or (cda:country='US' and cda:postalCode) or (cda:country!='US') or (not(cda:country) and cda:postalCode)">If the country is US, the postalCode element is required but SHOULD have @nullFlavor if the postalCode is unknown. If country is not specified, it's assumed to be US. If country is something other than US, the postalCode MAY be present
+                        but MAY be bound to different vocabularies (CONF:81-10025).</assert>
+                </element>
+                <element name="cda:streetAddressLine" datatype="ADXP" minimumMultiplicity="1" maximumMultiplicity="4" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.2378">
+                    <item label="CONF:81-7291">
+                        <desc language="en-US">
+                    <span style="font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px;">SHALL contain at least one and not more than 4 streetAddressLine (CONF:81-7291)</span>
+                    <br clear="none"/>
+                </desc>
+                    </item>
+                </element>
+                <assert role="error" test="@nullFlavor or (count(cda:streetAddressLine) &gt; 0 and count(cda:streetAddressLine) &lt; 5)">SHALL contain at least one and not more than 4 streetAddressLine (CONF:81-7291)</assert>
+                <assert role="error" test="@nullFlavor or (cda:city and cda:streetAddressLine) "/>
+            </element>
+        </template>

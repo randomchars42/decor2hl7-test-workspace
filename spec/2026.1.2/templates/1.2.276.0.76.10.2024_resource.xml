@@ -1,0 +1,90 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.2024" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pharm="urn:ihe:pharm" id="1.2.276.0.76.10.2024" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="CDA participant Weitere Beteiligte" cda:dummy-4="urn:hl7-org:v3" ident="hl7de-" name="HeaderParticipant" xml:dummy-2="http://www.w3.org/XML/1998/namespace" pharm:dummy-1="urn:ihe:pharm" statusCode="active" url="http://art-decor.org/decor/services/" effectiveDate="2014-08-25T00:00:00">
+            <desc language="de-DE">Weitere Beteiligte: Mit dieser Assoziation und den entsprechenden Klassen können weitere für die Dokumentation wichtige beteiligte Personen oder Organisationen wie Angehörige, Verwandte, Versicherungsträger sowie weitere in Beziehung zum Patienten stehende Parteien genannt werden. Hier können auch Leistungserbringer und andere Personen oder Organisationen geführt
+                werden, die für die weitere Behandlung des Patienten relevant sein können</desc>
+            <classification type="cdaheaderlevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.108" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.108" tmname="CDAparticipant" tmdisplayName="CDA participant" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <element name="hl7:participant" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.2.6.77.9.501">
+                <item original="false" label="HeaderParticipant"/>
+                <attribute name="typeCode" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.77.9.502">
+                    <desc language="de-DE">Typischerweise sind hier nur Codes für @typeCode zu verwenden, die nicht durch eine bereits existierende spezialisierte Participantion ausgedrückt werden wie z. B. author, authenticator etc.; es sind nicht alle Kombinationen von @typeCode, functionCode und associatedEntity/code sinnvoll.</desc>
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.10901" flexibility="dynamic" vsid="2.16.840.1.113883.1.11.10901" vsname="ParticipationType" vsdisplayName="ParticipationType" vseffectiveDate="2014-03-26T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1360-20160323" linkedartefactmissing="false"/>
+                </attribute>
+                <attribute name="contextControlCode" value="OP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.77.9.503"/>
+                <element name="hl7:functionCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.2.6.77.9.504">
+                    <item original="false" label="HeaderParticipant"/>
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.10267" flexibility="dynamic" vsid="2.16.840.1.113883.1.11.10267" vsname="ParticipationFunction" vsdisplayName="ParticipationFunction" vsstatusCode="final" vseffectiveDate="2016-06-23T00:00:00" linkedartefactmissing="false"/>
+                </element>
+                <element name="hl7:time" minimumMultiplicity="0" maximumMultiplicity="1" datatype="IVL_TS" id="2.16.840.1.113883.2.6.77.9.505">
+                    <item original="false" label="HeaderParticipant"/>
+                </element>
+                <element name="hl7:associatedEntity" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.77.9.506">
+                    <item original="false" label="HeaderParticipant"/>
+                    <attribute name="classCode" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.77.9.507">
+                        <vocabulary valueSet="2.16.840.1.113883.1.11.19313" flexibility="dynamic" vsid="2.16.840.1.113883.1.11.19313" vsname="RoleClassAssociative" vsdisplayName="RoleClassAssociative" vseffectiveDate="2014-03-26T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1360-20160323" linkedartefactmissing="false"/>
+                    </attribute>
+                    <element name="hl7:id" minimumMultiplicity="0" maximumMultiplicity="*" datatype="II" id="2.16.840.1.113883.2.6.77.9.508">
+                        <item original="false" label="HeaderParticipant"/>
+                    </element>
+                    <element name="hl7:code" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.2.6.77.9.509">
+                        <item original="false" label="HeaderParticipant"/>
+                        <vocabulary codeSystem="2.16.840.1.113883.5.111"/>
+                    </element>
+                    <element name="hl7:addr" minimumMultiplicity="0" maximumMultiplicity="*" datatype="AD" id="2.16.840.1.113883.2.6.77.9.510">
+                        <item original="false" label="HeaderParticipant"/>
+                    </element>
+                    <element name="hl7:telecom" minimumMultiplicity="0" maximumMultiplicity="*" datatype="TEL" id="2.16.840.1.113883.2.6.77.9.511">
+                        <item original="false" label="HeaderParticipant"/>
+                    </element>
+                    <element name="hl7:associatedPerson" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.512">
+                        <item original="false" label="HeaderParticipant"/>
+                        <include ref="1.2.276.0.76.10.90010" tmid="1.2.276.0.76.10.90010" tmname="PersonElements" tmdisplayName="CDA Person Elements" tmeffectiveDate="2011-12-19T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                            <item original="false" label="HeaderParticipant"/>
+                            <attribute name="classCode" value="PSN" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.330"/>
+                            <attribute name="determinerCode" value="INSTANCE" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.331"/>
+                            <element name="hl7:name" datatype="PN" id="2.16.840.1.113883.2.6.77.9.332" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                                <item original="false" label="PersonElements"/>
+                            </element>
+                            <staticAssociations/>
+                        </include>
+                    </element>
+                    <element name="hl7:scopingOrganization" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.513">
+                        <item original="false" label="HeaderParticipant"/>
+                        <include ref="1.2.276.0.76.10.90011" tmid="1.2.276.0.76.10.90011" tmname="OrganizationElements" tmdisplayName="CDA Organization Elements" tmeffectiveDate="2011-12-19T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                            <item original="false" label="HeaderParticipant"/>
+                            <attribute name="classCode" value="ORG" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.333"/>
+                            <attribute name="determinerCode" value="INSTANCE" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.334"/>
+                            <element name="hl7:id" datatype="II" id="2.16.840.1.113883.2.6.77.9.335" minimumMultiplicity="0" maximumMultiplicity="*">
+                                <item original="false" label="OrganizationElements"/>
+                            </element>
+                            <element name="hl7:name" datatype="ON" id="2.16.840.1.113883.2.6.77.9.336" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                                <item original="false" label="OrganizationElements"/>
+                            </element>
+                            <element name="hl7:telecom" datatype="TEL" id="2.16.840.1.113883.2.6.77.9.337" minimumMultiplicity="0" maximumMultiplicity="*">
+                                <item original="false" label="OrganizationElements"/>
+                            </element>
+                            <element name="hl7:addr" datatype="AD" id="2.16.840.1.113883.2.6.77.9.338" minimumMultiplicity="0" maximumMultiplicity="1">
+                                <item original="false" label="OrganizationElements"/>
+                            </element>
+                            <staticAssociations/>
+                        </include>
+                    </element>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="include" prefix="abde-" flexibility="dynamic" id="1.2.276.0.76.10.1013" name="Arztbrief" displayName="Arztbrief 2014/2015" effectiveDate="2014-08-25T00:00:00" statusCode="draft" versionLabel="v2.02" ident="abde-"/>
+            <ref type="include" prefix="abde-" flexibility="dynamic" id="1.2.276.0.76.10.1020" name="Arztbrief30" displayName="Arztbrief Plus" effectiveDate="2017-02-01T00:00:00" statusCode="draft" versionLabel="v3.00" ident="abde-"/>
+            <ref type="include" prefix="elmgmt-" flexibility="dynamic" id="1.2.276.0.76.10.1026" name="EntlassmanagementBrief" displayName="Entlassmanagement Brief" effectiveDate="2017-07-13T00:00:00" statusCode="draft" versionLabel="v1.1" ident="elmgmt-"/>
+            <ref type="include" prefix="teleneps-" flexibility="dynamic" id="1.2.276.0.76.10.1033" name="Arztbrieftelenepsambulant" displayName="Arztbrief Psychotraumatologie ambulant/stationär" effectiveDate="2019-06-02T00:00:00" statusCode="retired" versionLabel="v1.0" ident="teleneps-"/>
+            <ref type="include" prefix="teleneps-" flexibility="dynamic" id="1.2.276.0.76.10.1033" name="Arztbrieftelenepsambulant" displayName="Arztbrief Psychotraumatologie ambulant/stationär" effectiveDate="2020-12-18T00:00:00" statusCode="draft" versionLabel="v2.0" ident="teleneps-"/>
+            <ref type="include" prefix="einwde-" flexibility="dynamic" id="1.2.276.0.76.10.1034" name="eEinweisungsbrief" displayName="eEinweisungsbrief" effectiveDate="2020-06-18T00:00:00" statusCode="draft" versionLabel="v1.0" ident="einwde-"/>
+            <uses type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.90010" name="PersonElements" displayName="CDA Person Elements" statusCode="active" effectiveDate="2011-12-19T00:00:00" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+            <uses type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.90011" name="OrganizationElements" displayName="CDA Organization Elements" statusCode="active" effectiveDate="2011-12-19T00:00:00" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+            <ref type="include" prefix="genea-" flexibility="dynamic" id="2.16.840.1.113883.2.6.60.13.10.1" name="GenetischerBefundbericht" displayName="Genetischer Befundbericht" effectiveDate="2018-08-09T17:52:59" statusCode="draft" ident="genea-"/>
+            <ref type="include" prefix="epflb-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.34.10.1" name="Pflegebericht" displayName="Patientenbezogener pflegerischer Verlegungs- oder Entlassungsbericht 2017/2018" statusCode="active" versionLabel="1.0" effectiveDate="2017-09-21T11:31:42" ident="epflb-"/>
+            <ref type="include" prefix="epflb-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.34.10.28" name="Pflegebericht_Entlassung" displayName="PflegerischerEntlassungsbericht" statusCode="cancelled" versionLabel="v1" effectiveDate="2018-04-18T14:01:46" ident="epflb-"/>
+            <ref type="include" prefix="ewundb-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.36.10.2" name="eWundbericht" displayName="eWundbericht" effectiveDate="2019-05-27T07:26:53" statusCode="draft" versionLabel="0.9" ident="ewundb-"/>
+        </template>
+    </template>
+</result>

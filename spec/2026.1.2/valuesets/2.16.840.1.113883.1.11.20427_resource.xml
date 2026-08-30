@@ -1,0 +1,35 @@
+<valueSets>
+    <repository url="http://art-decor.org/decor/services/" ident="ad2bbr-" referencedFrom="ch-pcc-" projecttype="local">
+        <valueSet id="2.16.840.1.113883.1.11.20427" name="ActUSPrivacyLaw" displayName="ActUSPrivacyLaw" effectiveDate="2014-03-26T00:00:00" statusCode="deprecated" versionLabel="1357-20160312" expirationDate="2014-03-26T00:00:00">
+            <desc language="en-US">
+                <p>
+                    <b>History description 2014-03-26: </b>Lock all vaue sets untouched since 2014-03-26 to trackingId 2014T1_2014_03_26</p>
+                <b>description: </b>
+                <p>
+                    <b>
+                        <i>Deprecation Comment:</i>
+                    </b> Content moved to ActCode, and is now represented in value set ActPrivacyLaw.</p>
+            </desc>
+            <sourceCodeSystem id="2.16.840.1.113883.5.1138" identifierName="ActUSPrivacyLaw" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-ActUSPrivacyLaw" canonicalUriDSTU2="http://hl7.org/fhir/v3/ActUSPrivacyLaw" canonicalUriSTU3="http://hl7.org/fhir/v3/ActUSPrivacyLaw" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-ActUSPrivacyLaw" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-ActUSPrivacyLaw" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-ActUSPrivacyLaw" context="external/hl7intl/v3/v3-ActUSPrivacyLaw"/>
+            <publishingAuthority name="HL7" inherited="project">
+                <addrLine>Health Level Seven International</addrLine>
+                <addrLine>455 E. Eisenhower PKWY STE 300 # 025</addrLine>
+                <addrLine>Ann Arbor, MI 48108</addrLine>
+                <addrLine>USA</addrLine>
+                <addrLine>T +1 734 677 7777</addrLine>
+                <addrLine>F +1 734 677 6622</addrLine>
+                <addrLine>E info@hl7.org</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <concept code="_ActUSPrivacyLaw" codeSystem="2.16.840.1.113883.5.1138" displayName="ActUSPrivacyLaw" level="0" type="S"/>
+                <concept code="42CFRPart2" codeSystem="2.16.840.1.113883.5.1138" displayName="42 CFR Part2" level="1" type="L"/>
+                <concept code="CommonRule" codeSystem="2.16.840.1.113883.5.1138" displayName="Common Rule" level="1" type="L"/>
+                <concept code="HIPAANOPP" codeSystem="2.16.840.1.113883.5.1138" displayName="HIPAA notice of privacy practices" level="1" type="L"/>
+                <concept code="HIPAAPsyNotes" codeSystem="2.16.840.1.113883.5.1138" displayName="HIPAA psychotherapy notes" level="1" type="L"/>
+                <concept code="HIPAASelfPay" codeSystem="2.16.840.1.113883.5.1138" displayName="HIPAA self-pay" level="1" type="L"/>
+                <concept code="Title38Section7332" codeSystem="2.16.840.1.113883.5.1138" displayName="Title 38 Section 7332" level="1" type="L"/>
+                <concept code="Title38Part1" codeSystem="2.16.840.1.113883.5.1138" displayName="Title 38 Section 7332" level="1" type="D"/>
+            </conceptList>
+        </valueSet>
+    </repository>
+</valueSets>

@@ -1,0 +1,21 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.2.6.60.6.1.1" effectiveDate="2015-06-18T18:17:24" statusCode="draft" versionLabel="2.0" prefix="psr-" shortName="" iddisplay="psr-dataset-1" url="http://art-decor.org/decor/services/" ident="psr-"><!--
+ This is a view of the dataset "" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE"/>
+    <desc language="de-DE"/>
+    <concept id="2.16.840.1.113883.2.6.60.6.2.26" statusCode="draft" effectiveDate="2015-06-23T09:59:36" type="item" iddisplay="psr-dataelement-26">
+        <implementation markdown="Symbol for TNM:Is this tumor recurring from a previous disease.."/>
+        <name language="de-DE" lastTranslated="2017-06-30T17:48:23">Rezidiv</name>
+        <desc language="de-DE" lastTranslated="2017-06-30T17:48:41">Tumorformel nach Rezidiv einer Tumorerkrankung</desc>
+        <valueDomain type="code">
+            <conceptList id="2.16.840.1.113883.2.6.60.6.2.26.20150623095936.0"/>
+            <property fixed="r"/>
+        </valueDomain>
+        <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.26" code="277647002" codeSystem="2.16.840.1.113883.6.96" displayName="r - Tumor recurrence (tumor staging)" effectiveDate="2017-02-26T14:38:48" codeSystemName="SNOMED Clinical Terms"/>
+        <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.26" code="r" codeSystem="2.16.840.1.113883.15.6" displayName="r" effectiveDate="2017-03-20T10:21:49" codeSystemName="TNM Edition7 UICC"/>
+        <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.26" code="r" codeSystem="2.16.840.1.113883.15.7" displayName="r" effectiveDate="2017-03-20T10:22:09" codeSystemName="TNM Edition6 UICC"/>
+        <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.26" code="r" codeSystem="2.16.840.1.113883.15.8" displayName="r" effectiveDate="2017-03-20T10:22:26" codeSystemName="TNM Edition5 UICC"/>
+    </concept>
+</dataset>

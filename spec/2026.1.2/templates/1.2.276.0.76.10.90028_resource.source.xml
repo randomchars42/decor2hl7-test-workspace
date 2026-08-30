@@ -1,0 +1,45 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:ukfc="http://fhir.hl7.de/ukfc" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.90028" name="MedicationPrecondition" displayName="Medikation Vorbedingung" effectiveDate="2017-06-04T00:00:00" statusCode="draft" url="http://art-decor.org/decor/services/" ident="pmp-" ukfc:dummy-1="http://fhir.hl7.de/ukfc" sdtc:dummy-2="urn:hl7-org:sdtc" xhtml:dummy-3="http://www.w3.org/1999/xhtml" pharm:dummy-4="urn:hl7-org:pharm" xml:dummy-5="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-7="urn:hl7-org:v3" xsi:dummy-8="http://www.w3.org/2001/XMLSchema-instance">
+    <desc language="de-DE">Medikation Vorbedingung (codiert oder nur Text)</desc>
+    <classification type="cdaentrylevel"/>
+    <relationship type="SPEC" template="2.16.840.1.113883.10.12.329" flexibility="2005-09-07T00:00:00"/>
+    <example caption="Vorbedingung 'bei Bedarf'">
+        <precondition>
+            <criterion>
+                <code code="PRN" codeSystem="2.16.840.1.113883.5.4" displayName="bei Bedarf"/>
+                <text>
+                    <reference value="#prec-1"/>
+                </text>
+            </criterion>
+        </precondition>
+    </example>
+    <example caption="Vorbedingung (ohne Code, nur Text)">
+        <precondition>
+            <criterion>
+                <code nullFlavor="OTH">
+                    <originalText>bei Sonnenaufgang</originalText>
+                </code>
+                <text>
+                    <reference value="#prec-1"/>
+                </text>
+            </criterion>
+        </precondition>
+    </example>
+    <element name="hl7:precondition" id="2.16.840.1.113883.2.6.60.4.9.718">
+        <attribute name="typeCode" value="PRCN" datatype="cs" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.711"/>
+        <element name="hl7:criterion" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.1.9.712">
+            <attribute name="classCode" value="OBS" datatype="cs" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.713"/>
+            <attribute name="moodCode" value="EVN.CRT" datatype="cs" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.714"/>
+            <element name="hl7:code" datatype="CD" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.1.9.715">
+                <vocabulary valueSet="1.2.276.0.76.11.453"/>
+                <element name="hl7:originalText" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.719"/>
+            </element>
+            <element name="hl7:text" datatype="ED" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.1.9.716">
+                <element name="hl7:reference" minimumMultiplicity="1" maximumMultiplicity="1" datatype="TEL" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.717">
+                    <attribute name="value" id="2.16.840.1.113883.2.6.60.4.9.720">
+                        <desc language="de-DE">#prec-{generierteID}, z.B.: #prec-1</desc>
+                    </attribute>
+                </element>
+            </element>
+        </element>
+    </element>
+</template>

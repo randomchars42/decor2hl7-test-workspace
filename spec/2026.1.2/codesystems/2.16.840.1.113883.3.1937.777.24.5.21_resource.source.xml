@@ -1,0 +1,23 @@
+<codeSystem xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.777.24.5.21" name="MII_Oncology_ASA-Klassifikation" displayName="MII Onkologie: ASA-Klassifikation" effectiveDate="2023-08-08T16:26:15" statusCode="draft" lastModifiedDate="2023-08-08T16:27:17" language="de-DE" url="http://art-decor.org/decor/services/" ident="mide-">
+    <publishingAuthority json:array="true" name="Konsortium DIFUTURE" inherited="project">
+        <addrLine json:array="true" type="uri">https://difuture.de</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <conceptList json:array="true">
+        <codedConcept json:array="true" code="1" statusCode="draft" level="0" type="L">
+            <desc json:array="true" language="en-US" lastTranslated="2023-08-08T16:27:17">1 = normaler, ansonsten gesunder Patient</desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="2" statusCode="draft" level="0" type="L">
+            <desc json:array="true" language="en-US" lastTranslated="2023-08-08T16:27:17">2 2 = Patient mit leichter Allgemeinerkrankung</desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="3" statusCode="draft" level="0" type="L">
+            <desc json:array="true" language="en-US" lastTranslated="2023-08-08T16:27:17">3 = Patient mit schwerer Allgemeinerkrankung und Leistungseinschränkung</desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="4" statusCode="draft" level="0" type="L">
+            <desc json:array="true" language="en-US" lastTranslated="2023-08-08T16:27:17">4 = Patient mit inaktivierender Allgemeinerkrankung, ständige Lebensbedrohung</desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="5" statusCode="draft" level="0" type="L">
+            <desc json:array="true" language="en-US" lastTranslated="2023-08-08T16:27:17">5 = moribunder Patient</desc>
+        </codedConcept>
+    </conceptList>
+</codeSystem>

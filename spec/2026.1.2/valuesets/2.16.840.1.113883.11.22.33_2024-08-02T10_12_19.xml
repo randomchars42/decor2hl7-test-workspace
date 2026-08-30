@@ -1,0 +1,22 @@
+<valueSets>
+    <repository url="http://art-decor.org/decor/services/" ident="hl7ips-" referencedFrom="sxehealth-" projecttype="local">
+        <valueSet id="2.16.840.1.113883.11.22.33" name="IPSRouteOfAdmin" displayName="IPS Medicine Route of Administration" effectiveDate="2024-08-02T10:12:19" statusCode="draft" canonicalUri="http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration" lastModifiedDate="2024-08-02T10:13:10">
+            <desc language="en-US" lastTranslated="2024-08-02T10:12:19">
+                <p>EDQM (European Directorate for the Quality of Medicines and Healthcare) Route of Administration codes. This Value Set includes all the EDQM Standard Terms having:<br/>[Concept Status] = ‘Current’ AND<br/>[Concept Class] = ‘ROA’ AND<br/>[Domain] = ‘Human and Veterinary’</p>
+                <p>ROA = ‘Route of administration’</p>
+            </desc>
+            <sourceCodeSystem id="0.4.0.127.0.16.1.1.2.1" identifierName="EDQMde" canonicalUri="urn:oid:0.4.0.127.0.16.1.1.2.1" canonicalUriDSTU2="http://fhir.de/CodeSystem/edqm" canonicalUriSTU3="http://fhir.de/CodeSystem/edqm" canonicalUriR4="http://fhir.de/CodeSystem/edqm" canonicalUriR4B="http://fhir.de/CodeSystem/edqm" canonicalUriR5="http://fhir.de/CodeSystem/edqm"/>
+            <publishingAuthority name="HL7 International" inherited="project">
+                <addrLine>Health Level Seven International</addrLine>
+                <addrLine>455 E. Eisenhower PKWY STE 300 # 025</addrLine>
+                <addrLine>Ann Arbor, MI 48108 USA</addrLine>
+                <addrLine>USA</addrLine>
+                <addrLine type="phone">+1 734 677 7777 </addrLine>
+                <addrLine type="email">info@hl7.org</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <include codeSystem="0.4.0.127.0.16.1.1.2.1"/>
+            </conceptList>
+        </valueSet>
+    </repository>
+</valueSets>

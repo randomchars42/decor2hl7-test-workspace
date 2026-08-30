@@ -1,0 +1,51 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:ukfc="http://fhir.hl7.de/ukfc" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.90023" name="Einnahmedauer" displayName="Einnahmedauer" effectiveDate="2017-06-04T00:00:00" statusCode="draft" url="http://art-decor.org/decor/services/" ident="pmp-" ukfc:dummy-1="http://fhir.hl7.de/ukfc" sdtc:dummy-2="urn:hl7-org:sdtc" xhtml:dummy-3="http://www.w3.org/1999/xhtml" pharm:dummy-4="urn:hl7-org:pharm" xml:dummy-5="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-7="urn:hl7-org:v3" xsi:dummy-8="http://www.w3.org/2001/XMLSchema-instance">
+    <desc language="en-US"/>
+    <desc language="de-DE"/>
+    <classification type="cdaentrylevel"/>
+    <relationship type="ADAPT" template="1.2.276.0.76.10.90023" flexibility="2011-12-19T00:00:00"/>
+    <choice maximumMultiplicity="1">
+        <element name="hl7:effectiveTime[hl7:low|hl7:high]" datatype="IVL_TS" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.2.6.60.4.9.266">
+            <desc language="de-DE">Zeitelement zur Dokumentation der Einnahmedauer, hier spezifisches Interval von bis</desc>
+            <example caption="Intervall bekannt">
+                <effectiveTime xsi:type="IVL_TS">
+    <low value="20130321"/>
+    <high value="20140321"/>
+</effectiveTime>
+            </example>
+            <example caption="unbekanntes Ende-Datum">
+                <effectiveTime xsi:type="IVL_TS">
+    <low value="20130321"/>
+    <high nullFlavor="UNK"/>
+</effectiveTime>
+            </example>
+            <example caption="Dauermedikation">
+                <effectiveTime xsi:type="IVL_TS">
+    <low value="20130321"/>
+    <high nullFlavor="NA"/>
+</effectiveTime>
+            </example>
+            <attribute name="xsi:type" value="IVL_TS" isOptional="true" id="2.16.840.1.113883.2.6.60.4.9.887"/>
+            <element name="hl7:low" datatype="TS.DATE.MIN" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.267"/>
+            <element name="hl7:high" datatype="TS.DATE.MIN" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.268"/>
+        </element>
+        <element name="hl7:effectiveTime[hl7:width]" datatype="IVL_TS" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.2.6.60.4.9.269">
+            <desc language="de-DE">Zeitelement zur Dokumentation der Einnahmedauer, hier Dauer</desc>
+            <example caption="Einnahme für zwei Wochen">
+                <effectiveTime xsi:type="IVL_TS">
+    <width value="2" unit="wk"/>
+</effectiveTime>
+            </example>
+            <element name="hl7:width" datatype="PQ" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.270">
+                <attribute name="unit" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.271">
+                    <vocabulary valueSet="1.2.276.0.76.11.452"/>
+                </attribute>
+            </element>
+        </element>
+        <element name="hl7:effectiveTime[@nullFlavor='NI']" datatype="TS" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.2.6.60.4.9.854">
+            <example caption="Keine Informationen über die Einnahmedauer">
+                <effectiveTime nullFlavor="NI"/>
+            </example>
+            <attribute name="nullFlavor" value="NI" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.855"/>
+        </element>
+    </choice>
+</template>

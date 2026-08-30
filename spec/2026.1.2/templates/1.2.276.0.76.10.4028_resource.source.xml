@@ -1,0 +1,45 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:ukfc="http://fhir.hl7.de/ukfc" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.4028" name="RelatedPrescription" displayName="Bezug zu Verordnung des Medikaments" effectiveDate="2014-12-21T00:00:00" statusCode="draft" url="http://art-decor.org/decor/services/" ident="pmp-" ukfc:dummy-1="http://fhir.hl7.de/ukfc" sdtc:dummy-2="urn:hl7-org:sdtc" xhtml:dummy-3="http://www.w3.org/1999/xhtml" pharm:dummy-4="urn:hl7-org:pharm" xml:dummy-5="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-7="urn:hl7-org:v3" xsi:dummy-8="http://www.w3.org/2001/XMLSchema-instance">
+    <desc language="de-DE">Bezug zur zugehörigen Verordnung</desc>
+    <classification type="cdaentrylevel"/>
+    <relationship type="SPEC" template="2.16.840.1.113883.10.12.308" flexibility="2005-09-07T00:00:00"/>
+    <context id="**"/>
+    <item label="relprepmp"/>
+    <element name="hl7:substanceAdministration" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.735">
+        <example caption="Bezug zur zugehörigen Verordnung (id)">
+            <substanceAdministration classCode="SBADM" moodCode="INT">
+                <templateId root="1.2.276.0.76.10.4028"/>
+                <id extension="605d8dba-894b-4d09-84b1-f75b5ae8bc8f" root="1.2.276.0.76.3.1.10652.1.9"/>
+                <consumable>
+                    <manufacturedProduct>
+                        <manufacturedMaterial nullFlavor="NA"/>
+                    </manufacturedProduct>
+                </consumable>
+            </substanceAdministration>
+        </example>
+        <attribute name="classCode" value="SBADM" id="2.16.840.1.113883.2.6.60.4.9.736"/>
+        <attribute name="moodCode" value="INT" id="2.16.840.1.113883.2.6.60.4.9.737"/>
+                <!-- Element templateId -->
+        <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="II" id="2.16.840.1.113883.2.6.60.4.9.738">
+            <attribute name="root" value="1.2.276.0.76.10.4028" id="2.16.840.1.113883.2.6.60.4.9.739"/>
+        </element>
+                <!-- Element id -->
+        <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="II" id="2.16.840.1.113883.2.6.60.4.9.740">
+            <attribute name="nullFlavor" value="NI" isOptional="true" id="2.16.840.1.113883.2.6.60.4.9.741">
+                <desc language="de-DE">Wenn keine zugehörige Verordnung bekannt ist, kann @nullFlavor="NI" angegeben werden</desc>
+            </attribute>
+        </element>
+                <!-- Element consumable -->
+        <element name="hl7:consumable" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.742">
+            <element name="hl7:manufacturedProduct" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.743">
+                <element name="hl7:manufacturedMaterial" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.4.9.744">
+                    <attribute name="nullFlavor" value="NA" id="2.16.840.1.113883.2.6.60.4.9.745"/>
+                </element>
+            </element>
+        </element>
+                <!-- author -->
+        <element name="hl7:author" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.4.9.746">
+            <desc language="de-DE">Verordnender Gesundheitsdienstleister, falls bekannt</desc>
+            <include ref="1.2.276.0.76.10.90025"/>
+        </element>
+    </element>
+</template>

@@ -1,0 +1,22 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultLanguage="de-DE" id="1.2.276.0.76.3.1.195.10.64" name="medikamentose-therapie" displayName="Medikamentöse Therapie" effectiveDate="2024-08-14T18:02:56" statusCode="draft" isClosed="false" lastModifiedDate="2024-08-14T18:02:56" url="http://art-decor.org/decor/services/" ident="aktin-" xml:dummy-1="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-3="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance">
+    <desc language="de-DE" lastTranslated="2024-08-14T18:02:56">Informationen zur medikamentösen Therapie</desc>
+    <classification type="cdasectionlevel"/>
+    <relationship type="SPEC" template="1.2.276.0.76.10.3030" flexibility="2017-02-01T00:00:00" tmid="1.2.276.0.76.10.3030" tmname="Medicationduringstaysection" tmdisplayName="Verabreichte Medikation während des Aufenthalts" tmeffectiveDate="2017-02-01T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+    <relationship type="SPEC" template="2.16.840.1.113883.10.12.201" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.201" tmname="CDASection" tmdisplayName="CDA Section" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-"/>
+    <element name="hl7:section" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.2.6.77.9.592">
+                <element name="hl7:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.77.9.593">
+                    <attribute name="root" value="1.2.276.0.76.3.1.195.10.64" datatype="uid" id="2.16.840.1.113883.2.6.77.9.594"/>
+                </element>
+                <element name="hl7:code" datatype="CE" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.595">
+                    <vocabulary code="29549-3" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:title" datatype="ST" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.596">
+                    <text>Informationen zur medikamentösen Therapie</text>
+                </element>
+                <element name="hl7:text" datatype="SD.TEXT" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.597"/>
+                <element name="hl7:entry" contains="1.2.276.0.76.3.1.195.10.67" minimumMultiplicity="0" maximumMultiplicity="*">
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs"/>
+                    <attribute name="contextConductionInd" isOptional="true" datatype="bl" value="true"/>
+                </element>
+            </element>
+</template>

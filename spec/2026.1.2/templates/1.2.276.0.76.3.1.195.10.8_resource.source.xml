@@ -1,0 +1,58 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.3.1.195.10.8" name="alter" displayName="Alter des Patienten" effectiveDate="2024-08-13T10:50:15" statusCode="draft" lastModifiedDate="2024-11-18T16:10:10" url="http://art-decor.org/decor/services/" ident="aktin-" xml:dummy-1="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-3="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="de-DE" lastTranslated="2024-08-13T10:50:15">
+        <p>Alter des Patienten bei Stichtag, hier bei Aufnahme, berechnet (keine Benutzereingabe).</p>
+                <p>Das Alter in Jahren ist in value Type PQ immer anzugeben, ebenso als value Typ CE in Kategorien.</p>
+                <p>Das Alter in Tagen ist zusätzlich anzugeben bei Alter bis 120 Tage bzw. in Monaten bei Alter über 120 Tage and bis 2 Jahre.</p>
+    </desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00"/>
+            <context id="**"/>
+            <element name="hl7:observation" id="2.16.840.1.113883.2.6.60.3.9.16185">
+                <attribute name="classCode" value="OBS" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.16186"/>
+                <attribute name="moodCode" value="EVN" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.16187"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.16188">
+                    <attribute name="root" value="1.2.276.0.76.3.1.195.10.8" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.16189"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.16190">
+                    <vocabulary code="424144002" codeSystem="2.16.840.1.113883.6.96" displayName="Current chronological age (observable entity)"/>
+                </element>
+                <element name="hl7:text" datatype="ED" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.16191">
+                    <desc language="de-DE" lastTranslated="2024-08-13T10:50:15">Lediglich reference in den Text der zugehörigen Section</desc>
+                    <element name="hl7:reference" datatype="TEL" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.16192"/>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.16193">
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:effectiveTime" datatype="TS" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.16194">
+                    <desc language="de-DE" lastTranslated="2024-08-13T10:50:15">Zeitpunkt der Altersbestimmung</desc>
+                </element>
+                <element name="hl7:value[@xsi:type='PQ']" datatype="PQ" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.16195">
+                    <desc language="de-DE" lastTranslated="2024-08-13T10:57:40">
+                <p>Automatische Berechnung durch Aufnahmedatum minus Geburtsdatum = Alter, keine Benutzereingabe.</p>
+                        <p>Das Alter in Jahren (Einheit y) ist in value Type PQ <strong>immer anzugeben</strong>, ebenso als value Typ CE in Kategorien.</p>
+                        <p>Das Alter in Tagen ist zusätzlich als <code>translation</code> anzugeben bei Alter bis 120 Tage.</p>
+                        <p>Das Alter in Monaten ist zusätzlich als <code>translation</code> anzugeben bei Alter über 120 Tage and bis 2 Jahre</p>
+            </desc>
+                    <example type="neutral">
+                        <value value="0" unit="y">
+                            <translation value="96" unit="d"/>
+                        </value>
+                    </example>
+                    <example type="neutral">
+                        <value value="1" unit="y">
+                            <translation value="21" unit="mo"/>
+                        </value>
+                    </example>
+                    <example type="neutral">
+                        <value value="37" unit="y"/>
+                    </example>
+                    <element name="hl7:translation" datatype="PQR" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.19195"/>
+                </element>
+                <element name="hl7:value[@xsi:type='CE']" datatype="CE" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.19196">
+                    <example type="neutral">
+                <value code="35-39" codeSystem="1.2.276.0.76.3.1.195.5.100" displayName="35-39 Jahre"/>
+            </example>
+                    <vocabulary valueSet="1.2.276.0.76.3.1.195.11.9"/>
+                </element>
+            </element>
+        </template>

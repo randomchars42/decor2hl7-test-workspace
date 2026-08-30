@@ -1,0 +1,12 @@
+<valueSet xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.777.24.11.114" name="MREKlasse" displayName="MII MRE Klasse " effectiveDate="2022-11-22T16:59:08" statusCode="draft" lastModifiedDate="2023-03-27T11:28:30" url="http://art-decor.org/decor/services/" ident="mide-">
+    <sourceCodeSystem json:array="true" id="2.16.840.1.113883.6.96" identifierName="SNOMED Clinical Terms" canonicalUri="http://snomed.info/sct" canonicalUriDSTU2="http://snomed.info/sct" canonicalUriSTU3="http://snomed.info/sct" canonicalUriR4="http://snomed.info/sct" canonicalUriR4B="http://snomed.info/sct" canonicalUriR5="http://snomed.info/sct"/>
+    <sourceCodeSystem json:array="true" id="2.16.840.1.1138836.96" identifierName="" canonicalUri="urn:oid:2.16.840.1.1138836.96" canonicalUriDSTU2="urn:oid:2.16.840.1.1138836.96" canonicalUriSTU3="urn:oid:2.16.840.1.1138836.96" canonicalUriR4="urn:oid:2.16.840.1.1138836.96" canonicalUriR4B="urn:oid:2.16.840.1.1138836.96" canonicalUriR5="urn:oid:2.16.840.1.1138836.96"/>
+    <publishingAuthority json:array="true" name="Konsortium DIFUTURE" inherited="project">
+        <addrLine json:array="true" type="uri">https://difuture.de</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="include" code="409795000" codeSystem="2.16.840.1.1138836.96" displayName="Antimicrobial resistant virus (organism)" op="descendent-of" exception="false"/>
+    <items json:array="true" is="include" code="409794001" codeSystem="2.16.840.1.1138836.96" displayName="Antimicrobial resistant fungi (organism)" op="descendent-of" exception="false"/>
+    <items json:array="true" is="include" op="descendent-of" code="409793007" codeSystem="2.16.840.1.113883.6.96" displayName="Antimicrobial resistant bacteria (organism)"/>
+</valueSet>

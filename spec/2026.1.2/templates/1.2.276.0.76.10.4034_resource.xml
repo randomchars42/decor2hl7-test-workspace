@@ -1,0 +1,415 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.4034" ident="aktin-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.4034" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="Glasgow Coma Scale" ident="aktin-" name="GlasgowComaScale" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="active" url="http://art-decor.org/decor/services/" effectiveDate="2014-09-16T00:00:00">
+            <desc language="de-DE">Glasgow Coma Scale (GCS) als Summe und mit den drei Achsen Augenöffnen, verbale Antwort und motorische Antwort</desc>
+            <desc language="en-US">Glasgow Coma Scale (GCS)</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.303" tmname="CDAObservation" tmdisplayName="CDA Observation" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <example type="neutral">
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4034"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="98c1eb7e-dc2d-4d1f-806a-2ad65eba0351"/>
+                    <code code="9269-2" codeSystem="2.16.840.1.113883.6.1" displayName="Glasgow coma score total"/>
+                    <statusCode code="completed"/>
+                    <effectiveTime value="20141019"/>
+                    <value xsi:type="PQ" value="9" unit="{score}"/>
+                    <entryRelationship typeCode="COMP" contextConductionInd="true">
+                        <observation classCode="OBS" moodCode="EVN">
+                            <code code="9267-6" codeSystem="2.16.840.1.113883.6.1" displayName="Glasgow coma score eye opening"/>
+                            <statusCode code="completed"/>
+                            <value xsi:type="PQ" value="4" unit="{score}"/>
+                        </observation>
+                    </entryRelationship>
+                    <entryRelationship typeCode="COMP" contextConductionInd="true">
+                        <observation classCode="OBS" moodCode="EVN">
+                            <code code="9270-0" codeSystem="2.16.840.1.113883.6.1" displayName="Glasgow coma score verbal"/>
+                            <statusCode code="completed"/>
+                            <value xsi:type="PQ" value="3" unit="{score}"/>
+                        </observation>
+                    </entryRelationship>
+                    <entryRelationship typeCode="COMP" contextConductionInd="true">
+                        <observation classCode="OBS" moodCode="EVN">
+                            <code code="9268-4" codeSystem="2.16.840.1.113883.6.1" displayName="Glasgow coma score motor"/>
+                            <statusCode code="completed"/>
+                            <value xsi:type="PQ" value="2" unit="{score}"/>
+                        </observation>
+                    </entryRelationship>
+                </observation>
+            </example>
+            <element name="hl7:observation" id="2.16.840.1.113883.2.6.60.3.9.15">
+                <item original="false" label="GlasgowComaScale"/>
+                <attribute name="classCode" value="OBS" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631647"/>
+                <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631648"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631649">
+                    <item original="false" label="GlasgowComaScale"/>
+                    <attribute name="root" value="1.2.276.0.76.10.4034" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.1631650"/>
+                </element>
+                <element name="hl7:id" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1631651">
+                    <item original="false" label="GlasgowComaScale"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CE" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631652">
+                    <item original="false" label="GlasgowComaScale"/>
+                    <vocabulary code="9269-2" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.2.6.60.3.9.1631653">
+                    <desc language="de-DE">Lediglich reference in den Text der zugehörigen Section</desc>
+                    <item original="false" label="GlasgowComaScale"/>
+                    <element name="hl7:reference" minimumMultiplicity="1" maximumMultiplicity="1" datatype="URL" id="2.16.840.1.113883.2.6.60.3.9.1631654">
+                        <item original="false" label="GlasgowComaScale"/>
+                    </element>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CS" id="2.16.840.1.113883.2.6.60.3.9.1631655">
+                    <item original="false" label="GlasgowComaScale"/>
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:effectiveTime" minimumMultiplicity="0" maximumMultiplicity="1" datatype="TS" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1631656">
+                    <item original="false" label="GlasgowComaScale"/>
+                </element>
+                <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" datatype="PQ" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.16">
+                    <item original="false" label="GlasgowComaScale"/>
+                    <property minInclude="3" maxInclude="15">
+                        <item original="false" label="GlasgowComaScale"/>
+                    </property>
+                    <attribute name="value" isOptional="false" id="2.16.840.1.113883.2.6.60.3.9.1631657">
+                        <desc language="de-DE">Score</desc>
+                    </attribute>
+                    <attribute name="unit" value="{score}" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631658"/>
+                </element>
+                <element name="hl7:entryRelationship[hl7:observation/hl7:code/@code='9267-6']" minimumMultiplicity="0" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.2.6.60.3.9.1631659">
+                    <item original="false" label="GlasgowComaScale"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631660"/>
+                    <attribute name="contextConductionInd" value="true" isOptional="false" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1631661"/>
+                    <element name="hl7:observation" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631662">
+                        <item original="false" label="GlasgowComaScale"/>
+                        <attribute name="classCode" value="OBS" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631663"/>
+                        <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631664"/>
+                        <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CE" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631665">
+                            <item original="false" label="GlasgowComaScale"/>
+                            <vocabulary code="9267-6" codeSystem="2.16.840.1.113883.6.1"/>
+                        </element>
+                        <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CS" id="2.16.840.1.113883.2.6.60.3.9.1631666">
+                            <item original="false" label="GlasgowComaScale"/>
+                            <vocabulary code="completed"/>
+                        </element>
+                        <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" datatype="PQ" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.17">
+                            <item original="false" label="GlasgowComaScale"/>
+                            <property minInclude="1" maxInclude="4">
+                                <item original="false" label="GlasgowComaScale"/>
+                            </property>
+                            <attribute name="value" isOptional="false" id="2.16.840.1.113883.2.6.60.3.9.1631667">
+                                <desc language="de-DE">Score</desc>
+                            </attribute>
+                            <attribute name="unit" value="{score}" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631668"/>
+                        </element>
+                    </element>
+                </element>
+                <element name="hl7:entryRelationship[hl7:observation/hl7:code/@code='9270-0']" minimumMultiplicity="0" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.2.6.60.3.9.1631669">
+                    <item original="false" label="GlasgowComaScale"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631670"/>
+                    <attribute name="contextConductionInd" value="true" isOptional="false" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1631671"/>
+                    <element name="hl7:observation" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631672">
+                        <item original="false" label="GlasgowComaScale"/>
+                        <attribute name="classCode" value="OBS" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631673"/>
+                        <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631674"/>
+                        <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CE" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631675">
+                            <item original="false" label="GlasgowComaScale"/>
+                            <vocabulary code="9270-0" codeSystem="2.16.840.1.113883.6.1"/>
+                        </element>
+                        <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CS" id="2.16.840.1.113883.2.6.60.3.9.1631676">
+                            <item original="false" label="GlasgowComaScale"/>
+                            <vocabulary code="completed"/>
+                        </element>
+                        <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" datatype="PQ" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.18">
+                            <item original="false" label="GlasgowComaScale"/>
+                            <property minInclude="1" maxInclude="5">
+                                <item original="false" label="GlasgowComaScale"/>
+                            </property>
+                            <attribute name="value" isOptional="false" id="2.16.840.1.113883.2.6.60.3.9.1631677">
+                                <desc language="de-DE">Score</desc>
+                            </attribute>
+                            <attribute name="unit" value="{score}" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631678"/>
+                        </element>
+                    </element>
+                </element>
+                <element name="hl7:entryRelationship[hl7:observation/hl7:code/@code='9268-4']" minimumMultiplicity="0" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.2.6.60.3.9.1631679">
+                    <item original="false" label="GlasgowComaScale"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631680"/>
+                    <attribute name="contextConductionInd" value="true" isOptional="false" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1631681"/>
+                    <element name="hl7:observation" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631682">
+                        <item original="false" label="GlasgowComaScale"/>
+                        <attribute name="classCode" value="OBS" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631683"/>
+                        <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631684"/>
+                        <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CE" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631685">
+                            <item original="false" label="GlasgowComaScale"/>
+                            <vocabulary code="9268-4" codeSystem="2.16.840.1.113883.6.1"/>
+                        </element>
+                        <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CS" id="2.16.840.1.113883.2.6.60.3.9.1631686">
+                            <item original="false" label="GlasgowComaScale"/>
+                            <vocabulary code="completed"/>
+                        </element>
+                        <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" datatype="PQ" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.19">
+                            <item original="false" label="GlasgowComaScale"/>
+                            <property minInclude="1" maxInclude="6">
+                                <item original="false" label="GlasgowComaScale"/>
+                            </property>
+                            <attribute name="value" isOptional="false" id="2.16.840.1.113883.2.6.60.3.9.1631687">
+                                <desc language="de-DE">Score</desc>
+                            </attribute>
+                            <attribute name="unit" value="{score}" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631688"/>
+                        </element>
+                    </element>
+                </element>
+            </element>
+            <staticAssociations>
+                <origconcept ref="2.16.756.5.30.1.127.77.5.2.108" effectiveDate="2016-07-30T11:39:22" refdisplay="cdachresp-dataelement-108" conceptStatusCode="draft" datasetId="2.16.756.5.30.1.127.77.5.1.1" datasetEffectiveDate="2016-07-11T15:25:57" datasetStatusCode="draft" datasetVersionLabel="1" datasetName="RESP" ident="cdachresp-" elementId="2.16.840.1.113883.2.6.60.3.9.15" templateId="1.2.276.0.76.10.4034" templateEffectiveDate="2014-09-16T00:00:00" path="Befund / Disability">
+                    <name language="de-CH">GCS</name>
+                    <name language="en-US">GCS</name>
+                    <desc language="de-CH">Skala zur Beurteilung einer Bewusstseinsstörung<br clear="none"/>
+                    </desc>
+                    <datasetName language="de-CH">RESP</datasetName>
+                    <datasetName language="en-US"/>
+                    <projectName language="de-CH">CDA-CH-RESP - Rettungsdienstprotokoll</projectName>
+                    <projectName language="en-US">CDA-CH-RESP - Emergency Service Protocol</projectName>
+                </origconcept>
+                <origconcept ref="2.16.756.5.30.1.127.77.5.2.109" effectiveDate="2016-07-30T11:43:18" refdisplay="cdachresp-dataelement-109" conceptStatusCode="draft" datasetId="2.16.756.5.30.1.127.77.5.1.1" datasetEffectiveDate="2016-07-11T15:25:57" datasetStatusCode="draft" datasetVersionLabel="1" datasetName="RESP" ident="cdachresp-" elementId="2.16.840.1.113883.2.6.60.3.9.16" templateId="1.2.276.0.76.10.4034" templateEffectiveDate="2014-09-16T00:00:00" path="Befund / Disability / GCS">
+                    <name language="de-CH">Gesamtscore</name>
+                    <name language="en-US">Gesamtscore</name>
+                    <desc language="de-CH">Gesamtscore, gebildet aus der Addition der Teilscores<br clear="none"/>
+                    </desc>
+                    <datasetName language="de-CH">RESP</datasetName>
+                    <datasetName language="en-US"/>
+                    <projectName language="de-CH">CDA-CH-RESP - Rettungsdienstprotokoll</projectName>
+                    <projectName language="en-US">CDA-CH-RESP - Emergency Service Protocol</projectName>
+                </origconcept>
+                <origconcept ref="2.16.756.5.30.1.127.77.5.2.110" effectiveDate="2016-07-30T11:44:40" refdisplay="cdachresp-dataelement-110" conceptStatusCode="draft" datasetId="2.16.756.5.30.1.127.77.5.1.1" datasetEffectiveDate="2016-07-11T15:25:57" datasetStatusCode="draft" datasetVersionLabel="1" datasetName="RESP" ident="cdachresp-" elementId="2.16.840.1.113883.2.6.60.3.9.17" templateId="1.2.276.0.76.10.4034" templateEffectiveDate="2014-09-16T00:00:00" path="Befund / Disability / GCS">
+                    <name language="de-CH">Augenöffnung</name>
+                    <name language="en-US">Augenöffnung</name>
+                    <desc language="de-CH">Beurteilung der Augenöffnung des Patienten<br clear="none"/>
+                    </desc>
+                    <datasetName language="de-CH">RESP</datasetName>
+                    <datasetName language="en-US"/>
+                    <projectName language="de-CH">CDA-CH-RESP - Rettungsdienstprotokoll</projectName>
+                    <projectName language="en-US">CDA-CH-RESP - Emergency Service Protocol</projectName>
+                </origconcept>
+                <origconcept ref="2.16.756.5.30.1.127.77.5.2.111" effectiveDate="2016-07-30T11:46:55" refdisplay="cdachresp-dataelement-111" conceptStatusCode="draft" datasetId="2.16.756.5.30.1.127.77.5.1.1" datasetEffectiveDate="2016-07-11T15:25:57" datasetStatusCode="draft" datasetVersionLabel="1" datasetName="RESP" ident="cdachresp-" elementId="2.16.840.1.113883.2.6.60.3.9.18" templateId="1.2.276.0.76.10.4034" templateEffectiveDate="2014-09-16T00:00:00" path="Befund / Disability / GCS">
+                    <name language="de-CH">verbale Kommunikation</name>
+                    <name language="en-US">verbale Kommunikation</name>
+                    <desc language="de-CH"/>
+                    <datasetName language="de-CH">RESP</datasetName>
+                    <datasetName language="en-US"/>
+                    <projectName language="de-CH">CDA-CH-RESP - Rettungsdienstprotokoll</projectName>
+                    <projectName language="en-US">CDA-CH-RESP - Emergency Service Protocol</projectName>
+                </origconcept>
+                <origconcept ref="2.16.756.5.30.1.127.77.5.2.112" effectiveDate="2016-07-30T11:47:50" refdisplay="cdachresp-dataelement-112" conceptStatusCode="draft" datasetId="2.16.756.5.30.1.127.77.5.1.1" datasetEffectiveDate="2016-07-11T15:25:57" datasetStatusCode="draft" datasetVersionLabel="1" datasetName="RESP" ident="cdachresp-" elementId="2.16.840.1.113883.2.6.60.3.9.19" templateId="1.2.276.0.76.10.4034" templateEffectiveDate="2014-09-16T00:00:00" path="Befund / Disability / GCS">
+                    <name language="de-CH">motorische Reaktion</name>
+                    <name language="en-US">motorische Reaktion</name>
+                    <desc language="de-CH"/>
+                    <datasetName language="de-CH">RESP</datasetName>
+                    <datasetName language="en-US"/>
+                    <projectName language="de-CH">CDA-CH-RESP - Rettungsdienstprotokoll</projectName>
+                    <projectName language="en-US">CDA-CH-RESP - Emergency Service Protocol</projectName>
+                </origconcept>
+                <origconcept ref="2.16.756.5.30.1.127.77.5.2.457" effectiveDate="2017-01-07T18:52:57" refdisplay="cdachresp-dataelement-457" conceptStatusCode="draft" datasetId="2.16.756.5.30.1.127.77.5.1.1" datasetEffectiveDate="2016-07-11T15:25:57" datasetStatusCode="draft" datasetVersionLabel="1" datasetName="RESP" ident="cdachresp-" elementId="2.16.840.1.113883.2.6.60.3.9.15" templateId="1.2.276.0.76.10.4034" templateEffectiveDate="2014-09-16T00:00:00" path="Übergabe">
+                    <name language="de-CH">GCS</name>
+                    <name language="en-US">GCS</name>
+                    <desc language="de-CH">Skala zur Beurteilung einer Bewusstseinsstörung<br clear="none"/>
+                    </desc>
+                    <datasetName language="de-CH">RESP</datasetName>
+                    <datasetName language="en-US"/>
+                    <projectName language="de-CH">CDA-CH-RESP - Rettungsdienstprotokoll</projectName>
+                    <projectName language="en-US">CDA-CH-RESP - Emergency Service Protocol</projectName>
+                </origconcept>
+                <origconcept ref="2.16.756.5.30.1.127.77.5.2.458" effectiveDate="2017-01-07T18:54:02" refdisplay="cdachresp-dataelement-458" conceptStatusCode="draft" datasetId="2.16.756.5.30.1.127.77.5.1.1" datasetEffectiveDate="2016-07-11T15:25:57" datasetStatusCode="draft" datasetVersionLabel="1" datasetName="RESP" ident="cdachresp-" elementId="2.16.840.1.113883.2.6.60.3.9.16" templateId="1.2.276.0.76.10.4034" templateEffectiveDate="2014-09-16T00:00:00" path="Übergabe / GCS">
+                    <name language="de-CH">Gesamtscore</name>
+                    <name language="en-US">Gesamtscore</name>
+                    <desc language="de-CH">Gesamtscore, gebildet aus der Addition der Teilscores<br clear="none"/>
+                    </desc>
+                    <datasetName language="de-CH">RESP</datasetName>
+                    <datasetName language="en-US"/>
+                    <projectName language="de-CH">CDA-CH-RESP - Rettungsdienstprotokoll</projectName>
+                    <projectName language="en-US">CDA-CH-RESP - Emergency Service Protocol</projectName>
+                </origconcept>
+                <origconcept ref="2.16.756.5.30.1.127.77.5.2.459" effectiveDate="2017-01-07T18:54:02" refdisplay="cdachresp-dataelement-459" conceptStatusCode="draft" datasetId="2.16.756.5.30.1.127.77.5.1.1" datasetEffectiveDate="2016-07-11T15:25:57" datasetStatusCode="draft" datasetVersionLabel="1" datasetName="RESP" ident="cdachresp-" elementId="2.16.840.1.113883.2.6.60.3.9.17" templateId="1.2.276.0.76.10.4034" templateEffectiveDate="2014-09-16T00:00:00" path="Übergabe / GCS">
+                    <name language="de-CH">Augenöffnung</name>
+                    <name language="en-US">Augenöffnung</name>
+                    <desc language="de-CH">Beurteilung der Augenöffnung des Patienten<br clear="none"/>
+                    </desc>
+                    <datasetName language="de-CH">RESP</datasetName>
+                    <datasetName language="en-US"/>
+                    <projectName language="de-CH">CDA-CH-RESP - Rettungsdienstprotokoll</projectName>
+                    <projectName language="en-US">CDA-CH-RESP - Emergency Service Protocol</projectName>
+                </origconcept>
+                <origconcept ref="2.16.756.5.30.1.127.77.5.2.460" effectiveDate="2017-01-07T18:54:02" refdisplay="cdachresp-dataelement-460" conceptStatusCode="draft" datasetId="2.16.756.5.30.1.127.77.5.1.1" datasetEffectiveDate="2016-07-11T15:25:57" datasetStatusCode="draft" datasetVersionLabel="1" datasetName="RESP" ident="cdachresp-" elementId="2.16.840.1.113883.2.6.60.3.9.18" templateId="1.2.276.0.76.10.4034" templateEffectiveDate="2014-09-16T00:00:00" path="Übergabe / GCS">
+                    <name language="de-CH">verbale Kommunikation</name>
+                    <name language="en-US">verbale Kommunikation</name>
+                    <desc language="de-CH"/>
+                    <datasetName language="de-CH">RESP</datasetName>
+                    <datasetName language="en-US"/>
+                    <projectName language="de-CH">CDA-CH-RESP - Rettungsdienstprotokoll</projectName>
+                    <projectName language="en-US">CDA-CH-RESP - Emergency Service Protocol</projectName>
+                </origconcept>
+                <origconcept ref="2.16.756.5.30.1.127.77.5.2.461" effectiveDate="2017-01-07T18:54:02" refdisplay="cdachresp-dataelement-461" conceptStatusCode="draft" datasetId="2.16.756.5.30.1.127.77.5.1.1" datasetEffectiveDate="2016-07-11T15:25:57" datasetStatusCode="draft" datasetVersionLabel="1" datasetName="RESP" ident="cdachresp-" elementId="2.16.840.1.113883.2.6.60.3.9.19" templateId="1.2.276.0.76.10.4034" templateEffectiveDate="2014-09-16T00:00:00" path="Übergabe / GCS">
+                    <name language="de-CH">motorische Reaktion</name>
+                    <name language="en-US">motorische Reaktion</name>
+                    <desc language="de-CH"/>
+                    <datasetName language="de-CH">RESP</datasetName>
+                    <datasetName language="en-US"/>
+                    <projectName language="de-CH">CDA-CH-RESP - Rettungsdienstprotokoll</projectName>
+                    <projectName language="en-US">CDA-CH-RESP - Emergency Service Protocol</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.1.10007" effectiveDate="2014-09-25T00:00:00" refdisplay="aktin-dataelement2014(1)-10007" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.1" datasetEffectiveDate="2014-09-15T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2014.1-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.15" templateId="1.2.276.0.76.10.4034" templateEffectiveDate="2014-09-16T00:00:00" path="Vitalparameter und Scores">
+                    <name language="de-DE">Glasgow Coma Scale (GCS)</name>
+                    <desc language="de-DE">Glasgow Coma Scale (GCS)</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.1.13" effectiveDate="2014-01-06T16:43:09" refdisplay="aktin-dataelement2014(1)-13" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.1" datasetEffectiveDate="2014-09-15T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2014.1-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.17" templateId="1.2.276.0.76.10.4034" templateEffectiveDate="2014-09-16T00:00:00" path="Vitalparameter und Scores / Glasgow Coma Scale (GCS)">
+                    <name language="de-DE">GCS Augenöffnen</name>
+                    <desc language="de-DE">Initialer Parameter "Augenöffnen" der GCS bei Aufnahme des Patienten in die Notaufnahme</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.1.14" effectiveDate="2014-01-06T16:43:09" refdisplay="aktin-dataelement2014(1)-14" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.1" datasetEffectiveDate="2014-09-15T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2014.1-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.18" templateId="1.2.276.0.76.10.4034" templateEffectiveDate="2014-09-16T00:00:00" path="Vitalparameter und Scores / Glasgow Coma Scale (GCS)">
+                    <name language="de-DE">GCS verbale Antwort</name>
+                    <desc language="de-DE">Initialer Parameter "verbale Antwort" der GCS bei Aufnahme des Patienten in die Notaufnahme</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.1.16" effectiveDate="2014-01-06T16:43:09" refdisplay="aktin-dataelement2014(1)-16" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.1" datasetEffectiveDate="2014-09-15T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2014.1-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.19" templateId="1.2.276.0.76.10.4034" templateEffectiveDate="2014-09-16T00:00:00" path="Vitalparameter und Scores / Glasgow Coma Scale (GCS)">
+                    <name language="de-DE">GCS motorische Antwort</name>
+                    <desc language="de-DE">Initialer Parameter "motorische Antwort" der GCS bei Aufnahme des Patienten in die Notfallaufnahnme</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.1.17" effectiveDate="2014-01-06T16:43:09" refdisplay="aktin-dataelement2014(1)-17" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.1" datasetEffectiveDate="2014-09-15T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2014.1-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.16" templateId="1.2.276.0.76.10.4034" templateEffectiveDate="2014-09-16T00:00:00" path="Vitalparameter und Scores / Glasgow Coma Scale (GCS)">
+                    <name language="de-DE">GCS Summe</name>
+                    <desc language="de-DE">Summe der GCS bei Aufnahme des Patienten</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.2.10007" effectiveDate="2015-01-15T00:00:00" refdisplay="aktin-dataelement2015(1)-10007" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.2" datasetEffectiveDate="2015-01-15T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.1-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.15" templateId="1.2.276.0.76.10.4034" templateEffectiveDate="2014-09-16T00:00:00" path="Vitalparameter und Scores">
+                    <name language="de-DE">Glasgow Coma Scale (GCS)</name>
+                    <desc language="de-DE">Glasgow Coma Scale (GCS)</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.2.13" effectiveDate="2015-01-15T00:00:00" refdisplay="aktin-dataelement2015(1)-13" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.2" datasetEffectiveDate="2015-01-15T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.1-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.17" templateId="1.2.276.0.76.10.4034" templateEffectiveDate="2014-09-16T00:00:00" path="Vitalparameter und Scores / Glasgow Coma Scale (GCS)">
+                    <name language="de-DE">GCS Augenöffnen</name>
+                    <desc language="de-DE">Initialer Parameter "Augenöffnen" der GCS bei Aufnahme des Patienten in die Notaufnahme</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.2.14" effectiveDate="2015-01-15T00:00:00" refdisplay="aktin-dataelement2015(1)-14" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.2" datasetEffectiveDate="2015-01-15T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.1-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.18" templateId="1.2.276.0.76.10.4034" templateEffectiveDate="2014-09-16T00:00:00" path="Vitalparameter und Scores / Glasgow Coma Scale (GCS)">
+                    <name language="de-DE">GCS verbale Antwort</name>
+                    <desc language="de-DE">Initialer Parameter "verbale Antwort" der GCS bei Aufnahme des Patienten in die Notaufnahme</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.2.16" effectiveDate="2015-01-15T00:00:00" refdisplay="aktin-dataelement2015(1)-16" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.2" datasetEffectiveDate="2015-01-15T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.1-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.19" templateId="1.2.276.0.76.10.4034" templateEffectiveDate="2014-09-16T00:00:00" path="Vitalparameter und Scores / Glasgow Coma Scale (GCS)">
+                    <name language="de-DE">GCS motorische Antwort</name>
+                    <desc language="de-DE">Initialer Parameter "motorische Antwort" der GCS bei Aufnahme des Patienten in die Notfallaufnahnme</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.2.17" effectiveDate="2015-01-15T00:00:00" refdisplay="aktin-dataelement2015(1)-17" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.2" datasetEffectiveDate="2015-01-15T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.1-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.16" templateId="1.2.276.0.76.10.4034" templateEffectiveDate="2014-09-16T00:00:00" path="Vitalparameter und Scores / Glasgow Coma Scale (GCS)">
+                    <name language="de-DE">GCS Summe</name>
+                    <desc language="de-DE">Summe der GCS bei Aufnahme des Patienten</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.3.10007" effectiveDate="2015-11-01T00:00:00" refdisplay="aktin-dataelement2015(2)-10007" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.3" datasetEffectiveDate="2015-11-01T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.2-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.15" templateId="1.2.276.0.76.10.4034" templateEffectiveDate="2014-09-16T00:00:00" path="Vitalparameter und Scores">
+                    <name language="de-DE">Glasgow Coma Scale (GCS)</name>
+                    <desc language="de-DE">Glasgow Coma Scale (GCS)</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.3.13" effectiveDate="2015-11-01T00:00:00" refdisplay="aktin-dataelement2015(2)-13" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.3" datasetEffectiveDate="2015-11-01T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.2-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.17" templateId="1.2.276.0.76.10.4034" templateEffectiveDate="2014-09-16T00:00:00" path="Vitalparameter und Scores / Glasgow Coma Scale (GCS)">
+                    <name language="de-DE">GCS Augenöffnen</name>
+                    <desc language="de-DE">Initialer Parameter "Augenöffnen" der GCS bei Aufnahme des Patienten in die Notaufnahme</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.3.14" effectiveDate="2015-11-01T00:00:00" refdisplay="aktin-dataelement2015(2)-14" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.3" datasetEffectiveDate="2015-11-01T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.2-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.18" templateId="1.2.276.0.76.10.4034" templateEffectiveDate="2014-09-16T00:00:00" path="Vitalparameter und Scores / Glasgow Coma Scale (GCS)">
+                    <name language="de-DE">GCS verbale Antwort</name>
+                    <desc language="de-DE">Initialer Parameter "verbale Antwort" der GCS bei Aufnahme des Patienten in die Notaufnahme</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.3.16" effectiveDate="2015-11-01T00:00:00" refdisplay="aktin-dataelement2015(2)-16" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.3" datasetEffectiveDate="2015-11-01T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.2-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.19" templateId="1.2.276.0.76.10.4034" templateEffectiveDate="2014-09-16T00:00:00" path="Vitalparameter und Scores / Glasgow Coma Scale (GCS)">
+                    <name language="de-DE">GCS motorische Antwort</name>
+                    <desc language="de-DE">Initialer Parameter "motorische Antwort" der GCS bei Aufnahme des Patienten in die Notfallaufnahnme</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.3.17" effectiveDate="2015-11-01T00:00:00" refdisplay="aktin-dataelement2015(2)-17" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.3" datasetEffectiveDate="2015-11-01T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.2-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.16" templateId="1.2.276.0.76.10.4034" templateEffectiveDate="2014-09-16T00:00:00" path="Vitalparameter und Scores / Glasgow Coma Scale (GCS)">
+                    <name language="de-DE">GCS Summe</name>
+                    <desc language="de-DE">Summe der GCS bei Aufnahme des Patienten</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.4.33" effectiveDate="2014-01-06T16:43:22" refdisplay="aktin-dataelement2016(1)-33" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.3.1.4" datasetEffectiveDate="2016-07-12T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2015.1-t" datasetName="Traumamodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.15" templateId="1.2.276.0.76.10.4034" templateEffectiveDate="2014-09-16T00:00:00" path="Präklinik / Präklinische Befunde">
+                    <name language="de-DE">Präklinik: Initiale GCS</name>
+                    <desc language="de-DE">Präklinik: Initiale GCS</desc>
+                    <datasetName language="de-DE">Traumamodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.4.457" effectiveDate="2014-01-06T16:43:22" refdisplay="aktin-dataelement2016(1)-457" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.3.1.4" datasetEffectiveDate="2016-07-12T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2015.1-t" datasetName="Traumamodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.17" templateId="1.2.276.0.76.10.4034" templateEffectiveDate="2014-09-16T00:00:00" path="Präklinik / Präklinische Befunde / Präklinik: Initiale GCS">
+                    <name language="de-DE">Präklinik: Initiale GCS Augenöffnen</name>
+                    <desc language="de-DE">Initialer parameter "Augenöffnen" der GCS in der Präklinik</desc>
+                    <datasetName language="de-DE">Traumamodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.4.458" effectiveDate="2014-01-06T16:43:22" refdisplay="aktin-dataelement2016(1)-458" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.3.1.4" datasetEffectiveDate="2016-07-12T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2015.1-t" datasetName="Traumamodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.18" templateId="1.2.276.0.76.10.4034" templateEffectiveDate="2014-09-16T00:00:00" path="Präklinik / Präklinische Befunde / Präklinik: Initiale GCS">
+                    <name language="de-DE">Präklinik: Initiale GCS verbale Antwort</name>
+                    <desc language="de-DE">Initialer Parameter "verbale Antwort" der GCS in der Präklinik</desc>
+                    <datasetName language="de-DE">Traumamodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.4.459" effectiveDate="2014-01-06T16:43:22" refdisplay="aktin-dataelement2016(1)-459" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.3.1.4" datasetEffectiveDate="2016-07-12T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2015.1-t" datasetName="Traumamodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.19" templateId="1.2.276.0.76.10.4034" templateEffectiveDate="2014-09-16T00:00:00" path="Präklinik / Präklinische Befunde / Präklinik: Initiale GCS">
+                    <name language="de-DE">Präklinik: Initiale GCS motorische Antwort</name>
+                    <desc language="de-DE">Initialer Parameter "motorische Antwort" der GCS in der Präklinik</desc>
+                    <datasetName language="de-DE">Traumamodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.4.460" effectiveDate="2014-01-06T16:43:22" refdisplay="aktin-dataelement2016(1)-460" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.3.1.4" datasetEffectiveDate="2016-07-12T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2015.1-t" datasetName="Traumamodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.16" templateId="1.2.276.0.76.10.4034" templateEffectiveDate="2014-09-16T00:00:00" path="Präklinik / Präklinische Befunde / Präklinik: Initiale GCS">
+                    <name language="de-DE">Präklinik: Initiale GCS Summe</name>
+                    <desc language="de-DE">Summe der GCS in der Präklinik</desc>
+                    <datasetName language="de-DE">Traumamodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+            </staticAssociations>
+            <ref type="dependency" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.92" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2025-11-12T00:00:00" statusCode="retired" versionLabel="v3transit" lastModifiedDate="2026-03-25T11:04:45" ident="aktin-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="2025-12-01T00:00:00" id="1.2.276.0.76.3.1.195.10.93" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2026-03-25T11:04:07" statusCode="draft" versionLabel="v4transit" lastModifiedDate="2026-04-29T18:39:46" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.95" name="vitalparametercontainer" displayName="Vitalparameter-Container" effectiveDate="2026-04-27T15:39:06" statusCode="draft" versionLabel="2026" lastModifiedDate="2026-04-27T16:41:18" ident="aktin-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="2026-04-27T15:39:06" id="1.2.276.0.76.3.1.195.10.96" name="VitalSignsSection" displayName="Vitalparameter" effectiveDate="2025-12-01T00:00:00" statusCode="draft" versionLabel="2025" isClosed="false" lastModifiedDate="2026-04-24T12:09:59" ident="aktin-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.1015" name="EmergencymedicineNoteCDAdocumentv1" displayName="Emergency medicine Note CDA document" effectiveDate="2014-09-18T00:00:00" statusCode="active" versionLabel="v1" ident="aktin-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.1019" name="EmergencymedicineNoteCDAdocumentv2" displayName="Emergency medicine Note CDA document" effectiveDate="2016-06-01T00:00:00" statusCode="active" versionLabel="v2" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.3044" name="VitalSignsSection" displayName="Vitalparameter" effectiveDate="2014-09-16T00:00:00" statusCode="active" isClosed="false" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.3044" name="VitalSignsSection" displayName="Vitalparameter" effectiveDate="2015-09-18T00:00:00" statusCode="active" isClosed="false" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4101" name="VitalSignObservationsOrganizer" displayName="Vital Sign Observations Organizer" effectiveDate="2017-02-01T00:00:00" statusCode="draft" lastModifiedDate="2026-04-27T15:47:14" ident="aktin-"/>
+            <ref type="contains" prefix="cdachresp-" flexibility="dynamic" id="2.16.756.5.30.1.1.10.3.14" name="FindingsSection" displayName="Findings" statusCode="pending" versionLabel="2017" effectiveDate="2017-09-08T10:23:39" ident="cdachresp-"/>
+            <ref type="contains" prefix="cdachresp-" flexibility="dynamic" id="2.16.756.5.30.1.1.10.3.15" name="HandoverSection" displayName="Handover" statusCode="pending" versionLabel="2017" effectiveDate="2017-09-08T10:23:39" ident="cdachresp-"/>
+        </template>
+    </template>
+</result>

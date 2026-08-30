@@ -1,0 +1,3 @@
+<codeSystem xmlns:json="http://www.json.org" id="2.16.840.1.113883.4.642.4.1379" effectiveDate="2019-10-30T00:00:00" statusCode="draft" versionLabel="2026-03-31" name="medication_status_codes" displayName="Medication_Status_Codes">
+    <issueAssociation json:array="true" count="0"/>
+</codeSystem>

@@ -1,0 +1,14 @@
+<valueSets>
+    <repository url="http://art-decor.org/decor/services/" ident="ad5bbr-" referencedFrom="sxehealth-" projecttype="local">
+        <valueSet id="2.16.840.1.113883.4.642.3.1024" name="Mime_Types" displayName="MimeType" effectiveDate="2019-11-01T09:29:23" statusCode="final" versionLabel="4.0.1" canonicalUri="http://hl7.org/fhir/ValueSet/mimetypes">
+            <desc language="en-US">This value set includes all possible codes from BCP-13 (http://tools.ietf.org/html/bcp13)</desc>
+            <sourceCodeSystem id="2.16.840.1.113883.6.10" identifierName="IETF MIME" canonicalUri="http://www.iana.org/assignments/media-types" canonicalUriDSTU2="urn:ietf:bcp:13" canonicalUriSTU3="urn:ietf:bcp:13" canonicalUriR4="http://www.iana.org/assignments/media-types" canonicalUriR4B="http://www.iana.org/assignments/media-types" canonicalUriR5="http://www.iana.org/assignments/media-types" context="external/hl7intl/v3/v3-mime"/>
+            <publishingAuthority name="HL7 International - FHIR-Infrastructure">
+                <addrLine type="uri">http://hl7.org/fhir</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <include codeSystem="2.16.840.1.113883.6.10"/>
+            </conceptList>
+        </valueSet>
+    </repository>
+</valueSets>

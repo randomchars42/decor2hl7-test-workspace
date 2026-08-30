@@ -1,0 +1,38 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultLanguage="de-DE" id="1.2.276.0.76.10.3053" name="HistoryofPresentIllnessSection" displayName="Notfallanamnese" effectiveDate="2025-12-01T00:00:00" statusCode="draft" versionLabel="2025" isClosed="false" lastModifiedDate="2025-12-18T13:48:42" url="http://art-decor.org/decor/services/" ident="aktin-" xml:dummy-1="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-3="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance">
+    <desc language="en-US" lastTranslated="2025-12-01T00:00:00">History of present illness section</desc>
+    <desc language="de-DE" lastTranslated="2025-12-01T00:00:00">Notfallanamnese / relevante Eigenmedikation / körperliche Untersuchung Section</desc>
+    <classification type="cdasectionlevel"/>
+    <relationship type="VERSION" template="1.2.276.0.76.10.3053" flexibility="2015-01-10T00:00:00" tmid="1.2.276.0.76.10.3053" tmname="HistoryofPresentIllnessSection" tmdisplayName="Notfallanamnese" tmeffectiveDate="2015-01-10T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+    <relationship type="SPEC" template="2.16.840.1.113883.10.12.201" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.201" tmname="CDASection" tmdisplayName="CDA Section" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-"/>
+    <relationship type="ADAPT" template="1.3.6.1.4.1.19376.1.5.3.1.3.4" tmid="1.3.6.1.4.1.19376.1.5.3.1.3.4" tmname="HistoryofPresentIllnessSection" tmdisplayName="History of Present Illness Section" tmeffectiveDate="2019-03-29T07:01:27" tmstatusCode="pending" tmversionLabel="2.1" url="http://art-decor.org/decor/services/" ident="bccdapilot-"/>
+    <context id="**"/>
+    <example>
+                <section classCode="DOCSECT">
+                    <templateId root="1.2.276.0.76.10.3053"/>
+                    <code code="10164-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of present illness"/>
+                    <title>Notfallanamnese</title>
+                    <text>...</text>
+                </section>
+            </example>
+    <element name="hl7:section" id="2.16.840.1.113883.2.6.60.3.9.68">
+                <attribute name="classCode" value="DOCSECT" datatype="cs" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.69"/>
+                <element name="hl7:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.70">
+                    <attribute name="root" value="1.2.276.0.76.10.3053" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.71"/>
+                </element>
+                <element name="hl7:code" datatype="CD" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.72">
+                    <vocabulary code="10164-2" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:title" datatype="ST" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.73">
+                    <text>Notfallanamnese</text>
+                </element>
+                <element name="hl7:text" datatype="SD.TEXT" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.74"/>
+                <element name="hl7:entry" contains="1.2.276.0.76.3.1.195.10.28" flexibility="2024-08-13T18:34:56" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.1.9.283">
+                    <attribute name="typeCode" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1642240"/>
+                    <attribute name="contextConductionInd" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.1642241"/>
+                </element>
+                <element name="hl7:entry" contains="1.2.276.0.76.3.1.195.10.32" flexibility="2024-08-13T18:37:55" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.1642239">
+                    <attribute name="typeCode" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1642242"/>
+                    <attribute name="contextConductionInd" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.1642243"/>
+                </element>
+            </element>
+</template>

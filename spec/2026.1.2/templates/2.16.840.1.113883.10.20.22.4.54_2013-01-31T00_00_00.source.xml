@@ -1,0 +1,54 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:local="http://art-decor.org/local" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.20.22.4.54" name="ImmunizationMedicationInformation" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" displayName="Immunization Medication Information" url="http://art-decor.org/decor/services/" ident="ccda-" sdtc:dummy-1="urn:hl7-org:sdtc" local:dummy-2="http://art-decor.org/local" xml:dummy-3="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-5="urn:hl7-org:v3" xsi:dummy-6="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">The Immunization Medication Information represents product information about the immunization substance. The vaccine manufacturer and vaccine lot number are typically recorded in the medical record and should be included if known.</desc>
+            <classification type="cdaentrylevel"/>
+            <context id="**"/>
+            <element name="cda:manufacturedProduct" id="2.16.840.1.113883.3.1937.99.3.9.1782">
+                <attribute name="classCode" value="MANU" id="2.16.840.1.113883.3.1937.99.3.9.1783">
+                    <item label="conf-9002"/>
+                </attribute>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.1784">
+                    <desc language="en-US">SHALL contain exactly one [1..1] templateId (CONF:9004) such that it</desc>
+                    <item label="conf-9004"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.22.4.54" id="2.16.840.1.113883.3.1937.99.3.9.1785">
+                        <item label="conf-10499"/>
+                    </attribute>
+                </element>
+                <element name="cda:id" datatype="II" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.1786">
+                    <desc language="en-US">MAY contain zero or more [0..*] id (CONF:9005).</desc>
+                    <item label="conf-9005"/>
+                </element>
+                <element name="cda:manufacturedMaterial" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.1787">
+                    <desc language="en-US">SHALL contain exactly one [1..1] manufacturedMaterial (CONF:9006).</desc>
+                    <item label="conf-9006"/>
+                    <element name="cda:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="false" id="2.16.840.1.113883.3.1937.99.3.9.1788">
+                        <desc language="en-US">This manufacturedMaterial SHALL contain exactly one [1..1] code, which SHALL be selected from ValueSet Vaccine Administered Value Set 2.16.840.1.113883.3.88.12.80.22 DYNAMIC (CONF:9007).</desc>
+                        <item label="conf-9007"/>
+                        <vocabulary valueSet="2.16.840.1.113883.3.88.12.80.22"/>
+                        <element name="cda:originalText" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.1789">
+                            <desc language="en-US">This code SHOULD contain zero or one [0..1] originalText (CONF:9008).</desc>
+                            <item label="conf-9008"/>
+                            <element name="cda:reference" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.1790">
+                                <desc language="en-US">The originalText, if present, SHOULD contain zero or one [0..1] reference (CONF:15555).<p/>This reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1)</desc>
+                                <item label="conf-15555"/>
+                                <attribute name="value" isOptional="true" id="2.16.840.1.113883.3.1937.99.3.9.1791">
+                                    <item label="conf-15556"/>
+                                </attribute>
+                                <assert role="error" test="not(@value) or starts-with(@value, '#')">This reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1)</assert>
+                            </element>
+                        </element>
+                        <element name="cda:translation" minimumMultiplicity="0" maximumMultiplicity="*" datatype="CD" id="2.16.840.1.113883.3.1937.99.3.9.1792">
+                            <desc language="en-US">This code MAY contain zero or more [0..*] translation (CONF:9011).<p/>Translations can be used to represent generic product name, packaged product code, etc.</desc>
+                            <item label="conf-9011"/>
+                        </element>
+                    </element>
+                    <element name="cda:lotNumberText" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.1793">
+                        <desc language="en-US">This manufacturedMaterial SHOULD contain zero or one [0..1] lotNumberText (CONF:9014).</desc>
+                        <item label="conf-9014"/>
+                    </element>
+                </element>
+                <element name="cda:manufacturerOrganization" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.1794">
+                    <desc language="en-US">SHOULD contain zero or one [0..1] manufacturerOrganization (CONF:9012).</desc>
+                    <item label="conf-9012"/>
+                </element>
+            </element>
+        </template>

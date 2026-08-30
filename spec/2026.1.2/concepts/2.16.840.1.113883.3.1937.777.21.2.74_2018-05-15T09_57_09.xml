@@ -1,0 +1,24 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.777.21.1.1" effectiveDate="2018-05-07T19:19:12" statusCode="draft" versionLabel="ASIC Dataset" prefix="asic-" shortName="asicdataset" iddisplay="asic-dataset-1" url="http://art-decor.org/decor/services/" ident="asic-"><!--
+ This is a view of the dataset "ASIC-Dataset" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">ASIC-Dataset</name>
+    <desc language="de-DE"/>
+    <concept id="2.16.840.1.113883.3.1937.777.21.2.74" effectiveDate="2018-05-15T09:57:09" statusCode="draft" type="item" iddisplay="asic-dataelement-74">
+        <implementation markdown="Atemzeitverhältnis (inspiratorisch:exspiratorisch)&#xA;dimensionslos&#xA;&#xA;Das Atemzeitverhältnis beschreibt den zeitlichenVerlauf zwischen Inspiration und Expiration &#xA;Normal 1:2, bei Beatmung Empfehlung 1:1"/>
+        <name language="de-DE">I:E</name>
+        <desc language="de-DE" lastTranslated="2018-08-28T15:11:18">Atemzeitverhältnis (inspiratorisch:exspiratorisch)<br clear="none"/>dimensionslos<br clear="none"/>
+            <br clear="none"/>Das Atemzeitverhältnis beschreibt den zeitlichenVerlauf zwischen Inspiration und Expiration <br clear="none"/>Normal 1:2, bei Beatmung Empfehlung 1:1<br clear="none"/>
+        </desc>
+        <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.777.24.2.212" flexibility="2018-07-20T14:21:57" prefix="mide-" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" iType="group" iEffectiveDate="2018-07-20T14:21:57" iStatusCode="draft" refdisplay="mide-dataelement-212">
+            <name language="de-DE" lastTranslated="2019-02-07T13:00:12">Monitoring und Vitaldaten </name>
+            <name language="en-US" lastTranslated="2018-10-01T15:05:32">Monitoring data</name>
+        </relationship>
+        <valueDomain type="quantity">
+            <example type="neutral" caption="Norm for spontaneous breathing">0,5 (1:2)</example>
+            <example type="neutral" caption="Common setting for artificial respiration">1 (1:1)</example>
+        </valueDomain>
+        <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.74" conceptFlexibility="2018-05-15T09:57:09" code="75931-6" codeSystem="2.16.840.1.113883.6.1" displayName="Inspiration/Expiration time Ratio" effectiveDate="2018-11-08T16:33:08" codeSystemName="Logical Observation Identifier Names and Codes"/>
+    </concept>
+</dataset>

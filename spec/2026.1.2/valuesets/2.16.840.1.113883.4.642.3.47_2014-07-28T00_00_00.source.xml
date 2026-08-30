@@ -1,0 +1,14 @@
+<valueSet xmlns:json="http://www.json.org" id="2.16.840.1.113883.4.642.3.47" name="All_Security_Labels" displayName="SecurityLabels" effectiveDate="2014-07-28T00:00:00" statusCode="final" versionLabel="4.0.1" canonicalUri="http://hl7.org/fhir/ValueSet/security-labels" url="http://art-decor.org/decor/services/" ident="ad5bbr-">
+    <desc json:array="true" language="en-US">A single value set for all security labels defined by FHIR.</desc>
+    <publishingAuthority json:array="true" name="FHIR project team">
+        <addrLine json:array="true" type="uri">http://hl7.org/fhir</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="include" ref="2.16.840.1.113883.1.11.10228"/>
+    <items json:array="true" is="include" ref="2.16.840.1.113883.1.11.20428"/>
+    <items json:array="true" is="include" ref="2.16.840.1.113883.1.11.20478"/>
+    <items json:array="true" is="include" ref="2.16.840.1.113883.1.11.20481"/>
+    <items json:array="true" is="include" ref="2.16.840.1.113883.1.11.20471"/>
+    <items json:array="true" is="include" ref="2.16.840.1.113883.1.11.20427"/>
+</valueSet>

@@ -1,0 +1,460 @@
+<result xmlns:json="http://www.json.org">
+    <template id="2.16.840.1.113883.10.21.4.7" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:pharmhl7="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.21.4.7" hl7:dummy-default="urn:hl7-org:v3" lastModifiedDate="2023-01-30T08:32:34" displayName="UV Medication Statement" cda:dummy-4="urn:hl7-org:v3" xml:dummy-2="http://www.w3.org/XML/1998/namespace" url="http://art-decor.org/decor/services/" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance" versionLabel="R1-STU2-ballot" isClosed="false" ident="pharmcda-" name="UVMedicationstatement" statusCode="pending" pharmhl7:dummy-1="urn:hl7-org:pharm" effectiveDate="2021-08-04T14:09:15">
+            <desc language="en-US">Universal Medication Statement: Recording a "medication statement" is an activity that can be performed by a variety of healthcare professionals, or the patient, or non-healthcare professionals. Examples of recording medication statements include taking a patient's medication history, recording reported use of medications where the source of the patient
+                information is from a third party and not the patient e.g. a family member when the patient is unable to communicate their medication history. </desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="VERSION" template="2.16.840.1.113883.10.21.4.7" flexibility="2017-05-01T00:00:00" tmid="2.16.840.1.113883.10.21.4.7" tmname="UVMedicationstatement" tmdisplayName="UV Medication Statement" tmstatusCode="pending" tmversionLabel="STU1" tmeffectiveDate="2017-05-01T00:00:00" url="http://art-decor.org/decor/services/" ident="pharmcda-" linkedartefactmissing="false"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.308" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.308" tmname="CDASubstanceAdministration" tmdisplayName="CDA SubstanceAdministration" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <item label="MedicationStatement"/>
+            <example type="neutral">
+                <substanceAdministration classCode="SBADM" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.21.4.7"/>
+                    <id root="1.2.3.99.99.99" extension="988437489739"/>
+                    <code code="..." codeSystem="..."/>
+                    <text>...</text>
+                    <statusCode code="active"/>
+                    <effectiveTime value="..."/>
+                    <repeatNumber value="..."/>
+                    <routeCode code="SOAK" codeSystem="2.16.840.1.113883.5.112" displayName="Immersion (soak)"/>
+                    <approachSiteCode code="..." codeSystem="2.16.840.1.113883.5.1052"/>
+                    <administrationUnitCode code="PUFF" displayName="Puff" codeSystem="2.16.840.1.113883.5.85"/>
+                    <consumable typeCode="CSM">
+                        <!-- Consumable -->
+                    </consumable>
+                    <participant typeCode="DEV">
+                        <!-- Device -->
+                    </participant>
+                    <participant typeCode="LOC">
+                        <!-- Location -->
+                    </participant>
+                    <entryRelationship typeCode="COMP">
+                        <!-- Subordinate Substance Administrations -->
+                    </entryRelationship>
+                    <entryRelationship typeCode="COMP">
+                        <!-- Annotations -->
+                    </entryRelationship>
+                    <precondition>
+                        <!-- Precondition -->
+                    </precondition>
+                </substanceAdministration>
+            </example>
+            <example type="neutral">
+                <substanceAdministration classCode="SBADM" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.21.4.7"/>
+                    <id root="1.2.3.999" extension="--example only--"/>
+                    <code code="DRUG" displayName="Drug therapy" codeSystem="2.16.840.1.113883.5.4"/>
+                    <text/>
+                    <statusCode code="active"/>
+                    <!-- include template 'UV Use Period' (dynamic) .. O -->
+                    <repeatNumber/>
+                    <routeCode code="SOAK" displayName="Immersion (soak)" codeSystem="2.16.840.1.113883.5.112"/>
+                    <approachSiteCode code="--code--" codeSystem="2.16.840.1.113883.5.1052"/>
+                    <administrationUnitCode code="APPFUL" displayName="Applicatorful" codeSystem="2.16.840.1.113883.5.85"/>
+                    <subject>
+                        <!-- template 'CDA Subject (Body)' (dynamic) -->
+                    </subject>
+                    <consumable typeCode="CSM">
+                        <!-- template 2.16.840.1.113883.10.12.312 'CDA ManufacturedProduct' (dynamic) -->
+                    </consumable>
+                    <!-- choice: 1..1
+                         element hl7:author
+                         element hl7:participant[@typeCode='AUT']
+                    -->
+                    <!-- choice: 0..1
+                         element hl7:informant[exists(hl7:assignedEntity)]
+                         element hl7:participant[@typeCode='INF']
+                         element hl7:informant[exists(hl7:relatedEntity)]
+                      -->
+                    <participant typeCode="RCT">
+                        <!-- template 2.16.840.1.113883.10.12.321 'CDA Participant (Body)' (dynamic) -->
+                    </participant>
+                    <participant typeCode="VRF">
+                        <!-- template 2.16.840.1.113883.10.12.321 'CDA Participant (Body)' (dynamic) -->
+                    </participant>
+                    <entryRelationship typeCode="COMP">
+                        <sequenceNumber value="1"/>
+                        <!-- template 2.16.840.1.113883.10.21.4.6 'Subordinate Substance Administration' (dynamic) -->
+                    </entryRelationship>
+                    <entryRelationship typeCode="REFR">
+                        <!-- template 2.16.840.1.113883.10.21.4.8 'UV Medication Order Reference' (dynamic) -->
+                    </entryRelationship>
+                    <entryRelationship typeCode="REFR">
+                        <!-- template 2.16.840.1.113883.10.21.4.9 'UV Dispense Event Reference' (dynamic) -->
+                    </entryRelationship>
+                </substanceAdministration>
+            </example>
+            <example type="neutral">
+                <substanceAdministration classCode="SBADM" moodCode="EVN">
+                    <templateId root="2.16.840.1.113883.10.21.4.7"/>
+                    <id root="1.2.3.99.99.99" extension="988437489739"/>
+                    <code code="..." codeSystem="..."/>
+                    <text>...</text>
+                    <statusCode code="active"/>
+                    <effectiveTime value="..."/>
+                    <repeatNumber value="..."/>
+                    <routeCode code="SOAK" codeSystem="2.16.840.1.113883.5.112" displayName="Immersion (soak)"/>
+                    <approachSiteCode code="..." codeSystem="2.16.840.1.113883.5.1052"/>
+                    <administrationUnitCode code="PUFF" displayName="Puff" codeSystem="2.16.840.1.113883.5.85"/>
+                    <consumable typeCode="CSM">
+                        <!-- Consumable -->
+                    </consumable>
+                    <participant typeCode="DEV">
+                        <!-- Device -->
+                    </participant>
+                    <participant typeCode="LOC">
+                        <!-- Location -->
+                    </participant>
+                    <entryRelationship typeCode="COMP">
+                        <!-- Subordinate Substance Administrations -->
+                    </entryRelationship>
+                    <entryRelationship typeCode="COMP">
+                        <!-- Annotations -->
+                    </entryRelationship>
+                    <precondition>
+                        <!-- Precondition -->
+                    </precondition>
+                </substanceAdministration>
+            </example>
+            <element name="hl7:substanceAdministration" id="2.16.840.1.113883.3.1937.777.15.9.19">
+                <item original="false" label="MedicationStatement"/>
+                <attribute name="classCode" value="SBADM" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.20"/>
+                <attribute name="moodCode" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.21">
+                    <desc language="en-US">EVN will be used to record a medication statement where the patient is currently taking or has taken the medication in the past.<br/>INT will be used to record a medication statement where the patient plans to take the medication or be administered the medication in the future.</desc>
+                    <vocabulary code="EVN"/>
+                    <vocabulary code="INT"/>
+                </attribute>
+                <element name="hl7:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.3.1937.777.15.9.22">
+                    <item original="false" label="MedicationStatement"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.21.4.7" isOptional="false" datatype="uid" id="2.16.840.1.113883.3.1937.777.15.9.23"/>
+                </element>
+                <element name="hl7:id" datatype="II" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.24">
+                    <item original="false" label="MedicationStatement"/>
+                </element>
+                <element name="hl7:code" datatype="CD" strength="preferred" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.25">
+                    <desc language="en-US">The code element is valorized with the ACT code DRUG; FD or IMMUNIZ unless it is used for asserting the known absence of medication treatments or no information about them.</desc>
+                    <item original="false" label="MedicationStatement"/>
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.19708" flexibility="dynamic" vsid="2.16.840.1.113883.1.11.19708" vsname="ActSubstanceAdministrationCode" vsdisplayName="ActSubstanceAdministrationCode" vseffectiveDate="2014-03-26T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1360-20160323" linkedartefactmissing="false"/>
+                    <vocabulary valueSet="2.16.840.1.113883.11.21.5" vsid="2.16.840.1.113883.11.21.5" vsname="Unknownorabsentmedication" vsdisplayName="Unknown or absent medication" vsstatusCode="draft" vseffectiveDate="2018-03-21T00:00:00" linkedartefactmissing="false"/>
+                </element>
+                <element name="hl7:text" datatype="ED" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.26">
+                    <item original="false" label="MedicationStatement"/>
+                </element>
+                <element name="hl7:statusCode" datatype="CS" strength="required" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.3.1937.777.15.9.27">
+                    <item original="false" label="MedicationStatement"/>
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.19890" vsid="2.16.840.1.113883.1.11.19890" vsname="x_ActStatusActiveComplete" vsdisplayName="x_ActStatusActiveComplete" vseffectiveDate="2014-03-26T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1360-20160323" linkedartefactmissing="false"/>
+                </element>
+                <include ref="2.16.840.1.113883.10.21.9.1" tmid="2.16.840.1.113883.10.21.9.1" tmname="Useperiod" tmdisplayName="UV Use Period" tmeffectiveDate="2023-01-30T09:55:27" tmstatusCode="draft" tmversionLabel="2023" url="http://art-decor.org/decor/services/" ident="pharmcda-" linkedartefactmissing="false">
+                    <item original="false" label="MedicationStatement"/>
+                    <choice minimumMultiplicity="1" maximumMultiplicity="1">
+                        <desc language="en-US">The effectiveTime element encodes the use period of the medication, it is always expressed as an interval of time.<br clear="none"/>It may be expressed using the low and high OR with the width element.<br clear="none"/>The first is used to indicate a specified interval (e.g. from march 15th, 2017); the latter for indicating a 'floating' period (e.g. 2
+                    weeks).</desc>
+                        <item original="false" label="Useperiod"/>
+                        <element name="hl7:effectiveTime[hl7:low | hl7:high][not(hl7:width)]" datatype="IVL_TS" minimumMultiplicity="0" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.3.1937.777.15.9.10703">
+                            <desc language="en-US">
+                                <b>Case 1: specified interval</b>
+                        <br clear="none"/>The low and high values of the first effectiveTime element represent the start and stop times for the medication. The low value represents the start time, and the high value represents the stop time. If either the low or the high value is unknown, this shall be recorded by setting the nullFlavor attribute to UNK.<br clear="none"/>
+                        <br clear="none"/>In case of unbounded period (continuous therapy) the high element will be valued with the nullFlavor attribute to NA.<br clear="none"/>
+                        <br clear="none"/>The high value records the end of the medication regime according to the information provided in the prescription or order. For example, if the prescription is for enough medication to last 30 days, then the high value should contain a date that is 30 days later then the low value. The rationale is that a provider, seeing a prescription that has not been
+                        refilled would normally assume that the medication is no longer being taken, even if the intent of the treatment plan is to continue the medication indefinitely.</desc>
+                            <item original="false" label="Useperiod"/>
+                            <example type="neutral" caption="Known Interval">
+                        <effectiveTime type="IVL_TS">
+                            <low value="20130321"/>
+                            <high value="20140321"/>
+                        </effectiveTime>
+                    </example>
+                            <example type="neutral" caption="Information not available about the period">
+                        <effectiveTime type="IVL_TS" nullFlavor="NI"/>
+                    </example>
+                            <example type="neutral" caption="Unknown end date">
+                        <effectiveTime type="IVL_TS">
+                            <low value="20130321"/>
+                            <high nullFlavor="UNK"/>
+                        </effectiveTime>
+                    </example>
+                            <example type="neutral" caption="continous therapy">
+                        <effectiveTime type="IVL_TS">
+                            <low value="20130321"/>
+                            <high nullFlavor="NA"/>
+                        </effectiveTime>
+                    </example>
+                            <attribute name="nullFlavor" isOptional="true" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10704"/>
+                            <element name="hl7:low" datatype="IVXB_TS" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10705">
+                                <item original="false" label="Useperiod"/>
+                            </element>
+                            <element name="hl7:high" datatype="IVXB_TS" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10706">
+                                <item original="false" label="Useperiod"/>
+                            </element>
+                        </element>
+                        <element name="hl7:effectiveTime[hl7:width][not(hl7:low|hl7:high)]" datatype="IVL_TS" minimumMultiplicity="0" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.3.1937.777.15.9.10707">
+                            <desc language="en-US">
+                                <b>Case 2: 'floating' period:</b>
+                        <br clear="none"/>The width element is used to specify a period of (actual or intended) administration that is not anchored to any specific date (e.g. a two weeks therapy)</desc>
+                            <item original="false" label="Useperiod"/>
+                            <example type="neutral" caption="2 week period">
+                        <effectiveTime type="IVL_TS">
+                            <width value="2" unit="w"/>
+                        </effectiveTime>
+                    </example>
+                            <element name="hl7:low" conformance="NP" id="2.16.840.1.113883.3.1937.777.15.9.10708">
+                                <item original="false" label="Useperiod"/>
+                            </element>
+                            <element name="hl7:high" conformance="NP" id="2.16.840.1.113883.3.1937.777.15.9.10980">
+                                <item original="false" label="Useperiod"/>
+                            </element>
+                            <element name="hl7:center" conformance="NP" id="2.16.840.1.113883.3.1937.777.15.9.10981">
+                                <item original="false" label="Useperiod"/>
+                            </element>
+                            <element name="hl7:width" datatype="PQ" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.13.9.122">
+                                <item original="false" label="Useperiod"/>
+                                <attribute name="unit" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.13.9.123">
+                                    <vocabulary valueSet="2.16.840.1.113883.11.21.1" flexibility="dynamic" vsid="2.16.840.1.113883.11.21.1" vsname="MedicationTimeUnits" vsdisplayName="Medication Time Units (UCUM)" vseffectiveDate="2023-02-01T11:12:08" vsstatusCode="final" vsversionLabel="3.0" linkedartefactmissing="false"/>
+                                </attribute>
+                            </element>
+                        </element>
+                        <element name="hl7:effectiveTime[hl7:low | hl7:width][not(hl7:high)]" datatype="IVL_TS" minimumMultiplicity="0" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.3.1937.777.15.9.10982">
+                            <desc language="en-US">
+                                <b>Case 3: anchored period:</b>
+                        <br clear="none"/>The width element is used to specify a period of (actual or intended) administration anchored to a specific date (e.g. a two weeks therapy starting today)</desc>
+                            <item original="false" label="Useperiod"/>
+                            <example type="neutral" caption="2 week period starting on 2013-03-21">
+                        <effectiveTime type="IVL_TS">
+                            <low value="20130321"/>
+                            <width value="2" unit="w"/>
+                        </effectiveTime>
+                    </example>
+                            <element name="hl7:low" datatype="IVXB_TS" minimumMultiplicity="0" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.3.1937.777.15.9.10983">
+                                <item original="false" label="Useperiod"/>
+                            </element>
+                            <element name="hl7:width" datatype="PQ" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10984">
+                                <item original="false" label="Useperiod"/>
+                                <attribute name="unit" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10985">
+                                    <vocabulary valueSet="2.16.840.1.113883.11.21.1" flexibility="dynamic" vsid="2.16.840.1.113883.11.21.1" vsname="MedicationTimeUnits" vsdisplayName="Medication Time Units (UCUM)" vseffectiveDate="2023-02-01T11:12:08" vsstatusCode="final" vsversionLabel="3.0" linkedartefactmissing="false"/>
+                                </attribute>
+                            </element>
+                        </element>
+                    </choice>
+                    <staticAssociations/>
+                </include>
+                <element name="hl7:repeatNumber" datatype="IVL_INT" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.28">
+                    <item original="false" label="MedicationStatement"/>
+                </element>
+                <element name="hl7:routeCode" datatype="CE" strength="example" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.29">
+                    <item original="false" label="MedicationStatement"/>
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.14581" vsid="2.16.840.1.113883.1.11.14581" vsname="RouteOfAdministration" vsdisplayName="RouteOfAdministration" vseffectiveDate="2014-03-26T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1360-20160323" linkedartefactmissing="false"/>
+                </element>
+                <element name="hl7:approachSiteCode" datatype="CD" strength="example" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.30">
+                    <item original="false" label="MedicationStatement"/>
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.19724" vsid="2.16.840.1.113883.1.11.19724" vsname="HumanSubstanceAdministrationSite" vsdisplayName="HumanSubstanceAdministrationSite" vseffectiveDate="2014-03-26T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1360-20160323" linkedartefactmissing="false"/>
+                </element>
+                <element name="hl7:doseQuantity" datatype="IVL_PQ" conformance="NP" id="2.16.840.1.113883.3.1937.777.15.9.31">
+                    <item original="false" label="MedicationStatement"/>
+                </element>
+                <element name="hl7:rateQuantity" datatype="IVL_PQ" conformance="NP" id="2.16.840.1.113883.3.1937.777.15.9.32">
+                    <item original="false" label="MedicationStatement"/>
+                </element>
+                <element name="hl7:maxDoseQuantity" datatype="RTO_PQ_PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.33">
+                    <item original="false" label="MedicationStatement"/>
+                </element>
+                <element name="hl7:administrationUnitCode" datatype="CE" conformance="NP" id="2.16.840.1.113883.3.1937.777.15.9.34">
+                    <item original="false" label="MedicationStatement"/>
+                </element>
+                <element name="hl7:subject" contains="2.16.840.1.113883.10.12.320" minimumMultiplicity="0" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.3.1937.777.15.9.35" tmid="2.16.840.1.113883.10.12.320" tmname="CDASubjectBody" tmdisplayName="CDA Subject (Body)" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false">
+                    <desc language="en-US">Patient: The patient that takes the medicine.</desc>
+                    <item original="false" label="MedicationStatement"/>
+                    <constraint language="en-US">Condition: This can be omitted if the patient context that is provided in the CDA header is identical to the subject</constraint>
+                </element>
+                <choice minimumMultiplicity="1" maximumMultiplicity="1">
+                    <item original="false" label="MedicationStatement"/>
+                    <element name="hl7:consumable" contains="2.16.840.1.113883.10.21.4.10" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.36" tmid="2.16.840.1.113883.10.21.4.10" tmname="UVMedicationInformationsimple" tmdisplayName="UV Medication Information (simple)" tmstatusCode="pending" tmversionLabel="R1-STU2-ballot" tmeffectiveDate="2021-09-29T19:15:16" url="http://art-decor.org/decor/services/" ident="pharmcda-" linkedartefactmissing="false">
+                        <desc language="en-US">Consumable: The medication that is administered (simple)</desc>
+                        <item original="false" label="MedicationStatement"/>
+                        <attribute name="typeCode" value="CSM" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.37"/>
+                    </element>
+                    <element name="hl7:consumable" contains="2.16.840.1.113883.10.21.4.11" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.936" tmid="2.16.840.1.113883.10.21.4.11" tmname="UVMedicationInformationdetail" tmdisplayName="UV Medication Information (detail)" tmeffectiveDate="2023-02-03T13:03:38" tmversionLabel="2023" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="pharmcda-" linkedartefactmissing="false">
+                        <desc language="en-US">Consumable: The medication that is administered (detail)</desc>
+                        <item original="false" label="MedicationStatement"/>
+                        <attribute name="typeCode" value="CSM" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.937"/>
+                    </element>
+                </choice>
+                <choice minimumMultiplicity="1" maximumMultiplicity="1">
+                    <desc language="en-US">Required author of the medication statement: healthcare professional or patient</desc>
+                    <item original="false" label="MedicationStatement"/>
+                    <element name="hl7:author" contains="2.16.840.1.113883.10.12.318" id="2.16.840.1.113883.3.1937.777.15.9.38" tmid="2.16.840.1.113883.10.12.318" tmname="CDAAuthorBody" tmdisplayName="CDA Author (Body)" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false">
+                        <desc language="en-US">Use this if the author of the medication statement is a healthcare professional</desc>
+                        <item original="false" label="MedicationStatement"/>
+                        <example type="neutral" caption="Author of the medication statement is a healthcare professional">
+                            <author>
+                                <time value="20170221"/>
+                                <assignedAuthor>
+                                    <id root="1.2.3.99.99.99" extension="75487435893498"/>
+                                    <assignedPerson>
+                                        <name>
+                                            <given qualifier="IN">Ampu</given>
+                                            <prefix qualifier="VV">L.</prefix>
+                                            <family>Lee</family>
+                                        </name>
+                                    </assignedPerson>
+                                </assignedAuthor>
+                            </author>
+                        </example>
+                    </element>
+                    <element name="hl7:participant[@typeCode='AUT']" id="2.16.840.1.113883.3.1937.777.15.9.39">
+                        <desc language="en-US">Use this if the author of the medication statement is the patient</desc>
+                        <item original="false" label="MedicationStatement"/>
+                        <example type="neutral" caption="Author of the medication statement is the patient">
+                            <participant typeCode="AUT">
+                                <time value="20170121091548"/>
+                                <participantRole classCode="PAT"/>
+                            </participant>
+                        </example>
+                        <attribute name="typeCode" value="AUT" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.40"/>
+                        <element name="hl7:time" datatype="TS" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.41">
+                            <item original="false" label="MedicationStatement"/>
+                        </element>
+                        <element name="hl7:participantRole" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.3.1937.777.15.9.42">
+                            <item original="false" label="MedicationStatement"/>
+                            <attribute name="classCode" value="PAT" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.43"/>
+                        </element>
+                    </element>
+                </choice>
+                <choice minimumMultiplicity="0" maximumMultiplicity="1">
+                    <desc language="en-US">Optional informants of the medication statement: healthcare professional or patient contact party (related party)</desc>
+                    <item original="false" label="MedicationStatement"/>
+                    <element name="hl7:informant[exists(hl7:assignedEntity)]" id="2.16.840.1.113883.3.1937.777.15.9.44">
+                        <desc language="en-US">Use this if the informant of the medication statement is a healthcare professional</desc>
+                        <item original="false" label="MedicationStatement"/>
+                        <example type="neutral" caption="Informant of the medication statement is a healthcare professional">
+                            <informant>
+                                <assignedEntity>
+                                    <id root="1.2.3.99.99.99" extension="75487435893498"/>
+                                    <assignedPerson>
+                                        <name>
+                                            <given qualifier="IN">Ampu</given>
+                                            <prefix qualifier="VV">L.</prefix>
+                                            <family>Lee</family>
+                                        </name>
+                                    </assignedPerson>
+                                </assignedEntity>
+                            </informant>
+                        </example>
+                        <attribute name="typeCode" value="INF" isOptional="true" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.45"/>
+                        <attribute name="contextControlCode" value="OP" isOptional="true" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.46"/>
+                        <element name="hl7:assignedEntity" contains="2.16.840.1.113883.10.12.153" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.47" tmid="2.16.840.1.113883.10.12.153" tmname="CDAAssignedEntity" tmdisplayName="CDA AssignedEntity" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false">
+                            <item original="false" label="MedicationStatement"/>
+                        </element>
+                    </element>
+                    <element name="hl7:participant[@typeCode='INF']" id="2.16.840.1.113883.3.1937.777.15.9.48">
+                        <desc language="en-US">Use this if the informant of the medication statement is the patient</desc>
+                        <item original="false" label="MedicationStatement"/>
+                        <example type="neutral" caption="Informant of the medication statement is the patient">
+                            <participant typeCode="INF">
+                                <time value="20170121091548"/>
+                                <participantRole classCode="PAT"/>
+                            </participant>
+                        </example>
+                        <attribute name="typeCode" value="INF" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.49"/>
+                        <element name="hl7:time" datatype="TS" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.50">
+                            <item original="false" label="MedicationStatement"/>
+                        </element>
+                        <element name="hl7:participantRole" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.777.15.9.51">
+                            <item original="false" label="MedicationStatement"/>
+                            <attribute name="classCode" value="PAT" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.52"/>
+                        </element>
+                    </element>
+                    <element name="hl7:informant[exists(hl7:relatedEntity)]" id="2.16.840.1.113883.3.1937.777.15.9.53">
+                        <desc language="en-US">Use this if the informant of the medication statement is a contact party (related party)</desc>
+                        <item original="false" label="MedicationStatement"/>
+                        <example type="neutral" caption="Informant of the medication statement is a contact party (related party)">
+                            <informant>
+                                <relatedEntity classCode="AGNT">
+                                    <relatedPerson classCode="PSN" determinerCode="INSTANCE">
+                                        <name>
+                                            <!-- .. -->
+                                        </name>
+                                    </relatedPerson>
+                                </relatedEntity>
+                            </informant>
+                        </example>
+                        <attribute name="typeCode" value="INF" isOptional="true" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.54"/>
+                        <attribute name="contextControlCode" value="OP" isOptional="true" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.55"/>
+                        <element name="hl7:relatedEntity" contains="2.16.840.1.113883.10.12.316" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.56" tmid="2.16.840.1.113883.10.12.316" tmname="CDARelatedEntity" tmdisplayName="CDA RelatedEntity" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false">
+                            <item original="false" label="MedicationStatement"/>
+                        </element>
+                    </element>
+                </choice>
+                <element name="hl7:participant[@typeCode='RCT']" contains="2.16.840.1.113883.10.12.321" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.57" tmid="2.16.840.1.113883.10.12.321" tmname="CDAParticipantBody" tmdisplayName="CDA Participant (Body)" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false">
+                    <desc language="en-US">Record Target: indicates the person who's medical record holds the documentation of this medication statement. This element is only populated when the document is placed in a medical record of someone other than the patient (subject).</desc>
+                    <item original="false" label="MedicationStatement"/>
+                    <attribute name="typeCode" value="RCT" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.58"/>
+                </element>
+                <element name="hl7:participant[@typeCode='VRF']" contains="2.16.840.1.113883.10.12.321" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.59" tmid="2.16.840.1.113883.10.12.321" tmname="CDAParticipantBody" tmdisplayName="CDA Participant (Body)" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false">
+                    <desc language="en-US">Verifier: The person or organization that has primary responsibility for the medication statement. The responsible party is not necessarily present in an action, but is accountable for the action through the power to delegate.</desc>
+                    <item original="false" label="MedicationStatement"/>
+                    <attribute name="typeCode" value="VRF" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.60"/>
+                </element>
+                <element name="hl7:entryRelationship[hl7:substanceAdministration]" contains="2.16.840.1.113883.10.21.4.6" minimumMultiplicity="0" maximumMultiplicity="*" conformance="C" id="2.16.840.1.113883.3.1937.777.15.9.61" tmid="2.16.840.1.113883.10.21.4.6" tmname="UVSubordinateadministration" tmdisplayName="UV Subordinate Substance Administration" tmeffectiveDate="2023-01-30T09:36:00" tmstatusCode="draft" tmversionLabel="2023" url="http://art-decor.org/decor/services/" ident="pharmcda-" linkedartefactmissing="false">
+                    <desc language="en-US">Subordinate Substance Administration Statament as a component of the overall medication statement. <br/>At least one subordinated &lt;substanceAdministration&gt; has to be present to convey information about dosages (dose, frequency of intakes,..) unless medications are unknown or known absent. <br/>Subordinated &lt;substanceAdministration&gt; elements
+                        can be also used either to handle split dosing, or to support combination medications.</desc>
+                    <item original="false" label="MedicationStatement"/>
+                    <example type="neutral">
+                        <entryRelationship typeCode="COMP">
+                            <!-- component: Subordinate Substance Administration Statement. -->
+                            <substanceAdministration classCode="SBADM" moodCode="EVN">
+                                <templateId root="2.16.840.1.113883.10.21.4.6"/>
+                                <!-- .. -->
+                            </substanceAdministration>
+                        </entryRelationship>
+                    </example>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.62"/>
+                    <element name="hl7:sequenceNumber" datatype="INT" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.63">
+                        <desc language="en-US">Sequence number of the Subordinate Substance Administration.</desc>
+                        <item original="false" label="MedicationStatement"/>
+                    </element>
+                    <constraint language="en-US">At least one subordinate <substanceAdministration> element SHALL be present unless medications are unknown or known absent.</substanceAdministration>
+                    </constraint>
+                </element>
+                <element name="hl7:entryRelationship[@typeCode='REFR'][hl7:substanceAdministration]" contains="2.16.840.1.113883.10.21.4.8" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.64" tmid="2.16.840.1.113883.10.21.4.8" tmname="UVMedicationOrderReference" tmdisplayName="UV Medication Order Reference" tmstatusCode="pending" tmversionLabel="R1-STU2-ballot" tmeffectiveDate="2017-03-30T00:00:00" url="http://art-decor.org/decor/services/" ident="pharmcda-" linkedartefactmissing="false">
+                    <desc language="en-US">Medication Order Reference.</desc>
+                    <item original="false" label="MedicationStatement"/>
+                    <example type="neutral">
+                        <entryRelationship typeCode="REFR">
+                            <substanceAdministration classCode="SBADM" moodCode="RQO">
+                                <templateId root="2.16.840.1.113883.10.21.4.8"/>
+                                <!-- .. -->
+                            </substanceAdministration>
+                        </entryRelationship>
+                    </example>
+                    <attribute name="typeCode" value="REFR" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.65"/>
+                </element>
+                <element name="hl7:entryRelationship[@typeCode='REFR'][[hl7:supply]" contains="2.16.840.1.113883.10.21.4.9" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.66" tmid="2.16.840.1.113883.10.21.4.9" tmname="UVDispenseEventReference" tmdisplayName="UV Dispense Event Reference" tmstatusCode="pending" tmversionLabel="R1-STU2-ballot" tmeffectiveDate="2017-03-30T00:00:00" url="http://art-decor.org/decor/services/" ident="pharmcda-" linkedartefactmissing="false">
+                    <desc language="en-US">Dispense Event Reference.</desc>
+                    <item original="false" label="MedicationStatement"/>
+                    <example type="neutral">
+                        <entryRelationship typeCode="REFR">
+                            <supply classCode="SPLY" moodCode="EVN">
+                                <templateId root="2.16.840.1.113883.10.21.4.9"/>
+                                <!-- .. -->
+                            </supply>
+                        </entryRelationship>
+                    </example>
+                    <attribute name="typeCode" value="REFR" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.67"/>
+                </element>
+            </element>
+            <staticAssociations/>
+            <uses type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.12.153" name="CDAAssignedEntity" displayName="CDA AssignedEntity" effectiveDate="2005-09-07T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-"/>
+            <uses type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.12.316" name="CDARelatedEntity" displayName="CDA RelatedEntity" effectiveDate="2005-09-07T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-"/>
+            <uses type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.12.318" name="CDAAuthorBody" displayName="CDA Author (Body)" effectiveDate="2005-09-07T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-"/>
+            <uses type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.12.320" name="CDASubjectBody" displayName="CDA Subject (Body)" effectiveDate="2005-09-07T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-"/>
+            <uses type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.12.321" name="CDAParticipantBody" displayName="CDA Participant (Body)" effectiveDate="2005-09-07T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-"/>
+            <uses type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.6" name="UVSubordinateadministration" displayName="UV Subordinate Substance Administration" effectiveDate="2023-01-30T09:36:00" statusCode="draft" versionLabel="2023" lastModifiedDate="2023-01-30T09:40:52" url="http://art-decor.org/decor/services/" ident="pharmcda-"/>
+            <uses type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.8" name="UVMedicationOrderReference" displayName="UV Medication Order Reference" statusCode="pending" lastModifiedDate="2023-01-29T21:55:06" versionLabel="R1-STU2-ballot" effectiveDate="2017-03-30T00:00:00" url="http://art-decor.org/decor/services/" ident="pharmcda-"/>
+            <uses type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.9" name="UVDispenseEventReference" displayName="UV Dispense Event Reference" statusCode="pending" lastModifiedDate="2023-01-29T21:55:06" versionLabel="R1-STU2-ballot" effectiveDate="2017-03-30T00:00:00" url="http://art-decor.org/decor/services/" ident="pharmcda-"/>
+            <uses type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.10" name="UVMedicationInformationsimple" displayName="UV Medication Information (simple)" statusCode="pending" versionLabel="R1-STU2-ballot" lastModifiedDate="2023-01-29T21:55:06" effectiveDate="2021-09-29T19:15:16" url="http://art-decor.org/decor/services/" ident="pharmcda-"/>
+            <uses type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.11" name="UVMedicationInformationdetail" displayName="UV Medication Information (detail)" effectiveDate="2023-02-03T13:03:38" versionLabel="2023" lastModifiedDate="2023-01-29T21:55:06" statusCode="draft" url="http://art-decor.org/decor/services/" ident="pharmcda-"/>
+            <uses type="include" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.9.1" name="Useperiod" displayName="UV Use Period" effectiveDate="2023-01-30T09:55:27" statusCode="draft" versionLabel="2023" lastModifiedDate="2023-01-30T10:02:40" url="http://art-decor.org/decor/services/" ident="pharmcda-"/>
+        </template>
+    </template>
+</result>

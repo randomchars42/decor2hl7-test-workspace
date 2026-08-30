@@ -1,0 +1,56 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.4092" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.4092" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="Traumatic Injury Observation" ident="aktin-" name="TraumaticInjuryObservation" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="draft" url="http://art-decor.org/decor/services/" effectiveDate="2017-02-01T00:00:00">
+            <desc language="en-US">Traumatic Injury Observation</desc>
+            <desc language="de-DE">Verletzungsmuster</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.303" tmname="CDAObservation" tmdisplayName="CDA Observation" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <relationship type="ADAPT" template="2.16.840.1.113883.3.2898.10.2111" flexibility="2014-06-09T00:00:00" url="http://art-decor.org/decor/services/" linkedartefactmissing="true"/>
+            <context id="**"/>
+            <example type="neutral">
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4092"/>
+                    <code code="11374-6" codeSystem="2.16.840.1.113883.6.1" displayName="Injury incident description"/>
+                    <statusCode code="completed"/>
+                    <value xsi:type="CE" nullFlavor="OTH">
+                        <originalText>
+                            <!-- Referenz zu section.text: Durch die Rettungsleitstelle angemeldetes Verletzungsmuster -->
+                            <reference value="#avm"/>
+                        </originalText>
+                    </value>
+                </observation>
+            </example>
+            <element name="hl7:observation" id="2.16.840.1.113883.2.6.60.3.9.163091">
+                <item original="false" label="TraumaticInjuryObservation"/>
+                <attribute name="classCode" value="OBS" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.163092"/>
+                <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.163093"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.163094">
+                    <item original="false" label="TraumaticInjuryObservation"/>
+                    <attribute name="root" value="1.2.276.0.76.10.4092" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.163095"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.163096">
+                    <item original="false" label="TraumaticInjuryObservation"/>
+                    <vocabulary code="11374-6" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.163097">
+                    <item original="false" label="TraumaticInjuryObservation"/>
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="CE" id="2.16.840.1.113883.2.6.60.3.9.163098">
+                    <item original="false" label="TraumaticInjuryObservation"/>
+                    <attribute name="nullFlavor" value="OTH" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.163099"/>
+                    <element name="hl7:originalText" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="ED" id="2.16.840.1.113883.2.6.60.3.9.163100">
+                        <item original="false" label="TraumaticInjuryObservation"/>
+                        <element name="hl7:reference" minimumMultiplicity="1" maximumMultiplicity="1" datatype="URL" id="2.16.840.1.113883.2.6.60.3.9.163101">
+                            <item original="false" label="TraumaticInjuryObservation"/>
+                        </element>
+                    </element>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="dependency" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.3068" name="Injuryeventsummary" displayName="Unfallereignis" effectiveDate="2017-01-10T00:00:00" statusCode="draft" ident="aktin-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4088" name="InjuryEventDetail" displayName="Injury Event Detail" effectiveDate="2017-02-01T00:00:00" statusCode="draft" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4089" name="TraumaInjuryObservationOrganizer" displayName="Trauma Injury Observation Organizer" effectiveDate="2017-02-01T00:00:00" statusCode="draft" ident="aktin-"/>
+        </template>
+    </template>
+</result>

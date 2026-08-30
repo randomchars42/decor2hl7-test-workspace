@@ -1,0 +1,112 @@
+<dataset xmlns:json="http://www.json.org" id="1.2.40.0.34.777.1.1.1" effectiveDate="2017-06-21T00:00:00" statusCode="draft" versionLabel="v2" prefix="elgabbr-" shortName="elga_basisdataset" iddisplay="elgabbr-dataset(v2)-" url="http://art-decor.org/decor/services/" ident="elgabbr-"><!--
+ This is a view of the dataset "ELGA Basis-Dataset" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">ELGA Basis-Dataset</name>
+    <desc language="de-DE">Basis Datensätze - Baukasten für ELGA Dokumente</desc>
+    <concept id="1.2.40.0.34.777.1.2.143" effectiveDate="2018-06-22T15:11:01" statusCode="draft" type="group" iddisplay="elgabbr-dataelement-143">
+        <implementation markdown="Laborbereich"/>
+        <name language="de-DE">Bereich</name>
+        <desc language="de-DE">Laborbereich</desc>
+        <concept id="1.2.40.0.34.777.1.2.144" effectiveDate="2018-06-22T15:11:33" statusCode="draft" type="group" iddisplay="elgabbr-dataelement-144" shortName="gruppe">
+            <implementation shortName="gruppe" markdown="Laborgruppe"/>
+            <name language="de-DE">Gruppe</name>
+            <desc language="de-DE">Laborgruppe</desc>
+            <concept id="1.2.40.0.34.777.1.2.145" effectiveDate="2018-06-22T15:12:00" statusCode="draft" type="group" iddisplay="elgabbr-dataelement-145" shortName="laboruntersuchung">
+                <implementation shortName="laboruntersuchung" markdown="Einzelne Laboruntersuchung "/>
+                <name language="de-DE">Laboruntersuchung</name>
+                <synonym language="de-DE">Laboranalyse</synonym>
+                <synonym language="de-DE">Laborwert</synonym>
+                <desc language="de-DE">Einzelne Laboruntersuchung </desc>
+                <concept id="1.2.40.0.34.777.1.2.149" effectiveDate="2018-06-22T15:17:55" statusCode="draft" type="item" iddisplay="elgabbr-dataelement-149" shortName="id">
+                    <implementation shortName="id" markdown="Identifikator der Laboruntersuchung"/>
+                    <name language="de-DE">ID</name>
+                    <desc language="de-DE">Identifikator der Laboruntersuchung</desc>
+                    <valueDomain type="identifier"/>
+                </concept>
+                <concept id="1.2.40.0.34.777.1.2.150" effectiveDate="2018-06-22T15:19:04" statusCode="draft" type="item" iddisplay="elgabbr-dataelement-150" shortName="status">
+                    <implementation shortName="status" markdown="Status der Laboruntersuchung (durchgeführt, offen, storniert)"/>
+                    <name language="de-DE">Status</name>
+                    <desc language="de-DE">Status der Laboruntersuchung (durchgeführt, offen, storniert)</desc>
+                    <valueDomain type="code">
+                        <conceptList id="1.2.40.0.34.777.1.2.150.20180622151904.0"/>
+                    </valueDomain>
+                </concept>
+                <concept id="1.2.40.0.34.777.1.2.146" effectiveDate="2018-06-22T15:13:12" statusCode="draft" type="group" iddisplay="elgabbr-dataelement-146" shortName="laborparameter">
+                    <implementation shortName="laborparameter" markdown="Laborparameter"/>
+                    <name language="de-DE">Laborparameter</name>
+                    <desc language="de-DE">Laborparameter</desc>
+                    <concept id="1.2.40.0.34.777.1.2.147" effectiveDate="2018-06-22T15:14:14" statusCode="draft" type="item" iddisplay="elgabbr-dataelement-147" shortName="code">
+                        <implementation shortName="code" markdown="Code des Laborparameters (LOINC)"/>
+                        <name language="de-DE">Code</name>
+                        <desc language="de-DE">Code des Laborparameters (LOINC)</desc>
+                        <valueDomain type="code">
+                            <conceptList id="1.2.40.0.34.777.1.2.147.20180622151414.0"/>
+                        </valueDomain>
+                    </concept>
+                    <concept id="1.2.40.0.34.777.1.2.148" effectiveDate="2018-06-22T15:15:59" statusCode="draft" type="item" iddisplay="elgabbr-dataelement-148" shortName="bezeichnung">
+                        <implementation shortName="bezeichnung" markdown="Bezeichnung des Laborparameters"/>
+                        <name language="de-DE">Bezeichnung</name>
+                        <desc language="de-DE">Bezeichnung des Laborparameters</desc>
+                        <valueDomain type="string"/>
+                    </concept>
+                </concept>
+                <concept id="1.2.40.0.34.777.1.2.151" effectiveDate="2018-06-22T15:21:48" statusCode="draft" type="item" iddisplay="elgabbr-dataelement-151" shortName="zeitpunkt">
+                    <implementation shortName="zeitpunkt" markdown="Relevanter Zeitpunkt der Laboruntersuchung: Zeitpunkt der Abnahme des Materials (zu der der Patient in einem bestimmten Zustand war) &#xA;Der Zeitpunkt der Messung ist für die laborinterne Dokumentation und Qualitätskontrolle wichtig, aber nicht für den Laborbefund und die Auswertung der Laboruntersuchung."/>
+                    <name language="de-DE">Zeitpunkt</name>
+                    <desc language="de-DE">Relevanter Zeitpunkt der Laboruntersuchung: Zeitpunkt der Abnahme des Materials (zu der der Patient in einem bestimmten Zustand war) <br clear="none"/>Der Zeitpunkt der Messung ist für die laborinterne Dokumentation und Qualitätskontrolle wichtig, aber nicht für den Laborbefund und die Auswertung der Laboruntersuchung.</desc>
+                    <valueDomain type="datetime">
+                        <property timeStampPrecision="YMD"/>
+                    </valueDomain>
+                </concept>
+                <concept id="1.2.40.0.34.777.1.2.152" effectiveDate="2018-06-22T15:25:33" statusCode="draft" type="group" iddisplay="elgabbr-dataelement-152" shortName="messwert">
+                    <implementation shortName="messwert" markdown="Wert der Analyse (meist numerisch, kann aber auch textuell sein)"/>
+                    <name language="de-DE">Messwert</name>
+                    <synonym language="de-DE">Ergebnis</synonym>
+                    <desc language="de-DE">Wert der Analyse (meist numerisch, kann aber auch textuell sein)</desc>
+                    <concept id="1.2.40.0.34.777.1.2.157" effectiveDate="2018-06-22T15:34:34" statusCode="draft" type="item" iddisplay="elgabbr-dataelement-157" shortName="wert">
+                        <implementation shortName="wert" markdown="Wert"/>
+                        <name language="de-DE">Wert</name>
+                        <desc language="de-DE">Wert</desc>
+                        <valueDomain type="decimal"/>
+                    </concept>
+                    <concept id="1.2.40.0.34.777.1.2.158" effectiveDate="2018-06-22T15:36:41" statusCode="draft" type="item" iddisplay="elgabbr-dataelement-158" shortName="einheit">
+                        <implementation shortName="einheit" markdown="Einheit des Messwerts.&#xA;Muss in UCUM Notation angegeben werden"/>
+                        <name language="de-DE">Einheit</name>
+                        <desc language="de-DE">Einheit des Messwerts. <br clear="none"/>Muss in UCUM Notation angegeben werden</desc>
+                        <valueDomain type="string"/>
+                    </concept>
+                </concept>
+                <concept id="1.2.40.0.34.777.1.2.154" effectiveDate="2018-06-22T15:29:03" statusCode="draft" type="group" iddisplay="elgabbr-dataelement-154" shortName="referenzbereich">
+                    <implementation shortName="referenzbereich" markdown="Referenzbereich der Analyse.&#xA;Meist ein Intervall (numerische Analysen)&#xA;Mehrere Referenzbereiche sind möglich"/>
+                    <name language="de-DE">Referenzbereich</name>
+                    <synonym language="de-DE">Normalbereich</synonym>
+                    <desc language="de-DE">Referenzbereich der Analyse. <br clear="none"/>Meist ein Intervall (numerische Analysen)<br clear="none"/>Mehrere Referenzbereiche sind möglich</desc>
+                </concept>
+                <concept id="1.2.40.0.34.777.1.2.153" effectiveDate="2018-06-22T15:27:14" statusCode="draft" type="item" iddisplay="elgabbr-dataelement-153" shortName="interpretation">
+                    <implementation shortName="interpretation" markdown="Interpretations des Messwerts (Kennzeichen)"/>
+                    <name language="de-DE">Interpretation</name>
+                    <synonym language="de-DE">Bewertung</synonym>
+                    <desc language="de-DE">Interpretations des Messwerts (Kennzeichen)</desc>
+                    <valueDomain type="code">
+                        <conceptList id="1.2.40.0.34.777.1.2.153.20180622152714.0"/>
+                        <example type="neutral" caption="Erhöht">+</example>
+                    </valueDomain>
+                </concept>
+                <concept id="1.2.40.0.34.777.1.2.155" effectiveDate="2018-06-22T15:31:28" statusCode="draft" type="item" iddisplay="elgabbr-dataelement-155" shortName="kommentar">
+                    <implementation shortName="kommentar" markdown="Kommentierung der Laboruntersuchung"/>
+                    <name language="de-DE">Kommentar</name>
+                    <synonym language="de-DE">Analysekommentar</synonym>
+                    <desc language="de-DE">Kommentierung der Laboruntersuchung</desc>
+                    <valueDomain type="text"/>
+                </concept>
+                <concept id="1.2.40.0.34.777.1.2.156" effectiveDate="2018-06-22T15:32:18" statusCode="draft" type="group" iddisplay="elgabbr-dataelement-156" shortName="externes_labor">
+                    <implementation shortName="externes_labor" markdown="Kennzeichnung, wenn die Analyse nicht vom Labor durchgeführt wurde, das den Befund ausgibt."/>
+                    <name language="de-DE">Externes Labor</name>
+                    <desc language="de-DE">Kennzeichnung, wenn die Analyse nicht vom Labor durchgeführt wurde, das den Befund ausgibt.</desc>
+                </concept>
+            </concept>
+        </concept>
+    </concept>
+</dataset>

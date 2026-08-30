@@ -1,0 +1,80 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.20.1.49" name="PatientInstructions" displayName="Patient instructions" effectiveDate="2007-04-01T00:00:00" statusCode="pending" url="http://art-decor.org/decor/services/" ident="ccd1-" sdtc:dummy-1="urn:hl7-org:sdtc" xml:dummy-2="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-4="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance">
+    <desc language="en-US">
+        <h5>3.9.2.2.2 Patient instructions</h5>
+        <p>Patient instructions are additional information provided to a patient related to one of their medications (e.g. “take on an empty stomach”).</p>
+        <p>
+            <b>CONF-330</b>: A medication activity <b>MAY</b> contain one or more patient instructions. <br/>
+            <b>CONF-331</b>: A patient instruction (templateId 2.16.840.1.113883.10.20.1.49) <b>SHALL</b> be represented with <b>Act</b>.<br/>
+            <b>CONF-332</b>: The value for “<b>Act / @moodCode</b>” in a patient instruction <b>SHALL</b> be “INT” “Intent” 2.16.840.1.113883.5.1001 ActMood <b>STATIC</b>.<br/>
+            <b>CONF-333</b>: The value for “<b>entryRelationship / @typeCode</b>” in a relationship to a patient instruction <b>SHALL</b> be “SUBJ” “Subject” 2.16.840.1.113883.5.1002 ActRelationshipType <b>STATIC</b>. </p>
+    </desc>
+    <classification type="cdaentrylevel"/>
+    <relationship type="SPEC" template="2.16.840.1.113883.10.12.301" flexibility="2005-09-07T00:00:00"/>
+    <context id="**"/>
+    <element name="hl7:act" id="2.16.840.1.113883.3.1937.777.4.9.2286">
+        <item label="CONF-331"/>
+        <attribute name="classCode" datatype="cs" id="2.16.840.1.113883.3.1937.777.4.9.2287">
+                    <!--valueSet name="x_ActClassDocumentEntryAct"-->
+            <vocabulary valueSet="2.16.840.1.113883.1.11.19599"/>
+        </attribute>
+        <attribute name="moodCode" value="INT" isOptional="false" id="2.16.840.1.113883.3.1937.777.4.9.2288">
+            <item label="CONF-332"/>
+        </attribute>
+        <attribute name="negationInd" datatype="bl" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.2289"/>
+        <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.3.1937.777.4.9.2290">
+            <attribute name="root" value="2.16.840.1.113883.10.20.1.49" isOptional="false" id="2.16.840.1.113883.3.1937.777.4.9.2291"/>
+        </element>
+        <element name="hl7:id" minimumMultiplicity="0" maximumMultiplicity="*" datatype="II" id="2.16.840.1.113883.3.1937.777.4.9.2292"/>
+        <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="CD" id="2.16.840.1.113883.3.1937.777.4.9.2293">
+            <vocabulary domain="ActCode"/>
+        </element>
+        <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.3.1937.777.4.9.2294"/>
+        <element name="hl7:statusCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CS" id="2.16.840.1.113883.3.1937.777.4.9.2295">
+                    <!--valueSet name="ActStatus"-->
+            <vocabulary valueSet="2.16.840.1.113883.1.11.15933"/>
+        </element>
+        <element name="hl7:effectiveTime" minimumMultiplicity="0" maximumMultiplicity="1" datatype="IVL_TS" id="2.16.840.1.113883.3.1937.777.4.9.2296"/>
+        <element name="hl7:priorityCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.4.9.2297">
+                    <!--valueSet name="ActPriority"-->
+            <vocabulary valueSet="2.16.840.1.113883.1.11.16866"/>
+        </element>
+        <element name="hl7:languageCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CS" id="2.16.840.1.113883.3.1937.777.4.9.2298">
+                    <!--valueSet name="HumanLanguage"-->
+            <vocabulary valueSet="2.16.840.1.113883.1.11.11526"/>
+        </element>
+                <!-- begin CS associations -->
+                <!--contains name="CCDSubjectBody"-->
+        <element name="hl7:subject" minimumMultiplicity="0" maximumMultiplicity="1" contains="2.16.840.1.113883.3.1937.777.4.10.3" id="2.16.840.1.113883.3.1937.777.4.9.2299"/>
+                <!--<element name="hl7:specimen" minimumMultiplicity="0" maximumMultiplicity="*" contains="CDASpecimen"/>-->
+                <!--<element name="hl7:performer" minimumMultiplicity="0" maximumMultiplicity="*" contains="CCDPerformerBody"/>-->
+                <!--<element name="hl7:author" minimumMultiplicity="0" maximumMultiplicity="*" contains="CDAAuthorBody"/>-->
+                <!--<element name="hl7:informant" minimumMultiplicity="0" maximumMultiplicity="*" contains="CCDinformantBody"/>-->
+                <!--<element name="hl7:participant" minimumMultiplicity="0" maximumMultiplicity="*" contains="CCDParticipantBody"/>-->
+                <!--contains name="Comment"-->
+        <element name="hl7:entryRelationship" minimumMultiplicity="0" maximumMultiplicity="*" contains="2.16.840.1.113883.10.20.1.40" id="2.16.840.1.113883.3.1937.777.4.9.2300">
+            <item label="CONF-502"/>
+            <attribute name="typeCode" datatype="cs" isOptional="false" id="2.16.840.1.113883.3.1937.777.4.9.2301">
+                        <!--valueSet name="x_ActRelationshipEntryRelationship"-->
+                <vocabulary valueSet="2.16.840.1.113883.1.11.19447"/>
+            </attribute>
+            <attribute name="contextConductionInd" datatype="bl" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.2302"/>
+            <attribute name="inversionInd" datatype="bl" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.2303"/>
+            <attribute name="negationInd" datatype="bl" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.2304"/>
+            <element name="hl7:sequenceNumber" minimumMultiplicity="0" maximumMultiplicity="1" datatype="INT" id="2.16.840.1.113883.3.1937.777.4.9.2305"/>
+            <element name="hl7:seperatableInd" minimumMultiplicity="0" maximumMultiplicity="1" datatype="BL" id="2.16.840.1.113883.3.1937.777.4.9.2306"/>
+        </element>
+                <!--<element name="hl7:entryRelationship" minimumMultiplicity="0" maximumMultiplicity="*" contains="CCDClinicalStatement">
+                    <attribute name="typeCode" datatype="cs" isOptional="false">
+                        <vocabulary valueSet="x_ActRelationshipEntryRelationship"/>
+                    </attribute>
+                    <attribute name="contextConductionInd" datatype="bl" isOptional="true"/>
+                    <attribute name="inversionInd" datatype="bl" isOptional="true"/>
+                    <attribute name="negationInd" datatype="bl" isOptional="true"/>
+                    <element name="hl7:sequenceNumber" minimumMultiplicity="0" maximumMultiplicity="1" datatype="INT"/>
+                    <element name="hl7:seperatableInd" minimumMultiplicity="0" maximumMultiplicity="1" datatype="BL"/>
+                </element>-->
+                <!--<element name="hl7:reference" minimumMultiplicity="0" maximumMultiplicity="*" contains="CDAReference"/>-->
+                <!--<element name="hl7:precondition" minimumMultiplicity="0" maximumMultiplicity="*" contains="CCDPrecondition"/>-->
+                <!-- end CS associations -->
+    </element>
+</template>

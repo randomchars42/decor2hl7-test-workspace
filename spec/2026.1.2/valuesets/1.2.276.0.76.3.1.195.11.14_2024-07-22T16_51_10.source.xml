@@ -1,0 +1,14 @@
+<valueSet xmlns:json="http://www.json.org" id="1.2.276.0.76.3.1.195.11.14" name="mts-indicators-orange" displayName="MTS-Indikatoren ORANGE" effectiveDate="2024-07-22T16:51:10" statusCode="draft" versionLabel="2024" canonicalUri="http://aktin.org/fhir/ValueSet/aktin-vs-mts-indicators-orange" lastModifiedDate="2024-07-22T16:51:10" url="http://art-decor.org/decor/services/" ident="aktin-">
+    <sourceCodeSystem json:array="true" id="1.2.276.0.76.3.1.195.5.102" identifierName="MTS-Indikatoren" canonicalUri="http://aktin.org/fhir/CodeSystem/aktin-cs-mts-indicators" canonicalUriDSTU2="http://aktin.org/fhir/CodeSystem/aktin-cs-mts-indicators" canonicalUriSTU3="http://aktin.org/fhir/CodeSystem/aktin-cs-mts-indicators" canonicalUriR4="http://aktin.org/fhir/CodeSystem/aktin-cs-mts-indicators" canonicalUriR4B="http://aktin.org/fhir/CodeSystem/aktin-cs-mts-indicators" canonicalUriR5="http://aktin.org/fhir/CodeSystem/aktin-cs-mts-indicators" context="projects/aktin-/mts-indicators-1.2.276.0.76.3.1.195.5.102"/>
+    <publishingAuthority json:array="true" name="AKTIN e. V." inherited="project">
+        <addrLine json:array="true">c/o Uniklinik RWTH Aachen</addrLine>
+        <addrLine json:array="true">Institut für Medizinische Informatik</addrLine>
+        <addrLine json:array="true">Pauwelsstraße 35</addrLine>
+        <addrLine json:array="true">52074 Aachen</addrLine>
+        <addrLine json:array="true" type="phone">Tel. +49 391 67 28186</addrLine>
+        <addrLine json:array="true" type="email">office@aktin.org</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="include" op="descendent-of" code="orange" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="orange"/>
+</valueSet>

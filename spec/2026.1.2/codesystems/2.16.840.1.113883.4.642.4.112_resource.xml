@@ -1,0 +1,41 @@
+<codeSystems>
+    <repository url="http://art-decor.org/decor/services/" ident="ad5bbr-" referencedFrom="sxehealth-" projecttype="local">
+        <codeSystem id="2.16.840.1.113883.4.642.4.112" name="RequestStatus" displayName="RequestStatus" effectiveDate="2019-11-01T09:29:23" statusCode="draft" versionLabel="4.0.1" canonicalUri="http://hl7.org/fhir/request-status" caseSensitive="true" language="de-DE">
+            <desc language="en-US">Codes identifying the lifecycle stage of a request.</desc>
+            <publishingAuthority name="HL7 (FHIR Project)">
+                <addrLine type="uri">http://hl7.org/fhir</addrLine>
+                <addrLine type="email">fhir@lists.hl7.org</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <codedConcept code="draft" level="0" type="L" statusCode="active">
+                    <designation displayName="Draft" language="en-US" type="preferred"/>
+                    <desc language="en-US">The request has been created but is not yet complete or ready for action.</desc>
+                </codedConcept>
+                <codedConcept code="active" level="0" type="L" statusCode="active">
+                    <designation displayName="Active" language="en-US" type="preferred"/>
+                    <desc language="en-US">The request is in force and ready to be acted upon.</desc>
+                </codedConcept>
+                <codedConcept code="on-hold" level="0" type="L" statusCode="active">
+                    <designation displayName="On Hold" language="en-US" type="preferred"/>
+                    <desc language="en-US">The request (and any implicit authorization to act) has been temporarily withdrawn but is expected to resume in the future.</desc>
+                </codedConcept>
+                <codedConcept code="revoked" level="0" type="L" statusCode="active">
+                    <designation displayName="Revoked" language="en-US" type="preferred"/>
+                    <desc language="en-US">The request (and any implicit authorization to act) has been terminated prior to the known full completion of the intended actions. No further activity should occur.</desc>
+                </codedConcept>
+                <codedConcept code="completed" level="0" type="L" statusCode="active">
+                    <designation displayName="Completed" language="en-US" type="preferred"/>
+                    <desc language="en-US">The activity described by the request has been fully performed. No further activity will occur.</desc>
+                </codedConcept>
+                <codedConcept code="entered-in-error" level="0" type="L" statusCode="active">
+                    <designation displayName="Entered in Error" language="en-US" type="preferred"/>
+                    <desc language="en-US">This request should never have existed and should be considered 'void'. (It is possible that real-world decisions were based on it. If real-world activity has occurred, the status should be "revoked" rather than "entered-in-error".).</desc>
+                </codedConcept>
+                <codedConcept code="unknown" level="0" type="L" statusCode="active">
+                    <designation displayName="Unknown" language="en-US" type="preferred"/>
+                    <desc language="en-US">The authoring/source system does not know which of the status values currently applies for this request. Note: This concept is not to be used for "other" - one of the listed statuses is presumed to apply, but the authoring/source system does not know which.</desc>
+                </codedConcept>
+            </conceptList>
+        </codeSystem>
+    </repository>
+</codeSystems>

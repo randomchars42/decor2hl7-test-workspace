@@ -1,0 +1,176 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:local="http://art-decor.org/local" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.20.22.4.14" name="ProcedureActivityProcedure" displayName="Procedure Activity Procedure" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" url="http://art-decor.org/decor/services/" ident="ccda-" sdtc:dummy-1="urn:hl7-org:sdtc" local:dummy-2="http://art-decor.org/local" xml:dummy-3="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-5="urn:hl7-org:v3" xsi:dummy-6="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">The common notion of ""procedure"" is broader than that specified by the HL7 Version 3 Reference Information Model (RIM). Therefore procedure templates can be represented with various RIM classes: act (e.g., dressing change), observation (e.g., EEG), procedure (e.g. splenectomy). This clinical statement represents procedures whose immediate and primary outcome
+                (post-condition) is the alteration of the physical condition of the patient. Examples of these procedures are an appendectomy, hip replacement and a creation of a gastrostomy.</desc>
+            <classification type="cdaentrylevel"/>
+            <context id="**"/>
+            <element name="cda:procedure" id="2.16.840.1.113883.3.1937.99.3.9.526">
+                <attribute name="classCode" value="PROC" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.527">
+                    <item label="conf-7652"/>
+                </attribute>
+                <attribute name="moodCode" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.528">
+                    <item label="conf-7653"/>
+                    <vocabulary valueSet="2.16.840.1.113883.11.20.9.18"/>
+                </attribute>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.529">
+                    <desc language="en-US">SHALL contain exactly one [1..1] templateId (CONF:7654) such that it</desc>
+                    <item label="conf-7654"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.22.4.14" datatype="uid" id="2.16.840.1.113883.3.1937.99.3.9.530">
+                        <item label="conf-10521"/>
+                    </attribute>
+                </element>
+                <element name="cda:id" datatype="II" minimumMultiplicity="1" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.531">
+                    <desc language="en-US">SHALL contain at least one [1..*] id (CONF:7655).</desc>
+                    <item label="conf-7655"/>
+                </element>
+                <element name="cda:code" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.532">
+                    <desc language="en-US">SHALL contain exactly one [1..1] code (CONF:7656).</desc>
+                    <item label="conf-7656"/>
+                    <element name="cda:originalText" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.533">
+                        <desc language="en-US">This code SHOULD contain zero or one [0..1] originalText (CONF:19203).</desc>
+                        <item label="conf-19203"/>
+                        <element name="cda:reference" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.534">
+                            <desc language="en-US">The originalText, if present, SHOULD contain zero or one [0..1] reference (CONF:19204).<p/>This reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1).</desc>
+                            <item label="conf-19204"/>
+                            <attribute name="value" isOptional="true" id="2.16.840.1.113883.3.1937.99.3.9.535">
+                                <item label="conf-19205"/>
+                            </attribute>
+                            <assert role="error" test="not(@value) or starts-with(@value, '#')">This reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1).</assert>
+                        </element>
+                    </element>
+                </element>
+                <element name="cda:statusCode" datatype="CS" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.536">
+                    <desc language="en-US">SHALL contain exactly one [1..1] statusCode, which SHALL be selected from ValueSet ProcedureAct statusCode 2.16.840.1.113883.11.20.9.22 DYNAMIC (CONF:7661).</desc>
+                    <item label="conf-7661"/>
+                    <vocabulary valueSet="2.16.840.1.113883.11.20.9.22"/>
+                </element>
+                <element name="cda:effectiveTime" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.537">
+                    <desc language="en-US">SHOULD contain zero or one [0..1] effectiveTime (CONF:7662).</desc>
+                    <item label="conf-7662"/>
+                </element>
+                <element name="cda:priorityCode" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.538">
+                    <desc language="en-US">MAY contain zero or one [0..1] priorityCode, which SHALL be selected from ValueSet Act Priority 2.16.840.1.113883.1.11.16866 DYNAMIC (CONF:7668).</desc>
+                    <item label="conf-7668"/>
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.16866"/>
+                </element>
+                <element name="cda:methodCode" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.539">
+                    <desc language="en-US">MAY contain zero or one [0..1] methodCode (CONF:7670).<p/>methodCode SHALL NOT conflict with the method inherent in Procedure / code.</desc>
+                    <item label="conf-7670"/>
+                </element>
+                <element name="cda:targetSiteCode" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.540">
+                    <desc language="en-US">SHOULD contain zero or more [0..*] targetSiteCode (CONF:7683).</desc>
+                    <item label="conf-7683"/>
+                    <attribute name="code" id="2.16.840.1.113883.3.1937.99.3.9.541">
+                        <item label="conf-16082"/>
+                    </attribute>
+                </element>
+                <element name="cda:specimen" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.542">
+                    <desc language="en-US">MAY contain zero or more [0..*] specimen (CONF:7697).<p/>This specimen is for representing specimens obtained from a procedure.</desc>
+                    <item label="conf-7697"/>
+                    <element name="cda:specimenRole" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.543">
+                        <desc language="en-US">The specimen, if present, SHALL contain exactly one [1..1] specimenRole (CONF:7704).</desc>
+                        <item label="conf-7704"/>
+                        <element name="cda:id" datatype="II" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.544">
+                            <desc language="en-US">This specimenRole SHOULD contain zero or more [0..*] id (CONF:7716).<p/> If you want to indicate that the Procedure and the Results are referring to the same specimen, the Procedure/specimen/specimenRole/id SHOULD be set to equal an Organizer/specimen/ specimenRole/id</desc>
+                            <item label="conf-7716"/>
+                        </element>
+                    </element>
+                </element>
+                <element name="cda:performer" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.545">
+                    <desc language="en-US">SHOULD contain zero or more [0..*] performer (CONF:7718) such that it</desc>
+                    <item label="conf-7718"/>
+                    <element name="cda:assignedEntity" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.546">
+                        <desc language="en-US">SHALL contain exactly one [1..1] assignedEntity (CONF:7720).</desc>
+                        <item label="conf-7720"/>
+                        <element name="cda:id" datatype="II" minimumMultiplicity="1" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.547">
+                            <desc language="en-US">This assignedEntity SHALL contain at least one [1..*] id (CONF:7722).</desc>
+                            <item label="conf-7722"/>
+                        </element>
+                        <element name="cda:addr" datatype="AD" minimumMultiplicity="1" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.548">
+                            <desc language="en-US">This assignedEntity SHALL contain at least one [1..*] addr (CONF:7731).</desc>
+                            <item label="conf-7731"/>
+                        </element>
+                        <element name="cda:telecom" datatype="TEL" minimumMultiplicity="1" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.549">
+                            <desc language="en-US">This assignedEntity SHALL contain at least one [1..*] telecom (CONF:7732).</desc>
+                            <item label="conf-7732"/>
+                        </element>
+                        <element name="cda:representedOrganization" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.550">
+                            <desc language="en-US">This assignedEntity SHOULD contain zero or one [0..1] representedOrganization (CONF:7733).</desc>
+                            <item label="conf-7733"/>
+                            <element name="cda:id" datatype="II" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.551">
+                                <desc language="en-US">The representedOrganization, if present, SHOULD contain zero or more [0..*] id (CONF:7734).</desc>
+                                <item label="conf-7734"/>
+                            </element>
+                            <element name="cda:name" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.552">
+                                <desc language="en-US">The representedOrganization, if present, MAY contain zero or more [0..*] name (CONF:7735).</desc>
+                                <item label="conf-7735"/>
+                            </element>
+                            <element name="cda:telecom" datatype="TEL" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.553">
+                                <desc language="en-US">The representedOrganization, if present, SHALL contain exactly one [1..1] telecom (CONF:7737).</desc>
+                                <item label="conf-7737"/>
+                            </element>
+                            <element name="cda:addr" datatype="AD" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.554">
+                                <desc language="en-US">The representedOrganization, if present, SHALL contain exactly one [1..1] addr (CONF:7736).</desc>
+                                <item label="conf-7736"/>
+                            </element>
+                        </element>
+                    </element>
+                </element>
+                <element name="cda:participant" contains="2.16.840.1.113883.10.20.22.4.37" flexibility="2013-01-31T00:00:00" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.555">
+                    <item label="conf-7751"/>
+                    <attribute name="typeCode" value="DEV" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.556">
+                        <item label="conf-7752"/>
+                    </attribute>
+                </element>
+                <element name="cda:participant" contains="2.16.840.1.113883.10.20.22.4.32" flexibility="2013-01-31T00:00:00" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.557">
+                    <item label="conf-7765"/>
+                    <attribute name="typeCode" value="LOC" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.558">
+                        <item label="conf-7766"/>
+                    </attribute>
+                </element>
+                <element name="cda:entryRelationship" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.559">
+                    <desc language="en-US">MAY contain zero or more [0..*] entryRelationship (CONF:7768) such that it</desc>
+                    <item label="conf-7768"/>
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.560">
+                        <item label="conf-7769"/>
+                    </attribute>
+                    <attribute name="inversionInd" value="true" datatype="bl" id="2.16.840.1.113883.3.1937.99.3.9.561">
+                        <item label="conf-8009"/>
+                    </attribute>
+                    <element name="cda:encounter" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.562">
+                        <desc language="en-US">SHALL contain exactly one [1..1] encounter (CONF:7770).</desc>
+                        <item label="conf-7770"/>
+                        <attribute name="classCode" value="ENC" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.563">
+                            <item label="conf-7771"/>
+                        </attribute>
+                        <attribute name="moodCode" value="EVN" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.564">
+                            <item label="conf-7772"/>
+                        </attribute>
+                        <element name="cda:id" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.565">
+                            <desc language="en-US">This encounter SHALL contain exactly one [1..1] id (CONF:7773).<p/>Set the encounter ID to the ID of an encounter in another section to signify they are the same encounter.</desc>
+                            <item label="conf-7773"/>
+                        </element>
+                    </element>
+                </element>
+                <element name="cda:entryRelationship" contains="2.16.840.1.113883.10.20.22.4.20" flexibility="2013-01-31T00:00:00" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.566">
+                    <item label="conf-7775"/>
+                    <attribute name="typeCode" value="SUBJ" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.567">
+                        <item label="conf-7776"/>
+                    </attribute>
+                    <attribute name="inversionInd" value="true" datatype="bl" id="2.16.840.1.113883.3.1937.99.3.9.568">
+                        <item label="conf-7777"/>
+                    </attribute>
+                </element>
+                <element name="cda:entryRelationship" contains="2.16.840.1.113883.10.20.22.4.19" flexibility="2013-01-31T00:00:00" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.569">
+                    <item label="conf-7779"/>
+                    <attribute name="typeCode" value="RSON" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.570">
+                        <item label="conf-7780"/>
+                    </attribute>
+                </element>
+                <element name="cda:entryRelationship" contains="2.16.840.1.113883.10.20.22.4.16" flexibility="2013-01-31T00:00:00" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.571">
+                    <item label="conf-7886"/>
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.572">
+                        <item label="conf-7887"/>
+                    </attribute>
+                </element>
+            </element>
+        </template>

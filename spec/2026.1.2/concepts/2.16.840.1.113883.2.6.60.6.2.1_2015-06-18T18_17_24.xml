@@ -1,0 +1,95 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.2.6.60.6.1.1" effectiveDate="2015-06-18T18:17:24" statusCode="draft" versionLabel="2.0" prefix="psr-" shortName="" iddisplay="psr-dataset-1" url="http://art-decor.org/decor/services/" ident="psr-"><!--
+ This is a view of the dataset "" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE"/>
+    <desc language="de-DE"/>
+    <concept id="2.16.840.1.113883.2.6.60.6.2.1" effectiveDate="2015-06-18T18:17:24" statusCode="draft" type="group" iddisplay="psr-dataelement-1">
+        <implementation markdown="A substance, physical object or collection of objects that the laboratory considers a single discrete, uniquely identified unit that is the subject of one or more steps in the laboratory workflow. This is usually a part, a block or a slide."/>
+        <name language="de-DE" lastTranslated="2017-06-21T11:48:30">Probe / Material</name>
+        <desc language="de-DE" lastTranslated="2017-06-21T11:50:02">Physisches Objekt oder Sammlung physischer Objekte, die als Einheit betrachtet werden und als Gegenstand einer Prozedur im Workflow gelten. Üblicherweise ein Material, ein Block oder ein Schnitt.</desc>
+        <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.1" code="123038009" codeSystem="2.16.840.1.113883.6.96" displayName="Specimen (specimen)" effectiveDate="2015-10-19T18:55:17" equivalence="equal" codeSystemName="SNOMED Clinical Terms"/>
+        <concept id="2.16.840.1.113883.2.6.60.6.2.34" effectiveDate="2015-06-24T17:24:42" statusCode="draft" type="group" iddisplay="psr-dataelement-34" shortName="material">
+            <implementation shortName="material" markdown="An organ or part of an organ or a collection of parts sent to the laboratory under a unique (sub-)order identifier for trimming, blocking, cutting and staining"/>
+            <name language="de-DE" lastTranslated="2017-06-21T11:50:58">Material</name>
+            <desc language="de-DE" lastTranslated="2017-06-21T11:51:58">Organ oder Organteil oder eine Sammlung derselben, die als Probe zur Bearbeitung und Begutachtung eingesandt werden.</desc>
+            <concept id="2.16.840.1.113883.2.6.60.6.2.66" statusCode="draft" effectiveDate="2015-10-26T08:39:55" type="item" iddisplay="psr-dataelement-66" shortName="materialid">
+                <implementation shortName="materialid" markdown="Identifier of the part, issued by the LIS. It corresponds with the Order ID."/>
+                <name language="de-DE" lastTranslated="2017-06-21T11:52:33">Material-ID</name>
+                <desc language="de-DE" lastTranslated="2017-06-21T11:52:55">ID des Einsendungsmaterials, kann identisch mit Fall-Nr. sein</desc>
+                <valueDomain type="identifier">
+                    <example type="neutral" caption="Part ID">&lt;id root="1.3.6.1.4.1.19376.1.8.9.9" extension="A7102400008_A1"/&gt;</example>
+                </valueDomain>
+            </concept>
+            <concept id="2.16.840.1.113883.2.6.60.6.2.35" statusCode="draft" effectiveDate="2015-06-24T17:27:09" type="group" iddisplay="psr-dataelement-35" shortName="paraffinblock">
+                <implementation shortName="paraffinblock" markdown="A piece of tissue under a unique identifier resulting from trimming, embedded in paraffin or othe embedding media (usually FFPE ... Formalin-fixed, Paraffin-embedded). "/>
+                <name language="de-DE" lastTranslated="2017-06-21T11:53:24">(Paraffin)block</name>
+                <desc language="de-DE" lastTranslated="2017-06-21T11:54:26">Paraffinblock mit zugeschnittenem, eingebettetem Gewebeteil.</desc>
+                <concept id="2.16.840.1.113883.2.6.60.6.2.67" statusCode="draft" effectiveDate="2015-10-26T08:40:31" type="item" iddisplay="psr-dataelement-67" shortName="blockid">
+                    <implementation shortName="blockid" markdown="Identifier of the paraffin block, issued by the LIS as work order ID. In most cases identical with a container ID of the tissue cassette."/>
+                    <name language="de-DE" lastTranslated="2017-06-21T11:54:54">Block-ID</name>
+                    <desc language="de-DE" lastTranslated="2017-06-21T11:57:31">ID des Blocks, meistens identisch mit der ID der Kassette.</desc>
+                    <valueDomain type="identifier">
+                        <example type="neutral" caption="Block-ID">&lt;id root="1.3.6.1.4.1.19376.1.8.9.9" extension="A7102400008_A1_1"/&gt;</example>
+                    </valueDomain>
+                </concept>
+                <concept id="2.16.840.1.113883.2.6.60.6.2.36" statusCode="draft" effectiveDate="2015-06-24T17:29:56" type="group" iddisplay="psr-dataelement-36" shortName="gewebsschnitt">
+                    <implementation shortName="gewebsschnitt" markdown="A section of tissue on a glass-slide, mounted in medium and covered by a cover plate, carrying a unique identifier, resulting from cutting from a block with subsequent staining procedure"/>
+                    <name language="de-DE" lastTranslated="2017-06-21T11:57:51">Gewebsschnitt</name>
+                    <desc language="de-DE" lastTranslated="2017-06-21T11:58:04">Gewebsschnitt von einem Block</desc>
+                    <concept id="2.16.840.1.113883.2.6.60.6.2.68" statusCode="draft" effectiveDate="2015-10-26T08:41:11" type="item" iddisplay="psr-dataelement-68" shortName="schnittid">
+                        <implementation shortName="schnittid" markdown="Identifier of the slide, issued by the LIS. It corresponds with a Work order ID or a Specimen work order step ID"/>
+                        <name language="de-DE" lastTranslated="2017-06-21T11:58:43">Schnitt-ID</name>
+                        <desc language="de-DE" lastTranslated="2017-06-21T11:59:10">ID des Gewebsschnittes, meistens identisch mit ID des Objektträgers.</desc>
+                        <valueDomain type="identifier">
+                            <example type="neutral" caption="Tissue section ID">&lt;id root="1.3.6.1.4.1.19376.1.8.9.9" extension="A7102400008_A1_1_1HE"/&gt;</example>
+                        </valueDomain>
+                    </concept>
+                </concept>
+            </concept>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.6.2.119" effectiveDate="2020-11-29T10:58:28" statusCode="draft" type="item" iddisplay="psr-dataelement-119" shortName="materialherkunft">
+            <implementation shortName="materialherkunft" markdown="Lokalisation der Körperstelle, von der das Material stammt."/>
+            <name language="de-DE">Materialherkunft</name>
+            <desc language="de-DE">Lokalisation der Körperstelle, von der das Material stammt.</desc>
+            <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.6.2.94" flexibility="2016-11-24T09:26:55" prefix="psr-" datasetId="2.16.840.1.113883.2.6.60.6.1.1" datasetEffectiveDate="2015-06-18T18:17:24" datasetStatusCode="draft" datasetVersionLabel="2.0" iType="item" iEffectiveDate="2016-11-24T09:26:55" iStatusCode="draft" refdisplay="psr-dataelement-94">
+                <name language="en-US">Target Site</name>
+                <name language="de-DE" lastTranslated="2017-06-20T18:51:09">Prozedurlokalisation</name>
+            </relationship>
+            <valueDomain type="code">
+                <conceptList id="2.16.840.1.113883.2.6.60.6.2.119.20201129105828.0"/>
+            </valueDomain>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.6.2.17" effectiveDate="2015-06-22T14:35:31" statusCode="draft" type="group" iddisplay="psr-dataelement-17" shortName="probenidentifikation">
+            <implementation shortName="probenidentifikation" markdown="Identification of the specimen, done by identifiers, issued by the LIS."/>
+            <name language="de-DE" lastTranslated="2017-06-21T11:59:51">Probenidentifikation</name>
+            <desc language="de-DE" lastTranslated="2017-06-21T11:59:57">Probenidentifikation</desc>
+            <concept id="2.16.840.1.113883.2.6.60.6.2.98" statusCode="draft" effectiveDate="2016-12-05T10:15:08" type="item" iddisplay="psr-dataelement-98" shortName="probenid">
+                <implementation shortName="probenid" markdown="Identifier for the specimen, issued by the LIS.&#xA;&#xA;These can be Part-ID, ID of the embedded tissue (so-called Block-ID), or ID of the sectioned and stained tissue (so-called Slide-ID). An ID of the sectioned, unstained tissue (Tissue section-ID) is usually not given by the LIS"/>
+                <name language="de-DE" lastTranslated="2017-06-21T12:00:32">Proben-ID</name>
+                <desc language="de-DE" lastTranslated="2017-06-21T12:00:40">ID der Probe</desc>
+                <valueDomain type="identifier"/>
+            </concept>
+            <concept id="2.16.840.1.113883.2.6.60.6.2.95" statusCode="draft" effectiveDate="2016-11-24T12:24:26" type="item" iddisplay="psr-dataelement-95" shortName="parent_id">
+                <implementation shortName="parent_id" markdown="ID of the parent specimen, issued by the LIS&#xA;Each specimen has a pair of IDs, consisting of its own and of its parent. The relationship between both need not to be expressed by the ID syntax."/>
+                <name language="de-DE" lastTranslated="2017-06-21T12:01:23">Parent ID</name>
+                <desc language="de-DE" lastTranslated="2017-06-21T12:02:04">ID der Elternprobe, von der die zu bearbeitende / zu untersuchende Probe stammt.</desc>
+                <valueDomain type="identifier"/>
+            </concept>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.6.2.70" effectiveDate="2015-10-26T12:45:15" statusCode="draft" type="group" iddisplay="psr-dataelement-70" shortName="container">
+            <implementation shortName="container" markdown="Physical object that touches and holds specimen.&#xA;Those may be vessels, syringes, plastic bags etc., especially important are Paraffin blocks and Slides."/>
+            <name language="de-DE" lastTranslated="2017-06-28T14:46:42">Container</name>
+            <desc language="de-DE" lastTranslated="2017-06-28T14:47:36">Probenbehälter im weitesten Sinn: Einsendungsgefäß, Gewebskassette, Paraffinblock, Objektträger etc.</desc>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.70" effectiveDate="2015-10-26T13:07:31" code="74384-9" displayName="Specimen container [Type]" codeSystem="2.16.840.1.113883.6.1" codeSystemName="Logical Observation Identifier Names and Codes"/>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.70" effectiveDate="2015-10-26T13:06:48" code="434711009" displayName="Specimen container (physical object)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED Clinical Terms"/>
+            <concept id="2.16.840.1.113883.2.6.60.6.2.80" statusCode="draft" effectiveDate="2016-09-07T11:46:42" type="item" iddisplay="psr-dataelement-80" shortName="container_id">
+                <implementation shortName="container_id" markdown="Identification of the container that holds the specimen. In practice the containers are the only physical entities that carry a human (and machine-) readable identifier.&#xA;Blocks and Slides may hold more than one specimen, also from different sources!"/>
+                <name language="de-DE" lastTranslated="2017-06-28T14:48:17">Container ID</name>
+                <desc language="de-DE" lastTranslated="2017-06-28T14:48:54">Identifikation des Containers, kann von Proben-ID verschieden sein</desc>
+                <valueDomain type="identifier"/>
+            </concept>
+        </concept>
+    </concept>
+</dataset>

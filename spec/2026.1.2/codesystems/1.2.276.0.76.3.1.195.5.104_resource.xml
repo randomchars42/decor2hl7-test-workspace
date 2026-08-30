@@ -1,0 +1,136 @@
+<codeSystems>
+    <project ident="aktin-">
+        <codeSystem id="1.2.276.0.76.3.1.195.5.104" name="Fachabteilungsschluessel" displayName="Fachabteilungsschlüssel" effectiveDate="2021-01-10T00:00:00" statusCode="draft" canonicalUri="http://fhir.de/CodeSystem/dkgev/Fachabteilungsschluessel" versionLabel="1.4.0" lastModifiedDate="2024-08-08T13:57:27" language="de-DE">
+            <desc language="de-DE" lastTranslated="2024-08-08T13:25:10">
+                <p>Fachabteilungen gemäß Anhang 1 der BPflV in der am 31.12.2003 geltenden Fassung</p>
+            </desc>
+            <publishingAuthority name="AKTIN e. V." inherited="project">
+                <addrLine>c/o Uniklinik RWTH Aachen</addrLine>
+                <addrLine>Institut für Medizinische Informatik</addrLine>
+                <addrLine>Pauwelsstraße 35</addrLine>
+                <addrLine>52074 Aachen</addrLine>
+                <addrLine type="phone">Tel. +49 391 67 28186</addrLine>
+                <addrLine type="email">office@aktin.org</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <codedConcept code="0100" statusCode="active" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Innere Medizin"/>
+                </codedConcept>
+                <codedConcept code="0200" statusCode="active" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Geriatrie"/>
+                </codedConcept>
+                <codedConcept code="0300" statusCode="active" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Kardiologie"/>
+                </codedConcept>
+                <codedConcept code="0400" statusCode="active" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Nephrologie"/>
+                </codedConcept>
+                <codedConcept code="0500" statusCode="active" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Hämatologie und internistische Onkologie"/>
+                </codedConcept>
+                <codedConcept code="0600" statusCode="active" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Endokrinologie"/>
+                </codedConcept>
+                <codedConcept code="0700" statusCode="active" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Gastroenterologie"/>
+                </codedConcept>
+                <codedConcept code="0800" statusCode="active" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Pneumologie"/>
+                </codedConcept>
+                <codedConcept code="0900" statusCode="active" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Rheumatologie"/>
+                </codedConcept>
+                <codedConcept code="1000" statusCode="active" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Pädiatrie"/>
+                </codedConcept>
+                <codedConcept code="1100" statusCode="active" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Kinderkardiologie"/>
+                </codedConcept>
+                <codedConcept code="1200" statusCode="active" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Neonatologie"/>
+                </codedConcept>
+                <codedConcept code="1300" statusCode="active" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Kinderchirurgie"/>
+                </codedConcept>
+                <codedConcept code="1400" statusCode="active" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Lungen- und Bronchialheilkunde"/>
+                </codedConcept>
+                <codedConcept code="1500" statusCode="active" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Allgemeine Chirurgie"/>
+                </codedConcept>
+                <codedConcept code="1600" statusCode="active" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Unfallchirurgie"/>
+                </codedConcept>
+                <codedConcept code="1700" statusCode="active" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Neurochirurgie"/>
+                </codedConcept>
+                <codedConcept code="1800" statusCode="active" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Gefäßchirurgie"/>
+                </codedConcept>
+                <codedConcept code="1900" statusCode="active" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Plastische Chirurgie"/>
+                </codedConcept>
+                <codedConcept code="2000" statusCode="active" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Thoraxchirurgie"/>
+                </codedConcept>
+                <codedConcept code="2100" statusCode="active" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Herzchirurgie"/>
+                </codedConcept>
+                <codedConcept code="2200" statusCode="active" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Urologie"/>
+                </codedConcept>
+                <codedConcept code="2300" statusCode="active" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Orthopädie"/>
+                </codedConcept>
+                <codedConcept code="2400" statusCode="active" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Frauenheilkunde und Geburtshilfe"/>
+                </codedConcept>
+                <codedConcept code="2500" statusCode="active" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="davon Geburtshilfe"/>
+                </codedConcept>
+                <codedConcept code="2600" statusCode="active" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Hals-, Nasen-, Ohrenheilkunde"/>
+                </codedConcept>
+                <codedConcept code="2700" statusCode="active" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Augenheilkunde"/>
+                </codedConcept>
+                <codedConcept code="2800" statusCode="active" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Neurologie"/>
+                </codedConcept>
+                <codedConcept code="2900" statusCode="active" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Allgemeine Psychiatrie"/>
+                </codedConcept>
+                <codedConcept code="3000" statusCode="active" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Kinder- und Jugendpsychiatrie"/>
+                </codedConcept>
+                <codedConcept code="3100" statusCode="active" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Psychosomatik/Psychotherapie"/>
+                </codedConcept>
+                <codedConcept code="3200" statusCode="active" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Nuklearmedizin"/>
+                </codedConcept>
+                <codedConcept code="3300" statusCode="active" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Strahlenheilkunde"/>
+                </codedConcept>
+                <codedConcept code="3400" statusCode="active" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Dermatologie"/>
+                </codedConcept>
+                <codedConcept code="3500" statusCode="active" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Zahn- und Kieferheilkunde, Mund- und Kieferchirurgie"/>
+                </codedConcept>
+                <codedConcept code="3600" statusCode="active" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Intensivmedizin"/>
+                </codedConcept>
+                <codedConcept code="2316" statusCode="active" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Orthopädie und Unfallchirurgie"/>
+                </codedConcept>
+                <codedConcept code="2425" statusCode="active" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Frauenheilkunde"/>
+                </codedConcept>
+                <codedConcept code="3700" statusCode="active" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Sonstige Fachabteilung"/>
+                </codedConcept>
+            </conceptList>
+        </codeSystem>
+    </project>
+</codeSystems>

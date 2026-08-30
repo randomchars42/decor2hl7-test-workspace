@@ -1,0 +1,9 @@
+<valueSet xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.777.24.11.18" name="SNOMED-CT-BodyStructure" displayName="SNOMED CT Body Structures" effectiveDate="2019-10-11T17:06:48" statusCode="draft" url="http://art-decor.org/decor/services/" ident="mide-">
+    <sourceCodeSystem json:array="true" id="2.16.840.1.113883.6.96" identifierName="SNOMED Clinical Terms" canonicalUri="http://snomed.info/sct" canonicalUriDSTU2="http://snomed.info/sct" canonicalUriSTU3="http://snomed.info/sct" canonicalUriR4="http://snomed.info/sct" canonicalUriR4B="http://snomed.info/sct" canonicalUriR5="http://snomed.info/sct"/>
+    <publishingAuthority json:array="true" name="Konsortium DIFUTURE" inherited="project">
+        <addrLine json:array="true" type="uri">https://difuture.de</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="include" op="descendent-of" code="123037004" codeSystem="2.16.840.1.113883.6.96" displayName="Body structure"/>
+</valueSet>

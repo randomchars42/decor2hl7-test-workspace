@@ -1,0 +1,8 @@
+aktin.json
+config/*
+mapping/*
+model/*
+out/*
+state/*
+
+*.vim

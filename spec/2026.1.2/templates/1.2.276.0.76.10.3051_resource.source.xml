@@ -1,0 +1,45 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultLanguage="de-DE" id="1.2.276.0.76.10.3051" name="AllergienUnvertraeglichkeiten" displayName="Allergien und Unverträglichkeiten" effectiveDate="2015-03-26T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" xml:dummy-1="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-3="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance">
+    <desc language="de-DE">Beschreibung der Allergien und Medikamentenunverträglichkeiten</desc>
+    <classification type="cdasectionlevel"/>
+    <relationship type="SPEC" template="2.16.840.1.113883.10.12.201" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.201" tmname="CDASection" tmdisplayName="CDA Section" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-"/>
+    <relationship type="ADAPT" template="1.2.276.0.76.10.3040" flexibility="2012-07-14T00:00:00" tmid="1.2.276.0.76.10.3040" tmname="AllergienUnvertraeglichkeiten" tmdisplayName="Allergien und Unverträglichkeiten" tmeffectiveDate="2012-07-14T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="pmp-"/>
+    <relationship type="ADAPT" template="2.16.840.1.113883.17.3.10.1.13" linkedartefactmissing="true"/>
+    <relationship type="ADAPT" template="2.16.840.1.113883.10.20.22.2.6.1" flexibility="2014-06-09T00:00:00" linkedartefactmissing="true"/>
+    <context id="**"/>
+    <example>
+                <section classCode="DOCSECT">
+                    <templateId root="1.2.276.0.76.10.3051"/>
+                    <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies &amp;or adverse reactions"/>
+                    <title>Allergien und Unverträglichkeiten</title>
+                    <text>
+                        <list>
+                            <item ID="alg-1">Allergien: ja</item>
+                            <item ID="alg-2">Antibiotika-Allergie seit 2010</item>
+                            <item ID="alg-3">Keine Kontrastmittel-Allergie bekannt</item>
+                            <item ID="alg-4">Sonstige: Hühnereiweiss</item>
+                        </list>
+                    </text>
+                    <entry typeCode="COMP">
+                        <!-- 1.2.276.0.76.10.4065 Allergyconcernact -->
+            </entry>
+                </section>
+            </example>
+    <element name="hl7:section" id="2.16.840.1.113883.2.6.60.3.9.156">
+                <attribute name="classCode" value="DOCSECT" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.157"/>
+                <attribute name="moodCode" value="EVN" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.158"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.159">
+                    <attribute name="root" value="1.2.276.0.76.10.3051" id="2.16.840.1.113883.2.6.60.3.9.160"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CE" id="2.16.840.1.113883.2.6.60.3.9.161">
+                    <vocabulary code="48765-2" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:title" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="ST" id="2.16.840.1.113883.2.6.60.3.9.162">
+                    <text>Allergien und Unverträglichkeiten</text>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="SD.TEXT" id="2.16.840.1.113883.2.6.60.3.9.163"/>
+                <element name="hl7:entry" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" contains="1.2.276.0.76.10.4065" id="2.16.840.1.113883.2.6.60.3.9.164">
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.165"/>
+                    <attribute name="contextConductionInd" isOptional="true" datatype="bl" value="true" id="2.16.840.1.113883.2.6.60.3.9.166"/>
+                </element>
+            </element>
+</template>

@@ -1,0 +1,32 @@
+<valueSets>
+    <repository url="http://art-decor.org/decor/services/" ident="ccda-" referencedFrom="DICOM-" projecttype="local">
+        <valueSet id="2.16.840.1.113762.1.4.1010.2" name="ClinicalSubstance" displayName="Clinical Substance" effectiveDate="2013-01-31T00:00:00" statusCode="final">
+            <desc language="en-US">All substances that may need to be represented in the context of health care related activities. This value set is quite broad in coverage and includes concepts that may never be needed in a health care activity event, particularly the included SNOMED CT concepts. The code system-specific value sets in this grouping value set are intended to provide broad
+                coverage of all kinds of agents, but the expectation for use is that the chosen concept identifier for a substance should be appropriately specific and drawn from the appropriate code system as noted: prescribable medications should use RXNORM concepts, more specific drugs and chemicals should be represented using UNII concepts, and any substances not found in either of those two
+                code systems, should use the appropriate SNOMED CT concept. This overarching grouping value set is intended to support identification of prescribable medications, foods, general substances and environmental entities.<br/> Value set intensionally defined as a GROUPING made up of: Value Set: Medication Clinical Drug (2.16.840.1.113762.1.4.1010.4) (RxNorm generic and brand codes);
+                Value Set: Unique Ingredient Identifier - Complete Set (2.16.840.1.113883.3.88.12.80.20) (UNII codes); Value Set: Substance Other Than Clinical Drug (2.16.840.1.113762.1.4.1010.9) (SNOMED CT codes). <p>Valueset Source: <a href="https://vsac.nlm.nih.gov/">https://vsac.nlm.nih.gov/</a>
+                </p> Priority order for concept determination is RXNORM, UNII, SNOMED CT. Actually a grouper of
+                groupers: GROUPING value set made up of: UNION( Value set: Medication Clinical Drug OID: 2.16.840.1.113762.1.4.1010.4 Value set: Substance Other Than Clinical Drug OID: 2.16.840.1.113762.1.4.1010.9 ) <p/> Purpose<br/> Clinical Focus Clinical Focus:Any substance that can be ordered or is included in a clinical record. This is not restricted to medications. <p/> Data Element Scope
+                Data Element Scope.:Clinical Substance ManufacturedProduct/manufacturedMaterial/code/translation/ <p/> Inclusion Criteria Inclusion Criteria.:As defined in grouped value sets <p/> Exclusion Criteria Exclusion Criteria.:No drug classes" </desc>
+            <sourceCodeSystem id="2.16.840.1.113883.4.9" identifierName="The Unique Ingredient Identifier (UNII) generated from the FDA Substance Registration System (SRS)." canonicalUri="http://fdasis.nlm.nih.gov" canonicalUriDSTU2="http://fdasis.nlm.nih.gov" canonicalUriSTU3="http://fdasis.nlm.nih.gov" canonicalUriR4="http://fdasis.nlm.nih.gov" canonicalUriR4B="http://fdasis.nlm.nih.gov" canonicalUriR5="http://fdasis.nlm.nih.gov"/>
+            <sourceCodeSystem id="2.16.840.1.113883.6.88" identifierName="RxNorm" canonicalUri="http://www.nlm.nih.gov/research/umls/rxnorm" canonicalUriDSTU2="http://www.nlm.nih.gov/research/umls/rxnorm" canonicalUriSTU3="http://www.nlm.nih.gov/research/umls/rxnorm" canonicalUriR4="http://www.nlm.nih.gov/research/umls/rxnorm" canonicalUriR4B="http://www.nlm.nih.gov/research/umls/rxnorm" canonicalUriR5="http://www.nlm.nih.gov/research/umls/rxnorm" context="external/hl7intl/v3/v3-rxNorm"/>
+            <sourceCodeSystem id="2.16.840.1.113883.6.96" identifierName="SNOMED Clinical Terms" canonicalUri="http://snomed.info/sct" canonicalUriDSTU2="http://snomed.info/sct" canonicalUriSTU3="http://snomed.info/sct" canonicalUriR4="http://snomed.info/sct" canonicalUriR4B="http://snomed.info/sct" canonicalUriR5="http://snomed.info/sct"/>
+            <publishingAuthority name="HL7 International" inherited="project">
+                <addrLine>Health Level Seven International</addrLine>
+                <addrLine>3300 Washtenaw Avenue</addrLine>
+                <addrLine>Suite 227</addrLine>
+                <addrLine>Ann Arbor, MI 48104- 4261</addrLine>
+                <addrLine>USA</addrLine>
+                <addrLine>T +1 734 677 7777 </addrLine>
+                <addrLine>F +1 734 677 6622</addrLine>
+                <addrLine>E info@hl7.org</addrLine>
+            </publishingAuthority>
+            <copyright language="en-US" inherited="true">This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.</copyright>
+            <conceptList>
+                <include codeSystem="2.16.840.1.113883.4.9"/>
+                <include codeSystem="2.16.840.1.113883.6.88"/>
+                <include codeSystem="2.16.840.1.113883.6.96"/>
+            </conceptList>
+        </valueSet>
+    </repository>
+</valueSets>

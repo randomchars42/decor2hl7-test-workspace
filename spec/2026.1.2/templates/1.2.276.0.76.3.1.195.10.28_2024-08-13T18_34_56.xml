@@ -1,0 +1,82 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.3.1.195.10.28" ident="aktin-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.3.1.195.10.28" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" lastModifiedDate="2026-04-04T13:43:55" versionLabel="2024" isClosed="false" displayName="Unfall-Anamnese" ident="aktin-" name="unfall-anamnese" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="draft" url="http://art-decor.org/decor/services/" effectiveDate="2024-08-13T18:34:56">
+            <desc language="en-US" lastTranslated="2024-08-13T18:34:56">Injury Event Detail</desc>
+            <desc language="de-DE" lastTranslated="2024-08-13T18:34:56">Unfallereignis Details</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.301" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.301" tmname="CDAAct" tmdisplayName="CDA Act" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <relationship type="ADAPT" template="2.16.840.1.113883.3.2898.10.23" flexibility="2015-09-09T00:00:00" url="http://art-decor.org/decor/services/" linkedartefactmissing="true"/>
+            <context id="**"/>
+            <example type="neutral">
+                <act classCode="ACT" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.3.1.195.10.28"/>
+                    <code code="55566008" codeSystem="2.16.840.1.113883.6.96" displayName="Accidental physical contact (event) "/>
+                    <!-- Unfalldatum und -zeit -->
+                    <effectiveTime>
+                        <value low="20170102"/>
+                    </effectiveTime>
+                    <!-- Unfallart TraumaRegister -->
+                    <entryRelationship typeCode="RSON" contextConductionInd="true">
+                        <!-- 4095 -->
+                    </entryRelationship>
+                    <entryRelationship typeCode="COMP" contextConductionInd="true">
+                        <!-- Injury Cause Observation Organizer -->
+                    </entryRelationship>
+                </act>
+            </example>
+            <element name="hl7:act" id="2.16.840.1.113883.2.6.60.3.9.163110">
+                <item original="false" label="unfall-anamnese"/>
+                <attribute name="classCode" value="ACT" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.163111"/>
+                <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.163112"/>
+                <element name="hl7:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.163113">
+                    <item original="false" label="unfall-anamnese"/>
+                    <attribute name="root" value="1.2.276.0.76.3.1.195.10.28" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.163114"/>
+                </element>
+                <element name="hl7:code" datatype="CV" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.163115">
+                    <item original="false" label="unfall-anamnese"/>
+                    <vocabulary code="74209-8" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:text" datatype="ED" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.1631141">
+                    <desc language="de-DE" lastTranslated="2024-08-13T18:34:56">Beschreibung, falls Verkehrsunfall, lediglich reference in den Text der zugehörigen Section</desc>
+                    <item original="false" label="unfall-anamnese"/>
+                    <element name="hl7:reference" datatype="URL" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.1631829">
+                        <item original="false" label="unfall-anamnese"/>
+                    </element>
+                </element>
+                <element name="hl7:effectiveTime" datatype="IVL_TS" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.163116">
+                    <item original="false" label="unfall-anamnese"/>
+                    <element name="hl7:low" datatype="TS" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.163117">
+                        <item original="false" label="unfall-anamnese"/>
+                    </element>
+                </element>
+                <element name="hl7:participant" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.371">
+                    <item original="false" label="unfall-anamnese"/>
+                    <attribute name="typeCode" value="DEV" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.372"/>
+                    <element name="hl7:participantRole" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.373">
+                        <item original="false" label="unfall-anamnese"/>
+                        <attribute name="classCode" value="INST" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.374"/>
+                        <element name="hl7:code" datatype="CE" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.375">
+                            <item original="false" label="unfall-anamnese"/>
+                            <vocabulary valueSet="1.2.276.0.76.3.1.195.11.8" vsid="1.2.276.0.76.3.1.195.11.8" vsname="fahrzeug-des-verunfallten" vsdisplayName="Fahrzeug des Verunfallten" vseffectiveDate="2024-06-26T13:29:30" vsstatusCode="draft" vsversionLabel="2024" linkedartefactmissing="false"/>
+                        </element>
+                    </element>
+                </element>
+                <element name="hl7:entryRelationship" contains="1.2.276.0.76.3.1.195.10.29" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.163118" tmid="1.2.276.0.76.3.1.195.10.29" tmname="unfallursache-kinetik" tmdisplayName="Unfallursache/-kinetik" tmeffectiveDate="2024-08-13T18:37:55" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <item original="false" label="unfall-anamnese"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.163119"/>
+                    <attribute name="contextConductionInd" value="true" isOptional="true" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.163120"/>
+                </element>
+                <element name="hl7:entryRelationship" contains="1.2.276.0.76.3.1.195.10.30" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1631241" tmid="1.2.276.0.76.3.1.195.10.30" tmname="unfallart-traumaregister" tmdisplayName="Unfallart Traumaregister" tmeffectiveDate="2024-08-13T18:37:55" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <item original="false" label="unfall-anamnese"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631252"/>
+                    <attribute name="contextConductionInd" value="true" isOptional="true" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1631263"/>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.27" name="notfallanamnese-section" displayName="Notfallanamnese" effectiveDate="2024-08-13T18:22:01" statusCode="draft" versionLabel="2024" isClosed="false" lastModifiedDate="2025-05-25T20:26:34" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.29" name="unfallursache-kinetik" displayName="Unfallursache/-kinetik" effectiveDate="2024-08-13T18:37:55" statusCode="draft" lastModifiedDate="2024-08-13T18:37:55" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.30" name="unfallart-traumaregister" displayName="Unfallart Traumaregister" effectiveDate="2024-08-13T18:37:55" statusCode="draft" lastModifiedDate="2024-08-13T18:37:55" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="2024-08-13T18:34:56" id="1.2.276.0.76.10.3053" name="HistoryofPresentIllnessSection" displayName="Notfallanamnese" effectiveDate="2025-12-01T00:00:00" statusCode="draft" versionLabel="2025" isClosed="false" lastModifiedDate="2025-12-18T13:48:42" ident="aktin-"/>
+        </template>
+    </template>
+</result>

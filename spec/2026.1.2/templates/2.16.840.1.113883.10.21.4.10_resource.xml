@@ -1,0 +1,93 @@
+<result xmlns:json="http://www.json.org">
+    <template id="2.16.840.1.113883.10.21.4.10" ident="aktin-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.21.4.10" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" lastModifiedDate="2023-01-29T21:55:06" versionLabel="R1-STU2-ballot" isClosed="false" displayName="UV Medication Information (simple)" ident="aktin-" name="UVMedicationInformationsimple" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="pending" url="http://art-decor.org/decor/services/" effectiveDate="2021-09-29T19:15:16">
+            <desc language="en-US">Universal Medication Information (simple)</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="VERSION" template="2.16.840.1.113883.10.21.4.10" flexibility="2017-05-10T00:00:00" tmid="2.16.840.1.113883.10.21.4.10" tmname="UVMedicationInformationsimple" tmdisplayName="UV Medication Information (simple)" tmstatusCode="pending" tmversionLabel="STU1" tmeffectiveDate="2017-05-10T00:00:00" url="http://art-decor.org/decor/services/" ident="pharmcda-" linkedartefactmissing="false"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.312" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.312" tmname="CDAManufacturedProduct" tmdisplayName="CDA ManufacturedProduct" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <relationship type="ADAPT" template="2.16.840.1.113883.10.20.22.4.54" flexibility="2014-06-09T00:00:00" tmid="2.16.840.1.113883.10.20.22.4.54" tmname="ImmunizationMedicationInformationV2" tmdisplayName="Immunization Medication Information (V2)" tmeffectiveDate="2014-06-09T00:00:00" tmstatusCode="draft" tmversionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <example type="neutral" caption="US RxNorm Code">
+                <hl7:manufacturedProduct classCode="MANU">
+                    <hl7:templateId root="2.16.840.1.113883.10.21.4.10"/>
+                    <hl7:manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                        <hl7:code code="243670" codeSystem="2.16.840.1.113883.6.88" displayName="Aspirin 81 MG Oral Tablet"/>
+                    </hl7:manufacturedMaterial>
+                </hl7:manufacturedProduct>
+            </example>
+            <example type="neutral" caption="Dutch G-Standaard Artikel Code">
+                <hl7:manufacturedProduct classCode="MANU">
+                    <hl7:templateId root="2.16.840.1.113883.10.21.4.10"/>
+                    <hl7:manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                        <hl7:code code="14145839" codeSystem="2.16.840.1.113883.2.4.4.8" codeSystemName="G-Standaard Artikel" displayName="FUROSEMIDE CF 40MG TABLET"/>
+                    </hl7:manufacturedMaterial>
+                </hl7:manufacturedProduct>
+            </example>
+            <example type="neutral" caption="German Pharmaceutical Product Code">
+                <hl7:manufacturedProduct classCode="MANU">
+                    <hl7:templateId root="2.16.840.1.113883.10.21.4.10"/>
+                    <hl7:manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                        <hl7:code code="4213974" codeSystem="1.2.276.0.76.4.6" displayName="RAMIPRIL STADA 5 mg"/>
+                        <hl7:lotNumberText>675-86574</hl7:lotNumberText>
+                    </hl7:manufacturedMaterial>
+                    <hl7:manufacturerOrganization>
+                        <hl7:name>STADA GmbH</hl7:name>
+                    </hl7:manufacturerOrganization>
+                </hl7:manufacturedProduct>
+            </example>
+            <element name="hl7:manufacturedProduct" id="2.16.840.1.113883.3.1937.777.15.9.10767">
+                <item original="false" label="UVMedicationInformationsimple"/>
+                <attribute name="classCode" value="MANU" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10768"/>
+                <element name="hl7:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.777.15.9.10769">
+                    <item original="false" label="UVMedicationInformationsimple"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.21.4.10" isOptional="false" datatype="uid" id="2.16.840.1.113883.3.1937.777.15.9.10770"/>
+                </element>
+                <element name="hl7:manufacturedMaterial" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.777.15.9.10771">
+                    <item original="false" label="UVMedicationInformationsimple"/>
+                    <attribute name="classCode" value="MMAT" isOptional="true" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10772"/>
+                    <attribute name="determinerCode" value="KIND" isOptional="true" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10773"/>
+                    <element name="hl7:code" datatype="CD" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10774">
+                        <desc language="en-US">
+                            <div class="yui-wk-div">The code element describes the code of the medication. The medication may be either</div>
+                            <div class="yui-wk-div">
+                                <ul>
+                                    <li>a brand/product or</li>
+                                    <li>described as a generic/scientific name or</li>
+                                    <li>a descriptor of a magistral preparation/compound medicine</li>
+                                </ul>
+                            </div>
+                            <div class="yui-wk-div">If the medicine has no code / is
+                                uncoded (e.g., magistral preparations, compound medicine, ...) nullFlavor="NA" SHALL be used.</div>
+                        </desc>
+                        <item original="false" label="UVMedicationInformationsimple"/>
+                        <element name="hl7:translation" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10775">
+                            <item original="false" label="UVMedicationInformationsimple"/>
+                            <vocabulary domain="Product Code"/>
+                        </element>
+                    </element>
+                    <element name="hl7:lotNumberText" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.10776">
+                        <item original="false" label="UVMedicationInformationsimple"/>
+                    </element>
+                </element>
+                <element name="hl7:manufacturerOrganization" contains="2.16.840.1.113883.10.12.151" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10777" tmid="2.16.840.1.113883.10.12.151" tmname="CDAOrganization" tmdisplayName="CDA Organization" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <item original="false" label="UVMedicationInformationsimple"/>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.67" name="Medikation" displayName="Medikation" effectiveDate="2023-12-03T00:00:00" statusCode="draft" versionLabel="2023" lastModifiedDate="2024-08-14T18:38:41" ident="aktin-"/>
+            <uses type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.12.151" name="CDAOrganization" displayName="CDA Organization" effectiveDate="2005-09-07T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.1" name="UVSubstanceadministrationrequest" displayName="UV Medication Order" statusCode="pending" versionLabel="R1-STU2-ballot" lastModifiedDate="2023-01-31T10:52:39" effectiveDate="2021-08-04T17:03:38" ident="pharmcda-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.1" name="UVSubstanceadministrationrequest" displayName="UV Medication Order" effectiveDate="2023-01-30T08:30:30" statusCode="draft" versionLabel="2023" lastModifiedDate="2023-01-30T08:30:30" ident="pharmcda-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.1" name="UVSubstanceadministrationrequest" displayName="UV Medication Order" effectiveDate="2023-01-31T10:52:39" statusCode="draft" versionLabel="2023" lastModifiedDate="2023-01-31T10:52:39" ident="pharmcda-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.1" name="UVSubstanceadministrationrequest" displayName="UV Medication Order" effectiveDate="2023-01-31T11:29:28" statusCode="draft" versionLabel="2023" lastModifiedDate="2023-01-31T11:36:01" ident="pharmcda-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.7" name="UVMedicationstatement" displayName="UV Medication Statement" statusCode="pending" versionLabel="STU1" effectiveDate="2017-05-01T00:00:00" ident="pharmcda-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.7" name="UVMedicationstatement" displayName="UV Medication Statement" statusCode="pending" versionLabel="R1-STU2-ballot" lastModifiedDate="2023-01-30T08:32:34" effectiveDate="2021-08-04T14:09:15" ident="pharmcda-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.7" name="UVMedicationstatement" displayName="UV Medication Statement" effectiveDate="2023-01-30T08:32:34" statusCode="draft" versionLabel="2023" lastModifiedDate="2023-01-31T19:49:33" ident="pharmcda-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.13" name="UVMedicationadministration" displayName="UV Medication Administration" statusCode="pending" lastModifiedDate="2023-01-30T08:31:37" versionLabel="R1-STU2-ballot" effectiveDate="2019-02-17T00:00:00" ident="pharmcda-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.13" name="UVMedicationadministration" displayName="UV Medication Administration" effectiveDate="2023-01-30T08:31:37" statusCode="draft" versionLabel="2023" lastModifiedDate="2023-01-30T08:31:37" ident="pharmcda-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.15" name="UVMedicationDispense" displayName="UV Medication Dispense" statusCode="pending" versionLabel="R1-STU2-ballot" lastModifiedDate="2023-01-30T08:33:47" effectiveDate="2021-08-04T16:35:09" ident="pharmcda-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.15" name="UVMedicationDispense" displayName="UV Medication Dispense" effectiveDate="2023-01-30T08:28:25" statusCode="draft" versionLabel="2023" lastModifiedDate="2023-01-30T08:28:25" ident="pharmcda-"/>
+            <ref type="contains" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.15" name="UVMedicationDispense" displayName="UV Medication Dispense" effectiveDate="2023-01-30T08:33:47" statusCode="draft" versionLabel="2023" lastModifiedDate="2023-01-31T11:52:39" ident="pharmcda-"/>
+        </template>
+    </template>
+</result>

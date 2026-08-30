@@ -1,0 +1,44 @@
+<codeSystems>
+    <repository url="http://art-decor.org/decor/services/" ident="ad5bbr-" referencedFrom="sxehealth-" projecttype="local">
+        <codeSystem id="2.16.840.1.113883.4.642.4.1379" name="Medication_Status_Codes" displayName="Medication  status  codes" effectiveDate="2019-10-30T00:00:00" statusCode="draft" versionLabel="4.0.1" canonicalUri="http://hl7.org/fhir/CodeSystem/medication-statement-status" caseSensitive="true" language="de-DE">
+            <desc language="en-US">Medication Status Codes</desc>
+            <publishingAuthority name="FHIR Project team">
+                <addrLine type="uri">http://hl7.org/fhir</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <codedConcept code="active" level="0" type="L" statusCode="active">
+                    <designation displayName="Active" language="en-US" type="preferred"/>
+                    <desc language="en-US">The medication is still being taken.</desc>
+                </codedConcept>
+                <codedConcept code="completed" level="0" type="L" statusCode="active">
+                    <designation displayName="Completed" language="en-US" type="preferred"/>
+                    <desc language="en-US">The medication is no longer being taken.</desc>
+                </codedConcept>
+                <codedConcept code="entered-in-error" level="0" type="L" statusCode="active">
+                    <designation displayName="Entered in Error" language="en-US" type="preferred"/>
+                    <desc language="en-US">Some of the actions that are implied by the medication statement may have occurred. For example, the patient may have taken some of the medication. Clinical decision support systems should take this status into account.</desc>
+                </codedConcept>
+                <codedConcept code="intended" level="0" type="L" statusCode="active">
+                    <designation displayName="Intended" language="en-US" type="preferred"/>
+                    <desc language="en-US">The medication may be taken at some time in the future.</desc>
+                </codedConcept>
+                <codedConcept code="stopped" level="0" type="L" statusCode="active">
+                    <designation displayName="Stopped" language="en-US" type="preferred"/>
+                    <desc language="en-US">Actions implied by the statement have been permanently halted, before all of them occurred. This should not be used if the statement was entered in error.</desc>
+                </codedConcept>
+                <codedConcept code="on-hold" level="0" type="L" statusCode="active">
+                    <designation displayName="On Hold" language="en-US" type="preferred"/>
+                    <desc language="en-US">Actions implied by the statement have been temporarily halted, but are expected to continue later. May also be called 'suspended'.</desc>
+                </codedConcept>
+                <codedConcept code="unknown" level="0" type="L" statusCode="active">
+                    <designation displayName="Unknown" language="en-US" type="preferred"/>
+                    <desc language="en-US">The state of the medication use is not currently known.</desc>
+                </codedConcept>
+                <codedConcept code="not-taken" level="0" type="L" statusCode="active">
+                    <designation displayName="Not Taken" language="en-US" type="preferred"/>
+                    <desc language="en-US">The medication was not consumed by the patient</desc>
+                </codedConcept>
+            </conceptList>
+        </codeSystem>
+    </repository>
+</codeSystems>

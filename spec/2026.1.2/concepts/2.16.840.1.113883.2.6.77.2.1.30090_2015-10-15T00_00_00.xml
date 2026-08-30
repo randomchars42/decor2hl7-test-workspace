@@ -1,0 +1,16 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.2.6.77.1.1" effectiveDate="2015-10-15T00:00:00" statusCode="draft" versionLabel="1.0" lastModifiedDate="2024-02-07T11:32:47" prefix="hl7de-" shortName="demografische_angaben" iddisplay="hl7de-dataset-1" url="http://art-decor.org/decor/services/" ident="hl7de-"><!--
+ This is a view of the dataset "Demografische Angaben" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">Demografische Angaben</name>
+    <desc language="de-DE">Demografische Angaben</desc>
+    <concept id="2.16.840.1.113883.2.6.77.2.1.30090" statusCode="draft" effectiveDate="2015-10-15T00:00:00" type="item" iddisplay="hl7de-dataelement-1.30090">
+        <implementation markdown="Ort"/>
+        <name language="de-DE">Ort</name>
+        <desc language="de-DE">Ort</desc>
+        <valueDomain type="string">
+            <example type="neutral">Köln</example>
+        </valueDomain>
+    </concept>
+</dataset>

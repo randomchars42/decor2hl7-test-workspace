@@ -1,0 +1,20 @@
+<valueSets>
+    <repository url="http://art-decor.org/decor/services/" ident="ccd1-" referencedFrom="IHE-PCC-" projecttype="local">
+        <valueSet id="2.16.840.1.113883.1.11.20.8" name="MedicationTypeCode" displayName="MedicationTypeCode" effectiveDate="2006-10-17T00:00:00" statusCode="draft">
+            <sourceCodeSystem id="2.16.840.1.113883.6.96" identifierName="SNOMED Clinical Terms" canonicalUri="http://snomed.info/sct" canonicalUriDSTU2="http://snomed.info/sct" canonicalUriSTU3="http://snomed.info/sct" canonicalUriR4="http://snomed.info/sct" canonicalUriR4B="http://snomed.info/sct" canonicalUriR5="http://snomed.info/sct"/>
+            <publishingAuthority name="ASTM" inherited="project"/>
+            <copyright language="en-US" inherited="true">This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.</copyright>
+            <conceptList>
+                <concept code="373873005" codeSystem="2.16.840.1.113883.6.96" displayName="Medication" type="L" level="0"/>
+                <concept code="354078009" codeSystem="2.16.840.1.113883.6.96" displayName="IV Fluid" type="L" level="0"/>
+                <concept code="327838005" codeSystem="2.16.840.1.113883.6.96" displayName="Parenteral Nutrition" type="L" level="0"/>
+                <concept code="108961000" codeSystem="2.16.840.1.113883.6.96" displayName="Supplemental Nutrition" type="L" level="0"/>
+                <concept code="350326008" codeSystem="2.16.840.1.113883.6.96" displayName="Immunization" type="L" level="0"/>
+                <concept code="425398004" codeSystem="2.16.840.1.113883.6.96" displayName="Supplies" type="L" level="0"/>
+                <concept code="49062001" codeSystem="2.16.840.1.113883.6.96" displayName="Device" type="L" level="0"/>
+                <concept code="40388003" codeSystem="2.16.840.1.113883.6.96" displayName="Implantable Device" type="L" level="0"/>
+                <concept code="425399007" codeSystem="2.16.840.1.113883.6.96" displayName="Durable Medical Equipment" type="L" level="0"/>
+            </conceptList>
+        </valueSet>
+    </repository>
+</valueSets>

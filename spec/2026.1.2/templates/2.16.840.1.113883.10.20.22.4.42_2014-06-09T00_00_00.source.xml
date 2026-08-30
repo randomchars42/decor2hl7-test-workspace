@@ -1,0 +1,170 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:local="http://art-decor.org/local" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.20.22.4.42" name="PlannedMedicationActivityV2" displayName="Planned Medication Activity (V2)" effectiveDate="2014-06-09T00:00:00" statusCode="draft" versionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-" sdtc:dummy-1="urn:hl7-org:sdtc" local:dummy-2="http://art-decor.org/local" xml:dummy-3="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-5="urn:hl7-org:v3" xsi:dummy-6="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">This template represents planned medication activities. The priority of the medication activity to the patient and provider is communicated through Priority Preference. The effectiveTime indicates the time when the medication activity is intended to take place. The authorTime indicates when the documentation of the plan occurred. </desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.308" flexibility="2005-09-07T00:00:00"/>
+            <relationship type="VERSION" template="2.16.840.1.113883.10.20.22.4.42" flexibility="2013-01-31T00:00:00"/>
+            <context id="**"/>
+            <element name="cda:substanceAdministration" id="2.16.840.1.113883.3.1937.99.3.9.3472">
+                <attribute name="classCode" value="SBADM" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.3473">
+                    <desc language="en-US">SHALL contain exactly one [1..1] @classCode="SBADM" (CodeSystem: HL7ActClass urn:oid:2.16.840.1.113883.5.6 STATIC) (CONF:1098-8572).</desc>
+                    <item label="CONF:1098-8572"/>
+                </attribute>
+                <attribute name="moodCode" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.3474">
+                    <desc language="en-US">SHALL contain exactly one [1..1] @moodCode, which SHALL be selected from ValueSet Planned moodCode (SubstanceAdministration/Supply) urn:oid:2.16.840.1.113883.11.20.9.24 STATIC 2011-09-30 (CONF:1098-8573).</desc>
+                    <item label="CONF:1098-8573"/>
+                    <vocabulary valueSet="2.16.840.1.113883.11.20.9.24" flexibility="dynamic"/>
+                </attribute>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                    <desc language="en-US">C-CDA R1.1 templateId root without an extension</desc>
+                    <item label="CONF:1198-32936"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.22.4.42" datatype="uid"/>
+                </element>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.3475">
+                    <desc language="en-US">SHALL contain exactly one [1..1] templateId (CONF:1098-30465) such that it</desc>
+                    <item label="CONF:1098-30465"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.22.4.42" datatype="uid" id="2.16.840.1.113883.3.1937.99.3.9.3476">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.22.4.42" (CONF:1098-30466).</desc>
+                        <item label="CONF:1098-30466"/>
+                    </attribute>
+                    <attribute name="extension" value="2014-06-09" datatype="st" id="2.16.840.1.113883.3.1937.99.3.9.3477">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @extension="2014-06-09" (CONF:1098-32557).</desc>
+                        <item label="CONF:1098-32557"/>
+                    </attribute>
+                </element>
+                <element name="cda:id" datatype="II" minimumMultiplicity="1" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.3478">
+                    <desc language="en-US">SHALL contain at least one [1..*] id (CONF:1098-8575).</desc>
+                    <item label="CONF:1098-8575"/>
+                </element>
+                <element name="cda:statusCode" datatype="CS" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.3479">
+                    <desc language="en-US">SHALL contain exactly one [1..1] statusCode (CONF:1098-32087).</desc>
+                    <item label="CONF:1098-32087"/>
+                    <vocabulary code="active"/>
+                </element>
+                <choice minimumMultiplicity="1">
+                    <desc language="en-US">Note: This effectiveTime represents either the medication duration (i.e., the time the medication should be started and stopped) or the timestamp when the single-administration should occur.</desc>
+                    <item label="CONF:1098-30468"/>
+                    <element name="cda:effectiveTime[@value]" datatype="TS" minimumMultiplicity="0" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.3.1937.99.3.9.5878">
+                        <attribute name="value" id="2.16.840.1.113883.3.1937.99.3.9.5879">
+                            <desc language="en-US">SHOULD contain exactly one [1..1] @value; Note: indicates a single-administration timestamp</desc>
+                            <item label="CONF:1098-32944"/>
+                        </attribute>
+                    </element>
+                    <element name="cda:effectiveTime[cda:low]" datatype="IVL_TS" minimumMultiplicity="0" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.3.1937.99.3.9.5880">
+                        <element name="cda:low" datatype="TS" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.5881">
+                            <desc language="en-US">SHOULD contain exactly one [1..1] low; Note: indicates when medication started</desc>
+                            <item label="CONF:1098-32948"/>
+                        </element>
+                        <element name="cda:high" datatype="TS" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.5882">
+                            <desc language="en-US">MAY contain zero or one [0..1] high; Note: indicates when medication stopped</desc>
+                            <item label="CONF:1098-32949"/>
+                        </element>
+                    </element>
+                </choice>
+                <element name="cda:effectiveTime[@xsi:type='PIVL_TS' or @xsi:type='EIVL_TS']" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.5883">
+                    <desc language="en-US">SHOULD contain exactly one [1..1] effectiveTime</desc>
+                    <item label="CONF:1098-32943"/>
+                    <attribute name="operator" value="A" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.5884">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @operator="A" (CONF:1098-32945).</desc>
+                        <item label="CONF:1098-32943"/>
+                    </attribute>
+                    <attribute name="xsi:type" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.5885">
+                        <desc language="en-US"> SHALL contain exactly one [1..1] @xsi:type="PIVL_TS" or "EIVL_TS" (CONF:1098-32946).</desc>
+                        <item label="CONF:1098-32943"/>
+                        <vocabulary code="PIVL_TS"/>
+                        <vocabulary code="EIVL_TS"/>
+                    </attribute>
+                </element>
+                <element name="cda:repeatNumber" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.3481">
+                    <desc language="en-US">MAY contain zero or one [0..1] repeatNumber (CONF:1098-32066).<p>In a Planned Medication Activity, repeatNumber defines the number of allowed administrations. For example, a repeatNumber of "3" means that the substance can be administered up to 3 times. </p>
+            </desc>
+                    <item label="CONF:1098-32066"/>
+                </element>
+                <element name="cda:routeCode" datatype="CD" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.3482">
+                    <desc language="en-US">MAY contain zero or one [0..1] routeCode, which SHALL be selected from ValueSet Medication Route FDA urn:oid:2.16.840.1.113883.3.88.12.3221.8.7 DYNAMIC (CONF:1098-32067).</desc>
+                    <item label="CONF:1098-32067"/>
+                    <vocabulary valueSet="2.16.840.1.113883.3.88.12.3221.8.7" flexibility="dynamic"/>
+                    <element name="hl7:translation" datatype="CD" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.5886">
+                        <desc language="en-US">The routeCode, if present, SHOULD contain zero or more [0..*] translation, which SHALL be selected from ValueSet Medication Route urn:oid:2.16.840.1.113762.1.4.1099.12 DYNAMIC (CONF:1098-32952).<br clear="none"/>
+                </desc>
+                        <item label="CONF:1098-32952"/>
+                        <vocabulary valueSet="1.3.6.1.4.1.12559.11.10.1.3.1.42.1" flexibility="dynamic"/>
+                    </element>
+                </element>
+                <element name="cda:approachSiteCode" datatype="CD" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.3483">
+                    <desc language="en-US">MAY contain zero or more [0..*] approachSiteCode, which SHALL be selected from ValueSet Body Site urn:oid:2.16.840.1.113883.3.88.12.3221.8.9 DYNAMIC (CONF:1098-32078).</desc>
+                    <item label="CONF:1098-32078"/>
+                    <vocabulary valueSet="2.16.840.1.113883.3.88.12.3221.8.9"/>
+                </element>
+                <element name="cda:doseQuantity" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.3484">
+                    <desc language="en-US">MAY contain zero or one [0..1] doseQuantity (CONF:1098-32068).</desc>
+                    <item label="CONF:1098-32068"/>
+                    <attribute name="unit" datatype="cs" isOptional="true" id="2.16.840.1.113883.3.1937.99.3.9.3485">
+                        <desc language="en-US">The doseQuantity, if present, SHOULD contain zero or one [0..1] @unit, which SHALL be selected from ValueSet UnitsOfMeasureCaseSensitive urn:oid:2.16.840.1.113883.1.11.12839 DYNAMIC (CONF:1098-32133).</desc>
+                        <item label="CONF:1098-32133"/>
+                        <vocabulary valueSet="2.16.840.1.113883.1.11.12839"/>
+                    </attribute>
+                </element>
+                <element name="cda:rateQuantity" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.3486">
+                    <desc language="en-US">MAY contain zero or one [0..1] rateQuantity (CONF:1098-32079).</desc>
+                    <item label="CONF:1098-32079"/>
+                    <attribute name="unit" datatype="cs" isOptional="true" id="2.16.840.1.113883.3.1937.99.3.9.3487">
+                        <desc language="en-US">The rateQuantity, if present, SHOULD contain zero or one [0..1] @unit, which SHALL be selected from ValueSet UnitsOfMeasureCaseSensitive urn:oid:2.16.840.1.113883.1.11.12839 DYNAMIC (CONF:1098-32134).</desc>
+                        <item label="CONF:1098-32134"/>
+                        <vocabulary valueSet="2.16.840.1.113883.1.11.12839"/>
+                    </attribute>
+                </element>
+                <element name="cda:maxDoseQuantity" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.3488">
+                    <desc language="en-US">MAY contain zero or one [0..1] maxDoseQuantity (CONF:1098-32080).</desc>
+                    <item label="CONF:1098-32080"/>
+                </element>
+                <element name="cda:administrationUnitCode" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.3489">
+                    <desc language="en-US">MAY contain zero or one [0..1] administrationUnitCode, which SHALL be selected from ValueSet AdministrationUnitDoseForm urn:oid:2.16.840.1.113762.1.4.1021.30 DYNAMIC (CONF:1098-32081).</desc>
+                    <item label="CONF:1098-32081"/>
+                    <vocabulary valueSet="2.16.840.1.113762.1.4.1021.30"/>
+                </element>
+                <element name="cda:consumable" contains="2.16.840.1.113883.10.20.22.4.23" flexibility="2014-06-09T00:00:00" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.3490">
+                    <item label="CONF:1098-32082"/>
+                </element>
+                <element name="cda:performer" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.3491">
+                    <desc language="en-US">MAY contain zero or more [0..*] performer (CONF:1098-30470).<p>The clinician who is expected to perform the medication activity could be identified using substanceAdministration/performer. </p>
+            </desc>
+                    <item label="CONF:1098-30470"/>
+                </element>
+                <element name="cda:author" contains="2.16.840.1.113883.10.20.22.4.119" flexibility="2015-08-13T00:00:00" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.3492">
+                    <desc language="en-US">SHOULD contain zero or one [0..1] Author Participation (identifier: urn:oid:2.16.840.1.113883.10.20.22.4.119) (CONF:1098-32046).<p>The author in a planned medication activity represents the clinician who is requesting or planning the medication activity.</p>
+            </desc>
+                    <item label="CONF:1098-32046"/>
+                </element>
+                <element name="cda:entryRelationship" contains="2.16.840.1.113883.10.20.22.4.143" flexibility="2015-08-13T00:00:00" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.3493">
+                    <desc language="en-US">The following entryRelationship represents the priority that a patient or a provider places on the planned medication activity.</desc>
+                    <item label="CONF:1098-31104"/>
+                    <attribute name="typeCode" value="REFR" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.3494">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @typeCode="REFR" Refers to (CodeSystem: HL7ActRelationshipType urn:oid:2.16.840.1.113883.5.1002) (CONF:1098-31105).</desc>
+                        <item label="CONF:1098-31105"/>
+                    </attribute>
+                </element>
+                <element name="cda:entryRelationship" contains="2.16.840.1.113883.10.20.22.4.19" flexibility="2014-06-09T00:00:00" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.3495">
+                    <desc language="en-US">The following entryRelationship represents the indication for the planned medication activity.</desc>
+                    <item label="CONF:1098-32069"/>
+                    <attribute name="typeCode" value="RSON" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.3496">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @typeCode="RSON" Has Reason (CodeSystem: HL7ActRelationshipType urn:oid:2.16.840.1.113883.5.1002) (CONF:1098-32070).</desc>
+                        <item label="CONF:1098-32070"/>
+                    </attribute>
+                </element>
+                <element name="cda:entryRelationship" contains="2.16.840.1.113883.10.20.22.4.20" flexibility="2014-06-09T00:00:00" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.3497">
+                    <desc language="en-US">The following entryRelationship captures any instructions associated with the planned medication activity.</desc>
+                    <item label="CONF:1098-32072"/>
+                    <attribute name="typeCode" value="SUBJ" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.3498">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @typeCode="SUBJ" Has Subject (CodeSystem: HL7ActRelationshipType urn:oid:2.16.840.1.113883.5.1002) (CONF:1098-32073).</desc>
+                        <item label="CONF:1098-32073"/>
+                    </attribute>
+                </element>
+                <element name="cda:precondition" contains="2.16.840.1.113883.10.20.22.4.25" flexibility="2014-06-09T00:00:00" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.3499">
+                    <item label="CONF:1098-32084"/>
+                    <attribute name="typeCode" value="PRCN" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.3500">
+                        <desc language="en-US">The precondition, if present, SHALL contain exactly one [1..1] @typeCode="PRCN" Precondition (CodeSystem: HL7ActRelationshipType urn:oid:2.16.840.1.113883.5.1002) (CONF:1098-32085).</desc>
+                        <item label="CONF:1098-32085"/>
+                    </attribute>
+                </element>
+            </element>
+        </template>

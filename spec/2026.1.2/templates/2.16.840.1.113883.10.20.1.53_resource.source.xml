@@ -1,0 +1,62 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.20.1.53" name="Product" displayName="Product" effectiveDate="2007-04-01T00:00:00" statusCode="pending" url="http://art-decor.org/decor/services/" ident="ccd1-" sdtc:dummy-1="urn:hl7-org:sdtc" xml:dummy-2="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-4="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance">
+    <desc language="en-US">
+        <h4>3.9.2.4 Representation of a product</h4>
+        <p>The template identifier for a product is 2.16.840.1.113883.10.20.1.53.<br/> The template identifier for a product instance is 2.16.840.1.113883.10.20.1.52.</p>
+        <p>
+            <b>CONF-354</b>: A medication activity <b>SHALL</b> contain exactly one <b>SubstanceAdministration / consumable</b>, the target of which is a product template.<br/>
+            <b>CONF-355</b>: A supply activity <b>MAY</b> contain exactly one <b>Supply / product</b>, the target of which is a product template.<br/>
+            <b>CONF-356</b>: A product (templateId 2.16.840.1.113883.10.20.1.53) <b>SHALL</b> be represented with the <b>ManufacturedProduct</b> class.<br/>
+            <b>CONF-357</b>: A <b>ManufacturedProduct</b> in a product template <b>SHALL</b> contain exactly one <b>manufacturedProduct / manufacturedMaterial</b>.<br/>
+            <b>CONF-358</b>: A <b>manufacturedMaterial</b> in a product template <b>SHALL</b> contain exactly one <b>manufacturedMaterial / code</b>.<br/>
+            <b>CONF-359</b>: The value for “<b>manufacturedMaterial / code</b>” in a product template <b>SHOULD</b> be selected from the RxNorm (2.16.840.1.113883.6.88) code system for medications, and from the CDC Vaccine Code (2.16.840.1.113883.6.59) code system for immunizations , or <b>MAY</b> be selected from ValueSet 2.16.840.1.113883.1.11.20.8 MedicationTypeCode STATIC 20061017.<br/>
+            <b>CONF-360</b>: The value for “<b>manufacturedMaterial / code</b>” in a product template <b>MAY</b> contain a precoordinated product strength, product form, or product concentration (e.g. “metoprolol 25mg tablet”, “amoxicillin 400mg/5mL suspension”).<br/>
+            <b>CONF-361</b>: If <b>manufacturedMaterial / code</b> contains a precoordinated unit dose (e.g. “metoprolol 25mg tablet”), then <b>SubstanceAdministration / doseQuantity</b> SHALL be a unitless number that indicates the number of products given per administration. <br/>
+            <b>CONF-362</b>: If <b>manufacturedMaterial / code</b> does not contain a precoordinated unit dose (e.g. “metoprolol product”), then <b>SubstanceAdministration / doseQuantity</b>
+            <b>SHALL</b> be a physical quantity that indicates the amount of product given per administration.<br/>
+            <b>CONF-363</b>: A <b>manufacturedMaterial</b> in a product template <b>SHALL</b> contain exactly one <b>Material / code / originalText</b>, which represents the generic name of the product.<br/>
+            <b>CONF-364</b>: A <b>manufacturedMaterial</b> in a product template <b>MAY</b> contain exactly one <b>Material / name</b>, which represents the brand name of the product. </p>
+    </desc>
+    <classification type="cdaentrylevel"/>
+    <relationship type="ADAPT" template="2.16.840.1.113883.10.12.312" flexibility="2005-09-07T00:00:00"/>
+    <context id="**"/>
+    <element name="hl7:manufacturedProduct" id="2.16.840.1.113883.3.1937.777.4.9.2355">
+        <item label="CONF-356"/>
+        <attribute name="classCode" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.2356">
+                    <!--valueSet name="RoleClassManufacturedProduct"-->
+            <vocabulary valueSet="2.16.840.1.113883.1.11.11580"/>
+        </attribute>
+        <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.3.1937.777.4.9.2357">
+            <attribute name="root" value="2.16.840.1.113883.10.20.1.53" isOptional="false" id="2.16.840.1.113883.3.1937.777.4.9.2358"/>
+        </element>
+        <element name="hl7:id" minimumMultiplicity="0" maximumMultiplicity="*" datatype="II" id="2.16.840.1.113883.3.1937.777.4.9.2359">
+            <item label="CONF-366"/>
+            <assert role="error" test="@nullFlavor or ../hl7:manufacturerOrganization">CONF-367: If ManufacturedProduct in a product template contains manufacturedProduct / id, then ManufacturedProduct SHOULD also contain manufacturedProduct / manufacturerOrganization.</assert>
+        </element>
+        <element name="hl7:manufacturedMaterial" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.4.9.2360">
+            <item label="CONF-357"/>
+            <attribute name="classCode" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.2361">
+                        <!--valueSet name="EntityClassManufacturedMaterial"-->
+                <vocabulary valueSet="2.16.840.1.113883.1.11.13934"/>
+            </attribute>
+            <attribute name="determinerCode" value="KIND" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.2362"/>
+            <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.4.9.2363">
+                <item label="CONF-358 / CONF-359 / CONF-360 / CONF-361 / CONF-362"/>
+                <vocabulary codeSystem="2.16.840.1.113883.6.88"/>
+                <vocabulary codeSystem="2.16.840.1.113883.6.59"/>
+                        <!--valueSet name="MedicationTypeCode"-->
+                <vocabulary valueSet="2.16.840.1.113883.1.11.20.8" flexibility="2006-10-17T00:00:00"/>
+                <element name="hl7:originalText" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.4.9.2364">
+                    <item label="CONF-363"/>
+                </element>
+            </element>
+            <element name="hl7:name" minimumMultiplicity="0" maximumMultiplicity="1" datatype="EN" id="2.16.840.1.113883.3.1937.777.4.9.2365">
+                <item label="CONF-364"/>
+            </element>
+            <element name="hl7:lotNumberText" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ST" id="2.16.840.1.113883.3.1937.777.4.9.2366"/>
+        </element>
+                <!--contains name="CCDOrganization"-->
+        <element name="hl7:manufacturerOrganization" minimumMultiplicity="0" maximumMultiplicity="1" contains="2.16.840.1.113883.3.1937.777.4.10.2" id="2.16.840.1.113883.3.1937.777.4.9.2367">
+            <item label="CONF-365"/>
+        </element>
+    </element>
+</template>

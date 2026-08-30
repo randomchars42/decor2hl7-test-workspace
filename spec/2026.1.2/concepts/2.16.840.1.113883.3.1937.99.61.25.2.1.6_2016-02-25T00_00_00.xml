@@ -1,0 +1,37 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.99.61.25.1.1" effectiveDate="2016-02-25T00:00:00" statusCode="draft" lastModifiedDate="2023-09-13T11:55:57" prefix="narradcda-" shortName="radiologischer_befundbericht" iddisplay="narradcda-dataset-1" url="http://art-decor.org/decor/services/" ident="narradcda-"><!--
+ This is a view of the dataset "Radiologischer Befundbericht" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE" lastTranslated="2023-09-13T11:51:51">Radiologischer Befundbericht</name>
+    <desc language="de-DE" lastTranslated="2023-09-13T11:51:51">Radiologischer Befundbericht</desc>
+    <concept id="2.16.840.1.113883.3.1937.99.61.25.2.1.6" statusCode="draft" effectiveDate="2016-02-25T00:00:00" lastModifiedDate="2023-09-13T11:55:03" type="group" iddisplay="narradcda-dataelement-1.6" shortName="medizinischer_inhalt">
+        <implementation shortName="medizinischer_inhalt" markdown="0"/>
+        <name language="de-DE">Medizinischer Inhalt</name>
+        <desc language="de-DE">0</desc>
+        <concept id="2.16.840.1.113883.3.1937.99.61.25.2.1.610" effectiveDate="2016-02-25T00:00:00" statusCode="draft" lastModifiedDate="2023-09-13T11:54:38" type="item" iddisplay="narradcda-dataelement-1.610" shortName="befundungsfragestellung">
+            <implementation shortName="befundungsfragestellung" markdown="Fragestellung, die in diesem Befundbericht beantwortet werden soll"/>
+            <name language="de-DE" lastTranslated="2023-09-13T11:54:38">Befundungsfragestellung</name>
+            <desc language="de-DE" lastTranslated="2023-09-13T11:54:38">Fragestellung, die in diesem Befundbericht beantwortet werden soll</desc>
+            <valueDomain type="text"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.99.61.25.2.1.620" effectiveDate="2016-02-25T00:00:00" statusCode="draft" lastModifiedDate="2023-09-13T11:54:47" type="item" iddisplay="narradcda-dataelement-1.620" shortName="beschreibung">
+            <implementation shortName="beschreibung" markdown="Beschreibung des Inhaltes der Dokumente der Studie"/>
+            <name language="de-DE" lastTranslated="2023-09-13T11:54:47">Beschreibung</name>
+            <desc language="de-DE" lastTranslated="2023-09-13T11:54:47">Beschreibung des Inhaltes der Dokumente der Studie</desc>
+            <valueDomain type="text"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.99.61.25.2.1.630" effectiveDate="2016-02-25T00:00:00" statusCode="draft" lastModifiedDate="2023-09-13T11:54:55" type="item" iddisplay="narradcda-dataelement-1.630" shortName="beurteilung">
+            <implementation shortName="beurteilung" markdown="Medizinische Bewertung  der Studie"/>
+            <name language="de-DE" lastTranslated="2023-09-13T11:54:55">Beurteilung</name>
+            <desc language="de-DE" lastTranslated="2023-09-13T11:54:55">Medizinische Bewertung  der Studie</desc>
+            <valueDomain type="text"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.99.61.25.2.1.640" effectiveDate="2016-02-25T00:00:00" statusCode="draft" lastModifiedDate="2023-09-13T11:55:03" type="item" iddisplay="narradcda-dataelement-1.640" shortName="empfehlung">
+            <implementation shortName="empfehlung" markdown="Empfehlungen zum weiteren diagnostischen/therapeutischen Vorgehen"/>
+            <name language="de-DE" lastTranslated="2023-09-13T11:55:03">Empfehlung</name>
+            <desc language="de-DE" lastTranslated="2023-09-13T11:55:03">Empfehlungen zum weiteren diagnostischen/therapeutischen Vorgehen</desc>
+            <valueDomain type="text"/>
+        </concept>
+    </concept>
+</dataset>

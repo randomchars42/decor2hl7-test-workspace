@@ -1,0 +1,33 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.3.6.1.4.1.19376.1.5.3.1.4.13.5" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:ihe="urn:ihe:pcc:hl7v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.3.6.1.4.1.19376.1.5.3.1.4.13.5" hl7:dummy-default="urn:hl7-org:v3" displayName="IHE Pregnancy Observation" cda:dummy-5="urn:hl7-org:v3" ihe:dummy-2="urn:ihe:pcc:hl7v3" xml:dummy-3="http://www.w3.org/XML/1998/namespace" url="https://art-decor.ihe-europe.net/decor/services/" xsi:dummy-6="http://www.w3.org/2001/XMLSchema-instance" versionLabel="2014" isClosed="false" ident="IHE-PCC-" name="IHEPregnancyObservation" statusCode="active" sdtc:dummy-1="urn:hl7-org:sdtc" effectiveDate="2016-10-21T14:59:35">
+            <desc language="en-US">
+                <div>A pregnancy observation is a Simple Observation that uses a specific vocabulary to record observations about a patient's current or historical pregnancies.</div>
+            </desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.303" tmname="CDAObservation" tmdisplayName="CDA Observation" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <relationship type="SPEC" template="1.3.6.1.4.1.19376.1.5.3.1.4.13" flexibility="2016-09-26T08:43:40" tmid="1.3.6.1.4.1.19376.1.5.3.1.4.13" tmname="IHESimpleObservation" tmdisplayName="IHE Simple Observation" tmeffectiveDate="2016-09-26T08:43:40" tmstatusCode="active" tmversionLabel="2014" url="https://art-decor.ihe-europe.net/decor/services/" ident="IHE-PCC-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <item label="6.3.4.25"/>
+            <element name="hl7:observation" id="2.16.840.1.113883.3.1937.777.1.9.357">
+                <item original="false" label="6.3.4.25"/>
+                <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.1.9.359"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" conformance="R" isMandatory="true" id="1.2.3.4.9.7">
+                    <item original="false" label="6.3.4.25"/>
+                    <attribute name="root" value="1.3.6.1.4.1.19376.1.5.3.1.4.13.5" isOptional="false" datatype="uid" id="1.2.3.4.9.8"/>
+                </element>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" conformance="R" isMandatory="true" id="1.3.6.1.4.1.19376.1.5.3.1.9.189">
+                    <item original="false" label="6.3.4.25"/>
+                    <attribute name="root" value="1.3.6.1.4.1.19376.1.5.3.1.4.13" isOptional="false" datatype="uid" id="1.3.6.1.4.1.19376.1.5.3.1.9.190"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CD" conformance="R" isMandatory="true" id="2.16.840.1.113883.3.1937.777.1.9.364">
+                    <item original="false" label="6.3.4.25"/>
+                </element>
+                <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="*" datatype="ANY" conformance="R" id="2.16.840.1.113883.3.1937.777.1.9.372">
+                    <item original="false" label="6.3.4.25"/>
+                </element>
+            </element>
+            <staticAssociations/>
+        </template>
+    </template>
+</result>

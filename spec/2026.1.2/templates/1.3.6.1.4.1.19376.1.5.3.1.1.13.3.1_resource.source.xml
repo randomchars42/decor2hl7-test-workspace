@@ -1,0 +1,39 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:ihe="urn:ihe:pcc:hl7v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.3.6.1.4.1.19376.1.5.3.1.1.13.3.1" name="IHEAcuity" displayName="IHE Acuity" statusCode="active" isClosed="false" versionLabel="2016" effectiveDate="2017-03-22T14:14:06" url="https://art-decor.ihe-europe.net/decor/services/" ident="IHE-PCC-" sdtc:dummy-1="urn:hl7-org:sdtc" ihe:dummy-2="urn:ihe:pcc:hl7v3" xml:dummy-3="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-5="urn:hl7-org:v3" xsi:dummy-6="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">An acuity entry indicates the triage acuity entry and the triage time of the patient.</desc>
+            <desc language="nl-NL"/>
+            <desc language="de-DE"/>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00"/>
+            <context id="**"/>
+            <item label="6.3.4.45"/>
+            <example type="neutral">
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.13.3.1"/>
+                    <id root="1.2.3.999" extension="--example only--"/>
+                    <code>
+                        <originalText/>
+                    </code>
+                    <text/>
+                    <effectiveTime>
+                        <low/>
+                        <high/>
+                    </effectiveTime>
+                </observation>
+            </example>
+            <element name="hl7:observation" id="2.16.840.1.113883.3.1937.777.1.9.357">
+                <attribute name="classCode" value="OBS" datatype="cs" id="2.16.840.1.113883.3.1937.777.1.9.358"/>
+                <attribute name="moodCode" value="EVN" datatype="cs" id="2.16.840.1.113883.3.1937.777.1.9.359"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" conformance="R" isMandatory="true" id="1.3.6.1.4.1.19376.1.5.3.1.9.1004">
+                    <attribute name="root" value="1.3.6.1.4.1.19376.1.5.3.1.1.13.3.1" datatype="uid" id="1.3.6.1.4.1.19376.1.5.3.1.9.1005"/>
+                </element>
+                <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="*" datatype="II" conformance="R" isMandatory="true" id="2.16.840.1.113883.3.1937.777.1.9.363"/>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="CD" id="2.16.840.1.113883.3.1937.777.1.9.364">
+                    <element name="hl7:originalText" datatype="ED" minimumMultiplicity="0" maximumMultiplicity="1" id="1.3.6.1.4.1.19376.1.5.3.1.9.1006"/>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.3.1937.777.1.9.366"/>
+                <element name="hl7:effectiveTime" minimumMultiplicity="1" maximumMultiplicity="1" datatype="IVL_TS" conformance="R" id="2.16.840.1.113883.3.1937.777.1.9.368">
+                    <element name="hl7:low" datatype="IVXB_TS" minimumMultiplicity="0" maximumMultiplicity="1" id="1.3.6.1.4.1.19376.1.5.3.1.9.1007"/>
+                    <element name="hl7:high" datatype="IVXB_TS" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="1.3.6.1.4.1.19376.1.5.3.1.9.1008"/>
+                </element>
+            </element>
+        </template>

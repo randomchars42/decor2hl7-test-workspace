@@ -1,0 +1,73 @@
+<valueSets>
+    <repository url="http://art-decor.org/decor/services/" ident="ad2bbr-" referencedFrom="ch-pcc-" projecttype="local">
+        <valueSet id="2.16.840.1.113883.1.11.20428" name="InformationSensitivityPolicy" displayName="InformationSensitivityPolicy" effectiveDate="2018-04-01T00:00:00" statusCode="final" versionLabel="DEFN=UV=VO=1418-20180401">
+            <desc language="en-US">
+                <p>
+                    <b>History description 2014-03-26: </b>Lock all vaue sets untouched since 2014-03-26 to trackingId 2014T1_2014_03_26</p>
+                <b>description: </b>
+                <p>Sensitivity codes are not useful for interoperability outside of a policy domain because sensitivity policies are typically localized and vary drastically across policy domains even for the same information category
+                    because of differing organizational business rules, security policies, and jurisdictional requirements. For example, an "employee" sensitivity code would make little sense for use outside of a policy domain. "Taboo" would rarely be useful outside of a policy domain unless there are jurisdictional requirements requiring that a provider disclose sensitive information to a patient
+                    directly.</p>
+                <p>Sensitivity codes may be more appropriate in a legacy system's Master Files in order to notify those who access a patient's orders and observations about the sensitivity policies that apply. Newer systems may have a security engine that uses a sensitivity policy's criteria directly. The specializable Sensitivity Act.code may be useful in some scenarious if used
+                    in combination with a sensitivity identifier and/or Act.title.</p>
+            </desc>
+            <sourceCodeSystem id="2.16.840.1.113883.5.4" identifierName="Act Code" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-ActCode" canonicalUriDSTU2="http://hl7.org/fhir/v3/ActCode" canonicalUriSTU3="http://hl7.org/fhir/v3/ActCode" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-ActCode" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-ActCode" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-ActCode" context="external/hl7intl/v3/v3-ActCode"/>
+            <publishingAuthority name="HL7" inherited="project">
+                <addrLine>Health Level Seven International</addrLine>
+                <addrLine>455 E. Eisenhower PKWY STE 300 # 025</addrLine>
+                <addrLine>Ann Arbor, MI 48108</addrLine>
+                <addrLine>USA</addrLine>
+                <addrLine>T +1 734 677 7777</addrLine>
+                <addrLine>F +1 734 677 6622</addrLine>
+                <addrLine>E info@hl7.org</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <concept code="_InformationSensitivityPolicy" codeSystem="2.16.840.1.113883.5.4" displayName="InformationSensitivityPolicy" level="0" type="A"/>
+                <concept code="_ActInformationSensitivityPolicy" codeSystem="2.16.840.1.113883.5.4" displayName="ActInformationSensitivityPolicy" level="1" type="A"/>
+                <concept code="ETH" codeSystem="2.16.840.1.113883.5.4" displayName="substance abuse information sensitivity" level="2" type="L"/>
+                <concept code="GDIS" codeSystem="2.16.840.1.113883.5.4" displayName="genetic disease information sensitivity" level="2" type="L"/>
+                <concept code="HIV" codeSystem="2.16.840.1.113883.5.4" displayName="HIV/AIDS information sensitivity" level="2" type="L"/>
+                <concept code="MST" codeSystem="2.16.840.1.113883.5.4" displayName="military sexual trauma information sensitivity" level="2" type="L"/>
+                <concept code="SCA" codeSystem="2.16.840.1.113883.5.4" displayName="sickle cell anemia information sensitivity" level="2" type="L"/>
+                <concept code="SDV" codeSystem="2.16.840.1.113883.5.4" displayName="sexual assault, abuse, or domestic violence information sensitivity" level="2" type="L"/>
+                <concept code="SEX" codeSystem="2.16.840.1.113883.5.4" displayName="sexuality and reproductive health information sensitivity" level="2" type="L"/>
+                <concept code="SPI" codeSystem="2.16.840.1.113883.5.4" displayName="specially protected information sensitivity" level="2" type="S"/>
+                <concept code="BH" codeSystem="2.16.840.1.113883.5.4" displayName="behavioral health information sensitivity" level="3" type="S"/>
+                <concept code="COGN" codeSystem="2.16.840.1.113883.5.4" displayName="cognitive disability information sensitivity" level="4" type="L"/>
+                <concept code="DVD" codeSystem="2.16.840.1.113883.5.4" displayName="developmental disability information sensitivity" level="4" type="L"/>
+                <concept code="EMOTDIS" codeSystem="2.16.840.1.113883.5.4" displayName="emotional disturbance information sensitivity" level="4" type="L"/>
+                <concept code="MH" codeSystem="2.16.840.1.113883.5.4" displayName="mental health information sensitivity" level="3" type="L"/>
+                <concept code="PSY" codeSystem="2.16.840.1.113883.5.4" displayName="psychiatry disorder information sensitivity" level="3" type="L"/>
+                <concept code="PSYTHPN" codeSystem="2.16.840.1.113883.5.4" displayName="psychotherapy note information sensitivity" level="3" type="L"/>
+                <concept code="SUD" codeSystem="2.16.840.1.113883.5.4" displayName="substance use disorder information sensitivity" level="3" type="S"/>
+                <concept code="ETHUD" codeSystem="2.16.840.1.113883.5.4" displayName="alcohol use disorder information sensitivity" level="4" type="L"/>
+                <concept code="OPIOIDUD" codeSystem="2.16.840.1.113883.5.4" displayName="opioid use disorder information sensitivity" level="4" type="L"/>
+                <concept code="STD" codeSystem="2.16.840.1.113883.5.4" displayName="sexually transmitted disease information sensitivity" level="2" type="L"/>
+                <concept code="TBOO" codeSystem="2.16.840.1.113883.5.4" displayName="taboo" level="2" type="L"/>
+                <concept code="VIO" codeSystem="2.16.840.1.113883.5.4" displayName="violence information sensitivity" level="2" type="L"/>
+                <concept code="_EntitySensitivityPolicyType" codeSystem="2.16.840.1.113883.5.4" displayName="EntityInformationSensitivityPolicy" level="1" type="A"/>
+                <concept code="DEMO" codeSystem="2.16.840.1.113883.5.4" displayName="all demographic information sensitivity" level="2" type="L"/>
+                <concept code="DOB" codeSystem="2.16.840.1.113883.5.4" displayName="date of birth information sensitivity" level="2" type="L"/>
+                <concept code="GENDER" codeSystem="2.16.840.1.113883.5.4" displayName="gender and sexual orientation information sensitivity" level="2" type="L"/>
+                <concept code="LIVARG" codeSystem="2.16.840.1.113883.5.4" displayName="living arrangement information sensitivity" level="2" type="L"/>
+                <concept code="MARST" codeSystem="2.16.840.1.113883.5.4" displayName="marital status information sensitivity" level="2" type="L"/>
+                <concept code="RACE" codeSystem="2.16.840.1.113883.5.4" displayName="race information sensitivity" level="2" type="L"/>
+                <concept code="REL" codeSystem="2.16.840.1.113883.5.4" displayName="religion information sensitivity" level="2" type="L"/>
+                <concept code="_RoleInformationSensitivityPolicy" codeSystem="2.16.840.1.113883.5.4" displayName="RoleInformationSensitivityPolicy" level="1" type="A"/>
+                <concept code="B" codeSystem="2.16.840.1.113883.5.4" displayName="business information sensitivity" level="2" type="L"/>
+                <concept code="EMPL" codeSystem="2.16.840.1.113883.5.4" displayName="employer information sensitivity" level="2" type="L"/>
+                <concept code="LOCIS" codeSystem="2.16.840.1.113883.5.4" displayName="location information sensitivity" level="2" type="L"/>
+                <concept code="SSP" codeSystem="2.16.840.1.113883.5.4" displayName="sensitive service provider information sensitivity" level="2" type="L"/>
+                <concept code="ADOL" codeSystem="2.16.840.1.113883.5.4" displayName="adolescent information sensitivity" level="1" type="L"/>
+                <concept code="CEL" codeSystem="2.16.840.1.113883.5.4" displayName="celebrity information sensitivity" level="1" type="L"/>
+                <concept code="VIP" codeSystem="2.16.840.1.113883.5.4" displayName="celebrity information sensitivity" level="1" type="L"/>
+                <concept code="DIA" codeSystem="2.16.840.1.113883.5.4" displayName="diagnosis information sensitivity" level="1" type="L"/>
+                <concept code="DRGIS" codeSystem="2.16.840.1.113883.5.4" displayName="drug information sensitivity" level="1" type="L"/>
+                <concept code="EMP" codeSystem="2.16.840.1.113883.5.4" displayName="employee information sensitivity" level="1" type="L"/>
+                <concept code="PDS" codeSystem="2.16.840.1.113883.5.4" displayName="patient default information sensitivity" level="1" type="L"/>
+                <concept code="PHY" codeSystem="2.16.840.1.113883.5.4" displayName="physician requested information sensitivity" level="1" type="L"/>
+                <concept code="PRS" codeSystem="2.16.840.1.113883.5.4" displayName="patient requested information sensitivity" level="1" type="L"/>
+            </conceptList>
+        </valueSet>
+    </repository>
+</valueSets>

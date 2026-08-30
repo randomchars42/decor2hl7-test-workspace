@@ -1,0 +1,59 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.3040" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:ukfc="http://fhir.hl7.de/ukfc" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" id="1.2.276.0.76.10.3040" hl7:dummy-default="urn:hl7-org:v3" displayName="Allergien und Unverträglichkeiten" xml:dummy-5="http://www.w3.org/XML/1998/namespace" cda:dummy-7="urn:hl7-org:v3" ukfc:dummy-1="http://fhir.hl7.de/ukfc" url="http://art-decor.org/decor/services/" pharm:dummy-4="urn:hl7-org:pharm" xsi:dummy-8="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" ident="pmp-" name="AllergienUnvertraeglichkeiten" sdtc:dummy-2="urn:hl7-org:sdtc" xhtml:dummy-3="http://www.w3.org/1999/xhtml" statusCode="draft" effectiveDate="2012-07-14T00:00:00">
+            <desc language="de-DE">Beschreibung der Allergien und Medikamentenunverträglichkeiten und deren beobachteten Nebenwirkungen</desc>
+            <classification type="cdasectionlevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.201" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.201" tmname="CDASection" tmdisplayName="CDA Section" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <item label="saurpmp"/>
+            <example type="neutral">
+                <section classCode="DOCSECT">
+                    <templateId root="1.2.276.0.76.10.3040"/>
+                    <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/>
+                    <title>Allergien und Unverträglichkeiten</title>
+                    <text>
+                        <list>
+                            <item ID="alg">Allergie: Penizillin</item>
+                            <item ID="int">Unverträglichkeit: Laktose</item>
+                        </list>
+                    </text>
+                    <entry typeCode="COMP">
+                        <!-- .. -->
+                    </entry>
+                </section>
+            </example>
+            <element name="hl7:section">
+                <item original="false" label="saurpmp"/>
+                <attribute name="classCode" value="DOCSECT" isOptional="true" datatype="cs"/>
+                <attribute name="moodCode" value="EVN" isOptional="true" datatype="cs"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II">
+                    <item original="false" label="saurpmp"/>
+                    <attribute name="root" value="1.2.276.0.76.10.3040" isOptional="false" datatype="uid"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CE">
+                    <item original="false" label="saurpmp"/>
+                    <vocabulary code="48765-2" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:title" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="ST">
+                    <item original="false" label="saurpmp"/>
+                    <text>Allergien und Unverträglichkeiten</text>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="SD.TEXT">
+                    <item original="false" label="saurpmp"/>
+                </element>
+                <element name="hl7:entry" minimumMultiplicity="0" maximumMultiplicity="1" contains="1.2.276.0.76.10.4018" conformance="R" tmid="1.2.276.0.76.10.4018" tmname="Allergytosubstance" tmdisplayName="Allergien" tmeffectiveDate="2016-01-31T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="pmp-" linkedartefactmissing="false">
+                    <item original="false" label="saurpmp"/>
+                    <attribute name="typeCode" value="DRIV" isOptional="false" datatype="cs"/>
+                </element>
+                <element name="hl7:entry" minimumMultiplicity="0" maximumMultiplicity="1" contains="1.2.276.0.76.10.4019" conformance="R" tmid="1.2.276.0.76.10.4019" tmname="Propensitytoadversereactions" tmdisplayName="Unverträglichkeiten" tmeffectiveDate="2016-01-31T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="pmp-" linkedartefactmissing="false">
+                    <item original="false" label="saurpmp"/>
+                    <attribute name="typeCode" value="DRIV" isOptional="false" datatype="cs"/>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="contains" prefix="pmp-" flexibility="2012-07-14T00:00:00" id="1.2.276.0.76.10.1014" name="PersonalMedicationList" displayName="Patientenbezogener Medikationsplan CDA document" effectiveDate="2014-10-20T00:00:00" statusCode="draft" versionLabel="v2015" ident="pmp-"/>
+            <uses type="contains" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.4018" name="Allergytosubstance" displayName="Allergien" effectiveDate="2016-01-31T00:00:00" statusCode="draft" isClosed="false" url="http://art-decor.org/decor/services/" ident="pmp-"/>
+            <uses type="contains" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.4019" name="Propensitytoadversereactions" displayName="Unverträglichkeiten" effectiveDate="2016-01-31T00:00:00" statusCode="draft" isClosed="false" url="http://art-decor.org/decor/services/" ident="pmp-"/>
+        </template>
+    </template>
+</result>

@@ -1,0 +1,180 @@
+<result xmlns:json="http://www.json.org">
+    <template id="2.16.840.1.113883.10.20.22.4.13" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:local="http://art-decor.org/local" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.20.22.4.13" hl7:dummy-default="urn:hl7-org:v3" local:dummy-2="http://art-decor.org/local" displayName="Procedure Activity Observation" cda:dummy-5="urn:hl7-org:v3" xml:dummy-3="http://www.w3.org/XML/1998/namespace" url="http://art-decor.org/decor/services/" xsi:dummy-6="http://www.w3.org/2001/XMLSchema-instance" versionLabel="1.1" isClosed="false" ident="ccda-" name="ProcedureActivityObservation" statusCode="draft" sdtc:dummy-1="urn:hl7-org:sdtc" effectiveDate="2013-01-31T00:00:00">
+            <desc language="en-US">The common notion of ""procedure"" is broader than that specified by the HL7 Version 3 Reference Information Model (RIM). Therefore procedure templates can be represented with various RIM classes: act (e.g., dressing change), observation (e.g., EEG), procedure (e.g. splenectomy). This clinical statement represents procedures that result in new information about
+                the patient that cannot be classified as a procedure according to the HL7 RIM. Examples of these procedures are diagnostic imaging procedures, EEGs and EKGs.</desc>
+            <classification type="cdaentrylevel"/>
+            <context id="**"/>
+            <element name="cda:observation" id="2.16.840.1.113883.3.1937.99.3.9.1013">
+                <item original="false" label="ProcedureActivityObservation"/>
+                <attribute name="classCode" value="OBS" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.1014">
+                    <item label="conf-8282"/>
+                </attribute>
+                <attribute name="moodCode" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.1015">
+                    <item label="conf-8237"/>
+                    <vocabulary valueSet="2.16.840.1.113883.11.20.9.18" vsid="2.16.840.1.113883.11.20.9.18" vsname="MoodCodeEvnInt" vsdisplayName="MoodCodeEvnInt" vseffectiveDate="2016-06-23T00:00:00" vsstatusCode="final" linkedartefactmissing="false"/>
+                </attribute>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.1016">
+                    <desc language="en-US">SHALL contain exactly one [1..1] templateId (CONF:8238) such that it</desc>
+                    <item label="conf-8238"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.22.4.13" isOptional="false" datatype="uid" id="2.16.840.1.113883.3.1937.99.3.9.1017">
+                        <item label="conf-10520"/>
+                    </attribute>
+                </element>
+                <element name="cda:id" datatype="II" minimumMultiplicity="1" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.1018">
+                    <desc language="en-US">SHALL contain at least one [1..*] id (CONF:8239).</desc>
+                    <item label="conf-8239"/>
+                </element>
+                <element name="cda:code" datatype="CD" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.1019">
+                    <desc language="en-US">SHALL contain exactly one [1..1] code (CONF:19197).</desc>
+                    <item label="conf-19197"/>
+                    <element name="cda:originalText" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.1020">
+                        <desc language="en-US">This code SHOULD contain zero or one [0..1] originalText (CONF:19198).</desc>
+                        <item label="conf-19198"/>
+                        <element name="cda:reference" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.1021">
+                            <desc language="en-US">The originalText, if present, SHOULD contain zero or one [0..1] reference (CONF:19199).<p/>This reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1).</desc>
+                            <item label="conf-19199"/>
+                            <attribute name="value" isOptional="true" id="2.16.840.1.113883.3.1937.99.3.9.1022">
+                                <item label="conf-19200"/>
+                            </attribute>
+                            <assert role="error" test="not(@value) or starts-with(@value, '#')">This reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1).</assert>
+                        </element>
+                    </element>
+                </element>
+                <element name="cda:statusCode" datatype="CS" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.1023">
+                    <desc language="en-US">SHALL contain exactly one [1..1] statusCode, which SHALL be selected from ValueSet ProcedureAct statusCode 2.16.840.1.113883.11.20.9.22 DYNAMIC (CONF:8245).</desc>
+                    <item label="conf-8245"/>
+                    <vocabulary valueSet="2.16.840.1.113883.11.20.9.22" vsid="2.16.840.1.113883.11.20.9.22" vsdisplayName="ProcedureAct statusCode" vseffectiveDate="2019-01-03T00:00:00" vsstatusCode="final" vsname="ProcedureActstatusCode" linkedartefactmissing="false"/>
+                </element>
+                <element name="cda:effectiveTime" datatype="IVL_TS" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.1024">
+                    <desc language="en-US">SHOULD contain zero or one [0..1] effectiveTime (CONF:8246).</desc>
+                    <item label="conf-8246"/>
+                </element>
+                <element name="cda:priorityCode" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.1025">
+                    <desc language="en-US">MAY contain zero or one [0..1] priorityCode, which SHALL be selected from ValueSet Act Priority 2.16.840.1.113883.1.11.16866 DYNAMIC (CONF:8247).</desc>
+                    <item label="conf-8247"/>
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.16866" vsid="2.16.840.1.113883.1.11.16866" vsname="ActPriority" vsdisplayName="ActPriority" vseffectiveDate="2016-06-23T00:00:00" vsstatusCode="final" linkedartefactmissing="false"/>
+                </element>
+                <element name="cda:value" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.1026">
+                    <desc language="en-US">SHALL contain exactly one [1..1] value (CONF:16846).</desc>
+                    <item label="conf-16846"/>
+                </element>
+                <element name="cda:methodCode" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.1027">
+                    <desc language="en-US">MAY contain zero or one [0..1] methodCode (CONF:8248).<p/>methodCode SHALL NOT conflict with the method inherent in Observation / code.</desc>
+                    <item label="conf-8248"/>
+                </element>
+                <element name="cda:targetSiteCode" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.1028">
+                    <desc language="en-US">SHOULD contain zero or more [0..*] targetSiteCode (CONF:8250).</desc>
+                    <item label="conf-8250"/>
+                    <attribute name="code" isOptional="false" id="2.16.840.1.113883.3.1937.99.3.9.1029">
+                        <item label="conf-16071"/>
+                    </attribute>
+                </element>
+                <element name="cda:performer" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.1030">
+                    <desc language="en-US">SHOULD contain zero or more [0..*] performer (CONF:8251).</desc>
+                    <item label="conf-8251"/>
+                    <element name="cda:assignedEntity" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.1031">
+                        <desc language="en-US">The performer, if present, SHALL contain exactly one [1..1] assignedEntity (CONF:8252).</desc>
+                        <item label="conf-8252"/>
+                        <element name="cda:id" datatype="II" minimumMultiplicity="1" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.1032">
+                            <desc language="en-US">This assignedEntity SHALL contain at least one [1..*] id (CONF:8253).</desc>
+                            <item label="conf-8253"/>
+                        </element>
+                        <element name="cda:addr" datatype="AD" minimumMultiplicity="1" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.1033">
+                            <desc language="en-US">This assignedEntity SHALL contain at least one [1..*] addr (CONF:8254).</desc>
+                            <item label="conf-8254"/>
+                        </element>
+                        <element name="cda:telecom" datatype="TEL" minimumMultiplicity="1" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.1034">
+                            <desc language="en-US">This assignedEntity SHALL contain at least one [1..*] telecom (CONF:8255).</desc>
+                            <item label="conf-8255"/>
+                        </element>
+                        <element name="cda:representedOrganization" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.1035">
+                            <desc language="en-US">This assignedEntity SHOULD contain zero or one [0..1] representedOrganization (CONF:8256).</desc>
+                            <item label="conf-8256"/>
+                            <element name="cda:id" datatype="II" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.1036">
+                                <desc language="en-US">The representedOrganization, if present, SHOULD contain zero or more [0..*] id (CONF:8257).</desc>
+                                <item label="conf-8257"/>
+                            </element>
+                            <element name="cda:name" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.1037">
+                                <desc language="en-US">The representedOrganization, if present, MAY contain zero or more [0..*] name (CONF:8258).</desc>
+                                <item label="conf-8258"/>
+                            </element>
+                            <element name="cda:telecom" datatype="TEL" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.1038">
+                                <desc language="en-US">The representedOrganization, if present, SHALL contain exactly one [1..1] telecom (CONF:8260).</desc>
+                                <item label="conf-8260"/>
+                            </element>
+                            <element name="cda:addr" datatype="AD" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.1039">
+                                <desc language="en-US">The representedOrganization, if present, SHALL contain exactly one [1..1] addr (CONF:8259).</desc>
+                                <item label="conf-8259"/>
+                            </element>
+                        </element>
+                    </element>
+                </element>
+                <element name="cda:participant" contains="2.16.840.1.113883.10.20.22.4.32" flexibility="2013-01-31T00:00:00" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.1040" tmid="2.16.840.1.113883.10.20.22.4.32" tmname="ServiceDeliveryLocation" tmeffectiveDate="2013-01-31T00:00:00" tmstatusCode="draft" tmversionLabel="1.1" tmdisplayName="Service Delivery Location" url="http://art-decor.org/decor/services/" ident="ccda-" linkedartefactmissing="false">
+                    <item label="conf-8261"/>
+                    <attribute name="typeCode" value="LOC" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.1041">
+                        <item label="conf-8262"/>
+                    </attribute>
+                </element>
+                <element name="cda:entryRelationship" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.1042">
+                    <desc language="en-US">MAY contain zero or more [0..*] entryRelationship (CONF:8264).</desc>
+                    <item label="conf-8264"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.1043">
+                        <item label="conf-8265"/>
+                    </attribute>
+                    <attribute name="inversionInd" value="true" isOptional="false" datatype="bl" id="2.16.840.1.113883.3.1937.99.3.9.1044">
+                        <item label="conf-8266"/>
+                    </attribute>
+                    <element name="cda:encounter" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.1045">
+                        <desc language="en-US">The entryRelationship, if present, SHALL contain exactly one [1..1] encounter (CONF:8267).</desc>
+                        <item label="conf-8267"/>
+                        <attribute name="classCode" value="ENC" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.1046">
+                            <item label="conf-8268"/>
+                        </attribute>
+                        <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.1047">
+                            <item label="conf-8269"/>
+                        </attribute>
+                        <element name="cda:id" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.1048">
+                            <desc language="en-US">This encounter SHALL contain exactly one [1..1] id (CONF:8270).<p/>Set encounter/id to the id of an encounter in another section to signify they are the same encounter.</desc>
+                            <item label="conf-8270"/>
+                        </element>
+                    </element>
+                </element>
+                <element name="cda:entryRelationship" contains="2.16.840.1.113883.10.20.22.4.20" flexibility="2013-01-31T00:00:00" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.1049" tmid="2.16.840.1.113883.10.20.22.4.20" tmname="Instructions" tmeffectiveDate="2013-01-31T00:00:00" tmstatusCode="draft" tmversionLabel="1.1" tmdisplayName="Instructions" url="http://art-decor.org/decor/services/" ident="ccda-" linkedartefactmissing="false">
+                    <item label="conf-8272"/>
+                    <attribute name="typeCode" value="SUBJ" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.1050">
+                        <item label="conf-8273"/>
+                    </attribute>
+                    <attribute name="inversionInd" value="true" isOptional="false" datatype="bl" id="2.16.840.1.113883.3.1937.99.3.9.1051">
+                        <item label="conf-8274"/>
+                    </attribute>
+                </element>
+                <element name="cda:entryRelationship" contains="2.16.840.1.113883.10.20.22.4.19" flexibility="2013-01-31T00:00:00" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.1052" tmid="2.16.840.1.113883.10.20.22.4.19" tmname="Indication" tmdisplayName="Indication" tmeffectiveDate="2013-01-31T00:00:00" tmstatusCode="draft" tmversionLabel="1.1" url="http://art-decor.org/decor/services/" ident="ccda-" linkedartefactmissing="false">
+                    <item label="conf-8276"/>
+                    <attribute name="typeCode" value="RSON" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.1053">
+                        <item label="conf-8277"/>
+                    </attribute>
+                </element>
+                <element name="cda:entryRelationship" contains="2.16.840.1.113883.10.20.22.4.16" flexibility="2013-01-31T00:00:00" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.1054" tmid="2.16.840.1.113883.10.20.22.4.16" tmname="MedicationActivity" tmdisplayName="Medication Activity" tmeffectiveDate="2013-01-31T00:00:00" tmstatusCode="draft" tmversionLabel="1.1" url="http://art-decor.org/decor/services/" ident="ccda-" linkedartefactmissing="false">
+                    <item label="conf-8279"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.1055">
+                        <item label="conf-8280"/>
+                    </attribute>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="dependency" prefix="ssmith-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.3.1937.99.61.41.10.4" name="DischargeSummary" displayName="Discharge Summary" effectiveDate="2018-02-19T15:30:38" statusCode="draft" versionLabel="1.1" ident="ssmith-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.22.1.2" name="ContinuityofCareDocumentCCD" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" displayName="Continuity of Care Document (CCD)" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.22.1.3" name="HistoryandPhysical" displayName="History and Physical" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.22.1.4" name="ConsultationNote" displayName="Consultation Note" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.22.1.6" name="ProcedureNote" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" displayName="Procedure Note" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.22.1.8" name="DischargeSummary" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" displayName="Discharge Summary" ident="ccda-"/>
+            <ref type="contains" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.22.2.7" name="ProceduresSectionentriesoptional" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" displayName="Procedures Section (entries optional)" ident="ccda-"/>
+            <ref type="contains" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.22.2.7.1" name="ProceduresSectionentriesrequired" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" displayName="Procedures Section (entries required)" ident="ccda-"/>
+            <uses type="contains" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.22.4.16" name="MedicationActivity" displayName="Medication Activity" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" url="http://art-decor.org/decor/services/" ident="ccda-"/>
+            <uses type="contains" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.22.4.19" name="Indication" displayName="Indication" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" url="http://art-decor.org/decor/services/" ident="ccda-"/>
+            <uses type="contains" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.22.4.20" name="Instructions" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" displayName="Instructions" url="http://art-decor.org/decor/services/" ident="ccda-"/>
+            <uses type="contains" prefix="ccda-" flexibility="2013-01-31T00:00:00" id="2.16.840.1.113883.10.20.22.4.32" name="ServiceDeliveryLocation" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" displayName="Service Delivery Location" url="http://art-decor.org/decor/services/" ident="ccda-"/>
+        </template>
+    </template>
+</result>

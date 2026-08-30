@@ -1,0 +1,50 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.4168" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.4168" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="Injury Severity Score Body Region Observation" ident="aktin-" name="InjurySeverityScoreBodyRegionObservation" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="draft" url="http://art-decor.org/decor/services/" effectiveDate="2017-02-01T00:00:00">
+            <desc language="en-US">Injury Severity Score Body Region Observation</desc>
+            <desc language="de-DE">Geschätzter Schweregrad nach Körperregion</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.303" tmname="CDAObservation" tmdisplayName="CDA Observation" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <relationship type="ADAPT" template="2.16.840.1.113883.3.2898.10.2112" flexibility="2014-06-09T00:00:00" url="http://art-decor.org/decor/services/" linkedartefactmissing="true"/>
+            <context id="**"/>
+            <example type="neutral">
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4168"/>
+                    <code code="74470-6" codeSystem="2.16.840.1.113883.6.1" displayName="Injury severity score (ISS) body region"/>
+                    <statusCode code="completed"/>
+                    <value xsi:type="CE" code="M" codeSystem="2.16.840.1.113883.5.1063" displayName="Moderate"/>
+                    <targetSiteCode code="THX" codeSystem="1.2.276.0.76.5.81" displayName="Thorax"/>
+                </observation>
+            </example>
+            <element name="hl7:observation" id="2.16.840.1.113883.2.6.60.3.9.16245">
+                <item original="false" label="InjurySeverityScoreBodyRegionObservation"/>
+                <attribute name="classCode" value="OBS" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.16246"/>
+                <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.16247"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.16248">
+                    <item original="false" label="InjurySeverityScoreBodyRegionObservation"/>
+                    <attribute name="root" value="1.2.276.0.76.10.4168" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.16249"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.16250">
+                    <item original="false" label="InjurySeverityScoreBodyRegionObservation"/>
+                    <vocabulary code="74470-6" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.16251">
+                    <item original="false" label="InjurySeverityScoreBodyRegionObservation"/>
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" datatype="CE" id="2.16.840.1.113883.2.6.60.3.9.16252">
+                    <item original="false" label="InjurySeverityScoreBodyRegionObservation"/>
+                    <vocabulary valueSet="1.2.276.0.76.11.80" vsid="1.2.276.0.76.11.80" vsname="InjurySeverity" vsdisplayName="Injury Severity" vsstatusCode="draft" vseffectiveDate="2017-03-01T00:00:00" linkedartefactmissing="false"/>
+                </element>
+                <element name="hl7:targetSiteCode" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" datatype="CE" id="2.16.840.1.113883.2.6.60.3.9.16253">
+                    <item original="false" label="InjurySeverityScoreBodyRegionObservation"/>
+                    <vocabulary valueSet="1.2.276.0.76.11.81" vsid="1.2.276.0.76.11.81" vsname="injury-body-regions" vsdisplayName="Körperregionen der Verletzung" vseffectiveDate="2024-07-24T21:43:39" vsstatusCode="draft" vsversionLabel="2024" linkedartefactmissing="false"/>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="dependency" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.3068" name="Injuryeventsummary" displayName="Unfallereignis" effectiveDate="2017-01-10T00:00:00" statusCode="draft" ident="aktin-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4088" name="InjuryEventDetail" displayName="Injury Event Detail" effectiveDate="2017-02-01T00:00:00" statusCode="draft" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4089" name="TraumaInjuryObservationOrganizer" displayName="Trauma Injury Observation Organizer" effectiveDate="2017-02-01T00:00:00" statusCode="draft" ident="aktin-"/>
+        </template>
+    </template>
+</result>

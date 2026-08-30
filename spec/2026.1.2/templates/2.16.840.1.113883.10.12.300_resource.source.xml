@@ -1,0 +1,26 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.12.300" name="CDAClinicalStatement" displayName="CDA Clinical Statement" effectiveDate="2005-09-07T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" sdtc:dummy-1="urn:hl7-org:sdtc" xml:dummy-2="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-4="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">Template CDA Clinical Statement (prototype, directly derived from POCD_RM000040 MIF)</desc>
+            <desc language="nl-NL">Template CDA Clinical Statement (prototype, direct afgeleid uit POCD_RM000040 MIF)</desc>
+            <desc language="de-DE">Template CDA Clinical Statement (Prototyp, direkt abgeleitet aus POCD_RM000040 MIF)</desc>
+            <classification type="cdaentrylevel"/>
+            <choice minimumMultiplicity="1" maximumMultiplicity="1">
+                <!--ref name="CDAAct"-->
+                <include ref="2.16.840.1.113883.10.12.301"/>
+                <!--ref name="CDAEncounter"-->
+                <include ref="2.16.840.1.113883.10.12.302"/>
+                <!--ref name="CDAObservation"-->
+                <include ref="2.16.840.1.113883.10.12.303"/>
+                <!--ref name="CDAObservationMedia"-->
+                <include ref="2.16.840.1.113883.10.12.304"/>
+                <!--ref name="CDAOrganizer"-->
+                <include ref="2.16.840.1.113883.10.12.305"/>
+                <!--ref name="CDAProcedure"-->
+                <include ref="2.16.840.1.113883.10.12.306"/>
+                <!--ref name="CDARegionOfInterest"-->
+                <include ref="2.16.840.1.113883.10.12.307"/>
+                <!--ref name="CDASubstanceAdministration"-->
+                <include ref="2.16.840.1.113883.10.12.308"/>
+                <!--ref name="CDASupply"-->
+                <include ref="2.16.840.1.113883.10.12.309"/>
+            </choice>
+        </template>

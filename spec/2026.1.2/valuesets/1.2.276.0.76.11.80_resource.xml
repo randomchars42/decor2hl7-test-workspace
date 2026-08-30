@@ -1,0 +1,22 @@
+<valueSets>
+    <repository url="http://art-decor.org/decor/services/" ident="aktin-" referencedFrom="dguvbbr-" projecttype="local">
+        <valueSet id="1.2.276.0.76.11.80" name="InjurySeverity" displayName="Injury Severity" statusCode="draft" effectiveDate="2017-03-01T00:00:00">
+            <sourceCodeSystem id="1.2.276.0.76.5.80" identifierName="" canonicalUri="urn:oid:1.2.276.0.76.5.80" canonicalUriDSTU2="urn:oid:1.2.276.0.76.5.80" canonicalUriSTU3="urn:oid:1.2.276.0.76.5.80" canonicalUriR4="urn:oid:1.2.276.0.76.5.80" canonicalUriR4B="urn:oid:1.2.276.0.76.5.80" canonicalUriR5="urn:oid:1.2.276.0.76.5.80"/>
+            <sourceCodeSystem id="2.16.840.1.113883.5.1063" identifierName="Observation Value" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-ObservationValue" canonicalUriDSTU2="http://hl7.org/fhir/v3/ObservationValue" canonicalUriSTU3="http://hl7.org/fhir/v3/ObservationValue" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-ObservationValue" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-ObservationValue" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-ObservationValue" context="external/hl7intl/v3/v3-ObservationValue"/>
+            <publishingAuthority name="AKTIN e. V." inherited="project">
+                <addrLine>c/o Uniklinik RWTH Aachen</addrLine>
+                <addrLine>Institut für Medizinische Informatik</addrLine>
+                <addrLine>Pauwelsstraße 35</addrLine>
+                <addrLine>52074 Aachen</addrLine>
+                <addrLine type="phone">Tel. +49 391 67 28186</addrLine>
+                <addrLine type="email">office@aktin.org</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <concept code="NONE" codeSystem="1.2.276.0.76.5.80" displayName="Keine" level="1" type="L"/>
+                <concept code="H" codeSystem="2.16.840.1.113883.5.1063" displayName="High" level="1" type="L"/>
+                <concept code="L" codeSystem="2.16.840.1.113883.5.1063" displayName="Low" level="1" type="L"/>
+                <concept code="M" codeSystem="2.16.840.1.113883.5.1063" displayName="Moderate" level="1" type="L"/>
+            </conceptList>
+        </valueSet>
+    </repository>
+</valueSets>

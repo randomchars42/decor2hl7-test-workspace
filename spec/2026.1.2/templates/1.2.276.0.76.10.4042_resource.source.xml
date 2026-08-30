@@ -1,0 +1,60 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.4042" name="Acuityobservation" displayName="Ersteinschätzung" effectiveDate="2015-09-18T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" xml:dummy-1="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-3="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance">
+            <!-- Acuity assessment 2.16.840.1.1133883.17.3.10.1.69 ; 1.3.6.1.4.1.19376.1.5.3.1.1.13.3.1		Acuity This entry provides coded values giving the triage acuity. -->
+            <desc language="de-DE">Ersteinschätzung</desc>
+            <desc language="en-US">A acuity entry indicates the triage acuity entry and the triage time of the patient</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00"/>
+            <relationship type="ADAPT" template="1.3.6.1.4.1.19376.1.5.3.1.1.13.3.1"/>
+            <context id="**"/>
+            <example>
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4042"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="f6c00464-3551-460a-bea7-299d26dda8bc"/>
+                    <code code="11283-9" codeSystem="2.16.840.1.113883.6.1" displayName="Acuity assessment"/>
+                    <text>
+                        <reference value="#acuity"/>
+                    </text>
+                    <statusCode code="completed"/>
+                    <effectiveTime>
+                        <low value="20150304"/>
+                    </effectiveTime>
+                    <value xsi:type="CE" code="3" codeSystem="1.2.276.0.76.5.438" displayName="dringend - gelb - 30 Minuten"/>
+                </observation>
+            </example>
+            <element name="hl7:observation" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.636">
+                <attribute name="classCode" value="OBS" id="2.16.840.1.113883.2.6.60.3.9.637"/>
+                <attribute name="moodCode" value="EVN" id="2.16.840.1.113883.2.6.60.3.9.638"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.639">
+                    <attribute name="root" value="1.2.276.0.76.10.4042" id="2.16.840.1.113883.2.6.60.3.9.640"/>
+                </element>
+                <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="*" isMandatory="true" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.641"/>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CE" id="2.16.840.1.113883.2.6.60.3.9.642">
+                    <vocabulary code="11283-9" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.2.6.60.3.9.643">
+                    <desc language="de-DE">Lediglich reference in den Text der zugehörigen Section</desc>
+                    <element name="hl7:reference" minimumMultiplicity="1" maximumMultiplicity="1" datatype="URL" id="2.16.840.1.113883.2.6.60.3.9.644"/>
+                </element>
+                <!-- Element statusCode -->
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CS" id="2.16.840.1.113883.2.6.60.3.9.645">
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:effectiveTime" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="IVL_TS" id="2.16.840.1.113883.2.6.60.3.9.646">
+                    <desc language="de-DE">effectiveTime wird auch als "biologisch relevante Zeit" bezeichnet und ist der Zeitpunkt oder Zeitraum, für den die Beobachtung für den Patienten gilt.<br/> Beispiel: Für Gesundheitsdienstleister, die einen Patienten heute in der Klinik sehen anamenstisch einen Herzinfarkt erheben, der vor fünf Jahren stattgefunden hat, ist effectiveTime: vor fünf
+                        Jahren.<br/> Die effectiveTime hier ist die definitive Angabe, ob die zugrunde liegende Erkrankung behoben ist. effectiveTime.low ist der Beginn des Problems für den Patienten. Wenn das Problem noch nicht gelöst ist, wird effectiveTime.high nicht gesetzt. Wenn bekannt ist, dass das Problem gelöst werden kann, dann ist effectiveTime.high vorhanden. Wenn der genaue Zeitpunkt
+                        der Lösung des Problems nicht bekannt ist, dann ist effectiveTime.high vorhanden und auf nullFlavor "UNK" gesetzt. </desc>
+                    <element name="hl7:low" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="TS" id="2.16.840.1.113883.2.6.60.3.9.647"/>
+                    <element name="hl7:high" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" datatype="TS" id="2.16.840.1.113883.2.6.60.3.9.648"/>
+                </element>
+                <choice maximumMultiplicity="1">
+                    <element name="hl7:value" maximumMultiplicity="1" conformance="R" isMandatory="true" datatype="CE" id="2.16.840.1.113883.2.6.60.3.9.649">
+                        <desc language="de-DE">Ersteinschätzung, kodiert</desc>
+                        <vocabulary valueSet="1.2.276.0.76.11.44"/>
+                        <vocabulary valueSet="1.2.276.0.76.11.45"/>
+                    </element>
+                    <element name="hl7:value" maximumMultiplicity="1" conformance="R" datatype="ST" id="2.16.840.1.113883.2.6.60.3.9.650">
+                        <desc language="de-DE">Ersteinschätzung, textliche Wiedergabe und Erläuterung, ggf. mit Kode</desc>
+                    </element>
+                </choice>
+            </element>
+        </template>

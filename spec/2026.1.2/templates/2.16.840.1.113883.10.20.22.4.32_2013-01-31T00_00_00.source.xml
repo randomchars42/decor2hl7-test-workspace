@@ -1,0 +1,41 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:local="http://art-decor.org/local" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.20.22.4.32" name="ServiceDeliveryLocation" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" displayName="Service Delivery Location" url="http://art-decor.org/decor/services/" ident="ccda-" sdtc:dummy-1="urn:hl7-org:sdtc" local:dummy-2="http://art-decor.org/local" xml:dummy-3="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-5="urn:hl7-org:v3" xsi:dummy-6="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">This clinical statement represents the location of a service event where an act, observation or procedure took place.</desc>
+            <classification type="cdaentrylevel"/>
+            <context id="**"/>
+            <element name="cda:participantRole" id="2.16.840.1.113883.3.1937.99.3.9.652">
+                <attribute name="classCode" value="SDLOC" id="2.16.840.1.113883.3.1937.99.3.9.653">
+                    <item label="conf-7758"/>
+                </attribute>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.654">
+                    <desc language="en-US">SHALL contain exactly one [1..1] templateId (CONF:7635) such that it</desc>
+                    <item label="conf-7635"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.22.4.32" id="2.16.840.1.113883.3.1937.99.3.9.655">
+                        <item label="conf-10524"/>
+                    </attribute>
+                </element>
+                <element name="cda:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="false" id="2.16.840.1.113883.3.1937.99.3.9.656">
+                    <desc language="en-US">SHALL contain exactly one [1..1] code, which SHALL be selected from ValueSet HealthcareServiceLocation 2.16.840.1.113883.1.11.20275 DYNAMIC (CONF:16850).</desc>
+                    <item label="conf-16850"/>
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.20275" flexibility="dynamic"/>
+                </element>
+                <element name="cda:addr" datatype="AD" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.657">
+                    <desc language="en-US">SHOULD contain zero or more [0..*] addr (CONF:7760).</desc>
+                    <item label="conf-7760"/>
+                </element>
+                <element name="cda:telecom" datatype="TEL" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.658">
+                    <desc language="en-US">SHOULD contain zero or more [0..*] telecom (CONF:7761).</desc>
+                    <item label="conf-7761"/>
+                </element>
+                <element name="cda:playingEntity" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.659">
+                    <desc language="en-US">MAY contain zero or one [0..1] playingEntity (CONF:7762).</desc>
+                    <item label="conf-7762"/>
+                    <attribute name="classCode" value="PLC" id="2.16.840.1.113883.3.1937.99.3.9.660">
+                        <item label="conf-7763"/>
+                    </attribute>
+                    <element name="cda:name" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.661">
+                        <desc language="en-US">The playingEntity, if present, MAY contain zero or one [0..1] name (CONF:16037).</desc>
+                        <item label="conf-16037"/>
+                    </element>
+                </element>
+            </element>
+        </template>

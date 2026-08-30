@@ -1,0 +1,46 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.99.61.25.1.1" effectiveDate="2016-02-25T00:00:00" statusCode="draft" lastModifiedDate="2023-09-13T11:55:57" prefix="narradcda-" shortName="radiologischer_befundbericht" iddisplay="narradcda-dataset-1" url="http://art-decor.org/decor/services/" ident="narradcda-"><!--
+ This is a view of the dataset "Radiologischer Befundbericht" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE" lastTranslated="2023-09-13T11:51:51">Radiologischer Befundbericht</name>
+    <desc language="de-DE" lastTranslated="2023-09-13T11:51:51">Radiologischer Befundbericht</desc>
+    <concept id="2.16.840.1.113883.3.1937.99.61.25.2.1.1" statusCode="draft" effectiveDate="2016-02-25T00:00:00" lastModifiedDate="2023-09-13T11:49:34" type="group" iddisplay="narradcda-dataelement-1.1" shortName="angaben_zum_patienten">
+        <implementation shortName="angaben_zum_patienten" markdown="Angaben zum Patienten"/>
+        <name language="de-DE">Angaben zum Patienten</name>
+        <desc language="de-DE">Angaben zum Patienten</desc>
+        <concept id="2.16.840.1.113883.3.1937.99.61.25.2.1.110" effectiveDate="2016-02-25T00:00:00" statusCode="draft" lastModifiedDate="2023-09-13T11:49:34" type="item" iddisplay="narradcda-dataelement-1.110" shortName="name">
+            <implementation shortName="name" markdown="Name des Patienten"/>
+            <name language="de-DE" lastTranslated="2023-09-13T11:49:34">Name</name>
+            <desc language="de-DE" lastTranslated="2023-09-13T11:49:34">Name des Patienten</desc>
+            <valueDomain type="complex"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.99.61.25.2.1.120" statusCode="draft" effectiveDate="2016-02-25T00:00:00" type="item" iddisplay="narradcda-dataelement-1.120" shortName="geburtsname">
+            <implementation shortName="geburtsname" markdown="Sofern erforderlich darf hier der Geburtsname des Patienten angegeben werden"/>
+            <name language="de-DE">Geburtsname</name>
+            <desc language="de-DE">Sofern erforderlich darf hier der Geburtsname des Patienten angegeben werden</desc>
+            <valueDomain type="string"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.99.61.25.2.1.130" effectiveDate="2016-02-25T00:00:00" statusCode="draft" lastModifiedDate="2023-09-13T11:48:52" type="item" iddisplay="narradcda-dataelement-1.130" shortName="geburtsdatum">
+            <implementation shortName="geburtsdatum" markdown="Geburtsdatum des Patienten"/>
+            <name language="de-DE" lastTranslated="2023-09-13T11:48:52">Geburtsdatum</name>
+            <desc language="de-DE" lastTranslated="2023-09-13T11:48:52">Geburtsdatum des Patienten</desc>
+            <valueDomain type="date"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.99.61.25.2.1.140" effectiveDate="2016-02-25T00:00:00" statusCode="draft" lastModifiedDate="2023-09-13T11:49:06" type="item" iddisplay="narradcda-dataelement-1.140" shortName="geschlecht">
+            <implementation shortName="geschlecht" markdown="Geschlecht des Patienten."/>
+            <name language="de-DE" lastTranslated="2023-09-13T11:49:06">Geschlecht</name>
+            <desc language="de-DE" lastTranslated="2023-09-13T11:49:06">Geschlecht des Patienten.</desc>
+            <comment language="de-DE" lastTranslated="2023-09-13T11:49:06">Bei der digitalen Archivierung muss hier entsprechend DICOM PS 3.3-C.7.1.1 „M“ für männlich, „F“ für weiblich und „O“ für unbekannt angegeben werden</comment>
+            <valueDomain type="code">
+                <conceptList id="2.16.840.1.113883.3.1937.99.61.25.2.1.140.20160225000000.0"/>
+            </valueDomain>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.99.61.25.2.1.150" effectiveDate="2016-02-25T00:00:00" statusCode="draft" lastModifiedDate="2023-09-13T11:49:20" type="item" iddisplay="narradcda-dataelement-1.150" shortName="identifikator">
+            <implementation shortName="identifikator" markdown="Hier darf eine eindeutige Identifikation des Patienten, wie beispielsweise die Krankenhaus-Identifikationsnummer, angegeben werden"/>
+            <name language="de-DE" lastTranslated="2023-09-13T11:49:20">Identifikator</name>
+            <desc language="de-DE" lastTranslated="2023-09-13T11:49:20">Hier darf eine eindeutige Identifikation des Patienten, wie beispielsweise die Krankenhaus-Identifikationsnummer, angegeben werden</desc>
+            <valueDomain type="identifier"/>
+        </concept>
+    </concept>
+</dataset>

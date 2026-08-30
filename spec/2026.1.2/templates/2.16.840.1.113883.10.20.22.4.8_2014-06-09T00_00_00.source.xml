@@ -1,0 +1,53 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:local="http://art-decor.org/local" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.20.22.4.8" name="SeverityObservationV2" displayName="Severity Observation (V2)" effectiveDate="2014-06-09T00:00:00" statusCode="draft" versionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-" sdtc:dummy-1="urn:hl7-org:sdtc" local:dummy-2="http://art-decor.org/local" xml:dummy-3="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-5="urn:hl7-org:v3" xsi:dummy-6="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">
+        <p>This clinical statement represents the gravity of the reaction. The Severity Observation characterizes the Reaction Observation. A person may manifest many symptoms in a reaction to a single substance, and each reaction to the substance can be represented. However, each reaction observation can have only one severity observation associated with it. For
+                    example, someone may have a rash reaction observation as well as an itching reaction observation, but each can have only one level of severity.</p>
+        <p>Note the severity observation is no longer recommended for use with the Allergy and Intolerance Observation. The Criticality Observation is preferred for characterizing the Allergy and Intolerance.</p>
+    </desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00"/>
+            <relationship type="VERSION" template="2.16.840.1.113883.10.20.22.4.8" flexibility="2013-01-31T00:00:00"/>
+            <context id="**"/>
+            <element name="cda:observation" id="2.16.840.1.113883.3.1937.99.3.9.3681">
+                <attribute name="classCode" value="OBS" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.3682">
+                    <desc language="en-US">SHALL contain exactly one [1..1] @classCode="OBS" Observation (CodeSystem: HL7ActClass urn:oid:2.16.840.1.113883.5.6 STATIC) (CONF:1098-7345).</desc>
+                    <item label="CONF:1098-7345"/>
+                </attribute>
+                <attribute name="moodCode" value="EVN" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.3683">
+                    <desc language="en-US">SHALL contain exactly one [1..1] @moodCode="EVN" Event (CodeSystem: ActMood urn:oid:2.16.840.1.113883.5.1001 STATIC) (CONF:1098-7346).</desc>
+                    <item label="CONF:1098-7346"/>
+                </attribute>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                    <desc language="en-US">C-CDA R1.1 templateId root without an extension</desc>
+                    <item label="CONF:1198-32936"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.22.4.8" datatype="uid"/>
+                </element>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.3684">
+                    <desc language="en-US">SHALL contain exactly one [1..1] templateId (CONF:1098-7347) such that it</desc>
+                    <item label="CONF:1098-7347"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.22.4.8" datatype="uid" id="2.16.840.1.113883.3.1937.99.3.9.3685">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.22.4.8" (CONF:1098-10525).</desc>
+                        <item label="CONF:1098-10525"/>
+                    </attribute>
+                    <attribute name="extension" value="2014-06-09" datatype="st" id="2.16.840.1.113883.3.1937.99.3.9.3686">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @extension="2014-06-09" (CONF:1098-32577).</desc>
+                        <item label="CONF:1098-32577"/>
+                    </attribute>
+                </element>
+                <element name="cda:code" datatype="CD" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.3687">
+                    <desc language="en-US">SHALL contain exactly one [1..1] code (CONF:1098-19168).</desc>
+                    <item label="CONF:1098-19168"/>
+                    <vocabulary code="SEV" codeSystem="2.16.840.1.113883.5.4"/>
+                </element>
+                <element name="cda:statusCode" datatype="CS" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.3688">
+                    <desc language="en-US">SHALL contain exactly one [1..1] statusCode (CONF:1098-7352).</desc>
+                    <item label="CONF:1098-7352"/>
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="cda:value" datatype="CD" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.3689">
+                    <desc language="en-US">SHALL contain exactly one [1..1] value with @xsi:type="CD", where the code SHALL be selected from ValueSet Problem Severity urn:oid:2.16.840.1.113883.3.88.12.3221.6.8 DYNAMIC (CONF:1098-7356).</desc>
+                    <item label="CONF:1098-7356"/>
+                    <vocabulary valueSet="2.16.840.1.113883.3.88.12.3221.6.8"/>
+                </element>
+            </element>
+        </template>

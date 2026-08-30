@@ -1,0 +1,30 @@
+<valueSets>
+    <repository url="http://art-decor.org/decor/services/" ident="ad2bbr-" referencedFrom="ch-pcc-" projecttype="local">
+        <valueSet id="2.16.840.1.113883.1.11.10228" name="Confidentiality" displayName="Confidentiality" effectiveDate="2014-03-26T00:00:00" statusCode="final" versionLabel="DEFN=UV=VO=1360-20160323">
+            <desc language="en-US">
+                <p>
+                    <b>History description 2014-03-26: </b>Lock all vaue sets untouched since 2014-03-26 to trackingId 2014T1_2014_03_26</p>
+                <b>description: </b>
+                <p>Set of codes used to value Act.Confidentiality and Role.Confidentiality attribute in accordance with the definition for concept domain "Confidentiality".</p>
+            </desc>
+            <sourceCodeSystem id="2.16.840.1.113883.5.25" identifierName="Confidentiality" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-Confidentiality" canonicalUriDSTU2="http://hl7.org/fhir/v3/Confidentiality" canonicalUriSTU3="http://hl7.org/fhir/v3/Confidentiality" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-Confidentiality" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-Confidentiality" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-Confidentiality" context="external/hl7intl/v3/v3-Confidentiality"/>
+            <publishingAuthority name="HL7" inherited="project">
+                <addrLine>Health Level Seven International</addrLine>
+                <addrLine>455 E. Eisenhower PKWY STE 300 # 025</addrLine>
+                <addrLine>Ann Arbor, MI 48108</addrLine>
+                <addrLine>USA</addrLine>
+                <addrLine>T +1 734 677 7777</addrLine>
+                <addrLine>F +1 734 677 6622</addrLine>
+                <addrLine>E info@hl7.org</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <concept code="L" codeSystem="2.16.840.1.113883.5.25" displayName="low" level="0" type="L"/>
+                <concept code="M" codeSystem="2.16.840.1.113883.5.25" displayName="moderate" level="0" type="L"/>
+                <concept code="N" codeSystem="2.16.840.1.113883.5.25" displayName="normal" level="0" type="L"/>
+                <concept code="R" codeSystem="2.16.840.1.113883.5.25" displayName="restricted" level="0" type="L"/>
+                <concept code="U" codeSystem="2.16.840.1.113883.5.25" displayName="unrestricted" level="0" type="L"/>
+                <concept code="V" codeSystem="2.16.840.1.113883.5.25" displayName="very restricted" level="0" type="L"/>
+            </conceptList>
+        </valueSet>
+    </repository>
+</valueSets>

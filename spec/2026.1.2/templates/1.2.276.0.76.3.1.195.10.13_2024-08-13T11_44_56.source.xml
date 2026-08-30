@@ -1,0 +1,27 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.3.1.195.10.13" name="wiedervorstellung" displayName="Wiedervorstellung" effectiveDate="2024-08-13T11:44:56" statusCode="draft" versionLabel="2024" isClosed="false" lastModifiedDate="2025-12-22T18:07:51" url="http://art-decor.org/decor/services/" ident="aktin-" xml:dummy-1="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-3="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="de-DE" lastTranslated="2024-08-13T11:44:56">Wiedervorstellung</desc>
+            <classification type="cdasectionlevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.201" flexibility="2005-09-07T00:00:00"/>
+            <context id="**"/>
+            <element name="hl7:section" id="2.16.840.1.113883.2.6.60.3.9.45">
+                <attribute name="classCode" value="DOCSECT" datatype="cs" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.46"/>
+                <element name="hl7:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.47">
+                    <attribute name="root" value="1.2.276.0.76.3.1.195.10.13" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.48"/>
+                </element>
+                <element name="hl7:code" datatype="CD" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.49">
+                    <vocabulary code="LA21590-7" codeSystem="2.16.840.1.113883.6.1" displayName="Follow-up visit"/>
+                </element>
+                <element name="hl7:title" datatype="ST" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.50">
+                    <text>Wiedervorstellung</text>
+                </element>
+                <element name="hl7:text" datatype="SD.TEXT" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.51"/>
+                <element name="hl7:entry" contains="1.2.276.0.76.3.1.195.10.14" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.52">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.53"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.54"/>
+                </element>
+                <element name="hl7:entry" contains="1.2.276.0.76.3.1.195.10.15" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1531717">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631716"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.1631717"/>
+                </element>
+            </element>
+        </template>

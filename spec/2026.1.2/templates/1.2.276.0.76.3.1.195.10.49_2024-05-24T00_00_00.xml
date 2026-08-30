@@ -1,0 +1,44 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.3.1.195.10.49" ident="aktin-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.3.1.195.10.49" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" versionLabel="2024" isClosed="false" displayName="EKG angefordert" ident="aktin-" name="ekg_angefordert" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="draft" url="http://art-decor.org/decor/services/" effectiveDate="2024-05-24T00:00:00">
+            <desc language="de-DE">Abgeleitete Informationen über Diagnostik zur Weitergabe - Wurde ein 12-Kanal-EKG angefordert?</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.306" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.306" tmname="CDAProcedure" tmdisplayName="CDA Procedure" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <element name="hl7:procedure" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true">
+                <item original="false" label="ekg_angefordert"/>
+                <attribute name="classCode" value="PROC" isOptional="false" datatype="cs"/>
+                <attribute name="moodCode" value="RQO" isOptional="false" datatype="cs"/>
+                <attribute name="negationInd" isOptional="false" datatype="bl">
+                    <desc language="de-DE">Wenn geplant: negationInd=false, wenn nicht geplant: negationInd=true</desc>
+                </attribute>
+                <element name="hl7:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1">
+                    <item original="false" label="ekg_angefordert"/>
+                    <attribute name="root" value="1.2.276.0.76.3.1.195.10.49" isOptional="false" datatype="uid"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CE" conformance="R" isMandatory="true">
+                    <item original="false" label="ekg_angefordert"/>
+                    <vocabulary code="29303009" codeSystem="2.16.840.1.113883.6.96" displayName="Electrocardiographic procedure (procedure)"/>
+                </element>
+                <element name="hl7:text" datatype="ED" minimumMultiplicity="0" maximumMultiplicity="1">
+                    <desc language="de-DE" lastTranslated="2024-08-13T10:50:15">Lediglich reference in den Text der zugehörigen Section</desc>
+                    <item original="false" label="ekg_angefordert"/>
+                    <element name="hl7:reference" datatype="TEL" minimumMultiplicity="1" maximumMultiplicity="1">
+                        <item original="false" label="ekg_angefordert"/>
+                    </element>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CS" conformance="R" isMandatory="true">
+                    <item original="false" label="ekg_angefordert"/>
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:effectiveTime" datatype="TS" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R">
+                    <item original="false" label="ekg_angefordert"/>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.62" name="diagnostik" displayName="Diagnostik" effectiveDate="2024-08-14T13:04:22" statusCode="retired" versionLabel="2024" isClosed="false" lastModifiedDate="2026-04-24T12:12:09" ident="aktin-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="2025-12-01T00:00:00" id="1.2.276.0.76.3.1.195.10.93" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2026-03-25T11:04:07" statusCode="draft" versionLabel="v4transit" lastModifiedDate="2026-04-29T18:39:46" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="2024-05-24T00:00:00" id="1.2.276.0.76.10.3050" name="Relevantdiagnostictestsorlaboratorydata" displayName="Diagnostik" effectiveDate="2025-12-01T00:00:00" statusCode="draft" isClosed="false" lastModifiedDate="2026-04-29T18:34:48" ident="aktin-"/>
+        </template>
+    </template>
+</result>

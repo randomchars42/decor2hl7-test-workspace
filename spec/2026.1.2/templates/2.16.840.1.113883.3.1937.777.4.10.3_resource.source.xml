@@ -1,0 +1,53 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.3.1937.777.4.10.3" name="CCDSubjectBody" displayName="CCD Subject (Body)" effectiveDate="2007-04-01T00:00:00" statusCode="pending" url="http://art-decor.org/decor/services/" ident="ccd1-" sdtc:dummy-1="urn:hl7-org:sdtc" xml:dummy-2="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-4="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance">
+    <classification type="cdaentrylevel"/>
+    <relationship type="ADAPT" template="2.16.840.1.113883.10.12.152" flexibility="2005-09-07T00:00:00"/>
+    <attribute name="typeCode" value="SBJ" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.2525"/>
+    <attribute name="contextControlCode" value="OP" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.2526"/>
+    <element name="hl7:awarenessCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.4.9.2527">
+                <!--valueSet name="TargetAwareness"-->
+        <vocabulary valueSet="2.16.840.1.113883.1.11.10310"/>
+    </element>
+    <element name="hl7:relatedSubject" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.4.9.2528">
+        <attribute name="classCode" datatype="cs" id="2.16.840.1.113883.3.1937.777.4.9.2529">
+                    <!--valueSet name="x_DocumentSubject"-->
+            <vocabulary valueSet="2.16.840.1.113883.1.11.19368"/>
+        </attribute>
+        <element name="hl7:code" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.4.9.2530">
+                    <!--valueSet name="PersonalRelationshipRoleType"-->
+            <vocabulary valueSet="2.16.840.1.113883.1.11.19563"/>
+        </element>
+        <element name="hl7:addr" minimumMultiplicity="0" maximumMultiplicity="*" datatype="AD" id="2.16.840.1.113883.3.1937.777.4.9.2531"/>
+        <element name="hl7:telecom" minimumMultiplicity="0" maximumMultiplicity="*" datatype="TEL" id="2.16.840.1.113883.3.1937.777.4.9.2532"/>
+        <element name="hl7:subject" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.4.9.2533">
+            <desc language="en-US">
+                <h3>7.4.2 Deceased Indicator and Time</h3>
+                <p>Observations about members of the patient's family are recorded in the Family history section. The subject of the observation is the family member. In order to record information about whether this family member is deceased and when, the deceasedInd and deceacedTime extensions have been defined.</p>
+                <p>
+                    <b>CONF-540</b>: A <b>subject</b>
+                    <b>MAY</b> include a <b>deceasedInd</b> element from the <b>urn:hl7-org:sdtc</b> namespace to indicate whether the person is deceased.<br/>
+                    <b>CONF-541</b>: The <b>deceasedInd</b> element <b>SHALL</b> be of the Boolean (BL) data type.<br/>
+                    <b>CONF-542</b>: The <b>deceasedInd</b> element <b>SHALL</b> appear immediately following the <b>birthTime</b> element.<br/>
+                    <b>CONF-543</b>: A subject <b>MAY</b> include a <b>deceasedTime</b> element from the <b>urn:hl7-org:sdtc</b> namespace to indicate when the person died.<br/>
+                    <b>CONF-544</b>: The <b>deceasedTime</b> element <b>SHALL</b> be of the Time Stamp (TS) data type.<br/>
+                    <b>CONF-545</b>: The <b>deceasedTime</b> element <b>SHALL</b> appear immediately following the <b>deceasedInd</b> element.</p>
+            </desc>
+            <attribute name="classCode" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.2534">
+                        <!--valueSet name="EntityClassPerson"-->
+                <vocabulary valueSet="2.16.840.1.113883.1.11.20049"/>
+            </attribute>
+            <attribute name="determinerCode" value="INSTANCE" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.2535"/>
+            <element name="hl7:name" minimumMultiplicity="0" maximumMultiplicity="*" datatype="PN" id="2.16.840.1.113883.3.1937.777.4.9.2536"/>
+            <element name="hl7:administrativeGenderCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.4.9.2537">
+                        <!--valueSet name="AdministrativeGender"-->
+                <vocabulary valueSet="2.16.840.1.113883.1.11.1"/>
+            </element>
+            <element name="hl7:birthTime" minimumMultiplicity="0" maximumMultiplicity="1" datatype="TS" id="2.16.840.1.113883.3.1937.777.4.9.2538"/>
+            <element name="sdtc:deceasedInd" minimumMultiplicity="0" maximumMultiplicity="1" datatype="BL" id="2.16.840.1.113883.3.1937.777.4.9.2539">
+                <item label="CONF-540 / CONF-541 / CONF-542"/>
+            </element>
+            <element name="sdtc:deceasedTime" minimumMultiplicity="0" maximumMultiplicity="1" datatype="TS" id="2.16.840.1.113883.3.1937.777.4.9.2540">
+                <item label="CONF-543 / CONF-544 / CONF-545"/>
+            </element>
+        </element>
+    </element>
+</template>

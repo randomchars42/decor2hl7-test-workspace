@@ -1,0 +1,112 @@
+<result xmlns:json="http://www.json.org">
+    <template id="2.16.840.1.113883.10.21.9.1" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:pharmhl7="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.21.9.1" hl7:dummy-default="urn:hl7-org:v3" lastModifiedDate="2023-01-30T10:02:40" displayName="UV Use Period" cda:dummy-4="urn:hl7-org:v3" xml:dummy-2="http://www.w3.org/XML/1998/namespace" url="http://art-decor.org/decor/services/" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance" versionLabel="2023" isClosed="false" ident="pharmcda-" name="Useperiod" statusCode="draft" pharmhl7:dummy-1="urn:hl7-org:pharm" effectiveDate="2023-01-30T09:55:27">
+            <desc language="en-US">This element encodes the start and stop time of the medication regimen. This is an interval of time (xsi:type='IVL_TS'), and must be specified as shown. This is an additional constraint placed upon CDA Release 2.0 by this profile, and simplifies the exchange of start/stop and frequency information between EMR systems.</desc>
+            <classification type="cdaentrylevel"/>
+            <choice minimumMultiplicity="1" maximumMultiplicity="1">
+                <desc language="en-US">The effectiveTime element encodes the use period of the medication, it is always expressed as an interval of time.<br clear="none"/>It may be expressed using the low and high OR with the width element.<br clear="none"/>The first is used to indicate a specified interval (e.g. from march 15th, 2017); the latter for indicating a 'floating' period (e.g. 2
+                    weeks).</desc>
+                <item original="false" label="Useperiod"/>
+                <element name="hl7:effectiveTime[hl7:low | hl7:high][not(hl7:width)]" datatype="IVL_TS" minimumMultiplicity="0" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.3.1937.777.15.9.10703">
+                    <desc language="en-US">
+                        <b>Case 1: specified interval</b>
+                        <br clear="none"/>The low and high values of the first effectiveTime element represent the start and stop times for the medication. The low value represents the start time, and the high value represents the stop time. If either the low or the high value is unknown, this shall be recorded by setting the nullFlavor attribute to UNK.<br clear="none"/>
+                        <br clear="none"/>In case of unbounded period (continuous therapy) the high element will be valued with the nullFlavor attribute to NA.<br clear="none"/>
+                        <br clear="none"/>The high value records the end of the medication regime according to the information provided in the prescription or order. For example, if the prescription is for enough medication to last 30 days, then the high value should contain a date that is 30 days later then the low value. The rationale is that a provider, seeing a prescription that has not been
+                        refilled would normally assume that the medication is no longer being taken, even if the intent of the treatment plan is to continue the medication indefinitely.</desc>
+                    <item original="false" label="Useperiod"/>
+                    <example type="neutral" caption="Known Interval">
+                        <effectiveTime type="IVL_TS">
+                            <low value="20130321"/>
+                            <high value="20140321"/>
+                        </effectiveTime>
+                    </example>
+                    <example type="neutral" caption="Information not available about the period">
+                        <effectiveTime type="IVL_TS" nullFlavor="NI"/>
+                    </example>
+                    <example type="neutral" caption="Unknown end date">
+                        <effectiveTime type="IVL_TS">
+                            <low value="20130321"/>
+                            <high nullFlavor="UNK"/>
+                        </effectiveTime>
+                    </example>
+                    <example type="neutral" caption="continous therapy">
+                        <effectiveTime type="IVL_TS">
+                            <low value="20130321"/>
+                            <high nullFlavor="NA"/>
+                        </effectiveTime>
+                    </example>
+                    <attribute name="nullFlavor" isOptional="true" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10704"/>
+                    <element name="hl7:low" datatype="IVXB_TS" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10705">
+                        <item original="false" label="Useperiod"/>
+                    </element>
+                    <element name="hl7:high" datatype="IVXB_TS" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10706">
+                        <item original="false" label="Useperiod"/>
+                    </element>
+                </element>
+                <element name="hl7:effectiveTime[hl7:width][not(hl7:low|hl7:high)]" datatype="IVL_TS" minimumMultiplicity="0" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.3.1937.777.15.9.10707">
+                    <desc language="en-US">
+                        <b>Case 2: 'floating' period:</b>
+                        <br clear="none"/>The width element is used to specify a period of (actual or intended) administration that is not anchored to any specific date (e.g. a two weeks therapy)</desc>
+                    <item original="false" label="Useperiod"/>
+                    <example type="neutral" caption="2 week period">
+                        <effectiveTime type="IVL_TS">
+                            <width value="2" unit="w"/>
+                        </effectiveTime>
+                    </example>
+                    <element name="hl7:low" conformance="NP" id="2.16.840.1.113883.3.1937.777.15.9.10708">
+                        <item original="false" label="Useperiod"/>
+                    </element>
+                    <element name="hl7:high" conformance="NP" id="2.16.840.1.113883.3.1937.777.15.9.10980">
+                        <item original="false" label="Useperiod"/>
+                    </element>
+                    <element name="hl7:center" conformance="NP" id="2.16.840.1.113883.3.1937.777.15.9.10981">
+                        <item original="false" label="Useperiod"/>
+                    </element>
+                    <element name="hl7:width" datatype="PQ" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.13.9.122">
+                        <item original="false" label="Useperiod"/>
+                        <attribute name="unit" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.13.9.123">
+                            <vocabulary valueSet="2.16.840.1.113883.11.21.1" flexibility="dynamic" vsid="2.16.840.1.113883.11.21.1" vsname="MedicationTimeUnits" vsdisplayName="Medication Time Units (UCUM)" vseffectiveDate="2023-02-01T11:12:08" vsstatusCode="final" vsversionLabel="3.0" linkedartefactmissing="false"/>
+                        </attribute>
+                    </element>
+                </element>
+                <element name="hl7:effectiveTime[hl7:low | hl7:width][not(hl7:high)]" datatype="IVL_TS" minimumMultiplicity="0" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.3.1937.777.15.9.10982">
+                    <desc language="en-US">
+                        <b>Case 3: anchored period:</b>
+                        <br clear="none"/>The width element is used to specify a period of (actual or intended) administration anchored to a specific date (e.g. a two weeks therapy starting today)</desc>
+                    <item original="false" label="Useperiod"/>
+                    <example type="neutral" caption="2 week period starting on 2013-03-21">
+                        <effectiveTime type="IVL_TS">
+                            <low value="20130321"/>
+                            <width value="2" unit="w"/>
+                        </effectiveTime>
+                    </example>
+                    <element name="hl7:low" datatype="IVXB_TS" minimumMultiplicity="0" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.3.1937.777.15.9.10983">
+                        <item original="false" label="Useperiod"/>
+                    </element>
+                    <element name="hl7:width" datatype="PQ" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10984">
+                        <item original="false" label="Useperiod"/>
+                        <attribute name="unit" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10985">
+                            <vocabulary valueSet="2.16.840.1.113883.11.21.1" flexibility="dynamic" vsid="2.16.840.1.113883.11.21.1" vsname="MedicationTimeUnits" vsdisplayName="Medication Time Units (UCUM)" vseffectiveDate="2023-02-01T11:12:08" vsstatusCode="final" vsversionLabel="3.0" linkedartefactmissing="false"/>
+                        </attribute>
+                    </element>
+                </element>
+            </choice>
+            <staticAssociations/>
+            <ref type="include" prefix="eehrxf-" flexibility="dynamic" id="2.16.840.1.113883.2.51.10.40" name="XeHMedicationStatement" displayName="XeH Medication Statement" statusCode="active" lastModifiedDate="2023-12-13T09:56:46" versionLabel="1.0" effectiveDate="2021-10-19T11:09:33" ident="eehrxf-"/>
+            <ref type="include" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.1" name="UVSubstanceadministrationrequest" displayName="UV Medication Order" statusCode="pending" versionLabel="STU1" effectiveDate="2015-10-07T00:00:00" ident="pharmcda-"/>
+            <ref type="include" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.1" name="UVSubstanceadministrationrequest" displayName="UV Medication Order" statusCode="pending" versionLabel="R1-STU2-ballot" lastModifiedDate="2023-01-31T10:52:39" effectiveDate="2021-08-04T17:03:38" ident="pharmcda-"/>
+            <ref type="include" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.1" name="UVSubstanceadministrationrequest" displayName="UV Medication Order" effectiveDate="2023-01-30T08:30:30" statusCode="draft" versionLabel="2023" lastModifiedDate="2023-01-30T08:30:30" ident="pharmcda-"/>
+            <ref type="include" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.1" name="UVSubstanceadministrationrequest" displayName="UV Medication Order" effectiveDate="2023-01-31T10:52:39" statusCode="draft" versionLabel="2023" lastModifiedDate="2023-01-31T10:52:39" ident="pharmcda-"/>
+            <ref type="include" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.1" name="UVSubstanceadministrationrequest" displayName="UV Medication Order" effectiveDate="2023-01-31T11:29:28" statusCode="draft" versionLabel="2023" lastModifiedDate="2023-01-31T11:36:01" ident="pharmcda-"/>
+            <ref type="include" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.7" name="UVMedicationstatement" displayName="UV Medication Statement" statusCode="pending" versionLabel="STU1" effectiveDate="2017-05-01T00:00:00" ident="pharmcda-"/>
+            <ref type="include" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.7" name="UVMedicationstatement" displayName="UV Medication Statement" statusCode="pending" versionLabel="R1-STU2-ballot" lastModifiedDate="2023-01-30T08:32:34" effectiveDate="2021-08-04T14:09:15" ident="pharmcda-"/>
+            <ref type="include" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.7" name="UVMedicationstatement" displayName="UV Medication Statement" effectiveDate="2023-01-30T08:32:34" statusCode="draft" versionLabel="2023" lastModifiedDate="2023-01-31T19:49:33" ident="pharmcda-"/>
+            <ref type="include" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.13" name="UVMedicationadministration" displayName="UV Medication Administration" statusCode="pending" lastModifiedDate="2023-01-30T08:31:37" versionLabel="R1-STU2-ballot" effectiveDate="2019-02-17T00:00:00" ident="pharmcda-"/>
+            <ref type="include" prefix="pharmcda-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.13" name="UVMedicationadministration" displayName="UV Medication Administration" effectiveDate="2023-01-30T08:31:37" statusCode="draft" versionLabel="2023" lastModifiedDate="2023-01-30T08:31:37" ident="pharmcda-"/>
+            <ref type="include" prefix="hl7ips-" flexibility="dynamic" id="2.16.840.1.113883.10.22.4.4" name="IPSMedicationStatement" displayName="IPS Medication Statement" statusCode="pending" versionLabel="STU1" effectiveDate="2016-11-11T00:00:00" ident="hl7ips-"/>
+            <ref type="include" prefix="hl7ips-" flexibility="dynamic" id="2.16.840.1.113883.10.22.4.4" name="IPSMedicationStatement" displayName="IPS Medication Statement" effectiveDate="2021-09-02T12:17:54" statusCode="draft" versionLabel="2021" ident="hl7ips-"/>
+            <ref type="include" prefix="hl7ips-" flexibility="dynamic" id="2.16.840.1.113883.10.22.4.4" name="IPSMedicationStatement" displayName="IPS Medication Statement" effectiveDate="2024-08-04T10:41:54" statusCode="draft" versionLabel="STU2" lastModifiedDate="2026-03-25T09:54:17" ident="hl7ips-"/>
+        </template>
+    </template>
+</result>

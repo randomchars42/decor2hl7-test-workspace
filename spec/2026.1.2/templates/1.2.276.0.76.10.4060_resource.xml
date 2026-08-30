@@ -1,0 +1,122 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.4060" ident="aktin-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.4060" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="Urinanalyse, Reagenzstreifen ohne Mikroskopie durchgeführt" ident="aktin-" name="Urinalysisreagentstripwithoutmicroscopy" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="active" url="http://art-decor.org/decor/services/" effectiveDate="2015-09-18T00:00:00">
+            <desc language="de-DE">Diagnostik Template Urinalysis, reagent strip without microscopy</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.303" tmname="CDAObservation" tmdisplayName="CDA Observation" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.20.22.4.13" flexibility="2014-06-09T00:00:00" tmid="2.16.840.1.113883.10.20.22.4.13" tmname="ProcedureActivityObservationV2" tmdisplayName="Procedure Activity Observation (V2)" tmeffectiveDate="2014-06-09T00:00:00" tmstatusCode="draft" tmversionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <example type="neutral">
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4060"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="2f851d0f-fe43-42e4-a16e-f1d5f818076f"/>
+                    <code code="50556-0" codeSystem="2.16.840.1.113883.6.1" displayName="Urinalysis dipstick panel"/>
+                    <text>
+                        <reference value="#proc-11"/>
+                    </text>
+                    <statusCode code="completed"/>
+                    <effectiveTime value="201503261234"/>
+                    <value xsi:type="CE" code="OPB" codeSystem="1.2.276.0.76.3.1.195.5.51" displayName="ohne path. Befund"/>
+                </observation>
+            </example>
+            <element name="hl7:observation" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.523">
+                <item original="false" label="Urinalysisreagentstripwithoutmicroscopy"/>
+                <attribute name="classCode" value="OBS" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.524"/>
+                <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.525"/>
+                <attribute name="negationInd" isOptional="true" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.526"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.527">
+                    <item original="false" label="Urinalysisreagentstripwithoutmicroscopy"/>
+                    <attribute name="root" value="1.2.276.0.76.10.4060" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.528"/>
+                </element>
+                <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="*" isMandatory="true" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.529">
+                    <item original="false" label="Urinalysisreagentstripwithoutmicroscopy"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CE" id="2.16.840.1.113883.2.6.60.3.9.530">
+                    <item original="false" label="Urinalysisreagentstripwithoutmicroscopy"/>
+                    <vocabulary code="50556-0" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.2.6.60.3.9.531">
+                    <desc language="de-DE">Textform, enthält hier lediglich reference in den Text der Section</desc>
+                    <item original="false" label="Urinalysisreagentstripwithoutmicroscopy"/>
+                    <element name="hl7:reference" minimumMultiplicity="1" maximumMultiplicity="1" datatype="URL" id="2.16.840.1.113883.2.6.60.3.9.532">
+                        <item original="false" label="Urinalysisreagentstripwithoutmicroscopy"/>
+                    </element>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CS" id="2.16.840.1.113883.2.6.60.3.9.533">
+                    <item original="false" label="Urinalysisreagentstripwithoutmicroscopy"/>
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:effectiveTime" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="TS" id="2.16.840.1.113883.2.6.60.3.9.534">
+                    <desc language="de-DE">Zeitpunkt der Untersuchung</desc>
+                    <item original="false" label="Urinalysisreagentstripwithoutmicroscopy"/>
+                </element>
+                <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="CE" id="2.16.840.1.113883.2.6.60.3.9.535">
+                    <desc language="de-DE">Befund</desc>
+                    <item original="false" label="Urinalysisreagentstripwithoutmicroscopy"/>
+                    <vocabulary valueSet="1.2.276.0.76.11.51" vsid="1.2.276.0.76.11.51" vsname="Findingsituation" vsdisplayName="Finding situation" vsstatusCode="draft" vseffectiveDate="2015-11-17T00:00:00" linkedartefactmissing="false"/>
+                </element>
+            </element>
+            <staticAssociations>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.2.10040" effectiveDate="2015-01-15T00:00:00" refdisplay="aktin-dataelement2015(1)-10040" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.2" datasetEffectiveDate="2015-01-15T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.1-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.523" templateId="1.2.276.0.76.10.4060" templateEffectiveDate="2015-09-18T00:00:00" path="Diagnostik">
+                    <name language="de-DE">Urinschnelltest</name>
+                    <desc language="de-DE">Urinschnelltest</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.2.891" effectiveDate="2015-01-15T00:00:00" refdisplay="aktin-dataelement2015(1)-891" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.2" datasetEffectiveDate="2015-01-15T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.1-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.526" templateId="1.2.276.0.76.10.4060" templateEffectiveDate="2015-09-18T00:00:00" path="Diagnostik / Urinschnelltest">
+                    <name language="de-DE">Urinschnelltest</name>
+                    <desc language="de-DE">Wurde ein Urinschnelltest durchgeführt?</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.2.892" effectiveDate="2015-01-15T00:00:00" refdisplay="aktin-dataelement2015(1)-892" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.2" datasetEffectiveDate="2015-01-15T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.1-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.535" templateId="1.2.276.0.76.10.4060" templateEffectiveDate="2015-09-18T00:00:00" path="Diagnostik / Urinschnelltest">
+                    <name language="de-DE">Urinschnelltest opB</name>
+                    <desc language="de-DE">War der Urinschnelltest ohne pathologischen Befund?</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.2.893" effectiveDate="2015-01-15T00:00:00" refdisplay="aktin-dataelement2015(1)-893" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.2" datasetEffectiveDate="2015-01-15T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.1-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.534" templateId="1.2.276.0.76.10.4060" templateEffectiveDate="2015-09-18T00:00:00" path="Diagnostik / Urinschnelltest">
+                    <name language="de-DE">Zeitpunkt Urinschnelltest</name>
+                    <desc language="de-DE">Zeitpunkt Urinschnelltest</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.3.10040" effectiveDate="2015-11-01T00:00:00" refdisplay="aktin-dataelement2015(2)-10040" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.3" datasetEffectiveDate="2015-11-01T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.2-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.523" templateId="1.2.276.0.76.10.4060" templateEffectiveDate="2015-09-18T00:00:00" path="Diagnostik">
+                    <name language="de-DE">Urinschnelltest</name>
+                    <desc language="de-DE">Urinschnelltest</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.3.891" effectiveDate="2015-11-01T00:00:00" refdisplay="aktin-dataelement2015(2)-891" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.3" datasetEffectiveDate="2015-11-01T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.2-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.526" templateId="1.2.276.0.76.10.4060" templateEffectiveDate="2015-09-18T00:00:00" path="Diagnostik / Urinschnelltest">
+                    <name language="de-DE">Urinschnelltest</name>
+                    <desc language="de-DE">Wurde ein Urinschnelltest durchgeführt?</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.3.892" effectiveDate="2015-11-01T00:00:00" refdisplay="aktin-dataelement2015(2)-892" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.3" datasetEffectiveDate="2015-11-01T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.2-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.535" templateId="1.2.276.0.76.10.4060" templateEffectiveDate="2015-09-18T00:00:00" path="Diagnostik / Urinschnelltest">
+                    <name language="de-DE">Urinschnelltest opB</name>
+                    <desc language="de-DE">War der Urinschnelltest ohne pathologischen Befund?</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.3.893" effectiveDate="2015-11-01T00:00:00" refdisplay="aktin-dataelement2015(2)-893" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.3" datasetEffectiveDate="2015-11-01T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.2-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.534" templateId="1.2.276.0.76.10.4060" templateEffectiveDate="2015-09-18T00:00:00" path="Diagnostik / Urinschnelltest">
+                    <name language="de-DE">Zeitpunkt Urinschnelltest</name>
+                    <desc language="de-DE">Zeitpunkt Urinschnelltest</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+            </staticAssociations>
+            <ref type="dependency" prefix="aktin-" flexibility="2025-12-01T00:00:00" id="1.2.276.0.76.3.1.195.10.93" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2026-03-25T11:04:07" statusCode="draft" versionLabel="v4transit" lastModifiedDate="2026-04-29T18:39:46" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.3050" name="Relevantdiagnostictestsorlaboratorydata" displayName="Diagnostik" effectiveDate="2015-01-10T00:00:00" statusCode="active" isClosed="false" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.3050" name="Relevantdiagnostictestsorlaboratorydata" displayName="Diagnostik" effectiveDate="2025-12-01T00:00:00" statusCode="draft" isClosed="false" lastModifiedDate="2026-04-29T18:34:48" ident="aktin-"/>
+        </template>
+    </template>
+</result>

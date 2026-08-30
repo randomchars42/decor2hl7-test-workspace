@@ -1,0 +1,22 @@
+<valueSets>
+    <repository url="http://art-decor.org/decor/services/" ident="ccda-" referencedFrom="DICOM-" projecttype="local">
+        <valueSet id="2.16.840.1.113883.1.11.11610" name="x_ActRelationshipDocument" displayName="x_ActRelationshipDocument" statusCode="deprecated" effectiveDate="2017-10-04T17:13:24">
+            <sourceCodeSystem id="2.16.840.1.113883.5.1002" identifierName="Act Relationship Type" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-ActRelationshipType" canonicalUriDSTU2="http://hl7.org/fhir/v3/ActRelationshipType" canonicalUriSTU3="http://hl7.org/fhir/v3/ActRelationshipType" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-ActRelationshipType" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-ActRelationshipType" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-ActRelationshipType" context="external/hl7intl/v3/v3-ActRelationshipType"/>
+            <publishingAuthority name="HL7 International" inherited="project">
+                <addrLine>Health Level Seven International</addrLine>
+                <addrLine>3300 Washtenaw Avenue</addrLine>
+                <addrLine>Suite 227</addrLine>
+                <addrLine>Ann Arbor, MI 48104- 4261</addrLine>
+                <addrLine>USA</addrLine>
+                <addrLine>T +1 734 677 7777 </addrLine>
+                <addrLine>F +1 734 677 6622</addrLine>
+                <addrLine>E info@hl7.org</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <concept code="RPLC" codeSystem="2.16.840.1.113883.5.1002" displayName="Replaces" level="0" type="L"/>
+                <concept code="XFRM" codeSystem="2.16.840.1.113883.5.1002" codeSystemName="ActRelationshipType" displayName="Transformation" level="0" type="L"/>
+                <concept code="APND" codeSystem="2.16.840.1.113883.5.1002" displayName="Is appendage" level="0" type="L"/>
+            </conceptList>
+        </valueSet>
+    </repository>
+</valueSets>

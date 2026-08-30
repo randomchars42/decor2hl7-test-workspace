@@ -1,0 +1,208 @@
+<valueSets>
+    <repository url="http://art-decor.org/decor/services/" ident="ccda-" referencedFrom="DICOM-" projecttype="local">
+        <valueSet id="2.16.840.1.113883.1.11.20275" name="HealthcareServiceLocation" displayName="HealthcareServiceLocation" effectiveDate="2016-06-23T00:00:00" statusCode="final">
+            <sourceCodeSystem id="2.16.840.1.113883.6.259" identifierName="NHSN Healthcare Facility Patient Care Location" canonicalUri="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html" canonicalUriDSTU2="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html" canonicalUriSTU3="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html" canonicalUriR4="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html" canonicalUriR4B="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html" canonicalUriR5="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html"/>
+            <publishingAuthority name="HL7 International" inherited="project">
+                <addrLine>Health Level Seven International</addrLine>
+                <addrLine>3300 Washtenaw Avenue</addrLine>
+                <addrLine>Suite 227</addrLine>
+                <addrLine>Ann Arbor, MI 48104- 4261</addrLine>
+                <addrLine>USA</addrLine>
+                <addrLine>T +1 734 677 7777 </addrLine>
+                <addrLine>F +1 734 677 6622</addrLine>
+                <addrLine>E info@hl7.org</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <concept code="1005-8" codeSystem="2.16.840.1.113883.6.259" displayName="Cardiac Catheterization Room/Suite" level="0" type="L"/>
+                <concept code="1007-4" codeSystem="2.16.840.1.113883.6.259" displayName="Endoscopy Suite" level="0" type="L"/>
+                <concept code="1008-2" codeSystem="2.16.840.1.113883.6.259" displayName="Radiology (includes Nuclear Medicine)" level="0" type="L"/>
+                <concept code="1009-0" codeSystem="2.16.840.1.113883.6.259" displayName="Pulmonary Function Testing" level="0" type="L"/>
+                <concept code="1010-8" codeSystem="2.16.840.1.113883.6.259" displayName="General Laboratory" level="0" type="L"/>
+                <concept code="1011-6" codeSystem="2.16.840.1.113883.6.259" displayName="Clinical Chemistry" level="0" type="L"/>
+                <concept code="1012-4" codeSystem="2.16.840.1.113883.6.259" displayName="Hematology" level="0" type="L"/>
+                <concept code="1013-2" codeSystem="2.16.840.1.113883.6.259" displayName="Histology/Surgical Pathology" level="0" type="L"/>
+                <concept code="1014-0" codeSystem="2.16.840.1.113883.6.259" displayName="Microbiology" level="0" type="L"/>
+                <concept code="1015-7" codeSystem="2.16.840.1.113883.6.259" displayName="Serology Lab" level="0" type="L"/>
+                <concept code="1016-5" codeSystem="2.16.840.1.113883.6.259" displayName="Virology Lab" level="0" type="L"/>
+                <concept code="1017-3" codeSystem="2.16.840.1.113883.6.259" displayName="Hyperbaric Oxygen Center" level="0" type="L"/>
+                <concept code="1018-1" codeSystem="2.16.840.1.113883.6.259" displayName="Infusion Center" level="0" type="L"/>
+                <concept code="1019-9" codeSystem="2.16.840.1.113883.6.259" displayName="Specimen Collection Area (Healthcare)" level="0" type="L"/>
+                <concept code="1020-7" codeSystem="2.16.840.1.113883.6.259" displayName="Sleep Studies (for in- and outpatients)" level="0" type="L"/>
+                <concept code="1022-3" codeSystem="2.16.840.1.113883.6.259" displayName="Bone Marrow Transplant SCA" level="0" type="L"/>
+                <concept code="1023-1" codeSystem="2.16.840.1.113883.6.259" displayName="Pediatric Bone Marrow Transplant SCA" level="0" type="L"/>
+                <concept code="1025-6" codeSystem="2.16.840.1.113883.6.259" displayName="Trauma Critical Care" level="0" type="L"/>
+                <concept code="1026-4" codeSystem="2.16.840.1.113883.6.259" displayName="Burn Critical Care" level="0" type="L"/>
+                <concept code="1027-2" codeSystem="2.16.840.1.113883.6.259" displayName="Medical Critical Care" level="0" type="L"/>
+                <concept code="1028-0" codeSystem="2.16.840.1.113883.6.259" displayName="Medical Cardiac Critical Care" level="0" type="L"/>
+                <concept code="1029-8" codeSystem="2.16.840.1.113883.6.259" displayName="Medical/Surgical Critical Care" level="0" type="L"/>
+                <concept code="1030-6" codeSystem="2.16.840.1.113883.6.259" displayName="Surgical Critical Care" level="0" type="L"/>
+                <concept code="1031-4" codeSystem="2.16.840.1.113883.6.259" displayName="Neurosurgical Critical Care" level="0" type="L"/>
+                <concept code="1032-2" codeSystem="2.16.840.1.113883.6.259" displayName="Surgical Cardiothoracic Critical Care" level="0" type="L"/>
+                <concept code="1033-0" codeSystem="2.16.840.1.113883.6.259" displayName="Respiratory Critical Care" level="0" type="L"/>
+                <concept code="1034-8" codeSystem="2.16.840.1.113883.6.259" displayName="Prenatal Critical Care" level="0" type="L"/>
+                <concept code="1035-5" codeSystem="2.16.840.1.113883.6.259" displayName="Neurologic Critical Care" level="0" type="L"/>
+                <concept code="1038-9" codeSystem="2.16.840.1.113883.6.259" displayName="Inpatient Well Baby Nursery (Level I)" level="0" type="L"/>
+                <concept code="1039-7" codeSystem="2.16.840.1.113883.6.259" displayName="Neonatal Critical Care(Level II/III)" level="0" type="L"/>
+                <concept code="1040-5" codeSystem="2.16.840.1.113883.6.259" displayName="Neonatal Critical Care (Level III)" level="0" type="L"/>
+                <concept code="1041-3" codeSystem="2.16.840.1.113883.6.259" displayName="Step down Neonatal ICU (Level II)" level="0" type="L"/>
+                <concept code="1042-1" codeSystem="2.16.840.1.113883.6.259" displayName="Pediatric Burn Critical Care" level="0" type="L"/>
+                <concept code="1043-9" codeSystem="2.16.840.1.113883.6.259" displayName="Pediatric Cardiothoracic Critical Care" level="0" type="L"/>
+                <concept code="1044-7" codeSystem="2.16.840.1.113883.6.259" displayName="Pediatric Medical Critical Care" level="0" type="L"/>
+                <concept code="1045-4" codeSystem="2.16.840.1.113883.6.259" displayName="Pediatric Medical/Surgical Critical Care" level="0" type="L"/>
+                <concept code="1046-2" codeSystem="2.16.840.1.113883.6.259" displayName="Pediatric Neurosurgical Critical Care" level="0" type="L"/>
+                <concept code="1047-0" codeSystem="2.16.840.1.113883.6.259" displayName="Pediatric Respiratory Critical Care" level="0" type="L"/>
+                <concept code="1048-8" codeSystem="2.16.840.1.113883.6.259" displayName="Pediatric Surgical Critical Care" level="0" type="L"/>
+                <concept code="1049-6" codeSystem="2.16.840.1.113883.6.259" displayName="Pediatric Trauma Critical Care" level="0" type="L"/>
+                <concept code="1051-2" codeSystem="2.16.840.1.113883.6.259" displayName="Inpatient Behavioral Health/Psych Ward" level="0" type="L"/>
+                <concept code="1052-0" codeSystem="2.16.840.1.113883.6.259" displayName="Inpatient Burn Ward" level="0" type="L"/>
+                <concept code="1053-8" codeSystem="2.16.840.1.113883.6.259" displayName="Inpatient Ear/Nose/Throat Ward" level="0" type="L"/>
+                <concept code="1054-6" codeSystem="2.16.840.1.113883.6.259" displayName="Inpatient Gastrointestinal Ward" level="0" type="L"/>
+                <concept code="1055-3" codeSystem="2.16.840.1.113883.6.259" displayName="Inpatient Genitourinary Ward" level="0" type="L"/>
+                <concept code="1056-1" codeSystem="2.16.840.1.113883.6.259" displayName="Inpatient Gerontology Ward" level="0" type="L"/>
+                <concept code="1057-9" codeSystem="2.16.840.1.113883.6.259" displayName="Inpatient Gynecology Ward" level="0" type="L"/>
+                <concept code="1058-7" codeSystem="2.16.840.1.113883.6.259" displayName="Labor and Delivery Ward" level="0" type="L"/>
+                <concept code="1059-5" codeSystem="2.16.840.1.113883.6.259" displayName="Labor, Delivery, Recovery, Postpartum Suite (LDRP)" level="0" type="L"/>
+                <concept code="1060-3" codeSystem="2.16.840.1.113883.6.259" displayName="Inpatient Medical Ward" level="0" type="L"/>
+                <concept code="1061-1" codeSystem="2.16.840.1.113883.6.259" displayName="Inpatient Medical/Surgical Ward" level="0" type="L"/>
+                <concept code="1062-9" codeSystem="2.16.840.1.113883.6.259" displayName="Inpatient Neurology Ward" level="0" type="L"/>
+                <concept code="1063-7" codeSystem="2.16.840.1.113883.6.259" displayName="Inpatient Neurosurgical Ward" level="0" type="L"/>
+                <concept code="1064-5" codeSystem="2.16.840.1.113883.6.259" displayName="Inpatient Ophthalmology Ward" level="0" type="L"/>
+                <concept code="1065-2" codeSystem="2.16.840.1.113883.6.259" displayName="Inpatient Orthopedic Ward" level="0" type="L"/>
+                <concept code="1066-0" codeSystem="2.16.840.1.113883.6.259" displayName="Inpatient Orthopedic Trauma Ward" level="0" type="L"/>
+                <concept code="1067-8" codeSystem="2.16.840.1.113883.6.259" displayName="Inpatient Plastic Surgery Ward" level="0" type="L"/>
+                <concept code="1068-6" codeSystem="2.16.840.1.113883.6.259" displayName="Inpatient Postpartum Ward" level="0" type="L"/>
+                <concept code="1069-4" codeSystem="2.16.840.1.113883.6.259" displayName="Inpatient Pulmonary Ward" level="0" type="L"/>
+                <concept code="1070-2" codeSystem="2.16.840.1.113883.6.259" displayName="Inpatient Rehabilitation Ward" level="0" type="L"/>
+                <concept code="1071-0" codeSystem="2.16.840.1.113883.6.259" displayName="Acute Stroke Ward" level="0" type="L"/>
+                <concept code="1072-8" codeSystem="2.16.840.1.113883.6.259" displayName="Inpatient Surgical Ward" level="0" type="L"/>
+                <concept code="1073-6" codeSystem="2.16.840.1.113883.6.259" displayName="Inpatient Vascular Surgery Ward" level="0" type="L"/>
+                <concept code="1074-4" codeSystem="2.16.840.1.113883.6.259" displayName="Pediatric ward" level="0" type="L"/>
+                <concept code="1075-1" codeSystem="2.16.840.1.113883.6.259" displayName="Inpatient Adolescent Behavioral Health Ward" level="0" type="L"/>
+                <concept code="1076-9" codeSystem="2.16.840.1.113883.6.259" displayName="Inpatient Medical Pediatric Ward" level="0" type="L"/>
+                <concept code="1077-7" codeSystem="2.16.840.1.113883.6.259" displayName="Inpatient Pediatric Behavioral Health Ward" level="0" type="L"/>
+                <concept code="1078-5" codeSystem="2.16.840.1.113883.6.259" displayName="Inpatient Pediatric Burn Ward" level="0" type="L"/>
+                <concept code="1079-3" codeSystem="2.16.840.1.113883.6.259" displayName="Inpatient Pediatric Ear, Nose, Throat Ward" level="0" type="L"/>
+                <concept code="1080-1" codeSystem="2.16.840.1.113883.6.259" displayName="Inpatient Pediatric Genitourinary Ward" level="0" type="L"/>
+                <concept code="1081-9" codeSystem="2.16.840.1.113883.6.259" displayName="Inpatient Pediatric Med/Surg Ward" level="0" type="L"/>
+                <concept code="1082-7" codeSystem="2.16.840.1.113883.6.259" displayName="Inpatient Pediatric Neurology Ward" level="0" type="L"/>
+                <concept code="1083-5" codeSystem="2.16.840.1.113883.6.259" displayName="Inpatient Pediatric Neurosurgical Ward" level="0" type="L"/>
+                <concept code="1084-3" codeSystem="2.16.840.1.113883.6.259" displayName="Inpatient Pediatric Orthopedic Ward" level="0" type="L"/>
+                <concept code="1085-0" codeSystem="2.16.840.1.113883.6.259" displayName="Inpatient Pediatric Rehabilitation Ward" level="0" type="L"/>
+                <concept code="1086-8" codeSystem="2.16.840.1.113883.6.259" displayName="Inpatient Pediatric Surgical Ward" level="0" type="L"/>
+                <concept code="1088-4" codeSystem="2.16.840.1.113883.6.259" displayName="Hematology/Oncology SCA" level="0" type="L"/>
+                <concept code="1089-2" codeSystem="2.16.840.1.113883.6.259" displayName="Pediatric Hematology/Oncology SCA" level="0" type="L"/>
+                <concept code="1090-0" codeSystem="2.16.840.1.113883.6.259" displayName="Long-Term Acute Care (LTAC)" level="0" type="L"/>
+                <concept code="1091-8" codeSystem="2.16.840.1.113883.6.259" displayName="Pediatric Dialysis SCA" level="0" type="L"/>
+                <concept code="1092-6" codeSystem="2.16.840.1.113883.6.259" displayName="Solid Organ Transplant SCA" level="0" type="L"/>
+                <concept code="1093-4" codeSystem="2.16.840.1.113883.6.259" displayName="Pediatric Solid Organ Transplant SCA" level="0" type="L"/>
+                <concept code="1095-9" codeSystem="2.16.840.1.113883.6.259" displayName="Cesarean Section Room/Suite" level="0" type="L"/>
+                <concept code="1096-7" codeSystem="2.16.840.1.113883.6.259" displayName="Inpatient Operating Room/Suite" level="0" type="L"/>
+                <concept code="1097-5" codeSystem="2.16.840.1.113883.6.259" displayName="Post-Anesthesia Care Unit/Recovery Room" level="0" type="L"/>
+                <concept code="1099-1" codeSystem="2.16.840.1.113883.6.259" displayName="Adult Step Down Unit (post-critical care)" level="0" type="L"/>
+                <concept code="1100-7" codeSystem="2.16.840.1.113883.6.259" displayName="Pediatric Step Down Unit (post-critical care)" level="0" type="L"/>
+                <concept code="1102-3" codeSystem="2.16.840.1.113883.6.259" displayName="Long-Term Care Unit" level="0" type="L"/>
+                <concept code="1103-1" codeSystem="2.16.840.1.113883.6.259" displayName="Long-Term Care Alzheimer's Unit" level="0" type="L"/>
+                <concept code="1104-9" codeSystem="2.16.840.1.113883.6.259" displayName="Long-Term Care Behavioral Health/Psych Unit" level="0" type="L"/>
+                <concept code="1105-6" codeSystem="2.16.840.1.113883.6.259" displayName="Long-Term Care Rehabilitation Unit" level="0" type="L"/>
+                <concept code="1106-4" codeSystem="2.16.840.1.113883.6.259" displayName="Assisted Living Area" level="0" type="L"/>
+                <concept code="1108-0" codeSystem="2.16.840.1.113883.6.259" displayName="Emergency Department" level="0" type="L"/>
+                <concept code="1109-8" codeSystem="2.16.840.1.113883.6.259" displayName="Pediatric Emergency Department" level="0" type="L"/>
+                <concept code="1110-6" codeSystem="2.16.840.1.113883.6.259" displayName="Allergy Clinic" level="0" type="L"/>
+                <concept code="1112-2" codeSystem="2.16.840.1.113883.6.259" displayName="Cardiac Rehabilitation Center" level="0" type="L"/>
+                <concept code="1113-0" codeSystem="2.16.840.1.113883.6.259" displayName="Cardiology Clinic" level="0" type="L"/>
+                <concept code="1115-5" codeSystem="2.16.840.1.113883.6.259" displayName="Dermatology Clinic" level="0" type="L"/>
+                <concept code="1116-3" codeSystem="2.16.840.1.113883.6.259" displayName="Diabetes/Endocrinology Clinic" level="0" type="L"/>
+                <concept code="1117-1" codeSystem="2.16.840.1.113883.6.259" displayName="Family Medicine Clinic" level="0" type="L"/>
+                <concept code="1118-9" codeSystem="2.16.840.1.113883.6.259" displayName="Outpatient Gastrointestinal (GI) Clinic" level="0" type="L"/>
+                <concept code="1119-7" codeSystem="2.16.840.1.113883.6.259" displayName="Pediatric Gastrointestinal Clinic" level="0" type="L"/>
+                <concept code="1120-5" codeSystem="2.16.840.1.113883.6.259" displayName="Outpatient Medical Clinic" level="0" type="L"/>
+                <concept code="1121-3" codeSystem="2.16.840.1.113883.6.259" displayName="Gynecology Clinic" level="0" type="L"/>
+                <concept code="1122-1" codeSystem="2.16.840.1.113883.6.259" displayName="Genetics Clinic" level="0" type="L"/>
+                <concept code="1123-9" codeSystem="2.16.840.1.113883.6.259" displayName="Neurology Clinic" level="0" type="L"/>
+                <concept code="1124-7" codeSystem="2.16.840.1.113883.6.259" displayName="Ophthalmology Clinic" level="0" type="L"/>
+                <concept code="1125-4" codeSystem="2.16.840.1.113883.6.259" displayName="Orthopedic Clinic" level="0" type="L"/>
+                <concept code="1126-2" codeSystem="2.16.840.1.113883.6.259" displayName="Ear, Nose, Throat Clinic" level="0" type="L"/>
+                <concept code="1127-0" codeSystem="2.16.840.1.113883.6.259" displayName="Pain Clinic" level="0" type="L"/>
+                <concept code="1128-8" codeSystem="2.16.840.1.113883.6.259" displayName="Pediatric Clinic" level="0" type="L"/>
+                <concept code="1129-6" codeSystem="2.16.840.1.113883.6.259" displayName="Pediatric Cardiology Center" level="0" type="L"/>
+                <concept code="1130-4" codeSystem="2.16.840.1.113883.6.259" displayName="Pediatric Dental Clinic" level="0" type="L"/>
+                <concept code="1131-2" codeSystem="2.16.840.1.113883.6.259" displayName="Pediatric Dermatology Clinic" level="0" type="L"/>
+                <concept code="1132-0" codeSystem="2.16.840.1.113883.6.259" displayName="Pediatric Diabetes/Endocrinology Clinic" level="0" type="L"/>
+                <concept code="1133-8" codeSystem="2.16.840.1.113883.6.259" displayName="Pediatric Orthopedic Clinic" level="0" type="L"/>
+                <concept code="1134-6" codeSystem="2.16.840.1.113883.6.259" displayName="Pediatric Scoliosis Clinic" level="0" type="L"/>
+                <concept code="1135-3" codeSystem="2.16.840.1.113883.6.259" displayName="Nephrology clinic" level="0" type="L"/>
+                <concept code="1136-1" codeSystem="2.16.840.1.113883.6.259" displayName="Pediatric Hematology/Oncology Clinic" level="0" type="L"/>
+                <concept code="1137-9" codeSystem="2.16.840.1.113883.6.259" displayName="Pediatric Nephrology Clinic" level="0" type="L"/>
+                <concept code="1138-7" codeSystem="2.16.840.1.113883.6.259" displayName="Pediatric Rheumatology Clinic" level="0" type="L"/>
+                <concept code="1139-5" codeSystem="2.16.840.1.113883.6.259" displayName="Well Baby Clinic" level="0" type="L"/>
+                <concept code="1140-3" codeSystem="2.16.840.1.113883.6.259" displayName="Podiatry Clinic" level="0" type="L"/>
+                <concept code="1141-1" codeSystem="2.16.840.1.113883.6.259" displayName="Physician's Office" level="0" type="L"/>
+                <concept code="1142-9" codeSystem="2.16.840.1.113883.6.259" displayName="Rheumatology Clinic" level="0" type="L"/>
+                <concept code="1143-7" codeSystem="2.16.840.1.113883.6.259" displayName="Surgical Services Clinic" level="0" type="L"/>
+                <concept code="1144-5" codeSystem="2.16.840.1.113883.6.259" displayName="Wound Center" level="0" type="L"/>
+                <concept code="1145-2" codeSystem="2.16.840.1.113883.6.259" displayName="Behavioral Health Clinic" level="0" type="L"/>
+                <concept code="1146-0" codeSystem="2.16.840.1.113883.6.259" displayName="Pediatric Behavioral Health Clinic" level="0" type="L"/>
+                <concept code="1147-8" codeSystem="2.16.840.1.113883.6.259" displayName="Blood Collection Center" level="0" type="L"/>
+                <concept code="1148-6" codeSystem="2.16.840.1.113883.6.259" displayName="Continence Clinic" level="0" type="L"/>
+                <concept code="1149-4" codeSystem="2.16.840.1.113883.6.259" displayName="Ostomy Clinic" level="0" type="L"/>
+                <concept code="1150-2" codeSystem="2.16.840.1.113883.6.259" displayName="Outpatient Dental Clinic" level="0" type="L"/>
+                <concept code="1151-0" codeSystem="2.16.840.1.113883.6.259" displayName="Occupational Health Clinic" level="0" type="L"/>
+                <concept code="1152-8" codeSystem="2.16.840.1.113883.6.259" displayName="Occupational Therapy Clinic" level="0" type="L"/>
+                <concept code="1153-6" codeSystem="2.16.840.1.113883.6.259" displayName="Outpatient Hemodialysis Clinic" level="0" type="L"/>
+                <concept code="1154-4" codeSystem="2.16.840.1.113883.6.259" displayName="Outpatient HIV Clinic" level="0" type="L"/>
+                <concept code="1155-1" codeSystem="2.16.840.1.113883.6.259" displayName="Outpatient Rehabilitation Clinic" level="0" type="L"/>
+                <concept code="1156-9" codeSystem="2.16.840.1.113883.6.259" displayName="Prenatal Clinic" level="0" type="L"/>
+                <concept code="1157-7" codeSystem="2.16.840.1.113883.6.259" displayName="Pulmonary Clinic" level="0" type="L"/>
+                <concept code="1158-5" codeSystem="2.16.840.1.113883.6.259" displayName="Speech Therapy Clinic" level="0" type="L"/>
+                <concept code="1159-3" codeSystem="2.16.840.1.113883.6.259" displayName="Wound Ostomy Continence Clinic" level="0" type="L"/>
+                <concept code="1160-1" codeSystem="2.16.840.1.113883.6.259" displayName="Urgent Care Center" level="0" type="L"/>
+                <concept code="1161-9" codeSystem="2.16.840.1.113883.6.259" displayName="Holistic Medicine Center" level="0" type="L"/>
+                <concept code="1162-7" codeSystem="2.16.840.1.113883.6.259" displayName="24-Hour Observation Area" level="0" type="L"/>
+                <concept code="1164-3" codeSystem="2.16.840.1.113883.6.259" displayName="Ventilator Dependent Unit" level="0" type="L"/>
+                <concept code="1165-0" codeSystem="2.16.840.1.113883.6.259" displayName="Inpatient Hospice" level="0" type="L"/>
+                <concept code="1166-8" codeSystem="2.16.840.1.113883.6.259" displayName="Ambulatory Surgery Center" level="0" type="L"/>
+                <concept code="1167-6" codeSystem="2.16.840.1.113883.6.259" displayName="Outpatient Pediatric Surgery Center" level="0" type="L"/>
+                <concept code="1168-4" codeSystem="2.16.840.1.113883.6.259" displayName="Outpatient Plastic Surgery Center" level="0" type="L"/>
+                <concept code="1169-2" codeSystem="2.16.840.1.113883.6.259" displayName="Outpatient Surgery Recovery Room/Post-Anesthesia Care Unit" level="0" type="L"/>
+                <concept code="1170-0" codeSystem="2.16.840.1.113883.6.259" displayName="School or Prison Infirmary" level="0" type="L"/>
+                <concept code="1171-8" codeSystem="2.16.840.1.113883.6.259" displayName="Inpatient Jail Unit" level="0" type="L"/>
+                <concept code="1172-6" codeSystem="2.16.840.1.113883.6.259" displayName="Inpatient School Infirmary" level="0" type="L"/>
+                <concept code="1174-2" codeSystem="2.16.840.1.113883.6.259" displayName="Mobile Emergency Services/EMS" level="0" type="L"/>
+                <concept code="1175-9" codeSystem="2.16.840.1.113883.6.259" displayName="Mobile MRI/CT" level="0" type="L"/>
+                <concept code="1176-7" codeSystem="2.16.840.1.113883.6.259" displayName="Mobile Blood Collection center" level="0" type="L"/>
+                <concept code="1178-3" codeSystem="2.16.840.1.113883.6.259" displayName="Transport Service" level="0" type="L"/>
+                <concept code="1179-1" codeSystem="2.16.840.1.113883.6.259" displayName="Pharmacy" level="0" type="L"/>
+                <concept code="1180-9" codeSystem="2.16.840.1.113883.6.259" displayName="Public Area in Facility" level="0" type="L"/>
+                <concept code="1181-7" codeSystem="2.16.840.1.113883.6.259" displayName="Physical Plant Operations Center" level="0" type="L"/>
+                <concept code="1182-5" codeSystem="2.16.840.1.113883.6.259" displayName="Housekeeping/Environmental Services" level="0" type="L"/>
+                <concept code="1183-3" codeSystem="2.16.840.1.113883.6.259" displayName="Laundry Room" level="0" type="L"/>
+                <concept code="1184-1" codeSystem="2.16.840.1.113883.6.259" displayName="Administrative Areas" level="0" type="L"/>
+                <concept code="1185-8" codeSystem="2.16.840.1.113883.6.259" displayName="Blood Bank" level="0" type="L"/>
+                <concept code="1186-6" codeSystem="2.16.840.1.113883.6.259" displayName="Central Sterile Supply" level="0" type="L"/>
+                <concept code="1187-4" codeSystem="2.16.840.1.113883.6.259" displayName="Central Trash Area" level="0" type="L"/>
+                <concept code="1188-2" codeSystem="2.16.840.1.113883.6.259" displayName="Facility Grounds" level="0" type="L"/>
+                <concept code="1189-0" codeSystem="2.16.840.1.113883.6.259" displayName="Morgue/Autopsy Room" level="0" type="L"/>
+                <concept code="1190-8" codeSystem="2.16.840.1.113883.6.259" displayName="Soiled Utility Area" level="0" type="L"/>
+                <concept code="1192-4" codeSystem="2.16.840.1.113883.6.259" displayName="Home Care" level="0" type="L"/>
+                <concept code="1194-0" codeSystem="2.16.840.1.113883.6.259" displayName="Home-based Hospice" level="0" type="L"/>
+                <concept code="1195-7" codeSystem="2.16.840.1.113883.6.259" displayName="Blood Collection (Blood Drive Campaign)" level="0" type="L"/>
+                <concept code="1196-5" codeSystem="2.16.840.1.113883.6.259" displayName="Specimen Collection Area (Community)" level="0" type="L"/>
+                <concept code="1198-1" codeSystem="2.16.840.1.113883.6.259" displayName="Inpatient Acute Dialysis SCA" level="0" type="L"/>
+                <concept code="1200-5" codeSystem="2.16.840.1.113883.6.259" displayName="Outpatient Hematology/Oncology Clinic" level="0" type="L"/>
+                <concept code="1201-3" codeSystem="2.16.840.1.113883.6.259" displayName="Scoliosis clinic" level="0" type="L"/>
+                <concept code="1202-1" codeSystem="2.16.840.1.113883.6.259" displayName="Physical Therapy Clinic" level="0" type="L"/>
+                <concept code="1203-9" codeSystem="2.16.840.1.113883.6.259" displayName="Interventional Radiology" level="0" type="L"/>
+                <concept code="1204-7" codeSystem="2.16.840.1.113883.6.259" displayName="Location outside facility" level="0" type="L"/>
+                <concept code="1205-4" codeSystem="2.16.840.1.113883.6.259" displayName="Inpatient antenatal ward" level="0" type="L"/>
+                <concept code="1206-2" codeSystem="2.16.840.1.113883.6.259" displayName="Float" level="0" type="L"/>
+                <concept code="1207-0" codeSystem="2.16.840.1.113883.6.259" displayName="Donor Apheresis Center" level="0" type="L"/>
+                <concept code="1208-8" codeSystem="2.16.840.1.113883.6.259" displayName="Telemetry Unit" level="0" type="L"/>
+                <concept code="1209-6" codeSystem="2.16.840.1.113883.6.259" displayName="Treatment Room" level="0" type="L"/>
+                <concept code="1210-4" codeSystem="2.16.840.1.113883.6.259" displayName="Adult Mixed Acuity Unit" level="0" type="L"/>
+                <concept code="1211-2" codeSystem="2.16.840.1.113883.6.259" displayName="Pediatric Mixed Acuity Unit" level="0" type="L"/>
+                <concept code="1212-0" codeSystem="2.16.840.1.113883.6.259" displayName="Any Age Mixed Acuity Unit" level="0" type="L"/>
+                <concept code="1213-8" codeSystem="2.16.840.1.113883.6.259" displayName="Pediatric long-term acute care (LTAC)" level="0" type="L"/>
+            </conceptList>
+        </valueSet>
+    </repository>
+</valueSets>

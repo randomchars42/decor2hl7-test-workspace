@@ -1,0 +1,281 @@
+<valueSetExpansionSet xmlns:json="http://www.json.org" id="34503b75-7d64-4ca2-903b-757d640ca2b9" effectiveDate="2026-08-27T13:35:41" statusCode="final" current="68" count="68" nonactive="0">
+    <valueSet json:array="true" id="1.2.276.0.76.3.1.195.11.15" name="mts-indicators-yellow" displayName="MTS-Indikatoren GELB" effectiveDate="2024-07-22T16:51:10" statusCode="draft" versionLabel="2024" canonicalUri="http://aktin.org/fhir/ValueSet/aktin-vs-mts-indicators-yellow" lastModifiedDate="2024-07-22T16:51:10" ident="aktin-">
+        <conceptList json:array="true">
+            <include json:array="true" op="descendent-of" code="yellow" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="yellow"/>
+        </conceptList>
+    </valueSet>
+    <expansion json:array="true" expanded="true" max="100" id="34503b75-7d64-4ca2-903b-757d640ca2b9">
+        <items json:array="true" is="concept" code="7" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Akuter Zahnverlust" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="2" length="18">Akuter Zahnverlust</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="3" length="21">Acutely avulsed tooth</designation>
+        </items>
+        <items json:array="true" is="concept" code="12" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Anhaltendes Erbrechen" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="2" length="21">Anhaltendes Erbrechen</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="2" length="19">Presistent vomiting</designation>
+        </items>
+        <items json:array="true" is="concept" code="13" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Anhaltendes Herzklopfen" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="2" length="23">Anhaltendes Herzklopfen</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="2" length="19">Current palpitation</designation>
+        </items>
+        <items json:array="true" is="concept" code="14" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Anzeichen für Dehydration" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="3" length="25">Anzeichen für Dehydration</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="3" length="20">Signs of dehydration</designation>
+        </items>
+        <items json:array="true" is="concept" code="15" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Anzeichen für mäßige Schmerzen" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="4" length="30">Anzeichen für mäßige Schmerzen</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="4" length="22">Signs of moderate pain</designation>
+        </items>
+        <items json:array="true" is="concept" code="20" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Auffällige hämatologische oder metabolische Anamnese" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="5" length="52">Auffällige hämatologische oder metabolische Anamnese</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="3" length="34">Significant heamatological history</designation>
+        </items>
+        <items json:array="true" is="concept" code="21" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Auffällige kardiale Anamnese" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="3" length="28">Auffällige kardiale Anamnese</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="3" length="27">Significant cardiac history</designation>
+        </items>
+        <items json:array="true" is="concept" code="22" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Auffällige medizinische Vorgeschichte" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="3" length="37">Auffällige medizinische Vorgeschichte</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="3" length="27">Significant medical history</designation>
+        </items>
+        <items json:array="true" is="concept" code="23" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Auffällige psychiatrische Anamnese" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="3" length="34">Auffällige psychiatrische Anamnese</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="3" length="31">Significant psychiatric history</designation>
+        </items>
+        <items json:array="true" is="concept" code="25" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Auffällige Unruhe" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="2" length="17">Auffällige Unruhe</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="2" length="15">Marked distress</designation>
+        </items>
+        <items json:array="true" is="concept" code="29" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Bericht über akutes Erbrechen von Blut" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="6" length="38">Bericht über akutes Erbrechen von Blut</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="5" length="33">History of acutely vomiting blood</designation>
+        </items>
+        <items json:array="true" is="concept" code="30" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Bericht über Bewusstlosigkeit" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="3" length="29">Bericht über Bewusstlosigkeit</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="3" length="26">History of unconsciousness</designation>
+        </items>
+        <items json:array="true" is="concept" code="31" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Bericht über jüngeren Auslandsaufenthalt" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="4" length="40">Bericht über jüngeren Auslandsaufenthalt</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="5" length="32">History of recent foreign travel</designation>
+        </items>
+        <items json:array="true" is="concept" code="32" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Bericht über Kopfverletzung" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="3" length="27">Bericht über Kopfverletzung</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="4" length="22">History of head injury</designation>
+        </items>
+        <items json:array="true" is="concept" code="35" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Bericht über Unfall" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="3" length="19">Bericht über Unfall</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="3" length="17">History of trauma</designation>
+        </items>
+        <items json:array="true" is="concept" code="37" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Blutungsneigung" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="1" length="15">Blutungsneigung</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="2" length="17">Bleeding disorder</designation>
+        </items>
+        <items json:array="true" is="concept" code="38" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Direktes Nackentrauma" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="2" length="21">Direktes Nackentrauma</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="5" length="25">Direct trauma to the neck</designation>
+        </items>
+        <items json:array="true" is="concept" code="39" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Direktes Rückentrauma" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="2" length="21">Direktes Rückentrauma</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="5" length="25">Direct trauma to the back</designation>
+        </items>
+        <items json:array="true" is="concept" code="42" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Empfindliche Kopfhaut" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="2" length="21">Empfindliche Kopfhaut</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="3" length="25">Temporal scalp tenderness</designation>
+        </items>
+        <items json:array="true" is="concept" code="51" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Frisches neurologisches Defizit" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="3" length="31">Frisches neurologisches Defizit</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="8" length="47">New neurological deficit more than 24 hours old</designation>
+        </items>
+        <items json:array="true" is="concept" code="55" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Gehfähig" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="1" length="8">Gehfähig</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="1" length="7">Walking</designation>
+        </items>
+        <items json:array="true" is="concept" code="59" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Grobe Fehlstellung" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="2" length="18">Grobe Fehlstellung</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="2" length="15">Gross deformity</designation>
+        </items>
+        <items json:array="true" is="concept" code="60" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Großflächige Absonderungen oder Bläschenbildungen" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="4" length="49">Großflächige Absonderungen oder Bläschenbildungen</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="4" length="34">Widespread discharge or blistering</designation>
+        </items>
+        <items json:array="true" is="concept" code="62" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Harnverhalt" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="1" length="11">Harnverhalt</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="3" length="18">Retention of urine</designation>
+        </items>
+        <items json:array="true" is="concept" code="63" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Heiß" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="1" length="4">Heiß</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="1" length="3">Hot</designation>
+        </items>
+        <items json:array="true" is="concept" code="68" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Hodenschmerz" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="1" length="12">Hodenschmerz</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="2" length="15">Testicular pain</designation>
+        </items>
+        <items json:array="true" is="concept" code="70" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Hoher Blutdruck" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="2" length="15">Hoher Blutdruck</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="3" length="19">High blood pressure</designation>
+        </items>
+        <items json:array="true" is="concept" code="73" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Hyperglykämie" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="1" length="13">Hyperglykämie</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="1" length="14">Hyperglycaemia</designation>
+        </items>
+        <items json:array="true" is="concept" code="78" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Jünger reduzierte Sehschärfe" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="3" length="28">Jünger reduzierte Sehschärfe</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="4" length="28">Recent reduced visual acuity</designation>
+        </items>
+        <items json:array="true" is="concept" code="88" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Kein Ansprechen auf eigene Asthmamedikation" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="5" length="43">Kein Ansprechen auf eigene Asthmamedikation</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="6" length="42">No improvement with own asthma medications</designation>
+        </items>
+        <items json:array="true" is="concept" code="89" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Keine Nahrungsaufnahme" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="2" length="22">Keine Nahrungsaufnahme</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="2" length="11">Not feeding</designation>
+        </items>
+        <items json:array="true" is="concept" code="90" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Keine Nahrungsaufnahme möglich" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="3" length="30">Keine Nahrungsaufnahme möglich</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="3" length="14">Unable to feed</designation>
+        </items>
+        <items json:array="true" is="concept" code="92" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Keine Urinausscheidung" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="2" length="22">Keine Urinausscheidung</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="3" length="17">Not passing urine</designation>
+        </items>
+        <items json:array="true" is="concept" code="94" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Kolikartige Schmerzen" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="2" length="21">Kolikartige Schmerzen</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="2" length="12">Colicky pain</designation>
+        </items>
+        <items json:array="true" is="concept" code="99" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Langanhaltendes oder ununterbrochenes Schreien" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="4" length="46">Langanhaltendes oder ununterbrochenes Schreien</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="4" length="33">Prolonged or uninterrupted crying</designation>
+        </items>
+        <items json:array="true" is="concept" code="104" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Makrohämaturie" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="1" length="14">Makrohämaturie</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="2" length="16">Frank heamaturia</designation>
+        </items>
+        <items json:array="true" is="concept" code="105" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Mäßig letale Chemikalie" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="3" length="23">Mäßig letale Chemikalie</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="3" length="27">Moderate lethality chemical</designation>
+        </items>
+        <items json:array="true" is="concept" code="106" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Mäßig letaler Tierbiss" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="3" length="22">Mäßig letaler Tierbiss</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="3" length="31">Moderate lethality envenomation</designation>
+        </items>
+        <items json:array="true" is="concept" code="107" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Mäßige Letalität" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="2" length="16">Mäßige Letalität</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="2" length="18">Moderate lethality</designation>
+        </items>
+        <items json:array="true" is="concept" code="109" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Mäßiger Schmerz" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="2" length="15">Mäßiger Schmerz</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="2" length="13">Moderate pain</designation>
+        </items>
+        <items json:array="true" is="concept" code="108" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Mäßiger Schmerz oder Juckreiz" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="4" length="29">Mäßiger Schmerz oder Juckreiz</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="2" length="13">Moderate itch</designation>
+        </items>
+        <items json:array="true" is="concept" code="110" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Mäßiges Risiko (künftiger) Eigengefährdung" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="4" length="42">Mäßiges Risiko (künftiger) Eigengefährdung</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="7" length="41">Moderate risk of (further) harm to others</designation>
+        </items>
+        <items json:array="true" is="concept" code="111" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Mäßiges Risiko (künftiger) Fremdgefährdung" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="4" length="42">Mäßiges Risiko (künftiger) Fremdgefährdung</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="5" length="36">Moderate risk of (further) self-harm</designation>
+        </items>
+        <items json:array="true" is="concept" code="115" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Neuer Verwirrtheitszustand" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="2" length="26">Neuer Verwirrtheitszustand</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="2" length="13">New confusion</designation>
+        </items>
+        <items json:array="true" is="concept" code="116" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Nicht ablenkbar" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="2" length="15">Nicht ablenkbar</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="2" length="16">Not distractible</designation>
+        </items>
+        <items json:array="true" is="concept" code="120" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Niedrige O2-Sättigung" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="2" length="21">Niedrige O2-Sättigung</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="2" length="8">Low SpO2</designation>
+        </items>
+        <items json:array="true" is="concept" code="121" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Niedriger Peakflow" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="2" length="18">Niedriger Peakflow</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="2" length="8">Low PEFR</designation>
+        </items>
+        <items json:array="true" is="concept" code="122" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Offene Fraktur" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="2" length="14">Offene Fraktur</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="2" length="13">Open fracture</designation>
+        </items>
+        <items json:array="true" is="concept" code="126" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Pleuraschmerz" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="1" length="13">Pleuraschmerz</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="2" length="14">Pleuritic pain</designation>
+        </items>
+        <items json:array="true" is="concept" code="132" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Rasches Einsetzen" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="2" length="17">Rasches Einsetzen</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="2" length="11">Rapid onset</designation>
+        </items>
+        <items json:array="true" is="concept" code="133" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Rauchexposition" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="1" length="15">Rauchexposition</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="2" length="14">Smoke exposure</designation>
+        </items>
+        <items json:array="true" is="concept" code="142" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Schmerzausstrahlung in die Schulter" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="4" length="35">Schmerzausstrahlung in die Schulter</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="3" length="17">Shoulder tip pain</designation>
+        </items>
+        <items json:array="true" is="concept" code="143" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Schmerzen bei Bewegung im Gelenk" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="5" length="32">Schmerzen bei Bewegung im Gelenk</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="4" length="22">Pain on joint movement</designation>
+        </items>
+        <items json:array="true" is="concept" code="145" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Schwangerschaft möglich" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="2" length="23">Schwangerschaft möglich</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="2" length="17">Possibly pregnant</designation>
+        </items>
+        <items json:array="true" is="concept" code="156" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Skrotumschwellung/-rötung" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="1" length="25">Skrotumschwellung/-rötung</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="2" length="18">Scrotal cellulitis</designation>
+        </items>
+        <items json:array="true" is="concept" code="161" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Störend" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="1" length="7">Störend</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="1" length="10">Disruptive</designation>
+        </items>
+        <items json:array="true" is="concept" code="163" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Stromunfall" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="1" length="11">Stromunfall</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="2" length="17">Electrical injury</designation>
+        </items>
+        <items json:array="true" is="concept" code="165" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Teerstuhl oder frische Blutauflagerung" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="4" length="38">Teerstuhl oder frische Blutauflagerung</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="4" length="25">Black or redcurrant stool</designation>
+        </items>
+        <items json:array="true" is="concept" code="169" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Überwärmtes Gelenk" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="2" length="18">Überwärmtes Gelenk</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="2" length="9">Hot joint</designation>
+        </items>
+        <items json:array="true" is="concept" code="170" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Überwärmtes Neugeborenes" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="2" length="24">Überwärmtes Neugeborenes</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="2" length="12">Warm newborn</designation>
+        </items>
+        <items json:array="true" is="concept" code="171" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Unfähig zu Gehen" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="3" length="16">Unfähig zu Gehen</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="3" length="14">Unable to walk</designation>
+        </items>
+        <items json:array="true" is="concept" code="173" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Unpassende Vorgeschichte" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="2" length="24">Unpassende Vorgeschichte</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="2" length="21">Inappropriate history</designation>
+        </items>
+        <items json:array="true" is="concept" code="175" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Unstillbare kleine Blutung" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="3" length="26">Unstillbare kleine Blutung</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="3" length="32">Uncontrollable minor heamorrhage</designation>
+        </items>
+        <items json:array="true" is="concept" code="176" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Unterbauchschmerz" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="1" length="17">Unterbauchschmerz</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="3" length="20">Lower abdominal pain</designation>
+        </items>
+        <items json:array="true" is="concept" code="178" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Untröstbar durch die Eltern" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="4" length="27">Untröstbar durch die Eltern</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="3" length="23">Inconsolable by parents</designation>
+        </items>
+        <items json:array="true" is="concept" code="182" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Vaginaler Blutverlust" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="2" length="21">Vaginaler Blutverlust</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="3" length="13">PV blood loss</designation>
+        </items>
+        <items json:array="true" is="concept" code="184" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Vaginaltrauma" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="1" length="13">Vaginaltrauma</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="2" length="14">Vaginal trauma</designation>
+        </items>
+        <items json:array="true" is="concept" code="188" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Veränderter Bewusstseinszustand vollständig durch Alkoholgenuss erklärbar" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="6" length="73">Veränderter Bewusstseinszustand vollständig durch Alkoholgenuss erklärbar</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="7" length="55">Altered conscious level  wholly attributable to alcohol</designation>
+        </items>
+    </expansion>
+</valueSetExpansionSet>

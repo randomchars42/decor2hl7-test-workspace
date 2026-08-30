@@ -1,0 +1,5 @@
+<codeSystems>
+    <project ident="hl7de-">
+        <codeSystem ref="2.16.840.1.113883.15.6" name="uicc7" displayName="UICC 7. Auflage" effectiveDate="2011-05-11T00:00:00" language="de-DE"/>
+    </project>
+</codeSystems>

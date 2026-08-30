@@ -1,0 +1,23 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.12.202" name="CDAStructuredBody" displayName="CDA StructuredBody" effectiveDate="2005-09-07T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" sdtc:dummy-1="urn:hl7-org:sdtc" xml:dummy-2="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-4="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">Template CDA StructuredBody (prototype, directly derived from POCD_RM000040 MIF)</desc>
+            <desc language="nl-NL">Template CDA StructuredBody (prototype, direct afgeleid uit POCD_RM000040 MIF)</desc>
+            <desc language="de-DE">Template CDA StructuredBody (Prototyp, direkt abgeleitet aus POCD_RM000040 MIF)</desc>
+            <classification type="cdasectionlevel"/>
+            <element name="hl7:structuredBody" id="2.16.840.1.113883.3.1937.777.1.9.289">
+                <attribute name="classCode" value="DOCBODY" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.290"/>
+                <attribute name="moodCode" value="EVN" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.291"/>
+                <element name="hl7:confidentialityCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.1.9.292">
+                    <!--valueSet name="x_BasicConfidentialityKind"-->
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.16926"/>
+                </element>
+                <element name="hl7:languageCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CS" id="2.16.840.1.113883.3.1937.777.1.9.293">
+                    <!--valueSet name="HumanLanguage"-->
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.11526"/>
+                </element>
+                <!--contains name="CDASection"-->
+                <element name="hl7:component" minimumMultiplicity="1" maximumMultiplicity="*" contains="2.16.840.1.113883.10.12.201" id="2.16.840.1.113883.3.1937.777.1.9.294">
+                    <attribute name="typeCode" value="COMP" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.295"/>
+                    <attribute name="contextConductionInd" datatype="bl" value="true" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.296"/>
+                </element>
+            </element>
+        </template>

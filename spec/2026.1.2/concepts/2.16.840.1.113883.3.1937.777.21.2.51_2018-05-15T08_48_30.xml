@@ -1,0 +1,23 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.777.21.1.1" effectiveDate="2018-05-07T19:19:12" statusCode="draft" versionLabel="ASIC Dataset" prefix="asic-" shortName="asicdataset" iddisplay="asic-dataset-1" url="http://art-decor.org/decor/services/" ident="asic-"><!--
+ This is a view of the dataset "ASIC-Dataset" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">ASIC-Dataset</name>
+    <desc language="de-DE"/>
+    <concept id="2.16.840.1.113883.3.1937.777.21.2.51" effectiveDate="2018-05-15T08:48:30" statusCode="draft" type="item" iddisplay="asic-dataelement-51">
+        <implementation markdown="Herzfrequenz HF&#xA;/min"/>
+        <name language="de-DE" lastTranslated="2018-08-21T09:40:21">Herzfrequenz</name>
+        <desc language="de-DE" lastTranslated="2018-08-21T09:40:38">Herzfrequenz HF<br clear="none"/>/min<br clear="none"/>
+        </desc>
+        <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.777.24.2.212" flexibility="2018-07-20T14:21:57" prefix="mide-" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" iType="group" iEffectiveDate="2018-07-20T14:21:57" iStatusCode="draft" refdisplay="mide-dataelement-212">
+            <name language="de-DE" lastTranslated="2019-02-07T13:00:12">Monitoring und Vitaldaten </name>
+            <name language="en-US" lastTranslated="2018-10-01T15:05:32">Monitoring data</name>
+        </relationship>
+        <valueDomain type="quantity">
+            <property unit="/min"/>
+            <example type="neutral">70 {beats}/min</example>
+        </valueDomain>
+        <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.51" conceptFlexibility="2018-05-15T08:48:30" code="8867-4" codeSystem="2.16.840.1.113883.6.1" displayName="Heart rate" effectiveDate="2018-11-21T10:55:19" codeSystemName="Logical Observation Identifier Names and Codes"/>
+    </concept>
+</dataset>

@@ -1,0 +1,75 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:pharmhl7="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.21.9.1" name="Useperiod" displayName="UV Use Period" effectiveDate="2023-01-30T09:55:27" statusCode="draft" versionLabel="2023" lastModifiedDate="2023-01-30T10:02:40" url="http://art-decor.org/decor/services/" ident="pharmcda-" pharmhl7:dummy-1="urn:hl7-org:pharm" xml:dummy-2="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-4="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">This element encodes the start and stop time of the medication regimen. This is an interval of time (xsi:type='IVL_TS'), and must be specified as shown. This is an additional constraint placed upon CDA Release 2.0 by this profile, and simplifies the exchange of start/stop and frequency information between EMR systems.</desc>
+            <classification type="cdaentrylevel"/>
+            <choice minimumMultiplicity="1" maximumMultiplicity="1">
+                <desc language="en-US">The effectiveTime element encodes the use period of the medication, it is always expressed as an interval of time.<br clear="none"/>It may be expressed using the low and high OR with the width element.<br clear="none"/>The first is used to indicate a specified interval (e.g. from march 15th, 2017); the latter for indicating a 'floating' period (e.g. 2
+                    weeks).</desc>
+                <element name="hl7:effectiveTime[hl7:low | hl7:high][not(hl7:width)]" datatype="IVL_TS" minimumMultiplicity="0" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.3.1937.777.15.9.10703">
+                    <desc language="en-US">
+                <b>Case 1: specified interval</b>
+                        <br clear="none"/>The low and high values of the first effectiveTime element represent the start and stop times for the medication. The low value represents the start time, and the high value represents the stop time. If either the low or the high value is unknown, this shall be recorded by setting the nullFlavor attribute to UNK.<br clear="none"/>
+                        <br clear="none"/>In case of unbounded period (continuous therapy) the high element will be valued with the nullFlavor attribute to NA.<br clear="none"/>
+                        <br clear="none"/>The high value records the end of the medication regime according to the information provided in the prescription or order. For example, if the prescription is for enough medication to last 30 days, then the high value should contain a date that is 30 days later then the low value. The rationale is that a provider, seeing a prescription that has not been
+                        refilled would normally assume that the medication is no longer being taken, even if the intent of the treatment plan is to continue the medication indefinitely.</desc>
+                    <example caption="Known Interval">
+                        <effectiveTime type="IVL_TS">
+                            <low value="20130321"/>
+                            <high value="20140321"/>
+                        </effectiveTime>
+                    </example>
+                    <example caption="Information not available about the period">
+                        <effectiveTime type="IVL_TS" nullFlavor="NI"/>
+                    </example>
+                    <example caption="Unknown end date">
+                        <effectiveTime type="IVL_TS">
+                            <low value="20130321"/>
+                            <high nullFlavor="UNK"/>
+                        </effectiveTime>
+                    </example>
+                    <example caption="continous therapy">
+                        <effectiveTime type="IVL_TS">
+                            <low value="20130321"/>
+                            <high nullFlavor="NA"/>
+                        </effectiveTime>
+                    </example>
+                    <attribute name="nullFlavor" datatype="cs" isOptional="true" id="2.16.840.1.113883.3.1937.777.15.9.10704"/>
+                    <element name="hl7:low" datatype="IVXB_TS" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10705"/>
+                    <element name="hl7:high" datatype="IVXB_TS" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10706"/>
+                </element>
+                <element name="hl7:effectiveTime[hl7:width][not(hl7:low|hl7:high)]" datatype="IVL_TS" minimumMultiplicity="0" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.3.1937.777.15.9.10707">
+                    <desc language="en-US">
+                <b>Case 2: 'floating' period:</b>
+                        <br clear="none"/>The width element is used to specify a period of (actual or intended) administration that is not anchored to any specific date (e.g. a two weeks therapy)</desc>
+                    <example caption="2 week period">
+                        <effectiveTime type="IVL_TS">
+                            <width value="2" unit="w"/>
+                        </effectiveTime>
+                    </example>
+                    <element name="hl7:low" conformance="NP" id="2.16.840.1.113883.3.1937.777.15.9.10708"/>
+                    <element name="hl7:high" conformance="NP" id="2.16.840.1.113883.3.1937.777.15.9.10980"/>
+                    <element name="hl7:center" conformance="NP" id="2.16.840.1.113883.3.1937.777.15.9.10981"/>
+                    <element name="hl7:width" datatype="PQ" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.13.9.122">
+                        <attribute name="unit" datatype="cs" id="2.16.840.1.113883.3.1937.777.13.9.123">
+                            <vocabulary valueSet="2.16.840.1.113883.11.21.1" flexibility="dynamic"/>
+                        </attribute>
+                    </element>
+                </element>
+                <element name="hl7:effectiveTime[hl7:low | hl7:width][not(hl7:high)]" datatype="IVL_TS" minimumMultiplicity="0" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.3.1937.777.15.9.10982">
+                    <desc language="en-US">
+                <b>Case 3: anchored period:</b>
+                        <br clear="none"/>The width element is used to specify a period of (actual or intended) administration anchored to a specific date (e.g. a two weeks therapy starting today)</desc>
+                    <example caption="2 week period starting on 2013-03-21">
+                        <effectiveTime type="IVL_TS">
+                            <low value="20130321"/>
+                            <width value="2" unit="w"/>
+                        </effectiveTime>
+                    </example>
+                    <element name="hl7:low" datatype="IVXB_TS" minimumMultiplicity="0" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.3.1937.777.15.9.10983"/>
+                    <element name="hl7:width" datatype="PQ" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10984">
+                        <attribute name="unit" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10985">
+                            <vocabulary valueSet="2.16.840.1.113883.11.21.1" flexibility="dynamic"/>
+                        </attribute>
+                    </element>
+                </element>
+            </choice>
+        </template>

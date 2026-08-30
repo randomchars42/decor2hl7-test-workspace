@@ -1,0 +1,177 @@
+<result xmlns:json="http://www.json.org">
+    <template id="2.16.840.1.113883.10.20.22.4.7" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:local="http://art-decor.org/local" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.20.22.4.7" hl7:dummy-default="urn:hl7-org:v3" local:dummy-2="http://art-decor.org/local" displayName="Allergy - Intolerance Observation (V2)" cda:dummy-5="urn:hl7-org:v3" xml:dummy-3="http://www.w3.org/XML/1998/namespace" url="http://art-decor.org/decor/services/" xsi:dummy-6="http://www.w3.org/2001/XMLSchema-instance" versionLabel="2.1" isClosed="false" ident="ccda-" name="Allergy-IntoleranceObservationV2" statusCode="draft" sdtc:dummy-1="urn:hl7-org:sdtc" effectiveDate="2014-06-09T00:00:00">
+            <desc language="en-US">This template reflects a discrete observation about a patient's allergy or intolerance. Because it is a discrete observation, it will have a statusCode of "completed". The effectiveTime, also referred to as the "biologically relevant time" is the time at which the observation holds for the patient. For a provider seeing a patient in the clinic today, observing a
+                history of penicillin allergy that developed five years ago, the effectiveTime is five years ago. The effectiveTime of the Allergy - Intolerance Observation is the definitive indication of whether or not the underlying allergy/intolerance is resolved. If known to be resolved, then an effectiveTime/high would be present. If the date of resolution is not known, then
+                effectiveTime/high will be present with a nullFlavor of "UNK". The agent responsible for an allergy or adverse reaction is not always a manufactured material (for example, food allergies), nor is it necessarily consumed. The following constraints reflect limitations in the base CDA R2 specification, and should be used to represent any type of responsible agent, i.e., use
+                playingEntity classCode = "MMAT" for all agents, manufactured or not.</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.303" tmname="CDAObservation" tmdisplayName="CDA Observation" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <relationship type="VERSION" template="2.16.840.1.113883.10.20.22.4.7" flexibility="2013-01-31T00:00:00" tmid="2.16.840.1.113883.10.20.22.4.7" tmname="Allergy-IntoleranceObservation" tmdisplayName="Allergy - Intolerance Observation" tmeffectiveDate="2013-01-31T00:00:00" tmstatusCode="draft" tmversionLabel="1.1" url="http://art-decor.org/decor/services/" ident="ccda-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <element name="cda:observation" id="2.16.840.1.113883.3.1937.99.3.9.3234">
+                <item original="false" label="Allergy-IntoleranceObservationV2"/>
+                <attribute name="classCode" value="OBS" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.3235">
+                    <desc language="en-US">SHALL contain exactly one [1..1] @classCode="OBS" Observation (CodeSystem: HL7ActClass urn:oid:2.16.840.1.113883.5.6 STATIC) (CONF:1098-7379).</desc>
+                    <item label="CONF:1098-7379"/>
+                </attribute>
+                <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.3236">
+                    <desc language="en-US">SHALL contain exactly one [1..1] @moodCode="EVN" Event (CodeSystem: ActMood urn:oid:2.16.840.1.113883.5.1001 STATIC) (CONF:1098-7380).</desc>
+                    <item label="CONF:1098-7380"/>
+                </attribute>
+                <attribute name="negationInd" isOptional="true" datatype="bl" id="2.16.840.1.113883.3.1937.99.3.9.3237">
+                    <desc language="en-US">MAY contain zero or one [0..1] @negationInd (CONF:1098-31526).</desc>
+                    <item label="CONF:1098-31526"/>
+                </attribute>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                    <desc language="en-US">C-CDA R1.1 templateId root without an extension</desc>
+                    <item label="CONF:1198-32936"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.22.4.7" isOptional="false" datatype="uid"/>
+                </element>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.3238">
+                    <desc language="en-US">SHALL contain exactly one [1..1] templateId (CONF:1098-7381) such that it</desc>
+                    <item label="CONF:1098-7381"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.22.4.7" isOptional="false" datatype="uid" id="2.16.840.1.113883.3.1937.99.3.9.3239">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.22.4.7" (CONF:1098-10488).</desc>
+                        <item label="CONF:1098-10488"/>
+                    </attribute>
+                    <attribute name="extension" value="2014-06-09" isOptional="false" datatype="st" id="2.16.840.1.113883.3.1937.99.3.9.3240">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @extension="2014-06-09" (CONF:1098-32526).</desc>
+                        <item label="CONF:1098-32526"/>
+                    </attribute>
+                </element>
+                <element name="cda:id" datatype="II" minimumMultiplicity="1" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.3241">
+                    <desc language="en-US">SHALL contain at least one [1..*] id (CONF:1098-7382).</desc>
+                    <item label="CONF:1098-7382"/>
+                </element>
+                <element name="cda:code" datatype="CD" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.3242">
+                    <desc language="en-US">SHALL contain exactly one [1..1] code (CONF:1098-15947).</desc>
+                    <item label="CONF:1098-15947"/>
+                    <vocabulary code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+                </element>
+                <element name="cda:statusCode" datatype="CS" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.3243">
+                    <desc language="en-US">SHALL contain exactly one [1..1] statusCode (CONF:1098-19084).</desc>
+                    <item label="CONF:1098-19084"/>
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="cda:effectiveTime" datatype="IVL_TS" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.3244">
+                    <desc language="en-US">SHALL contain exactly one [1..1] effectiveTime (CONF:1098-7387).</desc>
+                    <item label="CONF:1098-7387"/>
+                    <element name="cda:low" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.3245">
+                        <desc language="en-US">This effectiveTime SHALL contain exactly one [1..1] low (CONF:1098-31538).</desc>
+                        <item label="CONF:1098-31538"/>
+                    </element>
+                    <element name="cda:high" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.3246">
+                        <desc language="en-US">This effectiveTime MAY contain zero or one [0..1] high (CONF:1098-31539).</desc>
+                        <item label="CONF:1098-31539"/>
+                    </element>
+                </element>
+                <element name="cda:value" datatype="CD" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.3247">
+                    <desc language="en-US">SHALL contain exactly one [1..1] value with @xsi:type="CD", where the code SHALL be selected from ValueSet Allergy and Intolerance Type urn:oid:2.16.840.1.113883.3.88.12.3221.6.2 DYNAMIC (CONF:1098-7390).</desc>
+                    <item label="CONF:1098-7390"/>
+                    <vocabulary valueSet="2.16.840.1.113883.3.88.12.3221.6.2" vsid="2.16.840.1.113883.3.88.12.3221.6.2" vsname="AllergyAdverseEventType" vsdisplayName="Allergy/Adverse Event Type" vseffectiveDate="2016-06-23T00:00:00" vsstatusCode="final" linkedartefactmissing="false"/>
+                </element>
+                <element name="cda:author" contains="2.16.840.1.113883.10.20.22.4.119" flexibility="2015-08-13T00:00:00" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.3248" tmid="2.16.840.1.113883.10.20.22.4.119" tmname="AuthorParticipation" tmeffectiveDate="2015-08-13T00:00:00" tmstatusCode="draft" tmdisplayName="Author Participation" tmversionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-" linkedartefactmissing="false">
+                    <desc language="en-US">SHOULD contain zero or more [0..*] Author Participation (identifier: urn:oid:2.16.840.1.113883.10.20.22.4.119) (CONF:1098-31143).</desc>
+                    <item label="CONF:1098-31143"/>
+                </element>
+                <element name="cda:participant" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.3249">
+                    <desc language="en-US">SHALL contain exactly one [1..1] participant (CONF:1098-7402) such that it</desc>
+                    <item label="CONF:1098-7402"/>
+                    <attribute name="typeCode" value="CSM" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.3250">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @typeCode="CSM" Consumable (CodeSystem: HL7ParticipationType urn:oid:2.16.840.1.113883.5.90 STATIC) (CONF:1098-7403).</desc>
+                        <item label="CONF:1098-7403"/>
+                    </attribute>
+                    <element name="cda:participantRole" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.3251">
+                        <desc language="en-US">SHALL contain exactly one [1..1] participantRole (CONF:1098-7404).</desc>
+                        <item label="CONF:1098-7404"/>
+                        <attribute name="classCode" value="MANU" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.3252">
+                            <desc language="en-US">This participantRole SHALL contain exactly one [1..1] @classCode="MANU" Manufactured Product (CodeSystem: RoleClass urn:oid:2.16.840.1.113883.5.110 STATIC) (CONF:1098-7405).</desc>
+                            <item label="CONF:1098-7405"/>
+                        </attribute>
+                        <element name="cda:playingEntity" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.3253">
+                            <desc language="en-US">This participantRole SHALL contain exactly one [1..1] playingEntity (CONF:1098-7406).</desc>
+                            <item label="CONF:1098-7406"/>
+                            <attribute name="classCode" value="MMAT" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.3254">
+                                <desc language="en-US">This playingEntity SHALL contain exactly one [1..1] @classCode="MMAT" Manufactured Material (CodeSystem: EntityClass urn:oid:2.16.840.1.113883.5.41 STATIC) (CONF:1098-7407).</desc>
+                                <item label="CONF:1098-7407"/>
+                            </attribute>
+                            <element name="cda:code" datatype="CD" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.3255">
+                                <desc language="en-US">This playingEntity SHALL contain exactly one [1..1] code, which SHALL be selected from ValueSet Substance-Reactant for Intolerance urn:oid:2.16.840.1.113762.1.4.1010.1 DYNAMIC (CONF:1098-7419).</desc>
+                                <item label="CONF:1098-7419"/>
+                                <vocabulary valueSet="2.16.840.1.113762.1.4.1010.1" vsid="2.16.840.1.113762.1.4.1010.1" vsname="SubstanceReactantforIntolerance" vsdisplayName="Substance-Reactant for Intolerance" vseffectiveDate="2017-10-04T20:28:38" vsstatusCode="draft" linkedartefactmissing="false"/>
+                            </element>
+                        </element>
+                    </element>
+                </element>
+                <element name="cda:entryRelationship" contains="2.16.840.1.113883.10.20.22.4.9" flexibility="2014-06-09T00:00:00" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.3256" tmid="2.16.840.1.113883.10.20.22.4.9" tmname="ReactionObservationV2" tmdisplayName="Reaction Observation (V2)" tmeffectiveDate="2014-06-09T00:00:00" tmstatusCode="draft" tmversionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-" linkedartefactmissing="false">
+                    <item label="CONF:1098-7447"/>
+                    <attribute name="typeCode" value="MFST" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.3257">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @typeCode="MFST" Is Manifestation of (CodeSystem: HL7ActRelationshipType urn:oid:2.16.840.1.113883.5.1002 STATIC) (CONF:1098-7907).</desc>
+                        <item label="CONF:1098-7907"/>
+                    </attribute>
+                    <attribute name="inversionInd" value="true" isOptional="false" datatype="bl" id="2.16.840.1.113883.3.1937.99.3.9.3258">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @inversionInd="true" True (CONF:1098-7449).</desc>
+                        <item label="CONF:1098-7449"/>
+                    </attribute>
+                </element>
+                <element name="cda:entryRelationship" contains="2.16.840.1.113883.10.20.22.4.8" flexibility="2014-06-09T00:00:00" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.3259" tmid="2.16.840.1.113883.10.20.22.4.8" tmname="SeverityObservationV2" tmdisplayName="Severity Observation (V2)" tmeffectiveDate="2014-06-09T00:00:00" tmstatusCode="draft" tmversionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-" linkedartefactmissing="false">
+                    <item label="CONF:1098-9961"/>
+                    <attribute name="typeCode" value="SUBJ" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.3260">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @typeCode="SUBJ" Has Subject (CodeSystem: HL7ActRelationshipType urn:oid:2.16.840.1.113883.5.1002 STATIC) (CONF:1098-9962).</desc>
+                        <item label="CONF:1098-9962"/>
+                    </attribute>
+                    <attribute name="inversionInd" value="true" isOptional="false" datatype="bl" id="2.16.840.1.113883.3.1937.99.3.9.3261">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @inversionInd="true" True (CONF:1098-9964).</desc>
+                        <item label="CONF:1098-9964"/>
+                    </attribute>
+                    <constraint language="en-US">
+                        <span style="color: rgb(128, 128, 128); font-family: Verdana, Arial, sans-serif; font-size: 12px;">Use of the Severity Observation at this level of the Allergy-intolerance template is deprecated. It SHOULD NOT be used here.</span>
+                        <br clear="none"/>
+                    </constraint>
+                </element>
+                <element name="cda:entryRelationship" contains="2.16.840.1.113883.10.20.22.4.145" flexibility="2015-08-13T00:00:00" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.3262" tmid="2.16.840.1.113883.10.20.22.4.145" tmname="CriticalityObservation" tmdisplayName="Criticality Observation" tmeffectiveDate="2015-08-13T00:00:00" tmstatusCode="draft" tmversionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-" linkedartefactmissing="false">
+                    <item label="CONF:1098-32910"/>
+                    <attribute name="typeCode" value="SUBJ" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.3263">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @typeCode="SUBJ" Has Subject (CodeSystem: HL7ActRelationshipType urn:oid:2.16.840.1.113883.5.1002) (CONF:1098-32911).</desc>
+                        <item label="CONF:1098-32911"/>
+                    </attribute>
+                    <attribute name="inversionInd" value="true" isOptional="false" datatype="bl" id="2.16.840.1.113883.3.1937.99.3.9.3264">
+                        <desc language="en-US">
+                            <span style="font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px;">SHALL contain exactly one [1..1] @inversionInd="true" True (CONF:1098-32912).</span>
+                        </desc>
+                        <item label="CONF:1098-32912"/>
+                    </attribute>
+                </element>
+                <assert role="error" test="not(hl7:entryRelationship/hl7:observation/hl7:code[@code='SEV'])">Use of the Severity Observation at this level of the Allergy-intolerance template is deprecated. It SHOULD NOT be used here.</assert>
+            </element>
+            <staticAssociations/>
+            <ref type="contains" prefix="bccdapilot-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.3.1937.99.61.26.10.61" name="AllergyConcernActV3" displayName="Allergy Concern Act (V3)" effectiveDate="2019-03-09T13:34:13" statusCode="draft" versionLabel="2.1" ident="bccdapilot-"/>
+            <ref type="dependency" prefix="bccdapilot-" flexibility="2015-08-01T00:00:00" id="2.16.840.1.113883.3.1937.99.61.26.10.62" name="AllergiesandIntolerancesSectionentriesoptionalV3" displayName="Allergies and Intolerances Section (entries optional) (V3)" statusCode="rejected" versionLabel="2.1" effectiveDate="2019-03-09T13:37:11" ident="bccdapilot-"/>
+            <ref type="dependency" prefix="bccdapilot-" flexibility="2015-08-01T00:00:00" id="2.16.840.1.113883.3.1937.99.61.26.10.112" name="AdverseEventsSectionentriesoptionalV3" displayName="Adverse Events Section (entries optional) (V3)" statusCode="rejected" versionLabel="2.1" effectiveDate="2019-03-25T06:01:02" ident="bccdapilot-"/>
+            <ref type="dependency" prefix="slatam-" flexibility="2015-08-01T00:00:00" id="2.16.840.1.113883.3.1937.99.61.28.10.3" name="CDAConsulta" displayName="CDA de Consulta" effectiveDate="2017-04-22T23:20:01" statusCode="draft" versionLabel="1" ident="slatam-"/>
+            <ref type="contains" prefix="shl7it-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.3.1937.99.61.30.10.54" name="PCHealthConcernAct" displayName="Health Concern Act (harmonized)" statusCode="cancelled" versionLabel="0.1" effectiveDate="2020-10-08T10:55:41" ident="shl7it-"/>
+            <ref type="contains" prefix="sxehealth-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.3.1937.99.61.67.10.24" name="XeHAlertAct" displayName="XeH Alert Act" statusCode="cancelled" effectiveDate="2021-04-20T10:00:04" ident="sxehealth-"/>
+            <ref type="contains" prefix="sxehealth-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.3.1937.99.61.67.10.25" name="XeHRiskConcernAct" displayName="XeH Risk Concern Act" statusCode="cancelled" effectiveDate="2021-04-20T10:06:56" ident="sxehealth-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2015-08-01T00:00:00" id="2.16.840.1.113883.10.20.22.1.2" name="ContinuityofCareDocumentCCDV3" displayName="Continuity of Care Document (CCD) (V3)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2015-08-01T00:00:00" id="2.16.840.1.113883.10.20.22.1.3" name="HistoryandPhysicalV3" displayName="History and Physical (V3)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2015-08-01T00:00:00" id="2.16.840.1.113883.10.20.22.1.4" name="ConsultationNoteV3" displayName="Consultation Note (V3)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2015-08-01T00:00:00" id="2.16.840.1.113883.10.20.22.1.6" name="ProcedureNoteV3" displayName="Procedure Note (V3)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2015-08-01T00:00:00" id="2.16.840.1.113883.10.20.22.1.8" name="DischargeSummaryV3" displayName="Discharge Summary (V3)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2015-08-01T00:00:00" id="2.16.840.1.113883.10.20.22.1.9" name="ProgressNoteV3" displayName="Progress Note (V3)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2015-08-01T00:00:00" id="2.16.840.1.113883.10.20.22.1.13" name="TransferSummaryV2" displayName="Transfer Summary (V2)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2015-08-01T00:00:00" id="2.16.840.1.113883.10.20.22.1.14" name="ReferralNoteV2" displayName="Referral Note (V2)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2015-08-01T00:00:00" id="2.16.840.1.113883.10.20.22.1.15" name="CarePlanV2" displayName="Care Plan (V2)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2015-08-01T00:00:00" id="2.16.840.1.113883.10.20.22.2.6" name="AllergiesandIntolerancesSectionentriesoptionalV3" effectiveDate="2015-08-01T00:00:00" statusCode="draft" displayName="Allergies and Intolerances Section (entries optional) (V3)" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2015-08-01T00:00:00" id="2.16.840.1.113883.10.20.22.2.6.1" name="AllergiesandIntolerancesSectionentriesrequiredV3" displayName="Allergies and Intolerances Section (entries required) (V3)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="dependency" prefix="ccda-" flexibility="2015-08-01T00:00:00" id="2.16.840.1.113883.10.20.22.2.58" name="HealthConcernsSectionV2" displayName="Health Concerns Section (V2)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <uses type="contains" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.4.8" name="SeverityObservationV2" displayName="Severity Observation (V2)" effectiveDate="2014-06-09T00:00:00" statusCode="draft" versionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-"/>
+            <uses type="contains" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.4.9" name="ReactionObservationV2" displayName="Reaction Observation (V2)" effectiveDate="2014-06-09T00:00:00" statusCode="draft" versionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-"/>
+            <ref type="contains" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.4.30" name="AllergyConcernActV3" effectiveDate="2015-08-01T00:00:00" statusCode="draft" displayName="Allergy Concern Act (V3)" versionLabel="2.1" ident="ccda-"/>
+            <uses type="contains" prefix="ccda-" flexibility="2015-08-13T00:00:00" id="2.16.840.1.113883.10.20.22.4.119" name="AuthorParticipation" effectiveDate="2015-08-13T00:00:00" statusCode="draft" displayName="Author Participation" versionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-"/>
+            <ref type="contains" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.4.132" name="HealthConcernActV2" displayName="Health Concern Act (V2)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <ref type="contains" prefix="ccda-" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.10.20.22.4.136" name="RiskConcernActV2" displayName="Risk Concern Act (V2)" effectiveDate="2015-08-01T00:00:00" statusCode="draft" versionLabel="2.1" ident="ccda-"/>
+            <uses type="contains" prefix="ccda-" flexibility="2015-08-13T00:00:00" id="2.16.840.1.113883.10.20.22.4.145" name="CriticalityObservation" displayName="Criticality Observation" effectiveDate="2015-08-13T00:00:00" statusCode="draft" versionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-"/>
+        </template>
+    </template>
+</result>

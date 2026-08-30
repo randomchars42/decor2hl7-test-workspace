@@ -1,0 +1,4 @@
+<codeSystem xmlns:json="http://www.json.org" id="2.16.840.1.113883.6.73" effectiveDate="2025-01-07T00:00:00" statusCode="final" versionLabel="2025" experimental="true" name="atc_classification_system" displayName="ATC_classification_system">
+    <copyright json:array="true" language="en-US">License text</copyright>
+    <issueAssociation json:array="true" count="0"/>
+</codeSystem>

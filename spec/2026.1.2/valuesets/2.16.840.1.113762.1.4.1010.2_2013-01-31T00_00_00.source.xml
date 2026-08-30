@@ -1,0 +1,26 @@
+<valueSet xmlns:json="http://www.json.org" id="2.16.840.1.113762.1.4.1010.2" name="ClinicalSubstance" displayName="Clinical Substance" effectiveDate="2013-01-31T00:00:00" statusCode="final" url="http://art-decor.org/decor/services/" ident="ccda-">
+    <desc json:array="true" language="en-US">All substances that may need to be represented in the context of health care related activities. This value set is quite broad in coverage and includes concepts that may never be needed in a health care activity event, particularly the included SNOMED CT concepts. The code system-specific value sets in this grouping value set are intended to provide broad
+                coverage of all kinds of agents, but the expectation for use is that the chosen concept identifier for a substance should be appropriately specific and drawn from the appropriate code system as noted: prescribable medications should use RXNORM concepts, more specific drugs and chemicals should be represented using UNII concepts, and any substances not found in either of those two
+                code systems, should use the appropriate SNOMED CT concept. This overarching grouping value set is intended to support identification of prescribable medications, foods, general substances and environmental entities. &lt;br/&gt;  Value set intensionally defined as a GROUPING made up of: Value Set: Medication Clinical Drug (2.16.840.1.113762.1.4.1010.4) (RxNorm generic and brand codes);
+                Value Set: Unique Ingredient Identifier - Complete Set (2.16.840.1.113883.3.88.12.80.20) (UNII codes); Value Set: Substance Other Than Clinical Drug (2.16.840.1.113762.1.4.1010.9) (SNOMED CT codes).  &lt;p&gt;Valueset Source: &lt;a href="https://vsac.nlm.nih.gov/"&gt;https://vsac.nlm.nih.gov/&lt;/a&gt;&lt;/p&gt;  Priority order for concept determination is RXNORM, UNII, SNOMED CT. Actually a grouper of
+                groupers: GROUPING value set made up of: UNION( Value set: Medication Clinical Drug OID: 2.16.840.1.113762.1.4.1010.4 Value set: Substance Other Than Clinical Drug OID: 2.16.840.1.113762.1.4.1010.9 )  &lt;p/&gt;  Purpose &lt;br/&gt;  Clinical Focus Clinical Focus:Any substance that can be ordered or is included in a clinical record. This is not restricted to medications.  &lt;p/&gt;  Data Element Scope
+                Data Element Scope.:Clinical Substance ManufacturedProduct/manufacturedMaterial/code/translation/  &lt;p/&gt;  Inclusion Criteria Inclusion Criteria.:As defined in grouped value sets  &lt;p/&gt;  Exclusion Criteria Exclusion Criteria.:No drug classes" </desc>
+    <sourceCodeSystem json:array="true" id="2.16.840.1.113883.4.9" identifierName="The Unique Ingredient Identifier (UNII) generated from the FDA Substance Registration System (SRS)." canonicalUri="http://fdasis.nlm.nih.gov" canonicalUriDSTU2="http://fdasis.nlm.nih.gov" canonicalUriSTU3="http://fdasis.nlm.nih.gov" canonicalUriR4="http://fdasis.nlm.nih.gov" canonicalUriR4B="http://fdasis.nlm.nih.gov" canonicalUriR5="http://fdasis.nlm.nih.gov"/>
+    <sourceCodeSystem json:array="true" id="2.16.840.1.113883.6.88" identifierName="RxNorm" canonicalUri="http://www.nlm.nih.gov/research/umls/rxnorm" canonicalUriDSTU2="http://www.nlm.nih.gov/research/umls/rxnorm" canonicalUriSTU3="http://www.nlm.nih.gov/research/umls/rxnorm" canonicalUriR4="http://www.nlm.nih.gov/research/umls/rxnorm" canonicalUriR4B="http://www.nlm.nih.gov/research/umls/rxnorm" canonicalUriR5="http://www.nlm.nih.gov/research/umls/rxnorm" context="external/hl7intl/v3/v3-rxNorm"/>
+    <sourceCodeSystem json:array="true" id="2.16.840.1.113883.6.96" identifierName="SNOMED Clinical Terms" canonicalUri="http://snomed.info/sct" canonicalUriDSTU2="http://snomed.info/sct" canonicalUriSTU3="http://snomed.info/sct" canonicalUriR4="http://snomed.info/sct" canonicalUriR4B="http://snomed.info/sct" canonicalUriR5="http://snomed.info/sct"/>
+    <publishingAuthority json:array="true" name="HL7 International" inherited="project">
+        <addrLine json:array="true">Health Level Seven International</addrLine>
+        <addrLine json:array="true">3300 Washtenaw Avenue</addrLine>
+        <addrLine json:array="true">Suite 227</addrLine>
+        <addrLine json:array="true">Ann Arbor, MI 48104- 4261</addrLine>
+        <addrLine json:array="true">USA</addrLine>
+        <addrLine json:array="true">T +1 734 677 7777 </addrLine>
+        <addrLine json:array="true">F +1 734 677 6622</addrLine>
+        <addrLine json:array="true">E info@hl7.org</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="include" codeSystem="2.16.840.1.113883.4.9"/>
+    <items json:array="true" is="include" codeSystem="2.16.840.1.113883.6.88"/>
+    <items json:array="true" is="include" codeSystem="2.16.840.1.113883.6.96"/>
+</valueSet>

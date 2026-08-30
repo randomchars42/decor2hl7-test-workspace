@@ -1,0 +1,22 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.12.322" name="CDASpecimen" displayName="CDA Specimen" effectiveDate="2005-09-07T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" sdtc:dummy-1="urn:hl7-org:sdtc" xml:dummy-2="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-4="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">Template CDA Specimen (prototype, directly derived from POCD_RM000040 MIF)</desc>
+            <desc language="nl-NL">Template CDA Specimen (prototype, direct afgeleid uit POCD_RM000040 MIF)</desc>
+            <desc language="de-DE">Template CDA Specimen (Prototyp, direkt abgeleitet aus POCD_RM000040 MIF)</desc>
+            <classification type="cdaentrylevel"/>
+            <attribute name="typeCode" value="SPC" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.668"/>
+            <element name="hl7:specimenRole" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.1.9.669">
+                <attribute name="classCode" value="SPEC" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.670"/>
+                <element name="hl7:id" minimumMultiplicity="0" maximumMultiplicity="*" datatype="II" id="2.16.840.1.113883.3.1937.777.1.9.671"/>
+                <element name="hl7:specimenPlayingEntity" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.1.9.672">
+                    <attribute name="classCode" value="ENT" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.673"/>
+                    <attribute name="determinerCode" value="INSTANCE" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.674"/>
+                    <element name="hl7:code" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.1.9.675">
+                        <!--valueSet name="EntityCode"-->
+                        <vocabulary valueSet="2.16.840.1.113883.1.11.16040"/>
+                    </element>
+                    <element name="hl7:quantity" minimumMultiplicity="0" maximumMultiplicity="*" datatype="PQ" id="2.16.840.1.113883.3.1937.777.1.9.676"/>
+                    <element name="hl7:name" minimumMultiplicity="0" maximumMultiplicity="*" datatype="PN" id="2.16.840.1.113883.3.1937.777.1.9.677"/>
+                    <element name="hl7:desc" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.3.1937.777.1.9.678"/>
+                </element>
+            </element>
+        </template>

@@ -1,0 +1,59 @@
+<result xmlns:json="http://www.json.org">
+    <template id="2.16.840.1.113883.10.12.203" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.12.203" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="CDA NonXMLBody" cda:dummy-4="urn:hl7-org:v3" ident="ad1bbr-" name="CDANonXMLBody" xml:dummy-2="http://www.w3.org/XML/1998/namespace" statusCode="active" sdtc:dummy-1="urn:hl7-org:sdtc" url="http://art-decor.org/decor/services/" effectiveDate="2005-09-07T00:00:00">
+            <desc language="en-US">Template CDA NonXMLBody (prototype, directly derived from POCD_RM000040 MIF)</desc>
+            <desc language="nl-NL">Template CDA NonXMLBody (prototype, direct afgeleid uit POCD_RM000040 MIF)</desc>
+            <desc language="de-DE">Template CDA NonXMLBody (Prototyp, direkt abgeleitet aus POCD_RM000040 MIF)</desc>
+            <classification type="cdasectionlevel"/>
+            <element name="hl7:nonXMLBody" id="2.16.840.1.113883.3.1937.777.1.9.297">
+                <item original="false" label="CDANonXMLBody"/>
+                <attribute name="classCode" value="DOCBODY" isOptional="true" datatype="cs" id="2.16.840.1.113883.3.1937.777.1.9.298"/>
+                <attribute name="moodCode" value="EVN" isOptional="true" datatype="cs" id="2.16.840.1.113883.3.1937.777.1.9.299"/>
+                <element name="hl7:text" minimumMultiplicity="1" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.3.1937.777.1.9.300">
+                    <item original="false" label="CDANonXMLBody"/>
+                </element>
+                <element name="hl7:confidentialityCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.1.9.301">
+                    <item original="false" label="CDANonXMLBody"/>
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.16926" vsid="2.16.840.1.113883.1.11.16926" vsname="x_BasicConfidentialityKind" vsdisplayName="x_BasicConfidentialityKind" vseffectiveDate="2014-03-26T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1360-20160323" linkedartefactmissing="false"/>
+                </element>
+                <element name="hl7:languageCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CS" id="2.16.840.1.113883.3.1937.777.1.9.302">
+                    <item original="false" label="CDANonXMLBody"/>
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.11526" vsid="2.16.840.1.113883.1.11.11526" vsname="HumanLanguage" vsdisplayName="HumanLanguage" vseffectiveDate="2014-03-26T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1360-20160323" linkedartefactmissing="false"/>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="dependency" prefix="dancda-" flexibility="dynamic" id="1.2.208.184.10.1.45" name="CDAClinicalDocument" displayName="DK CDA Header" effectiveDate="2023-07-04T13:57:28" statusCode="draft" versionLabel="2.0" lastModifiedDate="2023-08-08T10:15:04" ident="dancda-"/>
+            <ref type="dependency" prefix="dancda-" flexibility="dynamic" id="1.2.208.184.10.1.46" name="DKPersonalDataCard" displayName="DK Personal Data Card" effectiveDate="2023-08-08T10:15:04" statusCode="draft" versionLabel="3.0" lastModifiedDate="2023-08-08T11:07:56" ident="dancda-"/>
+            <ref type="dependency" prefix="eehrxf-" flexibility="dynamic" id="2.16.840.1.113883.2.51.10.1.2.1" name="XeHCommonHeader" displayName="XeH Header" statusCode="cancelled" effectiveDate="2021-06-30T12:15:42" ident="eehrxf-"/>
+            <ref type="dependency" prefix="eehrxf-" flexibility="dynamic" id="2.16.840.1.113883.2.51.10.4" name="XeHCommonHeader" displayName="XeH Clinical Document" statusCode="active" lastModifiedDate="2023-12-13T10:23:50" versionLabel="1.0" effectiveDate="2021-09-07T16:23:15" ident="eehrxf-"/>
+            <ref type="dependency" prefix="bccdae2e-" flexibility="dynamic" id="2.16.840.1.113883.3.1818.10.1.4" name="BCCDAE2EUnstructuredDocument" displayName="BC CDA E2E Unstructured Document" statusCode="rejected" effectiveDate="2017-04-04T15:33:33" ident="bccdae2e-"/>
+            <ref type="dependency" prefix="bccdae2e-" flexibility="dynamic" id="2.16.840.1.113883.3.1818.10.7.1" name="BCCDAE2EClinicalDocumentHdr" displayName="BC CDA E2E Clinical Document Header" effectiveDate="2017-03-31T00:20:01" statusCode="draft" ident="bccdae2e-"/>
+            <ref type="dependency" prefix="hl7desandbox-" flexibility="dynamic" statusCode="draft" id="2.16.840.1.113883.3.1937.99.61.5.10.900273" name="APSR2" effectiveDate="2014-05-13T11:57:57" displayName="Anatomic Pathology Structured Report" isClosed="false" ident="hl7desandbox-"/>
+            <ref type="dependency" prefix="hl7desandbox-" flexibility="dynamic" statusCode="draft" id="2.16.840.1.113883.3.1937.99.61.5.10.900286" name="QRPH-Ca-DEU" effectiveDate="2014-12-01T15:14:45" displayName="einheitlicher onkologischer Basisdatensatz" isClosed="false" ident="hl7desandbox-"/>
+            <ref type="dependency" prefix="hl7desandbox-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.5.10.900305" name="CDAElectrophysiologyFollowUpReportContent" displayName="IHE Electrophysiology Implant/Explant Report Content (EPRC-IE)" effectiveDate="2015-03-03T16:17:56" statusCode="draft" isClosed="false" ident="hl7desandbox-"/>
+            <ref type="dependency" prefix="sifwy-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.15.10.900202" name="CDAClinicalDocument" displayName="Andrew CDA Test Document" effectiveDate="2015-02-13T20:52:59" statusCode="cancelled" isClosed="false" versionLabel="1.0" ident="sifwy-"/>
+            <ref type="dependency" prefix="sifwy-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.15.10.900205" name="pCSCDAHeader" displayName="pCSCDAHeader" effectiveDate="2015-03-18T14:57:09" statusCode="retired" isClosed="true" versionLabel="2015-01-30" expirationDate="2015-03-19T00:00:00" ident="sifwy-"/>
+            <ref type="dependency" prefix="sifwy-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.15.10.900205" name="pCSCDAHeader" displayName="pCSCDAHeader" effectiveDate="2015-03-19T16:46:00" statusCode="active" isClosed="true" versionLabel="2015-03-19" ident="sifwy-"/>
+            <ref type="dependency" prefix="sifwy-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.15.10.900205" name="pCSCDAHeader" displayName="pCSCDAHeader" effectiveDate="2015-04-28T23:29:35" statusCode="draft" isClosed="true" versionLabel="2015-04-28" ident="sifwy-"/>
+            <ref type="dependency" prefix="sifwy-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.15.10.900208" name="CanadaCDAClinicalDocument" displayName="Canada CDA Header" effectiveDate="2015-04-29T22:30:07" statusCode="draft" isClosed="false" versionLabel="20150429" ident="sifwy-"/>
+            <ref type="dependency" prefix="sfikanta-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.16.10.9" name="CDAClinicalDocument" displayName="CDA ClinicalDocumentTesti" effectiveDate="2019-05-16T11:00:30" statusCode="draft" ident="sfikanta-"/>
+            <ref type="dependency" prefix="sfikanta-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.16.10.10" name="CDAClinicalDocumentMikaTesti" displayName="CDA ClinicalDocumentMikaTesti" effectiveDate="2019-05-16T11:05:40" statusCode="draft" ident="sfikanta-"/>
+            <ref type="dependency" prefix="cagovbc-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.21.10.23" name="PanCandadianHeader-nha-ns" displayName="Pan-Canadian Header Practice" effectiveDate="2019-09-11T01:40:57" statusCode="draft" isClosed="true" versionLabel="0.01" ident="cagovbc-"/>
+            <ref type="dependency" prefix="cagovbc-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.21.10.47" name="NHv2CDA" displayName="NH v2 to CDA Mapping" statusCode="cancelled" isClosed="true" effectiveDate="2019-09-17T01:12:11" ident="cagovbc-"/>
+            <ref type="dependency" prefix="cagovbc-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.21.10.51" name="NH_CDAClinicalDocument_MI_Trial" displayName="BC CDA MedicalImaging" effectiveDate="2020-06-13T00:18:42" statusCode="draft" ident="cagovbc-"/>
+            <ref type="dependency" prefix="bccdapilot-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.26.10.46" name="CDAClinicalDocument" displayName="CDA ClinicalDocument" effectiveDate="2017-03-08T00:38:01" statusCode="draft" ident="bccdapilot-"/>
+            <ref type="dependency" prefix="sdguv-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.38.10.19" name="Darreichungsform" displayName="Darreichungsform" statusCode="cancelled" effectiveDate="2018-02-06T09:41:53" ident="sdguv-"/>
+            <ref type="dependency" prefix="sdguv-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.38.10.20" name="Arzneimittel" displayName="Arzneimittel" statusCode="cancelled" effectiveDate="2018-02-06T09:45:28" ident="sdguv-"/>
+            <ref type="dependency" prefix="smul-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.45.10.16" name="AdipositasStudie" displayName="Adipositas Studie" statusCode="cancelled" effectiveDate="2018-04-24T10:33:11" ident="smul-"/>
+            <ref type="dependency" prefix="sarsenalit-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.66.10.1" name="CDAClinicalDocument" displayName="CDA ClinicalDocument" statusCode="cancelled" effectiveDate="2020-07-31T11:03:27" ident="sarsenalit-"/>
+            <ref type="dependency" prefix="sarsenalit-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.66.10.2" name="CDAClinicalDocumentGreg" displayName="CDA ClinicalDocument" statusCode="retired" versionLabel="GReg" effectiveDate="2020-07-31T16:48:37" ident="sarsenalit-"/>
+            <ref type="dependency" prefix="sxehealth-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.67.10.17" name="CDAClinicalDocument" displayName="CDA ClinicalDocument" effectiveDate="2020-12-09T11:44:45" statusCode="draft" ident="sxehealth-"/>
+            <ref type="dependency" prefix="sxehealth-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.67.10.18" name="XeHSxCommonHeader" displayName="XeH Clinical Document" effectiveDate="2020-12-09T11:45:40" statusCode="draft" ident="sxehealth-"/>
+            <ref type="dependency" prefix="bccdae2e-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.17.10.36" name="BCCDAE2EEMRConversion2" displayName="BC CDA E2E EMR Conversion" statusCode="rejected" effectiveDate="2017-04-02T07:42:02" ident="bccdae2e-"/>
+            <ref type="dependency" prefix="help-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.22.10.1" name="CDAClinicalDocument" displayName="CDA ClinicalDocument" effectiveDate="2018-08-31T08:59:16" statusCode="draft" ident="help-"/>
+            <ref type="dependency" prefix="dancda-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.60.10.4" name="CDAClinicalDocument" displayName="CDA ClinicalDocument" statusCode="cancelled" effectiveDate="2021-08-09T13:22:04" ident="dancda-"/>
+            <ref type="dependency" prefix="ad1bbr-" flexibility="dynamic" id="2.16.840.1.113883.10.12.1" name="CDAClinicalDocument" displayName="CDA ClinicalDocument" effectiveDate="2005-09-07T00:00:00" statusCode="active" ident="ad1bbr-"/>
+            <ref type="include" prefix="ad1bbr-" flexibility="dynamic" id="2.16.840.1.113883.10.12.112" name="CDAcomponent" displayName="CDA component" effectiveDate="2005-09-07T00:00:00" statusCode="active" ident="ad1bbr-"/>
+        </template>
+    </template>
+</result>

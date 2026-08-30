@@ -1,0 +1,18 @@
+<valueSet xmlns:json="http://www.json.org" id="2.16.840.1.113883.1.11.11610" name="x_ActRelationshipDocument" displayName="x_ActRelationshipDocument" statusCode="deprecated" effectiveDate="2017-10-04T17:13:24" url="http://art-decor.org/decor/services/" ident="ccda-">
+    <sourceCodeSystem json:array="true" id="2.16.840.1.113883.5.1002" identifierName="Act Relationship Type" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-ActRelationshipType" canonicalUriDSTU2="http://hl7.org/fhir/v3/ActRelationshipType" canonicalUriSTU3="http://hl7.org/fhir/v3/ActRelationshipType" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-ActRelationshipType" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-ActRelationshipType" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-ActRelationshipType" context="external/hl7intl/v3/v3-ActRelationshipType"/>
+    <publishingAuthority json:array="true" name="HL7 International" inherited="project">
+        <addrLine json:array="true">Health Level Seven International</addrLine>
+        <addrLine json:array="true">3300 Washtenaw Avenue</addrLine>
+        <addrLine json:array="true">Suite 227</addrLine>
+        <addrLine json:array="true">Ann Arbor, MI 48104- 4261</addrLine>
+        <addrLine json:array="true">USA</addrLine>
+        <addrLine json:array="true">T +1 734 677 7777 </addrLine>
+        <addrLine json:array="true">F +1 734 677 6622</addrLine>
+        <addrLine json:array="true">E info@hl7.org</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="concept" code="RPLC" codeSystem="2.16.840.1.113883.5.1002" displayName="Replaces" level="0" type="L"/>
+    <items json:array="true" is="concept" code="XFRM" codeSystem="2.16.840.1.113883.5.1002" codeSystemName="ActRelationshipType" displayName="Transformation" level="0" type="L"/>
+    <items json:array="true" is="concept" code="APND" codeSystem="2.16.840.1.113883.5.1002" displayName="Is appendage" level="0" type="L"/>
+</valueSet>

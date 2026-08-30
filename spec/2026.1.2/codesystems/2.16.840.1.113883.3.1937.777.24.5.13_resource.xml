@@ -1,0 +1,29 @@
+<codeSystems>
+    <project ident="mide-">
+        <codeSystem id="2.16.840.1.113883.3.1937.777.24.5.13" name="MII_Oncology_Praoperative_Drahtmarkierung_durch_Bildgebung_gesteuert" displayName="MII Onkologie: Präoperative Drahtmarkierung durch Bildgebung gesteuert" effectiveDate="2023-08-08T15:47:44" statusCode="draft" lastModifiedDate="2023-08-08T16:18:28" language="de-DE">
+            <desc language="de-DE" lastTranslated="2023-08-08T15:47:44">
+                <p>Es wurde eine präoperative Drahtmarkierung gesteuert durch das angegebene bildgebende Verfahren durchgeführt.</p>
+            </desc>
+            <publishingAuthority name="Konsortium DIFUTURE" inherited="project">
+                <addrLine type="uri">https://difuture.de</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <codedConcept code="M" statusCode="draft" level="0" type="L">
+                    <desc language="de-DE" lastTranslated="2023-08-08T15:48:36">Mammografie</desc>
+                </codedConcept>
+                <codedConcept code="S" statusCode="draft" level="0" type="L">
+                    <desc language="de-DE" lastTranslated="2023-08-08T15:48:36">Sonografie</desc>
+                </codedConcept>
+                <codedConcept code="T" statusCode="draft" level="0" type="L">
+                    <desc language="de-DE" lastTranslated="2023-08-08T15:48:36">MRT</desc>
+                </codedConcept>
+                <codedConcept code="N" statusCode="draft" level="0" type="L">
+                    <desc language="de-DE" lastTranslated="2023-08-08T15:48:36">keine Drahtmarkierung durch Bildgebung</desc>
+                </codedConcept>
+                <codedConcept code="U" statusCode="draft" level="0" type="L">
+                    <desc language="de-DE" lastTranslated="2023-08-08T15:48:36">unbekannt</desc>
+                </codedConcept>
+            </conceptList>
+        </codeSystem>
+    </project>
+</codeSystems>

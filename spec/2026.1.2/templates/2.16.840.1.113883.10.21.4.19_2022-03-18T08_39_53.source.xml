@@ -1,0 +1,9 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:pharmhl7="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.21.4.19" name="UVgeneralizedMedicineClass" displayName="UV Generalized Medicine Class" statusCode="pending" isClosed="false" lastModifiedDate="2023-01-29T21:57:12" versionLabel="R1-STU2-ballot" effectiveDate="2022-03-18T08:39:53" url="http://art-decor.org/decor/services/" ident="pharmcda-" pharmhl7:dummy-1="urn:hl7-org:pharm" xml:dummy-2="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-4="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">UV generalized Medicine Class</desc>
+            <classification type="cdaentrylevel" format="hl7v3xml1"/>
+            <element name="pharmhl7:generalizedMedicineClass" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10940">
+                <attribute name="classCode" value="MMAT" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10941"/>
+                <element name="pharmhl7:code" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10942"/>
+                <element name="pharmhl7:name" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10943"/>
+            </element>
+        </template>

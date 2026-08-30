@@ -1,0 +1,3 @@
+<codeSystem xmlns:json="http://www.json.org" ref="2.16.840.1.113883.3.7.1.1" canonicalUri="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_VERSICHERTENSTATUS" name="KBV_CS_SFHIR_KBV_VERSICHERTENSTATUS" displayName="KBV_CS_SFHIR_KBV_VERSICHERTENSTATUS" language="de-DE" url="http://art-decor.org/decor/services/" ident="kbvde-" external="false">
+    <issueAssociation json:array="true" count="0"/>
+</codeSystem>

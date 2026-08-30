@@ -1,0 +1,93 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.3.1.195.10.67" ident="aktin-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.3.1.195.10.67" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" lastModifiedDate="2024-08-14T18:38:41" versionLabel="2023" isClosed="false" displayName="Medikation" ident="aktin-" name="Medikation" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="draft" url="http://art-decor.org/decor/services/" effectiveDate="2023-12-03T00:00:00">
+            <desc language="en-US" lastTranslated="2023-01-31T19:45:02">Universal Medication Statement: Recording a "medication statement" is an activity that can be performed by a variety of healthcare professionals, or the patient, or non-healthcare professionals. Examples of recording medication statements include taking a patient's medication history, recording reported use of medications
+                where the source of the patient information is from a third party and not the patient e.g. a family member when the patient is unable to communicate their medication history. </desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.21.4.7" flexibility="2023-01-30T08:32:34" tmid="2.16.840.1.113883.10.21.4.7" tmname="UVMedicationstatement" tmdisplayName="UV Medication Statement" tmeffectiveDate="2023-01-30T08:32:34" tmstatusCode="draft" tmversionLabel="2023" url="http://art-decor.org/decor/services/" ident="pharmcda-" linkedartefactmissing="false"/>
+            <relationship type="VERSION" template="2.16.840.1.113883.10.21.4.7" flexibility="2021-08-04T14:09:15" tmid="2.16.840.1.113883.10.21.4.7" tmname="UVMedicationstatement" tmdisplayName="UV Medication Statement" tmstatusCode="pending" tmversionLabel="R1-STU2-ballot" tmeffectiveDate="2021-08-04T14:09:15" url="http://art-decor.org/decor/services/" ident="pharmcda-" linkedartefactmissing="false"/>
+            <relationship type="VERSION" template="2.16.840.1.113883.10.21.4.7" flexibility="2017-05-01T00:00:00" tmid="2.16.840.1.113883.10.21.4.7" tmname="UVMedicationstatement" tmdisplayName="UV Medication Statement" tmstatusCode="pending" tmversionLabel="STU1" tmeffectiveDate="2017-05-01T00:00:00" url="http://art-decor.org/decor/services/" ident="pharmcda-" linkedartefactmissing="false"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.308" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.308" tmname="CDASubstanceAdministration" tmdisplayName="CDA SubstanceAdministration" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <element name="hl7:substanceAdministration" id="2.16.840.1.113883.3.1937.777.15.9.19">
+                <item original="false" label="Medikation"/>
+                <attribute name="classCode" value="SBADM" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.20"/>
+                <attribute name="moodCode" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.21">
+                    <desc language="en-US" lastTranslated="2023-01-31T19:45:02">EVN will be used to record a medication statement where the patient is currently taking or has taken the medication in the past. <br/> INT will be used to record a medication statement where the patient plans to take the medication or be administered the medication in the future.</desc>
+                    <vocabulary code="EVN"/>
+                    <vocabulary code="INT"/>
+                </attribute>
+                <element name="hl7:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.3.1937.777.15.9.22">
+                    <item original="false" label="Medikation"/>
+                    <attribute name="root" value="1.2.276.0.76.3.1.195.10.67" isOptional="false" datatype="uid" id="2.16.840.1.113883.3.1937.777.15.9.23"/>
+                </element>
+                <element name="hl7:id" datatype="II" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.24">
+                    <item original="false" label="Medikation"/>
+                </element>
+                <element name="hl7:code" datatype="CD" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.25">
+                    <item original="false" label="Medikation"/>
+                    <vocabulary code="DRUG" codeSystem="2.16.840.1.113883.5.4"/>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="1" maximumMultiplicity="1" datatype="ED" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631779">
+                    <item original="false" label="Medikation"/>
+                    <element name="hl7:reference" minimumMultiplicity="1" maximumMultiplicity="1" datatype="TEL" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631780">
+                        <item original="false" label="Medikation"/>
+                        <attribute name="value" isOptional="false" id="2.16.840.1.113883.2.6.60.3.9.1631781">
+                            <desc language="de-DE">#med-{generierteID}, z.B.: #med-1</desc>
+                        </attribute>
+                    </element>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CS" id="2.16.840.1.113883.2.6.60.3.9.1631782">
+                    <item original="false" label="Medikation"/>
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.15933" vsid="2.16.840.1.113883.1.11.15933" vsname="ActStatus" vsdisplayName="ActStatus" vseffectiveDate="2014-03-26T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1360-20160323" url="http://art-decor.org/decor/services/" ident="ad2bbr-" linkedartefactmissing="false"/>
+                </element>
+                <element name="hl7:effectiveTime" conformance="NP">
+                    <item original="false" label="Medikation"/>
+                </element>
+                <element name="hl7:routeCode" datatype="CE" strength="example" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.29">
+                    <item original="false" label="Medikation"/>
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.14581" vsid="2.16.840.1.113883.1.11.14581" vsname="RouteOfAdministration" vsdisplayName="RouteOfAdministration" vseffectiveDate="2014-03-26T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1360-20160323" url="http://art-decor.org/decor/services/" ident="ad2bbr-" linkedartefactmissing="false"/>
+                </element>
+                <element name="hl7:approachSiteCode" datatype="CD" strength="example" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.30">
+                    <item original="false" label="Medikation"/>
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.19724" vsid="2.16.840.1.113883.1.11.19724" vsname="HumanSubstanceAdministrationSite" vsdisplayName="HumanSubstanceAdministrationSite" vseffectiveDate="2014-03-26T00:00:00" vsstatusCode="final" vsversionLabel="DEFN=UV=VO=1360-20160323" url="http://art-decor.org/decor/services/" ident="ad2bbr-" linkedartefactmissing="false"/>
+                </element>
+                <element name="hl7:doseQuantity" datatype="IVL_PQ" conformance="NP" id="2.16.840.1.113883.3.1937.777.15.9.31">
+                    <item original="false" label="Medikation"/>
+                </element>
+                <element name="hl7:rateQuantity" datatype="IVL_PQ" conformance="NP" id="2.16.840.1.113883.3.1937.777.15.9.32">
+                    <item original="false" label="Medikation"/>
+                </element>
+                <element name="hl7:maxDoseQuantity" datatype="RTO_PQ_PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.33">
+                    <item original="false" label="Medikation"/>
+                </element>
+                <element name="hl7:administrationUnitCode" datatype="CE" conformance="NP" id="2.16.840.1.113883.3.1937.777.15.9.34">
+                    <item original="false" label="Medikation"/>
+                </element>
+                <element name="hl7:consumable" contains="2.16.840.1.113883.10.21.4.10" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.36" tmid="2.16.840.1.113883.10.21.4.10" tmname="UVMedicationInformationsimple" tmdisplayName="UV Medication Information (simple)" tmstatusCode="pending" tmversionLabel="R1-STU2-ballot" tmeffectiveDate="2021-09-29T19:15:16" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <desc language="en-US" lastTranslated="2023-01-31T19:45:02">Consumable: The medication that is administered (simple)</desc>
+                    <item original="false" label="Medikation"/>
+                    <attribute name="typeCode" value="CSM" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.37"/>
+                </element>
+                <element name="hl7:entryRelationship[exists(hl7:substanceAdministration)]" contains="2.16.840.1.113883.10.21.4.6" minimumMultiplicity="0" maximumMultiplicity="*" conformance="C" id="2.16.840.1.113883.3.1937.777.15.9.61" tmid="2.16.840.1.113883.10.21.4.6" tmname="UVSubordinateadministration" tmdisplayName="UV Subordinate Substance Administration" tmeffectiveDate="2023-01-30T09:36:00" tmstatusCode="draft" tmversionLabel="2023" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <desc language="en-US" lastTranslated="2023-01-31T19:45:02">Subordinate Substance Administration Statament as a component of the overall medication statement. <br/> At least one subordinated &lt;substanceAdministration&gt; has to be present to convey information about dosages (dose, frequency of intakes,..) unless medications are unknown or known absent. <br/> Subordinated
+                        &lt;substanceAdministration&gt; elements can be also used either to handle split dosing, or to support combination medications.</desc>
+                    <item original="false" label="Medikation"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.62"/>
+                    <constraint language="en-US">At least one subordinate <substanceAdministration> element SHALL be present unless medications are unknown or known absent.</substanceAdministration>
+                    </constraint>
+                    <element name="hl7:sequenceNumber" datatype="INT" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.63">
+                        <desc language="en-US" lastTranslated="2023-01-31T19:45:02">Sequence number of the Subordinate Substance Administration.</desc>
+                        <item original="false" label="Medikation"/>
+                    </element>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.64" name="medikamentose-therapie" displayName="Medikamentöse Therapie" effectiveDate="2024-08-14T18:02:56" statusCode="draft" isClosed="false" lastModifiedDate="2024-08-14T18:02:56" ident="aktin-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="2024-08-14T18:02:56" id="1.2.276.0.76.3.1.195.10.92" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2025-11-12T00:00:00" statusCode="retired" versionLabel="v3transit" lastModifiedDate="2026-03-25T11:04:45" ident="aktin-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="2024-08-14T18:02:56" id="1.2.276.0.76.3.1.195.10.93" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2026-03-25T11:04:07" statusCode="draft" versionLabel="v4transit" lastModifiedDate="2026-04-29T18:39:46" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.6" name="UVSubordinateadministration" displayName="UV Subordinate Substance Administration" effectiveDate="2023-01-30T09:36:00" statusCode="draft" versionLabel="2023" lastModifiedDate="2023-01-30T09:40:52" url="http://art-decor.org/decor/services/" ident="pharmcda-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="2.16.840.1.113883.10.21.4.10" name="UVMedicationInformationsimple" displayName="UV Medication Information (simple)" statusCode="pending" versionLabel="R1-STU2-ballot" lastModifiedDate="2023-01-29T21:55:06" effectiveDate="2021-09-29T19:15:16" url="http://art-decor.org/decor/services/" ident="pharmcda-"/>
+        </template>
+    </template>
+</result>

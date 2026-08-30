@@ -1,0 +1,14 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.2.6.77.1.3" effectiveDate="2015-12-11T00:00:00" statusCode="draft" versionLabel="1.0" prefix="hl7de-" shortName="diagnosen" iddisplay="hl7de-dataset-3" url="http://art-decor.org/decor/services/" ident="hl7de-"><!--
+ This is a view of the dataset "Diagnosen" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">Diagnosen</name>
+    <desc language="de-DE">Diagnosen</desc>
+    <concept id="2.16.840.1.113883.2.6.77.2.3.2100" statusCode="draft" effectiveDate="2015-12-11T00:00:00" type="item" iddisplay="hl7de-dataelement-3.2100" shortName="diagnoseerlauterung">
+        <implementation shortName="diagnoseerlauterung" markdown="Damit soll dem Arzt die Möglichkeit gegeben werden evt. nähere Angaben zu einer Diagnose in Form von Freitext zu machen."/>
+        <name language="de-DE">Diagnoseerläuterung</name>
+        <desc language="de-DE">Damit soll dem Arzt die Möglichkeit gegeben werden evt. nähere Angaben zu einer Diagnose in Form von Freitext zu machen.</desc>
+        <valueDomain type="string"/>
+    </concept>
+</dataset>

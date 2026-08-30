@@ -1,0 +1,236 @@
+<valueSets>
+    <project ident="pmp-">
+        <valueSet id="2.16.840.1.113883.2.6.60.4.11.26" name="EDQMRouteofAdministration" displayName="EDQMRouteofAdministration" effectiveDate="2018-05-09T00:00:00" statusCode="draft" canonicalUri="http://fhir.de/ValueSet/medikationsplanplus/edqm-routeofadministration">
+            <sourceCodeSystem id="0.4.0.127.0.16.1.1.2.1" identifierName="EDQMde" canonicalUri="urn:oid:0.4.0.127.0.16.1.1.2.1" canonicalUriDSTU2="http://fhir.de/CodeSystem/edqm" canonicalUriSTU3="http://fhir.de/CodeSystem/edqm" canonicalUriR4="http://fhir.de/CodeSystem/edqm" canonicalUriR4B="http://fhir.de/CodeSystem/edqm" canonicalUriR5="http://fhir.de/CodeSystem/edqm"/>
+            <publishingAuthority name="HL7 Deutschland e. V." inherited="project">
+                <addrLine>HL7 Deutschland e. V.</addrLine>
+                <addrLine>An der Schanz 1</addrLine>
+                <addrLine>50735 Köln</addrLine>
+                <addrLine>T 0700 77 77 67 67</addrLine>
+                <addrLine>F 0700 77 77 67 61</addrLine>
+                <addrLine type="uri">W hl7.de</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <concept code="20001000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Auricular use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Anwendung am Ohr"/>
+                </concept>
+                <concept code="20002500" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Buccal use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Buccale Anwendung"/>
+                </concept>
+                <concept code="20003000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Cutaneous use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Anwendung auf der Haut"/>
+                </concept>
+                <concept code="20004000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Dental use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="dentale Anwendung"/>
+                </concept>
+                <concept code="20006000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Endocervical use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="endozervikale Anwendung"/>
+                </concept>
+                <concept code="20007000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Endosinusial use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Anwendung in den Nebenhöhlen"/>
+                </concept>
+                <concept code="20008000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Endotracheopulmonary use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="endotracheopulmonale Anwendung"/>
+                </concept>
+                <concept code="20009000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Epidural use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="epidurale Anwendung"/>
+                </concept>
+                <concept code="20010000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Epilesional use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="zum Auftragen auf die Wunde"/>
+                </concept>
+                <concept code="20011000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Extraamniotic use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="extraamniotische Anwendung"/>
+                </concept>
+                <concept code="20011500" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Extracorporeal use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="extrakorporale Anwendung"/>
+                </concept>
+                <concept code="20013000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Gastroenteral use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="gastrointestinale Anwendung"/>
+                </concept>
+                <concept code="20013500" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Gastric use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="zur Anwendung mittels Magensonde"/>
+                </concept>
+                <concept code="20014000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Gingival use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Anwendung am Zahnfleisch"/>
+                </concept>
+                <concept code="20015000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Hemodialysis" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Hämodialyse"/>
+                </concept>
+                <concept code="20015500" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Implantation" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="zur Implantation"/>
+                </concept>
+                <concept code="20020000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Inhalation use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="zur Inhalation"/>
+                </concept>
+                <concept code="20021000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Intestinal use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="intestinale Anwendung"/>
+                </concept>
+                <concept code="20022000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Intraamniotic use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="intraamniotische Anwendung"/>
+                </concept>
+                <concept code="20023000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Intraarterial use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="intraarterielle Anwendung"/>
+                </concept>
+                <concept code="20024000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Intraarticular use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="intraartikuläre Anwendung"/>
+                </concept>
+                <concept code="20025000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Intrabursal use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="intrabursale Anwendung"/>
+                </concept>
+                <concept code="20026000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Intracardiac use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="intracardiale Anwendung"/>
+                </concept>
+                <concept code="20026500" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Intracartilaginous use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="intrakartilaginäre Anwendung"/>
+                </concept>
+                <concept code="20027000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Intracavernous use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="intrakavernöse Anwendung"/>
+                </concept>
+                <concept code="20027010" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Intracerebral use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Intrazerebrale Anwendung"/>
+                </concept>
+                <concept code="20028000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Intracervical use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="intrazervikale Anwendung"/>
+                </concept>
+                <concept code="20028500" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Intracisternal use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="intracisternale Anwendung"/>
+                </concept>
+                <concept code="20029000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Intracoronary use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="intrakoronare Anwendung"/>
+                </concept>
+                <concept code="20030000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Intradermal use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="intradermale Anwendung"/>
+                </concept>
+                <concept code="20031000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Intradiscal use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="intradiskale Anwendung"/>
+                </concept>
+                <concept code="20031500" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Intraepidermal use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="intraepidermale Anwendung"/>
+                </concept>
+                <concept code="20032000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Intralesional use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="intraläsionale Anwendung"/>
+                </concept>
+                <concept code="20033000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Intralymphatic use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="intralymphatische Anwendung"/>
+                </concept>
+                <concept code="20035000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Intramuscular use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="intramuskuläre Anwendung"/>
+                </concept>
+                <concept code="20036000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Intraocular use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="intraokulare Anwendung"/>
+                </concept>
+                <concept code="20036500" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Intraosseous use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="intraossäre Anwendung"/>
+                </concept>
+                <concept code="20037000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Intrapericardial use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Intraperikardial"/>
+                </concept>
+                <concept code="20038000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Intraperitoneal use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="intraperitoneale Anwendung"/>
+                </concept>
+                <concept code="20039000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Intrapleural use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="intrapleurale Anwendung"/>
+                </concept>
+                <concept code="20039500" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Intraprostatic use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="intraprostatische Anwendung"/>
+                </concept>
+                <concept code="20041000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Intrasternal use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="intrasternale Anwendung"/>
+                </concept>
+                <concept code="20042000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Intrathecal use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="intrathekale Anwendung"/>
+                </concept>
+                <concept code="20043000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Intratumoral use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="intratumorale Anwendung"/>
+                </concept>
+                <concept code="20044000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Intrauterine use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="intrauterine Anwendung"/>
+                </concept>
+                <concept code="20045000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Intravenous use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="intravenöse Anwendung"/>
+                </concept>
+                <concept code="20046000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Intravesical use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="intravesikale Anwendung"/>
+                </concept>
+                <concept code="20047000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Intravitreal use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Intravitreal"/>
+                </concept>
+                <concept code="20047500" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Iontophoresis" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="zur Iontophorese"/>
+                </concept>
+                <concept code="20048000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Laryngopharyngeal use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="zur Anwendung im Rachen und am Kehlkopf"/>
+                </concept>
+                <concept code="20049000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Nasal use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="nasale Anwendung"/>
+                </concept>
+                <concept code="20050000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Nebulisation use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="zum Vernebeln"/>
+                </concept>
+                <concept code="20051000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Ocular use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Anwendung am Auge"/>
+                </concept>
+                <concept code="20053000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Oral use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="zum Einnehmen"/>
+                </concept>
+                <concept code="20054000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Oromucosal use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Anwendung in der Mundhöhle"/>
+                </concept>
+                <concept code="20055000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Oropharyngeal use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="zur Anwendung im Mund- und Rachenraum"/>
+                </concept>
+                <concept code="20056000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Paravertebral use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="paravertebrale Anwendung"/>
+                </concept>
+                <concept code="20057000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Periarticular use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="periartikuläre Anwendung"/>
+                </concept>
+                <concept code="20058000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Perineural use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="perineurale Anwendung"/>
+                </concept>
+                <concept code="20059000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Periodontal use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="zur periodontalen Anwendung"/>
+                </concept>
+                <concept code="20059300" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Periosseous use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="periossäre Anwendung"/>
+                </concept>
+                <concept code="20059500" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Posterior juxtascleral use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="posteriore juxtasclerale Anwendung"/>
+                </concept>
+                <concept code="20061000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Rectal use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="rektale Anwendung"/>
+                </concept>
+                <concept code="20061500" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Retrobulbar use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="retrobulbäre Anwendung"/>
+                </concept>
+                <concept code="20062000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Route of administration not applicable" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Art der Anwendung nicht spezifizierbar"/>
+                </concept>
+                <concept code="20063000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Skin scarification" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Einritzen der Haut"/>
+                </concept>
+                <concept code="20065000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Subconjunctival use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="subkonjunktivale Anwendung"/>
+                </concept>
+                <concept code="20066000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Subcutaneous use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="subkutane Anwendung"/>
+                </concept>
+                <concept code="20067000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Sublingual use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Sublingual"/>
+                </concept>
+                <concept code="20067500" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Submucosal use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="submuköse Anwendung"/>
+                </concept>
+                <concept code="20070000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Transdermal use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="transdermale Anwendung"/>
+                </concept>
+                <concept code="20071000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Urethral use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="Anwendung in der Harnröhre"/>
+                </concept>
+                <concept code="20072000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Vaginal use" level="0" type="L">
+                    <designation language="de-DE" type="preferred" displayName="vaginale Anwendung"/>
+                </concept>
+            </conceptList>
+        </valueSet>
+    </project>
+</valueSets>

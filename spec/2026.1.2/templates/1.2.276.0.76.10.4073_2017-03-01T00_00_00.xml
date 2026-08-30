@@ -1,0 +1,161 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.4073" ident="aktin-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.4073" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="Problem Observation (Multidrug-resistant organism)" ident="aktin-" name="ProblemobservationMDRO" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="draft" url="http://art-decor.org/decor/services/" effectiveDate="2017-03-01T00:00:00">
+            <desc language="en-US"/>
+            <desc language="de-DE">Besiedlung mit multiresistenten Keimen</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.303" tmname="CDAObservation" tmdisplayName="CDA Observation" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <relationship type="ADAPT" template="2.16.840.1.113883.10.20.22.4.4" tmid="2.16.840.1.113883.10.20.22.4.4" tmname="ProblemObservationV3" tmdisplayName="Problem Observation (V3)" tmeffectiveDate="2015-08-01T00:00:00" tmstatusCode="draft" tmversionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-" linkedartefactmissing="false"/>
+            <relationship type="VERSION" template="1.2.276.0.76.10.4073" flexibility="2016-08-02T00:00:00" tmid="1.2.276.0.76.10.4073" tmname="ProblemobservationMDRO" tmdisplayName="Problem Observation (Multidrug-resistant organism)" tmeffectiveDate="2016-08-02T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <example type="neutral" caption="MRSA">
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4073"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="3564b7c0-2111-43f2-a784-9a5fdfaa67f2"/>
+                    <code code="COND" codeSystem="2.16.840.1.113883.5.4" displayName="Condition"/>
+                    <text>
+                        <reference value="#mdro-1"/>
+                    </text>
+                    <statusCode code="completed"/>
+                    <effectiveTime>
+                        <low value="20150304"/>
+                    </effectiveTime>
+                    <value xsi:type="CD" code="MRSA" codeSystem="1.2.276.0.76.5.441" displayName="MRSA"/>
+                </observation>
+            </example>
+            <example type="neutral" caption="Keine multiresistenten Keime">
+                <observation classCode="OBS" moodCode="EVN" negationInd="true">
+                    <templateId root="1.2.276.0.76.10.4073"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="4464b7c0-2111-43f2-a784-9a5fdfaa67f7"/>
+                    <code code="COND" codeSystem="2.16.840.1.113883.5.4" displayName="Condition"/>
+                    <text>
+                        <reference value="#mdro-1"/>
+                    </text>
+                    <statusCode code="completed"/>
+                    <effectiveTime>
+                        <low value="20150304"/>
+                    </effectiveTime>
+                    <value xsi:type="CD" code="AMRO" codeSystem="1.2.276.0.76.5.441" displayName="Multiresistenter Keim"/>
+                </observation>
+            </example>
+            <element name="hl7:observation" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.312">
+                <item original="false" label="ProblemobservationMDRO"/>
+                <attribute name="classCode" value="OBS" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.313"/>
+                <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.314"/>
+                <attribute name="negationInd" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.15592">
+                    <desc language="de-DE">Wenn angegeben soll, dass der in observation.value angegebene Keim NICHT vorliegt, wird observation.@negationInd="true" gesetzt.</desc>
+                </attribute>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.315">
+                    <item original="false" label="ProblemobservationMDRO"/>
+                    <attribute name="root" value="1.2.276.0.76.10.4073" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.316"/>
+                </element>
+                <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="*" isMandatory="true" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.317">
+                    <item original="false" label="ProblemobservationMDRO"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CE" id="2.16.840.1.113883.2.6.60.3.9.318">
+                    <item original="false" label="ProblemobservationMDRO"/>
+                    <vocabulary code="COND" codeSystem="2.16.840.1.113883.5.4"/>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.2.6.60.3.9.319">
+                    <desc language="de-DE">Textform, enthält hier lediglich reference in den Text der Section</desc>
+                    <item original="false" label="ProblemobservationMDRO"/>
+                    <element name="hl7:reference" minimumMultiplicity="1" maximumMultiplicity="1" datatype="URL" id="2.16.840.1.113883.2.6.60.3.9.320">
+                        <item original="false" label="ProblemobservationMDRO"/>
+                    </element>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CS" id="2.16.840.1.113883.2.6.60.3.9.321">
+                    <item original="false" label="ProblemobservationMDRO"/>
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:effectiveTime" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" datatype="IVL_TS" id="2.16.840.1.113883.2.6.60.3.9.322">
+                    <desc language="de-DE">effectiveTime wird auch als "biologisch relevante Zeit" bezeichnet und ist der Zeitpunkt oder Zeitraum, für den die Beobachtung für den Patienten gilt.</desc>
+                    <item original="false" label="ProblemobservationMDRO"/>
+                    <element name="hl7:low" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="TS" id="2.16.840.1.113883.2.6.60.3.9.323">
+                        <item original="false" label="ProblemobservationMDRO"/>
+                    </element>
+                    <element name="hl7:high" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" datatype="TS" id="2.16.840.1.113883.2.6.60.3.9.324">
+                        <item original="false" label="ProblemobservationMDRO"/>
+                    </element>
+                </element>
+                <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="CD" id="2.16.840.1.113883.2.6.60.3.9.325">
+                    <desc language="de-DE">Multiresistenter Keim Ja/Nein/Verdacht; wenn angegeben soll, dass der in observation.value angegebene Keim NICHT vorliegt, wird observation.@negationInd="true" gesetzt. Bei "Verdacht" ist der Befundstatus in observation.value.qualifier entsprechend zu setzen.</desc>
+                    <item original="false" label="ProblemobservationMDRO"/>
+                    <example type="neutral" caption="MRSA">
+                        <value xsi:type="CD" code="MRSA" codeSystem="1.2.276.0.76.5.441" displayName="MRSA"/>
+                    </example>
+                    <example type="neutral" caption="Verdacht auf 4MRGN">
+                        <value xsi:type="CD" code="MRSA" codeSystem="1.2.276.0.76.5.441" displayName="MRSA">
+                            <qualifier>
+                                <name code="FSTAT" codeSystem="1.2.276.0.76.3.1.195.5.72" displayName="Befundstatus"/>
+                                <value code="SUSP" codeSystem="1.2.276.0.76.3.1.195.5.73" displayName="Verdacht"/>
+                            </qualifier>
+                        </value>
+                    </example>
+                    <vocabulary valueSet="1.2.276.0.76.11.60" vsid="1.2.276.0.76.11.60" vsname="Multiresistantorganisms" vsdisplayName="Multiresistant Organisms (Carrier)" vseffectiveDate="2015-09-18T00:00:00" vsstatusCode="draft" linkedartefactmissing="false"/>
+                    <element name="hl7:qualifier[hl7:name/@code='FSTAT']" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CR" id="2.16.840.1.113883.2.6.60.3.9.15589">
+                        <desc language="de-DE">Optionale Angabe des Befundstatus (finding status) des Problems.</desc>
+                        <item original="false" label="ProblemobservationMDRO"/>
+                        <element name="hl7:name" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" datatype="CV" id="2.16.840.1.113883.2.6.60.3.9.15590">
+                            <item original="false" label="ProblemobservationMDRO"/>
+                            <vocabulary code="FSTAT" codeSystem="1.2.276.0.76.3.1.195.5.72"/>
+                        </element>
+                        <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" datatype="CV" id="2.16.840.1.113883.2.6.60.3.9.15591">
+                            <item original="false" label="ProblemobservationMDRO"/>
+                            <vocabulary valueSet="1.2.276.0.76.11.73" vsid="1.2.276.0.76.11.73" vsname="Befundstatusverdachtgesichert" vsdisplayName="Befundstatus Verdacht/Gesichert" vsstatusCode="draft" vseffectiveDate="2016-08-02T00:00:00" linkedartefactmissing="false"/>
+                        </element>
+                    </element>
+                </element>
+                <let name="seq" value="//hl7:observation [hl7:templateId/@root = '1.2.276.0.76.10.4073']/hl7:value"/>
+                <assert role="error" test="empty($seq[count(index-of($seq/@code|$seq/@nullFlavor,./@code|./@nullFlavor)) &gt; 1])">Nur eine Angabe pro Erreger bei multiresistenten Keimen</assert>
+                <assert role="error" test="not(@negationInd='true' and hl7:value/hl7:qualifier/hl7:name/@code='FSTAT')">Befundstatus Verdacht/Gesichert kann nicht gleichzeitig mit Negation (negationInd=true) verwendet werden</assert>
+            </element>
+            <staticAssociations>
+                <origconcept ref="2.16.840.1.113883.2.6.60.12.2.134" effectiveDate="2016-10-16T14:54:02" refdisplay="evthm-dataelement-134" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.12.1.1" datasetEffectiveDate="2016-06-27T11:19:09" datasetStatusCode="draft" datasetVersionLabel="1.0" datasetName="eVent@home" ident="evthm-" elementId="2.16.840.1.113883.2.6.60.3.9.312" templateId="1.2.276.0.76.10.4073" templateEffectiveDate="2017-03-01T00:00:00" path="">
+                    <name language="de-DE">multiresistente Erreger</name>
+                    <desc language="de-DE"/>
+                    <datasetName language="de-DE">eVent@home</datasetName>
+                    <projectName language="de-DE">eVent@home</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.12.2.135" effectiveDate="2016-10-16T14:55:25" refdisplay="evthm-dataelement-135" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.12.1.1" datasetEffectiveDate="2016-06-27T11:19:09" datasetStatusCode="draft" datasetVersionLabel="1.0" datasetName="eVent@home" ident="evthm-" elementId="2.16.840.1.113883.2.6.60.3.9.15592" templateId="1.2.276.0.76.10.4073" templateEffectiveDate="2017-03-01T00:00:00" path="multiresistente Erreger">
+                    <name language="de-DE">multiresistenter Errger Ja/Nein/Verdacht</name>
+                    <desc language="de-DE">
+                        Der Verdacht auf eine Besiedelung (nach RKI Kriterien) ist "vermutet". Nein subsummiert keinen Verdacht und negative Testergebnisse.
+                    </desc>
+                    <datasetName language="de-DE">eVent@home</datasetName>
+                    <projectName language="de-DE">eVent@home</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.12.2.242" effectiveDate="2016-10-20T10:18:06" refdisplay="evthm-dataelement-242" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.12.1.1" datasetEffectiveDate="2016-06-27T11:19:09" datasetStatusCode="draft" datasetVersionLabel="1.0" datasetName="eVent@home" ident="evthm-" elementId="2.16.840.1.113883.2.6.60.3.9.325" templateId="1.2.276.0.76.10.4073" templateEffectiveDate="2017-03-01T00:00:00" path="multiresistente Erreger">
+                    <name language="de-DE">Erregertyp</name>
+                    <desc language="de-DE">
+                        Hier ist nur etwas einzutragen, wenn "multiresistenter Erreger" mit "Ja" beantwortet wurde. Die Liste der Erreger(-Gruppen) ist nicht vollständig und beschränkt sich auf die häufigsten.
+                    </desc>
+                    <datasetName language="de-DE">eVent@home</datasetName>
+                    <projectName language="de-DE">eVent@home</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.2.806" effectiveDate="2015-01-15T00:00:00" refdisplay="aktin-dataelement2015(1)-806" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.2" datasetEffectiveDate="2015-01-15T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.1-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.325" templateId="1.2.276.0.76.10.4073" templateEffectiveDate="2017-03-01T00:00:00" path="Klinische Basisdaten Patient / multiresistente Erreger">
+                    <name language="de-DE">multiresistenter Erreger Ja/Nein/Verdacht</name>
+                    <desc language="de-DE">Der Verdacht auf eine Besiedelung (nach RKI Kriterien) ist "vermutet". Nein subsummiert keinen Verdacht und negative Testergebnisse.</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.3.806" effectiveDate="2015-11-01T00:00:00" refdisplay="aktin-dataelement2015(2)-806" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.3" datasetEffectiveDate="2015-11-01T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.2-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.325" templateId="1.2.276.0.76.10.4073" templateEffectiveDate="2017-03-01T00:00:00" path="Klinische Basisdaten Patient / multiresistente Erreger">
+                    <name language="de-DE">multiresistenter Erreger Ja/Nein/Verdacht</name>
+                    <desc language="de-DE">Der Verdacht auf eine Besiedelung (nach RKI Kriterien) ist "vermutet". Nein subsummiert keinen Verdacht und negative Testergebnisse.</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+            </staticAssociations>
+            <ref type="dependency" prefix="aktin-" flexibility="2016-08-02T00:00:00" id="1.2.276.0.76.3.1.195.10.92" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2025-11-12T00:00:00" statusCode="retired" versionLabel="v3transit" lastModifiedDate="2026-03-25T11:04:45" ident="aktin-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="2016-08-02T00:00:00" id="1.2.276.0.76.3.1.195.10.93" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2026-03-25T11:04:07" statusCode="draft" versionLabel="v4transit" lastModifiedDate="2026-04-29T18:39:46" ident="aktin-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="2016-08-02T00:00:00" id="1.2.276.0.76.10.1019" name="EmergencymedicineNoteCDAdocumentv2" displayName="Emergency medicine Note CDA document" effectiveDate="2016-06-01T00:00:00" statusCode="active" versionLabel="v2" ident="aktin-"/>
+            <ref type="dependency" prefix="evthm-" flexibility="2017-04-24T00:00:00" id="1.2.276.0.76.10.1022" name="Livedatencda" displayName="Live-Daten-CDA Dokument" effectiveDate="2017-01-23T00:00:00" statusCode="draft" ident="evthm-"/>
+            <ref type="dependency" prefix="evthm-" flexibility="2017-04-24T00:00:00" id="1.2.276.0.76.10.1023" name="Ueberleitungsdatencda" displayName="Überleitungs-CDA Dokument" effectiveDate="2017-03-14T00:00:00" statusCode="draft" ident="evthm-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="2017-03-01T00:00:00" id="1.2.276.0.76.10.3047" name="ClinicalInformation" displayName="Klinische Basisinformationen" effectiveDate="2016-08-02T00:00:00" statusCode="active" isClosed="false" ident="aktin-"/>
+            <ref type="dependency" prefix="evthm-" flexibility="dynamic" id="1.2.276.0.76.10.3088" effectiveDate="2017-04-24T00:00:00" name="pflegerischemassnahmen" displayName="Pflegerische Maßnahmen" statusCode="draft" ident="evthm-"/>
+            <ref type="contains" prefix="aktin-" flexibility="2017-03-01T00:00:00" id="1.2.276.0.76.10.4072" name="ProblemconcernactMDRO" displayName="Problem Concern Act (Multidrug-resistant organism)" effectiveDate="2017-03-01T00:00:00" statusCode="active" isClosed="false" ident="aktin-"/>
+            <ref type="dependency" prefix="evthm-" flexibility="2017-04-24T00:00:00" id="2.16.840.1.113883.2.6.60.12.10.113" name="Ueberleitungsdatencda02" displayName="Überleitungs-CDA (ambulant-stationär)" effectiveDate="2018-04-04T17:10:48" statusCode="draft" ident="evthm-"/>
+        </template>
+    </template>
+</result>

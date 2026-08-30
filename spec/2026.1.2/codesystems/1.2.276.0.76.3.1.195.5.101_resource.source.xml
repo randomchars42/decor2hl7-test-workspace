@@ -1,0 +1,228 @@
+<codeSystem xmlns:json="http://www.json.org" id="1.2.276.0.76.3.1.195.5.101" name="mts-presentationdiagram" displayName="MTS-Präsentationsdiagramm" effectiveDate="2019-08-16T00:00:00" statusCode="draft" canonicalUri="http://aktin.org/fhir/CodeSystem/aktin-cs-mts-presentationdiagram" lastModifiedDate="2024-07-22T16:52:37" language="de-DE" url="http://art-decor.org/decor/services/" ident="aktin-">
+    <desc json:array="true" language="en-US" lastTranslated="2024-07-19T15:54:48">
+                 &lt;p&gt;MTS-Präsentationsdiagramm&lt;/p&gt; 
+            </desc>
+    <publishingAuthority json:array="true" name="AKTIN e. V." inherited="project">
+        <addrLine json:array="true">c/o Uniklinik RWTH Aachen</addrLine>
+        <addrLine json:array="true">Institut für Medizinische Informatik</addrLine>
+        <addrLine json:array="true">Pauwelsstraße 35</addrLine>
+        <addrLine json:array="true">52074 Aachen</addrLine>
+        <addrLine json:array="true" type="phone">Tel. +49 391 67 28186</addrLine>
+        <addrLine json:array="true" type="email">office@aktin.org</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <conceptList json:array="true">
+        <codedConcept json:array="true" code="1" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Abdominelle Schmerzen bei Erwachsenen"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Abdominal pain in adults"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="2" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Abdominelle Schmerzen bei Kindern"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Abdominal pain in children"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="3" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Abszesse und lokale Infektionen"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Abscesses and local infections"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="4" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Allergie"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Allergy"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="5" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Angriff (Zustand nach)"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Assault"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="6" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Asthma"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Asthma"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="7" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Atemproblem bei Erwachsenen"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Shortness of breath in adults"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="8" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Atemproblem bei Kindern"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Shortness of breath in children"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="9" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Auffälliges Verhalten"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Behaving strangely"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="10" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Augenprobleme"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Eye problems"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="11" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Besorgte Eltern"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Worried parents"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="12" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Betrunkener Eindruck"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Apparently drunk"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="13" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Bisse und Stiche"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Bites and stings"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="14" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Chemikalienkontakt"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Chemical exposure"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="15" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Diabetes"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Diabetes"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="16" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Durchfälle und Erbrechen"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Diarrhoea and vomiting"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="17" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Extremitätenprobleme"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Limb problems"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="18" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Fremdkörper"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Foreign body"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="19" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Gastrointestinale Blutung"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Gastrointestinal bleeding"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="20" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Gesichtsprobleme"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Facial problems"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="21" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Halsschmerz"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Sore throat"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="22" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Hautausschläge"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Rashes"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="23" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Herzklopfen"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Palpitations"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="24" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Hinkendes Kind"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Limping child"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="25" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Hodenschmerz"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Testicular pain"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="26" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Irritables (erregbares/reizbares) Kind "/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Irritable child"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="27" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Körperstammverletzung"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Torso injury"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="28" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Kollaps"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Collapse"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="29" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Kopfschmerz"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Headache"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="30" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Kopfverletzung"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Head injury"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="31" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Krampfanfall"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Fit"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="32" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Nackenschmerz"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Neck pain"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="33" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Ohrenprobleme"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Ear problems"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="34" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Psychiatrische Erkrankung"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Mental illness"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="35" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Rückenschmerz"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Back pain"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="36" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Schreiendes Baby"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Crying baby"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="37" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Schwangerschaftsproblem"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Pregnancy"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="38" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Schweres Trauma"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Major trauma"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="39" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Selbstverletzung"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Self-harm"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="40" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Sexualinfektion"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Sexually acquired infection"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="41" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Stürze"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Falls"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="42" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Thoraxschmerz"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Chest pain"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="43" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Überdosierung und Vergiftung"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Overdose and poisoning"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="44" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Unwohlsein bei Erwachsenen"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Unwell adult"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="45" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Unwohlsein bei Kindern"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Unwell child"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="46" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Unwohlsein bei Neugeborenen"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Unwell newborn"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="47" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Unwohlsein bei Säuglingen"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Unwell baby"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="48" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Urologische Probleme"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Urinary problems"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="49" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Vaginale Blutung"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="PV bleeding"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="50" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Verbrennungen und Verbrühungen"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Burns and scalds"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="51" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Wunden"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Wounds"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="52" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Zahnprobleme"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="Dental problems"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="53" statusCode="active" level="0" type="L" effectiveDate="2019-08-16T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Generelle Indikatoren"/>
+            <designation json:array="true" language="en-US" type="preferred" displayName="General indicators"/>
+        </codedConcept>
+    </conceptList>
+</codeSystem>

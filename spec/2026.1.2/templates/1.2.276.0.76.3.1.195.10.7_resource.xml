@@ -1,0 +1,46 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.3.1.195.10.7" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.3.1.195.10.7" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" lastModifiedDate="2025-12-22T18:07:07" versionLabel="2024" isClosed="false" displayName="Demografische Informationen" ident="aktin-" name="demografische-informationen" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="draft" url="http://art-decor.org/decor/services/" effectiveDate="2024-08-13T10:46:17">
+            <desc language="en-US" lastTranslated="2024-08-13T10:46:17">Demografic information section</desc>
+            <desc language="de-DE" lastTranslated="2024-08-13T10:46:17">Demografische Informationen</desc>
+            <classification type="cdasectionlevel"/>
+            <relationship type="SPEC" template="1.2.276.0.76.10.3068" flexibility="2017-01-10T00:00:00" tmid="1.2.276.0.76.10.3068" tmname="Injuryeventsummary" tmdisplayName="Unfallereignis" tmeffectiveDate="2017-01-10T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.201" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.201" tmname="CDASection" tmdisplayName="CDA Section" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <element name="hl7:section" id="2.16.840.1.113883.2.6.60.3.9.15593">
+                <item original="false" label="demografische-informationen"/>
+                <attribute name="classCode" value="DOCSECT" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.15594"/>
+                <element name="hl7:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.15595">
+                    <item original="false" label="demografische-informationen"/>
+                    <attribute name="root" value="1.2.276.0.76.3.1.195.10.7" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.15596"/>
+                </element>
+                <element name="hl7:code" datatype="CE" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.15597">
+                    <item original="false" label="demografische-informationen"/>
+                    <vocabulary code="45970-1" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:title" datatype="ST" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.15598">
+                    <item original="false" label="demografische-informationen"/>
+                    <text>Demographische Informationen</text>
+                </element>
+                <element name="hl7:text" datatype="SD.TEXT" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.15599">
+                    <item original="false" label="demografische-informationen"/>
+                </element>
+                <element name="hl7:entry" contains="1.2.276.0.76.3.1.195.10.8" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1632197" tmid="1.2.276.0.76.3.1.195.10.8" tmname="alter" tmdisplayName="Alter des Patienten" tmeffectiveDate="2024-08-13T10:50:15" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <item original="false" label="demografische-informationen"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1632198"/>
+                    <attribute name="contextConductionInd" value="true" isOptional="true" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1632199"/>
+                </element>
+                <element name="hl7:entry" contains="1.2.276.0.76.3.1.195.10.9" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1632200" tmid="1.2.276.0.76.3.1.195.10.9" tmname="geburtsjahr" tmdisplayName="Geburtsjahr des Patienten" tmeffectiveDate="2024-08-13T11:30:44" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <item original="false" label="demografische-informationen"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1632201"/>
+                    <attribute name="contextConductionInd" value="true" isOptional="true" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1632202"/>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.2" name="episodenzusammenfassung-notaufnahmeregister" displayName="Episodenzusammenfassung Notaufnahmeregister" effectiveDate="2024-03-21T00:00:00" statusCode="draft" versionLabel="2024" lastModifiedDate="2024-08-20T14:08:22" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.8" name="alter" displayName="Alter des Patienten" effectiveDate="2024-08-13T10:50:15" statusCode="draft" lastModifiedDate="2024-11-18T16:10:10" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.9" name="geburtsjahr" displayName="Geburtsjahr des Patienten" effectiveDate="2024-08-13T11:30:44" statusCode="draft" lastModifiedDate="2024-11-18T15:56:07" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.92" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2025-11-12T00:00:00" statusCode="retired" versionLabel="v3transit" lastModifiedDate="2026-03-25T11:04:45" ident="aktin-"/>
+        </template>
+    </template>
+</result>

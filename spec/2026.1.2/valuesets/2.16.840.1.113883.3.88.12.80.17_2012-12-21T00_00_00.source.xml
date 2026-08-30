@@ -1,0 +1,17 @@
+<valueSet xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.88.12.80.17" name="MedicationClinicalGenericDrug" displayName="Medication Clinical Generic Drug" effectiveDate="2012-12-21T00:00:00" statusCode="final" url="http://art-decor.org/decor/services/" ident="ccda-">
+    <desc json:array="true" language="en-US">Medication Clinical General Drug (RxNorm Generic Drugs)</desc>
+    <sourceCodeSystem json:array="true" id="2.16.840.1.113883.6.88" identifierName="RxNorm" canonicalUri="http://www.nlm.nih.gov/research/umls/rxnorm" canonicalUriDSTU2="http://www.nlm.nih.gov/research/umls/rxnorm" canonicalUriSTU3="http://www.nlm.nih.gov/research/umls/rxnorm" canonicalUriR4="http://www.nlm.nih.gov/research/umls/rxnorm" canonicalUriR4B="http://www.nlm.nih.gov/research/umls/rxnorm" canonicalUriR5="http://www.nlm.nih.gov/research/umls/rxnorm" context="external/hl7intl/v3/v3-rxNorm"/>
+    <publishingAuthority json:array="true" name="HL7 International" inherited="project">
+        <addrLine json:array="true">Health Level Seven International</addrLine>
+        <addrLine json:array="true">3300 Washtenaw Avenue</addrLine>
+        <addrLine json:array="true">Suite 227</addrLine>
+        <addrLine json:array="true">Ann Arbor, MI 48104- 4261</addrLine>
+        <addrLine json:array="true">USA</addrLine>
+        <addrLine json:array="true">T +1 734 677 7777 </addrLine>
+        <addrLine json:array="true">F +1 734 677 6622</addrLine>
+        <addrLine json:array="true">E info@hl7.org</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="include" codeSystem="2.16.840.1.113883.6.88"/>
+</valueSet>

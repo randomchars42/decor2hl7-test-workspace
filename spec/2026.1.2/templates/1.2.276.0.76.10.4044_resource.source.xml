@@ -1,0 +1,98 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultLanguage="de-DE" id="1.2.276.0.76.10.4044" name="Clostridiumtetaniimmunization" displayName="Immunisierung Clostridium tetani" effectiveDate="2015-09-18T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" xml:dummy-1="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-3="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance">
+    <desc language="de-DE">Immunisierung Clostridium tetani</desc>
+    <classification type="cdaentrylevel"/>
+    <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.303" tmname="CDAObservation" tmdisplayName="CDA Observation" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-"/>
+    <relationship type="ADAPT" template="2.16.840.1.113883.10.20.22.4.52.2" linkedartefactmissing="true"/>
+    <relationship type="ADAPT" template="1.3.6.1.4.1.19376.1.5.3.1.4.12" tmid="1.3.6.1.4.1.19376.1.5.3.1.4.12" tmname="eHDSIImmunizations" tmdisplayName="eHDSI Immunizations" tmeffectiveDate="2020-04-16T13:06:27" tmstatusCode="retired" url="http://art-decor.ehdsi.eu/decor/services/" ident="epsos-"/>
+    <context id="**"/>
+    <example caption="Tetatusschutz vorhanden (seit dem Jahr 2001)">
+                <substanceAdministration moodCode="EVN" classCode="SBADM" negationInd="false">
+                    <templateId root="1.2.276.0.76.10.4044"/>
+                    <code code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4"/>
+                    <text>
+                        <reference value="#immun1"/>
+                    </text>
+                    <statusCode code="completed"/>
+                    <effectiveTime value="2001"/>
+                    <consumable>
+                        <manufacturedProduct classCode="MANU">
+                            <manufacturedMaterial>
+                                <code code="CTVACC" codeSystem="1.2.276.0.76.3.1.195.5.3" displayName="Tetanus vaccine (product)"/>
+                            </manufacturedMaterial>
+                        </manufacturedProduct>
+                    </consumable>
+                </substanceAdministration>
+            </example>
+    <example caption="Tetatusschutz nicht vorhanden">
+                <substanceAdministration moodCode="EVN" classCode="SBADM" negationInd="true">
+                    <templateId root="1.2.276.0.76.10.4044"/>
+                    <code code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4"/>
+                    <text>
+                        <reference value="#immun1"/>
+                    </text>
+                    <statusCode code="completed"/>
+                    <consumable>
+                        <manufacturedProduct classCode="MANU">
+                            <manufacturedMaterial>
+                                <code code="CTVACC" codeSystem="1.2.276.0.76.3.1.195.5.3" displayName="Tetanus vaccine (product)"/>
+                            </manufacturedMaterial>
+                        </manufacturedProduct>
+                    </consumable>
+                </substanceAdministration>
+            </example>
+    <example caption="Tetatusschutz unbekannt">
+                <substanceAdministration moodCode="EVN" classCode="SBADM" negationInd="false" nullFlavor="NI">
+                    <templateId root="1.2.276.0.76.10.4044"/>
+                    <code code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4"/>
+                    <text>
+                        <reference value="#immun1"/>
+                    </text>
+                    <statusCode code="completed"/>
+                    <consumable>
+                        <manufacturedProduct classCode="MANU">
+                            <manufacturedMaterial>
+                                <code code="CTVACC" codeSystem="1.2.276.0.76.3.1.195.5.3" displayName="Tetanus vaccine (product)"/>
+                            </manufacturedMaterial>
+                        </manufacturedProduct>
+                    </consumable>
+                </substanceAdministration>
+            </example>
+    <element name="hl7:substanceAdministration" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.265">
+                <attribute name="classCode" value="SBADM" id="2.16.840.1.113883.2.6.60.3.9.266"/>
+                <attribute name="moodCode" value="EVN" id="2.16.840.1.113883.2.6.60.3.9.267"/>
+                <attribute name="negationInd" isOptional="false" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.268">
+                    <desc language="de-DE">Wenn bekannt ist, dass kein Schutz besteht, ist negationInd auf true zu setzen, wenn Schutz besteht istt negationInd false</desc>
+                </attribute>
+                <attribute name="nullFlavor" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.269">
+                    <desc language="de-DE">Wenn der Schutz unbekannt ist, wird nullFalvor auf NI gesetzt, negationInd muss dann false sein.</desc>
+                    <vocabulary code="NI"/>
+                </attribute>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.270">
+                    <attribute name="root" value="1.2.276.0.76.10.4044" id="2.16.840.1.113883.2.6.60.3.9.271"/>
+                </element>
+                <element name="hl7:id" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.272"/>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CE" id="2.16.840.1.113883.2.6.60.3.9.273">
+                    <vocabulary code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4"/>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.2.6.60.3.9.274">
+                    <desc language="de-DE">Lediglich reference in den Text der zugehörigen Section</desc>
+                    <element name="hl7:reference" minimumMultiplicity="1" maximumMultiplicity="1" datatype="URL" id="2.16.840.1.113883.2.6.60.3.9.275"/>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CS" id="2.16.840.1.113883.2.6.60.3.9.276">
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:effectiveTime" minimumMultiplicity="0" maximumMultiplicity="1" datatype="TS" id="2.16.840.1.113883.2.6.60.3.9.277"/>
+                <element name="hl7:consumable" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.278">
+                    <element name="hl7:manufacturedProduct" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.279">
+                        <attribute name="classCode" value="MANU" id="2.16.840.1.113883.2.6.60.3.9.280"/>
+                        <element name="hl7:manufacturedMaterial" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.281">
+                            <attribute name="classCode" value="MMAT" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.282"/>
+                            <attribute name="determinerCode" value="KIND" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.283"/>
+                            <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CD" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.284">
+                                <vocabulary code="CTVACC" codeSystem="1.2.276.0.76.3.1.195.5.3"/>
+                            </element>
+                        </element>
+                    </element>
+                </element>
+            </element>
+</template>

@@ -1,0 +1,50 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.12.113" name="CDAcomponentOf" displayName="CDA componentOf" effectiveDate="2005-09-07T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" sdtc:dummy-1="urn:hl7-org:sdtc" xml:dummy-2="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-4="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">Template CDA componentOf (prototype, directly derived from POCD_RM000040 MIF)</desc>
+            <desc language="nl-NL">Template CDA componentOf (prototype, direct afgeleid uit POCD_RM000040 MIF)</desc>
+            <desc language="de-DE">Template CDA componentOf (Prototyp, direkt abgeleitet aus POCD_RM000040 MIF)</desc>
+            <classification type="cdaheaderlevel"/>
+            <element name="hl7:componentOf" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.1.9.209">
+                <attribute name="typeCode" value="COMP" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.210"/>
+                <element name="hl7:encompassingEncounter" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.1.9.211">
+                    <attribute name="classCode" value="ENC" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.212"/>
+                    <attribute name="moodCode" value="EVN" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.213"/>
+                    <element name="hl7:id" minimumMultiplicity="0" maximumMultiplicity="*" datatype="II" id="2.16.840.1.113883.3.1937.777.1.9.214"/>
+                    <element name="hl7:code" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.1.9.215">
+                        <!--valueSet name="ActEncounterCode"-->
+                        <vocabulary valueSet="2.16.840.1.113883.1.11.13955"/>
+                    </element>
+                    <element name="hl7:effectiveTime" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="IVL_TS" id="2.16.840.1.113883.3.1937.777.1.9.216"/>
+                    <element name="hl7:dischargeDispositionCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.1.9.217">
+                        <vocabulary domain="EncounterDischargeDisposition"/>
+                    </element>
+                    <!--contains name="CDAAssignedEntity"-->
+                    <element name="hl7:responsibleParty" minimumMultiplicity="0" maximumMultiplicity="1" contains="2.16.840.1.113883.10.12.153" id="2.16.840.1.113883.3.1937.777.1.9.218">
+                        <attribute name="typeCode" value="RESP" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.219"/>
+                    </element>
+                    <element name="hl7:encounterParticipant" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.1.9.220">
+                        <attribute name="typeCode" datatype="cs" id="2.16.840.1.113883.3.1937.777.1.9.221">
+                            <!--valueSet name="x_EncounterParticipant"-->
+                            <vocabulary valueSet="2.16.840.1.113883.1.11.19600"/>
+                        </attribute>
+                        <element name="hl7:time" minimumMultiplicity="0" maximumMultiplicity="1" datatype="IVL_TS" id="2.16.840.1.113883.3.1937.777.1.9.222"/>
+                        <!--contains name="CDAAssignedEntity"-->
+                        <element name="hl7:assignedEntity" minimumMultiplicity="1" maximumMultiplicity="1" contains="2.16.840.1.113883.10.12.153" id="2.16.840.1.113883.3.1937.777.1.9.223"/>
+                    </element>
+                    <element name="hl7:location" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.1.9.224">
+                        <attribute name="typeCode" value="LOC" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.225"/>
+                        <element name="hl7:healthCareFacility" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.1.9.226">
+                            <attribute name="classCode" value="SDLOC" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.227"/>
+                            <element name="hl7:id" minimumMultiplicity="0" maximumMultiplicity="*" datatype="II" id="2.16.840.1.113883.3.1937.777.1.9.228"/>
+                            <element name="hl7:code" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.1.9.229">
+                                <!--valueSet name="ServiceDeliveryLocationRoleType"-->
+                                <vocabulary valueSet="2.16.840.1.113883.1.11.17660"/>
+                            </element>
+                            <!--contains name="CDAPlace"-->
+                            <element name="hl7:location" minimumMultiplicity="0" maximumMultiplicity="1" contains="2.16.840.1.113883.10.12.317" id="2.16.840.1.113883.3.1937.777.1.9.230"/>
+                            <!--contains name="CDAOrganization"-->
+                            <element name="hl7:serviceProviderOrganization" minimumMultiplicity="0" maximumMultiplicity="1" contains="2.16.840.1.113883.10.12.151" id="2.16.840.1.113883.3.1937.777.1.9.231"/>
+                        </element>
+                    </element>
+                </element>
+            </element>
+        </template>

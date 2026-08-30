@@ -1,0 +1,300 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.90022" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:ukfc="http://fhir.hl7.de/ukfc" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" id="1.2.276.0.76.10.90022" hl7:dummy-default="urn:hl7-org:v3" displayName="Material" xml:dummy-5="http://www.w3.org/XML/1998/namespace" cda:dummy-7="urn:hl7-org:v3" ukfc:dummy-1="http://fhir.hl7.de/ukfc" url="http://art-decor.org/decor/services/" pharm:dummy-4="urn:hl7-org:pharm" xsi:dummy-8="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" ident="pmp-" name="Material" sdtc:dummy-2="urn:hl7-org:sdtc" xhtml:dummy-3="http://www.w3.org/1999/xhtml" statusCode="draft" effectiveDate="2017-06-04T00:00:00">
+            <desc language="de-DE">Material</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.311" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.311" tmname="CDAMaterial" tmdisplayName="CDA Material" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <relationship type="SPEC" template="1.3.6.1.4.1.19376.1.9.1.3.1" url="http://art-decor.org/decor/services/" linkedartefactmissing="true"/>
+            <example type="neutral" caption="Arznei mit PZN und Wirkstoffangabe">
+                <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                    <!-- PZN -->
+                    <code code="4213974" codeSystem="1.2.276.0.76.4.6" displayName="RAMIPRIL STADA 5 mg"/>
+                    <pharm:formCode code="10211000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Capsule, soft" codeSystemName="EDQM"/>
+                    <pharm:asSpecializedKind classCode="GRIC">
+                        <pharm:generalizedMaterialKind classCode="MMAT">
+                            <!-- Pharmaceutical Substance (ATC Code)-->
+                            <pharm:code code="C09AA05" codeSystem="2.16.840.1.113883.6.73" codeSystemName="WHO ATC"/>
+                        </pharm:generalizedMaterialKind>
+                    </pharm:asSpecializedKind>
+                    <pharm:ingredient classCode="ACTI">
+                        <pharm:quantity>
+                            <numerator xsi:type="PQ" value="5" unit="mg"/>
+                            <denominator xsi:type="PQ" value="1" unit="1"/>
+                        </pharm:quantity>
+                        <pharm:ingredient classCode="MMAT" determinerCode="KIND">
+                            <pharm:code code="SUB10248MIG" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="RAMIPRIL" codeSystemName="XEVMPD Substance">
+                                <originalText>Ramipril</originalText>
+                            </pharm:code>
+                        </pharm:ingredient>
+                    </pharm:ingredient>
+                </manufacturedMaterial>
+            </example>
+            <element name="hl7:manufacturedMaterial" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.119">
+                <item original="false" label="Material"/>
+                <attribute name="classCode" value="MMAT" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.243"/>
+                <attribute name="determinerCode" value="KIND" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.244"/>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CD" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.120">
+                    <desc language="de-DE">Pharmazentralnummer der Arznei, zugelassene nullFlavor:<ul>
+                            <li>NI Arznei hat keine PZN</li>
+                            <li>NA Arznei ist eine Rezeptur</li>
+                            <li>UNK Arznei hat eine PZN, diese ist jedoch unbekannt</li>
+                        </ul>
+                    </desc>
+                    <item original="false" label="Material"/>
+                    <example type="neutral" caption="Arznei mit PZN">
+                        <code code="10333719" codeSystem="1.2.276.0.76.4.6" displayName="Ibu-LysinHEXAL® 684 mg"/>
+                    </example>
+                    <example type="neutral" caption="Arznei hat keine PZN">
+                        <code nullFlavor="NI"/>
+                    </example>
+                    <example type="neutral" caption="Rezeptur (ohne PZN)">
+                        <code nullFlavor="NA">
+                            <originalText>
+                                <reference value="#rezeptur-17"/>
+                            </originalText>
+                        </code>
+                    </example>
+                    <example type="neutral" caption="Arznei, unbekannte PZN">
+                        <code nullFlavor="UNK"/>
+                    </example>
+                    <vocabulary codeSystem="1.2.276.0.76.4.6"/>
+                    <attribute name="nullFlavor" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.245">
+                        <vocabulary code="NA"/>
+                        <vocabulary code="NI"/>
+                        <vocabulary code="UNK"/>
+                    </attribute>
+                    <element name="hl7:originalText" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.121">
+                        <item original="false" label="Material"/>
+                        <element name="hl7:reference" minimumMultiplicity="1" maximumMultiplicity="1" datatype="TEL" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.122">
+                            <item original="false" label="Material"/>
+                            <attribute name="value" isOptional="false" id="2.16.840.1.113883.2.6.60.4.9.246">
+                                <desc language="de-DE">z.B. #rezeptur-{generierteID}, z.B.: #rezeptur-1</desc>
+                            </attribute>
+                        </element>
+                    </element>
+                    <element name="hl7:translation" minimumMultiplicity="0" maximumMultiplicity="*" datatype="CE" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.123">
+                        <desc language="de-DE">Optionale Übersetzung des Codes in ein anderes Codesystem</desc>
+                        <item original="false" label="Material"/>
+                    </element>
+                </element>
+                <element name="hl7:name" minimumMultiplicity="1" maximumMultiplicity="1" datatype="EN" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.124">
+                    <desc language="de-DE">Bezeichnung der Arznei<br/> Zugelassenes nullFlavor:<ul>
+                            <li>NA Arznei ist eine Rezeptur</li>
+                        </ul>
+                    </desc>
+                    <item original="false" label="Material"/>
+                    <example type="neutral" caption="Name der Arznei">
+                        <name>Limasin 500mg</name>
+                    </example>
+                    <example type="neutral" caption="Rezeptur ohne Handelsname">
+                        <name nullFlavor="NA"/>
+                    </example>
+                    <attribute name="nullFlavor" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.247">
+                        <vocabulary code="NA"/>
+                    </attribute>
+                </element>
+                <element name="pharm:formCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.125">
+                    <desc language="de-DE">Darreichungsform</desc>
+                    <item original="false" label="Material"/>
+                    <vocabulary valueSet="2.16.840.1.113883.2.6.60.4.11.27" vsid="2.16.840.1.113883.2.6.60.4.11.27" vsname="EDQMDoseForm" vsdisplayName="EDQMDoseForm" vseffectiveDate="2018-05-09T00:00:00" vsstatusCode="draft" linkedartefactmissing="false"/>
+                    <element name="hl7:translation" minimumMultiplicity="0" maximumMultiplicity="*" datatype="CE" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.248">
+                        <desc language="de-DE">Optionale Übersetzung des Codes in ein anderes Codesystem</desc>
+                        <item original="false" label="Material"/>
+                        <vocabulary valueSet="1.2.276.0.76.11.454" flexibility="dynamic" vsid="1.2.276.0.76.11.454" vsname="S_BMP_DARREICHUNGSFORM" vsdisplayName="S_BMP_DARREICHUNGSFORM" vseffectiveDate="2021-04-01T00:00:00" vsstatusCode="final" vsversionLabel="1.03" linkedartefactmissing="false"/>
+                    </element>
+                </element>
+                <element name="pharm:asContent" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.126">
+                    <desc language="de-DE">Angaben zur Packung</desc>
+                    <item original="false" label="Material"/>
+                    <attribute name="classCode" value="CONT" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.249"/>
+                    <element name="pharm:containerPackagedProduct" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.250">
+                        <item original="false" label="Material"/>
+                        <attribute name="classCode" value="CONT" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.251"/>
+                        <attribute name="determinerCode" value="INSTANCE" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.252"/>
+                        <element name="pharm:code" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.253">
+                            <desc language="de-DE">Pharmazentralnummer der Arznei</desc>
+                            <item original="false" label="Material"/>
+                            <vocabulary codeSystem="1.2.276.0.76.4.6"/>
+                            <element name="hl7:originalText" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.2.6.60.4.9.254">
+                                <item original="false" label="Material"/>
+                            </element>
+                        </element>
+                        <element name="pharm:name" minimumMultiplicity="1" maximumMultiplicity="1" datatype="EN" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.255">
+                            <item original="false" label="Material"/>
+                        </element>
+                        <element name="pharm:formCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.256">
+                            <desc language="de-DE">Typ der Packung</desc>
+                            <item original="false" label="Material"/>
+                        </element>
+                        <element name="pharm:capacityQuantity" minimumMultiplicity="1" maximumMultiplicity="1" datatype="PQ" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.257">
+                            <item original="false" label="Material"/>
+                        </element>
+                    </element>
+                </element>
+                <element name="pharm:asSpecializedKind" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.258">
+                    <desc language="de-DE">Angabe des WHO ATC Codes</desc>
+                    <item original="false" label="Material"/>
+                    <example type="neutral">
+                        <pharm:asSpecializedKind classCode="GRIC">
+                            <pharm:generalizedMaterialKind classCode="MMAT">
+                                <!-- Pharmaceutical Substance (ATC Code)-->
+                                <pharm:code code=" " codeSystem="2.16.840.1.113883.6.73" displayName=" " codeSystemName="WHO ATC"/>
+                            </pharm:generalizedMaterialKind>
+                        </pharm:asSpecializedKind>
+                    </example>
+                    <attribute name="classCode" value="GRIC" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.259"/>
+                    <element name="pharm:generalizedMaterialKind" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.260">
+                        <item original="false" label="Material"/>
+                        <attribute name="classCode" value="MMAT" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.261"/>
+                        <element name="hl7:code" datatype="CD" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.262">
+                            <item original="false" label="Material"/>
+                            <vocabulary codeSystem="2.16.840.1.113883.6.73"/>
+                        </element>
+                        <element name="hl7:name" datatype="ST" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.263">
+                            <item original="false" label="Material"/>
+                        </element>
+                    </element>
+                </element>
+                <element name="pharm:ingredient" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.132">
+                    <desc language="de-DE">Angaben zu aktiven Wirkstoffen</desc>
+                    <item original="false" label="Material"/>
+                    <attribute name="classCode" value="ACTI" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.264"/>
+                    <element name="pharm:quantity" minimumMultiplicity="0" maximumMultiplicity="1" datatype="IVL_PQ" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.133">
+                        <item original="false" label="Material"/>
+                        <example type="neutral" caption="Wirkstärke von 10 mg Inhaltsstoff per ml des Medikaments">
+                            <pharm:quantity>
+                                <numerator xsi:type="PQ" value="10" unit="mg"/>
+                                <denominator xsi:type="PQ" value="1" unit="ml"/>
+                            </pharm:quantity>
+                        </example>
+                        <example type="neutral" caption="Wirkstärke des Inhaltsstoffs in 1 Einheit der verabreichten Medikation: 2% des Inhaltsstoffs">
+                            <pharm:quantity>
+                                <numerator xsi:type="PQ" value="2" unit="%"/>
+                                <denominator xsi:type="PQ" value="1"/>
+                            </pharm:quantity>
+                        </example>
+                        <element name="hl7:numerator" minimumMultiplicity="1" maximumMultiplicity="1" datatype="PQ" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.134">
+                            <item original="false" label="Material"/>
+                            <example type="neutral">
+                                <numerator xsi:type="PQ" value="5" unit="mg">
+                                    <translation value="5" code="v" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="mg"/>
+                                </numerator>
+                            </example>
+                            <element name="hl7:translation" minimumMultiplicity="0" maximumMultiplicity="*" datatype="PQR" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.265">
+                                <desc language="de-DE">Optionale Übersetzung der Einheiten in ein anderes Einheitensystem</desc>
+                                <item original="false" label="Material"/>
+                                <vocabulary valueSet="1.2.276.0.76.11.455" flexibility="dynamic" vsid="1.2.276.0.76.11.455" vsname="S_BMP_DOSIEREINHEIT" vsdisplayName="S_BMP_DOSIEREINHEIT" vseffectiveDate="2019-01-01T00:00:00" vsstatusCode="final" vsversionLabel="1.01" linkedartefactmissing="false"/>
+                            </element>
+                        </element>
+                        <element name="hl7:denominator" minimumMultiplicity="1" maximumMultiplicity="1" datatype="PQ" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.135">
+                            <item original="false" label="Material"/>
+                        </element>
+                    </element>
+                    <element name="pharm:ingredient" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.136">
+                        <desc language="de-DE">Code und Name des aktiven Wirkstoffs</desc>
+                        <item original="false" label="Material"/>
+                        <element name="pharm:code" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CE" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.137">
+                            <item original="false" label="Material"/>
+                            <vocabulary codeSystem="2.16.840.1.113883.6.73"/>
+                            <vocabulary codeSystem="0.4.0.127.0.16.1.1.2.1"/>
+                            <element name="hl7:originalText" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.138">
+                                <item original="false" label="Material"/>
+                            </element>
+                            <element name="hl7:translation" minimumMultiplicity="0" maximumMultiplicity="*" datatype="CE" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.139">
+                                <item original="false" label="Material"/>
+                            </element>
+                        </element>
+                        <element name="pharm:name" minimumMultiplicity="1" maximumMultiplicity="1" datatype="EN" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.140">
+                            <item original="false" label="Material"/>
+                        </element>
+                    </element>
+                </element>
+            </element>
+            <staticAssociations>
+                <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.420" effectiveDate="2017-06-04T00:00:00" refdisplay="pmp-dataelement2017-420" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.4.1.3" datasetEffectiveDate="2017-06-04T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2017" datasetName="Patientenbezogener Medikationsplan Plus" ident="pmp-" elementId="2.16.840.1.113883.2.6.60.4.9.132" templateId="1.2.276.0.76.10.90022" templateEffectiveDate="2017-06-04T00:00:00" path="Medikation / Medikationseintrag / Arzneimittel/Wirkstoff/Rezeptur">
+                    <name language="de-DE">Wirkstoff</name>
+                    <desc language="de-DE">Wirkstoff</desc>
+                    <datasetName language="de-DE">Patientenbezogener Medikationsplan Plus</datasetName>
+                    <projectName language="de-DE">Patientenbezogener Medikationsplan</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.4010" effectiveDate="2017-06-04T00:00:00" refdisplay="pmp-dataelement2017-4010" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.4.1.3" datasetEffectiveDate="2017-06-04T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2017" datasetName="Patientenbezogener Medikationsplan Plus" ident="pmp-" elementId="2.16.840.1.113883.2.6.60.4.9.140" templateId="1.2.276.0.76.10.90022" templateEffectiveDate="2017-06-04T00:00:00" path="Medikation / Medikationseintrag / Arzneimittel/Wirkstoff/Rezeptur / Wirkstoff">
+                    <name language="de-DE">Wirkstoff-Name</name>
+                    <desc language="de-DE">Bezeichnung eines Wirkstoffes, der aus einer Wirkstoffklassifikation entnommen wird</desc>
+                    <datasetName language="de-DE">Patientenbezogener Medikationsplan Plus</datasetName>
+                    <projectName language="de-DE">Patientenbezogener Medikationsplan</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.4020" effectiveDate="2017-06-04T00:00:00" refdisplay="pmp-dataelement2017-4020" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.4.1.3" datasetEffectiveDate="2017-06-04T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2017" datasetName="Patientenbezogener Medikationsplan Plus" ident="pmp-" elementId="2.16.840.1.113883.2.6.60.4.9.137" templateId="1.2.276.0.76.10.90022" templateEffectiveDate="2017-06-04T00:00:00" path="Medikation / Medikationseintrag / Arzneimittel/Wirkstoff/Rezeptur / Wirkstoff">
+                    <name language="de-DE">Wirkstoff-Code</name>
+                    <desc language="de-DE">Code eines Wirkstoffes, der aus einer Wirkstoffklassifikation entnommen wird</desc>
+                    <datasetName language="de-DE">Patientenbezogener Medikationsplan Plus</datasetName>
+                    <projectName language="de-DE">Patientenbezogener Medikationsplan</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.4040" effectiveDate="2017-06-04T00:00:00" refdisplay="pmp-dataelement2017-4040" conceptStatusCode="cancelled" datasetId="2.16.840.1.113883.2.6.60.4.1.3" datasetEffectiveDate="2017-06-04T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2017" datasetName="Patientenbezogener Medikationsplan Plus" ident="pmp-" elementId="2.16.840.1.113883.2.6.60.4.9.125" templateId="1.2.276.0.76.10.90022" templateEffectiveDate="2017-06-04T00:00:00" path="Medikation / Medikationseintrag / Arzneimittel/Wirkstoff/Rezeptur / Wirkstoff">
+                    <name language="de-DE">Darreichungsform</name>
+                    <desc language="de-DE">Darreichungsform</desc>
+                    <datasetName language="de-DE">Patientenbezogener Medikationsplan Plus</datasetName>
+                    <projectName language="de-DE">Patientenbezogener Medikationsplan</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.440" effectiveDate="2017-06-04T00:00:00" refdisplay="pmp-dataelement2017-440" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.4.1.3" datasetEffectiveDate="2017-06-04T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2017" datasetName="Patientenbezogener Medikationsplan Plus" ident="pmp-" elementId="2.16.840.1.113883.2.6.60.4.9.119" templateId="1.2.276.0.76.10.90022" templateEffectiveDate="2017-06-04T00:00:00" path="Medikation / Medikationseintrag / Arzneimittel/Wirkstoff/Rezeptur">
+                    <name language="de-DE">Arzneimittel</name>
+                    <desc language="de-DE">Arzneimittel</desc>
+                    <datasetName language="de-DE">Patientenbezogener Medikationsplan Plus</datasetName>
+                    <projectName language="de-DE">Patientenbezogener Medikationsplan</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.4310" effectiveDate="2017-06-04T00:00:00" refdisplay="pmp-dataelement2017-4310" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.4.1.3" datasetEffectiveDate="2017-06-04T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2017" datasetName="Patientenbezogener Medikationsplan Plus" ident="pmp-" elementId="2.16.840.1.113883.2.6.60.4.9.124" templateId="1.2.276.0.76.10.90022" templateEffectiveDate="2017-06-04T00:00:00" path="Medikation / Medikationseintrag / Arzneimittel/Wirkstoff/Rezeptur / Arzneimittel">
+                    <name language="de-DE">Arzneimittel-Name</name>
+                    <desc language="de-DE">Arzneimittelname oder auch Handelsname genannt. Bezeichnung eines Fertigarzneimittels</desc>
+                    <datasetName language="de-DE">Patientenbezogener Medikationsplan Plus</datasetName>
+                    <projectName language="de-DE">Patientenbezogener Medikationsplan</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.4320" effectiveDate="2017-06-04T00:00:00" refdisplay="pmp-dataelement2017-4320" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.4.1.3" datasetEffectiveDate="2017-06-04T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2017" datasetName="Patientenbezogener Medikationsplan Plus" ident="pmp-" elementId="2.16.840.1.113883.2.6.60.4.9.120" templateId="1.2.276.0.76.10.90022" templateEffectiveDate="2017-06-04T00:00:00" path="Medikation / Medikationseintrag / Arzneimittel/Wirkstoff/Rezeptur / Arzneimittel">
+                    <name language="de-DE">Arzneimittel-Code</name>
+                    <desc language="de-DE">Identifikation eines Fertigarzneimittels durch seinen Code, z. B. Pharmazentralnummer</desc>
+                    <datasetName language="de-DE">Patientenbezogener Medikationsplan Plus</datasetName>
+                    <projectName language="de-DE">Patientenbezogener Medikationsplan</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.4340" effectiveDate="2017-06-04T00:00:00" refdisplay="pmp-dataelement2017-4340" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.4.1.3" datasetEffectiveDate="2017-06-04T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2017" datasetName="Patientenbezogener Medikationsplan Plus" ident="pmp-" elementId="2.16.840.1.113883.2.6.60.4.9.125" templateId="1.2.276.0.76.10.90022" templateEffectiveDate="2017-06-04T00:00:00" path="Medikation / Medikationseintrag / Arzneimittel/Wirkstoff/Rezeptur">
+                    <name language="de-DE">Darreichungsform</name>
+                    <desc language="de-DE">Darreichungsform</desc>
+                    <datasetName language="de-DE">Patientenbezogener Medikationsplan Plus</datasetName>
+                    <projectName language="de-DE">Patientenbezogener Medikationsplan</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.450" effectiveDate="2017-06-04T00:00:00" refdisplay="pmp-dataelement2017-450" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.4.1.3" datasetEffectiveDate="2017-06-04T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2017" datasetName="Patientenbezogener Medikationsplan Plus" ident="pmp-" elementId="2.16.840.1.113883.2.6.60.4.9.119" templateId="1.2.276.0.76.10.90022" templateEffectiveDate="2017-06-04T00:00:00" path="Medikation / Medikationseintrag / Arzneimittel/Wirkstoff/Rezeptur">
+                    <name language="de-DE">Rezeptur</name>
+                    <desc language="de-DE">Rezeptur-Eintrag</desc>
+                    <datasetName language="de-DE">Patientenbezogener Medikationsplan Plus</datasetName>
+                    <projectName language="de-DE">Patientenbezogener Medikationsplan</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.4510" effectiveDate="2017-06-04T00:00:00" refdisplay="pmp-dataelement2017-4510" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.4.1.3" datasetEffectiveDate="2017-06-04T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2017" datasetName="Patientenbezogener Medikationsplan Plus" ident="pmp-" elementId="2.16.840.1.113883.2.6.60.4.9.121" templateId="1.2.276.0.76.10.90022" templateEffectiveDate="2017-06-04T00:00:00" path="Medikation / Medikationseintrag / Arzneimittel/Wirkstoff/Rezeptur / Rezeptur">
+                    <name language="de-DE">Freitextzeile</name>
+                    <desc language="de-DE">Freitextzeile</desc>
+                    <datasetName language="de-DE">Patientenbezogener Medikationsplan Plus</datasetName>
+                    <projectName language="de-DE">Patientenbezogener Medikationsplan</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.4330" effectiveDate="2017-06-04T00:00:00" refdisplay="pmp-dataelement2017-4330" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.4.1.3" datasetEffectiveDate="2017-06-04T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2017" datasetName="Patientenbezogener Medikationsplan Plus" ident="pmp-" elementId="2.16.840.1.113883.2.6.60.4.9.257" templateId="1.2.276.0.76.10.90022" templateEffectiveDate="2017-06-04T00:00:00" path="Medikation / Medikationseintrag / Arzneimittel/Wirkstoff/Rezeptur / Arzneimittel">
+                    <name language="de-DE">Wirkstärke</name>
+                    <desc language="de-DE">Wirkstärke</desc>
+                    <datasetName language="de-DE">Patientenbezogener Medikationsplan Plus</datasetName>
+                    <projectName language="de-DE">Patientenbezogener Medikationsplan</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.4030" effectiveDate="2017-06-04T00:00:00" refdisplay="pmp-dataelement2017-4030" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.4.1.3" datasetEffectiveDate="2017-06-04T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2017" datasetName="Patientenbezogener Medikationsplan Plus" ident="pmp-" elementId="2.16.840.1.113883.2.6.60.4.9.133" templateId="1.2.276.0.76.10.90022" templateEffectiveDate="2017-06-04T00:00:00" path="Medikation / Medikationseintrag / Arzneimittel/Wirkstoff/Rezeptur / Wirkstoff">
+                    <name language="de-DE">Menge</name>
+                    <desc language="de-DE">Wirkstärke</desc>
+                    <datasetName language="de-DE">Patientenbezogener Medikationsplan Plus</datasetName>
+                    <projectName language="de-DE">Patientenbezogener Medikationsplan</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.440" effectiveDate="2019-01-27T00:00:00" refdisplay="pmp-dataelement2017-440" conceptStatusCode="" datasetId="" datasetEffectiveDate="" datasetStatusCode="" datasetName="" ident="" elementId="2.16.840.1.113883.2.6.60.4.9.119" templateId="1.2.276.0.76.10.90022" templateEffectiveDate="2017-06-04T00:00:00" path=""/>
+                <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.4310" effectiveDate="2019-01-27T00:00:00" refdisplay="pmp-dataelement2017-4310" conceptStatusCode="" datasetId="" datasetEffectiveDate="" datasetStatusCode="" datasetName="" ident="" elementId="2.16.840.1.113883.2.6.60.4.9.124" templateId="1.2.276.0.76.10.90022" templateEffectiveDate="2017-06-04T00:00:00" path=""/>
+                <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.4320" effectiveDate="2019-01-27T00:00:00" refdisplay="pmp-dataelement2017-4320" conceptStatusCode="" datasetId="" datasetEffectiveDate="" datasetStatusCode="" datasetName="" ident="" elementId="2.16.840.1.113883.2.6.60.4.9.120" templateId="1.2.276.0.76.10.90022" templateEffectiveDate="2017-06-04T00:00:00" path=""/>
+                <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.4330" effectiveDate="2019-01-27T00:00:00" refdisplay="pmp-dataelement2017-4330" conceptStatusCode="" datasetId="" datasetEffectiveDate="" datasetStatusCode="" datasetName="" ident="" elementId="2.16.840.1.113883.2.6.60.4.9.257" templateId="1.2.276.0.76.10.90022" templateEffectiveDate="2017-06-04T00:00:00" path=""/>
+                <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.450" effectiveDate="2019-01-27T00:00:00" refdisplay="pmp-dataelement2017-450" conceptStatusCode="" datasetId="" datasetEffectiveDate="" datasetStatusCode="" datasetName="" ident="" elementId="2.16.840.1.113883.2.6.60.4.9.119" templateId="1.2.276.0.76.10.90022" templateEffectiveDate="2017-06-04T00:00:00" path=""/>
+                <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.4510" effectiveDate="2019-01-27T00:00:00" refdisplay="pmp-dataelement2017-4510" conceptStatusCode="" datasetId="" datasetEffectiveDate="" datasetStatusCode="" datasetName="" ident="" elementId="2.16.840.1.113883.2.6.60.4.9.121" templateId="1.2.276.0.76.10.90022" templateEffectiveDate="2017-06-04T00:00:00" path=""/>
+                <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.420" effectiveDate="2019-01-27T00:00:00" refdisplay="pmp-dataelement2017-420" conceptStatusCode="" datasetId="" datasetEffectiveDate="" datasetStatusCode="" datasetName="" ident="" elementId="2.16.840.1.113883.2.6.60.4.9.132" templateId="1.2.276.0.76.10.90022" templateEffectiveDate="2017-06-04T00:00:00" path=""/>
+                <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.4010" effectiveDate="2019-01-27T00:00:00" refdisplay="pmp-dataelement2017-4010" conceptStatusCode="" datasetId="" datasetEffectiveDate="" datasetStatusCode="" datasetName="" ident="" elementId="2.16.840.1.113883.2.6.60.4.9.140" templateId="1.2.276.0.76.10.90022" templateEffectiveDate="2017-06-04T00:00:00" path=""/>
+                <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.4020" effectiveDate="2019-01-27T00:00:00" refdisplay="pmp-dataelement2017-4020" conceptStatusCode="" datasetId="" datasetEffectiveDate="" datasetStatusCode="" datasetName="" ident="" elementId="2.16.840.1.113883.2.6.60.4.9.137" templateId="1.2.276.0.76.10.90022" templateEffectiveDate="2017-06-04T00:00:00" path=""/>
+                <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.4030" effectiveDate="2019-01-27T00:00:00" refdisplay="pmp-dataelement2017-4030" conceptStatusCode="" datasetId="" datasetEffectiveDate="" datasetStatusCode="" datasetName="" ident="" elementId="2.16.840.1.113883.2.6.60.4.9.133" templateId="1.2.276.0.76.10.90022" templateEffectiveDate="2017-06-04T00:00:00" path=""/>
+                <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.4340" effectiveDate="2019-01-27T00:00:00" refdisplay="pmp-dataelement2017-4340" conceptStatusCode="" datasetId="" datasetEffectiveDate="" datasetStatusCode="" datasetName="" ident="" elementId="2.16.840.1.113883.2.6.60.4.9.125" templateId="1.2.276.0.76.10.90022" templateEffectiveDate="2017-06-04T00:00:00" path=""/>
+            </staticAssociations>
+        </template>
+    </template>
+</result>

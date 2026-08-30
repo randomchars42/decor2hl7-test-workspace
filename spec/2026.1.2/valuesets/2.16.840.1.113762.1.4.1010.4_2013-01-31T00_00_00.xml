@@ -1,0 +1,24 @@
+<valueSets>
+    <repository url="http://art-decor.org/decor/services/" ident="ccda-" referencedFrom="DICOM-" projecttype="local">
+        <valueSet id="2.16.840.1.113762.1.4.1010.4" name="MedicationClinicalDrug" displayName="Medication Clinical Drug" effectiveDate="2013-01-31T00:00:00" statusCode="final">
+            <desc language="en-US">All prescribable medication formulations represented using either a "generic" or "brand-specific" concept. This includes RxNorm codes whose Term Type is SCD (semantic clinical drug), SBD (semantic brand drug), GPCK (generic pack), BPCK (brand pack), SCDG (semantic clinical drug group), SBDG (semantic brand drug group), SCDF (semantic clinical drug form), or SBDF
+                (semantic brand drug form). Value set intensionally defined as a GROUPING made up of: Value Set: Medication Clinical General Drug (2.16.840.1.113883.3.88.12.80.17) (RxNorm Generic Drugs); Value Set: Medication Clinical Brand-specific Drug (2.16.840.1.113762.1.4.1010.5) (RxNorm Branded Drugs). <p>Valueset Source: <a href="https://vsac.nlm.nih.gov/">https://vsac.nlm.nih.gov/</a>
+                </p>
+            </desc>
+            <sourceCodeSystem id="2.16.840.1.113883.6.88" identifierName="RxNorm" canonicalUri="http://www.nlm.nih.gov/research/umls/rxnorm" canonicalUriDSTU2="http://www.nlm.nih.gov/research/umls/rxnorm" canonicalUriSTU3="http://www.nlm.nih.gov/research/umls/rxnorm" canonicalUriR4="http://www.nlm.nih.gov/research/umls/rxnorm" canonicalUriR4B="http://www.nlm.nih.gov/research/umls/rxnorm" canonicalUriR5="http://www.nlm.nih.gov/research/umls/rxnorm" context="external/hl7intl/v3/v3-rxNorm"/>
+            <publishingAuthority name="HL7 International" inherited="project">
+                <addrLine>Health Level Seven International</addrLine>
+                <addrLine>3300 Washtenaw Avenue</addrLine>
+                <addrLine>Suite 227</addrLine>
+                <addrLine>Ann Arbor, MI 48104- 4261</addrLine>
+                <addrLine>USA</addrLine>
+                <addrLine>T +1 734 677 7777 </addrLine>
+                <addrLine>F +1 734 677 6622</addrLine>
+                <addrLine>E info@hl7.org</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <include codeSystem="2.16.840.1.113883.6.88"/>
+            </conceptList>
+        </valueSet>
+    </repository>
+</valueSets>

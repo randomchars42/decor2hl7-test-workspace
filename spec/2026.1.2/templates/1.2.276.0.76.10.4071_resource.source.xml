@@ -1,0 +1,29 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultLanguage="de-DE" id="1.2.276.0.76.10.4071" name="ExternalDocumentReference" displayName="External Document Reference" effectiveDate="2015-03-30T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" xml:dummy-1="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-3="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance">
+    <classification type="cdaentrylevel"/>
+    <relationship type="SPEC" template="2.16.840.1.113883.10.12.328" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.328" tmname="CDAExternalDocument" tmdisplayName="CDA ExternalDocument" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-"/>
+    <relationship type="ADAPT" template="2.16.840.1.113883.10.20.22.4.115" flexibility="2014-06-09T00:00:00" tmid="2.16.840.1.113883.10.20.22.4.115" tmname="ExternalDocumentReference" tmdisplayName="External Document Reference" tmeffectiveDate="2014-06-09T00:00:00" tmstatusCode="draft" tmversionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-"/>
+    <context id="**"/>
+    <example>
+                <externalDocument classCode="DOC" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4071"/>
+                    <code code="53576-5" codeSystem="2.16.840.1.113883.6.1"/>
+                    <text>
+                        <reference value="#edoc-1"/>
+                    </text>
+                </externalDocument>
+            </example>
+    <element name="hl7:externalDocument" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631760">
+                <attribute name="classCode" value="DOC" id="2.16.840.1.113883.2.6.60.3.9.1631761"/>
+                <attribute name="moodCode" value="EVN" id="2.16.840.1.113883.2.6.60.3.9.1631762"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.1631763">
+                    <attribute name="root" value="1.2.276.0.76.10.4071" id="2.16.840.1.113883.2.6.60.3.9.1631764"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CV" id="2.16.840.1.113883.2.6.60.3.9.1631765">
+                    <vocabulary valueSet="1.2.276.0.76.11.57"/>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.2.6.60.3.9.1631766">
+                    <desc language="de-DE">Lediglich reference in den Text der zugehörigen Section</desc>
+                    <element name="hl7:reference" minimumMultiplicity="1" maximumMultiplicity="1" datatype="URL" id="2.16.840.1.113883.2.6.60.3.9.1631767"/>
+                </element>
+            </element>
+</template>

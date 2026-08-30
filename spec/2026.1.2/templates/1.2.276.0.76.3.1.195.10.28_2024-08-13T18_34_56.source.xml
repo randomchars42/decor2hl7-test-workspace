@@ -1,0 +1,59 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultLanguage="de-DE" id="1.2.276.0.76.3.1.195.10.28" name="unfall-anamnese" displayName="Unfall-Anamnese" effectiveDate="2024-08-13T18:34:56" statusCode="draft" versionLabel="2024" lastModifiedDate="2026-04-04T13:43:55" url="http://art-decor.org/decor/services/" ident="aktin-" xml:dummy-1="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-3="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance">
+    <desc language="en-US" lastTranslated="2024-08-13T18:34:56">Injury Event Detail</desc>
+    <desc language="de-DE" lastTranslated="2024-08-13T18:34:56">Unfallereignis Details</desc>
+    <classification type="cdaentrylevel"/>
+    <relationship type="SPEC" template="2.16.840.1.113883.10.12.301" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.301" tmname="CDAAct" tmdisplayName="CDA Act" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-"/>
+    <relationship type="ADAPT" template="2.16.840.1.113883.3.2898.10.23" flexibility="2015-09-09T00:00:00" linkedartefactmissing="true"/>
+    <context id="**"/>
+    <example>
+                <act classCode="ACT" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.3.1.195.10.28"/>
+                    <code code="55566008" codeSystem="2.16.840.1.113883.6.96" displayName="Accidental physical contact (event) "/>
+                    <!-- Unfalldatum und -zeit -->
+                    <effectiveTime>
+                        <value low="20170102"/>
+                    </effectiveTime>
+                    <!-- Unfallart TraumaRegister -->
+                    <entryRelationship typeCode="RSON" contextConductionInd="true">
+                        <!-- 4095 -->
+            </entryRelationship>
+                    <entryRelationship typeCode="COMP" contextConductionInd="true">
+                        <!-- Injury Cause Observation Organizer -->
+            </entryRelationship>
+                </act>
+            </example>
+    <element name="hl7:act" id="2.16.840.1.113883.2.6.60.3.9.163110">
+                <attribute name="classCode" value="ACT" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.163111"/>
+                <attribute name="moodCode" value="EVN" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.163112"/>
+                <element name="hl7:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.163113">
+                    <attribute name="root" value="1.2.276.0.76.3.1.195.10.28" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.163114"/>
+                </element>
+                <element name="hl7:code" datatype="CV" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.163115">
+                    <vocabulary code="74209-8" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:text" datatype="ED" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.1631141">
+                    <desc language="de-DE" lastTranslated="2024-08-13T18:34:56">Beschreibung, falls Verkehrsunfall, lediglich reference in den Text der zugehörigen Section</desc>
+                    <element name="hl7:reference" datatype="URL" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.1631829"/>
+                </element>
+                <element name="hl7:effectiveTime" datatype="IVL_TS" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.163116">
+                    <element name="hl7:low" datatype="TS" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.163117"/>
+                </element>
+                <element name="hl7:participant" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.371">
+                    <attribute name="typeCode" value="DEV" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.372"/>
+                    <element name="hl7:participantRole" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.373">
+                        <attribute name="classCode" value="INST" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.374"/>
+                        <element name="hl7:code" datatype="CE" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.375">
+                            <vocabulary valueSet="1.2.276.0.76.3.1.195.11.8"/>
+                        </element>
+                    </element>
+                </element>
+                <element name="hl7:entryRelationship" contains="1.2.276.0.76.3.1.195.10.29" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.163118">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.163119"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.163120"/>
+                </element>
+                <element name="hl7:entryRelationship" contains="1.2.276.0.76.3.1.195.10.30" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1631241">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631252"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.1631263"/>
+                </element>
+            </element>
+</template>

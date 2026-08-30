@@ -1,0 +1,14 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.2.6.60.6.1.1" effectiveDate="2015-06-18T18:17:24" statusCode="draft" versionLabel="2.0" prefix="psr-" shortName="" iddisplay="psr-dataset-1" url="http://art-decor.org/decor/services/" ident="psr-"><!--
+ This is a view of the dataset "" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE"/>
+    <desc language="de-DE"/>
+    <concept id="2.16.840.1.113883.2.6.60.6.2.12" statusCode="draft" effectiveDate="2015-06-22T14:29:50" type="item" iddisplay="psr-dataelement-12">
+        <implementation markdown="How many nodes are affected by tumor?"/>
+        <name language="de-DE" lastTranslated="2017-06-30T17:50:52">befallene Lymphknoten</name>
+        <desc language="de-DE" lastTranslated="2017-06-30T17:51:18">durch megastatisches Tumorgewebe befallene Lymphknoten</desc>
+        <valueDomain type="quantity"/>
+    </concept>
+</dataset>

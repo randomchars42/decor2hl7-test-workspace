@@ -1,0 +1,663 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.1019" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.1019" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" versionLabel="v2" isClosed="false" displayName="Emergency medicine Note CDA document" ident="aktin-" name="EmergencymedicineNoteCDAdocumentv2" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="active" url="http://art-decor.org/decor/services/" effectiveDate="2016-06-01T00:00:00">
+            <desc language="de-DE">Informationen im Rahmen des AKTIN Basismoduls als CDA Dokument</desc>
+            <classification type="cdadocumentlevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.1" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.1" tmname="CDAClinicalDocument" tmdisplayName="CDA ClinicalDocument" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <relationship type="VERSION" template="1.2.276.0.76.10.1015" flexibility="2014-09-18T00:00:00" tmid="1.2.276.0.76.10.1015" tmname="EmergencymedicineNoteCDAdocumentv1" tmdisplayName="Emergency medicine Note CDA document" tmeffectiveDate="2014-09-18T00:00:00" tmstatusCode="active" tmversionLabel="v1" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false"/>
+            <context path="/"/>
+            <item label="basismdoc"/>
+            <example type="neutral">
+                <ClinicalDocument xmlns="urn:hl7-org:v3">
+                    <!-- CDA Header -->
+                    <realmCode code="DE"/>
+                    <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+                    <templateId root="1.2.276.0.76.10.1019"/>
+                    <id extension="38457384973598" root="2.16.840.1.113883.3.1937.99.3.2.56754657.1"/>
+                    <code code="68552-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Emergency medicine Emergency department Admission evaluation note"/>
+                    <hl7:effectiveTime value="20140908123456"/>
+                    <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+                    <recordTarget>
+                        <!-- .. -->
+                    </recordTarget>
+                    <author>
+                        <!-- .. -->
+                    </author>
+                    <custodian>
+                        <!-- .. -->
+                    </custodian>
+                    <participant>
+                        <!-- .. -->
+                    </participant>
+                    <!-- CDA Body -->
+                    <component>
+                        <structuredBody>
+                            <component>
+                                <!-- .. -->
+                            </component>
+                        </structuredBody>
+                    </component>
+                </ClinicalDocument>
+            </example>
+            <element name="hl7:ClinicalDocument" id="2.16.840.1.113883.2.6.60.3.9.1631447">
+                <item original="false" label="basismdoc"/>
+                <include ref="1.2.276.0.76.10.90002" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" tmid="1.2.276.0.76.10.90002" tmname="CDArealmCode" tmdisplayName="CDA realmCode" tmeffectiveDate="2013-07-15T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                    <item original="false" label="basismdoc"/>
+                    <element name="hl7:realmCode" datatype="CS" id="2.16.840.1.113883.2.6.77.9.17" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                        <item original="false" label="CDArealmCode"/>
+                        <example type="neutral">
+                            <realmCode code="DE"/>
+                        </example>
+                        <attribute name="code" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.77.9.326">
+                            <vocabulary code="DE"/>
+                        </attribute>
+                    </element>
+                    <staticAssociations/>
+                </include>
+                <include ref="1.2.276.0.76.10.90003" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" tmid="1.2.276.0.76.10.90003" tmname="CDAtypeId" tmdisplayName="CDA typeId" tmeffectiveDate="2013-07-15T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                    <item original="false" label="basismdoc"/>
+                    <element name="hl7:typeId" datatype="II" id="2.16.840.1.113883.2.6.77.9.16" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                        <item original="false" label="CDAtypeId"/>
+                        <attribute name="extension" value="POCD_HD000040" isOptional="false" datatype="st" id="2.16.840.1.113883.2.6.77.9.327"/>
+                        <attribute name="root" value="2.16.840.1.113883.1.3" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.77.9.328"/>
+                    </element>
+                    <staticAssociations/>
+                </include>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.1631448">
+                    <item original="false" label="basismdoc"/>
+                    <example type="neutral">
+                        <templateId root="1.2.276.0.76.10.1019"/>
+                    </example>
+                    <attribute name="root" value="1.2.276.0.76.10.1019" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.1631449"/>
+                </element>
+                <include ref="1.2.276.0.76.10.90004" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" tmid="1.2.276.0.76.10.90004" tmname="CDAid" tmdisplayName="CDA id" tmeffectiveDate="2012-12-12T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                    <item original="false" label="basismdoc"/>
+                    <element name="hl7:id" datatype="II" id="2.16.840.1.113883.2.6.77.9.18" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                        <item original="false" label="CDAid"/>
+                    </element>
+                    <staticAssociations/>
+                </include>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CE" id="2.16.840.1.113883.2.6.60.3.9.1631450">
+                    <item original="false" label="basismdoc"/>
+                    <vocabulary code="68552-9" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <include ref="1.2.276.0.76.10.90005" minimumMultiplicity="0" maximumMultiplicity="1" tmid="1.2.276.0.76.10.90005" tmname="CDAtitle" tmdisplayName="CDA title" tmeffectiveDate="2012-12-12T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                    
+                <item original="false" label="basismdoc"/>
+                    <example type="neutral">
+                        <title>Emergency medicine Note 2014-09-08 12:34:56</title>
+                    </example>
+                    <element name="hl7:title" datatype="ST" id="2.16.840.1.113883.2.6.77.9.15" minimumMultiplicity="0" maximumMultiplicity="1">
+                        <item original="false" label="CDAtitle"/>
+                    </element>
+                    <staticAssociations/>
+                </include>
+                <include ref="1.2.276.0.76.10.90006" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" tmid="1.2.276.0.76.10.90006" tmname="CDAeffectiveTime" tmdisplayName="CDA effectiveTime" tmeffectiveDate="2012-12-12T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                    <item original="false" label="basismdoc"/>
+                    <element name="hl7:effectiveTime" datatype="TS.DATETIME.MIN" id="2.16.840.1.113883.2.6.77.9.12" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                        <item original="false" label="CDAeffectiveTime"/>
+                    </element>
+                    <staticAssociations>
+                        <origconcept ref="2.16.840.1.113883.2.6.60.4.2.1.5060" effectiveDate="2014-10-27T00:00:00" refdisplay="pmp-dataelementR1-5060" conceptStatusCode="final" conceptVersionLabel="Release 1" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" datasetName="Patientenbezogener Medikationsplan" ident="pmp-" elementId="2.16.840.1.113883.2.6.77.9.12" templateId="1.2.276.0.76.10.90006" templateEffectiveDate="2012-12-12T00:00:00" path="Identifikation">
+                            <name language="de-DE">Ausdruckdatum</name>
+                            <desc language="de-DE">Ausdruckdatum</desc>
+                            <datasetName language="de-DE">Patientenbezogener Medikationsplan</datasetName>
+                            <projectName language="de-DE">Patientenbezogener Medikationsplan</projectName>
+                        </origconcept>
+                        <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.5060" effectiveDate="2017-06-04T00:00:00" refdisplay="pmp-dataelement2017-5060" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.4.1.3" datasetEffectiveDate="2017-06-04T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2017" datasetName="Patientenbezogener Medikationsplan Plus" ident="pmp-" elementId="2.16.840.1.113883.2.6.77.9.12" templateId="1.2.276.0.76.10.90006" templateEffectiveDate="2012-12-12T00:00:00" path="Identifikation">
+                            <name language="de-DE">Ausdruckdatum</name>
+                            <desc language="de-DE">Ausdruckdatum</desc>
+                            <datasetName language="de-DE">Patientenbezogener Medikationsplan Plus</datasetName>
+                            <projectName language="de-DE">Patientenbezogener Medikationsplan</projectName>
+                        </origconcept>
+                        <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.5060" effectiveDate="2019-01-27T00:00:00" refdisplay="pmp-dataelement2017-5060" conceptStatusCode="" datasetId="" datasetEffectiveDate="" datasetStatusCode="" datasetName="" ident="" elementId="2.16.840.1.113883.2.6.77.9.12" templateId="1.2.276.0.76.10.90006" templateEffectiveDate="2012-12-12T00:00:00" path=""/>
+                    </staticAssociations>
+                </include>
+                <include ref="1.2.276.0.76.10.90007" tmid="1.2.276.0.76.10.90007" tmname="CDAconfidentialityCode" tmdisplayName="CDA confidentialityCode" tmeffectiveDate="2012-12-12T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                    <item original="false" label="basismdoc"/>
+                    <element name="hl7:confidentialityCode" datatype="CE" id="2.16.840.1.113883.2.6.77.9.329" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                        <item original="false" label="CDAconfidentialityCode"/>
+                        <vocabulary valueSet="2.16.840.1.113883.1.11.16926" vsid="2.16.840.1.113883.1.11.16926" vsname="HL7BasicConfidentialityKind" vsdisplayName="HL7 BasicConfidentialityKind" vseffectiveDate="2016-06-23T00:00:00" vsstatusCode="final" linkedartefactmissing="false"/>
+                    </element>
+                    <staticAssociations/>
+                </include>
+                <include ref="1.2.276.0.76.10.90008" tmid="1.2.276.0.76.10.90008" tmname="CDAlanguageCode" tmdisplayName="CDA languageCode" tmeffectiveDate="2012-03-11T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                    <item original="false" label="basismdoc"/>
+                    <element name="hl7:languageCode" datatype="CS.LANG" id="2.16.840.1.113883.2.6.77.9.11" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                        <item original="false" label="CDAlanguageCode"/>
+                    </element>
+                    <staticAssociations>
+                        <origconcept ref="2.16.840.1.113883.2.6.60.4.2.1.5030" effectiveDate="2014-10-27T00:00:00" refdisplay="pmp-dataelementR1-5030" conceptStatusCode="final" conceptVersionLabel="Release 1" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" datasetName="Patientenbezogener Medikationsplan" ident="pmp-" elementId="2.16.840.1.113883.2.6.77.9.11" templateId="1.2.276.0.76.10.90008" templateEffectiveDate="2012-03-11T00:00:00" path="Identifikation">
+                            <name language="de-DE">Länderkennzeichen</name>
+                            <desc language="de-DE">Länderkennzeichen des Medikationsplans</desc>
+                            <datasetName language="de-DE">Patientenbezogener Medikationsplan</datasetName>
+                            <projectName language="de-DE">Patientenbezogener Medikationsplan</projectName>
+                        </origconcept>
+                        <origconcept ref="2.16.840.1.113883.2.6.60.4.2.1.5040" effectiveDate="2014-10-27T00:00:00" refdisplay="pmp-dataelementR1-5040" conceptStatusCode="final" conceptVersionLabel="Release 1" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" datasetName="Patientenbezogener Medikationsplan" ident="pmp-" elementId="2.16.840.1.113883.2.6.77.9.11" templateId="1.2.276.0.76.10.90008" templateEffectiveDate="2012-03-11T00:00:00" path="Identifikation">
+                            <name language="de-DE">Sprachkennzeichen</name>
+                            <desc language="de-DE">Sprache des Medikationsplans</desc>
+                            <datasetName language="de-DE">Patientenbezogener Medikationsplan</datasetName>
+                            <projectName language="de-DE">Patientenbezogener Medikationsplan</projectName>
+                        </origconcept>
+                        <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.5030" effectiveDate="2017-06-04T00:00:00" refdisplay="pmp-dataelement2017-5030" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.4.1.3" datasetEffectiveDate="2017-06-04T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2017" datasetName="Patientenbezogener Medikationsplan Plus" ident="pmp-" elementId="2.16.840.1.113883.2.6.77.9.11" templateId="1.2.276.0.76.10.90008" templateEffectiveDate="2012-03-11T00:00:00" path="Identifikation">
+                            <name language="de-DE">Länderkennzeichen</name>
+                            <desc language="de-DE">Länderkennzeichen des Medikationsplans</desc>
+                            <datasetName language="de-DE">Patientenbezogener Medikationsplan Plus</datasetName>
+                            <projectName language="de-DE">Patientenbezogener Medikationsplan</projectName>
+                        </origconcept>
+                        <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.5040" effectiveDate="2017-06-04T00:00:00" refdisplay="pmp-dataelement2017-5040" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.4.1.3" datasetEffectiveDate="2017-06-04T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2017" datasetName="Patientenbezogener Medikationsplan Plus" ident="pmp-" elementId="2.16.840.1.113883.2.6.77.9.11" templateId="1.2.276.0.76.10.90008" templateEffectiveDate="2012-03-11T00:00:00" path="Identifikation">
+                            <name language="de-DE">Sprachkennzeichen</name>
+                            <desc language="de-DE">Sprache des Medikationsplans</desc>
+                            <datasetName language="de-DE">Patientenbezogener Medikationsplan Plus</datasetName>
+                            <projectName language="de-DE">Patientenbezogener Medikationsplan</projectName>
+                        </origconcept>
+                        <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.5030" effectiveDate="2019-01-27T00:00:00" refdisplay="pmp-dataelement2017-5030" conceptStatusCode="" datasetId="" datasetEffectiveDate="" datasetStatusCode="" datasetName="" ident="" elementId="2.16.840.1.113883.2.6.77.9.11" templateId="1.2.276.0.76.10.90008" templateEffectiveDate="2012-03-11T00:00:00" path=""/>
+                        <origconcept ref="2.16.840.1.113883.2.6.60.4.2.3.5040" effectiveDate="2019-01-27T00:00:00" refdisplay="pmp-dataelement2017-5040" conceptStatusCode="" datasetId="" datasetEffectiveDate="" datasetStatusCode="" datasetName="" ident="" elementId="2.16.840.1.113883.2.6.77.9.11" templateId="1.2.276.0.76.10.90008" templateEffectiveDate="2012-03-11T00:00:00" path=""/>
+                    </staticAssociations>
+                </include>
+                <include ref="1.2.276.0.76.10.90009" tmid="1.2.276.0.76.10.90009" tmname="CDAsetIdversionNumber" tmdisplayName="CDA setId and versionNumber" tmeffectiveDate="2012-12-12T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                    <item original="false" label="basismdoc"/>
+                    <element name="hl7:setId" datatype="II" id="2.16.840.1.113883.2.6.77.9.13" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" conformance="R">
+                        <item original="false" label="CDAsetIdversionNumber"/>
+                    </element>
+                    <element name="hl7:versionNumber" datatype="INT.POS" id="2.16.840.1.113883.2.6.77.9.14" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" conformance="R">
+                        <item original="false" label="CDAsetIdversionNumber"/>
+                    </element>
+                    <staticAssociations/>
+                </include>
+                <include ref="1.2.276.0.76.10.2032" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" tmid="1.2.276.0.76.10.2032" tmname="CDArecordTargetnnar" tmdisplayName="CDA recordTarget (nnar)" tmeffectiveDate="2014-09-17T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <item original="false" label="basismdoc"/>
+                    <element name="hl7:recordTarget" id="2.16.840.1.113883.2.6.60.3.9.1" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                        <item original="false" label="CDArecordTargetnnar"/>
+                        <attribute name="typeCode" value="RCT" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.25"/>
+                        <attribute name="contextControlCode" value="OP" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.26"/>
+                        <element name="hl7:patientRole" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.2">
+                            <item original="false" label="CDArecordTargetnnar"/>
+                            <attribute name="classCode" value="PAT" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.27"/>
+                            <include ref="1.2.276.0.76.10.90024" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" tmid="1.2.276.0.76.10.90024" tmname="PatientIdentifier" tmdisplayName="Patientenidentifikation" tmeffectiveDate="2014-12-17T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                                <item original="false" label="CDArecordTargetnnar"/>
+                                <element name="hl7:id" datatype="II" id="1.2.276.0.76.9.90024" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R">
+                                    <item original="false" label="PatientIdentifier"/>
+                                    <example type="neutral" caption="eGK Nummer als Patientenidentifikation">
+                                        <id extension="A123456789" root="1.2.276.0.76.4.8"/>
+                                    </example>
+                                </element>
+                                <staticAssociations/>
+                            </include>
+                            <element name="hl7:addr" minimumMultiplicity="0" maximumMultiplicity="1" datatype="AD" id="2.16.840.1.113883.2.6.60.3.9.7">
+                                <item original="false" label="CDArecordTargetnnar"/>
+                            </element>
+                            <element name="hl7:telecom" minimumMultiplicity="0" maximumMultiplicity="*" datatype="TEL" id="2.16.840.1.113883.2.6.60.3.9.28">
+                                <item original="false" label="CDArecordTargetnnar"/>
+                            </element>
+                            <element name="hl7:patient" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.3">
+                                <item original="false" label="CDArecordTargetnnar"/>
+                                <example type="neutral">
+                            <patient classCode="PSN" determinerCode="INSTANCE">
+                                <name><!-- ... --></name>
+                                <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1"/>
+                                <birthTime value="19620219"/>
+                            </patient>
+                        </example>
+                                <attribute name="classCode" value="PSN" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.29"/>
+                                <attribute name="determinerCode" value="INSTANCE" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.30"/>
+                                <element name="hl7:name" minimumMultiplicity="1" maximumMultiplicity="*" conformance="R" datatype="PN" id="2.16.840.1.113883.2.6.60.3.9.4">
+                                    <item original="false" label="CDArecordTargetnnar"/>
+                                </element>
+                                <element name="hl7:administrativeGenderCode" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="CE" id="2.16.840.1.113883.2.6.60.3.9.5">
+                                    <item original="false" label="CDArecordTargetnnar"/>
+                                    <vocabulary valueSet="2.16.840.1.113883.1.11.1" vsid="2.16.840.1.113883.1.11.1" vsname="AdministrativeGender" vsdisplayName="Administrative Gender (HL7 V3)" vseffectiveDate="2016-06-23T00:00:00" vsstatusCode="final" linkedartefactmissing="false"/>
+                                </element>
+                                <element name="hl7:birthTime" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="TS" id="2.16.840.1.113883.2.6.60.3.9.6">
+                                    <item original="false" label="CDArecordTargetnnar"/>
+                                </element>
+                            </element>
+                        </element>
+                    </element>
+                    <staticAssociations/>
+                </include>
+                <include ref="1.2.276.0.76.10.2033" minimumMultiplicity="1" maximumMultiplicity="*" isMandatory="true" tmid="1.2.276.0.76.10.2033" tmname="CDAauthor" tmdisplayName="CDA author" tmeffectiveDate="2014-09-17T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <item original="false" label="basismdoc"/>
+                    <element name="hl7:author" id="2.16.840.1.113883.2.6.60.3.9.1631521" minimumMultiplicity="1" maximumMultiplicity="*" isMandatory="true">
+                        <item original="false" label="CDAauthor"/>
+                        <attribute name="typeCode" value="AUT" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631522"/>
+                        <element name="hl7:time" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="TS.DATE.MIN" id="2.16.840.1.113883.2.6.60.3.9.1631523">
+                            <item original="false" label="CDAauthor"/>
+                        </element>
+                        <element name="hl7:assignedAuthor" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631524">
+                            <item original="false" label="CDAauthor"/>
+                            <attribute name="classCode" value="ASSIGNED" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631525"/>
+                            <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.1631526">
+                                <item original="false" label="CDAauthor"/>
+                            </element>
+                            <element name="hl7:assignedPerson" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.1631527">
+                                <item original="false" label="CDAauthor"/>
+                                <include ref="1.2.276.0.76.10.90010" tmid="1.2.276.0.76.10.90010" tmname="PersonElements" tmdisplayName="CDA Person Elements" tmeffectiveDate="2011-12-19T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                                    <item original="false" label="CDAauthor"/>
+                                    <attribute name="classCode" value="PSN" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.330"/>
+                                    <attribute name="determinerCode" value="INSTANCE" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.331"/>
+                                    <element name="hl7:name" datatype="PN" id="2.16.840.1.113883.2.6.77.9.332" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                                        <item original="false" label="PersonElements"/>
+                                    </element>
+                                    <staticAssociations/>
+                                </include>
+                            </element>
+                            <element name="hl7:representedOrganization" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.1631528">
+                                <item original="false" label="CDAauthor"/>
+                                <include ref="1.2.276.0.76.10.90011" tmid="1.2.276.0.76.10.90011" tmname="OrganizationElements" tmdisplayName="CDA Organization Elements" tmeffectiveDate="2011-12-19T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                                    <item original="false" label="CDAauthor"/>
+                                    <attribute name="classCode" value="ORG" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.333"/>
+                                    <attribute name="determinerCode" value="INSTANCE" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.334"/>
+                                    <element name="hl7:id" datatype="II" id="2.16.840.1.113883.2.6.77.9.335" minimumMultiplicity="0" maximumMultiplicity="*">
+                                        <item original="false" label="OrganizationElements"/>
+                                    </element>
+                                    <element name="hl7:name" datatype="ON" id="2.16.840.1.113883.2.6.77.9.336" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                                        <item original="false" label="OrganizationElements"/>
+                                    </element>
+                                    <element name="hl7:telecom" datatype="TEL" id="2.16.840.1.113883.2.6.77.9.337" minimumMultiplicity="0" maximumMultiplicity="*">
+                                        <item original="false" label="OrganizationElements"/>
+                                    </element>
+                                    <element name="hl7:addr" datatype="AD" id="2.16.840.1.113883.2.6.77.9.338" minimumMultiplicity="0" maximumMultiplicity="1">
+                                        <item original="false" label="OrganizationElements"/>
+                                    </element>
+                                    <staticAssociations/>
+                                </include>
+                            </element>
+                        </element>
+                    </element>
+                    <staticAssociations/>
+                </include>
+                <include ref="1.2.276.0.76.10.2034" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" tmid="1.2.276.0.76.10.2034" tmname="CDAcustodian" tmdisplayName="CDA custodian" tmeffectiveDate="2014-09-17T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <item original="false" label="basismdoc"/>
+                    <element name="hl7:custodian" id="2.16.840.1.113883.2.6.60.3.9.1631529" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                        <item original="false" label="CDAcustodian"/>
+                        <attribute name="typeCode" value="CST" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631530"/>
+                        <element name="hl7:assignedCustodian" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631531">
+                            <item original="false" label="CDAcustodian"/>
+                            <attribute name="classCode" value="ASSIGNED" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631532"/>
+                            <element name="hl7:representedCustodianOrganization" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.1631533">
+                                <item original="false" label="CDAcustodian"/>
+                                <include ref="1.2.276.0.76.10.90011" tmid="1.2.276.0.76.10.90011" tmname="OrganizationElements" tmdisplayName="CDA Organization Elements" tmeffectiveDate="2011-12-19T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                                    <item original="false" label="CDAcustodian"/>
+                                    <attribute name="classCode" value="ORG" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.333"/>
+                                    <attribute name="determinerCode" value="INSTANCE" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.334"/>
+                                    <element name="hl7:id" datatype="II" id="2.16.840.1.113883.2.6.77.9.335" minimumMultiplicity="0" maximumMultiplicity="*">
+                                        <item original="false" label="OrganizationElements"/>
+                                    </element>
+                                    <element name="hl7:name" datatype="ON" id="2.16.840.1.113883.2.6.77.9.336" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                                        <item original="false" label="OrganizationElements"/>
+                                    </element>
+                                    <element name="hl7:telecom" datatype="TEL" id="2.16.840.1.113883.2.6.77.9.337" minimumMultiplicity="0" maximumMultiplicity="*">
+                                        <item original="false" label="OrganizationElements"/>
+                                    </element>
+                                    <element name="hl7:addr" datatype="AD" id="2.16.840.1.113883.2.6.77.9.338" minimumMultiplicity="0" maximumMultiplicity="1">
+                                        <item original="false" label="OrganizationElements"/>
+                                    </element>
+                                    <staticAssociations/>
+                                </include>
+                            </element>
+                        </element>
+                    </element>
+                    <staticAssociations/>
+                </include>
+                <include ref="1.2.276.0.76.10.2005" minimumMultiplicity="0" maximumMultiplicity="*" tmid="1.2.276.0.76.10.2005" tmname="HeaderInformationRecipient" tmdisplayName="CDA informationRecipient" tmeffectiveDate="2013-07-10T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                    <item original="false" label="basismdoc"/>
+                    <element name="hl7:informationRecipient" id="2.16.840.1.113883.2.6.77.9.39" minimumMultiplicity="0" maximumMultiplicity="*">
+                        <item original="false" label="HeaderInformationRecipient"/>
+                        <attribute name="typeCode" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.40">
+                            <desc language="de-DE">Typ des Empfängers: im @<i>typeCode</i> der Participation kann angegeben werden, ob es sich um einen primären Empfänger handelt (default) oder einen sekundären Empfänger („CC Kopie").<br clear="none"/>Der typeCode PRCP ist der default.</desc>
+                            <vocabulary code="PRCP"/>
+                            <vocabulary code="TRC"/>
+                        </attribute>
+                        <element name="hl7:intendedRecipient" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.41">
+                            <item original="false" label="HeaderInformationRecipient"/>
+                            <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="*" datatype="II" conformance="R" id="2.16.840.1.113883.2.6.77.9.42">
+                                <item original="false" label="HeaderInformationRecipient"/>
+                            </element>
+                            <choice minimumMultiplicity="1" maximumMultiplicity="*">
+                                <desc language="de-DE">Wenn der beabsichtigte Empfänger eine Person ist, dann wird dies durch die Anwesenheit der <i>Person</i> Klasse mit oder ohne zugehörige Organisation spezifiziert. Wenn der beabsichtigte Empfänger eine Organisation ist, wird nur die Organisation angegeben, die Person fehlt.</desc>
+                                <item original="false" label="HeaderInformationRecipient"/>
+                                <element name="hl7:informationRecipient" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.43">
+                                    <item original="false" label="HeaderInformationRecipient"/>
+                                    <include ref="1.2.276.0.76.10.90010" tmid="1.2.276.0.76.10.90010" tmname="PersonElements" tmdisplayName="CDA Person Elements" tmeffectiveDate="2011-12-19T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                                        <item original="false" label="HeaderInformationRecipient"/>
+                                        <attribute name="classCode" value="PSN" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.330"/>
+                                        <attribute name="determinerCode" value="INSTANCE" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.331"/>
+                                        <element name="hl7:name" datatype="PN" id="2.16.840.1.113883.2.6.77.9.332" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                                            <item original="false" label="PersonElements"/>
+                                        </element>
+                                        <staticAssociations/>
+                                    </include>
+                                </element>
+                                <element name="hl7:receivedOrganization" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.44">
+                                    <item original="false" label="HeaderInformationRecipient"/>
+                                    <include ref="1.2.276.0.76.10.90011" tmid="1.2.276.0.76.10.90011" tmname="OrganizationElements" tmdisplayName="CDA Organization Elements" tmeffectiveDate="2011-12-19T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                                        <item original="false" label="HeaderInformationRecipient"/>
+                                        <attribute name="classCode" value="ORG" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.333"/>
+                                        <attribute name="determinerCode" value="INSTANCE" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.334"/>
+                                        <element name="hl7:id" datatype="II" id="2.16.840.1.113883.2.6.77.9.335" minimumMultiplicity="0" maximumMultiplicity="*">
+                                            <item original="false" label="OrganizationElements"/>
+                                        </element>
+                                        <element name="hl7:name" datatype="ON" id="2.16.840.1.113883.2.6.77.9.336" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                                            <item original="false" label="OrganizationElements"/>
+                                        </element>
+                                        <element name="hl7:telecom" datatype="TEL" id="2.16.840.1.113883.2.6.77.9.337" minimumMultiplicity="0" maximumMultiplicity="*">
+                                            <item original="false" label="OrganizationElements"/>
+                                        </element>
+                                        <element name="hl7:addr" datatype="AD" id="2.16.840.1.113883.2.6.77.9.338" minimumMultiplicity="0" maximumMultiplicity="1">
+                                            <item original="false" label="OrganizationElements"/>
+                                        </element>
+                                        <staticAssociations/>
+                                    </include>
+                                </element>
+                            </choice>
+                        </element>
+                    </element>
+                    <staticAssociations/>
+                </include>
+                <include ref="1.2.276.0.76.10.2022" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" tmid="1.2.276.0.76.10.2022" tmname="HeaderParticipantKostentraeger" tmdisplayName="CDA participant Kostentraeger" tmeffectiveDate="2014-08-25T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                    <item original="false" label="basismdoc"/>
+                    <element name="hl7:participant[hl7:templateId[@root='1.2.276.0.76.10.2022']]" id="2.16.840.1.113883.2.6.77.9.19" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R">
+                        <item original="false" label="HeaderParticipantKostentraeger"/>
+                        <attribute name="typeCode" value="HLD" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.77.9.20"/>
+                        <element name="hl7:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="*" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.21">
+                            <item original="false" label="HeaderParticipantKostentraeger"/>
+                            <attribute name="root" value="1.2.276.0.76.10.2022" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.77.9.22"/>
+                        </element>
+                        <element name="hl7:time" datatype="IVL_TS" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.23">
+                            <desc language="de-DE">Hier muss immer ein Quartalsende angegeben sein (MM/YY) =&gt; YYYYMMDD, z. B. Quartal I/2016, Quartalsende ist demnach März 2016 und wird zu 20160331</desc>
+                            <item original="false" label="HeaderParticipantKostentraeger"/>
+                            <example type="neutral">
+                                <time>
+                                    <high value="20131231"/>
+                                </time>
+                            </example>
+                        </element>
+                        <element name="hl7:associatedEntity" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.24">
+                            <item original="false" label="HeaderParticipantKostentraeger"/>
+                            <attribute name="classCode" value="POLHOLD" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.77.9.25"/>
+                            <element name="hl7:id" datatype="II" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.2.6.77.9.26">
+                                <desc language="de-DE">Versichertennummern</desc>
+                                <item original="false" label="HeaderParticipantKostentraeger"/>
+                            </element>
+                            <element name="hl7:code" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.27">
+                                <desc language="de-DE">Versichertenstatus<br clear="none"/>
+                                </desc>
+                                <item original="false" label="HeaderParticipantKostentraeger"/>
+                                <example type="neutral">
+                                    <code code="SELF" codeSystem="2.16.840.1.113883.5.111" displayName="self">
+                                        <translation code="1" codeSystem="2.16.840.1.113883.3.7.1.1" displayName="Mitglied"/>
+                                    </code>
+                                </example>
+                                <vocabulary valueSet="1.2.276.0.76.11.68" vsid="1.2.276.0.76.11.68" vsname="InsuredAssocEntity" vsdisplayName="InsuredAssocEntity" vseffectiveDate="2011-12-19T00:00:00" vsstatusCode="final" linkedartefactmissing="false"/>
+                                <element name="hl7:translation[@codeSystem='2.16.840.1.113883.3.7.1.1']" datatype="CV" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.178">
+                                    <desc language="de-DE">Codierungen des Versichertenstatus im Rahmen der GKV</desc>
+                                    <item original="false" label="HeaderParticipantKostentraeger"/>
+                                    <vocabulary valueSet="1.2.276.0.76.11.162" flexibility="dynamic" vsid="1.2.276.0.76.11.162" vsname="S_KBV_VERSICHERTENSTATUS" vsdisplayName="S_KBV_VERSICHERTENSTATUS" vseffectiveDate="2014-01-01T00:00:00" vsstatusCode="final" linkedartefactmissing="false"/>
+                                </element>
+                                <element name="hl7:translation" datatype="CV" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.2.6.77.9.179">
+                                    <desc language="de-DE">Weitere Codierungen des Versichertenstatus</desc>
+                                    <item original="false" label="HeaderParticipantKostentraeger"/>
+                                </element>
+                            </element>
+                            <element name="hl7:addr" datatype="AD" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.28">
+                                <item original="false" label="HeaderParticipantKostentraeger"/>
+                            </element>
+                            <element name="hl7:telecom" datatype="TEL" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.2.6.77.9.29">
+                                <item original="false" label="HeaderParticipantKostentraeger"/>
+                            </element>
+                            <element name="hl7:associatedPerson" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.30">
+                                <item original="false" label="HeaderParticipantKostentraeger"/>
+                                <include ref="1.2.276.0.76.10.90010" tmid="1.2.276.0.76.10.90010" tmname="PersonElements" tmdisplayName="CDA Person Elements" tmeffectiveDate="2011-12-19T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                                    <item original="false" label="HeaderParticipantKostentraeger"/>
+                                    <attribute name="classCode" value="PSN" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.330"/>
+                                    <attribute name="determinerCode" value="INSTANCE" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.331"/>
+                                    <element name="hl7:name" datatype="PN" id="2.16.840.1.113883.2.6.77.9.332" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                                        <item original="false" label="PersonElements"/>
+                                    </element>
+                                    <staticAssociations/>
+                                </include>
+                            </element>
+                            <assert role="error" test="not(hl7:code[@code='FAMDEP']) or hl7:associatedPerson">Wenn das Versicherungsverhältnis "familienversichert" ist, dann muss eine associatedPerson angegeben sein</assert>
+                            <element name="hl7:scopingOrganization" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.31">
+                                <desc language="de-DE">In scopingOrganization wird im id Attribut das Institutionskennzeichen (IKNR) des Kostenträgers mit @extension = die eigentliche IKNR und @root = "1.2.276.0.76.4.5" (Dies ist die OID für IK-Nummern in Deutschland) angegeben</desc>
+                                <item original="false" label="HeaderParticipantKostentraeger"/>
+                                <include ref="1.2.276.0.76.10.90011" tmid="1.2.276.0.76.10.90011" tmname="OrganizationElements" tmdisplayName="CDA Organization Elements" tmeffectiveDate="2011-12-19T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                                    <item original="false" label="HeaderParticipantKostentraeger"/>
+                                    <attribute name="classCode" value="ORG" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.333"/>
+                                    <attribute name="determinerCode" value="INSTANCE" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.334"/>
+                                    <element name="hl7:id" datatype="II" id="2.16.840.1.113883.2.6.77.9.335" minimumMultiplicity="0" maximumMultiplicity="*">
+                                        <item original="false" label="OrganizationElements"/>
+                                    </element>
+                                    <element name="hl7:name" datatype="ON" id="2.16.840.1.113883.2.6.77.9.336" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                                        <item original="false" label="OrganizationElements"/>
+                                    </element>
+                                    <element name="hl7:telecom" datatype="TEL" id="2.16.840.1.113883.2.6.77.9.337" minimumMultiplicity="0" maximumMultiplicity="*">
+                                        <item original="false" label="OrganizationElements"/>
+                                    </element>
+                                    <element name="hl7:addr" datatype="AD" id="2.16.840.1.113883.2.6.77.9.338" minimumMultiplicity="0" maximumMultiplicity="1">
+                                        <item original="false" label="OrganizationElements"/>
+                                    </element>
+                                    <staticAssociations/>
+                                </include>
+                            </element>
+                        </element>
+                    </element>
+                    <staticAssociations/>
+                </include>
+                <include ref="1.2.276.0.76.10.2035" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" tmid="1.2.276.0.76.10.2035" tmname="CDADocumentationOf" tmdisplayName="Dienstleistung/Behandlung (Basis)" tmeffectiveDate="2014-09-17T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <item original="false" label="basismdoc"/>
+                    <element name="hl7:documentationOf" id="2.16.840.1.113883.2.6.60.3.9.21" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                        <item original="false" label="CDADocumentationOf"/>
+                        <attribute name="typeCode" value="DOC" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.31"/>
+                        <element name="hl7:functionCode" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" datatype="CE" id="2.16.840.1.113883.2.6.60.3.9.1631534">
+                            <item original="false" label="CDADocumentationOf"/>
+                            <vocabulary code="ATTPHYS" codeSystem="2.16.840.1.113883.5.88"/>
+                        </element>
+                        <element name="hl7:serviceEvent" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.32">
+                            <item original="false" label="CDADocumentationOf"/>
+                            <attribute name="classCode" value="ACT" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.33"/>
+                            <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.34"/>
+                            <element name="hl7:effectiveTime" minimumMultiplicity="1" maximumMultiplicity="1" datatype="IVL_TS" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.35">
+                                <item original="false" label="CDADocumentationOf"/>
+                                <element name="cda:low" minimumMultiplicity="1" maximumMultiplicity="1" datatype="TS.DATETIME.MIN" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.22">
+                                    <desc language="de-DE">Zeitpunkt Therapiebeginn (Datum und Zeit), Zeitangabe genau bis auf die Minute</desc>
+                                    <item original="false" label="CDADocumentationOf"/>
+                                </element>
+                                <element name="cda:high" minimumMultiplicity="0" maximumMultiplicity="1" datatype="TS.DATETIME.MIN" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.24">
+                                    <desc language="de-DE">Zeitpunkt Therapieende, Verlegungs-/Entlassungszeitpunkt (Datum und Zeit), Zeitangabe genau bis auf die Minute; muss, wenn angegeben, hier identisch sein mit encompassingEncounter.effectiveTime.high</desc>
+                                    <item original="false" label="CDADocumentationOf"/>
+                                </element>
+                            </element>
+                            <element name="hl7:performer" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.36">
+                                <item original="false" label="CDADocumentationOf"/>
+                                <attribute name="typeCode" value="PRF" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.37"/>
+                                <element name="hl7:time" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="IVL_TS" id="2.16.840.1.113883.2.6.60.3.9.38">
+                                    <desc language="de-DE">Erster Arzt, Arztkontakt Beginn (in low) bis Ende (in high)</desc>
+                                    <item original="false" label="CDADocumentationOf"/>
+                                    <element name="hl7:low" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="TS" id="2.16.840.1.113883.2.6.60.3.9.39">
+                                        <desc language="de-DE">Begin des Arztkontaktes</desc>
+                                        <item original="false" label="CDADocumentationOf"/>
+                                    </element>
+                                    <element name="hl7:high" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" datatype="TS" id="2.16.840.1.113883.2.6.60.3.9.40">
+                                        <desc language="de-DE">Ende des Arztkontaktes</desc>
+                                        <item original="false" label="CDADocumentationOf"/>
+                                    </element>
+                                </element>
+                                <element name="hl7:assignedEntity" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.41">
+                                    <item original="false" label="CDADocumentationOf"/>
+                                    <attribute name="classCode" value="ASSIGNED" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.42"/>
+                                    <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.43">
+                                        <item original="false" label="CDADocumentationOf"/>
+                                        <attribute name="nullFlavor" value="NA" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.44"/>
+                                    </element>
+                                </element>
+                            </element>
+                        </element>
+                    </element>
+                    <staticAssociations/>
+                </include>
+                <include ref="1.2.276.0.76.10.2036" flexibility="2016-06-01T00:00:00" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" tmid="1.2.276.0.76.10.2036" tmname="CDAEncompassingEncounter" tmdisplayName="CDA encompassingEncounter Patientenkontakt (Basis)" tmeffectiveDate="2016-06-01T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <item original="false" label="basismdoc"/>
+                    <element name="hl7:componentOf" id="2.16.840.1.113883.2.6.60.3.9.216" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                        <item original="false" label="CDAEncompassingEncounter"/>
+                        <attribute name="typeCode" value="COMP" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.217"/>
+                        <element name="hl7:encompassingEncounter" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.218">
+                            <item original="false" label="CDAEncompassingEncounter"/>
+                            <attribute name="classCode" value="ENC" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.219"/>
+                            <attribute name="moodCode" value="EVN" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.220"/>
+                            <element name="hl7:id[1]" minimumMultiplicity="1" maximumMultiplicity="*" datatype="II" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1558">
+                                <desc language="de-DE">Identifikationselement (verpflichtend) zur Aufnahme der Aufenthalts-Identifikation als erste Id</desc>
+                                <item original="false" label="CDAEncompassingEncounter"/>
+                            </element>
+                            <element name="hl7:id[2]" minimumMultiplicity="0" maximumMultiplicity="1" datatype="II" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.15588">
+                                <desc language="de-DE">Abrechnungs-Fallnummer für das Zuordnen von §21-Daten (optional) als zweite Id</desc>
+                                <item original="false" label="CDAEncompassingEncounter"/>
+                            </element>
+                            <element name="hl7:effectiveTime" minimumMultiplicity="1" maximumMultiplicity="1" datatype="IVL_TS" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.221">
+                                <item original="false" label="CDAEncompassingEncounter"/>
+                                <element name="hl7:low" minimumMultiplicity="1" maximumMultiplicity="1" datatype="TS.DATE.MIN" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.222">
+                                    <desc language="de-DE">Aufnahmezeitpunkt (Datum und Zeit), Zeitangabe genau bis auf die Minute</desc>
+                                    <item original="false" label="CDAEncompassingEncounter"/>
+                                </element>
+                                <element name="hl7:high" minimumMultiplicity="0" maximumMultiplicity="1" datatype="TS.DATE.MIN" id="2.16.840.1.113883.2.6.60.3.9.223">
+                                    <desc language="de-DE">Ende Patientenkontakt = Zeitpunkt der Verlegung/Entlassung</desc>
+                                    <item original="false" label="CDAEncompassingEncounter"/>
+                                </element>
+                            </element>
+                            <element name="hl7:dischargeDispositionCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CV" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.224">
+                                <item original="false" label="CDAEncompassingEncounter"/>
+                                <vocabulary valueSet="1.2.276.0.76.11.56" flexibility="2015-11-17T00:00:00" vsid="1.2.276.0.76.11.56" vsname="Dischargedispositioncodes" vsdisplayName="Discharge Disposition Codes" vsstatusCode="draft" vseffectiveDate="2015-11-17T00:00:00" linkedartefactmissing="false"/>
+                            </element>
+                            <assert role="error" test="not(hl7:dischargeDispositionCode and //hl7:act[hl7:templateId/@root = '1.2.276.0.76.10.4067'])">Patient entweder verlegt (encompassingEncounter.dischargeDispositionCode) oder entlassen (act Referralto template id 1.2.276.0.76.10.4067)</assert>
+                        </element>
+                    </element>
+                    <staticAssociations/>
+                </include>
+                <element name="hl7:component" id="2.16.840.1.113883.2.6.60.3.9.1631451">
+                    <item original="false" label="basismdoc"/>
+                    <attribute name="typeCode" value="COMP" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631452"/>
+                    <attribute name="contextConductionInd" value="true" isOptional="true" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1631453"/>
+                    <element name="hl7:structuredBody" id="2.16.840.1.113883.2.6.60.3.9.1631454">
+                        <item original="false" label="basismdoc"/>
+                        <attribute name="classCode" value="DOCBODY" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631455"/>
+                        <attribute name="moodCode" value="EVN" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631456"/>
+                        <element name="hl7:component" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" contains="1.2.276.0.76.10.3045" id="2.16.840.1.113883.2.6.60.3.9.1631457" tmid="1.2.276.0.76.10.3045" tmname="Transportmethod" tmdisplayName="Transportmittel" tmeffectiveDate="2025-12-01T00:00:00" tmstatusCode="draft" tmversionLabel="2025" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                            <desc language="de-DE">Section: Transportmittel</desc>
+                            <item original="false" label="basismdoc"/>
+                            <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631458"/>
+                            <attribute name="contextConductionInd" value="true" isOptional="false" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1631459"/>
+                        </element>
+                        <element name="hl7:component" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" contains="1.2.276.0.76.10.3046" id="2.16.840.1.113883.2.6.60.3.9.1631460" tmid="1.2.276.0.76.10.3046" tmname="Typeofreferralsource" tmdisplayName="Zuweisung" tmeffectiveDate="2015-01-10T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                            <desc language="de-DE">Section: Zuweisung</desc>
+                            <item original="false" label="basismdoc"/>
+                            <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631461"/>
+                            <attribute name="contextConductionInd" value="true" isOptional="false" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1631462"/>
+                        </element>
+                        <element name="hl7:component" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" contains="1.2.276.0.76.10.3053" id="2.16.840.1.113883.2.6.60.3.9.1631463" tmid="1.2.276.0.76.10.3053" tmname="HistoryofPresentIllnessSection" tmdisplayName="Notfallanamnese" tmeffectiveDate="2025-12-01T00:00:00" tmstatusCode="draft" tmversionLabel="2025" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                            <desc language="de-DE">Section: Notfallanamnese</desc>
+                            <item original="false" label="basismdoc"/>
+                            <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631464"/>
+                            <attribute name="contextConductionInd" value="true" isOptional="false" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1631465"/>
+                        </element>
+                        <element name="hl7:component" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" contains="1.2.276.0.76.10.3048" id="2.16.840.1.113883.2.6.60.3.9.1631466" tmid="1.2.276.0.76.10.3048" tmname="Chiefcomplaintreasonforvisit" tmdisplayName="Beschwerden bei Vorstellung" tmeffectiveDate="2015-01-10T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                            <desc language="de-DE">Section: Beschwerden bei Vorstellung / Grund der Vorstellung</desc>
+                            <item original="false" label="basismdoc"/>
+                            <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631467"/>
+                            <attribute name="contextConductionInd" value="true" isOptional="false" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1631468"/>
+                        </element>
+                        <element name="hl7:component" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" contains="1.2.276.0.76.10.3047" flexibility="2016-08-02T00:00:00" id="2.16.840.1.113883.2.6.60.3.9.1631469" tmid="1.2.276.0.76.10.3047" tmname="ClinicalInformation" tmdisplayName="Klinische Basisinformationen" tmeffectiveDate="2016-08-02T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                            <desc language="de-DE">Section: Klinische Basisinformationen</desc>
+                            <item original="false" label="basismdoc"/>
+                            <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631470"/>
+                            <attribute name="contextConductionInd" value="true" isOptional="false" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1631471"/>
+                        </element>
+                        <element name="hl7:component" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" contains="1.2.276.0.76.10.3044" id="2.16.840.1.113883.2.6.60.3.9.1631472" tmid="1.2.276.0.76.10.3044" tmname="VitalSignsSection" tmdisplayName="Vitalparameter" tmeffectiveDate="2015-09-18T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                            <desc language="de-DE">Section: Vitalparameter</desc>
+                            <item original="false" label="basismdoc"/>
+                            <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631473"/>
+                            <attribute name="contextConductionInd" value="true" isOptional="false" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1631474"/>
+                        </element>
+                        <element name="hl7:component" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" contains="1.2.276.0.76.10.3050" id="2.16.840.1.113883.2.6.60.3.9.1631475" tmid="1.2.276.0.76.10.3050" tmname="Relevantdiagnostictestsorlaboratorydata" tmdisplayName="Diagnostik" tmeffectiveDate="2025-12-01T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                            <desc language="de-DE">Section: Diagnostik</desc>
+                            <item original="false" label="basismdoc"/>
+                            <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631476"/>
+                            <attribute name="contextConductionInd" value="true" isOptional="false" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1631477"/>
+                        </element>
+                        <element name="hl7:component" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" contains="1.2.276.0.76.10.3051" id="2.16.840.1.113883.2.6.60.3.9.1631478" tmid="1.2.276.0.76.10.3051" tmname="AllergienUnvertraeglichkeiten" tmdisplayName="Allergien und Unverträglichkeiten" tmeffectiveDate="2015-03-26T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                            <desc language="de-DE">Section: Allergien und Unverträglichkeiten</desc>
+                            <item original="false" label="basismdoc"/>
+                            <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631479"/>
+                            <attribute name="contextConductionInd" value="true" isOptional="false" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1631480"/>
+                        </element>
+                        <element name="hl7:component" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" contains="1.2.276.0.76.10.3054" id="2.16.840.1.113883.2.6.60.3.9.1631481" tmid="1.2.276.0.76.10.3054" tmname="Patientcarenarrative" tmdisplayName="Prozeduren und Maßnahmen" tmeffectiveDate="2025-12-01T00:00:00" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                            <desc language="de-DE">Section: Befunde/Therapie</desc>
+                            <item original="false" label="basismdoc"/>
+                            <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631482"/>
+                            <attribute name="contextConductionInd" value="true" isOptional="false" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1631483"/>
+                        </element>
+                        <element name="hl7:component" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" contains="1.2.276.0.76.10.3055" id="2.16.840.1.113883.2.6.60.3.9.1631484" tmid="1.2.276.0.76.10.3055" tmname="Eddiagnosis" tmdisplayName="Abschlussdiagnosen (Basis)" tmeffectiveDate="2016-06-22T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                            <desc language="de-DE">Section: Abschlussdiagnosen</desc>
+                            <item original="false" label="basismdoc"/>
+                            <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631485"/>
+                            <attribute name="contextConductionInd" value="true" isOptional="false" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1631486"/>
+                        </element>
+                        <element name="hl7:component" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" contains="1.2.276.0.76.10.3049" id="2.16.840.1.113883.2.6.60.3.9.1631487" tmid="1.2.276.0.76.10.3049" tmname="Initialacuityassessment" tmdisplayName="Ersteinschätzung" tmeffectiveDate="2015-01-10T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                            <desc language="de-DE">Section: Ersteinschätzung</desc>
+                            <item original="false" label="basismdoc"/>
+                            <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631488"/>
+                            <attribute name="contextConductionInd" value="true" isOptional="false" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1631489"/>
+                        </element>
+                        <element name="hl7:component" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" contains="1.2.276.0.76.10.3056" id="2.16.840.1.113883.2.6.60.3.9.1631490" tmid="1.2.276.0.76.10.3056" tmname="Eddisposition" tmdisplayName="Weiteres Procedere / Therapieempfehlung / Weiterbehandler" tmeffectiveDate="2015-01-10T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                            <desc language="de-DE">Section: Weiteres Procedere / Therapieempfehlung / Weiterbehandler</desc>
+                            <item original="false" label="basismdoc"/>
+                            <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631491"/>
+                            <attribute name="contextConductionInd" value="true" isOptional="false" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1631492"/>
+                        </element>
+                        <element name="hl7:component" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" contains="1.2.276.0.76.10.3057" id="2.16.840.1.113883.2.6.60.3.9.1631493" tmid="1.2.276.0.76.10.3057" tmname="Additionalmodulessection" tmdisplayName="Zusatzmodule (weitere Dokumentation)" tmeffectiveDate="2015-03-30T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                            <desc language="de-DE">Section: Zusatzmodule (weitere Dokumentation)</desc>
+                            <item original="false" label="basismdoc"/>
+                            <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631494"/>
+                            <attribute name="contextConductionInd" value="true" isOptional="false" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1631495"/>
+                        </element>
+                    </element>
+                </element>
+            </element>
+            <representingTemplate ref="1.2.276.0.76.10.1019" flexibility="2016-06-01T00:00:00" schematron="pmp-basism20152b" transactionId="2.16.840.1.113883.2.6.60.3.4.9" transactionEffectiveDate="2016-06-01T00:00:00" sourceDataset="2.16.840.1.113883.2.6.60.3.1.3" type="initial" statusCode="final" versionLabel="v2015.2" ident="aktin-">
+                <name language="de-DE">Dokument Basis-Modul</name>
+            </representingTemplate>
+            <representingTemplate ref="1.2.276.0.76.10.1019" flexibility="2016-06-01T00:00:00" schematron="pmp-basism20152b-2025-11-24" transactionId="2.16.840.1.113883.2.6.60.3.4.58" transactionEffectiveDate="2025-11-24T00:00:00" sourceDataset="2.16.840.1.113883.2.6.60.3.1.3" type="initial" statusCode="cancelled" ident="aktin-">
+                <name language="de-DE" lastTranslated="2025-11-24T11:16:07">Dokument Basis-Modul</name>
+            </representingTemplate>
+            <staticAssociations/>
+            <uses type="include" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.2005" name="HeaderInformationRecipient" displayName="CDA informationRecipient" statusCode="active" isClosed="false" effectiveDate="2013-07-10T00:00:00" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+            <uses type="include" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.2022" name="HeaderParticipantKostentraeger" displayName="CDA participant Kostentraeger" statusCode="active" isClosed="false" effectiveDate="2014-08-25T00:00:00" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+            <uses type="include" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.2032" name="CDArecordTargetnnar" displayName="CDA recordTarget (nnar)" effectiveDate="2014-09-17T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <uses type="include" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.2033" name="CDAauthor" displayName="CDA author" effectiveDate="2014-09-17T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <uses type="include" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.2034" name="CDAcustodian" displayName="CDA custodian" effectiveDate="2014-09-17T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <uses type="include" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.2035" name="CDADocumentationOf" displayName="Dienstleistung/Behandlung (Basis)" effectiveDate="2014-09-17T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <uses type="include" prefix="aktin-" flexibility="2016-06-01T00:00:00" id="1.2.276.0.76.10.2036" name="CDAEncompassingEncounter" displayName="CDA encompassingEncounter Patientenkontakt (Basis)" effectiveDate="2016-06-01T00:00:00" statusCode="draft" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.3044" name="VitalSignsSection" displayName="Vitalparameter" effectiveDate="2015-09-18T00:00:00" statusCode="active" isClosed="false" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.3045" name="Transportmethod" displayName="Transportmittel" effectiveDate="2025-12-01T00:00:00" statusCode="draft" versionLabel="2025" isClosed="false" lastModifiedDate="2025-12-22T20:56:10" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.3046" name="Typeofreferralsource" displayName="Zuweisung" effectiveDate="2015-01-10T00:00:00" statusCode="active" isClosed="false" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="2016-08-02T00:00:00" id="1.2.276.0.76.10.3047" name="ClinicalInformation" displayName="Klinische Basisinformationen" effectiveDate="2016-08-02T00:00:00" statusCode="active" isClosed="false" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.3048" name="Chiefcomplaintreasonforvisit" displayName="Beschwerden bei Vorstellung" effectiveDate="2015-01-10T00:00:00" statusCode="active" isClosed="false" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.3049" name="Initialacuityassessment" displayName="Ersteinschätzung" effectiveDate="2015-01-10T00:00:00" statusCode="active" isClosed="false" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.3050" name="Relevantdiagnostictestsorlaboratorydata" displayName="Diagnostik" effectiveDate="2025-12-01T00:00:00" statusCode="draft" isClosed="false" lastModifiedDate="2026-04-29T18:34:48" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.3051" name="AllergienUnvertraeglichkeiten" displayName="Allergien und Unverträglichkeiten" effectiveDate="2015-03-26T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.3053" name="HistoryofPresentIllnessSection" displayName="Notfallanamnese" effectiveDate="2025-12-01T00:00:00" statusCode="draft" versionLabel="2025" isClosed="false" lastModifiedDate="2025-12-18T13:48:42" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.3054" name="Patientcarenarrative" displayName="Prozeduren und Maßnahmen" effectiveDate="2025-12-01T00:00:00" statusCode="draft" isClosed="false" lastModifiedDate="2025-12-26T19:51:06" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.3055" name="Eddiagnosis" displayName="Abschlussdiagnosen (Basis)" effectiveDate="2016-06-22T00:00:00" statusCode="active" isClosed="false" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.3056" name="Eddisposition" displayName="Weiteres Procedere / Therapieempfehlung / Weiterbehandler" effectiveDate="2015-01-10T00:00:00" statusCode="active" isClosed="false" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.3057" name="Additionalmodulessection" displayName="Zusatzmodule (weitere Dokumentation)" effectiveDate="2015-03-30T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <uses type="include" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.90002" name="CDArealmCode" displayName="CDA realmCode" effectiveDate="2013-07-15T00:00:00" statusCode="draft" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+            <uses type="include" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.90003" name="CDAtypeId" displayName="CDA typeId" effectiveDate="2013-07-15T00:00:00" statusCode="draft" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+            <uses type="include" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.90004" name="CDAid" displayName="CDA id" effectiveDate="2012-12-12T00:00:00" statusCode="draft" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+            <uses type="include" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.90005" name="CDAtitle" displayName="CDA title" effectiveDate="2012-12-12T00:00:00" statusCode="draft" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+            <uses type="include" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.90006" name="CDAeffectiveTime" displayName="CDA effectiveTime" effectiveDate="2012-12-12T00:00:00" statusCode="draft" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+            <uses type="include" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.90007" name="CDAconfidentialityCode" displayName="CDA confidentialityCode" effectiveDate="2012-12-12T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+            <uses type="include" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.90008" name="CDAlanguageCode" displayName="CDA languageCode" effectiveDate="2012-03-11T00:00:00" statusCode="draft" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+            <uses type="include" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.90009" name="CDAsetIdversionNumber" displayName="CDA setId and versionNumber" effectiveDate="2012-12-12T00:00:00" statusCode="draft" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+        </template>
+    </template>
+</result>

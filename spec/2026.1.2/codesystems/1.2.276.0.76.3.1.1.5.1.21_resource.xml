@@ -1,0 +1,5 @@
+<codeSystems>
+    <project ident="kbvde-">
+        <codeSystem ref="1.2.276.0.76.3.1.1.5.1.21" canonicalUri="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_DIAGNOSESICHERHEIT" name="KBV_CS_SFHIR_ICD_DIAGNOSESICHERHEIT" displayName="KBV_CS_SFHIR_ICD_DIAGNOSESICHERHEIT" language="de-DE"/>
+    </project>
+</codeSystems>

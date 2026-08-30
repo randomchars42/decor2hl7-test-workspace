@@ -1,0 +1,49 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:local="http://art-decor.org/local" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.20.22.4.19" name="Indication" displayName="Indication" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" url="http://art-decor.org/decor/services/" ident="ccda-" sdtc:dummy-1="urn:hl7-org:sdtc" local:dummy-2="http://art-decor.org/local" xml:dummy-3="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-5="urn:hl7-org:v3" xsi:dummy-6="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">The Indication Observation documents the rationale for an activity. It can do this with the id element to reference a problem recorded elsewhere in the document or with a code and value to record the problem type and problem within the Indication. For example, the indication for a prescription of a painkiller might be a headache that is documented in the Problems
+                Section.</desc>
+            <classification type="cdaentrylevel"/>
+            <context id="**"/>
+            <element name="cda:observation" id="2.16.840.1.113883.3.1937.99.3.9.506">
+                <attribute name="classCode" value="OBS" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.507">
+                    <item label="conf-7480"/>
+                </attribute>
+                <attribute name="moodCode" value="EVN" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.508">
+                    <item label="conf-7481"/>
+                </attribute>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.509">
+                    <desc language="en-US">SHALL contain exactly one [1..1] templateId (CONF:7482) such that it</desc>
+                    <item label="conf-7482"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.22.4.19" datatype="uid" id="2.16.840.1.113883.3.1937.99.3.9.510">
+                        <item label="conf-10502"/>
+                    </attribute>
+                </element>
+                <element name="cda:id" datatype="II" minimumMultiplicity="1" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.511">
+                    <desc language="en-US">SHALL contain exactly one [1..1] id (CONF:7483).<p/>Set the observation/id equal to an ID on the problem list to signify that problem as an indication.</desc>
+                    <item label="conf-7483"/>
+                </element>
+                <element name="cda:code" strength="extensible" datatype="CD" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.512">
+                    <desc language="en-US">SHALL contain exactly one [1..1] code, which SHOULD be selected from ValueSet Problem Type 2.16.840.1.113883.3.88.12.3221.7.2 STATIC 2012-06-01 (CONF:16886).</desc>
+                    <item label="conf-16886"/>
+                    <vocabulary valueSet="2.16.840.1.113883.3.88.12.3221.7.2" flexibility="dynamic"/>
+                </element>
+                <element name="cda:statusCode" datatype="CS" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.513">
+                    <desc language="en-US">SHALL contain exactly one [1..1] statusCode (CONF:7487).</desc>
+                    <item label="conf-7487"/>
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="cda:effectiveTime" datatype="IVL_TS" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.514">
+                    <desc language="en-US">SHOULD contain zero or one [0..1] effectiveTime (CONF:7488).</desc>
+                    <item label="conf-7488"/>
+                </element>
+                <element name="cda:value" datatype="CD" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" strength="extensible" id="2.16.840.1.113883.3.1937.99.3.9.515">
+                    <desc language="en-US">SHOULD contain zero or one [0..1] value with @xsi:type="CD" (CONF:7489).<p/>If the diagnosis is unknown or the SNOMED code is unknown, @nullFlavor SHOULD be “UNK”. If the code is something other than SNOMED, @nullFlavor SHOULD be “OTH” and the other code SHOULD be placed in the translation element</desc>
+                    <item label="conf-7489"/>
+                    <attribute name="nullFlavor" datatype="cs" isOptional="true" id="2.16.840.1.113883.3.1937.99.3.9.516">
+                        <item label="conf-15990"/>
+                    </attribute>
+                    <attribute name="code" isOptional="true" id="2.16.840.1.113883.3.1937.99.3.9.517">
+                        <item label="conf-15985"/>
+                    </attribute>
+                </element>
+            </element>
+        </template>

@@ -1,0 +1,43 @@
+<dataset xmlns:json="http://www.json.org" id="1.2.276.0.76.3.1.135.8.1.1" effectiveDate="2015-12-02T09:18:17" statusCode="draft" prefix="vomgt-" shortName="kvmustersammlung" iddisplay="vomgt-dataset-1" url="http://art-decor.org/decor/services/" ident="vomgt-"><!--
+ This is a view of the dataset "KV-Mustersammlung" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">KV-Mustersammlung</name>
+    <desc language="de-DE"/>
+    <concept id="1.2.276.0.76.3.1.135.8.2.26" statusCode="draft" effectiveDate="2016-01-28T15:15:34" type="group" iddisplay="vomgt-dataelement-26">
+        <implementation markdown=""/>
+        <name language="de-DE">Name</name>
+        <desc language="de-DE"/>
+        <concept id="1.2.276.0.76.3.1.135.8.2.27" statusCode="draft" effectiveDate="2016-01-28T15:15:49" type="item" iddisplay="vomgt-dataelement-27" shortName="vorname">
+            <implementation shortName="vorname" markdown=""/>
+            <name language="de-DE">Vorname</name>
+            <desc language="de-DE"/>
+            <valueDomain type="string"/>
+        </concept>
+        <concept id="1.2.276.0.76.3.1.135.8.2.28" statusCode="draft" effectiveDate="2016-01-28T15:16:00" type="item" iddisplay="vomgt-dataelement-28" shortName="nachname">
+            <implementation shortName="nachname" markdown=""/>
+            <name language="de-DE">Nachname</name>
+            <desc language="de-DE"/>
+            <valueDomain type="string"/>
+        </concept>
+        <concept id="1.2.276.0.76.3.1.135.8.2.697" effectiveDate="2018-12-13T23:16:25" statusCode="draft" type="item" iddisplay="vomgt-dataelement-697" shortName="vorsatzwort">
+            <implementation shortName="vorsatzwort" markdown=""/>
+            <name language="de-DE">Vorsatzwort</name>
+            <desc language="de-DE"/>
+            <valueDomain type="string"/>
+        </concept>
+        <concept id="1.2.276.0.76.3.1.135.8.2.698" effectiveDate="2018-12-13T23:17:05" statusCode="draft" type="item" iddisplay="vomgt-dataelement-698" shortName="namenszusatz">
+            <implementation shortName="namenszusatz" markdown=""/>
+            <name language="de-DE">Namenszusatz</name>
+            <desc language="de-DE"/>
+            <valueDomain type="string"/>
+        </concept>
+        <concept id="1.2.276.0.76.3.1.135.8.2.699" effectiveDate="2018-12-13T23:17:32" statusCode="draft" type="item" iddisplay="vomgt-dataelement-699" shortName="titel">
+            <implementation shortName="titel" markdown=""/>
+            <name language="de-DE">Titel</name>
+            <desc language="de-DE"/>
+            <valueDomain type="string"/>
+        </concept>
+    </concept>
+</dataset>

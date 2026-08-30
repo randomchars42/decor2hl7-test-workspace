@@ -1,0 +1,102 @@
+<valueSets>
+    <repository url="http://art-decor.org/decor/services/" ident="ccda-" referencedFrom="DICOM-" projecttype="local">
+        <valueSet id="2.16.840.1.113762.1.4.1021.30" name="AdministrationUnitDoseForm" displayName="Administration Unit Dose Form" effectiveDate="2013-01-31T00:00:00" statusCode="final">
+            <desc language="en-US">Codes that are similar to a drug "form" but limited to those used as units when describing drug administration when the drug item is a physical form that is continuous and therefore not administered as an "each" of the physical form, or is not using standard measurement units (inch, ounce, gram, etc.) This set does not include unit concepts that mimic "physical
+                form" concepts that can be counted using "each", such as tablet, bar, lozenge, packet, etc <br/>Value Set Source: <a href="https://vsac.nlm.nih.gov/">https://vsac.nlm.nih.gov/</a>
+                <table>
+                    <tr>
+                        <tr>
+                            <th>Code</th>
+                            <th>Code System</th>
+                            <th>Code System OID</th>
+                            <th>Print Name</th>
+                        </tr>
+                        <tr>
+                            <td>C122629</td>
+                            <td>FDA RouteOfAdministration</td>
+                            <td>urn:oid:2.16.840.1.11388
+                                3.3.26.1.1</td>
+                            <td>Actuation Dosing Unit</td>
+                        </tr>
+                        <tr>
+                            <td>C25397</td>
+                            <td>FDA RouteOfAdministration</td>
+                            <td>urn:oid:2.16.840.1.11388 3.3.26.1.1</td>
+                            <td>Application Unit</td>
+                        </tr>
+                        <tr>
+                            <td>C102405</td>
+                            <td>FDA RouteOfAdministration</td>
+                            <td>urn:oid:2.16.840.1.11388 3.3.26.1.1</td>
+                            <td>Capful Dosing Unit</td>
+                        </tr>
+                        <tr>
+                            <td>C122631</td>
+                            <td>FDA
+                                RouteOfAdministration</td>
+                            <td>urn:oid:2.16.840.1.11388 3.3.26.1.1</td>
+                            <td>Dropperful Dosing Unit</td>
+                        </tr>
+                        <tr>
+                            <td>C48501</td>
+                            <td>FDA RouteOfAdministration</td>
+                            <td>urn:oid:2.16.840.1.11388 3.3.26.1.1</td>
+                            <td>Inhalation Dosing Unit</td>
+                        </tr>
+                        <tr>
+                            <td>C48491</td>
+                            <td>FDA RouteOfAdministration</td>
+                            <td>urn:oid:2.16.840.1.11388 3.3.26.1.1</td>
+                            <td>Metric
+                                Drop</td>
+                        </tr>
+                        <tr>
+                            <td>C71204</td>
+                            <td>FDA RouteOfAdministration</td>
+                            <td>urn:oid:2.16.840.1.11388 3.3.26.1.1</td>
+                            <td>Nebule Dosing Unit</td>
+                        </tr>
+                        <tr>
+                            <td>C65060</td>
+                            <td>FDA RouteOfAdministration</td>
+                            <td>urn:oid:2.16.840.1.11388 3.3.26.1.1</td>
+                            <td>Puff Dosing Unit</td>
+                        </tr>
+                        <tr>
+                            <td>C48536</td>
+                            <td>FDA RouteOfAdministration</td>
+                            <td>urn:oid:2.16.840.1.11388
+                                3.3.26.1.1</td>
+                            <td>Scoopful Dosing Unit</td>
+                        </tr>
+                        <tr>
+                            <td>C48537</td>
+                            <td>FDA RouteOfAdministration</td>
+                            <td>urn:oid:2.16.840.1.11388 3.3.26.1.1</td>
+                            <td>Spray Dosing Unit</td>
+                        </tr>
+                        <tr>
+                            <td>C44278</td>
+                            <td>FDA RouteOfAdministration</td>
+                            <td>urn:oid:2.16.840.1.11388 3.3.26.1.1</td>
+                            <td>Unit</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">...</td>
+                        </tr>
+                    </tr>
+                </table>
+            </desc>
+            <publishingAuthority name="HL7 International" inherited="project">
+                <addrLine>Health Level Seven International</addrLine>
+                <addrLine>3300 Washtenaw Avenue</addrLine>
+                <addrLine>Suite 227</addrLine>
+                <addrLine>Ann Arbor, MI 48104- 4261</addrLine>
+                <addrLine>USA</addrLine>
+                <addrLine>T +1 734 677 7777 </addrLine>
+                <addrLine>F +1 734 677 6622</addrLine>
+                <addrLine>E info@hl7.org</addrLine>
+            </publishingAuthority>
+        </valueSet>
+    </repository>
+</valueSets>

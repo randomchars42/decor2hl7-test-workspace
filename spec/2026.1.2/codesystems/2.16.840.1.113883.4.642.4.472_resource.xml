@@ -1,0 +1,29 @@
+<codeSystems>
+    <repository url="http://art-decor.org/decor/services/" ident="ad5bbr-" referencedFrom="sxehealth-" projecttype="local">
+        <codeSystem id="2.16.840.1.113883.4.642.4.472" name="SpecimenStatus" displayName="SpecimenStatus" effectiveDate="2019-11-01T09:29:23" statusCode="draft" versionLabel="4.0.1" canonicalUri="http://hl7.org/fhir/specimen-status" caseSensitive="true" language="de-DE">
+            <desc language="en-US">Codes providing the status/availability of a specimen.</desc>
+            <publishingAuthority name="HL7 (FHIR Project)">
+                <addrLine type="uri">http://hl7.org/fhir</addrLine>
+                <addrLine type="email">fhir@lists.hl7.org</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <codedConcept code="available" level="0" type="L" statusCode="active">
+                    <designation displayName="Available" language="en-US" type="preferred"/>
+                    <desc language="en-US">The physical specimen is present and in good condition.</desc>
+                </codedConcept>
+                <codedConcept code="unavailable" level="0" type="L" statusCode="active">
+                    <designation displayName="Unavailable" language="en-US" type="preferred"/>
+                    <desc language="en-US">There is no physical specimen because it is either lost, destroyed or consumed.</desc>
+                </codedConcept>
+                <codedConcept code="unsatisfactory" level="0" type="L" statusCode="active">
+                    <designation displayName="Unsatisfactory" language="en-US" type="preferred"/>
+                    <desc language="en-US">The specimen cannot be used because of a quality issue such as a broken container, contamination, or too old.</desc>
+                </codedConcept>
+                <codedConcept code="entered-in-error" level="0" type="L" statusCode="active">
+                    <designation displayName="Entered in Error" language="en-US" type="preferred"/>
+                    <desc language="en-US">The specimen was entered in error and therefore nullified.</desc>
+                </codedConcept>
+            </conceptList>
+        </codeSystem>
+    </repository>
+</codeSystems>

@@ -1,0 +1,21 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.777.47.1.1" effectiveDate="2019-11-07T11:36:25" statusCode="draft" prefix="nokeda-" shortName="publichealthsurveillance_und_versorgungsforschung" iddisplay="nokeda-dataset-1" url="http://art-decor.org/decor/services/" ident="nokeda-"><!--
+ This is a view of the dataset "Public-Health-Surveillance und Versorgungsforschung" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">Public-Health-Surveillance und Versorgungsforschung</name>
+    <desc language="de-DE">Notaufnahme-Kerndatenmodell für Public-Health-Surveillance und Versorgungsforschung<br clear="none"/>
+    </desc>
+    <concept id="2.16.840.1.113883.3.1937.777.47.2.46" effectiveDate="2020-01-09T21:42:34" statusCode="draft" type="item" iddisplay="nokeda-dataelement-46">
+        <implementation markdown="Zeit [in vollen Stunden] vom Beginn der Vorstellung bis zum Export-Zeitpunkt aus dem Primärsystem; Bei mehr als 28 Tagen (=672 Stunden) Maximalwert angeben."/>
+        <name language="de-DE">Zeit bis zum Export</name>
+        <synonym language="de-DE">nokeda_refresh_period</synonym>
+        <desc language="de-DE">Zeit [in vollen Stunden] vom Beginn der Vorstellung bis zum Export-Zeitpunkt aus dem Primärsystem; Bei mehr als 28 Tagen (=672 Stunden) Maximalwert angeben.</desc>
+        <operationalization language="de-DE">has_multiple_instances = FALSE<br clear="none"/>
+            <div>Kein Mapping aus Rohdaten; bei der Datenbereitstellung berechnetes Zeitintervall aus Exportzeitpunkt und nokeda_date/nokeda_hour.</div>
+        </operationalization>
+        <valueDomain type="quantity">
+            <property unit="Stunden" minInclude="0" maxInclude="672"/>
+        </valueDomain>
+    </concept>
+</dataset>

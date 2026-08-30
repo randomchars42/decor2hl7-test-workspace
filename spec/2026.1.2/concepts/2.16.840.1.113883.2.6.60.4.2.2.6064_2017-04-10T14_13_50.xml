@@ -1,0 +1,17 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.2.6.60.4.1.2" effectiveDate="2017-04-06T00:00:00" statusCode="draft" versionLabel="Version 2.3" prefix="pmp-" shortName="bundeseinheitlicher_medikationsplan" iddisplay="pmp-dataset-2" url="http://art-decor.org/decor/services/" ident="pmp-"><!--
+ This is a view of the dataset "Bundeseinheitlicher Medikationsplan" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">Bundeseinheitlicher Medikationsplan</name>
+    <desc language="de-DE">Bundeseinheitlicher Medikationsplan v2.3 (2016)</desc>
+    <concept id="2.16.840.1.113883.2.6.60.4.2.2.6064" statusCode="draft" effectiveDate="2017-04-10T14:13:50" type="item" iddisplay="pmp-dataelementbmp23-6064">
+        <implementation markdown="Größe des Patienten in cm"/>
+        <name language="de-DE">Körpergröße</name>
+        <desc language="de-DE">Größe des Patienten in cm</desc>
+        <valueDomain type="quantity">
+            <property unit="cm"/>
+        </valueDomain>
+        <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.4.2.2.6064" code="8302-2" codeSystem="2.16.840.1.113883.6.1" displayName="Body height" effectiveDate="2017-04-10T14:21:00" codeSystemName="Logical Observation Identifier Names and Codes"/>
+    </concept>
+</dataset>

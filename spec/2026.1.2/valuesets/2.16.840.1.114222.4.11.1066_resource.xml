@@ -1,0 +1,970 @@
+<valueSets>
+    <repository url="http://art-decor.org/decor/services/" ident="ccda-" referencedFrom="DICOM-" projecttype="local">
+        <valueSet id="2.16.840.1.114222.4.11.1066" displayName="Healthcare Provider Taxonomy" effectiveDate="2019-05-21T00:00:00" statusCode="final" name="HealthcareProviderTaxonomy">
+            <desc language="en-US">(Clinical Focus: Represent the "type" of health care provider individual or organization using the National Uniform Claims Committee (NUCC) code system),(Data Element Scope: The assignedEntity attribute),(Inclusion Criteria: All codes in the NUCC Provider Taxonomy code system),(Exclusion Criteria: None) This value set was imported on 6/24/2019 with a version of
+                20190521.</desc>
+            <sourceCodeSystem id="2.16.840.1.113883.6.101" identifierName="Health Care Provider Taxonomy" canonicalUri="http://nucc.org/provider-taxonomy" canonicalUriDSTU2="http://nucc.org/provider-taxonomy" canonicalUriSTU3="http://nucc.org/provider-taxonomy" canonicalUriR4="http://nucc.org/provider-taxonomy" canonicalUriR4B="http://nucc.org/provider-taxonomy" canonicalUriR5="http://nucc.org/provider-taxonomy" context="external/hl7intl/v3/v3-nuccProviderCodes"/>
+            <publishingAuthority name="HL7 International" inherited="project">
+                <addrLine>Health Level Seven International</addrLine>
+                <addrLine>3300 Washtenaw Avenue</addrLine>
+                <addrLine>Suite 227</addrLine>
+                <addrLine>Ann Arbor, MI 48104- 4261</addrLine>
+                <addrLine>USA</addrLine>
+                <addrLine>T +1 734 677 7777 </addrLine>
+                <addrLine>F +1 734 677 6622</addrLine>
+                <addrLine>E info@hl7.org</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <concept code="10" codeSystem="2.16.840.1.113883.6.101" displayName="Provider has a medical condition that impairs or limits him/her to practice" level="0" type="L"/>
+                <concept code="101Y00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Behavioral Health &amp; Social Service Providers; Counselor" level="0" type="L"/>
+                <concept code="101YA0400X" codeSystem="2.16.840.1.113883.6.101" displayName="Behavioral Health &amp; Social Service Providers; Counselor, Addiction (Substance Use Disorder)" level="0" type="L"/>
+                <concept code="101YM0800X" codeSystem="2.16.840.1.113883.6.101" displayName="Behavioral Health &amp; Social Service Providers; Counselor, Mental Health" level="0" type="L"/>
+                <concept code="101YP1600X" codeSystem="2.16.840.1.113883.6.101" displayName="Behavioral Health &amp; Social Service Providers; Counselor, Pastoral" level="0" type="L"/>
+                <concept code="101YP2500X" codeSystem="2.16.840.1.113883.6.101" displayName="Behavioral Health &amp; Social Service Providers; Counselor, Professional" level="0" type="L"/>
+                <concept code="101YS0200X" codeSystem="2.16.840.1.113883.6.101" displayName="Behavioral Health &amp; Social Service Providers; Counselor, School" level="0" type="L"/>
+                <concept code="102L00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Behavioral Health &amp; Social Service Providers; Psychoanalyst" level="0" type="L"/>
+                <concept code="102X00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Behavioral Health &amp; Social Service Providers; Poetry Therapist" level="0" type="L"/>
+                <concept code="103G00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Behavioral Health &amp; Social Service Providers; Clinical Neuropsychologist" level="0" type="L"/>
+                <concept code="103K00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Behavioral Health &amp; Social Service Providers; Behavior Analyst" level="0" type="L"/>
+                <concept code="103T00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Behavioral Health &amp; Social Service Providers; Psychologist" level="0" type="L"/>
+                <concept code="103TA0400X" codeSystem="2.16.840.1.113883.6.101" displayName="Behavioral Health &amp; Social Service Providers; Psychologist, Addiction (Substance Use Disorder)" level="0" type="L"/>
+                <concept code="103TA0700X" codeSystem="2.16.840.1.113883.6.101" displayName="Behavioral Health &amp; Social Service Providers; Psychologist, Adult Development &amp; Aging" level="0" type="L"/>
+                <concept code="103TB0200X" codeSystem="2.16.840.1.113883.6.101" displayName="Behavioral Health &amp; Social Service Providers; Psychologist, Cognitive &amp; Behavioral" level="0" type="L"/>
+                <concept code="103TC0700X" codeSystem="2.16.840.1.113883.6.101" displayName="Behavioral Health &amp; Social Service Providers; Psychologist, Clinical" level="0" type="L"/>
+                <concept code="103TC1900X" codeSystem="2.16.840.1.113883.6.101" displayName="Behavioral Health &amp; Social Service Providers; Psychologist, Counseling" level="0" type="L"/>
+                <concept code="103TC2200X" codeSystem="2.16.840.1.113883.6.101" displayName="Behavioral Health &amp; Social Service Providers; Psychologist, Clinical Child &amp; Adolescent" level="0" type="L"/>
+                <concept code="103TE1100X" codeSystem="2.16.840.1.113883.6.101" displayName="Behavioral Health &amp; Social Service Providers; Psychologist, Exercise &amp; Sports" level="0" type="L"/>
+                <concept code="103TF0000X" codeSystem="2.16.840.1.113883.6.101" displayName="Behavioral Health &amp; Social Service Providers; Psychologist, Family" level="0" type="L"/>
+                <concept code="103TF0200X" codeSystem="2.16.840.1.113883.6.101" displayName="Behavioral Health &amp; Social Service Providers; Psychologist, Forensic" level="0" type="L"/>
+                <concept code="103TH0004X" codeSystem="2.16.840.1.113883.6.101" displayName="Behavioral Health &amp; Social Service Providers; Psychologist, Health" level="0" type="L"/>
+                <concept code="103TH0100X" codeSystem="2.16.840.1.113883.6.101" displayName="Behavioral Health &amp; Social Service Providers; Psychologist, Health Service" level="0" type="L"/>
+                <concept code="103TM1800X" codeSystem="2.16.840.1.113883.6.101" displayName="Behavioral Health &amp; Social Service Providers; Psychologist, Mental Retardation &amp; Developmental Disabilities" level="0" type="L"/>
+                <concept code="103TP0016X" codeSystem="2.16.840.1.113883.6.101" displayName="Behavioral Health &amp; Social Service Providers; Psychologist, Prescribing (Medical)" level="0" type="L"/>
+                <concept code="103TP0814X" codeSystem="2.16.840.1.113883.6.101" displayName="Behavioral Health &amp; Social Service Providers; Psychologist, Psychoanalysis" level="0" type="L"/>
+                <concept code="103TP2701X" codeSystem="2.16.840.1.113883.6.101" displayName="Behavioral Health &amp; Social Service Providers; Psychologist, Group Psychotherapy" level="0" type="L"/>
+                <concept code="103TR0400X" codeSystem="2.16.840.1.113883.6.101" displayName="Behavioral Health &amp; Social Service Providers; Psychologist, Rehabilitation" level="0" type="L"/>
+                <concept code="103TS0200X" codeSystem="2.16.840.1.113883.6.101" displayName="Behavioral Health &amp; Social Service Providers; Psychologist, School" level="0" type="L"/>
+                <concept code="104100000X" codeSystem="2.16.840.1.113883.6.101" displayName="Behavioral Health &amp; Social Service Providers; Social Worker" level="0" type="L"/>
+                <concept code="1041C0700X" codeSystem="2.16.840.1.113883.6.101" displayName="Behavioral Health &amp; Social Service Providers; Social Worker, Clinical" level="0" type="L"/>
+                <concept code="1041S0200X" codeSystem="2.16.840.1.113883.6.101" displayName="Behavioral Health &amp; Social Service Providers; Social Worker, School" level="0" type="L"/>
+                <concept code="106E00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Behavioral Health &amp; Social Service Providers; Assistant Behavior Analyst" level="0" type="L"/>
+                <concept code="106H00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Behavioral Health &amp; Social Service Providers; Marriage &amp; Family Therapist" level="0" type="L"/>
+                <concept code="106S00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Behavioral Health &amp; Social Service Providers; Behavior Technician" level="0" type="L"/>
+                <concept code="11" codeSystem="2.16.840.1.113883.6.101" displayName="Provider receives public funding" level="0" type="L"/>
+                <concept code="111N00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Chiropractic Providers; Chiropractor" level="0" type="L"/>
+                <concept code="111NI0013X" codeSystem="2.16.840.1.113883.6.101" displayName="Chiropractic Providers; Chiropractor, Independent Medical Examiner" level="0" type="L"/>
+                <concept code="111NI0900X" codeSystem="2.16.840.1.113883.6.101" displayName="Chiropractic Providers; Chiropractor, Internist" level="0" type="L"/>
+                <concept code="111NN0400X" codeSystem="2.16.840.1.113883.6.101" displayName="Chiropractic Providers; Chiropractor, Neurology" level="0" type="L"/>
+                <concept code="111NN1001X" codeSystem="2.16.840.1.113883.6.101" displayName="Chiropractic Providers; Chiropractor, Nutrition" level="0" type="L"/>
+                <concept code="111NP0017X" codeSystem="2.16.840.1.113883.6.101" displayName="Chiropractic Providers; Chiropractor, Pediatric Chiropractor" level="0" type="L"/>
+                <concept code="111NR0200X" codeSystem="2.16.840.1.113883.6.101" displayName="Chiropractic Providers; Chiropractor, Radiology" level="0" type="L"/>
+                <concept code="111NR0400X" codeSystem="2.16.840.1.113883.6.101" displayName="Chiropractic Providers; Chiropractor, Rehabilitation" level="0" type="L"/>
+                <concept code="111NS0005X" codeSystem="2.16.840.1.113883.6.101" displayName="Chiropractic Providers; Chiropractor, Sports Physician" level="0" type="L"/>
+                <concept code="111NT0100X" codeSystem="2.16.840.1.113883.6.101" displayName="Chiropractic Providers; Chiropractor, Thermography" level="0" type="L"/>
+                <concept code="111NX0100X" codeSystem="2.16.840.1.113883.6.101" displayName="Chiropractic Providers; Chiropractor, Occupational Health" level="0" type="L"/>
+                <concept code="111NX0800X" codeSystem="2.16.840.1.113883.6.101" displayName="Chiropractic Providers; Chiropractor, Orthopedic" level="0" type="L"/>
+                <concept code="12" codeSystem="2.16.840.1.113883.6.101" displayName="This is a multi-specialty group" level="0" type="L"/>
+                <concept code="122300000X" codeSystem="2.16.840.1.113883.6.101" displayName="Dental Providers; Dentist" level="0" type="L"/>
+                <concept code="1223D0001X" codeSystem="2.16.840.1.113883.6.101" displayName="Dental Providers; Dentist, Dental Public Health" level="0" type="L"/>
+                <concept code="1223D0004X" codeSystem="2.16.840.1.113883.6.101" displayName="Dental Providers; Dentist, Dentist Anesthesiologist" level="0" type="L"/>
+                <concept code="1223E0200X" codeSystem="2.16.840.1.113883.6.101" displayName="Dental Providers; Dentist, Endodontics" level="0" type="L"/>
+                <concept code="1223G0001X" codeSystem="2.16.840.1.113883.6.101" displayName="Dental Providers; Dentist, General Practice" level="0" type="L"/>
+                <concept code="1223P0106X" codeSystem="2.16.840.1.113883.6.101" displayName="Dental Providers; Dentist, Oral and Maxillofacial Pathology" level="0" type="L"/>
+                <concept code="1223P0221X" codeSystem="2.16.840.1.113883.6.101" displayName="Dental Providers; Dentist, Pediatric Dentistry" level="0" type="L"/>
+                <concept code="1223P0300X" codeSystem="2.16.840.1.113883.6.101" displayName="Dental Providers; Dentist, Periodontics" level="0" type="L"/>
+                <concept code="1223P0700X" codeSystem="2.16.840.1.113883.6.101" displayName="Dental Providers; Dentist, Prosthodontics" level="0" type="L"/>
+                <concept code="1223S0112X" codeSystem="2.16.840.1.113883.6.101" displayName="Dental Providers; Dentist, Oral and Maxillofacial Surgery" level="0" type="L"/>
+                <concept code="1223X0008X" codeSystem="2.16.840.1.113883.6.101" displayName="Dental Providers; Dentist, Oral and Maxillofacial Radiology" level="0" type="L"/>
+                <concept code="1223X0400X" codeSystem="2.16.840.1.113883.6.101" displayName="Dental Providers; Dentist, Orthodontics and Dentofacial Orthopedics" level="0" type="L"/>
+                <concept code="122400000X" codeSystem="2.16.840.1.113883.6.101" displayName="Dental Providers; Denturist" level="0" type="L"/>
+                <concept code="124Q00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Dental Providers; Dental Hygienist" level="0" type="L"/>
+                <concept code="125J00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Dental Providers; Dental Therapist" level="0" type="L"/>
+                <concept code="125K00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Dental Providers; Advanced Practice Dental Therapist" level="0" type="L"/>
+                <concept code="125Q00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Dental Providers; Oral Medicinist" level="0" type="L"/>
+                <concept code="126800000X" codeSystem="2.16.840.1.113883.6.101" displayName="Dental Providers; Dental Assistant" level="0" type="L"/>
+                <concept code="126900000X" codeSystem="2.16.840.1.113883.6.101" displayName="Dental Providers; Dental Laboratory Technician" level="0" type="L"/>
+                <concept code="13" codeSystem="2.16.840.1.113883.6.101" displayName="This is a primary care provider" level="0" type="L"/>
+                <concept code="132700000X" codeSystem="2.16.840.1.113883.6.101" displayName="Dietary &amp; Nutritional Service Providers; Dietary Manager" level="0" type="L"/>
+                <concept code="133N00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Dietary &amp; Nutritional Service Providers; Nutritionist" level="0" type="L"/>
+                <concept code="133NN1002X" codeSystem="2.16.840.1.113883.6.101" displayName="Dietary &amp; Nutritional Service Providers; Nutritionist, &#34;Nutrition, Education&#34;" level="0" type="L"/>
+                <concept code="133V00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Dietary &amp; Nutritional Service Providers; &#34;Dietitian, Registered&#34;" level="0" type="L"/>
+                <concept code="133VN1004X" codeSystem="2.16.840.1.113883.6.101" displayName="Dietary &amp; Nutritional Service Providers; &#34;Dietitian, Registered&#34;, &#34;Nutrition, Pediatric&#34;" level="0" type="L"/>
+                <concept code="133VN1005X" codeSystem="2.16.840.1.113883.6.101" displayName="Dietary &amp; Nutritional Service Providers; &#34;Dietitian, Registered&#34;, &#34;Nutrition, Renal&#34;" level="0" type="L"/>
+                <concept code="133VN1006X" codeSystem="2.16.840.1.113883.6.101" displayName="Dietary &amp; Nutritional Service Providers; &#34;Dietitian, Registered&#34;, &#34;Nutrition, Metabolic&#34;" level="0" type="L"/>
+                <concept code="136A00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Dietary &amp; Nutritional Service Providers; &#34;Dietetic Technician, Registered&#34;" level="0" type="L"/>
+                <concept code="14" codeSystem="2.16.840.1.113883.6.101" displayName="Provider has ownership or financial interest in another medical establishment" level="0" type="L"/>
+                <concept code="146D00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Emergency Medical Service Providers; Personal Emergency Response Attendant" level="0" type="L"/>
+                <concept code="146L00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Emergency Medical Service Providers; &#34;Emergency Medical Technician, Paramedic&#34;" level="0" type="L"/>
+                <concept code="146M00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Emergency Medical Service Providers; &#34;Emergency Medical Technician, Intermediate&#34;" level="0" type="L"/>
+                <concept code="146N00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Emergency Medical Service Providers; &#34;Emergency Medical Technician, Basic&#34;" level="0" type="L"/>
+                <concept code="15" codeSystem="2.16.840.1.113883.6.101" displayName="Professional liability coverage has been restricted/terminated/or modified" level="0" type="L"/>
+                <concept code="152W00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Eye and Vision Services Providers; Optometrist" level="0" type="L"/>
+                <concept code="152WC0802X" codeSystem="2.16.840.1.113883.6.101" displayName="Eye and Vision Services Providers; Optometrist, Corneal and Contact Management" level="0" type="L"/>
+                <concept code="152WL0500X" codeSystem="2.16.840.1.113883.6.101" displayName="Eye and Vision Services Providers; Optometrist, Low Vision Rehabilitation" level="0" type="L"/>
+                <concept code="152WP0200X" codeSystem="2.16.840.1.113883.6.101" displayName="Eye and Vision Services Providers; Optometrist, Pediatrics" level="0" type="L"/>
+                <concept code="152WS0006X" codeSystem="2.16.840.1.113883.6.101" displayName="Eye and Vision Services Providers; Optometrist, Sports Vision" level="0" type="L"/>
+                <concept code="152WV0400X" codeSystem="2.16.840.1.113883.6.101" displayName="Eye and Vision Services Providers; Optometrist, Vision Therapy" level="0" type="L"/>
+                <concept code="152WX0102X" codeSystem="2.16.840.1.113883.6.101" displayName="Eye and Vision Services Providers; Optometrist, Occupational Vision" level="0" type="L"/>
+                <concept code="156F00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Eye and Vision Services Providers; Technician/Technologist" level="0" type="L"/>
+                <concept code="156FC0800X" codeSystem="2.16.840.1.113883.6.101" displayName="Eye and Vision Services Providers; Technician/Technologist, Contact Lens" level="0" type="L"/>
+                <concept code="156FC0801X" codeSystem="2.16.840.1.113883.6.101" displayName="Eye and Vision Services Providers; Technician/Technologist, Contact Lens Fitter" level="0" type="L"/>
+                <concept code="156FX1100X" codeSystem="2.16.840.1.113883.6.101" displayName="Eye and Vision Services Providers; Technician/Technologist, Ophthalmic" level="0" type="L"/>
+                <concept code="156FX1101X" codeSystem="2.16.840.1.113883.6.101" displayName="Eye and Vision Services Providers; Technician/Technologist, Ophthalmic Assistant" level="0" type="L"/>
+                <concept code="156FX1201X" codeSystem="2.16.840.1.113883.6.101" displayName="Eye and Vision Services Providers; Technician/Technologist, Optometric Assistant" level="0" type="L"/>
+                <concept code="156FX1202X" codeSystem="2.16.840.1.113883.6.101" displayName="Eye and Vision Services Providers; Technician/Technologist, Optometric Technician" level="0" type="L"/>
+                <concept code="156FX1700X" codeSystem="2.16.840.1.113883.6.101" displayName="Eye and Vision Services Providers; Technician/Technologist, Ocularist" level="0" type="L"/>
+                <concept code="156FX1800X" codeSystem="2.16.840.1.113883.6.101" displayName="Eye and Vision Services Providers; Technician/Technologist, Optician" level="0" type="L"/>
+                <concept code="156FX1900X" codeSystem="2.16.840.1.113883.6.101" displayName="Eye and Vision Services Providers; Technician/Technologist, Orthoptist" level="0" type="L"/>
+                <concept code="16" codeSystem="2.16.840.1.113883.6.101" displayName="This is the provider's primary insurance coverage" level="0" type="L"/>
+                <concept code="163W00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse" level="0" type="L"/>
+                <concept code="163WA0400X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Addiction (Substance Use Disorder)" level="0" type="L"/>
+                <concept code="163WA2000X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Administrator" level="0" type="L"/>
+                <concept code="163WC0200X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Critical Care Medicine" level="0" type="L"/>
+                <concept code="163WC0400X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Case Management" level="0" type="L"/>
+                <concept code="163WC1400X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, College Health" level="0" type="L"/>
+                <concept code="163WC1500X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Community Health" level="0" type="L"/>
+                <concept code="163WC1600X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Continuing Education/Staff Development" level="0" type="L"/>
+                <concept code="163WC2100X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Continence Care" level="0" type="L"/>
+                <concept code="163WC3500X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Cardiac Rehabilitation" level="0" type="L"/>
+                <concept code="163WD0400X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Diabetes Educator" level="0" type="L"/>
+                <concept code="163WD1100X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, &#34;Dialysis, Peritoneal&#34;" level="0" type="L"/>
+                <concept code="163WE0003X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Emergency" level="0" type="L"/>
+                <concept code="163WE0900X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Enterostomal Therapy" level="0" type="L"/>
+                <concept code="163WF0300X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Flight" level="0" type="L"/>
+                <concept code="163WG0000X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, General Practice" level="0" type="L"/>
+                <concept code="163WG0100X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Gastroenterology" level="0" type="L"/>
+                <concept code="163WG0600X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Gerontology" level="0" type="L"/>
+                <concept code="163WH0200X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Home Health" level="0" type="L"/>
+                <concept code="163WH0500X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Hemodialysis" level="0" type="L"/>
+                <concept code="163WH1000X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Hospice" level="0" type="L"/>
+                <concept code="163WI0500X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Infusion Therapy" level="0" type="L"/>
+                <concept code="163WI0600X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Infection Control" level="0" type="L"/>
+                <concept code="163WL0100X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Lactation Consultant" level="0" type="L"/>
+                <concept code="163WM0102X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Maternal Newborn" level="0" type="L"/>
+                <concept code="163WM0705X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Medical-Surgical" level="0" type="L"/>
+                <concept code="163WM1400X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Nurse Massage Therapist (NMT)" level="0" type="L"/>
+                <concept code="163WN0002X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Neonatal Intensive Care" level="0" type="L"/>
+                <concept code="163WN0003X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, &#34;Neonatal, Low-Risk&#34;" level="0" type="L"/>
+                <concept code="163WN0300X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Nephrology" level="0" type="L"/>
+                <concept code="163WN0800X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Neuroscience" level="0" type="L"/>
+                <concept code="163WN1003X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Nutrition Support" level="0" type="L"/>
+                <concept code="163WP0000X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Pain Management" level="0" type="L"/>
+                <concept code="163WP0200X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Pediatrics" level="0" type="L"/>
+                <concept code="163WP0218X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Pediatric Oncology" level="0" type="L"/>
+                <concept code="163WP0807X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, &#34;Psychiatric/Mental Health, Child &amp; Adolescent&#34;" level="0" type="L"/>
+                <concept code="163WP0808X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Psychiatric/Mental Health" level="0" type="L"/>
+                <concept code="163WP0809X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, &#34;Psychiatric/Mental Health, Adult&#34;" level="0" type="L"/>
+                <concept code="163WP1700X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Perinatal" level="0" type="L"/>
+                <concept code="163WP2201X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Ambulatory Care" level="0" type="L"/>
+                <concept code="163WR0006X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Registered Nurse First Assistant" level="0" type="L"/>
+                <concept code="163WR0400X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Rehabilitation" level="0" type="L"/>
+                <concept code="163WR1000X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Reproductive Endocrinology/Infertility" level="0" type="L"/>
+                <concept code="163WS0121X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Plastic Surgery" level="0" type="L"/>
+                <concept code="163WS0200X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, School" level="0" type="L"/>
+                <concept code="163WU0100X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Urology" level="0" type="L"/>
+                <concept code="163WW0000X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Wound Care" level="0" type="L"/>
+                <concept code="163WW0101X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, &#34;Women's Health Care, Ambulatory&#34;" level="0" type="L"/>
+                <concept code="163WX0002X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, &#34;Obstetric, High-Risk&#34;" level="0" type="L"/>
+                <concept code="163WX0003X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, &#34;Obstetric, Inpatient&#34;" level="0" type="L"/>
+                <concept code="163WX0106X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Occupational Health" level="0" type="L"/>
+                <concept code="163WX0200X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Oncology" level="0" type="L"/>
+                <concept code="163WX0601X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Otorhinolaryngology &amp; Head-Neck" level="0" type="L"/>
+                <concept code="163WX0800X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Orthopedic" level="0" type="L"/>
+                <concept code="163WX1100X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Ophthalmic" level="0" type="L"/>
+                <concept code="163WX1500X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Registered Nurse, Ostomy Care" level="0" type="L"/>
+                <concept code="164W00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Licensed Practical Nurse" level="0" type="L"/>
+                <concept code="164X00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Licensed Vocational Nurse" level="0" type="L"/>
+                <concept code="167G00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Providers; Licensed Psychiatric Technician" level="0" type="L"/>
+                <concept code="17" codeSystem="2.16.840.1.113883.6.101" displayName="This is the provider's excess insurance coverage" level="0" type="L"/>
+                <concept code="170100000X" codeSystem="2.16.840.1.113883.6.101" displayName="Other Service Providers; &#34;Medical Genetics, Ph.D. Medical Genetics&#34;" level="0" type="L"/>
+                <concept code="170300000X" codeSystem="2.16.840.1.113883.6.101" displayName="Other Service Providers; &#34;Genetic Counselor, MS&#34;" level="0" type="L"/>
+                <concept code="171000000X" codeSystem="2.16.840.1.113883.6.101" displayName="Other Service Providers; Military Health Care Provider" level="0" type="L"/>
+                <concept code="1710I1002X" codeSystem="2.16.840.1.113883.6.101" displayName="Other Service Providers; Military Health Care Provider, Independent Duty Corpsman" level="0" type="L"/>
+                <concept code="1710I1003X" codeSystem="2.16.840.1.113883.6.101" displayName="Other Service Providers; Military Health Care Provider, Independent Duty Medical Technicians" level="0" type="L"/>
+                <concept code="171100000X" codeSystem="2.16.840.1.113883.6.101" displayName="Other Service Providers; Acupuncturist" level="0" type="L"/>
+                <concept code="171M00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Other Service Providers; Case Manager/Care Coordinator" level="0" type="L"/>
+                <concept code="171R00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Other Service Providers; Interpreter" level="0" type="L"/>
+                <concept code="171W00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Other Service Providers; Contractor" level="0" type="L"/>
+                <concept code="171WH0202X" codeSystem="2.16.840.1.113883.6.101" displayName="Other Service Providers; Contractor, Home Modifications" level="0" type="L"/>
+                <concept code="171WV0202X" codeSystem="2.16.840.1.113883.6.101" displayName="Other Service Providers; Contractor, Vehicle Modifications" level="0" type="L"/>
+                <concept code="172A00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Other Service Providers; Driver" level="0" type="L"/>
+                <concept code="172M00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Other Service Providers; Mechanotherapist" level="0" type="L"/>
+                <concept code="172P00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Other Service Providers; Naprapath" level="0" type="L"/>
+                <concept code="172V00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Other Service Providers; Community Health Worker" level="0" type="L"/>
+                <concept code="173000000X" codeSystem="2.16.840.1.113883.6.101" displayName="Other Service Providers; Legal Medicine" level="0" type="L"/>
+                <concept code="173C00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Other Service Providers; Reflexologist" level="0" type="L"/>
+                <concept code="173F00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Other Service Providers; &#34;Sleep Specialist, PhD&#34;" level="0" type="L"/>
+                <concept code="174200000X" codeSystem="2.16.840.1.113883.6.101" displayName="Other Service Providers; Meals" level="0" type="L"/>
+                <concept code="174400000X" codeSystem="2.16.840.1.113883.6.101" displayName="Other Service Providers; Specialist" level="0" type="L"/>
+                <concept code="1744G0900X" codeSystem="2.16.840.1.113883.6.101" displayName="Other Service Providers; Specialist, Graphics Designer" level="0" type="L"/>
+                <concept code="1744P3200X" codeSystem="2.16.840.1.113883.6.101" displayName="Other Service Providers; Specialist, Prosthetics Case Management" level="0" type="L"/>
+                <concept code="1744R1102X" codeSystem="2.16.840.1.113883.6.101" displayName="Other Service Providers; Specialist, Research Study" level="0" type="L"/>
+                <concept code="1744R1103X" codeSystem="2.16.840.1.113883.6.101" displayName="Other Service Providers; Specialist, Research Data Abstracter/Coder" level="0" type="L"/>
+                <concept code="174H00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Other Service Providers; Health Educator" level="0" type="L"/>
+                <concept code="174M00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Other Service Providers; Veterinarian" level="0" type="L"/>
+                <concept code="174MM1900X" codeSystem="2.16.840.1.113883.6.101" displayName="Other Service Providers; Veterinarian, Medical Research" level="0" type="L"/>
+                <concept code="174N00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Other Service Providers; &#34;Lactation Consultant, Non-RN&#34;" level="0" type="L"/>
+                <concept code="174V00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Other Service Providers; Clinical Ethicist" level="0" type="L"/>
+                <concept code="175F00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Other Service Providers; Naturopath" level="0" type="L"/>
+                <concept code="175L00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Other Service Providers; Homeopath" level="0" type="L"/>
+                <concept code="175M00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Other Service Providers; &#34;Midwife, Lay&#34;" level="0" type="L"/>
+                <concept code="175T00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Other Service Providers; Peer Specialist" level="0" type="L"/>
+                <concept code="176B00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Other Service Providers; Midwife" level="0" type="L"/>
+                <concept code="176P00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Other Service Providers; Funeral Director" level="0" type="L"/>
+                <concept code="177F00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Other Service Providers; Lodging" level="0" type="L"/>
+                <concept code="18" codeSystem="2.16.840.1.113883.6.101" displayName="Excess insurance coverage exists for this provider" level="0" type="L"/>
+                <concept code="183500000X" codeSystem="2.16.840.1.113883.6.101" displayName="Pharmacy Service Providers; Pharmacist" level="0" type="L"/>
+                <concept code="1835C0205X" codeSystem="2.16.840.1.113883.6.101" displayName="Pharmacy Service Providers; Pharmacist, Critical Care" level="0" type="L"/>
+                <concept code="1835G0303X" codeSystem="2.16.840.1.113883.6.101" displayName="Pharmacy Service Providers; Pharmacist, Geriatric" level="0" type="L"/>
+                <concept code="1835N0905X" codeSystem="2.16.840.1.113883.6.101" displayName="Pharmacy Service Providers; Pharmacist, Nuclear" level="0" type="L"/>
+                <concept code="1835N1003X" codeSystem="2.16.840.1.113883.6.101" displayName="Pharmacy Service Providers; Pharmacist, Nutrition Support" level="0" type="L"/>
+                <concept code="1835P0018X" codeSystem="2.16.840.1.113883.6.101" displayName="Pharmacy Service Providers; Pharmacist, Pharmacist Clinician (PhC)/ Clinical Pharmacy Specialist" level="0" type="L"/>
+                <concept code="1835P0200X" codeSystem="2.16.840.1.113883.6.101" displayName="Pharmacy Service Providers; Pharmacist, Pediatrics" level="0" type="L"/>
+                <concept code="1835P1200X" codeSystem="2.16.840.1.113883.6.101" displayName="Pharmacy Service Providers; Pharmacist, Pharmacotherapy" level="0" type="L"/>
+                <concept code="1835P1300X" codeSystem="2.16.840.1.113883.6.101" displayName="Pharmacy Service Providers; Pharmacist, Psychiatric" level="0" type="L"/>
+                <concept code="1835P2201X" codeSystem="2.16.840.1.113883.6.101" displayName="Pharmacy Service Providers; Pharmacist, Ambulatory Care" level="0" type="L"/>
+                <concept code="1835X0200X" codeSystem="2.16.840.1.113883.6.101" displayName="Pharmacy Service Providers; Pharmacist, Oncology" level="0" type="L"/>
+                <concept code="183700000X" codeSystem="2.16.840.1.113883.6.101" displayName="Pharmacy Service Providers; Pharmacy Technician" level="0" type="L"/>
+                <concept code="19" codeSystem="2.16.840.1.113883.6.101" displayName="Provider is self-insured" level="0" type="L"/>
+                <concept code="193200000X" codeSystem="2.16.840.1.113883.6.101" displayName="Group; Multi-Specialty" level="0" type="L"/>
+                <concept code="193400000X" codeSystem="2.16.840.1.113883.6.101" displayName="Group; Single Specialty" level="0" type="L"/>
+                <concept code="1A" codeSystem="2.16.840.1.113883.6.101" displayName="Provider's self-insurance is funded" level="0" type="L"/>
+                <concept code="1B" codeSystem="2.16.840.1.113883.6.101" displayName="Provider's self-insurance is not funded" level="0" type="L"/>
+                <concept code="1C" codeSystem="2.16.840.1.113883.6.101" displayName="Provider has had adverse action on state license, certificate, or registration" level="0" type="L"/>
+                <concept code="1D" codeSystem="2.16.840.1.113883.6.101" displayName="Provider has had adverse action on DEA or other applicable narcotic registration" level="0" type="L"/>
+                <concept code="1E" codeSystem="2.16.840.1.113883.6.101" displayName="Provider has had adverse action on hospital or other health care facility staff membership for privileges" level="0" type="L"/>
+                <concept code="1F" codeSystem="2.16.840.1.113883.6.101" displayName="Provider has had adverse action on professional organization membership" level="0" type="L"/>
+                <concept code="1G" codeSystem="2.16.840.1.113883.6.101" displayName="Provider has had adverse action on Medicare, Medicaid or other government health programs" level="0" type="L"/>
+                <concept code="1H" codeSystem="2.16.840.1.113883.6.101" displayName="Provider has had adverse action on any prepaid health plan or managed care participation" level="0" type="L"/>
+                <concept code="1I" codeSystem="2.16.840.1.113883.6.101" displayName="Provider has had adverse action with respect to educational or training institution or program" level="0" type="L"/>
+                <concept code="1J" codeSystem="2.16.840.1.113883.6.101" displayName="Provider has had adverse action by professional society or association" level="0" type="L"/>
+                <concept code="1K" codeSystem="2.16.840.1.113883.6.101" displayName="Provider is under health plan administrative sanction" level="0" type="L"/>
+                <concept code="1L" codeSystem="2.16.840.1.113883.6.101" displayName="Provider accepts Workers' Compensation" level="0" type="L"/>
+                <concept code="1M" codeSystem="2.16.840.1.113883.6.101" displayName="Provider accepts Medicare assignment" level="0" type="L"/>
+                <concept code="1N" codeSystem="2.16.840.1.113883.6.101" displayName="Provider accepts Medicaid assignment" level="0" type="L"/>
+                <concept code="1O" codeSystem="2.16.840.1.113883.6.101" displayName="Provider participates in Medicare and accepts assignment" level="0" type="L"/>
+                <concept code="1P" codeSystem="2.16.840.1.113883.6.101" displayName="Provider participates in Medicaid and accepts assignment" level="0" type="L"/>
+                <concept code="1Q" codeSystem="2.16.840.1.113883.6.101" displayName="Provider is not accepting new patients for obstetric care" level="0" type="L"/>
+                <concept code="1R" codeSystem="2.16.840.1.113883.6.101" displayName="This location is handicapped accessible" level="0" type="L"/>
+                <concept code="1S" codeSystem="2.16.840.1.113883.6.101" displayName="This location is less than 1 block from public transportation" level="0" type="L"/>
+                <concept code="1T" codeSystem="2.16.840.1.113883.6.101" displayName="This location is less than 5 blocks from public transportation" level="0" type="L"/>
+                <concept code="1U" codeSystem="2.16.840.1.113883.6.101" displayName="This location is less than 1 mile from public transportation" level="0" type="L"/>
+                <concept code="1V" codeSystem="2.16.840.1.113883.6.101" displayName="This location is 1 or more miles from public transportation" level="0" type="L"/>
+                <concept code="1W" codeSystem="2.16.840.1.113883.6.101" displayName="This location has a full time assistant available" level="0" type="L"/>
+                <concept code="1X" codeSystem="2.16.840.1.113883.6.101" displayName="This location has a part time assistant available" level="0" type="L"/>
+                <concept code="1Y" codeSystem="2.16.840.1.113883.6.101" displayName="This location has Telecommunication Device for the Deaf (TDD) equipment" level="0" type="L"/>
+                <concept code="1Z" codeSystem="2.16.840.1.113883.6.101" displayName="This location is medically fragile equipped" level="0" type="L"/>
+                <concept code="20" codeSystem="2.16.840.1.113883.6.101" displayName="This location employs para-professional staff/employees" level="0" type="L"/>
+                <concept code="202C00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Independent Medical Examiner" level="0" type="L"/>
+                <concept code="202K00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Phlebology" level="0" type="L"/>
+                <concept code="204C00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; &#34;Neuromusculoskeletal Medicine, Sports Medicine&#34;" level="0" type="L"/>
+                <concept code="204D00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Neuromusculoskeletal Medicine &amp; OMM" level="0" type="L"/>
+                <concept code="204E00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Oral &amp; Maxillofacial Surgery" level="0" type="L"/>
+                <concept code="204F00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Transplant Surgery" level="0" type="L"/>
+                <concept code="204R00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Electrodiagnostic Medicine" level="0" type="L"/>
+                <concept code="207K00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Allergy &amp; Immunology" level="0" type="L"/>
+                <concept code="207KA0200X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Allergy &amp; Immunology, Allergy" level="0" type="L"/>
+                <concept code="207KI0005X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Allergy &amp; Immunology, Clinical &amp; Laboratory Immunology" level="0" type="L"/>
+                <concept code="207L00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Anesthesiology" level="0" type="L"/>
+                <concept code="207LA0401X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Anesthesiology, Addiction Medicine" level="0" type="L"/>
+                <concept code="207LC0200X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Anesthesiology, Critical Care Medicine" level="0" type="L"/>
+                <concept code="207LH0002X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Anesthesiology, Hospice and Palliative Medicine" level="0" type="L"/>
+                <concept code="207LP2900X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Anesthesiology, Pain Medicine" level="0" type="L"/>
+                <concept code="207LP3000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Anesthesiology, Pediatric Anesthesiology" level="0" type="L"/>
+                <concept code="207N00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Dermatology" level="0" type="L"/>
+                <concept code="207ND0101X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Dermatology, MOHS-Micrographic Surgery" level="0" type="L"/>
+                <concept code="207ND0900X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Dermatology, Dermatopathology" level="0" type="L"/>
+                <concept code="207NI0002X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Dermatology, Clinical &amp; Laboratory Dermatological Immunology" level="0" type="L"/>
+                <concept code="207NP0225X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Dermatology, Pediatric Dermatology" level="0" type="L"/>
+                <concept code="207NS0135X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Dermatology, Procedural Dermatology" level="0" type="L"/>
+                <concept code="207P00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Emergency Medicine" level="0" type="L"/>
+                <concept code="207PE0004X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Emergency Medicine, Emergency Medical Services" level="0" type="L"/>
+                <concept code="207PE0005X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Emergency Medicine, Undersea and Hyperbaric Medicine" level="0" type="L"/>
+                <concept code="207PH0002X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Emergency Medicine, Hospice and Palliative Medicine" level="0" type="L"/>
+                <concept code="207PP0204X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Emergency Medicine, Pediatric Emergency Medicine" level="0" type="L"/>
+                <concept code="207PS0010X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Emergency Medicine, Sports Medicine" level="0" type="L"/>
+                <concept code="207PT0002X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Emergency Medicine, Medical Toxicology" level="0" type="L"/>
+                <concept code="207Q00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine" level="0" type="L"/>
+                <concept code="207QA0000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adolescent Medicine" level="0" type="L"/>
+                <concept code="207QA0401X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Addiction Medicine" level="0" type="L"/>
+                <concept code="207QA0505X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Adult Medicine" level="0" type="L"/>
+                <concept code="207QB0002X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Obesity Medicine" level="0" type="L"/>
+                <concept code="207QG0300X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Geriatric Medicine" level="0" type="L"/>
+                <concept code="207QH0002X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Hospice and Palliative Medicine" level="0" type="L"/>
+                <concept code="207QS0010X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Sports Medicine" level="0" type="L"/>
+                <concept code="207QS1201X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Family Medicine, Sleep Medicine" level="0" type="L"/>
+                <concept code="207R00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Internal Medicine" level="0" type="L"/>
+                <concept code="207RA0000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Internal Medicine, Adolescent Medicine" level="0" type="L"/>
+                <concept code="207RA0001X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Internal Medicine, Advanced Heart Failure and Transplant Cardiology" level="0" type="L"/>
+                <concept code="207RA0002X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Internal Medicine, Adult Congenital Heart Disease" level="0" type="L"/>
+                <concept code="207RA0201X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Internal Medicine, Allergy &amp; Immunology" level="0" type="L"/>
+                <concept code="207RA0401X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Internal Medicine, Addiction Medicine" level="0" type="L"/>
+                <concept code="207RB0002X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Internal Medicine, Obesity Medicine" level="0" type="L"/>
+                <concept code="207RC0000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Internal Medicine, Cardiovascular Disease" level="0" type="L"/>
+                <concept code="207RC0001X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Internal Medicine, Clinical Cardiac Electrophysiology" level="0" type="L"/>
+                <concept code="207RC0200X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Internal Medicine, Critical Care Medicine" level="0" type="L"/>
+                <concept code="207RE0101X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Internal Medicine, &#34;Endocrinology, Diabetes &amp; Metabolism&#34;" level="0" type="L"/>
+                <concept code="207RG0100X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Internal Medicine, Gastroenterology" level="0" type="L"/>
+                <concept code="207RG0300X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Internal Medicine, Geriatric Medicine" level="0" type="L"/>
+                <concept code="207RH0000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Internal Medicine, Hematology" level="0" type="L"/>
+                <concept code="207RH0002X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Internal Medicine, Hospice and Palliative Medicine" level="0" type="L"/>
+                <concept code="207RH0003X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Internal Medicine, Hematology &amp; Oncology" level="0" type="L"/>
+                <concept code="207RH0005X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Internal Medicine, Hypertension Specialist" level="0" type="L"/>
+                <concept code="207RI0001X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Internal Medicine, Clinical &amp; Laboratory Immunology" level="0" type="L"/>
+                <concept code="207RI0008X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Internal Medicine, Hepatology" level="0" type="L"/>
+                <concept code="207RI0011X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Internal Medicine, Interventional Cardiology" level="0" type="L"/>
+                <concept code="207RI0200X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Internal Medicine, Infectious Disease" level="0" type="L"/>
+                <concept code="207RM1200X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Internal Medicine, Magnetic Resonance Imaging (MRI)" level="0" type="L"/>
+                <concept code="207RN0300X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Internal Medicine, Nephrology" level="0" type="L"/>
+                <concept code="207RP1001X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Internal Medicine, Pulmonary Disease" level="0" type="L"/>
+                <concept code="207RR0500X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Internal Medicine, Rheumatology" level="0" type="L"/>
+                <concept code="207RS0010X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Internal Medicine, Sports Medicine" level="0" type="L"/>
+                <concept code="207RS0012X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Internal Medicine, Sleep Medicine" level="0" type="L"/>
+                <concept code="207RT0003X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Internal Medicine, Transplant Hepatology" level="0" type="L"/>
+                <concept code="207RX0202X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Internal Medicine, Medical Oncology" level="0" type="L"/>
+                <concept code="207SC0300X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Medical Genetics, Clinical Cytogenetics" level="0" type="L"/>
+                <concept code="207SG0201X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Medical Genetics, Clinical Genetics (M.D.)" level="0" type="L"/>
+                <concept code="207SG0202X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Medical Genetics, Clinical Biochemical Genetics" level="0" type="L"/>
+                <concept code="207SG0203X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Medical Genetics, Clinical Molecular Genetics" level="0" type="L"/>
+                <concept code="207SG0205X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Medical Genetics, Ph.D. Medical Genetics" level="0" type="L"/>
+                <concept code="207SM0001X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Medical Genetics, Molecular Genetic Pathology" level="0" type="L"/>
+                <concept code="207T00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Neurological Surgery" level="0" type="L"/>
+                <concept code="207U00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Nuclear Medicine" level="0" type="L"/>
+                <concept code="207UN0901X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Nuclear Medicine, Nuclear Cardiology" level="0" type="L"/>
+                <concept code="207UN0902X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Nuclear Medicine, Nuclear Imaging &amp; Therapy" level="0" type="L"/>
+                <concept code="207UN0903X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Nuclear Medicine, In Vivo &amp; In Vitro Nuclear Medicine" level="0" type="L"/>
+                <concept code="207V00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Obstetrics &amp; Gynecology" level="0" type="L"/>
+                <concept code="207VB0002X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Obstetrics &amp; Gynecology, Obesity Medicine" level="0" type="L"/>
+                <concept code="207VC0200X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Obstetrics &amp; Gynecology, Critical Care Medicine" level="0" type="L"/>
+                <concept code="207VE0102X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Obstetrics &amp; Gynecology, Reproductive Endocrinology" level="0" type="L"/>
+                <concept code="207VF0040X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Obstetrics &amp; Gynecology, Female Pelvic Medicine and Reconstructive Surgery" level="0" type="L"/>
+                <concept code="207VG0400X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Obstetrics &amp; Gynecology, Gynecology" level="0" type="L"/>
+                <concept code="207VH0002X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Obstetrics &amp; Gynecology, Hospice and Palliative Medicine" level="0" type="L"/>
+                <concept code="207VM0101X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Obstetrics &amp; Gynecology, Maternal &amp; Fetal Medicine" level="0" type="L"/>
+                <concept code="207VX0000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Obstetrics &amp; Gynecology, Obstetrics" level="0" type="L"/>
+                <concept code="207VX0201X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Obstetrics &amp; Gynecology, Gynecologic Oncology" level="0" type="L"/>
+                <concept code="207W00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Ophthalmology" level="0" type="L"/>
+                <concept code="207WX0009X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Ophthalmology, Glaucoma Specialist" level="0" type="L"/>
+                <concept code="207WX0107X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Ophthalmology, Retina Specialist" level="0" type="L"/>
+                <concept code="207WX0108X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Ophthalmology, Uveitis and Ocular Inflammatory Disease" level="0" type="L"/>
+                <concept code="207WX0109X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Ophthalmology, Neuro-ophthalmology" level="0" type="L"/>
+                <concept code="207WX0110X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Ophthalmology, Pediatric Ophthalmology and Strabismus Specialist" level="0" type="L"/>
+                <concept code="207WX0120X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Ophthalmology, Cornea and External Diseases Specialist" level="0" type="L"/>
+                <concept code="207WX0200X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Ophthalmology, Ophthalmic Plastic and Reconstructive Surgery" level="0" type="L"/>
+                <concept code="207X00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Orthopaedic Surgery" level="0" type="L"/>
+                <concept code="207XP3100X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Orthopaedic Surgery, Pediatric Orthopaedic Surgery" level="0" type="L"/>
+                <concept code="207XS0106X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Orthopaedic Surgery, Hand Surgery" level="0" type="L"/>
+                <concept code="207XS0114X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Orthopaedic Surgery, Adult Reconstructive Orthopaedic Surgery" level="0" type="L"/>
+                <concept code="207XS0117X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Orthopaedic Surgery, Orthopaedic Surgery of the Spine" level="0" type="L"/>
+                <concept code="207XX0004X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Orthopaedic Surgery, Foot and Ankle Surgery" level="0" type="L"/>
+                <concept code="207XX0005X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Orthopaedic Surgery, Sports Medicine" level="0" type="L"/>
+                <concept code="207XX0801X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Orthopaedic Surgery, Orthopaedic Trauma" level="0" type="L"/>
+                <concept code="207Y00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Otolaryngology" level="0" type="L"/>
+                <concept code="207YP0228X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Otolaryngology, Pediatric Otolaryngology" level="0" type="L"/>
+                <concept code="207YS0012X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Otolaryngology, Sleep Medicine" level="0" type="L"/>
+                <concept code="207YS0123X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Otolaryngology, Facial Plastic Surgery" level="0" type="L"/>
+                <concept code="207YX0007X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Otolaryngology, Plastic Surgery within the Head &amp; Neck" level="0" type="L"/>
+                <concept code="207YX0602X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Otolaryngology, Otolaryngic Allergy" level="0" type="L"/>
+                <concept code="207YX0901X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Otolaryngology, Otology &amp; Neurotology" level="0" type="L"/>
+                <concept code="207YX0905X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Otolaryngology, Otolaryngology/Facial Plastic Surgery" level="0" type="L"/>
+                <concept code="207ZB0001X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Pathology, Blood Banking &amp; Transfusion Medicine" level="0" type="L"/>
+                <concept code="207ZC0006X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Pathology, Clinical Pathology" level="0" type="L"/>
+                <concept code="207ZC0008X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Pathology, Clinical Informatics" level="0" type="L"/>
+                <concept code="207ZC0500X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Pathology, Cytopathology" level="0" type="L"/>
+                <concept code="207ZD0900X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Pathology, Dermatopathology" level="0" type="L"/>
+                <concept code="207ZF0201X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Pathology, Forensic Pathology" level="0" type="L"/>
+                <concept code="207ZH0000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Pathology, Hematology" level="0" type="L"/>
+                <concept code="207ZI0100X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Pathology, Immunopathology" level="0" type="L"/>
+                <concept code="207ZM0300X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Pathology, Medical Microbiology" level="0" type="L"/>
+                <concept code="207ZN0500X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Pathology, Neuropathology" level="0" type="L"/>
+                <concept code="207ZP0007X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Pathology, Molecular Genetic Pathology" level="0" type="L"/>
+                <concept code="207ZP0101X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Pathology, Anatomic Pathology" level="0" type="L"/>
+                <concept code="207ZP0102X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Pathology, Anatomic Pathology &amp; Clinical Pathology" level="0" type="L"/>
+                <concept code="207ZP0104X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Pathology, Chemical Pathology" level="0" type="L"/>
+                <concept code="207ZP0105X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Pathology, Clinical Pathology/Laboratory Medicine" level="0" type="L"/>
+                <concept code="207ZP0213X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Pathology, Pediatric Pathology" level="0" type="L"/>
+                <concept code="208000000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Pediatrics" level="0" type="L"/>
+                <concept code="2080A0000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Pediatrics, Adolescent Medicine" level="0" type="L"/>
+                <concept code="2080B0002X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Pediatrics, Obesity Medicine" level="0" type="L"/>
+                <concept code="2080C0008X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Pediatrics, Child Abuse Pediatrics" level="0" type="L"/>
+                <concept code="2080H0002X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Pediatrics, Hospice and Palliative Medicine" level="0" type="L"/>
+                <concept code="2080I0007X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Pediatrics, Clinical &amp; Laboratory Immunology" level="0" type="L"/>
+                <concept code="2080N0001X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Pediatrics, Neonatal-Perinatal Medicine" level="0" type="L"/>
+                <concept code="2080P0006X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Pediatrics, Developmental - Behavioral Pediatrics" level="0" type="L"/>
+                <concept code="2080P0008X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Pediatrics, Neurodevelopmental Disabilities" level="0" type="L"/>
+                <concept code="2080P0201X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Pediatrics, Pediatric Allergy/Immunology" level="0" type="L"/>
+                <concept code="2080P0202X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Pediatrics, Pediatric Cardiology" level="0" type="L"/>
+                <concept code="2080P0203X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Pediatrics, Pediatric Critical Care Medicine" level="0" type="L"/>
+                <concept code="2080P0204X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Pediatrics, Pediatric Emergency Medicine" level="0" type="L"/>
+                <concept code="2080P0205X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Pediatrics, Pediatric Endocrinology" level="0" type="L"/>
+                <concept code="2080P0206X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Pediatrics, Pediatric Gastroenterology" level="0" type="L"/>
+                <concept code="2080P0207X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Pediatrics, Pediatric Hematology-Oncology" level="0" type="L"/>
+                <concept code="2080P0208X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Pediatrics, Pediatric Infectious Diseases" level="0" type="L"/>
+                <concept code="2080P0210X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Pediatrics, Pediatric Nephrology" level="0" type="L"/>
+                <concept code="2080P0214X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Pediatrics, Pediatric Pulmonology" level="0" type="L"/>
+                <concept code="2080P0216X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Pediatrics, Pediatric Rheumatology" level="0" type="L"/>
+                <concept code="2080S0010X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Pediatrics, Sports Medicine" level="0" type="L"/>
+                <concept code="2080S0012X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Pediatrics, Sleep Medicine" level="0" type="L"/>
+                <concept code="2080T0002X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Pediatrics, Medical Toxicology" level="0" type="L"/>
+                <concept code="2080T0004X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Pediatrics, Pediatric Transplant Hepatology" level="0" type="L"/>
+                <concept code="208100000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Physical Medicine &amp; Rehabilitation" level="0" type="L"/>
+                <concept code="2081H0002X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Physical Medicine &amp; Rehabilitation, Hospice and Palliative Medicine" level="0" type="L"/>
+                <concept code="2081N0008X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Physical Medicine &amp; Rehabilitation, Neuromuscular Medicine" level="0" type="L"/>
+                <concept code="2081P0004X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Physical Medicine &amp; Rehabilitation, Spinal Cord Injury Medicine" level="0" type="L"/>
+                <concept code="2081P0010X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Physical Medicine &amp; Rehabilitation, Pediatric Rehabilitation Medicine" level="0" type="L"/>
+                <concept code="2081P0301X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Physical Medicine &amp; Rehabilitation, Brain Injury Medicine" level="0" type="L"/>
+                <concept code="2081P2900X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Physical Medicine &amp; Rehabilitation, Pain Medicine" level="0" type="L"/>
+                <concept code="2081S0010X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Physical Medicine &amp; Rehabilitation, Sports Medicine" level="0" type="L"/>
+                <concept code="208200000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Plastic Surgery" level="0" type="L"/>
+                <concept code="2082S0099X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Plastic Surgery, Plastic Surgery Within the Head and Neck" level="0" type="L"/>
+                <concept code="2082S0105X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Plastic Surgery, Surgery of the Hand" level="0" type="L"/>
+                <concept code="2083A0100X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Preventive Medicine, Aerospace Medicine" level="0" type="L"/>
+                <concept code="2083B0002X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Preventive Medicine, Obesity Medicine" level="0" type="L"/>
+                <concept code="2083C0008X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Preventive Medicine, Clinical Informatics" level="0" type="L"/>
+                <concept code="2083P0011X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Preventive Medicine, Undersea and Hyperbaric Medicine" level="0" type="L"/>
+                <concept code="2083P0500X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Preventive Medicine, Preventive Medicine/Occupational Environmental Medicine" level="0" type="L"/>
+                <concept code="2083P0901X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Preventive Medicine, Public Health &amp; General Preventive Medicine" level="0" type="L"/>
+                <concept code="2083S0010X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Preventive Medicine, Sports Medicine" level="0" type="L"/>
+                <concept code="2083T0002X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Preventive Medicine, Medical Toxicology" level="0" type="L"/>
+                <concept code="2083X0100X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Preventive Medicine, Occupational Medicine" level="0" type="L"/>
+                <concept code="2084A0401X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Psychiatry &amp; Neurology, Addiction Medicine" level="0" type="L"/>
+                <concept code="2084A2900X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Psychiatry &amp; Neurology, Neurocritical Care" level="0" type="L"/>
+                <concept code="2084B0002X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Psychiatry &amp; Neurology, Obesity Medicine" level="0" type="L"/>
+                <concept code="2084B0040X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Psychiatry &amp; Neurology, Behavioral Neurology &amp; Neuropsychiatry" level="0" type="L"/>
+                <concept code="2084D0003X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Psychiatry &amp; Neurology, Diagnostic Neuroimaging" level="0" type="L"/>
+                <concept code="2084F0202X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Psychiatry &amp; Neurology, Forensic Psychiatry" level="0" type="L"/>
+                <concept code="2084H0002X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Psychiatry &amp; Neurology, Hospice and Palliative Medicine" level="0" type="L"/>
+                <concept code="2084N0008X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Psychiatry &amp; Neurology, Neuromuscular Medicine" level="0" type="L"/>
+                <concept code="2084N0400X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Psychiatry &amp; Neurology, Neurology" level="0" type="L"/>
+                <concept code="2084N0402X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Psychiatry &amp; Neurology, Neurology with Special Qualifications in Child Neurology" level="0" type="L"/>
+                <concept code="2084N0600X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Psychiatry &amp; Neurology, Clinical Neurophysiology" level="0" type="L"/>
+                <concept code="2084P0005X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Psychiatry &amp; Neurology, Neurodevelopmental Disabilities" level="0" type="L"/>
+                <concept code="2084P0015X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Psychiatry &amp; Neurology, Psychosomatic Medicine" level="0" type="L"/>
+                <concept code="2084P0301X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Psychiatry &amp; Neurology, Brain Injury Medicine" level="0" type="L"/>
+                <concept code="2084P0800X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Psychiatry &amp; Neurology, Psychiatry" level="0" type="L"/>
+                <concept code="2084P0802X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Psychiatry &amp; Neurology, Addiction Psychiatry" level="0" type="L"/>
+                <concept code="2084P0804X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Psychiatry &amp; Neurology, Child &amp; Adolescent Psychiatry" level="0" type="L"/>
+                <concept code="2084P0805X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Psychiatry &amp; Neurology, Geriatric Psychiatry" level="0" type="L"/>
+                <concept code="2084P2900X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Psychiatry &amp; Neurology, Pain Medicine" level="0" type="L"/>
+                <concept code="2084S0010X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Psychiatry &amp; Neurology, Sports Medicine" level="0" type="L"/>
+                <concept code="2084S0012X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Psychiatry &amp; Neurology, Sleep Medicine" level="0" type="L"/>
+                <concept code="2084V0102X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Psychiatry &amp; Neurology, Vascular Neurology" level="0" type="L"/>
+                <concept code="2085B0100X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Radiology, Body Imaging" level="0" type="L"/>
+                <concept code="2085D0003X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Radiology, Diagnostic Neuroimaging" level="0" type="L"/>
+                <concept code="2085H0002X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Radiology, Hospice and Palliative Medicine" level="0" type="L"/>
+                <concept code="2085N0700X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Radiology, Neuroradiology" level="0" type="L"/>
+                <concept code="2085N0904X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Radiology, Nuclear Radiology" level="0" type="L"/>
+                <concept code="2085P0229X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Radiology, Pediatric Radiology" level="0" type="L"/>
+                <concept code="2085R0001X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Radiology, Radiation Oncology" level="0" type="L"/>
+                <concept code="2085R0202X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Radiology, Diagnostic Radiology" level="0" type="L"/>
+                <concept code="2085R0203X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Radiology, Therapeutic Radiology" level="0" type="L"/>
+                <concept code="2085R0204X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Radiology, Vascular &amp; Interventional Radiology" level="0" type="L"/>
+                <concept code="2085R0205X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Radiology, Radiological Physics" level="0" type="L"/>
+                <concept code="2085U0001X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Radiology, Diagnostic Ultrasound" level="0" type="L"/>
+                <concept code="208600000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Surgery" level="0" type="L"/>
+                <concept code="2086H0002X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Surgery, Hospice and Palliative Medicine" level="0" type="L"/>
+                <concept code="2086S0102X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Surgery, Surgical Critical Care" level="0" type="L"/>
+                <concept code="2086S0105X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Surgery, Surgery of the Hand" level="0" type="L"/>
+                <concept code="2086S0120X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Surgery, Pediatric Surgery" level="0" type="L"/>
+                <concept code="2086S0122X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Surgery, Plastic and Reconstructive Surgery" level="0" type="L"/>
+                <concept code="2086S0127X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Surgery, Trauma Surgery" level="0" type="L"/>
+                <concept code="2086S0129X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Surgery, Vascular Surgery" level="0" type="L"/>
+                <concept code="2086X0206X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Surgery, Surgical Oncology" level="0" type="L"/>
+                <concept code="208800000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Urology" level="0" type="L"/>
+                <concept code="2088F0040X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Urology, Female Pelvic Medicine and Reconstructive Surgery" level="0" type="L"/>
+                <concept code="2088P0231X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Urology, Pediatric Urology" level="0" type="L"/>
+                <concept code="208C00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Colon &amp; Rectal Surgery" level="0" type="L"/>
+                <concept code="208D00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; General Practice" level="0" type="L"/>
+                <concept code="208G00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Thoracic Surgery (Cardiothoracic Vascular Surgery)" level="0" type="L"/>
+                <concept code="208M00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Hospitalist" level="0" type="L"/>
+                <concept code="208U00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Clinical Pharmacology" level="0" type="L"/>
+                <concept code="208VP0000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Pain Medicine, Pain Medicine" level="0" type="L"/>
+                <concept code="208VP0014X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Pain Medicine, Interventional Pain Medicine" level="0" type="L"/>
+                <concept code="209800000X" codeSystem="2.16.840.1.113883.6.101" displayName="Allopathic &amp; Osteopathic Physicians; Legal Medicine" level="0" type="L"/>
+                <concept code="21" codeSystem="2.16.840.1.113883.6.101" displayName="This location maintains para-professional credentialing, licensure &amp; malpractice information" level="0" type="L"/>
+                <concept code="211D00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Podiatric Medicine &amp; Surgery Service Providers; &#34;Assistant, Podiatric&#34;" level="0" type="L"/>
+                <concept code="213E00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Podiatric Medicine &amp; Surgery Service Providers; Podiatrist" level="0" type="L"/>
+                <concept code="213EP0504X" codeSystem="2.16.840.1.113883.6.101" displayName="Podiatric Medicine &amp; Surgery Service Providers; Podiatrist, Public Medicine" level="0" type="L"/>
+                <concept code="213EP1101X" codeSystem="2.16.840.1.113883.6.101" displayName="Podiatric Medicine &amp; Surgery Service Providers; Podiatrist, Primary Podiatric Medicine" level="0" type="L"/>
+                <concept code="213ER0200X" codeSystem="2.16.840.1.113883.6.101" displayName="Podiatric Medicine &amp; Surgery Service Providers; Podiatrist, Radiology" level="0" type="L"/>
+                <concept code="213ES0000X" codeSystem="2.16.840.1.113883.6.101" displayName="Podiatric Medicine &amp; Surgery Service Providers; Podiatrist, Sports Medicine" level="0" type="L"/>
+                <concept code="213ES0103X" codeSystem="2.16.840.1.113883.6.101" displayName="Podiatric Medicine &amp; Surgery Service Providers; Podiatrist, Foot &amp; Ankle Surgery" level="0" type="L"/>
+                <concept code="213ES0131X" codeSystem="2.16.840.1.113883.6.101" displayName="Podiatric Medicine &amp; Surgery Service Providers; Podiatrist, Foot Surgery" level="0" type="L"/>
+                <concept code="22" codeSystem="2.16.840.1.113883.6.101" displayName="This location admits and cares for patients on its own hospital service" level="0" type="L"/>
+                <concept code="221700000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Art Therapist" level="0" type="L"/>
+                <concept code="222Q00000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Developmental Therapist" level="0" type="L"/>
+                <concept code="222Z00000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Orthotist" level="0" type="L"/>
+                <concept code="224900000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Mastectomy Fitter" level="0" type="L"/>
+                <concept code="224L00000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Pedorthist" level="0" type="L"/>
+                <concept code="224P00000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Prosthetist" level="0" type="L"/>
+                <concept code="224Y00000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Clinical Exercise Physiologist" level="0" type="L"/>
+                <concept code="224Z00000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Occupational Therapy Assistant" level="0" type="L"/>
+                <concept code="224ZE0001X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Occupational Therapy Assistant, Environmental Modification" level="0" type="L"/>
+                <concept code="224ZF0002X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Occupational Therapy Assistant, &#34;Feeding, Eating &amp; Swallowing&#34;" level="0" type="L"/>
+                <concept code="224ZL0004X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Occupational Therapy Assistant, Low Vision" level="0" type="L"/>
+                <concept code="224ZR0403X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Occupational Therapy Assistant, Driving and Community Mobility" level="0" type="L"/>
+                <concept code="225000000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Orthotic Fitter" level="0" type="L"/>
+                <concept code="225100000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Physical Therapist" level="0" type="L"/>
+                <concept code="2251C2600X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Physical Therapist, Cardiopulmonary" level="0" type="L"/>
+                <concept code="2251E1200X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Physical Therapist, Ergonomics" level="0" type="L"/>
+                <concept code="2251E1300X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Physical Therapist, &#34;Electrophysiology, Clinical&#34;" level="0" type="L"/>
+                <concept code="2251G0304X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Physical Therapist, Geriatrics" level="0" type="L"/>
+                <concept code="2251H1200X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Physical Therapist, Hand" level="0" type="L"/>
+                <concept code="2251H1300X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Physical Therapist, Human Factors" level="0" type="L"/>
+                <concept code="2251N0400X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Physical Therapist, Neurology" level="0" type="L"/>
+                <concept code="2251P0200X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Physical Therapist, Pediatrics" level="0" type="L"/>
+                <concept code="2251S0007X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Physical Therapist, Sports" level="0" type="L"/>
+                <concept code="2251X0800X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Physical Therapist, Orthopedic" level="0" type="L"/>
+                <concept code="225200000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Physical Therapy Assistant" level="0" type="L"/>
+                <concept code="225400000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Rehabilitation Practitioner" level="0" type="L"/>
+                <concept code="225500000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Specialist/Technologist" level="0" type="L"/>
+                <concept code="2255A2300X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Specialist/Technologist, Athletic Trainer" level="0" type="L"/>
+                <concept code="2255R0406X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Specialist/Technologist, &#34;Rehabilitation, Blind&#34;" level="0" type="L"/>
+                <concept code="225600000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Dance Therapist" level="0" type="L"/>
+                <concept code="225700000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Massage Therapist" level="0" type="L"/>
+                <concept code="225800000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Recreation Therapist" level="0" type="L"/>
+                <concept code="225A00000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Music Therapist" level="0" type="L"/>
+                <concept code="225B00000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Pulmonary Function Technologist" level="0" type="L"/>
+                <concept code="225C00000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Rehabilitation Counselor" level="0" type="L"/>
+                <concept code="225CA2400X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Rehabilitation Counselor, Assistive Technology Practitioner" level="0" type="L"/>
+                <concept code="225CA2500X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Rehabilitation Counselor, Assistive Technology Supplier" level="0" type="L"/>
+                <concept code="225CX0006X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Rehabilitation Counselor, Orientation and Mobility Training Provider" level="0" type="L"/>
+                <concept code="225X00000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Occupational Therapist" level="0" type="L"/>
+                <concept code="225XE0001X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Occupational Therapist, Environmental Modification" level="0" type="L"/>
+                <concept code="225XE1200X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Occupational Therapist, Ergonomics" level="0" type="L"/>
+                <concept code="225XF0002X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Occupational Therapist, &#34;Feeding, Eating &amp; Swallowing&#34;" level="0" type="L"/>
+                <concept code="225XG0600X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Occupational Therapist, Gerontology" level="0" type="L"/>
+                <concept code="225XH1200X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Occupational Therapist, Hand" level="0" type="L"/>
+                <concept code="225XH1300X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Occupational Therapist, Human Factors" level="0" type="L"/>
+                <concept code="225XL0004X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Occupational Therapist, Low Vision" level="0" type="L"/>
+                <concept code="225XM0800X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Occupational Therapist, Mental Health" level="0" type="L"/>
+                <concept code="225XN1300X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Occupational Therapist, Neurorehabilitation" level="0" type="L"/>
+                <concept code="225XP0019X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Occupational Therapist, Physical Rehabilitation" level="0" type="L"/>
+                <concept code="225XP0200X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Occupational Therapist, Pediatrics" level="0" type="L"/>
+                <concept code="225XR0403X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Occupational Therapist, Driving and Community Mobility" level="0" type="L"/>
+                <concept code="226000000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Recreational Therapist Assistant" level="0" type="L"/>
+                <concept code="226300000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Kinesiotherapist" level="0" type="L"/>
+                <concept code="227800000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; &#34;Respiratory Therapist, Certified&#34;" level="0" type="L"/>
+                <concept code="2278C0205X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; &#34;Respiratory Therapist, Certified&#34;, Critical Care" level="0" type="L"/>
+                <concept code="2278E0002X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; &#34;Respiratory Therapist, Certified&#34;, Emergency Care" level="0" type="L"/>
+                <concept code="2278E1000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; &#34;Respiratory Therapist, Certified&#34;, Educational" level="0" type="L"/>
+                <concept code="2278G0305X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; &#34;Respiratory Therapist, Certified&#34;, Geriatric Care" level="0" type="L"/>
+                <concept code="2278G1100X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; &#34;Respiratory Therapist, Certified&#34;, General Care" level="0" type="L"/>
+                <concept code="2278H0200X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; &#34;Respiratory Therapist, Certified&#34;, Home Health" level="0" type="L"/>
+                <concept code="2278P1004X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; &#34;Respiratory Therapist, Certified&#34;, Pulmonary Diagnostics" level="0" type="L"/>
+                <concept code="2278P1005X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; &#34;Respiratory Therapist, Certified&#34;, Pulmonary Rehabilitation" level="0" type="L"/>
+                <concept code="2278P1006X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; &#34;Respiratory Therapist, Certified&#34;, Pulmonary Function Technologist" level="0" type="L"/>
+                <concept code="2278P3800X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; &#34;Respiratory Therapist, Certified&#34;, Palliative/Hospice" level="0" type="L"/>
+                <concept code="2278P3900X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; &#34;Respiratory Therapist, Certified&#34;, Neonatal/Pediatrics" level="0" type="L"/>
+                <concept code="2278P4000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; &#34;Respiratory Therapist, Certified&#34;, Patient Transport" level="0" type="L"/>
+                <concept code="2278S1500X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; &#34;Respiratory Therapist, Certified&#34;, SNF/Subacute Care" level="0" type="L"/>
+                <concept code="227900000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; &#34;Respiratory Therapist, Registered&#34;" level="0" type="L"/>
+                <concept code="2279C0205X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; &#34;Respiratory Therapist, Registered&#34;, Critical Care" level="0" type="L"/>
+                <concept code="2279E0002X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; &#34;Respiratory Therapist, Registered&#34;, Emergency Care" level="0" type="L"/>
+                <concept code="2279E1000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; &#34;Respiratory Therapist, Registered&#34;, Educational" level="0" type="L"/>
+                <concept code="2279G0305X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; &#34;Respiratory Therapist, Registered&#34;, Geriatric Care" level="0" type="L"/>
+                <concept code="2279G1100X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; &#34;Respiratory Therapist, Registered&#34;, General Care" level="0" type="L"/>
+                <concept code="2279H0200X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; &#34;Respiratory Therapist, Registered&#34;, Home Health" level="0" type="L"/>
+                <concept code="2279P1004X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; &#34;Respiratory Therapist, Registered&#34;, Pulmonary Diagnostics" level="0" type="L"/>
+                <concept code="2279P1005X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; &#34;Respiratory Therapist, Registered&#34;, Pulmonary Rehabilitation" level="0" type="L"/>
+                <concept code="2279P1006X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; &#34;Respiratory Therapist, Registered&#34;, Pulmonary Function Technologist" level="0" type="L"/>
+                <concept code="2279P3800X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; &#34;Respiratory Therapist, Registered&#34;, Palliative/Hospice" level="0" type="L"/>
+                <concept code="2279P3900X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; &#34;Respiratory Therapist, Registered&#34;, Neonatal/Pediatrics" level="0" type="L"/>
+                <concept code="2279P4000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; &#34;Respiratory Therapist, Registered&#34;, Patient Transport" level="0" type="L"/>
+                <concept code="2279S1500X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; &#34;Respiratory Therapist, Registered&#34;, SNF/Subacute Care" level="0" type="L"/>
+                <concept code="229N00000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Respiratory, Developmental, Rehabilitative and Restorative Service Providers&#34;; Anaplastologist" level="0" type="L"/>
+                <concept code="23" codeSystem="2.16.840.1.113883.6.101" displayName="The scheduling time for urgent care at this location is more than 24 hours" level="0" type="L"/>
+                <concept code="231H00000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Speech, Language and Hearing Service Providers&#34;; Audiologist" level="0" type="L"/>
+                <concept code="231HA2400X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Speech, Language and Hearing Service Providers&#34;; Audiologist, Assistive Technology Practitioner" level="0" type="L"/>
+                <concept code="231HA2500X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Speech, Language and Hearing Service Providers&#34;; Audiologist, Assistive Technology Supplier" level="0" type="L"/>
+                <concept code="235500000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Speech, Language and Hearing Service Providers&#34;; Specialist/Technologist" level="0" type="L"/>
+                <concept code="2355A2700X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Speech, Language and Hearing Service Providers&#34;; Specialist/Technologist, Audiology Assistant" level="0" type="L"/>
+                <concept code="2355S0801X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Speech, Language and Hearing Service Providers&#34;; Specialist/Technologist, Speech-Language Assistant" level="0" type="L"/>
+                <concept code="235Z00000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Speech, Language and Hearing Service Providers&#34;; Speech-Language Pathologist" level="0" type="L"/>
+                <concept code="237600000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Speech, Language and Hearing Service Providers&#34;; Audiologist-Hearing Aid Fitter" level="0" type="L"/>
+                <concept code="237700000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Speech, Language and Hearing Service Providers&#34;; Hearing Instrument Specialist" level="0" type="L"/>
+                <concept code="24" codeSystem="2.16.840.1.113883.6.101" displayName="The scheduling time for symptomatic care at this location is more than 72 hours" level="0" type="L"/>
+                <concept code="242T00000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; Perfusionist" level="0" type="L"/>
+                <concept code="243U00000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; Radiology Practitioner Assistant" level="0" type="L"/>
+                <concept code="246Q00000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Specialist/Technologist, Pathology&#34;" level="0" type="L"/>
+                <concept code="246QB0000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Specialist/Technologist, Pathology&#34;, Blood Banking" level="0" type="L"/>
+                <concept code="246QC1000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Specialist/Technologist, Pathology&#34;, Chemistry" level="0" type="L"/>
+                <concept code="246QC2700X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Specialist/Technologist, Pathology&#34;, Cytotechnology" level="0" type="L"/>
+                <concept code="246QH0000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Specialist/Technologist, Pathology&#34;, Hematology" level="0" type="L"/>
+                <concept code="246QH0401X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Specialist/Technologist, Pathology&#34;, Hemapheresis Practitioner" level="0" type="L"/>
+                <concept code="246QH0600X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Specialist/Technologist, Pathology&#34;, Histology" level="0" type="L"/>
+                <concept code="246QI0000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Specialist/Technologist, Pathology&#34;, Immunology" level="0" type="L"/>
+                <concept code="246QL0900X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Specialist/Technologist, Pathology&#34;, Laboratory Management" level="0" type="L"/>
+                <concept code="246QL0901X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Specialist/Technologist, Pathology&#34;, &#34;Laboratory Management, Diplomate&#34;" level="0" type="L"/>
+                <concept code="246QM0706X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Specialist/Technologist, Pathology&#34;, Medical Technologist" level="0" type="L"/>
+                <concept code="246QM0900X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Specialist/Technologist, Pathology&#34;, Microbiology" level="0" type="L"/>
+                <concept code="246R00000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Technician, Pathology&#34;" level="0" type="L"/>
+                <concept code="246RH0600X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Technician, Pathology&#34;, Histology" level="0" type="L"/>
+                <concept code="246RM2200X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Technician, Pathology&#34;, Medical Laboratory" level="0" type="L"/>
+                <concept code="246RP1900X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Technician, Pathology&#34;, Phlebotomy" level="0" type="L"/>
+                <concept code="246W00000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Technician, Cardiology&#34;" level="0" type="L"/>
+                <concept code="246X00000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; Specialist/Technologist Cardiovascular" level="0" type="L"/>
+                <concept code="246XC2901X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; Specialist/Technologist Cardiovascular, Cardiovascular Invasive Specialist" level="0" type="L"/>
+                <concept code="246XC2903X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; Specialist/Technologist Cardiovascular, Vascular Specialist" level="0" type="L"/>
+                <concept code="246XS1301X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; Specialist/Technologist Cardiovascular, Sonography" level="0" type="L"/>
+                <concept code="246Y00000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Specialist/Technologist, Health Information&#34;" level="0" type="L"/>
+                <concept code="246YC3301X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Specialist/Technologist, Health Information&#34;, &#34;Coding Specialist, Hospital Based&#34;" level="0" type="L"/>
+                <concept code="246YC3302X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Specialist/Technologist, Health Information&#34;, &#34;Coding Specialist, Physician Office Based&#34;" level="0" type="L"/>
+                <concept code="246YR1600X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Specialist/Technologist, Health Information&#34;, Registered Record Administrator" level="0" type="L"/>
+                <concept code="246Z00000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Specialist/Technologist, Other&#34;" level="0" type="L"/>
+                <concept code="246ZA2600X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Specialist/Technologist, Other&#34;, &#34;Art, Medical&#34;" level="0" type="L"/>
+                <concept code="246ZB0301X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Specialist/Technologist, Other&#34;, Biomedical Engineering" level="0" type="L"/>
+                <concept code="246ZB0302X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Specialist/Technologist, Other&#34;, Biomedical Photographer" level="0" type="L"/>
+                <concept code="246ZB0500X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Specialist/Technologist, Other&#34;, Biochemist" level="0" type="L"/>
+                <concept code="246ZB0600X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Specialist/Technologist, Other&#34;, Biostatistician" level="0" type="L"/>
+                <concept code="246ZC0007X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Specialist/Technologist, Other&#34;, Surgical Assistant" level="0" type="L"/>
+                <concept code="246ZE0500X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Specialist/Technologist, Other&#34;, EEG" level="0" type="L"/>
+                <concept code="246ZE0600X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Specialist/Technologist, Other&#34;, Electroneurodiagnostic" level="0" type="L"/>
+                <concept code="246ZG0701X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Specialist/Technologist, Other&#34;, Graphics Methods" level="0" type="L"/>
+                <concept code="246ZG1000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Specialist/Technologist, Other&#34;, &#34;Geneticist, Medical (PhD)&#34;" level="0" type="L"/>
+                <concept code="246ZI1000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Specialist/Technologist, Other&#34;, &#34;Illustration, Medical&#34;" level="0" type="L"/>
+                <concept code="246ZN0300X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Specialist/Technologist, Other&#34;, Nephrology" level="0" type="L"/>
+                <concept code="246ZS0410X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Specialist/Technologist, Other&#34;, Surgical Technologist" level="0" type="L"/>
+                <concept code="246ZX2200X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Specialist/Technologist, Other&#34;, Orthopedic Assistant" level="0" type="L"/>
+                <concept code="247000000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Technician, Health Information&#34;" level="0" type="L"/>
+                <concept code="2470A2800X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Technician, Health Information&#34;, Assistant Record Technician" level="0" type="L"/>
+                <concept code="247100000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; Radiologic Technologist" level="0" type="L"/>
+                <concept code="2471B0102X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; Radiologic Technologist, Bone Densitometry" level="0" type="L"/>
+                <concept code="2471C1101X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; Radiologic Technologist, Cardiovascular-Interventional Technology" level="0" type="L"/>
+                <concept code="2471C1106X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; Radiologic Technologist, Cardiac-Interventional Technology" level="0" type="L"/>
+                <concept code="2471C3401X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; Radiologic Technologist, Computed Tomography" level="0" type="L"/>
+                <concept code="2471C3402X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; Radiologic Technologist, Radiography" level="0" type="L"/>
+                <concept code="2471M1202X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; Radiologic Technologist, Magnetic Resonance Imaging" level="0" type="L"/>
+                <concept code="2471M2300X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; Radiologic Technologist, Mammography" level="0" type="L"/>
+                <concept code="2471N0900X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; Radiologic Technologist, Nuclear Medicine Technology" level="0" type="L"/>
+                <concept code="2471Q0001X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; Radiologic Technologist, Quality Management" level="0" type="L"/>
+                <concept code="2471R0002X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; Radiologic Technologist, Radiation Therapy" level="0" type="L"/>
+                <concept code="2471S1302X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; Radiologic Technologist, Sonography" level="0" type="L"/>
+                <concept code="2471V0105X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; Radiologic Technologist, Vascular Sonography" level="0" type="L"/>
+                <concept code="2471V0106X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; Radiologic Technologist, Vascular-Interventional Technology" level="0" type="L"/>
+                <concept code="247200000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Technician, Other&#34;" level="0" type="L"/>
+                <concept code="2472B0301X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Technician, Other&#34;, Biomedical Engineering" level="0" type="L"/>
+                <concept code="2472D0500X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Technician, Other&#34;, Darkroom" level="0" type="L"/>
+                <concept code="2472E0500X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Technician, Other&#34;, EEG" level="0" type="L"/>
+                <concept code="2472R0900X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Technician, Other&#34;, Renal Dialysis" level="0" type="L"/>
+                <concept code="2472V0600X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; &#34;Technician, Other&#34;, Veterinary" level="0" type="L"/>
+                <concept code="247ZC0005X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Technologists, Technicians &amp; Other Technical Service Providers&#34;; Pathology, &#34;Clinical Laboratory Director, Non-physician&#34;" level="0" type="L"/>
+                <concept code="25" codeSystem="2.16.840.1.113883.6.101" displayName="The scheduling time for routine visits at this location is more than 7 days" level="0" type="L"/>
+                <concept code="251300000X" codeSystem="2.16.840.1.113883.6.101" displayName="Agencies; Local Education Agency (LEA)" level="0" type="L"/>
+                <concept code="251B00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Agencies; Case Management" level="0" type="L"/>
+                <concept code="251C00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Agencies; &#34;Day Training, Developmentally Disabled Services&#34;" level="0" type="L"/>
+                <concept code="251E00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Agencies; Home Health" level="0" type="L"/>
+                <concept code="251F00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Agencies; Home Infusion" level="0" type="L"/>
+                <concept code="251G00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Agencies; &#34;Hospice Care, Community Based&#34;" level="0" type="L"/>
+                <concept code="251J00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Agencies; Nursing Care" level="0" type="L"/>
+                <concept code="251K00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Agencies; Public Health or Welfare" level="0" type="L"/>
+                <concept code="251S00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Agencies; Community/Behavioral Health" level="0" type="L"/>
+                <concept code="251T00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Agencies; Program of All-Inclusive Care for the Elderly (PACE) Provider Organization" level="0" type="L"/>
+                <concept code="251V00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Agencies; Voluntary or Charitable" level="0" type="L"/>
+                <concept code="251X00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Agencies; Supports Brokerage" level="0" type="L"/>
+                <concept code="252Y00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Agencies; Early Intervention Provider Agency" level="0" type="L"/>
+                <concept code="253J00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Agencies; Foster Care Agency" level="0" type="L"/>
+                <concept code="253Z00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Agencies; In Home Supportive Care" level="0" type="L"/>
+                <concept code="26" codeSystem="2.16.840.1.113883.6.101" displayName="The scheduling time for preventive routine care at this location is more than 30 days" level="0" type="L"/>
+                <concept code="261Q00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center" level="0" type="L"/>
+                <concept code="261QA0005X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Ambulatory Family Planning Facility" level="0" type="L"/>
+                <concept code="261QA0006X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Ambulatory Fertility Facility" level="0" type="L"/>
+                <concept code="261QA0600X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Adult Day Care" level="0" type="L"/>
+                <concept code="261QA0900X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Amputee" level="0" type="L"/>
+                <concept code="261QA1903X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Ambulatory Surgical" level="0" type="L"/>
+                <concept code="261QA3000X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Augmentative Communication" level="0" type="L"/>
+                <concept code="261QB0400X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Birthing" level="0" type="L"/>
+                <concept code="261QC0050X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Critical Access Hospital" level="0" type="L"/>
+                <concept code="261QC1500X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Community Health" level="0" type="L"/>
+                <concept code="261QC1800X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Corporate Health" level="0" type="L"/>
+                <concept code="261QD0000X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Dental" level="0" type="L"/>
+                <concept code="261QD1600X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Developmental Disabilities" level="0" type="L"/>
+                <concept code="261QE0002X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Emergency Care" level="0" type="L"/>
+                <concept code="261QE0700X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, End-Stage Renal Disease (ESRD) Treatment" level="0" type="L"/>
+                <concept code="261QE0800X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Endoscopy" level="0" type="L"/>
+                <concept code="261QF0050X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, &#34;Family Planning, Non-Surgical&#34;" level="0" type="L"/>
+                <concept code="261QF0400X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Federally Qualified Health Center (FQHC)" level="0" type="L"/>
+                <concept code="261QG0250X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Genetics" level="0" type="L"/>
+                <concept code="261QH0100X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Health Service" level="0" type="L"/>
+                <concept code="261QH0700X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Hearing and Speech" level="0" type="L"/>
+                <concept code="261QI0500X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Infusion Therapy" level="0" type="L"/>
+                <concept code="261QL0400X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Lithotripsy" level="0" type="L"/>
+                <concept code="261QM0801X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Mental Health (Including Community Mental Health Center)" level="0" type="L"/>
+                <concept code="261QM0850X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Adult Mental Health" level="0" type="L"/>
+                <concept code="261QM0855X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Adolescent and Children Mental Health" level="0" type="L"/>
+                <concept code="261QM1000X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Migrant Health" level="0" type="L"/>
+                <concept code="261QM1100X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Military/U.S. Coast Guard Outpatient" level="0" type="L"/>
+                <concept code="261QM1101X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Military and U.S. Coast Guard Ambulatory Procedure" level="0" type="L"/>
+                <concept code="261QM1102X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Military Outpatient Operational (Transportable) Component" level="0" type="L"/>
+                <concept code="261QM1103X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Military Ambulatory Procedure Visits Operational (Transportable)" level="0" type="L"/>
+                <concept code="261QM1200X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Magnetic Resonance Imaging (MRI)" level="0" type="L"/>
+                <concept code="261QM1300X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Multi-Specialty" level="0" type="L"/>
+                <concept code="261QM2500X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Medical Specialty" level="0" type="L"/>
+                <concept code="261QM2800X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Methadone" level="0" type="L"/>
+                <concept code="261QM3000X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Medically Fragile Infants and Children Day Care" level="0" type="L"/>
+                <concept code="261QP0904X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, &#34;Public Health, Federal&#34;" level="0" type="L"/>
+                <concept code="261QP0905X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, &#34;Public Health, State or Local&#34;" level="0" type="L"/>
+                <concept code="261QP1100X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Podiatric" level="0" type="L"/>
+                <concept code="261QP2000X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Physical Therapy" level="0" type="L"/>
+                <concept code="261QP2300X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Primary Care" level="0" type="L"/>
+                <concept code="261QP2400X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Prison Health" level="0" type="L"/>
+                <concept code="261QP3300X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Pain" level="0" type="L"/>
+                <concept code="261QR0200X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Radiology" level="0" type="L"/>
+                <concept code="261QR0206X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, &#34;Radiology, Mammography&#34;" level="0" type="L"/>
+                <concept code="261QR0207X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, &#34;Radiology, Mobile Mammography&#34;" level="0" type="L"/>
+                <concept code="261QR0208X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, &#34;Radiology, Mobile&#34;" level="0" type="L"/>
+                <concept code="261QR0400X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Rehabilitation" level="0" type="L"/>
+                <concept code="261QR0401X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, &#34;Rehabilitation, Comprehensive Outpatient Rehabilitation Facility (CORF)&#34;" level="0" type="L"/>
+                <concept code="261QR0404X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, &#34;Rehabilitation, Cardiac Facilities&#34;" level="0" type="L"/>
+                <concept code="261QR0405X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, &#34;Rehabilitation, Substance Use Disorder&#34;" level="0" type="L"/>
+                <concept code="261QR0800X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Recovery Care" level="0" type="L"/>
+                <concept code="261QR1100X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Research" level="0" type="L"/>
+                <concept code="261QR1300X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Rural Health" level="0" type="L"/>
+                <concept code="261QS0112X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Oral and Maxillofacial Surgery" level="0" type="L"/>
+                <concept code="261QS0132X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Ophthalmologic Surgery" level="0" type="L"/>
+                <concept code="261QS1000X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Student Health" level="0" type="L"/>
+                <concept code="261QS1200X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Sleep Disorder Diagnostic" level="0" type="L"/>
+                <concept code="261QU0200X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Urgent Care" level="0" type="L"/>
+                <concept code="261QV0200X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, VA" level="0" type="L"/>
+                <concept code="261QX0100X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Occupational Medicine" level="0" type="L"/>
+                <concept code="261QX0200X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, Oncology" level="0" type="L"/>
+                <concept code="261QX0203X" codeSystem="2.16.840.1.113883.6.101" displayName="Ambulatory Health Care Facilities; Clinic/Center, &#34;Oncology, Radiation&#34;" level="0" type="L"/>
+                <concept code="27" codeSystem="2.16.840.1.113883.6.101" displayName="The waiting time at this location is more than 30 minutes from time of scheduled appointment" level="0" type="L"/>
+                <concept code="273100000X" codeSystem="2.16.840.1.113883.6.101" displayName="Hospital Units; Epilepsy Unit" level="0" type="L"/>
+                <concept code="273R00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Hospital Units; Psychiatric Unit" level="0" type="L"/>
+                <concept code="273Y00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Hospital Units; Rehabilitation Unit" level="0" type="L"/>
+                <concept code="275N00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Hospital Units; Medicare Defined Swing Bed Unit" level="0" type="L"/>
+                <concept code="276400000X" codeSystem="2.16.840.1.113883.6.101" displayName="Hospital Units; &#34;Rehabilitation, Substance Use Disorder Unit&#34;" level="0" type="L"/>
+                <concept code="28" codeSystem="2.16.840.1.113883.6.101" displayName="Allergy skin testing is provided at this location" level="0" type="L"/>
+                <concept code="281P00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Hospitals; Chronic Disease Hospital" level="0" type="L"/>
+                <concept code="281PC2000X" codeSystem="2.16.840.1.113883.6.101" displayName="Hospitals; Chronic Disease Hospital, Children" level="0" type="L"/>
+                <concept code="282E00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Hospitals; Long Term Care Hospital" level="0" type="L"/>
+                <concept code="282J00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Hospitals; Religious Nonmedical Health Care Institution" level="0" type="L"/>
+                <concept code="282N00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Hospitals; General Acute Care Hospital" level="0" type="L"/>
+                <concept code="282NC0060X" codeSystem="2.16.840.1.113883.6.101" displayName="Hospitals; General Acute Care Hospital, Critical Access" level="0" type="L"/>
+                <concept code="282NC2000X" codeSystem="2.16.840.1.113883.6.101" displayName="Hospitals; General Acute Care Hospital, Children" level="0" type="L"/>
+                <concept code="282NR1301X" codeSystem="2.16.840.1.113883.6.101" displayName="Hospitals; General Acute Care Hospital, Rural" level="0" type="L"/>
+                <concept code="282NW0100X" codeSystem="2.16.840.1.113883.6.101" displayName="Hospitals; General Acute Care Hospital, Women" level="0" type="L"/>
+                <concept code="283Q00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Hospitals; Psychiatric Hospital" level="0" type="L"/>
+                <concept code="283X00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Hospitals; Rehabilitation Hospital" level="0" type="L"/>
+                <concept code="283XC2000X" codeSystem="2.16.840.1.113883.6.101" displayName="Hospitals; Rehabilitation Hospital, Children" level="0" type="L"/>
+                <concept code="284300000X" codeSystem="2.16.840.1.113883.6.101" displayName="Hospitals; Special Hospital" level="0" type="L"/>
+                <concept code="286500000X" codeSystem="2.16.840.1.113883.6.101" displayName="Hospitals; Military Hospital" level="0" type="L"/>
+                <concept code="2865M2000X" codeSystem="2.16.840.1.113883.6.101" displayName="Hospitals; Military Hospital, Military General Acute Care Hospital" level="0" type="L"/>
+                <concept code="2865X1600X" codeSystem="2.16.840.1.113883.6.101" displayName="Hospitals; Military Hospital, Military General Acute Care Hospital. Operational (Transportable)" level="0" type="L"/>
+                <concept code="29" codeSystem="2.16.840.1.113883.6.101" displayName="Asthma treatment is provided at this location" level="0" type="L"/>
+                <concept code="291900000X" codeSystem="2.16.840.1.113883.6.101" displayName="Laboratories; Military Clinical Medical Laboratory" level="0" type="L"/>
+                <concept code="291U00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Laboratories; Clinical Medical Laboratory" level="0" type="L"/>
+                <concept code="292200000X" codeSystem="2.16.840.1.113883.6.101" displayName="Laboratories; Dental Laboratory" level="0" type="L"/>
+                <concept code="293D00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Laboratories; Physiological Laboratory" level="0" type="L"/>
+                <concept code="2A" codeSystem="2.16.840.1.113883.6.101" displayName="EKG services are provided at this location" level="0" type="L"/>
+                <concept code="2B" codeSystem="2.16.840.1.113883.6.101" displayName="Flexible sigmoidoscopy is provided at this location" level="0" type="L"/>
+                <concept code="2C" codeSystem="2.16.840.1.113883.6.101" displayName="IV hydration/treatment is provided at this location" level="0" type="L"/>
+                <concept code="2D" codeSystem="2.16.840.1.113883.6.101" displayName="Laceration repair is provided at this location" level="0" type="L"/>
+                <concept code="2E" codeSystem="2.16.840.1.113883.6.101" displayName="Laboratory services/testing is provided at this location" level="0" type="L"/>
+                <concept code="2F" codeSystem="2.16.840.1.113883.6.101" displayName="Massage therapy is provided at this location" level="0" type="L"/>
+                <concept code="2G" codeSystem="2.16.840.1.113883.6.101" displayName="Minor fracture work is provided at this location" level="0" type="L"/>
+                <concept code="2H" codeSystem="2.16.840.1.113883.6.101" displayName="Minor surgery is provided at this location" level="0" type="L"/>
+                <concept code="2I" codeSystem="2.16.840.1.113883.6.101" displayName="Occupational therapy is provided at this location" level="0" type="L"/>
+                <concept code="2J" codeSystem="2.16.840.1.113883.6.101" displayName="Gynecology services are provided at this location" level="0" type="L"/>
+                <concept code="2K" codeSystem="2.16.840.1.113883.6.101" displayName="Obstetric services are provided at this location" level="0" type="L"/>
+                <concept code="2L" codeSystem="2.16.840.1.113883.6.101" displayName="Osteopathic manipulation is provided at this location" level="0" type="L"/>
+                <concept code="2M" codeSystem="2.16.840.1.113883.6.101" displayName="Physical therapy is provided at this location" level="0" type="L"/>
+                <concept code="2N" codeSystem="2.16.840.1.113883.6.101" displayName="Pulmonary function studies are provided at this location" level="0" type="L"/>
+                <concept code="2O" codeSystem="2.16.840.1.113883.6.101" displayName="Speech pathology is provided at this location" level="0" type="L"/>
+                <concept code="2P" codeSystem="2.16.840.1.113883.6.101" displayName="Hearing tests are provided at this location" level="0" type="L"/>
+                <concept code="2Q" codeSystem="2.16.840.1.113883.6.101" displayName="Visual screenings are provided at this location" level="0" type="L"/>
+                <concept code="2R" codeSystem="2.16.840.1.113883.6.101" displayName="Mammography services are provided at this location" level="0" type="L"/>
+                <concept code="2S" codeSystem="2.16.840.1.113883.6.101" displayName="X-rays are provided at this location" level="0" type="L"/>
+                <concept code="2T" codeSystem="2.16.840.1.113883.6.101" displayName="This hospital has a Medicare Prospective Payment System (PPS) exempt rehabilitation unit" level="0" type="L"/>
+                <concept code="2U" codeSystem="2.16.840.1.113883.6.101" displayName="This hospital has a Medicare Prospective Payment System (PPS) exempt psychiatric unit" level="0" type="L"/>
+                <concept code="2V" codeSystem="2.16.840.1.113883.6.101" displayName="Assistive aid information not collected from the provider" level="0" type="L"/>
+                <concept code="302F00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Managed Care Organizations; Exclusive Provider Organization" level="0" type="L"/>
+                <concept code="302R00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Managed Care Organizations; Health Maintenance Organization" level="0" type="L"/>
+                <concept code="305R00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Managed Care Organizations; Preferred Provider Organization" level="0" type="L"/>
+                <concept code="305S00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Managed Care Organizations; Point of Service" level="0" type="L"/>
+                <concept code="310400000X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing &amp; Custodial Care Facilities; Assisted Living Facility" level="0" type="L"/>
+                <concept code="3104A0625X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing &amp; Custodial Care Facilities; Assisted Living Facility, &#34;Assisted Living, Mental Illness&#34;" level="0" type="L"/>
+                <concept code="3104A0630X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing &amp; Custodial Care Facilities; Assisted Living Facility, &#34;Assisted Living, Behavioral Disturbances&#34;" level="0" type="L"/>
+                <concept code="310500000X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing &amp; Custodial Care Facilities; &#34;Intermediate Care Facility, Mental Illness&#34;" level="0" type="L"/>
+                <concept code="311500000X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing &amp; Custodial Care Facilities; Alzheimer Center (Dementia Center)" level="0" type="L"/>
+                <concept code="311Z00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing &amp; Custodial Care Facilities; Custodial Care Facility" level="0" type="L"/>
+                <concept code="311ZA0620X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing &amp; Custodial Care Facilities; Custodial Care Facility, Adult Care Home" level="0" type="L"/>
+                <concept code="313M00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing &amp; Custodial Care Facilities; Nursing Facility/Intermediate Care Facility" level="0" type="L"/>
+                <concept code="314000000X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing &amp; Custodial Care Facilities; Skilled Nursing Facility" level="0" type="L"/>
+                <concept code="3140N1450X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing &amp; Custodial Care Facilities; Skilled Nursing Facility, &#34;Nursing Care, Pediatric&#34;" level="0" type="L"/>
+                <concept code="315D00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing &amp; Custodial Care Facilities; &#34;Hospice, Inpatient&#34;" level="0" type="L"/>
+                <concept code="315P00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing &amp; Custodial Care Facilities; &#34;Intermediate Care Facility, Mentally Retarded&#34;" level="0" type="L"/>
+                <concept code="320600000X" codeSystem="2.16.840.1.113883.6.101" displayName="Residential Treatment Facilities; &#34;Residential Treatment Facility, Mental Retardation and/or Developmental Disabilities&#34;" level="0" type="L"/>
+                <concept code="320700000X" codeSystem="2.16.840.1.113883.6.101" displayName="Residential Treatment Facilities; &#34;Residential Treatment Facility, Physical Disabilities&#34;" level="0" type="L"/>
+                <concept code="320800000X" codeSystem="2.16.840.1.113883.6.101" displayName="Residential Treatment Facilities; &#34;Community Based Residential Treatment Facility, Mental Illness&#34;" level="0" type="L"/>
+                <concept code="320900000X" codeSystem="2.16.840.1.113883.6.101" displayName="Residential Treatment Facilities; &#34;Community Based Residential Treatment Facility, Mental Retardation and/or Developmental Disabilities&#34;" level="0" type="L"/>
+                <concept code="322D00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Residential Treatment Facilities; &#34;Residential Treatment Facility, Emotionally Disturbed Children&#34;" level="0" type="L"/>
+                <concept code="323P00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Residential Treatment Facilities; Psychiatric Residential Treatment Facility" level="0" type="L"/>
+                <concept code="324500000X" codeSystem="2.16.840.1.113883.6.101" displayName="Residential Treatment Facilities; Substance Abuse Rehabilitation Facility" level="0" type="L"/>
+                <concept code="3245S0500X" codeSystem="2.16.840.1.113883.6.101" displayName="Residential Treatment Facilities; Substance Abuse Rehabilitation Facility, &#34;Substance Abuse Treatment, Children&#34;" level="0" type="L"/>
+                <concept code="331L00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Suppliers; Blood Bank" level="0" type="L"/>
+                <concept code="332000000X" codeSystem="2.16.840.1.113883.6.101" displayName="Suppliers; Military/U.S. Coast Guard Pharmacy" level="0" type="L"/>
+                <concept code="332100000X" codeSystem="2.16.840.1.113883.6.101" displayName="Suppliers; Department of Veterans Affairs (VA) Pharmacy" level="0" type="L"/>
+                <concept code="332800000X" codeSystem="2.16.840.1.113883.6.101" displayName="Suppliers; Indian Health Service/Tribal/Urban Indian Health (I/T/U) Pharmacy" level="0" type="L"/>
+                <concept code="332900000X" codeSystem="2.16.840.1.113883.6.101" displayName="Suppliers; Non-Pharmacy Dispensing Site" level="0" type="L"/>
+                <concept code="332B00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Suppliers; Durable Medical Equipment &amp; Medical Supplies" level="0" type="L"/>
+                <concept code="332BC3200X" codeSystem="2.16.840.1.113883.6.101" displayName="Suppliers; Durable Medical Equipment &amp; Medical Supplies, Customized Equipment" level="0" type="L"/>
+                <concept code="332BD1200X" codeSystem="2.16.840.1.113883.6.101" displayName="Suppliers; Durable Medical Equipment &amp; Medical Supplies, Dialysis Equipment &amp; Supplies" level="0" type="L"/>
+                <concept code="332BN1400X" codeSystem="2.16.840.1.113883.6.101" displayName="Suppliers; Durable Medical Equipment &amp; Medical Supplies, Nursing Facility Supplies" level="0" type="L"/>
+                <concept code="332BP3500X" codeSystem="2.16.840.1.113883.6.101" displayName="Suppliers; Durable Medical Equipment &amp; Medical Supplies, Parenteral &amp; Enteral Nutrition" level="0" type="L"/>
+                <concept code="332BX2000X" codeSystem="2.16.840.1.113883.6.101" displayName="Suppliers; Durable Medical Equipment &amp; Medical Supplies, Oxygen Equipment &amp; Supplies" level="0" type="L"/>
+                <concept code="332G00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Suppliers; Eye Bank" level="0" type="L"/>
+                <concept code="332H00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Suppliers; Eyewear Supplier" level="0" type="L"/>
+                <concept code="332S00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Suppliers; Hearing Aid Equipment" level="0" type="L"/>
+                <concept code="332U00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Suppliers; Home Delivered Meals" level="0" type="L"/>
+                <concept code="333300000X" codeSystem="2.16.840.1.113883.6.101" displayName="Suppliers; Emergency Response System Companies" level="0" type="L"/>
+                <concept code="333600000X" codeSystem="2.16.840.1.113883.6.101" displayName="Suppliers; Pharmacy" level="0" type="L"/>
+                <concept code="3336C0002X" codeSystem="2.16.840.1.113883.6.101" displayName="Suppliers; Pharmacy, Clinic Pharmacy" level="0" type="L"/>
+                <concept code="3336C0003X" codeSystem="2.16.840.1.113883.6.101" displayName="Suppliers; Pharmacy, Community/Retail Pharmacy" level="0" type="L"/>
+                <concept code="3336C0004X" codeSystem="2.16.840.1.113883.6.101" displayName="Suppliers; Pharmacy, Compounding Pharmacy" level="0" type="L"/>
+                <concept code="3336H0001X" codeSystem="2.16.840.1.113883.6.101" displayName="Suppliers; Pharmacy, Home Infusion Therapy Pharmacy" level="0" type="L"/>
+                <concept code="3336I0012X" codeSystem="2.16.840.1.113883.6.101" displayName="Suppliers; Pharmacy, Institutional Pharmacy" level="0" type="L"/>
+                <concept code="3336L0003X" codeSystem="2.16.840.1.113883.6.101" displayName="Suppliers; Pharmacy, Long Term Care Pharmacy" level="0" type="L"/>
+                <concept code="3336M0002X" codeSystem="2.16.840.1.113883.6.101" displayName="Suppliers; Pharmacy, Mail Order Pharmacy" level="0" type="L"/>
+                <concept code="3336M0003X" codeSystem="2.16.840.1.113883.6.101" displayName="Suppliers; Pharmacy, Managed Care Organization Pharmacy" level="0" type="L"/>
+                <concept code="3336N0007X" codeSystem="2.16.840.1.113883.6.101" displayName="Suppliers; Pharmacy, Nuclear Pharmacy" level="0" type="L"/>
+                <concept code="3336S0011X" codeSystem="2.16.840.1.113883.6.101" displayName="Suppliers; Pharmacy, Specialty Pharmacy" level="0" type="L"/>
+                <concept code="335E00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Suppliers; Prosthetic/Orthotic Supplier" level="0" type="L"/>
+                <concept code="335G00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Suppliers; Medical Foods Supplier" level="0" type="L"/>
+                <concept code="335U00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Suppliers; Organ Procurement Organization" level="0" type="L"/>
+                <concept code="335V00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Suppliers; Portable X-ray and/or Other Portable Diagnostic Imaging Supplier" level="0" type="L"/>
+                <concept code="341600000X" codeSystem="2.16.840.1.113883.6.101" displayName="Transportation Services; Ambulance" level="0" type="L"/>
+                <concept code="3416A0800X" codeSystem="2.16.840.1.113883.6.101" displayName="Transportation Services; Ambulance, Air Transport" level="0" type="L"/>
+                <concept code="3416L0300X" codeSystem="2.16.840.1.113883.6.101" displayName="Transportation Services; Ambulance, Land Transport" level="0" type="L"/>
+                <concept code="3416S0300X" codeSystem="2.16.840.1.113883.6.101" displayName="Transportation Services; Ambulance, Water Transport" level="0" type="L"/>
+                <concept code="341800000X" codeSystem="2.16.840.1.113883.6.101" displayName="Transportation Services; Military/U.S. Coast Guard Transport" level="0" type="L"/>
+                <concept code="3418M1110X" codeSystem="2.16.840.1.113883.6.101" displayName="Transportation Services; Military/U.S. Coast Guard Transport, &#34;Military or U.S. Coast Guard Ambulance, Ground Transport&#34;" level="0" type="L"/>
+                <concept code="3418M1120X" codeSystem="2.16.840.1.113883.6.101" displayName="Transportation Services; Military/U.S. Coast Guard Transport, &#34;Military or U.S. Coast Guard Ambulance, Air Transport&#34;" level="0" type="L"/>
+                <concept code="3418M1130X" codeSystem="2.16.840.1.113883.6.101" displayName="Transportation Services; Military/U.S. Coast Guard Transport, &#34;Military or U.S. Coast Guard Ambulance, Water Transport&#34;" level="0" type="L"/>
+                <concept code="343800000X" codeSystem="2.16.840.1.113883.6.101" displayName="Transportation Services; Secured Medical Transport (VAN)" level="0" type="L"/>
+                <concept code="343900000X" codeSystem="2.16.840.1.113883.6.101" displayName="Transportation Services; Non-emergency Medical Transport (VAN)" level="0" type="L"/>
+                <concept code="344600000X" codeSystem="2.16.840.1.113883.6.101" displayName="Transportation Services; Taxi" level="0" type="L"/>
+                <concept code="344800000X" codeSystem="2.16.840.1.113883.6.101" displayName="Transportation Services; Air Carrier" level="0" type="L"/>
+                <concept code="347B00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Transportation Services; Bus" level="0" type="L"/>
+                <concept code="347C00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Transportation Services; Private Vehicle" level="0" type="L"/>
+                <concept code="347D00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Transportation Services; Train" level="0" type="L"/>
+                <concept code="347E00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Transportation Services; Transportation Broker" level="0" type="L"/>
+                <concept code="363A00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Physician Assistant" level="0" type="L"/>
+                <concept code="363AM0700X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Physician Assistant, Medical" level="0" type="L"/>
+                <concept code="363AS0400X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Physician Assistant, Surgical" level="0" type="L"/>
+                <concept code="363L00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Nurse Practitioner" level="0" type="L"/>
+                <concept code="363LA2100X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Nurse Practitioner, Acute Care" level="0" type="L"/>
+                <concept code="363LA2200X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Nurse Practitioner, Adult Health" level="0" type="L"/>
+                <concept code="363LC0200X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Nurse Practitioner, Critical Care Medicine" level="0" type="L"/>
+                <concept code="363LC1500X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Nurse Practitioner, Community Health" level="0" type="L"/>
+                <concept code="363LF0000X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Nurse Practitioner, Family" level="0" type="L"/>
+                <concept code="363LG0600X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Nurse Practitioner, Gerontology" level="0" type="L"/>
+                <concept code="363LN0000X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Nurse Practitioner, Neonatal" level="0" type="L"/>
+                <concept code="363LN0005X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Nurse Practitioner, &#34;Neonatal, Critical Care&#34;" level="0" type="L"/>
+                <concept code="363LP0200X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Nurse Practitioner, Pediatrics" level="0" type="L"/>
+                <concept code="363LP0222X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Nurse Practitioner, &#34;Pediatrics, Critical Care&#34;" level="0" type="L"/>
+                <concept code="363LP0808X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Nurse Practitioner, Psychiatric/Mental Health" level="0" type="L"/>
+                <concept code="363LP1700X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Nurse Practitioner, Perinatal" level="0" type="L"/>
+                <concept code="363LP2300X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Nurse Practitioner, Primary Care" level="0" type="L"/>
+                <concept code="363LS0200X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Nurse Practitioner, School" level="0" type="L"/>
+                <concept code="363LW0102X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Nurse Practitioner, Women's Health" level="0" type="L"/>
+                <concept code="363LX0001X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Nurse Practitioner, Obstetrics &amp; Gynecology" level="0" type="L"/>
+                <concept code="363LX0106X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Nurse Practitioner, Occupational Health" level="0" type="L"/>
+                <concept code="364S00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Clinical Nurse Specialist" level="0" type="L"/>
+                <concept code="364SA2100X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Clinical Nurse Specialist, Acute Care" level="0" type="L"/>
+                <concept code="364SA2200X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Clinical Nurse Specialist, Adult Health" level="0" type="L"/>
+                <concept code="364SC0200X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Clinical Nurse Specialist, Critical Care Medicine" level="0" type="L"/>
+                <concept code="364SC1501X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Clinical Nurse Specialist, Community Health/Public Health" level="0" type="L"/>
+                <concept code="364SC2300X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Clinical Nurse Specialist, Chronic Care" level="0" type="L"/>
+                <concept code="364SE0003X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Clinical Nurse Specialist, Emergency" level="0" type="L"/>
+                <concept code="364SE1400X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Clinical Nurse Specialist, Ethics" level="0" type="L"/>
+                <concept code="364SF0001X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Clinical Nurse Specialist, Family Health" level="0" type="L"/>
+                <concept code="364SG0600X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Clinical Nurse Specialist, Gerontology" level="0" type="L"/>
+                <concept code="364SH0200X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Clinical Nurse Specialist, Home Health" level="0" type="L"/>
+                <concept code="364SH1100X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Clinical Nurse Specialist, Holistic" level="0" type="L"/>
+                <concept code="364SI0800X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Clinical Nurse Specialist, Informatics" level="0" type="L"/>
+                <concept code="364SL0600X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Clinical Nurse Specialist, Long-Term Care" level="0" type="L"/>
+                <concept code="364SM0705X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Clinical Nurse Specialist, Medical-Surgical" level="0" type="L"/>
+                <concept code="364SN0000X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Clinical Nurse Specialist, Neonatal" level="0" type="L"/>
+                <concept code="364SN0800X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Clinical Nurse Specialist, Neuroscience" level="0" type="L"/>
+                <concept code="364SP0200X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Clinical Nurse Specialist, Pediatrics" level="0" type="L"/>
+                <concept code="364SP0807X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Clinical Nurse Specialist, &#34;Psychiatric/Mental Health, Child &amp; Adolescent&#34;" level="0" type="L"/>
+                <concept code="364SP0808X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Clinical Nurse Specialist, Psychiatric/Mental Health" level="0" type="L"/>
+                <concept code="364SP0809X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Clinical Nurse Specialist, &#34;Psychiatric/Mental Health, Adult&#34;" level="0" type="L"/>
+                <concept code="364SP0810X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Clinical Nurse Specialist, &#34;Psychiatric/Mental Health, Child &amp; Family&#34;" level="0" type="L"/>
+                <concept code="364SP0811X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Clinical Nurse Specialist, &#34;Psychiatric/Mental Health, Chronically Ill&#34;" level="0" type="L"/>
+                <concept code="364SP0812X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Clinical Nurse Specialist, &#34;Psychiatric/Mental Health, Community&#34;" level="0" type="L"/>
+                <concept code="364SP0813X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Clinical Nurse Specialist, &#34;Psychiatric/Mental Health, Geropsychiatric&#34;" level="0" type="L"/>
+                <concept code="364SP1700X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Clinical Nurse Specialist, Perinatal" level="0" type="L"/>
+                <concept code="364SP2800X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Clinical Nurse Specialist, Perioperative" level="0" type="L"/>
+                <concept code="364SR0400X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Clinical Nurse Specialist, Rehabilitation" level="0" type="L"/>
+                <concept code="364SS0200X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Clinical Nurse Specialist, School" level="0" type="L"/>
+                <concept code="364ST0500X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Clinical Nurse Specialist, Transplantation" level="0" type="L"/>
+                <concept code="364SW0102X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Clinical Nurse Specialist, Women's Health" level="0" type="L"/>
+                <concept code="364SX0106X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Clinical Nurse Specialist, Occupational Health" level="0" type="L"/>
+                <concept code="364SX0200X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Clinical Nurse Specialist, Oncology" level="0" type="L"/>
+                <concept code="364SX0204X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Clinical Nurse Specialist, &#34;Oncology, Pediatrics&#34;" level="0" type="L"/>
+                <concept code="367500000X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; &#34;Nurse Anesthetist, Certified Registered&#34;" level="0" type="L"/>
+                <concept code="367A00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Advanced Practice Midwife" level="0" type="L"/>
+                <concept code="367H00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Assistants &amp; Advanced Practice Nursing Providers; Anesthesiologist Assistant" level="0" type="L"/>
+                <concept code="372500000X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Related Providers; Chore Provider" level="0" type="L"/>
+                <concept code="372600000X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Related Providers; Adult Companion" level="0" type="L"/>
+                <concept code="373H00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Related Providers; Day Training/Habilitation Specialist" level="0" type="L"/>
+                <concept code="374700000X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Related Providers; Technician" level="0" type="L"/>
+                <concept code="3747A0650X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Related Providers; Technician, Attendant Care Provider" level="0" type="L"/>
+                <concept code="3747P1801X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Related Providers; Technician, Personal Care Attendant" level="0" type="L"/>
+                <concept code="374J00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Related Providers; Doula" level="0" type="L"/>
+                <concept code="374K00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Related Providers; Religious Nonmedical Practitioner" level="0" type="L"/>
+                <concept code="374T00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Related Providers; Religious Nonmedical Nursing Personnel" level="0" type="L"/>
+                <concept code="374U00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Related Providers; Home Health Aide" level="0" type="L"/>
+                <concept code="376G00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Related Providers; Nursing Home Administrator" level="0" type="L"/>
+                <concept code="376J00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Related Providers; Homemaker" level="0" type="L"/>
+                <concept code="376K00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Nursing Service Related Providers; Nurse's Aide" level="0" type="L"/>
+                <concept code="385H00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Respite Care Facility; Respite Care" level="0" type="L"/>
+                <concept code="385HR2050X" codeSystem="2.16.840.1.113883.6.101" displayName="Respite Care Facility; Respite Care, Respite Care Camp" level="0" type="L"/>
+                <concept code="385HR2055X" codeSystem="2.16.840.1.113883.6.101" displayName="Respite Care Facility; Respite Care, &#34;Respite Care, Mental Illness, Child&#34;" level="0" type="L"/>
+                <concept code="385HR2060X" codeSystem="2.16.840.1.113883.6.101" displayName="Respite Care Facility; Respite Care, &#34;Respite Care, Mental Retardation and/or Developmental Disabilities&#34;" level="0" type="L"/>
+                <concept code="385HR2065X" codeSystem="2.16.840.1.113883.6.101" displayName="Respite Care Facility; Respite Care, &#34;Respite Care, Physical Disabilities, Child&#34;" level="0" type="L"/>
+                <concept code="390200000X" codeSystem="2.16.840.1.113883.6.101" displayName="&#34;Student, Health Care&#34;; Student in an Organized Health Care Education/Training Program" level="0" type="L"/>
+                <concept code="405300000X" codeSystem="2.16.840.1.113883.6.101" displayName="Other Service Providers; Prevention Professional" level="0" type="L"/>
+                <concept code="55" codeSystem="2.16.840.1.113883.6.101" displayName="Accepted" level="0" type="L"/>
+                <concept code="56" codeSystem="2.16.840.1.113883.6.101" displayName="Unspecified Error" level="0" type="L"/>
+                <concept code="57" codeSystem="2.16.840.1.113883.6.101" displayName="Failed Field Edits" level="0" type="L"/>
+                <concept code="58" codeSystem="2.16.840.1.113883.6.101" displayName="Minimum Fields Missing" level="0" type="L"/>
+                <concept code="59" codeSystem="2.16.840.1.113883.6.101" displayName="Exact Duplicate" level="0" type="L"/>
+                <concept code="5A" codeSystem="2.16.840.1.113883.6.101" displayName="Rejected by NPI Enumerator" level="0" type="L"/>
+                <concept code="5B" codeSystem="2.16.840.1.113883.6.101" displayName="Invalid Taxonomy Code" level="0" type="L"/>
+                <concept code="5C" codeSystem="2.16.840.1.113883.6.101" displayName="Taxonomy Code Mismatch" level="0" type="L"/>
+                <concept code="5D" codeSystem="2.16.840.1.113883.6.101" displayName="SSN Validation Error" level="0" type="L"/>
+                <concept code="5E" codeSystem="2.16.840.1.113883.6.101" displayName="Mailing Address Error" level="0" type="L"/>
+                <concept code="5F" codeSystem="2.16.840.1.113883.6.101" displayName="Location Address Error" level="0" type="L"/>
+                <concept code="5G" codeSystem="2.16.840.1.113883.6.101" displayName="NPI not on File" level="0" type="L"/>
+                <concept code="5H" codeSystem="2.16.840.1.113883.6.101" displayName="Invalid Deactivation Reason Code" level="0" type="L"/>
+                <concept code="5I" codeSystem="2.16.840.1.113883.6.101" displayName="Pended by GateKeeper" level="0" type="L"/>
+                <concept code="5J" codeSystem="2.16.840.1.113883.6.101" displayName="Pended by L/S/T" level="0" type="L"/>
+                <concept code="5K" codeSystem="2.16.840.1.113883.6.101" displayName="Duplicate record" level="0" type="L"/>
+                <concept code="5L" codeSystem="2.16.840.1.113883.6.101" displayName="Schema validation failed" level="0" type="L"/>
+                <concept code="5M" codeSystem="2.16.840.1.113883.6.101" displayName="Individual Verification - Found" level="0" type="L"/>
+                <concept code="5N" codeSystem="2.16.840.1.113883.6.101" displayName="Individual Verification - Not Found" level="0" type="L"/>
+                <concept code="5O" codeSystem="2.16.840.1.113883.6.101" displayName="Individual Verification - Close Match" level="0" type="L"/>
+                <concept code="5P" codeSystem="2.16.840.1.113883.6.101" displayName="Individual Verification - Insufficient Data" level="0" type="L"/>
+                <concept code="5Q" codeSystem="2.16.840.1.113883.6.101" displayName="Organization Verification - Found" level="0" type="L"/>
+                <concept code="5R" codeSystem="2.16.840.1.113883.6.101" displayName="Organization Verification - Not Found" level="0" type="L"/>
+                <concept code="5S" codeSystem="2.16.840.1.113883.6.101" displayName="Organization Verification - Close Match" level="0" type="L"/>
+                <concept code="5T" codeSystem="2.16.840.1.113883.6.101" displayName="Organization Verification - Insufficient Data" level="0" type="L"/>
+                <concept code="5U" codeSystem="2.16.840.1.113883.6.101" displayName="Individual Data Dissemination - Fulfilled" level="0" type="L"/>
+                <concept code="5V" codeSystem="2.16.840.1.113883.6.101" displayName="Individual Data Dissemination - Not Fulfilled" level="0" type="L"/>
+                <concept code="5W" codeSystem="2.16.840.1.113883.6.101" displayName="Organization Data Dissemination - Fulfilled" level="0" type="L"/>
+                <concept code="5X" codeSystem="2.16.840.1.113883.6.101" displayName="Organization Data Dissemination - Not Fulfilled" level="0" type="L"/>
+                <concept code="5Y" codeSystem="2.16.840.1.113883.6.101" displayName="Unspecified Response" level="0" type="L"/>
+                <concept code="5Z" codeSystem="2.16.840.1.113883.6.101" displayName="This location is a retail health center" level="0" type="L"/>
+                <concept code="6A" codeSystem="2.16.840.1.113883.6.101" displayName="This provider is a free-standing laboratory" level="0" type="L"/>
+                <concept code="6B" codeSystem="2.16.840.1.113883.6.101" displayName="This provider is a free-standing imaging center" level="0" type="L"/>
+                <concept code="6C" codeSystem="2.16.840.1.113883.6.101" displayName="This is a mobile provider that travels to the location of a patient and does not have a specific service address" level="0" type="L"/>
+                <concept code="6D" codeSystem="2.16.840.1.113883.6.101" displayName="This location is an urgent care center" level="0" type="L"/>
+                <concept code="6E" codeSystem="2.16.840.1.113883.6.101" displayName="This provider offers telehealth services" level="0" type="L"/>
+            </conceptList>
+        </valueSet>
+    </repository>
+</valueSets>

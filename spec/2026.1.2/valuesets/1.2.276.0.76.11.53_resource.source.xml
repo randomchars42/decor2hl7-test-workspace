@@ -1,0 +1,14 @@
+<valueSet xmlns:json="http://www.json.org" id="1.2.276.0.76.11.53" name="referral-actions" displayName="Referral actions" statusCode="draft" effectiveDate="2015-11-17T00:00:00" canonicalUri="http://aktin.org/fhir/CodeSystem/aktin-vs-referral-actions" url="http://art-decor.org/decor/services/" ident="aktin-">
+    <sourceCodeSystem json:array="true" id="1.2.276.0.76.3.1.195.5.53" identifierName="andere-entlassungsarten" canonicalUri="urn:oid:1.2.276.0.76.3.1.195.5.53" canonicalUriDSTU2="urn:oid:1.2.276.0.76.3.1.195.5.53" canonicalUriSTU3="urn:oid:1.2.276.0.76.3.1.195.5.53" canonicalUriR4="urn:oid:1.2.276.0.76.3.1.195.5.53" canonicalUriR4B="urn:oid:1.2.276.0.76.3.1.195.5.53" canonicalUriR5="urn:oid:1.2.276.0.76.3.1.195.5.53"/>
+    <publishingAuthority json:array="true" name="AKTIN e. V." inherited="project">
+        <addrLine json:array="true">c/o Uniklinik RWTH Aachen</addrLine>
+        <addrLine json:array="true">Institut für Medizinische Informatik</addrLine>
+        <addrLine json:array="true">Pauwelsstraße 35</addrLine>
+        <addrLine json:array="true">52074 Aachen</addrLine>
+        <addrLine json:array="true" type="phone">Tel. +49 391 67 28186</addrLine>
+        <addrLine json:array="true" type="email">office@aktin.org</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="1"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="include" codeSystem="1.2.276.0.76.3.1.195.5.53" flexibility="2019-12-30T00:00:00"/>
+</valueSet>

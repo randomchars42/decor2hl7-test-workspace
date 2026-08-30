@@ -1,0 +1,71 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.3.1.195.10.96" ident="aktin-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.3.1.195.10.96" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" lastModifiedDate="2026-04-24T12:09:59" versionLabel="2025" isClosed="false" displayName="Vitalparameter" ident="aktin-" name="VitalSignsSection" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="draft" url="http://art-decor.org/decor/services/" effectiveDate="2025-12-01T00:00:00">
+            <desc language="de-DE" lastTranslated="2025-12-18T13:54:43">Vital Signs Section, diese kann mehrere Vital Signs Container umfassen.</desc>
+            <classification type="cdasectionlevel"/>
+            <relationship type="VERSION" template="1.2.276.0.76.10.3044" flexibility="2015-09-18T00:00:00" tmid="1.2.276.0.76.10.3044" tmname="VitalSignsSection" tmdisplayName="Vitalparameter" tmeffectiveDate="2015-09-18T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.201" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.201" tmname="CDASection" tmdisplayName="CDA Section" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <relationship type="ADAPT" template="2.16.840.1.113883.17.3.10.1.23" url="http://art-decor.org/decor/services/" linkedartefactmissing="true"/>
+            <context id="**"/>
+            <example type="neutral">
+                <section classCode="DOCSECT">
+                    <templateId root="1.2.276.0.76.3.1.195.10.96"/>
+                    <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital signs"/>
+                    <title>Vitalparameter</title>
+                    <text>...</text>
+                    <entry>
+                        <!-- Vital Sign Observations Organizer -->
+                    </entry>
+                </section>
+            </example>
+            <element name="hl7:section" id="2.16.840.1.113883.2.6.60.3.9.20">
+                <item original="false" label="VitalSignsSection"/>
+                <attribute name="classCode" value="DOCSECT" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631579"/>
+                <element name="hl7:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.1631580">
+                    <item original="false" label="VitalSignsSection"/>
+                    <attribute name="root" value="1.2.276.0.76.3.1.195.10.96" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.1631581"/>
+                </element>
+                <element name="hl7:code" datatype="CD" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631582">
+                    <item original="false" label="VitalSignsSection"/>
+                    <vocabulary code="8716-3" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:title" datatype="ST" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631583">
+                    <item original="false" label="VitalSignsSection"/>
+                </element>
+                <element name="hl7:text" datatype="SD.TEXT" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631584">
+                    <item original="false" label="VitalSignsSection"/>
+                </element>
+                <element name="hl7:entry" contains="1.2.276.0.76.3.1.195.10.95" flexibility="2026-04-27T15:39:06" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1642244" tmid="1.2.276.0.76.3.1.195.10.95" tmname="vitalparametercontainer" tmdisplayName="Vitalparameter-Container" tmeffectiveDate="2026-04-27T15:39:06" tmstatusCode="draft" tmversionLabel="2026" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <item original="false" label="VitalSignsSection"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1642245"/>
+                    <attribute name="contextConductionInd" value="true" isOptional="true" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1642246"/>
+                </element>
+            </element>
+            <staticAssociations>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.1.10006" effectiveDate="2014-09-25T00:00:00" refdisplay="aktin-dataelement2014(1)-10006" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.1" datasetEffectiveDate="2014-09-15T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2014.1-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.20" templateId="1.2.276.0.76.3.1.195.10.96" templateEffectiveDate="2025-12-01T00:00:00" path="">
+                    <name language="de-DE">Vitalparameter und Scores</name>
+                    <desc language="de-DE">Vitalparameter und Scores</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.2.10006" effectiveDate="2015-01-15T00:00:00" refdisplay="aktin-dataelement2015(1)-10006" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.2" datasetEffectiveDate="2015-01-15T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.1-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.20" templateId="1.2.276.0.76.3.1.195.10.96" templateEffectiveDate="2025-12-01T00:00:00" path="">
+                    <name language="de-DE">Vitalparameter und Scores</name>
+                    <desc language="de-DE">Vitalparameter und Scores</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.3.10006" effectiveDate="2015-11-01T00:00:00" refdisplay="aktin-dataelement2015(2)-10006" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.3" datasetEffectiveDate="2015-11-01T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.2-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.20" templateId="1.2.276.0.76.3.1.195.10.96" templateEffectiveDate="2025-12-01T00:00:00" path="">
+                    <name language="de-DE">Vitalparameter und Scores</name>
+                    <desc language="de-DE">Vitalparameter und Scores</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+            </staticAssociations>
+            <ref type="contains" prefix="aktin-" flexibility="2025-12-01T00:00:00" id="1.2.276.0.76.3.1.195.10.93" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2026-03-25T11:04:07" statusCode="draft" versionLabel="v4transit" lastModifiedDate="2026-04-29T18:39:46" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="2026-04-27T15:39:06" id="1.2.276.0.76.3.1.195.10.95" name="vitalparametercontainer" displayName="Vitalparameter-Container" effectiveDate="2026-04-27T15:39:06" statusCode="draft" versionLabel="2026" lastModifiedDate="2026-04-27T16:41:18" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+        </template>
+    </template>
+</result>

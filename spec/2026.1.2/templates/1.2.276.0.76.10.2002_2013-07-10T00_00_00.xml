@@ -1,0 +1,139 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.2002" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pharm="urn:ihe:pharm" id="1.2.276.0.76.10.2002" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="CDA author" cda:dummy-4="urn:hl7-org:v3" ident="hl7de-" name="HeaderAuthor" xml:dummy-2="http://www.w3.org/XML/1998/namespace" pharm:dummy-1="urn:ihe:pharm" statusCode="draft" url="http://art-decor.org/decor/services/" effectiveDate="2013-07-10T00:00:00">
+            <desc language="de-DE">Die Autor-Relation gibt den Urheber der Dokumentation und den Zeitpunkt der Autorenschaft wieder. Dies sind in der Regel Personen (Gesundheitsdienstleister) oder auch Geräte, die Daten erzeugen.</desc>
+            <classification type="cdaheaderlevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.102" tmid="2.16.840.1.113883.10.12.102" tmname="CDAauthor" tmdisplayName="CDA author" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <example type="neutral" caption="Autor ist eine Person">
+                <author typeCode="AUT">
+                    <functionCode code="DISPHYS" displayName="discharging physician" codeSystem="2.16.840.1.113883.5.88" codeSystemName="ParticipationFunction"/>
+                    <time value="20130407130000+0500"/>
+                    <assignedAuthor classCode="ASSIGNED">
+                        <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                            <name>
+                                <given>Marie</given>
+                                <family>Müller</family>
+                            </name>
+                        </assignedPerson>
+                        <representedOrganization>
+                            <id root="2.16.840.1.113883.19.5"/>
+                            <name>Beispiel Krankenhaus</name>
+                        </representedOrganization>
+                    </assignedAuthor>
+                </author>
+            </example>
+            <example type="neutral" caption="Autor ist ein Gerät/Maschine">
+                <author typeCode="AUT">
+                    <assignedAuthor classCode="ASSIGNED">
+                        <assignedAuthoringDevice classCode="DEV" determinerCode="INSTANCE">
+                            <code>...</code>
+                        </assignedAuthoringDevice>
+                    </assignedAuthor>
+                </author>
+            </example>
+            <element name="hl7:author" id="2.16.840.1.113883.2.6.77.9.376">
+                <item original="false" label="HeaderAuthor"/>
+                <example type="neutral">
+                    <author typeCode="AUT" contextControlCode="OP">
+                        <time value="201306101654"/>
+                        <assignedAuthor classCode="ASSIGNED">
+                            <!-- ... -->
+                        </assignedAuthor>
+                    </author>
+                </example>
+                <attribute name="typeCode" value="AUT" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.377"/>
+                <attribute name="contextControlCode" value="OP" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.378"/>
+                <element name="hl7:functionCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.2.6.77.9.379">
+                    <item original="false" label="HeaderAuthor"/>
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.10267" flexibility="dynamic" vsid="2.16.840.1.113883.1.11.10267" vsname="ParticipationFunction" vsdisplayName="ParticipationFunction" vsstatusCode="final" vseffectiveDate="2016-06-23T00:00:00" linkedartefactmissing="false"/>
+                </element>
+                <element name="hl7:time" minimumMultiplicity="1" maximumMultiplicity="1" datatype="TS.DATE.MIN" id="2.16.840.1.113883.2.6.77.9.380">
+                    <desc language="de-DE">gibt den Zeitpunkt an, an dem der Autor seinen Beitrag am Dokument beendet hat; dies kommt bei einem Autoren praktisch überein mit ClinicalDocument.effectiveTime</desc>
+                    <item original="false" label="HeaderAuthor"/>
+                </element>
+                <element name="hl7:assignedAuthor" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.381">
+                    <item original="false" label="HeaderAuthor"/>
+                    <attribute name="classCode" value="ASSIGNED" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.382"/>
+                    <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="*" datatype="II" id="2.16.840.1.113883.2.6.77.9.383">
+                        <item original="false" label="HeaderAuthor"/>
+                    </element>
+                    <element name="hl7:code" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.2.6.77.9.384">
+                        <desc language="de-DE">Fachgebiet/Spezialität des Gesundheitsdienstleister, z. B. Ärztin/Arzt für Allgemeinmedizin, Approbierte Ärztin/Approbierter Arzt, Fachärztin/Facharzt für Anästhesiologie und Intensivmedizin</desc>
+                        <item original="false" label="HeaderAuthor"/>
+                    </element>
+                    <element name="hl7:telecom" minimumMultiplicity="0" maximumMultiplicity="*" datatype="TEL" id="2.16.840.1.113883.2.6.77.9.385">
+                        <item original="false" label="HeaderAuthor"/>
+                    </element>
+                    <choice minimumMultiplicity="1" maximumMultiplicity="1">
+                        <item original="false" label="HeaderAuthor"/>
+                        <element name="hl7:assignedPerson" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.386">
+                            <item original="false" label="HeaderAuthor"/>
+                            <include ref="1.2.276.0.76.10.90010" tmid="1.2.276.0.76.10.90010" tmname="PersonElements" tmdisplayName="CDA Person Elements" tmeffectiveDate="2011-12-19T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                                <item original="false" label="HeaderAuthor"/>
+                                <attribute name="classCode" value="PSN" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.330"/>
+                                <attribute name="determinerCode" value="INSTANCE" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.331"/>
+                                <element name="hl7:name" datatype="PN" id="2.16.840.1.113883.2.6.77.9.332" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                                    <item original="false" label="PersonElements"/>
+                                </element>
+                                <staticAssociations/>
+                            </include>
+                        </element>
+                        <element name="hl7:assignedAuthoringDevice" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.387">
+                            <item original="false" label="HeaderAuthor"/>
+                            <attribute name="classCode" value="DEV" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.388"/>
+                            <attribute name="determinerCode" value="INSTANCE" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.389"/>
+                            <element name="hl7:manufacturerModelName" minimumMultiplicity="1" maximumMultiplicity="1" datatype="SC" id="2.16.840.1.113883.2.6.77.9.390">
+                                <item original="false" label="HeaderAuthor"/>
+                            </element>
+                            <element name="hl7:softwareName" minimumMultiplicity="1" maximumMultiplicity="1" datatype="SC" id="2.16.840.1.113883.2.6.77.9.391">
+                                <item original="false" label="HeaderAuthor"/>
+                            </element>
+                        </element>
+                    </choice>
+                    <element name="hl7:representedOrganization" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.392">
+                        <item original="false" label="HeaderAuthor"/>
+                        <example type="neutral">
+                            <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+                                <name>
+                                    <!-- ... -->
+                                </name>
+                            </representedOrganization>
+                        </example>
+                        <include ref="1.2.276.0.76.10.90011" tmid="1.2.276.0.76.10.90011" tmname="OrganizationElements" tmdisplayName="CDA Organization Elements" tmeffectiveDate="2011-12-19T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                            <item original="false" label="HeaderAuthor"/>
+                            <attribute name="classCode" value="ORG" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.333"/>
+                            <attribute name="determinerCode" value="INSTANCE" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.334"/>
+                            <element name="hl7:id" datatype="II" id="2.16.840.1.113883.2.6.77.9.335" minimumMultiplicity="0" maximumMultiplicity="*">
+                                <item original="false" label="OrganizationElements"/>
+                            </element>
+                            <element name="hl7:name" datatype="ON" id="2.16.840.1.113883.2.6.77.9.336" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                                <item original="false" label="OrganizationElements"/>
+                            </element>
+                            <element name="hl7:telecom" datatype="TEL" id="2.16.840.1.113883.2.6.77.9.337" minimumMultiplicity="0" maximumMultiplicity="*">
+                                <item original="false" label="OrganizationElements"/>
+                            </element>
+                            <element name="hl7:addr" datatype="AD" id="2.16.840.1.113883.2.6.77.9.338" minimumMultiplicity="0" maximumMultiplicity="1">
+                                <item original="false" label="OrganizationElements"/>
+                            </element>
+                            <staticAssociations/>
+                        </include>
+                    </element>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="include" prefix="vomgt-" flexibility="2013-07-10T00:00:00" id="1.2.276.0.76.3.1.135.8.10.1" name="Test1" displayName="Test 1" effectiveDate="2015-12-02T11:47:17" statusCode="cancelled" ident="vomgt-"/>
+            <ref type="include" prefix="vomgt-" flexibility="dynamic" id="1.2.276.0.76.3.1.135.8.10.146" name="AR_Antrag_Anschlussrehabilitation" displayName="(AR-A) Antrag auf Anschlussrehabilitation" effectiveDate="2020-06-17T15:59:27" statusCode="draft" isClosed="false" ident="vomgt-"/>
+            <ref type="include" prefix="vomgt-" flexibility="dynamic" id="1.2.276.0.76.3.1.135.8.10.173" name="AR_BefundberichtDoc" displayName="(AR-B) Ärztlicher Befundbericht" effectiveDate="2020-06-18T16:35:14" statusCode="draft" ident="vomgt-"/>
+            <ref type="include" prefix="haevgptv-" flexibility="dynamic" id="1.2.276.0.76.10.1018" name="PatientParticipationListDocument" displayName="Patient Participation List Document" effectiveDate="2015-11-01T00:00:00" statusCode="draft" ident="haevgptv-"/>
+            <ref type="include" prefix="evthm-" flexibility="dynamic" id="1.2.276.0.76.10.1022" name="Livedatencda" displayName="Live-Daten-CDA Dokument" effectiveDate="2017-01-23T00:00:00" statusCode="draft" ident="evthm-"/>
+            <ref type="include" prefix="evthm-" flexibility="dynamic" id="1.2.276.0.76.10.1023" name="Ueberleitungsdatencda" displayName="Überleitungs-CDA Dokument" effectiveDate="2017-03-14T00:00:00" statusCode="draft" ident="evthm-"/>
+            <uses type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.90010" name="PersonElements" displayName="CDA Person Elements" statusCode="active" effectiveDate="2011-12-19T00:00:00" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+            <uses type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.90011" name="OrganizationElements" displayName="CDA Organization Elements" statusCode="active" effectiveDate="2011-12-19T00:00:00" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+            <ref type="include" prefix="evthm-" flexibility="dynamic" id="2.16.840.1.113883.2.6.60.12.10.113" name="Ueberleitungsdatencda02" displayName="Überleitungs-CDA (ambulant-stationär)" effectiveDate="2018-04-04T17:10:48" statusCode="draft" ident="evthm-"/>
+            <ref type="include" prefix="epflb-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.34.10.1" name="Pflegebericht" displayName="Patientenbezogener pflegerischer Verlegungs- oder Entlassungsbericht 2017/2018" statusCode="active" versionLabel="1.0" effectiveDate="2017-09-21T11:31:42" ident="epflb-"/>
+            <ref type="include" prefix="epflb-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.34.10.28" name="Pflegebericht_Entlassung" displayName="PflegerischerEntlassungsbericht" statusCode="cancelled" versionLabel="v1" effectiveDate="2018-04-18T14:01:46" ident="epflb-"/>
+            <ref type="include" prefix="konsab-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.26.10.16" name="NephrologischeKonsilanfrage" displayName="Nephrologische Konsilanfrage" effectiveDate="2018-08-02T12:52:50" statusCode="draft" ident="konsab-"/>
+            <ref type="include" prefix="ewundb-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.36.10.2" name="eWundbericht" displayName="eWundbericht" effectiveDate="2019-05-27T07:26:53" statusCode="draft" versionLabel="0.9" ident="ewundb-"/>
+        </template>
+    </template>
+</result>

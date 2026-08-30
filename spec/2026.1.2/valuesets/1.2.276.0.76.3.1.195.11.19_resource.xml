@@ -1,0 +1,19 @@
+<valueSets>
+    <project ident="aktin-">
+        <valueSet id="1.2.276.0.76.3.1.195.11.19" name="kvfall" displayName="KV-Fall" effectiveDate="2024-08-08T20:33:01" statusCode="draft" lastModifiedDate="2024-08-08T20:46:21" canonicalUri="http://aktin.org/fhir/ValueSet/aktin-vs-kvfall">
+            <sourceCodeSystem id="1.2.276.0.76.3.1.195.5.97" identifierName="divi-codesystem-97" canonicalUri="urn:oid:1.2.276.0.76.3.1.195.5.97" canonicalUriDSTU2="urn:oid:1.2.276.0.76.3.1.195.5.97" canonicalUriSTU3="urn:oid:1.2.276.0.76.3.1.195.5.97" canonicalUriR4="urn:oid:1.2.276.0.76.3.1.195.5.97" canonicalUriR4B="urn:oid:1.2.276.0.76.3.1.195.5.97" canonicalUriR5="urn:oid:1.2.276.0.76.3.1.195.5.97"/>
+            <publishingAuthority name="AKTIN e. V." inherited="project">
+                <addrLine>c/o Uniklinik RWTH Aachen</addrLine>
+                <addrLine>Institut für Medizinische Informatik</addrLine>
+                <addrLine>Pauwelsstraße 35</addrLine>
+                <addrLine>52074 Aachen</addrLine>
+                <addrLine type="phone">Tel. +49 391 67 28186</addrLine>
+                <addrLine type="email">office@aktin.org</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <concept code="AKV" codeSystem="1.2.276.0.76.3.1.195.5.97" displayName="KV-Fall" level="0" type="L"/>
+                <concept code="AOTH" codeSystem="1.2.276.0.76.3.1.195.5.97" displayName="kein KV-Fall" level="0" type="L"/>
+            </conceptList>
+        </valueSet>
+    </project>
+</valueSets>

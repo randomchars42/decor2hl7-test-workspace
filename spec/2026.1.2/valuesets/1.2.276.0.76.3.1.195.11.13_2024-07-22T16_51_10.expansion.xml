@@ -1,0 +1,81 @@
+<valueSetExpansionSet xmlns:json="http://www.json.org" id="06aaf236-4e89-4ab7-aaf2-364e899ab7e1" effectiveDate="2026-08-27T13:35:36" statusCode="final" current="16" count="16" nonactive="0">
+    <valueSet json:array="true" id="1.2.276.0.76.3.1.195.11.13" name="mts-indicators-red" displayName="MTS-Indikatoren ROT" effectiveDate="2024-07-22T16:51:10" statusCode="draft" versionLabel="2024" canonicalUri="http://aktin.org/fhir/ValueSet/aktin-vs-mts-indicators-red" lastModifiedDate="2024-07-22T16:51:10" ident="aktin-">
+        <conceptList json:array="true">
+            <include json:array="true" op="descendent-of" code="red" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="red"/>
+        </conceptList>
+    </valueSet>
+    <expansion json:array="true" expanded="true" max="100" id="06aaf236-4e89-4ab7-aaf2-364e899ab7e1">
+        <items json:array="true" is="concept" code="A" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="A-Problem (Atemwege)" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="2" length="20">A-Problem (Atemwege)</designation>
+            <designation json:array="true" lang="de-DE" use="syn" statusCode="active" count="2" length="19">Gefährdeter Atemweg</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="2" length="18">A-problem (Airway)</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" count="2" length="17">Airway compromise</designation>
+        </items>
+        <items json:array="true" is="concept" code="B" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="B-Problem (Atmung)" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="2" length="18">B-Problem (Atmung)</designation>
+            <designation json:array="true" lang="de-DE" use="syn" statusCode="active" count="2" length="20">Unzureichende Atmung</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="2" length="21">B-problem (Breathing)</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" count="2" length="20">Inadequate breathing</designation>
+        </items>
+        <items json:array="true" is="concept" code="C" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="C-Problem (Zirkulation)" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="2" length="23">C-Problem (Zirkulation)</designation>
+            <designation json:array="true" lang="de-DE" use="syn" statusCode="active" count="1" length="6">Schock</designation>
+            <designation json:array="true" lang="de-DE" use="syn" statusCode="active" count="2" length="25">Lebensbedrohliche Blutung</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="2" length="23">C-problem (Circulation)</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" count="1" length="5">Shock</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" count="2" length="26">Exsanguinating heamorrhage</designation>
+        </items>
+        <items json:array="true" is="concept" code="5" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Akute Augenverletzung mit Chemikalien" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="4" length="37">Akute Augenverletzung mit Chemikalien</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="4" length="25">Acute chemical eye injury</designation>
+        </items>
+        <items json:array="true" is="concept" code="11" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Anhaltender Krampfanfall" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="2" length="24">Anhaltender Krampfanfall</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="2" length="17">Currently fitting</designation>
+        </items>
+        <items json:array="true" is="concept" code="17" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Atmet nach Freimachen der Atemwege" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="5" length="34">Atmet nach Freimachen der Atemwege</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="4" length="29">Breathing after airway opened</designation>
+        </items>
+        <items json:array="true" is="concept" code="75" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Hypoglykämie" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="1" length="12">Hypoglykämie</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="1" length="13">Hypoglycaemia</designation>
+        </items>
+        <items json:array="true" is="concept" code="113" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Nabelschnurvorfall" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="1" length="18">Nabelschnurvorfall</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="3" length="24">Prolapsed umbilical cord</designation>
+        </items>
+        <items json:array="true" is="concept" code="117" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Nicht ansprechbar" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="2" length="17">Nicht ansprechbar</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="1" length="12">Unresponsive</designation>
+        </items>
+        <items json:array="true" is="concept" code="118" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Nicht ansprechbares Kind" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="3" length="24">Nicht ansprechbares Kind</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="2" length="18">Unresponsive child</designation>
+        </items>
+        <items json:array="true" is="concept" code="130" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Puls unnormal" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="2" length="13">Puls unnormal</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="2" length="14">Pulse abnormal</designation>
+        </items>
+        <items json:array="true" is="concept" code="136" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Rekapillarisierungszeit unnormal" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="2" length="32">Rekapillarisierungszeit unnormal</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="4" length="30">Capillary refill time abnormal</designation>
+        </items>
+        <items json:array="true" is="concept" code="153" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Sichtbare Körperteile des Fötus" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="4" length="31">Sichtbare Körperteile des Fötus</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="3" length="23">Presenting foetal parts</designation>
+        </items>
+        <items json:array="true" is="concept" code="157" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Speichelfluss" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="1" length="13">Speichelfluss</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="1" length="8">Drooling</designation>
+        </items>
+        <items json:array="true" is="concept" code="162" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Stridor" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="1" length="7">Stridor</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="1" length="7">Stridor</designation>
+        </items>
+        <items json:array="true" is="concept" code="172" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Unnormale Atemfrequenz" level="1" type="L">
+            <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="2" length="22">Unnormale Atemfrequenz</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="2" length="16">Respiratory rate</designation>
+        </items>
+    </expansion>
+</valueSetExpansionSet>

@@ -1,0 +1,33 @@
+<valueSet xmlns:json="http://www.json.org" id="1.2.276.0.76.11.60" name="Multiresistantorganisms" displayName="Multiresistant Organisms (Carrier)" effectiveDate="2015-09-18T00:00:00" statusCode="draft" url="http://art-decor.org/decor/services/" ident="aktin-">
+    <desc json:array="true" language="de-DE">Die folgenden Codes werden genutzt, um anzugeben, dass der Patient  &lt;b&gt;Träger&lt;/b&gt;  eines Multi-resistenten Keimes ist.</desc>
+    <sourceCodeSystem json:array="true" id="1.2.276.0.76.5.441" identifierName="Signifikante Pathogene" canonicalUri="urn:oid:1.2.276.0.76.5.441" canonicalUriDSTU2="urn:oid:1.2.276.0.76.5.441" canonicalUriSTU3="urn:oid:1.2.276.0.76.5.441" canonicalUriR4="urn:oid:1.2.276.0.76.5.441" canonicalUriR4B="urn:oid:1.2.276.0.76.5.441" canonicalUriR5="urn:oid:1.2.276.0.76.5.441"/>
+    <sourceCodeSystem json:array="true" id="2.16.840.1.113883.5.1008" identifierName="Null Flavor" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriDSTU2="http://hl7.org/fhir/v3/NullFlavor" canonicalUriSTU3="http://hl7.org/fhir/v3/NullFlavor" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" context="external/hl7intl/v3/v3-NullFlavor"/>
+    <publishingAuthority json:array="true" name="AKTIN e. V." inherited="project">
+        <addrLine json:array="true">c/o Uniklinik RWTH Aachen</addrLine>
+        <addrLine json:array="true">Institut für Medizinische Informatik</addrLine>
+        <addrLine json:array="true">Pauwelsstraße 35</addrLine>
+        <addrLine json:array="true">52074 Aachen</addrLine>
+        <addrLine json:array="true" type="phone">Tel. +49 391 67 28186</addrLine>
+        <addrLine json:array="true" type="email">office@aktin.org</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="concept" code="AMRO" codeSystem="1.2.276.0.76.5.441" displayName="Multiresistenter Keim" level="0" type="L">
+        <desc json:array="true" language="de-DE">Träger eines Multi-resistenten Keims, nicht näher bezeichnet</desc>
+    </items>
+    <items json:array="true" is="concept" code="MRSA" codeSystem="1.2.276.0.76.5.441" displayName="MRSA" level="1" type="L">
+        <desc json:array="true" language="de-DE">Träger Methicillin-resistenter Staphylococcus aureus (MRSA) &lt;br clear="none"/&gt;</desc>
+    </items>
+    <items json:array="true" is="concept" code="3MRGN" codeSystem="1.2.276.0.76.5.441" displayName="gramnegative Stäbchen, bei der noch eine der Antibiotikagruppen wirksam ist" level="1" type="L">
+        <desc json:array="true" language="de-DE">Träger 3MRGN &lt;br clear="none"/&gt;</desc>
+    </items>
+    <items json:array="true" is="concept" code="4MRGN" codeSystem="1.2.276.0.76.5.441" displayName="gramnegative Stäbchen, die gegen alle vier Gruppen resistent sind" level="1" type="L">
+        <desc json:array="true" language="de-DE">Träger 4MRGN &lt;br clear="none"/&gt;</desc>
+    </items>
+    <items json:array="true" is="concept" code="VRE" codeSystem="1.2.276.0.76.5.441" displayName="VRE" level="1" type="L">
+        <desc json:array="true" language="de-DE">Träger Vancomycin-resistenten Enterokokken (VRE)</desc>
+    </items>
+    <items json:array="true" is="exception" code="OTH" codeSystem="2.16.840.1.113883.5.1008" displayName="Andere" level="0" type="L">
+        <desc json:array="true" language="de-DE">Träger eines anderen Multi-resistenten Keims &lt;br clear="none"/&gt;</desc>
+    </items>
+</valueSet>

@@ -1,0 +1,15 @@
+<dataset xmlns:json="http://www.json.org" id="1.2.40.0.34.777.1.1.1" effectiveDate="2017-06-21T00:00:00" statusCode="draft" versionLabel="v2" prefix="elgabbr-" shortName="elga_basisdataset" iddisplay="elgabbr-dataset(v2)-" url="http://art-decor.org/decor/services/" ident="elgabbr-"><!--
+ This is a view of the dataset "ELGA Basis-Dataset" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">ELGA Basis-Dataset</name>
+    <desc language="de-DE">Basis Datensätze - Baukasten für ELGA Dokumente</desc>
+    <concept id="1.2.40.0.34.777.1.2.120" statusCode="draft" effectiveDate="2017-07-20T13:27:13" type="group" iddisplay="elgabbr-dataelement-120" shortName="medikationsliste">
+        <implementation shortName="medikationsliste" markdown="Zusammenfassung aktueller vorgeschriebenen Medikamente für einen Patienten zu einem bestimmten Zeitpunkt (wie am Ende eines Arztbesuches oder eines Krankenhausaufenthaltes), die dem Verfasser des Dokuments bekannt sind."/>
+        <name language="de-DE">Medikationsliste</name>
+        <synonym language="de-DE">Aktuelle Medikation</synonym>
+        <desc language="de-DE">Zusammenfassung aktueller vorgeschriebenen Medikamente für einen Patienten zu einem bestimmten Zeitpunkt (wie am Ende eines Arztbesuches oder eines Krankenhausaufenthaltes), die dem Verfasser des Dokuments bekannt sind.</desc>
+        <comment language="de-DE">56445-0 Medication summary Document </comment>
+    </concept>
+</dataset>

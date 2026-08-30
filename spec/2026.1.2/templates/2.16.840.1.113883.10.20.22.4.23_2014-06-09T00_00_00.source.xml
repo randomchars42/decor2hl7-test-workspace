@@ -1,0 +1,53 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:local="http://art-decor.org/local" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.20.22.4.23" name="MedicationInformationV2" effectiveDate="2014-06-09T00:00:00" statusCode="draft" displayName="Medication Information (V2)" versionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-" sdtc:dummy-1="urn:hl7-org:sdtc" local:dummy-2="http://art-decor.org/local" xml:dummy-3="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-5="urn:hl7-org:v3" xsi:dummy-6="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">A medication should be recorded as a pre-coordinated ingredient + strength + dose form (e.g., “metoprolol 25mg tablet”, “amoxicillin 400mg/5mL suspension”) where possible. This includes RxNorm codes whose Term Type is SCD (semantic clinical drug), SBD (semantic brand drug), GPCK (generic pack), BPCK (brand pack). The dose (doseQuantity) represents how many of the
+                consumables are to be administered at each administration event. As a result, the dose is always relative to the consumable. Thus, a patient consuming a single "metoprolol 25mg tablet" per administration will have a doseQuantity of "1", whereas a patient consuming "metoprolol" will have a dose of "25 mg".</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.312" flexibility="2005-09-07T00:00:00"/>
+            <relationship type="VERSION" template="2.16.840.1.113883.10.20.22.4.23" flexibility="2013-01-31T00:00:00"/>
+            <context id="**"/>
+            <element name="cda:manufacturedProduct" id="2.16.840.1.113883.3.1937.99.3.9.3708">
+                <attribute name="classCode" value="MANU" id="2.16.840.1.113883.3.1937.99.3.9.3709">
+                    <desc language="en-US">SHALL contain exactly one [1..1] @classCode="MANU" (CodeSystem: RoleClass urn:oid:2.16.840.1.113883.5.110 STATIC) (CONF:1098-7408).</desc>
+                    <item label="CONF:1098-7408"/>
+                </attribute>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                    <desc language="en-US">C-CDA R1.1 templateId root without an extension</desc>
+                    <item label="CONF:1198-32936"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.22.4.23" datatype="uid"/>
+                </element>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.3710">
+                    <desc language="en-US">SHALL contain exactly one [1..1] templateId (CONF:1098-7409) such that it</desc>
+                    <item label="CONF:1098-7409"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.22.4.23" id="2.16.840.1.113883.3.1937.99.3.9.3711">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.22.4.23" (CONF:1098-10506).</desc>
+                        <item label="CONF:1098-10506"/>
+                    </attribute>
+                    <attribute name="extension" value="2014-06-09" id="2.16.840.1.113883.3.1937.99.3.9.3712">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @extension="2014-06-09" (CONF:1098-32579).</desc>
+                        <item label="CONF:1098-32579"/>
+                    </attribute>
+                </element>
+                <element name="cda:id" datatype="II" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.3713">
+                    <desc language="en-US">MAY contain zero or more [0..*] id (CONF:1098-7410).</desc>
+                    <item label="CONF:1098-7410"/>
+                </element>
+                <element name="cda:manufacturedMaterial" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.3714">
+                    <desc language="en-US">SHALL contain exactly one [1..1] manufacturedMaterial (CONF:1098-7411).</desc>
+                    <item label="CONF:1098-7411"/>
+                    <element name="cda:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="false" id="2.16.840.1.113883.3.1937.99.3.9.3715">
+                        <desc language="en-US">This manufacturedMaterial SHALL contain exactly one [1..1] code, which SHALL be selected from ValueSet Medication Clinical Drug urn:oid:2.16.840.1.113762.1.4.1010.4 DYNAMIC (CONF:1098-7412).</desc>
+                        <item label="CONF:1098-7412"/>
+                        <vocabulary valueSet="2.16.840.1.113762.1.4.1010.4"/>
+                        <element name="cda:translation" minimumMultiplicity="0" maximumMultiplicity="*" strength="preferred" id="2.16.840.1.113883.3.1937.99.3.9.3716">
+                            <desc language="en-US">This code MAY contain zero or more [0..*] translation, which MAY be selected from ValueSet Clinical Substance urn:oid:2.16.840.1.113762.1.4.1010.2 DYNAMIC (CONF:1098-31884).</desc>
+                            <item label="CONF:1098-31884"/>
+                            <vocabulary valueSet="2.16.840.1.113762.1.4.1010.2"/>
+                        </element>
+                    </element>
+                </element>
+                <element name="cda:manufacturerOrganization" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.3717">
+                    <desc language="en-US">MAY contain zero or one [0..1] manufacturerOrganization (CONF:1098-7416).</desc>
+                    <item label="CONF:1098-7416"/>
+                </element>
+            </element>
+        </template>

@@ -1,0 +1,68 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.4031" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pharm="urn:ihe:pharm" id="1.2.276.0.76.10.4031" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="Sauerstoffsättigung" cda:dummy-4="urn:hl7-org:v3" ident="hl7de-" name="OxygenSaturation" xml:dummy-2="http://www.w3.org/XML/1998/namespace" pharm:dummy-1="urn:ihe:pharm" statusCode="active" url="http://art-decor.org/decor/services/" effectiveDate="2014-09-16T00:00:00">
+            <desc language="de-DE">Sauerstoffsättigung</desc>
+            <desc language="en-US">O2 saturation (SO2)</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.303" tmname="CDAObservation" tmdisplayName="CDA Observation" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <example type="neutral">
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4031"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="769eb111-93b0-4c84-8e55-98f2098b7950"/>
+                    <code code="20564-1" codeSystem="2.16.840.1.113883.6.1" displayName="Oxygen saturation"/>
+                    <statusCode code="completed"/>
+                    <effectiveTime value="20131219"/>
+                    <value xsi:type="PQ" value="86.0" unit="%"/>
+                </observation>
+            </example>
+            <element name="hl7:observation" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.855">
+                <item original="false" label="OxygenSaturation"/>
+                <attribute name="classCode" value="OBS" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.77.9.856"/>
+                <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.77.9.857"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.2.6.77.9.858">
+                    <item original="false" label="OxygenSaturation"/>
+                    <attribute name="root" value="1.2.276.0.76.10.4031" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.77.9.859"/>
+                </element>
+                <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.860">
+                    <item original="false" label="OxygenSaturation"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CE" id="2.16.840.1.113883.2.6.77.9.861">
+                    <item original="false" label="OxygenSaturation"/>
+                    <vocabulary code="20564-1" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.2.6.77.9.862">
+                    <desc language="de-DE">Lediglich reference in den Text der zugehörigen Section</desc>
+                    <item original="false" label="OxygenSaturation"/>
+                    <element name="hl7:reference" minimumMultiplicity="1" maximumMultiplicity="1" datatype="URL" id="2.16.840.1.113883.2.6.77.9.863">
+                        <item original="false" label="OxygenSaturation"/>
+                    </element>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CS" id="2.16.840.1.113883.2.6.77.9.864">
+                    <item original="false" label="OxygenSaturation"/>
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:effectiveTime" minimumMultiplicity="0" maximumMultiplicity="1" datatype="TS" id="2.16.840.1.113883.2.6.77.9.865">
+                    <item original="false" label="OxygenSaturation"/>
+                </element>
+                <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="PQ" id="1.2.276.0.76.9.4031.1">
+                    <item original="false" label="OxygenSaturation"/>
+                    <property unit="%">
+                        <item original="false" label="OxygenSaturation"/>
+                    </property>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="dependency" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.92" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2025-11-12T00:00:00" statusCode="retired" versionLabel="v3transit" lastModifiedDate="2026-03-25T11:04:45" ident="aktin-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.1015" name="EmergencymedicineNoteCDAdocumentv1" displayName="Emergency medicine Note CDA document" effectiveDate="2014-09-18T00:00:00" statusCode="active" versionLabel="v1" ident="aktin-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.1019" name="EmergencymedicineNoteCDAdocumentv2" displayName="Emergency medicine Note CDA document" effectiveDate="2016-06-01T00:00:00" statusCode="active" versionLabel="v2" ident="aktin-"/>
+            <ref type="dependency" prefix="evthm-" flexibility="2017-04-24T00:00:00" id="1.2.276.0.76.10.1022" name="Livedatencda" displayName="Live-Daten-CDA Dokument" effectiveDate="2017-01-23T00:00:00" statusCode="draft" ident="evthm-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.3044" name="VitalSignsSection" displayName="Vitalparameter" effectiveDate="2014-09-16T00:00:00" statusCode="active" isClosed="false" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.3044" name="VitalSignsSection" displayName="Vitalparameter" effectiveDate="2015-09-18T00:00:00" statusCode="active" isClosed="false" ident="aktin-"/>
+            <ref type="dependency" prefix="evthm-" flexibility="2017-05-29T00:00:00" id="1.2.276.0.76.10.3084" effectiveDate="2017-04-24T00:00:00" name="Vitalparameter" displayName="Vitalparameter" statusCode="draft" ident="evthm-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4101" name="VitalSignObservationsOrganizer" displayName="Vital Sign Observations Organizer" effectiveDate="2017-02-01T00:00:00" statusCode="draft" lastModifiedDate="2026-04-27T15:47:14" ident="aktin-"/>
+            <ref type="contains" prefix="evthm-" flexibility="dynamic" id="1.2.276.0.76.10.4238" effectiveDate="2017-05-29T00:00:00" name="VitalparameterOrganizer" displayName="Vitalparameter Organizer" statusCode="draft" ident="evthm-"/>
+            <ref type="contains" prefix="evthm-" flexibility="dynamic" id="2.16.840.1.113883.2.6.60.12.10.103" name="BltgasanalyseOrganizer" displayName="Blutgasanalyse Organizer" effectiveDate="2018-03-26T10:18:16" statusCode="draft" ident="evthm-"/>
+        </template>
+    </template>
+</result>

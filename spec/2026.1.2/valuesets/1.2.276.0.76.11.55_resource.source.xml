@@ -1,0 +1,19 @@
+<valueSet xmlns:json="http://www.json.org" id="1.2.276.0.76.11.55" name="Isolationreason" displayName="Isolation reason" statusCode="draft" effectiveDate="2015-09-18T00:00:00" url="http://art-decor.org/decor/services/" ident="aktin-">
+    <sourceCodeSystem json:array="true" id="2.16.840.1.113883.5.1008" identifierName="Null Flavor" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriDSTU2="http://hl7.org/fhir/v3/NullFlavor" canonicalUriSTU3="http://hl7.org/fhir/v3/NullFlavor" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" context="external/hl7intl/v3/v3-NullFlavor"/>
+    <sourceCodeSystem json:array="true" id="2.16.840.1.113883.6.3" identifierName="ICD10" canonicalUri="http://hl7.org/fhir/sid/icd-10" canonicalUriDSTU2="http://hl7.org/fhir/sid/icd-10" canonicalUriSTU3="http://hl7.org/fhir/sid/icd-10" canonicalUriR4="http://hl7.org/fhir/sid/icd-10" canonicalUriR4B="http://hl7.org/fhir/sid/icd-10" canonicalUriR5="http://hl7.org/fhir/sid/icd-10"/>
+    <publishingAuthority json:array="true" name="AKTIN e. V." inherited="project">
+        <addrLine json:array="true">c/o Uniklinik RWTH Aachen</addrLine>
+        <addrLine json:array="true">Institut für Medizinische Informatik</addrLine>
+        <addrLine json:array="true">Pauwelsstraße 35</addrLine>
+        <addrLine json:array="true">52074 Aachen</addrLine>
+        <addrLine json:array="true" type="phone">Tel. +49 391 67 28186</addrLine>
+        <addrLine json:array="true" type="email">office@aktin.org</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="concept" code="U80" codeSystem="2.16.840.1.113883.6.3" displayName="multiresistenter Keim" level="0" type="L"/>
+    <items json:array="true" is="concept" code="A09.9" codeSystem="2.16.840.1.113883.6.3" displayName="Gastroenteritis" level="0" type="L"/>
+    <items json:array="true" is="concept" code="A16.9" codeSystem="2.16.840.1.113883.6.3" displayName="Tuberkulose" level="0" type="L"/>
+    <items json:array="true" is="concept" code="G03.9" codeSystem="2.16.840.1.113883.6.3" displayName="Meningitis" level="0" type="L"/>
+    <items json:array="true" is="exception" code="OTH" codeSystem="2.16.840.1.113883.5.1008" displayName="Andere" level="0" type="L"/>
+</valueSet>

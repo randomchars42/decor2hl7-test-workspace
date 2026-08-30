@@ -1,0 +1,30 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.2.6.60.6.1.1" effectiveDate="2015-06-18T18:17:24" statusCode="draft" versionLabel="2.0" prefix="psr-" shortName="" iddisplay="psr-dataset-1" url="http://art-decor.org/decor/services/" ident="psr-"><!--
+ This is a view of the dataset "" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE"/>
+    <desc language="de-DE"/>
+    <concept id="2.16.840.1.113883.2.6.60.6.2.32" effectiveDate="2015-06-24T17:15:01" statusCode="draft" type="group" iddisplay="psr-dataelement-32">
+        <implementation markdown="The specimen(s) from a patient, obtained by one or more specimen collection procedures and sent by a clinician (ordering provider) to the pathology laboratory at one time with one ore more clinical information and diagnostic problems. The specimen(s) can be sent in one or more than one containers."/>
+        <name language="de-DE">Fall</name>
+        <desc language="de-DE" lastTranslated="2017-06-20T18:39:04">Service Event einer Pathologieeinrichtung, die Proben eines Patienten, die durch eine Prozedur gewonnen wurde und durch einen Kliniker auf ein Mal unter Angabe Klinischer Informationen und der Klinischen Fragestellung an eine Pathologie-Einrichtung gesandt wurden, um eine Pathologisch-anatomische Begutachtung zu
+                        erhalten, unter dem Aspekt eines inhärenten Zusammenhangs zusammenführt.</desc>
+        <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.32" conceptFlexibility="2015-06-24T17:15:01" code="398241000" codeSystem="2.16.840.1.113883.6.96" displayName="Case - situation (qualifier value)" effectiveDate="2020-12-14T15:55:30" codeSystemName="SNOMED Clinical Terms"/>
+        <concept id="2.16.840.1.113883.2.6.60.6.2.50" statusCode="draft" effectiveDate="2015-07-30T12:36:56" type="item" iddisplay="psr-dataelement-50" shortName="fallid">
+            <implementation shortName="fallid" markdown="This is the ID for the case, known also as &#34;Accession number&#34;, i.e. all specimen sent at the same time from the ordering provider to the pathology lab. There this ID is issued by the Order filler, corresponding with the Order filler ID. If more than one specimen from the same patient is sent at once by the clinician under the Placer group ID, then this Placer group ID corresponds with the Accession number!"/>
+            <name language="de-DE">Fall-ID</name>
+            <desc language="de-DE" lastTranslated="2017-06-20T18:39:37">Fall-Nummer</desc>
+            <valueDomain type="identifier">
+                <example type="neutral" caption="Accession Number or Case ID">&lt;id root="1.3.6.1.4.1.19376.1.8.9.9" extension="A7102400008"/&gt;</example>
+            </valueDomain>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.50" conceptFlexibility="2015-07-30T12:36:56" code="42071-1" codeSystem="2.16.840.1.113883.6.1" displayName="Accession number and class of case and sequence number override flag Cancer case" effectiveDate="2020-12-14T15:57:13" equivalence="relatedto" codeSystemName="Logical Observation Identifier Names and Codes"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.6.2.51" statusCode="cancelled" effectiveDate="2015-07-30T12:41:04" type="item" iddisplay="psr-dataelement-51">
+            <implementation markdown=""/>
+            <name language="de-DE"/>
+            <desc language="de-DE"/>
+            <valueDomain type="count"/>
+        </concept>
+    </concept>
+</dataset>

@@ -1,0 +1,95 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.2.6.60.6.1.1" effectiveDate="2015-06-18T18:17:24" statusCode="draft" versionLabel="2.0" prefix="psr-" shortName="" iddisplay="psr-dataset-1" url="http://art-decor.org/decor/services/" ident="psr-"><!--
+ This is a view of the dataset "" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE"/>
+    <desc language="de-DE"/>
+    <concept id="2.16.840.1.113883.2.6.60.6.2.30" statusCode="draft" effectiveDate="2015-06-24T17:11:57" type="group" iddisplay="psr-dataelement-30">
+        <implementation markdown="Observation performed by naked eye, including measurements"/>
+        <name language="de-DE" lastTranslated="2017-06-29T11:45:56">Makroskopische Beurteilung</name>
+        <desc language="de-DE" lastTranslated="2017-06-29T11:46:04">Makroskopische Beurteilung</desc>
+        <concept id="2.16.840.1.113883.2.6.60.6.2.31" statusCode="draft" effectiveDate="2015-06-24T17:13:13" type="item" iddisplay="psr-dataelement-31" shortName="makroskopischer_begutachtungstext">
+            <implementation shortName="makroskopischer_begutachtungstext" markdown="macroscopic observation text"/>
+            <name language="de-DE" lastTranslated="2017-06-29T11:47:23">Makroskopischer Begutachtungstext</name>
+            <desc language="de-DE" lastTranslated="2017-06-29T12:00:25">Makroskopischer Begutachtungstext</desc>
+            <valueDomain type="text"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.6.2.112" effectiveDate="2020-11-19T10:43:14" statusCode="draft" type="item" iddisplay="psr-dataelement-112" shortName="generische_pathologischanatomische_einzelbeobachtung">
+            <implementation shortName="generische_pathologischanatomische_einzelbeobachtung" markdown="Atomic unit of a Generic AP observation, coded or as measurement value. &#xA;Each generic observation must have a textual part for human readibility."/>
+            <inherit ref="2.16.840.1.113883.2.6.60.6.2.65" effectiveDate="2015-10-26T08:38:19" prefix="psr-" datasetId="2.16.840.1.113883.2.6.60.6.1.1" datasetEffectiveDate="2015-06-18T18:17:24" datasetStatusCode="draft" datasetVersionLabel="2.0" iType="item" iStatusCode="draft" iEffectiveDate="2015-10-26T08:38:19" iddisplay="psr-dataelement-65" refdisplay="psr-dataelement-65" localInherit="true"/>
+            <name language="de-DE" lastTranslated="2017-06-29T11:49:58">Generische pathologisch-anatomische Einzelbeobachtung</name>
+            <desc language="de-DE" lastTranslated="2017-06-29T12:02:35">
+                                <span style="color: rgb(51, 51, 51); font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px;">Semantisch annotierte atomare Einheit einer generischen pathologisch-anatomische Beobachtung</span>
+                            </desc>
+            <rationale language="de-DE">
+                                <span style="color: rgb(51, 51, 51); font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px;">Jede Beobachtung, die als Bestandteil einer pathologisch-anatomischen Untersuchung im Befundbericht erwähnt ist, kann zusätzlich zur textuellen Erwähnung auch semantisch annotiert, d.h. mit einem Code und einem Value in den Bericht maschinenlesbar aufgenommen
+                                    werden.</span>
+                                <br clear="none" style="color: rgb(51, 51, 51); font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px;"/>
+                                <span style="color: rgb(51, 51, 51); font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px;">Die semantische Annotation kann durch beliebige Terminologiesysteme erfolgen, LOINC (für die Kodierung der Beobachtung) und SNOMED-CT (für die Kodierung des Beobachtungsergebnisses, falls es sich nicht um einen Messwert handelt), sind bevorzugt zu verwenden.
+                                    Codierungsregeln für diese beiden Referenzterminologien sind unter dem HL7 TermInfo-Project (für CDA) oder unter  "Practical Guidance on Uses of SNOMED CT and LOINC" (https://confluence.ihtsdotools.org/display/DOCLOINC/5.2+Practical+Guidance+on+Uses+of+SNOMED+CT+and+LOINC)</span>
+                                <br clear="none" style="color: rgb(51, 51, 51); font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px;"/>
+                                <span style="color: rgb(51, 51, 51); font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px;"> hinterlegt.</span>
+                                <br clear="none"/>
+                            </rationale>
+            <valueDomain type="code">
+                <conceptList id="2.16.840.1.113883.2.6.60.6.2.65.0"/>
+            </valueDomain>
+            <valueSet id="1.3.6.1.4.1.19376.1.3.11.11" name="AP-Observation" displayName="AP Observation" effectiveDate="2015-11-22T12:20:34" statusCode="draft" strength="extensible">
+                <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.65.0" valueSet="1.3.6.1.4.1.19376.1.3.11.11" flexibility="dynamic" strength="extensible" effectiveDate="2017-01-14T19:07:04" valueSetName="AP Observation" valueSetStatusCode="draft" valueSetEffectiveDate="2015-11-22T12:20:34"/>
+                <desc language="en-US">Generic codes for AP Observations of all kind, including results of ancillary techniques (immunohistochemistry, in-situ-hybridization, other molecular methods)</desc>
+                <desc language="de-DE">Codes für Generische pathologisch-anatomische Beobachtungen. <br clear="none"/>
+                    <span style="background-color: rgb(255, 255, 254); font-family: Menlo, Monaco, &#34;Courier New&#34;, monospace; font-size: 12px; white-space: pre;"> LOINC Codes, bei fehlenden Codes SNOMED CT gemäß
+                    https://confluence.ihtsdotools.org/display/DOCLOINC/5.2+Practical+Guidance+on+Uses+of+SNOMED+CT+and+LOINC Falls weder LOINC- noch SCT-Codes verfügbar, ggf. auf die anderen Terminologien und Klassifikationen ausweichen</span>
+                </desc>
+                <sourceCodeSystem id="1.2.276.0.76.3.1.131.1.5.1" identifierName="DKG Coding scheme" canonicalUri="urn:oid:1.2.276.0.76.3.1.131.1.5.1" canonicalUriDSTU2="urn:oid:1.2.276.0.76.3.1.131.1.5.1" canonicalUriSTU3="urn:oid:1.2.276.0.76.3.1.131.1.5.1" canonicalUriR4="urn:oid:1.2.276.0.76.3.1.131.1.5.1" canonicalUriR4B="urn:oid:1.2.276.0.76.3.1.131.1.5.1" canonicalUriR5="urn:oid:1.2.276.0.76.3.1.131.1.5.1"/>
+                <sourceCodeSystem id="1.2.276.0.76.5.401" identifierName="localization codes for distant metastases" canonicalUri="urn:oid:1.2.276.0.76.5.401" canonicalUriDSTU2="urn:oid:1.2.276.0.76.5.401" canonicalUriSTU3="urn:oid:1.2.276.0.76.5.401" canonicalUriR4="urn:oid:1.2.276.0.76.5.401" canonicalUriR4B="urn:oid:1.2.276.0.76.5.401" canonicalUriR5="urn:oid:1.2.276.0.76.5.401"/>
+                <sourceCodeSystem id="2.16.840.1.113883.15.16" identifierName="TNM 8th ed." canonicalUri="urn:oid:2.16.840.1.113883.15.16" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.15.16" canonicalUriSTU3="urn:oid:2.16.840.1.113883.15.16" canonicalUriR4="urn:oid:2.16.840.1.113883.15.16" canonicalUriR4B="urn:oid:2.16.840.1.113883.15.16" canonicalUriR5="urn:oid:2.16.840.1.113883.15.16"/>
+                <sourceCodeSystem id="2.16.840.1.113883.15.6" identifierName="TNM 7th ed." canonicalUri="urn:oid:2.16.840.1.113883.15.6" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.15.6" canonicalUriSTU3="urn:oid:2.16.840.1.113883.15.6" canonicalUriR4="urn:oid:2.16.840.1.113883.15.6" canonicalUriR4B="urn:oid:2.16.840.1.113883.15.6" canonicalUriR5="urn:oid:2.16.840.1.113883.15.6"/>
+                <sourceCodeSystem id="2.16.840.1.113883.6.1" identifierName="LOINC" canonicalUri="http://loinc.org" canonicalUriDSTU2="http://loinc.org" canonicalUriSTU3="http://loinc.org" canonicalUriR4="http://loinc.org" canonicalUriR4B="http://loinc.org" canonicalUriR5="http://loinc.org"/>
+                <sourceCodeSystem id="2.16.840.1.113883.6.174" identifierName="OMIM" canonicalUri="http://www.omim.org" canonicalUriDSTU2="http://www.omim.org" canonicalUriSTU3="http://www.omim.org" canonicalUriR4="http://www.omim.org" canonicalUriR4B="http://www.omim.org" canonicalUriR5="http://www.omim.org"/>
+                <sourceCodeSystem id="2.16.840.1.113883.6.3" identifierName="ICD-10" canonicalUri="http://hl7.org/fhir/sid/icd-10" canonicalUriDSTU2="http://hl7.org/fhir/sid/icd-10" canonicalUriSTU3="http://hl7.org/fhir/sid/icd-10" canonicalUriR4="http://hl7.org/fhir/sid/icd-10" canonicalUriR4B="http://hl7.org/fhir/sid/icd-10" canonicalUriR5="http://hl7.org/fhir/sid/icd-10"/>
+                <sourceCodeSystem id="2.16.840.1.113883.6.43.1" identifierName="ICD-O-3 2nd.rev. 2019" canonicalUri="http://terminology.hl7.org/CodeSystem/icd-o-3" canonicalUriDSTU2="http://terminology.hl7.org/CodeSystem/icd-o-3" canonicalUriSTU3="http://terminology.hl7.org/CodeSystem/icd-o-3" canonicalUriR4="http://terminology.hl7.org/CodeSystem/icd-o-3" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/icd-o-3" canonicalUriR5="http://terminology.hl7.org/CodeSystem/icd-o-3" context="projects/pathdv-/ICD-O-3-2.rev-BfArM-2.16.840.1.113883.6.43.1"/>
+                <sourceCodeSystem id="2.16.840.1.113883.6.8" identifierName="UCUM" canonicalUri="http://unitsofmeasure.org" canonicalUriDSTU2="http://unitsofmeasure.org" canonicalUriSTU3="http://unitsofmeasure.org" canonicalUriR4="http://unitsofmeasure.org" canonicalUriR4B="http://unitsofmeasure.org" canonicalUriR5="http://unitsofmeasure.org"/>
+                <sourceCodeSystem id="2.16.840.1.113883.6.96" identifierName="SNOMED-CT" canonicalUri="http://snomed.info/sct" canonicalUriDSTU2="http://snomed.info/sct" canonicalUriSTU3="http://snomed.info/sct" canonicalUriR4="http://snomed.info/sct" canonicalUriR4B="http://snomed.info/sct" canonicalUriR5="http://snomed.info/sct"/>
+                <publishingAuthority name="IHE International" inherited="project">
+                    <addrLine type="email">http://www.ihe.net</addrLine>
+                </publishingAuthority>
+                <copyright language="en-US" inherited="true">This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.</copyright>
+                <conceptList id="2.16.840.1.113883.2.6.60.6.2.65.0">
+                    <include localId="1" codeSystem="2.16.840.1.113883.6.96" flexibility="dynamic">
+                        <name language="en-US"/>
+                    </include>
+                    <include localId="2" codeSystem="2.16.840.1.113883.6.1" flexibility="dynamic">
+                        <name language="en-US"/>
+                    </include>
+                    <include localId="3" codeSystem="2.16.840.1.113883.6.43.1" flexibility="dynamic">
+                        <name language="en-US"/>
+                    </include>
+                    <include localId="4" codeSystem="2.16.840.1.113883.6.3" flexibility="dynamic">
+                        <name language="en-US"/>
+                    </include>
+                    <include localId="5" codeSystem="2.16.840.1.113883.15.16" flexibility="dynamic">
+                        <name language="en-US"/>
+                    </include>
+                    <include localId="6" codeSystem="2.16.840.1.113883.15.6" flexibility="dynamic">
+                        <name language="en-US"/>
+                    </include>
+                    <include localId="7" codeSystem="2.16.840.1.113883.6.8" flexibility="dynamic">
+                        <name language="en-US"/>
+                    </include>
+                    <include localId="8" codeSystem="2.16.840.1.113883.6.174" flexibility="dynamic">
+                        <name language="en-US"/>
+                    </include>
+                    <include localId="9" codeSystem="1.2.276.0.76.3.1.131.1.5.1" flexibility="dynamic">
+                        <name language="en-US"/>
+                    </include>
+                    <include localId="10" codeSystem="1.2.276.0.76.5.401" flexibility="dynamic">
+                        <name language="en-US"/>
+                    </include>
+                </conceptList>
+            </valueSet>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.65.0" valueSet="1.3.6.1.4.1.19376.1.3.11.11" flexibility="dynamic" strength="extensible" effectiveDate="2017-01-14T19:07:04" valueSetName="AP Observation" valueSetStatusCode="draft" valueSetEffectiveDate="2015-11-22T12:20:34"/>
+        </concept>
+    </concept>
+</dataset>

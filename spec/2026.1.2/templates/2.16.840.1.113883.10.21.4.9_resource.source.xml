@@ -1,0 +1,21 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:pharmhl7="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.21.4.9" name="UVDispenseEventReference" displayName="UV Dispense Event Reference" statusCode="pending" lastModifiedDate="2023-01-29T21:55:06" versionLabel="R1-STU2-ballot" effectiveDate="2017-03-30T00:00:00" url="http://art-decor.org/decor/services/" ident="pharmcda-" pharmhl7:dummy-1="urn:hl7-org:pharm" xml:dummy-2="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-4="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">This is a reference to a Dispense Event</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.309" flexibility="2005-09-07T00:00:00"/>
+            <context id="**"/>
+            <item label="DispenseEventReference"/>
+            <example type="neutral">
+        <supply classCode="SPLY" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.21.4.9"/>
+            <id root="1.2.3.99.99.99" extension="978437489739"/>
+        </supply>
+    </example>
+            <element name="hl7:supply" id="2.16.840.1.113883.3.1937.777.15.9.10778">
+                <attribute name="classCode" value="SPLY" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10779"/>
+                <attribute name="moodCode" value="EVN" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10780"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" conformance="R" isMandatory="true" id="2.16.840.1.113883.3.1937.777.15.9.10781">
+                    <attribute name="root" value="2.16.840.1.113883.10.21.4.9" datatype="uid" id="2.16.840.1.113883.3.1937.777.15.9.10782"/>
+                </element>
+                <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10783"/>
+            </element>
+        </template>

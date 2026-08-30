@@ -1,0 +1,57 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.99.61.25.1.1" effectiveDate="2016-02-25T00:00:00" statusCode="draft" lastModifiedDate="2023-09-13T11:55:57" prefix="narradcda-" shortName="radiologischer_befundbericht" iddisplay="narradcda-dataset-1" url="http://art-decor.org/decor/services/" ident="narradcda-"><!--
+ This is a view of the dataset "Radiologischer Befundbericht" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE" lastTranslated="2023-09-13T11:51:51">Radiologischer Befundbericht</name>
+    <desc language="de-DE" lastTranslated="2023-09-13T11:51:51">Radiologischer Befundbericht</desc>
+    <concept id="2.16.840.1.113883.3.1937.99.61.25.2.1.4" statusCode="draft" effectiveDate="2016-02-25T00:00:00" lastModifiedDate="2023-09-13T11:54:00" type="group" iddisplay="narradcda-dataelement-1.4" shortName="angaben_zu_den_bildgebenden_oder_bildgefuhrten_verfahren">
+        <implementation shortName="angaben_zu_den_bildgebenden_oder_bildgefuhrten_verfahren" markdown="Es können kein, ein oder mehrere bildgebenden oder bildgeführten Verfahren in einem Befundbericht beschrieben werden. Für jedes durchgeführte und jedes zu beschreibende nicht-durchgeführte Verfahren sind die erforderlichen Angaben der Tabelle 5 zu entnehmen."/>
+        <name language="de-DE">Angaben zu den bildgebenden oder bildgeführten Verfahren</name>
+        <desc language="de-DE">Es können kein, ein oder mehrere bildgebenden oder bildgeführten Verfahren in einem Befundbericht beschrieben werden. Für jedes durchgeführte und jedes zu beschreibende nicht-durchgeführte Verfahren sind die erforderlichen Angaben der Tabelle 5 zu entnehmen.</desc>
+        <concept id="2.16.840.1.113883.3.1937.99.61.25.2.1.410" effectiveDate="2016-02-25T00:00:00" statusCode="draft" lastModifiedDate="2023-09-13T11:52:59" type="item" iddisplay="narradcda-dataelement-1.410" shortName="angaben_zu_der_institution_in_der_das_bildgebenden_oder_bildgefuhrten_verfahren_angewand_wurde">
+            <implementation shortName="angaben_zu_der_institution_in_der_das_bildgebenden_oder_bildgefuhrten_verfahren_angewand_wurde" markdown="Bezeichnung  der Institution, in der die Untersuchung durchgeführt wurde"/>
+            <name language="de-DE" lastTranslated="2023-09-13T11:52:59">Angaben zu der Institution in der das bildgebenden oder bildgeführten Verfahren angewand wurde</name>
+            <desc language="de-DE" lastTranslated="2023-09-13T11:52:59">Bezeichnung  der Institution, in der die Untersuchung durchgeführt wurde</desc>
+            <valueDomain type="complex"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.99.61.25.2.1.420" effectiveDate="2016-02-25T00:00:00" statusCode="draft" lastModifiedDate="2023-09-13T11:53:06" type="item" iddisplay="narradcda-dataelement-1.420" shortName="korperregion_">
+            <implementation shortName="korperregion_" markdown="Beschreibung der untersuchten Körperregion"/>
+            <name language="de-DE" lastTranslated="2023-09-13T11:53:06">Körperregion  </name>
+            <desc language="de-DE" lastTranslated="2023-09-13T11:53:06">Beschreibung der untersuchten Körperregion</desc>
+            <valueDomain type="code">
+                <conceptList id="2.16.840.1.113883.3.1937.99.61.25.2.1.420.20160225000000.0"/>
+            </valueDomain>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.99.61.25.2.1.430" effectiveDate="2016-02-25T00:00:00" statusCode="draft" lastModifiedDate="2023-09-13T11:53:23" type="item" iddisplay="narradcda-dataelement-1.430" shortName="untersuchungstechnik">
+            <implementation shortName="untersuchungstechnik" markdown="Beschreibung der bei der Untersuchung verwendeten Technik"/>
+            <name language="de-DE" lastTranslated="2023-09-13T11:53:23">Untersuchungstechnik</name>
+            <desc language="de-DE" lastTranslated="2023-09-13T11:53:23">Beschreibung der bei der Untersuchung verwendeten Technik</desc>
+            <valueDomain type="text"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.99.61.25.2.1.440" effectiveDate="2016-02-25T00:00:00" statusCode="draft" lastModifiedDate="2023-09-13T11:53:35" type="item" iddisplay="narradcda-dataelement-1.440" shortName="datum">
+            <implementation shortName="datum" markdown="Datum der Untersuchung"/>
+            <name language="de-DE" lastTranslated="2023-09-13T11:53:35">Datum</name>
+            <desc language="de-DE" lastTranslated="2023-09-13T11:53:35">Datum der Untersuchung</desc>
+            <valueDomain type="date"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.99.61.25.2.1.450" effectiveDate="2016-02-25T00:00:00" statusCode="draft" lastModifiedDate="2023-09-13T11:53:44" type="item" iddisplay="narradcda-dataelement-1.450" shortName="zeitpunkt">
+            <implementation shortName="zeitpunkt" markdown="Zeitpunkt der Untersuchung"/>
+            <name language="de-DE" lastTranslated="2023-09-13T11:53:44">Zeitpunkt</name>
+            <desc language="de-DE" lastTranslated="2023-09-13T11:53:44">Zeitpunkt der Untersuchung</desc>
+            <valueDomain type="time"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.99.61.25.2.1.460" effectiveDate="2016-02-25T00:00:00" statusCode="draft" lastModifiedDate="2023-09-13T11:53:52" type="item" iddisplay="narradcda-dataelement-1.460" shortName="verweis_auf_die_studie">
+            <implementation shortName="verweis_auf_die_studie" markdown="Ein eindeutiger Verweis auf die dem Befundbericht zugrunde liegende Studie; Unter Studie werden die Dokumente verstanden, die unter einer DICOM Study zusammengefasst sind"/>
+            <name language="de-DE" lastTranslated="2023-09-13T11:53:52">Verweis auf die Studie</name>
+            <desc language="de-DE" lastTranslated="2023-09-13T11:53:52">Ein eindeutiger Verweis auf die dem Befundbericht zugrunde liegende Studie; Unter Studie werden die Dokumente verstanden, die unter einer DICOM Study zusammengefasst sind</desc>
+            <valueDomain type="text"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.99.61.25.2.1.470" effectiveDate="2016-02-25T00:00:00" statusCode="draft" lastModifiedDate="2023-09-13T11:54:00" type="item" iddisplay="narradcda-dataelement-1.470" shortName="grund_der_nichtdurchfuhrung">
+            <implementation shortName="grund_der_nichtdurchfuhrung" markdown="Gründe der Nicht-Durchführung können bei dem Patienten, aber auch bei der durchführenden Institution liegen"/>
+            <name language="de-DE" lastTranslated="2023-09-13T11:54:00">Grund der Nicht-Durchführung</name>
+            <desc language="de-DE" lastTranslated="2023-09-13T11:54:00">Gründe der Nicht-Durchführung können bei dem Patienten, aber auch bei der durchführenden Institution liegen</desc>
+            <valueDomain type="text"/>
+        </concept>
+    </concept>
+</dataset>

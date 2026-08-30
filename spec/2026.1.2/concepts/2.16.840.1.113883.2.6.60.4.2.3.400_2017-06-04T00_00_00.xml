@@ -1,0 +1,399 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.2.6.60.4.1.3" effectiveDate="2017-06-04T00:00:00" statusCode="draft" versionLabel="v2017" prefix="pmp-" shortName="patientenbezogener_medikationsplan_plus" iddisplay="pmp-dataset-3" url="http://art-decor.org/decor/services/" ident="pmp-" inheritanceIssues="2"><!--
+ This is a view of the dataset "Patientenbezogener Medikationsplan Plus" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">Patientenbezogener Medikationsplan Plus</name>
+    <desc language="de-DE">Patientenbezogener Medikationsplan Plus</desc>
+    <concept id="2.16.840.1.113883.2.6.60.4.2.3.400" statusCode="draft" effectiveDate="2017-06-04T00:00:00" type="group" iddisplay="pmp-dataelement2017-400">
+        <implementation markdown="Medikationseintrag"/>
+        <name language="de-DE">Medikationseintrag</name>
+        <desc language="de-DE">Medikationseintrag</desc>
+        <source language="de-DE">AkdÄ MP 2.0: D13 Eine konkrete Zeile der Medikationstabelle mit Daten zur Medikation. Alternativ kann dies ein Wirkstoff-, Arzneimittel- oder Rezeptureintrag, ein Sonstiger Hinweis oder auch eine Überschrift sein.</source>
+        <concept id="2.16.840.1.113883.2.6.60.4.2.3.6082" statusCode="draft" effectiveDate="2017-06-04T12:20:28" type="item" iddisplay="pmp-dataelement2017-6082" shortName="identifikation">
+            <implementation shortName="identifikation" markdown=""/>
+            <name language="de-DE">Identifikation</name>
+            <desc language="de-DE"/>
+            <valueDomain type="identifier"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.4.2.3.6084" statusCode="draft" effectiveDate="2017-06-04T12:49:15" type="item" iddisplay="pmp-dataelement2017-6084" shortName="status">
+            <implementation shortName="status" markdown=""/>
+            <name language="de-DE">Status</name>
+            <desc language="de-DE"/>
+            <valueDomain type="code">
+                <conceptList id="2.16.840.1.113883.2.6.60.4.2.3.6084.20170804124915.0">
+                    <concept id="2.16.840.1.113883.2.6.60.4.2.3.6084.20170804124915.1" level="0" type="L">
+                        <name language="de-DE">aktiv</name>
+                        <desc language="de-DE">Medikament wird eingenommen<br clear="none"/>
+                        </desc>
+                    </concept>
+                    <concept id="2.16.840.1.113883.2.6.60.4.2.3.6084.20170804124915.2" level="0" type="L">
+                        <name language="de-DE">abgeschlossen</name>
+                        <desc language="de-DE">Medikament wird nicht mehr eingenommen<br clear="none"/>
+                        </desc>
+                    </concept>
+                    <concept id="2.16.840.1.113883.2.6.60.4.2.3.6084.20170804124915.5" level="0" type="L">
+                        <name language="de-DE">geplant</name>
+                        <desc language="de-DE">Einnahme des Medikaments ist geplant<br clear="none"/>
+                        </desc>
+                    </concept>
+                    <concept id="2.16.840.1.113883.2.6.60.4.2.3.6084.20170804124915.4" level="0" type="L">
+                        <name language="de-DE">unterbrochen</name>
+                        <desc language="de-DE">Medikament temporär unterbrochen<br clear="none"/>
+                        </desc>
+                    </concept>
+                    <concept id="2.16.840.1.113883.2.6.60.4.2.3.6084.20170804124915.6" level="0" type="L">
+                        <name language="de-DE">abgebrochen</name>
+                        <desc language="de-DE">Einnahme des Medikaments vor jeglicher Einnahme abgebrochen <br clear="none"/>
+                        </desc>
+                    </concept>
+                    <concept id="2.16.840.1.113883.2.6.60.4.2.3.6084.20170804124915.3" level="0" type="L">
+                        <name language="de-DE">unbekannt</name>
+                        <desc language="de-DE">Medikamenteneinnahme unbekannt<br clear="none"/>
+                        </desc>
+                    </concept>
+                </conceptList>
+            </valueDomain>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.4.2.3.6083" statusCode="draft" effectiveDate="2017-06-04T12:25:03" type="group" iddisplay="pmp-dataelement2017-6083" shortName="arzneimittelwirkstoffrezeptur">
+            <implementation shortName="arzneimittelwirkstoffrezeptur" markdown=""/>
+            <name language="de-DE">Arzneimittel/Wirkstoff/Rezeptur</name>
+            <desc language="de-DE"/>
+            <concept id="2.16.840.1.113883.2.6.60.4.2.3.440" statusCode="draft" effectiveDate="2017-06-04T00:00:00" type="group" iddisplay="pmp-dataelement2017-440" shortName="arzneimittel">
+                <implementation shortName="arzneimittel" markdown="Arzneimittel"/>
+                <name language="de-DE">Arzneimittel</name>
+                <desc language="de-DE">Arzneimittel</desc>
+                <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.4.2.1.440" flexibility="2014-10-27T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" iType="group" iEffectiveDate="2014-10-27T00:00:00" iStatusCode="final" iVersionLabel="Release 1" refdisplay="pmp-dataelementR1-440">
+                    <name language="de-DE">Arzneimittel</name>
+                </relationship>
+                <concept id="2.16.840.1.113883.2.6.60.4.2.3.4310" statusCode="draft" effectiveDate="2017-06-04T00:00:00" type="item" iddisplay="pmp-dataelement2017-4310" shortName="arzneimittelname">
+                    <implementation shortName="arzneimittelname" markdown="Arzneimittelname oder auch Handelsname genannt. Bezeichnung eines Fertigarzneimittels"/>
+                    <inherit ref="2.16.840.1.113883.2.6.60.4.2.1.4310" effectiveDate="2014-10-27T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" iType="item" iStatusCode="final" iEffectiveDate="2014-10-27T00:00:00" iVersionLabel="Release 1" iddisplay="pmp-dataelementR1-4310" refdisplay="pmp-dataelementR1-4310" localInherit="true"/>
+                    <name language="de-DE">Arzneimittel-Name</name>
+                    <desc language="de-DE">Arzneimittelname oder auch Handelsname genannt. Bezeichnung eines Fertigarzneimittels</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.2.6.60.4.2.3.4320" statusCode="draft" effectiveDate="2017-06-04T00:00:00" type="item" iddisplay="pmp-dataelement2017-4320" shortName="arzneimittelcode">
+                    <implementation shortName="arzneimittelcode" markdown="Identifikation eines Fertigarzneimittels durch seinen Code, z. B. Pharmazentralnummer"/>
+                    <name language="de-DE">Arzneimittel-Code</name>
+                    <desc language="de-DE">Identifikation eines Fertigarzneimittels durch seinen Code, z. B. Pharmazentralnummer</desc>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.4.2.1.4320" flexibility="2014-10-27T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" iType="item" iEffectiveDate="2014-10-27T00:00:00" iStatusCode="final" iVersionLabel="Release 1" refdisplay="pmp-dataelementR1-4320">
+                        <name language="de-DE">Arzneimittel-Code</name>
+                    </relationship>
+                    <valueDomain type="code">
+                        <conceptList id="2.16.840.1.113883.2.6.60.4.2.3.4320.20170604000000.0"/>
+                    </valueDomain>
+                </concept>
+                <concept id="2.16.840.1.113883.2.6.60.4.2.3.4330" statusCode="draft" effectiveDate="2017-06-04T00:00:00" type="item" iddisplay="pmp-dataelement2017-4330" shortName="wirkstarke">
+                    <implementation shortName="wirkstarke" markdown="Wirkstärke"/>
+                    <inherit ref="2.16.840.1.113883.2.6.60.4.2.1.4030" effectiveDate="2014-10-27T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" iType="item" iStatusCode="final" iEffectiveDate="2014-10-27T00:00:00" iVersionLabel="Release 1" iddisplay="pmp-dataelementR1-4030" refdisplay="pmp-dataelementR1-4030" localInherit="true"/>
+                    <name language="de-DE">Wirkstärke</name>
+                    <desc language="de-DE">Wirkstärke</desc>
+                    <valueDomain type="string"/>
+                </concept>
+            </concept>
+            <concept id="2.16.840.1.113883.2.6.60.4.2.3.450" statusCode="draft" effectiveDate="2017-06-04T00:00:00" type="group" iddisplay="pmp-dataelement2017-450" shortName="rezeptur">
+                <implementation shortName="rezeptur" markdown="Rezeptur-Eintrag"/>
+                <name language="de-DE">Rezeptur</name>
+                <desc language="de-DE">Rezeptur-Eintrag</desc>
+                <source language="de-DE">AkdÄ MP 2.0: D17 Datenfeld, um freitextlich eine Rezeptur als Medikationseintrag zu gestalten.</source>
+                <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.4.2.1.450" flexibility="2014-10-27T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" iType="group" iEffectiveDate="2014-10-27T00:00:00" iStatusCode="final" iVersionLabel="Release 1" refdisplay="pmp-dataelementR1-450">
+                    <name language="de-DE">Rezeptur-Eintrag</name>
+                </relationship>
+                <concept id="2.16.840.1.113883.2.6.60.4.2.3.4510" statusCode="draft" effectiveDate="2017-06-04T00:00:00" type="item" iddisplay="pmp-dataelement2017-4510" shortName="freitextzeile">
+                    <implementation shortName="freitextzeile" markdown="Freitextzeile"/>
+                    <inherit ref="2.16.840.1.113883.2.6.60.4.2.1.4510" effectiveDate="2014-10-27T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" iType="item" iStatusCode="final" iEffectiveDate="2014-10-27T00:00:00" iVersionLabel="Release 1" iddisplay="pmp-dataelementR1-4510" refdisplay="pmp-dataelementR1-4510" localInherit="true"/>
+                    <name language="de-DE">Freitextzeile</name>
+                    <desc language="de-DE">Freitextzeile</desc>
+                    <valueDomain type="string"/>
+                </concept>
+            </concept>
+            <concept id="2.16.840.1.113883.2.6.60.4.2.3.420" statusCode="draft" effectiveDate="2017-06-04T00:00:00" type="group" iddisplay="pmp-dataelement2017-420" shortName="wirkstoff">
+                <implementation shortName="wirkstoff" markdown="Wirkstoff"/>
+                <name language="de-DE">Wirkstoff</name>
+                <desc language="de-DE">Wirkstoff</desc>
+                <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.4.2.1.420" flexibility="2014-10-27T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" iType="group" iEffectiveDate="2014-10-27T00:00:00" iStatusCode="final" iVersionLabel="Release 1" refdisplay="pmp-dataelementR1-420">
+                    <name language="de-DE">Wirkstoff</name>
+                </relationship>
+                <concept id="2.16.840.1.113883.2.6.60.4.2.3.4010" statusCode="draft" effectiveDate="2017-06-04T00:00:00" type="item" iddisplay="pmp-dataelement2017-4010" shortName="wirkstoffname">
+                    <implementation shortName="wirkstoffname" markdown="Bezeichnung eines Wirkstoffes, der aus einer Wirkstoffklassifikation entnommen wird"/>
+                    <inherit ref="2.16.840.1.113883.2.6.60.4.2.1.4010" effectiveDate="2014-10-27T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" iType="item" iStatusCode="final" iEffectiveDate="2014-10-27T00:00:00" iVersionLabel="Release 1" iddisplay="pmp-dataelementR1-4010" refdisplay="pmp-dataelementR1-4010" localInherit="true"/>
+                    <name language="de-DE">Wirkstoff-Name</name>
+                    <desc language="de-DE">Bezeichnung eines Wirkstoffes, der aus einer Wirkstoffklassifikation entnommen wird</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.2.6.60.4.2.3.4020" statusCode="draft" effectiveDate="2017-06-04T00:00:00" type="item" iddisplay="pmp-dataelement2017-4020" shortName="wirkstoffcode">
+                    <implementation shortName="wirkstoffcode" markdown="Code eines Wirkstoffes, der aus einer Wirkstoffklassifikation entnommen wird"/>
+                    <inherit ref="2.16.840.1.113883.2.6.60.4.2.1.4020" effectiveDate="2014-10-27T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" iType="item" iStatusCode="final" iEffectiveDate="2014-10-27T00:00:00" iVersionLabel="Release 1" iddisplay="pmp-dataelementR1-4020" refdisplay="pmp-dataelementR1-4020" localInherit="true"/>
+                    <name language="de-DE">Wirkstoff-Code</name>
+                    <desc language="de-DE">Code eines Wirkstoffes, der aus einer Wirkstoffklassifikation entnommen wird</desc>
+                    <valueDomain type="code"/>
+                </concept>
+                <concept id="2.16.840.1.113883.2.6.60.4.2.3.4030" statusCode="draft" effectiveDate="2017-06-04T00:00:00" type="item" iddisplay="pmp-dataelement2017-4030" shortName="menge">
+                    <implementation shortName="menge" markdown="Wirkstärke"/>
+                    <name language="de-DE">Menge</name>
+                    <desc language="de-DE">Wirkstärke</desc>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.4.2.1.4030" flexibility="2014-10-27T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" iType="item" iEffectiveDate="2014-10-27T00:00:00" iStatusCode="final" iVersionLabel="Release 1" refdisplay="pmp-dataelementR1-4030">
+                        <name language="de-DE">Wirkstärke</name>
+                    </relationship>
+                    <valueDomain type="quantity"/>
+                </concept>
+                <concept id="2.16.840.1.113883.2.6.60.4.2.3.4040" statusCode="cancelled" effectiveDate="2017-06-04T00:00:00" type="item" iddisplay="pmp-dataelement2017-4040" shortName="darreichungsform">
+                    <implementation shortName="darreichungsform" markdown="Darreichungsform"/>
+                    <inherit ref="2.16.840.1.113883.2.6.60.4.2.1.4040" effectiveDate="2014-10-27T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" iType="item" iStatusCode="final" iEffectiveDate="2014-10-27T00:00:00" iVersionLabel="Release 1" iddisplay="pmp-dataelementR1-4040" refdisplay="pmp-dataelementR1-4040" localInherit="true"/>
+                    <name language="de-DE">Darreichungsform</name>
+                    <desc language="de-DE">Darreichungsform</desc>
+                    <source language="de-DE">AkdÄ MP 2.0: #26 Dafo-Code aus Anlage 6</source>
+                    <valueDomain type="code"/>
+                </concept>
+            </concept>
+            <concept id="2.16.840.1.113883.2.6.60.4.2.3.4340" statusCode="draft" effectiveDate="2017-06-04T00:00:00" type="item" iddisplay="pmp-dataelement2017-4340" shortName="darreichungsform">
+                <implementation shortName="darreichungsform" markdown="Darreichungsform"/>
+                <inherit ref="2.16.840.1.113883.2.6.60.4.2.1.4040" effectiveDate="2014-10-27T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" iType="item" iStatusCode="final" iEffectiveDate="2014-10-27T00:00:00" iVersionLabel="Release 1" iddisplay="pmp-dataelementR1-4040" refdisplay="pmp-dataelementR1-4040" localInherit="true"/>
+                <name language="de-DE">Darreichungsform</name>
+                <desc language="de-DE">Darreichungsform</desc>
+                <source language="de-DE">AkdÄ MP 2.0: #26 Dafo-Code aus Anlage 6</source>
+                <valueDomain type="code"/>
+            </concept>
+            <concept id="2.16.840.1.113883.2.6.60.4.2.3.6085" statusCode="draft" effectiveDate="2017-06-04T13:06:21" type="item" iddisplay="pmp-dataelement2017-6085" shortName="bild_des_medikaments">
+                <implementation shortName="bild_des_medikaments" markdown=""/>
+                <name language="de-DE">Bild des Medikaments</name>
+                <desc language="de-DE"/>
+                <valueDomain type="blob"/>
+            </concept>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.4.2.3.6086" statusCode="draft" effectiveDate="2017-06-04T13:20:01" type="group" iddisplay="pmp-dataelement2017-6086" shortName="einnahmedauer">
+            <implementation shortName="einnahmedauer" markdown=""/>
+            <name language="de-DE">Einnahmedauer</name>
+            <desc language="de-DE"/>
+            <concept id="2.16.840.1.113883.2.6.60.4.2.3.460" statusCode="draft" effectiveDate="2017-06-04T00:00:00" type="item" iddisplay="pmp-dataelement2017-460" shortName="startdatum_einnahme">
+                <implementation shortName="startdatum_einnahme" markdown="Startdatum der Einnahme"/>
+                <name language="de-DE">Startdatum Einnahme</name>
+                <desc language="de-DE">Startdatum der Einnahme</desc>
+                <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.4.2.1.460" flexibility="2014-10-27T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" iType="item" iEffectiveDate="2014-10-27T00:00:00" iStatusCode="final" iVersionLabel="Release 1" refdisplay="pmp-dataelementR1-460">
+                    <name language="de-DE">Startdatum Einnahme</name>
+                </relationship>
+                <operationalization language="de-DE">Kann nicht gleichzeitig mit "Dauer der Einnahme" angegeben werden</operationalization>
+                <valueDomain type="date"/>
+            </concept>
+            <concept id="2.16.840.1.113883.2.6.60.4.2.3.461" statusCode="draft" effectiveDate="2017-06-04T00:00:00" type="item" iddisplay="pmp-dataelement2017-461" shortName="enddatum_einnahme">
+                <implementation shortName="enddatum_einnahme" markdown="Enddatum der Einnahme, bis zu welchem Tag einschließlich das Medikament eingenommen werden soll"/>
+                <name language="de-DE">Enddatum Einnahme</name>
+                <desc language="de-DE">Enddatum der Einnahme, bis zu welchem Tag einschließlich das Medikament eingenommen werden soll</desc>
+                <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.4.2.1.461" flexibility="2014-10-27T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" iType="item" iEffectiveDate="2014-10-27T00:00:00" iStatusCode="final" iVersionLabel="Release 1" refdisplay="pmp-dataelementR1-461">
+                    <name language="de-DE">Enddatum Einnahme</name>
+                </relationship>
+                <operationalization language="de-DE">Kann nicht gleichzeitig mit "Dauer der Einnahme" angegeben werden</operationalization>
+                <valueDomain type="date"/>
+            </concept>
+            <concept id="2.16.840.1.113883.2.6.60.4.2.3.6100" statusCode="draft" effectiveDate="2017-06-04T15:54:39" type="item" iddisplay="pmp-dataelement2017-6100" shortName="dauer_der_einnahme">
+                <implementation shortName="dauer_der_einnahme" markdown="Dauer (Intervall in Tagen, Wochen Monaten etc.) der Einnahme."/>
+                <name language="de-DE">Dauer der Einnahme</name>
+                <desc language="de-DE">Dauer (Intervall in Tagen, Wochen Monaten etc.) der Einnahme.</desc>
+                <operationalization language="de-DE">Kann nicht gleichzeitig mit Startdatum/Enddatum angegeben werden</operationalization>
+                <valueDomain type="count"/>
+            </concept>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.4.2.3.6088" statusCode="draft" effectiveDate="2017-06-04T13:21:40" type="group" iddisplay="pmp-dataelement2017-6088" shortName="dosierung">
+            <implementation shortName="dosierung" markdown=""/>
+            <name language="de-DE">Dosierung</name>
+            <desc language="de-DE"/>
+            <concept id="2.16.840.1.113883.2.6.60.4.2.3.6089" effectiveDate="2017-06-04T13:23:30" statusCode="draft" type="item" iddisplay="pmp-dataelement2017-6089" shortName="reihenfolge">
+                <implementation shortName="reihenfolge" markdown="Sequenznummer des Dosierungseintrags"/>
+                <name language="de-DE">Reihenfolge</name>
+                <desc language="de-DE">Sequenznummer des Dosierungseintrags</desc>
+                <valueDomain type="count"/>
+            </concept>
+            <concept id="2.16.840.1.113883.2.6.60.4.2.3.6090" statusCode="draft" effectiveDate="2017-06-04T13:25:48" type="item" iddisplay="pmp-dataelement2017-6090" shortName="freitext">
+                <implementation shortName="freitext" markdown="Dosierung im Freitext, wenn diese nicht strukturiert angegeben wird"/>
+                <name language="de-DE">Freitext</name>
+                <desc language="de-DE">Dosierung im Freitext, wenn diese nicht strukturiert angegeben wird</desc>
+                <valueDomain type="string"/>
+            </concept>
+            <concept id="2.16.840.1.113883.2.6.60.4.2.3.465" statusCode="draft" effectiveDate="2017-06-04T00:00:00" type="group" iddisplay="pmp-dataelement2017-465" shortName="zeitangabe">
+                <implementation shortName="zeitangabe" markdown="Zeitangabe zur Einnahme als Teil des Dosierschemas"/>
+                <name language="de-DE">Zeitangabe</name>
+                <desc language="de-DE">Zeitangabe zur Einnahme als Teil des Dosierschemas</desc>
+                <source language="de-DE">AkdÄ MP 2.0: #27 Dosierschema X-Y-Z; Dosierschema W-X-Y-Z; Dosierschema als Freitext</source>
+                <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.4.2.1.465" flexibility="2014-10-27T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" iType="item" iEffectiveDate="2014-10-27T00:00:00" iStatusCode="final" iVersionLabel="Release 1" refdisplay="pmp-dataelementR1-465">
+                    <name language="de-DE">Dosierschema</name>
+                </relationship>
+                <concept id="2.16.840.1.113883.2.6.60.4.2.3.6097" statusCode="draft" effectiveDate="2017-06-04T13:41:31" type="item" iddisplay="pmp-dataelement2017-6097" shortName="zeitpunkt">
+                    <implementation shortName="zeitpunkt" markdown=""/>
+                    <name language="de-DE">Zeitpunkt</name>
+                    <desc language="de-DE"/>
+                    <valueDomain type="datetime">
+                        <property timeStampPrecision="YMD"/>
+                    </valueDomain>
+                </concept>
+                <concept id="2.16.840.1.113883.2.6.60.4.2.3.6098" effectiveDate="2017-06-04T13:42:00" statusCode="draft" type="group" iddisplay="pmp-dataelement2017-6098" shortName="ereignisbezogene_wiederholung">
+                    <implementation shortName="ereignisbezogene_wiederholung" markdown="Gibt ein periodisches Zeitintervall an, in dem die Wiederholung auf Aktivitäten des täglichen Lebens oder anderen wichtigen Ereignissen basiert, die zeitabhängig sind, jedoch nicht vollständig von der Zeit bestimmt werden"/>
+                    <name language="de-DE">Ereignisbezogene Wiederholung</name>
+                    <desc language="de-DE">Gibt ein periodisches Zeitintervall an, in dem die Wiederholung auf Aktivitäten des täglichen Lebens oder anderen wichtigen Ereignissen basiert, die zeitabhängig sind, jedoch nicht vollständig von der Zeit bestimmt werden</desc>
+                    <concept id="2.16.840.1.113883.2.6.60.4.2.3.6095" effectiveDate="2017-06-04T13:38:54" statusCode="draft" type="item" iddisplay="pmp-dataelement2017-6095" shortName="ereignis">
+                        <implementation shortName="ereignis" markdown="Ereignis, z. B. morgens, mittags, abends, zur Nacht"/>
+                        <name language="de-DE">Ereignis</name>
+                        <desc language="de-DE">Ereignis, z. B. morgens, mittags, abends, zur Nacht</desc>
+                        <valueDomain type="code">
+                            <conceptList id="2.16.840.1.113883.2.6.60.4.2.3.6095.20170804133854.0"/>
+                        </valueDomain>
+                    </concept>
+                    <concept id="2.16.840.1.113883.2.6.60.4.2.3.6096" statusCode="draft" effectiveDate="2017-06-04T13:40:12" type="item" iddisplay="pmp-dataelement2017-6096" shortName="offset">
+                        <implementation shortName="offset" markdown="Offset zum Ereignis, z. B. 30 Minuten vorher"/>
+                        <name language="de-DE">Offset</name>
+                        <desc language="de-DE">Offset zum Ereignis, z. B. 30 Minuten vorher</desc>
+                        <valueDomain type="quantity"/>
+                    </concept>
+                </concept>
+            </concept>
+            <concept id="2.16.840.1.113883.2.6.60.4.2.3.6092" effectiveDate="2017-06-04T13:30:40" statusCode="draft" type="item" iddisplay="pmp-dataelement2017-6092" shortName="einnahme_bei_bedarf">
+                <implementation shortName="einnahme_bei_bedarf" markdown="Einnahme des Medikaments bei Bedarf"/>
+                <name language="de-DE">Einnahme bei Bedarf</name>
+                <desc language="de-DE">Einnahme des Medikaments bei Bedarf</desc>
+                <valueDomain type="boolean"/>
+            </concept>
+            <concept id="2.16.840.1.113883.2.6.60.4.2.3.6093" effectiveDate="2017-06-04T13:31:15" statusCode="draft" type="item" iddisplay="pmp-dataelement2017-6093" shortName="art_der_anwendung">
+                <implementation shortName="art_der_anwendung" markdown="Art der Anwendung des Arzneimittels"/>
+                <name language="de-DE">Art der Anwendung</name>
+                <desc language="de-DE">Art der Anwendung des Arzneimittels</desc>
+                <valueDomain type="code">
+                    <conceptList id="2.16.840.1.113883.2.6.60.4.2.3.6093.20170804133115.0"/>
+                    <example type="neutral">intravenös</example>
+                    <example type="neutral">subkutan</example>
+                </valueDomain>
+            </concept>
+            <concept id="2.16.840.1.113883.2.6.60.4.2.3.6091" statusCode="draft" effectiveDate="2017-06-04T13:27:46" type="group" iddisplay="pmp-dataelement2017-6091" shortName="dosis">
+                <implementation shortName="dosis" markdown=""/>
+                <name language="de-DE">Dosis</name>
+                <desc language="de-DE"/>
+                <concept id="2.16.840.1.113883.2.6.60.4.2.3.6094" effectiveDate="2017-06-04T13:33:11" statusCode="draft" type="item" iddisplay="pmp-dataelement2017-6094" shortName="dosiermenge">
+                    <implementation shortName="dosiermenge" markdown="Dosiermenge mit standardisierter Einheit"/>
+                    <name language="de-DE">Dosiermenge</name>
+                    <desc language="de-DE">Dosiermenge mit standardisierter Einheit</desc>
+                    <valueDomain type="quantity"/>
+                </concept>
+                <concept id="2.16.840.1.113883.2.6.60.4.2.3.466" statusCode="draft" effectiveDate="2017-06-04T00:00:00" type="item" iddisplay="pmp-dataelement2017-466" shortName="dosiereinheit">
+                    <implementation shortName="dosiereinheit" markdown="Dosiereinheit"/>
+                    <inherit ref="2.16.840.1.113883.2.6.60.4.2.1.466" effectiveDate="2014-10-27T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" iType="item" iStatusCode="final" iEffectiveDate="2014-10-27T00:00:00" iVersionLabel="Release 1" iddisplay="pmp-dataelementR1-466" refdisplay="pmp-dataelementR1-466" localInherit="true"/>
+                    <name language="de-DE">Dosiereinheit</name>
+                    <desc language="de-DE">Dosiereinheit</desc>
+                    <source language="de-DE">AkdÄ MP 2.0: #26 Code aus Anlage 7</source>
+                    <valueDomain type="code"/>
+                </concept>
+            </concept>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.4.2.3.410" statusCode="cancelled" effectiveDate="2017-06-04T00:00:00" type="group" iddisplay="pmp-dataelement2017-410" shortName="wirkstoffeintrag">
+            <implementation shortName="wirkstoffeintrag" markdown="Wirkstoff-Eintrag"/>
+            <inherit ref="2.16.840.1.113883.2.6.60.4.2.1.410" effectiveDate="2014-10-27T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" iType="group" iStatusCode="final" iEffectiveDate="2014-10-27T00:00:00" iVersionLabel="Release 1" iddisplay="pmp-dataelementR1-410" refdisplay="pmp-dataelementR1-410" localInherit="true" inheritanceIssues="true" inheritExtraConcepts="1" currentExtraConcepts="0"/>
+            <name language="de-DE">Wirkstoff-Eintrag</name>
+            <desc language="de-DE">Wirkstoff-Eintrag</desc>
+            <source language="de-DE">AkdÄ MP 2.0: D15 Menge an notwendigen Daten, um einen rein wirkstoffbasierten Medikationseintrag zu gestalten. Bestandteile eines Wirkstoff-Eintrages sind: Wirkstoff, Wirkstärke, Darreichungsform, Dosierschema, Dosiereinheit, Hinweis und Behandlungsgrund</source>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.4.2.3.430" statusCode="cancelled" effectiveDate="2017-06-04T00:00:00" type="group" iddisplay="pmp-dataelement2017-430" shortName="arzneimitteleintrag">
+            <implementation shortName="arzneimitteleintrag" markdown="Fertigarzneimittel-Eintrag"/>
+            <inherit ref="2.16.840.1.113883.2.6.60.4.2.1.430" effectiveDate="2014-10-27T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" iType="group" iStatusCode="final" iEffectiveDate="2014-10-27T00:00:00" iVersionLabel="Release 1" iddisplay="pmp-dataelementR1-430" refdisplay="pmp-dataelementR1-430" localInherit="true" inheritanceIssues="true" inheritExtraConcepts="1" currentExtraConcepts="0"/>
+            <name language="de-DE">Arzneimittel-Eintrag</name>
+            <desc language="de-DE">Fertigarzneimittel-Eintrag</desc>
+            <source language="de-DE">AkdÄ MP 2.0: D16 Menge an notwendigen Daten, um einen rein auf Fertigarzneimitteln (human) basierten Medikationseintrag zu gestalten. Bestandteile eines Arzneimittel-Eintrages sind: Wirkstoffname, Wirkstärke; Arzneimittel, Darreichungsform, Dosierschema, Dosiereinheit, Hinweis und Behandlungsgrund.</source>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.4.2.3.467" statusCode="draft" effectiveDate="2017-06-04T00:00:00" type="item" iddisplay="pmp-dataelement2017-467" shortName="hinweis">
+            <implementation shortName="hinweis" markdown="Hinweistext zu diesem Medikament"/>
+            <inherit ref="2.16.840.1.113883.2.6.60.4.2.1.467" effectiveDate="2014-10-27T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" iType="item" iStatusCode="final" iEffectiveDate="2014-10-27T00:00:00" iVersionLabel="Release 1" iddisplay="pmp-dataelementR1-467" refdisplay="pmp-dataelementR1-467" localInherit="true"/>
+            <name language="de-DE">Hinweis</name>
+            <desc language="de-DE">Hinweistext zu diesem Medikament</desc>
+            <source language="de-DE">AkdÄ MP 2.0: #29 Hinweis</source>
+            <valueDomain type="string"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.4.2.3.468" statusCode="draft" effectiveDate="2017-06-04T00:00:00" type="item" iddisplay="pmp-dataelement2017-468" shortName="behandlungsgrund">
+            <implementation shortName="behandlungsgrund" markdown="Behandlungsgrund"/>
+            <inherit ref="2.16.840.1.113883.2.6.60.4.2.1.468" effectiveDate="2014-10-27T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" iType="item" iStatusCode="final" iEffectiveDate="2014-10-27T00:00:00" iVersionLabel="Release 1" iddisplay="pmp-dataelementR1-468" refdisplay="pmp-dataelementR1-468" localInherit="true"/>
+            <name language="de-DE">Behandlungsgrund</name>
+            <desc language="de-DE">Behandlungsgrund</desc>
+            <source language="de-DE">AkdÄ MP 2.0: #30 Behandlungsgrund</source>
+            <valueDomain type="string"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.4.2.3.480" statusCode="draft" effectiveDate="2017-06-04T00:00:00" type="item" iddisplay="pmp-dataelement2017-480" shortName="bezug_zu_verordnung">
+            <implementation shortName="bezug_zu_verordnung" markdown="Bezug zu Verordnung"/>
+            <inherit ref="2.16.840.1.113883.2.6.60.4.2.1.480" effectiveDate="2014-10-27T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" iType="item" iStatusCode="final" iEffectiveDate="2014-10-27T00:00:00" iVersionLabel="Release 1" iddisplay="pmp-dataelementR1-480" refdisplay="pmp-dataelementR1-480" localInherit="true"/>
+            <name language="de-DE">Bezug zu Verordnung</name>
+            <desc language="de-DE">Bezug zu Verordnung</desc>
+            <valueDomain type="identifier"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.4.2.3.481" statusCode="draft" effectiveDate="2017-06-04T00:00:00" type="item" iddisplay="pmp-dataelement2017-481" shortName="bezug_zu_abgabe">
+            <implementation shortName="bezug_zu_abgabe" markdown="Bezug zu Abgabe"/>
+            <inherit ref="2.16.840.1.113883.2.6.60.4.2.1.481" effectiveDate="2014-10-27T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" iType="item" iStatusCode="final" iEffectiveDate="2014-10-27T00:00:00" iVersionLabel="Release 1" iddisplay="pmp-dataelementR1-481" refdisplay="pmp-dataelementR1-481" localInherit="true"/>
+            <name language="de-DE">Bezug zu Abgabe</name>
+            <desc language="de-DE">Bezug zu Abgabe</desc>
+            <valueDomain type="identifier"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.4.2.3.6087" statusCode="draft" effectiveDate="2017-06-04T13:20:56" type="item" iddisplay="pmp-dataelement2017-6087" shortName="datum_des_eintrags">
+            <implementation shortName="datum_des_eintrags" markdown=""/>
+            <name language="de-DE">Datum des Eintrags</name>
+            <desc language="de-DE"/>
+            <valueDomain type="date">
+                <property timeStampPrecision="YMD"/>
+            </valueDomain>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.4.2.3.6101" statusCode="draft" effectiveDate="2017-06-04T18:06:28" type="group" iddisplay="pmp-dataelement2017-6101" shortName="autorinformant_des_eintrags">
+            <implementation shortName="autorinformant_des_eintrags" markdown=""/>
+            <name language="de-DE">Autor/Informant des Eintrags</name>
+            <desc language="de-DE"/>
+            <concept id="2.16.840.1.113883.2.6.60.4.2.3.6104" statusCode="draft" effectiveDate="2017-06-04T18:12:17" type="item" iddisplay="pmp-dataelement2017-6104" shortName="name">
+                <implementation shortName="name" markdown="Vorname, Nachname, Titel der Person"/>
+                <inherit ref="2.16.840.1.113883.2.6.60.4.2.3.3010" effectiveDate="2017-06-04T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.3" datasetEffectiveDate="2017-06-04T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2017" iType="item" iStatusCode="draft" iEffectiveDate="2017-06-04T00:00:00" iddisplay="pmp-dataelement2017-3010" refdisplay="pmp-dataelement2017-3010" localInherit="true"/>
+                <name language="de-DE">Name</name>
+                <desc language="de-DE">Vorname, Nachname, Titel der Person</desc>
+                <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.4.2.1.3010" flexibility="2014-10-27T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" iType="item" iEffectiveDate="2014-10-27T00:00:00" iStatusCode="final" iVersionLabel="Release 1" refdisplay="pmp-dataelementR1-3010">
+                    <name language="de-DE">Name</name>
+                </relationship>
+                <valueDomain type="string"/>
+            </concept>
+            <concept id="2.16.840.1.113883.2.6.60.4.2.3.6105" statusCode="draft" effectiveDate="2017-06-04T18:12:56" type="item" iddisplay="pmp-dataelement2017-6105" shortName="organisationsname">
+                <implementation shortName="organisationsname" markdown="Name der Organisation"/>
+                <inherit ref="2.16.840.1.113883.2.6.60.4.2.3.6103" effectiveDate="2017-06-04T18:11:20" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.3" datasetEffectiveDate="2017-06-04T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2017" iType="item" iStatusCode="draft" iEffectiveDate="2017-06-04T18:11:20" iddisplay="pmp-dataelement2017-6103" refdisplay="pmp-dataelement2017-6103" localInherit="true"/>
+                <name language="de-DE">Organisationsname</name>
+                <desc language="de-DE">Name der Organisation</desc>
+                <valueDomain type="string"/>
+            </concept>
+            <concept id="2.16.840.1.113883.2.6.60.4.2.3.6106" statusCode="draft" effectiveDate="2017-06-04T18:15:08" type="group" iddisplay="pmp-dataelement2017-6106" shortName="adresse">
+                <implementation shortName="adresse" markdown="Adresse"/>
+                <inherit ref="2.16.840.1.113883.2.6.60.4.2.3.3015" effectiveDate="2017-06-04T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.3" datasetEffectiveDate="2017-06-04T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2017" iType="group" iStatusCode="draft" iEffectiveDate="2017-06-04T00:00:00" iddisplay="pmp-dataelement2017-3015" refdisplay="pmp-dataelement2017-3015" localInherit="true"/>
+                <name language="de-DE">Adresse</name>
+                <desc language="de-DE">Adresse</desc>
+                <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.4.2.1.3015" flexibility="2014-10-27T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" iType="group" iEffectiveDate="2014-10-27T00:00:00" iStatusCode="final" iVersionLabel="Release 1" refdisplay="pmp-dataelementR1-3015">
+                    <name language="de-DE">Adresse</name>
+                </relationship>
+                <concept id="2.16.840.1.113883.2.6.60.4.2.3.6107" statusCode="draft" effectiveDate="2017-06-04T18:19:37" type="item" iddisplay="pmp-dataelement2017-6107" shortName="strase">
+                    <implementation shortName="strase" markdown="Straßenname und Hausnummer"/>
+                    <inherit ref="2.16.840.1.113883.2.6.60.4.2.3.3020" effectiveDate="2017-06-04T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.3" datasetEffectiveDate="2017-06-04T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2017" iType="item" iStatusCode="draft" iEffectiveDate="2017-06-04T00:00:00" iddisplay="pmp-dataelement2017-3020" refdisplay="pmp-dataelement2017-3020" localInherit="true"/>
+                    <name language="de-DE">Straße</name>
+                    <desc language="de-DE">Straßenname und Hausnummer</desc>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.4.2.1.3020" flexibility="2014-10-27T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" iType="item" iEffectiveDate="2014-10-27T00:00:00" iStatusCode="final" iVersionLabel="Release 1" refdisplay="pmp-dataelementR1-3020">
+                        <name language="de-DE">Straße</name>
+                    </relationship>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.2.6.60.4.2.3.6108" statusCode="draft" effectiveDate="2017-06-04T18:19:37" type="item" iddisplay="pmp-dataelement2017-6108" shortName="plz">
+                    <implementation shortName="plz" markdown="Postleitzahl"/>
+                    <inherit ref="2.16.840.1.113883.2.6.60.4.2.3.3030" effectiveDate="2017-06-04T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.3" datasetEffectiveDate="2017-06-04T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2017" iType="item" iStatusCode="draft" iEffectiveDate="2017-06-04T00:00:00" originalId="2.16.840.1.113883.2.6.60.4.2.1.3030" originalStatusCode="final" originalEffectiveDate="2014-10-27T00:00:00" originalVersionLabel="Release 1" originalPrefix="pmp-" iddisplay="pmp-dataelement2017-3030" refdisplay="pmp-dataelement2017-3030" localInherit="true"/>
+                    <name language="de-DE">PLZ</name>
+                    <desc language="de-DE">Postleitzahl</desc>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.4.2.1.3030" flexibility="2014-10-27T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" iType="item" iEffectiveDate="2014-10-27T00:00:00" iStatusCode="final" iVersionLabel="Release 1" refdisplay="pmp-dataelementR1-3030">
+                        <name language="de-DE">PLZ</name>
+                    </relationship>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.2.6.60.4.2.3.6109" statusCode="draft" effectiveDate="2017-06-04T18:19:37" type="item" iddisplay="pmp-dataelement2017-6109" shortName="ort">
+                    <implementation shortName="ort" markdown="Ortsname"/>
+                    <inherit ref="2.16.840.1.113883.2.6.60.4.2.3.3040" effectiveDate="2017-06-04T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.3" datasetEffectiveDate="2017-06-04T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2017" iType="item" iStatusCode="draft" iEffectiveDate="2017-06-04T00:00:00" originalId="2.16.840.1.113883.2.6.60.4.2.1.3040" originalStatusCode="final" originalEffectiveDate="2014-10-27T00:00:00" originalVersionLabel="Release 1" originalPrefix="pmp-" iddisplay="pmp-dataelement2017-3040" refdisplay="pmp-dataelement2017-3040" localInherit="true"/>
+                    <name language="de-DE">Ort</name>
+                    <desc language="de-DE">Ortsname</desc>
+                    <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.4.2.1.3040" flexibility="2014-10-27T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" iType="item" iEffectiveDate="2014-10-27T00:00:00" iStatusCode="final" iVersionLabel="Release 1" refdisplay="pmp-dataelementR1-3040">
+                        <name language="de-DE">Ort</name>
+                    </relationship>
+                    <valueDomain type="string"/>
+                </concept>
+            </concept>
+        </concept>
+    </concept>
+</dataset>

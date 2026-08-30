@@ -1,0 +1,62 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.4068" name="Isolationprocedure" displayName="Isolation" effectiveDate="2015-09-18T00:00:00" statusCode="active" isClosed="false" url="http://art-decor.org/decor/services/" ident="aktin-" xml:dummy-1="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-3="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US"/>
+            <desc language="de-DE"/>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.306" flexibility="2005-09-07T00:00:00"/>
+            <relationship type="ADAPT" template="2.16.840.1.113883.10.20.22.4.41" flexibility="2014-06-09T00:00:00"/>
+            <context id="**"/>
+            <example caption="Isolation wegen Infektion (und weiterer Begründung)">
+                <procedure classCode="PROC" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4068"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="ba6d1bac-17d3-4195-89c4-1121bc809b5e"/>
+                    <code code="ISO" codeSystem="1.2.276.0.76.3.1.195.5.54" displayName="Isolation"/>
+                    <text>
+                        <reference value="#iso"/>
+                    </text>
+                    <statusCode code="completed"/>
+                    <entryRelationship typeCode="RSON">
+                        <observation classCode="OBS" moodCode="EVN">
+                            <!-- Isolation Indication -->
+                            <templateId root="1.2.276.0.76.10.4069"/>
+                            <!-- .. -->
+                        </observation>
+                    </entryRelationship>
+                </procedure>
+            </example>
+            <example caption="Angabe, dass keine Isolation notwendig">
+                <procedure classCode="PROC" moodCode="EVN" negationInd="true">
+                    <templateId root="1.2.276.0.76.10.4068"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="ba6d1bac-17d3-4195-89c4-1121bc809b5e"/>
+                    <code code="ISO" codeSystem="1.2.276.0.76.3.1.195.5.54" displayName="Isolation"/>
+                    <text>
+                        <reference value="#iso"/>
+                    </text>
+                    <statusCode code="completed"/>
+                </procedure>
+            </example>
+            <element name="hl7:procedure" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.659">
+                <attribute name="classCode" value="PROC" id="2.16.840.1.113883.2.6.60.3.9.660"/>
+                <attribute name="moodCode" value="EVN" id="2.16.840.1.113883.2.6.60.3.9.661"/>
+                <attribute name="negationInd" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.4068.1"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.662">
+                    <attribute name="root" value="1.2.276.0.76.10.4068" id="2.16.840.1.113883.2.6.60.3.9.663"/>
+                </element>
+                <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="*" datatype="II" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.664"/>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CE" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.665">
+                    <vocabulary valueSet="1.2.276.0.76.11.54" flexibility="dynamic"/>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.2.6.60.3.9.666">
+                    <desc language="de-DE">Lediglich reference in den Text der zugehörigen Section</desc>
+                    <element name="hl7:reference" minimumMultiplicity="1" maximumMultiplicity="1" datatype="URL" id="2.16.840.1.113883.2.6.60.3.9.667"/>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CS" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.668">
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:entryRelationship" minimumMultiplicity="0" maximumMultiplicity="*" contains="1.2.276.0.76.10.4069" id="2.16.840.1.113883.2.6.60.3.9.669">
+                    <desc language="de-DE">Grund/Gründe für Isolation (nicht bei Umkehrisolierung)</desc>
+                    <attribute name="typeCode" value="RSON" id="2.16.840.1.113883.2.6.60.3.9.670"/>
+                </element>
+                <assert role="error" test="not(hl7:code[@code = 'RISO'] and hl7:entryRelationship)">Grund/Gründe für Isolation nicht bei Umkehrisolierung angeben</assert>
+                <assert role="error" test="not(@negationInd='true' and hl7:entryRelationship)">Grund/Gründe nicht angeben, wenn keine Isolation</assert>
+            </element>
+        </template>

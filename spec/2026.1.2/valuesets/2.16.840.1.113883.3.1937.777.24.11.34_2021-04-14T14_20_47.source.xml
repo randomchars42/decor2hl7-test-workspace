@@ -1,0 +1,9 @@
+<valueSet xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.777.24.11.34" name="Verarbeitungstyp" displayName="SNOMED CT Specimen Preparation" effectiveDate="2021-04-14T14:20:47" statusCode="draft" url="http://art-decor.org/decor/services/" ident="mide-">
+    <sourceCodeSystem json:array="true" id="2.16.840.1.1138836.96" identifierName="" canonicalUri="urn:oid:2.16.840.1.1138836.96" canonicalUriDSTU2="urn:oid:2.16.840.1.1138836.96" canonicalUriSTU3="urn:oid:2.16.840.1.1138836.96" canonicalUriR4="urn:oid:2.16.840.1.1138836.96" canonicalUriR4B="urn:oid:2.16.840.1.1138836.96" canonicalUriR5="urn:oid:2.16.840.1.1138836.96"/>
+    <publishingAuthority json:array="true" name="Konsortium DIFUTURE" inherited="project">
+        <addrLine json:array="true" type="uri">https://difuture.de</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="include" op="descendent-of" code="56245008" codeSystem="2.16.840.1.1138836.96" displayName="Specimen preparation (procedure)"/>
+</valueSet>

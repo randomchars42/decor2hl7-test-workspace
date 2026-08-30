@@ -1,0 +1,96 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:pharm="urn:ihe:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.3.6.1.4.1.19376.1.9.1.3.1" name="IHEMedicineEntryContentModule" displayName="IHE MedicineEntryContentModule" isClosed="false" versionLabel="2020" statusCode="pending" effectiveDate="2019-08-27T16:13:43" url="http://art-decor.org/decor/services/" ident="ch-pharm-" pharm:dummy-1="urn:ihe:pharm" xml:dummy-2="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-4="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance">
+    <desc language="en-US">IHE PHARM PRE Medicine Entry General Specification</desc>
+    <classification type="cdaentrylevel"/>
+    <relationship type="GEN" template="2.16.840.1.113883.10.12.311" flexibility="2005-09-07T00:00:00"/>
+    <context id="**"/>
+    <item label="6.3.4.1.3.1"/>
+    <element name="hl7:manufacturedMaterial" id="2.16.840.1.113883.3.1937.777.1.9.579">
+        <attribute name="classCode" value="MMAT" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.580"/>
+        <attribute name="determinerCode" value="KIND" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.581"/>
+        <element name="hl7:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="1.3.6.1.4.1.19376.1.9.1.9.12">
+            <desc language="en-US">Medicine Entry Template ID</desc>
+            <item label="6.3.4.1.3.2"/>
+            <attribute name="root" value="1.3.6.1.4.1.19376.1.9.1.3.1" datatype="uid" id="1.3.6.1.4.1.19376.1.9.1.9.13"/>
+        </element>
+        <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CE" conformance="R" id="2.16.840.1.113883.3.1937.777.1.9.582">
+            <desc language="en-US">Code</desc>
+            <item label="6.3.4.1.3.3"/>
+            <element name="hl7:originalText" datatype="ED" minimumMultiplicity="0" maximumMultiplicity="1" id="1.3.6.1.4.1.19376.1.9.1.9.9">
+                <element name="hl7:reference" datatype="TEL" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="1.3.6.1.4.1.19376.1.9.1.9.10">
+                    <attribute name="nullFlavor" value="NA" datatype="cs" isOptional="true" id="1.3.6.1.4.1.19376.1.9.1.9.11"/>
+                </element>
+            </element>
+        </element>
+        <element name="hl7:name" minimumMultiplicity="1" maximumMultiplicity="1" datatype="EN" conformance="R" id="2.16.840.1.113883.3.1937.777.1.9.583">
+            <desc language="en-US">Name</desc>
+            <item label="6.3.4.1.3.4"/>
+            <attribute name="nullFlavor" value="NA" datatype="cs" isOptional="true" id="1.3.6.1.4.1.19376.1.9.1.9.15"/>
+        </element>
+        <element name="pharm:formCode" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="1" id="1.3.6.1.4.1.19376.1.9.1.9.14">
+            <desc language="en-US">Form Code</desc>
+            <item label="6.3.4.1.3.5"/>
+        </element>
+        <element name="hl7:lotNumberText" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ST" id="2.16.840.1.113883.3.1937.777.1.9.584">
+            <desc language="en-US">Lot Number</desc>
+            <item label="6.3.4.1.3.6"/>
+        </element>
+        <element name="pharm:expirationTime" datatype="TS" minimumMultiplicity="0" maximumMultiplicity="1" id="1.3.6.1.4.1.19376.1.9.1.9.51">
+            <desc language="en-US">Expiration Date</desc>
+            <item label="6.3.4.1.3.7"/>
+            <attribute name="value" id="1.3.6.1.4.1.19376.1.9.1.9.52"/>
+        </element>
+        <element name="pharm:asContent" minimumMultiplicity="0" maximumMultiplicity="1" id="1.3.6.1.4.1.19376.1.9.1.9.53">
+            <desc language="en-US">Packaging</desc>
+            <item label="6.3.4.1.3.8"/>
+            <attribute name="classCode" value="CONT" id="1.3.6.1.4.1.19376.1.9.1.9.54"/>
+            <element name="pharm:containerPackagedMedicine" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="1.3.6.1.4.1.19376.1.9.1.9.55">
+                <attribute name="classCode" value="CONT" id="1.3.6.1.4.1.19376.1.9.1.9.56"/>
+                <attribute name="determinerCode" value="INSTANCE" id="1.3.6.1.4.1.19376.1.9.1.9.57"/>
+                <element name="pharm:code" minimumMultiplicity="0" maximumMultiplicity="*" id="1.3.6.1.4.1.19376.1.9.1.9.58"/>
+                <element name="pharm:name" minimumMultiplicity="0" maximumMultiplicity="*" id="1.3.6.1.4.1.19376.1.9.1.9.59"/>
+                <element name="pharm:formCode" minimumMultiplicity="0" maximumMultiplicity="1" id="1.3.6.1.4.1.19376.1.9.1.9.60"/>
+                <assert role="error" test="not(pharm:capacityQuantity) or pharm:formCode">pharm:formCode SHALL be present if pharm:asSuperContent present</assert>
+                <element name="pharm:capacityQuantity" minimumMultiplicity="1" maximumMultiplicity="1" datatype="PQ" conformance="R" isMandatory="true" id="1.3.6.1.4.1.19376.1.9.1.9.61">
+                    <attribute name="unit" datatype="cs" isOptional="true" id="1.3.6.1.4.1.19376.1.9.1.9.62"/>
+                    <attribute name="value" id="1.3.6.1.4.1.19376.1.9.1.9.63"/>
+                </element>
+                <element name="pharm:asSuperContent" minimumMultiplicity="0" maximumMultiplicity="1" id="1.3.6.1.4.1.19376.1.9.1.9.64">
+                    <element name="pharm:containerPackagedMedicine" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="1.3.6.1.4.1.19376.1.9.1.9.65">
+                        <attribute name="classCode" value="CONT" id="1.3.6.1.4.1.19376.1.9.1.9.66"/>
+                        <attribute name="determinerCode" value="INSTANCE" id="1.3.6.1.4.1.19376.1.9.1.9.67"/>
+                        <element name="pharm:capacityQuantity" minimumMultiplicity="1" maximumMultiplicity="1" datatype="PQ" conformance="R" isMandatory="true" id="1.3.6.1.4.1.19376.1.9.1.9.68">
+                            <attribute name="unit" datatype="cs" isOptional="true" id="1.3.6.1.4.1.19376.1.9.1.9.69"/>
+                            <attribute name="value" id="1.3.6.1.4.1.19376.1.9.1.9.70"/>
+                        </element>
+                    </element>
+                </element>
+            </element>
+        </element>
+        <element name="pharm:asSpecializedKind" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="1.3.6.1.4.1.19376.1.9.1.9.71">
+            <desc language="en-US">Generic Equivalent</desc>
+            <item label="6.3.4.1.3.9"/>
+            <attribute name="classCode" value="GRIC" id="1.3.6.1.4.1.19376.1.9.1.9.72"/>
+            <element name="pharm:generalizedMedicineClass" minimumMultiplicity="0" maximumMultiplicity="*" id="1.3.6.1.4.1.19376.1.9.1.9.73">
+                <attribute name="classCode" value="MMAT" id="1.3.6.1.4.1.19376.1.9.1.9.74"/>
+                <element name="pharm:code" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="1.3.6.1.4.1.19376.1.9.1.9.75"/>
+                <element name="pharm:name" minimumMultiplicity="0" maximumMultiplicity="*" id="1.3.6.1.4.1.19376.1.9.1.9.76"/>
+            </element>
+        </element>
+        <element name="pharm:ingredient" minimumMultiplicity="0" maximumMultiplicity="*" id="1.3.6.1.4.1.19376.1.9.1.9.77">
+            <desc language="en-US">Active Ingredient List</desc>
+            <item label="6.3.4.1.3.10"/>
+            <attribute name="classCode" value="ACTI" id="1.3.6.1.4.1.19376.1.9.1.9.78"/>
+            <element name="pharm:quantity" datatype="RTO_PQ_PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="1.3.6.1.4.1.19376.1.9.1.9.79">
+                <desc language="en-US">The medication strength is represented as the ratio of the active ingredient(s) to a unit of medication</desc>
+                <element name="hl7:numerator" datatype="PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="1.3.6.1.4.1.19376.1.9.1.9.80"/>
+                <element name="hl7:denominator" datatype="PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="1.3.6.1.4.1.19376.1.9.1.9.81"/>
+            </element>
+            <element name="pharm:ingredient" minimumMultiplicity="0" maximumMultiplicity="*" id="1.3.6.1.4.1.19376.1.9.1.9.82">
+                <attribute name="classCode" value="MMAT" id="1.3.6.1.4.1.19376.1.9.1.9.83"/>
+                <attribute name="determinerCode" value="KIND" id="1.3.6.1.4.1.19376.1.9.1.9.84"/>
+                <element name="pharm:code" minimumMultiplicity="0" maximumMultiplicity="1" id="1.3.6.1.4.1.19376.1.9.1.9.85"/>
+                <element name="pharm:name" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="1.3.6.1.4.1.19376.1.9.1.9.86"/>
+            </element>
+        </element>
+    </element>
+</template>

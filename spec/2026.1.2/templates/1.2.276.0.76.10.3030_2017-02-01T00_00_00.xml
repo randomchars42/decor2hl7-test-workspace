@@ -1,0 +1,36 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.3030" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pharm="urn:ihe:pharm" id="1.2.276.0.76.10.3030" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="Verabreichte Medikation während des Aufenthalts" cda:dummy-4="urn:hl7-org:v3" ident="hl7de-" name="Medicationduringstaysection" xml:dummy-2="http://www.w3.org/XML/1998/namespace" pharm:dummy-1="urn:ihe:pharm" statusCode="draft" url="http://art-decor.org/decor/services/" effectiveDate="2017-02-01T00:00:00">
+            <desc language="de-DE">Sämtliche verabreichte Medikation während des Aufenthalts</desc>
+            <classification type="cdasectionlevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.201" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.201" tmname="CDASection" tmdisplayName="CDA Section" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <element name="hl7:section" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.2.6.77.9.592">
+                <item original="false" label="Medicationduringstaysection"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" conformance="R" id="2.16.840.1.113883.2.6.77.9.593">
+                    <item original="false" label="Medicationduringstaysection"/>
+                    <attribute name="root" value="1.2.276.0.76.10.3030" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.77.9.594"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CE" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.595">
+                    <item original="false" label="Medicationduringstaysection"/>
+                    <vocabulary code="29549-3" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:title" minimumMultiplicity="1" maximumMultiplicity="1" datatype="ST" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.596">
+                    <item original="false" label="Medicationduringstaysection"/>
+                    <text>Verabreichte Medikation während des Aufenthalts</text>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="1" maximumMultiplicity="1" datatype="SD.TEXT" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.597">
+                    <item original="false" label="Medicationduringstaysection"/>
+                </element>
+                <element name="hl7:entry" minimumMultiplicity="0" maximumMultiplicity="*" contains="1.2.276.0.76.10.4022" id="2.16.840.1.113883.3.1937.777.1.9.283" tmid="1.2.276.0.76.10.4022" tmname="MedicationStatement" tmdisplayName="Medikation" tmeffectiveDate="2018-11-01T00:00:00" tmstatusCode="draft" tmversionLabel="v2019" url="http://art-decor.org/decor/services/" ident="pmp-" linkedartefactmissing="false">
+                    <item original="false" label="Medicationduringstaysection"/>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="contains" prefix="abde-" flexibility="2017-02-01T00:00:00" id="1.2.276.0.76.10.1020" name="Arztbrief30" displayName="Arztbrief Plus" effectiveDate="2017-02-01T00:00:00" statusCode="draft" versionLabel="v3.00" ident="abde-"/>
+            <ref type="contains" prefix="elmgmt-" flexibility="dynamic" id="1.2.276.0.76.10.1026" name="EntlassmanagementBrief" displayName="Entlassmanagement Brief" effectiveDate="2017-07-13T00:00:00" statusCode="draft" versionLabel="v1.1" ident="elmgmt-"/>
+            <ref type="contains" prefix="einwde-" flexibility="2017-02-01T00:00:00" id="1.2.276.0.76.10.1034" name="eEinweisungsbrief" displayName="eEinweisungsbrief" effectiveDate="2020-06-18T00:00:00" statusCode="draft" versionLabel="v1.0" ident="einwde-"/>
+            <uses type="contains" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.4022" name="MedicationStatement" displayName="Medikation" effectiveDate="2018-11-01T00:00:00" statusCode="draft" isClosed="false" versionLabel="v2019" url="http://art-decor.org/decor/services/" ident="pmp-"/>
+            <ref type="contains" prefix="epflb-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.34.10.4" name="MedicalInformation" displayName="Medizinische Informationen" statusCode="active" versionLabel="1.0" effectiveDate="2017-12-11T14:10:04" ident="epflb-"/>
+        </template>
+    </template>
+</result>

@@ -1,0 +1,20 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.12.104" name="CDAcustodian" displayName="CDA custodian" effectiveDate="2005-09-07T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" sdtc:dummy-1="urn:hl7-org:sdtc" xml:dummy-2="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-4="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">Template CDA custodian (prototype, directly derived from POCD_RM000040 MIF)</desc>
+            <desc language="nl-NL">Template CDA custodian (prototype, direct afgeleid uit POCD_RM000040 MIF)</desc>
+            <desc language="de-DE">Template CDA custodian (Prototyp, direkt abgeleitet aus POCD_RM000040 MIF)</desc>
+            <classification type="cdaheaderlevel"/>
+            <element name="hl7:custodian" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.1.9.131">
+                <attribute name="typeCode" value="CST" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.132"/>
+                <element name="hl7:assignedCustodian" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.1.9.133">
+                    <attribute name="classCode" value="ASSIGNED" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.134"/>
+                    <element name="hl7:representedCustodianOrganization" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.1.9.135">
+                        <attribute name="classCode" value="ORG" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.136"/>
+                        <attribute name="determinerCode" value="INSTANCE" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.137"/>
+                        <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="*" isMandatory="true" conformance="R" datatype="II" id="2.16.840.1.113883.3.1937.777.1.9.138"/>
+                        <element name="hl7:name" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ON" id="2.16.840.1.113883.3.1937.777.1.9.139"/>
+                        <element name="hl7:telecom" minimumMultiplicity="0" maximumMultiplicity="1" datatype="TEL" id="2.16.840.1.113883.3.1937.777.1.9.140"/>
+                        <element name="hl7:addr" minimumMultiplicity="0" maximumMultiplicity="1" datatype="AD" id="2.16.840.1.113883.3.1937.777.1.9.141"/>
+                    </element>
+                </element>
+            </element>
+        </template>

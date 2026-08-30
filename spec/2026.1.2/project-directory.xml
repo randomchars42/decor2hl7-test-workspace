@@ -1,0 +1,761 @@
+<list xmlns:json="http://www.json.org" artifact="PROJECT" current="229" total="229" all="247" lastModifiedDate="2026-08-27T12:44:33.045+02:00">
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.21" prefix="asic-" defaultLanguage="de-DE" lastmodified="2025-08-11T01:55:02.274+02:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="de-DE">ASIC</name>
+        <name json:array="true" language="en-US">ASIC</name>
+    </project>
+    <project json:array="true" id="1.2.40.0.34.777.7" prefix="at-cda-bbr-" defaultLanguage="de-DE" lastmodified="2026-08-26T10:31:14.377+02:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="de-DE" lastTranslated="2023-09-19T16:52:29">AT-CDA-BBR (Allgemeiner ILF)</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.37" prefix="sbetud-" defaultLanguage="de-DE" lastmodified="2023-10-24T08:11:23.985+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">Akteninhalte TU Dresden</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.86" prefix="alstroem-" defaultLanguage="de-DE" lastmodified="2024-07-04T19:16:05.371+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE" lastTranslated="2024-05-08T08:29:22">Alström Dokumentation</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.90" prefix="amyloidose-" defaultLanguage="de-DE" lastmodified="2024-08-07T22:31:21.895+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE" lastTranslated="2024-07-04T19:15:06">Amyloidose Dokumentation</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.88" prefix="ars-" defaultLanguage="de-DE" lastmodified="2024-06-10T12:03:23.339+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE" lastTranslated="2024-05-30T12:31:14">Antibiotika-Resistenz-Surveillance (ARS)</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.2.16.777.5" prefix="atreha-" defaultLanguage="de-DE" lastmodified="2023-10-24T08:11:22.361+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">Antrag auf Heilverfahren</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.32" prefix="anaep-" defaultLanguage="de-DE" lastmodified="2023-10-24T08:11:21.609+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">Anästhesie-Protokoll</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.71" prefix="b1mgsetcancer-" defaultLanguage="en-US" lastmodified="2024-01-09T14:53:42.309+01:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US" lastTranslated="2023-03-17T17:36:15">B1MG Minimal set cancer</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.48" prefix="b2hir-" defaultLanguage="de-DE" lastmodified="2023-10-24T08:11:21.796+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">B2HIR</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.83" prefix="bndmr-" defaultLanguage="en-US" lastmodified="2024-06-11T09:55:24.803+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US" lastTranslated="2024-01-29T13:32:29">Banque Nationale de Données Maladies Rares</name>
+        <name json:array="true" language="de-DE" lastTranslated="2024-03-19T13:49:13">Banque Nationale de Données Maladies Rares</name>
+        <name json:array="true" language="fr-FR" lastTranslated="2024-03-19T13:49:22">Banque Nationale de Données Maladies Rares</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.26" prefix="bccdapilot-" defaultLanguage="en-US" lastmodified="2024-11-19T09:38:51.9+01:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="en-US" lastTranslated="2024-11-19T09:38:51">British Columbia CDA Project</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.17" prefix="bccdae2e-" defaultLanguage="en-US" lastmodified="2024-11-19T09:39:43.12+01:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="en-US" lastTranslated="2024-11-19T09:39:42">British Columbia PITO E2E</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.1" prefix="ad1bbr-" defaultLanguage="en-US" lastmodified="2025-01-17T12:25:15.865+01:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="en-US">CDA R2 Standard</name>
+    </project>
+    <project json:array="true" id="2.16.756.5.30.1.127.77.2" prefix="hl7chcda-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:23.981+02:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="en-US">CDA-CH</name>
+        <name json:array="true" language="de-CH">CDA-CH</name>
+        <name json:array="true" language="fr-CH">CDA-CH</name>
+        <name json:array="true" language="it-CH">CDA-CH</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.27" prefix="cdach-sandbox-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:21.977+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="de-CH">CDA-CH - Sandbox</name>
+    </project>
+    <project json:array="true" id="2.16.756.5.30.1.127.77.12" prefix="cdachemed-" defaultLanguage="en-US" lastmodified="2026-02-09T15:21:45.341+01:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">CDA-CH-EMED eMedication</name>
+    </project>
+    <project json:array="true" id="2.16.756.5.30.1.1.1.1.3.9.77.1" prefix="cdachlrep-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:21.729+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-CH">CDA-CH-LREP - Laborbefund</name>
+        <name json:array="true" language="fr-CH">CDA-CH-LREP - Rapport de laboratoire</name>
+        <name json:array="true" language="it-CH">CDA-CH-LREP - Rapporto di laboratorio</name>
+        <name json:array="true" language="en-US">CDA-CH-LREP - Laboratory report</name>
+    </project>
+    <project json:array="true" id="2.16.756.5.30.1.127.77.3" prefix="cdachlrph-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:21.753+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-CH">CDA-CH-LRPH - Meldepflichtige Laborbefunde</name>
+        <name json:array="true" language="en-US">CDA-CH-LRPH - Laboratory reports for public health</name>
+        <name json:array="true" language="fr-CH">CDA-CH-LRPH - Rapports de laboratoire soumis à déclaration</name>
+    </project>
+    <project json:array="true" id="2.16.756.5.30.1.127.77.6" prefix="cdachlrtp-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:22.139+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-CH">CDA-CH-LRTP - Laborbefunde Transplantation</name>
+        <name json:array="true" language="en-US">CDA-CH-LRTP - Lab Results Transplantation</name>
+    </project>
+    <project json:array="true" id="2.16.756.5.30.1.127.77.5" prefix="cdachresp-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:23.54+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-CH">CDA-CH-RESP - Rettungsdienstprotokoll</name>
+        <name json:array="true" language="en-US">CDA-CH-RESP - Emergency Service Protocol</name>
+    </project>
+    <project json:array="true" id="2.16.756.5.30.1.1.1.1.3.11.77" prefix="cdachscdo-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:21.922+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">CDA-CH-SCDO - Scanned document</name>
+    </project>
+    <project json:array="true" id="2.16.756.5.30.1.127.77.11" prefix="cdachsmcp-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:24.046+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">CDA-CH-SMCP - Social-medical care plan</name>
+        <name json:array="true" language="de-CH">CDA-CH-SMCP - Sozial-medizinischer Pflegeverlegungsbericht</name>
+        <name json:array="true" language="fr-CH">CDA-CH-SMCP - Document médico-social de transmission</name>
+    </project>
+    <project json:array="true" id="2.16.756.5.30.1.127.77.1" prefix="cdachvacd-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:21.793+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-CH">CDA-CH-VACD - Elektronisches Impfdossier (eVACDOC)</name>
+        <name json:array="true" language="fr-CH">CDA-CH-VACD - Dossier électronique de vaccination (eVACDOC)</name>
+        <name json:array="true" language="it-CH">CDA-CH-VACD - Cartella di vaccinazione informatizzata (eVACDOC)</name>
+        <name json:array="true" language="en-US">CDA-CH-VACD - Immunization Content (eVACDOC)</name>
+    </project>
+    <project json:array="true" id="2.16.756.5.30.1.127.77.13" prefix="ch-appc-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:22.506+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">CH-APPC</name>
+    </project>
+    <project json:array="true" id="2.16.756.5.30.1.127.77.10" prefix="ch-epr-" defaultLanguage="en-US" lastmodified="2026-05-08T11:22:28.83+02:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="en-US">CH-EPR</name>
+        <name json:array="true" language="de-CH">CH-EPR</name>
+        <name json:array="true" language="fr-CH">CH-EPR</name>
+        <name json:array="true" language="it-CH">CH-EPR</name>
+        <name json:array="true" language="rm-CH">CH-EPR</name>
+    </project>
+    <project json:array="true" id="2.16.756.5.30.1.139.77.1" prefix="ch-medshare-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:21.885+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">CH-Medshare</name>
+    </project>
+    <project json:array="true" id="2.16.756.5.30.1.127.77.9" prefix="ch-pcc-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:21.562+02:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="en-US">CH-PCC</name>
+    </project>
+    <project json:array="true" id="2.16.756.5.30.1.127.77.4" prefix="ch-pharm-" defaultLanguage="en-US" lastmodified="2026-02-09T15:00:48.789+01:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="en-US">CH-PHARM</name>
+    </project>
+    <project json:array="true" id="2.16.756.5.30.1.127.77.7" prefix="ch-palm-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:22.182+02:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="en-US">CH-PaLM</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.65" prefix="ccovicdh-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:21.615+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">Charité COVID Intensive Care Data Hub</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.95" prefix="dzkj-" defaultLanguage="de-DE" lastmodified="2025-04-01T22:07:50.329+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US" lastTranslated="2025-04-01T19:54:09">Child and Adolescent Health</name>
+        <name json:array="true" language="de-DE" lastTranslated="2025-04-01T19:53:34">Kinder- und Jugendgesundheit</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.2.9.10.1.10" prefix="itdes-" defaultLanguage="it-IT" lastmodified="2023-10-24T08:11:21.931+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">Co-payment exception document</name>
+        <name json:array="true" language="it-IT">Documento Esenzione</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.91" prefix="ccb-" defaultLanguage="en-US" lastmodified="2024-11-15T13:47:51.114+01:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US" lastTranslated="2024-07-04T19:19:42">Cohort Coordination Board (CCB)</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.30" prefix="cord-" defaultLanguage="de-DE" lastmodified="2024-08-07T13:53:50.237+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US" lastTranslated="2024-03-21T14:01:48">Collaboration on Rare Diseases (CORD)</name>
+        <name json:array="true" language="de-DE" lastTranslated="2024-03-21T14:01:46">Collaboration on Rare Diseases (CORD)</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.3" prefix="ccda-" defaultLanguage="en-US" lastmodified="2023-12-01T20:57:57.935+01:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="en-US">Consolidated CDA</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.4" prefix="ccd1-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:21.593+02:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="en-US">Continuity of Care Document (CCD)</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.89" prefix="ophtalcds-" defaultLanguage="de-DE" lastmodified="2024-11-27T22:01:04.573+01:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="en-US" lastTranslated="2024-07-29T10:47:41">Core Data Set for Ophthalmology</name>
+        <name json:array="true" language="de-DE" lastTranslated="2024-07-29T10:56:21">Basisdatensatz Ophthalmologie</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.53" prefix="covid19f-" defaultLanguage="de-DE" lastmodified="2024-08-07T13:53:50.246+02:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="en-US" lastTranslated="2023-01-19T16:35:27">Covid-19 Research-Dataset</name>
+        <name json:array="true" language="de-DE" lastTranslated="2023-01-19T16:35:27">Covid-19 Forschungsdatensatz</name>
+    </project>
+    <project json:array="true" id="1.2.276.0.76.3.1.261.1.77.1" prefix="dguvbbr-" defaultLanguage="de-DE" lastmodified="2025-06-30T16:46:19.902+02:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="de-DE" lastTranslated="2022-12-07T18:52:23">DGUV BBR</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.38" prefix="sdguv-" defaultLanguage="de-DE" lastmodified="2025-06-30T16:52:29.998+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">DGUV Sandbox</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.23" prefix="dir2cda-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:21.85+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">DICOM Imaging Reports</name>
+    </project>
+    <project json:array="true" id="1.2.840.10008.777" prefix="dicomps33-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:22.529+02:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="en-US" lastTranslated="2023-09-09T14:32:59">DICOM PS3.3</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.60" prefix="dancda-" defaultLanguage="en-US" lastmodified="2025-02-11T14:42:14.247+01:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US" lastTranslated="2023-06-30T11:09:52">Danish national CDA</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.60.10" prefix="demo10-" defaultLanguage="en-US" lastmodified="2026-08-10T18:05:14.494+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US" lastTranslated="2022-06-27T19:06:39">Demo 10: Test set for ART-DECOR using FHIR</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.60.11" prefix="demo11-" defaultLanguage="en-US" lastmodified="2026-08-10T18:09:51.455+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US" lastTranslated="2022-02-16T22:53:02">Demo 11: Terminology</name>
+        <name json:array="true" language="it-IT" lastTranslated="2022-03-29T14:55:08">Demo 11: Terminologia</name>
+        <name json:array="true" language="pt-PT" lastTranslated="2022-03-29T14:55:36">Demo 11: Terminologia</name>
+        <name json:array="true" language="de-DE" lastTranslated="2022-03-29T14:55:53">Demo 11: Terminologie</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.60.12" prefix="demo12-" defaultLanguage="en-US" lastmodified="2026-03-31T22:57:51.827+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US" lastTranslated="2022-06-27T19:06:39">Demo 12: Examples of European Datasets</name>
+        <name json:array="true" language="de-DE" lastTranslated="2022-06-27T19:06:39">Demo 12: Beispiele Europäischer Datensätze</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.60.13" prefix="demo13-" defaultLanguage="en-US" lastmodified="2026-03-31T22:57:51.827+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US" lastTranslated="2025-04-04T13:17:10">Demo 13: Laboratory Medicine Reference Terminology</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.60.14" prefix="demo14-" defaultLanguage="en-US" lastmodified="2026-03-31T22:57:51.827+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US" lastTranslated="2025-04-04T13:17:10">Demo 14: Mappings RXNorm and CVx to SNOMED-CT</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.60.15" prefix="demo15-" defaultLanguage="en-US" lastmodified="2026-03-31T22:57:51.827+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US" lastTranslated="2025-04-04T13:17:10">Demo 15: Use of Transaction Building Blocks (TBB)</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.60.16" prefix="demo16-" defaultLanguage="en-US" lastmodified="2026-04-28T13:33:34.113+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">Demo 16: Use of obligations and additional bindings</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.60.17" prefix="demo17-" defaultLanguage="en-US" lastmodified="2026-05-12T11:27:15.05+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US" lastTranslated="2026-04-28T13:44:17">Demo 17: Using Aximom CDA on Vital Signs CDA Document</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.62.3" prefix="demo1-" defaultLanguage="en-US" lastmodified="2026-08-24T13:38:55.528+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="nl-NL">Demo 1: Measurements by patient</name>
+        <name json:array="true" language="en-US">Demo 1: Measurements by patient</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.60.3" prefix="demo3-" defaultLanguage="en-US" lastmodified="2026-08-10T17:47:34.294+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">Demo 3: EKG Report CDA Document</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.60.4" prefix="demo4-" defaultLanguage="en-US" lastmodified="2026-03-31T22:57:28.033+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">Demo 4: HL7V2.xml</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.60.5" prefix="demo5-" defaultLanguage="en-US" lastmodified="2026-08-10T18:02:56.095+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">Demo 5: Vital Signs CDA Document</name>
+        <name json:array="true" language="de-DE">Demo 5: Vitalparameter CDA Document</name>
+        <name json:array="true" language="nl-NL">Demo 5: Vitale parameters CDA Document</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.60.6" prefix="demo6-" defaultLanguage="nl-NL" lastmodified="2026-03-31T22:57:51.826+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">Demo 6: Testset for ART-DECOR</name>
+        <name json:array="true" language="nl-NL">Demo 6: Testset voor ART-DECOR</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.60.7" prefix="demo7-" defaultLanguage="en-US" lastmodified="2026-08-10T18:03:40.668+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US" lastTranslated="2025-03-18T11:27:37">Demo 7: Vaccination Certificates Document</name>
+    </project>
+    <project json:array="true" id="1.2.276.0.76.3.1.81.81.12.1" prefix="efacons-" defaultLanguage="de-DE" lastmodified="2023-10-24T08:11:23.417+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">EFA Consent</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.8" prefix="ehdi-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:22.441+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">EHDI Profile</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.38" prefix="ehr4cr-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:21.939+02:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="en-US">EHR4CR Data Inventory</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.33" prefix="ehr4cr2elga-" defaultLanguage="en-US" lastmodified="2024-01-25T16:08:23.669+01:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">EHR4CR2ELGA</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.66" prefix="ehr4cr2elga-pr-" defaultLanguage="en-US" lastmodified="2024-12-05T14:35:50.024+01:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">EHR4CR2ELGA-patient recruitment</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.68" prefix="ehr4cr2elga-te-" defaultLanguage="en-US" lastmodified="2024-12-05T15:39:22.665+01:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">EHR4CR2ELGA-trial execution</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.67" prefix="ehr4cr2elga-tf-" defaultLanguage="en-US" lastmodified="2024-12-05T15:24:35.274+01:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">EHR4CR2ELGA-trial feasibility</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.97" prefix="ehr4cr2ips-pr-" defaultLanguage="en-US" lastmodified="2026-06-23T17:52:35.943+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US" lastTranslated="2026-06-23T17:33:42">EHR4CR2IPS-patient recruitment</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.98" prefix="ehr4cr2ips-te-" defaultLanguage="en-US" lastmodified="2026-06-23T17:52:49.537+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US" lastTranslated="2026-06-23T17:36:59">EHR4CR2IPS-trial execution</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.99" prefix="ehr4cr2ips-tf-" defaultLanguage="en-US" lastmodified="2026-06-23T17:53:01.96+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US" lastTranslated="2026-06-23T17:37:38">EHR4CR2IPS-trial feasibility</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.43" prefix="ehr4cr2ehsdi-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:22.037+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">EHR4CR2eHDSI Project</name>
+    </project>
+    <project json:array="true" id="1.2.40.0.34.777.8" prefix="elgaambbef-" defaultLanguage="de-DE" lastmodified="2026-07-29T14:41:21.781+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE" lastTranslated="2025-06-26T12:23:19">ELGA Ambulanzbefund</name>
+    </project>
+    <project json:array="true" id="1.2.40.0.34" prefix="elga-" defaultLanguage="de-DE" lastmodified="2026-07-29T14:42:17.629+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE" lastTranslated="2024-01-10T14:50:19">ELGA Basisleitfäden</name>
+    </project>
+    <project json:array="true" id="1.2.40.0.34.777.16" prefix="elgabgd-" defaultLanguage="de-DE" lastmodified="2026-07-29T14:43:18.375+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE" lastTranslated="2023-06-29T11:16:16">ELGA Befund Bildgebende Diagnostik (V3)</name>
+    </project>
+    <project json:array="true" id="1.2.40.0.34.777.2" prefix="elgaps-" defaultLanguage="de-DE" lastmodified="2026-02-11T14:20:56.949+01:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="de-DE" lastTranslated="2026-02-11T14:20:56">ELGA Patient Summary</name>
+    </project>
+    <project json:array="true" id="1.2.40.0.34.777.1" prefix="elgabbr-" defaultLanguage="de-DE" lastmodified="2026-07-16T09:35:10.148+02:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="de-DE" lastTranslated="2024-06-19T11:44:03">ELGA Repository</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.19" prefix="elgasandbox-" defaultLanguage="de-DE" lastmodified="2026-02-11T14:21:37.032+01:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE" lastTranslated="2023-03-02T14:03:26">ELGA Sandbox</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.70" prefix="elgatest-" defaultLanguage="de-DE" lastmodified="2026-02-11T14:22:11.448+01:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE" lastTranslated="2026-02-11T14:22:11">ELGA Test</name>
+    </project>
+    <project json:array="true" id="1.2.40.0.34.777.6" prefix="elgaxds-" defaultLanguage="de-DE" lastmodified="2023-10-24T08:11:22.263+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">ELGA XDS-Metadaten</name>
+    </project>
+    <project json:array="true" id="1.2.40.0.34.777.4" prefix="elgaimpf-" defaultLanguage="de-DE" lastmodified="2026-07-29T14:43:03.279+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE" lastTranslated="2024-01-12T09:58:59">ELGA e-Impfpass</name>
+    </project>
+    <project json:array="true" id="1.2.40.0.34.777.5" prefix="elgagab-" defaultLanguage="de-DE" lastmodified="2026-04-17T09:42:07.423+02:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="de-DE" lastTranslated="2026-02-11T14:09:33">ELGA generischer Arztbrief</name>
+    </project>
+    <project json:array="true" id="1.2.40.0.34.777.10" prefix="elgainfk-" defaultLanguage="de-DE" lastmodified="2026-02-11T14:22:27.557+01:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE" lastTranslated="2026-02-11T14:22:27">ELGA-Infektionsmeldung</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.31" prefix="eusht-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:22.502+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">EU-US harmonized templates</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.35" prefix="eImpfpass-" defaultLanguage="de-DE" lastmodified="2023-10-24T08:11:22.497+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">Elektronischer Impfpass</name>
+    </project>
+    <project json:array="true" id="1.2.40.0.34.777.21" prefix="at-ekp-" defaultLanguage="de-DE" lastmodified="2025-10-07T15:30:28.03+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE" lastTranslated="2025-09-22T12:44:05">Elternkindpass</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.14" prefix="hl7ecwg-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:24.24+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">Emergency Care</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.2.6.60.3" prefix="aktin-" defaultLanguage="de-DE" lastmodified="2026-08-27T10:08:11.608+02:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</name>
+        <name json:array="true" language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.2.9.77.2" prefix="vpsee-" defaultLanguage="it-IT" lastmodified="2023-10-24T08:11:25.061+02:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="en-US">Emergency Encounter Report</name>
+        <name json:array="true" language="it-IT">Verbale di Pronto Soccorso</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.36" prefix="elmgmt-" defaultLanguage="de-DE" lastmodified="2026-04-17T09:51:55.728+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">Entlassmanagement</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.2.16.777.3" prefix="epims-" defaultLanguage="de-DE" lastmodified="2026-07-29T14:41:57.338+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE" lastTranslated="2026-02-11T14:22:50">Epidemiologisches Meldesystem</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.44" prefix="dseusem-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:21.574+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">European Emergency Department Minimum Dataset</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.79" prefix="erdri-cds-" defaultLanguage="en-US" lastmodified="2025-11-18T15:55:43.328+01:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="en-US" lastTranslated="2024-03-21T14:01:12">European Rare Disease Registry Infrastructure (ERDRI-CDS)</name>
+        <name json:array="true" language="de-DE" lastTranslated="2024-03-21T14:01:10">European Rare Disease Registry Infrastructure (ERDRI-CDS)</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.2.16.777.4" prefix="exnds-" defaultLanguage="de-DE" lastmodified="2026-07-29T14:41:42.868+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE" lastTranslated="2024-10-03T18:26:10">Export-Normdatensatz</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.92" prefix="eyematics-" defaultLanguage="de-DE" lastmodified="2025-01-14T10:20:21.227+01:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE" lastTranslated="2024-11-27T21:49:32">EyeMatics</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.57" prefix="fair4h-" defaultLanguage="de-DE" lastmodified="2025-08-11T01:55:02.276+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">FAIR4Health</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.34" prefix="ad5bbr-" defaultLanguage="en-US" lastmodified="2025-02-13T17:10:08.176+01:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="en-US">FHIR R4 value sets / code systems</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.3" prefix="ad3bbr-" defaultLanguage="en-US" lastmodified="2025-01-17T12:26:05.914+01:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="en-US" lastTranslated="2022-12-07T13:12:54">FHIR Terminology</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.2.6.60.13" prefix="genea-" defaultLanguage="de-DE" lastmodified="2024-08-07T13:53:50.263+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">GENeALYSE</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.20" prefix="gtr-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:22.042+02:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="en-US">Genetic Testing Report</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.62" prefix="gold-" defaultLanguage="de-DE" lastmodified="2024-08-07T13:53:50.27+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">German OncoLogical Data  (GOLD)</name>
+    </project>
+    <project json:array="true" id="1.2.40.0.34.777.20" prefix="at-gesber-" defaultLanguage="de-DE" lastmodified="2026-05-27T16:00:19.91+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE" lastTranslated="2025-09-10T20:34:09">Gesundheitsberatung 1450</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.22" prefix="help-" defaultLanguage="de-DE" lastmodified="2025-08-11T01:55:02.278+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">HELP</name>
+        <name json:array="true" language="en-US">HELP</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.50" prefix="hivde-" defaultLanguage="de-DE" lastmodified="2023-10-24T08:11:22.432+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">HIV-Basisdokumentation</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.2.6.77" prefix="hl7de-" defaultLanguage="de-DE" lastmodified="2025-06-30T16:53:17.05+02:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="de-DE">HL7 Deutschland</name>
+        <name json:array="true" language="en-US">HL7 Deutschland e. V.</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.2.9.77.3" prefix="hl7it-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:21.952+02:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="en-US">HL7 Italy</name>
+    </project>
+    <project json:array="true" id="2.16.578.1.34" prefix="hl7no-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:21.758+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">HL7 Norway</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.10" prefix="ad4bbr-" defaultLanguage="en-US" lastmodified="2025-01-17T12:26:12.208+01:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="en-US">HL7 V2.5 International (xml)</name>
+        <name json:array="true" language="nl-NL">HL7v2.5 Internationaal (xml)</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.2" prefix="ad2bbr-" defaultLanguage="en-US" lastmodified="2025-01-17T12:25:57.453+01:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="en-US">HL7 V3 Value Sets</name>
+        <name json:array="true" language="nl-NL">HL7v3-waardelijsten</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.5" prefix="hl7desandbox-" defaultLanguage="de-DE" lastmodified="2023-10-24T08:11:23.823+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">HL7.de Sandbox</name>
+        <name json:array="true" language="de-DE">HL7.de Sandbox</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.27" prefix="hauskomet-" defaultLanguage="de-DE" lastmodified="2023-10-24T08:11:22.213+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">Hauskomet</name>
+    </project>
+    <project json:array="true" id="1.3.6.1.4.1.19376.3.276.60.1" prefix="eprc-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:21.935+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">IHE Cardiac Telemonitoring Profiles</name>
+    </project>
+    <project json:array="true" id="1.3.6.1.4.1.19376.3.276" prefix="ihede-" defaultLanguage="de-DE" lastmodified="2024-01-05T12:54:28.596+01:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="de-DE" lastTranslated="2023-10-27T12:51:56">IHE Deutschland e. V.</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.6" prefix="iheptv-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:22.16+02:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="en-US">IHE Profiles, Templates, Value Sets</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.35" prefix="evaccde-" defaultLanguage="de-DE" lastmodified="2023-10-24T08:11:22.628+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">Impfausweis</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.58" prefix="evaccc-" defaultLanguage="de-DE" lastmodified="2023-10-24T08:11:22.101+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">Impfzertifikat</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.29" prefix="infctrl-" defaultLanguage="de-DE" lastmodified="2024-08-07T13:53:50.277+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">Infection Control</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.2.6.60.11" prefix="ifsgm-" defaultLanguage="de-DE" lastmodified="2023-10-24T08:11:22.458+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">Infektionsschutzmeldungen</name>
+    </project>
+    <project json:array="true" id="1.2.40.0.34.777.14" prefix="elgaiv-" defaultLanguage="de-DE" lastmodified="2026-02-11T14:23:04.655+01:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE" lastTranslated="2023-05-17T10:26:23">Integrierte Versorgung</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.40" prefix="ibmstud-" defaultLanguage="de-DE" lastmodified="2023-10-24T08:11:22.164+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">Integriertes Betreuungsportal Multiple Sklerose </name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.13" prefix="hl7ips-" defaultLanguage="en-US" lastmodified="2026-03-25T09:54:19.252+01:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="en-US" lastTranslated="2024-06-12T08:42:56">International Patient Summary (IPS)</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.75" prefix="iopcde-" defaultLanguage="de-DE" lastmodified="2025-08-01T11:23:40.621+02:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="de-DE" lastTranslated="2023-10-25T11:23:10">InteropCouncil Deutschland</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.45" prefix="ioehrate-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:21.693+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">InteropEHRate</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.9" prefix="kbvde-" defaultLanguage="de-DE" lastmodified="2025-06-30T16:51:52.523+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">Kassenärztliche Bundesvereinigung</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.69" prefix="kdl-" defaultLanguage="de-DE" lastmodified="2025-10-17T10:54:08.761+02:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="de-DE" lastTranslated="2022-12-21T13:29:46">Klinische Dokumentenklassen-Liste (KDL)</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.26" prefix="konsab-" defaultLanguage="de-DE" lastmodified="2023-10-24T08:11:22.255+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">Konsilanfrage und Bericht</name>
+    </project>
+    <project json:array="true" id="1.2.40.0.34.777.9" prefix="at-konstat-" defaultLanguage="de-DE" lastmodified="2023-10-24T08:11:21.673+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">Konsultations-Statusbericht</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.46" prefix="krhiecdaig-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:21.818+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">Korean National HIE CDA IG</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.2.16.777.2" prefix="krebsreg-" defaultLanguage="de-DE" lastmodified="2024-03-21T10:38:37.691+01:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">Krebsregister-Meldung</name>
+    </project>
+    <project json:array="true" id="1.2.40.0.34.777.11" prefix="at-lab-" defaultLanguage="de-DE" lastmodified="2026-07-29T14:42:46.601+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE" lastTranslated="2024-01-12T09:55:00">Labor- und Mikrobiologiebefund</name>
+    </project>
+    <project json:array="true" id="1.2.208.176.7.1" prefix="lpr-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:24.051+02:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="en-US" lastTranslated="2023-06-30T11:03:31">Landspatientregisteret</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.2.9.77.1" prefix="itldo-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:23.066+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">Lettera di Dimissione Ospedaliera (LDO)</name>
+        <name json:array="true" language="it-IT">Lettera di Dimissione Ospedaliera (LDO)</name>
+    </project>
+    <project json:array="true" id="1.2.40.0.34.777.15" prefix="linca-" defaultLanguage="de-DE" lastmodified="2024-01-19T11:10:16.557+01:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">Linked Care</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.12" prefix="mais-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:22.651+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">MAIS</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.55" prefix="mdr-" defaultLanguage="en-US" lastmodified="2025-08-11T01:55:02.28+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">MDR</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.24" prefix="mide-" defaultLanguage="de-DE" lastmodified="2026-08-07T11:34:40.728+02:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="en-US" lastTranslated="2023-03-28T18:04:57">MII Core Data Set</name>
+        <name json:array="true" language="de-DE" lastTranslated="2023-03-28T18:04:57">MII-Kerndatensatz</name>
+    </project>
+    <project json:array="true" id="1.2.208.184.2" prefix="medcom-" defaultLanguage="en-US" lastmodified="2025-02-11T14:42:14.25+01:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="en-US" lastTranslated="2023-07-04T14:51:46">Medcom</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.15" prefix="pharmcda-" defaultLanguage="en-US" lastmodified="2024-11-18T20:48:45.51+01:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="en-US">Medication on CDA</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.48" prefix="medmgmt-" defaultLanguage="de-DE" lastmodified="2023-10-24T08:11:21.698+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">Medikationsmanagement</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.84" prefix="mvgenom-" defaultLanguage="de-DE" lastmodified="2026-04-29T20:40:06.998+02:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="de-DE" lastTranslated="2024-07-18T12:18:30">Modellvorhaben Genomsequenzierung</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.9" prefix="molgenis-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:23.418+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">Molgenis metadatasets</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.80" prefix="narse-" defaultLanguage="de-DE" lastmodified="2024-03-21T10:44:47.361+01:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="de-DE" lastTranslated="2024-01-07T20:32:17">NARSE</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.64" prefix="nfdhtfcov19-" defaultLanguage="en-US" lastmodified="2026-08-26T10:03:10.791+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US" lastTranslated="2023-11-04T10:40:35">NFDI4Health Metadata Schema</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.81" prefix="fosa-" defaultLanguage="de-DE" lastmodified="2024-11-07T14:43:13.526+01:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="de-DE" lastTranslated="2024-03-21T10:15:47">NUM FOSA Rare Diseases</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.47" prefix="nokeda-" defaultLanguage="de-DE" lastmodified="2023-10-24T08:11:21.81+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">NoKeda</name>
+        <name json:array="true" language="en-US">NoKeda International</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.2.6.60.9" prefix="notap-" defaultLanguage="de-DE" lastmodified="2026-07-31T19:25:43.895+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">Notarztprotokoll</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.2.6.60.7" prefix="onkver-" defaultLanguage="de-DE" lastmodified="2023-10-24T08:11:23.807+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">Onkologische Versorgung</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.59" prefix="orch-" defaultLanguage="en-US" lastmodified="2024-10-02T19:48:31.676+02:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="en-US" lastTranslated="2024-07-09T15:07:07">Orchestra</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.23" prefix="phep-" defaultLanguage="de-DE" lastmodified="2025-09-17T15:13:41.399+02:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="de-DE">PHEP</name>
+        <name json:array="true" language="en-US">PHEP</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.94" prefix="promsde-" defaultLanguage="de-DE" lastmodified="2025-04-01T22:00:48.206+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE" lastTranslated="2025-01-06T19:36:20">PROMs für Deutschland</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.2.6.60.6" prefix="psr-" defaultLanguage="en-US" lastmodified="2025-11-17T11:51:54.067+01:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="en-US">Pathology Structured Reporting</name>
+        <name json:array="true" language="de-DE">Strukturierte Berichterstattung in der Pathologie</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.18" prefix="pathdv-" defaultLanguage="de-DE" lastmodified="2026-08-20T12:52:47.232+02:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="en-US" lastTranslated="2023-03-05T10:47:03">Pathology controlled vocabulary</name>
+        <name json:array="true" language="de-DE" lastTranslated="2022-11-17T17:17:50">Pathologie Konzeptvokabular</name>
+    </project>
+    <project json:array="true" id="1.2.40.0.34.777.18" prefix="at-patho-" defaultLanguage="de-DE" lastmodified="2026-08-25T16:37:13.509+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US" lastTranslated="2026-08-25T15:15:56">Pathology report</name>
+        <name json:array="true" language="de-DE" lastTranslated="2025-06-02T19:02:24">Pathologiebefund</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.2.6.60.4" prefix="pmp-" defaultLanguage="de-DE" lastmodified="2025-06-30T16:56:33.984+02:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="de-DE">Patientenbezogener Medikationsplan</name>
+    </project>
+    <project json:array="true" id="1.2.276.0.76.3.1.217.77.1" prefix="haevgptv-" defaultLanguage="de-DE" lastmodified="2023-10-24T08:11:22.634+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">Patiententeilnehmerverzeichnis</name>
+    </project>
+    <project json:array="true" id="1.2.40.0.34.777.12" prefix="at-pv-" defaultLanguage="de-DE" lastmodified="2026-04-17T09:43:01.976+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE" lastTranslated="2024-11-19T12:02:44">Patientenverfügung</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.2.4.3.22.77" prefix="stprn-" defaultLanguage="nl-NL" lastmodified="2023-10-24T08:11:23.132+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="nl-NL">Perinatale Registratie Nederland</name>
+    </project>
+    <project json:array="true" id="1.2.40.0.34.777.19" prefix="at-pflege-" defaultLanguage="de-DE" lastmodified="2026-04-30T13:44:58.193+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE" lastTranslated="2025-06-19T22:45:48">Pflegeberichte</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.4424.13" prefix="plcda-" defaultLanguage="pl-PL" lastmodified="2023-10-24T08:11:21.814+02:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="pl-PL">Polska Implementacja Krajowa HL7 CDA</name>
+        <name json:array="true" language="en-US">Polish National Implementation of HL7 CDA</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.2.51.3.3.777.1" prefix="pcsp-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:21.823+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">Project PanCareSurPass (PCSP)</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.20" prefix="phcrg-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:23.815+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">Public Health Case Reporting</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.2.6.60.1" prefix="qinkfh-" defaultLanguage="de-DE" lastmodified="2023-10-24T08:11:24.051+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">QiN/KfH Nephrologie</name>
+        <name json:array="true" language="en-US">QiN/KfH Nephrology</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.87" prefix="erker-" defaultLanguage="en-US" lastmodified="2024-12-31T14:04:38.745+01:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="en-US" lastTranslated="2024-07-16T14:23:19">RD-CDM</name>
+        <name json:array="true" language="de-DE" lastTranslated="2024-07-16T14:23:32">RD-CDM</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.25" prefix="narradcda-" defaultLanguage="de-DE" lastmodified="2023-10-24T08:11:22.42+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">Radiologischer Befundbericht</name>
+    </project>
+    <project json:array="true" id="1.3.6.1.4.1.32722.77.77.1" prefix="dlra-" defaultLanguage="nl-NL" lastmodified="2023-10-24T08:11:22.993+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="nl-NL">Radiotherapeutische longregistratie</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.74" prefix="remediblut-" defaultLanguage="de-DE" lastmodified="2025-11-18T14:43:22.972+01:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US" lastTranslated="2023-10-10T12:10:31">ReMeDi:Blut</name>
+        <name json:array="true" language="de-DE" lastTranslated="2023-10-05T20:35:38">ReMeDi:Blut</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.2.9.10.1.8" prefix="itrap-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:22.307+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">Referto Anatomia Patologica</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.2.9.10.1.7" prefix="itrr-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:21.678+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">Referto Radiologia</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.2.9.10.1.9" prefix="itrs-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:21.683+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">Referto Specialistico</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.33" prefix="traumareg-" defaultLanguage="de-DE" lastmodified="2026-07-16T18:37:02.094+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US" lastTranslated="2023-06-12T09:10:44">Register der Akademie der Unfallchirurgie</name>
+        <name json:array="true" language="de-DE" lastTranslated="2023-06-12T09:10:48">Register der Akademie der Unfallchirurgie</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.2.6.60.8" prefix="rehaa-" defaultLanguage="de-DE" lastmodified="2023-10-24T08:11:22.28+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">Reha-Entlassungsbericht</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.51" prefix="dk-resume-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:22.178+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">Resume Denmark</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.13" prefix="sasips-" defaultLanguage="fr-FR" lastmodified="2023-10-24T08:11:22.242+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="fr-FR">SASIPS</name>
+        <name json:array="true" language="en-US">SASIPS</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.41" prefix="ssmith-" defaultLanguage="en-US" lastmodified="2025-08-11T01:55:02.294+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">SMITH Sandbox</name>
+        <name json:array="true" language="de-DE">SMITH Sandbox</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.62" prefix="ssmithtr-" defaultLanguage="de-DE" lastmodified="2024-06-11T17:45:26.755+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">SMITH training</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.93" prefix="sphinx-" defaultLanguage="de-DE" lastmodified="2026-07-13T09:42:43.025+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US" lastTranslated="2025-02-12T13:04:23">SPHINX</name>
+        <name json:array="true" language="de-DE" lastTranslated="2024-12-04T20:11:28">SPHINX</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.66" prefix="sarsenalit-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:22.077+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">Sandbox Arsenal.IT</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.49" prefix="sbih-" defaultLanguage="de-DE" lastmodified="2026-07-24T17:22:29.683+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE" lastTranslated="2023-08-17T13:48:56">Sandbox BIH</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.21" prefix="cagovbc-" defaultLanguage="en-US" lastmodified="2024-11-19T09:40:08.572+01:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US" lastTranslated="2024-11-19T09:40:08">Sandbox Canada British Columbia</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.15" prefix="sifwy-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:25.062+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">Sandbox Canada Health Infoway</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.22" prefix="dcmsandbox-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:21.632+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">Sandbox DCM</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.83" prefix="sdocyet-" defaultLanguage="de-DE" lastmodified="2023-11-05T15:37:40.181+01:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE" lastTranslated="2023-10-28T13:08:33">Sandbox DOCYET</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.57" prefix="sdastacz-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:22.303+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">Sandbox Dasta CZ</name>
+        <name json:array="true" language="cs-CZ">Sandbox Dasta CZ</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.64" prefix="dk-sandbox-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:21.906+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">Sandbox Denmark</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.71" prefix="sfau-" defaultLanguage="de-DE" lastmodified="2023-10-24T08:11:22.462+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">Sandbox FAU Erlangen</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.16" prefix="sfikanta-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:23.412+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">Sandbox Finland Kanta</name>
+        <name json:array="true" language="fi-FI">Hiekkalaatikko Kanta</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.29" prefix="shl7cz-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:25.062+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">Sandbox HL7 Czech Republic</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.30" prefix="shl7it-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:23.004+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">Sandbox HL7 Italy</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.18" prefix="shl7ru-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:22.449+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">Sandbox HL7 Russia</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.52" prefix="shpi-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:22.222+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">Sandbox HPI</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.47" prefix="shsnr-" defaultLanguage="de-DE" lastmodified="2023-10-24T08:11:22.398+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">Sandbox Hochschule Niederrhein</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.63" prefix="simise-" defaultLanguage="en-US" lastmodified="2025-08-11T01:55:02.291+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">Sandbox IMISE</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.54" prefix="kbvsandbox-" defaultLanguage="de-DE" lastmodified="2023-10-24T08:11:22.051+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">Sandbox KBV</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.61" prefix="skrhie-" defaultLanguage="ko-KR" lastmodified="2023-10-24T08:11:21.661+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">Sandbox Korean National HIE</name>
+        <name json:array="true" language="ko-KR">한국의 CDA IG</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.28" prefix="slatam-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:24.052+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">Sandbox LATAM</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.44" prefix="smhh-" defaultLanguage="de-DE" lastmodified="2023-10-24T08:11:22.072+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">Sandbox MHH</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.43" prefix="smamsc-" defaultLanguage="de-DE" lastmodified="2023-10-24T08:11:22.205+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">Sandbox Mammographie-Screening</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.45" prefix="smul-" defaultLanguage="de-DE" lastmodified="2023-10-24T08:11:21.724+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">Sandbox Medizin Uni Leipzig</name>
+        <name json:array="true" language="de-DE">Sandbox Medizin Uni Leipzig</name>
+    </project>
+    <project json:array="true" id="2.16.9999.1.113883.2.4.3.11.9999.905" prefix="snictiz-" defaultLanguage="nl-NL" lastmodified="2023-10-24T08:11:22.514+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="nl-NL" lastTranslated="2022-11-15T13:59:11">Sandbox Nictiz</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.42" prefix="sqms-" defaultLanguage="de-DE" lastmodified="2023-10-24T08:11:22.126+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">Sandbox QMS</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.51" prefix="satehik-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:22.379+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">Sandbox TEHIK</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.72" prefix="susb-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:22.208+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US" lastTranslated="2023-07-01T12:04:29">Sandbox University Hospital Basel</name>
+        <name json:array="true" language="de-DE" lastTranslated="2023-07-01T12:04:29">Sandbox Universitätsspital Basel</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.67" prefix="sxehealth-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:21.972+02:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="en-US">Sandbox X-eHealth</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.55" prefix="miisandbox-" defaultLanguage="de-DE" lastmodified="2025-08-11T01:55:02.289+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">Sandbox der Medizininformtik-Initiative (MII)</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.3" prefix="sandbox-" defaultLanguage="en-US" lastmodified="2026-03-31T22:57:25.718+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">Sandbox: EKG Report CDA Document</name>
+        <name json:array="true" language="nl-NL">Sandbox: ECG-verslag CDA-document</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.2.9.10.1.11" prefix="itscv-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:21.714+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">Scheda e Certificato vaccinale</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.72" prefix="s4c23-" defaultLanguage="de-DE" lastmodified="2025-12-01T17:07:37.177+01:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE" lastTranslated="2023-06-22T12:01:47">Screen4Care</name>
+        <name json:array="true" language="en-US" lastTranslated="2023-06-22T16:22:22">Screen4Care</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.2.16.777.1" prefix="supa-" defaultLanguage="de-DE" lastmodified="2023-10-24T08:11:21.926+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">Survivorship Passport</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.25" prefix="tmfs-" defaultLanguage="de-DE" lastmodified="2025-08-11T01:55:02.296+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">TMF Seminar Metadata</name>
+    </project>
+    <project json:array="true" id="1.3.6.1.4.1.32722.78" prefix="trapos-" defaultLanguage="nl-NL" lastmodified="2023-10-24T08:11:22.559+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="nl-NL">TRAIT-POSEIDON</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.39" prefix="teleneps-" defaultLanguage="de-DE" lastmodified="2023-10-24T08:11:22.329+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">Tele-NEPS</name>
+    </project>
+    <project json:array="true" id="1.2.40.0.34.777.3" prefix="elgatgd-" defaultLanguage="de-DE" lastmodified="2026-07-29T14:42:33.247+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE" lastTranslated="2024-01-12T10:07:59">Telemonitoring Episodenbericht</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.5" prefix="tmpldstu-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:21.621+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">Templates DSTU R1</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.19" prefix="trilm2-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:23.915+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">Trillium II</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.78" prefix="unicom-" defaultLanguage="en-US" lastmodified="2024-03-08T21:52:24.096+01:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US" lastTranslated="2023-12-27T11:19:59">UNICOM</name>
+    </project>
+    <project json:array="true" id="1.2.276.0.76.3.1.135.8" prefix="vomgt-" defaultLanguage="de-DE" lastmodified="2023-10-24T08:11:23.128+02:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="de-DE">Verordnungsmanagement</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.2.51.3.1.777.1" prefix="eehrxf-" defaultLanguage="en-US" lastmodified="2023-12-15T10:10:55.729+01:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="en-US">X-eHealth</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.12" prefix="ihexds-" defaultLanguage="en-US" lastmodified="2023-10-24T08:11:22.217+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US">X-eHealth IHE XD* metadata</name>
+        <name json:array="true" language="fr-FR">X-eHealth IHE XD* metadata</name>
+        <name json:array="true" language="de-AT">X-eHealth IHE XD* metadata</name>
+        <name json:array="true" language="de-DE">X-eHealth IHE XD* metadata</name>
+        <name json:array="true" language="pt-PT">X-eHealth IHE XD* metadata</name>
+        <name json:array="true" language="da-DK">X-eHealth IHE XD* metadata</name>
+        <name json:array="true" language="nl-NL">X-eHealth IHE XD* metadata</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.49" prefix="cz-ehealth-" defaultLanguage="cs-CZ" lastmodified="2023-10-24T08:11:21.91+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US" lastTranslated="2022-11-13T15:41:38">e-Health Czech Republic</name>
+        <name json:array="true" language="cs-CZ" lastTranslated="2022-11-13T15:41:38">e-Health Czech Republic</name>
+    </project>
+    <project json:array="true" id="1.2.40.0.34.777.17" prefix="at-emed-" defaultLanguage="de-DE" lastmodified="2026-04-17T09:46:43.028+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE" lastTranslated="2024-01-29T19:17:00">e-Medikation</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.2.6.60.10" prefix="abde-" defaultLanguage="de-DE" lastmodified="2025-06-30T16:57:24.313+02:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="de-DE">eArztbrief</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.54" prefix="einwde-" defaultLanguage="de-DE" lastmodified="2026-04-17T09:50:11.371+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">eEinweisungsbrief</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.85" prefix="ehng-" defaultLanguage="en-US" lastmodified="2024-06-07T19:38:02.275+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="en-US" lastTranslated="2024-04-02T18:40:16">eHealth Network guidelines</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.61" prefix="ehygb-" defaultLanguage="de-DE" lastmodified="2023-12-21T09:39:12.411+01:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">eHygienebericht</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.34" prefix="epflb-" defaultLanguage="de-DE" lastmodified="2023-10-24T08:11:21.837+02:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="de-DE">ePflegebericht</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.2.6.60.12" prefix="evthm-" defaultLanguage="de-DE" lastmodified="2023-10-24T08:11:25.259+02:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="de-DE">eVent@home</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.36" prefix="ewundb-" defaultLanguage="de-DE" lastmodified="2023-10-24T08:11:21.627+02:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="de-DE">eWundbericht</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.53" prefix="sgevko-" defaultLanguage="de-DE" lastmodified="2023-10-24T08:11:21.948+02:00" experimental="true" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">gevko Sandbox</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.99.61.60" prefix="ifoot-" defaultLanguage="de-DE" lastmodified="2023-10-24T08:11:21.827+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">iFoot</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.3.1937.777.76" prefix="oemii-" defaultLanguage="de-DE" lastmodified="2024-01-10T09:54:26.577+01:00" experimental="false" repository="true" private="false" author="false">
+        <name json:array="true" language="de-DE" lastTranslated="2023-11-20T15:04:00">openEHR Konversionen MII</name>
+    </project>
+    <project json:array="true" id="1.2.40.0.34.777.13" prefix="at-ala-" defaultLanguage="de-DE" lastmodified="2023-10-24T08:11:22.174+02:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">Ärztliche Leistungsanforderung</name>
+    </project>
+    <project json:array="true" id="2.16.840.1.113883.2.6.60.5" prefix="uelmgmt-" defaultLanguage="de-DE" lastmodified="2023-12-28T12:09:29.321+01:00" experimental="false" repository="false" private="false" author="false">
+        <name json:array="true" language="de-DE">Überleitungsmanagement</name>
+    </project>
+</list>

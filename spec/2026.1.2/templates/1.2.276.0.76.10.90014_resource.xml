@@ -1,0 +1,100 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.90014" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pharm="urn:ihe:pharm" id="1.2.276.0.76.10.90014" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="Performer (Body)" cda:dummy-4="urn:hl7-org:v3" ident="hl7de-" name="PerformerBody" xml:dummy-2="http://www.w3.org/XML/1998/namespace" pharm:dummy-1="urn:ihe:pharm" statusCode="draft" url="http://art-decor.org/decor/services/" effectiveDate="2014-03-12T10:18:42">
+            <desc language="de-DE">Verantwortliche ausführende Organisation (performer)</desc>
+            <classification type="cdaentrylevel"/>
+            <attribute name="typeCode" value="PRF" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.77.9.684"/>
+            <element name="hl7:time" minimumMultiplicity="0" maximumMultiplicity="1" datatype="IVL_TS" id="2.16.840.1.113883.2.6.77.9.1015">
+                <item original="false" label="PerformerBody"/>
+            </element>
+            <element name="hl7:assignedEntity" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.685">
+                <item original="false" label="PerformerBody"/>
+                <include ref="1.2.276.0.76.10.90012" tmid="1.2.276.0.76.10.90012" tmname="AssignedEntityElements" tmdisplayName="CDA Assigned Entity Elements" tmeffectiveDate="2011-12-19T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                    <item original="false" label="PerformerBody"/>
+                    <element name="hl7:id" datatype="II" id="2.16.840.1.113883.2.6.77.9.339" minimumMultiplicity="1" maximumMultiplicity="*" conformance="R">
+                        <item original="false" label="AssignedEntityElements"/>
+                    </element>
+                    <element name="hl7:addr" datatype="AD" id="2.16.840.1.113883.2.6.77.9.340" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R">
+                        <item original="false" label="AssignedEntityElements"/>
+                    </element>
+                    <element name="hl7:telecom" datatype="TEL" id="2.16.840.1.113883.2.6.77.9.341" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R">
+                        <item original="false" label="AssignedEntityElements"/>
+                    </element>
+                    <element name="hl7:assignedPerson" id="2.16.840.1.113883.2.6.77.9.342" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                        <item original="false" label="AssignedEntityElements"/>
+                        <include ref="1.2.276.0.76.10.90010" tmid="1.2.276.0.76.10.90010" tmname="PersonElements" tmdisplayName="CDA Person Elements" tmeffectiveDate="2011-12-19T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                            <item original="false" label="AssignedEntityElements"/>
+                            <attribute name="classCode" value="PSN" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.330"/>
+                            <attribute name="determinerCode" value="INSTANCE" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.331"/>
+                            <element name="hl7:name" datatype="PN" id="2.16.840.1.113883.2.6.77.9.332" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                                <item original="false" label="PersonElements"/>
+                            </element>
+                            <staticAssociations/>
+                        </include>
+                    </element>
+                    <element name="hl7:representedOrganization" id="2.16.840.1.113883.2.6.77.9.343" minimumMultiplicity="0" maximumMultiplicity="1">
+                        <item original="false" label="AssignedEntityElements"/>
+                        <include ref="1.2.276.0.76.10.90011" tmid="1.2.276.0.76.10.90011" tmname="OrganizationElements" tmdisplayName="CDA Organization Elements" tmeffectiveDate="2011-12-19T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                            <item original="false" label="AssignedEntityElements"/>
+                            <attribute name="classCode" value="ORG" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.333"/>
+                            <attribute name="determinerCode" value="INSTANCE" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.334"/>
+                            <element name="hl7:id" datatype="II" id="2.16.840.1.113883.2.6.77.9.335" minimumMultiplicity="0" maximumMultiplicity="*">
+                                <item original="false" label="OrganizationElements"/>
+                            </element>
+                            <element name="hl7:name" datatype="ON" id="2.16.840.1.113883.2.6.77.9.336" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                                <item original="false" label="OrganizationElements"/>
+                            </element>
+                            <element name="hl7:telecom" datatype="TEL" id="2.16.840.1.113883.2.6.77.9.337" minimumMultiplicity="0" maximumMultiplicity="*">
+                                <item original="false" label="OrganizationElements"/>
+                            </element>
+                            <element name="hl7:addr" datatype="AD" id="2.16.840.1.113883.2.6.77.9.338" minimumMultiplicity="0" maximumMultiplicity="1">
+                                <item original="false" label="OrganizationElements"/>
+                            </element>
+                            <staticAssociations/>
+                        </include>
+                    </element>
+                    <staticAssociations/>
+                </include>
+            </element>
+            <staticAssociations/>
+            <ref type="contains" prefix="vomgt-" flexibility="dynamic" id="1.2.276.0.76.3.1.135.8.10.217" name="BehandlungenProc" displayName="BehandlungenProcedure" effectiveDate="2020-06-23T16:40:19" statusCode="draft" ident="vomgt-"/>
+            <ref type="dependency" prefix="evthm-" flexibility="2017-05-01T00:00:00" id="1.2.276.0.76.10.1022" name="Livedatencda" displayName="Live-Daten-CDA Dokument" effectiveDate="2017-01-23T00:00:00" statusCode="draft" ident="evthm-"/>
+            <ref type="dependency" prefix="evthm-" flexibility="2017-05-01T00:00:00" id="1.2.276.0.76.10.1023" name="Ueberleitungsdatencda" displayName="Überleitungs-CDA Dokument" effectiveDate="2017-03-14T00:00:00" statusCode="draft" ident="evthm-"/>
+            <ref type="dependency" prefix="evthm-" flexibility="2017-05-22T00:00:00" id="1.2.276.0.76.10.3094" effectiveDate="2017-05-01T00:00:00" name="Spezielletherapeutischeaspekte" displayName="Spezielle therapeutische Aspekte" statusCode="draft" ident="evthm-"/>
+            <ref type="include" prefix="ifsgm-" flexibility="dynamic" id="1.2.276.0.76.10.4006" name="LaboratoryReportSpecimenCollectionNotifiableDiseases" displayName="Laboratory Report Specimen Collection Notifiable Diseases" effectiveDate="2014-07-13T10:18:42" statusCode="draft" ident="ifsgm-"/>
+            <ref type="include" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.4029" name="RelatedDispense" displayName="Bezug zu Abgabe des Medikaments" effectiveDate="2014-12-21T00:00:00" statusCode="draft" ident="pmp-"/>
+            <ref type="contains" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.4085" name="ProcedureActivityProcedure" displayName="Maßnahme" effectiveDate="2017-02-01T00:00:00" statusCode="draft" ident="hl7de-"/>
+            <ref type="contains" prefix="evthm-" flexibility="dynamic" id="1.2.276.0.76.10.4227" effectiveDate="2017-05-22T00:00:00" name="Physiotherapie" displayName="Physiotherapie" statusCode="draft" ident="evthm-"/>
+            <ref type="contains" prefix="evthm-" flexibility="dynamic" id="1.2.276.0.76.10.4228" effectiveDate="2017-05-22T00:00:00" name="Ergotherapie" displayName="Ergotherapie" statusCode="draft" ident="evthm-"/>
+            <ref type="contains" prefix="evthm-" flexibility="dynamic" id="1.2.276.0.76.10.4229" effectiveDate="2017-05-22T00:00:00" name="Logopaedie" displayName="Logopädie" statusCode="draft" ident="evthm-"/>
+            <ref type="contains" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.4270" name="TemporaryDisablementObservation" displayName="Arbeitsunfähigkeitsbescheinigung Observation" effectiveDate="2017-05-24T00:00:00" statusCode="draft" ident="hl7de-"/>
+            <uses type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.90012" name="AssignedEntityElements" displayName="CDA Assigned Entity Elements" statusCode="active" effectiveDate="2011-12-19T00:00:00" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+            <ref type="contains" prefix="medmgmt-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.48.10.20" name="Medicationtherapysafetychecks" displayName="AMTS Prüfung" statusCode="pending" effectiveDate="2019-02-12T00:00:00" ident="medmgmt-"/>
+            <ref type="contains" prefix="sgevko-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.53.10.152" name="BehandlungenProcedure" displayName="BehandlungenProcedure" effectiveDate="2019-10-09T17:46:15" statusCode="draft" ident="sgevko-"/>
+            <ref type="contains" prefix="hauskomet-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.27.10.3" name="Medicationtherapysafetychecks" displayName="AMTS Prüfung" statusCode="cancelled" effectiveDate="2018-09-07T00:00:00" ident="hauskomet-"/>
+            <ref type="contains" prefix="eImpfpass-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.35.10.119" name="ElektronischerImpfpassImpfung" displayName="Impfung" effectiveDate="2019-07-04T10:17:05" statusCode="draft" ident="eImpfpass-"/>
+            <ref type="contains" prefix="ewundb-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.36.10.59" name="Kausaltherapiemaßnahme" displayName="Diagnostik- oder Therapiemaßnahme - Procedure" effectiveDate="2019-06-04T09:59:01" statusCode="draft" versionLabel="0.9" ident="ewundb-"/>
+            <ref type="contains" prefix="ewundb-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.36.10.79" name="Massnahme" displayName="Lokaltherapiemaßnahme (NKDUC)" statusCode="cancelled" effectiveDate="2019-06-20T15:15:13" ident="ewundb-"/>
+        </template>
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pharm="urn:ihe:pharm" ref="1.2.276.0.76.10.90014" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="Performer (Body)" cda:dummy-4="urn:hl7-org:v3" ident="hl7de-" name="PerformerBody" xml:dummy-2="http://www.w3.org/XML/1998/namespace" pharm:dummy-1="urn:ihe:pharm" statusCode="draft" url="http://art-decor.org/decor/services/" effectiveDate="2014-03-12T10:18:42">
+            <ref type="contains" prefix="vomgt-" flexibility="dynamic" id="1.2.276.0.76.3.1.135.8.10.217" name="BehandlungenProc" displayName="BehandlungenProcedure" effectiveDate="2020-06-23T16:40:19" statusCode="draft" ident="vomgt-"/>
+            <ref type="dependency" prefix="evthm-" flexibility="2017-05-01T00:00:00" id="1.2.276.0.76.10.1022" name="Livedatencda" displayName="Live-Daten-CDA Dokument" effectiveDate="2017-01-23T00:00:00" statusCode="draft" ident="evthm-"/>
+            <ref type="dependency" prefix="evthm-" flexibility="2017-05-01T00:00:00" id="1.2.276.0.76.10.1023" name="Ueberleitungsdatencda" displayName="Überleitungs-CDA Dokument" effectiveDate="2017-03-14T00:00:00" statusCode="draft" ident="evthm-"/>
+            <ref type="dependency" prefix="evthm-" flexibility="2017-05-22T00:00:00" id="1.2.276.0.76.10.3094" effectiveDate="2017-05-01T00:00:00" name="Spezielletherapeutischeaspekte" displayName="Spezielle therapeutische Aspekte" statusCode="draft" ident="evthm-"/>
+            <ref type="include" prefix="ifsgm-" flexibility="dynamic" id="1.2.276.0.76.10.4006" name="LaboratoryReportSpecimenCollectionNotifiableDiseases" displayName="Laboratory Report Specimen Collection Notifiable Diseases" effectiveDate="2014-07-13T10:18:42" statusCode="draft" ident="ifsgm-"/>
+            <ref type="include" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.4029" name="RelatedDispense" displayName="Bezug zu Abgabe des Medikaments" effectiveDate="2014-12-21T00:00:00" statusCode="draft" ident="pmp-"/>
+            <ref type="contains" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.4085" name="ProcedureActivityProcedure" displayName="Maßnahme" effectiveDate="2017-02-01T00:00:00" statusCode="draft" ident="hl7de-"/>
+            <ref type="contains" prefix="evthm-" flexibility="dynamic" id="1.2.276.0.76.10.4227" effectiveDate="2017-05-22T00:00:00" name="Physiotherapie" displayName="Physiotherapie" statusCode="draft" ident="evthm-"/>
+            <ref type="contains" prefix="evthm-" flexibility="dynamic" id="1.2.276.0.76.10.4228" effectiveDate="2017-05-22T00:00:00" name="Ergotherapie" displayName="Ergotherapie" statusCode="draft" ident="evthm-"/>
+            <ref type="contains" prefix="evthm-" flexibility="dynamic" id="1.2.276.0.76.10.4229" effectiveDate="2017-05-22T00:00:00" name="Logopaedie" displayName="Logopädie" statusCode="draft" ident="evthm-"/>
+            <ref type="contains" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.4270" name="TemporaryDisablementObservation" displayName="Arbeitsunfähigkeitsbescheinigung Observation" effectiveDate="2017-05-24T00:00:00" statusCode="draft" ident="hl7de-"/>
+            <uses type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.90012" name="AssignedEntityElements" displayName="CDA Assigned Entity Elements" statusCode="active" effectiveDate="2011-12-19T00:00:00" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+            <ref type="contains" prefix="medmgmt-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.48.10.20" name="Medicationtherapysafetychecks" displayName="AMTS Prüfung" statusCode="pending" effectiveDate="2019-02-12T00:00:00" ident="medmgmt-"/>
+            <ref type="contains" prefix="sgevko-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.53.10.152" name="BehandlungenProcedure" displayName="BehandlungenProcedure" effectiveDate="2019-10-09T17:46:15" statusCode="draft" ident="sgevko-"/>
+            <ref type="contains" prefix="hauskomet-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.27.10.3" name="Medicationtherapysafetychecks" displayName="AMTS Prüfung" statusCode="cancelled" effectiveDate="2018-09-07T00:00:00" ident="hauskomet-"/>
+            <ref type="contains" prefix="eImpfpass-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.35.10.119" name="ElektronischerImpfpassImpfung" displayName="Impfung" effectiveDate="2019-07-04T10:17:05" statusCode="draft" ident="eImpfpass-"/>
+            <ref type="contains" prefix="ewundb-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.36.10.59" name="Kausaltherapiemaßnahme" displayName="Diagnostik- oder Therapiemaßnahme - Procedure" effectiveDate="2019-06-04T09:59:01" statusCode="draft" versionLabel="0.9" ident="ewundb-"/>
+            <ref type="contains" prefix="ewundb-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.36.10.79" name="Massnahme" displayName="Lokaltherapiemaßnahme (NKDUC)" statusCode="cancelled" effectiveDate="2019-06-20T15:15:13" ident="ewundb-"/>
+        </template>
+    </template>
+</result>

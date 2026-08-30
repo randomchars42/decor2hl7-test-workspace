@@ -1,0 +1,240 @@
+<project xmlns:json="http://www.json.org" id="2.16.840.1.113883.2.6.60.3" prefix="aktin-" experimental="false" defaultLanguage="de-DE" repository="true" private="false" lastmodified="2026-08-27T10:08:11.608+02:00" collection="projects/aktin">
+    <name json:array="true" language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</name>
+    <name json:array="true" language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</name>
+    <desc json:array="true" language="en-US" lastTranslated="2022-11-14T19:50:35">&lt;h1&gt;Emergency Documentation for a Digital Rescue Chain&lt;/h1&gt; &lt;h2&gt;DIVI Emergency Documentation Section&lt;/h2&gt; &lt;p&gt;The goal of the interdisciplinary working group is to establish a structured, semantically harmonized, and interoperable specification for the documentation of emergency care throughout the entire rescue chain. This
+                specification should enable the standardized and unambiguous representation of medical information in the context of emergency treatment and support technical connectivity within a digital rescue chain.&lt;/p&gt; &lt;p&gt;&lt;img src="/exist/apps/api/project/aktin-/blob/4362b942-3aad-4f05-a2b9-423aadbf05fc"/&gt;&lt;/p&gt; &lt;h2&gt;The Emergency Documentation Dataset&lt;/h2&gt; &lt;p&gt;High implementability of the
+                standardized documentation tool is to be achieved, among other things, through the use of computer-supported forms, while simultaneously avoiding any duplication of documentation. The use of uniform documentation standards leads to efficient communication and coordination of information sharing between the various (involved) stakeholders and sectors of the healthcare system. The
+                structured and semantically annotated emergency documentation helps avoid redundancy and also enables the intersectoral recording of billing-relevant services or scientific questions in acute and emergency medicine.&lt;/p&gt; &lt;p&gt;While the DIVI Emergency Documentation Section develops the content (semantic) standards, the activities of the AKTIN network and HL7 Germany define the technical
+                and syntactic standards as well as the interoperability formats.&lt;/p&gt; &lt;p&gt;Since 2020, the AKTIN infrastructure has been funded by the University Medicine Network (NUM).&lt;/p&gt; &lt;h2&gt;Background: the AKTIN Project&lt;/h2&gt; &lt;p&gt;&lt;img src="/exist/apps/api/project/aktin-/blob/f69e8c2f-420d-4e17-9e8c-2f420d3e171f"/&gt;&lt;/p&gt; &lt;p&gt;Collaborative research project "Improving health services research in acute
+                medicine in Germany through the establishment of a National Emergency Department Registry" (AKTIN)&lt;/p&gt; &lt;p&gt;Using data from emergency medicine, threats to public health, such as the outbreak of contagious infectious diseases, can be identified at an early stage. However, these data are currently not available at the federal and state levels in sufficient quantity or quality.
+                Therefore, scientific studies within the framework of health services research are currently hardly possible in the field of in-hospital emergency medicine. The collaborative research project "Improving Health Services Research in Acute Medicine in Germany through the Establishment of a National Emergency Room Register," or AKTIN for short, aims to change this.&lt;/p&gt; &lt;p&gt;The project is
+                based on the protocol for standardized, structured documentation in the emergency room developed by the Emergency Room Protocol Section of the German Interdisciplinary Association for Intensive Care and Emergency Medicine (DIVI). In order to consolidate the relevant data for various research questions, the development of a decentralized IT infrastructure is planned. With this IT
+                architecture, the data remains in the individual hospitals and thus in the treatment context. If a request is made for a scientific research question, only the necessary data will be consolidated, while maintaining data protection. The project will work with anonymized data.&lt;/p&gt;</desc>
+    <desc json:array="true" language="de-DE" lastTranslated="2022-11-14T19:50:35">&lt;h1&gt;Notfalldokumentation für eine Digitalen Rettungskette&lt;/h1&gt; 
+             &lt;h2&gt;DIVI Sektion Notfalldokumentation&lt;/h2&gt; 
+             &lt;p&gt;Das Ziel der interdisziplinären Arbeitsgruppe ist es, eine strukturierte, semantisch harmonisierte und interoperable Spezifikation für die Dokumentation der Notfallversorgung für den gesamten Verlauf der Rettungskette zu etablieren. Diese soll die standardisierte und eindeutige Abbildung medizinischer Informationen im Kontext der Notfallbehandlung ermöglichen und die technische
+                Anschlussfähigkeit im Rahmen einer digitalen Rettungskette unterstützen.&lt;/p&gt; 
+             &lt;p&gt;&lt;img src="/exist/apps/api/project/aktin-/blob/a661d762-18d7-42b0-a1d7-6218d7b2b054"/&gt;&lt;/p&gt; 
+             &lt;h2&gt;Der Datensatz Notfalldokumentation&lt;/h2&gt; 
+             &lt;p&gt;Eine hohe Umsetzbarkeit des standardisierten Dokumentationsinstruments soll u.a. durch den Einsatz EDV-gestützter Formulare erreicht und gleichzeitig jegliche Doppeldokumentation vermieden werden. Die Verwendung einheitlicher Dokumentationsstandards führt zu einer effizienten Kommunikation und Koordination der der Informationsweitergabe zwischen den verschiedenen (beteiligten)
+                Akteuren und Sektoren des Gesundheitswesens. Die strukturierte und semantisch annotierte Notfalldokumentation hilft dabei Redundanz zu vermeiden und ermöglicht darüber hinaus auch abrechnungsrelevante Leistungen oder wissenschaftliche Fragestellung der Akut- und Notfallmedizin intersektoral zu erfassen. &lt;/p&gt; 
+             &lt;p&gt;Während die DIVI Sektion Notfalldokumentation die inhaltlichen (semantischen) Standards erarbeitet, werden durch die Aktivitäten des AKTIN-Netzwerkes und HL7 Deutschland die technischen und syntaktischen Standards sowie die Interoperabilitätsformate definiert. &lt;/p&gt; 
+             &lt;p&gt;Seit 2020 wird die AKTIN-Infrastruktur durch das Netzwerk Universitätsmedizin (NUM) gefördert.&lt;/p&gt; 
+             &lt;h2&gt;&lt;strong&gt;Hintergrund: das AKTIN Projekt&lt;/strong&gt;&lt;/h2&gt; 
+             &lt;p&gt;&lt;img src="/exist/apps/api/project/aktin-/blob/cda48346-948c-4da5-a483-46948c2da568"/&gt;&lt;/p&gt; 
+             &lt;p&gt;&lt;strong&gt;Verbundforschungsprojekt "Verbesserung der Versorgungsforschung in der Akutmedizin in Deutschland durch den Aufbau eines Nationalen Notaufnahmeregisters" (AKTIN)&lt;/strong&gt;&lt;/p&gt; 
+             &lt;p&gt;Anhand von Daten aus der Notfallmedizin werden Gefahren für die öffentliche Gesundheit, wie etwa der Ausbruch von ansteckenden Infektionskrankheiten, frühzeitig erkennbar. Dennoch stehen diese Daten bislang auf Bundes- und Landesebene weder in ausreichendem Umfang noch in ausreichender Qualität zur Verfügung. Wissenschaftliche Untersuchungen im Rahmen der Versorgungsforschung sind
+                deshalb aktuell im Bereich der innerklinischen Notfallmedizin kaum möglich. Mit dem Verbundforschungsprojekt "Verbesserung der Versorgungsforschung in der Akutmedizin in Deutschland durch den Aufbau eines Nationalen Notaufnahmeregisters", kurz AKTIN, soll sich das ändern.&lt;/p&gt; 
+             &lt;p&gt;Die Basis des Projektes ist das von der Sektion Notaufnahmeprotokoll der Deutschen Interdisziplinären Vereinigung für Intensiv- und Notfallmedizin e.V. (DIVI) entwickelte Protokoll für eine standardisierte strukturierte Dokumentation in der Notaufnahme. Um für die verschiedenen Fragestellungen die relevanten Daten zusammenführen zu können, ist der Aufbau einer dezentralen
+                IT-Infrastruktur geplant. Bei dieser IT-Architektur bleiben die Daten in den einzelnen Kliniken und damit im Behandlungskontext. Erfolgt eine Anfrage für eine wissenschaftliche Fragestellung, so werden unter Wahrung des Datenschutzes nur die erforderlichen Daten zusammengeführt. In dem Projekt soll mit anonymisierten Daten gearbeitet werden.&lt;/p&gt;</desc>
+    <copyright json:array="true" years="2022-" by="AKTIN e. V." logo="Aktin_Logo.png" type="author">
+        <addrLine json:array="true" type="">c/o Uniklinik RWTH Aachen</addrLine>
+        <addrLine json:array="true" type="">Institut für Medizinische Informatik</addrLine>
+        <addrLine json:array="true" type="">Pauwelsstraße 35</addrLine>
+        <addrLine json:array="true" type="">52074 Aachen</addrLine>
+        <addrLine json:array="true" type="phone">Tel. +49 391 67 28186</addrLine>
+        <addrLine json:array="true" type="email">office@aktin.org</addrLine>
+    </copyright>
+    <copyright json:array="true" years="2014-" by="DIVI e.V." type="contributor">
+        <addrLine json:array="true" type="">DIVI e.V.</addrLine>
+        <addrLine json:array="true" type="">Schumannstraße 2</addrLine>
+        <addrLine json:array="true" type="">10117 Berlin</addrLine>
+        <addrLine json:array="true" type="phone">Tel. +49 30 40 00 56 07</addrLine>
+        <addrLine json:array="true" type="email">info@divi.de</addrLine>
+    </copyright>
+    <copyright json:array="true" years="2014-" by="DGINA e.V." type="contributor">
+        <addrLine json:array="true" type="">DGINA e.V.</addrLine>
+        <addrLine json:array="true" type="">Hohenzollerndamm 152</addrLine>
+        <addrLine json:array="true" type="">14199 Berlin</addrLine>
+        <addrLine json:array="true" type="phone">Tel. +49 176 9540 1733</addrLine>
+        <addrLine json:array="true" type="email">kontakt@dgina.de</addrLine>
+    </copyright>
+    <copyright json:array="true" years="2020-" by="Förderer: NUM BMBF" type="reviewer">
+        <addrLine json:array="true" type="">NUM BMBF als Förderer</addrLine>
+    </copyright>
+    <copyright json:array="true" years="2013-2019" by="Förderer: BMBF" type="reviewer">
+        <addrLine json:array="true" type="">BMBF als Förderer</addrLine>
+    </copyright>
+    <copyright json:array="true" years="2014-2016" by="AKTIN Projekt" logo="aktin.png" type="author">
+        <addrLine json:array="true" type="">Projektleitung</addrLine>
+        <addrLine json:array="true" type="">Dr. Dominik Brammen </addrLine>
+        <addrLine json:array="true" type="">Otto-von-Guericke-Universität Magdeburg, Universitätsklinik für Unfallchirurgie</addrLine>
+        <addrLine json:array="true" type="">Leipziger Str. 44</addrLine>
+        <addrLine json:array="true" type="">39120 Magdeburg</addrLine>
+        <addrLine json:array="true" type="phone">Tel. +49 017 3901856</addrLine>
+        <addrLine json:array="true" type="fax">Fax +49 391 67 15637</addrLine>
+        <addrLine json:array="true" type="email">dominik.brammen@aktin.org</addrLine>
+    </copyright>
+    <copyright json:array="true" years="2014-2016" by="Otto-von-Guericke Universität Magdeburg" logo="umd.png" type="author">
+        <addrLine json:array="true" type="">Medizinische Fakultät</addrLine>
+        <addrLine json:array="true" type="">Universitätsklinik für Unfallchirurgie</addrLine>
+        <addrLine json:array="true" type="">Univ.-Prof. Felix Walcher</addrLine>
+        <addrLine json:array="true" type="">Dr. Dominik Brammen</addrLine>
+        <addrLine json:array="true" type="">Jessica Geib </addrLine>
+    </copyright>
+    <copyright json:array="true" years="2014-2016" by="Carl von Ossietzky Universität Oldenburg" logo="cvouol.png" type="author">
+        <addrLine json:array="true" type="">Prof. Dr. Rainer Röhrig</addrLine>
+        <addrLine json:array="true" type="">Abteilung Medizinische Informatik</addrLine>
+        <addrLine json:array="true" type="">Department für Versorgungsforschung</addrLine>
+        <addrLine json:array="true" type="">Fakultät für Medizin und Gesundheitswissenschaften</addrLine>
+    </copyright>
+    <copyright json:array="true" years="2014-2016" by="Hochschule Niederrhein" logo="hsn.png" type="author">
+        <addrLine json:array="true" type="">Prof. Dr. med. Sylvia Thun</addrLine>
+        <addrLine json:array="true" type="">Direktorin Competence Center eHealth</addrLine>
+        <addrLine json:array="true" type="">IKT im Gesundheitswesen</addrLine>
+        <addrLine json:array="true" type="">Reinarzstr. 49</addrLine>
+        <addrLine json:array="true" type="">47805 Krefeld</addrLine>
+    </copyright>
+    <copyright json:array="true" years="2014-2016" by="TMF e.V. Berlin" logo="tmf.png" type="author">
+        <addrLine json:array="true" type="">Sebastian Claudius Semler </addrLine>
+        <addrLine json:array="true" type="">Charlottenstraße 42</addrLine>
+        <addrLine json:array="true" type="">10117 Berlin</addrLine>
+    </copyright>
+    <copyright json:array="true" years="2014-2016" by="Universität Witten/ Herdecke" logo="uwh.png" type="author">
+        <addrLine json:array="true" type="">Prof. Rolf Lefering</addrLine>
+        <addrLine json:array="true" type="">Fakultät für Gesundheit (Department für Humanmedizin) </addrLine>
+        <addrLine json:array="true" type="">Institut für Forschung in der Operativen Medizin (IFOM) </addrLine>
+        <addrLine json:array="true" type="">Abteilungsleitung</addrLine>
+        <addrLine json:array="true" type="">Universität Witten/Herdecke</addrLine>
+        <addrLine json:array="true" type="">Ostmerheimer Straße 200, Haus 38</addrLine>
+        <addrLine json:array="true" type="">51109 Köln</addrLine>
+    </copyright>
+    <license json:array="true" code="CC-BY-4.0" displayName="Creative Commons Attribution 4.0 International."/>
+    <reference json:array="true" url="http://aktin.art-decor.pub/" logo="divisnfd-aktinev.png"/>
+    <service json:array="true" type="adram" status="unchecked"/>
+    <service json:array="true" type="adawib" status="unknown"/>
+    <restURI json:array="true" for="FHIR" format="4.0">https://art-decor.org/fhir/4.0</restURI>
+    <defaultElementNamespace json:array="true" ns="hl7:"/>
+    <buildingBlockRepository json:array="true" url="http://art-decor.org/decor/services/" ident="pmp-" format="decor"/>
+    <buildingBlockRepository json:array="true" url="http://art-decor.org/decor/services/" ident="ad1bbr-" format="decor"/>
+    <buildingBlockRepository json:array="true" url="http://art-decor.org/decor/services/" ident="kbvde-" format="decor"/>
+    <buildingBlockRepository json:array="true" url="http://art-decor.org/decor/services/" ident="hl7de-" format="decor"/>
+    <buildingBlockRepository json:array="true" url="http://art-decor.org/decor/services/" ident="ad2bbr-" format="decor"/>
+    <buildingBlockRepository json:array="true" url="http://art-decor.org/decor/services/" ident="hl7ips-" format="decor"/>
+    <buildingBlockRepository json:array="true" url="http://art-decor.org/decor/services/" ident="dguvbbr-" format="decor"/>
+    <group json:array="true" id="2.16.840.1.113883.2.6"/>
+    <group json:array="true" id="2.16.840.1.113883.2.6.999"/>
+    <ns json:array="true" uri="http://www.w3.org/XML/1998/namespace" prefix="xml" default="false" readonly="true"/>
+    <ns json:array="true" uri="urn:hl7-org:v3" prefix="hl7" default="true" readonly="true"/>
+    <ns json:array="true" uri="urn:hl7-org:v3" prefix="cda" default="false" readonly="true"/>
+    <ns json:array="true" uri="http://www.w3.org/2001/XMLSchema-instance" prefix="xsi" default="false" readonly="true"/>
+    <statistics json:array="true">
+        <datasets json:array="true" count="13" concepts="10790"/>
+        <scenarios json:array="true" count="7" transactions="53"/>
+        <terminologies json:array="true" count="148"/>
+        <profiles json:array="true" count="362"/>
+        <issues json:array="true" count="251" open="0"/>
+        <releases json:array="true" count="45"/>
+    </statistics>
+    <ids json:array="true">
+        <baseId json:array="true" id="2.16.840.1.113883.2.6.60.3.1" type="DS" prefix="aktin-dataset-" default="true"/>
+        <baseId json:array="true" id="2.16.840.1.113883.2.6.60.3.2.1" type="DE" prefix="aktin-dataelement2014(1)-" default="false"/>
+        <baseId json:array="true" id="2.16.840.1.113883.2.6.60.3.2.2" type="DE" prefix="aktin-dataelement2015(1)-" default="false"/>
+        <baseId json:array="true" id="2.16.840.1.113883.2.6.60.3.2.3" type="DE" prefix="aktin-dataelement2015(2)-" default="false"/>
+        <baseId json:array="true" id="2.16.840.1.113883.2.6.60.3.2.4" type="DE" prefix="aktin-dataelement2016(1)-" default="false"/>
+        <baseId json:array="true" id="2.16.840.1.113883.2.6.60.3.2.5" type="DE" prefix="aktin-dataelement2020(1)-" default="false"/>
+        <baseId json:array="true" id="2.16.840.1.113883.2.6.60.3.2.6" type="DE" prefix="nap-dataelement2020(1)-" default="false"/>
+        <baseId json:array="true" id="2.16.840.1.113883.2.6.60.3.2.7" type="DE" prefix="nep-dataelement2020(1)-" default="false"/>
+        <baseId json:array="true" id="2.16.840.1.113883.2.6.60.3.2.8" type="DE" prefix="basis-dataelement2025-" default="false"/>
+        <baseId json:array="true" id="2.16.840.1.113883.2.6.60.3.2.9" type="DE" prefix="notfdok-dataelement2025-" default="true"/>
+        <baseId json:array="true" id="2.16.840.1.113883.2.6.60.3.2" type="DE" prefix="aktin-dataelement-" default="false"/>
+        <baseId json:array="true" id="2.16.840.1.113883.2.6.60.3.3" type="SC" prefix="aktin-scenario-" default="true"/>
+        <baseId json:array="true" id="2.16.840.1.113883.2.6.60.3.4" type="TR" prefix="aktin-transaction-" default="true"/>
+        <baseId json:array="true" id="2.16.840.1.113883.2.6.60.3.5" type="CS" prefix="aktin-codesystem-" default="false"/>
+        <baseId json:array="true" id="1.2.276.0.76.3.1.195.5" type="CS" prefix="divi-codesystem-" default="true"/>
+        <baseId json:array="true" id="2.16.840.1.113883.2.6.60.3.6" type="IS" prefix="aktin-issue-" default="true"/>
+        <baseId json:array="true" id="2.16.840.1.113883.2.6.60.3.7" type="AC" prefix="aktin-actor-" default="true"/>
+        <baseId json:array="true" id="2.16.840.1.113883.2.6.60.3.8" type="CL" prefix="aktin-conceptlist-" default="true"/>
+        <baseId json:array="true" id="2.16.840.1.113883.2.6.60.3.9" type="EL" prefix="aktin-template-element-" default="true"/>
+        <baseId json:array="true" id="1.2.276.0.76.3.1.195.10" type="TM" prefix="aktin-template-" default="true"/>
+        <baseId json:array="true" id="1.2.276.0.76.3.1.195.5.11" type="VS" prefix="aktin-valueset-" default="true"/>
+        <baseId json:array="true" id="2.16.840.1.113883.2.6.60.3.16" type="RL" prefix="aktin-rule-intern-" default="true"/>
+        <baseId json:array="true" id="2.16.840.1.113883.2.6.60.3.17" type="TX" prefix="aktin-test-transaction-" default="true"/>
+        <baseId json:array="true" id="2.16.840.1.113883.2.6.60.3.18" type="SX" prefix="aktin-test-scenario-" default="true"/>
+        <baseId json:array="true" id="2.16.840.1.113883.2.6.60.3.19" type="EX" prefix="aktin-example-instance-" default="true"/>
+        <baseId json:array="true" id="2.16.840.1.113883.2.6.60.3.20" type="QX" prefix="aktin-qualification-test-instance-" default="true"/>
+        <baseId json:array="true" id="2.16.840.1.113883.2.6.60.3.21" type="CM" prefix="aktin-community-" default="true"/>
+        <baseId json:array="true" id="2.16.840.1.113883.2.6.60.3.24" type="MP" prefix="dguvbbr-conceptmap-" default="true"/>
+        <baseId json:array="true" id="2.16.840.1.113883.2.6.60.3.25" type="SD" prefix="aktin-structuredefinition-" default="true"/>
+        <baseId json:array="true" id="2.16.840.1.113883.2.6.60.3.26" type="QQ" prefix="aktin-questionnaire-" default="true"/>
+        <baseId json:array="true" id="2.16.840.1.113883.2.6.60.3.27" type="QR" prefix="aktin-questionnaireresponse-" default="true"/>
+        <baseId json:array="true" id="2.16.840.1.113883.2.6.60.3.28" type="QE" prefix="aktin-questionnaire(enriched)-" default="true"/>
+        <baseId json:array="true" id="2.16.840.1.113883.2.6.60.3.29" type="BC" prefix="aktin-browsercodesystem-" default="true"/>
+        <baseId json:array="true" id="2.16.840.1.113883.2.6.60.3.30" type="IG" prefix="aktin-implementationguide-" default="true"/>
+        <defaultBaseId json:array="true" id="2.16.840.1.113883.2.6.60.3.1" type="DS"/>
+        <defaultBaseId json:array="true" id="2.16.840.1.113883.2.6.60.3.2.9" type="DE"/>
+        <defaultBaseId json:array="true" id="2.16.840.1.113883.2.6.60.3.3" type="SC"/>
+        <defaultBaseId json:array="true" id="2.16.840.1.113883.2.6.60.3.4" type="TR"/>
+        <defaultBaseId json:array="true" id="1.2.276.0.76.3.1.195.5" type="CS"/>
+        <defaultBaseId json:array="true" id="2.16.840.1.113883.2.6.60.3.6" type="IS"/>
+        <defaultBaseId json:array="true" id="2.16.840.1.113883.2.6.60.3.7" type="AC"/>
+        <defaultBaseId json:array="true" id="2.16.840.1.113883.2.6.60.3.8" type="CL"/>
+        <defaultBaseId json:array="true" id="2.16.840.1.113883.2.6.60.3.9" type="EL"/>
+        <defaultBaseId json:array="true" id="2.16.840.1.113883.2.6.60.3.10" type="TM"/>
+        <defaultBaseId json:array="true" id="2.16.840.1.113883.2.6.60.3.11" type="VS"/>
+        <defaultBaseId json:array="true" id="2.16.840.1.113883.2.6.60.3.16" type="RL"/>
+        <defaultBaseId json:array="true" id="2.16.840.1.113883.2.6.60.3.17" type="TX"/>
+        <defaultBaseId json:array="true" id="2.16.840.1.113883.2.6.60.3.18" type="SX"/>
+        <defaultBaseId json:array="true" id="2.16.840.1.113883.2.6.60.3.19" type="EX"/>
+        <defaultBaseId json:array="true" id="2.16.840.1.113883.2.6.60.3.20" type="QX"/>
+        <defaultBaseId json:array="true" id="2.16.840.1.113883.2.6.60.3.21" type="CM"/>
+        <defaultBaseId json:array="true" id="2.16.840.1.113883.2.6.60.3.24" type="MP"/>
+        <defaultBaseId json:array="true" id="2.16.840.1.113883.2.6.60.3.25" type="SD"/>
+        <defaultBaseId json:array="true" id="2.16.840.1.113883.2.6.60.3.26" type="QQ"/>
+        <defaultBaseId json:array="true" id="2.16.840.1.113883.2.6.60.3.27" type="QR"/>
+        <defaultBaseId json:array="true" id="2.16.840.1.113883.2.6.60.3.28" type="QE"/>
+        <defaultBaseId json:array="true" id="2.16.840.1.113883.2.6.60.3.29" type="BC"/>
+        <defaultBaseId json:array="true" id="2.16.840.1.113883.2.6.60.3.30" type="IG"/>
+        <id json:array="true" root="1.2.276.0.76.5.441">
+            <designation json:array="true" language="de-DE" displayName="Signifikante Pathogene">Signifikante Pathogene</designation>
+        </id>
+        <id json:array="true" root="1.2.276.0.76.5.440">
+            <designation json:array="true" language="de-DE" displayName="Zuweiser">Zuweiser</designation>
+        </id>
+        <id json:array="true" root="1.2.276.0.76.5.439">
+            <designation json:array="true" language="de-DE" displayName="CEDIS">CEDIS Presenting Complaint List</designation>
+        </id>
+        <id json:array="true" root="1.2.276.0.76.5.438">
+            <designation json:array="true" language="de-DE" displayName="Manchestertriagesystem">Manchester-Triage-System</designation>
+        </id>
+        <id json:array="true" root="1.2.276.0.76.5.437">
+            <designation json:array="true" language="de-DE" displayName="Emergencyseverityindex">Emergency Severity Index</designation>
+        </id>
+        <id json:array="true" root="1.2.276.0.76.7.5">
+            <designation json:array="true" language="de-DE" displayName="Notaufnahmeprotokoll">Das Notaufnahmeprotokoll ist ein dem präklinischen DIVI Notarzteinsatzprotokoll vergleichbare einheitliche klinische Dokumentation von Notfallpatienten aller Schweregrade und aller Fachdisziplinen. Mit einem Basismodul können 80% der Notfallpatienten einer Notaufnahme vollständig dokumentiert werden. Durch Zusatzmodule
+                wie Konsil oder Überwachung können prozessorientierte Erweiterungen vorgenommen werden. Durch die Module Trauma, Neurologie und Anästhesie können fallspezifische Erweiterungen vorgenommen werden. Durch die Verwendung des Basismoduls zusammen mit dem Trauma-, Überwachungs- und Konsil-Modul kann die vollständige Dokumentation eines polytraumatisierten Patienten inklusiver aller
+                Informationen für den Bogen S, A und B des TraumaRegister DGU erfolgen.</designation>
+            <designation json:array="true" language="en-US" displayName="Emergency Protocol">The emergency department protocol is standardized protocol for the documentation of all patients in the emergency department regardless the severity or the discipline of their disease comparable to the prehospital DIVI emergency physician protocol. The basis module allows for the complete documentation of 80% of emergency
+                department patients. Additional modules like consultation or surveillance allow the extension of process-oriented documetation. The modules trauma, neurology and anesthesia allow the extension of symptom-oriented documentation. The usage of the basis-, trauma-, surveillance- and consultation-module permit the complete trauma bay documentation including all information needed for
+                sheet S, A and B of the TraumaRegister DGU.</designation>
+        </id>
+        <id json:array="true" root="2.16.840.1.113883.2.6.60.3.5.1">
+            <designation json:array="true" language="de-DE" displayName="AKTIN-Beoabchtungscodes">AKTIN-Beoabchtungscodes</designation>
+        </id>
+        <id json:array="true" root="2.16.840.1.113883.2.6.60.3.5.2">
+            <designation json:array="true" language="de-DE" displayName="AKTIN-Prozedurcodes">AKTIN-Prozedurcodes</designation>
+        </id>
+        <id json:array="true" root="2.16.840.1.113883.2.6.60.3.5.3">
+            <designation json:array="true" language="de-DE" displayName="AKTIN-Entitätencodes">AKTIN-Entitätencodes</designation>
+        </id>
+        <id json:array="true" root="1.2.276.0.76.3.1.195.5.1">
+            <designation json:array="true" language="de-DE" displayName="AKTIN-Beoabchtungscodes">DIVI-Beoabchtungscodes</designation>
+        </id>
+        <id json:array="true" root="1.2.276.0.76.3.1.195.5.2">
+            <designation json:array="true" language="de-DE" displayName="AKTIN-Prozedurcodes">DIVI-Prozedurcodes</designation>
+        </id>
+        <id json:array="true" root="1.2.276.0.76.3.1.195.5.3">
+            <designation json:array="true" language="de-DE" displayName="AKTIN-Entitätencodes">DIVI-Entitätencodes</designation>
+        </id>
+    </ids>
+    <issues json:array="true" notifier="on">
+        <labels json:array="true">
+            <label json:array="true" code="nfa" name="Notfallärzte" color="#dae889"/>
+            <label json:array="true" code="term" name="Terminologen" color="#53caf3"/>
+            <label json:array="true" code="tech" name="Techniker/Modellierer" color="#e989a4"/>
+            <label json:array="true" code="paed" name="Pädiater" color="#C69BEB">
+                <desc json:array="true" language="en-US"/>
+            </label>
+        </labels>
+    </issues>
+</project>

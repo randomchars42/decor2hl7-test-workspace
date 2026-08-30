@@ -1,0 +1,49 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.2.6.60.6.1.1" effectiveDate="2015-06-18T18:17:24" statusCode="draft" versionLabel="2.0" prefix="psr-" shortName="" iddisplay="psr-dataset-1" url="http://art-decor.org/decor/services/" ident="psr-"><!--
+ This is a view of the dataset "" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE"/>
+    <desc language="de-DE"/>
+    <concept id="2.16.840.1.113883.2.6.60.6.2.38" effectiveDate="2015-06-29T12:49:52" statusCode="draft" type="group" iddisplay="psr-dataelement-38">
+        <implementation markdown="Organization or person who takes care for physicians and other medical professionals (concerned with fulfillment of orders for pathology studies)"/>
+        <name language="de-DE" lastTranslated="2016-04-23T16:21:13">Verwaltende Organisation</name>
+        <desc language="de-DE" lastTranslated="2017-06-20T18:23:12">Organisation oder Person, in dessen Namen Ärzte oder Assistenzberufler  arbeiten, und die juristisch die Ergebnisse deren Arbeit verantworten.</desc>
+        <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.38" conceptFlexibility="2015-06-29T12:49:52" code="58626002" codeSystem="2.16.840.1.113883.6.96" displayName="Legal guardian (person) |" effectiveDate="2020-12-14T15:42:47" equivalence="narrower" codeSystemName="SNOMED Clinical Terms"/>
+        <concept id="2.16.840.1.113883.2.6.60.6.2.88" effectiveDate="2016-11-04T11:35:00" statusCode="draft" type="item" iddisplay="psr-dataelement-88" shortName="pathologielabor">
+            <implementation shortName="pathologielabor" markdown="Laboratory for processing samples sent by a clinician with an order for pathological examination. PatLab may be a custodian organization or part of a custodian organization.&#xA;&#xA;It is a role for performer and for custodian"/>
+            <name language="de-DE" lastTranslated="2017-05-20T12:14:20">Pathologielabor</name>
+            <desc language="de-DE" lastTranslated="2017-06-17T18:02:27">Labor eines Instituts / einer Praxis für Pathologie</desc>
+            <valueDomain type="string"/>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.88" conceptFlexibility="2016-11-04T11:35:00" code="309950003" codeSystem="2.16.840.1.113883.6.96" displayName="afdeling pathologie (omgeving)" effectiveDate="2020-12-14T15:45:14" equivalence="equal" codeSystemName="SNOMED Clinical Terms"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.6.2.4" effectiveDate="2015-06-19T14:38:16" statusCode="draft" type="group" iddisplay="psr-dataelement-4" shortName="pathologe">
+            <implementation shortName="pathologe" markdown="Pathologist is that professional who makes parts of the specimen preparation, investigates the microscopic slides, establish a diagnosis, and writes and sign a report to the clinician.&#xA;&#xA;It is a role for a person."/>
+            <name language="de-DE">Pathologe</name>
+            <desc language="de-DE" lastTranslated="2017-06-20T18:21:05">Ein Pathologe ist ein Arzt, der makroskopische Proben und mikroskopische Schnitte untersucht, eine Diagnose erstellt, einen Pathologiebericht schreibt bzw. schreiben lässt und diesen freigibt. </desc>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.4" conceptFlexibility="2015-06-19T14:38:16" code="83273008" codeSystem="2.16.840.1.113883.6.96" displayName="Anatomic pathologist (occupation)" effectiveDate="2020-12-14T15:45:49" codeSystemName="SNOMED Clinical Terms"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.6.2.77" effectiveDate="2016-07-13T17:03:27" statusCode="draft" type="item" iddisplay="psr-dataelement-77" shortName="mtla">
+            <implementation shortName="mtla" markdown="That professional who takes care for specimen processing and operating devices in the pathology laboratory"/>
+            <name language="de-DE" lastTranslated="2017-06-17T17:23:22">MTL-A</name>
+            <desc language="de-DE" lastTranslated="2017-06-17T17:21:11">MTL (medizinisch-technische(r) LaborantIn</desc>
+            <valueDomain type="string"/>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.77" conceptFlexibility="2016-07-13T17:03:27" code="307988006" codeSystem="2.16.840.1.113883.6.96" displayName="Medical technician (occupation)" effectiveDate="2020-12-14T15:48:26" equivalence="equal" codeSystemName="SNOMED Clinical Terms"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.6.2.76" effectiveDate="2016-07-13T16:59:12" statusCode="draft" type="item" iddisplay="psr-dataelement-76" shortName="sekretarinschreibkraft">
+            <implementation shortName="sekretarinschreibkraft" markdown="The Secretary is that person who types the entire report or parts of it according a dictate of the pathologist. He or she also checks the billing details and takes care for sending the reports to the clinicians.&#xA;&#xA;It is a role for a person."/>
+            <name language="de-DE" lastTranslated="2017-06-17T17:26:23">Sekretärin/Schreibkraft</name>
+            <desc language="de-DE" lastTranslated="2017-06-20T18:26:09">SekretärIn ist die Person, die den Pathologiebefund im Ganzen oder in Teilen nach Diktat des Pathologen schreibt. Sie oder er prüft ebenfalls Abrechnungsdetails und sorgt für den Versand des Befundes an die Klinik.<br clear="none"/>
+                <br clear="none"/>Rolle für eine Person</desc>
+            <valueDomain type="string"/>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.76" conceptFlexibility="2016-07-13T16:59:12" code="159569006" codeSystem="2.16.840.1.113883.6.96" displayName="Secretary typist (occupation)" effectiveDate="2020-12-14T15:47:34" equivalence="equal" codeSystemName="SNOMED Clinical Terms"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.6.2.118" effectiveDate="2020-11-29T10:25:17" statusCode="draft" type="item" iddisplay="psr-dataelement-118" shortName="laborgerat">
+            <implementation shortName="laborgerat" markdown="Device is any machinery in the pathology lab, which is used for procedures on, and both analyses and measurements of specimens for observations (IvD)"/>
+            <inherit ref="2.16.840.1.113883.2.6.60.6.2.79" effectiveDate="2016-07-13T18:28:12" prefix="psr-" datasetId="2.16.840.1.113883.2.6.60.6.1.1" datasetEffectiveDate="2015-06-18T18:17:24" datasetStatusCode="draft" datasetVersionLabel="2.0" iType="item" iStatusCode="draft" iEffectiveDate="2016-07-13T18:28:12" iddisplay="psr-dataelement-79" refdisplay="psr-dataelement-79" localInherit="true"/>
+            <name language="de-DE" lastTranslated="2017-06-17T17:33:40">Laborgerät</name>
+            <desc language="de-DE" lastTranslated="2017-06-21T09:38:58">Labor- und/oder Analysegerät</desc>
+            <valueDomain type="string"/>
+        </concept>
+    </concept>
+</dataset>

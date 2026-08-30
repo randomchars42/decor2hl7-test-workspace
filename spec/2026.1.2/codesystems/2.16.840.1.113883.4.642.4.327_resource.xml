@@ -1,0 +1,25 @@
+<codeSystems>
+    <repository url="http://art-decor.org/decor/services/" ident="ad5bbr-" referencedFrom="sxehealth-" projecttype="local">
+        <codeSystem id="2.16.840.1.113883.4.642.4.327" name="ListStatus" displayName="ListStatus" effectiveDate="2019-11-01T09:29:23" statusCode="draft" versionLabel="4.0.1" canonicalUri="http://hl7.org/fhir/list-status" caseSensitive="true" language="de-DE">
+            <desc language="en-US">The current state of the list.</desc>
+            <publishingAuthority name="HL7 (FHIR Project)">
+                <addrLine type="uri">http://hl7.org/fhir</addrLine>
+                <addrLine type="email">fhir@lists.hl7.org</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <codedConcept code="current" level="0" type="L" statusCode="active">
+                    <designation displayName="Current" language="en-US" type="preferred"/>
+                    <desc language="en-US">The list is considered to be an active part of the patient's record.</desc>
+                </codedConcept>
+                <codedConcept code="retired" level="0" type="L" statusCode="active">
+                    <designation displayName="Retired" language="en-US" type="preferred"/>
+                    <desc language="en-US">The list is "old" and should no longer be considered accurate or relevant.</desc>
+                </codedConcept>
+                <codedConcept code="entered-in-error" level="0" type="L" statusCode="active">
+                    <designation displayName="Entered In Error" language="en-US" type="preferred"/>
+                    <desc language="en-US">The list was never accurate. It is retained for medico-legal purposes only.</desc>
+                </codedConcept>
+            </conceptList>
+        </codeSystem>
+    </repository>
+</codeSystems>

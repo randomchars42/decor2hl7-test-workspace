@@ -1,0 +1,30 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.777.21.1.1" effectiveDate="2018-05-07T19:19:12" statusCode="draft" versionLabel="ASIC Dataset" prefix="asic-" shortName="asicdataset" iddisplay="asic-dataset-1" url="http://art-decor.org/decor/services/" ident="asic-"><!--
+ This is a view of the dataset "ASIC-Dataset" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">ASIC-Dataset</name>
+    <desc language="de-DE"/>
+    <concept id="2.16.840.1.113883.3.1937.777.21.2.78" effectiveDate="2018-05-15T10:05:32" statusCode="draft" type="item" iddisplay="asic-dataelement-78">
+        <implementation markdown="Exspiratorische Sauerstofffraktion FeO2&#xA;%&#xA;&#xA;Der fiO2 und feO2 definieren die Sauerstoffkonzentration in der Atemluft in Prozent (0,2 Raumkonzentration).&#xA;Aus Differenz kann der Sauerstoffverbrauch errechnet werden:&#xA;VO2=AZV x (FiO2-FeO2)"/>
+        <name language="de-DE" lastTranslated="2018-08-21T15:49:59">Exspiratorische Sauerstofffraktion (FeO2)</name>
+        <desc language="de-DE" lastTranslated="2018-08-21T15:50:26">Exspiratorische Sauerstofffraktion FeO2<br clear="none"/>%<br clear="none"/>
+            <br clear="none"/>
+            <span style="display: inline !important; float: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: arial,helvetica,clean,sans-serif; font-size: 13px; font-size-adjust: none; font-stretch: normal; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 15.86px; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">Der fiO2 und feO2 definieren die Sauerstoffkonzentration in der Atemluft in Prozent (0,2 Raumkonzentration).</span>
+            <br clear="none" style="background-color: transparent; color: rgb(0, 0, 0); font-family: arial,helvetica,clean,sans-serif; font-size: 13px; font-size-adjust: none; font-stretch: normal; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 15.86px; orphans: 2; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;"/>
+            <span style="display: inline !important; float: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: arial,helvetica,clean,sans-serif; font-size: 13px; font-size-adjust: none; font-stretch: normal; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 15.86px; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">Aus Differenz kann der Sauerstoffverbrauch errechnet werden:</span>
+            <br clear="none" style="background-color: transparent; color: rgb(0, 0, 0); font-family: arial,helvetica,clean,sans-serif; font-size: 13px; font-size-adjust: none; font-stretch: normal; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 15.86px; orphans: 2; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;"/>
+            <span style="display: inline !important; float: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: arial,helvetica,clean,sans-serif; font-size: 13px; font-size-adjust: none; font-stretch: normal; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 15.86px; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">VO2=AZV x (FiO2-FeO2)</span>
+            <br clear="none"/>
+        </desc>
+        <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.777.24.2.212" flexibility="2018-07-20T14:21:57" prefix="mide-" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" iType="group" iEffectiveDate="2018-07-20T14:21:57" iStatusCode="draft" refdisplay="mide-dataelement-212">
+            <name language="de-DE" lastTranslated="2019-02-07T13:00:12">Monitoring und Vitaldaten </name>
+            <name language="en-US" lastTranslated="2018-10-01T15:05:32">Monitoring data</name>
+        </relationship>
+        <valueDomain type="quantity">
+            <property unit="%"/>
+            <example type="neutral">11%</example>
+        </valueDomain>
+        <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.78" conceptFlexibility="2018-05-15T10:05:32" code="250775008" codeSystem="2.16.840.1.113883.6.96" displayName="Expired oxygen concentration (observable entity)" effectiveDate="2018-05-17T11:45:47" codeSystemName="SNOMED Clinical Terms"/>
+    </concept>
+</dataset>

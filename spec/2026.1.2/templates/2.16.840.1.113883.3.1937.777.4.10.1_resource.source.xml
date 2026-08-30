@@ -1,0 +1,78 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.3.1937.777.4.10.1" name="CCDPerson" displayName="CCD Person" effectiveDate="2007-04-01T00:00:00" statusCode="pending" url="http://art-decor.org/decor/services/" ident="ccd1-" sdtc:dummy-1="urn:hl7-org:sdtc" xml:dummy-2="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-4="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance">
+    <desc language="en-US">
+        <h3>7.4.1 Entity Identifiers</h3>
+        <p>CDA Release 2.0 does not provide a mechanism to determine when two participants in different roles are in fact the same entity (i.e., an entity can be a person, organization or device). A CDA Document identifies each participant through the application of a role identifier. This identifier can be used to trace the participation of an entity in a given role, but cannot necessarily be used to determine that two entities are the same. While more role identities could be provided whose intended use is to unify the entities, this is better modeled through the use of an entity
+                    identifier. Therefore, to facilitate this capability, this guide defines an extension to CDA Release 2.0 that allows the person or organization playing the role to be uniquely identified, by the inclusion of an identifier on the entity.</p>
+        <p>An entity identifier opaquely represents the entity referenced in a clinical document. It has no required relationship between the entity and the role that they play in that document. Use of an entity identifier therefore gives CDA producing and consuming applications a mechanism to unite the various entities represented in the CDA document, and thereby expose relationships that would otherwise be obscured when entities cannot be recognized as being identical. When two participants have the same entity identifier, they can be assumed to be the same entity.</p>
+        <p>In the CDA Release 2.0 schema, organizations and the patient already carry an identifier on the entity, and devices can have only one form of participation (as assignedAuthoringDevice). Therefore, only those elements describing participant persons that are not the patient need to support an element to identify the person. To state it simply, each person that is represented by the CDA document that does not already have an id element may now generate one if necessary using this extension. The identifier MAY be provided in an id element from the urn:hl7-org:sdtc namespace.
+                    This element SHALL be an instance identifier (II) and SHALL appear just before name element of any person described by any role in the CDA Release 2.0 schema.</p>
+        <p>A document that identifies one person in this fashion SHOULD identify all persons in this way, otherwise there will be unidentified persons described by the document, and the utility of this extension will be negated.</p>
+        <p>Because the patient already supports an identifier element according to the CDA schema, an additional id element is not necessary and SHOULD NOT be provided in the patient element. However, to represent the patient in any other role, the identifier used in the corresponding id element SHOULD be the same as the identifier used to represent the patient.</p>
+        <p>
+            <b>CONF-537</b>: An <b>assignedPerson</b>, <b>informationRecipient</b>, <b>maintainingPerson</b>, <b>guardianPerson</b>, <b>relatedPerson</b>, <b>associatedPerson</b> or <b>subject</b>
+            <b>MAY</b> include an <b>id</b> element from the <b>urn:hl7-org:sdtc</b> namespace to uniquely identify the person.<br/>
+            <b>CONF-538</b>: The <b>id</b> element <b>SHALL</b> use the instance identifier (II) data type.<br/>
+            <b>CONF-539</b>: The <b>id</b> element <b>SHALL</b> appear just before the <b>name</b> element of the entity.</p>
+    </desc>
+    <classification type="cdaheaderlevel"/>
+    <relationship type="ADAPT" template="2.16.840.1.113883.10.12.152" flexibility="2005-09-07T00:00:00"/>
+    <attribute name="classCode" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.2509">
+                <!--valueSet name="EntityClassPerson"-->
+        <vocabulary valueSet="2.16.840.1.113883.1.11.20049"/>
+    </attribute>
+    <attribute name="determinerCode" value="INSTANCE" isOptional="true" id="2.16.840.1.113883.3.1937.777.4.9.2510"/>
+    <element name="sdtc:id" minimumMultiplicity="0" datatype="II" id="2.16.840.1.113883.3.1937.777.4.9.2511">
+        <item label="CONF-537 / CONF-538 / CONF-539"/>
+    </element>
+    <element name="hl7:name" minimumMultiplicity="0" maximumMultiplicity="*" datatype="PN" id="2.16.840.1.113883.3.1937.777.4.9.2512"/>
+    <element name="sdtc:asPatientRelationship" id="2.16.840.1.113883.3.1937.777.4.9.2513">
+        <desc language="en-US">
+            <h3>7.4.3 Patient Relationship</h3>
+            <p>CDA Release 2.0 does not provide a mechanism to relate participants other than an informant to the patient. Often useful information, such as the relationship between the patient and the policy subscriber, or the patient and the author, cannot be easily determined by traversal of the CDA document. To facilitate this capability, this guide defines an extension to CDA Release 2.0 which allows the relationship to the patient to be expressed for any participant.</p>
+            <p>Each participant other than an informant may have zero or more relationship roles with the patient. Each of these roles can be expressed by an asPatientRelationship element which further describes the type of role in a code element. The informant participant already supports specification of the relationship between the informant and the patient via the RelatedEntity class, and therefore should not include this extension.</p>
+            <p>
+                <b>Figure 16. Example use of the sdtc:asPatientRelationship extension</b>
+            </p>
+            <pre>
+    &lt;ClinicalDocument xmlns='urn:hl7-org:v3' xmlns:sdtc='urn:hl7-org:sdtc'&gt;
+        ...
+        &lt;author&gt;
+            &lt;time value='20050329224411+0500'/&gt;
+            &lt;assignedAuthor&gt;
+                ...
+                &lt;assignedPerson&gt;
+                    &lt;sdtc:id extension='12345' root='2.16.840.1.113883.3.933'/&gt;
+                    &lt;name&gt;
+                        &lt;prefix&gt;Mrs.&lt;/prefix&gt;
+                        &lt;given&gt;Abigail&lt;/given&gt;
+                        &lt;family&gt;Ruth&lt;/family&gt;
+                    &lt;/name&gt;
+                    &lt;sdtc:asPatientRelationship classCode='PRS'&gt;
+                        &lt;code code='65656005' codeSystem='2.16.840.1.113883.6.96' 
+                            displayName='Biological mother'/&gt;
+                    &lt;/sdtc:asPatientRelationship&gt;
+                &lt;/assignedPerson&gt;
+            &lt;/assignedAuthor&gt;
+        &lt;/author&gt;
+        ...
+    &lt;/ClinicalDocument&gt;
+                </pre>
+            <p>
+                <b>CONF-546</b>: <b>sdtc:asPatientRelationship</b>
+                <b>SHALL</b> contain exactly one <b>sdtc:asPatientRelationship / @classCode</b>, valued with “<b>PRS</b>”. <b>CONF-547</b>: <b>sdtc:asPatientRelationship</b>
+                <b>SHALL</b> contain exactly one <b>sdtc:asPatientRelationship / code</b>, of datatype CE. <b>CONF-548</b>: The value for “<b>sdtc:asPatientRelationship / code</b>” SHOULD be selected from ValueSet 2.16.840.1.113883.1.11.19579 FamilyHistoryRelatedSubjectCode <b>DYNAMIC</b> or 2.16.840.1.113883.1.11.20.21 FamilyHistoryPersonCode <b>DYNAMIC</b>. <b>CONF-549</b>: An informant <b>SHALL NOT</b> contain any <b>relatedPerson / sdtc:asPatientRelationship</b> elements.</p>
+        </desc>
+        <item label="CONF-546"/>
+        <attribute name="classCode" value="PRS" isOptional="false" id="2.16.840.1.113883.3.1937.777.4.9.2514">
+            <item label="CONF-547"/>
+        </attribute>
+        <assert role="error" test="not(ancestor::hl7:informant)">CONF-549: An informant SHALL NOT contain any relatedPerson / sdtc:asPatientRelationship elements.</assert>
+        <element name="sdtc:code" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CE" isMandatory="true" id="2.16.840.1.113883.3.1937.777.4.9.2515">
+            <item label="CONF-548"/>
+                    <!--valueSet name="FamilyHistoryRelatedSubjectCode"-->
+            <vocabulary valueSet="2.16.840.1.113883.1.11.19579"/>
+                    <!--valueSet name="FamilyHistoryPersonCode"-->
+            <vocabulary valueSet="2.16.840.1.113883.1.11.20.21"/>
+        </element>
+    </element>
+</template>

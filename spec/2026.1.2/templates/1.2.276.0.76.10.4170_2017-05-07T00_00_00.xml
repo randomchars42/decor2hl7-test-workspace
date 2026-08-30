@@ -1,0 +1,61 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.4170" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pharm="urn:ihe:pharm" id="1.2.276.0.76.10.4170" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="Körpertemperatur" cda:dummy-4="urn:hl7-org:v3" ident="hl7de-" name="Koerpertemperatur" xml:dummy-2="http://www.w3.org/XML/1998/namespace" pharm:dummy-1="urn:ihe:pharm" statusCode="draft" url="http://art-decor.org/decor/services/" effectiveDate="2017-05-07T00:00:00">
+            <desc language="de-DE">Körpertemperatur</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.303" tmname="CDAObservation" tmdisplayName="CDA Observation" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <example type="neutral">
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4170"/>
+                    <id root="1.2.276.0.76.4.17.57384597" extension="dd1eb111-93b0-4c84-8e55-98f2098b7954"/>
+                    <code code="8310-5" displayName="Body temperature" codeSystem="2.16.840.1.113883.6.1"/>
+                    <statusCode code="completed"/>
+                    <effectiveTime value="20170608104741"/>
+                    <value xsi:type="PQ" value="38.5" unit="Cel"/>
+                </observation>
+            </example>
+            <element name="hl7:observation" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="1.2.276.0.76.9.4170.3">
+                <item original="false" label="Koerpertemperatur"/>
+                <attribute name="classCode" value="OBS" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.77.9.845"/>
+                <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.77.9.846"/>
+                <element name="hl7:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.847">
+                    <item original="false" label="Koerpertemperatur"/>
+                    <attribute name="root" value="1.2.276.0.76.10.4170" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.77.9.848"/>
+                </element>
+                <element name="hl7:id" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.77.9.849">
+                    <item original="false" label="Koerpertemperatur"/>
+                </element>
+                <element name="hl7:code" datatype="CD" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.850">
+                    <item original="false" label="Koerpertemperatur"/>
+                    <vocabulary valueSet="1.2.276.0.76.11.432" flexibility="dynamic" vsid="1.2.276.0.76.11.432" vsname="Körpertemperatur" vsdisplayName="Körpertemperatur" vseffectiveDate="2017-05-07T00:00:00" vsstatusCode="draft" linkedartefactmissing="false"/>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.2.6.77.9.851">
+                    <desc language="de-DE">Lediglich reference in den Text der zugehörigen Section</desc>
+                    <item original="false" label="Koerpertemperatur"/>
+                    <element name="hl7:reference" minimumMultiplicity="1" maximumMultiplicity="1" datatype="URL" id="2.16.840.1.113883.2.6.77.9.852">
+                        <item original="false" label="Koerpertemperatur"/>
+                    </element>
+                </element>
+                <element name="hl7:statusCode" datatype="CS" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.853">
+                    <item original="false" label="Koerpertemperatur"/>
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:effectiveTime" datatype="TS" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="1.2.276.0.76.9.4170.2">
+                    <item original="false" label="Koerpertemperatur"/>
+                </element>
+                <element name="hl7:value" datatype="PQ" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="1.2.276.0.76.9.4170.1">
+                    <item original="false" label="Koerpertemperatur"/>
+                    <property minInclude="0.0" maxInclude="45.0">
+                        <item original="false" label="Koerpertemperatur"/>
+                    </property>
+                    <attribute name="unit" value="Cel" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.77.9.854"/>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="dependency" prefix="evthm-" flexibility="2017-04-24T00:00:00" id="1.2.276.0.76.10.1022" name="Livedatencda" displayName="Live-Daten-CDA Dokument" effectiveDate="2017-01-23T00:00:00" statusCode="draft" ident="evthm-"/>
+            <ref type="dependency" prefix="evthm-" flexibility="2017-05-29T00:00:00" id="1.2.276.0.76.10.3084" effectiveDate="2017-04-24T00:00:00" name="Vitalparameter" displayName="Vitalparameter" statusCode="draft" ident="evthm-"/>
+            <ref type="contains" prefix="evthm-" flexibility="dynamic" id="1.2.276.0.76.10.4238" effectiveDate="2017-05-29T00:00:00" name="VitalparameterOrganizer" displayName="Vitalparameter Organizer" statusCode="draft" ident="evthm-"/>
+        </template>
+    </template>
+</result>

@@ -1,0 +1,36 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.4168" name="InjurySeverityScoreBodyRegionObservation" displayName="Injury Severity Score Body Region Observation" effectiveDate="2017-02-01T00:00:00" statusCode="draft" url="http://art-decor.org/decor/services/" ident="aktin-" xml:dummy-1="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-3="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">Injury Severity Score Body Region Observation</desc>
+            <desc language="de-DE">Geschätzter Schweregrad nach Körperregion</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00"/>
+            <relationship type="ADAPT" template="2.16.840.1.113883.3.2898.10.2112" flexibility="2014-06-09T00:00:00"/>
+            <context id="**"/>
+            <example>
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4168"/>
+                    <code code="74470-6" codeSystem="2.16.840.1.113883.6.1" displayName="Injury severity score (ISS) body region"/>
+                    <statusCode code="completed"/>
+                    <value xsi:type="CE" code="M" codeSystem="2.16.840.1.113883.5.1063" displayName="Moderate"/>
+                    <targetSiteCode code="THX" codeSystem="1.2.276.0.76.5.81" displayName="Thorax"/>
+                </observation>
+            </example>
+            <element name="hl7:observation" id="2.16.840.1.113883.2.6.60.3.9.16245">
+                <attribute name="classCode" value="OBS" id="2.16.840.1.113883.2.6.60.3.9.16246"/>
+                <attribute name="moodCode" value="EVN" id="2.16.840.1.113883.2.6.60.3.9.16247"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.16248">
+                    <attribute name="root" value="1.2.276.0.76.10.4168" id="2.16.840.1.113883.2.6.60.3.9.16249"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.16250">
+                    <vocabulary code="74470-6" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.16251">
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" datatype="CE" id="2.16.840.1.113883.2.6.60.3.9.16252">
+                    <vocabulary valueSet="1.2.276.0.76.11.80"/>
+                </element>
+                <element name="hl7:targetSiteCode" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" datatype="CE" id="2.16.840.1.113883.2.6.60.3.9.16253">
+                    <vocabulary valueSet="1.2.276.0.76.11.81"/>
+                </element>
+            </element>
+        </template>

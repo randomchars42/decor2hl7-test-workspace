@@ -1,0 +1,63 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:local="http://art-decor.org/local" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.20.22.4.54" name="ImmunizationMedicationInformationV2" displayName="Immunization Medication Information (V2)" effectiveDate="2014-06-09T00:00:00" statusCode="draft" versionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-" sdtc:dummy-1="urn:hl7-org:sdtc" local:dummy-2="http://art-decor.org/local" xml:dummy-3="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-5="urn:hl7-org:v3" xsi:dummy-6="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">The Immunization Medication Information represents product information about the immunization substance. The vaccine manufacturer and vaccine lot number are typically recorded in the medical record and should be included if known.</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.312" flexibility="2005-09-07T00:00:00"/>
+            <relationship type="VERSION" template="2.16.840.1.113883.10.20.22.4.54" flexibility="2013-01-31T00:00:00"/>
+            <context id="**"/>
+            <element name="cda:manufacturedProduct" id="2.16.840.1.113883.3.1937.99.3.9.3954">
+                <attribute name="classCode" value="MANU" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.3955">
+                    <desc language="en-US">SHALL contain exactly one [1..1] @classCode="MANU" (CodeSystem: RoleClass urn:oid:2.16.840.1.113883.5.110 STATIC) (CONF:1098-9002).</desc>
+                    <item label="CONF:1098-9002"/>
+                </attribute>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                    <desc language="en-US">C-CDA R1.1 templateId root without an extension</desc>
+                    <item label="CONF:1198-32936"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.22.4.54" datatype="uid"/>
+                </element>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.3956">
+                    <desc language="en-US">SHALL contain exactly one [1..1] templateId (CONF:1098-9004) such that it</desc>
+                    <item label="CONF:1098-9004"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.22.4.54" datatype="uid" id="2.16.840.1.113883.3.1937.99.3.9.3957">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.22.4.54" (CONF:1098-10499).</desc>
+                        <item label="CONF:1098-10499"/>
+                    </attribute>
+                    <attribute name="extension" value="2014-06-09" datatype="st" id="2.16.840.1.113883.3.1937.99.3.9.3958">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @extension="2014-06-09" (CONF:1098-32602).</desc>
+                        <item label="CONF:1098-32602"/>
+                    </attribute>
+                </element>
+                <element name="cda:id" datatype="II" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.3959">
+                    <desc language="en-US">MAY contain zero or more [0..*] id (CONF:1098-9005).</desc>
+                    <item label="CONF:1098-9005"/>
+                </element>
+                <element name="cda:manufacturedMaterial" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.3960">
+                    <desc language="en-US">SHALL contain exactly one [1..1] manufacturedMaterial (CONF:1098-9006).</desc>
+                    <item label="CONF:1098-9006"/>
+                    <element name="cda:code" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.3961">
+                        <desc language="en-US">This manufacturedMaterial SHALL contain exactly one [1..1] code, which SHALL be selected from ValueSet CVX Vaccines Administered - Vaccine Set urn:oid:2.16.840.1.113762.1.4.1010.6 DYNAMIC (CONF:1098-9007).</desc>
+                        <item label="CONF:1098-9007"/>
+                        <vocabulary valueSet="2.16.840.1.113762.1.4.1010.6"/>
+                        <element name="cda:translation" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.3962">
+                            <desc language="en-US">This code MAY contain zero or more [0..*] translation, which MAY be selected from ValueSet Vaccine Clinical Drug urn:oid:2.16.840.1.113762.1.4.1010.8 DYNAMIC (CONF:1098-31543).<br clear="none"/>
+                        <br clear="none"/>
+                    </desc>
+                            <item label="CONF:1098-31543"/>
+                            <vocabulary valueSet="2.16.840.1.113762.1.4.1010.8"/>
+                        </element>
+                        <element name="cda:translation" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.5861">
+                            <desc language="en-US">
+                        <br clear="none"/>This code MAY contain zero or more [0..*] translation (CONF:1098-31881).</desc>
+                            <item label="CONF:1098-31881"/>
+                        </element>
+                    </element>
+                    <element name="cda:lotNumberText" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.3963">
+                        <desc language="en-US">lotNumberText should be included if known. It may not be known for historical immunizations, planned immunizations, or refused/deferred immunizations.<p/> This manufacturedMaterial SHOULD contain zero or one [0..1] lotNumberText (CONF:1098-9014). </desc>
+                        <item label="CONF:1098-9014"/>
+                    </element>
+                </element>
+                <element name="cda:manufacturerOrganization" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.3964">
+                    <desc language="en-US">SHOULD contain zero or one [0..1] manufacturerOrganization (CONF:1098-9012).</desc>
+                    <item label="CONF:1098-9012"/>
+                </element>
+            </element>
+        </template>

@@ -1,0 +1,43 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultLanguage="de-DE" id="1.2.276.0.76.10.3054" name="Patientcarenarrative" displayName="Prozeduren und Maßnahmen" effectiveDate="2025-12-01T00:00:00" statusCode="draft" isClosed="false" lastModifiedDate="2025-12-26T19:51:06" url="http://art-decor.org/decor/services/" ident="aktin-" xml:dummy-1="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-3="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance">
+    <desc language="en-US" lastTranslated="2025-12-19T18:42:48">Patient care narrative Section</desc>
+    <desc language="de-DE" lastTranslated="2025-12-19T18:42:48">Befunde / Verlauf / durchgeführte Therapie Section</desc>
+    <classification type="cdasectionlevel"/>
+    <relationship type="VERSION" template="1.2.276.0.76.10.3054" flexibility="2015-01-10T00:00:00" tmid="1.2.276.0.76.10.3054" tmname="Patientcarenarrative" tmdisplayName="Befunde / Verlauf / durchgeführte Therapie" tmeffectiveDate="2015-01-10T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+    <relationship type="SPEC" template="2.16.840.1.113883.10.12.201" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.201" tmname="CDASection" tmdisplayName="CDA Section" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-"/>
+    <relationship type="ADAPT" template="2.16.840.1.113883.17.3.10.1.1" linkedartefactmissing="true"/>
+    <context id="**"/>
+    <example>
+                <section classCode="DOCSECT">
+                    <templateId root="1.2.276.0.76.10.3054"/>
+                    <code code="67781-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Summarization of encounter note"/>
+                    <title>Befunde / Verlauf / durchgeführte Therapie</title>
+                    <text>
+                        <list>
+                            <item>...</item>
+                            <item>Isolation: ja, wegen Tuberkulose</item>
+                        </list>
+                    </text>
+                </section>
+            </example>
+    <element name="hl7:section" id="2.16.840.1.113883.2.6.60.3.9.167">
+                <attribute name="classCode" value="DOCSECT" datatype="cs" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.168"/>
+                <element name="hl7:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.169">
+                    <attribute name="root" value="1.2.276.0.76.10.3054" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.170"/>
+                </element>
+                <element name="hl7:code" datatype="CD" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.171">
+                    <vocabulary code="67781-5" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:title" datatype="ST" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.172">
+                    <text>Prozeduren und Maßnahmen</text>
+                </element>
+                <element name="hl7:text" datatype="SD.TEXT" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.173"/>
+                <element name="hl7:entry" contains="1.2.276.0.76.3.1.195.10.65" flexibility="2024-08-14T18:08:14" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.3054.1">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.174"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.175"/>
+                </element>
+                <element name="hl7:entry" contains="1.2.276.0.76.3.1.195.10.90" flexibility="2024-08-18T21:50:30" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1642304">
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1642305"/>
+                    <attribute name="contextConductionInd" value="true" datatype="bl" isOptional="true" id="2.16.840.1.113883.2.6.60.3.9.1642306"/>
+                </element>
+            </element>
+</template>

@@ -1,0 +1,45 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.4169" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.4169" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="Pre-trauma ASA score" ident="aktin-" name="PretraumaASA" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="draft" url="http://art-decor.org/decor/services/" effectiveDate="2017-02-09T00:00:00">
+            <desc language="en-US">Assumed pre-trauma ASA score</desc>
+            <desc language="de-DE">Vermuteter ASA Score vor dem stattgehabten Unfallereginis</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.303" tmname="CDAObservation" tmdisplayName="CDA Observation" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <example type="neutral">
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4169"/>
+                    <code code="X-PIASA" codeSystem="2.16.840.1.113883.6.1" displayName="Assumed pre-trauma ASA score"/>
+                    <value xsi:type="CE" code="1" codeSystem="1.2.276.0.76.5.87" displayName="ASA 1"/>
+                </observation>
+            </example>
+            <element name="hl7:observation" id="2.16.840.1.113883.2.6.60.3.9.1631142">
+                <item original="false" label="PretraumaASA"/>
+                <attribute name="classCode" value="OBS" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631143"/>
+                <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631144"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631145">
+                    <item original="false" label="PretraumaASA"/>
+                    <attribute name="root" value="1.2.276.0.76.10.4169" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.1631146"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631147">
+                    <item original="false" label="PretraumaASA"/>
+                    <vocabulary code="X-PIASA" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.2.6.60.3.9.1631148">
+                    <desc language="de-DE">Lediglich reference in den Text der zugehörigen Section</desc>
+                    <item original="false" label="PretraumaASA"/>
+                    <element name="hl7:reference" minimumMultiplicity="1" maximumMultiplicity="1" datatype="TEL" id="2.16.840.1.113883.2.6.60.3.9.1631149">
+                        <item original="false" label="PretraumaASA"/>
+                    </element>
+                </element>
+                <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="CE" id="2.16.840.1.113883.2.6.60.3.9.1631150">
+                    <desc language="de-DE">Vermuteter ASA Score vor dem stattgehabten Unfallereginis</desc>
+                    <item original="false" label="PretraumaASA"/>
+                    <vocabulary valueSet="1.2.276.0.76.11.87" vsid="1.2.276.0.76.11.87" vsname="ASAscore" vsdisplayName="ASA physical status classification" vseffectiveDate="2017-01-06T00:00:00" vsstatusCode="draft" linkedartefactmissing="false"/>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4088" name="InjuryEventDetail" displayName="Injury Event Detail" effectiveDate="2017-02-01T00:00:00" statusCode="draft" ident="aktin-"/>
+        </template>
+    </template>
+</result>

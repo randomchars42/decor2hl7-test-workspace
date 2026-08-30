@@ -1,0 +1,60 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:local="http://art-decor.org/local" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.20.22.4.119" name="AuthorParticipation" effectiveDate="2015-08-13T00:00:00" statusCode="draft" displayName="Author Participation" versionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-" sdtc:dummy-1="urn:hl7-org:sdtc" local:dummy-2="http://art-decor.org/local" xml:dummy-3="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-5="urn:hl7-org:v3" xsi:dummy-6="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">This template represents the Author Participation (including the author timestamp). CDA R2 requires that Author and Author timestamp be asserted in the document header. From there, authorship propagates to contained sections and contained entries, unless explicitly overridden. The Author Participation template was added to those templates in scope for analysis in
+                R2. Although it is not explicitly stated in all templates the Author Participation template can be used in any template.</desc>
+            <classification type="notype"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.318" flexibility="2005-09-07T00:00:00"/>
+            <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.3886">
+                <desc language="en-US">SHALL contain exactly one [1..1] templateId (CONF:1098-32017) such that it</desc>
+                <item label="CONF:1098-32017"/>
+                <attribute name="root" value="2.16.840.1.113883.10.20.22.4.119" id="2.16.840.1.113883.3.1937.99.3.9.3887">
+                    <desc language="en-US">SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.22.4.119" (CONF:1098-32018).</desc>
+                    <item label="CONF:1098-32018"/>
+                </attribute>
+            </element>
+            <element name="cda:time" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.3888">
+                <desc language="en-US">SHALL contain exactly one [1..1] time (CONF:1098-31471).</desc>
+                <item label="CONF:1098-31471"/>
+            </element>
+            <element name="cda:assignedAuthor" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.3889">
+                <desc language="en-US">SHALL contain exactly one [1..1] assignedAuthor (CONF:1098-31472).</desc>
+                <item label="CONF:1098-31472"/>
+                <element name="cda:id" datatype="II" minimumMultiplicity="1" maximumMultiplicity="*" isMandatory="false" id="2.16.840.1.113883.3.1937.99.3.9.3890">
+                    <desc language="en-US">This assignedAuthor SHALL contain at least one [1..*] id (CONF:1098-31473).</desc>
+                    <item label="CONF:1098-31473"/>
+                    <constraint language="en-US">If the ID isn't referencing an author described elsewhere in the document, then the author components required in US Realm Header are required here as well.</constraint>
+                </element>
+                <element name="cda:code" minimumMultiplicity="0" maximumMultiplicity="1" strength="extensible" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.3891">
+                    <desc language="en-US">This assignedAuthor SHOULD contain zero or one [0..1] code, which SHOULD be selected from ValueSet Healthcare Provider Taxonomy (HIPAA) urn:oid:2.16.840.1.114222.4.11.1066 DYNAMIC (CONF:1098-31671).</desc>
+                    <item label="CONF:1098-31671"/>
+                    <vocabulary valueSet="2.16.840.1.114222.4.11.1066"/>
+                </element>
+                <element name="cda:assignedPerson" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.3892">
+                    <desc language="en-US">This assignedAuthor MAY contain zero or one [0..1] assignedPerson (CONF:1098-31474).</desc>
+                    <item label="CONF:1098-31474"/>
+                    <element name="cda:name" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.3893">
+                        <desc language="en-US">The assignedPerson, if present, MAY contain zero or more [0..*] name (CONF:1098-31475).</desc>
+                        <item label="CONF:1098-31475"/>
+                    </element>
+                </element>
+                <element name="cda:representedOrganization" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.3894">
+                    <desc language="en-US">This assignedAuthor MAY contain zero or one [0..1] representedOrganization (CONF:1098-31476).</desc>
+                    <item label="CONF:1098-31476"/>
+                    <element name="cda:id" datatype="II" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.3895">
+                        <desc language="en-US">The representedOrganization, if present, MAY contain zero or more [0..*] id (CONF:1098-31478).</desc>
+                        <item label="CONF:1098-31478"/>
+                    </element>
+                    <element name="cda:name" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.3896">
+                        <desc language="en-US">The representedOrganization, if present, MAY contain zero or more [0..*] name (CONF:1098-31479).</desc>
+                        <item label="CONF:1098-31479"/>
+                    </element>
+                    <element name="cda:telecom" datatype="TEL" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.3897">
+                        <desc language="en-US">The representedOrganization, if present, MAY contain zero or more [0..*] telecom (CONF:1098-31480).</desc>
+                        <item label="CONF:1098-31480"/>
+                    </element>
+                    <element name="cda:addr" datatype="AD" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.3898">
+                        <desc language="en-US">The representedOrganization, if present, MAY contain zero or more [0..*] addr (CONF:1098-31481).</desc>
+                        <item label="CONF:1098-31481"/>
+                    </element>
+                </element>
+            </element>
+        </template>

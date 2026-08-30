@@ -1,0 +1,27 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.777.21.1.1" effectiveDate="2018-05-07T19:19:12" statusCode="draft" versionLabel="ASIC Dataset" prefix="asic-" shortName="asicdataset" iddisplay="asic-dataset-1" url="http://art-decor.org/decor/services/" ident="asic-"><!--
+ This is a view of the dataset "ASIC-Dataset" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">ASIC-Dataset</name>
+    <desc language="de-DE"/>
+    <concept id="2.16.840.1.113883.3.1937.777.21.2.113" statusCode="cancelled" versionLabel="xxx" effectiveDate="2018-05-28T13:26:36" type="item" iddisplay="asic-dataelement-113">
+        <implementation markdown="Dopamin&#xA;&#xA;Der Wirkstoff Dopamin gehört zur Gruppe der Katecholamine und wird therapeutisch bei Schockzuständen eingesetzt.&#xA;Der Stoff kommt auch natürlicherweise im Körper als wichtiger Botenstoff im Gehirn (Neurotransmitter).&#xA;&#xA;Dopamin kann die Durchblutung in bestimmten Körperregionen (wie zum Beispiel den Nieren) steigern. &#xA;Es wird daher bei Schockzuständen, niedrigem Blutdruck und Nierenversagen angewendet."/>
+        <name language="de-DE">Dopamin</name>
+        <desc language="de-DE">Dopamin<br clear="none"/>
+            <br clear="none"/>Der Wirkstoff Dopamin gehört zur Gruppe der Katecholamine und wird therapeutisch bei Schockzuständen eingesetzt.<br clear="none"/>Der Stoff kommt auch natürlicherweise im Körper als wichtiger Botenstoff im Gehirn (Neurotransmitter).<br clear="none"/>
+            <br clear="none"/>
+            <span style="text-align: left; text-transform: none; line-height: 26px; text-indent: 0px; letter-spacing: normal; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; word-spacing: 0px; display: inline !important; white-space: normal; orphans: 2; float: none; -webkit-text-stroke-width: 0px; background-color: transparent;">Dopamin kann die Durchblutung in bestimmten Körperregionen (wie zum Beispiel den Nieren) steigern. <br clear="none"/>Es wird daher bei Schockzuständen, niedrigem Blutdruck und Nierenversagen angewendet.</span>
+            <br clear="none"/>
+        </desc>
+        <source language="de-DE">Dokumentierendes System: UKA ICCA</source>
+        <property name="Verwendung" md5="c9619a6e78f2da6c4ad1b848692e0249">Protokollierung<br clear="none"/>
+        </property>
+        <property name="Umgang mit Missing Values" md5="72c02c393559bc322e8da2504c818484">-<br clear="none"/>
+        </property>
+        <valueDomain type="quantity"/>
+        <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.113" conceptFlexibility="2018-05-28T13:26:36" code="412383006" codeSystem="2.16.840.1.113883.6.96" displayName="Dopamine (substance)" effectiveDate="2018-05-28T13:37:19" codeSystemName="SNOMED Clinical Terms"/>
+        <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.113" conceptFlexibility="2018-05-28T13:26:36" code="59187003" codeSystem="2.16.840.1.113883.6.96" displayName="Dopamine (substance)" effectiveDate="2018-05-28T13:37:28" codeSystemName="SNOMED Clinical Terms"/>
+        <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.113" conceptFlexibility="2018-05-28T13:26:36" code="400220005" codeSystem="2.16.840.1.113883.6.96" displayName="Dopamine hydrochloride 40mg/mL injection solution 100mL vial (product)" effectiveDate="2018-06-14T16:18:55" codeSystemName="SNOMED Clinical Terms"/>
+    </concept>
+</dataset>

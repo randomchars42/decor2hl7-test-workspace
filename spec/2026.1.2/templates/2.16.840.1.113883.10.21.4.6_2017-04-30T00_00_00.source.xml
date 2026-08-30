@@ -1,0 +1,135 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:pharmhl7="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.21.4.6" name="UVSubordinateadministration" displayName="UV Subordinate Substance Administration" statusCode="pending" lastModifiedDate="2023-01-30T09:36:00" versionLabel="R1-STU2-ballot" effectiveDate="2017-04-30T00:00:00" url="http://art-decor.org/decor/services/" ident="pharmcda-" pharmhl7:dummy-1="urn:hl7-org:pharm" xml:dummy-2="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-4="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">Universal Subordinate Substance Administration to convey information about dosages</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.308" flexibility="2005-09-07T00:00:00"/>
+            <context id="**"/>
+            <example>
+        <substanceAdministration classCode="SBADM" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.21.4.6"/>
+            <statusCode code="active"/>
+            <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true">
+                <period value="12" unit="h"/>
+            </effectiveTime>
+            <doseQuantity xsi:type="IVL_PQ" value="2" unit="{puff}"/>
+            <consumable>
+                <manufacturedProduct>
+                    <manufacturedMaterial nullFlavor="NA"/>
+                </manufacturedProduct>
+            </consumable>
+        </substanceAdministration>
+    </example>
+            <element name="hl7:substanceAdministration" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.183">
+                <attribute name="classCode" value="SBADM" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.184"/>
+                <attribute name="moodCode" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.185">
+                    <desc language="en-US">If the subordinate substance administration refers to Medication Order then a substance administration request (moodCode is 'RQO') is used.<br clear="none"/>If it refers to a Medication Statement, the moodCode shall be set to event/intent (moodCode is 'EVN' or 'INT').</desc>
+                    <vocabulary valueSet="2.16.840.1.113883.11.21.4" flexibility="dynamic"/>
+                </attribute>
+                <constraint language="en-US">The moodCode of this subordinate substance administration SHALL be the same of the parent substance administration</constraint>
+                <element name="hl7:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.3.1937.777.15.9.186">
+                    <attribute name="root" value="2.16.840.1.113883.10.21.4.6" datatype="uid" id="2.16.840.1.113883.3.1937.777.15.9.187"/>
+                </element>
+                <element name="hl7:statusCode" datatype="CS" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.3.1937.777.15.9.188">
+                    <vocabulary valueSet="2.16.840.1.113883.11.21.2" flexibility="dynamic"/>
+                    <constraint language="en-US">The statusCode of this subordinate substance administration SHALL be the same of that of the parent substance administration.</constraint>
+                </element>
+                <choice minimumMultiplicity="1" maximumMultiplicity="1">
+                    <element name="hl7:effectiveTime[@value or @nullFlavor]" datatype="TS" minimumMultiplicity="0" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.3.1937.777.15.9.9114">
+                        <desc language="en-US">This required element describes the frequency of intakes. If not known it shall be valued with the nullflavor "UNK"</desc>
+                        <example type="neutral" caption="Once (known date)">
+                    <effectiveTime value="20170404"/>
+                </example>
+                        <example type="neutral" caption="Unknown">
+                    <effectiveTime nullFlavor="UNK"/>
+                </example>
+                    </element>
+                    <element name="hl7:effectiveTime[@xsi:type='PIVL_TS']" datatype="PIVL_TS" minimumMultiplicity="0" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.3.1937.777.15.9.9244">
+                        <desc language="en-US">Periodic Time Interval</desc>
+                        <example type="neutral" caption="Every 4 hours">
+                    <effectiveTime xsi:type="PIVL_TS" institutionSpecified="false">
+                        <period value="4" unit="h"/>
+                    </effectiveTime>
+                </example>
+                        <example type="neutral" caption="Twice a day">
+                    <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true">
+                        <period value="12" unit="h"/>
+                    </effectiveTime>
+                </example>
+                    </element>
+                    <element name="hl7:effectiveTime[@xsi:type='EIVL_TS']" datatype="EIVL_TS" minimumMultiplicity="0" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.3.1937.777.15.9.9245">
+                        <desc language="en-US">Event Related Time Interval</desc>
+                        <example type="neutral" caption="After meal">
+                    <effectiveTime xsi:type="EIVL_TS">
+                        <event code="PC" codeSystem="2.16.840.1.113883.5.139"/>
+                    </effectiveTime>
+                </example>
+                        <example type="neutral" caption="One hour before breakfast">
+                    <effectiveTime xsi:type="EIVL_TS">
+                        <event code="ACM" codeSystem="2.16.840.1.113883.5.139"/>
+                        <offset>
+                            <low value="1" unit="h"/>
+                        </offset>
+                    </effectiveTime>
+                </example>
+                        <element name="hl7:event" datatype="EIVL.event" minimumMultiplicity="0" maximumMultiplicity="1" conformance="C" id="2.16.840.1.113883.3.1937.777.15.9.9246">
+                            <attribute name="code" datatype="cs" isOptional="true" id="2.16.840.1.113883.3.1937.777.15.9.9247">
+                                <vocabulary valueSet="2.16.840.1.113883.1.11.10706" flexibility="dynamic"/>
+                            </attribute>
+                        </element>
+                    </element>
+                    <element name="hl7:effectiveTime[@xsi:type='SXPR_TS']" datatype="SXPR_TS" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.9248">
+                        <desc language="en-US">Combined Time Interval</desc>
+                    </element>
+                </choice>
+                <element name="hl7:doseQuantity" datatype="IVL_PQ" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.9115">
+                    <desc language="en-US">The doseQuantity describes the amount of the medication given (the dosage).<br clear="none"/>
+                <br clear="none"/>If a dose range is given (e.g., 1-2 tablets, or 325-750mg), then the &lt;low&gt; and &lt;high&gt; bounds are specified in their respective elements; otherwise only one physical quantity is specified (e.g. 2 drops) <br clear="none"/>
+                <br clear="none"/>The dose can be in some known and measurable unit, such as grams, milligrams,or described in "administration" units (unit of presentation, such as capsules). <br clear="none"/>
+                <br clear="none"/>If the dose is in countable items (tablets, caplets, "eaches"), then the unit could be omitted or valorized using the UCUM annotations for describing the type of
+                        countable items (e.g. .{tablet}, {puff},..). <br clear="none"/>
+                <br clear="none"/>The unit attribute – when expresses unit of measures- shall be derived from the UCUM code system. <br clear="none"/>The used elements should contain a &lt;translation&gt; element that provides a reference to the originalText found in the narrative body of the document. </desc>
+                    <example type="neutral" caption="Not pre-coordinated consumable">
+                <doseQuantity value="25" unit="mg"/>
+            </example>
+                    <example type="neutral" caption="Pre-coordinated consumable - Dose Range">
+                <doseQuantity>
+                    <low value="1" unit="{tablet}"/>
+                    <high value="2" unit="{tablet}"/>
+                </doseQuantity>
+            </example>
+                    <example type="neutral" caption="Pre-coordinated consumable">
+                <doseQuantity value="2" unit="{puff}"/>
+            </example>
+                    <example type="neutral" caption="Pre-coordinated consumable with text reference">
+                <doseQuantity value="2" unit="{puff}">
+                    <translation>
+                        <originalText>
+                            <reference value="#text-ref-1"/>
+                        </originalText>
+                    </translation>
+                </doseQuantity>
+            </example>
+                    <example type="neutral" caption="Textual dosage">
+                <doseQuantity nullFlavor="OTH">
+                    <translation>
+                        <originalText>
+                            <reference value="#text-ref-1"/>
+                        </originalText>
+                    </translation>
+                </doseQuantity>
+            </example>
+                    <attribute name="unit" datatype="cs" isOptional="true" id="2.16.840.1.113883.3.1937.777.15.9.9124"/>
+                </element>
+                <element name="hl7:rateQuantity" datatype="IVL_PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.192"/>
+                <element name="hl7:maxDoseQuantity" datatype="RTO_PQ_PQ" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.933"/>
+                <element name="hl7:administrationUnitCode" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.15.9.34">
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.14570"/>
+                </element>
+                <element name="hl7:consumable" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.193">
+                    <element name="hl7:manufacturedProduct" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.194">
+                        <element name="hl7:manufacturedMaterial" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.195">
+                            <attribute name="nullFlavor" value="NA" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.196"/>
+                        </element>
+                    </element>
+                </element>
+            </element>
+        </template>

@@ -1,0 +1,22 @@
+<codeSystems>
+    <project ident="aktin-">
+        <codeSystem id="1.2.276.0.76.3.1.195.5.60" name="other-triage-systems" displayName="Andere Triagesysteme" effectiveDate="2019-08-15T00:00:00" statusCode="draft" canonicalUri="http://aktin.org/fhir/CodeSystem/aktin-cs-other-triage-systems" lastModifiedDate="2024-08-16T17:19:48" language="de-DE">
+            <desc language="en-US" lastTranslated="2024-08-16T17:19:48">
+                <p>Liste und Codes nicht internationaler Triagesysteme</p>
+            </desc>
+            <publishingAuthority name="AKTIN e. V." inherited="project">
+                <addrLine>c/o Uniklinik RWTH Aachen</addrLine>
+                <addrLine>Institut für Medizinische Informatik</addrLine>
+                <addrLine>Pauwelsstraße 35</addrLine>
+                <addrLine>52074 Aachen</addrLine>
+                <addrLine type="phone">Tel. +49 391 67 28186</addrLine>
+                <addrLine type="email">office@aktin.org</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <codedConcept code="smed" statusCode="active" level="0" type="L" effectiveDate="2019-08-15T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="SmED"/>
+                </codedConcept>
+            </conceptList>
+        </codeSystem>
+    </project>
+</codeSystems>

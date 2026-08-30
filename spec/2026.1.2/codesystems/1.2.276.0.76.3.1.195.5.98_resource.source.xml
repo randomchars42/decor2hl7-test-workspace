@@ -1,0 +1,105 @@
+<codeSystem xmlns:json="http://www.json.org" id="1.2.276.0.76.3.1.195.5.98" name="candidate-loincs" displayName="Kandidaten LOINC Terme" effectiveDate="2023-12-28T00:00:00" statusCode="draft" canonicalUri="http://aktin.org/fhir/CodeSystem/aktin-cs-candidate-loincs" lastModifiedDate="2025-12-22T19:26:38" language="de-DE" url="http://art-decor.org/decor/services/" ident="aktin-">
+    <desc json:array="true" language="en-US" lastTranslated="2024-07-19T15:54:00">&lt;p&gt;Dieses Codessystem umfasst proprietäre Codes zur Nutzung in der Notfalldokumentation, die Kandidaten für eine Einbringung in das LOINC Codesystem sind.&lt;/p&gt; &lt;p&gt;&lt;strong&gt;Hintergrund&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;In der Notfalldokumentation werden gerade bei Registermeldungen Terme verwendet, die noch nicht in LOINC (oder anderswo) verfügbar
+                    sind. Allerdings sind die meisten dieser Begriffe Kandidaten, um in LOINC als neue Codes aufgenommen zu werden. Um eine sofortige Nutzung von annotierten Termen zu gewährleisten und sie dennoch zu einem späteren Zeitpunkt nach der Einführung der offiziellen LOINC Codes übergangsmäßig zugleich zu verwenden und eine eindeutige Zuordnung zu allen Zeiten zu erlauben, werden die
+                    meisten Kandidaten für LOINC Terme zur Nutzung in der Notfalldokumentation hier mit einem "Notfall"-Code versehen.&lt;/p&gt; &lt;p&gt;Die Ersatz-Terme sind zusammengesetzt aus "FLN" für "Follow-up LOINC", einem Bindestrich und einem Code als Differenzierungskonzept.&lt;/p&gt;</desc>
+    <publishingAuthority json:array="true" name="AKTIN e. V." inherited="project">
+        <addrLine json:array="true">c/o Uniklinik RWTH Aachen</addrLine>
+        <addrLine json:array="true">Institut für Medizinische Informatik</addrLine>
+        <addrLine json:array="true">Pauwelsstraße 35</addrLine>
+        <addrLine json:array="true">52074 Aachen</addrLine>
+        <addrLine json:array="true" type="phone">Tel. +49 391 67 28186</addrLine>
+        <addrLine json:array="true" type="email">office@aktin.org</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <conceptList json:array="true">
+        <codedConcept json:array="true" code="FLN-11" statusCode="draft" level="0" type="L" effectiveDate="2024-04-30T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Ungeplante Vorstellung zum gleichen Vorstellungsgrund innerhalb von 28 Tagen"/>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-08-15T22:25:42">Hat sich der Patient ungeplant zum gleichen Vorstellungsgrund (Leitsymptom) innerhalb von 28 Tagen wieder vorgestellt?</desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="FLN-12" statusCode="draft" level="0" type="L" effectiveDate="2024-04-30T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Zeit seit letzter Vorstellung zum gleichen Vorstellungsgrund"/>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-08-15T22:25:42">Zeitabstand seit letzter Vorstellung zum gleichen Vorstellungsgrund (Leitsymptom) in Stunden oder Tagen</desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="FLN-13" statusCode="draft" level="0" type="L" effectiveDate="2024-04-30T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Direkter Arztkontakt"/>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-08-13T15:15:40">Wurde keine Ersteinschätzung durchgeführt, da ein direkter Arztkontakt erfolgt ist?</desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="FLN-14" statusCode="draft" level="0" type="L" effectiveDate="2024-04-30T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Niedrigste GCS-Summe"/>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-08-13T15:15:40">Die niedrigste GCS-Summe während der Dokumentation</desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="FLN-15" statusCode="draft" level="0" type="L" effectiveDate="2024-04-30T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Erste Schmerzmessung"/>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-08-13T15:15:40">&lt;p&gt;Erste Schmerzmessung&lt;/p&gt;</desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="FLN-122" statusCode="draft" level="0" type="L" effectiveDate="2024-04-30T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="CT-/MR-/DS-Angiographie"/>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-08-13T15:15:40">&lt;p&gt;Wurde und wenn wann wurde ein CT-/MR-/DS-Angiographie im Vergleich zur nativen Bildgebung durchgeführt?&lt;/p&gt;</desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="FLN-123" statusCode="draft" level="0" type="L" effectiveDate="2024-04-30T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Kombination Typen Verlegung und Entlassung"/>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-08-15T22:25:42">Abgeleitete Informationen über Diagnostik zur Weitergabe - Kombination der Typ Verlegung und Typ Entlassung für NoKeda</desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="FLN-124" statusCode="draft" level="0" type="L" effectiveDate="2024-04-30T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Zeitpunkt Entscheidung zur Verlegung / Entlassung"/>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-08-15T22:25:42">Abgeleitete Informationen über Diagnostik zur Weitergabe - Der Zeitpunkt, zu dem die Entscheidung zur stationären Verlegung oder ambulanten Entlassung festgelegt wurden. </desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="FLN-125" statusCode="draft" level="0" type="L" effectiveDate="2024-04-30T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Zeitpunkt Patient verlegungs- / entlassungsfähig"/>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-08-15T22:25:42">Abgeleitete Informationen über Diagnostik zur Weitergabe - Zeitpunkt, zu dem die Behandlung in der Notaufnahme beendet ist und die Befundung/Therapie/deren Dokumentation abgeschlossen wurde. Ab dann wartet der Patient auf ein Bett bzw. auf die Transportgelegenheit in die ambulante Versorgung, unter Umständen bei
+                        weiterer dokumentationswürdigem Monitoring und Therapie. </desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="FLN-126" statusCode="draft" level="0" type="L" effectiveDate="2024-04-30T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Zeitpunkt Patient verlegt / entlassen nach"/>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-08-15T22:25:42">Abgeleitete Informationen über Diagnostik zur Weitergabe - Wann wurde der Patient verlegt oder entlassen?</desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="FLN-127" statusCode="draft" level="0" type="L" effectiveDate="2024-04-30T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Stunde Beginn patientenbezogene Dokumentation"/>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-08-15T22:25:42">Abgeleitete Informationen über Diagnostik zur Weitergabe - Volle Stunde, zu der die patientenbezogene Dokumentation begonnen wurde</desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="FLN-128" statusCode="draft" level="0" type="L" effectiveDate="2024-04-30T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Datum Beginn patientenbezogene Dokumentation"/>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-08-15T22:25:42">Abgeleitete Informationen über Diagnostik zur Weitergabe - Datum des Beginns der patientenbezogenen Dokumentation</desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="FLN-129" statusCode="draft" level="0" type="L" effectiveDate="2024-04-30T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Zeit zwischen Ankunft und Aufnahme"/>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-08-15T22:25:42">Abgeleitete Informationen über Diagnostik zur Weitergabe - Zeit zwischen Ankunft des Patienten in dem Notfallzentrum und administrativer Aufnahme</desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="FLN-130" statusCode="draft" level="0" type="L" effectiveDate="2024-04-30T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Zeit zwischen Aufnahme und erster Ersteinschätzung"/>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-08-15T22:25:42">Abgeleitete Informationen über Diagnostik zur Weitergabe - Zeit zwischen Aufnahme und erster Ersteinschätzung</desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="FLN-131" statusCode="draft" level="0" type="L" effectiveDate="2024-04-30T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Zeit zwischen Aufnahme und erstem Arztkontakt"/>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-08-15T22:25:42">Abgeleitete Informationen über Diagnostik zur Weitergabe - Zeit zwischen Aufnahme und erstem Arztkontakt</desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="FLN-132" statusCode="draft" level="0" type="L" effectiveDate="2024-04-30T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Zeit zwischen Aufnahme und Verlegungs-/Entlassungsfähigkeit des Patienten"/>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-08-15T22:25:42">Abgeleitete Informationen über Diagnostik zur Weitergabe - Zeit zwischen Aufnahme und Verlegungs-/Entlassungsfähigkeit des Patienten</desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="FLN-133" statusCode="draft" level="0" type="L" effectiveDate="2024-04-30T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Zeit zwischen Aufnahme und Verlassen des Patienten"/>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-08-15T22:25:42">Abgeleitete Informationen über Diagnostik zur Weitergabe - Zeit zwischen Aufnahme und Verlassen des Patienten</desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="FLN-134" statusCode="draft" level="0" type="L" effectiveDate="2024-04-30T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Zeit bis zum Export"/>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-08-15T22:25:42">Abgeleitete Informationen über Diagnostik zur Weitergabe - Zeit [in vollen Stunden] vom Beginn der Vorstellung bis zum Export-Zeitpunkt aus dem Primärsystem; Bei mehr als 28 Tagen (=672 Stunden) Maximalwert angeben.</desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="FLN-135" statusCode="draft" level="0" type="L" effectiveDate="2024-04-30T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Name des EDIS"/>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-08-15T22:25:42">Abgeleitete Informationen über Diagnostik zur Weitergabe - Name der lokal verwendeten Software zur primären Datenerfassung (EDIS, emergency department information system); wenn keine ED-Spezialanwendung verwendet wird, das KIS.</desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="FLN-136" statusCode="draft" level="0" type="L" effectiveDate="2024-04-30T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Version des EDIS"/>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-08-15T22:25:42">Abgeleitete Informationen über Diagnostik zur Weitergabe - Versionsnummer und/oder Bezeichnung (nach Herstellerangaben) des EDIS (ggf. KIS)</desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="FLN-137" statusCode="draft" level="0" type="L" effectiveDate="2024-04-30T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Zeitpunkt Export aus EDIS"/>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-08-15T22:25:42">Abgeleitete Informationen über Diagnostik zur Weitergabe - Zeitpunkt wann Datensatz aus dem EDIS an einen weiteren Datennutzer exportiert wurde</desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="FLN-138" statusCode="draft" level="0" type="L" effectiveDate="2024-04-30T00:00:00">
+            <designation json:array="true" language="de-DE" type="preferred" displayName="Auslandsreise innerhalb der letzten 12 Monate"/>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-08-15T22:25:42">War der Patient innerhalb der letzten 12 Monate außerhalb Deutschlands?</desc>
+        </codedConcept>
+    </conceptList>
+</codeSystem>

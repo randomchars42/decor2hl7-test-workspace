@@ -1,0 +1,32 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.4096" name="SafetyEquipmentUsedObservation" displayName="Safety Equipment Used Observation" effectiveDate="2017-02-01T00:00:00" statusCode="draft" url="http://art-decor.org/decor/services/" ident="aktin-" xml:dummy-1="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-3="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">Safety Equipment Used Observation</desc>
+            <desc language="de-DE">Sicherheits-Equipment benutzt</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00"/>
+            <relationship type="ADAPT" template="2.16.840.1.113883.3.2898.10.2152" flexibility="2014-06-09T00:00:00"/>
+            <context id="**"/>
+            <example>
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4096"/>
+                    <code code="67499-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Safety equipment"/>
+                    <statusCode code="completed"/>
+                    <value xsi:type="BL" value="true"/>
+                </observation>
+            </example>
+            <element name="hl7:observation" id="2.16.840.1.113883.2.6.60.3.9.163102">
+                <attribute name="classCode" value="OBS" id="2.16.840.1.113883.2.6.60.3.9.163103"/>
+                <attribute name="moodCode" value="EVN" id="2.16.840.1.113883.2.6.60.3.9.163104"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.163105">
+                    <attribute name="root" value="1.2.276.0.76.10.4096" id="2.16.840.1.113883.2.6.60.3.9.163106"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.163107">
+                    <vocabulary code="67499-4" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.163108">
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="BL" id="2.16.840.1.113883.2.6.60.3.9.163109">
+                    <desc language="de-DE">Wenn Sicherheits-Equipment benutzt wurde = true</desc>
+                </element>
+            </element>
+        </template>

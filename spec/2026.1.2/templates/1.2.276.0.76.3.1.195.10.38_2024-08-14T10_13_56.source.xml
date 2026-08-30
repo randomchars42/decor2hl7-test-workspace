@@ -1,0 +1,33 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultLanguage="de-DE" id="1.2.276.0.76.3.1.195.10.38" name="blutdruck-diastolisch" displayName="Blutdruck diastolisch" versionLabel="2024" effectiveDate="2024-08-14T10:13:56" statusCode="draft" url="http://art-decor.org/decor/services/" ident="aktin-" xml:dummy-1="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-3="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance">
+    <desc language="de-DE">Blutdruck diastolisch</desc>
+    <desc language="en-US">Diastolic blood pressure</desc>
+    <classification type="cdaentrylevel"/>
+    <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.303" tmname="CDAObservation" tmdisplayName="CDA Observation" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-"/>
+    <relationship type="ADAPT" template="1.2.276.0.76.10.4172" tmid="1.2.276.0.76.10.4172" tmname="Diastolicbloodpressure" tmdisplayName="Blutdruck diastolisch" tmeffectiveDate="2017-06-26T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+    <context id="**"/>
+    <element name="hl7:observation" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.877">
+                <attribute name="classCode" value="OBS" id="2.16.840.1.113883.2.6.77.9.878"/>
+                <attribute name="moodCode" value="EVN" id="2.16.840.1.113883.2.6.77.9.879"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.2.6.77.9.880">
+                    <attribute name="root" value="1.2.276.0.76.3.1.195.10.38" id="2.16.840.1.113883.2.6.77.9.881"/>
+                </element>
+                <element name="hl7:id" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.882"/>
+                <element name="hl7:code" datatype="CD" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                    <vocabulary code="271650006" codeSystem="2.16.840.1.113883.6.96" displayName="Diastolic blood pressure (observable entity)"/>
+                    <element name="hl7:translation" datatype="CE" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                        <vocabulary code="8462-4" codeSystem="2.16.840.1.113883.6.1" displayName="Diastolic blood pressure"/>
+                    </element>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.2.6.77.9.873">
+                    <desc language="de-DE">Lediglich reference in den Text der zugehörigen Section</desc>
+                    <element name="hl7:reference" minimumMultiplicity="1" maximumMultiplicity="1" datatype="URL" id="2.16.840.1.113883.2.6.77.9.874"/>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CS" id="2.16.840.1.113883.2.6.77.9.875">
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:effectiveTime" conformance="NP"/>
+                <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="PQ" id="2.16.840.1.113883.2.6.77.9.888">
+                    <property unit="mm[Hg]"/>
+                </element>
+            </element>
+</template>

@@ -1,0 +1,61 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.4065" ident="aktin-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.4065" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="Allergy Concern Act" ident="aktin-" name="Allergyconcernact" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="active" url="http://art-decor.org/decor/services/" effectiveDate="2015-03-27T00:00:00">
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.301" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.301" tmname="CDAAct" tmdisplayName="CDA Act" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <relationship type="ADAPT" template="2.16.840.1.113883.10.20.22.4.30" flexibility="2014-06-09T00:00:00" url="http://art-decor.org/decor/services/" linkedartefactmissing="true"/>
+            <relationship type="ADAPT" template="1.2.276.0.76.10.4256" flexibility="2017-06-04T00:00:00" tmid="1.2.276.0.76.10.4256" tmname="Allergyconcernact" tmeffectiveDate="2017-06-04T00:00:00" tmdisplayName="Allergie/Unverträglichkeit Concern Act" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <example type="neutral">
+                <act classCode="ACT" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4065"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="5a2ac5fc-0c85-4223-baee-c2e254803975"/>
+                    <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+                    <statusCode code="active"/>
+                    <!-- This is the time stamp for when the allergy was first documented as a concern-->
+                    <effectiveTime>
+                        <low value="20140104123506"/>
+                    </effectiveTime>
+                    <entryRelationship typeCode="SUBJ">
+                        <!-- 1.2.276.0.76.10.4066 Allergy / Intolerance Observation -->
+                    </entryRelationship>
+                </act>
+            </example>
+            <element name="hl7:act" id="2.16.840.1.113883.2.6.60.3.9.588">
+                <item original="false" label="Allergyconcernact"/>
+                <attribute name="classCode" value="ACT" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.589"/>
+                <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.590"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.591">
+                    <item original="false" label="Allergyconcernact"/>
+                    <attribute name="root" value="1.2.276.0.76.10.4065" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.592"/>
+                </element>
+                <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="*" isMandatory="true" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.593">
+                    <item original="false" label="Allergyconcernact"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CV" id="2.16.840.1.113883.2.6.60.3.9.594">
+                    <item original="false" label="Allergyconcernact"/>
+                    <vocabulary code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="CS" id="2.16.840.1.113883.2.6.60.3.9.595">
+                    <item original="false" label="Allergyconcernact"/>
+                </element>
+                <element name="hl7:effectiveTime" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="IVL_TS" id="2.16.840.1.113883.2.6.60.3.9.596">
+                    <item original="false" label="Allergyconcernact"/>
+                    <element name="hl7:low" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="TS" id="2.16.840.1.113883.2.6.60.3.9.597">
+                        <item original="false" label="Allergyconcernact"/>
+                    </element>
+                    <element name="hl7:high" minimumMultiplicity="0" maximumMultiplicity="1" datatype="TS" id="2.16.840.1.113883.2.6.60.3.9.598">
+                        <item original="false" label="Allergyconcernact"/>
+                    </element>
+                </element>
+                <element name="hl7:entryRelationship" minimumMultiplicity="1" maximumMultiplicity="*" isMandatory="true" contains="1.2.276.0.76.10.4066" id="2.16.840.1.113883.2.6.60.3.9.599" tmid="1.2.276.0.76.10.4066" tmname="Allergyintoleranceobservation" tmdisplayName="Allergy / Intolerance Observation" tmeffectiveDate="2015-09-18T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <item original="false" label="Allergyconcernact"/>
+                    <attribute name="typeCode" value="SUBJ" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.600"/>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.3051" name="AllergienUnvertraeglichkeiten" displayName="Allergien und Unverträglichkeiten" effectiveDate="2015-03-26T00:00:00" statusCode="active" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4066" name="Allergyintoleranceobservation" displayName="Allergy / Intolerance Observation" effectiveDate="2015-09-18T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+        </template>
+    </template>
+</result>

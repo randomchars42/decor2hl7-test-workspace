@@ -1,0 +1,34 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:ukfc="http://fhir.hl7.de/ukfc" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:pharm="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.4296" name="PlanofCareActivityReferenceSubstanceAdministration" displayName="Bezug zur Therapie-Intention" effectiveDate="2019-01-27T00:00:00" statusCode="draft" url="http://art-decor.org/decor/services/" ident="pmp-" ukfc:dummy-1="http://fhir.hl7.de/ukfc" sdtc:dummy-2="urn:hl7-org:sdtc" xhtml:dummy-3="http://www.w3.org/1999/xhtml" pharm:dummy-4="urn:hl7-org:pharm" xml:dummy-5="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-7="urn:hl7-org:v3" xsi:dummy-8="http://www.w3.org/2001/XMLSchema-instance">
+    <desc language="de-DE">Dieses Template referenziert (über die ID) eine medikamentöse Therapie Intention (Behandlungsplan)</desc>
+    <classification type="cdaentrylevel"/>
+    <relationship type="ADAPT" template="2.16.840.1.113883.10.20.22.4.42" flexibility="2014-06-09T00:00:00"/>
+    <relationship type="SPEC" template="2.16.840.1.113883.10.12.308" flexibility="2005-09-07T00:00:00"/>
+    <example type="neutral">
+        <hl7:substanceAdministration classCode="SBADM" moodCode="INT">
+            <hl7:templateId root="1.2.276.0.76.10.4296"/>
+            <hl7:id root="1.2.3.999" extension="--example only--"/>
+            <hl7:consumable>
+                <hl7:manufacturedProduct>
+                    <hl7:manufacturedMaterial nullFlavor="NA"/>
+                </hl7:manufacturedProduct>
+            </hl7:consumable>
+        </hl7:substanceAdministration>
+    </example>
+    <element name="hl7:substanceAdministration" id="2.16.840.1.113883.2.6.60.4.9.876">
+        <attribute name="classCode" value="SBADM" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.881"/>
+        <attribute name="moodCode" value="INT" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.882"/>
+        <element name="hl7:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.877">
+            <attribute name="root" value="1.2.276.0.76.10.4296" datatype="uid" id="2.16.840.1.113883.2.6.60.4.9.869"/>
+        </element>
+        <element name="hl7:id" datatype="II" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.2.6.60.4.9.878">
+            <desc language="de-DE">Referenz zu einer medikamentösen Therapie-Intention (Behandlungsplan)</desc>
+        </element>
+        <element name="hl7:consumable" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.888">
+            <element name="hl7:manufacturedProduct" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.4.9.889">
+                <element name="hl7:manufacturedMaterial" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.4.9.890">
+                    <attribute name="nullFlavor" value="NA" datatype="cs" id="2.16.840.1.113883.2.6.60.4.9.891"/>
+                </element>
+            </element>
+        </element>
+    </element>
+</template>

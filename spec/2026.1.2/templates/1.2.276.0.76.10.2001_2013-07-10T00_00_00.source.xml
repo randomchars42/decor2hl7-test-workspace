@@ -1,0 +1,243 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:pharm="urn:ihe:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.2001" name="HeaderRecordTarget" displayName="CDA recordTarget" statusCode="active" effectiveDate="2013-07-10T00:00:00" url="http://art-decor.org/decor/services/" ident="hl7de-" pharm:dummy-1="urn:ihe:pharm" xml:dummy-2="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-4="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="de-DE">Das recordTarget repräsentiert die Person, über die dokumentiert wird. recordTarget umfasst neben der Identifikation und dem Namen, Geschlecht, Adressen etc. auch optionale Zusatzangaben wie zum Beispiel Geburtsort und Sprachfähigkeiten.</desc>
+            <classification type="cdaheaderlevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.101"/>
+            <example caption="Standard-Beispiel">
+        <recordTarget typeCode="RCT" contextControlCode="OP">
+            <patientRole classCode="PAT">
+                <id root="2.16.840.1.113883.3.37.6.2.23.3" extension="12345"/>
+                <addr use="HP">
+                    <streetName>Musterstraße</streetName>
+                    <houseNumber>15</houseNumber>
+                    <postalCode>50825</postalCode>
+                    <city>Köln</city>
+                </addr>
+                <telecom use="HP" value="tel:+49(221)7812220"/>
+                <patient classCode="PSN" determinerCode="INSTANCE">
+                    <name>
+                        <given>Marie</given>
+                        <family>Müller</family>
+                    </name>
+                    <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1"/>
+                    <birthTime value="19700924"/>
+                    <birthplace>
+                        <place>
+                            <addr>
+                                <city>Köln</city>
+                            </addr>
+                        </place>
+                    </birthplace>
+                </patient>
+            </patientRole>
+        </recordTarget>
+    </example>
+            <example caption="Maximal-Beispiel">
+        <recordTarget typeCode="RCT" contextControlCode="OP">
+            <patientRole classCode="PAT">
+                <id root="2.16.840.1.113883.3.37.6.2.23.3" extension="12345"/>
+                <id root="1.2.276.0.76.4.8" extension="8003004447"/>
+                <addr use="HP">
+                    <streetName>Musterstraße</streetName>
+                    <houseNumber>15</houseNumber>
+                    <postalCode>50825</postalCode>
+                    <city>Köln</city>
+                </addr>
+                <telecom use="HP" value="tel:+49(221)7812220"/>
+                <telecom use="HP" value="mailto:MuellerMar@gmx.de"/>
+                <patient classCode="PSN" determinerCode="INSTANCE">
+                    <name>
+                        <given>Marie</given>
+                        <family>Müller</family>
+                    </name>
+                    <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1"/>
+                    <birthTime value="19700924"/>
+                            <!-- Familienstand des Patienten -->
+                    <maritalStatusCode code="M" displayName="Married" codeSystem="2.16.840.1.113883.5.2" codeSystemName="HL7 MaritalStatusCode"/>
+                            <!-- Religionszugehörigkeit des Patienten-->
+                    <religiousAffiliationCode code="1077" displayName="Protestant" codeSystem="2.16.840.1.113883.5.1076"/>
+                            <!-- Vormund/Sachwalter des Patienten -->
+                    <guardian>
+                        <addr use="HP">
+                            <streetName>Musterstraße</streetName>
+                            <houseNumber>15</houseNumber>
+                            <postalCode>50825</postalCode>
+                            <city>Köln</city>
+                        </addr>
+                        <telecom use="HP" value="..."/>
+                        <guardianPerson>
+                            <name>
+                                <given>Marius</given>
+                                <family>Müller</family>
+                            </name>
+                        </guardianPerson>
+                    </guardian>
+                    <birthplace>
+                        <place>
+                            <addr>
+                                <city>Köln</city>
+                            </addr>
+                        </place>
+                    </birthplace>
+                    <languageCommunication>
+                        <languageCode code="EN"/>
+                        <modeCode code="ESP"/>
+                        <proficiencyLevelCode code="G"/>
+                        <preferenceInd value="true"/>
+                    </languageCommunication>
+                </patient>
+            </patientRole>
+        </recordTarget>
+    </example>
+            <example caption="Minimal-Beispiel">
+        <recordTarget typeCode="RCT" contextControlCode="OP">
+            <patientRole classCode="PAT">
+                <id root="2.16.840.1.113883.3.37.6.2.23.3" extension="12345"/>
+            </patientRole>
+        </recordTarget>
+    </example>
+            <element name="hl7:recordTarget" id="2.16.840.1.113883.2.6.77.9.344">
+                <example>
+            <recordTarget typeCode="RCT" contextControlCode="OP">
+                <patientRole classCode="PAT">
+                            <!-- ... -->
+                </patientRole>
+            </recordTarget>
+        </example>
+                <attribute name="typeCode" value="RCT" isOptional="true" id="2.16.840.1.113883.2.6.77.9.345"/>
+                <attribute name="contextControlCode" value="OP" isOptional="true" id="2.16.840.1.113883.2.6.77.9.346"/>
+                <!-- Element patientRole -->
+                <element name="hl7:patientRole" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.347">
+                    <example>
+                <patientRole classCode="PAT">
+                    <id extension="186245" root="1.2.276.0.76.3.1.139.3.871"/>
+                    <patient classCode="PSN" determinerCode="INSTANCE">
+                                <!-- ... -->
+                    </patient>
+                </patientRole>
+            </example>
+                    <attribute name="classCode" value="PAT" isOptional="true" id="2.16.840.1.113883.2.6.77.9.348"/>
+                    <!-- Element id -->
+                    <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="*" datatype="II" id="2.16.840.1.113883.2.6.77.9.349">
+                        <example>
+                    <id extension="6245" root="2.16.840.1.113883.3.933"/>
+                    <id extension="1543627549" root="1.2.276.0.76.4.1"/>
+                </example>
+                    </element>
+                    <element name="hl7:addr" minimumMultiplicity="0" maximumMultiplicity="*" datatype="AD" id="2.16.840.1.113883.2.6.77.9.350">
+                        <desc language="de-DE">Adresse des Patienten</desc>
+                        <example>
+                    <addr use="HP">
+                        <streetName>Dorfstraße</streetName>
+                        <houseNumber>54</houseNumber>
+                        <postalCode>51371</postalCode>
+                        <city>Leverkusen</city>
+                    </addr>
+                </example>
+                    </element>
+                    <element name="hl7:telecom" minimumMultiplicity="0" maximumMultiplicity="*" datatype="TEL" id="2.16.840.1.113883.2.6.77.9.351">
+                        <desc language="de-DE">Kontaktdaten des Patienten</desc>
+                        <example>
+                    <telecom use="H" value="tel:+4930140400"/>
+                    <telecom use="MC" value="tel:+492211234567"/>
+                    <telecom value="mailto:herberthannes.mustermann@provider.de"/>
+                </example>
+                    </element>
+                    <!-- Element patient -->
+                    <element name="hl7:patient" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.352">
+                        <example>
+                    <patient classCode="PSN" determinerCode="INSTANCE">
+                        <name>
+                                    <!-- ... -->
+                        </name>
+                        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1"/>
+                        <birthTime value="19541223"/>
+                    </patient>
+                </example>
+                        <attribute name="classCode" value="PSN" isOptional="true" id="2.16.840.1.113883.2.6.77.9.353"/>
+                        <attribute name="determinerCode" value="INSTANCE" isOptional="true" id="2.16.840.1.113883.2.6.77.9.354"/>
+                        <!-- Element name -->
+                        <include ref="1.2.276.0.76.10.90030" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true"/>
+                        <!-- Element administrativeGenderCode -->
+                        <element name="hl7:administrativeGenderCode" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="CE" id="2.16.840.1.113883.2.6.77.9.355">
+                            <desc language="de-DE">Geschlecht (administrativ) des Patienten</desc>
+                            <example>
+                        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1"/>
+                    </example>
+                            <vocabulary valueSet="2.16.840.1.113883.1.11.1"/>
+                        </element>
+                        <!-- Element birthTime -->
+                        <element name="hl7:birthTime" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="TS.DATE.MIN" id="2.16.840.1.113883.2.6.77.9.356">
+                            <desc language="de-DE">Geburtsdatum des Patienten</desc>
+                            <example>
+                        <birthTime value="19491224"/>
+                    </example>
+                        </element>
+                        <!-- Element maritalStatusCode -->
+                        <element name="hl7:maritalStatusCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.2.6.77.9.357">
+                            <desc language="de-DE">Familienstand des Patienten</desc>
+                            <example>
+                        <maritalStatusCode code="S" displayName="Never Married" codeSystem="2.16.840.1.113883.5.2"/>
+                    </example>
+                            <vocabulary valueSet="2.16.840.1.113883.1.11.12212"/>
+                        </element>
+                        <!-- Element religiousAffiliationCode -->
+                        <element name="hl7:religiousAffiliationCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.2.6.77.9.358">
+                            <desc language="de-DE">Religionszugehörigkeit des Patienten</desc>
+                            <example>
+                        <religiousAffiliationCode code="1077" displayName="Protestant" codeSystem="2.16.840.1.113883.5.1076"/>
+                    </example>
+                            <vocabulary valueSet="2.16.840.1.113883.1.11.19185"/>
+                        </element>
+                        <!-- Element raceCode -->
+                        <element name="hl7:raceCode" conformance="NP" id="2.16.840.1.113883.2.6.77.9.359">
+                            <desc language="de-DE">darf nicht verwendet werden</desc>
+                        </element>
+                        <!-- Element ethnicGroupCode -->
+                        <element name="hl7:ethnicGroupCode" conformance="NP" id="2.16.840.1.113883.2.6.77.9.360">
+                            <desc language="de-DE">darf nicht verwendet werden</desc>
+                        </element>
+                        <!-- Element guardian -->
+                        <element name="hl7:guardian" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.2.6.77.9.361">
+                            <desc language="de-DE">Vormund/Sachwalter des Patienten</desc>
+                            <element name="hl7:addr" minimumMultiplicity="0" maximumMultiplicity="1" datatype="AD" id="2.16.840.1.113883.2.6.77.9.362"/>
+                            <element name="hl7:telecom" minimumMultiplicity="0" maximumMultiplicity="*" datatype="TEL" id="2.16.840.1.113883.2.6.77.9.363"/>
+                            <!-- Auswahl: guardianPerson oder guardianOrganization, einer muss es sein, höchstens einer darf es sein -->
+                            <choice minimumMultiplicity="1" maximumMultiplicity="1">
+                                <element name="hl7:guardianPerson" id="2.16.840.1.113883.2.6.77.9.364">
+                                    <element name="hl7:name" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="PN" id="2.16.840.1.113883.2.6.77.9.365"/>
+                                </element>
+                                <element name="hl7:guardianOrganization" id="2.16.840.1.113883.2.6.77.9.366">
+                                    <element name="hl7:name" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="ON" id="2.16.840.1.113883.2.6.77.9.367"/>
+                                </element>
+                            </choice>
+                        </element>
+                        <!-- Element birthPlace -->
+                        <element name="hl7:birthplace" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.368">
+                            <desc language="de-DE">Geburtsort des Patienten</desc>
+                            <example>
+                        <birthplace>
+                            <place>
+                                <addr>Hamburg</addr>
+                            </place>
+                        </birthplace>
+                    </example>
+                            <element name="hl7:place" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.369">
+                                <element name="hl7:addr" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="AD" id="2.16.840.1.113883.2.6.77.9.370"/>
+                            </element>
+                        </element>
+                        <element name="hl7:languageCommunication" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.2.6.77.9.371">
+                            <element name="hl7:languageCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CS" id="2.16.840.1.113883.2.6.77.9.372">
+                                <vocabulary valueSet="2.16.840.1.113883.1.11.11526"/>
+                            </element>
+                            <element name="hl7:modeCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.2.6.77.9.373">
+                                <vocabulary valueSet="2.16.840.1.113883.1.11.12249"/>
+                            </element>
+                            <element name="hl7:proficiencyLevelCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.2.6.77.9.374">
+                                <vocabulary valueSet="2.16.840.1.113883.1.11.12199"/>
+                            </element>
+                            <element name="hl7:preferenceInd" minimumMultiplicity="0" maximumMultiplicity="1" datatype="BL" id="2.16.840.1.113883.2.6.77.9.375"/>
+                        </element>
+                    </element>
+                </element>
+            </element>
+        </template>

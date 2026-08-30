@@ -1,0 +1,76 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.90012" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pharm="urn:ihe:pharm" id="1.2.276.0.76.10.90012" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="CDA Assigned Entity Elements" cda:dummy-4="urn:hl7-org:v3" ident="hl7de-" name="AssignedEntityElements" xml:dummy-2="http://www.w3.org/XML/1998/namespace" pharm:dummy-1="urn:ihe:pharm" statusCode="active" url="http://art-decor.org/decor/services/" effectiveDate="2011-12-19T00:00:00">
+            <classification type="cdaheaderlevel"/>
+            <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="*" conformance="R" datatype="II" id="2.16.840.1.113883.2.6.77.9.339">
+                <item original="false" label="AssignedEntityElements"/>
+            </element>
+            <element name="hl7:addr" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" datatype="AD" id="2.16.840.1.113883.2.6.77.9.340">
+                <item original="false" label="AssignedEntityElements"/>
+            </element>
+            <element name="hl7:telecom" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" datatype="TEL" id="2.16.840.1.113883.2.6.77.9.341">
+                <item original="false" label="AssignedEntityElements"/>
+            </element>
+            <element name="hl7:assignedPerson" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.342">
+                <item original="false" label="AssignedEntityElements"/>
+                <include ref="1.2.276.0.76.10.90010" tmid="1.2.276.0.76.10.90010" tmname="PersonElements" tmdisplayName="CDA Person Elements" tmeffectiveDate="2011-12-19T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                    <item original="false" label="AssignedEntityElements"/>
+                    <attribute name="classCode" value="PSN" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.330"/>
+                    <attribute name="determinerCode" value="INSTANCE" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.331"/>
+                    <element name="hl7:name" datatype="PN" id="2.16.840.1.113883.2.6.77.9.332" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                        <item original="false" label="PersonElements"/>
+                    </element>
+                    <staticAssociations/>
+                </include>
+            </element>
+            <element name="hl7:representedOrganization" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.343">
+                <item original="false" label="AssignedEntityElements"/>
+                <include ref="1.2.276.0.76.10.90011" tmid="1.2.276.0.76.10.90011" tmname="OrganizationElements" tmdisplayName="CDA Organization Elements" tmeffectiveDate="2011-12-19T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                    <item original="false" label="AssignedEntityElements"/>
+                    <attribute name="classCode" value="ORG" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.333"/>
+                    <attribute name="determinerCode" value="INSTANCE" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.334"/>
+                    <element name="hl7:id" datatype="II" id="2.16.840.1.113883.2.6.77.9.335" minimumMultiplicity="0" maximumMultiplicity="*">
+                        <item original="false" label="OrganizationElements"/>
+                    </element>
+                    <element name="hl7:name" datatype="ON" id="2.16.840.1.113883.2.6.77.9.336" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                        <item original="false" label="OrganizationElements"/>
+                    </element>
+                    <element name="hl7:telecom" datatype="TEL" id="2.16.840.1.113883.2.6.77.9.337" minimumMultiplicity="0" maximumMultiplicity="*">
+                        <item original="false" label="OrganizationElements"/>
+                    </element>
+                    <element name="hl7:addr" datatype="AD" id="2.16.840.1.113883.2.6.77.9.338" minimumMultiplicity="0" maximumMultiplicity="1">
+                        <item original="false" label="OrganizationElements"/>
+                    </element>
+                    <staticAssociations/>
+                </include>
+            </element>
+            <staticAssociations/>
+            <ref type="contains" prefix="vomgt-" flexibility="dynamic" id="1.2.276.0.76.3.1.135.8.10.158" name="InformantBodyEntry" displayName="Informant (Body)" effectiveDate="2020-06-18T11:43:39" statusCode="draft" ident="vomgt-"/>
+            <ref type="include" prefix="dguvbbr-" flexibility="dynamic" id="1.2.276.0.76.3.1.261.1.10.2.7" name="HeaderAuthenticator" displayName="CDA authenticator" effectiveDate="2018-07-23T09:20:51" statusCode="draft" isClosed="false" ident="dguvbbr-"/>
+            <ref type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.2017" name="HeaderDataEnterer" effectiveDate="2014-08-25T00:00:00" statusCode="draft" displayName="CDA dataEnterer" isClosed="false" ident="hl7de-"/>
+            <ref type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.2018" name="CDAinformant" effectiveDate="2014-08-25T00:00:00" statusCode="draft" displayName="CDA Informant" isClosed="false" ident="hl7de-"/>
+            <ref type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.2019" name="HeaderAuthenticator" displayName="CDA authenticator" statusCode="active" isClosed="false" effectiveDate="2014-08-25T00:00:00" ident="hl7de-"/>
+            <ref type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.2020" name="HeaderLegalAuthenticator" effectiveDate="2014-08-25T00:00:00" statusCode="draft" displayName="CDA legalAuthenticator" isClosed="false" ident="hl7de-"/>
+            <ref type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.2027" name="HeaderEncompassingEncounter" displayName="CDA encompassingEncounter Patientenkontakt" statusCode="review" versionLabel="1.1" effectiveDate="2014-08-25T00:00:00" ident="hl7de-"/>
+            <ref type="contains" prefix="evthm-" flexibility="dynamic" id="1.2.276.0.76.10.2047" effectiveDate="2017-05-13T00:00:00" name="CDAdocumentationOfAusserklinischeBeatmung" displayName="Dienstleistung/Behandlung (Außerklinische Beatmung)" statusCode="draft" ident="evthm-"/>
+            <uses type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.90010" name="PersonElements" displayName="CDA Person Elements" statusCode="active" effectiveDate="2011-12-19T00:00:00" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+            <uses type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.90011" name="OrganizationElements" displayName="CDA Organization Elements" statusCode="active" effectiveDate="2011-12-19T00:00:00" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+            <ref type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.90014" name="PerformerBody" effectiveDate="2014-03-12T10:18:42" statusCode="draft" displayName="Performer (Body)" ident="hl7de-"/>
+            <ref type="contains" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.90029" name="InformantBody" displayName="Informant (Body)" effectiveDate="2017-06-04T00:00:00" statusCode="draft" ident="hl7de-"/>
+        </template>
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pharm="urn:ihe:pharm" ref="1.2.276.0.76.10.90012" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="CDA Assigned Entity Elements" cda:dummy-4="urn:hl7-org:v3" ident="hl7de-" name="AssignedEntityElements" xml:dummy-2="http://www.w3.org/XML/1998/namespace" pharm:dummy-1="urn:ihe:pharm" statusCode="active" url="http://art-decor.org/decor/services/" effectiveDate="2011-12-19T00:00:00">
+            <ref type="contains" prefix="vomgt-" flexibility="dynamic" id="1.2.276.0.76.3.1.135.8.10.158" name="InformantBodyEntry" displayName="Informant (Body)" effectiveDate="2020-06-18T11:43:39" statusCode="draft" ident="vomgt-"/>
+            <ref type="include" prefix="dguvbbr-" flexibility="dynamic" id="1.2.276.0.76.3.1.261.1.10.2.7" name="HeaderAuthenticator" displayName="CDA authenticator" effectiveDate="2018-07-23T09:20:51" statusCode="draft" isClosed="false" ident="dguvbbr-"/>
+            <ref type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.2017" name="HeaderDataEnterer" effectiveDate="2014-08-25T00:00:00" statusCode="draft" displayName="CDA dataEnterer" isClosed="false" ident="hl7de-"/>
+            <ref type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.2018" name="CDAinformant" effectiveDate="2014-08-25T00:00:00" statusCode="draft" displayName="CDA Informant" isClosed="false" ident="hl7de-"/>
+            <ref type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.2019" name="HeaderAuthenticator" displayName="CDA authenticator" statusCode="active" isClosed="false" effectiveDate="2014-08-25T00:00:00" ident="hl7de-"/>
+            <ref type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.2020" name="HeaderLegalAuthenticator" effectiveDate="2014-08-25T00:00:00" statusCode="draft" displayName="CDA legalAuthenticator" isClosed="false" ident="hl7de-"/>
+            <ref type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.2027" name="HeaderEncompassingEncounter" displayName="CDA encompassingEncounter Patientenkontakt" statusCode="review" versionLabel="1.1" effectiveDate="2014-08-25T00:00:00" ident="hl7de-"/>
+            <ref type="contains" prefix="evthm-" flexibility="dynamic" id="1.2.276.0.76.10.2047" effectiveDate="2017-05-13T00:00:00" name="CDAdocumentationOfAusserklinischeBeatmung" displayName="Dienstleistung/Behandlung (Außerklinische Beatmung)" statusCode="draft" ident="evthm-"/>
+            <uses type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.90010" name="PersonElements" displayName="CDA Person Elements" statusCode="active" effectiveDate="2011-12-19T00:00:00" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+            <uses type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.90011" name="OrganizationElements" displayName="CDA Organization Elements" statusCode="active" effectiveDate="2011-12-19T00:00:00" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+            <ref type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.90014" name="PerformerBody" effectiveDate="2014-03-12T10:18:42" statusCode="draft" displayName="Performer (Body)" ident="hl7de-"/>
+            <ref type="contains" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.90029" name="InformantBody" displayName="Informant (Body)" effectiveDate="2017-06-04T00:00:00" statusCode="draft" ident="hl7de-"/>
+        </template>
+    </template>
+</result>

@@ -1,0 +1,1560 @@
+<codeSystems>
+    <project ident="aktin-">
+        <codeSystem id="1.2.276.0.76.3.1.195.5.102" name="mts-indicators" displayName="MTS-Indikatoren" effectiveDate="2023-11-20T00:00:00" statusCode="draft" canonicalUri="http://aktin.org/fhir/CodeSystem/aktin-cs-mts-indicators" lastModifiedDate="2024-07-22T16:52:09" language="de-DE">
+            <desc language="de-DE" lastTranslated="2024-07-19T16:09:22">
+                <p>MTS-Indikatoren</p>
+            </desc>
+            <publishingAuthority name="AKTIN e. V." inherited="project">
+                <addrLine>c/o Uniklinik RWTH Aachen</addrLine>
+                <addrLine>Institut für Medizinische Informatik</addrLine>
+                <addrLine>Pauwelsstraße 35</addrLine>
+                <addrLine>52074 Aachen</addrLine>
+                <addrLine type="phone">Tel. +49 391 67 28186</addrLine>
+                <addrLine type="email">office@aktin.org</addrLine>
+            </publishingAuthority>
+            <property code="triagelevel" uri="http://aktin.org/codesystem-properties/mts-indicator#triagelevel" type="code"/>
+            <conceptList>
+                <codedConcept code="red" statusCode="active" level="0" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="rote Indikatoren"/>
+                    <designation language="en-US" type="preferred" displayName="red indicators"/>
+                </codedConcept>
+                <codedConcept code="A" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="A-Problem (Atemwege)"/>
+                    <designation language="de-DE" type="synonym" displayName="Gefährdeter Atemweg"/>
+                    <designation language="en-US" type="preferred" displayName="A-problem (Airway)"/>
+                    <designation language="en-US" type="synonym" displayName="Airway compromise"/>
+                    <property code="triagelevel">
+                        <valueCode code="red"/>
+                    </property>
+                    <parent code="red"/>
+                </codedConcept>
+                <codedConcept code="B" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="B-Problem (Atmung)"/>
+                    <designation language="de-DE" type="synonym" displayName="Unzureichende Atmung"/>
+                    <designation language="en-US" type="preferred" displayName="B-problem (Breathing)"/>
+                    <designation language="en-US" type="synonym" displayName="Inadequate breathing"/>
+                    <property code="triagelevel">
+                        <valueCode code="red"/>
+                    </property>
+                    <parent code="red"/>
+                </codedConcept>
+                <codedConcept code="C" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="C-Problem (Zirkulation)"/>
+                    <designation language="de-DE" type="synonym" displayName="Schock"/>
+                    <designation language="de-DE" type="synonym" displayName="Lebensbedrohliche Blutung"/>
+                    <designation language="en-US" type="preferred" displayName="C-problem (Circulation)"/>
+                    <designation language="en-US" type="synonym" displayName="Shock"/>
+                    <designation language="en-US" type="synonym" displayName="Exsanguinating heamorrhage"/>
+                    <property code="triagelevel">
+                        <valueCode code="red"/>
+                    </property>
+                    <parent code="red"/>
+                </codedConcept>
+                <codedConcept code="5" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Akute Augenverletzung mit Chemikalien"/>
+                    <designation language="en-US" type="preferred" displayName="Acute chemical eye injury"/>
+                    <property code="triagelevel">
+                        <valueCode code="red"/>
+                    </property>
+                    <parent code="red"/>
+                </codedConcept>
+                <codedConcept code="11" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Anhaltender Krampfanfall"/>
+                    <designation language="en-US" type="preferred" displayName="Currently fitting"/>
+                    <property code="triagelevel">
+                        <valueCode code="red"/>
+                    </property>
+                    <parent code="red"/>
+                </codedConcept>
+                <codedConcept code="17" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Atmet nach Freimachen der Atemwege"/>
+                    <designation language="en-US" type="preferred" displayName="Breathing after airway opened"/>
+                    <property code="triagelevel">
+                        <valueCode code="red"/>
+                    </property>
+                    <parent code="red"/>
+                </codedConcept>
+                <codedConcept code="75" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Hypoglykämie"/>
+                    <designation language="en-US" type="preferred" displayName="Hypoglycaemia"/>
+                    <property code="triagelevel">
+                        <valueCode code="red"/>
+                    </property>
+                    <parent code="red"/>
+                </codedConcept>
+                <codedConcept code="113" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Nabelschnurvorfall"/>
+                    <designation language="en-US" type="preferred" displayName="Prolapsed umbilical cord"/>
+                    <property code="triagelevel">
+                        <valueCode code="red"/>
+                    </property>
+                    <parent code="red"/>
+                </codedConcept>
+                <codedConcept code="117" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Nicht ansprechbar"/>
+                    <designation language="en-US" type="preferred" displayName="Unresponsive"/>
+                    <property code="triagelevel">
+                        <valueCode code="red"/>
+                    </property>
+                    <parent code="red"/>
+                </codedConcept>
+                <codedConcept code="118" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Nicht ansprechbares Kind"/>
+                    <designation language="en-US" type="preferred" displayName="Unresponsive child"/>
+                    <property code="triagelevel">
+                        <valueCode code="red"/>
+                    </property>
+                    <parent code="red"/>
+                </codedConcept>
+                <codedConcept code="130" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Puls unnormal"/>
+                    <designation language="en-US" type="preferred" displayName="Pulse abnormal"/>
+                    <property code="triagelevel">
+                        <valueCode code="red"/>
+                    </property>
+                    <parent code="red"/>
+                </codedConcept>
+                <codedConcept code="136" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Rekapillarisierungszeit unnormal"/>
+                    <designation language="en-US" type="preferred" displayName="Capillary refill time abnormal"/>
+                    <property code="triagelevel">
+                        <valueCode code="red"/>
+                    </property>
+                    <parent code="red"/>
+                </codedConcept>
+                <codedConcept code="153" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Sichtbare Körperteile des Fötus"/>
+                    <designation language="en-US" type="preferred" displayName="Presenting foetal parts"/>
+                    <property code="triagelevel">
+                        <valueCode code="red"/>
+                    </property>
+                    <parent code="red"/>
+                </codedConcept>
+                <codedConcept code="157" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Speichelfluss"/>
+                    <designation language="en-US" type="preferred" displayName="Drooling"/>
+                    <property code="triagelevel">
+                        <valueCode code="red"/>
+                    </property>
+                    <parent code="red"/>
+                </codedConcept>
+                <codedConcept code="162" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Stridor"/>
+                    <designation language="en-US" type="preferred" displayName="Stridor"/>
+                    <property code="triagelevel">
+                        <valueCode code="red"/>
+                    </property>
+                    <parent code="red"/>
+                </codedConcept>
+                <codedConcept code="172" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Unnormale Atemfrequenz"/>
+                    <designation language="en-US" type="preferred" displayName="Respiratory rate"/>
+                    <property code="triagelevel">
+                        <valueCode code="red"/>
+                    </property>
+                    <parent code="red"/>
+                </codedConcept>
+                <codedConcept code="orange" statusCode="active" level="0" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="orange Indikatoren"/>
+                    <designation language="en-US" type="preferred" displayName="orange indicators"/>
+                </codedConcept>
+                <codedConcept code="1" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Abdominalschmerz"/>
+                    <designation language="en-US" type="preferred" displayName="Abdominal pain"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="2" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Abruptes Einsetzen"/>
+                    <designation language="en-US" type="preferred" displayName="Abrupt onset"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="3" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Aktive Wehentätigkeit"/>
+                    <designation language="en-US" type="preferred" displayName="In active labour"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="4" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Akute Atemnot"/>
+                    <designation language="en-US" type="preferred" displayName="Acutely short of breath"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="6" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Akuter vollständiger Visusverlust"/>
+                    <designation language="en-US" type="preferred" displayName="Acute complete loss of vision"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="8" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Akutes Einsetzen nach einer Verletzung"/>
+                    <designation language="en-US" type="preferred" displayName="Acute onset after injury"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="9" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Akutes neurologisches Defizit"/>
+                    <designation language="en-US" type="preferred" displayName="New neurological deficit less than 24 hours old"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="10" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Alter unter 25 Jahren"/>
+                    <designation language="en-US" type="preferred" displayName="Age less than 25 years"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="16" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Anzeichen für stärkste Schmerzen"/>
+                    <designation language="en-US" type="preferred" displayName="Signs of severe pain"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="18" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Auffällige Allergieanamnese"/>
+                    <designation language="en-US" type="preferred" displayName="Significant history of allergy"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="19" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Auffällige Anamnese mit GI-Blutungen"/>
+                    <designation language="en-US" type="preferred" displayName="Significant history of GI bleed"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="24" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Auffällige respiratorische Anamnese"/>
+                    <designation language="en-US" type="preferred" displayName="Significant respiratory history"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="26" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Auffälliger Verletzungsmechanismus"/>
+                    <designation language="en-US" type="preferred" displayName="Significant mechanism of injury"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="28" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Bekannte oder vermutete Immunsuppression"/>
+                    <designation language="en-US" type="preferred" displayName="Known or likely inmmunosuppression"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="33" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Bericht über Krampfanfall"/>
+                    <designation language="en-US" type="preferred" displayName="History of fitting"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="34" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Bericht über Überdosierung oder Vergiftung"/>
+                    <designation language="en-US" type="preferred" displayName="History of overdose or poisoning"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="36" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Besonderes Infektionsrisiko"/>
+                    <designation language="en-US" type="preferred" displayName="Special risk of infection"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="44" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Erbrechen von Blut"/>
+                    <designation language="en-US" type="preferred" displayName="Vomiting blood"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="45" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Erhöhte Atemarbeit"/>
+                    <designation language="en-US" type="preferred" displayName="Increased work of breathing"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="46" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Erschöpfungszustand"/>
+                    <designation language="en-US" type="preferred" displayName="Exhaustion"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="49" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Frisch- oder altblutiger Stuhlgang"/>
+                    <designation language="en-US" type="preferred" displayName="Passing fresh or altered blood PR"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="52" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Gefährdete (distale) Durchblutung"/>
+                    <designation language="en-US" type="preferred" displayName="Vascular compromise"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="53" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Gefährdete distale Durchblutung"/>
+                    <designation language="en-US" type="preferred" displayName="Distal vascular compromise"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="57" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Gesichtsödem"/>
+                    <designation language="en-US" type="preferred" displayName="Facial oedema"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="64" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Heißer Säugling"/>
+                    <designation language="en-US" type="preferred" displayName="Hot baby"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="65" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Hervortreten von Organen"/>
+                    <designation language="en-US" type="preferred" displayName="Externalisation of organs"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="66" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Hoch letale Chemikalie"/>
+                    <designation language="en-US" type="preferred" displayName="High lethality chemical"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="67" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Hoch letaler Tierbiss"/>
+                    <designation language="en-US" type="preferred" displayName="High lethality envenomation"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="69" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Hohe Letalität"/>
+                    <designation language="en-US" type="preferred" displayName="High lethality"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="71" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Hohes Risiko (künftiger) Eigengefährdung"/>
+                    <designation language="en-US" type="preferred" displayName="High risk of (further) self-harm"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="72" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Hohes Risiko (künftiger) Fremdgefährdung"/>
+                    <designation language="en-US" type="preferred" displayName="High risk of (further) harm to others"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="74" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Hyperglykämie mit Ketose"/>
+                    <designation language="en-US" type="preferred" displayName="Hyperglycaemia with ketosis"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="77" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Inhalationstrauma"/>
+                    <designation language="en-US" type="preferred" displayName="Inhalational injury"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="85" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Kann nicht in ganzen Sätzen sprechen"/>
+                    <designation language="en-US" type="preferred" displayName="Unable to talk in sentences"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="87" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Kardialer Schmerz"/>
+                    <designation language="en-US" type="preferred" displayName="Cardiac pain"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="91" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Keine Reaktion auf die Eltern"/>
+                    <designation language="en-US" type="preferred" displayName="Fails to react to parents"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="98" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Kritischer Hautzustand"/>
+                    <designation language="en-US" type="preferred" displayName="Critical skin"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="112" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Meningismuszeichen"/>
+                    <designation language="en-US" type="preferred" displayName="Signs of meningism"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="114" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Neuer unnormaler Puls"/>
+                    <designation language="en-US" type="preferred" displayName="New abnormal pulse"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="119" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Nicht verblassender Ausschlag"/>
+                    <designation language="en-US" type="preferred" displayName="Non-blanching rash"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="125" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Penetrationstrauma des Auges"/>
+                    <designation language="en-US" type="preferred" displayName="Penetrating eye injury"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="127" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Potentiell gefährlicher Fremdkörper"/>
+                    <designation language="en-US" type="preferred" displayName="Ingestation of dangerous object"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="128" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Priapismus"/>
+                    <designation language="en-US" type="preferred" displayName="Priapism"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="131" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Purpura"/>
+                    <designation language="en-US" type="preferred" displayName="Purpura"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="135" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Reagiert nur auf Ansprache oder Schmerz"/>
+                    <designation language="en-US" type="preferred" displayName="Responds to pain"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="137" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Risiko anhaltender Kontamination"/>
+                    <designation language="en-US" type="preferred" displayName="Risk of continued contamination"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="140" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Schlaffes Kind"/>
+                    <designation language="en-US" type="preferred" displayName="Floppy"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="141" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Schmerzausstrahlung in den Rücken"/>
+                    <designation language="en-US" type="preferred" displayName="Pain radiating on the back"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="148" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Sehr heiß"/>
+                    <designation language="en-US" type="preferred" displayName="Very hot"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="149" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Sehr niedrige O2-Sättigung"/>
+                    <designation language="en-US" type="preferred" displayName="Very low Sp02"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="150" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Sehr niedriger Peakflow"/>
+                    <designation language="en-US" type="preferred" displayName="Very low PEFR"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="151" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Sepsisverdacht"/>
+                    <designation language="en-US" type="preferred" displayName="Possible sepsis"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="152" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Sichtbare abdominelle Massierung"/>
+                    <designation language="en-US" type="preferred" displayName="Visible abdominal mass"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="154" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Skrotalgangrän"/>
+                    <designation language="en-US" type="preferred" displayName="Scrotal gangrene"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="158" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Starker vaginaler Blutverlust"/>
+                    <designation language="en-US" type="preferred" displayName="Heavy PV blood loss"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="160" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Stärkster Schmerz"/>
+                    <designation language="en-US" type="preferred" displayName="severe pain"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="159" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Stärkster Schmerz oder Juckreiz"/>
+                    <designation language="en-US" type="preferred" displayName="Severe itch"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="164" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Subkutane Gasansammlung"/>
+                    <designation language="en-US" type="preferred" displayName="Subcutaneous gas"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="174" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Unstillbare große Blutung"/>
+                    <designation language="en-US" type="preferred" displayName="Uncontrollable major heamorrhage"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="177" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Unterkühlt"/>
+                    <designation language="en-US" type="preferred" displayName="Cold"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="181" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Unzureichende Vorgeschichte (des Alkoholkonsums)"/>
+                    <designation language="en-US" type="preferred" displayName="Inadequate history"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="183" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Vaginaler Blutverlust zweite Schwangerschaftshälfte"/>
+                    <designation language="en-US" type="preferred" displayName="PV blood loss and 20 weeks pregnant or more"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="186" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Veränderter Bewusstseinszustand"/>
+                    <designation language="en-US" type="preferred" displayName="Altered conscious level"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="187" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Veränderter Bewusstseinszustand nicht vollständig durch Alkoholgenuss erklärbar"/>
+                    <designation language="en-US" type="preferred" displayName="Altered conscious level not wholly attributable to alcohol"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="190" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Verringerte Kindsbewegungen 2. SSH"/>
+                    <designation language="en-US" type="preferred" displayName="Reduced foetal movements &gt;20 weeks"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="191" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Zungenödem"/>
+                    <designation language="en-US" type="preferred" displayName="Oedema of the tongue"/>
+                    <property code="triagelevel">
+                        <valueCode code="orange"/>
+                    </property>
+                    <parent code="orange"/>
+                </codedConcept>
+                <codedConcept code="yellow" statusCode="active" level="0" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="gelbe Indikatoren"/>
+                    <designation language="en-US" type="preferred" displayName="yellow indicators"/>
+                </codedConcept>
+                <codedConcept code="7" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Akuter Zahnverlust"/>
+                    <designation language="en-US" type="preferred" displayName="Acutely avulsed tooth"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="12" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Anhaltendes Erbrechen"/>
+                    <designation language="en-US" type="preferred" displayName="Presistent vomiting"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="13" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Anhaltendes Herzklopfen"/>
+                    <designation language="en-US" type="preferred" displayName="Current palpitation"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="14" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Anzeichen für Dehydration"/>
+                    <designation language="en-US" type="preferred" displayName="Signs of dehydration"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="15" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Anzeichen für mäßige Schmerzen"/>
+                    <designation language="en-US" type="preferred" displayName="Signs of moderate pain"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="20" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Auffällige hämatologische oder metabolische Anamnese"/>
+                    <designation language="en-US" type="preferred" displayName="Significant heamatological history"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="21" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Auffällige kardiale Anamnese"/>
+                    <designation language="en-US" type="preferred" displayName="Significant cardiac history"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="22" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Auffällige medizinische Vorgeschichte"/>
+                    <designation language="en-US" type="preferred" displayName="Significant medical history"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="23" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Auffällige psychiatrische Anamnese"/>
+                    <designation language="en-US" type="preferred" displayName="Significant psychiatric history"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="25" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Auffällige Unruhe"/>
+                    <designation language="en-US" type="preferred" displayName="Marked distress"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="29" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Bericht über akutes Erbrechen von Blut"/>
+                    <designation language="en-US" type="preferred" displayName="History of acutely vomiting blood"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="30" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Bericht über Bewusstlosigkeit"/>
+                    <designation language="en-US" type="preferred" displayName="History of unconsciousness"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="31" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Bericht über jüngeren Auslandsaufenthalt"/>
+                    <designation language="en-US" type="preferred" displayName="History of recent foreign travel"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="32" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Bericht über Kopfverletzung"/>
+                    <designation language="en-US" type="preferred" displayName="History of head injury"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="35" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Bericht über Unfall"/>
+                    <designation language="en-US" type="preferred" displayName="History of trauma"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="37" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Blutungsneigung"/>
+                    <designation language="en-US" type="preferred" displayName="Bleeding disorder"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="38" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Direktes Nackentrauma"/>
+                    <designation language="en-US" type="preferred" displayName="Direct trauma to the neck"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="39" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Direktes Rückentrauma"/>
+                    <designation language="en-US" type="preferred" displayName="Direct trauma to the back"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="42" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Empfindliche Kopfhaut"/>
+                    <designation language="en-US" type="preferred" displayName="Temporal scalp tenderness"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="51" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Frisches neurologisches Defizit"/>
+                    <designation language="en-US" type="preferred" displayName="New neurological deficit more than 24 hours old"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="55" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Gehfähig"/>
+                    <designation language="en-US" type="preferred" displayName="Walking"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="59" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Grobe Fehlstellung"/>
+                    <designation language="en-US" type="preferred" displayName="Gross deformity"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="60" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Großflächige Absonderungen oder Bläschenbildungen"/>
+                    <designation language="en-US" type="preferred" displayName="Widespread discharge or blistering"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="62" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Harnverhalt"/>
+                    <designation language="en-US" type="preferred" displayName="Retention of urine"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="63" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Heiß"/>
+                    <designation language="en-US" type="preferred" displayName="Hot"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="68" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Hodenschmerz"/>
+                    <designation language="en-US" type="preferred" displayName="Testicular pain"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="70" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Hoher Blutdruck"/>
+                    <designation language="en-US" type="preferred" displayName="High blood pressure"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="73" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Hyperglykämie"/>
+                    <designation language="en-US" type="preferred" displayName="Hyperglycaemia"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="78" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Jünger reduzierte Sehschärfe"/>
+                    <designation language="en-US" type="preferred" displayName="Recent reduced visual acuity"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="88" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Kein Ansprechen auf eigene Asthmamedikation"/>
+                    <designation language="en-US" type="preferred" displayName="No improvement with own asthma medications"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="89" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Keine Nahrungsaufnahme"/>
+                    <designation language="en-US" type="preferred" displayName="Not feeding"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="90" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Keine Nahrungsaufnahme möglich"/>
+                    <designation language="en-US" type="preferred" displayName="Unable to feed"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="92" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Keine Urinausscheidung"/>
+                    <designation language="en-US" type="preferred" displayName="Not passing urine"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="94" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Kolikartige Schmerzen"/>
+                    <designation language="en-US" type="preferred" displayName="Colicky pain"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="99" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Langanhaltendes oder ununterbrochenes Schreien"/>
+                    <designation language="en-US" type="preferred" displayName="Prolonged or uninterrupted crying"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="104" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Makrohämaturie"/>
+                    <designation language="en-US" type="preferred" displayName="Frank heamaturia"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="105" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Mäßig letale Chemikalie"/>
+                    <designation language="en-US" type="preferred" displayName="Moderate lethality chemical"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="106" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Mäßig letaler Tierbiss"/>
+                    <designation language="en-US" type="preferred" displayName="Moderate lethality envenomation"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="107" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Mäßige Letalität"/>
+                    <designation language="en-US" type="preferred" displayName="Moderate lethality"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="109" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Mäßiger Schmerz"/>
+                    <designation language="en-US" type="preferred" displayName="Moderate pain"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="108" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Mäßiger Schmerz oder Juckreiz"/>
+                    <designation language="en-US" type="preferred" displayName="Moderate itch"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="110" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Mäßiges Risiko (künftiger) Eigengefährdung"/>
+                    <designation language="en-US" type="preferred" displayName="Moderate risk of (further) harm to others"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="111" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Mäßiges Risiko (künftiger) Fremdgefährdung"/>
+                    <designation language="en-US" type="preferred" displayName="Moderate risk of (further) self-harm"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="115" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Neuer Verwirrtheitszustand"/>
+                    <designation language="en-US" type="preferred" displayName="New confusion"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="116" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Nicht ablenkbar"/>
+                    <designation language="en-US" type="preferred" displayName="Not distractible"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="120" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Niedrige O2-Sättigung"/>
+                    <designation language="en-US" type="preferred" displayName="Low SpO2"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="121" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Niedriger Peakflow"/>
+                    <designation language="en-US" type="preferred" displayName="Low PEFR"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="122" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Offene Fraktur"/>
+                    <designation language="en-US" type="preferred" displayName="Open fracture"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="126" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Pleuraschmerz"/>
+                    <designation language="en-US" type="preferred" displayName="Pleuritic pain"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="132" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Rasches Einsetzen"/>
+                    <designation language="en-US" type="preferred" displayName="Rapid onset"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="133" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Rauchexposition"/>
+                    <designation language="en-US" type="preferred" displayName="Smoke exposure"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="142" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Schmerzausstrahlung in die Schulter"/>
+                    <designation language="en-US" type="preferred" displayName="Shoulder tip pain"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="143" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Schmerzen bei Bewegung im Gelenk"/>
+                    <designation language="en-US" type="preferred" displayName="Pain on joint movement"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="145" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Schwangerschaft möglich"/>
+                    <designation language="en-US" type="preferred" displayName="Possibly pregnant"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="156" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Skrotumschwellung/-rötung"/>
+                    <designation language="en-US" type="preferred" displayName="Scrotal cellulitis"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="161" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Störend"/>
+                    <designation language="en-US" type="preferred" displayName="Disruptive"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="163" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Stromunfall"/>
+                    <designation language="en-US" type="preferred" displayName="Electrical injury"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="165" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Teerstuhl oder frische Blutauflagerung"/>
+                    <designation language="en-US" type="preferred" displayName="Black or redcurrant stool"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="169" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Überwärmtes Gelenk"/>
+                    <designation language="en-US" type="preferred" displayName="Hot joint"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="170" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Überwärmtes Neugeborenes"/>
+                    <designation language="en-US" type="preferred" displayName="Warm newborn"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="171" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Unfähig zu Gehen"/>
+                    <designation language="en-US" type="preferred" displayName="Unable to walk"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="173" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Unpassende Vorgeschichte"/>
+                    <designation language="en-US" type="preferred" displayName="Inappropriate history"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="175" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Unstillbare kleine Blutung"/>
+                    <designation language="en-US" type="preferred" displayName="Uncontrollable minor heamorrhage"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="176" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Unterbauchschmerz"/>
+                    <designation language="en-US" type="preferred" displayName="Lower abdominal pain"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="178" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Untröstbar durch die Eltern"/>
+                    <designation language="en-US" type="preferred" displayName="Inconsolable by parents"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="182" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Vaginaler Blutverlust"/>
+                    <designation language="en-US" type="preferred" displayName="PV blood loss"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="184" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Vaginaltrauma"/>
+                    <designation language="en-US" type="preferred" displayName="Vaginal trauma"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="188" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Veränderter Bewusstseinszustand vollständig durch Alkoholgenuss erklärbar"/>
+                    <designation language="en-US" type="preferred" displayName="Altered conscious level  wholly attributable to alcohol"/>
+                    <property code="triagelevel">
+                        <valueCode code="yellow"/>
+                    </property>
+                    <parent code="yellow"/>
+                </codedConcept>
+                <codedConcept code="green" statusCode="active" level="0" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="grüne Indikatoren"/>
+                    <designation language="en-US" type="preferred" displayName="green indicators"/>
+                </codedConcept>
+                <codedConcept code="27" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Ausfluss"/>
+                    <designation language="en-US" type="preferred" displayName="Discharge"/>
+                    <property code="triagelevel">
+                        <valueCode code="green"/>
+                    </property>
+                    <parent code="green"/>
+                </codedConcept>
+                <codedConcept code="40" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Doppelbilder"/>
+                    <designation language="en-US" type="preferred" displayName="Diplopia"/>
+                    <property code="triagelevel">
+                        <valueCode code="green"/>
+                    </property>
+                    <parent code="green"/>
+                </codedConcept>
+                <codedConcept code="41" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Dysurie"/>
+                    <designation language="en-US" type="preferred" displayName="Dysuria"/>
+                    <property code="triagelevel">
+                        <valueCode code="green"/>
+                    </property>
+                    <parent code="green"/>
+                </codedConcept>
+                <codedConcept code="43" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Erbrechen"/>
+                    <designation language="en-US" type="preferred" displayName="Vomiting"/>
+                    <property code="triagelevel">
+                        <valueCode code="green"/>
+                    </property>
+                    <parent code="green"/>
+                </codedConcept>
+                <codedConcept code="47" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Fehlstellung"/>
+                    <designation language="en-US" type="preferred" displayName="Deformity"/>
+                    <property code="triagelevel">
+                        <valueCode code="green"/>
+                    </property>
+                    <parent code="green"/>
+                </codedConcept>
+                <codedConcept code="48" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Fremdkörpergefühl"/>
+                    <designation language="en-US" type="preferred" displayName="Foreign body sensation"/>
+                    <property code="triagelevel">
+                        <valueCode code="green"/>
+                    </property>
+                    <parent code="green"/>
+                </codedConcept>
+                <codedConcept code="56" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Gerötetes Auge"/>
+                    <designation language="en-US" type="preferred" displayName="Red eye"/>
+                    <property code="triagelevel">
+                        <valueCode code="green"/>
+                    </property>
+                    <parent code="green"/>
+                </codedConcept>
+                <codedConcept code="58" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Gesichtsschwellung"/>
+                    <designation language="en-US" type="preferred" displayName="Facial swelling"/>
+                    <property code="triagelevel">
+                        <valueCode code="green"/>
+                    </property>
+                    <parent code="green"/>
+                </codedConcept>
+                <codedConcept code="76" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Ikterus"/>
+                    <designation language="en-US" type="preferred" displayName="Jaundice"/>
+                    <property code="triagelevel">
+                        <valueCode code="green"/>
+                    </property>
+                    <parent code="green"/>
+                </codedConcept>
+                <codedConcept code="80" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Jüngere Verletzung"/>
+                    <designation language="en-US" type="preferred" displayName="Recent injury"/>
+                    <property code="triagelevel">
+                        <valueCode code="green"/>
+                    </property>
+                    <parent code="green"/>
+                </codedConcept>
+                <codedConcept code="81" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Jüngerer Hörverlust"/>
+                    <designation language="en-US" type="preferred" displayName="Recent hearing loss"/>
+                    <property code="triagelevel">
+                        <valueCode code="green"/>
+                    </property>
+                    <parent code="green"/>
+                </codedConcept>
+                <codedConcept code="83" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Jüngerer leichter Schmerz"/>
+                    <designation language="en-US" type="preferred" displayName="Recent mild pain"/>
+                    <property code="triagelevel">
+                        <valueCode code="green"/>
+                    </property>
+                    <parent code="green"/>
+                </codedConcept>
+                <codedConcept code="82" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Jüngerer leichter Schmerz oder Juckreiz"/>
+                    <designation language="en-US" type="preferred" displayName="Recent mild itch"/>
+                    <property code="triagelevel">
+                        <valueCode code="green"/>
+                    </property>
+                    <parent code="green"/>
+                </codedConcept>
+                <codedConcept code="84" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Jüngeres Problem"/>
+                    <designation language="en-US" type="preferred" displayName="Recent problem"/>
+                    <property code="triagelevel">
+                        <valueCode code="green"/>
+                    </property>
+                    <parent code="green"/>
+                </codedConcept>
+                <codedConcept code="93" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Keuchen"/>
+                    <designation language="en-US" type="preferred" displayName="Wheeze"/>
+                    <property code="triagelevel">
+                        <valueCode code="green"/>
+                    </property>
+                    <parent code="green"/>
+                </codedConcept>
+                <codedConcept code="95" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Kopfhauthämatom"/>
+                    <designation language="en-US" type="preferred" displayName="Scalp heamatoma"/>
+                    <property code="triagelevel">
+                        <valueCode code="green"/>
+                    </property>
+                    <parent code="green"/>
+                </codedConcept>
+                <codedConcept code="96" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Kopfschmerzen"/>
+                    <designation language="en-US" type="preferred" displayName="Headache"/>
+                    <property code="triagelevel">
+                        <valueCode code="green"/>
+                    </property>
+                    <parent code="green"/>
+                </codedConcept>
+                <codedConcept code="102" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Lokale Infektion"/>
+                    <designation language="en-US" type="preferred" displayName="Local infection"/>
+                    <property code="triagelevel">
+                        <valueCode code="green"/>
+                    </property>
+                    <parent code="green"/>
+                </codedConcept>
+                <codedConcept code="103" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Lokale Inflammation"/>
+                    <designation language="en-US" type="preferred" displayName="Local inflammation"/>
+                    <property code="triagelevel">
+                        <valueCode code="green"/>
+                    </property>
+                    <parent code="green"/>
+                </codedConcept>
+                <codedConcept code="123" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Ohrmuschelhämatom"/>
+                    <designation language="en-US" type="preferred" displayName="Auricular heamatoma"/>
+                    <property code="triagelevel">
+                        <valueCode code="green"/>
+                    </property>
+                    <parent code="green"/>
+                </codedConcept>
+                <codedConcept code="129" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Produktiver Husten"/>
+                    <designation language="en-US" type="preferred" displayName="Productive cough"/>
+                    <property code="triagelevel">
+                        <valueCode code="green"/>
+                    </property>
+                    <parent code="green"/>
+                </codedConcept>
+                <codedConcept code="146" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Schwellung"/>
+                    <designation language="en-US" type="preferred" displayName="Swelling"/>
+                    <property code="triagelevel">
+                        <valueCode code="green"/>
+                    </property>
+                    <parent code="green"/>
+                </codedConcept>
+                <codedConcept code="147" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Schwindel"/>
+                    <designation language="en-US" type="preferred" displayName="Vertigo"/>
+                    <property code="triagelevel">
+                        <valueCode code="green"/>
+                    </property>
+                    <parent code="green"/>
+                </codedConcept>
+                <codedConcept code="155" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Skrotaltrauma"/>
+                    <designation language="en-US" type="preferred" displayName="Scrotal trauma"/>
+                    <property code="triagelevel">
+                        <valueCode code="green"/>
+                    </property>
+                    <parent code="green"/>
+                </codedConcept>
+                <codedConcept code="166" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Thoraxverletzung"/>
+                    <designation language="en-US" type="preferred" displayName="Chest injury"/>
+                    <property code="triagelevel">
+                        <valueCode code="green"/>
+                    </property>
+                    <parent code="green"/>
+                </codedConcept>
+                <codedConcept code="168" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Überwärmt"/>
+                    <designation language="en-US" type="preferred" displayName="Warm"/>
+                    <property code="triagelevel">
+                        <valueCode code="green"/>
+                    </property>
+                    <parent code="green"/>
+                </codedConcept>
+                <codedConcept code="179" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Untypisches Verhalten"/>
+                    <designation language="en-US" type="preferred" displayName="Atypical behaviour"/>
+                    <property code="triagelevel">
+                        <valueCode code="green"/>
+                    </property>
+                    <parent code="green"/>
+                </codedConcept>
+                <codedConcept code="185" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Veränderte Sensibilität im Gesicht"/>
+                    <designation language="en-US" type="preferred" displayName="Altered facial sensation"/>
+                    <property code="triagelevel">
+                        <valueCode code="green"/>
+                    </property>
+                    <parent code="green"/>
+                </codedConcept>
+                <codedConcept code="unclassified" statusCode="active" level="0" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="unklassifiziert"/>
+                    <designation language="en-US" type="preferred" displayName="unclassified"/>
+                </codedConcept>
+                <codedConcept code="50" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Frisches Blut"/>
+                    <designation language="en-US" type="preferred" displayName="Fresh blood"/>
+                    <property code="triagelevel">
+                        <valueCode code="unclassified"/>
+                    </property>
+                    <parent code="unclassified"/>
+                </codedConcept>
+                <codedConcept code="61" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Großflächiger Hautausschlag"/>
+                    <designation language="en-US" type="preferred" displayName="Widespread rash or blistering"/>
+                    <property code="triagelevel">
+                        <valueCode code="unclassified"/>
+                    </property>
+                    <parent code="unclassified"/>
+                </codedConcept>
+                <codedConcept code="79" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Jüngere Anzeichen für leichten Schmerz"/>
+                    <designation language="en-US" type="preferred" displayName="Recent signs of mild pain"/>
+                    <property code="triagelevel">
+                        <valueCode code="unclassified"/>
+                    </property>
+                    <parent code="unclassified"/>
+                </codedConcept>
+                <codedConcept code="86" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Kapillarfüllzeit"/>
+                    <designation language="en-US" type="preferred" displayName="Capillary refill time"/>
+                    <property code="triagelevel">
+                        <valueCode code="unclassified"/>
+                    </property>
+                    <parent code="unclassified"/>
+                </codedConcept>
+                <codedConcept code="97" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Kopfverletzung"/>
+                    <designation language="en-US" type="preferred" displayName="Head injury"/>
+                    <property code="triagelevel">
+                        <valueCode code="unclassified"/>
+                    </property>
+                    <parent code="unclassified"/>
+                </codedConcept>
+                <codedConcept code="101" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Letalität"/>
+                    <designation language="en-US" type="preferred" displayName="Lethality"/>
+                    <property code="triagelevel">
+                        <valueCode code="unclassified"/>
+                    </property>
+                    <parent code="unclassified"/>
+                </codedConcept>
+                <codedConcept code="124" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Penetrationstrauma"/>
+                    <designation language="en-US" type="preferred" displayName="Penetrating trauma"/>
+                    <property code="triagelevel">
+                        <valueCode code="unclassified"/>
+                    </property>
+                    <parent code="unclassified"/>
+                </codedConcept>
+                <codedConcept code="134" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Reagiert auf Ansprache"/>
+                    <designation language="en-US" type="preferred" displayName="Responds to voice"/>
+                    <property code="triagelevel">
+                        <valueCode code="unclassified"/>
+                    </property>
+                    <parent code="unclassified"/>
+                </codedConcept>
+                <codedConcept code="138" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Risiko der Fremdgefährdung"/>
+                    <designation language="en-US" type="preferred" displayName="Risk of harm to others"/>
+                    <property code="triagelevel">
+                        <valueCode code="unclassified"/>
+                    </property>
+                    <parent code="unclassified"/>
+                </codedConcept>
+                <codedConcept code="139" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Risiko der Selbstgefährdung"/>
+                    <designation language="en-US" type="preferred" displayName="Risk of self-harm"/>
+                    <property code="triagelevel">
+                        <valueCode code="unclassified"/>
+                    </property>
+                    <parent code="unclassified"/>
+                </codedConcept>
+                <codedConcept code="189" statusCode="active" level="1" type="L" effectiveDate="2023-11-20T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Verändertes Blut"/>
+                    <designation language="en-US" type="preferred" displayName="Altered blood"/>
+                    <property code="triagelevel">
+                        <valueCode code="unclassified"/>
+                    </property>
+                    <parent code="unclassified"/>
+                </codedConcept>
+            </conceptList>
+        </codeSystem>
+    </project>
+</codeSystems>

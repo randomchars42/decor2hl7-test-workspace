@@ -1,0 +1,68 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.3.1.195.10.73" ident="aktin-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.3.1.195.10.73" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" lastModifiedDate="2026-04-04T13:50:58" versionLabel="2024" isClosed="false" displayName="Addendum Dokumentationsinformationen" ident="aktin-" name="addendum-dokumentationsinformationen" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="draft" url="http://art-decor.org/decor/services/" effectiveDate="2024-08-15T11:08:15">
+            <desc language="de-DE" lastTranslated="2024-08-15T11:08:15">
+                <p>Addendum Dokumentationsinformationen</p>
+            </desc>
+            <classification type="cdasectionlevel"/>
+            <relationship type="SPEC" template="1.2.276.0.76.10.3056" flexibility="2015-01-10T00:00:00" tmid="1.2.276.0.76.10.3056" tmname="Eddisposition" tmdisplayName="Weiteres Procedere / Therapieempfehlung / Weiterbehandler" tmeffectiveDate="2015-01-10T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.201" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.201" tmname="CDASection" tmdisplayName="CDA Section" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <relationship type="ADAPT" template="2.16.840.1.113883.17.3.10.1.2" url="http://art-decor.org/decor/services/" linkedartefactmissing="true"/>
+            <context id="**"/>
+            <example type="neutral">
+                <section classCode="DOCSECT">
+                    <templateId root="1.2.276.0.76.3.1.195.10.73"/>
+                    <code code="55107-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Addendum Document"/>
+                    <title>Addendum Dokumentationsinformationen</title>
+                    <text>... <list>
+                            <item>Abgeleitete Informationen</item>...</list>
+                    </text>
+                    <entry>
+                        <!-- .. -->
+                    </entry>
+                </section>
+            </example>
+            <element name="hl7:section" id="2.16.840.1.113883.2.6.60.3.9.196">
+                <item original="false" label="addendum-dokumentationsinformationen"/>
+                <attribute name="classCode" value="DOCSECT" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.197"/>
+                <element name="hl7:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.198">
+                    <item original="false" label="addendum-dokumentationsinformationen"/>
+                    <attribute name="root" value="1.2.276.0.76.3.1.195.10.73" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.199"/>
+                </element>
+                <element name="hl7:code" datatype="CD" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.200">
+                    <item original="false" label="addendum-dokumentationsinformationen"/>
+                    <vocabulary code="55107-7" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:title" datatype="ST" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.201">
+                    <item original="false" label="addendum-dokumentationsinformationen"/>
+                    <text>Addendum Dokumentationsinformationen</text>
+                </element>
+                <element name="hl7:text" datatype="SD.TEXT" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.202">
+                    <item original="false" label="addendum-dokumentationsinformationen"/>
+                </element>
+                <element name="hl7:entry" contains="1.2.276.0.76.3.1.195.10.75" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1642337" tmid="1.2.276.0.76.3.1.195.10.75" tmname="zeitpunkt_entscheidung_zur_verlegung__entlassung" tmdisplayName="Zeitpunkt Entscheidung zur Verlegung / Entlassung" tmeffectiveDate="2024-05-24T00:00:00" tmstatusCode="draft" tmversionLabel="2024" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <item original="false" label="addendum-dokumentationsinformationen"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1642338"/>
+                    <attribute name="contextConductionInd" value="true" isOptional="true" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1642339"/>
+                </element>
+                <element name="hl7:entry" contains="1.2.276.0.76.3.1.195.10.76" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1642340" tmid="1.2.276.0.76.3.1.195.10.76" tmname="zeitpunkt_patient_verlegungs__entlassungsfahig" tmdisplayName="Zeitpunkt Patient verlegungs- / entlassungsfähig" tmeffectiveDate="2024-05-24T00:00:00" tmstatusCode="draft" tmversionLabel="2024" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <item original="false" label="addendum-dokumentationsinformationen"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1642341"/>
+                    <attribute name="contextConductionInd" value="true" isOptional="true" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1642342"/>
+                </element>
+                <element name="hl7:entry" contains="1.2.276.0.76.3.1.195.10.77" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1642343" tmid="1.2.276.0.76.3.1.195.10.77" tmname="zeitpunkt_patient_verlegt__entlassen_nach" tmdisplayName="Zeitpunkt Patient verlegt / entlassen nach" tmeffectiveDate="2024-05-24T00:00:00" tmstatusCode="draft" tmversionLabel="2024" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <item original="false" label="addendum-dokumentationsinformationen"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1642344"/>
+                    <attribute name="contextConductionInd" value="true" isOptional="true" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1642345"/>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.2" name="episodenzusammenfassung-notaufnahmeregister" displayName="Episodenzusammenfassung Notaufnahmeregister" effectiveDate="2024-03-21T00:00:00" statusCode="draft" versionLabel="2024" lastModifiedDate="2024-08-20T14:08:22" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.75" name="zeitpunkt_entscheidung_zur_verlegung__entlassung" displayName="Zeitpunkt Entscheidung zur Verlegung / Entlassung" effectiveDate="2024-05-24T00:00:00" statusCode="draft" isClosed="false" versionLabel="2024" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.76" name="zeitpunkt_patient_verlegungs__entlassungsfahig" displayName="Zeitpunkt Patient verlegungs- / entlassungsfähig" effectiveDate="2024-05-24T00:00:00" statusCode="draft" isClosed="false" versionLabel="2024" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.77" name="zeitpunkt_patient_verlegt__entlassen_nach" displayName="Zeitpunkt Patient verlegt / entlassen nach" effectiveDate="2024-05-24T00:00:00" statusCode="draft" isClosed="false" versionLabel="2024" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="2024-08-15T11:08:15" id="1.2.276.0.76.3.1.195.10.92" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2025-11-12T00:00:00" statusCode="retired" versionLabel="v3transit" lastModifiedDate="2026-03-25T11:04:45" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="2024-08-15T11:08:15" id="1.2.276.0.76.3.1.195.10.93" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2026-03-25T11:04:07" statusCode="draft" versionLabel="v4transit" lastModifiedDate="2026-04-29T18:39:46" ident="aktin-"/>
+        </template>
+    </template>
+</result>

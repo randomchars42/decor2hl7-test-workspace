@@ -1,0 +1,65 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.4037" ident="aktin-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.4037" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="Transportmethode" ident="aktin-" name="Transportmethod" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="active" url="http://art-decor.org/decor/services/" effectiveDate="2015-03-03T00:00:00">
+            <desc language="de-DE">Transportmethode</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.303" tmname="CDAObservation" tmdisplayName="CDA Observation" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <relationship type="ADAPT" template="2.16.840.1.1133883.17.3.10.1.34" url="http://art-decor.org/decor/services/" linkedartefactmissing="true"/>
+            <context id="**"/>
+            <example type="neutral">
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4037"/>
+                    <code code="11459-5" codeSystem="2.16.840.1.113883.6.1" displayName="Transport method"/>
+                    <statusCode code="completed"/>
+                    <effectiveTime>
+                        <high value="201503031247"/>
+                    </effectiveTime>
+                    <value xsi:type="CV" code="2" codeSystem="1.2.276.0.76.3.1.195.5.41" displayName="RTW"/>
+                </observation>
+            </example>
+            <element name="hl7:observation" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.1631702">
+                <item original="false" label="Transportmethod"/>
+                <attribute name="classCode" value="OBS" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631703"/>
+                <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631704"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.1631705">
+                    <item original="false" label="Transportmethod"/>
+                    <attribute name="root" value="1.2.276.0.76.10.4037" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.1631706"/>
+                </element>
+                <element name="hl7:id" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.1631707">
+                    <item original="false" label="Transportmethod"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CE" id="2.16.840.1.113883.2.6.60.3.9.1631708">
+                    <item original="false" label="Transportmethod"/>
+                    <vocabulary code="11459-5" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.2.6.60.3.9.1631709">
+                    <desc language="de-DE">Lediglich reference in den Text der zugehörigen Section</desc>
+                    <item original="false" label="Transportmethod"/>
+                    <element name="hl7:reference" minimumMultiplicity="1" maximumMultiplicity="1" datatype="URL" id="2.16.840.1.113883.2.6.60.3.9.1631710">
+                        <item original="false" label="Transportmethod"/>
+                    </element>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CS" id="2.16.840.1.113883.2.6.60.3.9.1631711">
+                    <item original="false" label="Transportmethod"/>
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:effectiveTime" minimumMultiplicity="0" maximumMultiplicity="1" datatype="IVL_TS" id="2.16.840.1.113883.2.6.60.3.9.1631712">
+                    <desc language="de-DE">Optional: Ankunftszeit (high-Element)</desc>
+                    <item original="false" label="Transportmethod"/>
+                    <element name="hl7:high" minimumMultiplicity="1" maximumMultiplicity="1" datatype="TS" id="2.16.840.1.113883.2.6.60.3.9.1631713">
+                        <item original="false" label="Transportmethod"/>
+                    </element>
+                </element>
+                <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="CV" id="2.16.840.1.113883.2.6.60.3.9.1631714">
+                    <item original="false" label="Transportmethod"/>
+                    <vocabulary valueSet="1.2.276.0.76.11.41" flexibility="2015-11-17T00:00:00" vsid="1.2.276.0.76.11.41" vsname="Transportmethod" vsdisplayName="Transportmethode" vsstatusCode="final" vseffectiveDate="2015-11-17T00:00:00" linkedartefactmissing="false"/>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="dependency" prefix="aktin-" flexibility="2025-12-01T00:00:00" id="1.2.276.0.76.3.1.195.10.92" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2025-11-12T00:00:00" statusCode="retired" versionLabel="v3transit" lastModifiedDate="2026-03-25T11:04:45" ident="aktin-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="2025-12-01T00:00:00" id="1.2.276.0.76.3.1.195.10.93" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2026-03-25T11:04:07" statusCode="draft" versionLabel="v4transit" lastModifiedDate="2026-04-29T18:39:46" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.3045" name="Transportmethod" displayName="Transportmittel" effectiveDate="2015-01-10T00:00:00" statusCode="active" isClosed="false" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="2015-03-03T00:00:00" id="1.2.276.0.76.10.3045" name="Transportmethod" displayName="Transportmittel" effectiveDate="2025-12-01T00:00:00" statusCode="draft" versionLabel="2025" isClosed="false" lastModifiedDate="2025-12-22T20:56:10" ident="aktin-"/>
+        </template>
+    </template>
+</result>

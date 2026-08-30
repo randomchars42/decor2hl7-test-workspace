@@ -1,0 +1,30 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.4067" name="Referralto" displayName="Weiterbehandlung Verlegung" effectiveDate="2015-09-18T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" xml:dummy-1="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-3="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="de-DE">Weiterbehandlung Verlegung des Patienten</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.301" flexibility="2005-09-07T00:00:00"/>
+            <relationship type="ADAPT" template="2.16.840.1.113883.10.20.22.4.140"/>
+            <context id="**"/>
+            <example>
+                <act classCode="ACT" moodCode="INT">
+                    <templateId root="1.2.276.0.76.10.4067"/>
+                    <code code="1" codeSystem="1.2.276.0.76.3.1.195.5.53" displayName="intern: OP / Intervention (z.B. Herzkatheter, Endoskopie, ...)"/>
+                    <text>
+                        <reference value="#refact"/>
+                    </text>
+                </act>
+            </example>
+            <element name="hl7:act" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.651">
+                <attribute name="classCode" value="ACT" id="2.16.840.1.113883.2.6.60.3.9.652"/>
+                <attribute name="moodCode" value="INT" id="2.16.840.1.113883.2.6.60.3.9.653"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.654">
+                    <attribute name="root" value="1.2.276.0.76.10.4067" id="2.16.840.1.113883.2.6.60.3.9.655"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" datatype="CE" id="2.16.840.1.113883.2.6.60.3.9.656">
+                    <vocabulary valueSet="1.2.276.0.76.11.53"/>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.2.6.60.3.9.657">
+                    <desc language="de-DE">Lediglich reference in den Text der zugehörigen Section</desc>
+                    <element name="hl7:reference" minimumMultiplicity="1" maximumMultiplicity="1" datatype="URL" id="2.16.840.1.113883.2.6.60.3.9.658"/>
+                </element>
+            </element>
+        </template>

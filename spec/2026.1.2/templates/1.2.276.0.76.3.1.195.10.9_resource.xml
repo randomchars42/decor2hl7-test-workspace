@@ -1,0 +1,52 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.3.1.195.10.9" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.3.1.195.10.9" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" lastModifiedDate="2024-11-18T15:56:07" isClosed="false" displayName="Geburtsjahr des Patienten" ident="aktin-" name="geburtsjahr" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="draft" url="http://art-decor.org/decor/services/" effectiveDate="2024-08-13T11:30:44">
+            <desc language="de-DE" lastTranslated="2024-08-13T10:50:15">
+                <p>Geburtsjahr des Patienten, abgeleitet aus Geburtsdatum</p>
+            </desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="1.2.276.0.76.3.1.195.10.8" flexibility="2024-08-13T10:50:15" tmid="1.2.276.0.76.3.1.195.10.8" tmname="alter" tmdisplayName="Alter des Patienten" tmeffectiveDate="2024-08-13T10:50:15" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.303" tmname="CDAObservation" tmdisplayName="CDA Observation" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <element name="hl7:observation" id="2.16.840.1.113883.2.6.60.3.9.16185">
+                <item original="false" label="geburtsjahr"/>
+                <attribute name="classCode" value="OBS" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.16186"/>
+                <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.16187"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.16188">
+                    <item original="false" label="geburtsjahr"/>
+                    <attribute name="root" value="1.2.276.0.76.3.1.195.10.9" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.16189"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.16190">
+                    <item original="false" label="geburtsjahr"/>
+                    <vocabulary code="80904-6" codeSystem="2.16.840.1.113883.6.1" displayName="Birth year"/>
+                </element>
+                <element name="hl7:text" datatype="ED" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.16191">
+                    <desc language="de-DE" lastTranslated="2024-08-13T10:50:15">Lediglich reference in den Text der zugehörigen Section</desc>
+                    <item original="false" label="geburtsjahr"/>
+                    <element name="hl7:reference" datatype="TEL" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.16192">
+                        <item original="false" label="geburtsjahr"/>
+                    </element>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.16193">
+                    <item original="false" label="geburtsjahr"/>
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:value" datatype="INT" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.16195">
+                    <desc language="de-DE" lastTranslated="2024-08-13T10:57:40">
+                        <p>Automatisch abgeleitet aus Geburtsdatum, keine Benutzereingabe.</p>
+                    </desc>
+                    <item original="false" label="geburtsjahr"/>
+                    <example type="neutral">
+                        <value value="1984"/>
+                    </example>
+                </element>
+                <element name="hl7:effectiveTime" datatype="TS" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.16194">
+                    <desc language="de-DE" lastTranslated="2024-08-13T10:50:15">Zeitpunkt der Altersbestimmung</desc>
+                    <item original="false" label="geburtsjahr"/>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.7" name="demografische-informationen" displayName="Demografische Informationen" effectiveDate="2024-08-13T10:46:17" statusCode="draft" versionLabel="2024" lastModifiedDate="2025-12-22T18:07:07" ident="aktin-"/>
+        </template>
+    </template>
+</result>

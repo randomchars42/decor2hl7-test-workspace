@@ -1,0 +1,25 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.12.105" name="CDAinformationRecipient" displayName="CDA informationRecipient" effectiveDate="2005-09-07T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" sdtc:dummy-1="urn:hl7-org:sdtc" xml:dummy-2="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-4="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">Template CDA informationRecipient (prototype, directly derived from POCD_RM000040 MIF)</desc>
+            <desc language="nl-NL">Template CDA informationRecipient (prototype, direct afgeleid uit POCD_RM000040 MIF)</desc>
+            <desc language="de-DE">Template CDA informationRecipient (Prototyp, direkt abgeleitet aus POCD_RM000040 MIF)</desc>
+            <classification type="cdaheaderlevel"/>
+            <element name="hl7:informationRecipient" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.1.9.142">
+                <attribute name="typeCode" datatype="cs" id="2.16.840.1.113883.3.1937.777.1.9.143">
+                    <!--valueSet name="x_InformationRecipient"-->
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.19366"/>
+                </attribute>
+                <element name="hl7:intendedRecipient" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.1.9.144">
+                    <attribute name="classCode" datatype="cs" id="2.16.840.1.113883.3.1937.777.1.9.145">
+                        <!--valueSet name="x_InformationRecipientRole"-->
+                        <vocabulary valueSet="2.16.840.1.113883.1.11.16772"/>
+                    </attribute>
+                    <element name="hl7:id" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" datatype="II" id="2.16.840.1.113883.3.1937.777.1.9.146"/>
+                    <element name="hl7:addr" minimumMultiplicity="0" maximumMultiplicity="*" datatype="AD" id="2.16.840.1.113883.3.1937.777.1.9.147"/>
+                    <element name="hl7:telecom" minimumMultiplicity="0" maximumMultiplicity="*" datatype="TEL" id="2.16.840.1.113883.3.1937.777.1.9.148"/>
+                    <!--contains name="CDAPerson"-->
+                    <element name="hl7:informationRecipient" minimumMultiplicity="0" maximumMultiplicity="1" contains="2.16.840.1.113883.10.12.152" id="2.16.840.1.113883.3.1937.777.1.9.149"/>
+                    <!--contains name="CDAOrganization"-->
+                    <element name="hl7:receivedOrganization" minimumMultiplicity="0" maximumMultiplicity="1" contains="2.16.840.1.113883.10.12.151" id="2.16.840.1.113883.3.1937.777.1.9.150"/>
+                </element>
+            </element>
+        </template>

@@ -1,0 +1,153 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.2.6.60.4.1.1" effectiveDate="2014-10-26T12:44:56" statusCode="final" versionLabel="Release 1" prefix="pmp-" shortName="patientenbezogener_medikationsplan" iddisplay="pmp-dataset-1" url="http://art-decor.org/decor/services/" ident="pmp-"><!--
+ This is a view of the dataset "Patientenbezogener Medikationsplan" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">Patientenbezogener Medikationsplan</name>
+    <desc language="de-DE">Patientenbezogener Medikationsplan<p/> Der patientenbezogene Medikationsplan dient hauptsächlich dem Patienten als Orientierungshilfe und Erklärungskomponente für seine Arzneimitteltherapie. <br/> Zentrales Informationsobjekt, welches als ausdruckbare Seite(n) oder im Scheckkartenformat dargestellt werden kann, aus welchem sich elektronisch repräsentierbare und
+                somit übertragbare Daten herausnehmen lassen und ggf. klinische Daten ableiten lassen.<p/> Bezüge auf "AkdÄ MP 2.0" bezeichnen folgende Spezifikation: <br/>Koordinierungsgruppe des Aktionsplans zur Verbesserung der Arzneimitteltherapiesicherheit: Spezifikation für einen patientenbezogenen Medikationsplan. Version 2.0, 15.12.2013.</desc>
+    <concept id="2.16.840.1.113883.2.6.60.4.2.1.400" statusCode="final" versionLabel="Release 1" effectiveDate="2014-10-27T00:00:00" type="group" iddisplay="pmp-dataelementR1-400" shortName="medikationseintrag">
+        <implementation shortName="medikationseintrag" markdown="Medikationseintrag"/>
+        <name language="de-DE">Medikationseintrag</name>
+        <desc language="de-DE">Medikationseintrag</desc>
+        <source language="de-DE">AkdÄ MP 2.0: D13 Eine konkrete Zeile der Medikationstabelle mit Daten zur Medikation. Alternativ kann dies ein Wirkstoff-, Arzneimittel- oder Rezeptureintrag, ein Sonstiger Hinweis oder auch eine Überschrift sein.</source>
+        <concept id="2.16.840.1.113883.2.6.60.4.2.1.410" statusCode="final" versionLabel="Release 1" effectiveDate="2014-10-27T00:00:00" type="group" iddisplay="pmp-dataelementR1-410" shortName="wirkstoffeintrag">
+            <implementation shortName="wirkstoffeintrag" markdown="Wirkstoff-Eintrag"/>
+            <name language="de-DE">Wirkstoff-Eintrag</name>
+            <desc language="de-DE">Wirkstoff-Eintrag</desc>
+            <source language="de-DE">AkdÄ MP 2.0: D15 Menge an notwendigen Daten, um einen rein wirkstoffbasierten Medikationseintrag zu gestalten. Bestandteile eines Wirkstoff-Eintrages sind: Wirkstoff, Wirkstärke, Darreichungsform, Dosierschema, Dosiereinheit, Hinweis und Behandlungsgrund</source>
+            <concept id="2.16.840.1.113883.2.6.60.4.2.1.420" statusCode="final" versionLabel="Release 1" effectiveDate="2014-10-27T00:00:00" type="group" iddisplay="pmp-dataelementR1-420" shortName="wirkstoff">
+                <implementation shortName="wirkstoff" markdown="Wirkstoff"/>
+                <name language="de-DE">Wirkstoff</name>
+                <desc language="de-DE">Wirkstoff</desc>
+                <concept id="2.16.840.1.113883.2.6.60.4.2.1.4010" statusCode="final" versionLabel="Release 1" effectiveDate="2014-10-27T00:00:00" type="item" iddisplay="pmp-dataelementR1-4010" shortName="wirkstoffname">
+                    <implementation shortName="wirkstoffname" markdown="Bezeichnung eines Wirkstoffes, der aus einer Wirkstoffklassifikation entnommen wird"/>
+                    <name language="de-DE">Wirkstoff-Name</name>
+                    <desc language="de-DE">Bezeichnung eines Wirkstoffes, der aus einer Wirkstoffklassifikation entnommen wird</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.2.6.60.4.2.1.4020" statusCode="final" versionLabel="Release 1" effectiveDate="2014-10-27T00:00:00" type="item" iddisplay="pmp-dataelementR1-4020" shortName="wirkstoffcode">
+                    <implementation shortName="wirkstoffcode" markdown="Code eines Wirkstoffes, der aus einer Wirkstoffklassifikation entnommen wird"/>
+                    <name language="de-DE">Wirkstoff-Code</name>
+                    <desc language="de-DE">Code eines Wirkstoffes, der aus einer Wirkstoffklassifikation entnommen wird</desc>
+                    <valueDomain type="code"/>
+                </concept>
+                <concept id="2.16.840.1.113883.2.6.60.4.2.1.4030" statusCode="final" versionLabel="Release 1" effectiveDate="2014-10-27T00:00:00" type="item" iddisplay="pmp-dataelementR1-4030" shortName="wirkstarke">
+                    <implementation shortName="wirkstarke" markdown="Wirkstärke"/>
+                    <name language="de-DE">Wirkstärke</name>
+                    <desc language="de-DE">Wirkstärke</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.2.6.60.4.2.1.4040" statusCode="final" versionLabel="Release 1" effectiveDate="2014-10-27T00:00:00" type="item" iddisplay="pmp-dataelementR1-4040" shortName="darreichungsform">
+                    <implementation shortName="darreichungsform" markdown="Darreichungsform"/>
+                    <name language="de-DE">Darreichungsform</name>
+                    <desc language="de-DE">Darreichungsform</desc>
+                    <source language="de-DE">AkdÄ MP 2.0: #26 Dafo-Code aus Anlage 6</source>
+                    <valueDomain type="code"/>
+                </concept>
+            </concept>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.4.2.1.430" statusCode="final" versionLabel="Release 1" effectiveDate="2014-10-27T00:00:00" type="group" iddisplay="pmp-dataelementR1-430" shortName="arzneimitteleintrag">
+            <implementation shortName="arzneimitteleintrag" markdown="Fertigarzneimittel-Eintrag"/>
+            <name language="de-DE">Arzneimittel-Eintrag</name>
+            <desc language="de-DE">Fertigarzneimittel-Eintrag</desc>
+            <source language="de-DE">AkdÄ MP 2.0: D16 Menge an notwendigen Daten, um einen rein auf Fertigarzneimitteln (human) basierten Medikationseintrag zu gestalten. Bestandteile eines Arzneimittel-Eintrages sind: Wirkstoffname, Wirkstärke; Arzneimittel, Darreichungsform, Dosierschema, Dosiereinheit, Hinweis und Behandlungsgrund.</source>
+            <concept id="2.16.840.1.113883.2.6.60.4.2.1.440" statusCode="final" versionLabel="Release 1" effectiveDate="2014-10-27T00:00:00" type="group" iddisplay="pmp-dataelementR1-440" shortName="arzneimittel">
+                <implementation shortName="arzneimittel" markdown="Arzneimittel"/>
+                <name language="de-DE">Arzneimittel</name>
+                <desc language="de-DE">Arzneimittel</desc>
+                <concept id="2.16.840.1.113883.2.6.60.4.2.1.4310" statusCode="final" versionLabel="Release 1" effectiveDate="2014-10-27T00:00:00" type="item" iddisplay="pmp-dataelementR1-4310" shortName="arzneimittelname">
+                    <implementation shortName="arzneimittelname" markdown="Arzneimittelname oder auch Handelsname genannt. Bezeichnung eines Fertigarzneimittels"/>
+                    <name language="de-DE">Arzneimittel-Name</name>
+                    <desc language="de-DE">Arzneimittelname oder auch Handelsname genannt. Bezeichnung eines Fertigarzneimittels</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.2.6.60.4.2.1.4320" statusCode="final" versionLabel="Release 1" effectiveDate="2014-10-27T00:00:00" type="item" iddisplay="pmp-dataelementR1-4320" shortName="arzneimittelcode">
+                    <implementation shortName="arzneimittelcode" markdown="Identifikation eines Fertigarzneimittels durch seinen Code"/>
+                    <name language="de-DE">Arzneimittel-Code</name>
+                    <desc language="de-DE">Identifikation eines Fertigarzneimittels durch seinen Code</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.2.6.60.4.2.1.4330" statusCode="final" versionLabel="Release 1" effectiveDate="2014-10-27T00:00:00" type="item" iddisplay="pmp-dataelementR1-4330" shortName="wirkstarke">
+                    <implementation shortName="wirkstarke" markdown="Wirkstärke"/>
+                    <inherit ref="2.16.840.1.113883.2.6.60.4.2.1.4030" effectiveDate="2014-10-27T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" iType="item" iStatusCode="final" iEffectiveDate="2014-10-27T00:00:00" iVersionLabel="Release 1" iddisplay="pmp-dataelementR1-4030" refdisplay="pmp-dataelementR1-4030" localInherit="true"/>
+                    <name language="de-DE">Wirkstärke</name>
+                    <desc language="de-DE">Wirkstärke</desc>
+                    <valueDomain type="string"/>
+                </concept>
+                <concept id="2.16.840.1.113883.2.6.60.4.2.1.4340" statusCode="final" versionLabel="Release 1" effectiveDate="2014-10-27T00:00:00" type="item" iddisplay="pmp-dataelementR1-4340" shortName="darreichungsform">
+                    <implementation shortName="darreichungsform" markdown="Darreichungsform"/>
+                    <inherit ref="2.16.840.1.113883.2.6.60.4.2.1.4040" effectiveDate="2014-10-27T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" iType="item" iStatusCode="final" iEffectiveDate="2014-10-27T00:00:00" iVersionLabel="Release 1" iddisplay="pmp-dataelementR1-4040" refdisplay="pmp-dataelementR1-4040" localInherit="true"/>
+                    <name language="de-DE">Darreichungsform</name>
+                    <desc language="de-DE">Darreichungsform</desc>
+                    <source language="de-DE">AkdÄ MP 2.0: #26 Dafo-Code aus Anlage 6</source>
+                    <valueDomain type="code"/>
+                </concept>
+            </concept>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.4.2.1.450" statusCode="final" versionLabel="Release 1" effectiveDate="2014-10-27T00:00:00" type="group" iddisplay="pmp-dataelementR1-450" shortName="rezeptureintrag">
+            <implementation shortName="rezeptureintrag" markdown="Rezeptur-Eintrag"/>
+            <name language="de-DE">Rezeptur-Eintrag</name>
+            <desc language="de-DE">Rezeptur-Eintrag</desc>
+            <source language="de-DE">AkdÄ MP 2.0: D17 Datenfeld, um freitextlich eine Rezeptur als Medikationseintrag zu gestalten.</source>
+            <concept id="2.16.840.1.113883.2.6.60.4.2.1.4510" statusCode="final" versionLabel="Release 1" effectiveDate="2014-10-27T00:00:00" type="item" iddisplay="pmp-dataelementR1-4510" shortName="freitextzeile">
+                <implementation shortName="freitextzeile" markdown="Freitextzeile"/>
+                <name language="de-DE">Freitextzeile</name>
+                <desc language="de-DE">Freitextzeile</desc>
+                <valueDomain type="string"/>
+            </concept>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.4.2.1.460" statusCode="final" versionLabel="Release 1" effectiveDate="2014-10-27T00:00:00" type="item" iddisplay="pmp-dataelementR1-460" shortName="startdatum_einnahme">
+            <implementation shortName="startdatum_einnahme" markdown="Startdatum der Einnahme"/>
+            <name language="de-DE">Startdatum Einnahme</name>
+            <desc language="de-DE">Startdatum der Einnahme</desc>
+            <valueDomain type="date"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.4.2.1.461" statusCode="final" versionLabel="Release 1" effectiveDate="2014-10-27T00:00:00" type="item" iddisplay="pmp-dataelementR1-461" shortName="enddatum_einnahme">
+            <implementation shortName="enddatum_einnahme" markdown="Enddatum der Einnahme, bis zu welchem Tag einschließlich das Medikament eingenommen werden soll"/>
+            <name language="de-DE">Enddatum Einnahme</name>
+            <desc language="de-DE">Enddatum der Einnahme, bis zu welchem Tag einschließlich das Medikament eingenommen werden soll</desc>
+            <valueDomain type="date"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.4.2.1.465" statusCode="final" versionLabel="Release 1" effectiveDate="2014-10-27T00:00:00" type="item" iddisplay="pmp-dataelementR1-465" shortName="dosierschema">
+            <implementation shortName="dosierschema" markdown="Dosierschema"/>
+            <name language="de-DE">Dosierschema</name>
+            <desc language="de-DE">Dosierschema</desc>
+            <source language="de-DE">AkdÄ MP 2.0: #27 Dosierschema X-Y-Z; Dosierschema W-X-Y-Z; Dosierschema als Freitext</source>
+            <valueDomain type="string"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.4.2.1.466" statusCode="final" versionLabel="Release 1" effectiveDate="2014-10-27T00:00:00" type="item" iddisplay="pmp-dataelementR1-466" shortName="dosiereinheit">
+            <implementation shortName="dosiereinheit" markdown="Dosiereinheit"/>
+            <name language="de-DE">Dosiereinheit</name>
+            <desc language="de-DE">Dosiereinheit</desc>
+            <source language="de-DE">AkdÄ MP 2.0: #26 Code aus Anlage 7</source>
+            <valueDomain type="code"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.4.2.1.467" statusCode="final" versionLabel="Release 1" effectiveDate="2014-10-27T00:00:00" type="item" iddisplay="pmp-dataelementR1-467" shortName="hinweis">
+            <implementation shortName="hinweis" markdown="Hinweistext zu diesem Medikament"/>
+            <name language="de-DE">Hinweis</name>
+            <desc language="de-DE">Hinweistext zu diesem Medikament</desc>
+            <source language="de-DE">AkdÄ MP 2.0: #29 Hinweis</source>
+            <valueDomain type="string"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.4.2.1.468" statusCode="final" versionLabel="Release 1" effectiveDate="2014-10-27T00:00:00" type="item" iddisplay="pmp-dataelementR1-468" shortName="behandlungsgrund">
+            <implementation shortName="behandlungsgrund" markdown="Behandlungsgrund"/>
+            <name language="de-DE">Behandlungsgrund</name>
+            <desc language="de-DE">Behandlungsgrund</desc>
+            <source language="de-DE">AkdÄ MP 2.0: #30 Behandlungsgrund</source>
+            <valueDomain type="string"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.4.2.1.480" statusCode="final" versionLabel="Release 1" effectiveDate="2014-10-27T00:00:00" type="item" iddisplay="pmp-dataelementR1-480" shortName="bezug_zu_verordnung">
+            <implementation shortName="bezug_zu_verordnung" markdown="Bezug zu Verordnung"/>
+            <name language="de-DE">Bezug zu Verordnung</name>
+            <desc language="de-DE">Bezug zu Verordnung</desc>
+            <valueDomain type="identifier"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.4.2.1.481" statusCode="final" versionLabel="Release 1" effectiveDate="2014-10-27T00:00:00" type="item" iddisplay="pmp-dataelementR1-481" shortName="bezug_zu_abgabe">
+            <implementation shortName="bezug_zu_abgabe" markdown="Bezug zu Abgabe"/>
+            <name language="de-DE">Bezug zu Abgabe</name>
+            <desc language="de-DE">Bezug zu Abgabe</desc>
+            <valueDomain type="identifier"/>
+        </concept>
+    </concept>
+</dataset>

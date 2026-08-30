@@ -1,0 +1,246 @@
+<codeSystem xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.777.24.5.26" name="EQ-5D-5L" displayName="EQ-5D-5L" effectiveDate="2024-09-02T10:07:59" statusCode="draft" lastModifiedDate="2024-09-02T17:58:57" language="de-DE" url="http://art-decor.org/decor/services/" ident="mide-">
+    <desc json:array="true" language="en-US" lastTranslated="2024-09-02T12:09:13">&lt;p&gt;&lt;strong&gt;Health Questionnaire&lt;/strong&gt;&lt;/p&gt; 
+                 &lt;p&gt;&lt;strong&gt;English version for the UK&lt;/strong&gt;&lt;/p&gt;</desc>
+    <desc json:array="true" language="de-DE" lastTranslated="2024-09-02T12:07:57">&lt;p&gt;&lt;strong&gt;Gesundheitsfragebogen&lt;/strong&gt;&lt;/p&gt; 
+                 &lt;p&gt;&lt;strong&gt;Deutsche Version für Deutschland&lt;/strong&gt;&lt;/p&gt; 
+                 &lt;p&gt;&lt;strong&gt;(German version for Germany)&lt;/strong&gt;&lt;/p&gt;</desc>
+    <publishingAuthority json:array="true" name="Konsortium DIFUTURE" inherited="project">
+        <addrLine json:array="true" type="uri">https://difuture.de</addrLine>
+    </publishingAuthority>
+    <copyright json:array="true" language="en-US" lastTranslated="2024-09-02T12:15:13">&lt;p&gt;© 2009 EuroQol Research Foundation. EQ-5DTM is a trade mark of the EuroQol Research Foundation. UK (English) v1.2&lt;/p&gt;</copyright>
+    <copyright json:array="true" language="de-DE" lastTranslated="2024-09-02T12:14:48">&lt;p&gt;© 2017 EuroQol Research Foundation. EQ-5DTM is a trade mark of the EuroQol Research Foundation. Germany (German) v1.0 &lt;/p&gt;</copyright>
+    <issueAssociation json:array="true" count="0"/>
+    <conceptList json:array="true">
+        <codedConcept json:array="true" code="EQ-5D-5L_Instructions" statusCode="draft" level="0" type="A">
+            <designation json:array="true" language="en-US" type="fsn" displayName="INSTRUCTIONS"/>
+            <designation json:array="true" language="de-DE" type="fsn" displayName="INSTRUKTIONEN"/>
+            <desc json:array="true" language="en-US" lastTranslated="2024-09-02T12:03:42">&lt;p&gt;Under each heading, please tick the ONE box that best describes your health TODAY.&lt;/p&gt;</desc>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-09-02T12:03:42">&lt;p&gt;Bitte kreuze unter jeder Überschrift EIN Kästchen an, das deine Gesundheit HEUTE am besten beschreibt.&lt;/p&gt;</desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="EQ-5D-5L_Mobility" statusCode="draft" level="0" type="A">
+            <designation json:array="true" language="en-US" type="fsn" displayName="MOBILITY"/>
+            <designation json:array="true" language="de-DE" type="fsn" displayName="BEWEGUNG"/>
+            <desc json:array="true" language="en-US" lastTranslated="2024-09-02T11:24:17">&lt;p&gt;&lt;strong&gt;MOBILITY&lt;/strong&gt;&lt;/p&gt;</desc>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-09-02T11:24:17">&lt;p&gt;&lt;strong&gt;BEWEGUNG&lt;/strong&gt;
+                            &lt;em&gt;(herumlaufen)&lt;/em&gt;&lt;/p&gt;</desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="EQ-5D-5L_Q1.1" statusCode="draft" level="1" type="L">
+            <designation json:array="true" language="en-US" type="fsn" displayName="I have no problems in walking about"/>
+            <designation json:array="true" language="de-DE" type="fsn" displayName="Ich habe keine Schwierigkeiten herumzulaufen"/>
+            <desc json:array="true" language="en-US" lastTranslated="2024-09-02T11:24:17">&lt;p&gt;I have no problems in walking about&lt;/p&gt;</desc>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-09-02T11:24:17">&lt;p&gt;Ich habe &lt;u&gt;keine&lt;/u&gt; Schwierigkeiten herumzulaufen&lt;/p&gt;</desc>
+            <parent json:array="true" code="EQ-5D-5L_Mobility"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="EQ-5D-5L_Q1.2" statusCode="draft" level="1" type="L">
+            <designation json:array="true" language="en-US" type="fsn" displayName="I have slight problems in walking about"/>
+            <designation json:array="true" language="de-DE" type="fsn" displayName="Ich habe leichte Schwierigkeiten herumzulaufen"/>
+            <desc json:array="true" language="en-US" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;I have slight problems in walking about&lt;/p&gt;</desc>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;Ich habe &lt;u&gt;leichte&lt;/u&gt; Schwierigkeiten herumzulaufen&lt;/p&gt;</desc>
+            <parent json:array="true" code="EQ-5D-5L_Mobility"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="EQ-5D-5L_Q1.3" statusCode="draft" level="1" type="L">
+            <designation json:array="true" language="en-US" type="fsn" displayName="I have moderate problems in walking about"/>
+            <designation json:array="true" language="de-DE" type="fsn" displayName="Ich habe einige Schwierigkeiten herumzulaufen"/>
+            <desc json:array="true" language="en-US" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;I have moderate problems in walking about&lt;/p&gt;</desc>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;Ich habe &lt;u&gt;einige&lt;/u&gt; Schwierigkeiten herumzulaufen&lt;/p&gt;</desc>
+            <parent json:array="true" code="EQ-5D-5L_Mobility"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="EQ-5D-5L_Q1.4" statusCode="draft" level="1" type="L">
+            <designation json:array="true" language="en-US" type="fsn" displayName="I have severe problems in walking about"/>
+            <designation json:array="true" language="de-DE" type="fsn" displayName="Ich habe große Schwierigkeiten herumzulaufen"/>
+            <desc json:array="true" language="en-US" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;I have severe problems in walking about&lt;/p&gt;</desc>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;Ich habe &lt;u&gt;große&lt;/u&gt; Schwierigkeiten herumzulaufen&lt;/p&gt;</desc>
+            <parent json:array="true" code="EQ-5D-5L_Mobility"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="EQ-5D-5L_Q1.5" statusCode="draft" level="1" type="L">
+            <designation json:array="true" language="en-US" type="fsn" displayName="I am unable to walk about"/>
+            <designation json:array="true" language="de-DE" type="fsn" displayName="Ich kann nicht herumlaufen"/>
+            <desc json:array="true" language="en-US" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;I am unable to walk about&lt;/p&gt;</desc>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;Ich kann nicht herumlaufen&lt;/p&gt;</desc>
+            <parent json:array="true" code="EQ-5D-5L_Mobility"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="EQ-5D-5L_Self-Care" statusCode="draft" level="0" type="A">
+            <designation json:array="true" language="en-US" type="fsn" displayName="SELF-CARE"/>
+            <designation json:array="true" language="de-DE" type="fsn" displayName="FÜR MICH SELBST SORGEN"/>
+            <desc json:array="true" language="en-US" lastTranslated="2024-09-02T11:24:17">&lt;p&gt;&lt;strong&gt;SELF-CARE&lt;/strong&gt;&lt;/p&gt;</desc>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-09-02T11:24:17">&lt;p&gt;&lt;strong&gt;FÜR MICH SELBST SORGEN&lt;/strong&gt;&lt;/p&gt;</desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="EQ-5D-5L_Q2.1" statusCode="draft" level="1" type="L">
+            <designation json:array="true" language="en-US" type="fsn" displayName="I have no problems washing or dressing myself"/>
+            <designation json:array="true" language="de-DE" type="fsn" displayName="Ich habe keine Schwierigkeiten, mich selber zu waschen oder anzuziehen"/>
+            <desc json:array="true" language="en-US" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;I have no problems washing or dressing myself&lt;/p&gt;</desc>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;Ich habe &lt;u&gt;keine&lt;/u&gt; Schwierigkeiten, mich selber zu waschen oder anzuziehen&lt;/p&gt;</desc>
+            <parent json:array="true" code="EQ-5D-5L_Self-Care"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="EQ-5D-5L_Q2.2" statusCode="draft" level="1" type="L">
+            <designation json:array="true" language="en-US" type="fsn" displayName="I have slight problems washing or dressing myself"/>
+            <designation json:array="true" language="de-DE" type="fsn" displayName="Ich habe leichte Schwierigkeiten, mich selber zu waschen oder anzuziehen"/>
+            <desc json:array="true" language="en-US" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;I have slight problems washing or dressing myself&lt;/p&gt;</desc>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;Ich habe &lt;u&gt;leichte&lt;/u&gt; Schwierigkeiten, mich selber zu waschen oder anzuziehen&lt;/p&gt;</desc>
+            <parent json:array="true" code="EQ-5D-5L_Self-Care"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="EQ-5D-5L_Q2.3" statusCode="draft" level="1" type="L">
+            <designation json:array="true" language="en-US" type="fsn" displayName="I have moderate problems washing or dressing myself"/>
+            <designation json:array="true" language="de-DE" type="fsn" displayName="Ich habe einige Schwierigkeiten, mich selber zu waschen oder anzuziehen"/>
+            <desc json:array="true" language="en-US" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;I have moderate problems washing or dressing myself&lt;/p&gt;</desc>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;Ich habe &lt;u&gt;einige&lt;/u&gt; Schwierigkeiten, mich selber zu waschen oder anzuziehen&lt;/p&gt;</desc>
+            <parent json:array="true" code="EQ-5D-5L_Self-Care"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="EQ-5D-5L_Q2.4" statusCode="draft" level="1" type="L">
+            <designation json:array="true" language="en-US" type="fsn" displayName="I have severe problems washing or dressing myself"/>
+            <designation json:array="true" language="de-DE" type="fsn" displayName="Ich habe große Schwierigkeiten, mich selber zu waschen oder anzuziehen"/>
+            <desc json:array="true" language="en-US" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;I have severe problems washing or dressing myself&lt;/p&gt;</desc>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;Ich habe &lt;u&gt;große&lt;/u&gt; Schwierigkeiten, mich selber zu waschen oder anzuziehen&lt;/p&gt;</desc>
+            <parent json:array="true" code="EQ-5D-5L_Self-Care"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="EQ-5D-5L_Q2.5" statusCode="draft" level="1" type="L">
+            <designation json:array="true" language="en-US" type="fsn" displayName="I am unable to wash or dress myself"/>
+            <designation json:array="true" language="de-DE" type="fsn" displayName="Ich kann mich nicht selber waschen oder anziehen"/>
+            <desc json:array="true" language="en-US" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;I am unable to wash or dress myself&lt;/p&gt;</desc>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;Ich &lt;u&gt;kann mich nicht&lt;/u&gt; selber waschen oder anziehen&lt;/p&gt;</desc>
+            <parent json:array="true" code="EQ-5D-5L_Self-Care"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="EQ-5D-5L_Usual_Activities" statusCode="draft" level="0" type="A">
+            <designation json:array="true" language="en-US" type="fsn" displayName="USUAL ACTIVITIES"/>
+            <designation json:array="true" language="de-DE" type="fsn" displayName="WAS ICH NORMALERWEISE TUE"/>
+            <desc json:array="true" language="en-US" lastTranslated="2024-09-02T11:24:17">&lt;p&gt;&lt;strong&gt;USUAL ACTIVITIES&lt;/strong&gt;
+                            &lt;em&gt;(e.g. work, study, housework, family or leisure activities)&lt;/em&gt;&lt;/p&gt;</desc>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-09-02T11:24:17">&lt;p&gt;&lt;strong&gt;WAS ICH NORMALERWEISE TUE&lt;/strong&gt;
+                            &lt;em&gt;(zum Beispiel: in die Schule gehen, Hobbys, Sport, Spielen, Dinge mit Familie und Freunden machen)&lt;/em&gt;&lt;/p&gt;</desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="EQ-5D-5L_Q3.1" statusCode="draft" level="1" type="L">
+            <designation json:array="true" language="en-US" type="fsn" displayName="I have no problems doing my usual activities"/>
+            <designation json:array="true" language="de-DE" type="fsn" displayName="Ich habe keine Schwierigkeiten das zu tun, was ich normalerweise tue"/>
+            <desc json:array="true" language="en-US" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;I have no problems doing my usual activities&lt;/p&gt;</desc>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;Ich habe &lt;u&gt;keine&lt;/u&gt; Schwierigkeiten das zu tun, was ich normalerweise tue&lt;/p&gt;</desc>
+            <parent json:array="true" code="EQ-5D-5L_Usual_Activities"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="EQ-5D-5L_Q3.2" statusCode="draft" level="1" type="L">
+            <designation json:array="true" language="en-US" type="fsn" displayName="I have slight problems doing my usual activities"/>
+            <designation json:array="true" language="de-DE" type="fsn" displayName="Ich habe leichte Schwierigkeiten das zu tun, was ich normalerweise tue"/>
+            <desc json:array="true" language="en-US" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;I have slight problems doing my usual activities&lt;/p&gt;</desc>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;Ich habe &lt;u&gt;leichte&lt;/u&gt; Schwierigkeiten das zu tun, was ich normalerweise tue&lt;/p&gt;</desc>
+            <parent json:array="true" code="EQ-5D-5L_Usual_Activities"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="EQ-5D-5L_Q3.3" statusCode="draft" level="1" type="L">
+            <designation json:array="true" language="en-US" type="fsn" displayName="I have moderate problems doing my usual activities"/>
+            <designation json:array="true" language="de-DE" type="fsn" displayName="Ich habe einige Schwierigkeiten das zu tun, was ich normalerweise tue"/>
+            <desc json:array="true" language="en-US" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;I have moderate problems doing my usual activities&lt;/p&gt;</desc>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;Ich habe &lt;u&gt;einige&lt;/u&gt; Schwierigkeiten das zu tun, was ich normalerweise tue&lt;/p&gt;</desc>
+            <parent json:array="true" code="EQ-5D-5L_Usual_Activities"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="EQ-5D-5L_Q3.4" statusCode="draft" level="1" type="L">
+            <designation json:array="true" language="en-US" type="fsn" displayName="I have severe problems doing my usual activities"/>
+            <designation json:array="true" language="de-DE" type="fsn" displayName="Ich habe große Schwierigkeiten das zu tun, was ich normalerweise tue"/>
+            <desc json:array="true" language="en-US" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;I have severe problems doing my usual activities&lt;/p&gt;</desc>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;Ich habe &lt;u&gt;große&lt;/u&gt; Schwierigkeiten das zu tun, was ich normalerweise tue&lt;/p&gt;</desc>
+            <parent json:array="true" code="EQ-5D-5L_Usual_Activities"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="EQ-5D-5L_Q3.5" statusCode="draft" level="1" type="L">
+            <designation json:array="true" language="en-US" type="fsn" displayName="I am unable to do my usual activities"/>
+            <designation json:array="true" language="de-DE" type="fsn" displayName="Ich kann nicht das tun, was ich normalerweise tue"/>
+            <desc json:array="true" language="en-US" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;I am unable to do my usual activities&lt;/p&gt;</desc>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;Ich &lt;u&gt;kann nicht&lt;/u&gt; das tun, was ich normalerweise tue&lt;/p&gt;</desc>
+            <parent json:array="true" code="EQ-5D-5L_Usual_Activities"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="EQ-5D-5L_Pain-Discomfort" statusCode="draft" level="0" type="A">
+            <designation json:array="true" language="en-US" type="fsn" displayName="PAIN / DISCOMFORT"/>
+            <designation json:array="true" language="de-DE" type="fsn" displayName="SCHMERZEN ODER KÖRPERLICHE BESCHWERDEN"/>
+            <desc json:array="true" language="en-US" lastTranslated="2024-09-02T11:24:17">&lt;p&gt;&lt;strong&gt;PAIN / DISCOMFORT&lt;/strong&gt;&lt;/p&gt;</desc>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-09-02T11:24:17">&lt;p&gt;&lt;strong&gt;SCHMERZEN ODER KÖRPERLICHE BESCHWERDEN&lt;/strong&gt;&lt;/p&gt;</desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="EQ-5D-5L_Q4.1" statusCode="draft" level="1" type="L">
+            <designation json:array="true" language="en-US" type="fsn" displayName="I have no pain or discomfort"/>
+            <designation json:array="true" language="de-DE" type="fsn" displayName="Ich habe keine Schmerzen oder körperlichen Beschwerden"/>
+            <desc json:array="true" language="en-US" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;I have no pain or discomfort&lt;/p&gt;</desc>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;Ich habe &lt;u&gt;keine&lt;/u&gt; Schmerzen oder körperlichen Beschwerden&lt;/p&gt;</desc>
+            <parent json:array="true" code="EQ-5D-5L_Pain-Discomfort"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="EQ-5D-5L_Q4.2" statusCode="draft" level="1" type="L">
+            <designation json:array="true" language="en-US" type="fsn" displayName="I have slight pain or discomfort"/>
+            <designation json:array="true" language="de-DE" type="fsn" displayName="Ich habe leichte Schmerzen oder körperlichen Beschwerden"/>
+            <desc json:array="true" language="en-US" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;I have slight pain or discomfort&lt;/p&gt;</desc>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;Ich habe &lt;u&gt;leichte&lt;/u&gt; Schmerzen oder körperlichen Beschwerden&lt;/p&gt;</desc>
+            <parent json:array="true" code="EQ-5D-5L_Pain-Discomfort"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="EQ-5D-5L_Q4.3" statusCode="draft" level="1" type="L">
+            <designation json:array="true" language="en-US" type="fsn" displayName="I have moderate pain or discomfort"/>
+            <designation json:array="true" language="de-DE" type="fsn" displayName="Ich habe einige Schmerzen oder körperlichen Beschwerden"/>
+            <desc json:array="true" language="en-US" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;I have moderate pain or discomfort&lt;/p&gt;</desc>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;Ich habe &lt;u&gt;einige&lt;/u&gt; Schmerzen oder körperlichen Beschwerden&lt;/p&gt;</desc>
+            <parent json:array="true" code="EQ-5D-5L_Pain-Discomfort"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="EQ-5D-5L_Q4.4" statusCode="draft" level="1" type="L">
+            <designation json:array="true" language="en-US" type="fsn" displayName="I have severe pain or discomfort"/>
+            <designation json:array="true" language="de-DE" type="fsn" displayName="Ich habe große Schmerzen oder körperlichen Beschwerden"/>
+            <desc json:array="true" language="en-US" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;I have severe pain or discomfort&lt;/p&gt;</desc>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;Ich habe &lt;u&gt;große&lt;/u&gt; Schmerzen oder körperlichen Beschwerden&lt;/p&gt;</desc>
+            <parent json:array="true" code="EQ-5D-5L_Pain-Discomfort"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="EQ-5D-5L_Q4.5" statusCode="draft" level="1" type="L">
+            <designation json:array="true" language="en-US" type="fsn" displayName="I have extreme pain or discomfort"/>
+            <designation json:array="true" language="de-DE" type="fsn" displayName="Ich habe extreme Schmerzen oder körperlichen Beschwerden"/>
+            <desc json:array="true" language="en-US" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;I have extreme pain or discomfort&lt;/p&gt;</desc>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;Ich habe &lt;u&gt;extreme&lt;/u&gt; Schmerzen oder körperlichen Beschwerden&lt;/p&gt;</desc>
+            <parent json:array="true" code="EQ-5D-5L_Pain-Discomfort"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="EQ-5D-5L_Anxiety-Depression" statusCode="draft" level="0" type="A">
+            <designation json:array="true" language="en-US" type="fsn" displayName="ANXIETY / DEPRESSION"/>
+            <designation json:array="true" language="de-DE" type="fsn" displayName="SICH UNGLÜCKLICH, TRAURIG ODER BESORT FÜHLEN"/>
+            <desc json:array="true" language="en-US" lastTranslated="2024-09-02T11:24:17">&lt;p&gt;&lt;strong&gt;ANXIETY / DEPRESSION&lt;/strong&gt;&lt;/p&gt;</desc>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-09-02T11:24:17">&lt;p&gt;&lt;strong&gt;SICH UNGLÜCKLICH, TRAURIG ODER BESORT FÜHLEN&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;Default: http://hl7.org/fhir/StructureDefinition/ordinalValue.valueDecimal = 9 (Missing value)&lt;/p&gt; &lt;p&gt;Variable:&lt;br/&gt;http://hl7.org/fhir/StructureDefinition/variable.variableExpression.name =
+                            "Anxiety"&lt;br/&gt;http://hl7.org/fhir/StructureDefinition/variable.variableExpression.language = "text/fhirpath"&lt;br/&gt;http://hl7.org/fhir/StructureDefinition/variable.variableExpression.expression = "%resource.repeat(item).where(linkId='EQ-5D-5L_Anxiety-Depression').item.answer.value"&lt;/p&gt; &lt;p/&gt;</desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="EQ-5D-5L_Q5.1" statusCode="draft" level="1" type="L">
+            <designation json:array="true" language="en-US" type="fsn" displayName="I am not anxious or depressed"/>
+            <designation json:array="true" language="de-DE" type="fsn" displayName="Ich bin nicht unglücklich, traurig oder besorgt"/>
+            <desc json:array="true" language="en-US" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;I am not anxious or depressed&lt;/p&gt;</desc>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;Ich bin &lt;u&gt;nicht&lt;/u&gt; unglücklich, traurig oder besorgt&lt;/p&gt; &lt;p&gt;http://hl7.org/fhir/StructureDefinition/ordinalValue.valueDecimal = 1 (Not anxious)&lt;/p&gt;</desc>
+            <parent json:array="true" code="EQ-5D-5L_Anxiety-Depression"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="EQ-5D-5L_Q5.2" statusCode="draft" level="1" type="L">
+            <designation json:array="true" language="en-US" type="fsn" displayName="I am slightly anxious or depressed"/>
+            <designation json:array="true" language="de-DE" type="fsn" displayName="Ich bin ein bisschen unglücklich, traurig oder besorgt"/>
+            <desc json:array="true" language="en-US" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;I am slightly anxious or depressed&lt;/p&gt;</desc>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;Ich bin &lt;u&gt;ein bisschen&lt;/u&gt; unglücklich, traurig oder besorgt&lt;/p&gt; &lt;p&gt;http://hl7.org/fhir/StructureDefinition/ordinalValue.valueDecimal = 2 (Slightly anxious)&lt;/p&gt;</desc>
+            <parent json:array="true" code="EQ-5D-5L_Anxiety-Depression"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="EQ-5D-5L_Q5.3" statusCode="draft" level="1" type="L">
+            <designation json:array="true" language="en-US" type="fsn" displayName="I am moderately anxious or depressed"/>
+            <designation json:array="true" language="de-DE" type="fsn" displayName="Ich bin etwas unglücklich, traurig oder besorgt"/>
+            <desc json:array="true" language="en-US" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;I am moderately anxious or depressed&lt;/p&gt;</desc>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;Ich bin &lt;u&gt;etwas&lt;/u&gt; unglücklich, traurig oder besorgt&lt;/p&gt; &lt;p&gt;http://hl7.org/fhir/StructureDefinition/ordinalValue.valueDecimal = 3 (Moderately&lt;/p&gt; &lt;p&gt; anxious)&lt;/p&gt;</desc>
+            <parent json:array="true" code="EQ-5D-5L_Anxiety-Depression"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="EQ-5D-5L_Q5.4" statusCode="draft" level="1" type="L">
+            <designation json:array="true" language="en-US" type="fsn" displayName="I am severely anxious or depressed"/>
+            <designation json:array="true" language="de-DE" type="fsn" displayName="Ich bin sehr unglücklich, traurig oder besorgt"/>
+            <desc json:array="true" language="en-US" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;I am severely anxious or depressed&lt;/p&gt;</desc>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;Ich bin &lt;u&gt;sehr&lt;/u&gt; unglücklich, traurig oder besorgt&lt;/p&gt; &lt;p&gt;http://hl7.org/fhir/StructureDefinition/ordinalValue.valueDecimal = 4 (Severely anxious)&lt;/p&gt;</desc>
+            <parent json:array="true" code="EQ-5D-5L_Anxiety-Depression"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="EQ-5D-5L_Q5.5" statusCode="draft" level="1" type="L">
+            <designation json:array="true" language="en-US" type="fsn" displayName="I am extremely anxious or depressed"/>
+            <designation json:array="true" language="de-DE" type="fsn" displayName="Ich bin extrem unglücklich, traurig oder besorgt"/>
+            <desc json:array="true" language="en-US" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;I am extremely anxious or depressed&lt;/p&gt;</desc>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;Ich bin &lt;u&gt;extrem&lt;/u&gt; unglücklich, traurig oder besorgt&lt;/p&gt; &lt;p&gt;http://hl7.org/fhir/StructureDefinition/ordinalValue.valueDecimal = 5 (Extremely anxious)&lt;/p&gt;</desc>
+            <parent json:array="true" code="EQ-5D-5L_Anxiety-Depression"/>
+        </codedConcept>
+        <codedConcept json:array="true" code="EQ-5D-5L_Health_Today" statusCode="draft" level="0" type="A">
+            <designation json:array="true" language="en-US" type="fsn" displayName="HEALTY TODAY"/>
+            <designation json:array="true" language="de-DE" type="fsn" displayName="GESUNDHEIT HEUTE"/>
+            <desc json:array="true" language="en-US" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;HEALTH TODAY&lt;/p&gt;</desc>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-09-02T11:59:24">&lt;p&gt;GESUNDHEIT HEUTE&lt;/p&gt;</desc>
+        </codedConcept>
+        <codedConcept json:array="true" code="EQ-5D-5L_Q6.1" statusCode="draft" level="1" type="L">
+            <designation json:array="true" language="en-US" type="fsn" displayName="YOUR HEALTH TODAY"/>
+            <designation json:array="true" language="de-DE" type="fsn" displayName="DEINE GESUNDHEIT HEUTE"/>
+            <desc json:array="true" language="en-US" lastTranslated="2024-09-02T11:59:24">&lt;ul&gt;&lt;li&gt;&lt;p&gt;We would like to know how good or bad your health is TODAY.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;This scale is numbered from 0 to 100.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;100 means the best health you can imagine.&lt;br/&gt;0 means the worst health you can imagine.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Please mark an X on the scale to indicate how your health is TODAY.
+                                    &lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Now, write the number you marked on the scale in the box below. &lt;/p&gt;&lt;/li&gt;&lt;/ul&gt; 
+                         &lt;p&gt; &lt;/p&gt;</desc>
+            <desc json:array="true" language="de-DE" lastTranslated="2024-09-02T11:59:24">&lt;ul&gt;&lt;li&gt;&lt;p&gt;Wir wollen herausfinden, wie gut oder schlecht deine Gesundheit HEUTE ist. &lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Wir haben darum diese Linie aufgezeichnet mit Nummern von 0 bis 100. &lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;100 ist die beste Gesundheit, die du dir vorstellen kannst. &lt;/p&gt;&lt;p&gt;0 (Null) ist die schlechteste Gesundheit, die du dir vorstellen
+                                    kannst.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Bitte kreuze den Punkt auf der Linie an, der beschreibt wie gut oder&lt;br/&gt;schlecht deine Gesundheit HEUTE ist.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Jetzt trage bitte die Zahl, die du auf der Linie angekreuzt hast, in das Kästchen unten ein. &lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;</desc>
+            <parent json:array="true" code="EQ-5D-5L_Health_Today"/>
+        </codedConcept>
+    </conceptList>
+</codeSystem>

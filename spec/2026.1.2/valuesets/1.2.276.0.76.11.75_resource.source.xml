@@ -1,0 +1,19 @@
+<valueSet xmlns:json="http://www.json.org" id="1.2.276.0.76.11.75" name="Unfallmechanismus" displayName="Unfallmechanismus (LOINC)" effectiveDate="2017-03-01T00:00:00" statusCode="draft" lastModifiedDate="2024-02-14T12:30:12" url="http://art-decor.org/decor/services/" ident="aktin-">
+    <desc json:array="true" language="de-DE" lastTranslated="2024-02-14T12:30:12">LOINC L-Codes für Unfallmechanismus</desc>
+    <sourceCodeSystem json:array="true" id="2.16.840.1.113883.5.1008" identifierName="Null Flavor" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriDSTU2="http://hl7.org/fhir/v3/NullFlavor" canonicalUriSTU3="http://hl7.org/fhir/v3/NullFlavor" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" context="external/hl7intl/v3/v3-NullFlavor"/>
+    <sourceCodeSystem json:array="true" id="2.16.840.1.113883.6.1" identifierName="Logical Observation Identifier Names and Codes" canonicalUri="http://loinc.org" canonicalUriDSTU2="http://loinc.org" canonicalUriSTU3="http://loinc.org" canonicalUriR4="http://loinc.org" canonicalUriR4B="http://loinc.org" canonicalUriR5="http://loinc.org"/>
+    <publishingAuthority json:array="true" name="AKTIN e. V." inherited="project">
+        <addrLine json:array="true">c/o Uniklinik RWTH Aachen</addrLine>
+        <addrLine json:array="true">Institut für Medizinische Informatik</addrLine>
+        <addrLine json:array="true">Pauwelsstraße 35</addrLine>
+        <addrLine json:array="true">52074 Aachen</addrLine>
+        <addrLine json:array="true" type="phone">Tel. +49 391 67 28186</addrLine>
+        <addrLine json:array="true" type="email">office@aktin.org</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="concept" code="LA17335-3" codeSystem="2.16.840.1.113883.6.1" displayName="Blunt" level="0" type="L"/>
+    <items json:array="true" is="concept" code="LA7318-4" codeSystem="2.16.840.1.113883.6.1" displayName="Burn" level="0" type="D"/>
+    <items json:array="true" is="concept" code="LA17336-1" codeSystem="2.16.840.1.113883.6.1" displayName="Penetrating" level="0" type="L"/>
+    <items json:array="true" is="exception" code="OTH" codeSystem="2.16.840.1.113883.5.1008" displayName="Andere" level="0" type="L"/>
+</valueSet>

@@ -1,0 +1,42 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultLanguage="de-DE" id="1.2.276.0.76.10.4038" name="Referralfrom" displayName="Zuweisung mit Zuweiser" effectiveDate="2015-09-18T00:00:00" statusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" xml:dummy-1="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-3="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance">
+    <desc language="de-DE">Zuweiser</desc>
+    <classification type="cdaentrylevel"/>
+    <relationship type="SPEC" template="2.16.840.1.113883.10.12.301" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.301" tmname="CDAAct" tmdisplayName="CDA Act" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-"/>
+    <relationship type="ADAPT" template="2.16.840.1.113883.10.20.22.4.140" tmid="2.16.840.1.113883.10.20.22.4.140" tmname="PatientReferralAct" tmdisplayName="Patient Referral Act" tmeffectiveDate="2015-08-13T00:00:00" tmstatusCode="draft" tmversionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-"/>
+    <context id="**"/>
+    <example>
+                <act classCode="PCPR" moodCode="RQO">
+                    <templateId root="1.2.276.0.76.10.4038"/>
+                    <code code="11293-8" codeSystem="2.16.840.1.113883.6.1" displayName="Type of Referral source"/>
+                    <participant typeCode="AUT">
+                        <participantRole classCode="AGNT">
+                            <code code="VAP" codeSystem="1.2.276.0.76.5.440" displayName="Vertragsarzt/Praxis"/>
+                        </participantRole>
+                    </participant>
+                </act>
+            </example>
+    <element name="hl7:act" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.55">
+                <attribute name="classCode" value="PCPR" id="2.16.840.1.113883.2.6.60.3.9.56"/>
+                <attribute name="moodCode" value="RQO" id="2.16.840.1.113883.2.6.60.3.9.57"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.2.6.60.3.9.58">
+                    <attribute name="root" value="1.2.276.0.76.10.4038" id="2.16.840.1.113883.2.6.60.3.9.59"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CE" id="2.16.840.1.113883.2.6.60.3.9.60">
+                    <vocabulary code="11293-8" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.2.6.60.3.9.61">
+                    <desc language="de-DE">Lediglich reference in den Text der zugehörigen Section</desc>
+                    <element name="hl7:reference" minimumMultiplicity="1" maximumMultiplicity="1" datatype="URL" id="2.16.840.1.113883.2.6.60.3.9.62"/>
+                </element>
+                <element name="hl7:participant" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.63">
+                    <attribute name="typeCode" value="AUT" id="2.16.840.1.113883.2.6.60.3.9.64"/>
+                    <element name="hl7:participantRole" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.65">
+                        <attribute name="classCode" value="AGNT" id="2.16.840.1.113883.2.6.60.3.9.66"/>
+                        <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="CE" id="2.16.840.1.113883.2.6.60.3.9.67">
+                            <vocabulary valueSet="1.2.276.0.76.11.42" flexibility="2015-09-18T00:00:00"/>
+                            <element name="hl7:originalText" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" datatype="ST" id="2.16.840.1.113883.2.6.60.3.9.824"/>
+                        </element>
+                    </element>
+                </element>
+            </element>
+</template>

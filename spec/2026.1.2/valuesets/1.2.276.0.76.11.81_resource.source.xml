@@ -1,0 +1,22 @@
+<valueSet xmlns:json="http://www.json.org" id="1.2.276.0.76.11.81" name="injury-body-regions" displayName="Körperregionen der Verletzung" effectiveDate="2024-07-24T21:43:39" statusCode="draft" lastModifiedDate="2024-07-24T21:43:39" versionLabel="2024" canonicalUri="http://aktin.org/fhir/ValueSet/aktin-vs-injury-body-regions" url="http://art-decor.org/decor/services/" ident="aktin-">
+    <sourceCodeSystem json:array="true" id="2.16.840.1.113883.6.96" identifierName="SNOMED Clinical Terms" canonicalUri="http://snomed.info/sct" canonicalUriDSTU2="http://snomed.info/sct" canonicalUriSTU3="http://snomed.info/sct" canonicalUriR4="http://snomed.info/sct" canonicalUriR4B="http://snomed.info/sct" canonicalUriR5="http://snomed.info/sct"/>
+    <publishingAuthority json:array="true" name="AKTIN e. V." inherited="project">
+        <addrLine json:array="true">c/o Uniklinik RWTH Aachen</addrLine>
+        <addrLine json:array="true">Institut für Medizinische Informatik</addrLine>
+        <addrLine json:array="true">Pauwelsstraße 35</addrLine>
+        <addrLine json:array="true">52074 Aachen</addrLine>
+        <addrLine json:array="true" type="phone">Tel. +49 391 67 28186</addrLine>
+        <addrLine json:array="true" type="email">office@aktin.org</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="concept" code="89546000" codeSystem="2.16.840.1.113883.6.96" displayName="Bone structure of cranium (body structure)" level="0" type="L"/>
+    <items json:array="true" is="concept" code="89545001" codeSystem="2.16.840.1.113883.6.96" displayName="Face structure (body structure)" level="0" type="L"/>
+    <items json:array="true" is="concept" code="51185008" codeSystem="2.16.840.1.113883.6.96" displayName="Thoracic structure (body structure)" level="0" type="L"/>
+    <items json:array="true" is="concept" code="113345001" codeSystem="2.16.840.1.113883.6.96" displayName="Abdominal structure (body structure)" level="0" type="L"/>
+    <items json:array="true" is="concept" code="12921003" codeSystem="2.16.840.1.113883.6.96" displayName="Pelvic structure (body structure)" level="0" type="L"/>
+    <items json:array="true" is="concept" code="120574008" codeSystem="2.16.840.1.113883.6.96" displayName="Upper extremity part (body structure)" level="0" type="L"/>
+    <items json:array="true" is="concept" code="120575009" codeSystem="2.16.840.1.113883.6.96" displayName="Lower extremity part (body structure)" level="0" type="L"/>
+    <items json:array="true" is="concept" code="87784001" codeSystem="2.16.840.1.113883.6.96" displayName="Soft tissues (body structure)" level="0" type="L"/>
+    <items json:array="true" is="concept" code="44300000" codeSystem="2.16.840.1.113883.6.96" displayName="Entire vertebral column (body structure)" level="0" type="L"/>
+</valueSet>

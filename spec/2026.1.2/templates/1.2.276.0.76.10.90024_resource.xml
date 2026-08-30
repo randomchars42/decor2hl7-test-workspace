@@ -1,0 +1,85 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.90024" ident="aktin-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.90024" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="Patientenidentifikation" ident="aktin-" name="PatientIdentifier" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="draft" url="http://art-decor.org/decor/services/" effectiveDate="2014-12-17T00:00:00">
+            <desc language="de-DE">Patientenidentifikation, z. B. eGK Nummer</desc>
+            <classification type="cdaheaderlevel"/>
+            <element name="hl7:id" datatype="II" id="1.2.276.0.76.9.90024">
+                <item original="false" label="PatientIdentifier"/>
+                <example type="neutral" caption="eGK Nummer als Patientenidentifikation">
+                    <id extension="A123456789" root="1.2.276.0.76.4.8"/>
+                </example>
+            </element>
+            <staticAssociations>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.2.3" effectiveDate="2015-01-15T00:00:00" refdisplay="aktin-dataelement2015(1)-3" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.2" datasetEffectiveDate="2015-01-15T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.1-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="1.2.276.0.76.9.90024" templateId="1.2.276.0.76.10.90024" templateEffectiveDate="2014-12-17T00:00:00" path="Patient">
+                    <name language="de-DE">Patienten ID im Basismodul</name>
+                    <desc language="de-DE">Eindeutige Patienten ID im KIS des Krankenhauses</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.3.3" effectiveDate="2015-11-01T00:00:00" refdisplay="aktin-dataelement2015(2)-3" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.3" datasetEffectiveDate="2015-11-01T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.2-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="1.2.276.0.76.9.90024" templateId="1.2.276.0.76.10.90024" templateEffectiveDate="2014-12-17T00:00:00" path="Patient">
+                    <name language="de-DE">Patienten ID im Basismodul</name>
+                    <desc language="de-DE">Eindeutige Patienten ID im KIS des Krankenhauses</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.4.766" effectiveDate="2014-01-06T16:43:33" refdisplay="aktin-dataelement2016(1)-766" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.3.1.4" datasetEffectiveDate="2016-07-12T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2015.1-t" datasetName="Traumamodul-Datensatz" ident="aktin-" elementId="1.2.276.0.76.9.90024" templateId="1.2.276.0.76.10.90024" templateEffectiveDate="2014-12-17T00:00:00" path="Patient">
+                    <name language="de-DE">Patienten ID im Traumaregister</name>
+                    <desc language="de-DE">Patienten ID im Traumaregister der Deutschen Gesellschaft für Unfallchirurgie</desc>
+                    <datasetName language="de-DE">Traumamodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.4.7835" effectiveDate="2017-10-12T14:23:27" refdisplay="aktin-dataelement2016(1)-7835" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.3.1.4" datasetEffectiveDate="2016-07-12T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2015.1-t" datasetName="Traumamodul-Datensatz" ident="aktin-" elementId="1.2.276.0.76.9.90024" templateId="1.2.276.0.76.10.90024" templateEffectiveDate="2014-12-17T00:00:00" path="Patient">
+                    <name language="de-DE">Patienten ID im Traumamodul</name>
+                    <desc language="de-DE">
+                        <p style="margin: 0px; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Helvetica;">Patienten ID im Traumamodul</p>
+                    </desc>
+                    <datasetName language="de-DE">Traumamodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.3.1937.777.27.2.10" effectiveDate="2018-09-06T12:00:00" refdisplay="hauskomet-dataelement-10" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.777.27.1.1" datasetEffectiveDate="2018-09-06T12:00:00" datasetStatusCode="draft" datasetName="Hauskomet-Datensatz" ident="hauskomet-" elementId="1.2.276.0.76.9.90024" templateId="1.2.276.0.76.10.90024" templateEffectiveDate="2014-12-17T00:00:00" path="Patient">
+                    <name language="de-DE">Patienten-ID</name>
+                    <desc language="de-DE">Weitere eindeutige Patientenidentifikation (nicht Versicherten-ID)</desc>
+                    <datasetName language="de-DE">Hauskomet-Datensatz</datasetName>
+                    <projectName language="de-DE">Hauskomet</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.3.1937.777.27.2.9" effectiveDate="2018-09-06T12:00:00" refdisplay="hauskomet-dataelement-9" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.777.27.1.1" datasetEffectiveDate="2018-09-06T12:00:00" datasetStatusCode="draft" datasetName="Hauskomet-Datensatz" ident="hauskomet-" elementId="1.2.276.0.76.9.90024" templateId="1.2.276.0.76.10.90024" templateEffectiveDate="2014-12-17T00:00:00" path="Patient">
+                    <name language="de-DE">Versicherten-ID</name>
+                    <desc language="de-DE">Die eindeutige lebenslange Versichertenidentifikationsnummer <br clear="none"/>
+                    </desc>
+                    <datasetName language="de-DE">Hauskomet-Datensatz</datasetName>
+                    <projectName language="de-DE">Hauskomet</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.3.1937.777.35.2.21" effectiveDate="2019-05-17T14:42:27" refdisplay="eImpfpass-dataelement-21" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.777.35.1.1" datasetEffectiveDate="2019-05-17T08:08:51" datasetStatusCode="draft" datasetName="Impfpass" ident="eImpfpass-" elementId="1.2.276.0.76.9.90024" templateId="1.2.276.0.76.10.90024" templateEffectiveDate="2014-12-17T00:00:00" path="Elektronischer Impfpass / Patient">
+                    <name language="de-DE">Versicherten-ID</name>
+                    <desc language="de-DE"/>
+                    <datasetName language="de-DE">Impfpass</datasetName>
+                    <projectName language="de-DE">Elektronischer Impfpass</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.3.1937.99.61.48.2.1016" effectiveDate="2019-02-08T00:00:00" refdisplay="medmgmt-dataelement-1016" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.99.61.48.1.2" datasetEffectiveDate="2019-02-08T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2019" datasetName="Datensatz eMedikation" ident="medmgmt-" elementId="1.2.276.0.76.9.90024" templateId="1.2.276.0.76.10.90024" templateEffectiveDate="2014-12-17T00:00:00" path="Patient">
+                    <name language="de-DE">Versicherten-ID</name>
+                    <desc language="de-DE">Versicherten-ID, eindeutige, lebenslange Identifikationsnummer des Patienten, entsprechend der eGK-Spezifikation</desc>
+                    <datasetName language="de-DE">Datensatz eMedikation</datasetName>
+                    <projectName language="de-DE">Medikationsmanagement</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.3.1937.99.61.48.2.1128" effectiveDate="2019-02-08T00:00:00" refdisplay="medmgmt-dataelement-1128" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.99.61.48.1.2" datasetEffectiveDate="2019-02-08T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2019" datasetName="Datensatz eMedikation" ident="medmgmt-" elementId="1.2.276.0.76.9.90024" templateId="1.2.276.0.76.10.90024" templateEffectiveDate="2014-12-17T00:00:00" path="Patient">
+                    <name language="de-DE">Patienten-ID</name>
+                    <desc language="de-DE">Weitere eindeutige Patientenidentifikation (nicht Versicherten-ID)</desc>
+                    <datasetName language="de-DE">Datensatz eMedikation</datasetName>
+                    <projectName language="de-DE">Medikationsmanagement</projectName>
+                </origconcept>
+            </staticAssociations>
+            <ref type="dependency" prefix="pmp-" flexibility="2014-09-17T00:00:00" id="1.2.276.0.76.10.1014" name="PersonalMedicationList" displayName="Patientenbezogener Medikationsplan CDA document" effectiveDate="2014-10-20T00:00:00" statusCode="draft" versionLabel="v2015" ident="pmp-"/>
+            <ref type="include" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.2028" name="HeaderRecordTargetpmp" displayName="CDA recordTarget (pmp)" effectiveDate="2014-09-17T00:00:00" statusCode="draft" ident="pmp-"/>
+            <ref type="include" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.2028" name="HeaderRecordTargetpmp" displayName="CDA recordTarget (pmp)" effectiveDate="2017-06-04T00:00:00" statusCode="draft" ident="pmp-"/>
+            <ref type="include" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.2032" name="CDArecordTargetnnar" displayName="CDA recordTarget (nnar)" effectiveDate="2014-09-17T00:00:00" statusCode="active" ident="aktin-"/>
+            <ref type="include" prefix="medmgmt-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.48.10.4" name="HeaderRecordTargetmedmgmt" displayName="CDA recordTarget (medmgmt)" statusCode="pending" effectiveDate="2019-02-09T00:00:00" ident="medmgmt-"/>
+            <ref type="include" prefix="mide-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.24.10.1" name="CDArecordTargetnnar" displayName="CDA recordTarget (nnar)" statusCode="cancelled" effectiveDate="2018-07-03T10:53:42" ident="mide-"/>
+            <ref type="include" prefix="hauskomet-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.27.10.9" name="HeaderRecordTargetHauskomet" displayName="CDA recordTarget (Hauskomet)" effectiveDate="2018-11-10T00:00:00" statusCode="draft" ident="hauskomet-"/>
+            <ref type="include" prefix="eImpfpass-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.35.10.101" name="ElektronischerImpfpassCDAHeaderRecordTarget" displayName="CDA RecordTarget (Elektronischer Impfpass)" statusCode="cancelled" effectiveDate="2019-05-28T13:24:46" ident="eImpfpass-"/>
+        </template>
+    </template>
+</result>

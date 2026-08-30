@@ -1,0 +1,43 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:local="http://art-decor.org/local" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.20.22.4.20" name="Instructions" effectiveDate="2013-01-31T00:00:00" statusCode="draft" versionLabel="1.1" displayName="Instructions" url="http://art-decor.org/decor/services/" ident="ccda-" sdtc:dummy-1="urn:hl7-org:sdtc" local:dummy-2="http://art-decor.org/local" xml:dummy-3="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-5="urn:hl7-org:v3" xsi:dummy-6="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">The Instructions template can be used in several ways, such as to record patient instructions within a Medication Activity or to record fill instructions within a supply order. The act/code defines the type of instruction. Though not defined in this template, a Vaccine Information Statement (VIS) document could be referenced through
+                act/reference/externalDocument, and patient awareness of the instructions can be represented with the generic participant and the participant/awarenessCode.</desc>
+            <classification type="cdaentrylevel"/>
+            <context id="**"/>
+            <element name="cda:act" id="2.16.840.1.113883.3.1937.99.3.9.439">
+                <attribute name="classCode" value="ACT" id="2.16.840.1.113883.3.1937.99.3.9.440">
+                    <item label="conf-7391"/>
+                </attribute>
+                <attribute name="moodCode" value="INT" id="2.16.840.1.113883.3.1937.99.3.9.441">
+                    <item label="conf-7392"/>
+                </attribute>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.442">
+                    <desc language="en-US">SHALL contain exactly one [1..1] templateId (CONF:7393) such that it</desc>
+                    <item label="conf-7393"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.22.4.20" id="2.16.840.1.113883.3.1937.99.3.9.443">
+                        <item label="conf-10503"/>
+                    </attribute>
+                </element>
+                <element name="cda:code" datatype="CD" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="false" id="2.16.840.1.113883.3.1937.99.3.9.444">
+                    <desc language="en-US">SHALL contain exactly one [1..1] code, which SHOULD be selected from ValueSet Patient Education 2.16.840.1.113883.11.20.9.34 DYNAMIC (CONF:16884).</desc>
+                    <item label="conf-16884"/>
+                    <vocabulary valueSet="2.16.840.1.113883.11.20.9.34"/>
+                </element>
+                <element name="cda:text" datatype="ED" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.445">
+                    <desc language="en-US">SHOULD contain zero or one [0..1] text (CONF:7395).</desc>
+                    <item label="conf-7395"/>
+                    <element name="cda:reference" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.446">
+                        <desc language="en-US">The text, if present, SHOULD contain zero or one [0..1] reference (CONF:15577).<p/>This @value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1)</desc>
+                        <item label="conf-15577"/>
+                        <attribute name="value" isOptional="true" id="2.16.840.1.113883.3.1937.99.3.9.447">
+                            <item label="conf-15578"/>
+                        </attribute>
+                        <assert role="error" test="not(@value) or starts-with(@value, '#')">This @value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1)</assert>
+                    </element>
+                </element>
+                <element name="cda:statusCode" datatype="CS" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.448">
+                    <desc language="en-US">SHALL contain exactly one [1..1] statusCode (CONF:7396).</desc>
+                    <item label="conf-7396"/>
+                    <vocabulary code="completed"/>
+                </element>
+            </element>
+        </template>

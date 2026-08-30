@@ -1,0 +1,38 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.3.1.195.10.66" ident="aktin-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.3.1.195.10.66" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" lastModifiedDate="2024-08-14T18:18:12" versionLabel="2024" isClosed="false" displayName="Isolation Indication" ident="aktin-" name="Isolationindication" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="draft" url="http://art-decor.org/decor/services/" effectiveDate="2024-08-14T18:14:44">
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="1.2.276.0.76.10.4069" flexibility="2015-09-19T00:00:00" tmid="1.2.276.0.76.10.4069" tmname="Isolationindication" tmdisplayName="Isolation Indication" tmeffectiveDate="2015-09-19T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.303" tmname="CDAObservation" tmdisplayName="CDA Observation" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <relationship type="ADAPT" template="2.16.840.1.113883.10.20.22.4.19" flexibility="2014-06-09T00:00:00" tmid="2.16.840.1.113883.10.20.22.4.19" tmname="IndicationV2" tmeffectiveDate="2014-06-09T00:00:00" tmstatusCode="draft" tmdisplayName="Indication (V2)" tmversionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <element name="hl7:observation" id="2.16.840.1.113883.2.6.60.3.9.1631742">
+                <item original="false" label="Isolationindication"/>
+                <attribute name="classCode" value="OBS" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631743"/>
+                <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1631744"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631745">
+                    <item original="false" label="Isolationindication"/>
+                    <attribute name="root" value="1.2.276.0.76.3.1.195.10.66" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.60.3.9.1631746"/>
+                </element>
+                <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="*" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631747">
+                    <item original="false" label="Isolationindication"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631748">
+                    <item original="false" label="Isolationindication"/>
+                    <vocabulary code="44100-6" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631749">
+                    <item original="false" label="Isolationindication"/>
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:value" datatype="CV" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.4069.1">
+                    <item original="false" label="Isolationindication"/>
+                    <vocabulary valueSet="1.2.276.0.76.3.1.195.11.25" vsid="1.2.276.0.76.3.1.195.11.25" vsname="isolation-reason" vsdisplayName="Isolationsgrund" vseffectiveDate="2024-02-19T12:55:34" vsstatusCode="draft" vsversionLabel="2024" linkedartefactmissing="false"/>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.65" name="isolation" displayName="Isolation" effectiveDate="2024-08-14T18:08:14" statusCode="draft" versionLabel="2024" isClosed="false" lastModifiedDate="2024-12-02T11:51:38" ident="aktin-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="2024-08-14T18:08:14" id="1.2.276.0.76.10.3054" name="Patientcarenarrative" displayName="Prozeduren und Maßnahmen" effectiveDate="2025-12-01T00:00:00" statusCode="draft" isClosed="false" lastModifiedDate="2025-12-26T19:51:06" ident="aktin-"/>
+        </template>
+    </template>
+</result>

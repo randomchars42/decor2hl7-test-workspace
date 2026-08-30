@@ -1,0 +1,15 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.2.6.77.1.3" effectiveDate="2015-12-11T00:00:00" statusCode="draft" versionLabel="1.0" prefix="hl7de-" shortName="diagnosen" iddisplay="hl7de-dataset-3" url="http://art-decor.org/decor/services/" ident="hl7de-"><!--
+ This is a view of the dataset "Diagnosen" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">Diagnosen</name>
+    <desc language="de-DE">Diagnosen</desc>
+    <concept id="2.16.840.1.113883.2.6.77.2.3.1700" statusCode="draft" effectiveDate="2015-12-11T00:00:00" type="item" iddisplay="hl7de-dataelement-3.1700" shortName="diagnosesicherheit">
+        <implementation shortName="diagnosesicherheit" markdown="Die Diagnosesicherheit, d.h. wie sicher die Diagnose im Einzelfall zu werten ist, kann unterschiedlich angegeben werden. Für Abrechnungszwecke in der ambulanten Versorgung muss obligatorisch ein Zusatzkennzeichen für die Diagnosesicherheit (A, G, V oder Z) angegeben werden, d. h. die Angabe ist obligatorisch. In der stationären Versorgung sind diese Zusatzkennzeichen für die Angabe der Diagnosesicherheit für Abrechnungszwecke dagegen nicht zulässig."/>
+        <name language="de-DE">Diagnosesicherheit</name>
+        <desc language="de-DE">Die Diagnosesicherheit, d.h. wie sicher die Diagnose im Einzelfall zu werten ist, kann unterschiedlich angegeben werden. Für Abrechnungszwecke in der ambulanten Versorgung muss obligatorisch ein Zusatzkennzeichen für die Diagnosesicherheit (A, G, V oder Z) angegeben werden, d. h. die Angabe ist obligatorisch. In der stationären Versorgung sind diese
+                    Zusatzkennzeichen für die Angabe der Diagnosesicherheit für Abrechnungszwecke dagegen nicht zulässig.</desc>
+        <valueDomain type="code"/>
+    </concept>
+</dataset>

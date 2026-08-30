@@ -1,0 +1,65 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:pharmhl7="urn:hl7-org:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.21.4.3" name="UVClinicalStatementMinimalObservation" displayName="UV ClinicalStatement Observation" statusCode="pending" lastModifiedDate="2023-01-29T21:54:50" versionLabel="R1-STU2-ballot" effectiveDate="2016-05-01T00:00:00" url="http://art-decor.org/decor/services/" ident="pharmcda-" pharmhl7:dummy-1="urn:hl7-org:pharm" xml:dummy-2="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-4="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">Universal Clinical Statement Minimal Observation</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00"/>
+            <context id="**"/>
+            <element name="hl7:observation" id="2.16.840.1.113883.3.1937.777.1.9.357">
+                <attribute name="classCode" value="OBS" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10791"/>
+                <attribute name="moodCode" value="EVN" datatype="cs" id="2.16.840.1.113883.3.1937.777.15.9.10792"/>
+                <attribute name="negationInd" datatype="bl" isOptional="true" id="2.16.840.1.113883.3.1937.777.1.9.360"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10793">
+                    <attribute name="root" value="2.16.840.1.113883.10.21.4.3" datatype="uid" id="2.16.840.1.113883.3.1937.777.15.9.10794"/>
+                </element>
+                <element name="hl7:id" minimumMultiplicity="0" maximumMultiplicity="*" datatype="II" id="2.16.840.1.113883.3.1937.777.15.9.10795"/>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="CD" id="2.16.840.1.113883.3.1937.777.15.9.10796">
+                    <desc language="en-US">This code (e.g. drawn from LOINC) specifies the type of observation, e.g. a lab value (creatinine) or a measurement of the body weight or a body surface.</desc>
+                    <vocabulary domain="ObservationCode"/>
+                </element>
+                <element name="hl7:derivationExpr" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ST" id="2.16.840.1.113883.3.1937.777.15.9.10797"/>
+                <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.3.1937.777.15.9.10798"/>
+                <element name="hl7:statusCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CS" id="2.16.840.1.113883.3.1937.777.15.9.10799">
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.15933"/>
+                </element>
+                <element name="hl7:effectiveTime" minimumMultiplicity="0" maximumMultiplicity="1" datatype="IVL_TS" id="2.16.840.1.113883.3.1937.777.15.9.10800"/>
+                <element name="hl7:priorityCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.15.9.10801">
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.16866"/>
+                </element>
+                <element name="hl7:repeatNumber" minimumMultiplicity="0" maximumMultiplicity="1" datatype="IVL_INT" id="2.16.840.1.113883.3.1937.777.15.9.10802"/>
+                <element name="hl7:languageCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CS" id="2.16.840.1.113883.3.1937.777.15.9.10803">
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.11526"/>
+                </element>
+                <element name="hl7:value" minimumMultiplicity="0" maximumMultiplicity="*" datatype="ANY" id="2.16.840.1.113883.3.1937.777.15.9.10804"/>
+                <element name="hl7:interpretationCode" minimumMultiplicity="0" maximumMultiplicity="*" datatype="CE" id="2.16.840.1.113883.3.1937.777.15.9.10805">
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.78"/>
+                </element>
+                <element name="hl7:methodCode" minimumMultiplicity="0" maximumMultiplicity="*" datatype="CE" id="2.16.840.1.113883.3.1937.777.15.9.10806">
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.14079"/>
+                </element>
+                <element name="hl7:targetSiteCode" minimumMultiplicity="0" maximumMultiplicity="*" datatype="CD" id="2.16.840.1.113883.3.1937.777.15.9.10807">
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.19724"/>
+                </element>
+                <element name="hl7:subject" minimumMultiplicity="0" maximumMultiplicity="1" contains="2.16.840.1.113883.10.12.320" id="2.16.840.1.113883.3.1937.777.15.9.10808"/>
+                <element name="hl7:specimen" minimumMultiplicity="0" maximumMultiplicity="*" contains="2.16.840.1.113883.10.12.322" id="2.16.840.1.113883.3.1937.777.15.9.10809"/>
+                <element name="hl7:performer" minimumMultiplicity="0" maximumMultiplicity="*" contains="2.16.840.1.113883.10.12.323" id="2.16.840.1.113883.3.1937.777.15.9.10810"/>
+                <element name="hl7:author" minimumMultiplicity="0" maximumMultiplicity="*" contains="2.16.840.1.113883.10.12.318" id="2.16.840.1.113883.3.1937.777.15.9.10811"/>
+                <element name="hl7:informant" minimumMultiplicity="0" maximumMultiplicity="*" contains="2.16.840.1.113883.10.12.319" id="2.16.840.1.113883.3.1937.777.15.9.10812"/>
+                <element name="hl7:participant" minimumMultiplicity="0" maximumMultiplicity="*" contains="2.16.840.1.113883.10.12.321" id="2.16.840.1.113883.3.1937.777.15.9.10813"/>
+                <element name="hl7:reference" minimumMultiplicity="0" maximumMultiplicity="*" contains="2.16.840.1.113883.10.12.324" id="2.16.840.1.113883.3.1937.777.15.9.10814"/>
+                <element name="hl7:precondition" minimumMultiplicity="0" maximumMultiplicity="*" contains="2.16.840.1.113883.10.12.329" id="2.16.840.1.113883.3.1937.777.15.9.10815"/>
+                <element name="hl7:referenceRange" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.15.9.10816">
+                    <attribute name="typeCode" value="REFV" datatype="cs" id="2.16.840.1.113883.3.1937.777.1.9.392"/>
+                    <element name="hl7:observationRange" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.15.9.10817">
+                        <attribute name="classCode" value="OBS" datatype="cs" isOptional="true" id="2.16.840.1.113883.3.1937.777.15.9.10818"/>
+                        <attribute name="moodCode" value="EVN.CRT" datatype="cs" isOptional="true" id="2.16.840.1.113883.3.1937.777.15.9.10819"/>
+                        <element name="hl7:code" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CD" id="2.16.840.1.113883.3.1937.777.15.9.10820">
+                            <vocabulary codeSystem="2.16.840.1.113883.5.4"/>
+                        </element>
+                        <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.3.1937.777.15.9.10821"/>
+                        <element name="hl7:value" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ANY" id="2.16.840.1.113883.3.1937.777.15.9.10822"/>
+                        <element name="hl7:interpretationCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.3.1937.777.15.9.10823">
+                            <vocabulary valueSet="2.16.840.1.113883.1.11.78"/>
+                        </element>
+                    </element>
+                </element>
+            </element>
+        </template>

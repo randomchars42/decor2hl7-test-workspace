@@ -1,0 +1,185 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.90025" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pharm="urn:ihe:pharm" id="1.2.276.0.76.10.90025" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="Author (Body)" cda:dummy-4="urn:hl7-org:v3" ident="hl7de-" name="AuthorBody" xml:dummy-2="http://www.w3.org/XML/1998/namespace" pharm:dummy-1="urn:ihe:pharm" statusCode="draft" url="http://art-decor.org/decor/services/" effectiveDate="2014-12-21T00:00:00">
+            <desc language="en-US">Template CDA Author (Body)</desc>
+            <desc language="nl-NL">Template CDA Author (Body)</desc>
+            <classification type="cdaentrylevel"/>
+            <attribute name="typeCode" value="AUT" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.726"/>
+            <attribute name="contextControlCode" value="OP" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.727"/>
+            <element name="hl7:functionCode" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.2.6.77.9.728">
+                <item original="false" label="AuthorBody"/>
+                <vocabulary valueSet="2.16.840.1.113883.1.11.10267" vsid="2.16.840.1.113883.1.11.10267" vsname="ParticipationFunction" vsdisplayName="ParticipationFunction" vsstatusCode="final" vseffectiveDate="2016-06-23T00:00:00" linkedartefactmissing="false"/>
+            </element>
+            <element name="hl7:time" minimumMultiplicity="1" maximumMultiplicity="1" datatype="TS" conformance="R" id="2.16.840.1.113883.2.6.77.9.729">
+                <item original="false" label="AuthorBody"/>
+            </element>
+            <element name="hl7:assignedAuthor" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.77.9.730">
+                <item original="false" label="AuthorBody"/>
+                <attribute name="classCode" value="ASSIGNED" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.731"/>
+                <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="*" datatype="II" conformance="R" id="2.16.840.1.113883.2.6.77.9.732">
+                    <item original="false" label="AuthorBody"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CE" id="2.16.840.1.113883.2.6.77.9.733">
+                    <item original="false" label="AuthorBody"/>
+                    <vocabulary codeSystem="2.16.840.1.113883.5.111"/>
+                </element>
+                <element name="hl7:addr" minimumMultiplicity="0" maximumMultiplicity="*" datatype="AD" id="2.16.840.1.113883.2.6.77.9.734">
+                    <item original="false" label="AuthorBody"/>
+                </element>
+                <element name="hl7:telecom" minimumMultiplicity="0" maximumMultiplicity="*" datatype="TEL" id="2.16.840.1.113883.2.6.77.9.735">
+                    <item original="false" label="AuthorBody"/>
+                </element>
+                <element name="hl7:assignedPerson" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.736">
+                    <item original="false" label="AuthorBody"/>
+                    <include ref="1.2.276.0.76.10.90010" tmid="1.2.276.0.76.10.90010" tmname="PersonElements" tmdisplayName="CDA Person Elements" tmeffectiveDate="2011-12-19T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                        <item original="false" label="AuthorBody"/>
+                        <attribute name="classCode" value="PSN" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.330"/>
+                        <attribute name="determinerCode" value="INSTANCE" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.331"/>
+                        <element name="hl7:name" datatype="PN" id="2.16.840.1.113883.2.6.77.9.332" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                            <item original="false" label="PersonElements"/>
+                        </element>
+                        <staticAssociations/>
+                    </include>
+                </element>
+                <element name="hl7:representedOrganization" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.737">
+                    <item original="false" label="AuthorBody"/>
+                    <include ref="1.2.276.0.76.10.90011" tmid="1.2.276.0.76.10.90011" tmname="OrganizationElements" tmdisplayName="CDA Organization Elements" tmeffectiveDate="2011-12-19T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false">
+                        <item original="false" label="AuthorBody"/>
+                        <attribute name="classCode" value="ORG" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.333"/>
+                        <attribute name="determinerCode" value="INSTANCE" isOptional="true" datatype="cs" id="2.16.840.1.113883.2.6.77.9.334"/>
+                        <element name="hl7:id" datatype="II" id="2.16.840.1.113883.2.6.77.9.335" minimumMultiplicity="0" maximumMultiplicity="*">
+                            <item original="false" label="OrganizationElements"/>
+                        </element>
+                        <element name="hl7:name" datatype="ON" id="2.16.840.1.113883.2.6.77.9.336" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                            <item original="false" label="OrganizationElements"/>
+                        </element>
+                        <element name="hl7:telecom" datatype="TEL" id="2.16.840.1.113883.2.6.77.9.337" minimumMultiplicity="0" maximumMultiplicity="*">
+                            <item original="false" label="OrganizationElements"/>
+                        </element>
+                        <element name="hl7:addr" datatype="AD" id="2.16.840.1.113883.2.6.77.9.338" minimumMultiplicity="0" maximumMultiplicity="1">
+                            <item original="false" label="OrganizationElements"/>
+                        </element>
+                        <staticAssociations/>
+                    </include>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="contains" prefix="vomgt-" flexibility="dynamic" id="1.2.276.0.76.3.1.135.8.10.217" name="BehandlungenProc" displayName="BehandlungenProcedure" effectiveDate="2020-06-23T16:40:19" statusCode="draft" ident="vomgt-"/>
+            <ref type="include" prefix="dguvbbr-" flexibility="dynamic" id="1.2.276.0.76.3.1.261.1.10.4.33" name="ProblemConcernAct" displayName="Problem Concern Act" effectiveDate="2018-10-18T10:02:10" statusCode="draft" ident="dguvbbr-"/>
+            <ref type="dependency" prefix="pmp-" flexibility="2014-11-01T00:00:00" id="1.2.276.0.76.10.1014" name="PersonalMedicationList" displayName="Patientenbezogener Medikationsplan CDA document" effectiveDate="2014-10-20T00:00:00" statusCode="draft" versionLabel="v2015" ident="pmp-"/>
+            <ref type="dependency" prefix="pmp-" flexibility="2014-11-01T00:00:00" id="1.2.276.0.76.10.3041" name="Medicationcurrent" displayName="Aktuelle Medikation" effectiveDate="2014-11-01T00:00:00" statusCode="draft" isClosed="false" ident="pmp-"/>
+            <ref type="contains" prefix="konsab-" flexibility="dynamic" id="1.2.276.0.76.10.3149" name="Konsilanfrage" displayName="Dermatologischer Konsilauftrag" effectiveDate="2020-03-23T14:22:10" statusCode="draft" ident="konsab-"/>
+            <ref type="contains" prefix="konsab-" flexibility="dynamic" id="1.2.276.0.76.10.3150" name="Konsilrueckfrage" displayName="Konsilrückfrage" effectiveDate="2020-03-23T14:33:26" statusCode="draft" ident="konsab-"/>
+            <ref type="contains" prefix="konsab-" flexibility="dynamic" id="1.2.276.0.76.10.3151" name="KonsilZusaetzlicheAngaben" displayName="Zusätzliche Angaben zum Konsil" effectiveDate="2020-03-23T14:44:35" statusCode="draft" ident="konsab-"/>
+            <ref type="contains" prefix="konsab-" flexibility="dynamic" id="1.2.276.0.76.10.3152" name="Konsiliarbericht" displayName="Konsiliarbericht" effectiveDate="2020-03-23T14:50:59" statusCode="draft" ident="konsab-"/>
+            <ref type="contains" prefix="konsab-" flexibility="dynamic" id="1.2.276.0.76.10.3153" name="Konsilabschluss" displayName="Konsilabschluss" effectiveDate="2020-03-23T14:54:31" statusCode="draft" ident="konsab-"/>
+            <ref type="include" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.4022" name="MedicationStatement" displayName="Medikation" effectiveDate="2014-11-01T00:00:00" statusCode="draft" isClosed="false" versionLabel="pmp 2014" ident="pmp-"/>
+            <ref type="include" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.4022" name="MedicationStatement" displayName="Medikation" effectiveDate="2017-06-04T00:00:00" statusCode="draft" isClosed="false" versionLabel="mpp 2017" ident="pmp-"/>
+            <ref type="dependency" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.4022" name="MedicationStatement" displayName="Medikation" effectiveDate="2017-06-04T00:00:00" statusCode="draft" isClosed="false" versionLabel="mpp 2017" ident="pmp-"/>
+            <ref type="include" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.4022" name="MedicationStatement" displayName="Medikation" effectiveDate="2018-11-01T00:00:00" statusCode="draft" isClosed="false" versionLabel="v2019" ident="pmp-"/>
+            <ref type="include" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.4028" name="RelatedPrescription" displayName="Bezug zu Verordnung des Medikaments" effectiveDate="2014-12-21T00:00:00" statusCode="draft" ident="pmp-"/>
+            <ref type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.4074" name="ProblemConcernAct" displayName="Problem Concern Act" effectiveDate="2015-12-06T00:00:00" statusCode="draft" ident="hl7de-"/>
+            <ref type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.4075" name="ProblemObservation" displayName="Problem Observation" effectiveDate="2015-12-06T00:00:00" statusCode="draft" ident="hl7de-"/>
+            <ref type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.4076" name="PriorityPreference" displayName="Priorität Präferenz" effectiveDate="2015-12-06T00:00:00" statusCode="draft" ident="hl7de-"/>
+            <ref type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.4079" name="DiagnoseConcernAct" displayName="Diagnose Concern Act" effectiveDate="2015-12-06T00:00:00" statusCode="draft" ident="hl7de-"/>
+            <ref type="include" prefix="sdguv-" flexibility="dynamic" id="1.2.276.0.76.10.4079" name="DiagnoseConcernAct" displayName="Diagnose Concern Act" effectiveDate="2018-01-30T15:42:05" statusCode="draft" ident="sdguv-"/>
+            <ref type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.4080" name="DiagnoseObservation" displayName="Diagnose Observation" effectiveDate="2015-12-06T00:00:00" statusCode="draft" ident="hl7de-"/>
+            <ref type="include" prefix="elmgmt-" flexibility="dynamic" id="1.2.276.0.76.10.4080" name="DiagnoseObservation" displayName="Diagnose Observation" statusCode="cancelled" effectiveDate="2018-01-17T11:49:50" ident="elmgmt-"/>
+            <ref type="include" prefix="sdguv-" flexibility="dynamic" id="1.2.276.0.76.10.4080" name="DiagnoseObservation" displayName="Diagnose Observation" effectiveDate="2018-01-30T15:36:13" statusCode="draft" ident="sdguv-"/>
+            <ref type="include" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4083" name="MedicationStatement" displayName="Medikation" effectiveDate="2016-04-01T00:00:00" statusCode="retired" isClosed="false" ident="aktin-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4083" name="MedicationStatement" displayName="Medikation" effectiveDate="2016-04-01T00:00:00" statusCode="retired" isClosed="false" ident="aktin-"/>
+            <ref type="contains" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.4085" name="ProcedureActivityProcedure" displayName="Maßnahme" effectiveDate="2017-02-01T00:00:00" statusCode="draft" ident="hl7de-"/>
+            <ref type="contains" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.4086" name="PatientReferralAct" displayName="Überweisung" effectiveDate="2017-02-01T00:00:00" statusCode="draft" ident="hl7de-"/>
+            <ref type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.4257" name="Allergyintoleranceobservation" displayName="Allergie/Unverträglichkeit Observation" effectiveDate="2017-06-04T00:00:00" statusCode="draft" ident="hl7de-"/>
+            <ref type="contains" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.4261" name="Medicationstatementlist" displayName="Medikation Gruppierung" effectiveDate="2017-07-05T00:00:00" statusCode="draft" ident="pmp-"/>
+            <ref type="contains" prefix="konsab-" flexibility="dynamic" id="1.2.276.0.76.10.4305" name="EingebettetesFotoEntry" displayName="Dermatologie eingebettetes Foto" effectiveDate="2020-03-24T16:44:11" statusCode="draft" ident="konsab-"/>
+            <uses type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.90010" name="PersonElements" displayName="CDA Person Elements" statusCode="active" effectiveDate="2011-12-19T00:00:00" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+            <uses type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.90011" name="OrganizationElements" displayName="CDA Organization Elements" statusCode="active" effectiveDate="2011-12-19T00:00:00" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+            <ref type="include" prefix="evthm-" flexibility="dynamic" id="2.16.840.1.113883.2.6.60.12.10.90" effectiveDate="2017-05-29T14:03:53" name="ProblemObservationDiagnosen" displayName="Problem Observation Diagnosen" statusCode="cancelled" ident="evthm-"/>
+            <ref type="include" prefix="evthm-" flexibility="dynamic" id="2.16.840.1.113883.2.6.60.12.10.91" effectiveDate="2017-05-29T15:58:17" name="ProblemConcernActDiagnosen" displayName="Problem Concern Act Diagnosen" statusCode="cancelled" ident="evthm-"/>
+            <ref type="include" prefix="elmgmt-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.36.10.3" name="DiagnoseConcernAct" displayName="Diagnose Concern Act" statusCode="cancelled" effectiveDate="2018-03-02T10:41:13" ident="elmgmt-"/>
+            <ref type="include" prefix="elmgmt-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.36.10.4" name="DiagnoseObservationAB" displayName="Diagnose Observation" statusCode="cancelled" effectiveDate="2018-03-02T10:43:23" ident="elmgmt-"/>
+            <ref type="include" prefix="ssmith-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.41.10.9" name="MedicationStatement1" displayName="Medikation" effectiveDate="2019-03-04T15:44:27" statusCode="draft" isClosed="false" versionLabel="v2019" ident="ssmith-"/>
+            <ref type="include" prefix="medmgmt-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.48.10.3" name="MedicationStatementmedmgmt" displayName="Medikation (medmgmt)" statusCode="pending" isClosed="false" effectiveDate="2018-11-02T00:00:00" ident="medmgmt-"/>
+            <ref type="include" prefix="medmgmt-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.48.10.3" name="MedicationStatementmedmgmt" displayName="Medikation (medmgmt)" statusCode="pending" isClosed="false" effectiveDate="2019-10-25T11:01:47" ident="medmgmt-"/>
+            <ref type="include" prefix="medmgmt-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.48.10.3" name="MedicationStatementmedmgmt" displayName="Medikation (medmgmt)" effectiveDate="2020-06-09T10:00:10" statusCode="draft" isClosed="false" ident="medmgmt-"/>
+            <ref type="contains" prefix="medmgmt-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.48.10.14" name="Medicationstatementlistmedmgmt" displayName="Medikation Gruppierung (medmgmt)" statusCode="pending" effectiveDate="2019-02-09T00:00:00" ident="medmgmt-"/>
+            <ref type="include" prefix="medmgmt-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.48.10.30" name="AllergyintoleranceobservationMedmgmt" displayName="Allergie/Unverträglichkeit Observation (medmgmt)" statusCode="pending" effectiveDate="2019-09-17T17:02:50" ident="medmgmt-"/>
+            <ref type="include" prefix="sgevko-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.53.10.30" name="DiagnoseConcern" displayName="Diagnose Concern Act" effectiveDate="2019-07-11T16:34:50" statusCode="draft" ident="sgevko-"/>
+            <ref type="include" prefix="sgevko-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.53.10.31" name="Diagnose" displayName="Diagnose Observation" effectiveDate="2019-07-11T16:36:40" statusCode="draft" ident="sgevko-"/>
+            <ref type="include" prefix="sgevko-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.53.10.80" name="DiagnoseAU" displayName="Diagnose Observation BerichtAU" effectiveDate="2019-09-19T16:44:31" statusCode="draft" isClosed="false" ident="sgevko-"/>
+            <ref type="contains" prefix="sgevko-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.53.10.152" name="BehandlungenProcedure" displayName="BehandlungenProcedure" effectiveDate="2019-10-09T17:46:15" statusCode="draft" ident="sgevko-"/>
+            <ref type="include" prefix="mide-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.24.10.13" name="MedicationStatementB" displayName="MedikationB" statusCode="cancelled" isClosed="false" effectiveDate="2019-01-16T10:35:01" ident="mide-"/>
+            <ref type="dependency" prefix="mide-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.24.10.13" name="MedicationStatementB" displayName="MedikationB" statusCode="cancelled" isClosed="false" effectiveDate="2019-01-16T10:35:01" ident="mide-"/>
+            <ref type="include" prefix="mide-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.24.10.28" name="MedicationStatementC" displayName="MedikationC" effectiveDate="2019-02-14T16:52:39" statusCode="draft" isClosed="false" ident="mide-"/>
+            <ref type="dependency" prefix="mide-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.24.10.28" name="MedicationStatementC" displayName="MedikationC" effectiveDate="2019-02-14T16:52:39" statusCode="draft" isClosed="false" ident="mide-"/>
+            <ref type="include" prefix="mide-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.24.10.53" name="DiagnoseObservationC" displayName="Diagnose Observation C" effectiveDate="2019-04-08T15:11:18" statusCode="draft" ident="mide-"/>
+            <ref type="include" prefix="mide-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.24.10.54" name="DiagnoseObservationD" displayName="Diagnose Observation D" effectiveDate="2019-04-12T12:07:29" statusCode="draft" ident="mide-"/>
+            <ref type="include" prefix="hauskomet-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.27.10.6" name="MedicationStatement" displayName="Medikation" effectiveDate="2018-09-07T00:00:00" statusCode="draft" isClosed="false" ident="hauskomet-"/>
+            <ref type="contains" prefix="eImpfpass-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.35.10.66" name="ElektronischerImpfpassRejectedVaccination" displayName="Abgelehnte Impfung" effectiveDate="2019-05-24T21:54:03" statusCode="draft" ident="eImpfpass-"/>
+            <ref type="contains" prefix="eImpfpass-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.35.10.119" name="ElektronischerImpfpassImpfung" displayName="Impfung" effectiveDate="2019-07-04T10:17:05" statusCode="draft" ident="eImpfpass-"/>
+            <ref type="include" prefix="eImpfpass-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.35.10.120" name="ElektronischerImpfpassDiagnoseObservation" displayName="Diagnose (hl7de)" effectiveDate="2019-07-04T11:30:52" statusCode="draft" ident="eImpfpass-"/>
+            <ref type="contains" prefix="ewundb-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.36.10.59" name="Kausaltherapiemaßnahme" displayName="Diagnostik- oder Therapiemaßnahme - Procedure" effectiveDate="2019-06-04T09:59:01" statusCode="draft" versionLabel="0.9" ident="ewundb-"/>
+            <ref type="contains" prefix="ewundb-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.36.10.79" name="Massnahme" displayName="Lokaltherapiemaßnahme (NKDUC)" statusCode="cancelled" effectiveDate="2019-06-20T15:15:13" ident="ewundb-"/>
+        </template>
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pharm="urn:ihe:pharm" ref="1.2.276.0.76.10.90025" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="Author (Body)" cda:dummy-4="urn:hl7-org:v3" ident="hl7de-" name="AuthorBody" xml:dummy-2="http://www.w3.org/XML/1998/namespace" pharm:dummy-1="urn:ihe:pharm" statusCode="draft" url="http://art-decor.org/decor/services/" effectiveDate="2014-12-21T00:00:00">
+            <ref type="contains" prefix="vomgt-" flexibility="dynamic" id="1.2.276.0.76.3.1.135.8.10.217" name="BehandlungenProc" displayName="BehandlungenProcedure" effectiveDate="2020-06-23T16:40:19" statusCode="draft" ident="vomgt-"/>
+            <ref type="include" prefix="dguvbbr-" flexibility="dynamic" id="1.2.276.0.76.3.1.261.1.10.4.33" name="ProblemConcernAct" displayName="Problem Concern Act" effectiveDate="2018-10-18T10:02:10" statusCode="draft" ident="dguvbbr-"/>
+            <ref type="dependency" prefix="pmp-" flexibility="2014-11-01T00:00:00" id="1.2.276.0.76.10.1014" name="PersonalMedicationList" displayName="Patientenbezogener Medikationsplan CDA document" effectiveDate="2014-10-20T00:00:00" statusCode="draft" versionLabel="v2015" ident="pmp-"/>
+            <ref type="dependency" prefix="pmp-" flexibility="2014-11-01T00:00:00" id="1.2.276.0.76.10.3041" name="Medicationcurrent" displayName="Aktuelle Medikation" effectiveDate="2014-11-01T00:00:00" statusCode="draft" isClosed="false" ident="pmp-"/>
+            <ref type="contains" prefix="konsab-" flexibility="dynamic" id="1.2.276.0.76.10.3149" name="Konsilanfrage" displayName="Dermatologischer Konsilauftrag" effectiveDate="2020-03-23T14:22:10" statusCode="draft" ident="konsab-"/>
+            <ref type="contains" prefix="konsab-" flexibility="dynamic" id="1.2.276.0.76.10.3150" name="Konsilrueckfrage" displayName="Konsilrückfrage" effectiveDate="2020-03-23T14:33:26" statusCode="draft" ident="konsab-"/>
+            <ref type="contains" prefix="konsab-" flexibility="dynamic" id="1.2.276.0.76.10.3151" name="KonsilZusaetzlicheAngaben" displayName="Zusätzliche Angaben zum Konsil" effectiveDate="2020-03-23T14:44:35" statusCode="draft" ident="konsab-"/>
+            <ref type="contains" prefix="konsab-" flexibility="dynamic" id="1.2.276.0.76.10.3152" name="Konsiliarbericht" displayName="Konsiliarbericht" effectiveDate="2020-03-23T14:50:59" statusCode="draft" ident="konsab-"/>
+            <ref type="contains" prefix="konsab-" flexibility="dynamic" id="1.2.276.0.76.10.3153" name="Konsilabschluss" displayName="Konsilabschluss" effectiveDate="2020-03-23T14:54:31" statusCode="draft" ident="konsab-"/>
+            <ref type="include" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.4022" name="MedicationStatement" displayName="Medikation" effectiveDate="2014-11-01T00:00:00" statusCode="draft" isClosed="false" versionLabel="pmp 2014" ident="pmp-"/>
+            <ref type="include" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.4022" name="MedicationStatement" displayName="Medikation" effectiveDate="2017-06-04T00:00:00" statusCode="draft" isClosed="false" versionLabel="mpp 2017" ident="pmp-"/>
+            <ref type="dependency" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.4022" name="MedicationStatement" displayName="Medikation" effectiveDate="2017-06-04T00:00:00" statusCode="draft" isClosed="false" versionLabel="mpp 2017" ident="pmp-"/>
+            <ref type="include" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.4022" name="MedicationStatement" displayName="Medikation" effectiveDate="2018-11-01T00:00:00" statusCode="draft" isClosed="false" versionLabel="v2019" ident="pmp-"/>
+            <ref type="include" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.4028" name="RelatedPrescription" displayName="Bezug zu Verordnung des Medikaments" effectiveDate="2014-12-21T00:00:00" statusCode="draft" ident="pmp-"/>
+            <ref type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.4074" name="ProblemConcernAct" displayName="Problem Concern Act" effectiveDate="2015-12-06T00:00:00" statusCode="draft" ident="hl7de-"/>
+            <ref type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.4075" name="ProblemObservation" displayName="Problem Observation" effectiveDate="2015-12-06T00:00:00" statusCode="draft" ident="hl7de-"/>
+            <ref type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.4076" name="PriorityPreference" displayName="Priorität Präferenz" effectiveDate="2015-12-06T00:00:00" statusCode="draft" ident="hl7de-"/>
+            <ref type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.4079" name="DiagnoseConcernAct" displayName="Diagnose Concern Act" effectiveDate="2015-12-06T00:00:00" statusCode="draft" ident="hl7de-"/>
+            <ref type="include" prefix="sdguv-" flexibility="dynamic" id="1.2.276.0.76.10.4079" name="DiagnoseConcernAct" displayName="Diagnose Concern Act" effectiveDate="2018-01-30T15:42:05" statusCode="draft" ident="sdguv-"/>
+            <ref type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.4080" name="DiagnoseObservation" displayName="Diagnose Observation" effectiveDate="2015-12-06T00:00:00" statusCode="draft" ident="hl7de-"/>
+            <ref type="include" prefix="elmgmt-" flexibility="dynamic" id="1.2.276.0.76.10.4080" name="DiagnoseObservation" displayName="Diagnose Observation" statusCode="cancelled" effectiveDate="2018-01-17T11:49:50" ident="elmgmt-"/>
+            <ref type="include" prefix="sdguv-" flexibility="dynamic" id="1.2.276.0.76.10.4080" name="DiagnoseObservation" displayName="Diagnose Observation" effectiveDate="2018-01-30T15:36:13" statusCode="draft" ident="sdguv-"/>
+            <ref type="include" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4083" name="MedicationStatement" displayName="Medikation" effectiveDate="2016-04-01T00:00:00" statusCode="retired" isClosed="false" ident="aktin-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4083" name="MedicationStatement" displayName="Medikation" effectiveDate="2016-04-01T00:00:00" statusCode="retired" isClosed="false" ident="aktin-"/>
+            <ref type="contains" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.4085" name="ProcedureActivityProcedure" displayName="Maßnahme" effectiveDate="2017-02-01T00:00:00" statusCode="draft" ident="hl7de-"/>
+            <ref type="contains" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.4086" name="PatientReferralAct" displayName="Überweisung" effectiveDate="2017-02-01T00:00:00" statusCode="draft" ident="hl7de-"/>
+            <ref type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.4257" name="Allergyintoleranceobservation" displayName="Allergie/Unverträglichkeit Observation" effectiveDate="2017-06-04T00:00:00" statusCode="draft" ident="hl7de-"/>
+            <ref type="contains" prefix="pmp-" flexibility="dynamic" id="1.2.276.0.76.10.4261" name="Medicationstatementlist" displayName="Medikation Gruppierung" effectiveDate="2017-07-05T00:00:00" statusCode="draft" ident="pmp-"/>
+            <ref type="contains" prefix="konsab-" flexibility="dynamic" id="1.2.276.0.76.10.4305" name="EingebettetesFotoEntry" displayName="Dermatologie eingebettetes Foto" effectiveDate="2020-03-24T16:44:11" statusCode="draft" ident="konsab-"/>
+            <uses type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.90010" name="PersonElements" displayName="CDA Person Elements" statusCode="active" effectiveDate="2011-12-19T00:00:00" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+            <uses type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.90011" name="OrganizationElements" displayName="CDA Organization Elements" statusCode="active" effectiveDate="2011-12-19T00:00:00" url="http://art-decor.org/decor/services/" ident="hl7de-"/>
+            <ref type="include" prefix="evthm-" flexibility="dynamic" id="2.16.840.1.113883.2.6.60.12.10.90" effectiveDate="2017-05-29T14:03:53" name="ProblemObservationDiagnosen" displayName="Problem Observation Diagnosen" statusCode="cancelled" ident="evthm-"/>
+            <ref type="include" prefix="evthm-" flexibility="dynamic" id="2.16.840.1.113883.2.6.60.12.10.91" effectiveDate="2017-05-29T15:58:17" name="ProblemConcernActDiagnosen" displayName="Problem Concern Act Diagnosen" statusCode="cancelled" ident="evthm-"/>
+            <ref type="include" prefix="elmgmt-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.36.10.3" name="DiagnoseConcernAct" displayName="Diagnose Concern Act" statusCode="cancelled" effectiveDate="2018-03-02T10:41:13" ident="elmgmt-"/>
+            <ref type="include" prefix="elmgmt-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.36.10.4" name="DiagnoseObservationAB" displayName="Diagnose Observation" statusCode="cancelled" effectiveDate="2018-03-02T10:43:23" ident="elmgmt-"/>
+            <ref type="include" prefix="ssmith-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.41.10.9" name="MedicationStatement1" displayName="Medikation" effectiveDate="2019-03-04T15:44:27" statusCode="draft" isClosed="false" versionLabel="v2019" ident="ssmith-"/>
+            <ref type="include" prefix="medmgmt-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.48.10.3" name="MedicationStatementmedmgmt" displayName="Medikation (medmgmt)" statusCode="pending" isClosed="false" effectiveDate="2018-11-02T00:00:00" ident="medmgmt-"/>
+            <ref type="include" prefix="medmgmt-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.48.10.3" name="MedicationStatementmedmgmt" displayName="Medikation (medmgmt)" statusCode="pending" isClosed="false" effectiveDate="2019-10-25T11:01:47" ident="medmgmt-"/>
+            <ref type="include" prefix="medmgmt-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.48.10.3" name="MedicationStatementmedmgmt" displayName="Medikation (medmgmt)" effectiveDate="2020-06-09T10:00:10" statusCode="draft" isClosed="false" ident="medmgmt-"/>
+            <ref type="contains" prefix="medmgmt-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.48.10.14" name="Medicationstatementlistmedmgmt" displayName="Medikation Gruppierung (medmgmt)" statusCode="pending" effectiveDate="2019-02-09T00:00:00" ident="medmgmt-"/>
+            <ref type="include" prefix="medmgmt-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.48.10.30" name="AllergyintoleranceobservationMedmgmt" displayName="Allergie/Unverträglichkeit Observation (medmgmt)" statusCode="pending" effectiveDate="2019-09-17T17:02:50" ident="medmgmt-"/>
+            <ref type="include" prefix="sgevko-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.53.10.30" name="DiagnoseConcern" displayName="Diagnose Concern Act" effectiveDate="2019-07-11T16:34:50" statusCode="draft" ident="sgevko-"/>
+            <ref type="include" prefix="sgevko-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.53.10.31" name="Diagnose" displayName="Diagnose Observation" effectiveDate="2019-07-11T16:36:40" statusCode="draft" ident="sgevko-"/>
+            <ref type="include" prefix="sgevko-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.53.10.80" name="DiagnoseAU" displayName="Diagnose Observation BerichtAU" effectiveDate="2019-09-19T16:44:31" statusCode="draft" isClosed="false" ident="sgevko-"/>
+            <ref type="contains" prefix="sgevko-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.53.10.152" name="BehandlungenProcedure" displayName="BehandlungenProcedure" effectiveDate="2019-10-09T17:46:15" statusCode="draft" ident="sgevko-"/>
+            <ref type="include" prefix="mide-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.24.10.13" name="MedicationStatementB" displayName="MedikationB" statusCode="cancelled" isClosed="false" effectiveDate="2019-01-16T10:35:01" ident="mide-"/>
+            <ref type="dependency" prefix="mide-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.24.10.13" name="MedicationStatementB" displayName="MedikationB" statusCode="cancelled" isClosed="false" effectiveDate="2019-01-16T10:35:01" ident="mide-"/>
+            <ref type="include" prefix="mide-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.24.10.28" name="MedicationStatementC" displayName="MedikationC" effectiveDate="2019-02-14T16:52:39" statusCode="draft" isClosed="false" ident="mide-"/>
+            <ref type="dependency" prefix="mide-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.24.10.28" name="MedicationStatementC" displayName="MedikationC" effectiveDate="2019-02-14T16:52:39" statusCode="draft" isClosed="false" ident="mide-"/>
+            <ref type="include" prefix="mide-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.24.10.53" name="DiagnoseObservationC" displayName="Diagnose Observation C" effectiveDate="2019-04-08T15:11:18" statusCode="draft" ident="mide-"/>
+            <ref type="include" prefix="mide-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.24.10.54" name="DiagnoseObservationD" displayName="Diagnose Observation D" effectiveDate="2019-04-12T12:07:29" statusCode="draft" ident="mide-"/>
+            <ref type="include" prefix="hauskomet-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.27.10.6" name="MedicationStatement" displayName="Medikation" effectiveDate="2018-09-07T00:00:00" statusCode="draft" isClosed="false" ident="hauskomet-"/>
+            <ref type="contains" prefix="eImpfpass-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.35.10.66" name="ElektronischerImpfpassRejectedVaccination" displayName="Abgelehnte Impfung" effectiveDate="2019-05-24T21:54:03" statusCode="draft" ident="eImpfpass-"/>
+            <ref type="contains" prefix="eImpfpass-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.35.10.119" name="ElektronischerImpfpassImpfung" displayName="Impfung" effectiveDate="2019-07-04T10:17:05" statusCode="draft" ident="eImpfpass-"/>
+            <ref type="include" prefix="eImpfpass-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.35.10.120" name="ElektronischerImpfpassDiagnoseObservation" displayName="Diagnose (hl7de)" effectiveDate="2019-07-04T11:30:52" statusCode="draft" ident="eImpfpass-"/>
+            <ref type="contains" prefix="ewundb-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.36.10.59" name="Kausaltherapiemaßnahme" displayName="Diagnostik- oder Therapiemaßnahme - Procedure" effectiveDate="2019-06-04T09:59:01" statusCode="draft" versionLabel="0.9" ident="ewundb-"/>
+            <ref type="contains" prefix="ewundb-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.36.10.79" name="Massnahme" displayName="Lokaltherapiemaßnahme (NKDUC)" statusCode="cancelled" effectiveDate="2019-06-20T15:15:13" ident="ewundb-"/>
+        </template>
+    </template>
+</result>

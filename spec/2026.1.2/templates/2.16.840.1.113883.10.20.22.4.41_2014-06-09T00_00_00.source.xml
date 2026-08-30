@@ -1,0 +1,106 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:local="http://art-decor.org/local" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.20.22.4.41" name="PlannedProcedureV2" effectiveDate="2014-06-09T00:00:00" statusCode="draft" displayName="Planned Procedure (V2)" versionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-" sdtc:dummy-1="urn:hl7-org:sdtc" local:dummy-2="http://art-decor.org/local" xml:dummy-3="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-5="urn:hl7-org:v3" xsi:dummy-6="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">This template represents planned alterations of the patient's physical condition. Examples of such procedures are tracheostomy, knee replacement, and craniectomy. The priority of the procedure to the patient and provider is communicated through Priority Preference. The effectiveTime indicates the time when the procedure is intended to take place and authorTime
+                indicates when the documentation of the plan occurred. The Planned Procedure Template may also indicate the potential insurance coverage for the procedure.</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.306" flexibility="2005-09-07T00:00:00"/>
+            <relationship type="VERSION" template="2.16.840.1.113883.10.20.22.4.41" flexibility="2013-01-31T00:00:00"/>
+            <context id="**"/>
+            <element name="cda:procedure" id="2.16.840.1.113883.3.1937.99.3.9.3401">
+                <attribute name="classCode" value="PROC" id="2.16.840.1.113883.3.1937.99.3.9.3402">
+                    <desc language="en-US">SHALL contain exactly one [1..1] @classCode="PROC" (CodeSystem: HL7ActClass urn:oid:2.16.840.1.113883.5.6 STATIC) (CONF:1098-8568).</desc>
+                    <item label="CONF:1098-8568"/>
+                </attribute>
+                <attribute name="moodCode" id="2.16.840.1.113883.3.1937.99.3.9.3403">
+                    <desc language="en-US">SHALL contain exactly one [1..1] @moodCode, which SHALL be selected from ValueSet Planned moodCode (Act/Encounter/Procedure) urn:oid:2.16.840.1.113883.11.20.9.23 STATIC 2011-09-30 (CONF:1098-8569).</desc>
+                    <item label="CONF:1098-8569"/>
+                    <vocabulary valueSet="2.16.840.1.113883.11.20.9.23" flexibility="dynamic"/>
+                </attribute>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true">
+                    <desc language="en-US">C-CDA R1.1 templateId root without an extension</desc>
+                    <item label="CONF:1198-32936"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.22.4.41" datatype="uid"/>
+                </element>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.3404">
+                    <desc language="en-US">SHALL contain exactly one [1..1] templateId (CONF:1098-30444) such that it</desc>
+                    <item label="CONF:1098-30444"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.22.4.41" id="2.16.840.1.113883.3.1937.99.3.9.3405">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.22.4.41" (CONF:1098-30445).</desc>
+                        <item label="CONF:1098-30445"/>
+                    </attribute>
+                    <attribute name="extension" value="2014-06-09" id="2.16.840.1.113883.3.1937.99.3.9.3406">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @extension="2014-06-09" (CONF:1098-32554).</desc>
+                        <item label="CONF:1098-32554"/>
+                    </attribute>
+                </element>
+                <element name="cda:id" datatype="II" minimumMultiplicity="1" maximumMultiplicity="*" isMandatory="false" id="2.16.840.1.113883.3.1937.99.3.9.3407">
+                    <desc language="en-US">SHALL contain at least one [1..*] id (CONF:1098-8571).</desc>
+                    <item label="CONF:1098-8571"/>
+                </element>
+                <element name="cda:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="false" id="2.16.840.1.113883.3.1937.99.3.9.3408">
+                    <desc language="en-US">SHALL contain exactly one [1..1] code (CONF:1098-31976).</desc>
+                    <item label="CONF:1098-31976"/>
+                </element>
+                <element name="cda:statusCode" datatype="CS" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.3409">
+                    <desc language="en-US">SHALL contain exactly one [1..1] statusCode (CONF:1098-30446).</desc>
+                    <item label="CONF:1098-30446"/>
+                    <vocabulary code="active"/>
+                </element>
+                <element name="cda:effectiveTime" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.3410">
+                    <desc language="en-US">SHOULD contain zero or one [0..1] effectiveTime (CONF:1098-30447).<p/>The effectiveTime in a planned procedure represents the time that the procedure should occur.</desc>
+                    <item label="CONF:1098-30447"/>
+                </element>
+                <element name="cda:methodCode" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.3411">
+                    <desc language="en-US">MAY contain zero or more [0..*] methodCode (CONF:1098-31980).<p/>In a planned procedure the provider may suggest that a procedure should be performed using a particular method. MethodCode *SHALL NOT* conflict with the method inherent in Procedure / code.</desc>
+                    <item label="CONF:1098-31980"/>
+                </element>
+                <element name="cda:targetSiteCode" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.3412">
+                    <desc language="en-US">MAY contain zero or more [0..*] targetSiteCode, which SHALL be selected from ValueSet Body Site urn:oid:2.16.840.1.113883.3.88.12.3221.8.9 DYNAMIC (CONF:1098-31981).<p/>The targetSiteCode is used to identify the part of the body of concern for the planned procedure.</desc>
+                    <item label="CONF:1098-31981"/>
+                    <vocabulary valueSet="2.16.840.1.113883.3.88.12.3221.8.9"/>
+                </element>
+                <element name="cda:performer" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.3413">
+                    <desc language="en-US">MAY contain zero or more [0..*] performer (CONF:1098-30449).<p/>The clinician who is expected to perform the procedure could be identified using procedure/performer. </desc>
+                    <item label="CONF:1098-30449"/>
+                </element>
+                <element name="cda:author" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" contains="2.16.840.1.113883.10.20.22.4.119" flexibility="2015-08-13T00:00:00" id="2.16.840.1.113883.3.1937.99.3.9.3414">
+                    <desc language="en-US">SHOULD contain zero or one [0..1] Author Participation (identifier: urn:oid:2.16.840.1.113883.10.20.22.4.119) (CONF:1098-31979).<p/>The author in a planned procedure represents the clinician who is requesting or planning the procedure.</desc>
+                    <item label="CONF:1098-31979"/>
+                </element>
+                <element name="cda:entryRelationship" minimumMultiplicity="0" maximumMultiplicity="*" contains="2.16.840.1.113883.10.20.22.4.143" flexibility="2015-08-13T00:00:00" id="2.16.840.1.113883.3.1937.99.3.9.3415">
+                    <desc language="en-US">The following entryRelationship represents the priority that a patient or a provider places on the procedure.</desc>
+                    <item label="CONF:1098-31079"/>
+                    <attribute name="typeCode" value="REFR" id="2.16.840.1.113883.3.1937.99.3.9.3416">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @typeCode="REFR" Refers to (CodeSystem: HL7ActRelationshipType urn:oid:2.16.840.1.113883.5.1002) (CONF:1098-31080).</desc>
+                        <item label="CONF:1098-31080"/>
+                    </attribute>
+                </element>
+                <element name="cda:entryRelationship" minimumMultiplicity="0" maximumMultiplicity="*" contains="2.16.840.1.113883.10.20.22.4.19" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.3.1937.99.3.9.3417">
+                    <desc language="en-US">The following entryRelationship represents the indication for the procedure.</desc>
+                    <item label="CONF:1098-31982"/>
+                    <attribute name="typeCode" value="RSON" id="2.16.840.1.113883.3.1937.99.3.9.3418">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @typeCode="RSON" Has Reason (CodeSystem: HL7ActRelationshipType urn:oid:2.16.840.1.113883.5.1002) (CONF:1098-31983).</desc>
+                        <item label="CONF:1098-31983"/>
+                    </attribute>
+                </element>
+                <element name="cda:entryRelationship" minimumMultiplicity="0" maximumMultiplicity="*" contains="2.16.840.1.113883.10.20.22.4.20" flexibility="2014-06-09T00:00:00" id="2.16.840.1.113883.3.1937.99.3.9.3419">
+                    <desc language="en-US">The following entryRelationship captures any instructions associated with the planned procedure.</desc>
+                    <item label="CONF:1098-31985"/>
+                    <attribute name="typeCode" value="SUBJ" id="2.16.840.1.113883.3.1937.99.3.9.3420">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @typeCode="SUBJ" Has Subject (CodeSystem: HL7ActRelationshipType urn:oid:2.16.840.1.113883.5.1002) (CONF:1098-31986).</desc>
+                        <item label="CONF:1098-31986"/>
+                    </attribute>
+                    <attribute name="inversionInd" value="true" id="2.16.840.1.113883.3.1937.99.3.9.3421">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @inversionInd="true" True (CONF:1098-31987).</desc>
+                        <item label="CONF:1098-31987"/>
+                    </attribute>
+                </element>
+                <element name="cda:entryRelationship" minimumMultiplicity="0" maximumMultiplicity="*" contains="2.16.840.1.113883.10.20.22.4.129" flexibility="2015-08-13T00:00:00" id="2.16.840.1.113883.3.1937.99.3.9.3422">
+                    <desc language="en-US">The following entryRelationship represents the insurance coverage the patient may have for the procedure.</desc>
+                    <item label="CONF:1098-31990"/>
+                    <attribute name="typeCode" value="COMP" id="2.16.840.1.113883.3.1937.99.3.9.3423">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @typeCode="COMP" Has component (CONF:1098-31991).</desc>
+                        <item label="CONF:1098-31991"/>
+                    </attribute>
+                </element>
+            </element>
+        </template>

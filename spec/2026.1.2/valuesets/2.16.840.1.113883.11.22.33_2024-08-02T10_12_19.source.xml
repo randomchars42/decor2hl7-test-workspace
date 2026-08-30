@@ -1,0 +1,15 @@
+<valueSet xmlns:json="http://www.json.org" id="2.16.840.1.113883.11.22.33" name="IPSRouteOfAdmin" displayName="IPS Medicine Route of Administration" effectiveDate="2024-08-02T10:12:19" statusCode="draft" canonicalUri="http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration" lastModifiedDate="2024-08-02T10:13:10" url="http://art-decor.org/decor/services/" ident="hl7ips-">
+    <desc json:array="true" language="en-US" lastTranslated="2024-08-02T10:12:19">&lt;p&gt;EDQM (European Directorate for the Quality of Medicines and Healthcare) Route of Administration codes. This Value Set includes all the EDQM Standard Terms having:&lt;br/&gt;[Concept Status] = ‘Current’ AND&lt;br/&gt;[Concept Class] = ‘ROA’ AND&lt;br/&gt;[Domain] = ‘Human and Veterinary’&lt;/p&gt; &lt;p&gt;ROA = ‘Route of administration’&lt;/p&gt;</desc>
+    <sourceCodeSystem json:array="true" id="0.4.0.127.0.16.1.1.2.1" identifierName="EDQMde" canonicalUri="urn:oid:0.4.0.127.0.16.1.1.2.1" canonicalUriDSTU2="http://fhir.de/CodeSystem/edqm" canonicalUriSTU3="http://fhir.de/CodeSystem/edqm" canonicalUriR4="http://fhir.de/CodeSystem/edqm" canonicalUriR4B="http://fhir.de/CodeSystem/edqm" canonicalUriR5="http://fhir.de/CodeSystem/edqm"/>
+    <publishingAuthority json:array="true" name="HL7 International" inherited="project">
+        <addrLine json:array="true">Health Level Seven International</addrLine>
+        <addrLine json:array="true">455 E. Eisenhower PKWY STE 300 # 025</addrLine>
+        <addrLine json:array="true">Ann Arbor, MI 48108 USA</addrLine>
+        <addrLine json:array="true">USA</addrLine>
+        <addrLine json:array="true" type="phone">+1 734 677 7777 </addrLine>
+        <addrLine json:array="true" type="email">info@hl7.org</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="include" codeSystem="0.4.0.127.0.16.1.1.2.1"/>
+</valueSet>

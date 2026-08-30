@@ -1,0 +1,58 @@
+<codeSystems>
+    <project ident="aktin-">
+        <codeSystem id="1.2.276.0.76.3.1.195.5.103" name="esi-triage-factors" displayName="ESI-Triagefaktoren" effectiveDate="2019-08-15T00:00:00" statusCode="draft" canonicalUri="http://aktin.org/fhir/CodeSystem/aktin-cs-esi-triage-factors" lastModifiedDate="2024-08-19T21:23:29" language="de-DE">
+            <desc language="en-US" lastTranslated="2024-07-19T18:44:21">
+                <p>ESI-Triage</p>
+            </desc>
+            <publishingAuthority name="AKTIN e. V." inherited="project">
+                <addrLine>c/o Uniklinik RWTH Aachen</addrLine>
+                <addrLine>Institut für Medizinische Informatik</addrLine>
+                <addrLine>Pauwelsstraße 35</addrLine>
+                <addrLine>52074 Aachen</addrLine>
+                <addrLine type="phone">Tel. +49 391 67 28186</addrLine>
+                <addrLine type="email">office@aktin.org</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <codedConcept code="1" statusCode="active" level="0" type="L" effectiveDate="2019-08-15T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="sofortige lebensrettende Maßnahme notwendig"/>
+                </codedConcept>
+                <codedConcept code="2" statusCode="active" level="0" type="L" effectiveDate="2019-08-15T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Hochrisikosituation"/>
+                </codedConcept>
+                <codedConcept code="3" statusCode="active" level="0" type="L" effectiveDate="2019-08-15T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="verwirrt"/>
+                </codedConcept>
+                <codedConcept code="4" statusCode="active" level="0" type="L" effectiveDate="2019-08-15T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="lethargisch"/>
+                </codedConcept>
+                <codedConcept code="5" statusCode="active" level="0" type="L" effectiveDate="2019-08-15T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="desorientiert"/>
+                </codedConcept>
+                <codedConcept code="6" statusCode="active" level="0" type="L" effectiveDate="2019-08-15T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="starke Schmerzen"/>
+                </codedConcept>
+                <codedConcept code="7" statusCode="active" level="0" type="L" effectiveDate="2019-08-15T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="starkes Unwohlsein"/>
+                </codedConcept>
+                <codedConcept code="8" statusCode="active" level="0" type="L" effectiveDate="2019-08-15T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="großes kindliches Leid"/>
+                </codedConcept>
+                <codedConcept code="9" statusCode="active" level="0" type="L" effectiveDate="2019-08-15T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="mehr als eine Ressource benötigt"/>
+                </codedConcept>
+                <codedConcept code="10" statusCode="active" level="0" type="L" effectiveDate="2019-08-15T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Vitalzeichen in der Gefahrenzone"/>
+                </codedConcept>
+                <codedConcept code="11" statusCode="active" level="0" type="L" effectiveDate="2019-08-15T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="Vitalzeichen nicht in der Gefahrenzone"/>
+                </codedConcept>
+                <codedConcept code="12" statusCode="active" level="0" type="L" effectiveDate="2019-08-15T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="eine Ressource benötigt"/>
+                </codedConcept>
+                <codedConcept code="13" statusCode="active" level="0" type="L" effectiveDate="2019-08-15T00:00:00">
+                    <designation language="de-DE" type="preferred" displayName="keine Ressourcen benötigt"/>
+                </codedConcept>
+            </conceptList>
+        </codeSystem>
+    </project>
+</codeSystems>

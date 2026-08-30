@@ -1,0 +1,29 @@
+<codeSystems>
+    <repository url="http://art-decor.org/decor/services/" ident="ad5bbr-" referencedFrom="sxehealth-" projecttype="local">
+        <codeSystem id="2.16.840.1.113883.4.642.4.242" name="CompositionStatus" displayName="CompositionStatus" effectiveDate="2019-11-01T09:29:23" statusCode="draft" versionLabel="4.0.1" canonicalUri="http://hl7.org/fhir/composition-status" caseSensitive="true" language="de-DE">
+            <desc language="en-US">The workflow/clinical status of the composition.</desc>
+            <publishingAuthority name="HL7 (FHIR Project)">
+                <addrLine type="uri">http://hl7.org/fhir</addrLine>
+                <addrLine type="email">fhir@lists.hl7.org</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <codedConcept code="preliminary" level="0" type="L" statusCode="active">
+                    <designation displayName="Preliminary" language="en-US" type="preferred"/>
+                    <desc language="en-US">This is a preliminary composition or document (also known as initial or interim). The content may be incomplete or unverified.</desc>
+                </codedConcept>
+                <codedConcept code="final" level="0" type="L" statusCode="active">
+                    <designation displayName="Final" language="en-US" type="preferred"/>
+                    <desc language="en-US">This version of the composition is complete and verified by an appropriate person and no further work is planned. Any subsequent updates would be on a new version of the composition.</desc>
+                </codedConcept>
+                <codedConcept code="amended" level="0" type="L" statusCode="active">
+                    <designation displayName="Amended" language="en-US" type="preferred"/>
+                    <desc language="en-US">The composition content or the referenced resources have been modified (edited or added to) subsequent to being released as "final" and the composition is complete and verified by an authorized person.</desc>
+                </codedConcept>
+                <codedConcept code="entered-in-error" level="0" type="L" statusCode="active">
+                    <designation displayName="Entered in Error" language="en-US" type="preferred"/>
+                    <desc language="en-US">The composition or document was originally created/issued in error, and this is an amendment that marks that the entire series should not be considered as valid.</desc>
+                </codedConcept>
+            </conceptList>
+        </codeSystem>
+    </repository>
+</codeSystems>

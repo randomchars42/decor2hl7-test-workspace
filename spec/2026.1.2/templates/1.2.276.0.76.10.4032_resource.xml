@@ -1,0 +1,128 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.4032" ident="aktin-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.4032" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="Blutdruck systolisch" ident="aktin-" name="Systolicbloodpressure" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="active" url="http://art-decor.org/decor/services/" effectiveDate="2014-09-16T00:00:00">
+            <desc language="de-DE">Blutdruck systolisch</desc>
+            <desc language="en-US">Systolic blood pressure</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.303" tmname="CDAObservation" tmdisplayName="CDA Observation" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <example type="neutral">
+                <observation classCode="OBS" moodCode="EVN">
+                    <templateId root="1.2.276.0.76.10.4032"/>
+                    <id root="1.2.276.0.76.4.17.9814184919" extension="adeb672e-a620-4aa4-9117-bdd8b2505a78"/>
+                    <code code="8480-6" codeSystem="2.16.840.1.113883.6.1" displayName="Systolic blood pressure"/>
+                    <statusCode code="completed"/>
+                    <effectiveTime value="20140919"/>
+                    <value xsi:type="PQ" value="129" unit="mm[Hg]"/>
+                </observation>
+            </example>
+            <element name="hl7:observation" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.866">
+                <item original="false" label="Systolicbloodpressure"/>
+                <attribute name="classCode" value="OBS" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.77.9.867"/>
+                <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.77.9.868"/>
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" id="2.16.840.1.113883.2.6.77.9.869">
+                    <item original="false" label="Systolicbloodpressure"/>
+                    <attribute name="root" value="1.2.276.0.76.10.4032" isOptional="false" datatype="uid" id="2.16.840.1.113883.2.6.77.9.870"/>
+                </element>
+                <element name="hl7:id" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.77.9.871">
+                    <item original="false" label="Systolicbloodpressure"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CE" id="2.16.840.1.113883.2.6.77.9.872">
+                    <item original="false" label="Systolicbloodpressure"/>
+                    <vocabulary code="8480-6" codeSystem="2.16.840.1.113883.6.1" displayName="Systolic blood pressure"/>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="0" maximumMultiplicity="1" datatype="ED" id="2.16.840.1.113883.2.6.77.9.873">
+                    <desc language="de-DE">Lediglich reference in den Text der zugehörigen Section</desc>
+                    <item original="false" label="Systolicbloodpressure"/>
+                    <element name="hl7:reference" minimumMultiplicity="1" maximumMultiplicity="1" datatype="URL" id="2.16.840.1.113883.2.6.77.9.874">
+                        <item original="false" label="Systolicbloodpressure"/>
+                    </element>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" datatype="CS" id="2.16.840.1.113883.2.6.77.9.875">
+                    <item original="false" label="Systolicbloodpressure"/>
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:effectiveTime" minimumMultiplicity="0" maximumMultiplicity="1" datatype="TS" id="2.16.840.1.113883.2.6.77.9.876">
+                    <item original="false" label="Systolicbloodpressure"/>
+                </element>
+                <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="PQ" id="2.16.840.1.113883.2.6.60.3.9.8">
+                    <item original="false" label="Systolicbloodpressure"/>
+                    <property unit="mm[Hg]">
+                        <item original="false" label="Systolicbloodpressure"/>
+                    </property>
+                </element>
+            </element>
+            <staticAssociations>
+                <origconcept ref="2.16.840.1.113883.2.6.60.12.2.247" effectiveDate="2016-10-25T09:12:36" refdisplay="evthm-dataelement-247" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.12.1.1" datasetEffectiveDate="2016-06-27T11:19:09" datasetStatusCode="draft" datasetVersionLabel="1.0" datasetName="eVent@home" ident="evthm-" elementId="2.16.840.1.113883.2.6.60.3.9.8" templateId="1.2.276.0.76.10.4032" templateEffectiveDate="2014-09-16T00:00:00" path="Vitalparameter / nichtinvasiver Blutdruck">
+                    <name language="de-DE">systolisch</name>
+                    <desc language="de-DE">Angabe in mm[Hg]</desc>
+                    <datasetName language="de-DE">eVent@home</datasetName>
+                    <projectName language="de-DE">eVent@home</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.1.11" effectiveDate="2014-01-06T16:43:09" refdisplay="aktin-dataelement2014(1)-11" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.1" datasetEffectiveDate="2014-09-15T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2014.1-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.8" templateId="1.2.276.0.76.10.4032" templateEffectiveDate="2014-09-16T00:00:00" path="Vitalparameter und Scores">
+                    <name language="de-DE">Systolischer Blutdruck</name>
+                    <desc language="de-DE">Erster systolischer Blutdruck des Patienten in der Notaufnahme [mmHg]</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.2.11" effectiveDate="2015-01-15T00:00:00" refdisplay="aktin-dataelement2015(1)-11" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.2" datasetEffectiveDate="2015-01-15T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.1-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.8" templateId="1.2.276.0.76.10.4032" templateEffectiveDate="2014-09-16T00:00:00" path="Vitalparameter und Scores">
+                    <name language="de-DE">Systolischer Blutdruck</name>
+                    <desc language="de-DE">Erster systolischer Blutdruck des Patienten in der Notaufnahme [mmHg]</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.3.11" effectiveDate="2015-11-01T00:00:00" refdisplay="aktin-dataelement2015(2)-11" conceptStatusCode="final" datasetId="2.16.840.1.113883.2.6.60.3.1.3" datasetEffectiveDate="2015-11-01T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2015.2-b" datasetName="Basismodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.8" templateId="1.2.276.0.76.10.4032" templateEffectiveDate="2014-09-16T00:00:00" path="Vitalparameter und Scores">
+                    <name language="de-DE">Systolischer Blutdruck</name>
+                    <desc language="de-DE">Erster systolischer Blutdruck des Patienten in der Notaufnahme [mmHg]</desc>
+                    <datasetName language="de-DE">Basismodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.2.6.60.3.2.4.455" effectiveDate="2014-01-06T16:43:22" refdisplay="aktin-dataelement2016(1)-455" conceptStatusCode="draft" datasetId="2.16.840.1.113883.2.6.60.3.1.4" datasetEffectiveDate="2016-07-12T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2015.1-t" datasetName="Traumamodul-Datensatz" ident="aktin-" elementId="2.16.840.1.113883.2.6.60.3.9.8" templateId="1.2.276.0.76.10.4032" templateEffectiveDate="2014-09-16T00:00:00" path="Präklinik / Präklinische Befunde">
+                    <name language="de-DE">Präklinik: Initialer Blutdruck systolischer</name>
+                    <desc language="de-DE">Erster systolischer Blutdruck des Patienten in der Präklinik [mmHg]</desc>
+                    <datasetName language="de-DE">Traumamodul-Datensatz</datasetName>
+                    <projectName language="en-US" lastTranslated="2022-11-14T19:50:35">Emergency Department Medical Record</projectName>
+                    <projectName language="de-DE" lastTranslated="2022-11-14T19:50:35">AKTIN</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.3.1937.777.22.2.9" effectiveDate="2018-05-15T14:19:26" refdisplay="help-dataelement-9" conceptStatusCode="cancelled" datasetId="2.16.840.1.113883.3.1937.777.22.1.1" datasetEffectiveDate="2018-05-07T19:20:17" datasetStatusCode="draft" datasetVersionLabel="v1" datasetName="HELP Dataset" ident="help-" elementId="2.16.840.1.113883.2.6.77.9.866" templateId="1.2.276.0.76.10.4032" templateEffectiveDate="2014-09-16T00:00:00" path="Daten für die klinische Beschreibung der Stichprobe / Vitaldaten">
+                    <name language="de-DE">Blutdruck systolisch</name>
+                    <name language="en-US">Blood pressure systolic</name>
+                    <desc language="de-DE">
+                        <div>
+                            <table class="detail spaced" width="100%" style="font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px; max-width: 100%; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: rgb(51, 51, 51);">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="3" rowspan="1" style="vertical-align: top;">
+                                            <div class="xforms-control xforms-output xforms-mediatype-text-html xforms-mediatype-text" id="xf-780≡xf-1280" style="display: inline; zoom: 1;">
+                                                <div class="xforms-output-output" id="xf-780≡xf-1280≡≡c" style="zoom: 1;">Erfassung Blutdruck systolisch</div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </desc>
+                    <desc language="en-US">Determination of systolic blood pressure</desc>
+                    <datasetName language="de-DE">HELP Dataset</datasetName>
+                    <datasetName language="en-US"/>
+                    <projectName language="de-DE">HELP</projectName>
+                    <projectName language="en-US">HELP</projectName>
+                </origconcept>
+            </staticAssociations>
+            <ref type="dependency" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.92" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2025-11-12T00:00:00" statusCode="retired" versionLabel="v3transit" lastModifiedDate="2026-03-25T11:04:45" ident="aktin-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="2025-12-01T00:00:00" id="1.2.276.0.76.3.1.195.10.93" name="NotaufnahmeregisterTransitionsversion" displayName="Notaufnahmeregister Transitionsversion" effectiveDate="2026-03-25T11:04:07" statusCode="draft" versionLabel="v4transit" lastModifiedDate="2026-04-29T18:39:46" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.95" name="vitalparametercontainer" displayName="Vitalparameter-Container" effectiveDate="2026-04-27T15:39:06" statusCode="draft" versionLabel="2026" lastModifiedDate="2026-04-27T16:41:18" ident="aktin-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="2026-04-27T15:39:06" id="1.2.276.0.76.3.1.195.10.96" name="VitalSignsSection" displayName="Vitalparameter" effectiveDate="2025-12-01T00:00:00" statusCode="draft" versionLabel="2025" isClosed="false" lastModifiedDate="2026-04-24T12:09:59" ident="aktin-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.1015" name="EmergencymedicineNoteCDAdocumentv1" displayName="Emergency medicine Note CDA document" effectiveDate="2014-09-18T00:00:00" statusCode="active" versionLabel="v1" ident="aktin-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.1019" name="EmergencymedicineNoteCDAdocumentv2" displayName="Emergency medicine Note CDA document" effectiveDate="2016-06-01T00:00:00" statusCode="active" versionLabel="v2" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.3044" name="VitalSignsSection" displayName="Vitalparameter" effectiveDate="2014-09-16T00:00:00" statusCode="active" isClosed="false" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.3044" name="VitalSignsSection" displayName="Vitalparameter" effectiveDate="2015-09-18T00:00:00" statusCode="active" isClosed="false" ident="aktin-"/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4101" name="VitalSignObservationsOrganizer" displayName="Vital Sign Observations Organizer" effectiveDate="2017-02-01T00:00:00" statusCode="draft" lastModifiedDate="2026-04-27T15:47:14" ident="aktin-"/>
+            <ref type="contains" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.4173" name="BlutdruckOrganizer" displayName="Blutdruck Organizer" effectiveDate="2017-05-29T00:00:00" statusCode="draft" ident="hl7de-"/>
+            <ref type="contains" prefix="evthm-" flexibility="dynamic" id="2.16.840.1.113883.2.6.60.12.10.93" effectiveDate="2017-05-29T17:32:28" name="BlutdruckOrganizer" displayName="Blutdruck Organizer" statusCode="cancelled" ident="evthm-"/>
+        </template>
+    </template>
+</result>

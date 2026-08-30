@@ -1,0 +1,116 @@
+<valueSetExpansionSet xmlns:json="http://www.json.org" id="24fc67c9-1135-4772-bc67-c91135677244" effectiveDate="2026-08-27T12:58:19" statusCode="final" current="100" count="361" nonactive="0">
+    <valueSet json:array="true" id="2.16.840.1.113883.1.11.16040" name="EntityCode" displayName="EntityCode" effectiveDate="2014-03-26T00:00:00" statusCode="final" versionLabel="DEFN=UV=VO=1360-20160323" ident="ad2bbr-">
+        <desc json:array="true" language="en-US">&lt;p&gt;&lt;b&gt;History description 2014-03-26: &lt;/b&gt;Lock all vaue sets untouched since 2014-03-26 to trackingId 2014T1_2014_03_26&lt;/p&gt; &lt;b&gt;description: &lt;/b&gt; &lt;p&gt;A value representing the specific kind of Entity the instance represents.&lt;/p&gt; &lt;p&gt;&lt;i&gt;Examples:&lt;/i&gt; A medical building, a Doberman Pinscher, a blood collection tube, a tissue biopsy.&lt;/p&gt; &lt;p&gt;&lt;i&gt;Rationale:&lt;/i&gt; For each
+                    Entity, the value for this attribute is drawn from one of several coding systems depending on the Entity classCode, such as living subjects (animal and plant taxonomies), chemical substance (e.g., IUPAC code), organizations, insurance company, government agency, hospital, park, lake, syringe, etc. It is possible that Entity.code may be so fine grained that it represents a
+                    single instance. An example is the CDC vaccine manufacturer code, modeled as a concept vocabulary, when in fact each concept refers to a single instance.&lt;/p&gt;</desc>
+        <conceptList json:array="true"><!-- Value set name: MaterialEntityClassType-->
+            <include json:array="true" ref="2.16.840.1.113883.1.11.16041" flexibility="2014-03-26T00:00:00" exception="false"/><!-- Value set name: PlaceEntityType-->
+            <include json:array="true" ref="2.16.840.1.113883.1.11.16100" flexibility="2014-03-26T00:00:00" exception="false"/><!-- Value set name: OrganizationEntityType-->
+            <include json:array="true" ref="2.16.840.1.113883.1.11.19608" flexibility="2014-03-26T00:00:00" exception="false"/><!-- Value set name: ResourceGroupEntityType-->
+            <include json:array="true" ref="2.16.840.1.113883.1.11.19652" flexibility="2014-03-26T00:00:00" exception="false"/><!-- Value set name: x_AdministeredSubstance-->
+            <include json:array="true" ref="2.16.840.1.113883.1.11.19667" flexibility="2014-03-26T00:00:00" exception="false"/>
+        </conceptList>
+    </valueSet>
+    <expansion json:array="true" expanded="true" max="100" id="24fc67c9-1135-4772-bc67-c91135677244">
+        <items json:array="true" is="concept" code="_ContainerEntityType" codeSystem="2.16.840.1.113883.5.1060" displayName="ContainerEntityType" level="1" type="A"/>
+        <items json:array="true" is="concept" code="PKG" codeSystem="2.16.840.1.113883.5.1060" displayName="Package" level="2" type="S"/>
+        <items json:array="true" is="concept" code="_NonRigidContainerEntityType" codeSystem="2.16.840.1.113883.5.1060" displayName="NonRigidContainerEntityType" level="3" type="A"/>
+        <items json:array="true" is="concept" code="BAG" codeSystem="2.16.840.1.113883.5.1060" displayName="Bag" level="4" type="L"/>
+        <items json:array="true" is="concept" code="PACKT" codeSystem="2.16.840.1.113883.5.1060" displayName="Packet" level="4" type="L"/>
+        <items json:array="true" is="concept" code="PCH" codeSystem="2.16.840.1.113883.5.1060" displayName="Pouch" level="4" type="L"/>
+        <items json:array="true" is="concept" code="SACH" codeSystem="2.16.840.1.113883.5.1060" displayName="Sachet" level="4" type="L"/>
+        <items json:array="true" is="concept" code="_RigidContainerEntityType" codeSystem="2.16.840.1.113883.5.1060" displayName="RigidContainerEntityType" level="3" type="A"/>
+        <items json:array="true" is="concept" code="_IndividualPackageEntityType" codeSystem="2.16.840.1.113883.5.1060" displayName="IndividualPackageEntityType" level="4" type="A"/>
+        <items json:array="true" is="concept" code="AMP" codeSystem="2.16.840.1.113883.5.1060" displayName="Ampule" level="5" type="L"/>
+        <items json:array="true" is="concept" code="MINIM" codeSystem="2.16.840.1.113883.5.1060" displayName="Minim" level="5" type="L"/>
+        <items json:array="true" is="concept" code="NEBAMP" codeSystem="2.16.840.1.113883.5.1060" displayName="Nebuamp" level="5" type="L"/>
+        <items json:array="true" is="concept" code="OVUL" codeSystem="2.16.840.1.113883.5.1060" displayName="Ovule" level="5" type="L"/>
+        <items json:array="true" is="concept" code="_MultiUseContainerEntityType" codeSystem="2.16.840.1.113883.5.1060" displayName="MultiUseContainerEntityType" level="4" type="A"/>
+        <items json:array="true" is="concept" code="BOT" codeSystem="2.16.840.1.113883.5.1060" displayName="Bottle" level="5" type="S"/>
+        <items json:array="true" is="concept" code="BOTA" codeSystem="2.16.840.1.113883.5.1060" displayName="Amber Bottle" level="6" type="L"/>
+        <items json:array="true" is="concept" code="BOTD" codeSystem="2.16.840.1.113883.5.1060" displayName="Dropper Bottle" level="6" type="L"/>
+        <items json:array="true" is="concept" code="BOTG" codeSystem="2.16.840.1.113883.5.1060" displayName="Glass Bottle" level="6" type="L"/>
+        <items json:array="true" is="concept" code="BOTP" codeSystem="2.16.840.1.113883.5.1060" displayName="Plastic Bottle" level="6" type="S"/>
+        <items json:array="true" is="concept" code="BOTPLY" codeSystem="2.16.840.1.113883.5.1060" displayName="Polyethylene Bottle" level="7" type="L"/>
+        <items json:array="true" is="concept" code="BOX" codeSystem="2.16.840.1.113883.5.1060" displayName="Box" level="5" type="L"/>
+        <items json:array="true" is="concept" code="CAN" codeSystem="2.16.840.1.113883.5.1060" displayName="Can" level="5" type="L"/>
+        <items json:array="true" is="concept" code="CART" codeSystem="2.16.840.1.113883.5.1060" displayName="Cartridge" level="5" type="L"/>
+        <items json:array="true" is="concept" code="CNSTR" codeSystem="2.16.840.1.113883.5.1060" displayName="Canister" level="5" type="L"/>
+        <items json:array="true" is="concept" code="JAR" codeSystem="2.16.840.1.113883.5.1060" displayName="Jar" level="5" type="L"/>
+        <items json:array="true" is="concept" code="JUG" codeSystem="2.16.840.1.113883.5.1060" displayName="Jug" level="5" type="L"/>
+        <items json:array="true" is="concept" code="TIN" codeSystem="2.16.840.1.113883.5.1060" displayName="Tin" level="5" type="L"/>
+        <items json:array="true" is="concept" code="TUB" codeSystem="2.16.840.1.113883.5.1060" displayName="Tub" level="5" type="L"/>
+        <items json:array="true" is="concept" code="TUBE" codeSystem="2.16.840.1.113883.5.1060" displayName="Tube" level="5" type="L"/>
+        <items json:array="true" is="concept" code="VIAL" codeSystem="2.16.840.1.113883.5.1060" displayName="Vial" level="5" type="L"/>
+        <items json:array="true" is="concept" code="BLSTRPK" codeSystem="2.16.840.1.113883.5.1060" displayName="Blister Pack" level="4" type="S"/>
+        <items json:array="true" is="concept" code="BLSTRPK" codeSystem="2.16.840.1.113883.5.1060" displayName="Blister Pack" level="4" type="S"/>
+        <items json:array="true" is="concept" code="CARD" codeSystem="2.16.840.1.113883.5.1060" displayName="Card" level="5" type="L"/>
+        <items json:array="true" is="concept" code="CARD" codeSystem="2.16.840.1.113883.5.1060" displayName="Card" level="5" type="L"/>
+        <items json:array="true" is="concept" code="COMPPKG" codeSystem="2.16.840.1.113883.5.1060" displayName="Compliance Package" level="3" type="S"/>
+        <items json:array="true" is="concept" code="BLSTRPK" codeSystem="2.16.840.1.113883.5.1060" displayName="Blister Pack" level="4" type="S"/>
+        <items json:array="true" is="concept" code="BLSTRPK" codeSystem="2.16.840.1.113883.5.1060" displayName="Blister Pack" level="4" type="S"/>
+        <items json:array="true" is="concept" code="CARD" codeSystem="2.16.840.1.113883.5.1060" displayName="Card" level="5" type="L"/>
+        <items json:array="true" is="concept" code="CARD" codeSystem="2.16.840.1.113883.5.1060" displayName="Card" level="5" type="L"/>
+        <items json:array="true" is="concept" code="DIALPK" codeSystem="2.16.840.1.113883.5.1060" displayName="Dial Pack" level="4" type="L"/>
+        <items json:array="true" is="concept" code="DISK" codeSystem="2.16.840.1.113883.5.1060" displayName="Disk" level="4" type="L"/>
+        <items json:array="true" is="concept" code="DOSET" codeSystem="2.16.840.1.113883.5.1060" displayName="Dosette" level="4" type="L"/>
+        <items json:array="true" is="concept" code="STRIP" codeSystem="2.16.840.1.113883.5.1060" displayName="Strip" level="4" type="L"/>
+        <items json:array="true" is="concept" code="KIT" codeSystem="2.16.840.1.113883.5.1060" displayName="Kit" level="3" type="S"/>
+        <items json:array="true" is="concept" code="SYSTM" codeSystem="2.16.840.1.113883.5.1060" displayName="System" level="4" type="L"/>
+        <items json:array="true" is="concept" code="_MedicalDevice" codeSystem="2.16.840.1.113883.5.1060" displayName="MedicalDevice" level="1" type="A"/>
+        <items json:array="true" is="concept" code="_AccessMedicalDevice" codeSystem="2.16.840.1.113883.5.1060" displayName="AccessMedicalDevice" level="2" type="A"/>
+        <items json:array="true" is="concept" code="LINE" codeSystem="2.16.840.1.113883.5.1060" displayName="Line" level="3" type="S"/>
+        <items json:array="true" is="concept" code="IALINE" codeSystem="2.16.840.1.113883.5.1060" displayName="Intra-arterial Line" level="4" type="L"/>
+        <items json:array="true" is="concept" code="IVLINE" codeSystem="2.16.840.1.113883.5.1060" displayName="Intraveneous Line" level="4" type="L"/>
+        <items json:array="true" is="concept" code="_AdministrationMedicalDevice" codeSystem="2.16.840.1.113883.5.1060" displayName="AdministrationMedicalDevice" level="2" type="A"/>
+        <items json:array="true" is="concept" code="_InjectionMedicalDevice" codeSystem="2.16.840.1.113883.5.1060" displayName="InjectionMedicalDevice" level="3" type="A"/>
+        <items json:array="true" is="concept" code="AINJ" codeSystem="2.16.840.1.113883.5.1060" displayName="AutoInjector" level="4" type="L"/>
+        <items json:array="true" is="concept" code="PEN" codeSystem="2.16.840.1.113883.5.1060" displayName="Pen" level="4" type="L"/>
+        <items json:array="true" is="concept" code="SYR" codeSystem="2.16.840.1.113883.5.1060" displayName="Syringe" level="4" type="L"/>
+        <items json:array="true" is="concept" code="APLCTR" codeSystem="2.16.840.1.113883.5.1060" displayName="Applicator" level="3" type="L"/>
+        <items json:array="true" is="concept" code="INH" codeSystem="2.16.840.1.113883.5.1060" displayName="Inhaler" level="3" type="S"/>
+        <items json:array="true" is="concept" code="DSKS" codeSystem="2.16.840.1.113883.5.1060" displayName="Diskus" level="4" type="L"/>
+        <items json:array="true" is="concept" code="DSKUNH" codeSystem="2.16.840.1.113883.5.1060" displayName="Diskhaler" level="4" type="L"/>
+        <items json:array="true" is="concept" code="TRBINH" codeSystem="2.16.840.1.113883.5.1060" displayName="Turbuhaler" level="4" type="L"/>
+        <items json:array="true" is="concept" code="PMP" codeSystem="2.16.840.1.113883.5.1060" displayName="Pump" level="3" type="L"/>
+        <items json:array="true" is="concept" code="_SpecimenAdditiveEntity" codeSystem="2.16.840.1.113883.5.1060" displayName="SpecimenAdditiveEntity" level="1" type="A"/>
+        <items json:array="true" is="concept" code="ACDA" codeSystem="2.16.840.1.113883.5.1060" displayName="ACD Solution A" level="2" type="L"/>
+        <items json:array="true" is="concept" code="ACDB" codeSystem="2.16.840.1.113883.5.1060" displayName="ACD Solution B" level="2" type="L"/>
+        <items json:array="true" is="concept" code="ACET" codeSystem="2.16.840.1.113883.5.1060" displayName="Acetic Acid" level="2" type="L"/>
+        <items json:array="true" is="concept" code="AMIES" codeSystem="2.16.840.1.113883.5.1060" displayName="Amies transport medium" level="2" type="L"/>
+        <items json:array="true" is="concept" code="BACTM" codeSystem="2.16.840.1.113883.5.1060" displayName="Bacterial Transport medium" level="2" type="L"/>
+        <items json:array="true" is="concept" code="BF10" codeSystem="2.16.840.1.113883.5.1060" displayName="Buffered 10% formalin" level="2" type="L"/>
+        <items json:array="true" is="concept" code="BOR" codeSystem="2.16.840.1.113883.5.1060" displayName="Boric Acid" level="2" type="L"/>
+        <items json:array="true" is="concept" code="BOUIN" codeSystem="2.16.840.1.113883.5.1060" displayName="Bouin's solution" level="2" type="L"/>
+        <items json:array="true" is="concept" code="BSKM" codeSystem="2.16.840.1.113883.5.1060" displayName="Buffered skim milk" level="2" type="L"/>
+        <items json:array="true" is="concept" code="C32" codeSystem="2.16.840.1.113883.5.1060" displayName="3.2% Citrate" level="2" type="L"/>
+        <items json:array="true" is="concept" code="C38" codeSystem="2.16.840.1.113883.5.1060" displayName="3.8% Citrate" level="2" type="L"/>
+        <items json:array="true" is="concept" code="CARS" codeSystem="2.16.840.1.113883.5.1060" displayName="Carson's Modified 10% formalin" level="2" type="L"/>
+        <items json:array="true" is="concept" code="CARY" codeSystem="2.16.840.1.113883.5.1060" displayName="Cary Blair Medium" level="2" type="L"/>
+        <items json:array="true" is="concept" code="CHLTM" codeSystem="2.16.840.1.113883.5.1060" displayName="Chlamydia transport medium" level="2" type="L"/>
+        <items json:array="true" is="concept" code="CTAD" codeSystem="2.16.840.1.113883.5.1060" displayName="CTAD" level="2" type="L"/>
+        <items json:array="true" is="concept" code="EDTK15" codeSystem="2.16.840.1.113883.5.1060" displayName="Potassium/K EDTA 15%" level="2" type="L"/>
+        <items json:array="true" is="concept" code="EDTK75" codeSystem="2.16.840.1.113883.5.1060" displayName="Potassium/K EDTA 7.5%" level="2" type="L"/>
+        <items json:array="true" is="concept" code="EDTN" codeSystem="2.16.840.1.113883.5.1060" displayName="Sodium/Na EDTA" level="2" type="L"/>
+        <items json:array="true" is="concept" code="ENT" codeSystem="2.16.840.1.113883.5.1060" displayName="Enteric bacteria transport medium" level="2" type="L"/>
+        <items json:array="true" is="concept" code="F10" codeSystem="2.16.840.1.113883.5.1060" displayName="10% Formalin" level="2" type="L"/>
+        <items json:array="true" is="concept" code="FDP" codeSystem="2.16.840.1.113883.5.1060" displayName="Thrombin NIH; soybean trypsin inhibitor" level="2" type="L"/>
+        <items json:array="true" is="concept" code="FL10" codeSystem="2.16.840.1.113883.5.1060" displayName="Sodium Fluoride, 10mg" level="2" type="L"/>
+        <items json:array="true" is="concept" code="FL100" codeSystem="2.16.840.1.113883.5.1060" displayName="Sodium Fluoride, 100mg" level="2" type="L"/>
+        <items json:array="true" is="concept" code="HCL6" codeSystem="2.16.840.1.113883.5.1060" displayName="6N HCL" level="2" type="L"/>
+        <items json:array="true" is="concept" code="HEPA" codeSystem="2.16.840.1.113883.5.1060" displayName="Ammonium heparin" level="2" type="L"/>
+        <items json:array="true" is="concept" code="HEPL" codeSystem="2.16.840.1.113883.5.1060" displayName="Lithium/Li Heparin" level="2" type="L"/>
+        <items json:array="true" is="concept" code="HEPN" codeSystem="2.16.840.1.113883.5.1060" displayName="Sodium/Na Heparin" level="2" type="L"/>
+        <items json:array="true" is="concept" code="HNO3" codeSystem="2.16.840.1.113883.5.1060" displayName="Nitric Acid" level="2" type="L"/>
+        <items json:array="true" is="concept" code="JKM" codeSystem="2.16.840.1.113883.5.1060" displayName="Jones Kendrick Medium" level="2" type="L"/>
+        <items json:array="true" is="concept" code="KARN" codeSystem="2.16.840.1.113883.5.1060" displayName="Karnovsky's fixative" level="2" type="L"/>
+        <items json:array="true" is="concept" code="KOX" codeSystem="2.16.840.1.113883.5.1060" displayName="Potassium Oxalate" level="2" type="L"/>
+        <items json:array="true" is="concept" code="LIA" codeSystem="2.16.840.1.113883.5.1060" displayName="Lithium iodoacetate" level="2" type="L"/>
+        <items json:array="true" is="concept" code="M4" codeSystem="2.16.840.1.113883.5.1060" displayName="M4" level="2" type="L"/>
+        <items json:array="true" is="concept" code="M4RT" codeSystem="2.16.840.1.113883.5.1060" displayName="M4-RT" level="2" type="L"/>
+        <items json:array="true" is="concept" code="M5" codeSystem="2.16.840.1.113883.5.1060" displayName="M5" level="2" type="L"/>
+        <items json:array="true" is="concept" code="MICHTM" codeSystem="2.16.840.1.113883.5.1060" displayName="Michel's transport medium" level="2" type="L"/>
+        <items json:array="true" is="concept" code="MMDTM" codeSystem="2.16.840.1.113883.5.1060" displayName="MMD transport medium" level="2" type="L"/>
+        <items json:array="true" is="concept" code="NAF" codeSystem="2.16.840.1.113883.5.1060" displayName="Sodium Fluoride" level="2" type="L"/>
+    </expansion>
+</valueSetExpansionSet>

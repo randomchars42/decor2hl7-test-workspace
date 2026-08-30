@@ -1,0 +1,23 @@
+<valueSets>
+    <project ident="pmp-">
+        <valueSet id="2.16.840.1.113883.2.6.60.4.11.25" effectiveDate="2017-03-30T00:00:00" name="ActStatusCodeActiveCompletedAbortedSuspended" displayName="ActStatusActiveCompletedAbortedSuspended" statusCode="draft">
+            <sourceCodeSystem id="2.16.840.1.113883.5.1008" identifierName="Null Flavor" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriDSTU2="http://hl7.org/fhir/v3/NullFlavor" canonicalUriSTU3="http://hl7.org/fhir/v3/NullFlavor" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" context="external/hl7intl/v3/v3-NullFlavor"/>
+            <sourceCodeSystem id="2.16.840.1.113883.5.14" identifierName="ActStatus" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-ActStatus" canonicalUriDSTU2="http://hl7.org/fhir/v3/ActStatus" canonicalUriSTU3="http://hl7.org/fhir/v3/ActStatus" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-ActStatus" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-ActStatus" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-ActStatus" context="external/hl7intl/v3/v3-ActStatus"/>
+            <publishingAuthority name="HL7 Deutschland e. V." inherited="project">
+                <addrLine>HL7 Deutschland e. V.</addrLine>
+                <addrLine>An der Schanz 1</addrLine>
+                <addrLine>50735 Köln</addrLine>
+                <addrLine>T 0700 77 77 67 67</addrLine>
+                <addrLine>F 0700 77 77 67 61</addrLine>
+                <addrLine type="uri">W hl7.de</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <concept code="completed" codeSystem="2.16.840.1.113883.5.14" displayName="Completed" level="0" type="L"/>
+                <concept code="aborted" codeSystem="2.16.840.1.113883.5.14" displayName="Aborted" level="0" type="L"/>
+                <concept code="active" codeSystem="2.16.840.1.113883.5.14" displayName="Active" level="0" type="L"/>
+                <concept code="suspended" codeSystem="2.16.840.1.113883.5.14" displayName="Suspended" level="0" type="L"/>
+                <exception code="UNK" codeSystem="2.16.840.1.113883.5.1008" displayName="Unknown" level="0" type="L"/>
+            </conceptList>
+        </valueSet>
+    </project>
+</valueSets>

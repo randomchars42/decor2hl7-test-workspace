@@ -1,0 +1,121 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.777.21.1.1" effectiveDate="2018-05-07T19:19:12" statusCode="draft" versionLabel="ASIC Dataset" prefix="asic-" shortName="asicdataset" iddisplay="asic-dataset-1" url="http://art-decor.org/decor/services/" ident="asic-"><!--
+ This is a view of the dataset "ASIC-Dataset" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">ASIC-Dataset</name>
+    <desc language="de-DE"/>
+    <concept id="2.16.840.1.113883.3.1937.777.21.2.76" effectiveDate="2018-05-15T10:00:17" statusCode="draft" type="group" iddisplay="asic-dataelement-76">
+        <implementation markdown="Tidalvolumen bei druck- oder volumenkontrollierter Beatmung, Atemzugvolumen, Vt, TV [mL] Das Tidalvolumen (Atemzugvolumen) lässt sich wie folgt berechnen: Bei einem Atemminutenvolumen von 6500 ml und einer Atemfrequenz von 12/min ergibt sich ein Tidalvolumen von 550 ml. Im Notfall muss man die Einstellungen des Beatmungsgeräts mit Schätzformeln festlegen. Die Atemfrequenz orientiert sich dabei an der normalen Atemphysiologie, =&gt;10-12/min. Für die Bestimmung des Tidalvolumens (Atemzugvolumen) hat sich eine Schätzformel etabliert: 8 ml Atemhub pro kg Körpergewicht. Bei 70 kg Gewicht ergibt sich ein Tidalvolumen von 560 ml ; 6 ml/kg KG (Idealgewicht). Im ASIC Use Case muss zwischen - spontanem und Beatmungs-Vt unterschieden werden."/>
+        <name language="de-DE" lastTranslated="2018-08-21T15:42:48">Tidalvolumen (Vt)</name>
+        <desc language="de-DE" lastTranslated="2018-11-20T15:22:03">
+            <span style="display: inline !important; float: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); cursor: text; font-family: arial,sans,sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: pre-wrap; word-spacing: 0px; word-wrap: break-word;">Tidalvolumen bei druck- oder volumenkontrollierter Beatmung, Atemzugvolumen, Vt, TV
+[mL]
+
+
+Das Tidalvolumen (Atemzugvolumen) lässt sich wie folgt berechnen: 
+Bei einem Atemminutenvolumen von 6500 ml und einer Atemfrequenz von 12/min ergibt sich ein Tidalvolumen von 550 ml. 
+
+Im Notfall muss man die Einstellungen des Beatmungsgeräts mit Schätzformeln festlegen. Die Atemfrequenz orientiert sich dabei an der normalen Atemphysiologie,
+=&gt;10-12/min. 
+Für die Bestimmung des Tidalvolumens (Atemzugvolumen) hat sich eine Schätzformel etabliert: 
+8 ml Atemhub pro kg Körpergewicht. 
+
+Bei 70 kg Gewicht ergibt sich ein Tidalvolumen von 560 ml ; 6 ml/kg KG (Idealgewicht).
+
+Im ASIC Use Case muss zwischen 
+- spontanem und Beatmungs-Vt 
+unterschieden werden.
+<i>
+</i>
+            </span>
+        </desc>
+        <concept id="2.16.840.1.113883.3.1937.777.21.2.428" effectiveDate="2019-01-15T15:43:24" statusCode="draft" type="item" iddisplay="asic-dataelement-428" shortName="vt_gerat">
+            <implementation shortName="vt_gerat" markdown="Vom Beatmungsgerät vorgegebenes Tidalvolumen&#xA;[mL]"/>
+            <name language="de-DE">Vt Gerät</name>
+            <desc language="de-DE" lastTranslated="2019-01-15T15:46:17">Vom Beatmungsgerät vorgegebenes Tidalvolumen<br clear="none"/>[mL]<br clear="none"/>
+            </desc>
+            <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.777.24.2.212" flexibility="2018-07-20T14:21:57" prefix="mide-" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" iType="group" iEffectiveDate="2018-07-20T14:21:57" iStatusCode="draft" refdisplay="mide-dataelement-212">
+                <name language="de-DE" lastTranslated="2019-02-07T13:00:12">Monitoring und Vitaldaten </name>
+                <name language="en-US" lastTranslated="2018-10-01T15:05:32">Monitoring data</name>
+            </relationship>
+            <valueDomain type="quantity">
+                <property unit="mL"/>
+                <example type="neutral">400mL</example>
+            </valueDomain>
+            <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.428" conceptFlexibility="2019-01-15T15:43:24" code="76222-9" codeSystem="2.16.840.1.113883.6.1" displayName="Tidal volume Ventilator --on ventilator" effectiveDate="2019-01-24T12:55:30" codeSystemName="Logical Observation Identifier Names and Codes"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.21.2.429" effectiveDate="2019-01-15T15:51:15" statusCode="draft" type="item" iddisplay="asic-dataelement-429" shortName="vt_spontan">
+            <implementation shortName="vt_spontan" markdown="Tidalvolumen bei Spontanatmung&#xA;[mL]"/>
+            <name language="de-DE">Vt spontan</name>
+            <desc language="de-DE" lastTranslated="2019-01-15T15:52:54">Tidalvolumen bei Spontanatmung<br clear="none"/>[mL]<br clear="none"/>
+            </desc>
+            <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.777.24.2.212" flexibility="2018-07-20T14:21:57" prefix="mide-" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" iType="group" iEffectiveDate="2018-07-20T14:21:57" iStatusCode="draft" refdisplay="mide-dataelement-212">
+                <name language="de-DE" lastTranslated="2019-02-07T13:00:12">Monitoring und Vitaldaten </name>
+                <name language="en-US" lastTranslated="2018-10-01T15:05:32">Monitoring data</name>
+            </relationship>
+            <valueDomain type="quantity">
+                <property unit="mL"/>
+                <example type="neutral">375 mL</example>
+            </valueDomain>
+            <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.429" conceptFlexibility="2019-01-15T15:51:15" code="20116-0" codeSystem="2.16.840.1.113883.6.1" displayName="Tidal volume.spontaneous --on ventilator" effectiveDate="2019-01-15T15:56:33" codeSystemName="Logical Observation Identifier Names and Codes"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.21.2.417" statusCode="cancelled" effectiveDate="2018-11-20T15:25:16" type="group" iddisplay="asic-dataelement-417" shortName="vt_xxx">
+            <implementation shortName="vt_xxx" markdown="XXX"/>
+            <name language="de-DE" lastTranslated="2018-11-20T15:27:34">Vt XXX</name>
+            <desc language="de-DE" lastTranslated="2018-11-20T15:28:31">XXX<br clear="none"/>
+            </desc>
+            <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.417" conceptFlexibility="2018-11-20T15:25:16" code="20112-9" codeSystem="2.16.840.1.113883.6.1" displayName="Tidal volume setting Ventilator" effectiveDate="2019-01-15T14:57:08" codeSystemName="Logical Observation Identifier Names and Codes"/>
+            <concept id="2.16.840.1.113883.3.1937.777.21.2.420" statusCode="cancelled" effectiveDate="2018-11-20T15:41:21" type="item" iddisplay="asic-dataelement-420" shortName="inspiratorisches_vt_vti">
+                <implementation shortName="inspiratorisches_vt_vti" markdown="Inspiratorisches Tidalvolumen"/>
+                <name language="de-DE">Inspiratorisches Vt (Vti)</name>
+                <desc language="de-DE">Inspiratorisches Tidalvolumen</desc>
+                <valueDomain type="quantity">
+                    <property unit="mL"/>
+                    <example type="neutral">300 mL</example>
+                </valueDomain>
+                <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.420" conceptFlexibility="2018-11-20T15:41:21" code="698823007" codeSystem="2.16.840.1.113883.6.96" displayName="Inspiratory tidal volume (observable entity)" effectiveDate="2018-11-20T15:43:47" codeSystemName="SNOMED Clinical Terms"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.21.2.419" statusCode="cancelled" effectiveDate="2018-11-20T15:36:29" type="item" iddisplay="asic-dataelement-419" shortName="exspiratorisches_vt_vte">
+                <implementation shortName="exspiratorisches_vt_vte" markdown="Exspiratorisches Tidalvolumen"/>
+                <name language="de-DE" lastTranslated="2018-11-20T15:58:06">Exspiratorisches Vt (Vte)</name>
+                <desc language="de-DE" lastTranslated="2018-11-20T15:37:31">Exspiratorisches Tidalvolumen<br clear="none"/>
+                </desc>
+                <valueDomain type="quantity">
+                    <property unit="mL"/>
+                    <example type="neutral">350 mL</example>
+                </valueDomain>
+                <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.419" conceptFlexibility="2018-11-20T15:36:29" code="698824001" codeSystem="2.16.840.1.113883.6.96" displayName="Expiratory tidal volume (observable entity)" effectiveDate="2018-11-20T15:39:23" codeSystemName="SNOMED Clinical Terms"/>
+            </concept>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.21.2.418" statusCode="cancelled" effectiveDate="2018-11-20T15:31:25" type="group" iddisplay="asic-dataelement-418" shortName="vt_xxy">
+            <implementation shortName="vt_xxy" markdown="Tidalvolumen bei Spontanatmung"/>
+            <name language="de-DE">Vt XXY</name>
+            <desc language="de-DE" lastTranslated="2018-11-20T15:32:38">Tidalvolumen bei Spontanatmung<br clear="none"/>
+            </desc>
+            <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.418" conceptFlexibility="2018-11-20T15:31:25" code="20116-0" codeSystem="2.16.840.1.113883.6.1" displayName="Tidal volume.spontaneous --on ventilator" effectiveDate="2019-01-15T14:52:12" codeSystemName="Logical Observation Identifier Names and Codes"/>
+            <concept id="2.16.840.1.113883.3.1937.777.21.2.422" statusCode="cancelled" effectiveDate="2018-11-20T15:47:42" type="item" iddisplay="asic-dataelement-422" shortName="inspiratorisches_vt_vti">
+                <implementation shortName="inspiratorisches_vt_vti" markdown="Inspiratorisches Tidalvolumen"/>
+                <name language="de-DE" lastTranslated="2018-11-20T15:48:24">Inspiratorisches Vt (Vti)</name>
+                <desc language="de-DE" lastTranslated="2018-11-20T15:49:12">Inspiratorisches Tidalvolumen<br clear="none"/>
+                </desc>
+                <valueDomain type="quantity">
+                    <property unit="mL"/>
+                    <example type="neutral">420 ml</example>
+                </valueDomain>
+                <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.422" conceptFlexibility="2018-11-20T15:47:42" code="698823007" codeSystem="2.16.840.1.113883.6.96" displayName="Inspiratory tidal volume (observable entity)" effectiveDate="2018-11-20T15:50:53" codeSystemName="SNOMED Clinical Terms"/>
+            </concept>
+            <concept id="2.16.840.1.113883.3.1937.777.21.2.421" statusCode="cancelled" effectiveDate="2018-11-20T15:44:57" type="item" iddisplay="asic-dataelement-421" shortName="exspiratorisches_vt_vte">
+                <implementation shortName="exspiratorisches_vt_vte" markdown="Exspiratorisches Tidalvolumen"/>
+                <name language="de-DE" lastTranslated="2018-11-20T16:00:27">Exspiratorisches Vt (Vte)</name>
+                <desc language="de-DE" lastTranslated="2018-11-20T15:46:42">Exspiratorisches Tidalvolumen<br clear="none"/>
+                </desc>
+                <valueDomain type="quantity">
+                    <property unit="mL"/>
+                    <example type="neutral">450 mL</example>
+                </valueDomain>
+                <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.21.2.421" conceptFlexibility="2018-11-20T15:44:57" code="698824001" codeSystem="2.16.840.1.113883.6.96" displayName="Expiratory tidal volume (observable entity)" effectiveDate="2018-11-20T15:51:32" codeSystemName="SNOMED Clinical Terms"/>
+            </concept>
+        </concept>
+    </concept>
+</dataset>

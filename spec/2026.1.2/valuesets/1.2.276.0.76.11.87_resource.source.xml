@@ -1,0 +1,19 @@
+<valueSet xmlns:json="http://www.json.org" id="1.2.276.0.76.11.87" name="ASAscore" displayName="ASA physical status classification" effectiveDate="2017-01-06T00:00:00" statusCode="draft" url="http://art-decor.org/decor/services/" ident="aktin-">
+    <sourceCodeSystem json:array="true" id="1.2.276.0.76.5.87" identifierName="" canonicalUri="urn:oid:1.2.276.0.76.5.87" canonicalUriDSTU2="urn:oid:1.2.276.0.76.5.87" canonicalUriSTU3="urn:oid:1.2.276.0.76.5.87" canonicalUriR4="urn:oid:1.2.276.0.76.5.87" canonicalUriR4B="urn:oid:1.2.276.0.76.5.87" canonicalUriR5="urn:oid:1.2.276.0.76.5.87"/>
+    <publishingAuthority json:array="true" name="AKTIN e. V." inherited="project">
+        <addrLine json:array="true">c/o Uniklinik RWTH Aachen</addrLine>
+        <addrLine json:array="true">Institut für Medizinische Informatik</addrLine>
+        <addrLine json:array="true">Pauwelsstraße 35</addrLine>
+        <addrLine json:array="true">52074 Aachen</addrLine>
+        <addrLine json:array="true" type="phone">Tel. +49 391 67 28186</addrLine>
+        <addrLine json:array="true" type="email">office@aktin.org</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="concept" code="1" codeSystem="1.2.276.0.76.5.87" displayName="ASA 1" level="0" type="L"/>
+    <items json:array="true" is="concept" code="2" codeSystem="1.2.276.0.76.5.87" displayName="ASA 2" level="0" type="L"/>
+    <items json:array="true" is="concept" code="3" codeSystem="1.2.276.0.76.5.87" displayName="ASA 3" level="0" type="L"/>
+    <items json:array="true" is="concept" code="4" codeSystem="1.2.276.0.76.5.87" displayName="ASA 4" level="0" type="L"/>
+    <items json:array="true" is="concept" code="5" codeSystem="1.2.276.0.76.5.87" displayName="ASA 5" level="0" type="L"/>
+    <items json:array="true" is="concept" code="6" codeSystem="1.2.276.0.76.5.87" displayName="ASA 6" level="0" type="L"/>
+</valueSet>

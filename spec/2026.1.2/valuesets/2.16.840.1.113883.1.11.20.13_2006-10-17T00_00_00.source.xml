@@ -1,0 +1,14 @@
+<valueSet xmlns:json="http://www.json.org" id="2.16.840.1.113883.1.11.20.13" name="ProblemStatusCode" displayName="ProblemStatusCode" effectiveDate="2006-10-17T00:00:00" statusCode="draft" url="http://art-decor.org/decor/services/" ident="ccd1-">
+    <sourceCodeSystem json:array="true" id="2.16.840.1.113883.6.96" identifierName="SNOMED Clinical Terms" canonicalUri="http://snomed.info/sct" canonicalUriDSTU2="http://snomed.info/sct" canonicalUriSTU3="http://snomed.info/sct" canonicalUriR4="http://snomed.info/sct" canonicalUriR4B="http://snomed.info/sct" canonicalUriR5="http://snomed.info/sct"/>
+    <publishingAuthority json:array="true" name="ASTM" inherited="project"/>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="concept" code="55561003" codeSystem="2.16.840.1.113883.6.96" displayName="Active" type="L" level="0"/>
+    <items json:array="true" is="concept" code="73425007" codeSystem="2.16.840.1.113883.6.96" displayName="Inactive" type="L" level="0"/>
+    <items json:array="true" is="concept" code="90734009" codeSystem="2.16.840.1.113883.6.96" displayName="Chronic" type="L" level="0"/>
+    <items json:array="true" is="concept" code="7087005" codeSystem="2.16.840.1.113883.6.96" displayName="Intermittent" type="L" level="0"/>
+    <items json:array="true" is="concept" code="255227004" codeSystem="2.16.840.1.113883.6.96" displayName="Recurrent" type="L" level="0"/>
+    <items json:array="true" is="concept" code="415684004" codeSystem="2.16.840.1.113883.6.96" displayName="Rule out" type="L" level="0"/>
+    <items json:array="true" is="concept" code="410516002" codeSystem="2.16.840.1.113883.6.96" displayName="Ruled out" type="L" level="0"/>
+    <items json:array="true" is="concept" code="413322009" codeSystem="2.16.840.1.113883.6.96" displayName="Resolved" type="L" level="0"/>
+</valueSet>

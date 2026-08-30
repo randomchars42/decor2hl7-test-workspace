@@ -1,0 +1,17 @@
+<valueSet xmlns:json="http://www.json.org" id="2.16.840.1.113762.1.4.1010.6" name="CVXVaccinesAdministeredVaccineSet" displayName="CVX Vaccines Administered - Vaccine Set" effectiveDate="2013-01-31T00:00:00" statusCode="final" url="http://art-decor.org/decor/services/" ident="ccda-">
+    <desc json:array="true" language="en-US">Value Set: CVX Vaccines Administered - Vaccine Set 2.16.840.1.113762.1.4.1010.6 CVX vaccine concepts that represent actual vaccines types. This does not include the identifiers for CVX codes that do not represent vaccines. &lt;br/&gt;  Value set intensionally defined from CVX (OID: 2.16.840.1.113883.12.292) &lt;br/&gt;  FilterOnProperty(nonvaccine,FALSE).  &lt;p&gt;Valueset Source: &lt;a href="https://vsac.nlm.nih.gov/"&gt;https://vsac.nlm.nih.gov/&lt;/a&gt;&lt;/p&gt;</desc>
+    <sourceCodeSystem json:array="true" id="2.16.840.1.113883.12.292" identifierName="Vaccine Administered" canonicalUri="http://hl7.org/fhir/sid/cvx" canonicalUriDSTU2="http://hl7.org/fhir/sid/cvx" canonicalUriSTU3="http://hl7.org/fhir/sid/cvx" canonicalUriR4="http://hl7.org/fhir/sid/cvx" canonicalUriR4B="http://hl7.org/fhir/sid/cvx" canonicalUriR5="http://hl7.org/fhir/sid/cvx"/>
+    <publishingAuthority json:array="true" name="HL7 International" inherited="project">
+        <addrLine json:array="true">Health Level Seven International</addrLine>
+        <addrLine json:array="true">3300 Washtenaw Avenue</addrLine>
+        <addrLine json:array="true">Suite 227</addrLine>
+        <addrLine json:array="true">Ann Arbor, MI 48104- 4261</addrLine>
+        <addrLine json:array="true">USA</addrLine>
+        <addrLine json:array="true">T +1 734 677 7777 </addrLine>
+        <addrLine json:array="true">F +1 734 677 6622</addrLine>
+        <addrLine json:array="true">E info@hl7.org</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="include" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CDC Vaccine Code (CVX)"/>
+</valueSet>

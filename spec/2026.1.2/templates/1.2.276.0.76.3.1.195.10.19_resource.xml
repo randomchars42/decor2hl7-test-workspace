@@ -1,0 +1,83 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.3.1.195.10.19" ident="aktin-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.3.1.195.10.19" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" lastModifiedDate="2024-12-02T11:19:19" isClosed="false" displayName="Manchester Triage System" ident="aktin-" name="manchester-triage-system" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="draft" url="http://art-decor.org/decor/services/" effectiveDate="2024-08-13T14:38:45">
+            <desc language="de-DE" lastTranslated="2024-08-13T14:38:45">Manchester Triage System</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.303" tmname="CDAObservation" tmdisplayName="CDA Observation" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <element name="hl7:observation" id="2.16.840.1.113883.3.1937.777.1.9.357">
+                <item original="false" label="manchester-triage-system"/>
+                <attribute name="classCode" value="OBS" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.1.9.358"/>
+                <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs" id="2.16.840.1.113883.3.1937.777.1.9.359"/>
+                <element name="hl7:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.1.9.361">
+                    <item original="false" label="manchester-triage-system"/>
+                    <attribute name="root" value="1.2.276.0.76.3.1.195.10.19" isOptional="false" datatype="uid" id="2.16.840.1.113883.3.1937.777.1.9.362"/>
+                </element>
+                <element name="hl7:id" datatype="II" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.777.1.9.363">
+                    <item original="false" label="manchester-triage-system"/>
+                </element>
+                <element name="hl7:code" datatype="CD" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.777.1.9.364">
+                    <item original="false" label="manchester-triage-system"/>
+                    <vocabulary code="1255867001" codeSystem="2.16.840.1.113883.6.96" displayName="Manchester Triage System score (observable entity)"/>
+                </element>
+                <element name="hl7:text" datatype="ED" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.1631709">
+                    <desc language="de-DE" lastTranslated="2024-08-13T11:45:19">Lediglich reference in den Text der zugehörigen Section</desc>
+                    <item original="false" label="manchester-triage-system"/>
+                    <element name="hl7:reference" datatype="URL" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.2.6.60.3.9.1631710">
+                        <item original="false" label="manchester-triage-system"/>
+                    </element>
+                </element>
+                <element name="hl7:statusCode" datatype="CS" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1631711">
+                    <item original="false" label="manchester-triage-system"/>
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:effectiveTime" datatype="TS" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1631712">
+                    <desc language="de-DE" lastTranslated="2024-08-13T11:45:19">Zeitpunkt</desc>
+                    <item original="false" label="manchester-triage-system"/>
+                </element>
+                <element name="hl7:value" datatype="CE" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.777.1.9.372">
+                    <desc language="de-DE" lastTranslated="2024-08-13T11:45:19">MTS Score, hier optional da übergeordnet schon angegeben</desc>
+                    <item original="false" label="manchester-triage-system"/>
+                    <vocabulary valueSet="1.2.276.0.76.11.44" vsid="1.2.276.0.76.11.44" vsname="manchestertriagesystem" vsdisplayName="Manchester-Triage-System" vseffectiveDate="2024-08-16T17:46:42" vsstatusCode="draft" vsversionLabel="2024" linkedartefactmissing="false"/>
+                </element>
+                <element name="hl7:entryRelationship" contains="1.2.276.0.76.3.1.195.10.21" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.2.6.60.3.9.1632165" tmid="1.2.276.0.76.3.1.195.10.21" tmname="mts-prasentationsdiagramm" tmdisplayName="MTS-Präsentationsdiagramm" tmeffectiveDate="2024-08-13T10:50:15" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <desc language="de-DE" lastTranslated="2024-11-18T13:41:57">MTS-Präsentationsdiagramm</desc>
+                    <item original="false" label="manchester-triage-system"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1632166"/>
+                    <attribute name="contextConductionInd" isOptional="true" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1632167"/>
+                </element>
+                <element name="hl7:entryRelationship" contains="1.2.276.0.76.3.1.195.10.22" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1632168" tmid="1.2.276.0.76.3.1.195.10.22" tmname="mts-indikatoren-rot" tmdisplayName="MTS-Indikatoren ROT" tmeffectiveDate="2024-08-13T10:50:15" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <desc language="de-DE" lastTranslated="2024-11-18T13:41:57">MTS-Indikatoren ROT</desc>
+                    <item original="false" label="manchester-triage-system"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1632169"/>
+                    <attribute name="contextConductionInd" isOptional="true" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1632170"/>
+                </element>
+                <element name="hl7:entryRelationship" contains="1.2.276.0.76.3.1.195.10.23" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1632171" tmid="1.2.276.0.76.3.1.195.10.23" tmname="mts-indikatoren-orange" tmdisplayName="MTS-Indikatoren ORANGE" tmeffectiveDate="2024-08-13T10:50:15" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <desc language="de-DE" lastTranslated="2024-11-18T13:41:57">MTS-Indikatoren ORANGE</desc>
+                    <item original="false" label="manchester-triage-system"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1632172"/>
+                    <attribute name="contextConductionInd" isOptional="true" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1632173"/>
+                </element>
+                <element name="hl7:entryRelationship" contains="1.2.276.0.76.3.1.195.10.24" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1632174" tmid="1.2.276.0.76.3.1.195.10.24" tmname="mts-indikatoren-gelb" tmdisplayName="MTS-Indikatoren GELB" tmeffectiveDate="2024-08-13T10:50:15" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <desc language="de-DE" lastTranslated="2024-11-18T13:41:57">MTS-Indikatoren GELB</desc>
+                    <item original="false" label="manchester-triage-system"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1632175"/>
+                    <attribute name="contextConductionInd" isOptional="true" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1632176"/>
+                </element>
+                <element name="hl7:entryRelationship" contains="1.2.276.0.76.3.1.195.10.25" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.2.6.60.3.9.1632177" tmid="1.2.276.0.76.3.1.195.10.25" tmname="mts-indikatoren-grun" tmdisplayName="MTS-Indikatoren GRÜN" tmeffectiveDate="2024-08-13T10:50:15" tmstatusCode="draft" url="http://art-decor.org/decor/services/" ident="aktin-" linkedartefactmissing="false">
+                    <desc language="de-DE" lastTranslated="2024-11-18T13:41:57">MTS-Indikatoren GRÜN</desc>
+                    <item original="false" label="manchester-triage-system"/>
+                    <attribute name="typeCode" value="COMP" isOptional="false" datatype="cs" id="2.16.840.1.113883.2.6.60.3.9.1632178"/>
+                    <attribute name="contextConductionInd" isOptional="true" datatype="bl" id="2.16.840.1.113883.2.6.60.3.9.1632179"/>
+                </element>
+            </element>
+            <staticAssociations/>
+            <ref type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.18" name="ersteinschatzung" displayName="Ersteinschätzung" effectiveDate="2024-08-13T14:17:50" statusCode="draft" versionLabel="2024" lastModifiedDate="2025-12-22T21:04:53" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.21" name="mts-prasentationsdiagramm" displayName="MTS-Präsentationsdiagramm" effectiveDate="2024-08-13T10:50:15" statusCode="draft" lastModifiedDate="2024-08-13T11:28:09" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.22" name="mts-indikatoren-rot" displayName="MTS-Indikatoren ROT" effectiveDate="2024-08-13T10:50:15" statusCode="draft" lastModifiedDate="2024-08-13T11:28:09" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.23" name="mts-indikatoren-orange" displayName="MTS-Indikatoren ORANGE" effectiveDate="2024-08-13T10:50:15" statusCode="draft" lastModifiedDate="2024-08-13T11:28:09" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.24" name="mts-indikatoren-gelb" displayName="MTS-Indikatoren GELB" effectiveDate="2024-08-13T10:50:15" statusCode="draft" lastModifiedDate="2024-08-13T11:28:09" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+            <uses type="contains" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.3.1.195.10.25" name="mts-indikatoren-grun" displayName="MTS-Indikatoren GRÜN" effectiveDate="2024-08-13T10:50:15" statusCode="draft" lastModifiedDate="2024-08-13T11:28:09" url="http://art-decor.org/decor/services/" ident="aktin-"/>
+        </template>
+    </template>
+</result>

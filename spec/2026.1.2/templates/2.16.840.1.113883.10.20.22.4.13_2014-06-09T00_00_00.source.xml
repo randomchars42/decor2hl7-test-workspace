@@ -1,0 +1,199 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:local="http://art-decor.org/local" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="2.16.840.1.113883.10.20.22.4.13" name="ProcedureActivityObservationV2" displayName="Procedure Activity Observation (V2)" effectiveDate="2014-06-09T00:00:00" statusCode="draft" versionLabel="2.1" url="http://art-decor.org/decor/services/" ident="ccda-" sdtc:dummy-1="urn:hl7-org:sdtc" local:dummy-2="http://art-decor.org/local" xml:dummy-3="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-5="urn:hl7-org:v3" xsi:dummy-6="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="en-US">The common notion of procedure is broader than that specified by the HL7 Version 3 Reference Information Model (RIM). Therefore procedure templates can be represented with various RIM classes: act (e.g., dressing change), observation (e.g., EEG), procedure (e.g., splenectomy). This template represents procedures that result in new information about the patient
+                that cannot be classified as a procedure according to the HL7 RIM. Examples of these procedures are diagnostic imaging procedures, EEGs, and EKGs.</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00"/>
+            <relationship type="VERSION" template="2.16.840.1.113883.10.20.22.4.13" flexibility="2013-01-31T00:00:00"/>
+            <context id="**"/>
+            <element name="cda:observation" id="2.16.840.1.113883.3.1937.99.3.9.3073">
+                <attribute name="classCode" value="OBS" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.3074">
+                    <desc language="en-US">SHALL contain exactly one [1..1] @classCode="OBS" Observation (CodeSystem: HL7ActClass urn:oid:2.16.840.1.113883.5.6 STATIC) (CONF:1098-8282).</desc>
+                    <item label="CONF:1098-8282"/>
+                </attribute>
+                <attribute name="moodCode" value="EVN" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.3075">
+                    <desc language="en-US">SHALL contain exactly one [1..1] @moodCode="EVN" Event (CodeSystem: ActMood urn:oid:2.16.840.1.113883.5.1001 STATIC) (CONF:1098-8237).</desc>
+                    <item label="CONF:1098-8237"/>
+                </attribute>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.56083">
+                    <desc language="en-US">C-CDA R1.1 templateId root without an extension</desc>
+                    <item label="CONF:1198-32936"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.22.4.13" datatype="uid" id="2.16.840.1.113883.3.1937.99.3.9.56084"/>
+                </element>
+                <element name="cda:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.3076">
+                    <desc language="en-US">SHALL contain exactly one [1..1] templateId (CONF:1098-8238) such that it</desc>
+                    <item label="CONF:1098-8238"/>
+                    <attribute name="root" value="2.16.840.1.113883.10.20.22.4.13" datatype="uid" id="2.16.840.1.113883.3.1937.99.3.9.3077">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.22.4.13" (CONF:1098-10520).</desc>
+                        <item label="CONF:1098-10520"/>
+                    </attribute>
+                    <attribute name="extension" value="2014-06-09" datatype="st" id="2.16.840.1.113883.3.1937.99.3.9.3078">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @extension="2014-06-09" (CONF:1098-32507).</desc>
+                        <item label="CONF:1098-32507"/>
+                    </attribute>
+                </element>
+                <element name="cda:id" datatype="II" minimumMultiplicity="1" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.3079">
+                    <desc language="en-US">SHALL contain at least one [1..*] id (CONF:1098-8239).</desc>
+                    <item label="CONF:1098-8239"/>
+                </element>
+                <element name="cda:code" datatype="CD" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.3080">
+                    <desc language="en-US">SHALL contain exactly one [1..1] code (CONF:1098-19197).</desc>
+                    <item label="CONF:1098-19197"/>
+                    <element name="cda:originalText" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.3081">
+                        <desc language="en-US">This code SHOULD contain zero or one [0..1] originalText (CONF:1098-19198).</desc>
+                        <item label="CONF:1098-19198"/>
+                        <element name="cda:reference" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.3082">
+                            <desc language="en-US">The originalText, if present, SHOULD contain zero or one [0..1] reference (CONF:1098-19199).</desc>
+                            <item label="CONF:1098-19199"/>
+                            <attribute name="value" isOptional="true" id="2.16.840.1.113883.3.1937.99.3.9.3083">
+                                <desc language="en-US">The reference, if present, SHOULD contain zero or one [0..1] @value (CONF:1098-19200).</desc>
+                                <item label="CONF:1098-19200"/>
+                            </attribute>
+                            <assert role="error" test="not(@value) or starts-with(@value, '#')">This reference/@value *SHALL* begin with a '#' and *SHALL* point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1).</assert>
+                        </element>
+                    </element>
+                </element>
+                <element name="cda:statusCode" datatype="CS" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.3084">
+                    <desc language="en-US">SHALL contain exactly one [1..1] statusCode (CONF:1098-8245).</desc>
+                    <item label="CONF:1098-8245"/>
+                </element>
+                <element name="cda:effectiveTime" datatype="IVL_TS" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.3085">
+                    <desc language="en-US">SHOULD contain zero or one [0..1] effectiveTime (CONF:1098-8246).</desc>
+                    <item label="CONF:1098-8246"/>
+                </element>
+                <element name="cda:priorityCode" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.3086">
+                    <desc language="en-US">MAY contain zero or one [0..1] priorityCode, which SHALL be selected from ValueSet Act Priority urn:oid:2.16.840.1.113883.1.11.16866 DYNAMIC (CONF:1098-8247).</desc>
+                    <item label="CONF:1098-8247"/>
+                    <vocabulary valueSet="2.16.840.1.113883.1.11.16866"/>
+                </element>
+                <element name="cda:value" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.3087">
+                    <desc language="en-US">SHALL contain exactly one [1..1] value (CONF:1098-16846).</desc>
+                    <item label="CONF:1098-16846"/>
+                    <attribute name="nullFlavor" datatype="cs" isOptional="true" id="2.16.840.1.113883.3.1937.99.3.9.3088">
+                        <desc language="en-US">This value MAY contain zero or one [0..1] @nullFlavor (CONF:1098-32778).</desc>
+                        <item label="CONF:1098-32778"/>
+                    </attribute>
+                </element>
+                <element name="cda:methodCode" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.3089">
+                    <desc language="en-US">MAY contain zero or one [0..1] methodCode (CONF:1098-8248).</desc>
+                    <item label="CONF:1098-8248"/>
+                    <constraint language="en-US">methodCode *SHALL NOT* conflict with the method inherent in Observation / code.</constraint>
+                </element>
+                <element name="cda:targetSiteCode" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.3090">
+                    <desc language="en-US">SHOULD contain zero or more [0..*] targetSiteCode, which SHALL be selected from ValueSet Body Site urn:oid:2.16.840.1.113883.3.88.12.3221.8.9 DYNAMIC (CONF:1098-8250).</desc>
+                    <item label="CONF:1098-8250"/>
+                    <vocabulary valueSet="2.16.840.1.113883.3.88.12.3221.8.9"/>
+                </element>
+                <element name="cda:performer" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.3091">
+                    <desc language="en-US">SHOULD contain zero or more [0..*] performer (CONF:1098-8251).</desc>
+                    <item label="CONF:1098-8251"/>
+                    <element name="cda:assignedEntity" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.3092">
+                        <desc language="en-US">The performer, if present, SHALL contain exactly one [1..1] assignedEntity (CONF:1098-8252).</desc>
+                        <item label="CONF:1098-8252"/>
+                        <element name="cda:id" datatype="II" minimumMultiplicity="1" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.3093">
+                            <desc language="en-US">This assignedEntity SHALL contain at least one [1..*] id (CONF:1098-8253).</desc>
+                            <item label="CONF:1098-8253"/>
+                        </element>
+                        <element name="cda:addr" datatype="AD" minimumMultiplicity="1" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.3094">
+                            <desc language="en-US">This assignedEntity SHALL contain at least one [1..*] addr (CONF:1098-8254).</desc>
+                            <item label="CONF:1098-8254"/>
+                        </element>
+                        <element name="cda:telecom" datatype="TEL" minimumMultiplicity="1" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.3095">
+                            <desc language="en-US">This assignedEntity SHALL contain at least one [1..*] telecom (CONF:1098-8255).</desc>
+                            <item label="CONF:1098-8255"/>
+                        </element>
+                        <element name="cda:representedOrganization" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.3096">
+                            <desc language="en-US">This assignedEntity SHOULD contain zero or one [0..1] representedOrganization (CONF:1098-8256).</desc>
+                            <item label="CONF:1098-8256"/>
+                            <element name="cda:id" datatype="II" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.3097">
+                                <desc language="en-US">The representedOrganization, if present, SHOULD contain zero or more [0..*] id (CONF:1098-8257).</desc>
+                                <item label="CONF:1098-8257"/>
+                            </element>
+                            <element name="cda:name" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.3098">
+                                <desc language="en-US">The representedOrganization, if present, MAY contain zero or more [0..*] name (CONF:1098-8258).</desc>
+                                <item label="CONF:1098-8258"/>
+                            </element>
+                            <element name="cda:telecom" datatype="TEL" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.3099">
+                                <desc language="en-US">The representedOrganization, if present, SHALL contain exactly one [1..1] telecom (CONF:1098-8260).</desc>
+                                <item label="CONF:1098-8260"/>
+                            </element>
+                            <element name="cda:addr" datatype="AD" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.3100">
+                                <desc language="en-US">The representedOrganization, if present, SHALL contain exactly one [1..1] addr (CONF:1098-8259).</desc>
+                                <item label="CONF:1098-8259"/>
+                            </element>
+                        </element>
+                    </element>
+                </element>
+                <element name="cda:author" contains="2.16.840.1.113883.10.20.22.4.119" flexibility="2015-08-13T00:00:00" minimumMultiplicity="0" maximumMultiplicity="*" conformance="R" id="2.16.840.1.113883.3.1937.99.3.9.3101">
+                    <desc language="en-US">SHOULD contain [0..*] Author Participation (identifier: urn:oid:2.16.840.1.113883.10.20.22.4.119) (CONF:1098-32478).</desc>
+                    <item label="CONF:1098-32478"/>
+                </element>
+                <element name="cda:participant" contains="2.16.840.1.113883.10.20.22.4.32" flexibility="2015-08-13T00:00:00" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.3102">
+                    <item label="CONF:1098-8261"/>
+                    <attribute name="typeCode" value="LOC" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.3103">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @typeCode="LOC" Location <span style="font-family: Arial, Helvetica, Geneva, sans-serif; font-size: 12px;">(CodeSystem: HL7ParticipationType urn:oid:2.16.840.1.113883.5.90 STATIC)</span> (CONF:1098-8262).</desc>
+                        <item label="CONF:1098-8262"/>
+                    </attribute>
+                </element>
+                <element name="cda:entryRelationship" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.3104">
+                    <desc language="en-US">MAY contain zero or more [0..*] entryRelationship (CONF:1098-8264) such that it</desc>
+                    <item label="CONF:1098-8264"/>
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.3105">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @typeCode="COMP" Component (CodeSystem: HL7ActRelationshipType urn:oid:2.16.840.1.113883.5.1002 STATIC) (CONF:1098-8265).</desc>
+                        <item label="CONF:1098-8265"/>
+                    </attribute>
+                    <attribute name="inversionInd" value="true" datatype="bl" id="2.16.840.1.113883.3.1937.99.3.9.3106">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @inversionInd="true" true (CONF:1098-8266).</desc>
+                        <item label="CONF:1098-8266"/>
+                    </attribute>
+                    <element name="cda:encounter" minimumMultiplicity="1" maximumMultiplicity="1" isMandatory="true" id="2.16.840.1.113883.3.1937.99.3.9.3107">
+                        <desc language="en-US">SHALL contain exactly one [1..1] encounter (CONF:1098-8267).</desc>
+                        <item label="CONF:1098-8267"/>
+                        <attribute name="classCode" value="ENC" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.3108">
+                            <desc language="en-US">This encounter SHALL contain exactly one [1..1] @classCode="ENC" Encounter (CodeSystem: HL7ActClass urn:oid:2.16.840.1.113883.5.6 STATIC) (CONF:1098-8268).</desc>
+                            <item label="CONF:1098-8268"/>
+                        </attribute>
+                        <attribute name="moodCode" value="EVN" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.3109">
+                            <desc language="en-US">This encounter SHALL contain exactly one [1..1] @moodCode="EVN" Event (CodeSystem: ActMood urn:oid:2.16.840.1.113883.5.1001 STATIC) (CONF:1098-8269).</desc>
+                            <item label="CONF:1098-8269"/>
+                        </attribute>
+                        <element name="cda:id" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.3110">
+                            <desc language="en-US">This encounter SHALL contain exactly one [1..1] id (CONF:1098-8270).</desc>
+                            <item label="CONF:1098-8270"/>
+                            <constraint language="en-US">Set encounter/id to the id of an encounter in another section to signify they are the same encounter.</constraint>
+                        </element>
+                    </element>
+                </element>
+                <element name="cda:entryRelationship" contains="2.16.840.1.113883.10.20.22.4.20" flexibility="2014-06-09T00:00:00" minimumMultiplicity="0" maximumMultiplicity="1" id="2.16.840.1.113883.3.1937.99.3.9.3111">
+                    <item label="CONF:1098-8272"/>
+                    <attribute name="typeCode" value="SUBJ" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.3112">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @typeCode="SUBJ" Has Subject (CodeSystem: HL7ActRelationshipType urn:oid:2.16.840.1.113883.5.1002 STATIC) (CONF:1098-8273).</desc>
+                        <item label="CONF:1098-8273"/>
+                    </attribute>
+                    <attribute name="inversionInd" value="true" datatype="bl" id="2.16.840.1.113883.3.1937.99.3.9.3113">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @inversionInd="true" true (CONF:1098-8274).</desc>
+                        <item label="CONF:1098-8274"/>
+                    </attribute>
+                </element>
+                <element name="cda:entryRelationship" contains="2.16.840.1.113883.10.20.22.4.19" flexibility="2014-06-09T00:00:00" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.3114">
+                    <item label="CONF:1098-8276"/>
+                    <attribute name="typeCode" value="RSON" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.3115">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @typeCode="RSON" Has Reason (CodeSystem: HL7ActRelationshipType urn:oid:2.16.840.1.113883.5.1002 STATIC) (CONF:1098-8277).</desc>
+                        <item label="CONF:1098-8277"/>
+                    </attribute>
+                </element>
+                <element name="cda:entryRelationship" contains="2.16.840.1.113883.10.20.22.4.16" flexibility="2014-06-09T00:00:00" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.3116">
+                    <item label="CONF:1098-8279"/>
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.3117">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @typeCode="COMP" Has Component (CodeSystem: HL7ActRelationshipType urn:oid:2.16.840.1.113883.5.1002 STATIC) (CONF:1098-8280).</desc>
+                        <item label="CONF:1098-8280"/>
+                    </attribute>
+                </element>
+                <element name="cda:entryRelationship" contains="2.16.840.1.113883.10.20.22.4.9" flexibility="2014-06-09T00:00:00" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.3.1937.99.3.9.3118">
+                    <item label="CONF:1098-32470"/>
+                    <attribute name="typeCode" value="COMP" datatype="cs" id="2.16.840.1.113883.3.1937.99.3.9.3119">
+                        <desc language="en-US">SHALL contain exactly one [1..1] @typeCode="COMP" Has Component (CodeSystem: HL7ActRelationshipType urn:oid:2.16.840.1.113883.5.1002) (CONF:1098-32471).</desc>
+                        <item label="CONF:1098-32471"/>
+                    </attribute>
+                </element>
+            </element>
+        </template>

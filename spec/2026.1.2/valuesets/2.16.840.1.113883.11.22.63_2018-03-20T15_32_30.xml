@@ -1,0 +1,22 @@
+<valueSets>
+    <repository url="http://art-decor.org/decor/services/" ident="hl7ips-" referencedFrom="sxehealth-" projecttype="local">
+        <valueSet id="2.16.840.1.113883.11.22.63" name="ips-laboratory-tests-and-panels" displayName="IPS Laboratory tests and panels" effectiveDate="2018-03-20T15:32:30" statusCode="draft" canonicalUri="http://hl7.org/fhir/uv/ips/ValueSet/laboratory-tests-and-panels-uv-ips">
+            <desc language="en-US">
+                <div>Intensional Value Set Definition: LOINC {</div>
+                <div>  {</div>
+                <div>    STATUS in {ACTIVE}</div>
+                <div>    CLASSTYPE in {1}</div>
+                <div>    CLASS exclude {CHALSKIN, H&amp;P.HX.LAB, H&amp;P.HX, NR STATS, PATH.PROTOCOLS.*}</div>
+                <div>  } } </div>
+            </desc>
+            <publishingAuthority name="HL7 International" inherited="project">
+                <addrLine>Health Level Seven International</addrLine>
+                <addrLine>455 E. Eisenhower PKWY STE 300 # 025</addrLine>
+                <addrLine>Ann Arbor, MI 48108 USA</addrLine>
+                <addrLine>USA</addrLine>
+                <addrLine type="phone">+1 734 677 7777 </addrLine>
+                <addrLine type="email">info@hl7.org</addrLine>
+            </publishingAuthority>
+        </valueSet>
+    </repository>
+</valueSets>

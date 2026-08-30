@@ -1,0 +1,18 @@
+<template xmlns:json="http://www.json.org" xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:pharm="urn:ihe:pharm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.3030" name="Medicationduringstaysection" displayName="Verabreichte Medikation während des Aufenthalts" effectiveDate="2017-02-01T00:00:00" statusCode="draft" isClosed="false" url="http://art-decor.org/decor/services/" ident="hl7de-" pharm:dummy-1="urn:ihe:pharm" xml:dummy-2="http://www.w3.org/XML/1998/namespace" hl7:dummy-default="urn:hl7-org:v3" cda:dummy-4="urn:hl7-org:v3" xsi:dummy-5="http://www.w3.org/2001/XMLSchema-instance">
+            <desc language="de-DE">Sämtliche verabreichte Medikation während des Aufenthalts</desc>
+            <classification type="cdasectionlevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.201" flexibility="2005-09-07T00:00:00"/>
+            <element name="hl7:section" minimumMultiplicity="0" maximumMultiplicity="*" id="2.16.840.1.113883.2.6.77.9.592">
+                <element name="hl7:templateId" minimumMultiplicity="1" maximumMultiplicity="1" datatype="II" conformance="R" id="2.16.840.1.113883.2.6.77.9.593">
+                    <attribute name="root" value="1.2.276.0.76.10.3030" id="2.16.840.1.113883.2.6.77.9.594"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CE" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.595">
+                    <vocabulary code="29549-3" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:title" minimumMultiplicity="1" maximumMultiplicity="1" datatype="ST" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.596">
+                    <text>Verabreichte Medikation während des Aufenthalts</text>
+                </element>
+                <element name="hl7:text" minimumMultiplicity="1" maximumMultiplicity="1" datatype="SD.TEXT" conformance="R" isMandatory="true" id="2.16.840.1.113883.2.6.77.9.597"/>
+                <element name="hl7:entry" minimumMultiplicity="0" maximumMultiplicity="*" contains="1.2.276.0.76.10.4022" id="2.16.840.1.113883.3.1937.777.1.9.283"/>
+            </element>
+        </template>

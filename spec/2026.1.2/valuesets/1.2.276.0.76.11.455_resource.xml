@@ -1,0 +1,48 @@
+<valueSets>
+    <project ident="pmp-">
+        <valueSet ref="1.2.276.0.76.11.455" name="S_BMP_DOSIEREINHEIT" displayName="S_BMP_DOSIEREINHEIT"/>
+    </project>
+    <repository url="http://art-decor.org/decor/services/" ident="kbvde-" referencedFrom="dguvbbr-" projecttype="local">
+        <valueSet id="1.2.276.0.76.11.455" name="S_BMP_DOSIEREINHEIT" displayName="S_BMP_DOSIEREINHEIT" effectiveDate="2019-01-01T00:00:00" statusCode="final" versionLabel="1.01">
+            <desc language="de-DE">Die Schlüsseltabelle enthält eine Liste von kodierten Dosiereinheiten, die im Rahmen der Spezifikation zum bundeseinheitlichen Medikationsplan nach § 31a SGB V zu verwenden sind (vgl. Anhang 4 zu Anlage 3 Vereinbarung BMP). Die Spalte "Code" wird im Attribut "V", die Spalte "Einheit Ausdruck" im Attribut "DN", die Spalte "Bedeutung" im Attribut "bedeutung" und die
+            Spalte "Einheit durch AM-Datenbanken unterstützt" im Attribut "unterstuetzt" abgebildet.</desc>
+            <sourceCodeSystem id="1.2.276.0.76.3.1.1.5.2.41" identifierName="KBV_CS_SFHIR_BMP_DOSIEREINHEIT" canonicalUri="urn:oid:1.2.276.0.76.3.1.1.5.2.41" canonicalUriDSTU2="urn:oid:1.2.276.0.76.3.1.1.5.2.41" canonicalUriSTU3="urn:oid:1.2.276.0.76.3.1.1.5.2.41" canonicalUriR4="urn:oid:1.2.276.0.76.3.1.1.5.2.41" canonicalUriR4B="urn:oid:1.2.276.0.76.3.1.1.5.2.41" canonicalUriR5="urn:oid:1.2.276.0.76.3.1.1.5.2.41"/>
+            <publishingAuthority name="Kassenärztliche Bundesvereinigung"/>
+            <conceptList>
+                <concept code="#" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Messlöffel" level="0" type="L"/>
+                <concept code="0" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Messbecher" level="0" type="L"/>
+                <concept code="1" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Stück" level="0" type="L"/>
+                <concept code="2" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Pkg." level="0" type="L"/>
+                <concept code="3" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Flasche" level="0" type="L"/>
+                <concept code="4" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Beutel" level="0" type="L"/>
+                <concept code="5" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Hub" level="0" type="L"/>
+                <concept code="6" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Tropfen" level="0" type="L"/>
+                <concept code="7" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Teelöffel" level="0" type="L"/>
+                <concept code="8" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Esslöffel" level="0" type="L"/>
+                <concept code="9" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="E" level="0" type="L"/>
+                <concept code="a" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Tasse" level="0" type="L"/>
+                <concept code="b" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Applikatorfüllung" level="0" type="L"/>
+                <concept code="c" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Augenbadewanne" level="0" type="L"/>
+                <concept code="d" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Dosierbriefchen" level="0" type="L"/>
+                <concept code="e" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Dosierpipette" level="0" type="L"/>
+                <concept code="f" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Dosierspritze" level="0" type="L"/>
+                <concept code="g" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Einzeldosis" level="0" type="L"/>
+                <concept code="h" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Glas" level="0" type="L"/>
+                <concept code="i" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Likörglas" level="0" type="L"/>
+                <concept code="j" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Messkappe" level="0" type="L"/>
+                <concept code="k" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Messschale" level="0" type="L"/>
+                <concept code="l" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Mio E" level="0" type="L"/>
+                <concept code="m" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Mio IE" level="0" type="L"/>
+                <concept code="n" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Pipettenteilstrich" level="0" type="L"/>
+                <concept code="o" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Sprühstoß" level="0" type="L"/>
+                <concept code="p" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="IE" level="0" type="L"/>
+                <concept code="q" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="cm" level="0" type="L"/>
+                <concept code="r" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="l" level="0" type="L"/>
+                <concept code="s" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="ml" level="0" type="L"/>
+                <concept code="t" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="g" level="0" type="L"/>
+                <concept code="u" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="kg" level="0" type="L"/>
+                <concept code="v" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="mg" level="0" type="L"/>
+            </conceptList>
+        </valueSet>
+    </repository>
+</valueSets>

@@ -1,0 +1,43 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.2.6.60.6.1.1" effectiveDate="2015-06-18T18:17:24" statusCode="draft" versionLabel="2.0" prefix="psr-" shortName="" iddisplay="psr-dataset-1" url="http://art-decor.org/decor/services/" ident="psr-"><!--
+ This is a view of the dataset "" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE"/>
+    <desc language="de-DE"/>
+    <concept id="2.16.840.1.113883.2.6.60.6.2.103" statusCode="draft" effectiveDate="2017-03-09T11:30:54" type="item" iddisplay="psr-dataelement-103">
+        <implementation markdown="Single tumor cells or small cluster of tumor cells, not larger than 0.2 mm in diameter, usually detected by immunohistochemistry or molecular pathology. No typical characteristics of metastases (stromal reaction, proliferation).&#xA;If such ITC are detected in lymph nodes, those are classified as pN0(i+) or pN0(mol+) (regional) or as pM0(i+) or pM0(mol+) (non-regional).&#xA;For negativity of immunohistochemical or molecular pathologic findings in lymph nodes the same rules are applied (i- or mol-)"/>
+        <name language="de-DE" lastTranslated="2017-06-30T17:53:44">isolierte Tumorzellen</name>
+        <desc language="de-DE" lastTranslated="2017-06-30T17:54:27">weniger als 200 metastatische Tumorzellen (Gesamtdurchmesser unter 200 Mikrometer.</desc>
+        <valueDomain type="code">
+            <conceptList id="2.16.840.1.113883.2.6.60.6.2.103.20170309113054.0"/>
+        </valueDomain>
+        <valueSet id="1.3.6.1.4.1.19376.1.3.11.38" name="UICCITC" displayName="UICC Isolated Tumor Cells" effectiveDate="2017-03-13T09:48:35" statusCode="draft" canonicalUri="http://fhir.de/onkologie/ValueSet/tnm-suffix-itc-uicc" lastModifiedDate="2023-01-26T18:01:11">
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.103.20170309113054.0" valueSet="1.3.6.1.4.1.19376.1.3.11.38" flexibility="dynamic" effectiveDate="2017-03-13T09:51:30" valueSetName="UICC Isolated Tumor Cells" valueSetStatusCode="draft" valueSetEffectiveDate="2017-03-13T09:48:35"/>
+            <desc language="en-US" lastTranslated="2023-01-26T18:01:11">Codes for isolated tumor cells, detected by immunohistochemical or molecular pathology methods in regional and non-regional lymph nodes, used in qualifiers for N- and M-category in TNM</desc>
+            <sourceCodeSystem id="2.16.840.1.113883.15.16" identifierName="TNM Edition8 UICC" canonicalUri="urn:oid:2.16.840.1.113883.15.16" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.15.16" canonicalUriSTU3="urn:oid:2.16.840.1.113883.15.16" canonicalUriR4="urn:oid:2.16.840.1.113883.15.16" canonicalUriR4B="urn:oid:2.16.840.1.113883.15.16" canonicalUriR5="urn:oid:2.16.840.1.113883.15.16"/>
+            <sourceCodeSystem id="2.16.840.1.113883.5.1008" identifierName="Null Flavor" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriDSTU2="http://hl7.org/fhir/v3/NullFlavor" canonicalUriSTU3="http://hl7.org/fhir/v3/NullFlavor" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" context="external/hl7intl/v3/v3-NullFlavor"/>
+            <publishingAuthority name="IHE International" inherited="project">
+                <addrLine type="email">http://www.ihe.net</addrLine>
+            </publishingAuthority>
+            <conceptList id="2.16.840.1.113883.2.6.60.6.2.103.20170309113054.0">
+                <concept localId="1" code="i+" codeSystem="2.16.840.1.113883.15.16" displayName="(i+)" level="0" type="L">
+                    <name language="en-US">(i+)</name>
+                </concept>
+                <concept localId="2" code="i-" codeSystem="2.16.840.1.113883.15.16" displayName="(i-)" level="0" type="L">
+                    <name language="en-US">(i-)</name>
+                </concept>
+                <concept localId="3" code="mol+" codeSystem="2.16.840.1.113883.15.16" displayName="(mol+)" level="0" type="L">
+                    <name language="en-US">(mol+)</name>
+                </concept>
+                <concept localId="4" code="mol-" codeSystem="2.16.840.1.113883.15.16" displayName="(mol-)" level="0" type="L">
+                    <name language="en-US">(mol-)</name>
+                </concept>
+                <exception localId="5" code="ASKU" codeSystem="2.16.840.1.113883.5.1008" displayName="Asked but unknown" level="0" type="L">
+                    <name language="en-US">Asked but unknown</name>
+                </exception>
+            </conceptList>
+        </valueSet>
+        <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.6.2.103.20170309113054.0" valueSet="1.3.6.1.4.1.19376.1.3.11.38" flexibility="dynamic" effectiveDate="2017-03-13T09:51:30" valueSetName="UICC Isolated Tumor Cells" valueSetStatusCode="draft" valueSetEffectiveDate="2017-03-13T09:48:35"/>
+    </concept>
+</dataset>

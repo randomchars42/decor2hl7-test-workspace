@@ -1,0 +1,88 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.10.90026" ident="aktin-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.10.90026" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" isClosed="false" displayName="Lateralität" ident="aktin-" name="Laterality" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="draft" url="http://art-decor.org/decor/services/" effectiveDate="2017-02-13T00:00:00">
+            <desc language="de-DE">Qualifier für Lateralität, zu verwenden als Qualifier-Kind-Element des value-Elements des Problems (Diagnose)</desc>
+            <classification type="cdaentrylevel"/>
+            <element name="hl7:qualifier[hl7:name/@code='20228-3']" minimumMultiplicity="0" maximumMultiplicity="1" datatype="CR" id="2.16.840.1.113883.2.6.77.9.98">
+                <desc language="de-DE">Seitenlokalisation</desc>
+                <item original="false" label="Laterality"/>
+                <example type="neutral">
+                    <qualifier>
+                        <name code="20228-3" codeSystem="2.16.840.1.113883.6.1"/>
+                        <value code="L" codeSystem="1.2.276.0.76.5.412"/>
+                    </qualifier>
+                </example>
+                <element name="hl7:name" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true" datatype="CV" id="2.16.840.1.113883.2.6.77.9.99">
+                    <item original="false" label="Laterality"/>
+                    <vocabulary code="20228-3" codeSystem="2.16.840.1.113883.6.1"/>
+                </element>
+                <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="CV" id="2.16.840.1.113883.2.6.77.9.100">
+                    <item original="false" label="Laterality"/>
+                    <vocabulary valueSet="1.2.276.0.76.11.412" vsid="1.2.276.0.76.11.412" vsname="Laterality" vsdisplayName="Lateralität" vseffectiveDate="2017-02-08T00:00:00" vsstatusCode="draft" url="http://art-decor.org/decor/services/" ident="hl7de-" linkedartefactmissing="false"/>
+                </element>
+            </element>
+            <staticAssociations>
+                <origconcept ref="1.2.276.0.76.3.1.135.8.2.744" effectiveDate="2019-07-18T16:13:47" refdisplay="vomgt-dataelement-744" conceptStatusCode="draft" datasetId="1.2.276.0.76.3.1.135.8.1.1" datasetEffectiveDate="2015-12-02T09:18:17" datasetStatusCode="draft" datasetName="KV-Mustersammlung" ident="vomgt-" elementId="2.16.840.1.113883.2.6.77.9.98" templateId="1.2.276.0.76.10.90026" templateEffectiveDate="2017-02-13T00:00:00" path="Muster 02a: Verordnung von Krankenhausbehandlung / Diagnosen/Begründung der Notwendigkeit / Diagnose-Liste">
+                    <name language="de-DE">Lateralität</name>
+                    <desc language="de-DE"/>
+                    <datasetName language="de-DE">KV-Mustersammlung</datasetName>
+                    <projectName language="de-DE">Verordnungsmanagement</projectName>
+                </origconcept>
+                <origconcept ref="1.2.276.0.76.3.1.135.8.2.916" effectiveDate="2020-06-26T16:19:43" refdisplay="vomgt-dataelement-916" conceptStatusCode="draft" datasetId="1.2.276.0.76.3.1.135.8.1.1" datasetEffectiveDate="2015-12-02T09:18:17" datasetStatusCode="draft" datasetName="KV-Mustersammlung" ident="vomgt-" elementId="2.16.840.1.113883.2.6.77.9.98" templateId="1.2.276.0.76.10.90026" templateEffectiveDate="2017-02-13T00:00:00" path="AR-Antrag / Clinical Data / AR_B_(Befundbericht) / Funktionsdiagnosen">
+                    <name language="de-DE">DiagnoseSeitenlokalisation</name>
+                    <desc language="de-DE"/>
+                    <datasetName language="de-DE">KV-Mustersammlung</datasetName>
+                    <projectName language="de-DE">Verordnungsmanagement</projectName>
+                </origconcept>
+                <origconcept ref="1.2.276.0.76.3.1.261.1.77.1.2.1.54" effectiveDate="2018-03-01T14:30:59" refdisplay="dguvbbr-dataelement1-54" conceptStatusCode="draft" datasetId="1.2.276.0.76.3.1.261.1.77.1.1.1" datasetEffectiveDate="2018-03-02T10:10:49" datasetStatusCode="draft" datasetName="Mini-Entlassbrief" ident="dguvbbr-" elementId="2.16.840.1.113883.2.6.77.9.100" templateId="1.2.276.0.76.10.90026" templateEffectiveDate="2017-02-13T00:00:00" path="Diagnosen / Hauptdiagnose">
+                    <name language="de-DE">Seitigkeit</name>
+                    <desc language="de-DE"/>
+                    <datasetName language="de-DE">Mini-Entlassbrief</datasetName>
+                    <projectName language="de-DE" lastTranslated="2022-12-07T18:52:23">DGUV BBR</projectName>
+                </origconcept>
+                <origconcept ref="1.2.276.0.76.3.1.261.1.77.1.2.1.55" effectiveDate="2018-03-01T14:31:38" refdisplay="dguvbbr-dataelement1-55" conceptStatusCode="draft" datasetId="1.2.276.0.76.3.1.261.1.77.1.1.1" datasetEffectiveDate="2018-03-02T10:10:49" datasetStatusCode="draft" datasetName="Mini-Entlassbrief" ident="dguvbbr-" elementId="2.16.840.1.113883.2.6.77.9.100" templateId="1.2.276.0.76.10.90026" templateEffectiveDate="2017-02-13T00:00:00" path="Diagnosen / Nebendiagnose">
+                    <name language="de-DE">Seitigkeit</name>
+                    <desc language="de-DE"/>
+                    <datasetName language="de-DE">Mini-Entlassbrief</datasetName>
+                    <projectName language="de-DE" lastTranslated="2022-12-07T18:52:23">DGUV BBR</projectName>
+                </origconcept>
+                <origconcept ref="1.2.276.0.76.3.1.261.1.77.1.2.2.254" effectiveDate="2018-05-24T00:00:00" refdisplay="dguvbbr-dataelement2-254" conceptStatusCode="draft" datasetId="1.2.276.0.76.3.1.261.1.77.1.1.2" datasetEffectiveDate="2018-05-24T00:00:00" datasetStatusCode="draft" datasetName="Stationärer Entlassungsbericht" ident="dguvbbr-" elementId="2.16.840.1.113883.2.6.77.9.98" templateId="1.2.276.0.76.10.90026" templateEffectiveDate="2017-02-13T00:00:00" path="Diagnosen/Probleme / Diagnose/Problem (ICD10)">
+                    <name language="de-DE">Seitigkeit</name>
+                    <desc language="de-DE"/>
+                    <datasetName language="de-DE">Stationärer Entlassungsbericht</datasetName>
+                    <projectName language="de-DE" lastTranslated="2022-12-07T18:52:23">DGUV BBR</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.3.1937.99.61.38.2.2.54" effectiveDate="2018-03-01T14:30:59" refdisplay="sdguv-dataelement2-54" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.99.61.38.1.2" datasetEffectiveDate="2018-03-02T10:10:49" datasetStatusCode="draft" datasetName="Mini-Entlassbrief" ident="sdguv-" elementId="2.16.840.1.113883.2.6.77.9.100" templateId="1.2.276.0.76.10.90026" templateEffectiveDate="2017-02-13T00:00:00" path="Diagnosen / Hauptdiagnose">
+                    <name language="de-DE">Seitigkeit</name>
+                    <desc language="de-DE"/>
+                    <datasetName language="de-DE">Mini-Entlassbrief</datasetName>
+                    <projectName language="de-DE">DGUV Sandbox</projectName>
+                </origconcept>
+                <origconcept ref="2.16.840.1.113883.3.1937.99.61.38.2.2.55" effectiveDate="2018-03-01T14:31:38" refdisplay="sdguv-dataelement2-55" conceptStatusCode="draft" datasetId="2.16.840.1.113883.3.1937.99.61.38.1.2" datasetEffectiveDate="2018-03-02T10:10:49" datasetStatusCode="draft" datasetName="Mini-Entlassbrief" ident="sdguv-" elementId="2.16.840.1.113883.2.6.77.9.100" templateId="1.2.276.0.76.10.90026" templateEffectiveDate="2017-02-13T00:00:00" path="Diagnosen / Nebendiagnose">
+                    <name language="de-DE">Seitigkeit</name>
+                    <desc language="de-DE"/>
+                    <datasetName language="de-DE">Mini-Entlassbrief</datasetName>
+                    <projectName language="de-DE">DGUV Sandbox</projectName>
+                </origconcept>
+            </staticAssociations>
+            <ref type="include" prefix="vomgt-" flexibility="dynamic" id="1.2.276.0.76.3.1.135.8.10.125" name="DiagnosisObservation_02" displayName="Diagnosis Observation (02)" effectiveDate="2019-07-18T14:05:43" statusCode="draft" ident="vomgt-"/>
+            <ref type="include" prefix="vomgt-" flexibility="dynamic" id="1.2.276.0.76.3.1.135.8.10.236" name="DiagnoseObservation_AR-B" displayName="Diagnose Observation (AR-B)" effectiveDate="2020-08-04T11:27:27" statusCode="draft" ident="vomgt-"/>
+            <ref type="include" prefix="dguvbbr-" flexibility="dynamic" id="1.2.276.0.76.3.1.261.1.10.4.5" name="DiagnoseObservation" displayName="Diagnose Observation (Mini)" effectiveDate="2018-01-30T15:36:13" statusCode="draft" ident="dguvbbr-"/>
+            <ref type="include" prefix="dguvbbr-" flexibility="dynamic" id="1.2.276.0.76.3.1.261.1.10.4.34" name="ProcedureActivityProceduredguv" displayName="Maßnahme (DGUV)" effectiveDate="2019-01-28T11:11:59" statusCode="draft" ident="dguvbbr-"/>
+            <ref type="include" prefix="dguvbbr-" flexibility="dynamic" id="1.2.276.0.76.3.1.261.1.10.4.37" name="CDAProcedureImplantat" displayName="ImplantatBezeichnung" effectiveDate="2022-06-20T13:03:28" statusCode="draft" ident="dguvbbr-"/>
+            <ref type="dependency" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4048" name="Problemconcernacteddiagnoses" displayName="Problem Concern Act (Abschlussdiagnosen)" effectiveDate="2016-06-22T00:00:00" statusCode="active" ident="aktin-"/>
+            <ref type="include" prefix="aktin-" flexibility="dynamic" id="1.2.276.0.76.10.4049" name="Problemobservationeddiagnosis" displayName="Problem Observation (Abschlussdiagnose)" effectiveDate="2017-02-13T00:00:00" statusCode="draft" ident="aktin-"/>
+            <ref type="include" prefix="hl7de-" flexibility="dynamic" id="1.2.276.0.76.10.4080" name="DiagnoseObservation" displayName="Diagnose Observation" effectiveDate="2015-12-06T00:00:00" statusCode="draft" ident="hl7de-"/>
+            <ref type="include" prefix="elmgmt-" flexibility="dynamic" id="1.2.276.0.76.10.4080" name="DiagnoseObservation" displayName="Diagnose Observation" statusCode="cancelled" effectiveDate="2018-01-17T11:49:50" ident="elmgmt-"/>
+            <ref type="include" prefix="sdguv-" flexibility="dynamic" id="1.2.276.0.76.10.4080" name="DiagnoseObservation" displayName="Diagnose Observation" effectiveDate="2018-01-30T15:36:13" statusCode="draft" ident="sdguv-"/>
+            <ref type="include" prefix="vomgt-" flexibility="dynamic" id="1.2.276.0.76.10.4266" name="AUDiagnosisObservation" displayName="AU-Diagnosis Observation" effectiveDate="2017-11-20T22:04:11" statusCode="draft" ident="vomgt-"/>
+            <ref type="include" prefix="elmgmt-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.36.10.4" name="DiagnoseObservationAB" displayName="Diagnose Observation" statusCode="cancelled" effectiveDate="2018-03-02T10:43:23" ident="elmgmt-"/>
+            <ref type="include" prefix="sgevko-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.53.10.31" name="Diagnose" displayName="Diagnose Observation" effectiveDate="2019-07-11T16:36:40" statusCode="draft" ident="sgevko-"/>
+            <ref type="include" prefix="sgevko-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.99.61.53.10.80" name="DiagnoseAU" displayName="Diagnose Observation BerichtAU" effectiveDate="2019-09-19T16:44:31" statusCode="draft" isClosed="false" ident="sgevko-"/>
+            <ref type="include" prefix="mide-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.24.10.19" name="DiagnoseObservationB" displayName="Diagnose Observation B" effectiveDate="2019-01-21T16:03:09" statusCode="draft" ident="mide-"/>
+            <ref type="include" prefix="mide-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.24.10.53" name="DiagnoseObservationC" displayName="Diagnose Observation C" effectiveDate="2019-04-08T15:11:18" statusCode="draft" ident="mide-"/>
+            <ref type="include" prefix="mide-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.24.10.54" name="DiagnoseObservationD" displayName="Diagnose Observation D" effectiveDate="2019-04-12T12:07:29" statusCode="draft" ident="mide-"/>
+            <ref type="include" prefix="eImpfpass-" flexibility="dynamic" id="2.16.840.1.113883.3.1937.777.35.10.120" name="ElektronischerImpfpassDiagnoseObservation" displayName="Diagnose (hl7de)" effectiveDate="2019-07-04T11:30:52" statusCode="draft" ident="eImpfpass-"/>
+        </template>
+    </template>
+</result>

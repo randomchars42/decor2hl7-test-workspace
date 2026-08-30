@@ -1,0 +1,43 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.777.47.1.1" effectiveDate="2019-11-07T11:36:25" statusCode="draft" prefix="nokeda-" shortName="publichealthsurveillance_und_versorgungsforschung" iddisplay="nokeda-dataset-1" url="http://art-decor.org/decor/services/" ident="nokeda-"><!--
+ This is a view of the dataset "Public-Health-Surveillance und Versorgungsforschung" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">Public-Health-Surveillance und Versorgungsforschung</name>
+    <desc language="de-DE">Notaufnahme-Kerndatenmodell für Public-Health-Surveillance und Versorgungsforschung<br clear="none"/>
+    </desc>
+    <concept id="2.16.840.1.113883.3.1937.777.47.2.15" effectiveDate="2019-11-28T10:24:09" statusCode="draft" versionLabel="2.6" type="item" iddisplay="nokeda-dataelement-15">
+        <implementation markdown=""/>
+        <name language="de-DE">Name des EDIS</name>
+        <synonym language="de-DE">nokeda_edis_software</synonym>
+        <desc language="de-DE">
+            <table border="0" cellpadding="0" cellspacing="0" width="256" style="border-collapse:  collapse;width:192pt">
+    <div>Name der lokal verwendeten Software zur primären Datenerfassung (EDIS, emergency department information system); wenn keine ED-Spezialanwendung verwendet wird, das KIS.</div>
+</table>
+        </desc>
+        <operationalization language="de-DE">has_multiple_instances = FALSE<br clear="none"/>
+<table border="0" cellpadding="0" cellspacing="0" width="318" style="border-collapse:  collapse;width:239pt">
+    <tbody>
+        <tr height="60" style="height:45.0pt">
+            <td colspan="1" rowspan="1" class="xl66" height="60" width="318" style="height:45.0pt;width:239pt">
+            </td>
+                        <td colspan="1" rowspan="1" class="xl66" height="60" width="318" style="height:45.0pt;width:239pt">
+                <br clear="none"/>
+            </td>
+            <td colspan="1" rowspan="1" class="xl66" height="60" width="318" style="height:45.0pt;width:239pt">
+            </td>
+                        <td colspan="1" rowspan="1" class="xl66" height="60" width="318" style="height:45.0pt;width:239pt">Kein Mapping aus Rohdaten; manuell beschrieben aus der Kenntnis der lokal verwendeten Software; Information zur Software und zum Hersteller bereitstellen, sollte der Hersteller unterschiedliche Produkte anbieten.<br clear="none"/>
+                <br clear="none"/>
+            </td>
+        </tr>
+    </tbody>
+</table>
+        </operationalization>
+        <valueDomain type="string">
+            <property minLength="0" maxLength="32"/>
+            <example type="neutral">Epias ED</example>
+            <example type="neutral">ERPath</example>
+            <example type="neutral">e.care</example>
+        </valueDomain>
+    </concept>
+</dataset>
