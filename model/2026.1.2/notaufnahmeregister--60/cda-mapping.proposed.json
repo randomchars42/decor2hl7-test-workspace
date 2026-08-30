@@ -1,0 +1,385 @@
+{
+  "version": 5,
+  "model": {
+    "dataset_id": "2.16.840.1.113883.2.6.60.3.1.9",
+    "transaction_id": "2.16.840.1.113883.2.6.60.3.4.60",
+    "effective_date": "2026-03-25T00:00:00"
+  },
+  "target": {
+    "format": "cda",
+    "template": "NotaufnahmeregisterTransitionsversion"
+  },
+  "fields": {
+    "patient.anschrift.postleitzahl": null,
+    "patient.identifikatoren.patienten_id": "PatientIdentifier.id",
+    "hauptkostentrager.kostentrager.name": null,
+    "hauptkostentrager.versicherungsverhaltnis.identifikation": null,
+    "administrative_aufnahmeinformationen.aufnahmezeitpunkt": {
+      "target": "CDAEncompassingEncounter.componentOf.encompassingEncounter.effectiveTime.low@20160601",
+      "cda_target": "CDAEncompassingEncounter.componentOf.encompassingEncounter.effectiveTime.low@20160601",
+      "structure": "coalesce-cdaencompassingencounter-componentof-encompassingencounter-effectivetime-low-20160601"
+    },
+    "administrative_aufnahmeinformationen.fallnummer": "CDAEncompassingEncounter.id_2",
+    "administrative_aufnahmeinformationen.episodennummer": "CDAEncompassingEncounter.id_1",
+    "administrative_aufnahmeinformationen.zuweisung_zur_notaufnahme.zuweisung": null,
+    "administrative_aufnahmeinformationen.transport.transportmittel": "Transportmethod.value",
+    "administrative_aufnahmeinformationen.transport.medizinische_begleitung": null,
+    "ersteinschatzung.direkter_arztkontakt": null,
+    "ersteinschatzung.parameter_der_ersteinschatzung.ergebnis_der_ersteinschatzung": "ersteinschatzung.value",
+    "ersteinschatzung.parameter_der_ersteinschatzung.zeitpunkt_der_ersteinschatzung": "ersteinschatzung.effectiveTime",
+    "ersteinschatzung.parameter_der_ersteinschatzung.verwendetes_ersteinschatzungssystem": null,
+    "ersteinschatzung.parameter_der_ersteinschatzung.manchester_triage_system.mtsprasentationsdiagramm": "mts-prasentationsdiagramm.value",
+    "ersteinschatzung.parameter_der_ersteinschatzung.manchester_triage_system.mtsindikator.mtsindikatoren_rot": "mts-indikatoren-rot.value",
+    "ersteinschatzung.parameter_der_ersteinschatzung.manchester_triage_system.mtsindikator.mtsindikatoren_orange": "mts-indikatoren-orange.value",
+    "ersteinschatzung.parameter_der_ersteinschatzung.manchester_triage_system.mtsindikator.mtsindikatoren_gelb": "mts-indikatoren-gelb.value",
+    "ersteinschatzung.parameter_der_ersteinschatzung.manchester_triage_system.mtsindikator.mtsindikatoren_grun": "mts-indikatoren-grun.value",
+    "ersteinschatzung.parameter_der_ersteinschatzung.esitriage": "esi-triage-faktoren.value",
+    "notfallanamnese.beschwerden_bei_vorstellung.beschwerden_bei_vorstellung_freitext": "Chiefcomplaintreasonforvisit.text",
+    "notfallanamnese.beschwerden_bei_vorstellung.beschwerden_bei_vorstellung_cedis": "Problemobservationcedis.value",
+    "notfallanamnese.beschwerden_bei_vorstellung.ereigniseintritt": null,
+    "notfallanamnese.zeitpunkt_erster_arztkontakt": "CDADocumentationOf.documentationOf.serviceEvent.performer.time.low",
+    "notfallanamnese.notfallanamnese_des_patienten": "Additionalmodulessection.text",
+    "notfallanamnese.unfallanamnese.unfallursache": "unfallursache-kinetik.observation.value",
+    "notfallanamnese.unfallanamnese.fahrzeug_des_verunfallten": null,
+    "notfallanamnese.unfallanamnese.unfallkinetik": "unfallursache-kinetik.observation.value.qualifier_name.code_67496-0.value",
+    "notfallanamnese.unfallanamnese.unfallart_trauma_register": "unfallart-traumaregister.value",
+    "notfallanamnese.verdacht_auf_alkohol_drogen_medikamenteneinflussq": "substanz-einfluss.value",
+    "klinische_basisdaten_patient.allergien.allergie_beschreibung": null,
+    "klinische_basisdaten_patient.allergien.agens": null,
+    "klinische_basisdaten_patient.allergien.abgeleitete_informationen_zur_weitergabe.antibiotikaallergie": null,
+    "klinische_basisdaten_patient.allergien.abgeleitete_informationen_zur_weitergabe.kontrastmittelallergie": null,
+    "klinische_basisdaten_patient.schwangerschaft": "Pregnancystatus.value",
+    "klinische_basisdaten_patient.tetanusschutz": [
+      {
+        "target": "Clostridiumtetaniimmunization.negationInd",
+        "transform": {
+          "type": "enum",
+          "map": {
+            "Patient hat Tetanusschutz": false,
+            "Patient hat keinen Tetanusschutz": true,
+            "Information nicht erhebbar": false
+          }
+        }
+      },
+      {
+        "target": "Clostridiumtetaniimmunization.nullFlavor",
+        "transform": {
+          "type": "enum",
+          "map": {
+            "Patient hat Tetanusschutz": null,
+            "Patient hat keinen Tetanusschutz": null,
+            "Information nicht erhebbar": "NI"
+          }
+        }
+      }
+    ],
+    "vitalparameter.zeitpunkt": null,
+    "vitalparameter.atemfrequenz": "RespiratoryRate.value",
+    "vitalparameter.pulsoximetrische_sauerstoffsattigung": "pulsoximetrische_sauerstoffsattigung.value",
+    "vitalparameter.blutdruck.systolischer_blutdruck": "Systolicbloodpressure.value",
+    "vitalparameter.blutdruck.diastolischer_blutdruck": "blutdruck-diastolisch.value",
+    "vitalparameter.herzfrequenz": "HeartRate.value",
+    "vitalparameter.puls.pulsfrequenz": "pulsfrequenz.value",
+    "vitalparameter.pupillenweite.pupillenweite_rechts": {
+      "target": "Pupilsize_right.value",
+      "cda_target": "Pupilsize.value",
+      "structure": "fan-out-pupilsize-value",
+      "branch": "right"
+    },
+    "vitalparameter.pupillenweite.pupillenweite_links": {
+      "target": "Pupilsize_left.value",
+      "cda_target": "Pupilsize.value",
+      "structure": "fan-out-pupilsize-value",
+      "branch": "left"
+    },
+    "vitalparameter.pupillenreaktion.pupillenreaktion_rechts": {
+      "target": "Pupilreaction_right.value",
+      "cda_target": "Pupilreaction.value",
+      "structure": "fan-out-pupilreaction-value",
+      "branch": "right"
+    },
+    "vitalparameter.pupillenreaktion.pupillenreaktion_links": {
+      "target": "Pupilreaction_left.value",
+      "cda_target": "Pupilreaction.value",
+      "structure": "fan-out-pupilreaction-value",
+      "branch": "left"
+    },
+    "vitalparameter.korperkerntemperatur.korperkerntemperatur": "BodyTemperatureCore.value",
+    "scores.glasgow_coma_scale_gcs.gcs_augenoffnen": "GlasgowComaScale.observation.entryRelationship_observation.code.code_9267-6.observation.value",
+    "scores.glasgow_coma_scale_gcs.gcs_verbale_antwort": "GlasgowComaScale.observation.entryRelationship_observation.code.code_9270-0.observation.value",
+    "scores.glasgow_coma_scale_gcs.gcs_motorische_antwort": "GlasgowComaScale.observation.entryRelationship_observation.code.code_9268-4.observation.value",
+    "scores.glasgow_coma_scale_gcs.gcs_summe": "GlasgowComaScale.observation.value",
+    "scores.modified_rankin_skala_score": {
+      "target": "Modifiedrankinscale.observation.value",
+      "transform": {
+        "type": "ordinal",
+        "map": {
+          "keine Symptome": 0,
+          "keine wesentliche Funktionseinschränkung": 1,
+          "geringgradige Funktionseinschränkung": 2,
+          "mäßiggradige Funktionseinschränkung": 3,
+          "mittelschwere Funktionseinschränkung": 4,
+          "schwere Funktionseinschränkung": 5,
+          "Tod": 6
+        }
+      }
+    },
+    "scores.schmerzmessung.numerischen_rating_skala": "Painseverity.observation.value",
+    "diagnostik.bildgebende_diagnostik.magnetresonanztomographie.untersuchungsregion": null,
+    "diagnostik.bildgebende_diagnostik.rontgen.untersuchungsregion": null,
+    "diagnostik.abgeleitete_informationen_uber_diagnostik_zur_weitergabe.mikrobiologie_angefordert": "mikrobiologie_angefordert.negationInd",
+    "diagnostik.abgeleitete_informationen_uber_diagnostik_zur_weitergabe.bga_angefordert": "bga_angefordert.negationInd",
+    "diagnostik.abgeleitete_informationen_uber_diagnostik_zur_weitergabe.ekg_angefordert": "ekg_angefordert.negationInd",
+    "diagnostik.abgeleitete_informationen_uber_diagnostik_zur_weitergabe.sonographie_angefordert": "sonographie_angefordert.negationInd",
+    "diagnostik.abgeleitete_informationen_uber_diagnostik_zur_weitergabe.rontgenthorax_angefordert": "rontgenthorax_angefordert.negationInd",
+    "diagnostik.abgeleitete_informationen_uber_diagnostik_zur_weitergabe.rontgenthorax_durchgefuhrt": "Plainchestxray.negationInd",
+    "diagnostik.abgeleitete_informationen_uber_diagnostik_zur_weitergabe.rontgenbecken_durchgefuhrt": "Pelvisxray.negationInd",
+    "diagnostik.abgeleitete_informationen_uber_diagnostik_zur_weitergabe.rontgenwirbelsaule_durchgefuhrt": null,
+    "diagnostik.abgeleitete_informationen_uber_diagnostik_zur_weitergabe.ct_kopf_durchgefuhrt": "Computedtomographyofentirehead.negationInd",
+    "diagnostik.abgeleitete_informationen_uber_diagnostik_zur_weitergabe.ct_hws_durchgefuhrt": "ct_hws_durchgefuhrt.negationInd",
+    "diagnostik.abgeleitete_informationen_uber_diagnostik_zur_weitergabe.ct_thorax_durchgefuhrt": "ct_thorax_durchgefuhrt.negationInd",
+    "diagnostik.abgeleitete_informationen_uber_diagnostik_zur_weitergabe.ct_abdomen_durchgefuhrt": "ct_abdomen_durchgefuhrt.negationInd",
+    "diagnostik.abgeleitete_informationen_uber_diagnostik_zur_weitergabe.ct_bzw_mr_bzw_dsangiographie": "ct-mr-ds-angiographie.value",
+    "diagnostik.wildcard_diagnostik.klinisch_relevante_zeitangaben.zeitpunkt": null,
+    "diagnostik.wildcard_diagnostik.klinisch_relevante_zeitangaben.zeitraum": null,
+    "diagnostik.wildcard_diagnostik.code": null,
+    "diagnostik.wildcard_diagnostik.wert": null,
+    "diagnostik.wildcard_diagnostik.definitorischer_link": null,
+    "masnahmen.isolation.isolation": [
+      {
+        "target": "isolation.negationInd",
+        "transform": {
+          "type": "enum",
+          "map": {
+            "Patient muss isoliert werden": false,
+            "Patient muss nicht isoliert werden": true
+          }
+        }
+      }
+    ],
+    "masnahmen.isolation.isolation_begrundung": "Isolationindication.observation.value@20240814",
+    "masnahmen.wildcard_therapie.klinisch_relevante_zeitangaben.zeitpunkt": null,
+    "masnahmen.wildcard_therapie.klinisch_relevante_zeitangaben.zeitraum": null,
+    "masnahmen.wildcard_therapie.code": null,
+    "masnahmen.wildcard_therapie.definitorischer_link": null,
+    "abschlussdiagnosen.abschlussdiagnose.freitext_abschlussdiagnose": "Problemobservationeddiagnosis.observation.value.originalText@20170213",
+    "abschlussdiagnosen.abschlussdiagnose.icd10": "Problemobservationeddiagnosis.observation.value@20170213",
+    "abschlussdiagnosen.abschlussdiagnose.icd10_sekundardiagnose": null,
+    "abschlussdiagnosen.abschlussdiagnose.zusatzkennzeichen": [
+      {
+        "target": "Certainty.value",
+        "transform": {
+          "type": "enum",
+          "select": "raw",
+          "map": {
+            "Verdachtsdiagnose": {
+              "code": "V",
+              "codeSystem": "1.2.276.0.76.3.1.1.5.1.21",
+              "displayName": "Verdacht auf / zum Ausschluss von"
+            },
+            "V": {
+              "code": "V",
+              "codeSystem": "1.2.276.0.76.3.1.1.5.1.21",
+              "displayName": "Verdacht auf / zum Ausschluss von"
+            },
+            "ausgeschlossene Diagnose": {
+              "code": "A",
+              "codeSystem": "1.2.276.0.76.3.1.1.5.1.21",
+              "displayName": "ausgeschlossen"
+            },
+            "A": {
+              "code": "A",
+              "codeSystem": "1.2.276.0.76.3.1.1.5.1.21",
+              "displayName": "ausgeschlossen"
+            },
+            "Zustand nach der Diagnose": {
+              "code": "Z",
+              "codeSystem": "1.2.276.0.76.3.1.1.5.1.21",
+              "displayName": "Zustand nach"
+            },
+            "Z": {
+              "code": "Z",
+              "codeSystem": "1.2.276.0.76.3.1.1.5.1.21",
+              "displayName": "Zustand nach"
+            },
+            "gesicherte Diagnose": {
+              "code": "G",
+              "codeSystem": "1.2.276.0.76.3.1.1.5.1.21",
+              "displayName": "gesicherte Diagnose"
+            },
+            "G": {
+              "code": "G",
+              "codeSystem": "1.2.276.0.76.3.1.1.5.1.21",
+              "displayName": "gesicherte Diagnose"
+            }
+          }
+        }
+      },
+      {
+        "target": "Problemobservationeddiagnosis.observation.negationInd@20170213",
+        "transform": {
+          "type": "enum",
+          "select": "raw",
+          "map": {
+            "ausgeschlossene Diagnose": true,
+            "A": true
+          }
+        }
+      }
+    ],
+    "abschlussdiagnosen.abschlussdiagnose.fuhrende_abschlussdiagnoseq_sequenznummer": "Problemconcernacteddiagnoses.act.entryRelationship.sequenceNumber@20160622",
+    "weiteres_procedere_therapieempfehlung_weiterbehandler.procedere": null,
+    "administrative_verlegungsentlassungsinformationen.typ_verlegung": null,
+    "administrative_verlegungsentlassungsinformationen.typ_entlassung": null,
+    "administrative_verlegungsentlassungsinformationen.zeitpunkt_entscheidung_zur_verlegung_entlassung": "zeitpunkt_entscheidung_zur_verlegung__entlassung.value",
+    "administrative_verlegungsentlassungsinformationen.zeitpunkt_patient_verlegungs_entlassungsfahig": "zeitpunkt_patient_verlegungs__entlassungsfahig.value",
+    "administrative_verlegungsentlassungsinformationen.zeitpunkt_patient_verlegt_entlassen_nach": "CDAEncompassingEncounter.componentOf.encompassingEncounter.effectiveTime.high@20160601",
+    "dokumentationsinformationen.beginn_patientenbezogene_dokumentation.zeitpunkt_beginn_patientenbezogene_dokumentation": {
+      "target": "CDAEncompassingEncounter.componentOf.encompassingEncounter.effectiveTime.low@20160601",
+      "cda_target": "CDAEncompassingEncounter.componentOf.encompassingEncounter.effectiveTime.low@20160601",
+      "structure": "coalesce-cdaencompassingencounter-componentof-encompassingencounter-effectivetime-low-20160601"
+    },
+    "dokumentationsinformationen.berechnete_zeitintervalle.zeit_bis_zum_export": null,
+    "dokumentationsinformationen.datenbereitstellung.name_des_edis": null,
+    "dokumentationsinformationen.datenbereitstellung.version_des_edis": null,
+    "masnahmen.medikamentose_therapie.medikation.medikament.arzneimittel.arzneimittelname": null,
+    "masnahmen.medikamentose_therapie.medikation.medikament.arzneimittel.arzneimittelcode": null,
+    "masnahmen.medikamentose_therapie.medikation.medikament.darreichungsform": null,
+    "masnahmen.medikamentose_therapie.medikation.medikament.wirkstoff.wirkstoffname": null,
+    "masnahmen.medikamentose_therapie.medikation.medikament.wirkstoff.wirkstoffcode": null,
+    "masnahmen.medikamentose_therapie.medikation.medikament.wirkstoff.arzneilich_wirksamer_bestandteilq": null,
+    "masnahmen.medikamentose_therapie.medikation.medikament.wirkstoff.wirkstarke": null,
+    "masnahmen.medikamentose_therapie.medikation.medikament.chargennummer": null,
+    "masnahmen.medikamentose_therapie.medikation.anwendungszeiten.startzeitpunkt_der_anwendung": null,
+    "masnahmen.medikamentose_therapie.medikation.anwendungszeiten.stoppzeitpunkt_der_anwendung": null,
+    "masnahmen.medikamentose_therapie.medikation.dosierung.sequenznummer": null,
+    "masnahmen.medikamentose_therapie.medikation.dosierung.freitext": null,
+    "masnahmen.medikamentose_therapie.medikation.dosierung.zusatzliche_hinweise": null,
+    "masnahmen.medikamentose_therapie.medikation.dosierung.anweisungen_zur_einnahme": null,
+    "masnahmen.medikamentose_therapie.medikation.dosierung.zeitangabe.zeitpunkt": null,
+    "masnahmen.medikamentose_therapie.medikation.dosierung.zeitangabe.ereignisbezogene_wiederholung.ereignis": null,
+    "masnahmen.medikamentose_therapie.medikation.dosierung.zeitangabe.ereignisbezogene_wiederholung.offset": null,
+    "masnahmen.medikamentose_therapie.medikation.dosierung.einnahme_bei_bedarf": null,
+    "masnahmen.medikamentose_therapie.medikation.dosierung.korperstelle": null,
+    "masnahmen.medikamentose_therapie.medikation.dosierung.art_der_anwendung": null,
+    "masnahmen.medikamentose_therapie.medikation.dosierung.methode_der_anwendung": null,
+    "masnahmen.medikamentose_therapie.medikation.dosierung.dosismenge_und_einheit": null,
+    "masnahmen.medikamentose_therapie.medikation.dosierung.kontinuierliche_gabe_rate": null,
+    "masnahmen.medikamentose_therapie.medikation.grund_der_medikation.begrundungstext": null,
+    "masnahmen.medikamentose_therapie.medikation.grund_der_medikation.kodierte_begrundung": null
+  },
+  "structures": {
+    "coalesce-cdaencompassingencounter-componentof-encompassingencounter-effectivetime-low-20160601": {
+      "type": "coalesce",
+      "sources": [
+        "administrative_aufnahmeinformationen.aufnahmezeitpunkt",
+        "dokumentationsinformationen.beginn_patientenbezogene_dokumentation.zeitpunkt_beginn_patientenbezogene_dokumentation"
+      ],
+      "target": "CDAEncompassingEncounter.componentOf.encompassingEncounter.effectiveTime.low@20160601",
+      "policy": "equal_or_error",
+      "evidence": [
+        "shared singleton CDA target",
+        "compatible source datatypes"
+      ]
+    },
+    "fan-out-pupilsize-value": {
+      "type": "fan_out",
+      "evidence": [
+        "shared repeatable CDA value target",
+        "one additional CDA repeat level",
+        "required side discriminator Pupilsize.targetSiteCode"
+      ],
+      "branches": [
+        {
+          "source": "vitalparameter.pupillenweite.pupillenweite_rechts",
+          "target": "Pupilsize_right.value",
+          "cda_target": "Pupilsize.value",
+          "branch": "right",
+          "constants": {
+            "Pupilsize.targetSiteCode": {
+              "code": "362502000",
+              "codeSystem": "2.16.840.1.113883.6.96",
+              "displayName": "Entire right eye (body structure)"
+            }
+          }
+        },
+        {
+          "source": "vitalparameter.pupillenweite.pupillenweite_links",
+          "target": "Pupilsize_left.value",
+          "cda_target": "Pupilsize.value",
+          "branch": "left",
+          "constants": {
+            "Pupilsize.targetSiteCode": {
+              "code": "362503005",
+              "codeSystem": "2.16.840.1.113883.6.96",
+              "displayName": "Entire left eye (body structure)"
+            }
+          }
+        }
+      ]
+    },
+    "fan-out-pupilreaction-value": {
+      "type": "fan_out",
+      "evidence": [
+        "shared repeatable CDA value target",
+        "one additional CDA repeat level",
+        "required side discriminator Pupilreaction.targetSiteCode"
+      ],
+      "branches": [
+        {
+          "source": "vitalparameter.pupillenreaktion.pupillenreaktion_rechts",
+          "target": "Pupilreaction_right.value",
+          "cda_target": "Pupilreaction.value",
+          "branch": "right",
+          "constants": {
+            "Pupilreaction.targetSiteCode": {
+              "code": "362502000",
+              "codeSystem": "2.16.840.1.113883.6.96",
+              "displayName": "Entire right eye (body structure)"
+            }
+          }
+        },
+        {
+          "source": "vitalparameter.pupillenreaktion.pupillenreaktion_links",
+          "target": "Pupilreaction_left.value",
+          "cda_target": "Pupilreaction.value",
+          "branch": "left",
+          "constants": {
+            "Pupilreaction.targetSiteCode": {
+              "code": "362503005",
+              "codeSystem": "2.16.840.1.113883.6.96",
+              "displayName": "Entire left eye (body structure)"
+            }
+          }
+        }
+      ]
+    },
+    "for-each-vitalparameter": {
+      "type": "for_each",
+      "source_group": "vitalparameter",
+      "target_repeat": "VitalSignsSection.section.entry@20251201",
+      "evidence": [
+        "matching source and CDA repeat depth"
+      ]
+    },
+    "for-each-abschlussdiagnosen-abschlussdiagnose": {
+      "type": "for_each",
+      "source_group": "abschlussdiagnosen.abschlussdiagnose",
+      "target_repeat": "Problemconcernacteddiagnoses.act.entryRelationship@20160622",
+      "evidence": [
+        "matching source and CDA repeat depth"
+      ]
+    }
+  },
+  "defaults": {
+    "required_unmapped": {
+      "nullFlavor": "NI"
+    }
+  },
+  "target_defaults": {
+    "Problemobservationeddiagnosis.observation.effectiveTime.low@20170213": {
+      "nullFlavor": "UNK",
+      "reason": "The transaction contains no diagnosis-onset datapoint; the required onset therefore exists with an unknown value."
+    }
+  }
+}

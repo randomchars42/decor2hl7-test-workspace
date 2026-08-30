@@ -1,7 +1,4 @@
-aktin.json
-config/*
-mapping/*
-model/*
+aktin.json:
 out/*
 state/*
 

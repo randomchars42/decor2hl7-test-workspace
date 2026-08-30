@@ -1,0 +1,21 @@
+{
+  "prefix": "aktin-",
+  "language": "de-DE",
+  "network": {
+    "ipv4": true
+  },
+  "release": {
+    "date": "2026-04-27T18:50:33",
+    "label": "2026.1.2",
+    "status": "active",
+    "key": "2026.1.2"
+  },
+  "transaction": {
+    "id": "2.16.840.1.113883.2.6.60.3.4.60",
+    "effective_date": "2026-03-25T00:00:00",
+    "version_label": "2026",
+    "status": "draft",
+    "name": "Notaufnahmeregister Transitionsversion",
+    "key": "notaufnahmeregister--60"
+  }
+}
