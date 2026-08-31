@@ -1,4 +1,6 @@
-<codeSystem xmlns:json="http://www.json.org" id="2.16.840.1.113883.6.1" effectiveDate="2026-02-24T00:00:00" statusCode="final" versionLabel="2.82" name="loinc" displayName="LOINC">
-    <copyright json:array="true" language="en-US">&amp;quot;</copyright>
+<codeSystem xmlns:json="http://www.json.org" ref="2.16.840.1.113883.6.1" name="LOINC" displayName="Logical Observation Identifier Names and Codes" language="de-DE" url="http://art-decor.org/decor/services/" ident="hl7ips-" external="true" versionLabel="2.82" canonicalUri="http://loinc.org" statusCode="active" experimental="false" effectiveDate="2026-02-24T00:00:00">
+    <publishingAuthority json:array="true" name="Regenstrief Institute">
+        <addrLine json:array="true" type="uri">http://loinc.org</addrLine>
+    </publishingAuthority>
     <issueAssociation json:array="true" count="0"/>
 </codeSystem>

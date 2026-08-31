@@ -20,16 +20,13 @@
   "readiness_errors": [],
   "degraded": true,
   "degraded_resources": [
-    "codesystem:0.4.0.127.0.16.1.1.2.1",
     "codesystem:1.0.3166.1",
     "codesystem:1.2.276.0.76.3.1.131.1.5.1",
     "codesystem:1.2.276.0.76.3.1.195.5.53@2019-12-30T00:00:00",
     "codesystem:1.2.36.1.2001.1005.17",
     "codesystem:2.16.840.1.113883.12.292",
     "codesystem:2.16.840.1.113883.15.16",
-    "codesystem:2.16.840.1.113883.15.6",
     "codesystem:2.16.840.1.113883.4.9",
-    "codesystem:2.16.840.1.113883.6.1",
     "codesystem:2.16.840.1.113883.6.10",
     "codesystem:2.16.840.1.113883.6.121",
     "codesystem:2.16.840.1.113883.6.174",
@@ -39,7 +36,6 @@
     "codesystem:2.16.840.1.113883.6.59",
     "codesystem:2.16.840.1.113883.6.8",
     "codesystem:2.16.840.1.113883.6.88",
-    "codesystem:2.16.840.1.113883.6.96",
     "codesystem:2.16.840.1.1138836.96",
     "dataset:2.16.840.1.113883.2.6.60.3.1.2",
     "dataset:2.16.840.1.113883.2.6.60.3.1.3",
@@ -47,16 +43,13 @@
     "valueset:1.3.6.1.4.1.19376.1.3.11.11@2015-11-22T12:20:34"
   ],
   "degradation_warnings": [
-    "dependency unavailable: codesystem:0.4.0.127.0.16.1.1.2.1",
     "dependency unavailable: codesystem:1.0.3166.1",
     "dependency unavailable: codesystem:1.2.276.0.76.3.1.131.1.5.1",
     "dependency unavailable: codesystem:1.2.276.0.76.3.1.195.5.53@2019-12-30T00:00:00",
     "dependency unavailable: codesystem:1.2.36.1.2001.1005.17",
     "dependency unavailable: codesystem:2.16.840.1.113883.12.292",
     "dependency unavailable: codesystem:2.16.840.1.113883.15.16",
-    "dependency unavailable: codesystem:2.16.840.1.113883.15.6",
     "dependency unavailable: codesystem:2.16.840.1.113883.4.9",
-    "dependency unavailable: codesystem:2.16.840.1.113883.6.1",
     "dependency unavailable: codesystem:2.16.840.1.113883.6.10",
     "dependency unavailable: codesystem:2.16.840.1.113883.6.121",
     "dependency unavailable: codesystem:2.16.840.1.113883.6.174",
@@ -66,7 +59,6 @@
     "dependency unavailable: codesystem:2.16.840.1.113883.6.59",
     "dependency unavailable: codesystem:2.16.840.1.113883.6.8",
     "dependency unavailable: codesystem:2.16.840.1.113883.6.88",
-    "dependency unavailable: codesystem:2.16.840.1.113883.6.96",
     "dependency unavailable: codesystem:2.16.840.1.1138836.96",
     "dependency unavailable: dataset:2.16.840.1.113883.2.6.60.3.1.2",
     "dependency unavailable: dataset:2.16.840.1.113883.2.6.60.3.1.3",
@@ -16230,18 +16222,14 @@
     "build": [],
     "evidence": []
   },
-  "missing": [],
-  "unavailable": [
-    "codesystem:0.4.0.127.0.16.1.1.2.1",
+  "missing": [
     "codesystem:1.0.3166.1",
     "codesystem:1.2.276.0.76.3.1.131.1.5.1",
     "codesystem:1.2.276.0.76.3.1.195.5.53@2019-12-30T00:00:00",
     "codesystem:1.2.36.1.2001.1005.17",
     "codesystem:2.16.840.1.113883.12.292",
     "codesystem:2.16.840.1.113883.15.16",
-    "codesystem:2.16.840.1.113883.15.6",
     "codesystem:2.16.840.1.113883.4.9",
-    "codesystem:2.16.840.1.113883.6.1",
     "codesystem:2.16.840.1.113883.6.10",
     "codesystem:2.16.840.1.113883.6.121",
     "codesystem:2.16.840.1.113883.6.174",
@@ -16251,7 +16239,6 @@
     "codesystem:2.16.840.1.113883.6.59",
     "codesystem:2.16.840.1.113883.6.8",
     "codesystem:2.16.840.1.113883.6.88",
-    "codesystem:2.16.840.1.113883.6.96",
     "codesystem:2.16.840.1.1138836.96",
     "concept:2.16.840.1.113883.3.1937.777.24.2.109@2018-09-06T11:24:48",
     "concept:2.16.840.1.113883.3.1937.777.24.2.609@2019-02-05T16:13:43",
@@ -16299,12 +16286,14 @@
     "template:2.16.840.1.113883.3.2898.10.23@2015-09-09T00:00:00",
     "valueset:1.3.6.1.4.1.19376.1.3.11.11@2015-11-22T12:20:34"
   ],
+  "unavailable": [],
   "waived": [
     "template:1.3.6.1.4.1.19376.1.5.3.1.4.9"
   ],
   "partial": [],
   "errors": [],
   "root_status": {
+    "cda_core": "ok",
     "api_contract": "ok",
     "project_config": "ok",
     "transaction": "ok",
@@ -16313,14 +16302,14 @@
     "project_directory": "ok"
   },
   "summary": {
-    "ok": 622,
-    "missing": 0,
-    "unavailable": 66,
+    "ok": 626,
+    "missing": 62,
+    "unavailable": 0,
     "waived": 1,
     "partial": 0,
     "error": 0
   },
   "resources_considered": 687,
-  "recursive_http_requests": 0,
+  "recursive_http_requests": 698,
   "truncated": false
 }
