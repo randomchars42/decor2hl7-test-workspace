@@ -1,0 +1,3 @@
+case_id,occurrence_1,diagnostik.wildcard_diagnostik.code,diagnostik.wildcard_diagnostik.definitorischer_link,diagnostik.wildcard_diagnostik.klinisch_relevante_zeitangaben.zeitpunkt,diagnostik.wildcard_diagnostik.klinisch_relevante_zeitangaben.zeitraum,diagnostik.wildcard_diagnostik.wert
+TEST-1,1-1,SYNTHETIC,Synthetic-3f9c7ac495,2026-01-15T10:00:00+01:00,1,Synthetic-e656dd289b
+TEST-1,1-2,SYNTHETIC,Synthetic-3f9c7ac495,2026-01-15T10:00:00+01:00,1,Synthetic-e656dd289b

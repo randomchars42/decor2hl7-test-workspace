@@ -1,0 +1,5 @@
+case_id,occurrence_1,abschlussdiagnosen.abschlussdiagnose.freitext_abschlussdiagnose,abschlussdiagnosen.abschlussdiagnose.fuhrende_abschlussdiagnoseq_sequenznummer,abschlussdiagnosen.abschlussdiagnose.icd10,abschlussdiagnosen.abschlussdiagnose.icd10_sekundardiagnose,abschlussdiagnosen.abschlussdiagnose.zusatzkennzeichen
+TEST-1,1-1,Synthetic-de2a3e2442,1,SYNTHETIC,SYNTHETIC,Verdachtsdiagnose
+TEST-1,1-2,Synthetic-de2a3e2442,2,SYNTHETIC,SYNTHETIC,ausgeschlossene Diagnose
+TEST-1,1-3,Synthetic-de2a3e2442,3,SYNTHETIC,SYNTHETIC,Zustand nach der Diagnose
+TEST-1,1-4,Synthetic-de2a3e2442,4,SYNTHETIC,SYNTHETIC,gesicherte Diagnose
