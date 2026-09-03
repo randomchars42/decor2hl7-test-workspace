@@ -1,0 +1,53 @@
+{
+  "format": 1,
+  "attachments": [
+    {
+      "transaction_id": "2.16.840.1.113883.2.6.60.3.4.60",
+      "transaction_effective_date": "2026-03-25T00:00:00",
+      "document_template_id": "1.2.276.0.76.3.1.195.10.93",
+      "document_template_effective_date": "2026-03-25T11:04:07",
+      "parent_template_id": "1.2.276.0.76.3.1.195.10.73",
+      "parent_template_effective_date": "2024-08-15T11:08:15",
+      "parent_element_id": "2.16.840.1.113883.2.6.60.3.9.196",
+      "element_name": "hl7:entry",
+      "template_id": "1.2.276.0.76.3.1.195.10.85",
+      "template_effective_date": "2024-05-24T00:00:00",
+      "minimum_multiplicity": 0,
+      "maximum_multiplicity": 1,
+      "conformance": "R",
+      "reason": "Reviewed placement of Zeit bis zum Export in the open Addendum Dokumentationsinformationen section; the selected source concept has an equal FLN-134 association to this exact entry template."
+    },
+    {
+      "transaction_id": "2.16.840.1.113883.2.6.60.3.4.60",
+      "transaction_effective_date": "2026-03-25T00:00:00",
+      "document_template_id": "1.2.276.0.76.3.1.195.10.93",
+      "document_template_effective_date": "2026-03-25T11:04:07",
+      "parent_template_id": "1.2.276.0.76.3.1.195.10.73",
+      "parent_template_effective_date": "2024-08-15T11:08:15",
+      "parent_element_id": "2.16.840.1.113883.2.6.60.3.9.196",
+      "element_name": "hl7:entry",
+      "template_id": "1.2.276.0.76.3.1.195.10.86",
+      "template_effective_date": "2024-05-24T00:00:00",
+      "minimum_multiplicity": 0,
+      "maximum_multiplicity": 1,
+      "conformance": "R",
+      "reason": "Reviewed placement of Name des EDIS in the open Addendum Dokumentationsinformationen section; the selected source concept has an equal FLN-135 association to this exact entry template."
+    },
+    {
+      "transaction_id": "2.16.840.1.113883.2.6.60.3.4.60",
+      "transaction_effective_date": "2026-03-25T00:00:00",
+      "document_template_id": "1.2.276.0.76.3.1.195.10.93",
+      "document_template_effective_date": "2026-03-25T11:04:07",
+      "parent_template_id": "1.2.276.0.76.3.1.195.10.73",
+      "parent_template_effective_date": "2024-08-15T11:08:15",
+      "parent_element_id": "2.16.840.1.113883.2.6.60.3.9.196",
+      "element_name": "hl7:entry",
+      "template_id": "1.2.276.0.76.3.1.195.10.87",
+      "template_effective_date": "2024-05-24T00:00:00",
+      "minimum_multiplicity": 0,
+      "maximum_multiplicity": 1,
+      "conformance": "R",
+      "reason": "Reviewed placement of Version des EDIS in the open Addendum Dokumentationsinformationen section; the selected source concept has an equal FLN-136 association to this exact entry template."
+    }
+  ]
+}

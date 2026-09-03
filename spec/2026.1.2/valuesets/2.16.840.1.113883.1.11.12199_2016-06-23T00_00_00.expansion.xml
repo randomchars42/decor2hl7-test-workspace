@@ -1,0 +1,28 @@
+<valueSetExpansionSet xmlns:json="http://www.json.org" id="231ee107-f241-4a69-9ee1-07f241ba6944" effectiveDate="2026-09-03T13:51:47" statusCode="final" current="4" count="4" nonactive="0">
+    <valueSet json:array="true" id="2.16.840.1.113883.1.11.12199" name="LanguageAbilityProficiency" displayName="LanguageAbilityProficiency" effectiveDate="2016-06-23T00:00:00" statusCode="final" ident="ccda-">
+        <conceptList json:array="true">
+            <concept json:array="true" code="E" codeSystem="2.16.840.1.113883.5.61" displayName="Excellent" level="0" type="L"/>
+            <concept json:array="true" code="F" codeSystem="2.16.840.1.113883.5.61" displayName="Fair" level="0" type="L"/>
+            <concept json:array="true" code="G" codeSystem="2.16.840.1.113883.5.61" displayName="Good" level="0" type="L"/>
+            <concept json:array="true" code="P" codeSystem="2.16.840.1.113883.5.61" displayName="Poor" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+    <expansion json:array="true" expanded="true" max="100" id="231ee107-f241-4a69-9ee1-07f241ba6944">
+        <items json:array="true" is="concept" code="E" codeSystem="2.16.840.1.113883.5.61" displayName="Excellent" level="0" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="1" length="9">Excellent</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="9">Excellent</designation>
+        </items>
+        <items json:array="true" is="concept" code="F" codeSystem="2.16.840.1.113883.5.61" displayName="Fair" level="0" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="1" length="4">Fair</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="4">Fair</designation>
+        </items>
+        <items json:array="true" is="concept" code="G" codeSystem="2.16.840.1.113883.5.61" displayName="Good" level="0" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="1" length="4">Good</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="4">Good</designation>
+        </items>
+        <items json:array="true" is="concept" code="P" codeSystem="2.16.840.1.113883.5.61" displayName="Poor" level="0" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="1" length="4">Poor</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="4">Poor</designation>
+        </items>
+    </expansion>
+</valueSetExpansionSet>

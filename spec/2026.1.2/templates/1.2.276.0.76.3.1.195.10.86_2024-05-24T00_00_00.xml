@@ -1,0 +1,41 @@
+<result xmlns:json="http://www.json.org">
+    <template id="1.2.276.0.76.3.1.195.10.86" ident="pmp-">
+        <template xmlns:cda="urn:hl7-org:v3" xmlns:hl7="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1.2.276.0.76.3.1.195.10.86" hl7:dummy-default="urn:hl7-org:v3" xsi:dummy-4="http://www.w3.org/2001/XMLSchema-instance" versionLabel="2024" isClosed="false" displayName="Name des EDIS" ident="aktin-" name="name_des_edis" xml:dummy-1="http://www.w3.org/XML/1998/namespace" cda:dummy-3="urn:hl7-org:v3" statusCode="draft" url="http://art-decor.org/decor/services/" effectiveDate="2024-05-24T00:00:00">
+            <desc language="de-DE">Abgeleitete Informationen über Diagnostik zur Weitergabe - Name der lokal verwendeten Software zur primären Datenerfassung (EDIS, emergency department information system); wenn keine ED-Spezialanwendung verwendet wird, das KIS.</desc>
+            <classification type="cdaentrylevel"/>
+            <relationship type="SPEC" template="2.16.840.1.113883.10.12.303" flexibility="2005-09-07T00:00:00" tmid="2.16.840.1.113883.10.12.303" tmname="CDAObservation" tmdisplayName="CDA Observation" tmeffectiveDate="2005-09-07T00:00:00" tmstatusCode="active" url="http://art-decor.org/decor/services/" ident="ad1bbr-" linkedartefactmissing="false"/>
+            <context id="**"/>
+            <element name="hl7:observation" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true">
+                <item original="false" label="name_des_edis"/>
+                <attribute name="classCode" value="OBS" isOptional="false" datatype="cs"/>
+                <attribute name="moodCode" value="EVN" isOptional="false" datatype="cs"/>
+                <element name="hl7:templateId" datatype="II" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" isMandatory="true">
+                    <item original="false" label="name_des_edis"/>
+                    <attribute name="root" value="1.2.276.0.76.3.1.195.10.86" isOptional="false" datatype="uid"/>
+                </element>
+                <element name="hl7:code" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CE" conformance="R" isMandatory="true">
+                    <item original="false" label="name_des_edis"/>
+                    <vocabulary code="FLN-135" codeSystem="1.2.276.0.76.3.1.195.5.98" displayName="Name des EDIS"/>
+                </element>
+                <element name="hl7:text" datatype="ED" minimumMultiplicity="0" maximumMultiplicity="1">
+                    <desc language="de-DE" lastTranslated="2024-08-13T10:50:15">Lediglich reference in den Text der zugehörigen Section</desc>
+                    <item original="false" label="name_des_edis"/>
+                    <element name="hl7:reference" datatype="TEL" minimumMultiplicity="1" maximumMultiplicity="1">
+                        <item original="false" label="name_des_edis"/>
+                    </element>
+                </element>
+                <element name="hl7:statusCode" minimumMultiplicity="1" maximumMultiplicity="1" datatype="CS" conformance="R" isMandatory="true">
+                    <item original="false" label="name_des_edis"/>
+                    <vocabulary code="completed"/>
+                </element>
+                <element name="hl7:effectiveTime" datatype="TS" minimumMultiplicity="0" maximumMultiplicity="1" conformance="R">
+                    <item original="false" label="name_des_edis"/>
+                </element>
+                <element name="hl7:value" minimumMultiplicity="1" maximumMultiplicity="1" conformance="R" datatype="ST">
+                    <item original="false" label="name_des_edis"/>
+                </element>
+            </element>
+            <staticAssociations/>
+        </template>
+    </template>
+</result>

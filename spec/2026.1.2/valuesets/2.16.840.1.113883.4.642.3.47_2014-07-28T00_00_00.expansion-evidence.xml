@@ -1,0 +1,118 @@
+<valueSetExpansionSet xmlns:json="http://www.json.org" id="7cbef9a7-8be7-436f-bef9-a78be7036f24" effectiveDate="2026-09-03T14:32:54" statusCode="final" current="100" count="275" nonactive="0">
+    <valueSet json:array="true" id="2.16.840.1.113883.4.642.3.47" name="All_Security_Labels" displayName="SecurityLabels" effectiveDate="2014-07-28T00:00:00" statusCode="final" versionLabel="4.0.1" canonicalUri="http://hl7.org/fhir/ValueSet/security-labels" ident="ad5bbr-">
+        <desc json:array="true" language="en-US">A single value set for all security labels defined by FHIR.</desc>
+        <publishingAuthority json:array="true" name="FHIR project team">
+            <addrLine json:array="true" type="uri">http://hl7.org/fhir</addrLine>
+        </publishingAuthority>
+        <conceptList json:array="true">
+            <include json:array="true" ref="2.16.840.1.113883.1.11.10228"/>
+            <include json:array="true" ref="2.16.840.1.113883.1.11.20428"/>
+            <include json:array="true" ref="2.16.840.1.113883.1.11.20478"/>
+            <include json:array="true" ref="2.16.840.1.113883.1.11.20481"/>
+            <include json:array="true" ref="2.16.840.1.113883.1.11.20471"/>
+            <include json:array="true" ref="2.16.840.1.113883.1.11.20427"/>
+        </conceptList>
+    </valueSet>
+    <expansion json:array="true" expanded="true" max="100" id="7cbef9a7-8be7-436f-bef9-a78be7036f24">
+        <items json:array="true" is="concept" code="PurposeOfUse" codeSystem="2.16.840.1.113883.5.8" displayName="purpose of use" level="0" type="S"/>
+        <items json:array="true" is="concept" code="HMARKT" codeSystem="2.16.840.1.113883.5.8" displayName="healthcare marketing" level="1" type="L"/>
+        <items json:array="true" is="concept" code="HOPERAT" codeSystem="2.16.840.1.113883.5.8" displayName="healthcare operations" level="1" type="S"/>
+        <items json:array="true" is="concept" code="CAREMGT" codeSystem="2.16.840.1.113883.5.8" displayName="care management" level="2" type="L"/>
+        <items json:array="true" is="concept" code="DONAT" codeSystem="2.16.840.1.113883.5.8" displayName="donation" level="2" type="L"/>
+        <items json:array="true" is="concept" code="FRAUD" codeSystem="2.16.840.1.113883.5.8" displayName="fraud" level="2" type="L"/>
+        <items json:array="true" is="concept" code="GOV" codeSystem="2.16.840.1.113883.5.8" displayName="government" level="2" type="L"/>
+        <items json:array="true" is="concept" code="HACCRED" codeSystem="2.16.840.1.113883.5.8" displayName="health accreditation" level="2" type="L"/>
+        <items json:array="true" is="concept" code="HCOMPL" codeSystem="2.16.840.1.113883.5.8" displayName="health compliance" level="2" type="L"/>
+        <items json:array="true" is="concept" code="HDECD" codeSystem="2.16.840.1.113883.5.8" displayName="decedent" level="2" type="L"/>
+        <items json:array="true" is="concept" code="HDIRECT" codeSystem="2.16.840.1.113883.5.8" displayName="directory" level="2" type="L"/>
+        <items json:array="true" is="concept" code="HDM" codeSystem="2.16.840.1.113883.5.8" displayName="healthcare delivery management" level="2" type="L"/>
+        <items json:array="true" is="concept" code="HLEGAL" codeSystem="2.16.840.1.113883.5.8" displayName="legal" level="2" type="L"/>
+        <items json:array="true" is="concept" code="HOUTCOMS" codeSystem="2.16.840.1.113883.5.8" displayName="health outcome measure" level="2" type="L"/>
+        <items json:array="true" is="concept" code="HPRGRP" codeSystem="2.16.840.1.113883.5.8" displayName="health program reporting" level="2" type="L"/>
+        <items json:array="true" is="concept" code="HQUALIMP" codeSystem="2.16.840.1.113883.5.8" displayName="health quality improvement" level="2" type="L"/>
+        <items json:array="true" is="concept" code="HSYSADMIN" codeSystem="2.16.840.1.113883.5.8" displayName="health system administration" level="2" type="S"/>
+        <items json:array="true" is="concept" code="LABELING" codeSystem="2.16.840.1.113883.5.8" displayName="labeling" level="3" type="L"/>
+        <items json:array="true" is="concept" code="METAMGT" codeSystem="2.16.840.1.113883.5.8" displayName="metadata management" level="3" type="L"/>
+        <items json:array="true" is="concept" code="MEMADMIN" codeSystem="2.16.840.1.113883.5.8" displayName="member administration" level="2" type="L"/>
+        <items json:array="true" is="concept" code="MILCDM" codeSystem="2.16.840.1.113883.5.8" displayName="military command" level="2" type="L"/>
+        <items json:array="true" is="concept" code="PATADMIN" codeSystem="2.16.840.1.113883.5.8" displayName="patient administration" level="2" type="L"/>
+        <items json:array="true" is="concept" code="PATSFTY" codeSystem="2.16.840.1.113883.5.8" displayName="patient safety" level="2" type="L"/>
+        <items json:array="true" is="concept" code="PERFMSR" codeSystem="2.16.840.1.113883.5.8" displayName="performance measure" level="2" type="L"/>
+        <items json:array="true" is="concept" code="RECORDMGT" codeSystem="2.16.840.1.113883.5.8" displayName="records management" level="2" type="L"/>
+        <items json:array="true" is="concept" code="SYSDEV" codeSystem="2.16.840.1.113883.5.8" displayName="system development" level="2" type="S"/>
+        <items json:array="true" is="concept" code="HTEST" codeSystem="2.16.840.1.113883.5.8" displayName="test health data" level="3" type="L"/>
+        <items json:array="true" is="concept" code="TRAIN" codeSystem="2.16.840.1.113883.5.8" displayName="training" level="2" type="L"/>
+        <items json:array="true" is="concept" code="HPAYMT" codeSystem="2.16.840.1.113883.5.8" displayName="healthcare payment" level="1" type="S"/>
+        <items json:array="true" is="concept" code="CLMATTCH" codeSystem="2.16.840.1.113883.5.8" displayName="claim attachment" level="2" type="L"/>
+        <items json:array="true" is="concept" code="COVAUTH" codeSystem="2.16.840.1.113883.5.8" displayName="coverage authorization" level="2" type="L"/>
+        <items json:array="true" is="concept" code="COVERAGE" codeSystem="2.16.840.1.113883.5.8" displayName="coverage under policy or program" level="2" type="S"/>
+        <items json:array="true" is="concept" code="ELIGDTRM" codeSystem="2.16.840.1.113883.5.8" displayName="eligibility determination" level="3" type="L"/>
+        <items json:array="true" is="concept" code="ELIGVER" codeSystem="2.16.840.1.113883.5.8" displayName="eligibility verification" level="3" type="L"/>
+        <items json:array="true" is="concept" code="ENROLLM" codeSystem="2.16.840.1.113883.5.8" displayName="enrollment" level="3" type="L"/>
+        <items json:array="true" is="concept" code="MILDCRG" codeSystem="2.16.840.1.113883.5.8" displayName="military discharge" level="3" type="L"/>
+        <items json:array="true" is="concept" code="REMITADV" codeSystem="2.16.840.1.113883.5.8" displayName="remittance advice" level="2" type="L"/>
+        <items json:array="true" is="concept" code="HRESCH" codeSystem="2.16.840.1.113883.5.8" displayName="healthcare research" level="1" type="S"/>
+        <items json:array="true" is="concept" code="BIORCH" codeSystem="2.16.840.1.113883.5.8" displayName="biomedical research" level="2" type="L"/>
+        <items json:array="true" is="concept" code="CLINTRCH" codeSystem="2.16.840.1.113883.5.8" displayName="clinical trial research" level="2" type="S"/>
+        <items json:array="true" is="concept" code="CLINTRCHNPC" codeSystem="2.16.840.1.113883.5.8" displayName="clinical trial research without patient care" level="3" type="L"/>
+        <items json:array="true" is="concept" code="CLINTRCHPC" codeSystem="2.16.840.1.113883.5.8" displayName="clinical trial research with patient care" level="3" type="L"/>
+        <items json:array="true" is="concept" code="PRECLINTRCH" codeSystem="2.16.840.1.113883.5.8" displayName="preclinical trial research" level="3" type="L"/>
+        <items json:array="true" is="concept" code="DSRCH" codeSystem="2.16.840.1.113883.5.8" displayName="disease specific healthcare research" level="2" type="L"/>
+        <items json:array="true" is="concept" code="POARCH" codeSystem="2.16.840.1.113883.5.8" displayName="population origins or ancestry healthcare research" level="2" type="L"/>
+        <items json:array="true" is="concept" code="TRANSRCH" codeSystem="2.16.840.1.113883.5.8" displayName="translational healthcare research" level="2" type="L"/>
+        <items json:array="true" is="concept" code="PATRQT" codeSystem="2.16.840.1.113883.5.8" displayName="patient requested" level="1" type="S"/>
+        <items json:array="true" is="concept" code="FAMRQT" codeSystem="2.16.840.1.113883.5.8" displayName="family requested" level="2" type="L"/>
+        <items json:array="true" is="concept" code="PWATRNY" codeSystem="2.16.840.1.113883.5.8" displayName="power of attorney" level="2" type="L"/>
+        <items json:array="true" is="concept" code="SUPNWK" codeSystem="2.16.840.1.113883.5.8" displayName="support network" level="2" type="L"/>
+        <items json:array="true" is="concept" code="PUBHLTH" codeSystem="2.16.840.1.113883.5.8" displayName="public health" level="1" type="S"/>
+        <items json:array="true" is="concept" code="DISASTER" codeSystem="2.16.840.1.113883.5.8" displayName="disaster" level="2" type="L"/>
+        <items json:array="true" is="concept" code="THREAT" codeSystem="2.16.840.1.113883.5.8" displayName="threat" level="2" type="L"/>
+        <items json:array="true" is="concept" code="TREAT" codeSystem="2.16.840.1.113883.5.8" displayName="treatment" level="1" type="S"/>
+        <items json:array="true" is="concept" code="CLINTRL" codeSystem="2.16.840.1.113883.5.8" displayName="clinical trial" level="2" type="L"/>
+        <items json:array="true" is="concept" code="COC" codeSystem="2.16.840.1.113883.5.8" displayName="coordination of care" level="2" type="L"/>
+        <items json:array="true" is="concept" code="ETREAT" codeSystem="2.16.840.1.113883.5.8" displayName="Emergency Treatment" level="2" type="S"/>
+        <items json:array="true" is="concept" code="BTG" codeSystem="2.16.840.1.113883.5.8" displayName="break the glass" level="3" type="L"/>
+        <items json:array="true" is="concept" code="ERTREAT" codeSystem="2.16.840.1.113883.5.8" displayName="emergency room treatment" level="3" type="L"/>
+        <items json:array="true" is="concept" code="POPHLTH" codeSystem="2.16.840.1.113883.5.8" displayName="population health" level="2" type="L"/>
+        <items json:array="true" is="concept" code="COVERAGE" codeSystem="2.16.840.1.113883.5.8" displayName="coverage under policy or program" level="0" type="S"/>
+        <items json:array="true" is="concept" code="ETREAT" codeSystem="2.16.840.1.113883.5.8" displayName="Emergency Treatment" level="0" type="L"/>
+        <items json:array="true" is="concept" code="HMARKT" codeSystem="2.16.840.1.113883.5.8" displayName="healthcare marketing" level="0" type="L"/>
+        <items json:array="true" is="concept" code="HOPERAT" codeSystem="2.16.840.1.113883.5.8" displayName="healthcare operations" level="0" type="S"/>
+        <items json:array="true" is="concept" code="HPAYMT" codeSystem="2.16.840.1.113883.5.8" displayName="healthcare payment" level="0" type="S"/>
+        <items json:array="true" is="concept" code="HRESCH" codeSystem="2.16.840.1.113883.5.8" displayName="healthcare research" level="0" type="S"/>
+        <items json:array="true" is="concept" code="PATRQT" codeSystem="2.16.840.1.113883.5.8" displayName="patient requested" level="0" type="S"/>
+        <items json:array="true" is="concept" code="PUBHLTH" codeSystem="2.16.840.1.113883.5.8" displayName="public health" level="0" type="S"/>
+        <items json:array="true" is="concept" code="TREAT" codeSystem="2.16.840.1.113883.5.8" displayName="treatment" level="0" type="S"/>
+        <items json:array="true" is="concept" code="L" codeSystem="2.16.840.1.113883.5.25" displayName="low" level="0" type="L"/>
+        <items json:array="true" is="concept" code="M" codeSystem="2.16.840.1.113883.5.25" displayName="moderate" level="0" type="L"/>
+        <items json:array="true" is="concept" code="N" codeSystem="2.16.840.1.113883.5.25" displayName="normal" level="0" type="L"/>
+        <items json:array="true" is="concept" code="R" codeSystem="2.16.840.1.113883.5.25" displayName="restricted" level="0" type="L"/>
+        <items json:array="true" is="concept" code="U" codeSystem="2.16.840.1.113883.5.25" displayName="unrestricted" level="0" type="L"/>
+        <items json:array="true" is="concept" code="V" codeSystem="2.16.840.1.113883.5.25" displayName="very restricted" level="0" type="L"/>
+        <items json:array="true" is="concept" code="_InformationSensitivityPolicy" codeSystem="2.16.840.1.113883.5.4" displayName="InformationSensitivityPolicy" level="0" type="A"/>
+        <items json:array="true" is="concept" code="_ActInformationSensitivityPolicy" codeSystem="2.16.840.1.113883.5.4" displayName="ActInformationSensitivityPolicy" level="1" type="A"/>
+        <items json:array="true" is="concept" code="ETH" codeSystem="2.16.840.1.113883.5.4" displayName="substance abuse information sensitivity" level="2" type="L"/>
+        <items json:array="true" is="concept" code="GDIS" codeSystem="2.16.840.1.113883.5.4" displayName="genetic disease information sensitivity" level="2" type="L"/>
+        <items json:array="true" is="concept" code="HIV" codeSystem="2.16.840.1.113883.5.4" displayName="HIV/AIDS information sensitivity" level="2" type="L"/>
+        <items json:array="true" is="concept" code="MST" codeSystem="2.16.840.1.113883.5.4" displayName="military sexual trauma information sensitivity" level="2" type="L"/>
+        <items json:array="true" is="concept" code="SCA" codeSystem="2.16.840.1.113883.5.4" displayName="sickle cell anemia information sensitivity" level="2" type="L"/>
+        <items json:array="true" is="concept" code="SDV" codeSystem="2.16.840.1.113883.5.4" displayName="sexual assault, abuse, or domestic violence information sensitivity" level="2" type="L"/>
+        <items json:array="true" is="concept" code="SEX" codeSystem="2.16.840.1.113883.5.4" displayName="sexuality and reproductive health information sensitivity" level="2" type="L"/>
+        <items json:array="true" is="concept" code="SPI" codeSystem="2.16.840.1.113883.5.4" displayName="specially protected information sensitivity" level="2" type="S"/>
+        <items json:array="true" is="concept" code="BH" codeSystem="2.16.840.1.113883.5.4" displayName="behavioral health information sensitivity" level="3" type="S"/>
+        <items json:array="true" is="concept" code="COGN" codeSystem="2.16.840.1.113883.5.4" displayName="cognitive disability information sensitivity" level="4" type="L"/>
+        <items json:array="true" is="concept" code="DVD" codeSystem="2.16.840.1.113883.5.4" displayName="developmental disability information sensitivity" level="4" type="L"/>
+        <items json:array="true" is="concept" code="EMOTDIS" codeSystem="2.16.840.1.113883.5.4" displayName="emotional disturbance information sensitivity" level="4" type="L"/>
+        <items json:array="true" is="concept" code="MH" codeSystem="2.16.840.1.113883.5.4" displayName="mental health information sensitivity" level="3" type="L"/>
+        <items json:array="true" is="concept" code="PSY" codeSystem="2.16.840.1.113883.5.4" displayName="psychiatry disorder information sensitivity" level="3" type="L"/>
+        <items json:array="true" is="concept" code="PSYTHPN" codeSystem="2.16.840.1.113883.5.4" displayName="psychotherapy note information sensitivity" level="3" type="L"/>
+        <items json:array="true" is="concept" code="SUD" codeSystem="2.16.840.1.113883.5.4" displayName="substance use disorder information sensitivity" level="3" type="S"/>
+        <items json:array="true" is="concept" code="ETHUD" codeSystem="2.16.840.1.113883.5.4" displayName="alcohol use disorder information sensitivity" level="4" type="L"/>
+        <items json:array="true" is="concept" code="OPIOIDUD" codeSystem="2.16.840.1.113883.5.4" displayName="opioid use disorder information sensitivity" level="4" type="L"/>
+        <items json:array="true" is="concept" code="STD" codeSystem="2.16.840.1.113883.5.4" displayName="sexually transmitted disease information sensitivity" level="2" type="L"/>
+        <items json:array="true" is="concept" code="TBOO" codeSystem="2.16.840.1.113883.5.4" displayName="taboo" level="2" type="L"/>
+        <items json:array="true" is="concept" code="VIO" codeSystem="2.16.840.1.113883.5.4" displayName="violence information sensitivity" level="2" type="L"/>
+        <items json:array="true" is="concept" code="_EntitySensitivityPolicyType" codeSystem="2.16.840.1.113883.5.4" displayName="EntityInformationSensitivityPolicy" level="1" type="A"/>
+        <items json:array="true" is="concept" code="DEMO" codeSystem="2.16.840.1.113883.5.4" displayName="all demographic information sensitivity" level="2" type="L"/>
+    </expansion>
+</valueSetExpansionSet>

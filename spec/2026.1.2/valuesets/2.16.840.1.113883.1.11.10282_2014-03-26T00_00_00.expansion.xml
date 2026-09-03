@@ -1,0 +1,25 @@
+<valueSetExpansionSet xmlns:json="http://www.json.org" id="b67cb4c5-7a30-4abd-bcb4-c57a301abde6" effectiveDate="2026-09-03T13:51:44" statusCode="final" current="3" count="3" nonactive="0">
+    <valueSet json:array="true" id="2.16.840.1.113883.1.11.10282" name="ParticipationSignature" displayName="ParticipationSignature" effectiveDate="2014-03-26T00:00:00" statusCode="final" versionLabel="DEFN=UV=VO=1360-20160323" ident="ad2bbr-">
+        <desc json:array="true" language="en-US">&lt;p&gt;&lt;b&gt;History description 2014-03-26: &lt;/b&gt;Lock all vaue sets untouched since 2014-03-26 to trackingId 2014T1_2014_03_26&lt;/p&gt; &lt;b&gt;description: &lt;/b&gt; &lt;p&gt;A code specifying whether and how the participant has attested his participation through a signature and or whether such a signature is needed.&lt;/p&gt; &lt;p&gt;&lt;i&gt;Examples:&lt;/i&gt; A surgical Procedure act object (representing a
+                    procedure report) requires a signature of the performing and responsible surgeon, and possibly other participants. (See also: Participation.signatureText.)&lt;/p&gt;</desc>
+        <conceptList json:array="true"><!-- START completeCodeSystem codeSystem="2.16.840.1.113883.5.89" name="ParticipationSignature" -->
+            <concept json:array="true" code="I" codeSystem="2.16.840.1.113883.5.89" displayName="intended" level="0" type="L"/>
+            <concept json:array="true" code="S" codeSystem="2.16.840.1.113883.5.89" displayName="signed" level="0" type="L"/>
+            <concept json:array="true" code="X" codeSystem="2.16.840.1.113883.5.89" displayName="required" level="0" type="L"/><!-- END completeCodeSystem codeSystem="2.16.840.1.113883.5.89" name="ParticipationSignature" -->
+        </conceptList>
+    </valueSet>
+    <expansion json:array="true" expanded="true" max="100" id="b67cb4c5-7a30-4abd-bcb4-c57a301abde6">
+        <items json:array="true" is="concept" code="I" codeSystem="2.16.840.1.113883.5.89" displayName="intended" level="0" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="1" length="8">intended</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="8">intended</designation>
+        </items>
+        <items json:array="true" is="concept" code="S" codeSystem="2.16.840.1.113883.5.89" displayName="signed" level="0" type="S">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="1" length="6">signed</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="6">signed</designation>
+        </items>
+        <items json:array="true" is="concept" code="X" codeSystem="2.16.840.1.113883.5.89" displayName="required" level="0" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="1" length="8">required</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="8">required</designation>
+        </items>
+    </expansion>
+</valueSetExpansionSet>

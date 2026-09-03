@@ -1,10 +1,10 @@
-<valueSetExpansionSet xmlns:json="http://www.json.org" id="f92463e8-0bd3-4f00-a463-e80bd39f00ca" effectiveDate="2026-08-27T13:12:23" statusCode="final" current="100" count="1824" nonactive="0">
+<valueSetExpansionSet xmlns:json="http://www.json.org" id="fd511791-e121-41e9-9117-91e121f1e9d9" effectiveDate="2026-09-03T13:54:51" statusCode="final" current="100" count="1824" nonactive="0">
     <valueSet json:array="true" id="2.16.840.1.113883.3.1937.777.24.11.19" name="SNOMED-CT-Specimens" displayName="SNOMED CT Specimens" effectiveDate="2019-10-11T17:30:45" statusCode="draft" ident="mide-">
         <conceptList json:array="true">
             <include json:array="true" code="123038009" codeSystem="2.16.840.1.113883.6.96" displayName="Specimen" op="descendent-of" exception="false"/>
         </conceptList>
     </valueSet>
-    <expansion json:array="true" expanded="true" max="100" id="f92463e8-0bd3-4f00-a463-e80bd39f00ca">
+    <expansion json:array="true" expanded="true" max="100" id="fd511791-e121-41e9-9117-91e121f1e9d9">
         <items json:array="true" is="concept" code="40511003" codeSystem="2.16.840.1.113883.6.96" displayName="Eluate (specimen)" level="3" type="L">
             <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="17">Eluate (specimen)</designation>
             <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="1" length="6">Eluate</designation>

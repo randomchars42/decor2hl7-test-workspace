@@ -1,0 +1,843 @@
+<valueSetExpansionSet xmlns:json="http://www.json.org" id="3107905d-6508-444d-8790-5d6508144d82" effectiveDate="2026-09-03T14:34:12" statusCode="final" current="100" count="536223" nonactive="149574">
+    <valueSet json:array="true" id="2.16.840.1.113883.1.11.20.21" name="FamilyHistoryPersonCode" displayName="FamilyHistoryPersonCode" effectiveDate="2006-10-17T00:00:00" statusCode="draft" ident="ccd1-">
+        <desc json:array="true" language="en-US">Any subtype of 303071001 “Person in the family”</desc>
+        <completeCodeSystem json:array="true" codeSystem="2.16.840.1.113883.6.96"/>
+    </valueSet>
+    <expansion json:array="true" expanded="true" max="100" id="3107905d-6508-444d-8790-5d6508144d82">
+        <items json:array="true" is="concept" code="100005" codeSystem="2.16.840.1.113883.6.96" displayName="SNOMED RT Concept (special concept)" level="0" type="D">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2008-07-31" expirationDate="" lastModifiedDate="" count="5" length="35">SNOMED RT Concept (special concept)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="3" length="17">SNOMED RT Concept</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="3" length="17">SNOMED RT Concept</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="5" length="29">SNOMED RT Version 1.0 Concept</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="5" length="29">SNOMED RT Version 1.0 Concept</designation>
+        </items>
+        <items json:array="true" is="concept" code="101009" codeSystem="2.16.840.1.113883.6.96" displayName="Quilonia ethiopica (organism)" level="10" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2007-07-31" expirationDate="" lastModifiedDate="" count="3" length="29">Quilonia ethiopica (organism)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2007-07-31" expirationDate="" lastModifiedDate="" count="2" length="18">Quilonia ethiopica</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2007-07-31" expirationDate="" lastModifiedDate="" count="2" length="18">Quilonia ethiopica</designation>
+        </items>
+        <items json:array="true" is="concept" code="102002" codeSystem="2.16.840.1.113883.6.96" displayName="Hemoglobin Okaloosa (substance)" level="13" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2003-07-31" expirationDate="" lastModifiedDate="" count="3" length="31">Hemoglobin Okaloosa (substance)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="2" length="20">Haemoglobin Okaloosa</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="2" length="19">Hemoglobin Okaloosa</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="3" length="19">Hb 48(CD7), Leu-arg</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="3" length="19">Hb 48(CD7), Leu-arg</designation>
+        </items>
+        <items json:array="true" is="concept" code="103007" codeSystem="2.16.840.1.113883.6.96" displayName="Squirrel fibroma virus (organism)" level="7" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2009-01-31" expirationDate="" lastModifiedDate="" count="4" length="33">Squirrel fibroma virus (organism)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2009-01-31" expirationDate="" lastModifiedDate="" count="3" length="22">Squirrel fibroma virus</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2009-01-31" expirationDate="" lastModifiedDate="" count="3" length="22">Squirrel fibroma virus</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2019-09-30" expirationDate="" lastModifiedDate="" count="2" length="33">eekhoorn-fibroomvirus (organisme)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2019-09-30" expirationDate="" lastModifiedDate="" count="1" length="21">eekhoorn-fibroomvirus</designation>
+        </items>
+        <items json:array="true" is="concept" code="104001" codeSystem="2.16.840.1.113883.6.96" displayName="Excision of lesion of patella (procedure)" level="7" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="41">Excision of lesion of patella (procedure)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="29">Excision of lesion of patella</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="29">Excision of lesion of patella</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="8" length="45">Local excision of lesion or tissue of patella</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="8" length="45">Local excision of lesion or tissue of patella</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="7" length="55">excisie van afwijkend weefsel van patella (verrichting)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="6" length="41">excisie van afwijkend weefsel van patella</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="5" length="33">excisie van laesie van knieschijf</designation>
+        </items>
+        <items json:array="true" is="concept" code="105000" codeSystem="2.16.840.1.113883.6.96" displayName="Poisoning by pharmaceutical excipient (disorder)" level="0" type="D">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="48">Poisoning by pharmaceutical excipient (disorder)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="37">Poisoning by pharmaceutical excipient</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="37">Poisoning by pharmaceutical excipient</designation>
+        </items>
+        <items json:array="true" is="concept" code="106004" codeSystem="2.16.840.1.113883.6.96" displayName="Structure of posterior carpal region (body structure)" level="0" type="D">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="7" length="53">Structure of posterior carpal region (body structure)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="36">Structure of posterior carpal region</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="36">Structure of posterior carpal region</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="23">Posterior carpal region</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="23">Posterior carpal region</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="6" length="59">structuur van posterieure carpale regio (lichaamsstructuur)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="5" length="39">structuur van posterieure carpale regio</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="4" length="32">posterieur gebied van handwortel</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="3" length="25">posterieur carpaal gebied</designation>
+        </items>
+        <items json:array="true" is="concept" code="107008" codeSystem="2.16.840.1.113883.6.96" displayName="Structure of fetal part of placenta (body structure)" level="8" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="8" length="52">Structure of fetal part of placenta (body structure)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="35">Structure of fetal part of placenta</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="35">Structure of fetal part of placenta</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="22">Fetal part of placenta</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="36">Structure of foetal part of placenta</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="22">Fetal part of placenta</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="36">Structure of foetal part of placenta</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2019-09-30" expirationDate="" lastModifiedDate="" count="6" length="57">structuur van pars foetalis placentae (lichaamsstructuur)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2019-09-30" expirationDate="" lastModifiedDate="" count="5" length="37">structuur van pars foetalis placentae</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2019-09-30" expirationDate="" lastModifiedDate="" count="3" length="23">pars foetalis placentae</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2019-09-30" expirationDate="" lastModifiedDate="" count="4" length="25">foetaal deel van placenta</designation>
+        </items>
+        <items json:array="true" is="concept" code="108003" codeSystem="2.16.840.1.113883.6.96" displayName="Entire condylar emissary vein (body structure)" level="11" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="46">Entire condylar emissary vein (body structure)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="29">Entire condylar emissary vein</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="29">Entire condylar emissary vein</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2019-03-31" expirationDate="" lastModifiedDate="" count="5" length="52">gehele vena emissaria condylaris (lichaamsstructuur)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2019-03-31" expirationDate="" lastModifiedDate="" count="4" length="32">gehele vena emissaria condylaris</designation>
+        </items>
+        <items json:array="true" is="concept" code="109006" codeSystem="2.16.840.1.113883.6.96" displayName="Anxiety disorder of childhood OR adolescence (disorder)" level="5" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="7" length="55">Anxiety disorder of childhood OR adolescence (disorder)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="6" length="44">Anxiety disorder of childhood OR adolescence</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="6" length="44">Anxiety disorder of childhood OR adolescence</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="7" length="63">angststoornis op kinderleeftijd of in adolescentie (aandoening)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="6" length="50">angststoornis op kinderleeftijd of in adolescentie</designation>
+        </items>
+        <items json:array="true" is="concept" code="110001" codeSystem="2.16.840.1.113883.6.96" displayName="Structure of visceral layer of Bowman's capsule (body structure)" level="15" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="9" length="64">Structure of visceral layer of Bowman's capsule (body structure)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="7" length="47">Structure of visceral layer of Bowman's capsule</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="7" length="47">Structure of visceral layer of Bowman's capsule</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2010-01-31" expirationDate="" lastModifiedDate="" count="7" length="45">Structure of visceral layer of Bowman capsule</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2010-01-31" expirationDate="" lastModifiedDate="" count="7" length="45">Structure of visceral layer of Bowman capsule</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="5" length="34">Visceral layer of Bowman's capsule</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="5" length="34">Visceral layer of Bowman's capsule</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="8" length="73">structuur van visceraal blad van capsula glomerularis (lichaamsstructuur)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="7" length="53">structuur van visceraal blad van capsula glomerularis</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="39">visceraal blad van capsula glomerularis</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="6" length="39">lamina visceralis van kapsel van Bowman</designation>
+        </items>
+        <items json:array="true" is="concept" code="111002" codeSystem="2.16.840.1.113883.6.96" displayName="Parathyroid structure (body structure)" level="7" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="38">Parathyroid structure (body structure)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="21">Parathyroid structure</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="21">Parathyroid structure</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="1" length="11">Parathyroid</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="1" length="11">Parathyroid</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="17">Parathyroid gland</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="17">Parathyroid gland</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2021-03-31" expirationDate="" lastModifiedDate="" count="4" length="48">structuur van bijschildklier (lichaamsstructuur)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2021-03-31" expirationDate="" lastModifiedDate="" count="3" length="28">structuur van bijschildklier</designation>
+            <designation json:array="true" lang="nl-NL" use="prefPat" statusCode="active" effectiveDate="2018-03-31" expirationDate="" lastModifiedDate="" count="1" length="14">bijschildklier</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2018-03-31" expirationDate="" lastModifiedDate="" count="2" length="22">glandula parathyroidea</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2018-03-31" expirationDate="" lastModifiedDate="" count="1" length="14">bijschildklier</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2018-03-31" expirationDate="" lastModifiedDate="" count="1" length="11">parathyroïd</designation>
+        </items>
+        <items json:array="true" is="concept" code="112009" codeSystem="2.16.840.1.113883.6.96" displayName="Bembrops anatirostris (organism)" level="8" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2003-07-31" expirationDate="" lastModifiedDate="" count="3" length="32">Bembrops anatirostris (organism)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="2" length="21">Bembrops anatirostris</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="2" length="21">Bembrops anatirostris</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="17">Duckbill flathead</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="17">Duckbill flathead</designation>
+        </items>
+        <items json:array="true" is="concept" code="113004" codeSystem="2.16.840.1.113883.6.96" displayName="Type-casting-machine operator (occupation)" level="7" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="42">Type-casting-machine operator (occupation)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="29">Type-casting-machine operator</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="29">Type-casting-machine operator</designation>
+        </items>
+        <items json:array="true" is="concept" code="114005" codeSystem="2.16.840.1.113883.6.96" displayName="Feline calicivirus (organism)" level="7" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2009-01-31" expirationDate="" lastModifiedDate="" count="3" length="29">Feline calicivirus (organism)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2009-01-31" expirationDate="" lastModifiedDate="" count="2" length="18">Feline calicivirus</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2009-01-31" expirationDate="" lastModifiedDate="" count="2" length="18">Feline calicivirus</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2009-01-31" expirationDate="" lastModifiedDate="" count="2" length="19">Feline picornavirus</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="1" length="3">FCV</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="1" length="3">FCV</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2009-01-31" expirationDate="" lastModifiedDate="" count="2" length="19">Feline picornavirus</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="3" length="30">felien calicivirus (organisme)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="2" length="18">felien calicivirus</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="2" length="16">felien vesivirus</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2023-03-31" expirationDate="" lastModifiedDate="" count="1" length="3">FCV</designation>
+        </items>
+        <items json:array="true" is="concept" code="115006" codeSystem="2.16.840.1.113883.6.96" displayName="Removable appliance therapy (procedure)" level="6" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="39">Removable appliance therapy (procedure)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="27">Removable appliance therapy</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="27">Removable appliance therapy</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2024-03-31" expirationDate="" lastModifiedDate="" count="6" length="65">behandelen met uitneembaar orthodontisch hulpmiddel (verrichting)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2024-03-31" expirationDate="" lastModifiedDate="" count="5" length="51">behandelen met uitneembaar orthodontisch hulpmiddel</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2024-03-31" expirationDate="" lastModifiedDate="" count="5" length="49">behandelen met uitneembaar orthodontisch apparaat</designation>
+        </items>
+        <items json:array="true" is="concept" code="116007" codeSystem="2.16.840.1.113883.6.96" displayName="Subcutaneous tissue structure of medial surface of index finger (body structure)" level="12" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="11" length="80">Subcutaneous tissue structure of medial surface of index finger (body structure)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="9" length="63">Subcutaneous tissue structure of medial surface of index finger</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="9" length="63">Subcutaneous tissue structure of medial surface of index finger</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="8" length="53">Subcutaneous tissue of medial surface of index finger</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="8" length="53">Subcutaneous tissue of medial surface of index finger</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="13" length="97">structuur van subcutaan weefsel van mediaal oppervlak van digitus II van hand (lichaamsstructuur)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="12" length="77">structuur van subcutaan weefsel van mediaal oppervlak van digitus II van hand</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="7" length="49">subcutaan weefsel van mediaal oppervlak van index</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="9" length="67">onderhuids vet- en bindweefsel van mediaal oppervlak van wijsvinger</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="6" length="37">mediale subcutis van digitus manus II</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="9" length="63">structuur van subcutaan weefsel van mediaal oppervlak van index</designation>
+        </items>
+        <items json:array="true" is="concept" code="117003" codeSystem="2.16.840.1.113883.6.96" displayName="Rhipicephalus sanguineus (organism)" level="12" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2003-07-31" expirationDate="" lastModifiedDate="" count="3" length="35">Rhipicephalus sanguineus (organism)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="2" length="24">Rhipicephalus sanguineus</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="2" length="24">Rhipicephalus sanguineus</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="11">Kennel tick</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="11">Kennel tick</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="14">Brown dog tick</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="14">Brown dog tick</designation>
+        </items>
+        <items json:array="true" is="concept" code="118008" codeSystem="2.16.840.1.113883.6.96" displayName="Black buffalo weaver (organism)" level="9" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="31">Black buffalo weaver (organism)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="20">Black buffalo weaver</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="20">Black buffalo weaver</designation>
+        </items>
+        <items json:array="true" is="concept" code="119000" codeSystem="2.16.840.1.113883.6.96" displayName="Thoracoscopic partial lobectomy of lung (procedure)" level="9" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="51">Thoracoscopic partial lobectomy of lung (procedure)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="39">Thoracoscopic partial lobectomy of lung</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="39">Thoracoscopic partial lobectomy of lung</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="6" length="59">thoracoscopische partiële lobectomie van long (verrichting)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="5" length="45">thoracoscopische partiële lobectomie van long</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="8" length="53">thoracoscopische resectie van deel van lobus van long</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="7" length="50">excisie van gedeelte van longkwab met thoracoscoop</designation>
+        </items>
+        <items json:array="true" is="concept" code="120006" codeSystem="2.16.840.1.113883.6.96" displayName="Ornithine racemase (substance)" level="9" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="30">Ornithine racemase (substance)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="18">Ornithine racemase</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="18">Ornithine racemase</designation>
+        </items>
+        <items json:array="true" is="concept" code="121005" codeSystem="2.16.840.1.113883.6.96" displayName="Retrobulbar injection of therapeutic agent (procedure)" level="0" type="D">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="54">Retrobulbar injection of therapeutic agent (procedure)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="42">Retrobulbar injection of therapeutic agent</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="42">Retrobulbar injection of therapeutic agent</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="35">Retrobulbar injection of medication</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="35">Retrobulbar injection of medication</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2019-03-31" expirationDate="" lastModifiedDate="" count="5" length="53">retrobulbaire injectie van geneesmiddel (verrichting)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="4" length="39">retrobulbaire injectie van geneesmiddel</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2019-03-31" expirationDate="" lastModifiedDate="" count="4" length="40">retrobulbaire injectie van therapeuticum</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="4" length="36">retrobulbaire injectie van medicatie</designation>
+        </items>
+        <items json:array="true" is="concept" code="122003" codeSystem="2.16.840.1.113883.6.96" displayName="Choroidal hemorrhage (disorder)" level="5" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="31">Choroidal hemorrhage (disorder)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="21">Choroidal haemorrhage</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="20">Choroidal hemorrhage</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2023-03-31" expirationDate="" lastModifiedDate="" count="4" length="35">bloeding van choroidea (aandoening)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2023-03-31" expirationDate="" lastModifiedDate="" count="3" length="22">bloeding van choroidea</designation>
+        </items>
+        <items json:array="true" is="concept" code="123008" codeSystem="2.16.840.1.113883.6.96" displayName="Channel catfish virus disease (disorder)" level="0" type="D">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="40">Channel catfish virus disease (disorder)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="29">Channel catfish virus disease</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="29">Channel catfish virus disease</designation>
+        </items>
+        <items json:array="true" is="concept" code="124002" codeSystem="2.16.840.1.113883.6.96" displayName="Structure of coronoid process of mandible (body structure)" level="10" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="8" length="58">Structure of coronoid process of mandible (body structure)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="41">Structure of coronoid process of mandible</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="41">Structure of coronoid process of mandible</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="28">Coronoid process of mandible</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="28">Coronoid process of mandible</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="6" length="66">structuur van processus coronoideus mandibulae (lichaamsstructuur)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="5" length="46">structuur van processus coronoideus mandibulae</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="5" length="40">voorste uitsteeksel van ramus mandibulae</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="3" length="32">processus coronoideus mandibulae</designation>
+        </items>
+        <items json:array="true" is="concept" code="125001" codeSystem="2.16.840.1.113883.6.96" displayName="Ferrous (59-Fe) sulfate (substance)" level="10" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2018-07-31" expirationDate="" lastModifiedDate="" count="4" length="35">Ferrous (59-Fe) sulfate (substance)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2018-07-31" expirationDate="" lastModifiedDate="" count="3" length="23">Ferrous (59-Fe) sulfate</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2018-07-31" expirationDate="" lastModifiedDate="" count="3" length="23">Ferrous (59-Fe) sulfate</designation>
+        </items>
+        <items json:array="true" is="concept" code="126000" codeSystem="2.16.840.1.113883.6.96" displayName="Galactosyl-N-acetylglucosaminylgalactosylglucosylceramide alpha-galactosyltransferase (substance)" level="10" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="3" length="97">Galactosyl-N-acetylglucosaminylgalactosylglucosylceramide alpha-galactosyltransferase (substance)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="2" length="85">Galactosyl-N-acetylglucosaminylgalactosylglucosylceramide alpha-galactosyltransferase</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="2" length="85">Galactosyl-N-acetylglucosaminylgalactosylglucosylceramide alpha-galactosyltransferase</designation>
+        </items>
+        <items json:array="true" is="concept" code="127009" codeSystem="2.16.840.1.113883.6.96" displayName="Miscarriage with laceration of cervix (disorder)" level="7" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="48">Miscarriage with laceration of cervix (disorder)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="37">Miscarriage with laceration of cervix</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="37">Miscarriage with laceration of cervix</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="46">Spontaneous abortion with laceration of cervix</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="40">Spontaneous abortion with tear of cervix</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="31">Miscarriage with tear of cervix</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="46">Spontaneous abortion with laceration of cervix</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="31">Miscarriage with tear of cervix</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="40">Spontaneous abortion with tear of cervix</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="7" length="52">miskraam met laceratie van cervix uteri (aandoening)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="6" length="39">miskraam met laceratie van cervix uteri</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="6" length="41">spontane abortus met laceratie van cervix</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="41">miskraam met laceratie van baarmoederhals</designation>
+        </items>
+        <items json:array="true" is="concept" code="128004" codeSystem="2.16.840.1.113883.6.96" displayName="Hand microscope examination of skin (procedure)" level="6" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="47">Hand microscope examination of skin (procedure)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="35">Hand microscope examination of skin</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="35">Hand microscope examination of skin</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="6" length="51">onderzoek van huid met handmicroscoop (verrichting)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="1" length="13">dermatoscopie</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="5" length="37">onderzoek van huid met handmicroscoop</designation>
+        </items>
+        <items json:array="true" is="concept" code="129007" codeSystem="2.16.840.1.113883.6.96" displayName="Homoiothermia (finding)" level="3" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="23">Homoiothermia (finding)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="1" length="13">Homoiothermia</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="1" length="13">Homoiothermia</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="1" length="12">Homoiothermy</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="1" length="12">Homoiothermy</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2021-03-31" expirationDate="" lastModifiedDate="" count="2" length="24">homeothermie (bevinding)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2021-03-31" expirationDate="" lastModifiedDate="" count="1" length="12">homeothermie</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2021-03-31" expirationDate="" lastModifiedDate="" count="1" length="15">warmbloedigheid</designation>
+        </items>
+        <items json:array="true" is="concept" code="130002" codeSystem="2.16.840.1.113883.6.96" displayName="Hemoglobin Hopkins-II (substance)" level="13" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2019-01-31" expirationDate="" lastModifiedDate="" count="3" length="33">Hemoglobin Hopkins-II (substance)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="2" length="22">Haemoglobin Hopkins-II</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2019-01-31" expirationDate="" lastModifiedDate="" count="2" length="21">Hemoglobin Hopkins-II</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="3" length="20">Hb 112(G19), His-asp</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="3" length="20">Hb 112(G19), His-asp</designation>
+        </items>
+        <items json:array="true" is="concept" code="131003" codeSystem="2.16.840.1.113883.6.96" displayName="Dolichyl-phosphate mannosyltransferase (substance)" level="10" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2003-07-31" expirationDate="" lastModifiedDate="" count="3" length="50">Dolichyl-phosphate mannosyltransferase (substance)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="2" length="38">Dolichyl-phosphate mannosyltransferase</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="2" length="38">Dolichyl-phosphate mannosyltransferase</designation>
+        </items>
+        <items json:array="true" is="concept" code="132005" codeSystem="2.16.840.1.113883.6.96" displayName="Serraniculus pumilio (organism)" level="8" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2003-07-31" expirationDate="" lastModifiedDate="" count="3" length="31">Serraniculus pumilio (organism)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="2" length="20">Serraniculus pumilio</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="2" length="20">Serraniculus pumilio</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="14">Pygmy sea bass</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="14">Pygmy sea bass</designation>
+        </items>
+        <items json:array="true" is="concept" code="133000" codeSystem="2.16.840.1.113883.6.96" displayName="Percutaneous implantation of neurostimulator electrodes into neuromuscular component (procedure)" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="9" length="96">Percutaneous implantation of neurostimulator electrodes into neuromuscular component (procedure)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="8" length="84">Percutaneous implantation of neurostimulator electrodes into neuromuscular component</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="8" length="84">Percutaneous implantation of neurostimulator electrodes into neuromuscular component</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="8" length="91">percutaan inbrengen van neurostimulatorelektrode in neuromusculaire component (verrichting)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="7" length="77">percutaan inbrengen van neurostimulatorelektrode in neuromusculaire component</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="9" length="82">percutaan inbrengen van elektrode van neurostimulator in neuromusculaire component</designation>
+        </items>
+        <items json:array="true" is="concept" code="134006" codeSystem="2.16.840.1.113883.6.96" displayName="Decreased hair growth (finding)" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="31">Decreased hair growth (finding)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="21">Decreased hair growth</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="21">Decreased hair growth</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2019-03-31" expirationDate="" lastModifiedDate="" count="3" length="31">afgenomen haargroei (bevinding)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2019-03-31" expirationDate="" lastModifiedDate="" count="2" length="19">afgenomen haargroei</designation>
+        </items>
+        <items json:array="true" is="concept" code="135007" codeSystem="2.16.840.1.113883.6.96" displayName="Arthrotomy of wrist joint with exploration and biopsy (procedure)" level="7" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="9" length="65">Arthrotomy of wrist joint with exploration and biopsy (procedure)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="8" length="53">Arthrotomy of wrist joint with exploration and biopsy</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="8" length="53">Arthrotomy of wrist joint with exploration and biopsy</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="8" length="59">artrotomie met exploratie en biopsie van pols (verrichting)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="7" length="45">artrotomie met exploratie en biopsie van pols</designation>
+        </items>
+        <items json:array="true" is="concept" code="136008" codeSystem="2.16.840.1.113883.6.96" displayName="Acacia erioloba (organism)" level="11" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2007-07-31" expirationDate="" lastModifiedDate="" count="3" length="26">Acacia erioloba (organism)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2007-07-31" expirationDate="" lastModifiedDate="" count="2" length="15">Acacia erioloba</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2007-07-31" expirationDate="" lastModifiedDate="" count="2" length="15">Acacia erioloba</designation>
+        </items>
+        <items json:array="true" is="concept" code="137004" codeSystem="2.16.840.1.113883.6.96" displayName="Retired procedure (procedure)" level="0" type="D">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="29">Retired procedure (procedure)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="17">Retired procedure</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="17">Retired procedure</designation>
+        </items>
+        <items json:array="true" is="concept" code="138009" codeSystem="2.16.840.1.113883.6.96" displayName="No past history of (contextual qualifier) (qualifier value)" level="3" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="8" length="59">No past history of (contextual qualifier) (qualifier value)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="18">No past history of</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="18">No past history of</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="1" length="2">NP</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="41">No past history of (contextual qualifier)</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="41">No past history of (contextual qualifier)</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="1" length="2">NP</designation>
+        </items>
+        <items json:array="true" is="concept" code="139001" codeSystem="2.16.840.1.113883.6.96" displayName="Felid herpesvirus 1 (organism)" level="8" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2009-01-31" expirationDate="" lastModifiedDate="" count="4" length="30">Felid herpesvirus 1 (organism)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2009-01-31" expirationDate="" lastModifiedDate="" count="3" length="19">Felid herpesvirus 1</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2009-01-31" expirationDate="" lastModifiedDate="" count="3" length="19">Felid herpesvirus 1</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2009-01-31" expirationDate="" lastModifiedDate="" count="4" length="34">Feline viral rhinotracheitis virus</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2009-01-31" expirationDate="" lastModifiedDate="" count="4" length="34">Feline viral rhinotracheitis virus</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="32">felien herpesvirus 1 (organisme)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="3" length="20">felien herpesvirus 1</designation>
+        </items>
+        <items json:array="true" is="concept" code="140004" codeSystem="2.16.840.1.113883.6.96" displayName="Chronic pharyngitis (disorder)" level="5" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="30">Chronic pharyngitis (disorder)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="19">Chronic pharyngitis</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="19">Chronic pharyngitis</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2023-03-31" expirationDate="" lastModifiedDate="" count="3" length="34">chronische faryngitis (aandoening)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2023-03-31" expirationDate="" lastModifiedDate="" count="2" length="21">chronische faryngitis</designation>
+        </items>
+        <items json:array="true" is="concept" code="141000" codeSystem="2.16.840.1.113883.6.96" displayName="Glaucoma as birth trauma (disorder)" level="0" type="D">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="35">Glaucoma as birth trauma (disorder)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="24">Glaucoma as birth trauma</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="24">Glaucoma as birth trauma</designation>
+        </items>
+        <items json:array="true" is="concept" code="142007" codeSystem="2.16.840.1.113883.6.96" displayName="Excision of tumor from shoulder area, deep, intramuscular (procedure)" level="6" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="9" length="69">Excision of tumor from shoulder area, deep, intramuscular (procedure)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="8" length="57">Excision of tumor from shoulder area, deep, intramuscular</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="8" length="58">Excision of tumour from shoulder area, deep, intramuscular</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="8" length="80">excisie van diepliggend intramusculair neoplasma van schouderregio (verrichting)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="7" length="66">excisie van diepliggend intramusculair neoplasma van schouderregio</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="7" length="65">excisie van diepliggende intramusculaire tumor van schoudergebied</designation>
+        </items>
+        <items json:array="true" is="concept" code="143002" codeSystem="2.16.840.1.113883.6.96" displayName="Retired procedure (procedure)" level="0" type="D">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="29">Retired procedure (procedure)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="17">Retired procedure</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="17">Retired procedure</designation>
+        </items>
+        <items json:array="true" is="concept" code="144008" codeSystem="2.16.840.1.113883.6.96" displayName="Normal peripheral vision (finding)" level="5" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="34">Normal peripheral vision (finding)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="24">Normal peripheral vision</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="24">Normal peripheral vision</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="4" length="45">perifeer gezichtsvermogen normaal (bevinding)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="3" length="33">perifeer gezichtsvermogen normaal</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="3" length="22">perifeer zicht normaal</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="5" length="39">geen afwijking in perifeer gezichtsveld</designation>
+        </items>
+        <items json:array="true" is="concept" code="145009" codeSystem="2.16.840.1.113883.6.96" displayName="Colloid milium (morphologic abnormality)" level="6" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="40">Colloid milium (morphologic abnormality)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="14">Colloid milium</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="14">Colloid milium</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="3" length="37">colloïdmilium (afwijkende morfologie)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="1" length="13">colloïdmilium</designation>
+        </items>
+        <items json:array="true" is="concept" code="146005" codeSystem="2.16.840.1.113883.6.96" displayName="Repair of nonunion of metatarsal with bone graft (procedure)" level="7" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="9" length="60">Repair of nonunion of metatarsal with bone graft (procedure)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="8" length="48">Repair of nonunion of metatarsal with bone graft</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="8" length="48">Repair of nonunion of metatarsal with bone graft</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2021-09-30" expirationDate="" lastModifiedDate="" count="12" length="97">operatief herstel van non-union van fractuur van os metatarsi met bottransplantatie (verrichting)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2021-09-30" expirationDate="" lastModifiedDate="" count="11" length="83">operatief herstel van non-union van fractuur van os metatarsi met bottransplantatie</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2021-03-31" expirationDate="" lastModifiedDate="" count="10" length="90">operatief herstel van niet-geconsolideerde fractuur van os metatarsi met bottransplantatie</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2021-09-30" expirationDate="" lastModifiedDate="" count="11" length="85">operatief herstel van non-union van fractuur van os metatarsale met bottransplantatie</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2021-09-30" expirationDate="" lastModifiedDate="" count="8" length="64">operatief herstel van non-union van middenvoetsbeen met botgraft</designation>
+        </items>
+        <items json:array="true" is="concept" code="147001" codeSystem="2.16.840.1.113883.6.96" displayName="Superficial foreign body of scrotum without major open wound but with infection (disorder)" level="0" type="D">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="13" length="90">Superficial foreign body of scrotum without major open wound but with infection (disorder)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="12" length="79">Superficial foreign body of scrotum without major open wound but with infection</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="12" length="79">Superficial foreign body of scrotum without major open wound but with infection</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="12" length="87">oppervlakkig corpus alienum in scrotum met infectie zonder grote open wond (aandoening)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="10" length="69">oppervlakkig corpus alienum in scrotum met infectie zonder grote wond</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="11" length="74">oppervlakkig corpus alienum in scrotum met infectie zonder grote open wond</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="11" length="74">oppervlakkig vreemd lichaam in scrotum met infectie zonder grote open wond</designation>
+        </items>
+        <items json:array="true" is="concept" code="148006" codeSystem="2.16.840.1.113883.6.96" displayName="Preliminary diagnosis (contextual qualifier) (qualifier value)" level="3" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="62">Preliminary diagnosis (contextual qualifier) (qualifier value)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="21">Preliminary diagnosis</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="21">Preliminary diagnosis</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="21">Provisional diagnosis</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="44">Preliminary diagnosis (contextual qualifier)</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="19">Temporary diagnosis</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="1" length="3">PDX</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="44">Preliminary diagnosis (contextual qualifier)</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="21">Provisional diagnosis</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="1" length="3">PDX</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="19">Temporary diagnosis</designation>
+        </items>
+        <items json:array="true" is="concept" code="149003" codeSystem="2.16.840.1.113883.6.96" displayName="Central pair of microtubules, cilium or flagellum, not bacterial (cell structure)" level="6" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="11" length="81">Central pair of microtubules, cilium or flagellum, not bacterial (cell structure)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="9" length="64">Central pair of microtubules, cilium or flagellum, not bacterial</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="9" length="64">Central pair of microtubules, cilium or flagellum, not bacterial</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2019-09-30" expirationDate="" lastModifiedDate="" count="9" length="80">centraal paar microtubuli van niet-bacteriële cilium of flagellum (celstructuur)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2019-09-30" expirationDate="" lastModifiedDate="" count="8" length="65">centraal paar microtubuli van niet-bacteriële cilium of flagellum</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2019-09-30" expirationDate="" lastModifiedDate="" count="8" length="62">centraal paar microtubuli van niet-bacteriële cilium of flagel</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2019-09-30" expirationDate="" lastModifiedDate="" count="8" length="68">centraal paar microtubuli van niet-bacteriële trilhaar of zweepdraad</designation>
+        </items>
+        <items json:array="true" is="concept" code="150003" codeSystem="2.16.840.1.113883.6.96" displayName="Abnormal urinary bladder continence (finding)" level="6" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2024-01-01" expirationDate="" lastModifiedDate="" count="5" length="45">Abnormal urinary bladder continence (finding)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2024-01-01" expirationDate="" lastModifiedDate="" count="4" length="35">Abnormal urinary bladder continence</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2024-01-01" expirationDate="" lastModifiedDate="" count="4" length="35">Abnormal urinary bladder continence</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="27">Abnormal bladder continence</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="27">Abnormal bladder continence</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="5" length="44">afwijkende continentie van blaas (bevinding)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="4" length="32">afwijkende continentie van blaas</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="4" length="31">abnormale continentie van blaas</designation>
+        </items>
+        <items json:array="true" is="concept" code="151004" codeSystem="2.16.840.1.113883.6.96" displayName="Gonococcal meningitis (disorder)" level="8" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="32">Gonococcal meningitis (disorder)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="21">Gonococcal meningitis</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="21">Gonococcal meningitis</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="28">Meningitis due to gonococcus</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="28">Meningitis due to gonococcus</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="5" length="50">meningitis door Neisseria gonorrhoeae (aandoening)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="4" length="37">meningitis door Neisseria gonorrhoeae</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="1" length="20">gonokokkenmeningitis</designation>
+        </items>
+        <items json:array="true" is="concept" code="152006" codeSystem="2.16.840.1.113883.6.96" displayName="Retired procedure (procedure)" level="0" type="D">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="29">Retired procedure (procedure)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="17">Retired procedure</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="17">Retired procedure</designation>
+        </items>
+        <items json:array="true" is="concept" code="153001" codeSystem="2.16.840.1.113883.6.96" displayName="Cystourethroscopy with resection of ureterocele (procedure)" level="7" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="59">Cystourethroscopy with resection of ureterocele (procedure)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="47">Cystourethroscopy with resection of ureterocele</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="47">Cystourethroscopy with resection of ureterocele</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="6" length="62">cysto-urethroscopie met resectie van ureterocele (verrichting)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="5" length="48">cysto-urethroscopie met resectie van ureterocele</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="5" length="48">cysto-urethroscopie met resectie van ureterokèle</designation>
+        </items>
+        <items json:array="true" is="concept" code="154007" codeSystem="2.16.840.1.113883.6.96" displayName="Rubber molding-press operator (occupation)" level="6" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="42">Rubber molding-press operator (occupation)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="30">Rubber moulding-press operator</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="29">Rubber molding-press operator</designation>
+        </items>
+        <items json:array="true" is="concept" code="155008" codeSystem="2.16.840.1.113883.6.96" displayName="Structure of deep circumflex iliac artery (body structure)" level="7" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="8" length="58">Structure of deep circumflex iliac artery (body structure)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="41">Structure of deep circumflex iliac artery</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="41">Structure of deep circumflex iliac artery</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="28">Deep circumflex iliac artery</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="31">Deep circumflex artery of ilium</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="31">Deep circumflex artery of ilium</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="28">Deep circumflex iliac artery</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2018-03-31" expirationDate="" lastModifiedDate="" count="7" length="68">structuur van arteria circumflexa ilium profunda (lichaamsstructuur)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2018-03-31" expirationDate="" lastModifiedDate="" count="6" length="48">structuur van arteria circumflexa ilium profunda</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2018-03-31" expirationDate="" lastModifiedDate="" count="4" length="34">arteria circumflexa ilium profunda</designation>
+        </items>
+        <items json:array="true" is="concept" code="156009" codeSystem="2.16.840.1.113883.6.96" displayName="Spine board, device (physical object)" level="6" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="37">Spine board, device (physical object)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="11">Spine board</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="11">Spine board</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="19">Spine board, device</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="19">Spine board, device</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="3" length="27">wervelplank (fysiek object)</designation>
+            <designation json:array="true" lang="nl-NL" use="prefPat" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="1" length="11">wervelplank</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="1" length="11">wervelplank</designation>
+        </items>
+        <items json:array="true" is="concept" code="157000" codeSystem="2.16.840.1.113883.6.96" displayName="AIDS with low vision (disorder)" level="0" type="D">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2003-07-31" expirationDate="" lastModifiedDate="" count="5" length="31">AIDS with low vision (disorder)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="4" length="20">AIDS with low vision</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="4" length="20">AIDS with low vision</designation>
+        </items>
+        <items json:array="true" is="concept" code="158005" codeSystem="2.16.840.1.113883.6.96" displayName="Salmonella Irumu (organism)" level="11" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2005-07-31" expirationDate="" lastModifiedDate="" count="3" length="27">Salmonella Irumu (organism)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2005-07-31" expirationDate="" lastModifiedDate="" count="2" length="16">Salmonella Irumu</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2005-07-31" expirationDate="" lastModifiedDate="" count="2" length="16">Salmonella Irumu</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2005-07-31" expirationDate="" lastModifiedDate="" count="6" length="46">Salmonella enterica subsp. enterica ser. Irumu</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2005-07-31" expirationDate="" lastModifiedDate="" count="2" length="22">Salmonella 6,7:l,v:1,5</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2005-07-31" expirationDate="" lastModifiedDate="" count="2" length="22">Salmonella 6,7:l,v:1,5</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2005-07-31" expirationDate="" lastModifiedDate="" count="6" length="46">Salmonella enterica subsp. enterica ser. Irumu</designation>
+        </items>
+        <items json:array="true" is="concept" code="159002" codeSystem="2.16.840.1.113883.6.96" displayName="Ferrocyanide salt (substance)" level="9" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="29">Ferrocyanide salt (substance)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="17">Ferrocyanide salt</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="17">Ferrocyanide salt</designation>
+        </items>
+        <items json:array="true" is="concept" code="160007" codeSystem="2.16.840.1.113883.6.96" displayName="Removal of foreign body of tendon and/or tendon sheath (procedure)" level="0" type="D">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="10" length="66">Removal of foreign body of tendon and/or tendon sheath (procedure)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="9" length="54">Removal of foreign body of tendon and/or tendon sheath</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="9" length="54">Removal of foreign body of tendon and/or tendon sheath</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="9" length="70">verwijderen van corpus alienum uit pees en/of peesschede (verrichting)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="8" length="56">verwijderen van corpus alienum uit pees en/of peesschede</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="9" length="63">verwijdering van vreemd lichaam uit tendo en/of vagina tendinis</designation>
+        </items>
+        <items json:array="true" is="concept" code="161006" codeSystem="2.16.840.1.113883.6.96" displayName="Thermal injury (morphologic abnormality)" level="6" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="40">Thermal injury (morphologic abnormality)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="14">Thermal injury</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="14">Thermal injury</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="11">Heat injury</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="11">Heat injury</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2018-03-31" expirationDate="" lastModifiedDate="" count="4" length="40">thermisch letsel (afwijkende morfologie)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2018-03-31" expirationDate="" lastModifiedDate="" count="2" length="16">thermisch letsel</designation>
+        </items>
+        <items json:array="true" is="concept" code="162004" codeSystem="2.16.840.1.113883.6.96" displayName="Severe manic bipolar I disorder without psychotic features (disorder)" level="9" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="9" length="69">Severe manic bipolar I disorder without psychotic features (disorder)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="8" length="58">Severe manic bipolar I disorder without psychotic features</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="8" length="58">Severe manic bipolar I disorder without psychotic features</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="11" length="80">Severe bipolar I disorder, most recent episode manic, without psychotic features</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="11" length="80">Severe bipolar I disorder, most recent episode manic, without psychotic features</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="10" length="103">ernstige bipolaire-I-stoornis, meest recente episode manisch zonder psychotische kenmerken (aandoening)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="9" length="90">ernstige bipolaire-I-stoornis, meest recente episode manisch zonder psychotische kenmerken</designation>
+        </items>
+        <items json:array="true" is="concept" code="163009" codeSystem="2.16.840.1.113883.6.96" displayName="Bacteroides stercoris (organism)" level="9" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2003-07-31" expirationDate="" lastModifiedDate="" count="3" length="32">Bacteroides stercoris (organism)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="2" length="21">Bacteroides stercoris</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="2" length="21">Bacteroides stercoris</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2003-07-31" expirationDate="" lastModifiedDate="" count="4" length="28">Bacteroides fragilis subsp a</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2003-07-31" expirationDate="" lastModifiedDate="" count="4" length="28">Bacteroides fragilis subsp a</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2017-03-31" expirationDate="" lastModifiedDate="" count="3" length="33">Bacteroides stercoris (organisme)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2023-03-31" expirationDate="" lastModifiedDate="" count="2" length="21">Bacteroides stercoris</designation>
+        </items>
+        <items json:array="true" is="concept" code="164003" codeSystem="2.16.840.1.113883.6.96" displayName="Phosphoenolpyruvate-protein phosphotransferase (substance)" level="9" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="58">Phosphoenolpyruvate-protein phosphotransferase (substance)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="46">Phosphoenolpyruvate-protein phosphotransferase</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="46">Phosphoenolpyruvate-protein phosphotransferase</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2019-01-31" expirationDate="" lastModifiedDate="" count="6" length="41">Enzyme I of the phosphotransferase system</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2019-01-31" expirationDate="" lastModifiedDate="" count="6" length="41">Enzyme I of the phosphotransferase system</designation>
+        </items>
+        <items json:array="true" is="concept" code="165002" codeSystem="2.16.840.1.113883.6.96" displayName="Accident prone (finding)" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="24">Accident prone (finding)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="14">Accident prone</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="14">Accident prone</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="1" length="14">Accident-prone</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="18">Accident proneness</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="1" length="14">Accident-prone</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="18">Accident proneness</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="3" length="26">accident prone (bevinding)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="2" length="14">accident prone</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2025-04-30" expirationDate="" lastModifiedDate="" count="1" length="13">brokkenpiloot</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2019-09-30" expirationDate="" lastModifiedDate="" count="5" length="44">krijgt of veroorzaakt gemakkelijk ongelukken</designation>
+        </items>
+        <items json:array="true" is="concept" code="166001" codeSystem="2.16.840.1.113883.6.96" displayName="Behavioral therapy (regime/therapy)" level="5" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="35">Behavioral therapy (regime/therapy)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="19">Behavioural therapy</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="18">Behavioral therapy</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="25">Behavioural psychotherapy</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="48">Behaviour modification treatments and procedures</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="32">Behaviour modification technique</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="35">Behavior modification psychotherapy</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="29">Behavior conditioning therapy</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="16">Behavior therapy</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="21">Behavior modification</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="31">Behavior modification technique</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="30">Behaviour conditioning therapy</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="36">Behaviour modification psychotherapy</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="17">Behaviour therapy</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="24">Behavioral psychotherapy</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="22">Behaviour modification</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="47">Behavior modification treatments and procedures</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="2" length="33">gedragstherapie (regime/therapie)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="1" length="15">gedragstherapie</designation>
+            <designation json:array="true" lang="nl-NL" use="prefPat" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="1" length="15">gedragstherapie</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2019-03-31" expirationDate="" lastModifiedDate="" count="1" length="18">gedragsmodificatie</designation>
+        </items>
+        <items json:array="true" is="concept" code="167005" codeSystem="2.16.840.1.113883.6.96" displayName="Structure of supraclavicular part of brachial plexus (body structure)" level="8" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="9" length="69">Structure of supraclavicular part of brachial plexus (body structure)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="7" length="52">Structure of supraclavicular part of brachial plexus</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="7" length="52">Structure of supraclavicular part of brachial plexus</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="39">Supraclavicular part of brachial plexus</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="39">Supraclavicular part of brachial plexus</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="8" length="78">structuur van pars supraclavicularis van plexus brachialis (lichaamsstructuur)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="7" length="58">structuur van pars supraclavicularis van plexus brachialis</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="44">pars supraclavicularis van plexus brachialis</designation>
+        </items>
+        <items json:array="true" is="concept" code="168000" codeSystem="2.16.840.1.113883.6.96" displayName="Typhlolithiasis (disorder)" level="6" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="26">Typhlolithiasis (disorder)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="1" length="15">Typhlolithiasis</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="1" length="15">Typhlolithiasis</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="4" length="33">concrement in caecum (aandoening)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="3" length="20">concrement in caecum</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="3" length="26">steenvorming in blindedarm</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="3" length="18">lithiase in caecum</designation>
+        </items>
+        <items json:array="true" is="concept" code="169008" codeSystem="2.16.840.1.113883.6.96" displayName="Product containing hypothalamic releasing factor (product)" level="5" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2018-07-31" expirationDate="" lastModifiedDate="" count="6" length="58">Product containing hypothalamic releasing factor (product)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2019-01-31" expirationDate="" lastModifiedDate="" count="4" length="48">Hypothalamic releasing factor-containing product</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2019-01-31" expirationDate="" lastModifiedDate="" count="4" length="48">Hypothalamic releasing factor-containing product</designation>
+        </items>
+        <items json:array="true" is="concept" code="170009" codeSystem="2.16.840.1.113883.6.96" displayName="Special potency disk identification, vancomycin test (procedure)" level="7" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="7" length="64">Special potency disk identification, vancomycin test (procedure)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="52">Special potency disk identification, vancomycin test</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="52">Special potency disk identification, vancomycin test</designation>
+        </items>
+        <items json:array="true" is="concept" code="171008" codeSystem="2.16.840.1.113883.6.96" displayName="Injury of ascending right colon without open wound into abdominal cavity (disorder)" level="8" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="12" length="83">Injury of ascending right colon without open wound into abdominal cavity (disorder)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="11" length="72">Injury of ascending right colon without open wound into abdominal cavity</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="11" length="72">Injury of ascending right colon without open wound into abdominal cavity</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="10" length="71">letsel van colon ascendens zonder open wond naar buikholte (aandoening)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="8" length="53">letsel van colon ascendens zonder wond naar buikholte</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="9" length="58">letsel van colon ascendens zonder open wond naar buikholte</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="10" length="68">letsel van colon ascendens zonder open wond naar cavitas abdominalis</designation>
+        </items>
+        <items json:array="true" is="concept" code="172001" codeSystem="2.16.840.1.113883.6.96" displayName="Endometritis following molar AND/OR ectopic pregnancy (disorder)" level="0" type="D">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="7" length="64">Endometritis following molar AND/OR ectopic pregnancy (disorder)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="6" length="53">Endometritis following molar AND/OR ectopic pregnancy</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="6" length="53">Endometritis following molar AND/OR ectopic pregnancy</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="7" length="75">endometritis na molazwangerschap en/of ectopische zwangerschap (aandoening)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="6" length="62">endometritis na molazwangerschap en/of ectopische zwangerschap</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2024-09-30" expirationDate="" lastModifiedDate="" count="6" length="60">endometritis na molagraviditeit en/of ectopische graviditeit</designation>
+        </items>
+        <items json:array="true" is="concept" code="173006" codeSystem="2.16.840.1.113883.6.96" displayName="Micrognathus crinitus (organism)" level="8" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2007-07-31" expirationDate="" lastModifiedDate="" count="3" length="32">Micrognathus crinitus (organism)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="15">Banded pipefish</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="15">Banded pipefish</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2007-07-31" expirationDate="" lastModifiedDate="" count="2" length="21">Micrognathus crinitus</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2025-01-01" expirationDate="" lastModifiedDate="" count="2" length="22">Micrognathus ensenadae</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2025-01-01" expirationDate="" lastModifiedDate="" count="2" length="22">Micrognathus ensenadae</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2007-07-31" expirationDate="" lastModifiedDate="" count="2" length="21">Micrognathus crinitus</designation>
+        </items>
+        <items json:array="true" is="concept" code="174000" codeSystem="2.16.840.1.113883.6.96" displayName="Harrison-Richardson operation on vagina (procedure)" level="7" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2003-07-31" expirationDate="" lastModifiedDate="" count="5" length="51">Harrison-Richardson operation on vagina (procedure)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="4" length="39">Harrison-Richardson operation on vagina</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="4" length="39">Harrison-Richardson operation on vagina</designation>
+        </items>
+        <items json:array="true" is="concept" code="175004" codeSystem="2.16.840.1.113883.6.96" displayName="Supraorbital neuralgia (finding)" level="5" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2020-01-31" expirationDate="" lastModifiedDate="" count="3" length="32">Supraorbital neuralgia (finding)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="22">Supraorbital neuralgia</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="22">Supraorbital neuralgia</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="5" length="47">neuralgie van nervus supraorbitalis (bevinding)</designation>
+            <designation json:array="true" lang="nl-NL" use="prefPat" statusCode="active" effectiveDate="2025-03-31" expirationDate="" lastModifiedDate="" count="4" length="25">zenuwpijn in je voorhoofd</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="4" length="35">neuralgie van nervus supraorbitalis</designation>
+            <designation json:array="true" lang="nl-NL" use="patPrefB1" statusCode="active" effectiveDate="2025-03-31" expirationDate="" lastModifiedDate="" count="18" length="92">Dit betekent dat je pijn hebt in je voorhoofd. De pijn komt door een probleem met een zenuw.</designation>
+        </items>
+        <items json:array="true" is="concept" code="176003" codeSystem="2.16.840.1.113883.6.96" displayName="Anastomosis of rectum (procedure)" level="7" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="33">Anastomosis of rectum (procedure)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="21">Anastomosis of rectum</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="21">Anastomosis of rectum</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="1" length="15">Rectorectostomy</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="1" length="15">Rectorectostomy</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="6" length="49">aanleggen van anastomose van rectum (verrichting)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="5" length="35">aanleggen van anastomose van rectum</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="3" length="28">anastomosering van endeldarm</designation>
+        </items>
+        <items json:array="true" is="concept" code="177007" codeSystem="2.16.840.1.113883.6.96" displayName="Poisoning by sawfly larvae (disorder)" level="8" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="37">Poisoning by sawfly larvae (disorder)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="26">Poisoning by sawfly larvae</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="26">Poisoning by sawfly larvae</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="22">Sawfly larvae toxicity</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="22">Sawfly larvae toxicity</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2022-03-31" expirationDate="" lastModifiedDate="" count="6" length="49">vergiftiging door larve van Symphyta (aandoening)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2022-03-31" expirationDate="" lastModifiedDate="" count="5" length="36">vergiftiging door larve van Symphyta</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2022-03-31" expirationDate="" lastModifiedDate="" count="5" length="36">vergiftiging door larve van zaagwesp</designation>
+        </items>
+        <items json:array="true" is="concept" code="178002" codeSystem="2.16.840.1.113883.6.96" displayName="Uridine diphosphate galactose (substance)" level="6" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="41">Uridine diphosphate galactose (substance)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="29">Uridine diphosphate galactose</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="29">Uridine diphosphate galactose</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2003-07-31" expirationDate="" lastModifiedDate="" count="5" length="34">UDP - Uridyl diphosphate galactose</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2003-07-31" expirationDate="" lastModifiedDate="" count="5" length="34">UDP - Uridyl diphosphate galactose</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="28">Uridyl diphosphate galactose</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="28">Uridyl diphosphate galactose</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2023-03-31" expirationDate="" lastModifiedDate="" count="2" length="38">uridinedifosfaatgalactose (substantie)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2023-03-31" expirationDate="" lastModifiedDate="" count="1" length="25">uridinedifosfaatgalactose</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2023-03-31" expirationDate="" lastModifiedDate="" count="1" length="13">UDP-galactose</designation>
+        </items>
+        <items json:array="true" is="concept" code="179005" codeSystem="2.16.840.1.113883.6.96" displayName="Apraxia of dressing (finding)" level="5" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="29">Apraxia of dressing (finding)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="19">Apraxia of dressing</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="19">Apraxia of dressing</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="2" length="26">kledingapraxie (bevinding)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="1" length="14">kledingapraxie</designation>
+        </items>
+        <items json:array="true" is="concept" code="180008" codeSystem="2.16.840.1.113883.6.96" displayName="Genus Fijivirus (organism)" level="4" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2019-01-31" expirationDate="" lastModifiedDate="" count="3" length="26">Genus Fijivirus (organism)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2009-01-31" expirationDate="" lastModifiedDate="" count="1" length="9">Fijivirus</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2009-01-31" expirationDate="" lastModifiedDate="" count="1" length="9">Fijivirus</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2019-01-31" expirationDate="" lastModifiedDate="" count="2" length="15">Genus Fijivirus</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2009-01-31" expirationDate="" lastModifiedDate="" count="4" length="25">Plant reovirus subgroup 2</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2009-01-31" expirationDate="" lastModifiedDate="" count="4" length="25">Plant reovirus subgroup 2</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2019-01-31" expirationDate="" lastModifiedDate="" count="2" length="15">Genus Fijivirus</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2019-09-30" expirationDate="" lastModifiedDate="" count="3" length="27">genus Fijivirus (organisme)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2019-09-30" expirationDate="" lastModifiedDate="" count="2" length="15">genus Fijivirus</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2023-03-31" expirationDate="" lastModifiedDate="" count="1" length="9">Fijivirus</designation>
+        </items>
+        <items json:array="true" is="concept" code="181007" codeSystem="2.16.840.1.113883.6.96" displayName="Hemorrhagic bronchopneumonia (disorder)" level="6" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="39">Hemorrhagic bronchopneumonia (disorder)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="28">Hemorrhagic bronchopneumonia</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="29">Haemorrhagic bronchopneumonia</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2023-03-31" expirationDate="" lastModifiedDate="" count="3" length="43">hemorragische bronchopneumonie (aandoening)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2023-03-31" expirationDate="" lastModifiedDate="" count="2" length="30">hemorragische bronchopneumonie</designation>
+        </items>
+        <items json:array="true" is="concept" code="182000" codeSystem="2.16.840.1.113883.6.96" displayName="Canalization (morphologic abnormality)" level="6" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="38">Canalization (morphologic abnormality)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="1" length="12">Canalization</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="1" length="12">Canalisation</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2019-09-30" expirationDate="" lastModifiedDate="" count="3" length="35">kanalisatie (afwijkende morfologie)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2019-09-30" expirationDate="" lastModifiedDate="" count="1" length="11">kanalisatie</designation>
+        </items>
+        <items json:array="true" is="concept" code="183005" codeSystem="2.16.840.1.113883.6.96" displayName="Autoimmune pancytopenia (disorder)" level="7" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="34">Autoimmune pancytopenia (disorder)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="23">Autoimmune pancytopenia</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="23">Autoimmune pancytopenia</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2023-03-31" expirationDate="" lastModifiedDate="" count="2" length="36">auto-immuunpancytopenie (aandoening)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2023-03-31" expirationDate="" lastModifiedDate="" count="1" length="23">auto-immuunpancytopenie</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2023-03-31" expirationDate="" lastModifiedDate="" count="2" length="24">auto-immune pancytopenie</designation>
+        </items>
+        <items json:array="true" is="concept" code="184004" codeSystem="2.16.840.1.113883.6.96" displayName="Withdrawal arrhythmia (disorder)" level="7" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="32">Withdrawal arrhythmia (disorder)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="21">Withdrawal arrhythmia</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="21">Withdrawal arrhythmia</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2023-03-31" expirationDate="" lastModifiedDate="" count="4" length="46">hartritmestoornis door onthouding (aandoening)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2023-03-31" expirationDate="" lastModifiedDate="" count="3" length="33">hartritmestoornis door onthouding</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2023-03-31" expirationDate="" lastModifiedDate="" count="3" length="24">aritmie door abstinentie</designation>
+        </items>
+        <items json:array="true" is="concept" code="185003" codeSystem="2.16.840.1.113883.6.96" displayName="Retired procedure (procedure)" level="0" type="D">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="29">Retired procedure (procedure)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="17">Retired procedure</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="17">Retired procedure</designation>
+        </items>
+        <items json:array="true" is="concept" code="186002" codeSystem="2.16.840.1.113883.6.96" displayName="Human leukocyte antigen Cw9 (substance)" level="9" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2014-01-31" expirationDate="" lastModifiedDate="" count="5" length="39">Human leukocyte antigen Cw9 (substance)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="2" length="15">HLA-Cw9 antigen</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="2" length="15">HLA-Cw9 antigen</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2014-01-31" expirationDate="" lastModifiedDate="" count="4" length="27">Human leucocyte antigen Cw9</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2014-01-31" expirationDate="" lastModifiedDate="" count="4" length="27">Human leukocyte antigen Cw9</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2014-01-31" expirationDate="" lastModifiedDate="" count="4" length="27">Human leukocyte antigen Cw9</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2014-01-31" expirationDate="" lastModifiedDate="" count="4" length="27">Human leucocyte antigen Cw9</designation>
+        </items>
+        <items json:array="true" is="concept" code="187006" codeSystem="2.16.840.1.113883.6.96" displayName="Cyanocobalamin (57-Co) (substance)" level="9" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2018-07-31" expirationDate="" lastModifiedDate="" count="3" length="34">Cyanocobalamin (57-Co) (substance)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2018-07-31" expirationDate="" lastModifiedDate="" count="2" length="22">Cyanocobalamin (57-Co)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2018-07-31" expirationDate="" lastModifiedDate="" count="2" length="22">Cyanocobalamin (57-Co)</designation>
+        </items>
+        <items json:array="true" is="concept" code="188001" codeSystem="2.16.840.1.113883.6.96" displayName="Injury of intercostal artery (disorder)" level="5" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="39">Injury of intercostal artery (disorder)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="28">Injury of intercostal artery</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="28">Injury of intercostal artery</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="25">Intercostal artery injury</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="25">Intercostal artery injury</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2023-03-31" expirationDate="" lastModifiedDate="" count="5" length="45">letsel van arteria intercostalis (aandoening)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2023-03-31" expirationDate="" lastModifiedDate="" count="4" length="32">letsel van arteria intercostalis</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2023-03-31" expirationDate="" lastModifiedDate="" count="4" length="31">letsel van intercostale arterie</designation>
+        </items>
+        <items json:array="true" is="concept" code="189009" codeSystem="2.16.840.1.113883.6.96" displayName="Excision of lesion of artery (procedure)" level="7" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="40">Excision of lesion of artery (procedure)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="28">Excision of lesion of artery</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="28">Excision of lesion of artery</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="7" length="55">excisie van afwijkend weefsel van arterie (verrichting)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="6" length="41">excisie van afwijkend weefsel van arterie</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="5" length="30">excisie van laesie van arteria</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="5" length="31">excisie van laesie van slagader</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="4" length="28">excisie van arteriële laesie</designation>
+        </items>
+        <items json:array="true" is="concept" code="190000" codeSystem="2.16.840.1.113883.6.96" displayName="Partial hysterectomy (procedure)" level="0" type="D">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="32">Partial hysterectomy (procedure)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="20">Partial hysterectomy</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="20">Partial hysterectomy</designation>
+        </items>
+        <items json:array="true" is="concept" code="191001" codeSystem="2.16.840.1.113883.6.96" displayName="Lednice virus (organism)" level="9" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2003-07-31" expirationDate="" lastModifiedDate="" count="3" length="24">Lednice virus (organism)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="2" length="13">Lednice virus</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="2" length="13">Lednice virus</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="2" length="25">Lednice-virus (organisme)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="1" length="13">Lednice-virus</designation>
+        </items>
+        <items json:array="true" is="concept" code="192008" codeSystem="2.16.840.1.113883.6.96" displayName="Congenital syphilitic hepatomegaly (disorder)" level="7" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="45">Congenital syphilitic hepatomegaly (disorder)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="34">Congenital syphilitic hepatomegaly</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="34">Congenital syphilitic hepatomegaly</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="50">hepatomegalie bij congenitale syfilis (aandoening)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="37">hepatomegalie bij congenitale syfilis</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="3" length="38">congenitale syfilitische hepatomegalie</designation>
+        </items>
+        <items json:array="true" is="concept" code="193003" codeSystem="2.16.840.1.113883.6.96" displayName="Benign hypertensive renal disease (disorder)" level="7" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="44">Benign hypertensive renal disease (disorder)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="33">Benign hypertensive renal disease</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="33">Benign hypertensive renal disease</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2023-03-31" expirationDate="" lastModifiedDate="" count="4" length="45">benigne hypertensieve nierziekte (aandoening)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2023-03-31" expirationDate="" lastModifiedDate="" count="3" length="32">benigne hypertensieve nierziekte</designation>
+        </items>
+        <items json:array="true" is="concept" code="194009" codeSystem="2.16.840.1.113883.6.96" displayName="Notropis whipplei (organism)" level="8" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2003-07-31" expirationDate="" lastModifiedDate="" count="3" length="28">Notropis whipplei (organism)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="2" length="17">Notropis whipplei</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="2" length="17">Notropis whipplei</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="2" length="17">Steelcolor shiner</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="18">Steelcolour shiner</designation>
+        </items>
+        <items json:array="true" is="concept" code="195005" codeSystem="2.16.840.1.113883.6.96" displayName="Illegal abortion with endometritis (disorder)" level="0" type="D">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="45">Illegal abortion with endometritis (disorder)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="50">Illegal termination of pregnancy with endometritis</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="50">Illegal termination of pregnancy with endometritis</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="34">Illegal abortion with endometritis</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="34">Illegal abortion with endometritis</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="8" length="63">abortus provocatus non lege artis met endometritis (aandoening)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="7" length="50">abortus provocatus non lege artis met endometritis</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="6" length="53">onwettige afbreking van zwangerschap met endometritis</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="48">illegale zwangerschapsafbreking met endometritis</designation>
+        </items>
+        <items json:array="true" is="concept" code="196006" codeSystem="2.16.840.1.113883.6.96" displayName="Concave shape (qualifier value)" level="5" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="31">Concave shape (qualifier value)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="13">Concave shape</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="13">Concave shape</designation>
+        </items>
+        <items json:array="true" is="concept" code="197002" codeSystem="2.16.840.1.113883.6.96" displayName="Mold to yeast conversion test (procedure)" level="6" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="41">Mold to yeast conversion test (procedure)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="29">Mold to yeast conversion test</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="30">Mould to yeast conversion test</designation>
+        </items>
+        <items json:array="true" is="concept" code="198007" codeSystem="2.16.840.1.113883.6.96" displayName="Disease caused by Filoviridae (disorder)" level="5" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2016-01-31" expirationDate="" lastModifiedDate="" count="5" length="40">Disease caused by Filoviridae (disorder)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2016-01-31" expirationDate="" lastModifiedDate="" count="4" length="29">Disease caused by Filoviridae</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2016-01-31" expirationDate="" lastModifiedDate="" count="4" length="29">Disease caused by Filoviridae</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="4" length="44">infectieziekte door Filoviridae (aandoening)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="3" length="31">infectieziekte door Filoviridae</designation>
+        </items>
+        <items json:array="true" is="concept" code="199004" codeSystem="2.16.840.1.113883.6.96" displayName="Decreased lactation (finding)" level="5" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="29">Decreased lactation (finding)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="19">Decreased lactation</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="19">Decreased lactation</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="14">Poor lactation</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="20">Inadequate lactation</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="22">Insufficient lactation</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="20">Inadequate lactation</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="22">Insufficient lactation</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="1" length="12">Hypogalactia</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="1" length="13">Hypolactation</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="1" length="13">Hypolactation</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="1" length="12">Hypogalactia</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="14">Poor lactation</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2019-03-31" expirationDate="" lastModifiedDate="" count="3" length="32">verminderde lactatie (bevinding)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2019-03-31" expirationDate="" lastModifiedDate="" count="2" length="20">verminderde lactatie</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2019-03-31" expirationDate="" lastModifiedDate="" count="2" length="25">verminderde melkproductie</designation>
+        </items>
+    </expansion>
+</valueSetExpansionSet>

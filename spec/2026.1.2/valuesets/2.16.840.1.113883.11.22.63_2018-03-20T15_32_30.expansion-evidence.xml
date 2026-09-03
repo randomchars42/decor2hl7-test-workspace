@@ -1,0 +1,13 @@
+<valueSetExpansionSet xmlns:json="http://www.json.org" id="623dc5b3-1933-42ea-bdc5-b31933a2ea68" effectiveDate="2026-09-03T14:32:07" statusCode="final" current="0" count="0" nonactive="0">
+    <valueSet json:array="true" id="2.16.840.1.113883.11.22.63" name="ips-laboratory-tests-and-panels" displayName="IPS Laboratory tests and panels" effectiveDate="2018-03-20T15:32:30" statusCode="draft" canonicalUri="http://hl7.org/fhir/uv/ips/ValueSet/laboratory-tests-and-panels-uv-ips" ident="hl7ips-">
+        <desc json:array="true" language="en-US">
+                 &lt;div&gt;Intensional Value Set Definition: LOINC {&lt;/div&gt; 
+                 &lt;div&gt;  {&lt;/div&gt; 
+                 &lt;div&gt;    STATUS in {ACTIVE}&lt;/div&gt; 
+                 &lt;div&gt;    CLASSTYPE in {1}&lt;/div&gt; 
+                 &lt;div&gt;    CLASS exclude {CHALSKIN, H&amp;amp;P.HX.LAB, H&amp;amp;P.HX, NR STATS, PATH.PROTOCOLS.*}&lt;/div&gt; 
+                 &lt;div&gt;  } } &lt;/div&gt; 
+            </desc>
+    </valueSet>
+    <expansion json:array="true" expanded="true" max="100" id="623dc5b3-1933-42ea-bdc5-b31933a2ea68"/>
+</valueSetExpansionSet>

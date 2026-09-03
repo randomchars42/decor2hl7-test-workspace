@@ -1,0 +1,851 @@
+<valueSetExpansionSet xmlns:json="http://www.json.org" id="c5654a7c-10a1-46fc-a54a-7c10a1a6fcca" effectiveDate="2026-09-03T14:32:18" statusCode="final" current="100" count="1824" nonactive="0">
+    <valueSet json:array="true" id="2.16.840.1.113883.3.1937.777.24.11.19" name="SNOMED-CT-Specimens" displayName="SNOMED CT Specimens" effectiveDate="2019-10-11T17:30:45" statusCode="draft" ident="mide-">
+        <conceptList json:array="true">
+            <include json:array="true" code="123038009" codeSystem="2.16.840.1.113883.6.96" displayName="Specimen" op="descendent-of" exception="false"/>
+        </conceptList>
+    </valueSet>
+    <expansion json:array="true" expanded="true" max="100" id="c5654a7c-10a1-46fc-a54a-7c10a1a6fcca">
+        <items json:array="true" is="concept" code="40511003" codeSystem="2.16.840.1.113883.6.96" displayName="Eluate (specimen)" level="3" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="17">Eluate (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="1" length="6">Eluate</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="1" length="6">Eluate</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="2" length="16">eluaat (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="1" length="6">eluaat</designation>
+        </items>
+        <items json:array="true" is="concept" code="48469005" codeSystem="2.16.840.1.113883.6.96" displayName="Cytologic material (specimen)" level="3" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="29">Cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="18">Cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="18">Cytologic material</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="15">Cytology sample</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="15">Cytology sample</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="43">monster van cytologisch materiaal (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="33">monster van cytologisch materiaal</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="2" length="19">cytologisch monster</designation>
+        </items>
+        <items json:array="true" is="concept" code="110893002" codeSystem="2.16.840.1.113883.6.96" displayName="Cutaneous cytologic material (specimen)" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="39">Cutaneous cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="28">Cutaneous cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="28">Cutaneous cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="40">cytologisch materiaal van huid (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="30">cytologisch materiaal van huid</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="31">cytologisch materiaal van cutis</designation>
+        </items>
+        <items json:array="true" is="concept" code="110894008" codeSystem="2.16.840.1.113883.6.96" displayName="Mammary cytologic material (specimen)" level="4" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="37">Mammary cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="26">Mammary cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="26">Mammary cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="41">cytologisch materiaal van mamma (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="31">cytologisch materiaal van mamma</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="31">cytologisch materiaal van borst</designation>
+        </items>
+        <items json:array="true" is="concept" code="110896005" codeSystem="2.16.840.1.113883.6.96" displayName="Subcutaneous cytologic material (specimen)" level="3" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="42">Subcutaneous cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="31">Subcutaneous cytologic material</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="31">Subcutaneous cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="6" length="53">cytologisch materiaal van subcutaan weefsel (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="5" length="43">cytologisch materiaal van subcutaan weefsel</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="4" length="34">cytologisch materiaal van subcutis</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="3" length="31">subcutaan cytologisch materiaal</designation>
+        </items>
+        <items json:array="true" is="concept" code="110897001" codeSystem="2.16.840.1.113883.6.96" displayName="Bone marrow cytological material (specimen)" level="3" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="43">Bone marrow cytological material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="32">Bone marrow cytological material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="32">Bone marrow cytological material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="44">cytologisch materiaal van beenmerg (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="34">cytologisch materiaal van beenmerg</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="40">cytologisch materiaal van medulla ossium</designation>
+        </items>
+        <items json:array="true" is="concept" code="110898006" codeSystem="2.16.840.1.113883.6.96" displayName="Lymph node cytologic material (specimen)" level="3" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="40">Lymph node cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="29">Lymph node cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="29">Lymph node cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="46">cytologisch materiaal van lymfeklier (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="36">cytologisch materiaal van lymfeklier</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="36">cytologisch materiaal van lymfeknoop</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="43">cytologisch materiaal van nodus lymphaticus</designation>
+        </items>
+        <items json:array="true" is="concept" code="110899003" codeSystem="2.16.840.1.113883.6.96" displayName="Breast nipple cytologic material (specimen)" level="5" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="43">Breast nipple cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="32">Breast nipple cytologic material</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="32">Breast nipple cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="5" length="41">cytologisch materiaal van tepel (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="4" length="31">cytologisch materiaal van tepel</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="5" length="42">cytologisch materiaal van papilla mammaria</designation>
+        </items>
+        <items json:array="true" is="concept" code="110900008" codeSystem="2.16.840.1.113883.6.96" displayName="Skeletal muscle cytologic material (specimen)" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="45">Skeletal muscle cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="34">Skeletal muscle cytologic material</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="34">Skeletal muscle cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="47">cytologisch materiaal van skeletspier (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="37">cytologisch materiaal van skeletspier</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="47">cytologisch materiaal van dwarsgestreepte spier</designation>
+        </items>
+        <items json:array="true" is="concept" code="110901007" codeSystem="2.16.840.1.113883.6.96" displayName="Bone cytologic material (specimen)" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="34">Bone cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="23">Bone cytologic material</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="23">Bone cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="39">cytologisch materiaal van bot (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="29">cytologisch materiaal van bot</designation>
+        </items>
+        <items json:array="true" is="concept" code="110902000" codeSystem="2.16.840.1.113883.6.96" displayName="Upper respiratory tract cytologic material (specimen)" level="4" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="53">Upper respiratory tract cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="42">Upper respiratory tract cytologic material</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="42">Upper respiratory tract cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="6" length="55">cytologisch materiaal van bovenste luchtwegen (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="5" length="45">cytologisch materiaal van bovenste luchtwegen</designation>
+        </items>
+        <items json:array="true" is="concept" code="110903005" codeSystem="2.16.840.1.113883.6.96" displayName="Nasal cytologic material (specimen)" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="35">Nasal cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="24">Nasal cytologic material</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="24">Nasal cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="5" length="40">cytologisch materiaal van neus (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="4" length="30">cytologisch materiaal van neus</designation>
+        </items>
+        <items json:array="true" is="concept" code="110904004" codeSystem="2.16.840.1.113883.6.96" displayName="Accessory sinus cytologic material (specimen)" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="45">Accessory sinus cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="34">Accessory sinus cytologic material</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="34">Accessory sinus cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="5" length="48">cytologisch materiaal van neusbijholte (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="38">cytologisch materiaal van neusbijholte</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="4" length="34">cytologisch materiaal van bijholte</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="43">cytologisch materiaal van sinus paranasalis</designation>
+        </items>
+        <items json:array="true" is="concept" code="110905003" codeSystem="2.16.840.1.113883.6.96" displayName="Nasopharyngeal cytologic material (specimen)" level="5" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="44">Nasopharyngeal cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="33">Nasopharyngeal cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="33">Nasopharyngeal cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="46">cytologisch materiaal van nasofarynx (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="36">cytologisch materiaal van nasofarynx</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="6" length="48">cytologisch materiaal van pars nasalis pharyngis</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="36">cytologisch materiaal van epipharynx</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="37">cytologisch materiaal van nasopharynx</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="35">cytologisch materiaal van epifarynx</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="3" length="36">nasofaryngeaal cytologisch materiaal</designation>
+        </items>
+        <items json:array="true" is="concept" code="110906002" codeSystem="2.16.840.1.113883.6.96" displayName="Lower respiratory tract cytologic material (specimen)" level="4" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="53">Lower respiratory tract cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="42">Lower respiratory tract cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="42">Lower respiratory tract cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="6" length="55">cytologisch materiaal van onderste luchtwegen (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="45">cytologisch materiaal van onderste luchtwegen</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="6" length="56">cytologisch materiaal van tractus respiratorius inferior</designation>
+        </items>
+        <items json:array="true" is="concept" code="110907006" codeSystem="2.16.840.1.113883.6.96" displayName="Epiglottic cytologic material (specimen)" level="5" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="40">Epiglottic cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="29">Epiglottic cytologic material</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="29">Epiglottic cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="46">cytologisch materiaal van epiglottis (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="36">cytologisch materiaal van epiglottis</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="37">cytologisch materiaal van strotklepje</designation>
+        </items>
+        <items json:array="true" is="concept" code="110908001" codeSystem="2.16.840.1.113883.6.96" displayName="Laryngeal cytologic material (specimen)" level="4" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="39">Laryngeal cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="28">Laryngeal cytologic material</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="28">Laryngeal cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="42">cytologisch materiaal van larynx (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="32">cytologisch materiaal van larynx</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="39">cytologisch materiaal van strottenhoofd</designation>
+        </items>
+        <items json:array="true" is="concept" code="110909009" codeSystem="2.16.840.1.113883.6.96" displayName="Vocal cord cytologic material (specimen)" level="5" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="40">Vocal cord cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="29">Vocal cord cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="29">Vocal cord cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2021-03-31" expirationDate="" lastModifiedDate="" count="6" length="49">cytologisch materiaal van ware stemband (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2021-03-31" expirationDate="" lastModifiedDate="" count="5" length="39">cytologisch materiaal van ware stemband</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2021-03-31" expirationDate="" lastModifiedDate="" count="5" length="40">cytologisch materiaal van ware stemplooi</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="39">cytologisch materiaal van plica vocalis</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="34">cytologisch materiaal van stemband</designation>
+        </items>
+        <items json:array="true" is="concept" code="110910004" codeSystem="2.16.840.1.113883.6.96" displayName="Lung cytologic material (specimen)" level="4" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="34">Lung cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="23">Lung cytologic material</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="23">Lung cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="5" length="40">cytologisch materiaal van long (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="4" length="30">cytologisch materiaal van long</designation>
+        </items>
+        <items json:array="true" is="concept" code="110912007" codeSystem="2.16.840.1.113883.6.96" displayName="Bronchial cytologic material (specimen)" level="4" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="39">Bronchial cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="28">Bronchial cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="28">Bronchial cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="5" length="44">cytologisch materiaal van bronchus (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="4" length="34">cytologisch materiaal van bronchus</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="3" length="32">bronchiaal cytologisch materiaal</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2025-01-31" expirationDate="" lastModifiedDate="" count="4" length="38">cytologisch materiaal van luchtpijptak</designation>
+        </items>
+        <items json:array="true" is="concept" code="110913002" codeSystem="2.16.840.1.113883.6.96" displayName="Pleural cytologic material (specimen)" level="3" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="37">Pleural cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="26">Pleural cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="26">Pleural cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="5" length="42">cytologisch materiaal van pleura (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="4" length="32">cytologisch materiaal van pleura</designation>
+        </items>
+        <items json:array="true" is="concept" code="110914008" codeSystem="2.16.840.1.113883.6.96" displayName="Right upper lobe bronchus cytologic material (specimen)" level="5" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="7" length="55">Right upper lobe bronchus cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="44">Right upper lobe bronchus cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="44">Right upper lobe bronchus cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="8" length="66">cytologisch materiaal van bronchus van rechter bovenkwab (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="7" length="56">cytologisch materiaal van bronchus van rechter bovenkwab</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="7" length="58">cytologisch materiaal van bronchus lobaris superior dexter</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2025-01-31" expirationDate="" lastModifiedDate="" count="7" length="60">cytologisch materiaal van luchtpijptak van rechter bovenkwab</designation>
+        </items>
+        <items json:array="true" is="concept" code="110915009" codeSystem="2.16.840.1.113883.6.96" displayName="Right pleural cytologic material (specimen)" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="43">Right pleural cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="32">Right pleural cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="32">Right pleural cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="6" length="50">cytologisch materiaal van rechter pleura (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="5" length="40">cytologisch materiaal van rechter pleura</designation>
+        </items>
+        <items json:array="true" is="concept" code="110916005" codeSystem="2.16.840.1.113883.6.96" displayName="Right lower lobe bronchus cytologic material (specimen)" level="5" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="7" length="55">Right lower lobe bronchus cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="44">Right lower lobe bronchus cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="44">Right lower lobe bronchus cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="8" length="66">cytologisch materiaal van bronchus van rechter onderkwab (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="7" length="56">cytologisch materiaal van bronchus van rechter onderkwab</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2025-01-31" expirationDate="" lastModifiedDate="" count="7" length="60">cytologisch materiaal van luchtpijptak van rechter onderkwab</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="7" length="58">cytologisch materiaal van bronchus lobaris inferior dexter</designation>
+        </items>
+        <items json:array="true" is="concept" code="110917001" codeSystem="2.16.840.1.113883.6.96" displayName="Left pleural cytologic material (specimen)" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="42">Left pleural cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="31">Left pleural cytologic material</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="31">Left pleural cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="6" length="49">cytologisch materiaal van linker pleura (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="5" length="39">cytologisch materiaal van linker pleura</designation>
+        </items>
+        <items json:array="true" is="concept" code="110918006" codeSystem="2.16.840.1.113883.6.96" displayName="Left upper lobe bronchus cytologic material (specimen)" level="5" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="7" length="54">Left upper lobe bronchus cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="43">Left upper lobe bronchus cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="43">Left upper lobe bronchus cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2021-03-31" expirationDate="" lastModifiedDate="" count="8" length="65">cytologisch materiaal van bronchus van linker bovenkwab (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2021-03-31" expirationDate="" lastModifiedDate="" count="7" length="55">cytologisch materiaal van bronchus van linker bovenkwab</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2021-03-31" expirationDate="" lastModifiedDate="" count="7" length="60">cytologisch materiaal van bronchus lobaris superior sinister</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2025-01-31" expirationDate="" lastModifiedDate="" count="7" length="59">cytologisch materiaal van luchtpijptak van linker bovenkwab</designation>
+        </items>
+        <items json:array="true" is="concept" code="110919003" codeSystem="2.16.840.1.113883.6.96" displayName="Pericardial cytologic material (specimen)" level="4" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="41">Pericardial cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="30">Pericardial cytologic material</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="30">Pericardial cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="44">cytologisch materiaal van pericard (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="34">cytologisch materiaal van pericard</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="37">cytologisch materiaal van pericardium</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="35">cytologisch materiaal van hartzakje</designation>
+        </items>
+        <items json:array="true" is="concept" code="110920009" codeSystem="2.16.840.1.113883.6.96" displayName="Tracheal cytologic material (specimen)" level="5" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="38">Tracheal cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="27">Tracheal cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="27">Tracheal cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="43">cytologisch materiaal van trachea (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="33">cytologisch materiaal van trachea</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="35">cytologisch materiaal van luchtpijp</designation>
+        </items>
+        <items json:array="true" is="concept" code="110921008" codeSystem="2.16.840.1.113883.6.96" displayName="Right middle lobe bronchus cytologic material (specimen)" level="5" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="7" length="56">Right middle lobe bronchus cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="45">Right middle lobe bronchus cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="45">Right middle lobe bronchus cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="8" length="67">cytologisch materiaal van bronchus van rechter middenkwab (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="7" length="57">cytologisch materiaal van bronchus van rechter middenkwab</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="7" length="56">cytologisch materiaal van bronchus lobaris medius dexter</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2025-01-31" expirationDate="" lastModifiedDate="" count="7" length="61">cytologisch materiaal van luchtpijptak van rechter middenkwab</designation>
+        </items>
+        <items json:array="true" is="concept" code="110922001" codeSystem="2.16.840.1.113883.6.96" displayName="Cytologic material from left main bronchus (specimen)" level="5" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="7" length="53">Cytologic material from left main bronchus (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="42">Cytologic material from left main bronchus</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="42">Cytologic material from left main bronchus</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="33">Left bronchial cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="33">Left bronchial cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2022-03-31" expirationDate="" lastModifiedDate="" count="6" length="56">cytologisch materiaal van linker hoofdbronchus (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="46">cytologisch materiaal van linker hoofdbronchus</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="6" length="55">cytologisch materiaal van bronchus principalis sinister</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2022-03-31" expirationDate="" lastModifiedDate="" count="6" length="51">cytologisch monster van linker bronchus principalis</designation>
+        </items>
+        <items json:array="true" is="concept" code="110923006" codeSystem="2.16.840.1.113883.6.96" displayName="Left lower lobe bronchus cytologic material (specimen)" level="5" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="7" length="54">Left lower lobe bronchus cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="43">Left lower lobe bronchus cytologic material</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="43">Left lower lobe bronchus cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="8" length="65">cytologisch materiaal van bronchus van linker onderkwab (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="7" length="55">cytologisch materiaal van bronchus van linker onderkwab</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2025-01-31" expirationDate="" lastModifiedDate="" count="7" length="59">cytologisch materiaal van luchtpijptak van linker onderkwab</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="7" length="60">cytologisch materiaal van bronchus lobaris inferior sinister</designation>
+        </items>
+        <items json:array="true" is="concept" code="110924000" codeSystem="2.16.840.1.113883.6.96" displayName="Cytologic material from right main bronchus (specimen)" level="5" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="7" length="54">Cytologic material from right main bronchus (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="43">Cytologic material from right main bronchus</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="43">Cytologic material from right main bronchus</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="34">Right bronchial cytologic material</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="34">Right bronchial cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2022-03-31" expirationDate="" lastModifiedDate="" count="6" length="57">cytologisch materiaal van rechter hoofdbronchus (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="47">cytologisch materiaal van rechter hoofdbronchus</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2022-03-31" expirationDate="" lastModifiedDate="" count="6" length="52">cytologisch monster van rechter bronchus principalis</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="6" length="53">cytologisch materiaal van bronchus principalis dexter</designation>
+        </items>
+        <items json:array="true" is="concept" code="110925004" codeSystem="2.16.840.1.113883.6.96" displayName="Cytologic material of mouth (specimen)" level="3" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="38">Cytologic material of mouth (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="27">Cytologic material of mouth</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="27">Cytologic material of mouth</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="5" length="40">cytologisch materiaal van mond (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="4" length="30">cytologisch materiaal van mond</designation>
+        </items>
+        <items json:array="true" is="concept" code="110926003" codeSystem="2.16.840.1.113883.6.96" displayName="Gallbladder cytologic material (specimen)" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="41">Gallbladder cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="30">Gallbladder cytologic material</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="30">Gallbladder cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="44">cytologisch materiaal van galblaas (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="34">cytologisch materiaal van galblaas</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="41">cytologisch materiaal van vesica biliaris</designation>
+        </items>
+        <items json:array="true" is="concept" code="110927007" codeSystem="2.16.840.1.113883.6.96" displayName="Liver cytologic material (specimen)" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="35">Liver cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="24">Liver cytologic material</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="24">Liver cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="5" length="41">cytologisch materiaal van lever (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="4" length="31">cytologisch materiaal van lever</designation>
+        </items>
+        <items json:array="true" is="concept" code="110928002" codeSystem="2.16.840.1.113883.6.96" displayName="Bile duct cytologic material (specimen)" level="4" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="39">Bile duct cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="28">Bile duct cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="28">Bile duct cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="42">cytologisch materiaal van galweg (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="32">cytologisch materiaal van galweg</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="39">cytologisch materiaal van galafvoergang</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="33">cytologisch materiaal van galgang</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="38">cytologisch materiaal van galafvoerweg</designation>
+        </items>
+        <items json:array="true" is="concept" code="110929005" codeSystem="2.16.840.1.113883.6.96" displayName="Pancreatic cytologic material (specimen)" level="4" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="40">Pancreatic cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="29">Pancreatic cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="29">Pancreatic cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="44">cytologisch materiaal van pancreas (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="34">cytologisch materiaal van pancreas</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="38">cytologisch materiaal van alvleesklier</designation>
+        </items>
+        <items json:array="true" is="concept" code="110930000" codeSystem="2.16.840.1.113883.6.96" displayName="Salivary gland cytologic material (specimen)" level="4" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="44">Salivary gland cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="33">Salivary gland cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="33">Salivary gland cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2022-03-31" expirationDate="" lastModifiedDate="" count="5" length="49">cytologisch materiaal van speekselklier (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="39">cytologisch materiaal van speekselklier</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="44">cytologisch materiaal van glandula salivaria</designation>
+        </items>
+        <items json:array="true" is="concept" code="110931001" codeSystem="2.16.840.1.113883.6.96" displayName="Penis cytologic material (specimen)" level="5" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="35">Penis cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="24">Penis cytologic material</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="24">Penis cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="5" length="41">cytologisch materiaal van penis (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="4" length="31">cytologisch materiaal van penis</designation>
+        </items>
+        <items json:array="true" is="concept" code="110932008" codeSystem="2.16.840.1.113883.6.96" displayName="Parotid gland cytologic material (specimen)" level="5" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="43">Parotid gland cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="32">Parotid gland cytologic material</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="32">Parotid gland cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2021-03-31" expirationDate="" lastModifiedDate="" count="5" length="48">cytologisch materiaal van parotisklier (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="38">cytologisch materiaal van parotisklier</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="44">cytologisch materiaal van glandula parotidea</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="42">cytologisch materiaal van oorspeekselklier</designation>
+        </items>
+        <items json:array="true" is="concept" code="110933003" codeSystem="2.16.840.1.113883.6.96" displayName="Prostate cytologic material (specimen)" level="5" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="38">Prostate cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="27">Prostate cytologic material</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="27">Prostate cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="5" length="44">cytologisch materiaal van prostaat (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="4" length="34">cytologisch materiaal van prostaat</designation>
+        </items>
+        <items json:array="true" is="concept" code="110934009" codeSystem="2.16.840.1.113883.6.96" displayName="Pharyngeal cytologic material (specimen)" level="4" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="40">Pharyngeal cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="29">Pharyngeal cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="29">Pharyngeal cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="42">cytologisch materiaal van farynx (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="32">cytologisch materiaal van farynx</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="35">cytologisch materiaal van keelholte</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="3" length="32">faryngeaal cytologisch materiaal</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="33">cytologisch materiaal van pharynx</designation>
+        </items>
+        <items json:array="true" is="concept" code="110935005" codeSystem="2.16.840.1.113883.6.96" displayName="Testis cytologic material (specimen)" level="5" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="36">Testis cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="25">Testis cytologic material</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="25">Testis cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="42">cytologisch materiaal van testis (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="32">cytologisch materiaal van testis</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="34">cytologisch materiaal van testikel</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="33">cytologisch materiaal van zaadbal</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="33">cytologisch materiaal van teelbal</designation>
+        </items>
+        <items json:array="true" is="concept" code="110936006" codeSystem="2.16.840.1.113883.6.96" displayName="Gastric cytologic material (specimen)" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="37">Gastric cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="26">Gastric cytologic material</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="26">Gastric cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="5" length="40">cytologisch materiaal van maag (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="4" length="30">cytologisch materiaal van maag</designation>
+        </items>
+        <items json:array="true" is="concept" code="110937002" codeSystem="2.16.840.1.113883.6.96" displayName="Seminal vesicle cytologic material (specimen)" level="5" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="45">Seminal vesicle cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="34">Seminal vesicle cytologic material</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="34">Seminal vesicle cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2021-09-30" expirationDate="" lastModifiedDate="" count="6" length="55">cytologisch materiaal van glandula vesiculosa (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2021-09-30" expirationDate="" lastModifiedDate="" count="5" length="45">cytologisch materiaal van glandula vesiculosa</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="44">cytologisch materiaal van glandula seminalis</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="44">cytologisch materiaal van vesicula seminalis</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="37">cytologisch materiaal van zaadblaasje</designation>
+        </items>
+        <items json:array="true" is="concept" code="110938007" codeSystem="2.16.840.1.113883.6.96" displayName="Duodenal cytologic material (specimen)" level="5" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="38">Duodenal cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="27">Duodenal cytologic material</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="27">Duodenal cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="44">cytologisch materiaal van duodenum (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="34">cytologisch materiaal van duodenum</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="46">cytologisch materiaal van twaalfvingerige darm</designation>
+        </items>
+        <items json:array="true" is="concept" code="110939004" codeSystem="2.16.840.1.113883.6.96" displayName="Vas deferens cytologic material (specimen)" level="6" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="42">Vas deferens cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="31">Vas deferens cytologic material</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="31">Vas deferens cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="6" length="51">cytologisch materiaal van ductus deferens (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="41">cytologisch materiaal van ductus deferens</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="36">cytologisch materiaal van zaadleider</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="38">cytologisch materiaal van vas deferens</designation>
+        </items>
+        <items json:array="true" is="concept" code="110940002" codeSystem="2.16.840.1.113883.6.96" displayName="Ileal cytologic material (specimen)" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="35">Ileal cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="24">Ileal cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="24">Ileal cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="5" length="41">cytologisch materiaal van ileum (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="4" length="31">cytologisch materiaal van ileum</designation>
+        </items>
+        <items json:array="true" is="concept" code="110941003" codeSystem="2.16.840.1.113883.6.96" displayName="Epididymis cytologic material (specimen)" level="5" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="40">Epididymis cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="29">Epididymis cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="29">Epididymis cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="46">cytologisch materiaal van epididymis (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="36">cytologisch materiaal van epididymis</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="3" length="33">epididymaal cytologisch materiaal</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="32">cytologisch materiaal van bijbal</designation>
+        </items>
+        <items json:array="true" is="concept" code="110942005" codeSystem="2.16.840.1.113883.6.96" displayName="Rectal cytologic material (specimen)" level="5" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="36">Rectal cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="25">Rectal cytologic material</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="25">Rectal cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="42">cytologisch materiaal van rectum (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="32">cytologisch materiaal van rectum</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="3" length="29">rectaal cytologisch materiaal</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="35">cytologisch materiaal van endeldarm</designation>
+        </items>
+        <items json:array="true" is="concept" code="110943000" codeSystem="2.16.840.1.113883.6.96" displayName="Renal pelvis cytologic material (specimen)" level="6" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="42">Renal pelvis cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="31">Renal pelvis cytologic material</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="31">Renal pelvis cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="42">cytologisch materiaal van pyelum (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="32">cytologisch materiaal van pyelum</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="36">cytologisch materiaal van nierbekken</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="40">cytologisch materiaal van pelvis renalis</designation>
+        </items>
+        <items json:array="true" is="concept" code="110944006" codeSystem="2.16.840.1.113883.6.96" displayName="Peritoneal cytologic material (specimen)" level="4" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="40">Peritoneal cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="29">Peritoneal cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="29">Peritoneal cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="46">cytologisch materiaal van peritoneum (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="36">cytologisch materiaal van peritoneum</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="3" length="33">peritoneaal cytologisch materiaal</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="35">cytologisch materiaal van buikvlies</designation>
+        </items>
+        <items json:array="true" is="concept" code="110945007" codeSystem="2.16.840.1.113883.6.96" displayName="Vulva cytologic material (specimen)" level="6" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="35">Vulva cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="24">Vulva cytologic material</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="24">Vulva cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="41">cytologisch materiaal van vulva (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="31">cytologisch materiaal van vulva</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="32">cytologisch materiaal van cunnus</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="44">cytologisch materiaal van pudendum femininum</designation>
+        </items>
+        <items json:array="true" is="concept" code="110946008" codeSystem="2.16.840.1.113883.6.96" displayName="Upper urinary tract cytologic material (specimen)" level="5" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="49">Upper urinary tract cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="38">Upper urinary tract cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="38">Upper urinary tract cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="9" length="73">cytologisch materiaal van ureter en/of verzamelsysteem van nier (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="8" length="63">cytologisch materiaal van ureter en/of verzamelsysteem van nier</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="5" length="43">cytologisch materiaal van hogere urinewegen</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="7" length="54">cytologisch materiaal van bovenste deel van urinewegen</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="8" length="68">cytologisch materiaal van urineleider en/of verzamelsysteem van nier</designation>
+        </items>
+        <items json:array="true" is="concept" code="110947004" codeSystem="2.16.840.1.113883.6.96" displayName="Vagina cytologic material (specimen)" level="7" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="36">Vagina cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="25">Vagina cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="25">Vagina cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="5" length="42">cytologisch materiaal van vagina (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="4" length="32">cytologisch materiaal van vagina</designation>
+        </items>
+        <items json:array="true" is="concept" code="110948009" codeSystem="2.16.840.1.113883.6.96" displayName="Kidney cytologic material (specimen)" level="5" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="36">Kidney cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="25">Kidney cytologic material</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="25">Kidney cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="5" length="40">cytologisch materiaal van nier (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="4" length="30">cytologisch materiaal van nier</designation>
+        </items>
+        <items json:array="true" is="concept" code="110949001" codeSystem="2.16.840.1.113883.6.96" displayName="Cervix cytologic material (specimen)" level="7" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="36">Cervix cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="25">Cervix cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="25">Cervix cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="6" length="48">cytologisch materiaal van cervix uteri (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="5" length="38">cytologisch materiaal van cervix uteri</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="4" length="40">cytologisch materiaal van baarmoederhals</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="4" length="32">cytologisch materiaal van cervix</designation>
+        </items>
+        <items json:array="true" is="concept" code="110950001" codeSystem="2.16.840.1.113883.6.96" displayName="Urinary bladder cytologic material (specimen)" level="6" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="45">Urinary bladder cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="34">Urinary bladder cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="34">Urinary bladder cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="6" length="51">cytologisch materiaal van vesica urinaria (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="41">cytologisch materiaal van vesica urinaria</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="31">cytologisch materiaal van blaas</designation>
+        </items>
+        <items json:array="true" is="concept" code="110951002" codeSystem="2.16.840.1.113883.6.96" displayName="Endocervical cytologic material (specimen)" level="8" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="42">Endocervical cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="31">Endocervical cytologic material</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="31">Endocervical cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="5" length="46">cytologisch materiaal van endocervix (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="4" length="36">cytologisch materiaal van endocervix</designation>
+        </items>
+        <items json:array="true" is="concept" code="110952009" codeSystem="2.16.840.1.113883.6.96" displayName="Submaxillary gland cytologic material (specimen)" level="3" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="48">Submaxillary gland cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="37">Submaxillary gland cytologic material</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="37">Submaxillary gland cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="6" length="60">cytologisch materiaal van glandula submandibularis (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="50">cytologisch materiaal van glandula submandibularis</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="48">cytologisch materiaal van onderkaakspeekselklier</designation>
+        </items>
+        <items json:array="true" is="concept" code="110953004" codeSystem="2.16.840.1.113883.6.96" displayName="Vaginal and cervical cytologic material (specimen)" level="8" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="50">Vaginal and cervical cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="39">Vaginal and cervical cytologic material</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="39">Vaginal and cervical cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="8" length="58">cytologisch materiaal van vagina en cervix uteri (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="7" length="48">cytologisch materiaal van vagina en cervix uteri</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="43">vaginaal en cervicaal cytologisch materiaal</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="6" length="50">cytologisch materiaal van vagina en baarmoederhals</designation>
+        </items>
+        <items json:array="true" is="concept" code="110954005" codeSystem="2.16.840.1.113883.6.96" displayName="Small intestine cytologic material (specimen)" level="4" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="45">Small intestine cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="34">Small intestine cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="34">Small intestine cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="6" length="46">cytologisch materiaal van dunne darm (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="36">cytologisch materiaal van dunne darm</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="42">cytologisch materiaal van intestinum tenue</designation>
+        </items>
+        <items json:array="true" is="concept" code="110955006" codeSystem="2.16.840.1.113883.6.96" displayName="Endometrium cytologic material (specimen)" level="7" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="41">Endometrium cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="30">Endometrium cytologic material</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="30">Endometrium cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="47">cytologisch materiaal van endometrium (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="37">cytologisch materiaal van endometrium</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="6" length="45">cytologisch materiaal van tunica mucosa uteri</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="46">cytologisch materiaal van baarmoederslijmvlies</designation>
+        </items>
+        <items json:array="true" is="concept" code="110956007" codeSystem="2.16.840.1.113883.6.96" displayName="Colonic cytologic material (specimen)" level="6" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="37">Colonic cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="26">Colonic cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="26">Colonic cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="5" length="41">cytologisch materiaal van colon (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="4" length="31">cytologisch materiaal van colon</designation>
+        </items>
+        <items json:array="true" is="concept" code="110957003" codeSystem="2.16.840.1.113883.6.96" displayName="Fallopian tube cytologic material (specimen)" level="6" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="44">Fallopian tube cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="33">Fallopian tube cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="33">Fallopian tube cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="6" length="48">cytologisch materiaal van tuba uterina (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="38">cytologisch materiaal van tuba uterina</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="39">cytologisch materiaal van tuba Fallopii</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="34">cytologisch materiaal van eileider</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="33">cytologisch materiaal van salpinx</designation>
+        </items>
+        <items json:array="true" is="concept" code="110958008" codeSystem="2.16.840.1.113883.6.96" displayName="Urinary tract cytologic material (specimen)" level="4" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="43">Urinary tract cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="32">Urinary tract cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="32">Urinary tract cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="6" length="53">cytologisch materiaal van systema urinarium (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="43">cytologisch materiaal van systema urinarium</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="36">cytologisch materiaal van urinewegen</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="41">cytologisch materiaal van urinewegstelsel</designation>
+        </items>
+        <items json:array="true" is="concept" code="110959000" codeSystem="2.16.840.1.113883.6.96" displayName="Placenta cytologic material (specimen)" level="3" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="38">Placenta cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="27">Placenta cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="27">Placenta cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="5" length="44">cytologisch materiaal van placenta (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="4" length="34">cytologisch materiaal van placenta</designation>
+        </items>
+        <items json:array="true" is="concept" code="110960005" codeSystem="2.16.840.1.113883.6.96" displayName="Ureter cytologic material (specimen)" level="6" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="36">Ureter cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="25">Ureter cytologic material</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="25">Ureter cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="42">cytologisch materiaal van ureter (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="32">cytologisch materiaal van ureter</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="37">cytologisch materiaal van urineleider</designation>
+        </items>
+        <items json:array="true" is="concept" code="110961009" codeSystem="2.16.840.1.113883.6.96" displayName="Chorion cytologic material (specimen)" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="37">Chorion cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="26">Chorion cytologic material</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="26">Chorion cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="5" length="43">cytologisch materiaal van chorion (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="4" length="33">cytologisch materiaal van chorion</designation>
+        </items>
+        <items json:array="true" is="concept" code="110962002" codeSystem="2.16.840.1.113883.6.96" displayName="Esophageal cytologic material (specimen)" level="5" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="40">Esophageal cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="30">Oesophageal cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="29">Esophageal cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="45">cytologisch materiaal van oesofagus (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="35">cytologisch materiaal van oesofagus</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="3" length="33">oesofageaal cytologisch materiaal</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="34">cytologisch materiaal van slokdarm</designation>
+        </items>
+        <items json:array="true" is="concept" code="110963007" codeSystem="2.16.840.1.113883.6.96" displayName="Anal cytologic material (specimen)" level="5" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="34">Anal cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="23">Anal cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="23">Anal cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="40">cytologisch materiaal van anus (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="30">cytologisch materiaal van anus</designation>
+        </items>
+        <items json:array="true" is="concept" code="110964001" codeSystem="2.16.840.1.113883.6.96" displayName="Lower urinary tract cytologic material (specimen)" level="5" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="49">Lower urinary tract cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="38">Lower urinary tract cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="38">Lower urinary tract cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="6" length="53">cytologisch materiaal van lagere urinewegen (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="43">cytologisch materiaal van lagere urinewegen</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="8" length="64">cytologisch materiaal van onderste deel van tractus urogenitalis</designation>
+        </items>
+        <items json:array="true" is="concept" code="110965000" codeSystem="2.16.840.1.113883.6.96" displayName="Urethra cytologic material (specimen)" level="6" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="37">Urethra cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="26">Urethra cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="26">Urethra cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="43">cytologisch materiaal van urethra (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="33">cytologisch materiaal van urethra</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="35">cytologisch materiaal van urinebuis</designation>
+        </items>
+        <items json:array="true" is="concept" code="110966004" codeSystem="2.16.840.1.113883.6.96" displayName="Jejunal cytologic material (specimen)" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="37">Jejunal cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="26">Jejunal cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="26">Jejunal cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="5" length="43">cytologisch materiaal van jejunum (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="4" length="33">cytologisch materiaal van jejunum</designation>
+        </items>
+        <items json:array="true" is="concept" code="110967008" codeSystem="2.16.840.1.113883.6.96" displayName="Amnion cytologic material (specimen)" level="4" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="36">Amnion cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="25">Amnion cytologic material</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="25">Amnion cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="42">cytologisch materiaal van amnion (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="32">cytologisch materiaal van amnion</designation>
+        </items>
+        <items json:array="true" is="concept" code="110968003" codeSystem="2.16.840.1.113883.6.96" displayName="Fetal cytologic material (specimen)" level="3" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="35">Fetal cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="24">Fetal cytologic material</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="24">Fetal cytologic material</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="25">Foetal cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="5" length="42">cytologisch materiaal van foetus (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="prefPat" statusCode="active" effectiveDate="2022-09-30" expirationDate="" lastModifiedDate="" count="2" length="17">foetaal materiaal</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="4" length="32">cytologisch materiaal van foetus</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="3" length="29">foetaal cytologisch materiaal</designation>
+        </items>
+        <items json:array="true" is="concept" code="110969006" codeSystem="2.16.840.1.113883.6.96" displayName="Cerebrospinal fluid cytologic material (specimen)" level="4" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="49">Cerebrospinal fluid cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="38">Cerebrospinal fluid cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="38">Cerebrospinal fluid cytologic material</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="31">Spinal fluid cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="31">Spinal fluid cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="6" length="58">cytologisch materiaal van liquor cerebrospinalis (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="48">cytologisch materiaal van liquor cerebrospinalis</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="37">cytologisch materiaal van hersenvocht</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="50">cytologisch materiaal van cerebrospinale vloeistof</designation>
+        </items>
+        <items json:array="true" is="concept" code="110970007" codeSystem="2.16.840.1.113883.6.96" displayName="Cerebroventricular fluid cytologic material (specimen)" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="54">Cerebroventricular fluid cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="43">Cerebroventricular fluid cytologic material</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="43">Cerebroventricular fluid cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="7" length="61">cytologisch materiaal van vocht uit hersenventrikel (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="6" length="51">cytologisch materiaal van vocht uit hersenventrikel</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="7" length="55">cytologisch materiaal van vocht uit ventriculus cerebri</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="6" length="51">cytologisch materiaal van vloeistof uit hersenkamer</designation>
+        </items>
+        <items json:array="true" is="concept" code="116155002" codeSystem="2.16.840.1.113883.6.96" displayName="Ampulla of Vater cytologic material (specimen)" level="5" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="6" length="46">Ampulla of Vater cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="5" length="35">Ampulla of Vater cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="5" length="35">Ampulla of Vater cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="7" length="51">cytologisch materiaal van ampul van Vater (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="6" length="41">cytologisch materiaal van ampul van Vater</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="51">cytologisch materiaal van ampulla hepatopancreatica</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="40">cytologisch materiaal van ampulla Vateri</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="52">cytologisch materiaal van ampulla biliaropancreatica</designation>
+        </items>
+        <items json:array="true" is="concept" code="116156001" codeSystem="2.16.840.1.113883.6.96" displayName="Gastrointestinal tract cytologic material (specimen)" level="4" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="52">Gastrointestinal tract cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="41">Gastrointestinal tract cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="41">Gastrointestinal tract cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="6" length="62">cytologisch materiaal van tractus gastrointestinalis (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="52">cytologisch materiaal van tractus gastrointestinalis</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="41">cytologisch materiaal van maag-darmkanaal</designation>
+        </items>
+        <items json:array="true" is="concept" code="116157005" codeSystem="2.16.840.1.113883.6.96" displayName="Heart cytologic material (specimen)" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="35">Heart cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="24">Heart cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="24">Heart cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="40">cytologisch materiaal van hart (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="30">cytologisch materiaal van hart</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="3" length="30">cardiaal cytologisch materiaal</designation>
+        </items>
+        <items json:array="true" is="concept" code="116158000" codeSystem="2.16.840.1.113883.6.96" displayName="Large intestine cytologic material (specimen)" level="5" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="45">Large intestine cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="34">Large intestine cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="34">Large intestine cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="6" length="46">cytologisch materiaal van dikke darm (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="5" length="36">cytologisch materiaal van dikke darm</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="5" length="44">cytologisch materiaal van intestinum crassum</designation>
+        </items>
+        <items json:array="true" is="concept" code="116159008" codeSystem="2.16.840.1.113883.6.96" displayName="Upper aerodigestive tract cytologic material (specimen)" level="4" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="55">Upper aerodigestive tract cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="44">Upper aerodigestive tract cytologic material</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="44">Upper aerodigestive tract cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="7" length="67">cytologisch materiaal van bovenste aerodigestieve tractus (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="6" length="57">cytologisch materiaal van bovenste aerodigestieve tractus</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="9" length="83">cytologisch materiaal van bovenste gedeelte van luchtwegen en spijsverteringskanaal</designation>
+        </items>
+        <items json:array="true" is="concept" code="116160003" codeSystem="2.16.840.1.113883.6.96" displayName="Thyroid cytologic material (specimen)" level="4" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="37">Thyroid cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="26">Thyroid cytologic material</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="26">Thyroid cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2021-03-31" expirationDate="" lastModifiedDate="" count="5" length="47">cytologisch materiaal van schildklier (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="37">cytologisch materiaal van schildklier</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="33">cytologisch materiaal van thyroïd</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="44">cytologisch materiaal van glandula thyroidea</designation>
+        </items>
+        <items json:array="true" is="concept" code="116161004" codeSystem="2.16.840.1.113883.6.96" displayName="Fine needle aspirate of thyroid, cytologic material (specimen)" level="5" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="8" length="62">Fine needle aspirate of thyroid, cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="7" length="51">Fine needle aspirate of thyroid, cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="7" length="51">Fine needle aspirate of thyroid, cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="9" length="83">cytologisch materiaal van schildklier verkregen door cytologische punctie (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="8" length="73">cytologisch materiaal van schildklier verkregen door cytologische punctie</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="8" length="77">cytologisch materiaal van glandula thyroidea verkregen door fijnenaaldbiopsie</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="7" length="69">cytologisch materiaal van schildklier verkregen door aspiratiebiopsie</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="8" length="77">cytologisch materiaal van glandula thyroidea verkregen door dunnenaaldbiopsie</designation>
+        </items>
+        <items json:array="true" is="concept" code="116162006" codeSystem="2.16.840.1.113883.6.96" displayName="Thyroid cytologic material, processed intraoperatively (specimen)" level="5" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="65">Thyroid cytologic material, processed intraoperatively (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="54">Thyroid cytologic material, processed intraoperatively</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="54">Thyroid cytologic material, processed intraoperatively</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2021-03-31" expirationDate="" lastModifiedDate="" count="7" length="71">intraoperatief verwerkt cytologisch materiaal van schildklier (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="6" length="61">intraoperatief verwerkt cytologisch materiaal van schildklier</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="7" length="68">intraoperatief verwerkt cytologisch materiaal van glandula thyroidea</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="6" length="57">intraoperatief verwerkt cytologisch materiaal van thyroïd</designation>
+        </items>
+        <items json:array="true" is="concept" code="116213003" codeSystem="2.16.840.1.113883.6.96" displayName="Ovary cytologic material (specimen)" level="5" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="35">Ovary cytologic material (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="24">Ovary cytologic material</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="24">Ovary cytologic material</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="43">cytologisch materiaal van ovarium (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="33">cytologisch materiaal van ovarium</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="34">cytologisch materiaal van eierstok</designation>
+        </items>
+        <items json:array="true" is="concept" code="119294007" codeSystem="2.16.840.1.113883.6.96" displayName="Dried blood specimen (specimen)" level="3" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="31">Dried blood specimen (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="20">Dried blood specimen</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="20">Dried blood specimen</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="3" length="24">gedroogd bloed (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="2" length="14">gedroogd bloed</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="2" length="16">opgedroogd bloed</designation>
+        </items>
+        <items json:array="true" is="concept" code="119295008" codeSystem="2.16.840.1.113883.6.96" displayName="Specimen obtained by aspiration (specimen)" level="2" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="42">Specimen obtained by aspiration (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="31">Specimen obtained by aspiration</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="31">Specimen obtained by aspiration</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="1" length="8">Aspirate</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="1" length="8">Aspirate</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="2" length="18">aspiraat (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="1" length="8">aspiraat</designation>
+        </items>
+        <items json:array="true" is="concept" code="119297000" codeSystem="2.16.840.1.113883.6.96" displayName="Blood specimen (specimen)" level="2" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="25">Blood specimen (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="14">Blood specimen</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="14">Blood specimen</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="12">Blood sample</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="12">Blood sample</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="2" length="15">bloed (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="1" length="5">bloed</designation>
+        </items>
+        <items json:array="true" is="concept" code="119298005" codeSystem="2.16.840.1.113883.6.96" displayName="Mixed venous blood specimen (specimen)" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="38">Mixed venous blood specimen (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="27">Mixed venous blood specimen</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="27">Mixed venous blood specimen</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="6" length="42">monster van gemengd veneus bloed (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="5" length="32">monster van gemengd veneus bloed</designation>
+        </items>
+        <items json:array="true" is="concept" code="119299002" codeSystem="2.16.840.1.113883.6.96" displayName="Specimen from patient (specimen)" level="2" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="32">Specimen from patient (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="21">Specimen from patient</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="21">Specimen from patient</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2021-03-31" expirationDate="" lastModifiedDate="" count="4" length="29">monster van patiënt (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2021-03-31" expirationDate="" lastModifiedDate="" count="3" length="19">monster van patiënt</designation>
+        </items>
+        <items json:array="true" is="concept" code="119300005" codeSystem="2.16.840.1.113883.6.96" displayName="Specimen from blood product (specimen)" level="3" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="38">Specimen from blood product (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="27">Specimen from blood product</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="27">Specimen from blood product</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="2" length="22">bloedproduct (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="1" length="12">bloedproduct</designation>
+        </items>
+        <items json:array="true" is="concept" code="119301009" codeSystem="2.16.840.1.113883.6.96" displayName="Plant specimen (specimen)" level="2" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="25">Plant specimen (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="14">Plant specimen</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="14">Plant specimen</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="27">monster van plant (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="3" length="17">monster van plant</designation>
+        </items>
+        <items json:array="true" is="concept" code="119302002" codeSystem="2.16.840.1.113883.6.96" displayName="Mushroom specimen (specimen)" level="2" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="28">Mushroom specimen (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="17">Mushroom specimen</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="17">Mushroom specimen</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="4" length="33">monster van paddenstoel (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-09-30" expirationDate="" lastModifiedDate="" count="3" length="23">monster van paddenstoel</designation>
+        </items>
+        <items json:array="true" is="concept" code="119303007" codeSystem="2.16.840.1.113883.6.96" displayName="Microbial isolate specimen (specimen)" level="2" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="37">Microbial isolate specimen (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2020-07-31" expirationDate="" lastModifiedDate="" count="2" length="17">Microbial isolate</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2020-07-31" expirationDate="" lastModifiedDate="" count="2" length="17">Microbial isolate</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="26">Microbial isolate specimen</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="26">Microbial isolate specimen</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="4" length="37">isolaat van micro-organisme (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="3" length="27">isolaat van micro-organisme</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2018-09-30" expirationDate="" lastModifiedDate="" count="1" length="7">isolaat</designation>
+        </items>
+        <items json:array="true" is="concept" code="119304001" codeSystem="2.16.840.1.113883.6.96" displayName="Specimen from blood bag (specimen)" level="3" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2021-01-31" expirationDate="" lastModifiedDate="" count="5" length="34">Specimen from blood bag (specimen)</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2021-01-31" expirationDate="" lastModifiedDate="" count="4" length="23">Specimen from blood bag</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2021-01-31" expirationDate="" lastModifiedDate="" count="4" length="23">Specimen from blood bag</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="30">monster van bloedzak (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="3" length="20">monster van bloedzak</designation>
+        </items>
+        <items json:array="true" is="concept" code="119305000" codeSystem="2.16.840.1.113883.6.96" displayName="Specimen from plasma bag (specimen)" level="3" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2021-01-31" expirationDate="" lastModifiedDate="" count="5" length="35">Specimen from plasma bag (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2021-01-31" expirationDate="" lastModifiedDate="" count="4" length="24">Specimen from plasma bag</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2021-01-31" expirationDate="" lastModifiedDate="" count="4" length="24">Specimen from plasma bag</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="31">monster van plasmazak (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="3" length="21">monster van plasmazak</designation>
+        </items>
+        <items json:array="true" is="concept" code="119307008" codeSystem="2.16.840.1.113883.6.96" displayName="Specimen from endotracheal tube (specimen)" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="5" length="42">Specimen from endotracheal tube (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="31">Specimen from endotracheal tube</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="4" length="31">Specimen from endotracheal tube</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="26">Endotracheal tube specimen</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="26">Endotracheal tube specimen</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="21">Endotracheal aspirate</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="2" length="21">Endotracheal aspirate</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="29">Endotracheal secretion sample</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="25">Endotracheal fluid sample</designation>
+            <designation json:array="true" lang="en-US" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="25">Endotracheal fluid sample</designation>
+            <designation json:array="true" lang="en-GB" use="syn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="3" length="29">Endotracheal secretion sample</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="8" length="62">monster van respiratoir vocht uit endotracheale tube (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2023-03-31" expirationDate="" lastModifiedDate="" count="7" length="44">monster van vocht uit luchtwegen uit ET-tube</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="7" length="52">monster van respiratoir vocht uit endotracheale tube</designation>
+            <designation json:array="true" lang="nl-NL" use="syn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="10" length="78">monster van respiratoir vocht van systema respiratorium van endotracheale tube</designation>
+        </items>
+        <items json:array="true" is="concept" code="119308003" codeSystem="2.16.840.1.113883.6.96" displayName="Cannula submitted as specimen (specimen)" level="3" type="S">
+            <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2021-01-31" expirationDate="" lastModifiedDate="" count="5" length="40">Cannula submitted as specimen (specimen)</designation>
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2021-01-31" expirationDate="" lastModifiedDate="" count="4" length="29">Cannula submitted as specimen</designation>
+            <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2021-01-31" expirationDate="" lastModifiedDate="" count="4" length="29">Cannula submitted as specimen</designation>
+            <designation json:array="true" lang="nl-NL" use="fsn" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="4" length="28">monster van canule (monster)</designation>
+            <designation json:array="true" lang="nl-NL" use="pref" statusCode="active" effectiveDate="2020-03-31" expirationDate="" lastModifiedDate="" count="3" length="18">monster van canule</designation>
+        </items>
+    </expansion>
+</valueSetExpansionSet>

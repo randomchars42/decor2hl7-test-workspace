@@ -1,0 +1,23 @@
+<valueSets>
+    <project ident="mide-">
+        <valueSet id="2.16.840.1.113883.3.1937.777.24.11.96" name="methode_mikroskopie" displayName="MII-Mikroskope-Methoden" effectiveDate="2022-04-06T12:02:41" statusCode="draft">
+            <sourceCodeSystem id="2.16.840.1.113883.6.96" identifierName="SNOMED Clinical Terms" canonicalUri="http://snomed.info/sct" canonicalUriDSTU2="http://snomed.info/sct" canonicalUriSTU3="http://snomed.info/sct" canonicalUriR4="http://snomed.info/sct" canonicalUriR4B="http://snomed.info/sct" canonicalUriR5="http://snomed.info/sct"/>
+            <sourceCodeSystem id="2.16.840.1.1138836.96" identifierName="" canonicalUri="urn:oid:2.16.840.1.1138836.96" canonicalUriDSTU2="urn:oid:2.16.840.1.1138836.96" canonicalUriSTU3="urn:oid:2.16.840.1.1138836.96" canonicalUriR4="urn:oid:2.16.840.1.1138836.96" canonicalUriR4B="urn:oid:2.16.840.1.1138836.96" canonicalUriR5="urn:oid:2.16.840.1.1138836.96"/>
+            <publishingAuthority name="Konsortium DIFUTURE" inherited="project">
+                <addrLine type="uri">https://difuture.de</addrLine>
+            </publishingAuthority>
+            <copyright language="en-US" inherited="true">This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.</copyright>
+            <conceptList>
+                <concept code="58586006" codeSystem="2.16.840.1.113883.6.96" displayName="Microbial ova-parasite examination (procedure)" level="0" type="L"/>
+                <concept code="117023006" codeSystem="2.16.840.1.113883.6.96" displayName="Thick film peripheral blood smear (procedure)" level="0" type="L"/>
+                <concept code="408195004" codeSystem="2.16.840.1.113883.6.96" displayName="Thick film for malarial parasites (procedure)" level="0" type="L"/>
+                <concept code="117024000" codeSystem="2.16.840.1.113883.6.96" displayName="Thin film peripheral blood smear method (procedure)" level="0" type="L"/>
+                <concept code="67047002" codeSystem="2.16.840.1.113883.6.96" displayName="Microbial wet smear (procedure)" level="0" type="L"/>
+                <concept code="27318003" codeSystem="2.16.840.1.113883.6.96" displayName="Potassium hydroxide preparation (procedure)" level="0" type="L"/>
+                <concept code="104157003" codeSystem="2.16.840.1.113883.6.96" displayName="Light microscopy (procedure)| " level="0" type="L"/>
+                <concept code="73512001" codeSystem="2.16.840.1.113883.6.96" displayName="Electron microscopic study (procedure)" level="0" type="L"/>
+                <include op="descendent-of" code="127790008" codeSystem="2.16.840.1.1138836.96" displayName="Staining method (procedure)"/>
+            </conceptList>
+        </valueSet>
+    </project>
+</valueSets>

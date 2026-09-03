@@ -1,4 +1,4 @@
-<valueSetExpansionSet xmlns:json="http://www.json.org" id="78d1d45d-d2a7-4a4e-91d4-5dd2a70a4ec7" effectiveDate="2026-08-27T13:13:07" statusCode="final" current="100" count="196129" nonactive="0">
+<valueSetExpansionSet xmlns:json="http://www.json.org" id="695db1c1-c7ce-49e7-9db1-c1c7ce89e736" effectiveDate="2026-09-03T13:55:35" statusCode="final" current="100" count="196129" nonactive="0">
     <valueSet json:array="true" id="2.16.840.1.113883.4.642.3.432" name="ProcedureReasonCodes" displayName="Procedure Reason Codes" effectiveDate="2019-11-01T09:29:23" statusCode="draft" versionLabel="4.0.1" canonicalUri="http://hl7.org/fhir/ValueSet/procedure-reason" ident="ad5bbr-">
         <desc json:array="true" language="en-US">This example value set defines the set of codes that can be used to indicate a reason for a procedure.</desc>
         <publishingAuthority json:array="true" name="FHIR Project team">
@@ -11,7 +11,7 @@
             <include json:array="true" op="is-a" code="71388002" codeSystem="2.16.840.1.113883.6.96" displayName="Procedure (procedure)"/>
         </conceptList>
     </valueSet>
-    <expansion json:array="true" expanded="true" max="100" id="78d1d45d-d2a7-4a4e-91d4-5dd2a70a4ec7">
+    <expansion json:array="true" expanded="true" max="100" id="695db1c1-c7ce-49e7-9db1-c1c7ce89e736">
         <items json:array="true" is="concept" code="109006" codeSystem="2.16.840.1.113883.6.96" displayName="Anxiety disorder of childhood OR adolescence (disorder)" level="5" type="S">
             <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="7" length="55">Anxiety disorder of childhood OR adolescence (disorder)</designation>
             <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="6" length="44">Anxiety disorder of childhood OR adolescence</designation>

@@ -1,0 +1,7 @@
+<valueSetExpansionSet xmlns:json="http://www.json.org" id="ab992e7b-aff7-48cc-992e-7baff748ccf5" effectiveDate="2026-09-03T14:34:00" statusCode="final" current="0" count="0" nonactive="0">
+    <valueSet json:array="true" id="2.16.840.1.113883.3.88.12.80.17" name="MedicationClinicalGenericDrug" displayName="Medication Clinical Generic Drug" effectiveDate="2012-12-21T00:00:00" statusCode="final" ident="ccda-">
+        <desc json:array="true" language="en-US">Medication Clinical General Drug (RxNorm Generic Drugs)</desc>
+        <completeCodeSystem json:array="true" codeSystem="2.16.840.1.113883.6.88"/>
+    </valueSet>
+    <expansion json:array="true" expanded="true" max="100" id="ab992e7b-aff7-48cc-992e-7baff748ccf5"/>
+</valueSetExpansionSet>

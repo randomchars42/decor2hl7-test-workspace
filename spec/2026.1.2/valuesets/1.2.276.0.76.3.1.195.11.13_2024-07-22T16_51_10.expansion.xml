@@ -1,10 +1,10 @@
-<valueSetExpansionSet xmlns:json="http://www.json.org" id="06aaf236-4e89-4ab7-aaf2-364e899ab7e1" effectiveDate="2026-08-27T13:35:36" statusCode="final" current="16" count="16" nonactive="0">
+<valueSetExpansionSet xmlns:json="http://www.json.org" id="0d658c22-2748-4318-a58c-22274853183e" effectiveDate="2026-09-03T14:30:15" statusCode="final" current="16" count="16" nonactive="0">
     <valueSet json:array="true" id="1.2.276.0.76.3.1.195.11.13" name="mts-indicators-red" displayName="MTS-Indikatoren ROT" effectiveDate="2024-07-22T16:51:10" statusCode="draft" versionLabel="2024" canonicalUri="http://aktin.org/fhir/ValueSet/aktin-vs-mts-indicators-red" lastModifiedDate="2024-07-22T16:51:10" ident="aktin-">
         <conceptList json:array="true">
             <include json:array="true" op="descendent-of" code="red" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="red"/>
         </conceptList>
     </valueSet>
-    <expansion json:array="true" expanded="true" max="100" id="06aaf236-4e89-4ab7-aaf2-364e899ab7e1">
+    <expansion json:array="true" expanded="true" max="100" id="0d658c22-2748-4318-a58c-22274853183e">
         <items json:array="true" is="concept" code="A" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="A-Problem (Atemwege)" level="1" type="L">
             <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="2" length="20">A-Problem (Atemwege)</designation>
             <designation json:array="true" lang="de-DE" use="syn" statusCode="active" count="2" length="19">Gefährdeter Atemweg</designation>

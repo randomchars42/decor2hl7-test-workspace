@@ -1,0 +1,23 @@
+<valueSet xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.777.24.11.89" name="Organism" displayName="MII-Organismus" effectiveDate="2022-03-29T10:08:08" statusCode="draft" url="http://art-decor.org/decor/services/" ident="mide-">
+    <sourceCodeSystem json:array="true" id="2.16.840.1.113883.5.1008" identifierName="Null Flavor" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriDSTU2="http://hl7.org/fhir/v3/NullFlavor" canonicalUriSTU3="http://hl7.org/fhir/v3/NullFlavor" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" context="external/hl7intl/v3/v3-NullFlavor"/>
+    <sourceCodeSystem json:array="true" id="2.16.840.1.1138836.96" identifierName="" canonicalUri="urn:oid:2.16.840.1.1138836.96" canonicalUriDSTU2="urn:oid:2.16.840.1.1138836.96" canonicalUriSTU3="urn:oid:2.16.840.1.1138836.96" canonicalUriR4="urn:oid:2.16.840.1.1138836.96" canonicalUriR4B="urn:oid:2.16.840.1.1138836.96" canonicalUriR5="urn:oid:2.16.840.1.1138836.96"/>
+    <publishingAuthority json:array="true" name="Konsortium DIFUTURE" inherited="project">
+        <addrLine json:array="true" type="uri">https://difuture.de</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="include" code="410607006" codeSystem="2.16.840.1.1138836.96" displayName="Organism (organism) " op="descendent-of" exception="false"/>
+    <items json:array="true" is="exclude" code="417377004" codeSystem="2.16.840.1.1138836.96" displayName="Kingdom Viridiplantae (organism)" op="descendent-of" exception="false"/>
+    <items json:array="true" is="exclude" code="370570004" codeSystem="2.16.840.1.1138836.96" displayName=" Kingdom Protoctista (organism)" op="descendent-of" exception="false"/>
+    <items json:array="true" is="exclude" op="descendent-of" code="31006001" codeSystem="2.16.840.1.1138836.96" displayName="Kingdom Plantae (organism)"/>
+    <items json:array="true" is="exclude" op="descendent-of" code="387961004" codeSystem="2.16.840.1.1138836.96" displayName="Kingdom Animalia (organism)"/>
+    <items json:array="true" is="exclude" op="descendent-of" code="426785004" codeSystem="2.16.840.1.1138836.96" displayName="Kingdom Chromista (organism)"/>
+    <items json:array="true" is="exclude" op="descendent-of" code="419036000" codeSystem="2.16.840.1.1138836.96" displayName="Domain Archaea (organism)"/>
+    <items json:array="true" is="exclude" code="417377004" codeSystem="2.16.840.1.1138836.96" displayName="Kingdom Viridiplantae (organism)" op="descendent-of" exception="false"/>
+    <items json:array="true" is="exclude" code="370570004" codeSystem="2.16.840.1.1138836.96" displayName=" Kingdom Protoctista (organism)" op="descendent-of" exception="false"/>
+    <items json:array="true" is="exclude" op="descendent-of" code="31006001" codeSystem="2.16.840.1.1138836.96" displayName="Kingdom Plantae (organism)"/>
+    <items json:array="true" is="exclude" op="descendent-of" code="387961004" codeSystem="2.16.840.1.1138836.96" displayName="Kingdom Animalia (organism)"/>
+    <items json:array="true" is="exclude" op="descendent-of" code="426785004" codeSystem="2.16.840.1.1138836.96" displayName="Kingdom Chromista (organism)"/>
+    <items json:array="true" is="exclude" op="descendent-of" code="419036000" codeSystem="2.16.840.1.1138836.96" displayName="Domain Archaea (organism)"/>
+    <items json:array="true" is="exception" code="410607006" codeSystem="2.16.840.1.113883.5.1008" displayName="Organism (organism)" level="0" type="L"/>
+</valueSet>

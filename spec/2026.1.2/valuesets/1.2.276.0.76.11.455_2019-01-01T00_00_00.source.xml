@@ -1,0 +1,41 @@
+<valueSet xmlns:json="http://www.json.org" id="1.2.276.0.76.11.455" name="S_BMP_DOSIEREINHEIT" displayName="S_BMP_DOSIEREINHEIT" effectiveDate="2019-01-01T00:00:00" statusCode="final" versionLabel="1.01" url="http://art-decor.org/decor/services/" ident="kbvde-">
+    <desc json:array="true" language="de-DE">Die Schlüsseltabelle enthält eine Liste von kodierten Dosiereinheiten, die im Rahmen der Spezifikation zum bundeseinheitlichen Medikationsplan nach § 31a SGB V zu verwenden sind (vgl. Anhang 4 zu Anlage 3 Vereinbarung BMP). Die Spalte "Code" wird im Attribut "V", die Spalte "Einheit Ausdruck" im Attribut "DN", die Spalte "Bedeutung" im Attribut "bedeutung" und die
+            Spalte "Einheit durch AM-Datenbanken unterstützt" im Attribut "unterstuetzt" abgebildet.</desc>
+    <sourceCodeSystem json:array="true" id="1.2.276.0.76.3.1.1.5.2.41" identifierName="KBV_CS_SFHIR_BMP_DOSIEREINHEIT" canonicalUri="urn:oid:1.2.276.0.76.3.1.1.5.2.41" canonicalUriDSTU2="urn:oid:1.2.276.0.76.3.1.1.5.2.41" canonicalUriSTU3="urn:oid:1.2.276.0.76.3.1.1.5.2.41" canonicalUriR4="urn:oid:1.2.276.0.76.3.1.1.5.2.41" canonicalUriR4B="urn:oid:1.2.276.0.76.3.1.1.5.2.41" canonicalUriR5="urn:oid:1.2.276.0.76.3.1.1.5.2.41"/>
+    <publishingAuthority json:array="true" name="Kassenärztliche Bundesvereinigung"/>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="concept" code="#" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Messlöffel" level="0" type="L"/>
+    <items json:array="true" is="concept" code="0" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Messbecher" level="0" type="L"/>
+    <items json:array="true" is="concept" code="1" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Stück" level="0" type="L"/>
+    <items json:array="true" is="concept" code="2" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Pkg." level="0" type="L"/>
+    <items json:array="true" is="concept" code="3" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Flasche" level="0" type="L"/>
+    <items json:array="true" is="concept" code="4" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Beutel" level="0" type="L"/>
+    <items json:array="true" is="concept" code="5" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Hub" level="0" type="L"/>
+    <items json:array="true" is="concept" code="6" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Tropfen" level="0" type="L"/>
+    <items json:array="true" is="concept" code="7" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Teelöffel" level="0" type="L"/>
+    <items json:array="true" is="concept" code="8" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Esslöffel" level="0" type="L"/>
+    <items json:array="true" is="concept" code="9" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="E" level="0" type="L"/>
+    <items json:array="true" is="concept" code="a" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Tasse" level="0" type="L"/>
+    <items json:array="true" is="concept" code="b" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Applikatorfüllung" level="0" type="L"/>
+    <items json:array="true" is="concept" code="c" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Augenbadewanne" level="0" type="L"/>
+    <items json:array="true" is="concept" code="d" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Dosierbriefchen" level="0" type="L"/>
+    <items json:array="true" is="concept" code="e" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Dosierpipette" level="0" type="L"/>
+    <items json:array="true" is="concept" code="f" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Dosierspritze" level="0" type="L"/>
+    <items json:array="true" is="concept" code="g" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Einzeldosis" level="0" type="L"/>
+    <items json:array="true" is="concept" code="h" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Glas" level="0" type="L"/>
+    <items json:array="true" is="concept" code="i" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Likörglas" level="0" type="L"/>
+    <items json:array="true" is="concept" code="j" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Messkappe" level="0" type="L"/>
+    <items json:array="true" is="concept" code="k" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Messschale" level="0" type="L"/>
+    <items json:array="true" is="concept" code="l" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Mio E" level="0" type="L"/>
+    <items json:array="true" is="concept" code="m" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Mio IE" level="0" type="L"/>
+    <items json:array="true" is="concept" code="n" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Pipettenteilstrich" level="0" type="L"/>
+    <items json:array="true" is="concept" code="o" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="Sprühstoß" level="0" type="L"/>
+    <items json:array="true" is="concept" code="p" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="IE" level="0" type="L"/>
+    <items json:array="true" is="concept" code="q" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="cm" level="0" type="L"/>
+    <items json:array="true" is="concept" code="r" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="l" level="0" type="L"/>
+    <items json:array="true" is="concept" code="s" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="ml" level="0" type="L"/>
+    <items json:array="true" is="concept" code="t" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="g" level="0" type="L"/>
+    <items json:array="true" is="concept" code="u" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="kg" level="0" type="L"/>
+    <items json:array="true" is="concept" code="v" codeSystem="1.2.276.0.76.3.1.1.5.2.41" displayName="mg" level="0" type="L"/>
+</valueSet>

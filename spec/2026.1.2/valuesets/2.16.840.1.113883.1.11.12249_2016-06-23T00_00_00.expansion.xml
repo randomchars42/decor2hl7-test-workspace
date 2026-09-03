@@ -1,0 +1,38 @@
+<valueSetExpansionSet xmlns:json="http://www.json.org" id="54fcf157-eae9-40c6-bcf1-57eae920c6b4" effectiveDate="2026-09-03T13:51:49" statusCode="final" current="6" count="6" nonactive="0">
+    <valueSet json:array="true" id="2.16.840.1.113883.1.11.12249" name="LanguageAbilityMode" displayName="LanguageAbilityMode" effectiveDate="2016-06-23T00:00:00" statusCode="final" ident="ccda-">
+        <conceptList json:array="true">
+            <concept json:array="true" code="ESGN" codeSystem="2.16.840.1.113883.5.60" displayName="Expressed signed" level="0" type="L"/>
+            <concept json:array="true" code="ESP" codeSystem="2.16.840.1.113883.5.60" displayName="Expressed spoken" level="0" type="L"/>
+            <concept json:array="true" code="EWR" codeSystem="2.16.840.1.113883.5.60" displayName="Expressed written" level="0" type="L"/>
+            <concept json:array="true" code="RSGN" codeSystem="2.16.840.1.113883.5.60" displayName="Received signed" level="0" type="L"/>
+            <concept json:array="true" code="RSP" codeSystem="2.16.840.1.113883.5.60" displayName="Received spoken" level="0" type="L"/>
+            <concept json:array="true" code="RWR" codeSystem="2.16.840.1.113883.5.60" displayName="Received written" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+    <expansion json:array="true" expanded="true" max="100" id="54fcf157-eae9-40c6-bcf1-57eae920c6b4">
+        <items json:array="true" is="concept" code="ESGN" codeSystem="2.16.840.1.113883.5.60" displayName="Expressed signed" level="0" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="2" length="16">Expressed signed</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="16">Expressed signed</designation>
+        </items>
+        <items json:array="true" is="concept" code="ESP" codeSystem="2.16.840.1.113883.5.60" displayName="Expressed spoken" level="0" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="2" length="16">Expressed spoken</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="16">Expressed spoken</designation>
+        </items>
+        <items json:array="true" is="concept" code="EWR" codeSystem="2.16.840.1.113883.5.60" displayName="Expressed written" level="0" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="2" length="17">Expressed written</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="17">Expressed written</designation>
+        </items>
+        <items json:array="true" is="concept" code="RSGN" codeSystem="2.16.840.1.113883.5.60" displayName="Received signed" level="0" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="2" length="15">Received signed</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="15">Received signed</designation>
+        </items>
+        <items json:array="true" is="concept" code="RSP" codeSystem="2.16.840.1.113883.5.60" displayName="Received spoken" level="0" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="2" length="15">Received spoken</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="15">Received spoken</designation>
+        </items>
+        <items json:array="true" is="concept" code="RWR" codeSystem="2.16.840.1.113883.5.60" displayName="Received written" level="0" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="2" length="16">Received written</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="16">Received written</designation>
+        </items>
+    </expansion>
+</valueSetExpansionSet>

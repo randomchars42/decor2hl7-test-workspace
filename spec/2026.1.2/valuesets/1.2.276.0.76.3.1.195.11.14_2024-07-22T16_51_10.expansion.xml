@@ -1,10 +1,10 @@
-<valueSetExpansionSet xmlns:json="http://www.json.org" id="055a0e39-e927-43d3-9a0e-39e927a3d358" effectiveDate="2026-08-27T13:35:39" statusCode="final" current="66" count="66" nonactive="0">
+<valueSetExpansionSet xmlns:json="http://www.json.org" id="9afddb37-a040-41d3-bddb-37a040e1d36d" effectiveDate="2026-09-03T14:30:16" statusCode="final" current="66" count="66" nonactive="0">
     <valueSet json:array="true" id="1.2.276.0.76.3.1.195.11.14" name="mts-indicators-orange" displayName="MTS-Indikatoren ORANGE" effectiveDate="2024-07-22T16:51:10" statusCode="draft" versionLabel="2024" canonicalUri="http://aktin.org/fhir/ValueSet/aktin-vs-mts-indicators-orange" lastModifiedDate="2024-07-22T16:51:10" ident="aktin-">
         <conceptList json:array="true">
             <include json:array="true" op="descendent-of" code="orange" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="orange"/>
         </conceptList>
     </valueSet>
-    <expansion json:array="true" expanded="true" max="100" id="055a0e39-e927-43d3-9a0e-39e927a3d358">
+    <expansion json:array="true" expanded="true" max="100" id="9afddb37-a040-41d3-bddb-37a040e1d36d">
         <items json:array="true" is="concept" code="1" codeSystem="1.2.276.0.76.3.1.195.5.102" displayName="Abdominalschmerz" level="1" type="L">
             <designation json:array="true" lang="de-DE" use="pref" statusCode="active" count="1" length="16">Abdominalschmerz</designation>
             <designation json:array="true" lang="en-US" use="pref" statusCode="active" count="2" length="14">Abdominal pain</designation>

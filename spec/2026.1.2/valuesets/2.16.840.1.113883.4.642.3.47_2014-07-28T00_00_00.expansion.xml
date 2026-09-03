@@ -1,4 +1,4 @@
-<valueSetExpansionSet xmlns:json="http://www.json.org" id="95e6b089-fd9b-4660-a6b0-89fd9bd66040" effectiveDate="2026-08-27T13:13:12" statusCode="final" current="100" count="275" nonactive="0">
+<valueSetExpansionSet xmlns:json="http://www.json.org" id="96762027-393e-4a86-b620-27393e9a8657" effectiveDate="2026-09-03T13:55:38" statusCode="final" current="100" count="275" nonactive="0">
     <valueSet json:array="true" id="2.16.840.1.113883.4.642.3.47" name="All_Security_Labels" displayName="SecurityLabels" effectiveDate="2014-07-28T00:00:00" statusCode="final" versionLabel="4.0.1" canonicalUri="http://hl7.org/fhir/ValueSet/security-labels" ident="ad5bbr-">
         <desc json:array="true" language="en-US">A single value set for all security labels defined by FHIR.</desc>
         <publishingAuthority json:array="true" name="FHIR project team">
@@ -13,7 +13,7 @@
             <include json:array="true" ref="2.16.840.1.113883.1.11.20427"/>
         </conceptList>
     </valueSet>
-    <expansion json:array="true" expanded="true" max="100" id="95e6b089-fd9b-4660-a6b0-89fd9bd66040">
+    <expansion json:array="true" expanded="true" max="100" id="96762027-393e-4a86-b620-27393e9a8657">
         <items json:array="true" is="concept" code="PurposeOfUse" codeSystem="2.16.840.1.113883.5.8" displayName="purpose of use" level="0" type="S"/>
         <items json:array="true" is="concept" code="HMARKT" codeSystem="2.16.840.1.113883.5.8" displayName="healthcare marketing" level="1" type="L"/>
         <items json:array="true" is="concept" code="HOPERAT" codeSystem="2.16.840.1.113883.5.8" displayName="healthcare operations" level="1" type="S"/>
