@@ -1,5 +1,8 @@
-aktin.json:
-out/*
-state/*
+aktin.json
+out/
+state/
+model/
+site/
+mapping/
 
 *.vim
