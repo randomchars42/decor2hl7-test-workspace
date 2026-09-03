@@ -21737,6 +21737,6 @@
     "error": 0
   },
   "resources_considered": 694,
-  "recursive_http_requests": 5,
+  "recursive_http_requests": 0,
   "truncated": false
 }
