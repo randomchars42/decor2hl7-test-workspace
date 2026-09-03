@@ -424,10 +424,19 @@
       "source_warning": "source representation unavailable"
     },
     "codesystem:1.2.276.0.76.3.1.195.5.53@2019-12-30T00:00:00": {
-      "status": "missing",
+      "status": "waived",
       "settled": true,
-      "owner": "",
-      "declared_project": "",
+      "reason": "Settled absence, reviewed 2026-09-03. AKTIN ValueSet 1.2.276.0.76.11.53@2015-11-17 includes this code system intensionally, but it is published nowhere on the specification server: the cross-project lookup /codesystem/1.2.276.0.76.3.1.195.5.53 answers 404, and the dated extract answers 404 in every candidate project recorded in resolution_attempts. The value set therefore expands to no members and its bound field keeps a non-executable enumeration (DEC-003, DEC-016). No exact 2019-12-30 revision was found in a DIVI or HL7 Germany publication, so a builtin supplement would have to invent an identity; the absence stays visible instead.",
+      "requested_effective_date": "2019-12-30T00:00:00",
+      "resolved_effective_date": "",
+      "identity": {
+        "type": "codesystem",
+        "id": "1.2.276.0.76.3.1.195.5.53",
+        "effective_date": "2019-12-30T00:00:00",
+        "project": "",
+        "api_base": "",
+        "origin": "external"
+      },
       "projects_considered": [
         "aktin-",
         "pmp-",
@@ -536,122 +545,13 @@
           "http_status": 404
         }
       ],
-      "attempted_projects": [
-        "aktin-",
-        "pmp-",
-        "ad1bbr-",
-        "kbvde-",
-        "hl7de-",
-        "ad2bbr-",
-        "hl7ips-",
-        "dguvbbr-"
-      ],
-      "attempts": [
-        {
-          "project": "aktin-",
-          "form": "source",
-          "url": "https://art-decor.org/exist/apps/api/codesystem/1.2.276.0.76.3.1.195.5.53/2019-12-30T00%3A00%3A00?prefix=aktin-&language=de-DE&release=2026-04-27T18%3A50%3A33",
-          "http_status": 404
-        },
-        {
-          "project": "aktin-",
-          "form": "analysis",
-          "url": "https://art-decor.org/exist/apps/api/codesystem/1.2.276.0.76.3.1.195.5.53/2019-12-30T00%3A00%3A00/$extract?project=aktin-&format=xml&language=de-DE&release=2026-04-27T18%3A50%3A33",
-          "http_status": 404
-        },
-        {
-          "project": "pmp-",
-          "form": "source",
-          "url": "https://art-decor.org/exist/apps/api/codesystem/1.2.276.0.76.3.1.195.5.53/2019-12-30T00%3A00%3A00?prefix=pmp-&language=de-DE",
-          "http_status": 404
-        },
-        {
-          "project": "pmp-",
-          "form": "analysis",
-          "url": "https://art-decor.org/exist/apps/api/codesystem/1.2.276.0.76.3.1.195.5.53/2019-12-30T00%3A00%3A00/$extract?project=pmp-&format=xml&language=de-DE",
-          "http_status": 404
-        },
-        {
-          "project": "ad1bbr-",
-          "form": "source",
-          "url": "https://art-decor.org/exist/apps/api/codesystem/1.2.276.0.76.3.1.195.5.53/2019-12-30T00%3A00%3A00?prefix=ad1bbr-&language=de-DE",
-          "http_status": 404
-        },
-        {
-          "project": "ad1bbr-",
-          "form": "analysis",
-          "url": "https://art-decor.org/exist/apps/api/codesystem/1.2.276.0.76.3.1.195.5.53/2019-12-30T00%3A00%3A00/$extract?project=ad1bbr-&format=xml&language=de-DE",
-          "http_status": 404
-        },
-        {
-          "project": "kbvde-",
-          "form": "source",
-          "url": "https://art-decor.org/exist/apps/api/codesystem/1.2.276.0.76.3.1.195.5.53/2019-12-30T00%3A00%3A00?prefix=kbvde-&language=de-DE",
-          "http_status": 404
-        },
-        {
-          "project": "kbvde-",
-          "form": "analysis",
-          "url": "https://art-decor.org/exist/apps/api/codesystem/1.2.276.0.76.3.1.195.5.53/2019-12-30T00%3A00%3A00/$extract?project=kbvde-&format=xml&language=de-DE",
-          "http_status": 404
-        },
-        {
-          "project": "hl7de-",
-          "form": "source",
-          "url": "https://art-decor.org/exist/apps/api/codesystem/1.2.276.0.76.3.1.195.5.53/2019-12-30T00%3A00%3A00?prefix=hl7de-&language=de-DE",
-          "http_status": 404
-        },
-        {
-          "project": "hl7de-",
-          "form": "analysis",
-          "url": "https://art-decor.org/exist/apps/api/codesystem/1.2.276.0.76.3.1.195.5.53/2019-12-30T00%3A00%3A00/$extract?project=hl7de-&format=xml&language=de-DE",
-          "http_status": 404
-        },
-        {
-          "project": "ad2bbr-",
-          "form": "source",
-          "url": "https://art-decor.org/exist/apps/api/codesystem/1.2.276.0.76.3.1.195.5.53/2019-12-30T00%3A00%3A00?prefix=ad2bbr-&language=de-DE",
-          "http_status": 404
-        },
-        {
-          "project": "ad2bbr-",
-          "form": "analysis",
-          "url": "https://art-decor.org/exist/apps/api/codesystem/1.2.276.0.76.3.1.195.5.53/2019-12-30T00%3A00%3A00/$extract?project=ad2bbr-&format=xml&language=de-DE",
-          "http_status": 404
-        },
-        {
-          "project": "hl7ips-",
-          "form": "source",
-          "url": "https://art-decor.org/exist/apps/api/codesystem/1.2.276.0.76.3.1.195.5.53/2019-12-30T00%3A00%3A00?prefix=hl7ips-&language=de-DE",
-          "http_status": 404
-        },
-        {
-          "project": "hl7ips-",
-          "form": "analysis",
-          "url": "https://art-decor.org/exist/apps/api/codesystem/1.2.276.0.76.3.1.195.5.53/2019-12-30T00%3A00%3A00/$extract?project=hl7ips-&format=xml&language=de-DE",
-          "http_status": 404
-        },
-        {
-          "project": "dguvbbr-",
-          "form": "source",
-          "url": "https://art-decor.org/exist/apps/api/codesystem/1.2.276.0.76.3.1.195.5.53/2019-12-30T00%3A00%3A00?prefix=dguvbbr-&language=de-DE",
-          "http_status": 404
-        },
-        {
-          "project": "dguvbbr-",
-          "form": "analysis",
-          "url": "https://art-decor.org/exist/apps/api/codesystem/1.2.276.0.76.3.1.195.5.53/2019-12-30T00%3A00%3A00/$extract?project=dguvbbr-&format=xml&language=de-DE",
-          "http_status": 404
-        }
-      ],
-      "representations": {},
-      "identity": {
-        "type": "codesystem",
-        "id": "1.2.276.0.76.3.1.195.5.53",
-        "effective_date": "2019-12-30T00:00:00",
-        "project": "dguvbbr-",
-        "api_base": "https://art-decor.org/exist/apps/api"
-      }
+      "origin": "waiver",
+      "completeness": "unavailable",
+      "source_url": "https://www.divi.de/sektionen/notfalldokumentation",
+      "source_version": "DIVI Notaufnahmeprotokoll code system 53 (divi-codesystem-53), revision 2019-12-30; no machine-readable publication located",
+      "license": "DIVI publication; no redistributable machine-readable revision was located, so no builtin supplement is claimed",
+      "source_hint": "codesystem:1.2.276.0.76.3.1.195.5.53@2019-12-30T00:00:00",
+      "source_hint_origin": "bundled"
     },
     "template:1.2.276.0.76.10.1015@2014-09-18T00:00:00": {
       "status": "ok",
@@ -10929,7 +10829,7 @@
       "completeness": "complete",
       "source_url": "https://wiki.hl7.de/index.php?title=cdapad%3AMetastasen-Section_%28Template%29",
       "source_version": "HL7 Germany template table, reviewed 2026-08-29",
-      "license": "Public HL7 Germany wiki table; packaged status requires review",
+      "license": "Public HL7 Germany wiki table; reviewed as redistributable for this ten-code list",
       "source_hint": "codesystem:1.2.276.0.76.5.401",
       "source_hint_origin": "bundled"
     },
@@ -15036,10 +14936,19 @@
       "source_warning": "source representation unavailable"
     },
     "template:2.16.840.1.113883.10.20.1.53@2005-09-07T00:00:00": {
-      "status": "missing",
+      "status": "waived",
       "settled": true,
-      "owner": "",
-      "declared_project": "",
+      "reason": "Settled absence, reviewed 2026-09-03. This SPEC parent is requested at 2005-09-07T00:00:00 by the medication branch. The Continuity of Care Document project ccd1- is the only publisher of the OID and holds exactly one revision, 2007-04-01T00:00:00, confirmed by the project template list and by the cross-project lookup /template/2.16.840.1.113883.10.20.1.53. The 2007-04-01 revision is already cached from pmp- and must not substitute the requested one (DEC-004). Its children 1.3.6.1.4.1.19376.1.5.3.1.4.7.2 and 1.2.276.0.76.10.4025 compile from their own constraints plus the pinned CDA/RIM expansion, so the omission is scoped to the SPEC refinement (DEC-010).",
+      "requested_effective_date": "2005-09-07T00:00:00",
+      "resolved_effective_date": "",
+      "identity": {
+        "type": "template",
+        "id": "2.16.840.1.113883.10.20.1.53",
+        "effective_date": "2005-09-07T00:00:00",
+        "project": "",
+        "api_base": "",
+        "origin": "external"
+      },
       "projects_considered": [
         "aktin-",
         "pmp-",
@@ -15148,122 +15057,13 @@
           "error": "<result/> with no content"
         }
       ],
-      "attempted_projects": [
-        "aktin-",
-        "pmp-",
-        "ad1bbr-",
-        "kbvde-",
-        "hl7de-",
-        "ad2bbr-",
-        "hl7ips-",
-        "dguvbbr-"
-      ],
-      "attempts": [
-        {
-          "project": "aktin-",
-          "form": "source",
-          "url": "https://art-decor.org/exist/apps/api/template/2.16.840.1.113883.10.20.1.53/2005-09-07T00%3A00%3A00/$extract?project=aktin-&language=de-DE&release=2026-04-27T18%3A50%3A33",
-          "http_status": 404
-        },
-        {
-          "project": "aktin-",
-          "form": "analysis",
-          "url": "https://art-decor.org/exist/apps/api/template/2.16.840.1.113883.10.20.1.53/2005-09-07T00%3A00%3A00/$extract?project=aktin-&tree=expand&language=de-DE&release=2026-04-27T18%3A50%3A33",
-          "error": "<result/> with no content"
-        },
-        {
-          "project": "pmp-",
-          "form": "source",
-          "url": "https://art-decor.org/exist/apps/api/template/2.16.840.1.113883.10.20.1.53/2005-09-07T00%3A00%3A00/$extract?project=pmp-&language=de-DE",
-          "http_status": 404
-        },
-        {
-          "project": "pmp-",
-          "form": "analysis",
-          "url": "https://art-decor.org/exist/apps/api/template/2.16.840.1.113883.10.20.1.53/2005-09-07T00%3A00%3A00/$extract?project=pmp-&tree=expand&language=de-DE",
-          "error": "<result/> with no content"
-        },
-        {
-          "project": "ad1bbr-",
-          "form": "source",
-          "url": "https://art-decor.org/exist/apps/api/template/2.16.840.1.113883.10.20.1.53/2005-09-07T00%3A00%3A00/$extract?project=ad1bbr-&language=de-DE",
-          "http_status": 404
-        },
-        {
-          "project": "ad1bbr-",
-          "form": "analysis",
-          "url": "https://art-decor.org/exist/apps/api/template/2.16.840.1.113883.10.20.1.53/2005-09-07T00%3A00%3A00/$extract?project=ad1bbr-&tree=expand&language=de-DE",
-          "error": "<result/> with no content"
-        },
-        {
-          "project": "kbvde-",
-          "form": "source",
-          "url": "https://art-decor.org/exist/apps/api/template/2.16.840.1.113883.10.20.1.53/2005-09-07T00%3A00%3A00/$extract?project=kbvde-&language=de-DE",
-          "http_status": 404
-        },
-        {
-          "project": "kbvde-",
-          "form": "analysis",
-          "url": "https://art-decor.org/exist/apps/api/template/2.16.840.1.113883.10.20.1.53/2005-09-07T00%3A00%3A00/$extract?project=kbvde-&tree=expand&language=de-DE",
-          "error": "<result/> with no content"
-        },
-        {
-          "project": "hl7de-",
-          "form": "source",
-          "url": "https://art-decor.org/exist/apps/api/template/2.16.840.1.113883.10.20.1.53/2005-09-07T00%3A00%3A00/$extract?project=hl7de-&language=de-DE",
-          "http_status": 404
-        },
-        {
-          "project": "hl7de-",
-          "form": "analysis",
-          "url": "https://art-decor.org/exist/apps/api/template/2.16.840.1.113883.10.20.1.53/2005-09-07T00%3A00%3A00/$extract?project=hl7de-&tree=expand&language=de-DE",
-          "error": "<result/> with no content"
-        },
-        {
-          "project": "ad2bbr-",
-          "form": "source",
-          "url": "https://art-decor.org/exist/apps/api/template/2.16.840.1.113883.10.20.1.53/2005-09-07T00%3A00%3A00/$extract?project=ad2bbr-&language=de-DE",
-          "http_status": 404
-        },
-        {
-          "project": "ad2bbr-",
-          "form": "analysis",
-          "url": "https://art-decor.org/exist/apps/api/template/2.16.840.1.113883.10.20.1.53/2005-09-07T00%3A00%3A00/$extract?project=ad2bbr-&tree=expand&language=de-DE",
-          "error": "<result/> with no content"
-        },
-        {
-          "project": "hl7ips-",
-          "form": "source",
-          "url": "https://art-decor.org/exist/apps/api/template/2.16.840.1.113883.10.20.1.53/2005-09-07T00%3A00%3A00/$extract?project=hl7ips-&language=de-DE",
-          "http_status": 404
-        },
-        {
-          "project": "hl7ips-",
-          "form": "analysis",
-          "url": "https://art-decor.org/exist/apps/api/template/2.16.840.1.113883.10.20.1.53/2005-09-07T00%3A00%3A00/$extract?project=hl7ips-&tree=expand&language=de-DE",
-          "error": "<result/> with no content"
-        },
-        {
-          "project": "dguvbbr-",
-          "form": "source",
-          "url": "https://art-decor.org/exist/apps/api/template/2.16.840.1.113883.10.20.1.53/2005-09-07T00%3A00%3A00/$extract?project=dguvbbr-&language=de-DE",
-          "http_status": 404
-        },
-        {
-          "project": "dguvbbr-",
-          "form": "analysis",
-          "url": "https://art-decor.org/exist/apps/api/template/2.16.840.1.113883.10.20.1.53/2005-09-07T00%3A00%3A00/$extract?project=dguvbbr-&tree=expand&language=de-DE",
-          "error": "<result/> with no content"
-        }
-      ],
-      "representations": {},
-      "identity": {
-        "type": "template",
-        "id": "2.16.840.1.113883.10.20.1.53",
-        "effective_date": "2005-09-07T00:00:00",
-        "project": "dguvbbr-",
-        "api_base": "https://art-decor.org/exist/apps/api"
-      }
+      "origin": "waiver",
+      "completeness": "spec-only",
+      "source_url": "https://art-decor.org/ad/#/ccd1-/rules/templates/2.16.840.1.113883.10.20.1.53",
+      "source_version": "HL7 CCD 1.0 'Product' template; only revision 2007-04-01T00:00:00 is published",
+      "license": "HL7 Continuity of Care Document publication; consulted as evidence only",
+      "source_hint": "template:2.16.840.1.113883.10.20.1.53@2005-09-07T00:00:00",
+      "source_hint_origin": "bundled"
     },
     "template:2.16.840.1.113883.10.20.22.4.14@2013-01-31T00:00:00": {
       "status": "ok",
@@ -29307,9 +29107,9 @@
   "summary": {
     "resources": 712,
     "ok": 646,
-    "missing": 63,
+    "missing": 61,
     "unavailable": 0,
-    "waived": 1,
+    "waived": 3,
     "partial": 0,
     "alias": 2,
     "error": 0
