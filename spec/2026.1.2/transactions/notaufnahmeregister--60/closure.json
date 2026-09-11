@@ -24129,6 +24129,6 @@
     "error": 0
   },
   "resources_considered": 828,
-  "recursive_http_requests": 704,
+  "recursive_http_requests": 0,
   "truncated": false
 }
