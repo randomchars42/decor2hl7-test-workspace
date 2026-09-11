@@ -1,5 +1,0 @@
-case_id,occurrence_1,vitalparameter.atemfrequenz,vitalparameter.blutdruck.diastolischer_blutdruck,vitalparameter.blutdruck.systolischer_blutdruck,vitalparameter.herzfrequenz,vitalparameter.korperkerntemperatur.korperkerntemperatur,vitalparameter.puls.pulsfrequenz,vitalparameter.pulsoximetrische_sauerstoffsattigung,vitalparameter.pupillenreaktion.pupillenreaktion_links,vitalparameter.pupillenreaktion.pupillenreaktion_rechts,vitalparameter.pupillenweite.pupillenweite_links,vitalparameter.pupillenweite.pupillenweite_rechts,vitalparameter.zeitpunkt
-TEST-1,1-1,1,1,1,1,0,0,1,prompt,prompt,weit,weit,2026-01-15T10:00:00+01:00
-TEST-1,1-2,1,1,1,1,0,0,1,träge,träge,mittel,mittel,2026-01-15T10:00:00+01:00
-TEST-1,1-3,1,1,1,1,0,0,1,keine,keine,eng,eng,2026-01-15T10:00:00+01:00
-TEST-1,1-4,1,1,1,1,0,0,1,nicht ausgefüllt,nicht ausgefüllt,nicht ausgefüllt,nicht ausgefüllt,2026-01-15T10:00:00+01:00

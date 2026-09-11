@@ -1,3 +1,0 @@
-case_id,occurrence_1,masnahmen.wildcard_therapie.code,masnahmen.wildcard_therapie.definitorischer_link,masnahmen.wildcard_therapie.klinisch_relevante_zeitangaben.zeitpunkt,masnahmen.wildcard_therapie.klinisch_relevante_zeitangaben.zeitraum
-TEST-1,1-1,SYNTHETIC,Synthetic-5bcf6f5f7d,2026-01-15T10:00:00+01:00,1
-TEST-1,1-2,SYNTHETIC,Synthetic-5bcf6f5f7d,2026-01-15T10:00:00+01:00,1
