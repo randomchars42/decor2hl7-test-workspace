@@ -1,10 +1,12 @@
-<valueSetExpansionSet xmlns:json="http://www.json.org" id="c8d1fd73-7e71-45b1-91fd-737e71a5b167" effectiveDate="2026-09-03T14:32:51" statusCode="final" current="0" count="0" nonactive="0">
+<valueSetExpansionSet xmlns:json="http://www.json.org" id="0bfe60a7-52c0-4437-be60-a752c0a4376e" effectiveDate="2026-09-11T11:22:04" statusCode="final" current="0" count="0" nonactive="0">
     <valueSet json:array="true" id="2.16.840.1.113883.4.642.3.1024" name="Mime_Types" displayName="MimeType" effectiveDate="2019-11-01T09:29:23" statusCode="final" versionLabel="4.0.1" canonicalUri="http://hl7.org/fhir/ValueSet/mimetypes" ident="ad5bbr-">
         <desc json:array="true" language="en-US">This value set includes all possible codes from BCP-13 (http://tools.ietf.org/html/bcp13)</desc>
         <publishingAuthority json:array="true" name="HL7 International - FHIR-Infrastructure">
             <addrLine json:array="true" type="uri">http://hl7.org/fhir</addrLine>
         </publishingAuthority>
-        <completeCodeSystem json:array="true" codeSystem="2.16.840.1.113883.6.10"/>
+        <conceptList json:array="true">
+            <include json:array="true" codeSystem="2.16.840.1.113883.6.10"/>
+        </conceptList>
     </valueSet>
-    <expansion json:array="true" expanded="true" max="100" id="c8d1fd73-7e71-45b1-91fd-737e71a5b167"/>
+    <expansion json:array="true" expanded="true" max="100" id="0bfe60a7-52c0-4437-be60-a752c0a4376e"/>
 </valueSetExpansionSet>

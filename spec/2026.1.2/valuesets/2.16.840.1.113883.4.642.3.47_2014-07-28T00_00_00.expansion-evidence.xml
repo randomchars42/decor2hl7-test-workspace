@@ -1,4 +1,4 @@
-<valueSetExpansionSet xmlns:json="http://www.json.org" id="7cbef9a7-8be7-436f-bef9-a78be7036f24" effectiveDate="2026-09-03T14:32:54" statusCode="final" current="100" count="275" nonactive="0">
+<valueSetExpansionSet xmlns:json="http://www.json.org" id="0656d507-e2c6-4b3b-96d5-07e2c6bb3b10" effectiveDate="2026-09-11T11:22:08" statusCode="final" current="100" count="216" nonactive="0">
     <valueSet json:array="true" id="2.16.840.1.113883.4.642.3.47" name="All_Security_Labels" displayName="SecurityLabels" effectiveDate="2014-07-28T00:00:00" statusCode="final" versionLabel="4.0.1" canonicalUri="http://hl7.org/fhir/ValueSet/security-labels" ident="ad5bbr-">
         <desc json:array="true" language="en-US">A single value set for all security labels defined by FHIR.</desc>
         <publishingAuthority json:array="true" name="FHIR project team">
@@ -13,76 +13,679 @@
             <include json:array="true" ref="2.16.840.1.113883.1.11.20427"/>
         </conceptList>
     </valueSet>
-    <expansion json:array="true" expanded="true" max="100" id="7cbef9a7-8be7-436f-bef9-a78be7036f24">
-        <items json:array="true" is="concept" code="PurposeOfUse" codeSystem="2.16.840.1.113883.5.8" displayName="purpose of use" level="0" type="S"/>
-        <items json:array="true" is="concept" code="HMARKT" codeSystem="2.16.840.1.113883.5.8" displayName="healthcare marketing" level="1" type="L"/>
-        <items json:array="true" is="concept" code="HOPERAT" codeSystem="2.16.840.1.113883.5.8" displayName="healthcare operations" level="1" type="S"/>
-        <items json:array="true" is="concept" code="CAREMGT" codeSystem="2.16.840.1.113883.5.8" displayName="care management" level="2" type="L"/>
-        <items json:array="true" is="concept" code="DONAT" codeSystem="2.16.840.1.113883.5.8" displayName="donation" level="2" type="L"/>
-        <items json:array="true" is="concept" code="FRAUD" codeSystem="2.16.840.1.113883.5.8" displayName="fraud" level="2" type="L"/>
-        <items json:array="true" is="concept" code="GOV" codeSystem="2.16.840.1.113883.5.8" displayName="government" level="2" type="L"/>
-        <items json:array="true" is="concept" code="HACCRED" codeSystem="2.16.840.1.113883.5.8" displayName="health accreditation" level="2" type="L"/>
-        <items json:array="true" is="concept" code="HCOMPL" codeSystem="2.16.840.1.113883.5.8" displayName="health compliance" level="2" type="L"/>
-        <items json:array="true" is="concept" code="HDECD" codeSystem="2.16.840.1.113883.5.8" displayName="decedent" level="2" type="L"/>
-        <items json:array="true" is="concept" code="HDIRECT" codeSystem="2.16.840.1.113883.5.8" displayName="directory" level="2" type="L"/>
-        <items json:array="true" is="concept" code="HDM" codeSystem="2.16.840.1.113883.5.8" displayName="healthcare delivery management" level="2" type="L"/>
-        <items json:array="true" is="concept" code="HLEGAL" codeSystem="2.16.840.1.113883.5.8" displayName="legal" level="2" type="L"/>
-        <items json:array="true" is="concept" code="HOUTCOMS" codeSystem="2.16.840.1.113883.5.8" displayName="health outcome measure" level="2" type="L"/>
-        <items json:array="true" is="concept" code="HPRGRP" codeSystem="2.16.840.1.113883.5.8" displayName="health program reporting" level="2" type="L"/>
-        <items json:array="true" is="concept" code="HQUALIMP" codeSystem="2.16.840.1.113883.5.8" displayName="health quality improvement" level="2" type="L"/>
-        <items json:array="true" is="concept" code="HSYSADMIN" codeSystem="2.16.840.1.113883.5.8" displayName="health system administration" level="2" type="S"/>
-        <items json:array="true" is="concept" code="LABELING" codeSystem="2.16.840.1.113883.5.8" displayName="labeling" level="3" type="L"/>
-        <items json:array="true" is="concept" code="METAMGT" codeSystem="2.16.840.1.113883.5.8" displayName="metadata management" level="3" type="L"/>
-        <items json:array="true" is="concept" code="MEMADMIN" codeSystem="2.16.840.1.113883.5.8" displayName="member administration" level="2" type="L"/>
-        <items json:array="true" is="concept" code="MILCDM" codeSystem="2.16.840.1.113883.5.8" displayName="military command" level="2" type="L"/>
-        <items json:array="true" is="concept" code="PATADMIN" codeSystem="2.16.840.1.113883.5.8" displayName="patient administration" level="2" type="L"/>
-        <items json:array="true" is="concept" code="PATSFTY" codeSystem="2.16.840.1.113883.5.8" displayName="patient safety" level="2" type="L"/>
-        <items json:array="true" is="concept" code="PERFMSR" codeSystem="2.16.840.1.113883.5.8" displayName="performance measure" level="2" type="L"/>
-        <items json:array="true" is="concept" code="RECORDMGT" codeSystem="2.16.840.1.113883.5.8" displayName="records management" level="2" type="L"/>
-        <items json:array="true" is="concept" code="SYSDEV" codeSystem="2.16.840.1.113883.5.8" displayName="system development" level="2" type="S"/>
-        <items json:array="true" is="concept" code="HTEST" codeSystem="2.16.840.1.113883.5.8" displayName="test health data" level="3" type="L"/>
-        <items json:array="true" is="concept" code="TRAIN" codeSystem="2.16.840.1.113883.5.8" displayName="training" level="2" type="L"/>
-        <items json:array="true" is="concept" code="HPAYMT" codeSystem="2.16.840.1.113883.5.8" displayName="healthcare payment" level="1" type="S"/>
-        <items json:array="true" is="concept" code="CLMATTCH" codeSystem="2.16.840.1.113883.5.8" displayName="claim attachment" level="2" type="L"/>
-        <items json:array="true" is="concept" code="COVAUTH" codeSystem="2.16.840.1.113883.5.8" displayName="coverage authorization" level="2" type="L"/>
-        <items json:array="true" is="concept" code="COVERAGE" codeSystem="2.16.840.1.113883.5.8" displayName="coverage under policy or program" level="2" type="S"/>
-        <items json:array="true" is="concept" code="ELIGDTRM" codeSystem="2.16.840.1.113883.5.8" displayName="eligibility determination" level="3" type="L"/>
-        <items json:array="true" is="concept" code="ELIGVER" codeSystem="2.16.840.1.113883.5.8" displayName="eligibility verification" level="3" type="L"/>
-        <items json:array="true" is="concept" code="ENROLLM" codeSystem="2.16.840.1.113883.5.8" displayName="enrollment" level="3" type="L"/>
-        <items json:array="true" is="concept" code="MILDCRG" codeSystem="2.16.840.1.113883.5.8" displayName="military discharge" level="3" type="L"/>
-        <items json:array="true" is="concept" code="REMITADV" codeSystem="2.16.840.1.113883.5.8" displayName="remittance advice" level="2" type="L"/>
-        <items json:array="true" is="concept" code="HRESCH" codeSystem="2.16.840.1.113883.5.8" displayName="healthcare research" level="1" type="S"/>
-        <items json:array="true" is="concept" code="BIORCH" codeSystem="2.16.840.1.113883.5.8" displayName="biomedical research" level="2" type="L"/>
-        <items json:array="true" is="concept" code="CLINTRCH" codeSystem="2.16.840.1.113883.5.8" displayName="clinical trial research" level="2" type="S"/>
-        <items json:array="true" is="concept" code="CLINTRCHNPC" codeSystem="2.16.840.1.113883.5.8" displayName="clinical trial research without patient care" level="3" type="L"/>
-        <items json:array="true" is="concept" code="CLINTRCHPC" codeSystem="2.16.840.1.113883.5.8" displayName="clinical trial research with patient care" level="3" type="L"/>
-        <items json:array="true" is="concept" code="PRECLINTRCH" codeSystem="2.16.840.1.113883.5.8" displayName="preclinical trial research" level="3" type="L"/>
-        <items json:array="true" is="concept" code="DSRCH" codeSystem="2.16.840.1.113883.5.8" displayName="disease specific healthcare research" level="2" type="L"/>
-        <items json:array="true" is="concept" code="POARCH" codeSystem="2.16.840.1.113883.5.8" displayName="population origins or ancestry healthcare research" level="2" type="L"/>
-        <items json:array="true" is="concept" code="TRANSRCH" codeSystem="2.16.840.1.113883.5.8" displayName="translational healthcare research" level="2" type="L"/>
-        <items json:array="true" is="concept" code="PATRQT" codeSystem="2.16.840.1.113883.5.8" displayName="patient requested" level="1" type="S"/>
-        <items json:array="true" is="concept" code="FAMRQT" codeSystem="2.16.840.1.113883.5.8" displayName="family requested" level="2" type="L"/>
-        <items json:array="true" is="concept" code="PWATRNY" codeSystem="2.16.840.1.113883.5.8" displayName="power of attorney" level="2" type="L"/>
-        <items json:array="true" is="concept" code="SUPNWK" codeSystem="2.16.840.1.113883.5.8" displayName="support network" level="2" type="L"/>
-        <items json:array="true" is="concept" code="PUBHLTH" codeSystem="2.16.840.1.113883.5.8" displayName="public health" level="1" type="S"/>
-        <items json:array="true" is="concept" code="DISASTER" codeSystem="2.16.840.1.113883.5.8" displayName="disaster" level="2" type="L"/>
-        <items json:array="true" is="concept" code="THREAT" codeSystem="2.16.840.1.113883.5.8" displayName="threat" level="2" type="L"/>
-        <items json:array="true" is="concept" code="TREAT" codeSystem="2.16.840.1.113883.5.8" displayName="treatment" level="1" type="S"/>
-        <items json:array="true" is="concept" code="CLINTRL" codeSystem="2.16.840.1.113883.5.8" displayName="clinical trial" level="2" type="L"/>
-        <items json:array="true" is="concept" code="COC" codeSystem="2.16.840.1.113883.5.8" displayName="coordination of care" level="2" type="L"/>
-        <items json:array="true" is="concept" code="ETREAT" codeSystem="2.16.840.1.113883.5.8" displayName="Emergency Treatment" level="2" type="S"/>
-        <items json:array="true" is="concept" code="BTG" codeSystem="2.16.840.1.113883.5.8" displayName="break the glass" level="3" type="L"/>
-        <items json:array="true" is="concept" code="ERTREAT" codeSystem="2.16.840.1.113883.5.8" displayName="emergency room treatment" level="3" type="L"/>
-        <items json:array="true" is="concept" code="POPHLTH" codeSystem="2.16.840.1.113883.5.8" displayName="population health" level="2" type="L"/>
-        <items json:array="true" is="concept" code="COVERAGE" codeSystem="2.16.840.1.113883.5.8" displayName="coverage under policy or program" level="0" type="S"/>
-        <items json:array="true" is="concept" code="ETREAT" codeSystem="2.16.840.1.113883.5.8" displayName="Emergency Treatment" level="0" type="L"/>
-        <items json:array="true" is="concept" code="HMARKT" codeSystem="2.16.840.1.113883.5.8" displayName="healthcare marketing" level="0" type="L"/>
-        <items json:array="true" is="concept" code="HOPERAT" codeSystem="2.16.840.1.113883.5.8" displayName="healthcare operations" level="0" type="S"/>
-        <items json:array="true" is="concept" code="HPAYMT" codeSystem="2.16.840.1.113883.5.8" displayName="healthcare payment" level="0" type="S"/>
-        <items json:array="true" is="concept" code="HRESCH" codeSystem="2.16.840.1.113883.5.8" displayName="healthcare research" level="0" type="S"/>
-        <items json:array="true" is="concept" code="PATRQT" codeSystem="2.16.840.1.113883.5.8" displayName="patient requested" level="0" type="S"/>
-        <items json:array="true" is="concept" code="PUBHLTH" codeSystem="2.16.840.1.113883.5.8" displayName="public health" level="0" type="S"/>
-        <items json:array="true" is="concept" code="TREAT" codeSystem="2.16.840.1.113883.5.8" displayName="treatment" level="0" type="S"/>
+    <expansion json:array="true" expanded="true" max="100" id="0656d507-e2c6-4b3b-96d5-07e2c6bb3b10">
+        <items json:array="true" is="concept" code="PurposeOfUse" codeSystem="2.16.840.1.113883.5.8" displayName="purpose of use" level="2" type="S">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="3" length="14">purpose of use</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="14">purpose of use</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="14">purpose of use</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="14">purpose of use</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="14">purpose of use</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="14">purpose of use</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="14">purpose of use</designation>
+        </items>
+        <items json:array="true" is="concept" code="CLINTRCHNPC" codeSystem="2.16.840.1.113883.5.8" displayName="clinical trial research without patient care" level="5" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="6" length="44">clinical trial research without patient care</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="6" length="44">clinical trial research without patient care</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="6" length="44">clinical trial research without patient care</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="6" length="44">clinical trial research without patient care</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="6" length="44">clinical trial research without patient care</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="6" length="44">clinical trial research without patient care</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="6" length="44">clinical trial research without patient care</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="6" length="44">clinical trial research without patient care</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="6" length="44">clinical trial research without patient care</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="6" length="44">clinical trial research without patient care</designation>
+        </items>
+        <items json:array="true" is="concept" code="CLINTRCHPC" codeSystem="2.16.840.1.113883.5.8" displayName="clinical trial research with patient care" level="5" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="6" length="41">clinical trial research with patient care</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="6" length="41">clinical trial research with patient care</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="6" length="41">clinical trial research with patient care</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="6" length="41">clinical trial research with patient care</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="6" length="41">clinical trial research with patient care</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="6" length="41">clinical trial research with patient care</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="6" length="41">clinical trial research with patient care</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="6" length="41">clinical trial research with patient care</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="6" length="41">clinical trial research with patient care</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="6" length="41">clinical trial research with patient care</designation>
+        </items>
+        <items json:array="true" is="concept" code="PRECLINTRCH" codeSystem="2.16.840.1.113883.5.8" displayName="preclinical trial research" level="5" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="3" length="26">preclinical trial research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="26">preclinical trial research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="26">preclinical trial research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="26">preclinical trial research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="26">preclinical trial research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="26">preclinical trial research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="26">preclinical trial research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="26">preclinical trial research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="26">preclinical trial research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="26">preclinical trial research</designation>
+        </items>
+        <items json:array="true" is="concept" code="ELIGDTRM" codeSystem="2.16.840.1.113883.5.8" displayName="eligibility determination" level="5" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="2" length="25">eligibility determination</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="25">eligibility determination</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="25">eligibility determination</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="25">eligibility determination</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="25">eligibility determination</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="25">eligibility determination</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="25">eligibility determination</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="25">eligibility determination</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="25">eligibility determination</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="25">eligibility determination</designation>
+        </items>
+        <items json:array="true" is="concept" code="ELIGVER" codeSystem="2.16.840.1.113883.5.8" displayName="eligibility verification" level="5" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="2" length="24">eligibility verification</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="24">eligibility verification</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="24">eligibility verification</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="24">eligibility verification</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="24">eligibility verification</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="24">eligibility verification</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="24">eligibility verification</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="24">eligibility verification</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="24">eligibility verification</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="24">eligibility verification</designation>
+        </items>
+        <items json:array="true" is="concept" code="ENROLLM" codeSystem="2.16.840.1.113883.5.8" displayName="enrollment" level="5" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="1" length="10">enrollment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="10">enrollment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="10">enrollment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="10">enrollment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="10">enrollment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="10">enrollment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="10">enrollment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="10">enrollment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="10">enrollment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="10">enrollment</designation>
+        </items>
+        <items json:array="true" is="concept" code="MILDCRG" codeSystem="2.16.840.1.113883.5.8" displayName="military discharge" level="5" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="2" length="18">military discharge</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="18">military discharge</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="18">military discharge</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="18">military discharge</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="18">military discharge</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="18">military discharge</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="18">military discharge</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="18">military discharge</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="18">military discharge</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="18">military discharge</designation>
+        </items>
+        <items json:array="true" is="concept" code="BTG" codeSystem="2.16.840.1.113883.5.8" displayName="break the glass" level="5" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="3" length="15">break the glass</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="15">break the glass</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="15">break the glass</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="15">break the glass</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="15">break the glass</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="15">break the glass</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="15">break the glass</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="15">break the glass</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="15">break the glass</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="15">break the glass</designation>
+        </items>
+        <items json:array="true" is="concept" code="ERTREAT" codeSystem="2.16.840.1.113883.5.8" displayName="emergency room treatment" level="5" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="3" length="24">emergency room treatment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="24">emergency room treatment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="24">emergency room treatment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="24">emergency room treatment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="24">emergency room treatment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="24">emergency room treatment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="24">emergency room treatment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="24">emergency room treatment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="24">emergency room treatment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="24">emergency room treatment</designation>
+        </items>
+        <items json:array="true" is="concept" code="CAREMGT" codeSystem="2.16.840.1.113883.5.8" displayName="care management" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="2" length="15">care management</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="15">care management</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="15">care management</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="15">care management</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="15">care management</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="15">care management</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="15">care management</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="15">care management</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="15">care management</designation>
+        </items>
+        <items json:array="true" is="concept" code="DONAT" codeSystem="2.16.840.1.113883.5.8" displayName="donation" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="1" length="8">donation</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="8">donation</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="8">donation</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="8">donation</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="8">donation</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="8">donation</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="8">donation</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="8">donation</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="8">donation</designation>
+        </items>
+        <items json:array="true" is="concept" code="FRAUD" codeSystem="2.16.840.1.113883.5.8" displayName="fraud" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="1" length="5">fraud</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="5">fraud</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="5">fraud</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="5">fraud</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="5">fraud</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="5">fraud</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="5">fraud</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="5">fraud</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="5">fraud</designation>
+        </items>
+        <items json:array="true" is="concept" code="GOV" codeSystem="2.16.840.1.113883.5.8" displayName="government" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="1" length="10">government</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="10">government</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="10">government</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="10">government</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="10">government</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="10">government</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="10">government</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="10">government</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="10">government</designation>
+        </items>
+        <items json:array="true" is="concept" code="HACCRED" codeSystem="2.16.840.1.113883.5.8" displayName="health accreditation" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="2" length="20">health accreditation</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="20">health accreditation</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="20">health accreditation</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="20">health accreditation</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="20">health accreditation</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="20">health accreditation</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="20">health accreditation</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="20">health accreditation</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="20">health accreditation</designation>
+        </items>
+        <items json:array="true" is="concept" code="HCOMPL" codeSystem="2.16.840.1.113883.5.8" displayName="health compliance" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="2" length="17">health compliance</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="17">health compliance</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="17">health compliance</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="17">health compliance</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="17">health compliance</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="17">health compliance</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="17">health compliance</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="17">health compliance</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="17">health compliance</designation>
+        </items>
+        <items json:array="true" is="concept" code="HDECD" codeSystem="2.16.840.1.113883.5.8" displayName="decedent" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="1" length="8">decedent</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="8">decedent</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="8">decedent</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="8">decedent</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="8">decedent</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="8">decedent</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="8">decedent</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="8">decedent</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="8">decedent</designation>
+        </items>
+        <items json:array="true" is="concept" code="HDIRECT" codeSystem="2.16.840.1.113883.5.8" displayName="directory" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="1" length="9">directory</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="9">directory</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="9">directory</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="9">directory</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="9">directory</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="9">directory</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="9">directory</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="9">directory</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="9">directory</designation>
+        </items>
+        <items json:array="true" is="concept" code="HDM" codeSystem="2.16.840.1.113883.5.8" displayName="healthcare delivery management" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="3" length="30">healthcare delivery management</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="30">healthcare delivery management</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="30">healthcare delivery management</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="30">healthcare delivery management</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="30">healthcare delivery management</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="30">healthcare delivery management</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="30">healthcare delivery management</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="30">healthcare delivery management</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="30">healthcare delivery management</designation>
+        </items>
+        <items json:array="true" is="concept" code="HLEGAL" codeSystem="2.16.840.1.113883.5.8" displayName="legal" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="1" length="5">legal</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="5">legal</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="5">legal</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="5">legal</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="5">legal</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="5">legal</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="5">legal</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="5">legal</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="5">legal</designation>
+        </items>
+        <items json:array="true" is="concept" code="HOUTCOMS" codeSystem="2.16.840.1.113883.5.8" displayName="health outcome measure" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="3" length="22">health outcome measure</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="22">health outcome measure</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="22">health outcome measure</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="22">health outcome measure</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="22">health outcome measure</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="22">health outcome measure</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="22">health outcome measure</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="22">health outcome measure</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="22">health outcome measure</designation>
+        </items>
+        <items json:array="true" is="concept" code="HPRGRP" codeSystem="2.16.840.1.113883.5.8" displayName="health program reporting" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="3" length="24">health program reporting</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="24">health program reporting</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="24">health program reporting</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="24">health program reporting</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="24">health program reporting</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="24">health program reporting</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="24">health program reporting</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="24">health program reporting</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="24">health program reporting</designation>
+        </items>
+        <items json:array="true" is="concept" code="HQUALIMP" codeSystem="2.16.840.1.113883.5.8" displayName="health quality improvement" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="3" length="26">health quality improvement</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="26">health quality improvement</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="26">health quality improvement</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="26">health quality improvement</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="26">health quality improvement</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="26">health quality improvement</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="26">health quality improvement</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="26">health quality improvement</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="26">health quality improvement</designation>
+        </items>
+        <items json:array="true" is="concept" code="HSYSADMIN" codeSystem="2.16.840.1.113883.5.8" displayName="health system administration" level="4" type="S">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="3" length="28">health system administration</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="28">health system administration</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="28">health system administration</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="28">health system administration</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="28">health system administration</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="28">health system administration</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="28">health system administration</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="28">health system administration</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="28">health system administration</designation>
+        </items>
+        <items json:array="true" is="concept" code="MEMADMIN" codeSystem="2.16.840.1.113883.5.8" displayName="member administration" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="2" length="21">member administration</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="21">member administration</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="21">member administration</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="21">member administration</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="21">member administration</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="21">member administration</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="21">member administration</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="21">member administration</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="21">member administration</designation>
+        </items>
+        <items json:array="true" is="concept" code="MILCDM" codeSystem="2.16.840.1.113883.5.8" displayName="military command" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="2" length="16">military command</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="16">military command</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="16">military command</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="16">military command</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="16">military command</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="16">military command</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="16">military command</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="16">military command</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="16">military command</designation>
+        </items>
+        <items json:array="true" is="concept" code="PATADMIN" codeSystem="2.16.840.1.113883.5.8" displayName="patient administration" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="2" length="22">patient administration</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="22">patient administration</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="22">patient administration</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="22">patient administration</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="22">patient administration</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="22">patient administration</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="22">patient administration</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="22">patient administration</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="22">patient administration</designation>
+        </items>
+        <items json:array="true" is="concept" code="PATSFTY" codeSystem="2.16.840.1.113883.5.8" displayName="patient safety" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="2" length="14">patient safety</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="14">patient safety</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="14">patient safety</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="14">patient safety</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="14">patient safety</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="14">patient safety</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="14">patient safety</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="14">patient safety</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="14">patient safety</designation>
+        </items>
+        <items json:array="true" is="concept" code="PERFMSR" codeSystem="2.16.840.1.113883.5.8" displayName="performance measure" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="2" length="19">performance measure</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="19">performance measure</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="19">performance measure</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="19">performance measure</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="19">performance measure</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="19">performance measure</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="19">performance measure</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="19">performance measure</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="19">performance measure</designation>
+        </items>
+        <items json:array="true" is="concept" code="RECORDMGT" codeSystem="2.16.840.1.113883.5.8" displayName="records management" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="2" length="18">records management</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="18">records management</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="18">records management</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="18">records management</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="18">records management</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="18">records management</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="18">records management</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="18">records management</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="18">records management</designation>
+        </items>
+        <items json:array="true" is="concept" code="SYSDEV" codeSystem="2.16.840.1.113883.5.8" displayName="system development" level="4" type="S">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="2" length="18">system development</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="18">system development</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="18">system development</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="18">system development</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="18">system development</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="18">system development</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="18">system development</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="18">system development</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="18">system development</designation>
+        </items>
+        <items json:array="true" is="concept" code="TRAIN" codeSystem="2.16.840.1.113883.5.8" displayName="training" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="1" length="8">training</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="8">training</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="8">training</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="8">training</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="8">training</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="8">training</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="8">training</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="8">training</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="8">training</designation>
+        </items>
+        <items json:array="true" is="concept" code="CLMATTCH" codeSystem="2.16.840.1.113883.5.8" displayName="claim attachment" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="2" length="16">claim attachment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="16">claim attachment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="16">claim attachment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="16">claim attachment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="16">claim attachment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="16">claim attachment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="16">claim attachment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="16">claim attachment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="16">claim attachment</designation>
+        </items>
+        <items json:array="true" is="concept" code="COVAUTH" codeSystem="2.16.840.1.113883.5.8" displayName="coverage authorization" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="2" length="22">coverage authorization</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="22">coverage authorization</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="22">coverage authorization</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="22">coverage authorization</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="22">coverage authorization</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="22">coverage authorization</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="22">coverage authorization</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="22">coverage authorization</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="22">coverage authorization</designation>
+        </items>
+        <items json:array="true" is="concept" code="COVERAGE" codeSystem="2.16.840.1.113883.5.8" displayName="coverage under policy or program" level="4" type="S">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="5" length="32">coverage under policy or program</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="5" length="32">coverage under policy or program</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="5" length="32">coverage under policy or program</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="5" length="32">coverage under policy or program</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="5" length="32">coverage under policy or program</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="5" length="32">coverage under policy or program</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="5" length="32">coverage under policy or program</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="5" length="32">coverage under policy or program</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="5" length="32">coverage under policy or program</designation>
+        </items>
+        <items json:array="true" is="concept" code="REMITADV" codeSystem="2.16.840.1.113883.5.8" displayName="remittance advice" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="2" length="17">remittance advice</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="17">remittance advice</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="17">remittance advice</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="17">remittance advice</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="17">remittance advice</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="17">remittance advice</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="17">remittance advice</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="17">remittance advice</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="17">remittance advice</designation>
+        </items>
+        <items json:array="true" is="concept" code="BIORCH" codeSystem="2.16.840.1.113883.5.8" displayName="biomedical research" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="2" length="19">biomedical research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="19">biomedical research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="19">biomedical research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="19">biomedical research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="19">biomedical research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="19">biomedical research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="19">biomedical research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="19">biomedical research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="19">biomedical research</designation>
+        </items>
+        <items json:array="true" is="concept" code="CLINTRCH" codeSystem="2.16.840.1.113883.5.8" displayName="clinical trial research" level="4" type="S">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="3" length="23">clinical trial research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="23">clinical trial research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="23">clinical trial research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="23">clinical trial research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="23">clinical trial research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="23">clinical trial research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="23">clinical trial research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="23">clinical trial research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="23">clinical trial research</designation>
+        </items>
+        <items json:array="true" is="concept" code="DSRCH" codeSystem="2.16.840.1.113883.5.8" displayName="disease specific healthcare research" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="4" length="36">disease specific healthcare research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="4" length="36">disease specific healthcare research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="4" length="36">disease specific healthcare research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="4" length="36">disease specific healthcare research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="4" length="36">disease specific healthcare research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="4" length="36">disease specific healthcare research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="4" length="36">disease specific healthcare research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="4" length="36">disease specific healthcare research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="4" length="36">disease specific healthcare research</designation>
+        </items>
+        <items json:array="true" is="concept" code="POARCH" codeSystem="2.16.840.1.113883.5.8" displayName="population origins or ancestry healthcare research" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="6" length="50">population origins or ancestry healthcare research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="6" length="50">population origins or ancestry healthcare research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="6" length="50">population origins or ancestry healthcare research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="6" length="50">population origins or ancestry healthcare research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="6" length="50">population origins or ancestry healthcare research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="6" length="50">population origins or ancestry healthcare research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="6" length="50">population origins or ancestry healthcare research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="6" length="50">population origins or ancestry healthcare research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="6" length="50">population origins or ancestry healthcare research</designation>
+        </items>
+        <items json:array="true" is="concept" code="TRANSRCH" codeSystem="2.16.840.1.113883.5.8" displayName="translational healthcare research" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="3" length="33">translational healthcare research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="33">translational healthcare research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="33">translational healthcare research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="33">translational healthcare research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="33">translational healthcare research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="33">translational healthcare research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="33">translational healthcare research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="33">translational healthcare research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="33">translational healthcare research</designation>
+        </items>
+        <items json:array="true" is="concept" code="LABELING" codeSystem="2.16.840.1.113883.5.8" displayName="labeling" level="5" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="1" length="8">labeling</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="8">labeling</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="8">labeling</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="8">labeling</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="8">labeling</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="8">labeling</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="8">labeling</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="8">labeling</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="8">labeling</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="8">labeling</designation>
+        </items>
+        <items json:array="true" is="concept" code="METAMGT" codeSystem="2.16.840.1.113883.5.8" displayName="metadata management" level="5" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="2" length="19">metadata management</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="19">metadata management</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="19">metadata management</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="19">metadata management</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="19">metadata management</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="19">metadata management</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="19">metadata management</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="19">metadata management</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="19">metadata management</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="19">metadata management</designation>
+        </items>
+        <items json:array="true" is="concept" code="FAMRQT" codeSystem="2.16.840.1.113883.5.8" displayName="family requested" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="2" length="16">family requested</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="16">family requested</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="16">family requested</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="16">family requested</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="16">family requested</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="16">family requested</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="16">family requested</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="16">family requested</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="16">family requested</designation>
+        </items>
+        <items json:array="true" is="concept" code="PWATRNY" codeSystem="2.16.840.1.113883.5.8" displayName="power of attorney" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="3" length="17">power of attorney</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="17">power of attorney</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="17">power of attorney</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="17">power of attorney</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="17">power of attorney</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="17">power of attorney</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="17">power of attorney</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="17">power of attorney</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="17">power of attorney</designation>
+        </items>
+        <items json:array="true" is="concept" code="SUPNWK" codeSystem="2.16.840.1.113883.5.8" displayName="support network" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="2" length="15">support network</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="15">support network</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="15">support network</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="15">support network</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="15">support network</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="15">support network</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="15">support network</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="15">support network</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="15">support network</designation>
+        </items>
+        <items json:array="true" is="concept" code="DISASTER" codeSystem="2.16.840.1.113883.5.8" displayName="disaster" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="1" length="8">disaster</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="8">disaster</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="8">disaster</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="8">disaster</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="8">disaster</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="8">disaster</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="8">disaster</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="8">disaster</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="8">disaster</designation>
+        </items>
+        <items json:array="true" is="concept" code="THREAT" codeSystem="2.16.840.1.113883.5.8" displayName="threat" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="1" length="6">threat</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="6">threat</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="6">threat</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="6">threat</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="6">threat</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="6">threat</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="6">threat</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="6">threat</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="6">threat</designation>
+        </items>
+        <items json:array="true" is="concept" code="HMARKT" codeSystem="2.16.840.1.113883.5.8" displayName="healthcare marketing" level="3" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="2" length="20">healthcare marketing</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="20">healthcare marketing</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="20">healthcare marketing</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="20">healthcare marketing</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="20">healthcare marketing</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="20">healthcare marketing</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="20">healthcare marketing</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="20">healthcare marketing</designation>
+        </items>
+        <items json:array="true" is="concept" code="HOPERAT" codeSystem="2.16.840.1.113883.5.8" displayName="healthcare operations" level="3" type="S">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="2" length="21">healthcare operations</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="21">healthcare operations</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="21">healthcare operations</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="21">healthcare operations</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="21">healthcare operations</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="21">healthcare operations</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="21">healthcare operations</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="21">healthcare operations</designation>
+        </items>
+        <items json:array="true" is="concept" code="HPAYMT" codeSystem="2.16.840.1.113883.5.8" displayName="healthcare payment" level="3" type="S">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="2" length="18">healthcare payment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="18">healthcare payment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="18">healthcare payment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="18">healthcare payment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="18">healthcare payment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="18">healthcare payment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="18">healthcare payment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="18">healthcare payment</designation>
+        </items>
+        <items json:array="true" is="concept" code="HRESCH" codeSystem="2.16.840.1.113883.5.8" displayName="healthcare research" level="3" type="S">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="2" length="19">healthcare research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="19">healthcare research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="19">healthcare research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="19">healthcare research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="19">healthcare research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="19">healthcare research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="19">healthcare research</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="19">healthcare research</designation>
+        </items>
+        <items json:array="true" is="concept" code="PATRQT" codeSystem="2.16.840.1.113883.5.8" displayName="patient requested" level="3" type="S">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="2" length="17">patient requested</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="17">patient requested</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="17">patient requested</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="17">patient requested</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="17">patient requested</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="17">patient requested</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="17">patient requested</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="17">patient requested</designation>
+        </items>
+        <items json:array="true" is="concept" code="PUBHLTH" codeSystem="2.16.840.1.113883.5.8" displayName="public health" level="3" type="S">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="2" length="13">public health</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="13">public health</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="13">public health</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="13">public health</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="13">public health</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="13">public health</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="13">public health</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="13">public health</designation>
+        </items>
+        <items json:array="true" is="concept" code="TREAT" codeSystem="2.16.840.1.113883.5.8" displayName="treatment" level="3" type="S">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="1" length="9">treatment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="9">treatment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="9">treatment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="9">treatment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="9">treatment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="9">treatment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="9">treatment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="1" length="9">treatment</designation>
+        </items>
+        <items json:array="true" is="concept" code="HTEST" codeSystem="2.16.840.1.113883.5.8" displayName="test health data" level="5" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="3" length="16">test health data</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="16">test health data</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="16">test health data</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="16">test health data</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="16">test health data</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="16">test health data</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="16">test health data</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="16">test health data</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="16">test health data</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="16">test health data</designation>
+        </items>
+        <items json:array="true" is="concept" code="CLINTRL" codeSystem="2.16.840.1.113883.5.8" displayName="clinical trial" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="2" length="14">clinical trial</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="14">clinical trial</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="14">clinical trial</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="14">clinical trial</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="14">clinical trial</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="14">clinical trial</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="14">clinical trial</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="14">clinical trial</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="14">clinical trial</designation>
+        </items>
+        <items json:array="true" is="concept" code="COC" codeSystem="2.16.840.1.113883.5.8" displayName="coordination of care" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="3" length="20">coordination of care</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="20">coordination of care</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="20">coordination of care</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="20">coordination of care</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="20">coordination of care</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="20">coordination of care</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="20">coordination of care</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="20">coordination of care</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="3" length="20">coordination of care</designation>
+        </items>
+        <items json:array="true" is="concept" code="ETREAT" codeSystem="2.16.840.1.113883.5.8" displayName="Emergency Treatment" level="4" type="S">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="2" length="19">Emergency Treatment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="19">Emergency Treatment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="19">Emergency Treatment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="19">Emergency Treatment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="19">Emergency Treatment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="19">Emergency Treatment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="19">Emergency Treatment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="19">Emergency Treatment</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="19">Emergency Treatment</designation>
+        </items>
+        <items json:array="true" is="concept" code="POPHLTH" codeSystem="2.16.840.1.113883.5.8" displayName="population health" level="4" type="L">
+            <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" count="2" length="17">population health</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="17">population health</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="17">population health</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="17">population health</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="17">population health</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="17">population health</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="17">population health</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="17">population health</designation>
+            <designation json:array="true" statusCode="active" effectiveDate="" expirationDate="" lastModifiedDate="" lang="en-US" use="syn" count="2" length="17">population health</designation>
+        </items>
+        <items json:array="true" is="concept" code="COVERAGE" codeSystem="2.16.840.1.113883.5.8" displayName="coverage under policy or program" level="4" type="S"/>
+        <items json:array="true" is="concept" code="ETREAT" codeSystem="2.16.840.1.113883.5.8" displayName="Emergency Treatment" level="4" type="S"/>
+        <items json:array="true" is="concept" code="HMARKT" codeSystem="2.16.840.1.113883.5.8" displayName="healthcare marketing" level="3" type="L"/>
+        <items json:array="true" is="concept" code="HOPERAT" codeSystem="2.16.840.1.113883.5.8" displayName="healthcare operations" level="3" type="S"/>
+        <items json:array="true" is="concept" code="HPAYMT" codeSystem="2.16.840.1.113883.5.8" displayName="healthcare payment" level="3" type="S"/>
+        <items json:array="true" is="concept" code="HRESCH" codeSystem="2.16.840.1.113883.5.8" displayName="healthcare research" level="3" type="S"/>
+        <items json:array="true" is="concept" code="PATRQT" codeSystem="2.16.840.1.113883.5.8" displayName="patient requested" level="3" type="S"/>
+        <items json:array="true" is="concept" code="PUBHLTH" codeSystem="2.16.840.1.113883.5.8" displayName="public health" level="3" type="S"/>
+        <items json:array="true" is="concept" code="TREAT" codeSystem="2.16.840.1.113883.5.8" displayName="treatment" level="3" type="S"/>
         <items json:array="true" is="concept" code="L" codeSystem="2.16.840.1.113883.5.25" displayName="low" level="0" type="L"/>
         <items json:array="true" is="concept" code="M" codeSystem="2.16.840.1.113883.5.25" displayName="moderate" level="0" type="L"/>
         <items json:array="true" is="concept" code="N" codeSystem="2.16.840.1.113883.5.25" displayName="normal" level="0" type="L"/>

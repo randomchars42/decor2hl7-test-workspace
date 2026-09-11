@@ -1,17 +1,16 @@
-<valueSetExpansionSet xmlns:json="http://www.json.org" id="8b7149a6-4ede-4e93-b149-a64ede0e93ca" effectiveDate="2026-09-03T14:32:52" statusCode="final" current="100" count="196129" nonactive="0">
+<valueSetExpansionSet xmlns:json="http://www.json.org" id="9d10a947-d26d-47a7-90a9-47d26d27a737" effectiveDate="2026-09-11T11:22:05" statusCode="final" current="100" count="196129" nonactive="0">
     <valueSet json:array="true" id="2.16.840.1.113883.4.642.3.432" name="ProcedureReasonCodes" displayName="Procedure Reason Codes" effectiveDate="2019-11-01T09:29:23" statusCode="draft" versionLabel="4.0.1" canonicalUri="http://hl7.org/fhir/ValueSet/procedure-reason" ident="ad5bbr-">
         <desc json:array="true" language="en-US">This example value set defines the set of codes that can be used to indicate a reason for a procedure.</desc>
         <publishingAuthority json:array="true" name="FHIR Project team">
             <addrLine json:array="true" type="uri">http://hl7.org/fhir</addrLine>
         </publishingAuthority>
-        <copyright json:array="true" language="en-US">This resource includes content from SNOMED Clinical TermsÂ® (SNOMED CTÂ®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomed-ct or
-                info@snomed.org</copyright>
+        <copyright json:array="true" language="en-US">This resource includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomed-ct or info@snomed.org</copyright>
         <conceptList json:array="true">
             <include json:array="true" op="is-a" code="404684003" codeSystem="2.16.840.1.113883.6.96" displayName="Clinical finding (finding)"/>
             <include json:array="true" op="is-a" code="71388002" codeSystem="2.16.840.1.113883.6.96" displayName="Procedure (procedure)"/>
         </conceptList>
     </valueSet>
-    <expansion json:array="true" expanded="true" max="100" id="8b7149a6-4ede-4e93-b149-a64ede0e93ca">
+    <expansion json:array="true" expanded="true" max="100" id="9d10a947-d26d-47a7-90a9-47d26d27a737">
         <items json:array="true" is="concept" code="109006" codeSystem="2.16.840.1.113883.6.96" displayName="Anxiety disorder of childhood OR adolescence (disorder)" level="5" type="S">
             <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="7" length="55">Anxiety disorder of childhood OR adolescence (disorder)</designation>
             <designation json:array="true" lang="en-GB" use="pref" statusCode="active" effectiveDate="2002-01-31" expirationDate="" lastModifiedDate="" count="6" length="44">Anxiety disorder of childhood OR adolescence</designation>

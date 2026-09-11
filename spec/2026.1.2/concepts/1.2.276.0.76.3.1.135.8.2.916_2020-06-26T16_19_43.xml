@@ -1,0 +1,16 @@
+<dataset xmlns:json="http://www.json.org" id="1.2.276.0.76.3.1.135.8.1.1" effectiveDate="2015-12-02T09:18:17" statusCode="draft" prefix="vomgt-" shortName="kvmustersammlung" iddisplay="vomgt-dataset-1" url="http://art-decor.org/decor/services/" ident="vomgt-"><!--
+ This is a view of the dataset "KV-Mustersammlung" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">KV-Mustersammlung</name>
+    <desc language="de-DE"/>
+    <concept id="1.2.276.0.76.3.1.135.8.2.916" effectiveDate="2020-06-26T16:19:43" statusCode="draft" type="item" iddisplay="vomgt-dataelement-916">
+        <implementation markdown=""/>
+        <name language="de-DE">DiagnoseSeitenlokalisation</name>
+        <desc language="de-DE"/>
+        <valueDomain type="code">
+            <conceptList id="1.2.276.0.76.3.1.135.8.2.916.20200626161943.0"/>
+        </valueDomain>
+    </concept>
+</dataset>

@@ -1,0 +1,65 @@
+<dataset xmlns:json="http://www.json.org" id="1.2.276.0.76.3.1.135.8.1.1" effectiveDate="2015-12-02T09:18:17" statusCode="draft" prefix="vomgt-" shortName="kvmustersammlung" iddisplay="vomgt-dataset-1" url="http://art-decor.org/decor/services/" ident="vomgt-"><!--
+ This is a view of the dataset "KV-Mustersammlung" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">KV-Mustersammlung</name>
+    <desc language="de-DE"/>
+    <concept id="1.2.276.0.76.3.1.135.8.2.770" effectiveDate="2020-06-25T13:18:40" statusCode="draft" type="group" iddisplay="vomgt-dataelement-770">
+        <implementation markdown=""/>
+        <name language="de-DE">Hospital Information</name>
+        <desc language="de-DE"/>
+        <concept id="1.2.276.0.76.3.1.135.8.2.831" effectiveDate="2020-06-25T15:09:49" statusCode="draft" type="item" iddisplay="vomgt-dataelement-831" shortName="hospital_name">
+            <implementation shortName="hospital_name" markdown=""/>
+            <name language="de-DE">Hospital Name</name>
+            <desc language="de-DE"/>
+            <valueDomain type="string"/>
+        </concept>
+        <concept id="1.2.276.0.76.3.1.135.8.2.832" effectiveDate="2020-06-25T15:10:20" statusCode="draft" type="group" iddisplay="vomgt-dataelement-832" shortName="address">
+            <implementation shortName="address" markdown=""/>
+            <name language="de-DE">Address</name>
+            <desc language="de-DE"/>
+            <concept id="1.2.276.0.76.3.1.135.8.2.834" effectiveDate="2020-06-25T15:11:07" statusCode="draft" type="item" iddisplay="vomgt-dataelement-834" shortName="anschrift_freitext">
+                <implementation shortName="anschrift_freitext" markdown=""/>
+                <name language="de-DE">AnschriftFreitext</name>
+                <desc language="de-DE"/>
+                <valueDomain type="string"/>
+            </concept>
+            <concept id="1.2.276.0.76.3.1.135.8.2.835" effectiveDate="2020-06-25T15:11:52" statusCode="draft" type="item" iddisplay="vomgt-dataelement-835" shortName="street">
+                <implementation shortName="street" markdown=""/>
+                <name language="de-DE">Street</name>
+                <desc language="de-DE"/>
+                <valueDomain type="string"/>
+            </concept>
+            <concept id="1.2.276.0.76.3.1.135.8.2.836" effectiveDate="2020-06-25T15:12:40" statusCode="draft" type="item" iddisplay="vomgt-dataelement-836" shortName="city">
+                <implementation shortName="city" markdown=""/>
+                <name language="de-DE">City</name>
+                <desc language="de-DE"/>
+                <valueDomain type="string"/>
+            </concept>
+            <concept id="1.2.276.0.76.3.1.135.8.2.837" effectiveDate="2020-06-25T15:12:52" statusCode="draft" type="item" iddisplay="vomgt-dataelement-837" shortName="postal_code">
+                <implementation shortName="postal_code" markdown=""/>
+                <name language="de-DE">Postal Code</name>
+                <desc language="de-DE"/>
+                <valueDomain type="string"/>
+            </concept>
+        </concept>
+        <concept id="1.2.276.0.76.3.1.135.8.2.833" effectiveDate="2020-06-25T15:10:40" statusCode="draft" type="group" iddisplay="vomgt-dataelement-833" shortName="telecom">
+            <implementation shortName="telecom" markdown=""/>
+            <name language="de-DE">Telecom</name>
+            <desc language="de-DE"/>
+            <concept id="1.2.276.0.76.3.1.135.8.2.838" effectiveDate="2020-06-25T15:13:21" statusCode="draft" type="item" iddisplay="vomgt-dataelement-838" shortName="telephone_no">
+                <implementation shortName="telephone_no" markdown=""/>
+                <name language="de-DE">Telephone No</name>
+                <desc language="de-DE"/>
+                <valueDomain type="string"/>
+            </concept>
+            <concept id="1.2.276.0.76.3.1.135.8.2.839" effectiveDate="2020-06-25T15:13:41" statusCode="draft" type="item" iddisplay="vomgt-dataelement-839" shortName="email">
+                <implementation shortName="email" markdown=""/>
+                <name language="de-DE">Email</name>
+                <desc language="de-DE"/>
+                <valueDomain type="string"/>
+            </concept>
+        </concept>
+    </concept>
+</dataset>

@@ -1,0 +1,18 @@
+<dataset xmlns:json="http://www.json.org" id="1.2.276.0.76.3.1.261.1.77.1.1.1" effectiveDate="2018-03-02T10:10:49" statusCode="draft" prefix="dguvbbr-" shortName="minientlassbrief" iddisplay="dguvbbr-dataset1-" url="http://art-decor.org/decor/services/" ident="dguvbbr-"><!--
+ This is a view of the dataset "Mini-Entlassbrief" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">Mini-Entlassbrief</name>
+    <desc language="de-DE">Mini-Entlassungsbrief aus stationärer Behandlung (DAV/VAV/SAV) als DEMO-Objekt zum Technologieverständnis</desc>
+    <property name="Demo-Object"/>
+    <concept id="1.2.276.0.76.3.1.261.1.77.1.2.1.55" effectiveDate="2018-03-01T14:31:38" statusCode="draft" type="item" iddisplay="dguvbbr-dataelement1-55">
+        <implementation markdown=""/>
+        <name language="de-DE">Seitigkeit</name>
+        <desc language="de-DE"/>
+        <valueDomain type="code">
+            <conceptList id="1.2.276.0.76.3.1.261.1.77.1.2.1.55.20180301143138.0"/>
+            <example type="neutral">L</example>
+        </valueDomain>
+    </concept>
+</dataset>

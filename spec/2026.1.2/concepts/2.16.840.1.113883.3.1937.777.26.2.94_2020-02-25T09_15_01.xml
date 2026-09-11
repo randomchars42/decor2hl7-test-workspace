@@ -1,0 +1,14 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.777.26.1.1" effectiveDate="2018-07-10T12:22:31" statusCode="draft" prefix="konsab-" shortName="datensatz" iddisplay="konsab-dataset-1" url="http://art-decor.org/decor/services/" ident="konsab-"><!--
+ This is a view of the dataset "Datensatz" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">Datensatz</name>
+    <desc language="de-DE"/>
+    <concept id="2.16.840.1.113883.3.1937.777.26.2.94" effectiveDate="2020-02-25T09:15:01" statusCode="draft" type="item" iddisplay="konsab-dataelement-94">
+        <implementation markdown="Faxnummer des beauftragenden Arztes"/>
+        <name language="de-DE">Faxnummer</name>
+        <desc language="de-DE">Faxnummer des beauftragenden Arztes</desc>
+        <valueDomain type="string"/>
+    </concept>
+</dataset>

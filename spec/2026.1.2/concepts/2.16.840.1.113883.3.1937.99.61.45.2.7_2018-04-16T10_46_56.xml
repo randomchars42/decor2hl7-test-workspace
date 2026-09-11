@@ -1,0 +1,17 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.99.61.45.1.1" effectiveDate="2018-04-12T11:21:28" statusCode="draft" prefix="smul-" shortName="dataset_sandbox_medizin_uni_leipzig" iddisplay="smul-dataset-1" url="http://art-decor.org/decor/services/" ident="smul-"><!--
+ This is a view of the dataset "Dataset Sandbox Medizin Uni Leipzig" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE" lastTranslated="2018-05-02T10:27:22">Dataset Sandbox Medizin Uni Leipzig</name>
+    <desc language="de-DE"/>
+    <concept id="2.16.840.1.113883.3.1937.99.61.45.2.7" effectiveDate="2018-04-16T10:46:56" statusCode="draft" type="item" iddisplay="smul-dataelement-7">
+        <implementation markdown=""/>
+        <name language="de-DE" lastTranslated="2018-04-25T09:39:45">Datum</name>
+        <desc language="de-DE"/>
+        <valueDomain type="date">
+            <property timeStampPrecision="YMD"/>
+        </valueDomain>
+        <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.99.61.45.2.7" conceptFlexibility="2018-04-16T10:46:56" code="399651003" codeSystem="2.16.840.1.113883.6.96" displayName="Date of report (observable entity)" effectiveDate="2018-04-17T16:10:34" codeSystemName="SNOMED Clinical Terms"/>
+    </concept>
+</dataset>

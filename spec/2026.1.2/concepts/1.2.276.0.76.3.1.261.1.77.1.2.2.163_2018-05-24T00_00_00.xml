@@ -1,0 +1,17 @@
+<dataset xmlns:json="http://www.json.org" id="1.2.276.0.76.3.1.261.1.77.1.1.2" effectiveDate="2018-05-24T00:00:00" statusCode="draft" prefix="dguvbbr-" shortName="stationarer_entlassungsbericht" iddisplay="dguvbbr-dataset2-" url="http://art-decor.org/decor/services/" ident="dguvbbr-"><!--
+ This is a view of the dataset "Stationärer Entlassungsbericht" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">Stationärer Entlassungsbericht</name>
+    <desc language="de-DE">Stationärer Entlassungsbericht</desc>
+    <concept id="1.2.276.0.76.3.1.261.1.77.1.2.2.163" effectiveDate="2018-05-24T00:00:00" statusCode="draft" type="item" iddisplay="dguvbbr-dataelement2-163">
+        <implementation markdown="Namenszusatz (definiert in[DEÜV Anlage 7](https://www.vdek.com/vertragspartner/arbeitgeber/deuev/_jcr_content/par/download_8/file.res/Anlage_07_Vers.pdf))"/>
+        <name language="de-DE">Namenszusatz</name>
+        <desc language="de-DE">Namenszusatz (definiert in <a class="external text" rel="nofollow" href="https://www.vdek.com/vertragspartner/arbeitgeber/deuev/_jcr_content/par/download_8/file.res/Anlage_07_Vers.pdf">DEÜV Anlage 7</a>)<br clear="none"/>
+        </desc>
+        <valueDomain type="string">
+            <example type="neutral">Graf</example>
+        </valueDomain>
+    </concept>
+</dataset>

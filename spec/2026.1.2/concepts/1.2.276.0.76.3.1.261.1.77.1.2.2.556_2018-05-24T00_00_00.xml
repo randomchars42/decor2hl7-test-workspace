@@ -1,0 +1,17 @@
+<dataset xmlns:json="http://www.json.org" id="1.2.276.0.76.3.1.261.1.77.1.1.2" effectiveDate="2018-05-24T00:00:00" statusCode="draft" prefix="dguvbbr-" shortName="stationarer_entlassungsbericht" iddisplay="dguvbbr-dataset2-" url="http://art-decor.org/decor/services/" ident="dguvbbr-"><!--
+ This is a view of the dataset "Stationärer Entlassungsbericht" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">Stationärer Entlassungsbericht</name>
+    <desc language="de-DE">Stationärer Entlassungsbericht</desc>
+    <concept id="1.2.276.0.76.3.1.261.1.77.1.2.2.556" effectiveDate="2018-05-24T00:00:00" statusCode="draft" type="item" iddisplay="dguvbbr-dataelement2-556">
+        <implementation markdown=""/>
+        <name language="de-DE">IK-Nummer</name>
+        <desc language="de-DE"/>
+        <valueDomain type="identifier">
+            <property minLength="9" maxLength="9"/>
+            <example type="valid">180189688</example>
+        </valueDomain>
+    </concept>
+</dataset>

@@ -1,0 +1,16 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.777.35.1.1" effectiveDate="2019-05-17T08:08:51" statusCode="draft" prefix="eImpfpass-" shortName="impfpass" iddisplay="eImpfpass-dataset-1" url="http://art-decor.org/decor/services/" ident="eImpfpass-"><!--
+ This is a view of the dataset "Impfpass" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">Impfpass</name>
+    <desc language="de-DE"/>
+    <concept id="2.16.840.1.113883.3.1937.777.35.2.21" effectiveDate="2019-05-17T14:42:27" statusCode="draft" type="item" iddisplay="eImpfpass-dataelement-21">
+        <implementation markdown=""/>
+        <name language="de-DE">Versicherten-ID</name>
+        <desc language="de-DE"/>
+        <valueDomain type="identifier">
+            <property minLength="10" maxLength="30"/>
+        </valueDomain>
+    </concept>
+</dataset>

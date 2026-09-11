@@ -1,0 +1,19 @@
+<dataset xmlns:json="http://www.json.org" id="1.2.276.0.76.3.1.261.1.77.1.1.2" effectiveDate="2018-05-24T00:00:00" statusCode="draft" prefix="dguvbbr-" shortName="stationarer_entlassungsbericht" iddisplay="dguvbbr-dataset2-" url="http://art-decor.org/decor/services/" ident="dguvbbr-"><!--
+ This is a view of the dataset "Stationärer Entlassungsbericht" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">Stationärer Entlassungsbericht</name>
+    <desc language="de-DE">Stationärer Entlassungsbericht</desc>
+    <concept id="1.2.276.0.76.3.1.261.1.77.1.2.2.239" effectiveDate="2018-05-24T00:00:00" statusCode="draft" type="item" iddisplay="dguvbbr-dataelement2-239">
+        <implementation markdown="Titel, akademischer Grad"/>
+        <inherit ref="2.16.840.1.113883.2.6.77.2.1.10100" effectiveDate="2015-10-15T00:00:00" prefix="hl7de-" datasetId="2.16.840.1.113883.2.6.77.1.1" datasetEffectiveDate="2015-10-15T00:00:00" datasetStatusCode="draft" datasetVersionLabel="1.0" iType="item" iStatusCode="draft" iEffectiveDate="2015-10-15T00:00:00" iddisplay="hl7de-dataelement-1.10100" refdisplay="hl7de-dataelement-1.10100" localInherit="false"/>
+        <name language="de-DE">Titel, akademischer Grad</name>
+        <desc language="de-DE">Titel, akademischer Grad</desc>
+        <valueDomain type="code">
+            <conceptList id="2.16.840.1.113883.2.6.77.2.1.10100.0"/>
+            <example type="neutral">Baron</example>
+            <example type="neutral">Dr.</example>
+        </valueDomain>
+    </concept>
+</dataset>

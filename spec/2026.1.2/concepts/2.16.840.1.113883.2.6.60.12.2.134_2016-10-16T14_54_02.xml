@@ -1,0 +1,144 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.2.6.60.12.1.1" effectiveDate="2016-06-27T11:19:09" statusCode="draft" versionLabel="1.0" prefix="evthm-" shortName="e_venthome" iddisplay="evthm-dataset-1" url="http://art-decor.org/decor/services/" ident="evthm-"><!--
+ This is a view of the dataset "eVent@home" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">eVent@home</name>
+    <desc language="de-DE"/>
+    <concept id="2.16.840.1.113883.2.6.60.12.2.134" statusCode="draft" effectiveDate="2016-10-16T14:54:02" type="group" iddisplay="evthm-dataelement-134" shortName="multiresistente_erreger">
+        <implementation shortName="multiresistente_erreger" markdown=""/>
+        <name language="de-DE">multiresistente Erreger</name>
+        <desc language="de-DE"/>
+        <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.12.2.134" effectiveDate="2016-12-20T09:29:51" code="713351000" displayName="Multiple antimicrobial drug resistant bacteria (organism)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED Clinical Terms"/>
+        <concept id="2.16.840.1.113883.2.6.60.12.2.135" statusCode="draft" effectiveDate="2016-10-16T14:55:25" type="item" iddisplay="evthm-dataelement-135" shortName="multiresistenter_errger_janeinverdacht">
+            <implementation shortName="multiresistenter_errger_janeinverdacht" markdown="Der Verdacht auf eine Besiedelung (nach RKI Kriterien) ist &#34;vermutet&#34;. Nein subsummiert keinen Verdacht und negative Testergebnisse."/>
+            <name language="de-DE">multiresistenter Errger Ja/Nein/Verdacht</name>
+            <desc language="de-DE">
+                        Der Verdacht auf eine Besiedelung (nach RKI Kriterien) ist "vermutet". Nein subsummiert keinen Verdacht und negative Testergebnisse.
+                    </desc>
+            <valueDomain type="code">
+                <conceptList id="2.16.840.1.113883.2.6.60.12.2.135.20161016145525.0">
+                    <concept id="2.16.840.1.113883.2.6.60.12.2.135.20161016145525.1">
+                        <name language="de-DE">Ja</name>
+                    </concept>
+                    <concept id="2.16.840.1.113883.2.6.60.12.2.135.20161016145525.2">
+                        <name language="de-DE">Verdacht</name>
+                    </concept>
+                    <concept id="2.16.840.1.113883.2.6.60.12.2.135.20161016145525.3">
+                        <name language="de-DE">Nein</name>
+                    </concept>
+                </conceptList>
+            </valueDomain>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.12.2.242" statusCode="draft" effectiveDate="2016-10-20T10:18:06" type="item" iddisplay="evthm-dataelement-242" shortName="erregertyp">
+            <implementation shortName="erregertyp" markdown="Hier ist nur etwas einzutragen, wenn &#34;multiresistenter Erreger&#34; mit &#34;Ja&#34; beantwortet wurde. Die Liste der Erreger(-Gruppen) ist nicht vollständig und beschränkt sich auf die häufigsten."/>
+            <name language="de-DE">Erregertyp</name>
+            <desc language="de-DE">
+                        Hier ist nur etwas einzutragen, wenn "multiresistenter Erreger" mit "Ja" beantwortet wurde. Die Liste der Erreger(-Gruppen) ist nicht vollständig und beschränkt sich auf die häufigsten.
+                    </desc>
+            <operationalization language="de-DE">nur auszufüllen, wenn Besiedlung vorliegt</operationalization>
+            <valueDomain type="code">
+                <conceptList id="2.16.840.1.113883.2.6.60.12.2.242.20161020101806.0"/>
+            </valueDomain>
+            <valueSet id="1.2.276.0.76.11.60" name="Multiresistantorganisms" displayName="Multiresistant Organisms (Carrier)" effectiveDate="2015-09-18T00:00:00" statusCode="draft">
+                <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.12.2.242.20161020101806.0" effectiveDate="2015-09-18T00:00:00" valueSet="1.2.276.0.76.11.60" flexibility="dynamic" valueSetName="Multiresistant Organisms (Carrier)" valueSetStatusCode="draft" valueSetEffectiveDate="2015-09-18T00:00:00"/>
+                <desc language="de-DE">Die folgenden Codes werden genutzt, um anzugeben, dass der Patient <b>Träger</b> eines Multi-resistenten Keimes ist.</desc>
+                <sourceCodeSystem id="1.2.276.0.76.5.441" identifierName="Signifikante Pathogene" canonicalUri="urn:oid:1.2.276.0.76.5.441" canonicalUriDSTU2="urn:oid:1.2.276.0.76.5.441" canonicalUriSTU3="urn:oid:1.2.276.0.76.5.441" canonicalUriR4="urn:oid:1.2.276.0.76.5.441" canonicalUriR4B="urn:oid:1.2.276.0.76.5.441" canonicalUriR5="urn:oid:1.2.276.0.76.5.441"/>
+                <sourceCodeSystem id="2.16.840.1.113883.5.1008" identifierName="Null Flavor" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriDSTU2="http://hl7.org/fhir/v3/NullFlavor" canonicalUriSTU3="http://hl7.org/fhir/v3/NullFlavor" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" context="external/hl7intl/v3/v3-NullFlavor"/>
+                <publishingAuthority name="AKTIN e. V." inherited="project">
+                    <addrLine>c/o Uniklinik RWTH Aachen</addrLine>
+                    <addrLine>Institut für Medizinische Informatik</addrLine>
+                    <addrLine>Pauwelsstraße 35</addrLine>
+                    <addrLine>52074 Aachen</addrLine>
+                    <addrLine type="phone">Tel. +49 391 67 28186</addrLine>
+                    <addrLine type="email">office@aktin.org</addrLine>
+                </publishingAuthority>
+                <conceptList id="2.16.840.1.113883.2.6.60.12.2.242.20161020101806.0">
+                    <concept localId="1" code="AMRO" codeSystem="1.2.276.0.76.5.441" displayName="Multiresistenter Keim" level="0" type="L">
+                        <name language="de-DE">Multiresistenter Keim</name>
+                        <desc language="de-DE">Träger eines Multi-resistenten Keims, nicht näher bezeichnet</desc>
+                    </concept>
+                    <concept localId="2" code="MRSA" codeSystem="1.2.276.0.76.5.441" displayName="MRSA" level="1" type="L">
+                        <name language="de-DE">MRSA</name>
+                        <desc language="de-DE">Träger Methicillin-resistenter Staphylococcus aureus (MRSA)<br clear="none"/>
+                        </desc>
+                    </concept>
+                    <concept localId="3" code="3MRGN" codeSystem="1.2.276.0.76.5.441" displayName="gramnegative Stäbchen, bei der noch eine der Antibiotikagruppen wirksam ist" level="1" type="L">
+                        <name language="de-DE">gramnegative Stäbchen, bei der noch eine der Antibiotikagruppen wirksam ist</name>
+                        <desc language="de-DE">Träger 3MRGN<br clear="none"/>
+                        </desc>
+                    </concept>
+                    <concept localId="4" code="4MRGN" codeSystem="1.2.276.0.76.5.441" displayName="gramnegative Stäbchen, die gegen alle vier Gruppen resistent sind" level="1" type="L">
+                        <name language="de-DE">gramnegative Stäbchen, die gegen alle vier Gruppen resistent sind</name>
+                        <desc language="de-DE">Träger 4MRGN<br clear="none"/>
+                        </desc>
+                    </concept>
+                    <concept localId="5" code="VRE" codeSystem="1.2.276.0.76.5.441" displayName="VRE" level="1" type="L">
+                        <name language="de-DE">VRE</name>
+                        <desc language="de-DE">Träger Vancomycin-resistenten Enterokokken (VRE)</desc>
+                    </concept>
+                    <exception localId="6" code="OTH" codeSystem="2.16.840.1.113883.5.1008" displayName="Andere" level="0" type="L">
+                        <name language="de-DE">Andere</name>
+                        <desc language="de-DE">Träger eines anderen Multi-resistenten Keims<br clear="none"/>
+                        </desc>
+                    </exception>
+                </conceptList>
+            </valueSet>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.12.2.242" effectiveDate="2016-12-20T09:33:50" code="713351000" displayName="Multiple antimicrobial drug resistant bacteria (organism)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED Clinical Terms"/>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.12.2.242.20161020101806.0" effectiveDate="2015-09-18T00:00:00" valueSet="1.2.276.0.76.11.60" flexibility="dynamic" valueSetName="Multiresistant Organisms (Carrier)" valueSetStatusCode="draft" valueSetEffectiveDate="2015-09-18T00:00:00"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.12.2.136" statusCode="cancelled" effectiveDate="2016-10-16T14:56:05" type="item" iddisplay="evthm-dataelement-136" shortName="isolationspflicht">
+            <implementation shortName="isolationspflicht" markdown="besteht Isolationspflicht aufgrund MRE?"/>
+            <name language="de-DE">Isolationspflicht</name>
+            <desc language="de-DE">besteht Isolationspflicht aufgrund MRE?</desc>
+            <valueDomain type="boolean">
+                <example type="neutral">ja</example>
+            </valueDomain>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.12.2.136" effectiveDate="2016-12-20T09:30:39" code="40174006" displayName="Isolation procedure (procedure)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED Clinical Terms"/>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.12.2.136" effectiveDate="2016-12-20T09:30:54" code="42752001" displayName="Due to (attribute)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED Clinical Terms"/>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.12.2.136" effectiveDate="2016-12-20T09:31:07" code="713351000" displayName="Multiple antimicrobial drug resistant bacteria (organism)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED Clinical Terms"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.12.2.320" statusCode="cancelled" effectiveDate="2016-10-31T11:43:50" type="item" iddisplay="evthm-dataelement-320" shortName="isolierungsmasnahmen">
+            <implementation shortName="isolierungsmasnahmen" markdown="Auswahlliste zu Maßnahmen:&#xA;&#xA;* Einmalhandschuhe&#xA;* Kittelpflege&#xA;* Mund-Nasen-Schutz&#xA;* Händedesinfektion"/>
+            <name language="de-DE">Isolierungsmaßnahmen</name>
+            <desc language="de-DE">Auswahlliste zu Maßnahmen:<br clear="none"/>
+                <br clear="none"/>
+                <ul>
+                    <li>Einmalhandschuhe</li>
+                    <li>Kittelpflege</li>
+                    <li>Mund-Nasen-Schutz</li>
+                    <li>Händedesinfektion</li>
+                </ul>
+            </desc>
+            <valueDomain type="string">
+                <example type="neutral">Einmalkittel</example>
+            </valueDomain>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.12.2.320" effectiveDate="2016-12-20T09:32:15" code="40174006" displayName="Isolation procedure (procedure)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED Clinical Terms"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.12.2.321" statusCode="cancelled" effectiveDate="2016-10-31T11:47:46" type="item" iddisplay="evthm-dataelement-321" shortName="dekontaminationsmasnahmen">
+            <implementation shortName="dekontaminationsmasnahmen" markdown="Auswahlliste mit Art der Anwendung&#xA;&#xA;* Instrumentendesinfektion&#xA;* Raum-Flächendesinfektion"/>
+            <name language="de-DE">Dekontaminationsmaßnahmen</name>
+            <desc language="de-DE">Auswahlliste mit Art der Anwendung<br clear="none"/>
+                <br clear="none"/>
+                <ul>
+                    <li>Instrumentendesinfektion</li>
+                    <li>Raum-Flächendesinfektion</li>
+                </ul>
+            </desc>
+            <valueDomain type="string">
+                <example type="neutral">Instrumentendesinfektion</example>
+            </valueDomain>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.12.2.321" effectiveDate="2016-12-20T09:32:47" code="409530006" displayName="Decontamination (procedure)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED Clinical Terms"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.12.2.322" statusCode="cancelled" effectiveDate="2016-10-31T11:57:14" type="item" iddisplay="evthm-dataelement-322" shortName="zeitpunkt_dekontaminationsmasnahmen">
+            <implementation shortName="zeitpunkt_dekontaminationsmasnahmen" markdown="wann wurden Dekontaminationsmaßnahmen durchgeführt?"/>
+            <name language="de-DE">Zeitpunkt Dekontaminationsmaßnahmen</name>
+            <desc language="de-DE">wann wurden Dekontaminationsmaßnahmen durchgeführt?</desc>
+            <valueDomain type="datetime">
+                <property timeStampPrecision="YMDHM"/>
+                <example type="neutral">31.10.2016, 11:56</example>
+            </valueDomain>
+            <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.12.2.322" effectiveDate="2016-12-20T09:33:05" code="118575009" displayName="Date AND time of day (property) (qualifier value)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED Clinical Terms"/>
+        </concept>
+    </concept>
+</dataset>

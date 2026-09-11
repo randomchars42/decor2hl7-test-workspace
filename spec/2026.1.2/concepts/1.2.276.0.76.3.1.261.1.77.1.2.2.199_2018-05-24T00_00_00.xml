@@ -1,0 +1,36 @@
+<dataset xmlns:json="http://www.json.org" id="1.2.276.0.76.3.1.261.1.77.1.1.2" effectiveDate="2018-05-24T00:00:00" statusCode="draft" prefix="dguvbbr-" shortName="stationarer_entlassungsbericht" iddisplay="dguvbbr-dataset2-" url="http://art-decor.org/decor/services/" ident="dguvbbr-"><!--
+ This is a view of the dataset "Stationärer Entlassungsbericht" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">Stationärer Entlassungsbericht</name>
+    <desc language="de-DE">Stationärer Entlassungsbericht</desc>
+    <concept id="1.2.276.0.76.3.1.261.1.77.1.2.2.199" effectiveDate="2018-05-24T00:00:00" statusCode="draft" type="group" iddisplay="dguvbbr-dataelement2-199" shortName="unfallhergangbeschwerden_bei_aufnahme">
+        <implementation shortName="unfallhergangbeschwerden_bei_aufnahme" markdown="Von der versicherten Person und/oder Angehörigen vorgetragener Unfallhergang und alle beklagten subjektiven Beschwerden"/>
+        <name language="de-DE">Unfallhergang/Beschwerden bei Aufnahme</name>
+        <desc language="de-DE">Von der versicherten Person und/oder Angehörigen vorgetragener Unfallhergang und alle beklagten subjektiven Beschwerden</desc>
+        <rationale language="de-DE">Kommunikation zwischen Ärzten</rationale>
+        <concept id="1.2.276.0.76.3.1.261.1.77.1.2.2.210" effectiveDate="2018-05-24T00:00:00" statusCode="draft" type="item" iddisplay="dguvbbr-dataelement2-210" shortName="freitext_zu_unfallhergangbeschwerden_bei_aufnahme">
+            <implementation shortName="freitext_zu_unfallhergangbeschwerden_bei_aufnahme" markdown=""/>
+            <name language="de-DE">Freitext zu Unfallhergang/Beschwerden bei Aufnahme</name>
+            <desc language="de-DE"/>
+            <valueDomain type="text">
+                <example type="neutral">Schmerzen im rechten Unterarm</example>
+            </valueDomain>
+        </concept>
+        <concept id="1.2.276.0.76.3.1.261.1.77.1.2.2.211" statusCode="cancelled" effectiveDate="2018-05-24T00:00:00" type="item" iddisplay="dguvbbr-dataelement2-211" shortName="code">
+            <implementation shortName="code" markdown=""/>
+            <name language="de-DE">Code</name>
+            <desc language="de-DE"/>
+            <valueDomain type="code">
+                <conceptList id="1.2.276.0.76.3.1.261.1.77.1.2.2.211.20180524131022.0"/>
+            </valueDomain>
+        </concept>
+        <concept id="1.2.276.0.76.3.1.261.1.77.1.2.2.212" statusCode="cancelled" effectiveDate="2018-05-24T00:00:00" type="item" iddisplay="dguvbbr-dataelement2-212" shortName="anzeigename">
+            <implementation shortName="anzeigename" markdown=""/>
+            <name language="de-DE">Anzeigename</name>
+            <desc language="de-DE"/>
+            <valueDomain type="string"/>
+        </concept>
+    </concept>
+</dataset>

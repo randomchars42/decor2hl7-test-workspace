@@ -1,0 +1,32 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.2.6.60.10.1.1" effectiveDate="2014-08-25T00:00:00" statusCode="draft" prefix="abde-" shortName="arztbrief" iddisplay="abde-dataset-1" url="http://art-decor.org/decor/services/" ident="abde-"><!--
+ This is a view of the dataset "Arztbrief" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">Arztbrief</name>
+    <desc language="de-DE"/>
+    <concept id="2.16.840.1.113883.2.6.60.10.2.1.1240" effectiveDate="2021-02-25T00:00:00" statusCode="draft" type="group" iddisplay="abde-dataelement-1.1240" shortName="beabsichtigten_empfanger">
+        <implementation shortName="beabsichtigten_empfanger" markdown="Die beabsichtigten Empfänger des Dokuments können in der Klasse  *IntendedRecipient*  näher angegeben werden. Hierbei ist zu beachten, dass es sich um die unmittelbar bei der Erstellung des Dokuments festgelegten bzw. bekannten Empfänger handelt. (Es sind nicht die möglichen Empfänger, die jemals eine Kopie des Dokuments empfangen könnten.) So weiß man beispielsweise bei der Erstellung der Dokumentation, dass man einen „Brief&#34; primär an den Hausarzt ( *informationRecipient.typeCode*  gleich  *PRCP* , siehe unten) und ggf. einen zweiten („in Kopie&#34;) an einen mitbehandelnden Kollegen sendet ( *informationRecipient.typeCode*  ist gleich  *TRC* )."/>
+        <name language="de-DE">Beabsichtigten Empfänger</name>
+        <desc language="de-DE">Die beabsichtigten Empfänger des Dokuments können in der Klasse <i>IntendedRecipient</i> näher angegeben werden. Hierbei ist zu beachten, dass es sich um die unmittelbar bei der Erstellung des Dokuments festgelegten
+                         bzw. bekannten Empfänger handelt. (Es sind nicht die möglichen Empfänger, die jemals eine Kopie des Dokuments empfangen könnten.) So weiß man beispielsweise bei der Erstellung der Dokumentation, dass man einen „Brief" primär an den Hausarzt (<i>informationRecipient.typeCode</i> gleich <i>PRCP</i>, siehe unten) und ggf. einen zweiten („in Kopie") an einen mitbehandelnden Kollegen sendet (<i>informationRecipient.typeCode</i> ist gleich <i>TRC</i>).</desc>
+        <concept id="2.16.840.1.113883.2.6.60.10.2.1.1250" effectiveDate="2021-02-25T00:00:00" statusCode="draft" type="group" iddisplay="abde-dataelement-1.1250" shortName="personenelements">
+            <implementation shortName="personenelements" markdown="Informationen zur einer Person"/>
+            <contains ref="2.16.840.1.113883.2.6.77.2.7.90010" flexibility="2021-02-25T00:00:00" prefix="hl7de-" datasetId="2.16.840.1.113883.2.6.77.1.7" datasetEffectiveDate="2021-02-25T00:00:00" datasetStatusCode="draft" datasetVersionLabel="0.5" iType="group" iStatusCode="draft" iEffectiveDate="2021-02-25T00:00:00" refdisplay="hl7de-dataelement-7.90010"/>
+            <name language="de-DE">Personen-Elements</name>
+            <desc language="de-DE">Informationen zur einer Person</desc>
+            <relationship type="SPEC" ref="2.16.840.1.113883.2.6.77.2.7.90010" flexibility="2021-02-25T00:00:00" prefix="hl7de-" datasetId="2.16.840.1.113883.2.6.77.1.7" datasetEffectiveDate="2021-02-25T00:00:00" datasetStatusCode="draft" datasetVersionLabel="0.5" iType="group" iEffectiveDate="2021-02-25T00:00:00" iStatusCode="draft" refdisplay="hl7de-dataelement-7.90010">
+                <name language="de-DE">Personen-Elements</name>
+            </relationship>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.10.2.1.1260" effectiveDate="2021-02-25T00:00:00" statusCode="draft" type="group" iddisplay="abde-dataelement-1.1260" shortName="organisationselements">
+            <implementation shortName="organisationselements" markdown="Informationen zur einer Organisation"/>
+            <contains ref="2.16.840.1.113883.2.6.77.2.7.90011" flexibility="2021-02-25T00:00:00" prefix="hl7de-" datasetId="2.16.840.1.113883.2.6.77.1.7" datasetEffectiveDate="2021-02-25T00:00:00" datasetStatusCode="draft" datasetVersionLabel="0.5" iType="group" iStatusCode="draft" iEffectiveDate="2021-02-25T00:00:00" refdisplay="hl7de-dataelement-7.90011"/>
+            <name language="de-DE">Organisations-Elements</name>
+            <desc language="de-DE">Informationen zur einer Organisation</desc>
+            <relationship type="SPEC" ref="2.16.840.1.113883.2.6.77.2.7.90011" flexibility="2021-02-25T00:00:00" prefix="hl7de-" datasetId="2.16.840.1.113883.2.6.77.1.7" datasetEffectiveDate="2021-02-25T00:00:00" datasetStatusCode="draft" datasetVersionLabel="0.5" iType="group" iEffectiveDate="2021-02-25T00:00:00" iStatusCode="draft" refdisplay="hl7de-dataelement-7.90011">
+                <name language="de-DE">Organisations-Elements</name>
+            </relationship>
+        </concept>
+    </concept>
+</dataset>

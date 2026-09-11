@@ -1,0 +1,44 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.99.61.48.1.2" effectiveDate="2019-02-08T00:00:00" statusCode="draft" versionLabel="v2019" prefix="medmgmt-" shortName="datensatz_e_medikation" iddisplay="medmgmt-dataset-2" url="http://art-decor.org/decor/services/" ident="medmgmt-"><!--
+ This is a view of the dataset "Datensatz eMedikation" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">Datensatz eMedikation</name>
+    <desc language="de-DE">Datensatz eMedikation</desc>
+    <concept id="2.16.840.1.113883.3.1937.99.61.48.2.1299" effectiveDate="2019-02-08T16:39:11" statusCode="draft" type="group" iddisplay="medmgmt-dataelement-1299">
+        <implementation markdown=""/>
+        <inherit ref="2.16.840.1.113883.3.1937.99.61.48.2.1236" effectiveDate="2019-02-08T14:21:21" prefix="medmgmt-" datasetId="2.16.840.1.113883.3.1937.99.61.48.1.2" datasetEffectiveDate="2019-02-08T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2019" iType="group" iStatusCode="draft" iEffectiveDate="2019-02-08T14:21:21" iddisplay="medmgmt-dataelement-1236" refdisplay="medmgmt-dataelement-1236" localInherit="true"/>
+        <name language="de-DE">Adresse</name>
+        <desc language="de-DE"/>
+        <concept id="2.16.840.1.113883.3.1937.99.61.48.2.1300" effectiveDate="2019-02-08T16:39:11" statusCode="draft" type="item" iddisplay="medmgmt-dataelement-1300" shortName="strase">
+            <implementation shortName="strase" markdown="Straße"/>
+            <inherit ref="2.16.840.1.113883.3.1937.99.61.48.2.1005" effectiveDate="2019-02-08T00:00:00" prefix="medmgmt-" datasetId="2.16.840.1.113883.3.1937.99.61.48.1.2" datasetEffectiveDate="2019-02-08T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2019" iType="item" iStatusCode="draft" iEffectiveDate="2019-02-08T00:00:00" originalId="2.16.840.1.113883.3.1937.99.61.48.2.1005" originalStatusCode="draft" originalEffectiveDate="2018-12-01T00:00:00" originalPrefix="medmgmt-" iddisplay="medmgmt-dataelement-1005" refdisplay="medmgmt-dataelement-1005" localInherit="true"/>
+            <name language="de-DE">Straße</name>
+            <desc language="de-DE">Straße</desc>
+            <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.99.61.48.2.1005" flexibility="2018-12-01T00:00:00" prefix="medmgmt-" datasetId="2.16.840.1.113883.3.1937.99.61.48.1.1" datasetEffectiveDate="2018-12-01T00:00:00" datasetStatusCode="deprecated" datasetVersionLabel="v2018" iType="item" iEffectiveDate="2018-12-01T00:00:00" iStatusCode="draft" refdisplay="medmgmt-dataelement-1005">
+                <name language="de-DE">Straße</name>
+            </relationship>
+            <valueDomain type="string"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.99.61.48.2.1301" effectiveDate="2019-02-08T16:39:11" statusCode="draft" type="item" iddisplay="medmgmt-dataelement-1301" shortName="plz">
+            <implementation shortName="plz" markdown="PLZ"/>
+            <inherit ref="2.16.840.1.113883.3.1937.99.61.48.2.1006" effectiveDate="2019-02-08T00:00:00" prefix="medmgmt-" datasetId="2.16.840.1.113883.3.1937.99.61.48.1.2" datasetEffectiveDate="2019-02-08T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2019" iType="item" iStatusCode="draft" iEffectiveDate="2019-02-08T00:00:00" originalId="2.16.840.1.113883.3.1937.99.61.48.2.1006" originalStatusCode="draft" originalEffectiveDate="2018-12-01T00:00:00" originalPrefix="medmgmt-" iddisplay="medmgmt-dataelement-1006" refdisplay="medmgmt-dataelement-1006" localInherit="true"/>
+            <name language="de-DE">PLZ</name>
+            <desc language="de-DE">PLZ</desc>
+            <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.99.61.48.2.1006" flexibility="2018-12-01T00:00:00" prefix="medmgmt-" datasetId="2.16.840.1.113883.3.1937.99.61.48.1.1" datasetEffectiveDate="2018-12-01T00:00:00" datasetStatusCode="deprecated" datasetVersionLabel="v2018" iType="item" iEffectiveDate="2018-12-01T00:00:00" iStatusCode="draft" refdisplay="medmgmt-dataelement-1006">
+                <name language="de-DE">PLZ</name>
+            </relationship>
+            <valueDomain type="string"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.99.61.48.2.1302" effectiveDate="2019-02-08T16:39:11" statusCode="draft" type="item" iddisplay="medmgmt-dataelement-1302" shortName="ort">
+            <implementation shortName="ort" markdown="Ort"/>
+            <inherit ref="2.16.840.1.113883.3.1937.99.61.48.2.1007" effectiveDate="2019-02-08T00:00:00" prefix="medmgmt-" datasetId="2.16.840.1.113883.3.1937.99.61.48.1.2" datasetEffectiveDate="2019-02-08T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2019" iType="item" iStatusCode="draft" iEffectiveDate="2019-02-08T00:00:00" originalId="2.16.840.1.113883.3.1937.99.61.48.2.1007" originalStatusCode="draft" originalEffectiveDate="2018-12-01T00:00:00" originalPrefix="medmgmt-" iddisplay="medmgmt-dataelement-1007" refdisplay="medmgmt-dataelement-1007" localInherit="true"/>
+            <name language="de-DE">Ort</name>
+            <desc language="de-DE">Ort</desc>
+            <relationship type="SPEC" ref="2.16.840.1.113883.3.1937.99.61.48.2.1007" flexibility="2018-12-01T00:00:00" prefix="medmgmt-" datasetId="2.16.840.1.113883.3.1937.99.61.48.1.1" datasetEffectiveDate="2018-12-01T00:00:00" datasetStatusCode="deprecated" datasetVersionLabel="v2018" iType="item" iEffectiveDate="2018-12-01T00:00:00" iStatusCode="draft" refdisplay="medmgmt-dataelement-1007">
+                <name language="de-DE">Ort</name>
+            </relationship>
+            <valueDomain type="string"/>
+        </concept>
+    </concept>
+</dataset>

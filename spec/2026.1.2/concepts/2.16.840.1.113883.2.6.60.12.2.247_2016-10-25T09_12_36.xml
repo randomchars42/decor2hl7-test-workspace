@@ -1,0 +1,19 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.2.6.60.12.1.1" effectiveDate="2016-06-27T11:19:09" statusCode="draft" versionLabel="1.0" prefix="evthm-" shortName="e_venthome" iddisplay="evthm-dataset-1" url="http://art-decor.org/decor/services/" ident="evthm-"><!--
+ This is a view of the dataset "eVent@home" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">eVent@home</name>
+    <desc language="de-DE"/>
+    <concept id="2.16.840.1.113883.2.6.60.12.2.247" statusCode="draft" effectiveDate="2016-10-25T09:12:36" type="item" iddisplay="evthm-dataelement-247">
+        <implementation markdown="Angabe in mm[Hg]"/>
+        <name language="de-DE">systolisch</name>
+        <desc language="de-DE">Angabe in mm[Hg]</desc>
+        <valueDomain type="quantity">
+            <property unit="mm[Hg]"/>
+            <example type="neutral">120 mm[Hg]</example>
+        </valueDomain>
+        <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.12.2.247" effectiveDate="2016-11-07T15:51:32" code="76534-7" displayName="Systolic blood pressure by Noninvasive" codeSystem="2.16.840.1.113883.6.1" codeSystemName="Logical Observation Identifier Names and Codes"/>
+        <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.12.2.247" effectiveDate="2016-11-07T15:53:15" code="271649006" displayName="Systolic blood pressure (observable entity)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED Clinical Terms"/>
+    </concept>
+</dataset>

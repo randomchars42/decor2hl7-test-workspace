@@ -1,0 +1,27 @@
+<dataset xmlns:json="http://www.json.org" id="1.2.276.0.76.3.1.261.1.77.1.1.2" effectiveDate="2018-05-24T00:00:00" statusCode="draft" prefix="dguvbbr-" shortName="stationarer_entlassungsbericht" iddisplay="dguvbbr-dataset2-" url="http://art-decor.org/decor/services/" ident="dguvbbr-"><!--
+ This is a view of the dataset "Stationärer Entlassungsbericht" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">Stationärer Entlassungsbericht</name>
+    <desc language="de-DE">Stationärer Entlassungsbericht</desc>
+    <concept id="1.2.276.0.76.3.1.261.1.77.1.2.2.254" effectiveDate="2018-05-24T00:00:00" statusCode="draft" type="item" iddisplay="dguvbbr-dataelement2-254">
+        <implementation markdown=""/>
+        <name language="de-DE">Seitigkeit</name>
+        <desc language="de-DE"/>
+        <valueDomain type="code">
+            <conceptList id="1.2.276.0.76.3.1.261.1.77.1.2.2.254.20180301143059.0">
+                <concept id="1.2.276.0.76.3.1.261.1.77.1.2.2.254.20180301143059.1">
+                    <name language="de-DE">Links</name>
+                </concept>
+                <concept id="1.2.276.0.76.3.1.261.1.77.1.2.2.254.20180301143059.2">
+                    <name language="de-DE">Rechts</name>
+                </concept>
+                <concept id="1.2.276.0.76.3.1.261.1.77.1.2.2.254.20180301143059.3">
+                    <name language="de-DE">Beidseits</name>
+                </concept>
+            </conceptList>
+            <example type="neutral">L</example>
+        </valueDomain>
+    </concept>
+</dataset>

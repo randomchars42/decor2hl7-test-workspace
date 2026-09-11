@@ -1,0 +1,18 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.99.61.38.1.2" effectiveDate="2018-03-02T10:10:49" statusCode="draft" prefix="sdguv-" shortName="minientlassbrief" iddisplay="sdguv-dataset-2" url="http://art-decor.org/decor/services/" ident="sdguv-"><!--
+ This is a view of the dataset "Mini-Entlassbrief" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">Mini-Entlassbrief</name>
+    <desc language="de-DE">Mini-Entlassungsbrief aus stationärer Behandlung (DAV/VAV/SAV) als DEMO-Objekt zum Technologieverständnis</desc>
+    <property name="Demo-Object"/>
+    <concept id="2.16.840.1.113883.3.1937.99.61.38.2.2.53" effectiveDate="2018-03-01T14:29:58" statusCode="draft" type="item" iddisplay="sdguv-dataelement2-53">
+        <implementation markdown=""/>
+        <name language="de-DE">Diagnosensicherheit</name>
+        <desc language="de-DE"/>
+        <valueDomain type="code">
+            <conceptList id="2.16.840.1.113883.3.1937.99.61.38.2.2.53.20180301142958.0"/>
+            <example type="neutral">V</example>
+        </valueDomain>
+    </concept>
+</dataset>

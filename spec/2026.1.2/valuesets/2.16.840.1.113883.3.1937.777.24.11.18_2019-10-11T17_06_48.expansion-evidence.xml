@@ -1,10 +1,10 @@
-<valueSetExpansionSet xmlns:json="http://www.json.org" id="d20de9d0-408d-42dc-8de9-d0408df2dc88" effectiveDate="2026-09-03T14:32:17" statusCode="final" current="100" count="43177" nonactive="0">
+<valueSetExpansionSet xmlns:json="http://www.json.org" id="d4ca8130-e19b-4013-8a81-30e19ba01319" effectiveDate="2026-09-11T11:21:25" statusCode="final" current="100" count="43177" nonactive="0">
     <valueSet json:array="true" id="2.16.840.1.113883.3.1937.777.24.11.18" name="SNOMED-CT-BodyStructure" displayName="SNOMED CT Body Structures" effectiveDate="2019-10-11T17:06:48" statusCode="draft" ident="mide-">
         <conceptList json:array="true">
             <include json:array="true" op="descendent-of" code="123037004" codeSystem="2.16.840.1.113883.6.96" displayName="Body structure"/>
         </conceptList>
     </valueSet>
-    <expansion json:array="true" expanded="true" max="100" id="d20de9d0-408d-42dc-8de9-d0408df2dc88">
+    <expansion json:array="true" expanded="true" max="100" id="d4ca8130-e19b-4013-8a81-30e19ba01319">
         <items json:array="true" is="concept" code="107008" codeSystem="2.16.840.1.113883.6.96" displayName="Structure of fetal part of placenta (body structure)" level="8" type="S">
             <designation json:array="true" lang="en-US" use="fsn" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="8" length="52">Structure of fetal part of placenta (body structure)</designation>
             <designation json:array="true" lang="en-US" use="pref" statusCode="active" effectiveDate="2017-07-31" expirationDate="" lastModifiedDate="" count="6" length="35">Structure of fetal part of placenta</designation>

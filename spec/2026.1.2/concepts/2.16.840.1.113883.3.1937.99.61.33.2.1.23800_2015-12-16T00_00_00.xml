@@ -1,0 +1,16 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.99.61.33.1.1" effectiveDate="2015-12-16T00:00:00" statusCode="final" versionLabel="V2015.1" lastModifiedDate="2023-06-12T10:04:42" prefix="traumareg-" shortName="trauma_register_dgu" iddisplay="traumareg-dataset2015-" url="http://art-decor.org/decor/services/" ident="traumareg-"><!--
+ This is a view of the dataset "TraumaRegister DGU" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE" lastTranslated="2023-06-12T09:22:27">TraumaRegister DGU</name>
+    <desc language="de-DE">Traumaregister</desc>
+    <concept id="2.16.840.1.113883.3.1937.99.61.33.2.1.23800" statusCode="final" effectiveDate="2015-12-16T00:00:00" lastModifiedDate="2023-06-12T10:04:42" type="item" iddisplay="traumareg-dataelement2015-23800">
+        <implementation markdown="Blutdruck systolisch - Schockraum"/>
+        <name language="de-DE">Blutdruck (systolisch)</name>
+        <desc language="de-DE">Blutdruck systolisch - Schockraum</desc>
+        <valueDomain type="quantity">
+            <property unit="mmHg"/>
+        </valueDomain>
+    </concept>
+</dataset>

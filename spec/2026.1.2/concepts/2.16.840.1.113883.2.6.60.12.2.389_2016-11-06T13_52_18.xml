@@ -1,0 +1,17 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.2.6.60.12.1.1" effectiveDate="2016-06-27T11:19:09" statusCode="draft" versionLabel="1.0" prefix="evthm-" shortName="e_venthome" iddisplay="evthm-dataset-1" url="http://art-decor.org/decor/services/" ident="evthm-"><!--
+ This is a view of the dataset "eVent@home" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">eVent@home</name>
+    <desc language="de-DE"/>
+    <concept id="2.16.840.1.113883.2.6.60.12.2.389" statusCode="draft" effectiveDate="2016-11-06T13:52:18" type="item" iddisplay="evthm-dataelement-389">
+        <implementation markdown=""/>
+        <name language="de-DE">Datum</name>
+        <desc language="de-DE"/>
+        <valueDomain type="date">
+            <property timeStampPrecision="YMD"/>
+        </valueDomain>
+        <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.12.2.389" effectiveDate="2016-12-20T10:39:31" code="410672004" displayName="Date property (qualifier value)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED Clinical Terms"/>
+    </concept>
+</dataset>

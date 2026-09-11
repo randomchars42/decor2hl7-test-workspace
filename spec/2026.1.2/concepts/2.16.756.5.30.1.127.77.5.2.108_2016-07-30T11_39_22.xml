@@ -1,0 +1,137 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.756.5.30.1.127.77.5.1.1" effectiveDate="2016-07-11T15:25:57" statusCode="draft" versionLabel="1" prefix="cdachresp-" shortName="resp" iddisplay="cdachresp-dataset-1" url="http://art-decor.org/decor/services/" ident="cdachresp-"><!--
+ This is a view of the dataset "RESP" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">RESP</name>
+    <desc language="de-DE">Alle Daten, die einen Einsatz von der Auslösung bis zum Abschluss beim Rettungsdienst beschreiben.<br clear="none"/>
+    </desc>
+    <concept id="2.16.756.5.30.1.127.77.5.2.108" effectiveDate="2016-07-30T11:39:22" statusCode="draft" type="group" iddisplay="cdachresp-dataelement-108">
+        <implementation markdown="Skala zur Beurteilung einer Bewusstseinsstörung"/>
+        <name language="de-DE">GCS</name>
+        <desc language="de-DE">Skala zur Beurteilung einer Bewusstseinsstörung<br clear="none"/>
+        </desc>
+        <concept id="2.16.756.5.30.1.127.77.5.2.109" effectiveDate="2016-07-30T11:43:18" statusCode="draft" type="item" iddisplay="cdachresp-dataelement-109" shortName="gesamtscore">
+            <implementation shortName="gesamtscore" markdown="Gesamtscore, gebildet aus der Addition der Teilscores"/>
+            <name language="de-DE">Gesamtscore</name>
+            <desc language="de-DE">Gesamtscore, gebildet aus der Addition der Teilscores<br clear="none"/>
+            </desc>
+            <valueDomain type="decimal"/>
+        </concept>
+        <concept id="2.16.756.5.30.1.127.77.5.2.110" effectiveDate="2016-07-30T11:44:40" statusCode="draft" type="item" iddisplay="cdachresp-dataelement-110" shortName="augenoffnung">
+            <implementation shortName="augenoffnung" markdown="Beurteilung der Augenöffnung des Patienten"/>
+            <name language="de-DE">Augenöffnung</name>
+            <desc language="de-DE">Beurteilung der Augenöffnung des Patienten<br clear="none"/>
+            </desc>
+            <valueDomain type="code">
+                <conceptList id="2.16.756.5.30.1.127.77.5.2.110.20160730114440.0"/>
+            </valueDomain>
+            <valueSet id="2.16.756.5.30.1.1.11.14" name="GCS_Augenöffnung" displayName="IVR valueset GCS Augenöffnung (143.11.34)" statusCode="cancelled" versionLabel="ungültige Bezeichnung" effectiveDate="2016-07-30T11:54:00">
+                <terminologyAssociation conceptId="2.16.756.5.30.1.127.77.5.2.110.20160730114440.0" effectiveDate="2016-07-30T11:56:58" valueSet="2.16.756.5.30.1.1.11.14" flexibility="dynamic" valueSetName="IVR valueset GCS Augenöffnung (143.11.34)" valueSetStatusCode="cancelled" valueSetVersionLabel="ungültige Bezeichnung" valueSetEffectiveDate="2016-07-30T11:54:00"/>
+                <sourceCodeSystem id="2.16.756.5.30.1.143.5.1" identifierName="IVR codesystem Basis" canonicalUri="urn:oid:2.16.756.5.30.1.143.5.1" canonicalUriDSTU2="urn:oid:2.16.756.5.30.1.143.5.1" canonicalUriSTU3="urn:oid:2.16.756.5.30.1.143.5.1" canonicalUriR4="urn:oid:2.16.756.5.30.1.143.5.1" canonicalUriR4B="urn:oid:2.16.756.5.30.1.143.5.1" canonicalUriR5="urn:oid:2.16.756.5.30.1.143.5.1"/>
+                <sourceCodeSystem id="2.16.840.1.113883.6.96" identifierName="SNOMED Clinical Terms" canonicalUri="http://snomed.info/sct" canonicalUriDSTU2="http://snomed.info/sct" canonicalUriSTU3="http://snomed.info/sct" canonicalUriR4="http://snomed.info/sct" canonicalUriR4B="http://snomed.info/sct" canonicalUriR5="http://snomed.info/sct"/>
+                <publishingAuthority name="Interverband für Rettungswesen" inherited="project">
+                    <addrLine>Interverband für Rettungswesen (IVR)</addrLine>
+                    <addrLine>Haus der Kantone</addrLine>
+                    <addrLine>Speichergasse 6</addrLine>
+                    <addrLine>3000 Bern 7</addrLine>
+                </publishingAuthority>
+                <copyright language="en-US" inherited="true">This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.</copyright>
+                <conceptList id="2.16.756.5.30.1.127.77.5.2.110.20160730114440.0">
+                    <concept localId="1" code="260389003" codeSystem="2.16.840.1.113883.6.96" displayName="No reaction" level="0" type="L">
+                        <name language="en-US">No reaction</name>
+                    </concept>
+                    <concept localId="2" code="1000150" codeSystem="2.16.756.5.30.1.143.5.1" displayName="on pain stimulus" level="0" type="L">
+                        <name language="en-US">on pain stimulus</name>
+                    </concept>
+                    <concept localId="3" code="1000151" codeSystem="2.16.756.5.30.1.143.5.1" displayName="on request" level="0" type="L">
+                        <name language="en-US">on request</name>
+                    </concept>
+                    <concept localId="4" code="1000152" codeSystem="2.16.756.5.30.1.143.5.1" displayName="spontaneous" level="0" type="L">
+                        <name language="en-US">spontaneous</name>
+                    </concept>
+                </conceptList>
+            </valueSet>
+            <terminologyAssociation conceptId="2.16.756.5.30.1.127.77.5.2.110.20160730114440.0" effectiveDate="2016-07-30T11:56:58" valueSet="2.16.756.5.30.1.1.11.14" flexibility="dynamic" valueSetName="IVR valueset GCS Augenöffnung (143.11.34)" valueSetStatusCode="cancelled" valueSetVersionLabel="ungültige Bezeichnung" valueSetEffectiveDate="2016-07-30T11:54:00"/>
+        </concept>
+        <concept id="2.16.756.5.30.1.127.77.5.2.111" effectiveDate="2016-07-30T11:46:55" statusCode="draft" type="item" iddisplay="cdachresp-dataelement-111" shortName="verbale_kommunikation">
+            <implementation shortName="verbale_kommunikation" markdown=""/>
+            <name language="de-DE">verbale Kommunikation</name>
+            <desc language="de-DE"/>
+            <valueDomain type="code">
+                <conceptList id="2.16.756.5.30.1.127.77.5.2.111.20160730114655.0"/>
+            </valueDomain>
+            <valueSet id="2.16.756.5.30.1.1.11.15" name="gcsVerbal" displayName="IVR valueset GCS Verbale Kommunikation(.143.11.36)" effectiveDate="2016-07-30T12:00:03" statusCode="draft">
+                <terminologyAssociation conceptId="2.16.756.5.30.1.127.77.5.2.111.20160730114655.0" effectiveDate="2016-07-30T12:02:25" valueSet="2.16.756.5.30.1.1.11.15" flexibility="dynamic" valueSetName="IVR valueset GCS Verbale Kommunikation(.143.11.36)" valueSetStatusCode="draft" valueSetEffectiveDate="2016-07-30T12:00:03"/>
+                <sourceCodeSystem id="2.16.756.5.30.1.143.5.1" identifierName="IVR codesystem Basis" canonicalUri="urn:oid:2.16.756.5.30.1.143.5.1" canonicalUriDSTU2="urn:oid:2.16.756.5.30.1.143.5.1" canonicalUriSTU3="urn:oid:2.16.756.5.30.1.143.5.1" canonicalUriR4="urn:oid:2.16.756.5.30.1.143.5.1" canonicalUriR4B="urn:oid:2.16.756.5.30.1.143.5.1" canonicalUriR5="urn:oid:2.16.756.5.30.1.143.5.1"/>
+                <sourceCodeSystem id="2.16.840.1.113883.6.96" identifierName="SNOMED Clinical Terms" canonicalUri="http://snomed.info/sct" canonicalUriDSTU2="http://snomed.info/sct" canonicalUriSTU3="http://snomed.info/sct" canonicalUriR4="http://snomed.info/sct" canonicalUriR4B="http://snomed.info/sct" canonicalUriR5="http://snomed.info/sct"/>
+                <publishingAuthority name="Interverband für Rettungswesen" inherited="project">
+                    <addrLine>Interverband für Rettungswesen (IVR)</addrLine>
+                    <addrLine>Haus der Kantone</addrLine>
+                    <addrLine>Speichergasse 6</addrLine>
+                    <addrLine>3000 Bern 7</addrLine>
+                </publishingAuthority>
+                <copyright language="en-US" inherited="true">This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.</copyright>
+                <conceptList id="2.16.756.5.30.1.127.77.5.2.111.20160730114655.0">
+                    <concept localId="1" code="260389003" codeSystem="2.16.840.1.113883.6.96" displayName="no reaction" level="0" type="L">
+                        <name language="en-US">no reaction</name>
+                    </concept>
+                    <concept localId="2" code="1000158" codeSystem="2.16.756.5.30.1.143.5.1" displayName="incomprehensible sounds" level="0" type="L">
+                        <name language="en-US">incomprehensible sounds</name>
+                    </concept>
+                    <concept localId="3" code="1000159" codeSystem="2.16.756.5.30.1.143.5.1" displayName="incoherent words" level="0" type="L">
+                        <name language="en-US">incoherent words</name>
+                    </concept>
+                    <concept localId="4" code="1000160" codeSystem="2.16.756.5.30.1.143.5.1" displayName="conversational, disoriented" level="0" type="L">
+                        <name language="en-US">conversational, disoriented</name>
+                    </concept>
+                    <concept localId="5" code="1000161" codeSystem="2.16.756.5.30.1.143.5.1" displayName="conversational, oriented" level="0" type="L">
+                        <name language="en-US">conversational, oriented</name>
+                    </concept>
+                </conceptList>
+            </valueSet>
+            <terminologyAssociation conceptId="2.16.756.5.30.1.127.77.5.2.111.20160730114655.0" effectiveDate="2016-07-30T12:02:25" valueSet="2.16.756.5.30.1.1.11.15" flexibility="dynamic" valueSetName="IVR valueset GCS Verbale Kommunikation(.143.11.36)" valueSetStatusCode="draft" valueSetEffectiveDate="2016-07-30T12:00:03"/>
+        </concept>
+        <concept id="2.16.756.5.30.1.127.77.5.2.112" effectiveDate="2016-07-30T11:47:50" statusCode="draft" type="item" iddisplay="cdachresp-dataelement-112" shortName="motorische_reaktion">
+            <implementation shortName="motorische_reaktion" markdown=""/>
+            <name language="de-DE">motorische Reaktion</name>
+            <desc language="de-DE"/>
+            <valueDomain type="code">
+                <conceptList id="2.16.756.5.30.1.127.77.5.2.112.20160730114750.0"/>
+            </valueDomain>
+            <valueSet id="2.16.756.5.30.1.1.11.16" name="gcsMotoric" displayName="IVR valueset GCS motorische Reaktion (.143.11.35)" effectiveDate="2016-07-30T12:05:22" statusCode="draft">
+                <terminologyAssociation conceptId="2.16.756.5.30.1.127.77.5.2.112.20160730114750.0" effectiveDate="2016-07-30T12:06:04" valueSet="2.16.756.5.30.1.1.11.16" flexibility="dynamic" valueSetName="IVR valueset GCS motorische Reaktion (.143.11.35)" valueSetStatusCode="draft" valueSetEffectiveDate="2016-07-30T12:05:22"/>
+                <sourceCodeSystem id="2.16.756.5.30.1.143.5.1" identifierName="IVR codesystem Basis" canonicalUri="urn:oid:2.16.756.5.30.1.143.5.1" canonicalUriDSTU2="urn:oid:2.16.756.5.30.1.143.5.1" canonicalUriSTU3="urn:oid:2.16.756.5.30.1.143.5.1" canonicalUriR4="urn:oid:2.16.756.5.30.1.143.5.1" canonicalUriR4B="urn:oid:2.16.756.5.30.1.143.5.1" canonicalUriR5="urn:oid:2.16.756.5.30.1.143.5.1"/>
+                <sourceCodeSystem id="2.16.840.1.113883.6.96" identifierName="SNOMED Clinical Terms" canonicalUri="http://snomed.info/sct" canonicalUriDSTU2="http://snomed.info/sct" canonicalUriSTU3="http://snomed.info/sct" canonicalUriR4="http://snomed.info/sct" canonicalUriR4B="http://snomed.info/sct" canonicalUriR5="http://snomed.info/sct"/>
+                <publishingAuthority name="Interverband für Rettungswesen" inherited="project">
+                    <addrLine>Interverband für Rettungswesen (IVR)</addrLine>
+                    <addrLine>Haus der Kantone</addrLine>
+                    <addrLine>Speichergasse 6</addrLine>
+                    <addrLine>3000 Bern 7</addrLine>
+                </publishingAuthority>
+                <copyright language="en-US" inherited="true">This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.</copyright>
+                <conceptList id="2.16.756.5.30.1.127.77.5.2.112.20160730114750.0">
+                    <concept localId="1" code="260389003" codeSystem="2.16.840.1.113883.6.96" displayName="No reaction" level="0" type="L">
+                        <name language="en-US">No reaction</name>
+                    </concept>
+                    <concept localId="2" code="1000153" codeSystem="2.16.756.5.30.1.143.5.1" displayName="stretching" level="0" type="L">
+                        <name language="en-US">stretching</name>
+                    </concept>
+                    <concept localId="3" code="1000154" codeSystem="2.16.756.5.30.1.143.5.1" displayName="bending" level="0" type="L">
+                        <name language="en-US">bending</name>
+                    </concept>
+                    <concept localId="4" code="1000155" codeSystem="2.16.756.5.30.1.143.5.1" displayName="undirected defense" level="0" type="L">
+                        <name language="en-US">undirected defense</name>
+                    </concept>
+                    <concept localId="5" code="1000156" codeSystem="2.16.756.5.30.1.143.5.1" displayName="directed defense" level="0" type="L">
+                        <name language="en-US">directed defense</name>
+                    </concept>
+                    <concept localId="6" code="1000157" codeSystem="2.16.756.5.30.1.143.5.1" displayName="take orders" level="0" type="L">
+                        <name language="en-US">take orders</name>
+                    </concept>
+                </conceptList>
+            </valueSet>
+            <terminologyAssociation conceptId="2.16.756.5.30.1.127.77.5.2.112.20160730114750.0" effectiveDate="2016-07-30T12:06:04" valueSet="2.16.756.5.30.1.1.11.16" flexibility="dynamic" valueSetName="IVR valueset GCS motorische Reaktion (.143.11.35)" valueSetStatusCode="draft" valueSetEffectiveDate="2016-07-30T12:05:22"/>
+        </concept>
+    </concept>
+</dataset>

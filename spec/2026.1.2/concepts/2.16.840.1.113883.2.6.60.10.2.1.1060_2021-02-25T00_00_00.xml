@@ -1,0 +1,16 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.2.6.60.10.1.1" effectiveDate="2014-08-25T00:00:00" statusCode="draft" prefix="abde-" shortName="arztbrief" iddisplay="abde-dataset-1" url="http://art-decor.org/decor/services/" ident="abde-"><!--
+ This is a view of the dataset "Arztbrief" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">Arztbrief</name>
+    <desc language="de-DE"/>
+    <concept id="2.16.840.1.113883.2.6.60.10.2.1.1060" effectiveDate="2021-02-25T00:00:00" statusCode="draft" type="item" iddisplay="abde-dataelement-1.1060" shortName="sprache_dokument">
+        <implementation shortName="sprache_dokument" markdown="CDA languageCode"/>
+        <name language="de-DE">Sprache Dokument</name>
+        <desc language="de-DE">CDA languageCode</desc>
+        <valueDomain type="code">
+            <conceptList id="2.16.840.1.113883.2.6.60.10.2.1.1060.20210225000000.0"/>
+        </valueDomain>
+    </concept>
+</dataset>

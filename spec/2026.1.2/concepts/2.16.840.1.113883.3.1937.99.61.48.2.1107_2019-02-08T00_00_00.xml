@@ -1,0 +1,15 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.99.61.48.1.2" effectiveDate="2019-02-08T00:00:00" statusCode="draft" versionLabel="v2019" prefix="medmgmt-" shortName="datensatz_e_medikation" iddisplay="medmgmt-dataset-2" url="http://art-decor.org/decor/services/" ident="medmgmt-"><!--
+ This is a view of the dataset "Datensatz eMedikation" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">Datensatz eMedikation</name>
+    <desc language="de-DE">Datensatz eMedikation</desc>
+    <concept id="2.16.840.1.113883.3.1937.99.61.48.2.1107" statusCode="draft" effectiveDate="2019-02-08T00:00:00" type="item" iddisplay="medmgmt-dataelement-1107">
+        <implementation markdown="Versionsnummer des Formats"/>
+        <inherit ref="2.16.840.1.113883.3.1937.99.61.48.2.1107" effectiveDate="2018-12-01T00:00:00" prefix="medmgmt-" datasetId="2.16.840.1.113883.3.1937.99.61.48.1.1" datasetEffectiveDate="2018-12-01T00:00:00" datasetStatusCode="deprecated" datasetVersionLabel="v2018" iType="item" iStatusCode="draft" iEffectiveDate="2018-12-01T00:00:00" iddisplay="medmgmt-dataelement-1107" refdisplay="medmgmt-dataelement-1107" localInherit="true"/>
+        <name language="de-DE">Versionsnummer des Formats</name>
+        <desc language="de-DE">Versionsnummer des Formats</desc>
+        <valueDomain type="string"/>
+    </concept>
+</dataset>

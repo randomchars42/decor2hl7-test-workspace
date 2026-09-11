@@ -1,0 +1,15 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.2.6.60.4.1.3" effectiveDate="2017-06-04T00:00:00" statusCode="draft" versionLabel="v2017" prefix="pmp-" shortName="patientenbezogener_medikationsplan_plus" iddisplay="pmp-dataset-3" url="http://art-decor.org/decor/services/" ident="pmp-"><!--
+ This is a view of the dataset "Patientenbezogener Medikationsplan Plus" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">Patientenbezogener Medikationsplan Plus</name>
+    <desc language="de-DE">Patientenbezogener Medikationsplan Plus</desc>
+    <concept id="2.16.840.1.113883.2.6.60.4.2.3.5030" statusCode="draft" effectiveDate="2017-06-04T00:00:00" type="item" iddisplay="pmp-dataelement2017-5030">
+        <implementation markdown="Länderkennzeichen des Medikationsplans"/>
+        <inherit ref="2.16.840.1.113883.2.6.60.4.2.1.5030" effectiveDate="2014-10-27T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" iType="item" iStatusCode="final" iEffectiveDate="2014-10-27T00:00:00" iVersionLabel="Release 1" iddisplay="pmp-dataelementR1-5030" refdisplay="pmp-dataelementR1-5030" localInherit="true"/>
+        <name language="de-DE">Länderkennzeichen</name>
+        <desc language="de-DE">Länderkennzeichen des Medikationsplans</desc>
+        <valueDomain type="string"/>
+    </concept>
+</dataset>

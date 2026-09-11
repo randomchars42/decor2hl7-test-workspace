@@ -1,0 +1,49 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.777.26.1.1" effectiveDate="2018-07-10T12:22:31" statusCode="draft" prefix="konsab-" shortName="datensatz" iddisplay="konsab-dataset-1" url="http://art-decor.org/decor/services/" ident="konsab-"><!--
+ This is a view of the dataset "Datensatz" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">Datensatz</name>
+    <desc language="de-DE"/>
+    <concept id="2.16.840.1.113883.3.1937.777.26.2.128" effectiveDate="2020-03-03T09:27:47" statusCode="draft" type="group" iddisplay="konsab-dataelement-128">
+        <implementation markdown=""/>
+        <inherit ref="1.2.276.0.76.3.1.135.8.2.26" effectiveDate="2016-01-28T15:15:34" prefix="vomgt-" datasetId="1.2.276.0.76.3.1.135.8.1.1" datasetEffectiveDate="2015-12-02T09:18:17" datasetStatusCode="draft" iType="group" iStatusCode="draft" iEffectiveDate="2016-01-28T15:15:34" iddisplay="vomgt-dataelement-26" refdisplay="vomgt-dataelement-26" localInherit="false"/>
+        <name language="de-DE">Name</name>
+        <desc language="de-DE"/>
+        <concept id="2.16.840.1.113883.3.1937.777.26.2.149" effectiveDate="2020-05-18T21:46:33" statusCode="draft" type="item" iddisplay="konsab-dataelement-149" shortName="vorname">
+            <implementation shortName="vorname" markdown=""/>
+            <inherit ref="1.2.276.0.76.3.1.135.8.2.27" effectiveDate="2016-01-28T15:15:49" prefix="vomgt-" datasetId="1.2.276.0.76.3.1.135.8.1.1" datasetEffectiveDate="2015-12-02T09:18:17" datasetStatusCode="draft" iType="item" iStatusCode="draft" iEffectiveDate="2016-01-28T15:15:49" iddisplay="vomgt-dataelement-27" refdisplay="vomgt-dataelement-27" localInherit="false"/>
+            <name language="de-DE">Vorname</name>
+            <desc language="de-DE"/>
+            <valueDomain type="string"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.26.2.150" effectiveDate="2020-05-18T21:46:33" statusCode="draft" type="item" iddisplay="konsab-dataelement-150" shortName="nachname">
+            <implementation shortName="nachname" markdown=""/>
+            <inherit ref="1.2.276.0.76.3.1.135.8.2.28" effectiveDate="2016-01-28T15:16:00" prefix="vomgt-" datasetId="1.2.276.0.76.3.1.135.8.1.1" datasetEffectiveDate="2015-12-02T09:18:17" datasetStatusCode="draft" iType="item" iStatusCode="draft" iEffectiveDate="2016-01-28T15:16:00" iddisplay="vomgt-dataelement-28" refdisplay="vomgt-dataelement-28" localInherit="false"/>
+            <name language="de-DE">Nachname</name>
+            <desc language="de-DE"/>
+            <valueDomain type="string"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.26.2.151" effectiveDate="2020-05-18T21:46:33" statusCode="draft" type="item" iddisplay="konsab-dataelement-151" shortName="vorsatzwort">
+            <implementation shortName="vorsatzwort" markdown=""/>
+            <inherit ref="1.2.276.0.76.3.1.135.8.2.697" effectiveDate="2018-12-13T23:16:25" prefix="vomgt-" datasetId="1.2.276.0.76.3.1.135.8.1.1" datasetEffectiveDate="2015-12-02T09:18:17" datasetStatusCode="draft" iType="item" iStatusCode="draft" iEffectiveDate="2018-12-13T23:16:25" iddisplay="vomgt-dataelement-697" refdisplay="vomgt-dataelement-697" localInherit="false"/>
+            <name language="de-DE">Vorsatzwort</name>
+            <desc language="de-DE"/>
+            <valueDomain type="string"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.26.2.152" effectiveDate="2020-05-18T21:46:33" statusCode="draft" type="item" iddisplay="konsab-dataelement-152" shortName="namenszusatz">
+            <implementation shortName="namenszusatz" markdown=""/>
+            <inherit ref="1.2.276.0.76.3.1.135.8.2.698" effectiveDate="2018-12-13T23:17:05" prefix="vomgt-" datasetId="1.2.276.0.76.3.1.135.8.1.1" datasetEffectiveDate="2015-12-02T09:18:17" datasetStatusCode="draft" iType="item" iStatusCode="draft" iEffectiveDate="2018-12-13T23:17:05" iddisplay="vomgt-dataelement-698" refdisplay="vomgt-dataelement-698" localInherit="false"/>
+            <name language="de-DE">Namenszusatz</name>
+            <desc language="de-DE"/>
+            <valueDomain type="string"/>
+        </concept>
+        <concept id="2.16.840.1.113883.3.1937.777.26.2.153" effectiveDate="2020-05-18T21:46:33" statusCode="draft" type="item" iddisplay="konsab-dataelement-153" shortName="titel">
+            <implementation shortName="titel" markdown=""/>
+            <inherit ref="1.2.276.0.76.3.1.135.8.2.699" effectiveDate="2018-12-13T23:17:32" prefix="vomgt-" datasetId="1.2.276.0.76.3.1.135.8.1.1" datasetEffectiveDate="2015-12-02T09:18:17" datasetStatusCode="draft" iType="item" iStatusCode="draft" iEffectiveDate="2018-12-13T23:17:32" iddisplay="vomgt-dataelement-699" refdisplay="vomgt-dataelement-699" localInherit="false"/>
+            <name language="de-DE">Titel</name>
+            <desc language="de-DE"/>
+            <valueDomain type="string"/>
+        </concept>
+    </concept>
+</dataset>

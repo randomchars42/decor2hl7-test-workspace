@@ -1,0 +1,18 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.777.27.1.1" effectiveDate="2018-09-06T12:00:00" statusCode="draft" prefix="hauskomet-" shortName="hauskometdatensatz" iddisplay="hauskomet-dataset-1" url="http://art-decor.org/decor/services/" ident="hauskomet-"><!--
+ This is a view of the dataset "Hauskomet-Datensatz" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">Hauskomet-Datensatz</name>
+    <desc language="de-DE">Hauskomet-Datensatz</desc>
+    <concept id="2.16.840.1.113883.3.1937.777.27.2.10" effectiveDate="2018-09-06T12:00:00" statusCode="draft" type="item" iddisplay="hauskomet-dataelement-10">
+        <implementation markdown="Weitere eindeutige Patientenidentifikation (nicht Versicherten-ID)"/>
+        <inherit ref="2.16.840.1.113883.2.6.60.4.2.3.1020" effectiveDate="2017-06-04T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.3" datasetEffectiveDate="2017-06-04T00:00:00" datasetStatusCode="draft" datasetVersionLabel="v2017" iType="item" iStatusCode="draft" iEffectiveDate="2017-06-04T00:00:00" iddisplay="pmp-dataelement2017-1020" refdisplay="pmp-dataelement2017-1020" localInherit="false"/>
+        <name language="de-DE">Patienten-ID</name>
+        <desc language="de-DE">Weitere eindeutige Patientenidentifikation (nicht Versicherten-ID)</desc>
+        <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.4.2.1.1020" flexibility="2014-10-27T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" iType="item" iEffectiveDate="2014-10-27T00:00:00" iStatusCode="final" iVersionLabel="Release 1" refdisplay="pmp-dataelementR1-1020">
+            <name language="de-DE">Patienten-ID</name>
+        </relationship>
+        <valueDomain type="identifier"/>
+    </concept>
+</dataset>
