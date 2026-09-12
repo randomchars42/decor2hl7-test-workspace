@@ -1,0 +1,21 @@
+<valueSet xmlns:json="http://www.json.org" id="1.2.276.0.76.3.1.195.11.23" name="substance-used" displayName="Substanz-Einfluss" effectiveDate="2024-07-22T16:51:10" statusCode="draft" canonicalUri="http://aktin.org/fhir/ValueSet/aktin-vs-substance-used" lastModifiedDate="2024-07-22T16:51:10" url="http://art-decor.org/decor/services/" ident="aktin-">
+    <desc json:array="true" language="en-US">Patient unter Substanz-Einfluss?</desc>
+    <sourceCodeSystem json:array="true" id="2.16.840.1.113883.6.1" identifierName="Logical Observation Identifier Names and Codes" canonicalUri="http://loinc.org" canonicalUriDSTU2="http://loinc.org" canonicalUriSTU3="http://loinc.org" canonicalUriR4="http://loinc.org" canonicalUriR4B="http://loinc.org" canonicalUriR5="http://loinc.org"/>
+    <publishingAuthority json:array="true" name="AKTIN e. V." inherited="project">
+        <addrLine json:array="true">c/o Uniklinik RWTH Aachen</addrLine>
+        <addrLine json:array="true">Institut für Medizinische Informatik</addrLine>
+        <addrLine json:array="true">Pauwelsstraße 35</addrLine>
+        <addrLine json:array="true">52074 Aachen</addrLine>
+        <addrLine json:array="true" type="phone">Tel. +49 391 67 28186</addrLine>
+        <addrLine json:array="true" type="email">office@aktin.org</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="concept" code="LA28145-3" codeSystem="2.16.840.1.113883.6.1" displayName="Patient is not influenced by substance use" level="0" type="L"/>
+    <items json:array="true" is="concept" code="LA28144-6" codeSystem="2.16.840.1.113883.6.1" displayName="Unknown substance" level="0" type="L"/>
+    <items json:array="true" is="concept" code="LA28139-6" codeSystem="2.16.840.1.113883.6.1" displayName="Alcohol" level="0" type="L"/>
+    <items json:array="true" is="concept" code="LA22650-8" codeSystem="2.16.840.1.113883.6.1" displayName="Medication" level="0" type="L"/>
+    <items json:array="true" is="concept" code="LA28141-2" codeSystem="2.16.840.1.113883.6.1" displayName="Illegal drug" level="0" type="L"/>
+    <items json:array="true" is="concept" code="LA28142-0" codeSystem="2.16.840.1.113883.6.1" displayName="Multiple substances" level="0" type="L"/>
+    <items json:array="true" is="concept" code="LA46-8" codeSystem="2.16.840.1.113883.6.1" displayName="Other" level="0" type="L"/>
+</valueSet>

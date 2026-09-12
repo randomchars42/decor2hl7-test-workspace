@@ -1,8 +1,12 @@
-aktin.json
-out/
-state/
-model/
-site/
-mapping/
+/mapping/**
+!/mapping/
+!/mapping/**/
+!/mapping/**/cda-mapping.json
+!/mapping/**/mapping-lock.json
+/model/
+/out/
+/site/
+/state/
+/test/
 
 *.vim

@@ -1,0 +1,16 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.2.6.60.4.1.1" effectiveDate="2014-10-26T12:44:56" statusCode="final" versionLabel="Release 1" prefix="pmp-" shortName="patientenbezogener_medikationsplan" iddisplay="pmp-dataset-1" url="http://art-decor.org/decor/services/" ident="pmp-"><!--
+ This is a view of the dataset "Patientenbezogener Medikationsplan" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">Patientenbezogener Medikationsplan</name>
+    <desc language="de-DE">Patientenbezogener Medikationsplan<p/> Der patientenbezogene Medikationsplan dient hauptsächlich dem Patienten als Orientierungshilfe und Erklärungskomponente für seine Arzneimitteltherapie. <br/> Zentrales Informationsobjekt, welches als ausdruckbare Seite(n) oder im Scheckkartenformat dargestellt werden kann, aus welchem sich elektronisch repräsentierbare und
+                somit übertragbare Daten herausnehmen lassen und ggf. klinische Daten ableiten lassen.<p/> Bezüge auf "AkdÄ MP 2.0" bezeichnen folgende Spezifikation: <br/>Koordinierungsgruppe des Aktionsplans zur Verbesserung der Arzneimitteltherapiesicherheit: Spezifikation für einen patientenbezogenen Medikationsplan. Version 2.0, 15.12.2013.</desc>
+    <concept id="2.16.840.1.113883.2.6.60.4.2.1.4040" statusCode="final" versionLabel="Release 1" effectiveDate="2014-10-27T00:00:00" type="item" iddisplay="pmp-dataelementR1-4040">
+        <implementation markdown="Darreichungsform"/>
+        <name language="de-DE">Darreichungsform</name>
+        <desc language="de-DE">Darreichungsform</desc>
+        <source language="de-DE">AkdÄ MP 2.0: #26 Dafo-Code aus Anlage 6</source>
+        <valueDomain type="code"/>
+    </concept>
+</dataset>

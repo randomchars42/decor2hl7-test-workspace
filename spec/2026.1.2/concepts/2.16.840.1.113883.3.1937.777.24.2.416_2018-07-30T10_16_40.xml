@@ -1,0 +1,104 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.777.24.1.1" effectiveDate="2018-06-05T12:44:12" statusCode="draft" lastModifiedDate="2026-08-07T11:34:37" prefix="mide-" shortName="mi_datensatz" iddisplay="mide-dataset-1" url="http://art-decor.org/decor/services/" ident="mide-"><!--
+ This is a view of the dataset "MI Datensatz" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE" lastTranslated="2022-11-18T11:46:16">MI Datensatz</name>
+    <desc language="de-DE" lastTranslated="2022-11-18T11:46:16">
+        <b>MI-I-Kerndatensatz<br clear="none"/>
+                    <br clear="none"/>Methodik zur Erstellung des Kerndatensatzes</b>           
+                           <br clear="none"/>            Ausgangspunkt der Erstellung des Kerndatensatzes waren die im Rahmen der AG Data Sharing zusammengestellten Vorschläge für Audit-Abfragen, die in der Sitzung der AG Interoperabilität am 09.01.2017 diskutiert wurden. Hierbei wurden die jeweils in den Abfragen benannten Datenarten zu Modulen zusammengefasst und Vorschläge der AG-Mitglieder zur Strukturierung und
+                semantischen Auszeichnung ergänzt.            <br clear="none"/>           
+                           <br clear="none"/>            Ausschlaggebend für die Aufnahme in den Kerndatensatz waren die folgenden Kriterien:            <br clear="none"/>           
+                           <ul>
+                    <li>Relevanz für Forschung und Patientenversorgung</li>
+                    <li>Relevanz für die Use Cases der Konsortien</li>
+                    <li>Verfügbarkeit und Erschließbarkeit an den Standorten</li>
+                    <li>Strukturierungsgrad und Verfügbarkeit von Terminologien</li>
+                </ul>            Auf Basis der Verfügbarkeit wurde in der AG-Sitzung darüber hinaus eine Zuordnung von Datenarten entweder zu einem Basismodul, das konsortienübergreifend für Audit-Abfragen vorgehalten werden soll oder zu verschiedenen Erweiterungsmodulen vorgenommen, die in Abhängigkeit der Use cases der einzelnen Konsortien ergänzend vorgehalten werden können.            <br clear="none"/>           
+                           <br clear="none"/>            Die Redaktionsgruppe Kerndatensatz hat diesen Vorschlag über mehrere Telefonkonferenzen hinweg in Bezug auf die folgenden Aspekte ausgearbeitet:            <br clear="none"/>           
+                           <ul>
+                    <li>Konkretisierung des Inhalts</li>
+                    <li>Begründung für die Aufnahme in das Basis- oder ein Erweiterungsmodul</li>
+                    <li>Vorschläge für die Strukturierung und Codierung</li>
+                    <li>Vorschläge zum weiteren Vorgehen</li>
+                </ul>            Aufgrund der begrenzten Zeit musste eine Priorisierung vorgenommen und einzelne Module zur späteren Ausarbeitung zurückgestellt werden. Der Kerndatensatz ist insgesamt als “Work in Progress” zu verstehen, der im Verlauf der MI-Initiative laufend vervollständigt und an die aktuelle Entwicklung angepasst werden muss. Dies umfasst auch den Austausch von heute aus pragmatischen
+                Gründen gewählten nationalen Terminologien (z.B. unmittelbar verfügbare Codelisten aus der § 301- Abrechnungsdokumentation) gegen internationale Terminologien, sobald ihre Verfügbarkeit für die Konsortien geklärt ist (z.B. im Fall von SNOMED CT) und Ressourcen für die Etablierung entsprechender Mappings zur Verfügung stehen.            <br clear="none"/>           
+                           <br clear="none"/>            Die Weiterentwicklung des Kerndatensatzes sollte in enger Abstimmung mit der Roadmap des Nationalen Steuerungsgremiums und dem Eckpunktepapier “Mindestanforderungen Interoperabilität” der AG Interoperabilität erfolgen. Bei mehreren Modulen des Kerndatensatzes wurden im Abschnitt “Weiteres Vorgehen” Vorschläge für die weitere Ausarbeitung im Rahmen von
+                Vorbereitungs- oder Begleitprojekten im Kontext der MI-Initiative eingearbeitet.            <br clear="none"/>           
+                           <br clear="none"/>           
+                           <b>Hinweise zur Interpretation des Dokuments</b>           
+                           <br clear="none"/>           
+                           <ul style="">
+                    <li style="">Im Text wird mehrfach auf den “Paragraph 21”-Datensatz referenziert (analog zum § 21 KHEntgG). Hiermit ist ausdrücklich die inhaltliche Zusammensetzung und syntaktische Struktur, nicht jedoch die Herkunft der Daten gemeint. Ein “analog zu § 21” strukturierter Diagnosedatensatz kann (und soll) z.B. durchaus für die Bereitstellung ambulanter oder auch nicht
+                        abrechnungsrelevanter Nebendiagnosen verwendet werden.</li>
+                    <li style="">Aus der Nennung einer Datenart oder eines Datenelements in einem Modul des Kerndatensatzes ergibt sich keine Aussage darüber, ob auf eine Anfrage hin eine Bereitstellung bzw. Herausgabe von Daten der Standorte erfolgen kann. Hier sind die Vorgaben des Datenschutzes sowie Entscheidungsprozesse innerhalb der Konsortien und einzelnen Standorte (z.B. im Rahmen von Use
+                        &amp; Access Committees) ausschlaggebend.</li>
+                    <li style="">Im Dokument wird mehrfach auf SNOMED CT als geeignete Nomenklatur für die Codierung verschiedener Datenelemente verwiesen. Die Nutzung von SNOMED CT steht jedoch unter dem Vorbehalt einer entsprechenden Lizensierung, so dass hier ggf. geeignete Alternativen gesucht werden müssen.</li>
+                    <li style="">Zur Kennzeichnung des Handlungsbedarfs für die weitere Aufarbeitung wurde jede Datenart im Abschnitt “Weiteres Vorgehen” nach der folgenden Stufenskala kategorisiert: </li>
+                </ul>           
+                           <ol>
+                    <ol>
+                        <li>Datenelemente liegen bereits in strukturierter Form vor und geeignete Vorgaben zu ihrer Ablage und semantischen Codierung sind bereits etabliert (z.B. Elemente analog § 21-Datensatz)</li>
+                        <li>Datenelemente liegen strukturiert vor und es gibt geeignete Vorgaben zu ihrer Ablage und Codierung, die jedoch noch nicht umgesetzt sind (z.B. LOINC-Codierung von Laboranalyten)</li>
+                        <li>Datenelemente liegen vor, aber ihre Struktur und Aufbereitung muss noch weiter ausgearbeitet werden (z.B. Medikation)</li>
+                        <li>Datenelemente sind relevant, aber ihre Verfügbarkeit muss noch erhoben und auf dieser Basis die weitere Aufbereitung ausgearbeitet werden (z.B. strukturierte Merkmale aus Pathologie- und Radiologiebefunden)</li>
+                    </ol>Bezüge aus den einzelnen Modulen können sowohl zu einzelnen Behandlungsfällen (und damit indirekt auch zur Person) oder auch nur zur Person hergestellt werden. Querbezüge zwischen den Modulen (z.B. Verknüpfung einer Diagnose mit einer Medikation als Indikation) sind möglich (und wünschenswert), aber bislang nicht Bestandteil des Kerndatensatzes. Das Modul Strukturdaten
+                    enthält Daten ohne Patientenbezug und hat daher keine Verbindungen zu den restlichen Modulen.<br clear="none"/>
+                    <br clear="none"/>
+                    <b>Quellen: </b>
+                    <br clear="none"/>
+                    <ul>
+                        <li>Geschäftsstelle des Nationalen Steuerungsgremiums der Medizininformatik-Initiative, Redaktionsgruppe Kerndatensatz (Hrsg.): MI-I-Kerndatensatz. Stand: 10.3.2017. <a class="" href="http://www.medizininformatik-initiative.de/sites/default/files/inline-files/MII_04_Kerndatensatz_1-0.pdf" target="_blank" title="">http://www.medizininformatik-initiative.de/sites/default/files/inline-files/MII_04_Kerndatensatz_1-0.pdf</a>
+                        </li>
+                        <li>Ganslandt, Thomas; Boeker, Martin; Löbe, Matthias; Prasser, Fabian; Schepers, Josef; Semler, Sebastian C.; Thun, Sylvia; Sax, Ulrich: Der Kerndatensatz der Medizininformatik-Initiative: Ein Schritt zur Sekundärnutzung von Versorgungsdaten auf nationaler Ebene. In: <i>mdi – Forum der Medizin_Dokumentation und Medizin_Informatik</i> 20 (2018), Nr. 1, S. 17–21. Aufzufinden
+                            auch unter <a href="http://www.medizininformatik-initiative.de/sites/default/files/2018-07/2018-03_mdi_Der%20Kerndatensatz%20der%20Medizininformatik-Initiative%20Ein%20Schritt%20zur%20Sekund%C3%A4rnutzung%20von%20Versorgungsdaten%20auf%20nationaler%20Ebene.pdf" target="_blank" title="">http://www.medizininformatik-initiative.de/sites/default/files/2018-07/2018-03_mdi_Der%20Kerndatensatz%20der%20Medizininformatik-Initiative%20Ein%20Schritt%20zur%20Sekund%C3%A4rnutzung%20von%20Versorgungsdaten%20auf%20nationaler%20Ebene.pdf</a>
+                        </li>
+                    </ul>
+                </ol>
+    </desc>
+    <concept id="2.16.840.1.113883.3.1937.777.24.2.416" effectiveDate="2018-07-30T10:16:40" statusCode="draft" type="item" iddisplay="mide-dataelement-416">
+        <implementation markdown="Schwangerschaftsbefund:&#xA;schwanger - nicht schwanger - unbekannt"/>
+        <name language="de-DE" lastTranslated="2018-07-30T11:13:28">Schwangerschaftsstatus</name>
+        <desc language="de-DE" lastTranslated="2018-07-30T11:15:00">Schwangerschaftsbefund:<br clear="none"/>schwanger - nicht schwanger - unbekannt<br clear="none"/>
+        </desc>
+        <comment language="de-DE">* in Version 2013 TraumaRegister + QM der DGU ** DGU erfasst nur *** ja *** nein 28.3.2014: TR-DGU 2013 hat Ihren Datensatz upgedatet. Feld ist aktuell</comment>
+        <comment language="de-DE">options: 1 = Patient ist schwanger 2 = Patient ist nicht schwanger 0 = Information nicht erhebbar</comment>
+        <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.3.2.1.5" flexibility="2014-01-06T16:43:09" prefix="aktin-" datasetId="2.16.840.1.113883.2.6.60.3.1.1" datasetEffectiveDate="2014-09-15T00:00:00" datasetStatusCode="final" datasetVersionLabel="v2014.1-b" iType="item" iEffectiveDate="2014-01-06T16:43:09" iStatusCode="final" refdisplay="aktin-dataelement2014(1)-5">
+            <name language="de-DE">Schwanger</name>
+        </relationship>
+        <valueDomain type="code">
+            <conceptList id="2.16.840.1.113883.3.1937.777.24.2.416.4"/>
+        </valueDomain>
+        <valueSet id="1.2.276.0.76.11.46" name="Pregnancystatus" displayName="Schwangerschafts-Status" effectiveDate="2018-08-22T15:28:25" statusCode="draft">
+            <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.24.2.416.4" valueSet="1.2.276.0.76.11.46" flexibility="dynamic" effectiveDate="2018-07-30T11:12:52" valueSetName="Schwangerschafts-Status" valueSetStatusCode="draft" valueSetEffectiveDate="2018-08-22T15:28:25"/>
+            <sourceCodeSystem id="1.2.276.0.76.3.1.195.5.46" identifierName="divi-codesystem-46" canonicalUri="urn:oid:1.2.276.0.76.3.1.195.5.46" canonicalUriDSTU2="urn:oid:1.2.276.0.76.3.1.195.5.46" canonicalUriSTU3="urn:oid:1.2.276.0.76.3.1.195.5.46" canonicalUriR4="urn:oid:1.2.276.0.76.3.1.195.5.46" canonicalUriR4B="urn:oid:1.2.276.0.76.3.1.195.5.46" canonicalUriR5="urn:oid:1.2.276.0.76.3.1.195.5.46"/>
+            <sourceCodeSystem id="2.16.840.1.113883.5.1008" identifierName="Null Flavor" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriDSTU2="http://hl7.org/fhir/v3/NullFlavor" canonicalUriSTU3="http://hl7.org/fhir/v3/NullFlavor" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" context="external/hl7intl/v3/v3-NullFlavor"/>
+            <sourceCodeSystem id="2.16.840.1.113883.6.96" identifierName="SNOMED Clinical Terms" canonicalUri="http://snomed.info/sct" canonicalUriDSTU2="http://snomed.info/sct" canonicalUriSTU3="http://snomed.info/sct" canonicalUriR4="http://snomed.info/sct" canonicalUriR4B="http://snomed.info/sct" canonicalUriR5="http://snomed.info/sct"/>
+            <publishingAuthority name="Konsortium DIFUTURE" inherited="project">
+                <addrLine type="uri">https://difuture.de</addrLine>
+            </publishingAuthority>
+            <copyright language="en-US" inherited="true">This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.</copyright>
+            <conceptList id="2.16.840.1.113883.3.1937.777.24.2.416.4">
+                <concept localId="1" code="1" codeSystem="1.2.276.0.76.3.1.195.5.46" displayName="Patient ist schwanger" level="0" type="L">
+                    <name language="de-DE">Patient ist schwanger</name>
+                </concept>
+                <concept localId="2" code="60001007" codeSystem="2.16.840.1.113883.6.96" displayName="Not pregnant (finding)" level="0" type="L">
+                    <name language="de-DE">Not pregnant (finding)</name>
+                </concept>
+                <concept localId="3" code="77386006" codeSystem="2.16.840.1.113883.6.96" displayName="Patient currently pregnant (finding)" level="0" type="L">
+                    <name language="de-DE">Patient currently pregnant (finding)</name>
+                </concept>
+                <concept localId="4" code="0" codeSystem="1.2.276.0.76.3.1.195.5.46" displayName="Patient ist nicht schwanger" level="0" type="L">
+                    <name language="de-DE">Patient ist nicht schwanger</name>
+                </concept>
+                <exception localId="5" code="UNK" codeSystem="2.16.840.1.113883.5.1008" displayName="Unbekannt" level="0" type="L">
+                    <name language="de-DE">Unbekannt</name>
+                </exception>
+            </conceptList>
+        </valueSet>
+        <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.24.2.416" conceptFlexibility="2018-07-30T10:16:40" code="82810-3" codeSystem="2.16.840.1.113883.6.1" displayName="Pregnancy status" effectiveDate="2018-11-20T11:49:25" codeSystemName="Logical Observation Identifier Names and Codes"/>
+        <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.24.2.416" conceptFlexibility="2018-07-30T10:16:40" code="118185001" codeSystem="2.16.840.1.113883.6.96" displayName="Pregnancy finding (finding)" effectiveDate="2018-11-20T11:46:29" codeSystemName="SNOMED Clinical Terms"/>
+        <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.24.2.416.4" valueSet="1.2.276.0.76.11.46" flexibility="dynamic" effectiveDate="2018-07-30T11:12:52" valueSetName="Schwangerschafts-Status" valueSetStatusCode="draft" valueSetEffectiveDate="2018-08-22T15:28:25"/>
+    </concept>
+</dataset>

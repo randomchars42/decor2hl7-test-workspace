@@ -1,0 +1,22 @@
+<valueSets>
+    <project ident="aktin-">
+        <valueSet id="1.2.276.0.76.11.49" name="Pupilsizequantitative" displayName="Pupillenweite (quantitativ)" statusCode="draft" effectiveDate="2015-11-17T00:00:00">
+            <sourceCodeSystem id="1.2.276.0.76.3.1.195.5.49" identifierName="divi-codesystem-49" canonicalUri="urn:oid:1.2.276.0.76.3.1.195.5.49" canonicalUriDSTU2="urn:oid:1.2.276.0.76.3.1.195.5.49" canonicalUriSTU3="urn:oid:1.2.276.0.76.3.1.195.5.49" canonicalUriR4="urn:oid:1.2.276.0.76.3.1.195.5.49" canonicalUriR4B="urn:oid:1.2.276.0.76.3.1.195.5.49" canonicalUriR5="urn:oid:1.2.276.0.76.3.1.195.5.49"/>
+            <sourceCodeSystem id="2.16.840.1.113883.5.1008" identifierName="Null Flavor" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriDSTU2="http://hl7.org/fhir/v3/NullFlavor" canonicalUriSTU3="http://hl7.org/fhir/v3/NullFlavor" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" context="external/hl7intl/v3/v3-NullFlavor"/>
+            <publishingAuthority name="AKTIN e. V." inherited="project">
+                <addrLine>c/o Uniklinik RWTH Aachen</addrLine>
+                <addrLine>Institut für Medizinische Informatik</addrLine>
+                <addrLine>Pauwelsstraße 35</addrLine>
+                <addrLine>52074 Aachen</addrLine>
+                <addrLine type="phone">Tel. +49 391 67 28186</addrLine>
+                <addrLine type="email">office@aktin.org</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <concept code="D" codeSystem="1.2.276.0.76.3.1.195.5.49" displayName="weit" level="0" type="L"/>
+                <concept code="M" codeSystem="1.2.276.0.76.3.1.195.5.49" displayName="mittel" level="0" type="L"/>
+                <concept code="C" codeSystem="1.2.276.0.76.3.1.195.5.49" displayName="eng" level="0" type="L"/>
+                <exception code="UNK" codeSystem="2.16.840.1.113883.5.1008" displayName="Unbekannt" level="0" type="L"/>
+            </conceptList>
+        </valueSet>
+    </project>
+</valueSets>

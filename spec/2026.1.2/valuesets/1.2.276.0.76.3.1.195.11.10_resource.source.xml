@@ -1,0 +1,225 @@
+<valueSet xmlns:json="http://www.json.org" id="1.2.276.0.76.3.1.195.11.10" name="mts-presenting-diagram" displayName="MTS-Präsentationsdiagramm" effectiveDate="2024-02-11T21:23:38" statusCode="draft" canonicalUri="http://aktin.org/fhir/ValueSet/aktin-vs-mts-presenting-diagram" versionLabel="2024" lastModifiedDate="2024-07-22T10:07:43" url="http://art-decor.org/decor/services/" ident="aktin-">
+    <sourceCodeSystem json:array="true" id="1.2.276.0.76.3.1.195.5.101" identifierName="mts-presentationdiagramm" canonicalUri="http://aktin.org/fhir/CodeSystem/aktin-cs-mts-presentationdiagram" canonicalUriDSTU2="http://aktin.org/fhir/CodeSystem/aktin-cs-mts-presentationdiagram" canonicalUriSTU3="http://aktin.org/fhir/CodeSystem/aktin-cs-mts-presentationdiagram" canonicalUriR4="http://aktin.org/fhir/CodeSystem/aktin-cs-mts-presentationdiagram" canonicalUriR4B="http://aktin.org/fhir/CodeSystem/aktin-cs-mts-presentationdiagram" canonicalUriR5="http://aktin.org/fhir/CodeSystem/aktin-cs-mts-presentationdiagram" context="projects/aktin-/mts-presentationdiagram-1.2.276.0.76.3.1.195.5.101"/>
+    <publishingAuthority json:array="true" name="AKTIN e. V." inherited="project">
+        <addrLine json:array="true">c/o Uniklinik RWTH Aachen</addrLine>
+        <addrLine json:array="true">Institut für Medizinische Informatik</addrLine>
+        <addrLine json:array="true">Pauwelsstraße 35</addrLine>
+        <addrLine json:array="true">52074 Aachen</addrLine>
+        <addrLine json:array="true" type="phone">Tel. +49 391 67 28186</addrLine>
+        <addrLine json:array="true" type="email">office@aktin.org</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="concept" code="1" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Abdominelle Schmerzen bei Erwachsenen" level="0" type="L">
+        <designation json:array="true" displayName="Abdominelle Schmerzen bei Erwachsenen" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Abdominal pain in adults" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="2" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Abdominelle Schmerzen bei Kindern" level="0" type="L">
+        <designation json:array="true" displayName="Abdominelle Schmerzen bei Kindern" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Abdominal pain in children" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="3" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Abszesse und lokale Infektionen" level="0" type="L">
+        <designation json:array="true" displayName="Abszesse und lokale Infektionen" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Abscesses and local infections" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="4" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Allergie" level="0" type="L">
+        <designation json:array="true" displayName="Allergie" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Allergy" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="5" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Angriff (Zustand nach)" level="0" type="L">
+        <designation json:array="true" displayName="Angriff (Zustand nach)" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Assault" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="6" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Asthma" level="0" type="L">
+        <designation json:array="true" displayName="Asthma" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Asthma" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="7" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Atemproblem bei Erwachsenen" level="0" type="L">
+        <designation json:array="true" displayName="Atemproblem bei Erwachsenen" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Shortness of breath in adults" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="8" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Atemproblem bei Kindern" level="0" type="L">
+        <designation json:array="true" displayName="Atemproblem bei Kindern" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Shortness of breath in children" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="9" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Auffälliges Verhalten" level="0" type="L">
+        <designation json:array="true" displayName="Auffälliges Verhalten" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Behaving strangely" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="10" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Augenprobleme" level="0" type="L">
+        <designation json:array="true" displayName="Augenprobleme" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Eye problems" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="11" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Besorgte Eltern" level="0" type="L">
+        <designation json:array="true" displayName="Besorgte Eltern" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Worried parents" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="12" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Betrunkener Eindruck" level="0" type="L">
+        <designation json:array="true" displayName="Betrunkener Eindruck" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Apparently drunk" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="13" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Bisse und Stiche" level="0" type="L">
+        <designation json:array="true" displayName="Bisse und Stiche" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Bites and stings" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="14" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Chemikalienkontakt" level="0" type="L">
+        <designation json:array="true" displayName="Chemikalienkontakt" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Chemical exposure" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="15" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Diabetes" level="0" type="L">
+        <designation json:array="true" displayName="Diabetes" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Diabetes" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="16" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Durchfälle und Erbrechen" level="0" type="L">
+        <designation json:array="true" displayName="Durchfälle und Erbrechen" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Diarrhoea and vomiting" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="17" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Extremitätenprobleme" level="0" type="L">
+        <designation json:array="true" displayName="Extremitätenprobleme" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Limb problems" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="18" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Fremdkörper" level="0" type="L">
+        <designation json:array="true" displayName="Fremdkörper" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Foreign body" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="19" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Gastrointestinale Blutung" level="0" type="L">
+        <designation json:array="true" displayName="Gastrointestinale Blutung" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Gastrointestinal bleeding" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="20" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Gesichtsprobleme" level="0" type="L">
+        <designation json:array="true" displayName="Gesichtsprobleme" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Facial problems" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="21" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Halsschmerz" level="0" type="L">
+        <designation json:array="true" displayName="Halsschmerz" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Sore throat" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="22" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Hautausschläge" level="0" type="L">
+        <designation json:array="true" displayName="Hautausschläge" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Rashes" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="23" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Herzklopfen" level="0" type="L">
+        <designation json:array="true" displayName="Herzklopfen" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Palpitations" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="24" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Hinkendes Kind" level="0" type="L">
+        <designation json:array="true" displayName="Hinkendes Kind" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Limping child" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="25" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Hodenschmerz" level="0" type="L">
+        <designation json:array="true" displayName="Hodenschmerz" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Testicular pain" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="26" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Irritables (erregbares/reizbares) Kind " level="0" type="L">
+        <designation json:array="true" displayName="Irritables (erregbares/reizbares) Kind " type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Irritable child" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="27" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Körperstammverletzung" level="0" type="L">
+        <designation json:array="true" displayName="Körperstammverletzung" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Torso injury" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="28" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Kollaps" level="0" type="L">
+        <designation json:array="true" displayName="Kollaps" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Collapse" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="29" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Kopfschmerz" level="0" type="L">
+        <designation json:array="true" displayName="Kopfschmerz" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Headache" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="30" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Kopfverletzung" level="0" type="L">
+        <designation json:array="true" displayName="Kopfverletzung" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Head injury" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="31" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Krampfanfall" level="0" type="L">
+        <designation json:array="true" displayName="Krampfanfall" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Fit" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="32" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Nackenschmerz" level="0" type="L">
+        <designation json:array="true" displayName="Nackenschmerz" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Neck pain" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="33" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Ohrenprobleme" level="0" type="L">
+        <designation json:array="true" displayName="Ohrenprobleme" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Ear problems" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="34" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Psychiatrische Erkrankung" level="0" type="L">
+        <designation json:array="true" displayName="Psychiatrische Erkrankung" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Mental illness" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="35" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Rückenschmerz" level="0" type="L">
+        <designation json:array="true" displayName="Rückenschmerz" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Back pain" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="36" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Schreiendes Baby" level="0" type="L">
+        <designation json:array="true" displayName="Schreiendes Baby" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Crying baby" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="37" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Schwangerschaftsproblem" level="0" type="L">
+        <designation json:array="true" displayName="Schwangerschaftsproblem" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Pregnancy" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="38" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Schweres Trauma" level="0" type="L">
+        <designation json:array="true" displayName="Schweres Trauma" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Major trauma" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="39" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Selbstverletzung" level="0" type="L">
+        <designation json:array="true" displayName="Selbstverletzung" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Self-harm" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="40" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Sexualinfektion" level="0" type="L">
+        <designation json:array="true" displayName="Sexualinfektion" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Sexually acquired infection" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="41" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Stürze" level="0" type="L">
+        <designation json:array="true" displayName="Stürze" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Falls" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="42" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Thoraxschmerz" level="0" type="L">
+        <designation json:array="true" displayName="Thoraxschmerz" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Chest pain" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="43" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Überdosierung und Vergiftung" level="0" type="L">
+        <designation json:array="true" displayName="Überdosierung und Vergiftung" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Overdose and poisoning" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="44" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Unwohlsein bei Erwachsenen" level="0" type="L">
+        <designation json:array="true" displayName="Unwohlsein bei Erwachsenen" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Unwell adult" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="45" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Unwohlsein bei Kindern" level="0" type="L">
+        <designation json:array="true" displayName="Unwohlsein bei Kindern" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Unwell child" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="46" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Unwohlsein bei Neugeborenen" level="0" type="L">
+        <designation json:array="true" displayName="Unwohlsein bei Neugeborenen" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Unwell newborn" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="47" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Unwohlsein bei Säuglingen" level="0" type="L">
+        <designation json:array="true" displayName="Unwohlsein bei Säuglingen" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Unwell baby" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="48" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Urologische Probleme" level="0" type="L">
+        <designation json:array="true" displayName="Urologische Probleme" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Urinary problems" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="49" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Vaginale Blutung" level="0" type="L">
+        <designation json:array="true" displayName="Vaginale Blutung" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="PV bleeding" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="50" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Verbrennungen und Verbrühungen" level="0" type="L">
+        <designation json:array="true" displayName="Verbrennungen und Verbrühungen" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Burns and scalds" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="51" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Wunden" level="0" type="L">
+        <designation json:array="true" displayName="Wunden" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Wounds" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="52" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Zahnprobleme" level="0" type="L">
+        <designation json:array="true" displayName="Zahnprobleme" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="Dental problems" type="preferred" language="en-US"/>
+    </items>
+    <items json:array="true" is="concept" code="53" codeSystem="1.2.276.0.76.3.1.195.5.101" codeSystemName="MTS-Präsentationsdiagramm" codeSystemVersion="2019-08-16T00:00:00" displayName="Generelle Indikatoren" level="0" type="L">
+        <designation json:array="true" displayName="Generelle Indikatoren" type="preferred" language="de-DE"/>
+        <designation json:array="true" displayName="General indicators" type="preferred" language="en-US"/>
+    </items>
+</valueSet>

@@ -1,0 +1,207 @@
+<valueSets>
+    <project ident="aktin-">
+        <valueSet id="1.2.276.0.76.11.61" name="CEDIS30" displayName="CEDIS Presenting Complaint List 3.0" effectiveDate="2016-02-21T00:00:00" statusCode="draft" versionLabel="3.0" canonicalUri="https://aktin.org/fhir/CodeSystem/aktin-cs-cedis30" lastModifiedDate="2025-05-26T18:38:53">
+            <sourceCodeSystem id="1.2.276.0.76.5.439" identifierName="CEDIS" canonicalUri="urn:oid:1.2.276.0.76.5.439" canonicalUriDSTU2="urn:oid:1.2.276.0.76.5.439" canonicalUriSTU3="urn:oid:1.2.276.0.76.5.439" canonicalUriR4="urn:oid:1.2.276.0.76.5.439" canonicalUriR4B="urn:oid:1.2.276.0.76.5.439" canonicalUriR5="urn:oid:1.2.276.0.76.5.439"/>
+            <sourceCodeSystem id="2.16.840.1.113883.5.1008" identifierName="Null Flavor" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriDSTU2="http://hl7.org/fhir/v3/NullFlavor" canonicalUriSTU3="http://hl7.org/fhir/v3/NullFlavor" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" context="external/hl7intl/v3/v3-NullFlavor"/>
+            <publishingAuthority name="AKTIN e. V." inherited="project">
+                <addrLine>c/o Uniklinik RWTH Aachen</addrLine>
+                <addrLine>Institut für Medizinische Informatik</addrLine>
+                <addrLine>Pauwelsstraße 35</addrLine>
+                <addrLine>52074 Aachen</addrLine>
+                <addrLine type="phone">Tel. +49 391 67 28186</addrLine>
+                <addrLine type="email">office@aktin.org</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <concept code="CV" codeSystem="1.2.276.0.76.5.439" displayName="Kardiovaskulär" level="0" type="L"/>
+                <concept code="001" codeSystem="1.2.276.0.76.5.439" displayName="Herzstillstand (nicht traumatisch)" level="1" type="L"/>
+                <concept code="002" codeSystem="1.2.276.0.76.5.439" displayName="Herzstillstand (traumatisch)" level="1" type="L"/>
+                <concept code="003" codeSystem="1.2.276.0.76.5.439" displayName="Brustschmerz (kardial)" level="1" type="L"/>
+                <concept code="004" codeSystem="1.2.276.0.76.5.439" displayName="Brustschmerz (nicht kardial)" level="1" type="L"/>
+                <concept code="005" codeSystem="1.2.276.0.76.5.439" displayName="Palpitationen/unregelmäßiger Herzschlag" level="1" type="L"/>
+                <concept code="006" codeSystem="1.2.276.0.76.5.439" displayName="Hypertonie" level="1" type="L"/>
+                <concept code="007" codeSystem="1.2.276.0.76.5.439" displayName="Allgemeine Schwäche" level="1" type="L"/>
+                <concept code="008" codeSystem="1.2.276.0.76.5.439" displayName="Synkope/Präsynkope" level="1" type="L"/>
+                <concept code="009" codeSystem="1.2.276.0.76.5.439" displayName="Ödem, generalisiert" level="1" type="L"/>
+                <concept code="010" codeSystem="1.2.276.0.76.5.439" displayName="Beinschwellung/Ödem" level="1" type="L"/>
+                <concept code="011" codeSystem="1.2.276.0.76.5.439" displayName="Kühle, pulslose Extremität" level="1" type="L"/>
+                <concept code="012" codeSystem="1.2.276.0.76.5.439" displayName="Eine Extremität gerötet, überwärmt" level="1" type="L"/>
+                <concept code="HNE" codeSystem="1.2.276.0.76.5.439" displayName="HNO (Ohren)" level="0" type="L"/>
+                <concept code="051" codeSystem="1.2.276.0.76.5.439" displayName="Ohrenschmerzen" level="1" type="L"/>
+                <concept code="052" codeSystem="1.2.276.0.76.5.439" displayName="Fremdkörper im Ohr" level="1" type="L"/>
+                <concept code="053" codeSystem="1.2.276.0.76.5.439" displayName="Hörverlust" level="1" type="L"/>
+                <concept code="054" codeSystem="1.2.276.0.76.5.439" displayName="Tinnitus" level="1" type="L"/>
+                <concept code="055" codeSystem="1.2.276.0.76.5.439" displayName="Ausfluss aus dem Ohr" level="1" type="L"/>
+                <concept code="056" codeSystem="1.2.276.0.76.5.439" displayName="Ohrverletzung" level="1" type="L"/>
+                <concept code="HNM" codeSystem="1.2.276.0.76.5.439" displayName="HNO (Mund, Rachen, Hals)" level="0" type="L"/>
+                <concept code="101" codeSystem="1.2.276.0.76.5.439" displayName="Zahn-/Zahnfleischprobleme" level="1" type="L"/>
+                <concept code="102" codeSystem="1.2.276.0.76.5.439" displayName="Trauma Gesicht" level="1" type="L"/>
+                <concept code="103" codeSystem="1.2.276.0.76.5.439" displayName="Halsschmerzen (wunder Rachen)" level="1" type="L"/>
+                <concept code="104" codeSystem="1.2.276.0.76.5.439" displayName="Halsschwellung/-schmerzen" level="1" type="L"/>
+                <concept code="105" codeSystem="1.2.276.0.76.5.439" displayName="Trauma Hals" level="1" type="L"/>
+                <concept code="106" codeSystem="1.2.276.0.76.5.439" displayName="Schluckbeschwerden/Dysphagie" level="1" type="L"/>
+                <concept code="107" codeSystem="1.2.276.0.76.5.439" displayName="Schmerzen im Gesicht (nicht traumatisch, nicht dental)" level="1" type="L"/>
+                <concept code="HNN" codeSystem="1.2.276.0.76.5.439" displayName="HNO (Nase)" level="0" type="L"/>
+                <concept code="151" codeSystem="1.2.276.0.76.5.439" displayName="Nasenbluten" level="1" type="L"/>
+                <concept code="152" codeSystem="1.2.276.0.76.5.439" displayName="Verstopfte Nase/Heuschnupfen" level="1" type="L"/>
+                <concept code="153" codeSystem="1.2.276.0.76.5.439" displayName="Fremdkörper in der Nase" level="1" type="L"/>
+                <concept code="154" codeSystem="1.2.276.0.76.5.439" displayName="Beschwerden eines Infektes der oberen Luftwege" level="1" type="L"/>
+                <concept code="155" codeSystem="1.2.276.0.76.5.439" displayName="Trauma Nase" level="1" type="L"/>
+                <concept code="EV" codeSystem="1.2.276.0.76.5.439" displayName="Umweltbedingt" level="0" type="L"/>
+                <concept code="201" codeSystem="1.2.276.0.76.5.439" displayName="Erfrierung/Kälteverletzung" level="1" type="L"/>
+                <concept code="202" codeSystem="1.2.276.0.76.5.439" displayName="Schädliche Inhalation" level="1" type="L"/>
+                <concept code="203" codeSystem="1.2.276.0.76.5.439" displayName="Stromunfall" level="1" type="L"/>
+                <concept code="204" codeSystem="1.2.276.0.76.5.439" displayName="Exposition gegenüber Chemikalien" level="1" type="L"/>
+                <concept code="205" codeSystem="1.2.276.0.76.5.439" displayName="Unterkühlung" level="1" type="L"/>
+                <concept code="206" codeSystem="1.2.276.0.76.5.439" displayName="Beinahe-Ertrinken" level="1" type="L"/>
+                <concept code="GI" codeSystem="1.2.276.0.76.5.439" displayName="Gastrointestinal " level="0" type="L"/>
+                <concept code="251" codeSystem="1.2.276.0.76.5.439" displayName="Bauchschmerzen" level="1" type="L"/>
+                <concept code="252" codeSystem="1.2.276.0.76.5.439" displayName="Appetitlosigkeit" level="1" type="L"/>
+                <concept code="253" codeSystem="1.2.276.0.76.5.439" displayName="Verstopfung" level="1" type="L"/>
+                <concept code="254" codeSystem="1.2.276.0.76.5.439" displayName="Durchfall" level="1" type="L"/>
+                <concept code="255" codeSystem="1.2.276.0.76.5.439" displayName="Fremdkörper im Rektum" level="1" type="L"/>
+                <concept code="256" codeSystem="1.2.276.0.76.5.439" displayName="Leistenschmerzen/-schwellung" level="1" type="L"/>
+                <concept code="257" codeSystem="1.2.276.0.76.5.439" displayName="Übelkeit und/oder Erbrechen" level="1" type="L"/>
+                <concept code="258" codeSystem="1.2.276.0.76.5.439" displayName="Rektale/perineale Schmerzen" level="1" type="L"/>
+                <concept code="259" codeSystem="1.2.276.0.76.5.439" displayName="Bluterbrechen" level="1" type="L"/>
+                <concept code="260" codeSystem="1.2.276.0.76.5.439" displayName="Peranaler Blutabgang/Teerstuhl" level="1" type="L"/>
+                <concept code="261" codeSystem="1.2.276.0.76.5.439" displayName="Ikterus" level="1" type="L"/>
+                <concept code="262" codeSystem="1.2.276.0.76.5.439" displayName="Schluckauf" level="1" type="L"/>
+                <concept code="263" codeSystem="1.2.276.0.76.5.439" displayName="Abdominelle Raumforderung/gespanntes Abdomen" level="1" type="L"/>
+                <concept code="264" codeSystem="1.2.276.0.76.5.439" displayName="Trauma anal/rektal" level="1" type="L"/>
+                <concept code="265" codeSystem="1.2.276.0.76.5.439" displayName="Fremdkörper oral/ösophageal" level="1" type="L"/>
+                <concept code="266" codeSystem="1.2.276.0.76.5.439" displayName="Trinkstörung des Neugeborenen" level="1" type="L"/>
+                <concept code="267" codeSystem="1.2.276.0.76.5.439" displayName="Neugeborenenikterus" level="1" type="L"/>
+                <concept code="GU" codeSystem="1.2.276.0.76.5.439" displayName="Urogenital" level="0" type="L"/>
+                <concept code="301" codeSystem="1.2.276.0.76.5.439" displayName="Flankenschmerz" level="1" type="L"/>
+                <concept code="302" codeSystem="1.2.276.0.76.5.439" displayName="Hämaturie" level="1" type="L"/>
+                <concept code="303" codeSystem="1.2.276.0.76.5.439" displayName="Genitaler Ausfluss/Läsion" level="1" type="L"/>
+                <concept code="304" codeSystem="1.2.276.0.76.5.439" displayName="Penisschwellung" level="1" type="L"/>
+                <concept code="305" codeSystem="1.2.276.0.76.5.439" displayName="Skrotale Schmerzen und/oder Schwellung" level="1" type="L"/>
+                <concept code="306" codeSystem="1.2.276.0.76.5.439" displayName="Harnverhalt" level="1" type="L"/>
+                <concept code="307" codeSystem="1.2.276.0.76.5.439" displayName="Beschwerden eines Harnwegsinfektes" level="1" type="L"/>
+                <concept code="308" codeSystem="1.2.276.0.76.5.439" displayName="Oligurie" level="1" type="L"/>
+                <concept code="309" codeSystem="1.2.276.0.76.5.439" displayName="Polyurie" level="1" type="L"/>
+                <concept code="310" codeSystem="1.2.276.0.76.5.439" displayName="Trauma genital" level="1" type="L"/>
+                <concept code="MH" codeSystem="1.2.276.0.76.5.439" displayName="Psychische Verfassung" level="0" type="L"/>
+                <concept code="351" codeSystem="1.2.276.0.76.5.439" displayName="Depression/Suizidalität/absichtliche Selbstschädigung" level="1" type="L"/>
+                <concept code="352" codeSystem="1.2.276.0.76.5.439" displayName="Angst/situationsbezogene Krise" level="1" type="L"/>
+                <concept code="353" codeSystem="1.2.276.0.76.5.439" displayName="Halluzinationen/Wahnvorstellungen" level="1" type="L"/>
+                <concept code="354" codeSystem="1.2.276.0.76.5.439" displayName="Schlafstörung" level="1" type="L"/>
+                <concept code="355" codeSystem="1.2.276.0.76.5.439" displayName="Gewalttätiges Verhalten/Fremdgefährdung" level="1" type="L"/>
+                <concept code="356" codeSystem="1.2.276.0.76.5.439" displayName="Soziales Problem" level="1" type="L"/>
+                <concept code="358" codeSystem="1.2.276.0.76.5.439" displayName="Sonderbares Verhalten" level="1" type="L"/>
+                <concept code="359" codeSystem="1.2.276.0.76.5.439" displayName="Sorge um das Wohlergehen des Patienten" level="1" type="L"/>
+                <concept code="360" codeSystem="1.2.276.0.76.5.439" displayName="Kindliche Verhaltensauffälligkeit" level="1" type="L"/>
+                <concept code="NC" codeSystem="1.2.276.0.76.5.439" displayName="Neurologisch" level="0" type="L"/>
+                <concept code="401" codeSystem="1.2.276.0.76.5.439" displayName="Veränderter Bewußtseinszustand" level="1" type="L"/>
+                <concept code="402" codeSystem="1.2.276.0.76.5.439" displayName="Verwirrtheit" level="1" type="L"/>
+                <concept code="403" codeSystem="1.2.276.0.76.5.439" displayName="Schwindel" level="1" type="L"/>
+                <concept code="404" codeSystem="1.2.276.0.76.5.439" displayName="Kopfschmerz" level="1" type="L"/>
+                <concept code="405" codeSystem="1.2.276.0.76.5.439" displayName="Krampfanfall" level="1" type="L"/>
+                <concept code="406" codeSystem="1.2.276.0.76.5.439" displayName="Gangstörung/Ataxie" level="1" type="L"/>
+                <concept code="407" codeSystem="1.2.276.0.76.5.439" displayName="Kopfverletzung" level="1" type="L"/>
+                <concept code="408" codeSystem="1.2.276.0.76.5.439" displayName="Zittern" level="1" type="L"/>
+                <concept code="409" codeSystem="1.2.276.0.76.5.439" displayName="Schwäche in den Extremitäten/Symptome eines Schlaganfalls oder TIA" level="1" type="L"/>
+                <concept code="410" codeSystem="1.2.276.0.76.5.439" displayName="Sensibilitätsstörung/Parästhesie" level="1" type="L"/>
+                <concept code="411" codeSystem="1.2.276.0.76.5.439" displayName="Schlaffes Kind" level="1" type="L"/>
+                <concept code="OGY" codeSystem="1.2.276.0.76.5.439" displayName="Geburtshilfe/Gynäkologie" level="0" type="L"/>
+                <concept code="451" codeSystem="1.2.276.0.76.5.439" displayName="Menstruationsbeschwerden" level="1" type="L"/>
+                <concept code="452" codeSystem="1.2.276.0.76.5.439" displayName="Fremdkörper in der Vagina" level="1" type="L"/>
+                <concept code="453" codeSystem="1.2.276.0.76.5.439" displayName="Vaginaler Ausfluss" level="1" type="L"/>
+                <concept code="454" codeSystem="1.2.276.0.76.5.439" displayName="Sexueller Übergriff" level="1" type="L"/>
+                <concept code="455" codeSystem="1.2.276.0.76.5.439" displayName="Vaginale Blutung" level="1" type="L"/>
+                <concept code="456" codeSystem="1.2.276.0.76.5.439" displayName="Schamlippenschwellung" level="1" type="L"/>
+                <concept code="457" codeSystem="1.2.276.0.76.5.439" displayName="Schwangerschaftsprobleme ≤ 20. SSW" level="1" type="L"/>
+                <concept code="458" codeSystem="1.2.276.0.76.5.439" displayName="Schwangerschaftsprobleme &gt; 20. SSW" level="1" type="L"/>
+                <concept code="460" codeSystem="1.2.276.0.76.5.439" displayName="Vaginale Schmerzen/Schmerzen beim Geschlechtsverkehr" level="1" type="L"/>
+                <concept code="EC" codeSystem="1.2.276.0.76.5.439" displayName="Augenheilkunde" level="0" type="L"/>
+                <concept code="502" codeSystem="1.2.276.0.76.5.439" displayName="Exposition des Auges gegenüber Chemikalien" level="1" type="L"/>
+                <concept code="503" codeSystem="1.2.276.0.76.5.439" displayName="Fremdkörper im Auge" level="1" type="L"/>
+                <concept code="504" codeSystem="1.2.276.0.76.5.439" displayName="Sehstörung" level="1" type="L"/>
+                <concept code="505" codeSystem="1.2.276.0.76.5.439" displayName="Augenschmerzen" level="1" type="L"/>
+                <concept code="506" codeSystem="1.2.276.0.76.5.439" displayName="Rote Augen, Ausfluss aus dem Auge" level="1" type="L"/>
+                <concept code="507" codeSystem="1.2.276.0.76.5.439" displayName="Lichtscheu" level="1" type="L"/>
+                <concept code="508" codeSystem="1.2.276.0.76.5.439" displayName="Doppelbilder" level="1" type="L"/>
+                <concept code="509" codeSystem="1.2.276.0.76.5.439" displayName="Periorbitale Schwellung" level="1" type="L"/>
+                <concept code="510" codeSystem="1.2.276.0.76.5.439" displayName="Trauma Auge" level="1" type="L"/>
+                <concept code="511" codeSystem="1.2.276.0.76.5.439" displayName="Kontrolluntersuchung der Augen" level="1" type="L"/>
+                <concept code="OC" codeSystem="1.2.276.0.76.5.439" displayName="Orthopädisch/Unfall-chirurgisch" level="0" type="L"/>
+                <concept code="551" codeSystem="1.2.276.0.76.5.439" displayName="Rückenschmerzen" level="1" type="L"/>
+                <concept code="552" codeSystem="1.2.276.0.76.5.439" displayName="Traumatische Rücken-/Wirbelsäulenverletzung" level="1" type="L"/>
+                <concept code="553" codeSystem="1.2.276.0.76.5.439" displayName="Amputation" level="1" type="L"/>
+                <concept code="554" codeSystem="1.2.276.0.76.5.439" displayName="Schmerzen obere Extremität" level="1" type="L"/>
+                <concept code="555" codeSystem="1.2.276.0.76.5.439" displayName="Schmerzen untere Extremität" level="1" type="L"/>
+                <concept code="556" codeSystem="1.2.276.0.76.5.439" displayName="Verletzung obere Extremität" level="1" type="L"/>
+                <concept code="557" codeSystem="1.2.276.0.76.5.439" displayName="Verletzung untere Extremität" level="1" type="L"/>
+                <concept code="558" codeSystem="1.2.276.0.76.5.439" displayName="Gelenkschwellung" level="1" type="L"/>
+                <concept code="559" codeSystem="1.2.276.0.76.5.439" displayName="Kindliche Gangstörung/Schmerzen beim Gehen" level="1" type="L"/>
+                <concept code="RC" codeSystem="1.2.276.0.76.5.439" displayName="Respiratorisch" level="0" type="L"/>
+                <concept code="651" codeSystem="1.2.276.0.76.5.439" displayName="Luftnot" level="1" type="L"/>
+                <concept code="652" codeSystem="1.2.276.0.76.5.439" displayName="Atemstillstand" level="1" type="L"/>
+                <concept code="653" codeSystem="1.2.276.0.76.5.439" displayName="Husten/Verschleimung" level="1" type="L"/>
+                <concept code="654" codeSystem="1.2.276.0.76.5.439" displayName="Hyperventilation" level="1" type="L"/>
+                <concept code="655" codeSystem="1.2.276.0.76.5.439" displayName="Bluthusten" level="1" type="L"/>
+                <concept code="656" codeSystem="1.2.276.0.76.5.439" displayName="Fremdkörper in den Atemwegen" level="1" type="L"/>
+                <concept code="657" codeSystem="1.2.276.0.76.5.439" displayName="Allergische Reaktion" level="1" type="L"/>
+                <concept code="658" codeSystem="1.2.276.0.76.5.439" displayName="Stridor" level="1" type="L"/>
+                <concept code="659" codeSystem="1.2.276.0.76.5.439" displayName="Giemen ohne weitere Beschwerden" level="1" type="L"/>
+                <concept code="660" codeSystem="1.2.276.0.76.5.439" displayName="Apnoeanfälle bei Säuglingen" level="1" type="L"/>
+                <concept code="661" codeSystem="1.2.276.0.76.5.439" displayName="Grippeähnliche Erkrankung" level="1" type="L"/>
+                <concept code="SK" codeSystem="1.2.276.0.76.5.439" displayName="Haut" level="0" type="L"/>
+                <concept code="701" codeSystem="1.2.276.0.76.5.439" displayName="Biss" level="1" type="L"/>
+                <concept code="702" codeSystem="1.2.276.0.76.5.439" displayName="Insektenstich" level="1" type="L"/>
+                <concept code="703" codeSystem="1.2.276.0.76.5.439" displayName="Abschürfung" level="1" type="L"/>
+                <concept code="704" codeSystem="1.2.276.0.76.5.439" displayName="Riss-/Quetsch-/Schnitt-/Stichwunde" level="1" type="L"/>
+                <concept code="705" codeSystem="1.2.276.0.76.5.439" displayName="Verbrennung" level="1" type="L"/>
+                <concept code="706" codeSystem="1.2.276.0.76.5.439" displayName="Kontakt mit Blut oder Körperflüssigkeiten" level="1" type="L"/>
+                <concept code="707" codeSystem="1.2.276.0.76.5.439" displayName="Juckreiz" level="1" type="L"/>
+                <concept code="708" codeSystem="1.2.276.0.76.5.439" displayName="Hautausschlag" level="1" type="L"/>
+                <concept code="709" codeSystem="1.2.276.0.76.5.439" displayName="Lokalisierte Schwellung/Rötung" level="1" type="L"/>
+                <concept code="710" codeSystem="1.2.276.0.76.5.439" displayName="Wundkontrolle" level="1" type="L"/>
+                <concept code="711" codeSystem="1.2.276.0.76.5.439" displayName="Sonstige Hautprobleme" level="1" type="L"/>
+                <concept code="712" codeSystem="1.2.276.0.76.5.439" displayName="Schwellung/Beule/Schwiele" level="1" type="L"/>
+                <concept code="713" codeSystem="1.2.276.0.76.5.439" displayName="Rötung/Spannungsgefühl in der Brust" level="1" type="L"/>
+                <concept code="714" codeSystem="1.2.276.0.76.5.439" displayName="Ausschluß eines Parasitenbefalls" level="1" type="L"/>
+                <concept code="715" codeSystem="1.2.276.0.76.5.439" displayName="Zyanose" level="1" type="L"/>
+                <concept code="716" codeSystem="1.2.276.0.76.5.439" displayName="Spontane Hauteinblutungen" level="1" type="L"/>
+                <concept code="717" codeSystem="1.2.276.0.76.5.439" displayName="Fremdkörper in der Haut" level="1" type="L"/>
+                <concept code="718" codeSystem="1.2.276.0.76.5.439" displayName="Nagelprobleme" level="1" type="L"/>
+                <concept code="SA" codeSystem="1.2.276.0.76.5.439" displayName="Substanzmissbrauch" level="0" type="L"/>
+                <concept code="751" codeSystem="1.2.276.0.76.5.439" displayName="Substanzmissbrauch/Intoxikation" level="1" type="L"/>
+                <concept code="752" codeSystem="1.2.276.0.76.5.439" displayName="Einnahme einer Überdosierung" level="1" type="L"/>
+                <concept code="753" codeSystem="1.2.276.0.76.5.439" displayName="Substanzentzug" level="1" type="L"/>
+                <concept code="TR" codeSystem="1.2.276.0.76.5.439" displayName="Trauma" level="0" type="L"/>
+                <concept code="801" codeSystem="1.2.276.0.76.5.439" displayName="Schweres Trauma - penetrierend" level="1" type="L"/>
+                <concept code="802" codeSystem="1.2.276.0.76.5.439" displayName="Schweres Trauma - stumpf" level="1" type="L"/>
+                <concept code="803" codeSystem="1.2.276.0.76.5.439" displayName="Isoliertes Thoraxtrauma - penetrierend" level="1" type="L"/>
+                <concept code="804" codeSystem="1.2.276.0.76.5.439" displayName="Isoliertes Thoraxtrauma - stumpf" level="1" type="L"/>
+                <concept code="805" codeSystem="1.2.276.0.76.5.439" displayName="Isoliertes Abdominaltrauma - penetrierend" level="1" type="L"/>
+                <concept code="806" codeSystem="1.2.276.0.76.5.439" displayName="Isoliertes Abdominaltrauma - stumpf" level="1" type="L"/>
+                <concept code="MC" codeSystem="1.2.276.0.76.5.439" displayName="Allgemeine und sonstige Beschwerden" level="0" type="L"/>
+                <concept code="851" codeSystem="1.2.276.0.76.5.439" displayName="Exposition gegenüber einer übertragbaren Krankheit" level="1" type="L"/>
+                <concept code="852" codeSystem="1.2.276.0.76.5.439" displayName="Fieber" level="1" type="L"/>
+                <concept code="853" codeSystem="1.2.276.0.76.5.439" displayName="Hyperglykämie" level="1" type="L"/>
+                <concept code="854" codeSystem="1.2.276.0.76.5.439" displayName="Hypoglykämie" level="1" type="L"/>
+                <concept code="855" codeSystem="1.2.276.0.76.5.439" displayName="Direkte Überweisung/Weiterleitung" level="1" type="L"/>
+                <concept code="856" codeSystem="1.2.276.0.76.5.439" displayName="Verbandswechsel" level="1" type="L"/>
+                <concept code="857" codeSystem="1.2.276.0.76.5.439" displayName="Entfernung von Klammern/Nähten" level="1" type="L"/>
+                <concept code="858" codeSystem="1.2.276.0.76.5.439" displayName="Gipskontrolle" level="1" type="L"/>
+                <concept code="859" codeSystem="1.2.276.0.76.5.439" displayName="Bildgebung/Blutuntersuchung" level="1" type="L"/>
+                <concept code="860" codeSystem="1.2.276.0.76.5.439" displayName="Problem mit Medizinprodukt" level="1" type="L"/>
+                <concept code="861" codeSystem="1.2.276.0.76.5.439" displayName="Verschreibung/Bedarf an Medikamenten" level="1" type="L"/>
+                <concept code="862" codeSystem="1.2.276.0.76.5.439" displayName="Entfernung Ring" level="1" type="L"/>
+                <concept code="863" codeSystem="1.2.276.0.76.5.439" displayName="Auffällige Ergebnisse Labor/Bildgebung" level="1" type="L"/>
+                <concept code="864" codeSystem="1.2.276.0.76.5.439" displayName="Blässe/Anämie" level="1" type="L"/>
+                <concept code="865" codeSystem="1.2.276.0.76.5.439" displayName="Postoperative Komplikationen" level="1" type="L"/>
+                <concept code="866" codeSystem="1.2.276.0.76.5.439" displayName="Geringfügige unspezifische Beschwerden" level="1" type="L"/>
+                <concept code="867" codeSystem="1.2.276.0.76.5.439" displayName="Unstillbares Schreien" level="1" type="L"/>
+                <concept code="868" codeSystem="1.2.276.0.76.5.439" displayName="Angeborene Probleme bei Kindern" level="1" type="L"/>
+                <concept code="869" codeSystem="1.2.276.0.76.5.439" displayName="Neugeborenes" level="1" type="L"/>
+                <concept code="870" codeSystem="1.2.276.0.76.5.439" displayName="Intravenöse Therapie" level="1" type="L"/>
+                <concept code="998" codeSystem="1.2.276.0.76.5.439" displayName="Patient aufgenommen und vor Ersteinschätzung wieder gegangen" level="0" type="L"/>
+                <exception code="OTH" codeSystem="2.16.840.1.113883.5.1008" displayName="Sonstiges" level="0" type="L"/>
+                <exception code="UNK" codeSystem="2.16.840.1.113883.5.1008" displayName="Unbekannt" level="0" type="L"/>
+            </conceptList>
+        </valueSet>
+    </project>
+</valueSets>

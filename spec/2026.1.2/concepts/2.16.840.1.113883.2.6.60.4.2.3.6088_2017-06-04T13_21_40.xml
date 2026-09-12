@@ -1,0 +1,96 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.2.6.60.4.1.3" effectiveDate="2017-06-04T00:00:00" statusCode="draft" versionLabel="v2017" prefix="pmp-" shortName="patientenbezogener_medikationsplan_plus" iddisplay="pmp-dataset-3" url="http://art-decor.org/decor/services/" ident="pmp-"><!--
+ This is a view of the dataset "Patientenbezogener Medikationsplan Plus" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">Patientenbezogener Medikationsplan Plus</name>
+    <desc language="de-DE">Patientenbezogener Medikationsplan Plus</desc>
+    <concept id="2.16.840.1.113883.2.6.60.4.2.3.6088" statusCode="draft" effectiveDate="2017-06-04T13:21:40" type="group" iddisplay="pmp-dataelement2017-6088">
+        <implementation markdown=""/>
+        <name language="de-DE">Dosierung</name>
+        <desc language="de-DE"/>
+        <concept id="2.16.840.1.113883.2.6.60.4.2.3.6089" effectiveDate="2017-06-04T13:23:30" statusCode="draft" type="item" iddisplay="pmp-dataelement2017-6089" shortName="reihenfolge">
+            <implementation shortName="reihenfolge" markdown="Sequenznummer des Dosierungseintrags"/>
+            <name language="de-DE">Reihenfolge</name>
+            <desc language="de-DE">Sequenznummer des Dosierungseintrags</desc>
+            <valueDomain type="count"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.4.2.3.6090" statusCode="draft" effectiveDate="2017-06-04T13:25:48" type="item" iddisplay="pmp-dataelement2017-6090" shortName="freitext">
+            <implementation shortName="freitext" markdown="Dosierung im Freitext, wenn diese nicht strukturiert angegeben wird"/>
+            <name language="de-DE">Freitext</name>
+            <desc language="de-DE">Dosierung im Freitext, wenn diese nicht strukturiert angegeben wird</desc>
+            <valueDomain type="string"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.4.2.3.465" statusCode="draft" effectiveDate="2017-06-04T00:00:00" type="group" iddisplay="pmp-dataelement2017-465" shortName="zeitangabe">
+            <implementation shortName="zeitangabe" markdown="Zeitangabe zur Einnahme als Teil des Dosierschemas"/>
+            <name language="de-DE">Zeitangabe</name>
+            <desc language="de-DE">Zeitangabe zur Einnahme als Teil des Dosierschemas</desc>
+            <source language="de-DE">AkdÄ MP 2.0: #27 Dosierschema X-Y-Z; Dosierschema W-X-Y-Z; Dosierschema als Freitext</source>
+            <relationship type="SPEC" ref="2.16.840.1.113883.2.6.60.4.2.1.465" flexibility="2014-10-27T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" iType="item" iEffectiveDate="2014-10-27T00:00:00" iStatusCode="final" iVersionLabel="Release 1" refdisplay="pmp-dataelementR1-465">
+                <name language="de-DE">Dosierschema</name>
+            </relationship>
+            <concept id="2.16.840.1.113883.2.6.60.4.2.3.6097" statusCode="draft" effectiveDate="2017-06-04T13:41:31" type="item" iddisplay="pmp-dataelement2017-6097" shortName="zeitpunkt">
+                <implementation shortName="zeitpunkt" markdown=""/>
+                <name language="de-DE">Zeitpunkt</name>
+                <desc language="de-DE"/>
+                <valueDomain type="datetime">
+                    <property timeStampPrecision="YMD"/>
+                </valueDomain>
+            </concept>
+            <concept id="2.16.840.1.113883.2.6.60.4.2.3.6098" effectiveDate="2017-06-04T13:42:00" statusCode="draft" type="group" iddisplay="pmp-dataelement2017-6098" shortName="ereignisbezogene_wiederholung">
+                <implementation shortName="ereignisbezogene_wiederholung" markdown="Gibt ein periodisches Zeitintervall an, in dem die Wiederholung auf Aktivitäten des täglichen Lebens oder anderen wichtigen Ereignissen basiert, die zeitabhängig sind, jedoch nicht vollständig von der Zeit bestimmt werden"/>
+                <name language="de-DE">Ereignisbezogene Wiederholung</name>
+                <desc language="de-DE">Gibt ein periodisches Zeitintervall an, in dem die Wiederholung auf Aktivitäten des täglichen Lebens oder anderen wichtigen Ereignissen basiert, die zeitabhängig sind, jedoch nicht vollständig von der Zeit bestimmt werden</desc>
+                <concept id="2.16.840.1.113883.2.6.60.4.2.3.6095" effectiveDate="2017-06-04T13:38:54" statusCode="draft" type="item" iddisplay="pmp-dataelement2017-6095" shortName="ereignis">
+                    <implementation shortName="ereignis" markdown="Ereignis, z. B. morgens, mittags, abends, zur Nacht"/>
+                    <name language="de-DE">Ereignis</name>
+                    <desc language="de-DE">Ereignis, z. B. morgens, mittags, abends, zur Nacht</desc>
+                    <valueDomain type="code">
+                        <conceptList id="2.16.840.1.113883.2.6.60.4.2.3.6095.20170804133854.0"/>
+                    </valueDomain>
+                </concept>
+                <concept id="2.16.840.1.113883.2.6.60.4.2.3.6096" statusCode="draft" effectiveDate="2017-06-04T13:40:12" type="item" iddisplay="pmp-dataelement2017-6096" shortName="offset">
+                    <implementation shortName="offset" markdown="Offset zum Ereignis, z. B. 30 Minuten vorher"/>
+                    <name language="de-DE">Offset</name>
+                    <desc language="de-DE">Offset zum Ereignis, z. B. 30 Minuten vorher</desc>
+                    <valueDomain type="quantity"/>
+                </concept>
+            </concept>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.4.2.3.6092" effectiveDate="2017-06-04T13:30:40" statusCode="draft" type="item" iddisplay="pmp-dataelement2017-6092" shortName="einnahme_bei_bedarf">
+            <implementation shortName="einnahme_bei_bedarf" markdown="Einnahme des Medikaments bei Bedarf"/>
+            <name language="de-DE">Einnahme bei Bedarf</name>
+            <desc language="de-DE">Einnahme des Medikaments bei Bedarf</desc>
+            <valueDomain type="boolean"/>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.4.2.3.6093" effectiveDate="2017-06-04T13:31:15" statusCode="draft" type="item" iddisplay="pmp-dataelement2017-6093" shortName="art_der_anwendung">
+            <implementation shortName="art_der_anwendung" markdown="Art der Anwendung des Arzneimittels"/>
+            <name language="de-DE">Art der Anwendung</name>
+            <desc language="de-DE">Art der Anwendung des Arzneimittels</desc>
+            <valueDomain type="code">
+                <conceptList id="2.16.840.1.113883.2.6.60.4.2.3.6093.20170804133115.0"/>
+                <example type="neutral">intravenös</example>
+                <example type="neutral">subkutan</example>
+            </valueDomain>
+        </concept>
+        <concept id="2.16.840.1.113883.2.6.60.4.2.3.6091" statusCode="draft" effectiveDate="2017-06-04T13:27:46" type="group" iddisplay="pmp-dataelement2017-6091" shortName="dosis">
+            <implementation shortName="dosis" markdown=""/>
+            <name language="de-DE">Dosis</name>
+            <desc language="de-DE"/>
+            <concept id="2.16.840.1.113883.2.6.60.4.2.3.6094" effectiveDate="2017-06-04T13:33:11" statusCode="draft" type="item" iddisplay="pmp-dataelement2017-6094" shortName="dosiermenge">
+                <implementation shortName="dosiermenge" markdown="Dosiermenge mit standardisierter Einheit"/>
+                <name language="de-DE">Dosiermenge</name>
+                <desc language="de-DE">Dosiermenge mit standardisierter Einheit</desc>
+                <valueDomain type="quantity"/>
+            </concept>
+            <concept id="2.16.840.1.113883.2.6.60.4.2.3.466" statusCode="draft" effectiveDate="2017-06-04T00:00:00" type="item" iddisplay="pmp-dataelement2017-466" shortName="dosiereinheit">
+                <implementation shortName="dosiereinheit" markdown="Dosiereinheit"/>
+                <inherit ref="2.16.840.1.113883.2.6.60.4.2.1.466" effectiveDate="2014-10-27T00:00:00" prefix="pmp-" datasetId="2.16.840.1.113883.2.6.60.4.1.1" datasetEffectiveDate="2014-10-26T12:44:56" datasetStatusCode="final" datasetVersionLabel="Release 1" iType="item" iStatusCode="final" iEffectiveDate="2014-10-27T00:00:00" iVersionLabel="Release 1" iddisplay="pmp-dataelementR1-466" refdisplay="pmp-dataelementR1-466" localInherit="true"/>
+                <name language="de-DE">Dosiereinheit</name>
+                <desc language="de-DE">Dosiereinheit</desc>
+                <source language="de-DE">AkdÄ MP 2.0: #26 Code aus Anlage 7</source>
+                <valueDomain type="code"/>
+            </concept>
+        </concept>
+    </concept>
+</dataset>

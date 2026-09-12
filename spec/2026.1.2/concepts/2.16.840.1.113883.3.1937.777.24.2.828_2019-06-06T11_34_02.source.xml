@@ -1,0 +1,14 @@
+<concept xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.777.24.2.828" effectiveDate="2019-06-06T11:34:02" statusCode="draft" type="item" iddisplay="mide-dataelement-828">
+    <issueAssociation count="0"/>
+    <name language="de-DE">Dokumentationsdatum</name>
+    <name language="en-US" lastTranslated="2019-06-20T15:35:09">Documentation date</name>
+    <desc language="de-DE">Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde</desc>
+    <desc language="en-US" lastTranslated="2019-06-20T15:36:18">The timepoint the laboratory examination is documented.<br clear="none"/>
+    </desc>
+    <comment language="de-DE">
+        <b>FHIR-Mapping:</b> Observation.issued</comment>
+    <valueDomain type="datetime">
+        <property timeStampPrecision="YMD"/>
+        <example type="valid">05.12.2018 17:34</example>
+    </valueDomain>
+</concept>

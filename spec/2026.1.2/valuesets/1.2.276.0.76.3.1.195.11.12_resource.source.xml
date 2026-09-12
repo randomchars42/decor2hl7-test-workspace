@@ -1,0 +1,20 @@
+<valueSet xmlns:json="http://www.json.org" id="1.2.276.0.76.3.1.195.11.12" name="used-triage-system" displayName="Used Triage System" effectiveDate="2024-07-22T15:20:32" statusCode="draft" canonicalUri="http://aktin.org/fhir/ValueSet/aktin-vs-used-triage-system" versionLabel="2024" lastModifiedDate="2024-07-22T15:20:32" url="http://art-decor.org/decor/services/" ident="aktin-">
+    <sourceCodeSystem json:array="true" id="1.2.276.0.76.3.1.195.5.60" identifierName="Andere Triagesysteme" canonicalUri="http://aktin.org/fhir/CodeSystem/aktin-cs-other-triage-systems" canonicalUriDSTU2="http://aktin.org/fhir/CodeSystem/aktin-cs-other-triage-systems" canonicalUriSTU3="http://aktin.org/fhir/CodeSystem/aktin-cs-other-triage-systems" canonicalUriR4="http://aktin.org/fhir/CodeSystem/aktin-cs-other-triage-systems" canonicalUriR4B="http://aktin.org/fhir/CodeSystem/aktin-cs-other-triage-systems" canonicalUriR5="http://aktin.org/fhir/CodeSystem/aktin-cs-other-triage-systems" context="projects/aktin-/other-triage-systems-1.2.276.0.76.3.1.195.5.60"/>
+    <sourceCodeSystem json:array="true" id="2.16.840.1.113883.6.96" identifierName="SNOMED Clinical Terms" canonicalUri="http://snomed.info/sct" canonicalUriDSTU2="http://snomed.info/sct" canonicalUriSTU3="http://snomed.info/sct" canonicalUriR4="http://snomed.info/sct" canonicalUriR4B="http://snomed.info/sct" canonicalUriR5="http://snomed.info/sct"/>
+    <publishingAuthority json:array="true" name="AKTIN e. V." inherited="project">
+        <addrLine json:array="true">c/o Uniklinik RWTH Aachen</addrLine>
+        <addrLine json:array="true">Institut für Medizinische Informatik</addrLine>
+        <addrLine json:array="true">Pauwelsstraße 35</addrLine>
+        <addrLine json:array="true">52074 Aachen</addrLine>
+        <addrLine json:array="true" type="phone">Tel. +49 391 67 28186</addrLine>
+        <addrLine json:array="true" type="email">office@aktin.org</addrLine>
+    </publishingAuthority>
+    <copyright json:array="true" language="en-US" inherited="true">This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.</copyright>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="concept" code="713009001" codeSystem="2.16.840.1.113883.6.96" displayName="Manchester Triage System (assessment scale)" level="0" type="L"/>
+    <items json:array="true" is="concept" code="713010006" codeSystem="2.16.840.1.113883.6.96" displayName="Emergency Severity Index (assessment scale)" level="0" type="L"/>
+    <items json:array="true" is="concept" code="smed" codeSystem="1.2.276.0.76.3.1.195.5.60" displayName="SmED" level="0" type="L"/>
+    <items json:array="true" is="concept" code="74964007" codeSystem="2.16.840.1.113883.6.96" displayName="Other (qualifier value)" level="0" type="L"/>
+    <items json:array="true" is="concept" code="260413007" codeSystem="2.16.840.1.113883.6.96" displayName="None (qualifier value)" level="0" type="L"/>
+</valueSet>

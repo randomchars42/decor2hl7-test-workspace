@@ -1,0 +1,70 @@
+<dataset xmlns:json="http://www.json.org" id="2.16.840.1.113883.3.1937.777.22.1.1" effectiveDate="2018-05-07T19:20:17" statusCode="draft" versionLabel="v1" prefix="help-" shortName="help_dataset" iddisplay="help-dataset-1" url="http://art-decor.org/decor/services/" ident="help-"><!--
+ This is a view of the dataset "HELP Dataset" containing DECOR specifications for a transaction or dataset in a single, hierarchical view. 
+ All inheritances are resolved, for transactions the dataset is filtered for those concepts occurring in the transaction.
+ Valuesets are contained within the concept for easy reference. 
+ Xpaths are calculated on a best effort basis. The should be considered a starting point for application logic, not an endpoint. -->
+    <name language="de-DE">HELP Dataset</name>
+    <desc language="de-DE">HELP Dataset</desc>
+    <concept id="2.16.840.1.113883.3.1937.777.22.2.12" statusCode="cancelled" effectiveDate="2018-05-15T14:27:02" type="item" iddisplay="help-dataelement-12">
+        <implementation markdown="Erfassung der Herzfrequenz"/>
+        <name language="de-DE">Herzfrequenz</name>
+        <synonym language="de-DE">HF</synonym>
+        <desc language="de-DE">Erfassung der Herzfrequenz</desc>
+        <source language="de-DE">
+            <div>
+                <b>Messort:</b>  Brust / Handgelenk<br clear="none"/>
+            </div>
+            <div>
+                <b>Dokumentierendes System:</b>
+            </div>
+        </source>
+        <rationale language="de-DE">
+            <b>Entscheidung: </b>-</rationale>
+        <comment language="de-DE">Normbereich Altersgruppenabhängig, Belastungsabhängig und Fitnessabhängig , geschlechtsabhängig<br clear="none"/>
+            <br clear="none"/>
+            <div> Alter <span style="white-space: pre;">        Durchschnittliche Herzfrequenz </span>
+            </div>
+            <div>Säuglinge <span style="white-space:pre">70-190</span>
+            </div>
+            <div>bis 1 Jahr <span style="white-space:pre">80-160</span>
+            </div>
+            <div>1 – 2 Jahre <span style="white-space:pre">80-130</span>
+            </div>
+            <div>2 – 6 Jahre <span style="white-space:pre">75-120</span>
+            </div>
+            <div>7 – 9 Jahre <span style="white-space:pre">70-110</span>
+            </div>
+            <div>&gt; 10 <span style="white-space:pre">        60 – 100</span>
+            </div>
+            <div>Sportler <span style="white-space:pre">        40 – 60 </span>
+            </div>
+            <br clear="none"/>
+            <br clear="none"/>
+        </comment>
+        <property name="verwendung" md5="7bedf5e5beac4840f2903f5f1729a99a">readout</property>
+        <property name="sample-rate" md5="7641667e34b77f805262207bec98c032">kontinuierlich<br clear="none"/>
+        </property>
+        <property name="benötigte-frequenz" md5="f788d7ba598a8dbf0a61c9deb9a73f78">pro Blutkulturabnahme<br clear="none"/>
+        </property>
+        <property name="messwertqualität" md5="3550ddace72c453c141c4cabe6258292">
+            <div>(wertspezifisch)</div>
+            <div>
+                <br clear="none"/>
+            </div>
+        </property>
+        <property name="relevanzzeitraum" md5="21900fa1c3bc189248789da57ff4c7cb">-</property>
+        <property name="umgang-mit-missing-values" md5="bf697f4d34e7928f0fe429f09fcc49d3">-</property>
+        <relationship type="ADAPT" ref="2.16.840.1.113883.3.1937.777.24.2.212" flexibility="2018-07-20T14:21:57" prefix="mide-" datasetId="2.16.840.1.113883.3.1937.777.24.1.1" datasetEffectiveDate="2018-06-05T12:44:12" datasetStatusCode="draft" iType="group" iEffectiveDate="2018-07-20T14:21:57" iStatusCode="draft" refdisplay="mide-dataelement-212">
+            <name language="de-DE" lastTranslated="2019-02-07T13:00:12">Monitoring und Vitaldaten </name>
+            <name language="en-US" lastTranslated="2018-10-01T15:05:32">Monitoring data</name>
+        </relationship>
+        <operationalization language="de-DE">
+            <b>Messverfahren: </b>EKG / Pulsmessung</operationalization>
+        <valueDomain type="quantity">
+            <property unit="/min" minInclude="60" maxInclude="70" fixed="Männer"/>
+            <example type="valid" caption="Normale Herzfrequenz bei Erwachsenen">60/min</example>
+        </valueDomain>
+        <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.22.2.12" conceptFlexibility="2018-05-15T14:27:02" code="8867-4" codeSystem="2.16.840.1.113883.6.1" displayName="Heart rate" effectiveDate="2018-05-15T14:28:30" codeSystemName="Logical Observation Identifier Names and Codes"/>
+        <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.22.2.12" conceptFlexibility="2018-05-15T14:27:02" code="364075005" codeSystem="2.16.840.1.113883.6.96" displayName="Heart rate (observable entity)" effectiveDate="2018-05-15T14:27:49" codeSystemName="SNOMED Clinical Terms"/>
+    </concept>
+</dataset>

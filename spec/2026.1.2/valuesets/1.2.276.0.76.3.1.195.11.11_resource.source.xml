@@ -1,0 +1,18 @@
+<valueSet xmlns:json="http://www.json.org" id="1.2.276.0.76.3.1.195.11.11" name="generic-5level-triage-system" displayName="Generic five level triage system" effectiveDate="2024-07-22T14:52:50" statusCode="draft" canonicalUri="http://aktin.org/fhir/ValueSet/aktin-vs-generic-5level-triage-system" versionLabel="2024" lastModifiedDate="2024-07-22T14:53:24" url="http://art-decor.org/decor/services/" ident="aktin-">
+    <sourceCodeSystem json:array="true" id="2.16.840.1.113883.6.1" identifierName="Logical Observation Identifier Names and Codes" canonicalUri="http://loinc.org" canonicalUriDSTU2="http://loinc.org" canonicalUriSTU3="http://loinc.org" canonicalUriR4="http://loinc.org" canonicalUriR4B="http://loinc.org" canonicalUriR5="http://loinc.org"/>
+    <publishingAuthority json:array="true" name="AKTIN e. V." inherited="project">
+        <addrLine json:array="true">c/o Uniklinik RWTH Aachen</addrLine>
+        <addrLine json:array="true">Institut für Medizinische Informatik</addrLine>
+        <addrLine json:array="true">Pauwelsstraße 35</addrLine>
+        <addrLine json:array="true">52074 Aachen</addrLine>
+        <addrLine json:array="true" type="phone">Tel. +49 391 67 28186</addrLine>
+        <addrLine json:array="true" type="email">office@aktin.org</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="concept" code="LA21538-6" codeSystem="2.16.840.1.113883.6.1" displayName="Resuscitation" level="0" type="L"/>
+    <items json:array="true" is="concept" code="LA19759-2" codeSystem="2.16.840.1.113883.6.1" displayName="Emergent" level="0" type="L"/>
+    <items json:array="true" is="concept" code="LA21544-4" codeSystem="2.16.840.1.113883.6.1" displayName="Urgent" level="0" type="L"/>
+    <items json:array="true" is="concept" code="LA21587-3" codeSystem="2.16.840.1.113883.6.1" displayName="Less urgent" level="0" type="L"/>
+    <items json:array="true" is="concept" code="LA21545-1" codeSystem="2.16.840.1.113883.6.1" displayName="Nonurgent" level="0" type="L"/>
+</valueSet>

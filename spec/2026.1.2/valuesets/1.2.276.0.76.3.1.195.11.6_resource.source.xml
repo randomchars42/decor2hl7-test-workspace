@@ -1,0 +1,19 @@
+<valueSet xmlns:json="http://www.json.org" id="1.2.276.0.76.3.1.195.11.6" name="accident-reason-snomed" displayName="Unfallursache (SNOMED)" effectiveDate="2024-02-14T13:19:28" statusCode="draft" versionLabel="2024" canonicalUri="http://aktin.org/fhir/ValueSet/aktin-vs-accident-reason-snomed" lastModifiedDate="2025-05-26T16:26:12" url="http://art-decor.org/decor/services/" ident="aktin-">
+    <sourceCodeSystem json:array="true" id="1.2.276.0.76.3.1.195.5.99" identifierName="SNOMED-CT Postkoordinierte Terme" canonicalUri="http://aktin.org/fhir/CodeSystem/aktin-cs-snomed-postcoordinations" canonicalUriDSTU2="http://aktin.org/fhir/CodeSystem/aktin-cs-snomed-postcoordinations" canonicalUriSTU3="http://aktin.org/fhir/CodeSystem/aktin-cs-snomed-postcoordinations" canonicalUriR4="http://aktin.org/fhir/CodeSystem/aktin-cs-snomed-postcoordinations" canonicalUriR4B="http://aktin.org/fhir/CodeSystem/aktin-cs-snomed-postcoordinations" canonicalUriR5="http://aktin.org/fhir/CodeSystem/aktin-cs-snomed-postcoordinations" context="projects/aktin-/snomed-postcoordinations-1.2.276.0.76.3.1.195.5.99"/>
+    <sourceCodeSystem json:array="true" id="2.16.840.1.113883.6.96" identifierName="SNOMED Clinical Terms" canonicalUri="http://snomed.info/sct" canonicalUriDSTU2="http://snomed.info/sct" canonicalUriSTU3="http://snomed.info/sct" canonicalUriR4="http://snomed.info/sct" canonicalUriR4B="http://snomed.info/sct" canonicalUriR5="http://snomed.info/sct"/>
+    <publishingAuthority json:array="true" name="AKTIN e. V." inherited="project">
+        <addrLine json:array="true">c/o Uniklinik RWTH Aachen</addrLine>
+        <addrLine json:array="true">Institut für Medizinische Informatik</addrLine>
+        <addrLine json:array="true">Pauwelsstraße 35</addrLine>
+        <addrLine json:array="true">52074 Aachen</addrLine>
+        <addrLine json:array="true" type="phone">Tel. +49 391 67 28186</addrLine>
+        <addrLine json:array="true" type="email">office@aktin.org</addrLine>
+    </publishingAuthority>
+    <copyright json:array="true" language="en-US" inherited="true">This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.</copyright>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="concept" code="418019003" codeSystem="2.16.840.1.113883.6.96" displayName="Accidental event (event)" level="0" type="L"/>
+    <items json:array="true" is="concept" code="68023007" codeSystem="2.16.840.1.113883.6.96" displayName="Undetermined manner of death, suicide suspected (event)" level="0" type="L"/>
+    <items json:array="true" is="concept" code="SCTPOCC-52684005" codeSystem="1.2.276.0.76.3.1.195.5.99" displayName="Verdacht auf Gewaltverbrechen" level="0" type="L"/>
+    <items json:array="true" is="exception" code="74964007" codeSystem="2.16.840.1.113883.6.96" displayName="Other (qualifier value)" level="0" type="L"/>
+</valueSet>

@@ -1,0 +1,25 @@
+<valueSet xmlns:json="http://www.json.org" id="2.16.840.1.113883.1.11.15933" name="ActStatus" displayName="ActStatus" effectiveDate="2014-03-26T00:00:00" statusCode="final" versionLabel="DEFN=UV=VO=1360-20160323" ident="ad2bbr-" url="http://art-decor.org/decor/services/" referencedFrom="ch-pcc-">
+    <desc json:array="true" language="en-US">&lt;p&gt;&lt;b&gt;History description 2014-03-26: &lt;/b&gt;Lock all vaue sets untouched since 2014-03-26 to trackingId 2014T1_2014_03_26&lt;/p&gt; &lt;b&gt;description: &lt;/b&gt; &lt;p&gt;Contains the names (codes) for each of the states in the state-machine of the RIM Act class.&lt;/p&gt;</desc>
+    <sourceCodeSystem json:array="true" id="2.16.840.1.113883.5.14" identifierName="ActStatus" canonicalUri="http://terminology.hl7.org/CodeSystem/v3-ActStatus" canonicalUriDSTU2="http://hl7.org/fhir/v3/ActStatus" canonicalUriSTU3="http://hl7.org/fhir/v3/ActStatus" canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-ActStatus" canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-ActStatus" canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-ActStatus" context="external/hl7intl/v3/v3-ActStatus"/>
+    <publishingAuthority json:array="true" name="HL7" inherited="project">
+        <addrLine json:array="true">Health Level Seven International</addrLine>
+        <addrLine json:array="true">455 E. Eisenhower PKWY STE 300 # 025</addrLine>
+        <addrLine json:array="true">Ann Arbor, MI 48108</addrLine>
+        <addrLine json:array="true">USA</addrLine>
+        <addrLine json:array="true">T +1 734 677 7777</addrLine>
+        <addrLine json:array="true">F +1 734 677 6622</addrLine>
+        <addrLine json:array="true">E info@hl7.org</addrLine>
+    </publishingAuthority>
+    <issueAssociation json:array="true" count="0"/>
+    <valueSetExpansionAssociation json:array="true" count="0"/>
+    <items json:array="true" is="concept" code="normal" codeSystem="2.16.840.1.113883.5.14" displayName="normal" level="0" type="S"/>
+    <items json:array="true" is="concept" code="aborted" codeSystem="2.16.840.1.113883.5.14" displayName="aborted" level="1" type="L"/>
+    <items json:array="true" is="concept" code="active" codeSystem="2.16.840.1.113883.5.14" displayName="active" level="1" type="L"/>
+    <items json:array="true" is="concept" code="cancelled" codeSystem="2.16.840.1.113883.5.14" displayName="cancelled" level="1" type="L"/>
+    <items json:array="true" is="concept" code="completed" codeSystem="2.16.840.1.113883.5.14" displayName="completed" level="1" type="L"/>
+    <items json:array="true" is="concept" code="held" codeSystem="2.16.840.1.113883.5.14" displayName="held" level="1" type="L"/>
+    <items json:array="true" is="concept" code="new" codeSystem="2.16.840.1.113883.5.14" displayName="new" level="1" type="L"/>
+    <items json:array="true" is="concept" code="suspended" codeSystem="2.16.840.1.113883.5.14" displayName="suspended" level="1" type="L"/>
+    <items json:array="true" is="concept" code="nullified" codeSystem="2.16.840.1.113883.5.14" displayName="nullified" level="0" type="L"/>
+    <items json:array="true" is="concept" code="obsolete" codeSystem="2.16.840.1.113883.5.14" displayName="obsolete" level="0" type="L"/>
+</valueSet>

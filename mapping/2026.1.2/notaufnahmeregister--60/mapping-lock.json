@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "release": {
+    "key": "2026.1.2",
+    "date": "2026-04-27T18:50:33"
+  },
+  "transaction": {
+    "key": "notaufnahmeregister--60",
+    "id": "2.16.840.1.113883.2.6.60.3.4.60",
+    "effective_date": "2026-03-25T00:00:00"
+  },
+  "model_sha256": "ce199532643b1bfb28f38e45dafe9862de92631c4a4e54962942805cfc8fae9d",
+  "cda_sha256": "8610fd06ab1221d3aeec90a445456ba6c772f18ebec7b03cdca7018fb7ca84f1",
+  "mapping_sha256_at_creation": "d165db7ba3272ed838534f79ee314490d0f4cc872ae37fbd406c615b0b621a7f"
+}

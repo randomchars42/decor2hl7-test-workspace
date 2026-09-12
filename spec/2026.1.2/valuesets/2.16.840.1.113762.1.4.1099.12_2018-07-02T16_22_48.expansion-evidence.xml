@@ -1,6 +1,6 @@
-<valueSetExpansionSet xmlns:json="http://www.json.org" id="33333f59-8649-4970-b33f-5986496970c3" effectiveDate="2026-09-11T11:24:30" statusCode="final" current="0" count="0" nonactive="0">
+<valueSetExpansionSet xmlns:json="http://www.json.org" id="85532076-f7a8-4469-9320-76f7a8046993" effectiveDate="2026-09-11T22:28:31" statusCode="final" current="0" count="0" nonactive="0">
     <valueSet json:array="true" id="2.16.840.1.113762.1.4.1099.12" name="MedicationRouteCCDA" displayName="Medication Route" effectiveDate="2018-07-02T16:22:48" statusCode="draft" versionLabel="20170914" canonicalUri="https://vsac.nlm.nih.gov/" ident="ccda-">
         <desc json:array="true" language="en-US">Terms used to describe the path by which a substance is taken into the body. &lt;br clear="none"/&gt;</desc>
     </valueSet>
-    <expansion json:array="true" expanded="true" max="100" id="33333f59-8649-4970-b33f-5986496970c3"/>
+    <expansion json:array="true" expanded="true" max="100" id="85532076-f7a8-4469-9320-76f7a8046993"/>
 </valueSetExpansionSet>

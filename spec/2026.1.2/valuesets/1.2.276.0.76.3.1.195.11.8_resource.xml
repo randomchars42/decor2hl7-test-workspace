@@ -1,0 +1,35 @@
+<valueSets>
+    <project ident="aktin-">
+        <valueSet id="1.2.276.0.76.3.1.195.11.8" name="fahrzeug-des-verunfallten" displayName="Fahrzeug des Verunfallten" effectiveDate="2024-06-26T13:29:30" statusCode="draft" versionLabel="2024" canonicalUri="http://aktin.org/fhir/ValueSet/aktin-vs-fahrzeug-des-verunfallten" lastModifiedDate="2024-08-19T22:27:12">
+            <sourceCodeSystem id="2.16.840.1.113883.6.3" identifierName="ICD10" canonicalUri="http://hl7.org/fhir/sid/icd-10" canonicalUriDSTU2="http://hl7.org/fhir/sid/icd-10" canonicalUriSTU3="http://hl7.org/fhir/sid/icd-10" canonicalUriR4="http://hl7.org/fhir/sid/icd-10" canonicalUriR4B="http://hl7.org/fhir/sid/icd-10" canonicalUriR5="http://hl7.org/fhir/sid/icd-10"/>
+            <sourceCodeSystem id="2.16.840.1.113883.6.96" identifierName="SNOMED Clinical Terms" canonicalUri="http://snomed.info/sct" canonicalUriDSTU2="http://snomed.info/sct" canonicalUriSTU3="http://snomed.info/sct" canonicalUriR4="http://snomed.info/sct" canonicalUriR4B="http://snomed.info/sct" canonicalUriR5="http://snomed.info/sct"/>
+            <sourceCodeSystem id="2.16.840.1.113883.9.96" identifierName="LOI RC Component" canonicalUri="urn:oid:2.16.840.1.113883.9.96" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.9.96" canonicalUriSTU3="urn:oid:2.16.840.1.113883.9.96" canonicalUriR4="urn:oid:2.16.840.1.113883.9.96" canonicalUriR4B="urn:oid:2.16.840.1.113883.9.96" canonicalUriR5="urn:oid:2.16.840.1.113883.9.96"/>
+            <publishingAuthority name="AKTIN e. V." inherited="project">
+                <addrLine>c/o Uniklinik RWTH Aachen</addrLine>
+                <addrLine>Institut für Medizinische Informatik</addrLine>
+                <addrLine>Pauwelsstraße 35</addrLine>
+                <addrLine>52074 Aachen</addrLine>
+                <addrLine type="phone">Tel. +49 391 67 28186</addrLine>
+                <addrLine type="email">office@aktin.org</addrLine>
+            </publishingAuthority>
+            <copyright language="en-US" inherited="true">This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.</copyright>
+            <conceptList>
+                <concept code="V09.3" codeSystem="2.16.840.1.113883.6.3" displayName="Pedestrian injured in unspecified traffic accident" level="0" type="L"/>
+                <concept code="71783008" codeSystem="2.16.840.1.113883.6.96" displayName="Automobile, device (physical object)" level="0" type="L"/>
+                <concept code="12247004" codeSystem="2.16.840.1.113883.6.96" displayName="Truck, device (physical object)" level="0" type="L"/>
+                <concept code="22674006" codeSystem="2.16.840.1.113883.6.96" displayName="Motor bus, device (physical object)" level="0" type="L"/>
+                <concept code="90748009" codeSystem="2.16.840.1.113883.6.96" displayName="Motorcycle, device (physical object)" level="0" type="L"/>
+                <concept code="303973000" codeSystem="2.16.840.1.113883.6.96" displayName="Agricultural vehicle (physical object)" level="0" type="L"/>
+                <concept code="31493009" codeSystem="2.16.840.1.113883.6.96" displayName="Pedal cycle, device (physical object)" level="0" type="L"/>
+                <concept code="705415002" codeSystem="2.16.840.1.113883.6.96" displayName="Assistive cycle (physical object)" level="0" type="L"/>
+                <concept code="465073007" codeSystem="2.16.840.1.113883.6.96" displayName="Assistive scooter, electric-motor-driven (physical object)" level="0" type="L"/>
+                <concept code="38548008" codeSystem="2.16.840.1.113883.6.96" displayName="Streetcar, device (physical object)" level="0" type="L"/>
+                <concept code="62193008" codeSystem="2.16.840.1.113883.6.96" displayName="Railway train, device (physical object)" level="0" type="L"/>
+                <concept code="62193008" codeSystem="2.16.840.1.113883.6.96" displayName="Railway train, device (physical object)" level="0" type="L"/>
+                <concept code="21753002" codeSystem="2.16.840.1.113883.6.96" displayName="Aircraft, device (physical object)" level="0" type="L"/>
+                <concept code="12561005" codeSystem="2.16.840.1.113883.6.96" displayName="Watercraft, device (physical object)" level="0" type="L"/>
+                <exception code="74964007" codeSystem="2.16.840.1.113883.9.96" displayName="Other (qualifier value)" level="0" type="L"/>
+            </conceptList>
+        </valueSet>
+    </project>
+</valueSets>

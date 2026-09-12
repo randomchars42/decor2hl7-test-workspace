@@ -1,0 +1,32 @@
+<valueSets>
+    <project ident="aktin-">
+        <valueSet id="1.2.276.0.76.11.44" name="manchestertriagesystem" displayName="Manchester-Triage-System" effectiveDate="2024-08-16T17:46:42" statusCode="draft" canonicalUri="http://aktin.org/fhir/ValueSet/aktin-vs-manchestertriagesystem" versionLabel="2024" lastModifiedDate="2024-08-16T17:46:46">
+            <sourceCodeSystem id="1.2.276.0.76.5.438" identifierName="Manchestertriagesystem" canonicalUri="http://aktin.org/fhir/CodeSystem/aktin-cs-manchestertriagesystem" canonicalUriDSTU2="http://aktin.org/fhir/CodeSystem/aktin-cs-manchestertriagesystem" canonicalUriSTU3="http://aktin.org/fhir/CodeSystem/aktin-cs-manchestertriagesystem" canonicalUriR4="http://aktin.org/fhir/CodeSystem/aktin-cs-manchestertriagesystem" canonicalUriR4B="http://aktin.org/fhir/CodeSystem/aktin-cs-manchestertriagesystem" canonicalUriR5="http://aktin.org/fhir/CodeSystem/aktin-cs-manchestertriagesystem" context="projects/aktin-/manchestertriagesystem-1.2.276.0.76.5.438"/>
+            <publishingAuthority name="AKTIN e. V." inherited="project">
+                <addrLine>c/o Uniklinik RWTH Aachen</addrLine>
+                <addrLine>Institut für Medizinische Informatik</addrLine>
+                <addrLine>Pauwelsstraße 35</addrLine>
+                <addrLine>52074 Aachen</addrLine>
+                <addrLine type="phone">Tel. +49 391 67 28186</addrLine>
+                <addrLine type="email">office@aktin.org</addrLine>
+            </publishingAuthority>
+            <conceptList>
+                <concept code="1" codeSystem="1.2.276.0.76.5.438" codeSystemName="Manchester-Triage-System" codeSystemVersion="2015-03-03T00:00:00" displayName="sofort - rot - 0 Minuten" level="0" type="L">
+                    <designation displayName="sofort - rot - 0 Minuten" type="preferred" language="de-DE"/>
+                </concept>
+                <concept code="2" codeSystem="1.2.276.0.76.5.438" codeSystemName="Manchester-Triage-System" codeSystemVersion="2015-03-03T00:00:00" displayName="sehr dringend - orange - 10 Minuten" level="0" type="L">
+                    <designation displayName="sehr dringend - orange - 10 Minuten" type="preferred" language="de-DE"/>
+                </concept>
+                <concept code="3" codeSystem="1.2.276.0.76.5.438" codeSystemName="Manchester-Triage-System" codeSystemVersion="2015-03-03T00:00:00" displayName="dringend - gelb - 30 Minuten" level="0" type="L">
+                    <designation displayName="dringend - gelb - 30 Minuten" type="preferred" language="de-DE"/>
+                </concept>
+                <concept code="4" codeSystem="1.2.276.0.76.5.438" codeSystemName="Manchester-Triage-System" codeSystemVersion="2015-03-03T00:00:00" displayName="normal - grün - 90 Minuten" level="0" type="L">
+                    <designation displayName="normal - grün - 90 Minuten" type="preferred" language="de-DE"/>
+                </concept>
+                <concept code="5" codeSystem="1.2.276.0.76.5.438" codeSystemName="Manchester-Triage-System" codeSystemVersion="2015-03-03T00:00:00" displayName="nicht dringend - blau - 120 Minuten" level="0" type="L">
+                    <designation displayName="nicht dringend - blau - 120 Minuten" type="preferred" language="de-DE"/>
+                </concept>
+            </conceptList>
+        </valueSet>
+    </project>
+</valueSets>
