@@ -1,5 +1,5 @@
 {
-  "version": 8,
+  "version": 9,
   "model": {
     "dataset_id": "2.16.840.1.113883.2.6.60.3.1.9",
     "transaction_id": "2.16.840.1.113883.2.6.60.3.4.60",
@@ -323,7 +323,7 @@
     },
     "notfallanamnese.beschwerden_bei_vorstellung.beschwerden_bei_vorstellung_freitext": "Problemobservationcedis.originalText",
     "notfallanamnese.beschwerden_bei_vorstellung.beschwerden_bei_vorstellung_cedis": "Problemobservationcedis.value",
-    "notfallanamnese.beschwerden_bei_vorstellung.ereigniseintritt": null,
+    "notfallanamnese.beschwerden_bei_vorstellung.ereigniseintritt": "Problemconcernactcedis.low",
     "notfallanamnese.zeitpunkt_erster_arztkontakt": "CDADocumentationOf.documentationOf.serviceEvent.performer.time.low",
     "notfallanamnese.notfallanamnese_des_patienten": "Additionalmodulessection.text",
     "notfallanamnese.unfallanamnese.unfallursache": "unfallursache-kinetik.observation.value",
@@ -865,31 +865,203 @@
         "code_system": "1.2.276.0.76.4.6"
       }
     },
-    "masnahmen.medikamentose_therapie.medikation.medikament.darreichungsform": null,
+    "masnahmen.medikamentose_therapie.medikation.medikament.darreichungsform": [
+      {
+        "target": "UVSubordinateadministration.administrationUnitCode",
+        "transform": {
+          "type": "coded_only"
+        }
+      },
+      {
+        "target": "Medikation.text",
+        "structure": "concatenate-medication-narrative",
+        "transform": {
+          "type": "narrative",
+          "only_if_uncoded": true,
+          "prefix": "Darreichungsform: "
+        }
+      }
+    ],
     "masnahmen.medikamentose_therapie.medikation.medikament.wirkstoff.wirkstoffname": null,
     "masnahmen.medikamentose_therapie.medikation.medikament.wirkstoff.wirkstoffcode": null,
     "masnahmen.medikamentose_therapie.medikation.medikament.wirkstoff.arzneilich_wirksamer_bestandteilq": null,
     "masnahmen.medikamentose_therapie.medikation.medikament.wirkstoff.wirkstarke": null,
     "masnahmen.medikamentose_therapie.medikation.medikament.chargennummer": "UVMedicationInformationsimple.lotNumberText",
-    "masnahmen.medikamentose_therapie.medikation.anwendungszeiten.startzeitpunkt_der_anwendung": null,
+    "masnahmen.medikamentose_therapie.medikation.anwendungszeiten.startzeitpunkt_der_anwendung": "UVSubordinateadministration.effectiveTime_value_or_nullFlavor",
     "masnahmen.medikamentose_therapie.medikation.anwendungszeiten.stoppzeitpunkt_der_anwendung": null,
     "masnahmen.medikamentose_therapie.medikation.dosierung.sequenznummer": "Medikation.sequenceNumber",
-    "masnahmen.medikamentose_therapie.medikation.dosierung.freitext": "Medikation.text",
+    "masnahmen.medikamentose_therapie.medikation.dosierung.freitext": {
+      "target": "Medikation.text",
+      "structure": "concatenate-medication-narrative",
+      "transform": {
+        "type": "narrative"
+      }
+    },
     "masnahmen.medikamentose_therapie.medikation.dosierung.zusatzliche_hinweise": null,
     "masnahmen.medikamentose_therapie.medikation.dosierung.anweisungen_zur_einnahme": null,
     "masnahmen.medikamentose_therapie.medikation.dosierung.zeitangabe.zeitpunkt": null,
     "masnahmen.medikamentose_therapie.medikation.dosierung.zeitangabe.ereignisbezogene_wiederholung.ereignis": null,
-    "masnahmen.medikamentose_therapie.medikation.dosierung.zeitangabe.ereignisbezogene_wiederholung.offset": null,
-    "masnahmen.medikamentose_therapie.medikation.dosierung.einnahme_bei_bedarf": null,
-    "masnahmen.medikamentose_therapie.medikation.dosierung.korperstelle": null,
-    "masnahmen.medikamentose_therapie.medikation.dosierung.art_der_anwendung": "Medikation.routeCode",
-    "masnahmen.medikamentose_therapie.medikation.dosierung.methode_der_anwendung": null,
-    "masnahmen.medikamentose_therapie.medikation.dosierung.dosismenge_und_einheit": null,
-    "masnahmen.medikamentose_therapie.medikation.dosierung.kontinuierliche_gabe_rate": null,
-    "masnahmen.medikamentose_therapie.medikation.grund_der_medikation.begrundungstext": null,
-    "masnahmen.medikamentose_therapie.medikation.grund_der_medikation.kodierte_begrundung": null
+    "masnahmen.medikamentose_therapie.medikation.dosierung.zeitangabe.ereignisbezogene_wiederholung.offset": {
+      "target": "Medikation.text",
+      "structure": "concatenate-medication-narrative",
+      "transform": {
+        "type": "narrative",
+        "prefix": "Ereignisoffset: "
+      }
+    },
+    "masnahmen.medikamentose_therapie.medikation.dosierung.einnahme_bei_bedarf": {
+      "target": "Medikation.text",
+      "structure": "concatenate-medication-narrative",
+      "transform": {
+        "type": "enum",
+        "map": {
+          "true": "Einnahme bei Bedarf",
+          "false": null
+        }
+      }
+    },
+    "masnahmen.medikamentose_therapie.medikation.dosierung.korperstelle": {
+      "target": "Medikation.approachSiteCode",
+      "transform": {
+        "type": "coded_or_original_text",
+        "null_flavor": "OTH"
+      }
+    },
+    "masnahmen.medikamentose_therapie.medikation.dosierung.art_der_anwendung": {
+      "target": "Medikation.routeCode",
+      "structure": "coalesce-medication-route",
+      "transform": {
+        "type": "coded_or_original_text",
+        "null_flavor": "OTH"
+      }
+    },
+    "masnahmen.medikamentose_therapie.medikation.dosierung.methode_der_anwendung": {
+      "target": "Medikation.routeCode",
+      "structure": "coalesce-medication-route",
+      "transform": {
+        "type": "coded_or_original_text",
+        "null_flavor": "OTH"
+      }
+    },
+    "masnahmen.medikamentose_therapie.medikation.dosierung.dosismenge_und_einheit": "UVSubordinateadministration.doseQuantity",
+    "masnahmen.medikamentose_therapie.medikation.dosierung.kontinuierliche_gabe_rate": "UVSubordinateadministration.rateQuantity",
+    "masnahmen.medikamentose_therapie.medikation.grund_der_medikation.begrundungstext": {
+      "target": "Medikation.text",
+      "structure": "concatenate-medication-narrative",
+      "transform": {
+        "type": "narrative",
+        "prefix": "Begründung: "
+      }
+    },
+    "masnahmen.medikamentose_therapie.medikation.grund_der_medikation.kodierte_begrundung": {
+      "target": "Medikation.text",
+      "structure": "concatenate-medication-narrative",
+      "transform": {
+        "type": "narrative",
+        "prefix": "Kodierte Begründung: "
+      }
+    }
+  },
+  "field_reviews": {
+    "abschlussdiagnosen.abschlussdiagnose.icd10_sekundardiagnose": {
+      "status": "intentionally_unmapped",
+      "reason": "AKTIN explicitly states that secondary ICD-10 is not transmitted in the current transaction.",
+      "decision": "DEC-043",
+      "reviewed_at": "2026-09-14"
+    },
+    "dokumentationsinformationen.beginn_patientenbezogene_dokumentation.zeitpunkt_beginn_patientenbezogene_dokumentation": {
+      "status": "intentionally_unmapped",
+      "reason": "AKTIN states that this retained dataset concept is not used by any current template and is not transmitted separately.",
+      "decision": "DEC-043",
+      "reviewed_at": "2026-09-14"
+    },
+    "masnahmen.medikamentose_therapie.medikation.anwendungszeiten.stoppzeitpunkt_der_anwendung": {
+      "status": "intentionally_unmapped",
+      "reason": "The reviewed rule maps only the application start to the atomic subordinate TS; the active target offers no separate stop slot.",
+      "decision": "DEC-043",
+      "reviewed_at": "2026-09-14"
+    },
+    "masnahmen.medikamentose_therapie.medikation.dosierung.zeitangabe.zeitpunkt": {
+      "status": "intentionally_unmapped",
+      "reason": "Current AKTIN scope documents medication given via the application start; structured dosage timing is deferred.",
+      "decision": "DEC-043",
+      "reviewed_at": "2026-09-14"
+    },
+    "masnahmen.medikamentose_therapie.medikation.dosierung.zeitangabe.ereignisbezogene_wiederholung.ereignis": {
+      "status": "intentionally_unmapped",
+      "reason": "Event-relative repeat timing is outside the current AKTIN medication-given scope and is retained for later review.",
+      "decision": "DEC-043",
+      "reviewed_at": "2026-09-14"
+    }
   },
   "structures": {
+    "concatenate-medication-narrative": {
+      "type": "concatenate",
+      "target": "Medikation.text",
+      "separator": "; ",
+      "reason": "Preserve reviewed medication dosage, PRN, reason and uncoded administration-form wording in the one available medication narrative slot.",
+      "sources": [
+        {
+          "source": "masnahmen.medikamentose_therapie.medikation.dosierung.freitext",
+          "transform": {
+            "type": "narrative"
+          }
+        },
+        {
+          "source": "masnahmen.medikamentose_therapie.medikation.dosierung.zeitangabe.ereignisbezogene_wiederholung.offset",
+          "transform": {
+            "type": "narrative",
+            "prefix": "Ereignisoffset: "
+          }
+        },
+        {
+          "source": "masnahmen.medikamentose_therapie.medikation.dosierung.einnahme_bei_bedarf",
+          "transform": {
+            "type": "enum",
+            "map": {
+              "true": "Einnahme bei Bedarf",
+              "false": null
+            }
+          }
+        },
+        {
+          "source": "masnahmen.medikamentose_therapie.medikation.grund_der_medikation.begrundungstext",
+          "transform": {
+            "type": "narrative",
+            "prefix": "Begründung: "
+          }
+        },
+        {
+          "source": "masnahmen.medikamentose_therapie.medikation.grund_der_medikation.kodierte_begrundung",
+          "transform": {
+            "type": "narrative",
+            "prefix": "Kodierte Begründung: "
+          }
+        },
+        {
+          "source": "masnahmen.medikamentose_therapie.medikation.medikament.darreichungsform",
+          "transform": {
+            "type": "narrative",
+            "only_if_uncoded": true,
+            "prefix": "Darreichungsform: "
+          }
+        }
+      ]
+    },
+    "coalesce-medication-route": {
+      "type": "coalesce",
+      "target": "Medikation.routeCode",
+      "sources": [
+        "masnahmen.medikamentose_therapie.medikation.dosierung.art_der_anwendung",
+        "masnahmen.medikamentose_therapie.medikation.dosierung.methode_der_anwendung"
+      ],
+      "policy": "prefer_first_warn_if_different",
+      "transform": {
+        "type": "coded_or_original_text",
+        "null_flavor": "OTH"
+      },
+      "reason": "Use Art der Anwendung when present, otherwise Methode der Anwendung; warn when both present wordings differ. Preserve uncoded wording as originalText."
+    },
     "repeat-by-discriminator-pupilsize-value": {
       "type": "repeat_by_discriminator",
       "discriminator": {
@@ -1558,6 +1730,15 @@
       "element_id": "2.16.840.1.113883.2.6.60.3.9.4069.1",
       "path": "hl7:observation/hl7:value"
     },
+    "Medikation.approachSiteCode": {
+      "cda_target": "Medikation.approachSiteCode",
+      "source_key": "1.2.276.0.76.3.1.195.10.67@2023-12-03T00:00:00|ID:2.16.840.1.113883.3.1937.777.15.9.30|PATH:hl7:substanceAdministration/hl7:approachSiteCode",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.67|ID:2.16.840.1.113883.3.1937.777.15.9.30|PATH:hl7:substanceAdministration/hl7:approachSiteCode",
+      "template_id": "1.2.276.0.76.3.1.195.10.67",
+      "template_effective_date": "2023-12-03T00:00:00",
+      "element_id": "2.16.840.1.113883.3.1937.777.15.9.30",
+      "path": "hl7:substanceAdministration/hl7:approachSiteCode"
+    },
     "Medikation.moodCode": {
       "cda_target": "Medikation.moodCode",
       "source_key": "1.2.276.0.76.3.1.195.10.67@2023-12-03T00:00:00|ID:2.16.840.1.113883.3.1937.777.15.9.21|PATH:hl7:substanceAdministration/@moodCode",
@@ -1647,6 +1828,15 @@
       "template_effective_date": "2015-03-03T00:00:00",
       "element_id": "2.16.840.1.113883.2.6.60.3.9.264",
       "path": "hl7:observation/hl7:value"
+    },
+    "Problemconcernactcedis.low": {
+      "cda_target": "Problemconcernactcedis.low",
+      "source_key": "1.2.276.0.76.10.4039@2015-03-03T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.234|PATH:hl7:act/hl7:effectiveTime/hl7:low",
+      "revisionless_source_key": "1.2.276.0.76.10.4039|ID:2.16.840.1.113883.2.6.60.3.9.234|PATH:hl7:act/hl7:effectiveTime/hl7:low",
+      "template_id": "1.2.276.0.76.10.4039",
+      "template_effective_date": "2015-03-03T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.234",
+      "path": "hl7:act/hl7:effectiveTime/hl7:low"
     },
     "Problemconcernactcedis.statusCode": {
       "cda_target": "Problemconcernactcedis.statusCode",
@@ -1873,6 +2063,33 @@
       "element_id": "2.16.840.1.113883.3.1937.777.15.9.10776",
       "path": "hl7:manufacturedProduct/hl7:manufacturedMaterial/hl7:lotNumberText"
     },
+    "UVSubordinateadministration.administrationUnitCode": {
+      "cda_target": "UVSubordinateadministration.administrationUnitCode",
+      "source_key": "2.16.840.1.113883.10.21.4.6@2023-01-30T09:36:00|ID:2.16.840.1.113883.3.1937.777.15.9.34|PATH:hl7:substanceAdministration/hl7:administrationUnitCode",
+      "revisionless_source_key": "2.16.840.1.113883.10.21.4.6|ID:2.16.840.1.113883.3.1937.777.15.9.34|PATH:hl7:substanceAdministration/hl7:administrationUnitCode",
+      "template_id": "2.16.840.1.113883.10.21.4.6",
+      "template_effective_date": "2023-01-30T09:36:00",
+      "element_id": "2.16.840.1.113883.3.1937.777.15.9.34",
+      "path": "hl7:substanceAdministration/hl7:administrationUnitCode"
+    },
+    "UVSubordinateadministration.doseQuantity": {
+      "cda_target": "UVSubordinateadministration.doseQuantity",
+      "source_key": "2.16.840.1.113883.10.21.4.6@2023-01-30T09:36:00|ID:2.16.840.1.113883.3.1937.777.15.9.9115|PATH:hl7:substanceAdministration/hl7:doseQuantity",
+      "revisionless_source_key": "2.16.840.1.113883.10.21.4.6|ID:2.16.840.1.113883.3.1937.777.15.9.9115|PATH:hl7:substanceAdministration/hl7:doseQuantity",
+      "template_id": "2.16.840.1.113883.10.21.4.6",
+      "template_effective_date": "2023-01-30T09:36:00",
+      "element_id": "2.16.840.1.113883.3.1937.777.15.9.9115",
+      "path": "hl7:substanceAdministration/hl7:doseQuantity"
+    },
+    "UVSubordinateadministration.effectiveTime_value_or_nullFlavor": {
+      "cda_target": "UVSubordinateadministration.effectiveTime_value_or_nullFlavor",
+      "source_key": "2.16.840.1.113883.10.21.4.6@2023-01-30T09:36:00|ID:2.16.840.1.113883.3.1937.777.15.9.9114|PATH:hl7:substanceAdministration/hl7:effectiveTime[@value or @nullFlavor]",
+      "revisionless_source_key": "2.16.840.1.113883.10.21.4.6|ID:2.16.840.1.113883.3.1937.777.15.9.9114|PATH:hl7:substanceAdministration/hl7:effectiveTime[@value or @nullFlavor]",
+      "template_id": "2.16.840.1.113883.10.21.4.6",
+      "template_effective_date": "2023-01-30T09:36:00",
+      "element_id": "2.16.840.1.113883.3.1937.777.15.9.9114",
+      "path": "hl7:substanceAdministration/hl7:effectiveTime[@value or @nullFlavor]"
+    },
     "UVSubordinateadministration.moodCode": {
       "cda_target": "UVSubordinateadministration.moodCode",
       "source_key": "2.16.840.1.113883.10.21.4.6@2023-01-30T09:36:00|ID:2.16.840.1.113883.3.1937.777.15.9.185|PATH:hl7:substanceAdministration/@moodCode",
@@ -1881,6 +2098,15 @@
       "template_effective_date": "2023-01-30T09:36:00",
       "element_id": "2.16.840.1.113883.3.1937.777.15.9.185",
       "path": "hl7:substanceAdministration/@moodCode"
+    },
+    "UVSubordinateadministration.rateQuantity": {
+      "cda_target": "UVSubordinateadministration.rateQuantity",
+      "source_key": "2.16.840.1.113883.10.21.4.6@2023-01-30T09:36:00|ID:2.16.840.1.113883.3.1937.777.15.9.192|PATH:hl7:substanceAdministration/hl7:rateQuantity",
+      "revisionless_source_key": "2.16.840.1.113883.10.21.4.6|ID:2.16.840.1.113883.3.1937.777.15.9.192|PATH:hl7:substanceAdministration/hl7:rateQuantity",
+      "template_id": "2.16.840.1.113883.10.21.4.6",
+      "template_effective_date": "2023-01-30T09:36:00",
+      "element_id": "2.16.840.1.113883.3.1937.777.15.9.192",
+      "path": "hl7:substanceAdministration/hl7:rateQuantity"
     },
     "UVSubordinateadministration.statusCode": {
       "cda_target": "UVSubordinateadministration.statusCode",
