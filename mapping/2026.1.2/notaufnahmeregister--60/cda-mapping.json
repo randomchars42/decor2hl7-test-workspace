@@ -857,7 +857,7 @@
     "dokumentationsinformationen.berechnete_zeitintervalle.zeit_bis_zum_export": "zeit_bis_zum_export.value",
     "dokumentationsinformationen.datenbereitstellung.name_des_edis": "name_des_edis.value",
     "dokumentationsinformationen.datenbereitstellung.version_des_edis": "version_des_edis.value",
-    "masnahmen.medikamentose_therapie.medikation.medikament.arzneimittel.arzneimittelname": "UVMedicationInformationsimple.manufacturedProduct.manufacturedMaterial.name",
+    "masnahmen.medikamentose_therapie.medikation.medikament.arzneimittel.arzneimittelname": null,
     "masnahmen.medikamentose_therapie.medikation.medikament.arzneimittel.arzneimittelcode": {
       "target": "UVMedicationInformationsimple.code",
       "transform": {
@@ -870,7 +870,7 @@
     "masnahmen.medikamentose_therapie.medikation.medikament.wirkstoff.wirkstoffcode": null,
     "masnahmen.medikamentose_therapie.medikation.medikament.wirkstoff.arzneilich_wirksamer_bestandteilq": null,
     "masnahmen.medikamentose_therapie.medikation.medikament.wirkstoff.wirkstarke": null,
-    "masnahmen.medikamentose_therapie.medikation.medikament.chargennummer": null,
+    "masnahmen.medikamentose_therapie.medikation.medikament.chargennummer": "UVMedicationInformationsimple.lotNumberText",
     "masnahmen.medikamentose_therapie.medikation.anwendungszeiten.startzeitpunkt_der_anwendung": null,
     "masnahmen.medikamentose_therapie.medikation.anwendungszeiten.stoppzeitpunkt_der_anwendung": null,
     "masnahmen.medikamentose_therapie.medikation.dosierung.sequenznummer": "Medikation.sequenceNumber",
@@ -1864,14 +1864,14 @@
       "element_id": "2.16.840.1.113883.3.1937.777.15.9.10774",
       "path": "hl7:manufacturedProduct/hl7:manufacturedMaterial/hl7:code"
     },
-    "UVMedicationInformationsimple.manufacturedProduct.manufacturedMaterial.name": {
-      "cda_target": "UVMedicationInformationsimple.manufacturedProduct.manufacturedMaterial.name",
-      "source_key": "2.16.840.1.113883.10.21.4.10@2021-09-29T19:15:16|PATH:hl7:manufacturedProduct/hl7:manufacturedMaterial/hl7:name",
-      "revisionless_source_key": "2.16.840.1.113883.10.21.4.10|ID:|PATH:hl7:manufacturedProduct/hl7:manufacturedMaterial/hl7:name",
+    "UVMedicationInformationsimple.lotNumberText": {
+      "cda_target": "UVMedicationInformationsimple.lotNumberText",
+      "source_key": "2.16.840.1.113883.10.21.4.10@2021-09-29T19:15:16|ID:2.16.840.1.113883.3.1937.777.15.9.10776|PATH:hl7:manufacturedProduct/hl7:manufacturedMaterial/hl7:lotNumberText",
+      "revisionless_source_key": "2.16.840.1.113883.10.21.4.10|ID:2.16.840.1.113883.3.1937.777.15.9.10776|PATH:hl7:manufacturedProduct/hl7:manufacturedMaterial/hl7:lotNumberText",
       "template_id": "2.16.840.1.113883.10.21.4.10",
       "template_effective_date": "2021-09-29T19:15:16",
-      "element_id": "",
-      "path": "hl7:manufacturedProduct/hl7:manufacturedMaterial/hl7:name"
+      "element_id": "2.16.840.1.113883.3.1937.777.15.9.10776",
+      "path": "hl7:manufacturedProduct/hl7:manufacturedMaterial/hl7:lotNumberText"
     },
     "UVSubordinateadministration.moodCode": {
       "cda_target": "UVSubordinateadministration.moodCode",
