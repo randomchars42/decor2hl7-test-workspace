@@ -1,5 +1,5 @@
 {
-  "version": 9,
+  "version": 10,
   "model": {
     "dataset_id": "2.16.840.1.113883.2.6.60.3.1.9",
     "transaction_id": "2.16.840.1.113883.2.6.60.3.4.60",
@@ -12,20 +12,41 @@
   "fields": {
     "patient.anschrift.postleitzahl": "CDArecordTargetnnar.recordTarget.patientRole.addr.postalCode",
     "patient.identifikatoren.patienten_id": "PatientIdentifier.id",
-    "hauptkostentrager.kostentrager.name": "hauptkostentrager.name",
-    "hauptkostentrager.versicherungsverhaltnis.identifikation": "hauptkostentrager.participant_templateId_root_1.2.276.0.76.3.1.195.10.4.associatedEntity.id",
+    "hauptkostentrager.kostentrager.name": [
+      "hauptkostentrager.name",
+      "HeaderParticipantKostentraeger.scopingOrganization::OrganizationElements.name"
+    ],
+    "hauptkostentrager.versicherungsverhaltnis.identifikation": [
+      "hauptkostentrager.participant_templateId_root_1.2.276.0.76.3.1.195.10.4.associatedEntity.id",
+      "HeaderParticipantKostentraeger.participant_templateId_root_1.2.276.0.76.10.2022.associatedEntity.id"
+    ],
+    "hauptkostentrager.versicherungsverhaltnis.versichertenstatus": "HeaderParticipantKostentraeger.code",
+    "hauptkostentrager.versicherungsverhaltnis.versichertenstatus_gkv": "HeaderParticipantKostentraeger.translation_codeSystem_2.16.840.1.113883.3.7.1.1",
+    "hauptkostentrager.versicherungsverhaltnis.weitere_versichertenstatuskodierung": "HeaderParticipantKostentraeger.translation",
+    "hauptkostentrager.versicherungsverhaltnis.kv_fall": "hauptkostentrager.code",
     "administrative_aufnahmeinformationen.aufnahmezeitpunkt": [
       "CDAEncompassingEncounter.low",
+      "CDADocumentationOf.documentationOf.serviceEvent.effectiveTime.low",
+      {
+        "target": "HeaderParticipantKostentraeger.participant_templateId_root_1.2.276.0.76.10.2022.time.high",
+        "mode": "if_active",
+        "active_if": "HeaderParticipantKostentraeger.participant_templateId_root_1.2.276.0.76.10.2022.associatedEntity.id",
+        "transform": {
+          "type": "quarter_end"
+        },
+        "reason": "AKTIN approved deriving the insurance-period quarter end from Aufnahmezeitpunkt; the value is emitted only when another mapping activates the generic Kostenträger participant."
+      },
       {
         "target": "Allergyconcernact.low",
         "mode": "fallback_if_active",
         "reason": "AKTIN confirmed that the emergency-department collection time may populate the Allergy Concern Act start; this reviewed mapping uses Aufnahmezeitpunkt and must not activate an otherwise absent allergy branch."
       }
     ],
-    "administrative_aufnahmeinformationen.fallnummer": "CDAEncompassingEncounter.id_2",
-    "administrative_aufnahmeinformationen.episodennummer": "CDAEncompassingEncounter.id_1",
+    "administrative_aufnahmeinformationen.fallnummer": "CDAEncompassingEncounter.id_1",
+    "administrative_aufnahmeinformationen.episodennummer": "CDAEncompassingEncounter.id_2",
     "administrative_aufnahmeinformationen.zuweisung_zur_notaufnahme.zuweisung": "Referralfrom.act.participant.participantRole.code",
     "administrative_aufnahmeinformationen.transport.transportmittel": "Transportmethod.value",
+    "administrative_aufnahmeinformationen.transport.ankunftszeit": "Transportmethod.high",
     "administrative_aufnahmeinformationen.transport.medizinische_begleitung": "medizinische-begleitung.code",
     "ersteinschatzung.direkter_arztkontakt": {
       "target": "direkter_arztkontakt.observation.negationInd",
@@ -680,13 +701,31 @@
         }
       }
     ],
-    "masnahmen.isolation.isolation_begrundung": "Isolationindication.value",
+    "masnahmen.isolation.isolation_begrundung": [
+      "Isolationindication.value",
+      {
+        "target": "ProblemobservationMDRO.observation.value",
+        "transform": {
+          "type": "enum",
+          "select": "raw",
+          "map": {
+            "multiresistenter Keim": {
+              "code": "AMRO",
+              "codeSystem": "1.2.276.0.76.5.441",
+              "displayName": "Multiresistenter Keim"
+            }
+          }
+        },
+        "reason": "AKTIN approved deriving the generic AMRO assertion only from the exact isolation reason 'multiresistenter Keim'; other isolation reasons do not create an MDRO observation."
+      }
+    ],
     "masnahmen.wildcard_therapie.klinisch_relevante_zeitangaben.zeitpunkt": "WildcardTherapie.effectiveTime_not_xsi_type",
     "masnahmen.wildcard_therapie.klinisch_relevante_zeitangaben.zeitraum": "WildcardTherapie.procedure.effectiveTime_xsi_type_IVL_TS.width",
     "masnahmen.wildcard_therapie.code": "WildcardTherapie.code",
     "masnahmen.wildcard_therapie.definitorischer_link": "WildcardTherapie.procedure.reference.externalDocument.text.reference",
     "abschlussdiagnosen.abschlussdiagnose.freitext_abschlussdiagnose": "Problemobservationeddiagnosis.originalText",
     "abschlussdiagnosen.abschlussdiagnose.icd10": "Problemobservationeddiagnosis.observation.value",
+    "abschlussdiagnosen.abschlussdiagnose.lateralitat": "Laterality.value",
     "abschlussdiagnosen.abschlussdiagnose.icd10_sekundardiagnose": null,
     "abschlussdiagnosen.abschlussdiagnose.zusatzkennzeichen": [
       {
@@ -851,19 +890,37 @@
     },
     "administrative_verlegungsentlassungsinformationen.typ_entlassung": "CDAEncompassingEncounter.dischargeDispositionCode",
     "administrative_verlegungsentlassungsinformationen.zeitpunkt_entscheidung_zur_verlegung_entlassung": "zeitpunkt_entscheidung_zur_verlegung__entlassung.value",
-    "administrative_verlegungsentlassungsinformationen.zeitpunkt_patient_verlegungs_entlassungsfahig": "zeitpunkt_patient_verlegungs__entlassungsfahig.value",
-    "administrative_verlegungsentlassungsinformationen.zeitpunkt_patient_verlegt_entlassen_nach": "zeitpunkt_patient_verlegt__entlassen_nach.value",
+    "administrative_verlegungsentlassungsinformationen.zeitpunkt_patient_verlegungs_entlassungsfahig": [
+      "zeitpunkt_patient_verlegungs__entlassungsfahig.value",
+      "CDADocumentationOf.documentationOf.serviceEvent.performer.time.high"
+    ],
+    "administrative_verlegungsentlassungsinformationen.zeitpunkt_patient_verlegt_entlassen_nach": [
+      "zeitpunkt_patient_verlegt__entlassen_nach.value",
+      "CDADocumentationOf.documentationOf.serviceEvent.effectiveTime.high",
+      "CDAEncompassingEncounter.high"
+    ],
+    "administrative_verlegungsentlassungsinformationen.aufnehmende_fachabteilung": "Referralto.act.participant.participantRole.code",
     "dokumentationsinformationen.beginn_patientenbezogene_dokumentation.zeitpunkt_beginn_patientenbezogene_dokumentation": null,
     "dokumentationsinformationen.berechnete_zeitintervalle.zeit_bis_zum_export": "zeit_bis_zum_export.value",
     "dokumentationsinformationen.datenbereitstellung.name_des_edis": "name_des_edis.value",
     "dokumentationsinformationen.datenbereitstellung.version_des_edis": "version_des_edis.value",
-    "masnahmen.medikamentose_therapie.medikation.medikament.arzneimittel.arzneimittelname": null,
+    "masnahmen.medikamentose_therapie.medikation.medikament.arzneimittel.arzneimittelname": [
+      {
+        "target": "UVMedicationInformationsimple.code",
+        "structure": "compose-medication-product-code"
+      },
+      {
+        "target": "Medikation.text",
+        "structure": "concatenate-medication-narrative",
+        "transform": {
+          "type": "narrative",
+          "prefix": "Arzneimittel: "
+        }
+      }
+    ],
     "masnahmen.medikamentose_therapie.medikation.medikament.arzneimittel.arzneimittelcode": {
       "target": "UVMedicationInformationsimple.code",
-      "transform": {
-        "type": "code_system",
-        "code_system": "1.2.276.0.76.4.6"
-      }
+      "structure": "compose-medication-product-code"
     },
     "masnahmen.medikamentose_therapie.medikation.medikament.darreichungsform": [
       {
@@ -882,10 +939,41 @@
         }
       }
     ],
-    "masnahmen.medikamentose_therapie.medikation.medikament.wirkstoff.wirkstoffname": null,
-    "masnahmen.medikamentose_therapie.medikation.medikament.wirkstoff.wirkstoffcode": null,
-    "masnahmen.medikamentose_therapie.medikation.medikament.wirkstoff.arzneilich_wirksamer_bestandteilq": null,
-    "masnahmen.medikamentose_therapie.medikation.medikament.wirkstoff.wirkstarke": null,
+    "masnahmen.medikamentose_therapie.medikation.medikament.wirkstoff.wirkstoffname": {
+      "target": "Medikation.text",
+      "structure": "concatenate-medication-narrative",
+      "transform": {
+        "type": "narrative",
+        "prefix": "Wirkstoff: "
+      }
+    },
+    "masnahmen.medikamentose_therapie.medikation.medikament.wirkstoff.wirkstoffcode": {
+      "target": "Medikation.text",
+      "structure": "concatenate-medication-narrative",
+      "transform": {
+        "type": "narrative",
+        "prefix": "Wirkstoff-Code: "
+      }
+    },
+    "masnahmen.medikamentose_therapie.medikation.medikament.wirkstoff.arzneilich_wirksamer_bestandteilq": {
+      "target": "Medikation.text",
+      "structure": "concatenate-medication-narrative",
+      "transform": {
+        "type": "enum",
+        "map": {
+          "true": "Arzneilich wirksamer Bestandteil: ja",
+          "false": "Arzneilich wirksamer Bestandteil: nein"
+        }
+      }
+    },
+    "masnahmen.medikamentose_therapie.medikation.medikament.wirkstoff.wirkstarke": {
+      "target": "Medikation.text",
+      "structure": "concatenate-medication-narrative",
+      "transform": {
+        "type": "narrative",
+        "prefix": "Wirkstärke: "
+      }
+    },
     "masnahmen.medikamentose_therapie.medikation.medikament.chargennummer": "UVMedicationInformationsimple.lotNumberText",
     "masnahmen.medikamentose_therapie.medikation.anwendungszeiten.startzeitpunkt_der_anwendung": "UVSubordinateadministration.effectiveTime_value_or_nullFlavor",
     "masnahmen.medikamentose_therapie.medikation.anwendungszeiten.stoppzeitpunkt_der_anwendung": null,
@@ -897,8 +985,22 @@
         "type": "narrative"
       }
     },
-    "masnahmen.medikamentose_therapie.medikation.dosierung.zusatzliche_hinweise": null,
-    "masnahmen.medikamentose_therapie.medikation.dosierung.anweisungen_zur_einnahme": null,
+    "masnahmen.medikamentose_therapie.medikation.dosierung.zusatzliche_hinweise": {
+      "target": "Medikation.text",
+      "structure": "concatenate-medication-narrative",
+      "transform": {
+        "type": "narrative",
+        "prefix": "Zusätzlicher Hinweis: "
+      }
+    },
+    "masnahmen.medikamentose_therapie.medikation.dosierung.anweisungen_zur_einnahme": {
+      "target": "Medikation.text",
+      "structure": "concatenate-medication-narrative",
+      "transform": {
+        "type": "narrative",
+        "prefix": "Einnahmeanweisung: "
+      }
+    },
     "masnahmen.medikamentose_therapie.medikation.dosierung.zeitangabe.zeitpunkt": null,
     "masnahmen.medikamentose_therapie.medikation.dosierung.zeitangabe.ereignisbezogene_wiederholung.ereignis": null,
     "masnahmen.medikamentose_therapie.medikation.dosierung.zeitangabe.ereignisbezogene_wiederholung.offset": {
@@ -994,17 +1096,92 @@
       "reviewed_at": "2026-09-14"
     }
   },
+  "narratives": {
+    "Relevantdiagnostictestsorlaboratorydata.text": {
+      "blocks": [
+        {
+          "type": "fact",
+          "source": "diagnostik.bildgebende_diagnostik.magnetresonanztomographie.untersuchungsregion",
+          "label": "MRT – Untersuchungsregion",
+          "reason": "Preserve the reviewed MRI examination-region wording in the Diagnostics section narrative; no structured imaging-region code target or crosswalk is asserted.",
+          "decision": "DEC-044",
+          "reviewed_at": "2026-09-15"
+        },
+        {
+          "type": "for_each",
+          "source_repeat": "diagnostik.bildgebende_diagnostik.rontgen",
+          "source": "diagnostik.bildgebende_diagnostik.rontgen.untersuchungsregion",
+          "label": "Röntgen – Untersuchungsregion",
+          "reason": "Preserve each reviewed X-ray examination-region occurrence in the Diagnostics section narrative without joining occurrences or coalescing them with structured diagnostic entries.",
+          "decision": "DEC-044",
+          "reviewed_at": "2026-09-15"
+        }
+      ]
+    }
+  },
   "structures": {
     "concatenate-medication-narrative": {
       "type": "concatenate",
       "target": "Medikation.text",
       "separator": "; ",
-      "reason": "Preserve reviewed medication dosage, PRN, reason and uncoded administration-form wording in the one available medication narrative slot.",
+      "reason": "Preserve the medication name, ingredient wording, dosage and patient instructions, PRN, reason and uncoded administration-form wording in the one available medication narrative slot; DEC-045 does not claim structured ingredient or instruction semantics.",
       "sources": [
+        {
+          "source": "masnahmen.medikamentose_therapie.medikation.medikament.arzneimittel.arzneimittelname",
+          "transform": {
+            "type": "narrative",
+            "prefix": "Arzneimittel: "
+          }
+        },
+        {
+          "source": "masnahmen.medikamentose_therapie.medikation.medikament.wirkstoff.wirkstoffname",
+          "transform": {
+            "type": "narrative",
+            "prefix": "Wirkstoff: "
+          }
+        },
+        {
+          "source": "masnahmen.medikamentose_therapie.medikation.medikament.wirkstoff.wirkstoffcode",
+          "transform": {
+            "type": "narrative",
+            "prefix": "Wirkstoff-Code: "
+          }
+        },
+        {
+          "source": "masnahmen.medikamentose_therapie.medikation.medikament.wirkstoff.arzneilich_wirksamer_bestandteilq",
+          "transform": {
+            "type": "enum",
+            "map": {
+              "true": "Arzneilich wirksamer Bestandteil: ja",
+              "false": "Arzneilich wirksamer Bestandteil: nein"
+            }
+          }
+        },
+        {
+          "source": "masnahmen.medikamentose_therapie.medikation.medikament.wirkstoff.wirkstarke",
+          "transform": {
+            "type": "narrative",
+            "prefix": "Wirkstärke: "
+          }
+        },
         {
           "source": "masnahmen.medikamentose_therapie.medikation.dosierung.freitext",
           "transform": {
             "type": "narrative"
+          }
+        },
+        {
+          "source": "masnahmen.medikamentose_therapie.medikation.dosierung.zusatzliche_hinweise",
+          "transform": {
+            "type": "narrative",
+            "prefix": "Zusätzlicher Hinweis: "
+          }
+        },
+        {
+          "source": "masnahmen.medikamentose_therapie.medikation.dosierung.anweisungen_zur_einnahme",
+          "transform": {
+            "type": "narrative",
+            "prefix": "Einnahmeanweisung: "
           }
         },
         {
@@ -1044,6 +1221,29 @@
             "type": "narrative",
             "only_if_uncoded": true,
             "prefix": "Darreichungsform: "
+          }
+        }
+      ]
+    },
+    "compose-medication-product-code": {
+      "type": "compose_coded",
+      "target": "UVMedicationInformationsimple.code",
+      "null_flavor": "NA",
+      "reason": "The selected AKTIN simple medication-information template represents the medicinal product in manufacturedMaterial/code. Combine Arzneimittel-Code with Arzneimittel-Name as code plus displayName; when only the name is available, use the template-mandated NA null flavor and preserve the name in originalText.",
+      "sources": [
+        {
+          "source": "masnahmen.medikamentose_therapie.medikation.medikament.arzneimittel.arzneimittelcode",
+          "role": "code",
+          "transform": {
+            "type": "code_system",
+            "code_system": "1.2.276.0.76.4.6"
+          }
+        },
+        {
+          "source": "masnahmen.medikamentose_therapie.medikation.medikament.arzneimittel.arzneimittelname",
+          "role": "display_name",
+          "transform": {
+            "type": "narrative"
           }
         }
       ]
@@ -1550,6 +1750,33 @@
       "element_id": "2.16.840.1.113883.2.6.60.3.9.13",
       "path": "hl7:observation/hl7:value"
     },
+    "CDADocumentationOf.documentationOf.serviceEvent.effectiveTime.high": {
+      "cda_target": "CDADocumentationOf.documentationOf.serviceEvent.effectiveTime.high",
+      "source_key": "1.2.276.0.76.10.2035@2014-09-17T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.24|PATH:hl7:documentationOf/hl7:serviceEvent/hl7:effectiveTime/cda:high",
+      "revisionless_source_key": "1.2.276.0.76.10.2035|ID:2.16.840.1.113883.2.6.60.3.9.24|PATH:hl7:documentationOf/hl7:serviceEvent/hl7:effectiveTime/cda:high",
+      "template_id": "1.2.276.0.76.10.2035",
+      "template_effective_date": "2014-09-17T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.24",
+      "path": "hl7:documentationOf/hl7:serviceEvent/hl7:effectiveTime/cda:high"
+    },
+    "CDADocumentationOf.documentationOf.serviceEvent.effectiveTime.low": {
+      "cda_target": "CDADocumentationOf.documentationOf.serviceEvent.effectiveTime.low",
+      "source_key": "1.2.276.0.76.10.2035@2014-09-17T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.22|PATH:hl7:documentationOf/hl7:serviceEvent/hl7:effectiveTime/cda:low",
+      "revisionless_source_key": "1.2.276.0.76.10.2035|ID:2.16.840.1.113883.2.6.60.3.9.22|PATH:hl7:documentationOf/hl7:serviceEvent/hl7:effectiveTime/cda:low",
+      "template_id": "1.2.276.0.76.10.2035",
+      "template_effective_date": "2014-09-17T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.22",
+      "path": "hl7:documentationOf/hl7:serviceEvent/hl7:effectiveTime/cda:low"
+    },
+    "CDADocumentationOf.documentationOf.serviceEvent.performer.time.high": {
+      "cda_target": "CDADocumentationOf.documentationOf.serviceEvent.performer.time.high",
+      "source_key": "1.2.276.0.76.10.2035@2014-09-17T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.40|PATH:hl7:documentationOf/hl7:serviceEvent/hl7:performer/hl7:time/hl7:high",
+      "revisionless_source_key": "1.2.276.0.76.10.2035|ID:2.16.840.1.113883.2.6.60.3.9.40|PATH:hl7:documentationOf/hl7:serviceEvent/hl7:performer/hl7:time/hl7:high",
+      "template_id": "1.2.276.0.76.10.2035",
+      "template_effective_date": "2014-09-17T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.40",
+      "path": "hl7:documentationOf/hl7:serviceEvent/hl7:performer/hl7:time/hl7:high"
+    },
     "CDADocumentationOf.documentationOf.serviceEvent.performer.time.low": {
       "cda_target": "CDADocumentationOf.documentationOf.serviceEvent.performer.time.low",
       "source_key": "1.2.276.0.76.10.2035@2014-09-17T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.39|PATH:hl7:documentationOf/hl7:serviceEvent/hl7:performer/hl7:time/hl7:low",
@@ -1567,6 +1794,15 @@
       "template_effective_date": "2016-06-01T00:00:00",
       "element_id": "2.16.840.1.113883.2.6.60.3.9.224",
       "path": "hl7:componentOf/hl7:encompassingEncounter/hl7:dischargeDispositionCode"
+    },
+    "CDAEncompassingEncounter.high": {
+      "cda_target": "CDAEncompassingEncounter.high",
+      "source_key": "1.2.276.0.76.10.2036@2016-06-01T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.223|PATH:hl7:componentOf/hl7:encompassingEncounter/hl7:effectiveTime/hl7:high",
+      "revisionless_source_key": "1.2.276.0.76.10.2036|ID:2.16.840.1.113883.2.6.60.3.9.223|PATH:hl7:componentOf/hl7:encompassingEncounter/hl7:effectiveTime/hl7:high",
+      "template_id": "1.2.276.0.76.10.2036",
+      "template_effective_date": "2016-06-01T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.223",
+      "path": "hl7:componentOf/hl7:encompassingEncounter/hl7:effectiveTime/hl7:high"
     },
     "CDAEncompassingEncounter.id_1": {
       "cda_target": "CDAEncompassingEncounter.id_1",
@@ -1712,6 +1948,60 @@
       "element_id": "2.16.840.1.113883.2.6.60.3.9.16",
       "path": "hl7:observation/hl7:value"
     },
+    "HeaderParticipantKostentraeger.code": {
+      "cda_target": "HeaderParticipantKostentraeger.code",
+      "source_key": "1.2.276.0.76.10.2022@2014-08-25T00:00:00|ID:2.16.840.1.113883.2.6.77.9.27|PATH:hl7:participant[hl7:templateId[@root='1.2.276.0.76.10.2022']]/hl7:associatedEntity/hl7:code",
+      "revisionless_source_key": "1.2.276.0.76.10.2022|ID:2.16.840.1.113883.2.6.77.9.27|PATH:hl7:participant[hl7:templateId[@root='1.2.276.0.76.10.2022']]/hl7:associatedEntity/hl7:code",
+      "template_id": "1.2.276.0.76.10.2022",
+      "template_effective_date": "2014-08-25T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.77.9.27",
+      "path": "hl7:participant[hl7:templateId[@root='1.2.276.0.76.10.2022']]/hl7:associatedEntity/hl7:code"
+    },
+    "HeaderParticipantKostentraeger.participant_templateId_root_1.2.276.0.76.10.2022.associatedEntity.id": {
+      "cda_target": "HeaderParticipantKostentraeger.participant_templateId_root_1.2.276.0.76.10.2022.associatedEntity.id",
+      "source_key": "1.2.276.0.76.10.2022@2014-08-25T00:00:00|ID:2.16.840.1.113883.2.6.77.9.26|PATH:hl7:participant[hl7:templateId[@root='1.2.276.0.76.10.2022']]/hl7:associatedEntity/hl7:id",
+      "revisionless_source_key": "1.2.276.0.76.10.2022|ID:2.16.840.1.113883.2.6.77.9.26|PATH:hl7:participant[hl7:templateId[@root='1.2.276.0.76.10.2022']]/hl7:associatedEntity/hl7:id",
+      "template_id": "1.2.276.0.76.10.2022",
+      "template_effective_date": "2014-08-25T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.77.9.26",
+      "path": "hl7:participant[hl7:templateId[@root='1.2.276.0.76.10.2022']]/hl7:associatedEntity/hl7:id"
+    },
+    "HeaderParticipantKostentraeger.participant_templateId_root_1.2.276.0.76.10.2022.time.high": {
+      "cda_target": "HeaderParticipantKostentraeger.participant_templateId_root_1.2.276.0.76.10.2022.time.high",
+      "source_key": "1.2.276.0.76.10.2022@2014-08-25T00:00:00|PATH:hl7:participant[hl7:templateId[@root='1.2.276.0.76.10.2022']]/hl7:time/hl7:high",
+      "revisionless_source_key": "1.2.276.0.76.10.2022|ID:|PATH:hl7:participant[hl7:templateId[@root='1.2.276.0.76.10.2022']]/hl7:time/hl7:high",
+      "template_id": "1.2.276.0.76.10.2022",
+      "template_effective_date": "2014-08-25T00:00:00",
+      "element_id": "",
+      "path": "hl7:participant[hl7:templateId[@root='1.2.276.0.76.10.2022']]/hl7:time/hl7:high"
+    },
+    "HeaderParticipantKostentraeger.scopingOrganization::OrganizationElements.name": {
+      "cda_target": "HeaderParticipantKostentraeger.scopingOrganization::OrganizationElements.name",
+      "source_key": "1.2.276.0.76.10.90011@2011-12-19T00:00:00|ID:2.16.840.1.113883.2.6.77.9.336|PATH:hl7:name",
+      "revisionless_source_key": "1.2.276.0.76.10.90011|ID:2.16.840.1.113883.2.6.77.9.336|PATH:hl7:name",
+      "template_id": "1.2.276.0.76.10.90011",
+      "template_effective_date": "2011-12-19T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.77.9.336",
+      "path": "hl7:name"
+    },
+    "HeaderParticipantKostentraeger.translation": {
+      "cda_target": "HeaderParticipantKostentraeger.translation",
+      "source_key": "1.2.276.0.76.10.2022@2014-08-25T00:00:00|ID:2.16.840.1.113883.2.6.77.9.179|PATH:hl7:participant[hl7:templateId[@root='1.2.276.0.76.10.2022']]/hl7:associatedEntity/hl7:code/hl7:translation",
+      "revisionless_source_key": "1.2.276.0.76.10.2022|ID:2.16.840.1.113883.2.6.77.9.179|PATH:hl7:participant[hl7:templateId[@root='1.2.276.0.76.10.2022']]/hl7:associatedEntity/hl7:code/hl7:translation",
+      "template_id": "1.2.276.0.76.10.2022",
+      "template_effective_date": "2014-08-25T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.77.9.179",
+      "path": "hl7:participant[hl7:templateId[@root='1.2.276.0.76.10.2022']]/hl7:associatedEntity/hl7:code/hl7:translation"
+    },
+    "HeaderParticipantKostentraeger.translation_codeSystem_2.16.840.1.113883.3.7.1.1": {
+      "cda_target": "HeaderParticipantKostentraeger.translation_codeSystem_2.16.840.1.113883.3.7.1.1",
+      "source_key": "1.2.276.0.76.10.2022@2014-08-25T00:00:00|ID:2.16.840.1.113883.2.6.77.9.178|PATH:hl7:participant[hl7:templateId[@root='1.2.276.0.76.10.2022']]/hl7:associatedEntity/hl7:code/hl7:translation[@codeSystem='2.16.840.1.113883.3.7.1.1']",
+      "revisionless_source_key": "1.2.276.0.76.10.2022|ID:2.16.840.1.113883.2.6.77.9.178|PATH:hl7:participant[hl7:templateId[@root='1.2.276.0.76.10.2022']]/hl7:associatedEntity/hl7:code/hl7:translation[@codeSystem='2.16.840.1.113883.3.7.1.1']",
+      "template_id": "1.2.276.0.76.10.2022",
+      "template_effective_date": "2014-08-25T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.77.9.178",
+      "path": "hl7:participant[hl7:templateId[@root='1.2.276.0.76.10.2022']]/hl7:associatedEntity/hl7:code/hl7:translation[@codeSystem='2.16.840.1.113883.3.7.1.1']"
+    },
     "HeartRate.value": {
       "cda_target": "HeartRate.value",
       "source_key": "1.2.276.0.76.10.4033@2014-09-16T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.9|PATH:hl7:observation/hl7:value",
@@ -1729,6 +2019,15 @@
       "template_effective_date": "2024-08-14T18:14:44",
       "element_id": "2.16.840.1.113883.2.6.60.3.9.4069.1",
       "path": "hl7:observation/hl7:value"
+    },
+    "Laterality.value": {
+      "cda_target": "Laterality.value",
+      "source_key": "1.2.276.0.76.10.90026@2017-02-13T00:00:00|ID:2.16.840.1.113883.2.6.77.9.100|PATH:hl7:qualifier[hl7:name/@code='20228-3']/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.10.90026|ID:2.16.840.1.113883.2.6.77.9.100|PATH:hl7:qualifier[hl7:name/@code='20228-3']/hl7:value",
+      "template_id": "1.2.276.0.76.10.90026",
+      "template_effective_date": "2017-02-13T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.77.9.100",
+      "path": "hl7:qualifier[hl7:name/@code='20228-3']/hl7:value"
     },
     "Medikation.approachSiteCode": {
       "cda_target": "Medikation.approachSiteCode",
@@ -1874,6 +2173,15 @@
       "element_id": "2.16.840.1.113883.2.6.60.3.9.1257",
       "path": "hl7:act/hl7:statusCode"
     },
+    "ProblemobservationMDRO.observation.value": {
+      "cda_target": "ProblemobservationMDRO.observation.value",
+      "source_key": "1.2.276.0.76.10.4073@2017-03-01T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.325|PATH:hl7:observation/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.10.4073|ID:2.16.840.1.113883.2.6.60.3.9.325|PATH:hl7:observation/hl7:value",
+      "template_id": "1.2.276.0.76.10.4073",
+      "template_effective_date": "2017-03-01T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.325",
+      "path": "hl7:observation/hl7:value"
+    },
     "Problemobservationcedis.originalText": {
       "cda_target": "Problemobservationcedis.originalText",
       "source_key": "1.2.276.0.76.10.4040@2015-09-18T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.1556|PATH:hl7:observation/hl7:value/hl7:originalText",
@@ -2018,6 +2326,24 @@
       "element_id": "2.16.840.1.113883.2.6.60.3.9.656",
       "path": "hl7:act/hl7:code"
     },
+    "Referralto.act.participant.participantRole.code": {
+      "cda_target": "Referralto.act.participant.participantRole.code",
+      "source_key": "1.2.276.0.76.10.4067@2025-12-01T00:00:00|PATH:hl7:act/hl7:participant/hl7:participantRole/hl7:code",
+      "revisionless_source_key": "1.2.276.0.76.10.4067|ID:|PATH:hl7:act/hl7:participant/hl7:participantRole/hl7:code",
+      "template_id": "1.2.276.0.76.10.4067",
+      "template_effective_date": "2025-12-01T00:00:00",
+      "element_id": "",
+      "path": "hl7:act/hl7:participant/hl7:participantRole/hl7:code"
+    },
+    "Relevantdiagnostictestsorlaboratorydata.text": {
+      "cda_target": "Relevantdiagnostictestsorlaboratorydata.text",
+      "source_key": "1.2.276.0.76.10.3050@2025-12-01T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.110|PATH:hl7:section/hl7:text",
+      "revisionless_source_key": "1.2.276.0.76.10.3050|ID:2.16.840.1.113883.2.6.60.3.9.110|PATH:hl7:section/hl7:text",
+      "template_id": "1.2.276.0.76.10.3050",
+      "template_effective_date": "2025-12-01T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.110",
+      "path": "hl7:section/hl7:text"
+    },
     "RespiratoryRate.value": {
       "cda_target": "RespiratoryRate.value",
       "source_key": "1.2.276.0.76.10.4030@2014-09-16T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.14|PATH:hl7:observation/hl7:value",
@@ -2035,6 +2361,15 @@
       "template_effective_date": "2014-09-16T00:00:00",
       "element_id": "2.16.840.1.113883.2.6.60.3.9.8",
       "path": "hl7:observation/hl7:value"
+    },
+    "Transportmethod.high": {
+      "cda_target": "Transportmethod.high",
+      "source_key": "1.2.276.0.76.10.4037@2015-03-03T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.1631713|PATH:hl7:observation/hl7:effectiveTime/hl7:high",
+      "revisionless_source_key": "1.2.276.0.76.10.4037|ID:2.16.840.1.113883.2.6.60.3.9.1631713|PATH:hl7:observation/hl7:effectiveTime/hl7:high",
+      "template_id": "1.2.276.0.76.10.4037",
+      "template_effective_date": "2015-03-03T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.1631713",
+      "path": "hl7:observation/hl7:effectiveTime/hl7:high"
     },
     "Transportmethod.value": {
       "cda_target": "Transportmethod.value",
@@ -2305,6 +2640,15 @@
       "template_effective_date": "2024-08-13T10:50:15",
       "element_id": "2.16.840.1.113883.2.6.60.3.9.19196",
       "path": "hl7:observation/hl7:value"
+    },
+    "hauptkostentrager.code": {
+      "cda_target": "hauptkostentrager.code",
+      "source_key": "1.2.276.0.76.3.1.195.10.4@2024-08-09T10:35:24|ID:2.16.840.1.113883.2.6.77.9.27|PATH:hl7:participant[hl7:templateId[@root='1.2.276.0.76.3.1.195.10.4']]/hl7:associatedEntity/hl7:code",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.4|ID:2.16.840.1.113883.2.6.77.9.27|PATH:hl7:participant[hl7:templateId[@root='1.2.276.0.76.3.1.195.10.4']]/hl7:associatedEntity/hl7:code",
+      "template_id": "1.2.276.0.76.3.1.195.10.4",
+      "template_effective_date": "2024-08-09T10:35:24",
+      "element_id": "2.16.840.1.113883.2.6.77.9.27",
+      "path": "hl7:participant[hl7:templateId[@root='1.2.276.0.76.3.1.195.10.4']]/hl7:associatedEntity/hl7:code"
     },
     "hauptkostentrager.name": {
       "cda_target": "hauptkostentrager.name",

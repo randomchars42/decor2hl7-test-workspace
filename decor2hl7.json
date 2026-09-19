@@ -1,0 +1,112 @@
+{
+  "prefix": "aktin-",
+  "language": "de-DE",
+  "model_extensions": {
+    "version": 1,
+    "status": "reviewed",
+    "collision_policy": "error",
+    "reason": "AKTIN-reviewed additions for CDA values required by the selected Notaufnahmeregister template but absent from the published dataset.",
+    "fields": {
+      "hauptkostentrager.versicherungsverhaltnis.versichertenstatus": {
+        "name": "Versichertenstatus",
+        "description": "Versichertenstatus des Patienten",
+        "parent": "hauptkostentrager.versicherungsverhaltnis",
+        "type": "code",
+        "min": 0,
+        "max": 1,
+        "value_set": {
+          "id": "1.2.276.0.76.11.68",
+          "effective_date": "2011-12-19T00:00:00"
+        },
+        "reason": "AKTIN approved adding the missing dataset value needed for the CDA Kostenträger participant."
+      },
+      "hauptkostentrager.versicherungsverhaltnis.versichertenstatus_gkv": {
+        "name": "Versichertenstatus GKV",
+        "description": "GKV-Codierung des Versichertenstatus",
+        "parent": "hauptkostentrager.versicherungsverhaltnis",
+        "type": "code",
+        "min": 0,
+        "max": 1,
+        "value_set": {
+          "id": "1.2.276.0.76.11.162",
+          "effective_date": "2014-01-01T00:00:00"
+        },
+        "reason": "AKTIN approved adding the missing GKV status coding expected by the CDA Kostenträger translation."
+      },
+      "hauptkostentrager.versicherungsverhaltnis.weitere_versichertenstatuskodierung": {
+        "name": "Weitere Versichertenstatuskodierung",
+        "description": "Weitere lokal konfigurierte Codierung des Versichertenstatus",
+        "parent": "hauptkostentrager.versicherungsverhaltnis",
+        "type": "code",
+        "min": 0,
+        "max": 1,
+        "reason": "AKTIN approved a configurable additional coding for the repeating CDA Versichertenstatus translation."
+      },
+      "hauptkostentrager.versicherungsverhaltnis.kv_fall": {
+        "name": "Als KV-Fall abgerechnet",
+        "description": "Gibt an, ob der Fall als KV-Fall abgerechnet wird",
+        "parent": "hauptkostentrager.versicherungsverhaltnis",
+        "type": "code",
+        "min": 0,
+        "max": 1,
+        "value_set": {
+          "id": "1.2.276.0.76.3.1.195.11.19",
+          "effective_date": "2024-08-08T20:33:01"
+        },
+        "reason": "AKTIN approved adding the missing dataset value expected by the CDA Hauptkostenträger template."
+      },
+      "administrative_aufnahmeinformationen.transport.ankunftszeit": {
+        "name": "Ankunftszeit",
+        "description": "Ankunftszeit des Transports",
+        "parent": "administrative_aufnahmeinformationen.transport",
+        "type": "datetime",
+        "min": 0,
+        "max": 1,
+        "reason": "AKTIN approved adding the missing arrival timestamp expected by the CDA Transportmethode template."
+      },
+      "abschlussdiagnosen.abschlussdiagnose.lateralitat": {
+        "name": "Lateralität",
+        "description": "Seitenlokalisation der Abschlussdiagnose",
+        "parent": "abschlussdiagnosen.abschlussdiagnose",
+        "type": "code",
+        "min": 0,
+        "max": 1,
+        "value_set": {
+          "id": "1.2.276.0.76.11.412",
+          "effective_date": "2017-02-08T00:00:00"
+        },
+        "reason": "AKTIN approved adding the missing diagnosis-scoped laterality value expected by the CDA qualifier."
+      },
+      "administrative_verlegungsentlassungsinformationen.aufnehmende_fachabteilung": {
+        "name": "Aufnehmende Fachabteilung",
+        "description": "Aufnehmende Fachabteilung nach § 301 SGB V",
+        "parent": "administrative_verlegungsentlassungsinformationen",
+        "type": "code",
+        "min": 0,
+        "max": 1,
+        "value_set": {
+          "id": "1.2.276.0.76.3.1.195.11.17",
+          "effective_date": "2024-08-08T13:35:43"
+        },
+        "reason": "AKTIN approved adding the missing receiving-department key expected by the CDA Weiterbehandlung Verlegung template."
+      }
+    }
+  },
+  "network": {
+    "ipv4": true
+  },
+  "release": {
+    "date": "2026-04-27T18:50:33",
+    "label": "2026.1.2",
+    "status": "active",
+    "key": "2026.1.2"
+  },
+  "transaction": {
+    "id": "2.16.840.1.113883.2.6.60.3.4.60",
+    "effective_date": "2026-03-25T00:00:00",
+    "version_label": "2026",
+    "status": "draft",
+    "name": "Notaufnahmeregister Transitionsversion",
+    "key": "notaufnahmeregister--60"
+  }
+}
