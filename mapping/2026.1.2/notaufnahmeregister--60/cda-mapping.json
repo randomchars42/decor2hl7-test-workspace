@@ -10,16 +10,14 @@
     "template": "NotaufnahmeregisterTransitionsversion"
   },
   "fields": {
+    "patient.geschlecht": "CDArecordTargetnnar.administrativeGenderCode",
     "patient.anschrift.postleitzahl": "CDArecordTargetnnar.recordTarget.patientRole.addr.postalCode",
     "patient.identifikatoren.patienten_id": "PatientIdentifier.id",
     "hauptkostentrager.kostentrager.name": [
       "hauptkostentrager.name",
       "HeaderParticipantKostentraeger.scopingOrganization::OrganizationElements.name"
     ],
-    "hauptkostentrager.versicherungsverhaltnis.identifikation": [
-      "hauptkostentrager.participant_templateId_root_1.2.276.0.76.3.1.195.10.4.associatedEntity.id",
-      "HeaderParticipantKostentraeger.participant_templateId_root_1.2.276.0.76.10.2022.associatedEntity.id"
-    ],
+    "hauptkostentrager.versicherungsverhaltnis.identifikation": "HeaderParticipantKostentraeger.participant_templateId_root_1.2.276.0.76.10.2022.associatedEntity.id",
     "hauptkostentrager.versicherungsverhaltnis.versichertenstatus": "HeaderParticipantKostentraeger.code",
     "hauptkostentrager.versicherungsverhaltnis.versichertenstatus_gkv": "HeaderParticipantKostentraeger.translation_codeSystem_2.16.840.1.113883.3.7.1.1",
     "hauptkostentrager.versicherungsverhaltnis.weitere_versichertenstatuskodierung": "HeaderParticipantKostentraeger.translation",
@@ -901,9 +899,9 @@
     ],
     "administrative_verlegungsentlassungsinformationen.aufnehmende_fachabteilung": "Referralto.act.participant.participantRole.code",
     "dokumentationsinformationen.beginn_patientenbezogene_dokumentation.zeitpunkt_beginn_patientenbezogene_dokumentation": null,
-    "dokumentationsinformationen.berechnete_zeitintervalle.zeit_bis_zum_export": "zeit_bis_zum_export.value",
-    "dokumentationsinformationen.datenbereitstellung.name_des_edis": "name_des_edis.value",
-    "dokumentationsinformationen.datenbereitstellung.version_des_edis": "version_des_edis.value",
+    "dokumentationsinformationen.berechnete_zeitintervalle.zeit_bis_zum_export": null,
+    "dokumentationsinformationen.datenbereitstellung.name_des_edis": null,
+    "dokumentationsinformationen.datenbereitstellung.version_des_edis": null,
     "masnahmen.medikamentose_therapie.medikation.medikament.arzneimittel.arzneimittelname": [
       {
         "target": "UVMedicationInformationsimple.code",
@@ -1115,6 +1113,34 @@
           "reason": "Preserve each reviewed X-ray examination-region occurrence in the Diagnostics section narrative without joining occurrences or coalescing them with structured diagnostic entries.",
           "decision": "DEC-044",
           "reviewed_at": "2026-09-15"
+        }
+      ]
+    },
+    "addendum-dokumentationsinformationen.text": {
+      "blocks": [
+        {
+          "type": "fact",
+          "source": "dokumentationsinformationen.berechnete_zeitintervalle.zeit_bis_zum_export",
+          "label": "Zeit bis zum Export",
+          "reason": "Preserve this EDIS datum in the Addendum narrative while its rejected structured mapping is suspended pending AKTIN clarification; see the identity-pinned suspended CDA mappings list.",
+          "decision": "DEC-048",
+          "reviewed_at": "2026-11-03"
+        },
+        {
+          "type": "fact",
+          "source": "dokumentationsinformationen.datenbereitstellung.name_des_edis",
+          "label": "Name des EDIS",
+          "reason": "Preserve this EDIS datum in the Addendum narrative while its rejected structured mapping is suspended pending AKTIN clarification; see the identity-pinned suspended CDA mappings list.",
+          "decision": "DEC-048",
+          "reviewed_at": "2026-11-03"
+        },
+        {
+          "type": "fact",
+          "source": "dokumentationsinformationen.datenbereitstellung.version_des_edis",
+          "label": "Version des EDIS",
+          "reason": "Preserve this EDIS datum in the Addendum narrative while its rejected structured mapping is suspended pending AKTIN clarification; see the identity-pinned suspended CDA mappings list.",
+          "decision": "DEC-048",
+          "reviewed_at": "2026-11-03"
         }
       ]
     }
@@ -1858,6 +1884,15 @@
       "element_id": "2.16.840.1.113883.2.6.77.9.11",
       "path": "hl7:languageCode"
     },
+    "CDArecordTargetnnar.administrativeGenderCode": {
+      "cda_target": "CDArecordTargetnnar.administrativeGenderCode",
+      "source_key": "1.2.276.0.76.10.2032@2014-09-17T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.5|PATH:hl7:recordTarget/hl7:patientRole/hl7:patient/hl7:administrativeGenderCode",
+      "revisionless_source_key": "1.2.276.0.76.10.2032|ID:2.16.840.1.113883.2.6.60.3.9.5|PATH:hl7:recordTarget/hl7:patientRole/hl7:patient/hl7:administrativeGenderCode",
+      "template_id": "1.2.276.0.76.10.2032",
+      "template_effective_date": "2014-09-17T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.5",
+      "path": "hl7:recordTarget/hl7:patientRole/hl7:patient/hl7:administrativeGenderCode"
+    },
     "CDArecordTargetnnar.recordTarget.patientRole.addr.postalCode": {
       "cda_target": "CDArecordTargetnnar.recordTarget.patientRole.addr.postalCode",
       "source_key": "1.2.276.0.76.10.2032@2014-09-17T00:00:00|PATH:hl7:recordTarget/hl7:patientRole/hl7:addr/hl7:postalCode",
@@ -2533,6 +2568,15 @@
       "element_id": "2.16.840.1.113883.2.6.60.3.9.1642326",
       "path": "hl7:procedure/hl7:reference/hl7:externalDocument/hl7:text/hl7:reference"
     },
+    "addendum-dokumentationsinformationen.text": {
+      "cda_target": "addendum-dokumentationsinformationen.text",
+      "source_key": "1.2.276.0.76.3.1.195.10.73@2024-08-15T11:08:15|ID:2.16.840.1.113883.2.6.60.3.9.202|PATH:hl7:section/hl7:text",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.73|ID:2.16.840.1.113883.2.6.60.3.9.202|PATH:hl7:section/hl7:text",
+      "template_id": "1.2.276.0.76.3.1.195.10.73",
+      "template_effective_date": "2024-08-15T11:08:15",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.202",
+      "path": "hl7:section/hl7:text"
+    },
     "bga_angefordert.negationInd": {
       "cda_target": "bga_angefordert.negationInd",
       "source_key": "1.2.276.0.76.3.1.195.10.48@2024-05-24T00:00:00|PATH:hl7:procedure/@negationInd",
@@ -2659,15 +2703,6 @@
       "element_id": "2.16.840.1.113883.2.6.60.3.9.1632161",
       "path": "hl7:participant[hl7:templateId[@root='1.2.276.0.76.3.1.195.10.4']]/hl7:associatedEntity/hl7:scopingOrganization/hl7:name"
     },
-    "hauptkostentrager.participant_templateId_root_1.2.276.0.76.3.1.195.10.4.associatedEntity.id": {
-      "cda_target": "hauptkostentrager.participant_templateId_root_1.2.276.0.76.3.1.195.10.4.associatedEntity.id",
-      "source_key": "1.2.276.0.76.3.1.195.10.4@2024-08-09T10:35:24|PATH:hl7:participant[hl7:templateId[@root='1.2.276.0.76.3.1.195.10.4']]/hl7:associatedEntity/hl7:id",
-      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.4|ID:|PATH:hl7:participant[hl7:templateId[@root='1.2.276.0.76.3.1.195.10.4']]/hl7:associatedEntity/hl7:id",
-      "template_id": "1.2.276.0.76.3.1.195.10.4",
-      "template_effective_date": "2024-08-09T10:35:24",
-      "element_id": "",
-      "path": "hl7:participant[hl7:templateId[@root='1.2.276.0.76.3.1.195.10.4']]/hl7:associatedEntity/hl7:id"
-    },
     "isolation.negationInd": {
       "cda_target": "isolation.negationInd",
       "source_key": "1.2.276.0.76.3.1.195.10.65@2024-08-14T18:08:14|ID:2.16.840.1.113883.2.6.60.3.9.4068.1|PATH:hl7:procedure/@negationInd",
@@ -2738,15 +2773,6 @@
       "template_id": "1.2.276.0.76.3.1.195.10.21",
       "template_effective_date": "2024-08-13T10:50:15",
       "element_id": "2.16.840.1.113883.2.6.60.3.9.19196",
-      "path": "hl7:observation/hl7:value"
-    },
-    "name_des_edis.value": {
-      "cda_target": "name_des_edis.value",
-      "source_key": "1.2.276.0.76.3.1.195.10.86@2024-05-24T00:00:00|PATH:hl7:observation/hl7:value",
-      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.86|ID:|PATH:hl7:observation/hl7:value",
-      "template_id": "1.2.276.0.76.3.1.195.10.86",
-      "template_effective_date": "2024-05-24T00:00:00",
-      "element_id": "",
       "path": "hl7:observation/hl7:value"
     },
     "pulsfrequenz.value": {
@@ -2830,15 +2856,6 @@
       "element_id": "2.16.840.1.113883.2.6.60.3.9.163140",
       "path": "hl7:observation/hl7:value/hl7:qualifier[hl7:name/@code='67496-0']/hl7:value"
     },
-    "version_des_edis.value": {
-      "cda_target": "version_des_edis.value",
-      "source_key": "1.2.276.0.76.3.1.195.10.87@2024-05-24T00:00:00|PATH:hl7:observation/hl7:value",
-      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.87|ID:|PATH:hl7:observation/hl7:value",
-      "template_id": "1.2.276.0.76.3.1.195.10.87",
-      "template_effective_date": "2024-05-24T00:00:00",
-      "element_id": "",
-      "path": "hl7:observation/hl7:value"
-    },
     "vitalparametercontainer.effectiveTime": {
       "cda_target": "vitalparametercontainer.effectiveTime",
       "source_key": "1.2.276.0.76.3.1.195.10.95@2026-04-27T15:39:06|ID:2.16.840.1.113883.2.6.60.3.9.1642361|PATH:hl7:organizer/hl7:effectiveTime",
@@ -2847,15 +2864,6 @@
       "template_effective_date": "2026-04-27T15:39:06",
       "element_id": "2.16.840.1.113883.2.6.60.3.9.1642361",
       "path": "hl7:organizer/hl7:effectiveTime"
-    },
-    "zeit_bis_zum_export.value": {
-      "cda_target": "zeit_bis_zum_export.value",
-      "source_key": "1.2.276.0.76.3.1.195.10.85@2024-05-24T00:00:00|PATH:hl7:observation/hl7:value",
-      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.85|ID:|PATH:hl7:observation/hl7:value",
-      "template_id": "1.2.276.0.76.3.1.195.10.85",
-      "template_effective_date": "2024-05-24T00:00:00",
-      "element_id": "",
-      "path": "hl7:observation/hl7:value"
     },
     "zeitpunkt_entscheidung_zur_verlegung__entlassung.value": {
       "cda_target": "zeitpunkt_entscheidung_zur_verlegung__entlassung.value",
@@ -2912,21 +2920,5 @@
       "path": ""
     }
   },
-  "configuration_notes": [
-    {
-      "generated": true,
-      "source": "config/cda-extensions.json",
-      "note": "Uses reviewed CDA profile-overlay configuration for 3 template(s) in 3 mapped field(s).",
-      "templates": [
-        "1.2.276.0.76.3.1.195.10.85",
-        "1.2.276.0.76.3.1.195.10.86",
-        "1.2.276.0.76.3.1.195.10.87"
-      ],
-      "fields": [
-        "dokumentationsinformationen.berechnete_zeitintervalle.zeit_bis_zum_export",
-        "dokumentationsinformationen.datenbereitstellung.name_des_edis",
-        "dokumentationsinformationen.datenbereitstellung.version_des_edis"
-      ]
-    }
-  ]
+  "configuration_notes": []
 }
