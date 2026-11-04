@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets>
+   <valueSet xmlns:ns0="http://www.json.org"
+             xmlns:ns1="urn:hl7-org:v3"
+             xmlns:ns3="urn:art-decor:example"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             id="1.2.276.0.76.3.1.195.11.18"
+             name="unfallart-traumaregister"
+             displayName="Unfallart Traumaregister"
+             effectiveDate="2024-08-08T20:33:01"
+             statusCode="draft"
+             lastModifiedDate="2024-08-08T20:46:21"
+             canonicalUri="http://aktin.org/fhir/ValueSet/aktin-vs-unfallart-traumaregister">
+      <sourceCodeSystem id="2.16.840.1.113883.6.1"
+                        identifierName="Logical Observation Identifier Names and Codes"
+                        canonicalUri="http://loinc.org"
+                        canonicalUriDSTU2="http://loinc.org"
+                        canonicalUriSTU3="http://loinc.org"
+                        canonicalUriR4="http://loinc.org"
+                        canonicalUriR4B="http://loinc.org"
+                        canonicalUriR5="http://loinc.org"/>
+      <sourceCodeSystem id="2.16.840.1.113883.6.3"
+                        identifierName="ICD10"
+                        canonicalUri="http://hl7.org/fhir/sid/icd-10"
+                        canonicalUriDSTU2="http://hl7.org/fhir/sid/icd-10"
+                        canonicalUriSTU3="http://hl7.org/fhir/sid/icd-10"
+                        canonicalUriR4="http://hl7.org/fhir/sid/icd-10"
+                        canonicalUriR4B="http://hl7.org/fhir/sid/icd-10"
+                        canonicalUriR5="http://hl7.org/fhir/sid/icd-10"/>
+      <sourceCodeSystem id="2.16.840.1.113883.6.96"
+                        identifierName="SNOMED Clinical Terms"
+                        canonicalUri="http://snomed.info/sct"
+                        canonicalUriDSTU2="http://snomed.info/sct"
+                        canonicalUriSTU3="http://snomed.info/sct"
+                        canonicalUriR4="http://snomed.info/sct"
+                        canonicalUriR4B="http://snomed.info/sct"
+                        canonicalUriR5="http://snomed.info/sct"/>
+      <publishingAuthority name="AKTIN e. V." inherited="project">
+         <addrLine>c/o Uniklinik RWTH Aachen</addrLine>
+         <addrLine>Institut für Medizinische Informatik</addrLine>
+         <addrLine>Pauwelsstraße 35</addrLine>
+         <addrLine>52074 Aachen</addrLine>
+         <addrLine type="phone">Tel. +49 391 67 28186</addrLine>
+         <addrLine type="email">office@aktin.org</addrLine>
+      </publishingAuthority>
+      <copyright language="en-US" inherited="true">This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.</copyright>
+      <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.3.2.6.21748.27"
+                              valueSet="1.2.276.0.76.3.1.195.11.18"
+                              flexibility="2024-08-08T20:33:01"
+                              effectiveDate="2024-08-08T20:42:09"
+                              valueSetName="Unfallart Traumaregister"
+                              valueSetStatusCode="draft"
+                              valueSetEffectiveDate="2024-08-08T20:33:01"/>
+      <conceptList>
+         <concept code="V49"
+                  codeSystem="2.16.840.1.113883.6.3"
+                  displayName="Car occupant injured in other and unspecified transport accidents"
+                  level="0"
+                  type="L"/>
+         <concept code="V69"
+                  codeSystem="2.16.840.1.113883.6.3"
+                  displayName="Occupant of heavy transport vehicle injured in other and unspecified transport accidents"
+                  level="0"
+                  type="L"/>
+         <concept code="V79"
+                  codeSystem="2.16.840.1.113883.6.3"
+                  displayName="Bus occupant injured in other and unspecified transport accidents"
+                  level="0"
+                  type="L"/>
+         <concept code="X59.9"
+                  codeSystem="2.16.840.1.113883.6.3"
+                  displayName="Exposure to unspecified factor causing other and unspecified injury"
+                  level="0"
+                  type="L"/>
+         <concept code="W20"
+                  codeSystem="2.16.840.1.113883.6.3"
+                  displayName="Struck by thrown, projected or falling object"
+                  level="0"
+                  type="L"/>
+         <concept code="Y00"
+                  codeSystem="2.16.840.1.113883.6.3"
+                  displayName="Assault by blunt object"
+                  level="0"
+                  type="L"/>
+         <concept code="X96"
+                  codeSystem="2.16.840.1.113883.6.3"
+                  displayName="Assault by explosive material"
+                  level="0"
+                  type="L"/>
+         <concept code="X99"
+                  codeSystem="2.16.840.1.113883.6.3"
+                  displayName="Assault by sharp object"
+                  level="0"
+                  type="L"/>
+         <concept code="X93"
+                  codeSystem="2.16.840.1.113883.6.3"
+                  displayName="Assault by handgun discharge"
+                  level="0"
+                  type="L"/>
+         <concept code="V99"
+                  codeSystem="2.16.840.1.113883.6.3"
+                  displayName="Unspecified transport accident"
+                  level="0"
+                  type="L"/>
+         <concept code="V09"
+                  codeSystem="2.16.840.1.113883.6.3"
+                  displayName="Pedestrian injured in other and unspecified transport accidents"
+                  level="0"
+                  type="L"/>
+         <concept code="V29.91"
+                  codeSystem="2.16.840.1.113883.6.3"
+                  displayName="Electric (assisted) bicycle rider (driver) (passenger) injured in unspecified traffic accident"
+                  level="0"
+                  type="L"/>
+         <concept code="33036003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  displayName="Fall on same level (event)"
+                  level="0"
+                  type="L"/>
+         <concept code="LA28130-5"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  displayName="Height range of fall - Greater than 3 meters"
+                  level="0"
+                  type="L"/>
+         <concept code="LA28131-3"
+                  codeSystem="2.16.840.1.113883.6.1"
+                  displayName="Height range of fall - Less than 3 meters"
+                  level="0"
+                  type="L"/>
+         <concept code="1264045009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  displayName="Electric scooter accident (event)"
+                  level="0"
+                  type="L"/>
+         <concept code="V19"
+                  codeSystem="2.16.840.1.113883.6.3"
+                  displayName="Pedal cycle rider injured in other and unspecified transport accidents"
+                  level="0"
+                  type="L"/>
+         <concept code="V29.99"
+                  codeSystem="2.16.840.1.113883.6.3"
+                  displayName="Rider (driver) (passenger) of other motorcycle injured in unspecified traffic accident"
+                  level="0"
+                  type="L"/>
+      </conceptList>
+   </valueSet>
+</valueSets>

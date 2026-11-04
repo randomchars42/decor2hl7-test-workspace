@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets>
+   <valueSet xmlns:ns0="http://www.json.org"
+             xmlns:ns1="urn:hl7-org:v3"
+             xmlns:ns3="urn:art-decor:example"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             id="1.2.276.0.76.11.53"
+             name="referral-actions"
+             displayName="Referral actions"
+             statusCode="draft"
+             effectiveDate="2015-11-17T00:00:00"
+             canonicalUri="http://aktin.org/fhir/CodeSystem/aktin-vs-referral-actions">
+      <sourceCodeSystem id="1.2.276.0.76.3.1.195.5.53"
+                        identifierName="divi-codesystem-53"
+                        canonicalUri="urn:oid:1.2.276.0.76.3.1.195.5.53"
+                        canonicalUriDSTU2="urn:oid:1.2.276.0.76.3.1.195.5.53"
+                        canonicalUriSTU3="urn:oid:1.2.276.0.76.3.1.195.5.53"
+                        canonicalUriR4="urn:oid:1.2.276.0.76.3.1.195.5.53"
+                        canonicalUriR4B="urn:oid:1.2.276.0.76.3.1.195.5.53"
+                        canonicalUriR5="urn:oid:1.2.276.0.76.3.1.195.5.53"/>
+      <publishingAuthority name="AKTIN e. V." inherited="project">
+         <addrLine>c/o Uniklinik RWTH Aachen</addrLine>
+         <addrLine>Institut für Medizinische Informatik</addrLine>
+         <addrLine>Pauwelsstraße 35</addrLine>
+         <addrLine>52074 Aachen</addrLine>
+         <addrLine type="phone">Tel. +49 391 67 28186</addrLine>
+         <addrLine type="email">office@aktin.org</addrLine>
+      </publishingAuthority>
+      <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.3.2.6.20021.8"
+                              valueSet="1.2.276.0.76.11.53"
+                              flexibility="dynamic"
+                              effectiveDate="2018-08-18T12:49:08"
+                              valueSetName="Referral actions"
+                              valueSetStatusCode="draft"
+                              valueSetEffectiveDate="2015-11-17T00:00:00"/>
+      <conceptList>
+         <include codeSystem="1.2.276.0.76.3.1.195.5.53"
+                  flexibility="2019-12-30T00:00:00"/>
+      </conceptList>
+   </valueSet>
+</valueSets>

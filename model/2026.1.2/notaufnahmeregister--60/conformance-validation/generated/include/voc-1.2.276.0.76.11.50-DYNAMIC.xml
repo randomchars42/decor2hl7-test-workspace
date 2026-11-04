@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets>
+   <valueSet xmlns:ns0="http://www.json.org"
+             xmlns:ns1="urn:hl7-org:v3"
+             xmlns:ns3="urn:art-decor:example"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             id="1.2.276.0.76.11.50"
+             name="Pupilreaction"
+             displayName="Pupillenreaktion"
+             statusCode="draft"
+             effectiveDate="2015-11-17T00:00:00">
+      <sourceCodeSystem id="1.2.276.0.76.3.1.195.5.50"
+                        identifierName="divi-codesystem-50"
+                        canonicalUri="urn:oid:1.2.276.0.76.3.1.195.5.50"
+                        canonicalUriDSTU2="urn:oid:1.2.276.0.76.3.1.195.5.50"
+                        canonicalUriSTU3="urn:oid:1.2.276.0.76.3.1.195.5.50"
+                        canonicalUriR4="urn:oid:1.2.276.0.76.3.1.195.5.50"
+                        canonicalUriR4B="urn:oid:1.2.276.0.76.3.1.195.5.50"
+                        canonicalUriR5="urn:oid:1.2.276.0.76.3.1.195.5.50"/>
+      <sourceCodeSystem id="2.16.840.1.113883.5.1008"
+                        identifierName="Null Flavor"
+                        canonicalUri="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+                        canonicalUriDSTU2="http://hl7.org/fhir/v3/NullFlavor"
+                        canonicalUriSTU3="http://hl7.org/fhir/v3/NullFlavor"
+                        canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+                        canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+                        canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+                        context="external/hl7intl/v3/v3-NullFlavor"/>
+      <publishingAuthority name="AKTIN e. V." inherited="project">
+         <addrLine>c/o Uniklinik RWTH Aachen</addrLine>
+         <addrLine>Institut für Medizinische Informatik</addrLine>
+         <addrLine>Pauwelsstraße 35</addrLine>
+         <addrLine>52074 Aachen</addrLine>
+         <addrLine type="phone">Tel. +49 391 67 28186</addrLine>
+         <addrLine type="email">office@aktin.org</addrLine>
+      </publishingAuthority>
+      <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.3.8.19.0"
+                              effectiveDate="2015-10-13T21:53:38"
+                              valueSet="1.2.276.0.76.11.50"
+                              flexibility="dynamic"
+                              valueSetName="Pupillenreaktion"
+                              valueSetStatusCode="draft"
+                              valueSetEffectiveDate="2015-11-17T00:00:00"/>
+      <conceptList>
+         <concept code="B"
+                  codeSystem="1.2.276.0.76.3.1.195.5.50"
+                  displayName="prompt"
+                  level="0"
+                  type="L"/>
+         <concept code="D"
+                  codeSystem="1.2.276.0.76.3.1.195.5.50"
+                  displayName="träge"
+                  level="0"
+                  type="L"/>
+         <concept code="A"
+                  codeSystem="1.2.276.0.76.3.1.195.5.50"
+                  displayName="keine"
+                  level="0"
+                  type="L"/>
+         <exception code="UNK"
+                    codeSystem="2.16.840.1.113883.5.1008"
+                    displayName="Unbekannt"
+                    level="0"
+                    type="L"/>
+      </conceptList>
+   </valueSet>
+</valueSets>

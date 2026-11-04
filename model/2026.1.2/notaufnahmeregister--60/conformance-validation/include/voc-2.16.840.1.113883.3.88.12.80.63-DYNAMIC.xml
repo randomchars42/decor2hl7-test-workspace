@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets>
+   <valueSet xmlns:ns0="http://www.json.org"
+             xmlns:ns1="urn:hl7-org:v3"
+             xmlns:ns3="urn:art-decor:example"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             id="2.16.840.1.113883.3.88.12.80.63"
+             name="Country"
+             displayName="Country"
+             effectiveDate="2013-01-31T00:00:00"
+             statusCode="final">
+      <sourceCodeSystem id="2.16.840.1.113883.3.88.12.80.63"
+                        identifierName="Country"
+                        canonicalUri="https://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.63--20130131000000"
+                        canonicalUriDSTU2="https://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.63--20130131000000"
+                        canonicalUriSTU3="https://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.63--20130131000000"
+                        canonicalUriR4="https://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.63--20130131000000"
+                        canonicalUriR4B="https://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.63--20130131000000"
+                        canonicalUriR5="https://art-decor.org/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.63--20130131000000"/>
+      <publishingAuthority name="HL7 International" inherited="project">
+         <addrLine>Health Level Seven International</addrLine>
+         <addrLine>3300 Washtenaw Avenue</addrLine>
+         <addrLine>Suite 227</addrLine>
+         <addrLine>Ann Arbor, MI 48104- 4261</addrLine>
+         <addrLine>USA</addrLine>
+         <addrLine>T +1 734 677 7777 </addrLine>
+         <addrLine>F +1 734 677 6622</addrLine>
+         <addrLine>E info@hl7.org</addrLine>
+      </publishingAuthority>
+      <conceptList>
+         <concept code="AW"
+                  codeSystem="2.16.840.1.113883.3.88.12.80.63"
+                  displayName="Aruba"
+                  level="0"
+                  type="L"/>
+         <concept code="IL"
+                  codeSystem="2.16.840.1.113883.3.88.12.80.63"
+                  displayName="Israel"
+                  level="0"
+                  type="L"/>
+      </conceptList>
+   </valueSet>
+</valueSets>

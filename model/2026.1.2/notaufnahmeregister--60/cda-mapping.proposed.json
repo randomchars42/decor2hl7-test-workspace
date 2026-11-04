@@ -1,0 +1,3170 @@
+{
+  "version": 10,
+  "model": {
+    "dataset_id": "2.16.840.1.113883.2.6.60.3.1.9",
+    "transaction_id": "2.16.840.1.113883.2.6.60.3.4.60",
+    "effective_date": "2026-03-25T00:00:00"
+  },
+  "target": {
+    "format": "cda",
+    "template": "NotaufnahmeregisterTransitionsversion"
+  },
+  "fields": {
+    "patient.anschrift.postleitzahl": null,
+    "patient.identifikatoren.patienten_id": null,
+    "hauptkostentrager.kostentrager.name": "hauptkostentrager.name",
+    "hauptkostentrager.versicherungsverhaltnis.identifikation": "hauptkostentrager.participant_templateId_root_1.2.276.0.76.3.1.195.10.4.associatedEntity.id",
+    "administrative_aufnahmeinformationen.aufnahmezeitpunkt": null,
+    "administrative_aufnahmeinformationen.fallnummer": "CDAEncompassingEncounter.id_2",
+    "administrative_aufnahmeinformationen.episodennummer": "CDAEncompassingEncounter.id_1",
+    "administrative_aufnahmeinformationen.zuweisung_zur_notaufnahme.zuweisung": "Referralfrom.act.participant.participantRole.code",
+    "administrative_aufnahmeinformationen.transport.transportmittel": "Transportmethod.value",
+    "administrative_aufnahmeinformationen.transport.medizinische_begleitung": {
+      "target": "medizinische-begleitung.code",
+      "transform": {
+        "type": "enum",
+        "select": "raw",
+        "map": {
+          "ärztlich begleitet": {
+            "code": "715933006",
+            "codeSystem": "2.16.840.1.113883.6.96",
+            "displayName": "Provision of medical patient escort (procedure)",
+            "kind": "items",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.2",
+            "valueSetEffectiveDate": "2024-02-14T11:23:51"
+          },
+          "nicht-ärztlich begleitet": {
+            "code": "1156336002",
+            "codeSystem": "2.16.840.1.113883.6.96",
+            "displayName": "Escorting subject of care (procedure)",
+            "kind": "items",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.2",
+            "valueSetEffectiveDate": "2024-02-14T11:23:51"
+          }
+        }
+      }
+    },
+    "ersteinschatzung.direkter_arztkontakt": {
+      "target": "direkter_arztkontakt.observation.negationInd",
+      "transform": {
+        "type": "not"
+      }
+    },
+    "ersteinschatzung.parameter_der_ersteinschatzung.ergebnis_der_ersteinschatzung": {
+      "target": "ersteinschatzung.value",
+      "transform": {
+        "type": "enum",
+        "select": "raw",
+        "map": {
+          "rot": {
+            "code": "LA21538-6",
+            "codeSystem": "2.16.840.1.113883.6.1",
+            "displayName": "Resuscitation",
+            "kind": "items",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.11",
+            "valueSetEffectiveDate": "2024-07-22T14:52:50"
+          },
+          "orange": {
+            "code": "LA19759-2",
+            "codeSystem": "2.16.840.1.113883.6.1",
+            "displayName": "Emergent",
+            "kind": "items",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.11",
+            "valueSetEffectiveDate": "2024-07-22T14:52:50"
+          },
+          "gelb": {
+            "code": "LA21544-4",
+            "codeSystem": "2.16.840.1.113883.6.1",
+            "displayName": "Urgent",
+            "kind": "items",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.11",
+            "valueSetEffectiveDate": "2024-07-22T14:52:50"
+          },
+          "grün": {
+            "code": "LA21587-3",
+            "codeSystem": "2.16.840.1.113883.6.1",
+            "displayName": "Less urgent",
+            "kind": "items",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.11",
+            "valueSetEffectiveDate": "2024-07-22T14:52:50"
+          },
+          "blau": {
+            "code": "LA21545-1",
+            "codeSystem": "2.16.840.1.113883.6.1",
+            "displayName": "Nonurgent",
+            "kind": "items",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.11",
+            "valueSetEffectiveDate": "2024-07-22T14:52:50"
+          }
+        }
+      }
+    },
+    "ersteinschatzung.parameter_der_ersteinschatzung.zeitpunkt_der_ersteinschatzung": "ersteinschatzung.effectiveTime",
+    "ersteinschatzung.parameter_der_ersteinschatzung.verwendetes_ersteinschatzungssystem": {
+      "target": "ersteinschatzung.methodCode",
+      "transform": {
+        "type": "enum",
+        "select": "raw",
+        "map": {
+          "MTS": {
+            "code": "713009001",
+            "codeSystem": "2.16.840.1.113883.6.96",
+            "displayName": "Manchester Triage System (assessment scale)",
+            "kind": "items",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.12",
+            "valueSetEffectiveDate": "2024-07-22T15:20:32"
+          },
+          "ESI": {
+            "code": "713010006",
+            "codeSystem": "2.16.840.1.113883.6.96",
+            "displayName": "Emergency Severity Index (assessment scale)",
+            "kind": "items",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.12",
+            "valueSetEffectiveDate": "2024-07-22T15:20:32"
+          },
+          "SmED": {
+            "code": "smed",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.60",
+            "displayName": "SmED",
+            "kind": "items",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.12",
+            "valueSetEffectiveDate": "2024-07-22T15:20:32"
+          },
+          "sonstige": {
+            "code": "74964007",
+            "codeSystem": "2.16.840.1.113883.6.96",
+            "displayName": "Other (qualifier value)",
+            "kind": "items",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.12",
+            "valueSetEffectiveDate": "2024-07-22T15:20:32"
+          },
+          "keines": {
+            "code": "260413007",
+            "codeSystem": "2.16.840.1.113883.6.96",
+            "displayName": "None (qualifier value)",
+            "kind": "items",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.12",
+            "valueSetEffectiveDate": "2024-07-22T15:20:32"
+          }
+        }
+      }
+    },
+    "ersteinschatzung.parameter_der_ersteinschatzung.manchester_triage_system.mtsprasentationsdiagramm": "mts-prasentationsdiagramm.value",
+    "ersteinschatzung.parameter_der_ersteinschatzung.manchester_triage_system.mtsindikator.mtsindikatoren_rot": "mts-indikatoren-rot.value",
+    "ersteinschatzung.parameter_der_ersteinschatzung.manchester_triage_system.mtsindikator.mtsindikatoren_orange": "mts-indikatoren-orange.value",
+    "ersteinschatzung.parameter_der_ersteinschatzung.manchester_triage_system.mtsindikator.mtsindikatoren_gelb": "mts-indikatoren-gelb.value",
+    "ersteinschatzung.parameter_der_ersteinschatzung.manchester_triage_system.mtsindikator.mtsindikatoren_grun": "mts-indikatoren-grun.value",
+    "ersteinschatzung.parameter_der_ersteinschatzung.esitriage": {
+      "target": "esi-triage-faktoren.value",
+      "transform": {
+        "type": "enum",
+        "select": "raw",
+        "map": {
+          "sofortige lebensrettende Maßnahme notwendig": {
+            "code": "1",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.103",
+            "displayName": "sofortige lebensrettende Maßnahme notwendig",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "sofortige lebensrettende Maßnahme notwendig",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.20",
+            "valueSetEffectiveDate": "2024-07-22T16:51:10"
+          },
+          "Rot": {
+            "code": "1",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.103",
+            "displayName": "sofortige lebensrettende Maßnahme notwendig",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "sofortige lebensrettende Maßnahme notwendig",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.20",
+            "valueSetEffectiveDate": "2024-07-22T16:51:10"
+          },
+          "Hochrisikosituation": {
+            "code": "2",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.103",
+            "displayName": "Hochrisikosituation",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Hochrisikosituation",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.20",
+            "valueSetEffectiveDate": "2024-07-22T16:51:10"
+          },
+          "Orange": {
+            "code": "10",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.103",
+            "displayName": "Vitalzeichen in der Gefahrenzone",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Vitalzeichen in der Gefahrenzone",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.20",
+            "valueSetEffectiveDate": "2024-07-22T16:51:10"
+          },
+          "Verwirrt": {
+            "code": "3",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.103",
+            "displayName": "verwirrt",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "verwirrt",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.20",
+            "valueSetEffectiveDate": "2024-07-22T16:51:10"
+          },
+          "lethargisch": {
+            "code": "4",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.103",
+            "displayName": "lethargisch",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "lethargisch",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.20",
+            "valueSetEffectiveDate": "2024-07-22T16:51:10"
+          },
+          "desorientiert": {
+            "code": "5",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.103",
+            "displayName": "desorientiert",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "desorientiert",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.20",
+            "valueSetEffectiveDate": "2024-07-22T16:51:10"
+          },
+          "Starke Schmerzen": {
+            "code": "6",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.103",
+            "displayName": "starke Schmerzen",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "starke Schmerzen",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.20",
+            "valueSetEffectiveDate": "2024-07-22T16:51:10"
+          },
+          "Starkes Unwohlsein": {
+            "code": "7",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.103",
+            "displayName": "starkes Unwohlsein",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "starkes Unwohlsein",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.20",
+            "valueSetEffectiveDate": "2024-07-22T16:51:10"
+          },
+          "großes kindliches Leid": {
+            "code": "8",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.103",
+            "displayName": "großes kindliches Leid",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "großes kindliches Leid",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.20",
+            "valueSetEffectiveDate": "2024-07-22T16:51:10"
+          },
+          "Vitalzeichen in der Gefahrenzone": {
+            "code": "10",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.103",
+            "displayName": "Vitalzeichen in der Gefahrenzone",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Vitalzeichen in der Gefahrenzone",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.20",
+            "valueSetEffectiveDate": "2024-07-22T16:51:10"
+          },
+          "Vitalzeichen nicht in der Gefahrenzone": {
+            "code": "11",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.103",
+            "displayName": "Vitalzeichen nicht in der Gefahrenzone",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Vitalzeichen nicht in der Gefahrenzone",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.20",
+            "valueSetEffectiveDate": "2024-07-22T16:51:10"
+          },
+          "Gelb": {
+            "code": "11",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.103",
+            "displayName": "Vitalzeichen nicht in der Gefahrenzone",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Vitalzeichen nicht in der Gefahrenzone",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.20",
+            "valueSetEffectiveDate": "2024-07-22T16:51:10"
+          },
+          "eine Ressource benötigt": {
+            "code": "12",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.103",
+            "displayName": "eine Ressource benötigt",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "eine Ressource benötigt",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.20",
+            "valueSetEffectiveDate": "2024-07-22T16:51:10"
+          },
+          "Grün": {
+            "code": "12",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.103",
+            "displayName": "eine Ressource benötigt",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "eine Ressource benötigt",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.20",
+            "valueSetEffectiveDate": "2024-07-22T16:51:10"
+          },
+          "keine Ressourcen benötigt": {
+            "code": "13",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.103",
+            "displayName": "keine Ressourcen benötigt",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "keine Ressourcen benötigt",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.20",
+            "valueSetEffectiveDate": "2024-07-22T16:51:10"
+          },
+          "Blau": {
+            "code": "13",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.103",
+            "displayName": "keine Ressourcen benötigt",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "keine Ressourcen benötigt",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.20",
+            "valueSetEffectiveDate": "2024-07-22T16:51:10"
+          }
+        }
+      }
+    },
+    "notfallanamnese.beschwerden_bei_vorstellung.beschwerden_bei_vorstellung_freitext": "Problemobservationcedis.originalText",
+    "notfallanamnese.beschwerden_bei_vorstellung.beschwerden_bei_vorstellung_cedis": "Problemobservationcedis.value",
+    "notfallanamnese.beschwerden_bei_vorstellung.ereigniseintritt": null,
+    "notfallanamnese.zeitpunkt_erster_arztkontakt": null,
+    "notfallanamnese.notfallanamnese_des_patienten": "Additionalmodulessection.text",
+    "notfallanamnese.unfallanamnese.unfallursache": "unfallursache-kinetik.observation.value",
+    "notfallanamnese.unfallanamnese.fahrzeug_des_verunfallten": {
+      "target": "unfall-anamnese.act.participant.participantRole.code",
+      "transform": {
+        "type": "enum",
+        "select": "raw",
+        "map": {
+          "kein Fahrzeug - als Fußgänger angefahren": {
+            "code": "V09.3",
+            "codeSystem": "2.16.840.1.113883.6.3",
+            "displayName": "Pedestrian injured in unspecified traffic accident",
+            "kind": "items",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.8",
+            "valueSetEffectiveDate": "2024-06-26T13:29:30"
+          },
+          "PKW": {
+            "code": "71783008",
+            "codeSystem": "2.16.840.1.113883.6.96",
+            "displayName": "Automobile, device (physical object)",
+            "kind": "items",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.8",
+            "valueSetEffectiveDate": "2024-06-26T13:29:30"
+          },
+          "LKW": {
+            "code": "12247004",
+            "codeSystem": "2.16.840.1.113883.6.96",
+            "displayName": "Truck, device (physical object)",
+            "kind": "items",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.8",
+            "valueSetEffectiveDate": "2024-06-26T13:29:30"
+          },
+          "Bus": {
+            "code": "22674006",
+            "codeSystem": "2.16.840.1.113883.6.96",
+            "displayName": "Motor bus, device (physical object)",
+            "kind": "items",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.8",
+            "valueSetEffectiveDate": "2024-06-26T13:29:30"
+          },
+          "Motorrad": {
+            "code": "90748009",
+            "codeSystem": "2.16.840.1.113883.6.96",
+            "displayName": "Motorcycle, device (physical object)",
+            "kind": "items",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.8",
+            "valueSetEffectiveDate": "2024-06-26T13:29:30"
+          },
+          "Traktor": {
+            "code": "303973000",
+            "codeSystem": "2.16.840.1.113883.6.96",
+            "displayName": "Agricultural vehicle (physical object)",
+            "kind": "items",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.8",
+            "valueSetEffectiveDate": "2024-06-26T13:29:30"
+          },
+          "Fahrrad": {
+            "code": "31493009",
+            "codeSystem": "2.16.840.1.113883.6.96",
+            "displayName": "Pedal cycle, device (physical object)",
+            "kind": "items",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.8",
+            "valueSetEffectiveDate": "2024-06-26T13:29:30"
+          },
+          "unterstütztes Fahrrad": {
+            "code": "705415002",
+            "codeSystem": "2.16.840.1.113883.6.96",
+            "displayName": "Assistive cycle (physical object)",
+            "kind": "items",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.8",
+            "valueSetEffectiveDate": "2024-06-26T13:29:30"
+          },
+          "Pedelec": {
+            "code": "705415002",
+            "codeSystem": "2.16.840.1.113883.6.96",
+            "displayName": "Assistive cycle (physical object)",
+            "kind": "items",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.8",
+            "valueSetEffectiveDate": "2024-06-26T13:29:30"
+          },
+          "E-Bike": {
+            "code": "705415002",
+            "codeSystem": "2.16.840.1.113883.6.96",
+            "displayName": "Assistive cycle (physical object)",
+            "kind": "items",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.8",
+            "valueSetEffectiveDate": "2024-06-26T13:29:30"
+          },
+          "E-Scooter": {
+            "code": "465073007",
+            "codeSystem": "2.16.840.1.113883.6.96",
+            "displayName": "Assistive scooter, electric-motor-driven (physical object)",
+            "kind": "items",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.8",
+            "valueSetEffectiveDate": "2024-06-26T13:29:30"
+          },
+          "Straßenbahn": {
+            "code": "38548008",
+            "codeSystem": "2.16.840.1.113883.6.96",
+            "displayName": "Streetcar, device (physical object)",
+            "kind": "items",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.8",
+            "valueSetEffectiveDate": "2024-06-26T13:29:30"
+          },
+          "Zug": {
+            "code": "62193008",
+            "codeSystem": "2.16.840.1.113883.6.96",
+            "displayName": "Railway train, device (physical object)",
+            "kind": "items",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.8",
+            "valueSetEffectiveDate": "2024-06-26T13:29:30"
+          },
+          "Flugzeug": {
+            "code": "21753002",
+            "codeSystem": "2.16.840.1.113883.6.96",
+            "displayName": "Aircraft, device (physical object)",
+            "kind": "items",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.8",
+            "valueSetEffectiveDate": "2024-06-26T13:29:30"
+          },
+          "Schiff": {
+            "code": "12561005",
+            "codeSystem": "2.16.840.1.113883.6.96",
+            "displayName": "Watercraft, device (physical object)",
+            "kind": "items",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.8",
+            "valueSetEffectiveDate": "2024-06-26T13:29:30"
+          },
+          "Anderes": {
+            "code": "74964007",
+            "codeSystem": "2.16.840.1.113883.9.96",
+            "displayName": "Other (qualifier value)",
+            "kind": "items",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.8",
+            "valueSetEffectiveDate": "2024-06-26T13:29:30"
+          }
+        }
+      }
+    },
+    "notfallanamnese.unfallanamnese.unfallkinetik": {
+      "target": "unfallursache-kinetik.observation.value.qualifier_name.code_67496-0.value",
+      "transform": {
+        "type": "enum",
+        "select": "raw",
+        "map": {
+          "Sturz mit Fallhöhe >= 3 m": {
+            "code": "LA28130-5",
+            "codeSystem": "2.16.840.1.113883.6.1",
+            "displayName": "Height range of fall - Greater than 3 meters",
+            "kind": "items",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.5",
+            "valueSetEffectiveDate": "2024-02-14T12:41:43"
+          },
+          "Sturz mit Fallhöhe < 3 m": {
+            "code": "LA28131-3",
+            "codeSystem": "2.16.840.1.113883.6.1",
+            "displayName": "Height range of fall - Less than 3 meters",
+            "kind": "items",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.5",
+            "valueSetEffectiveDate": "2024-02-14T12:41:43"
+          },
+          "Ebenerdiger Sturz": {
+            "code": "33036003",
+            "codeSystem": "2.16.840.1.113883.6.96",
+            "displayName": "Fall on same level (event)",
+            "kind": "items",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.5",
+            "valueSetEffectiveDate": "2024-02-14T12:41:43"
+          },
+          "Fahrzeug gegen (fest)stehendes Objekt": {
+            "code": "429061003",
+            "codeSystem": "2.16.840.1.113883.6.96",
+            "displayName": "Injury due to impact of moving subject with the stationary object (disorder)",
+            "kind": "items",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.5",
+            "valueSetEffectiveDate": "2024-02-14T12:41:43"
+          },
+          "Fahrzeug gegen sich bewegendes Objekt": {
+            "code": "242984003",
+            "codeSystem": "2.16.840.1.113883.6.96",
+            "displayName": "Injury of unknown intent due to impact with moving vehicle (disorder)",
+            "kind": "items",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.5",
+            "valueSetEffectiveDate": "2024-02-14T12:41:43"
+          },
+          "Schlag": {
+            "code": "219236005",
+            "codeSystem": "2.16.840.1.113883.6.96",
+            "displayName": "Assault by striking with blunt object (event)",
+            "kind": "items",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.5",
+            "valueSetEffectiveDate": "2024-02-14T12:41:43"
+          },
+          "Schuss": {
+            "code": "269796009",
+            "codeSystem": "2.16.840.1.113883.6.96",
+            "displayName": "Shotgun accident (event)",
+            "kind": "items",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.5",
+            "valueSetEffectiveDate": "2024-02-14T12:41:43"
+          },
+          "Stich": {
+            "code": "274923000",
+            "codeSystem": "2.16.840.1.113883.6.96",
+            "displayName": "Accident caused by edge tool (event)",
+            "kind": "items",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.5",
+            "valueSetEffectiveDate": "2024-02-14T12:41:43"
+          },
+          "Explosion": {
+            "code": "39826003",
+            "codeSystem": "2.16.840.1.113883.6.96",
+            "displayName": "Struck by explosion (event)",
+            "kind": "items",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.5",
+            "valueSetEffectiveDate": "2024-02-14T12:41:43"
+          },
+          "Verpuffung": {
+            "code": "33980000",
+            "codeSystem": "2.16.840.1.113883.6.96",
+            "displayName": "Deflagration (physical force)",
+            "kind": "items",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.5",
+            "valueSetEffectiveDate": "2024-02-14T12:41:43"
+          },
+          "Verschüttung": {
+            "code": "242023009",
+            "codeSystem": "2.16.840.1.113883.6.96",
+            "displayName": "Asphyxia by burial under powder or solid matter (event)",
+            "kind": "items",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.5",
+            "valueSetEffectiveDate": "2024-02-14T12:41:43"
+          },
+          "Lawine": {
+            "code": "242559006",
+            "codeSystem": "2.16.840.1.113883.6.96",
+            "displayName": "Accident caused by surface earth or water movement (event)",
+            "kind": "items",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.5",
+            "valueSetEffectiveDate": "2024-02-14T12:41:43"
+          },
+          "Andere": {
+            "code": "74964007",
+            "codeSystem": "2.16.840.1.113883.6.96",
+            "displayName": "Other (qualifier value)",
+            "kind": "items",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.5",
+            "valueSetEffectiveDate": "2024-02-14T12:41:43"
+          }
+        }
+      }
+    },
+    "notfallanamnese.unfallanamnese.unfallart_trauma_register": "unfallart-traumaregister.value",
+    "notfallanamnese.verdacht_auf_alkohol_drogen_medikamenteneinflussq": "substanz-einfluss.value",
+    "klinische_basisdaten_patient.allergien.allergie_beschreibung": "AllergienUnvertraeglichkeiten.text",
+    "klinische_basisdaten_patient.allergien.agens": {
+      "target": "Allergyintoleranceobservation.observation.participant.participantRole.playingEntity.code",
+      "transform": {
+        "type": "coded_fallback",
+        "allowed": [
+          {
+            "code": "ALGN",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.52",
+            "displayName": "Allergen"
+          },
+          {
+            "code": "A07AA",
+            "codeSystem": "2.16.840.1.113883.6.73",
+            "displayName": "Antibiotika"
+          },
+          {
+            "code": "V08",
+            "codeSystem": "2.16.840.1.113883.6.73",
+            "displayName": "Kontrastmittel"
+          }
+        ],
+        "null_flavor": "OTH",
+        "value_set": {
+          "id": "1.2.276.0.76.11.52",
+          "effective_date": "2015-11-17T00:00:00"
+        }
+      }
+    },
+    "klinische_basisdaten_patient.allergien.abgeleitete_informationen_zur_weitergabe.antibiotikaallergie": {
+      "target": "Allergyintoleranceobservation_antibiotikaallergie.negationInd",
+      "cda_target": "Allergyintoleranceobservation.negationInd",
+      "structure": "repeat-by-example-discriminator-allergyintoleranceobservation-negationind",
+      "branch": "antibiotikaallergie",
+      "transform": {
+        "type": "not"
+      }
+    },
+    "klinische_basisdaten_patient.allergien.abgeleitete_informationen_zur_weitergabe.kontrastmittelallergie": {
+      "target": "Allergyintoleranceobservation_kontrastmittelallergie.negationInd",
+      "cda_target": "Allergyintoleranceobservation.negationInd",
+      "structure": "repeat-by-example-discriminator-allergyintoleranceobservation-negationind",
+      "branch": "kontrastmittelallergie",
+      "transform": {
+        "type": "not"
+      }
+    },
+    "klinische_basisdaten_patient.schwangerschaft": {
+      "target": "Pregnancystatus.value",
+      "transform": {
+        "type": "enum",
+        "select": "raw",
+        "map": {
+          "Patient ist schwanger": {
+            "code": "1",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.46",
+            "displayName": "Patient ist schwanger",
+            "kind": "concept",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.11.46",
+            "valueSetEffectiveDate": "2018-08-22T15:28:25"
+          },
+          "Patient ist nicht schwanger": {
+            "code": "0",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.46",
+            "displayName": "Patient ist nicht schwanger",
+            "kind": "concept",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.11.46",
+            "valueSetEffectiveDate": "2018-08-22T15:28:25"
+          },
+          "Information nicht erhebbar": {
+            "code": "UNK",
+            "codeSystem": "2.16.840.1.113883.5.1008",
+            "displayName": "Unbekannt",
+            "kind": "exception",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.11.46",
+            "valueSetEffectiveDate": "2018-08-22T15:28:25"
+          }
+        }
+      }
+    },
+    "klinische_basisdaten_patient.tetanusschutz": [
+      {
+        "target": "Clostridiumtetaniimmunization.negationInd",
+        "transform": {
+          "type": "enum",
+          "map": {
+            "Patient hat Tetanusschutz": false,
+            "Patient hat keinen Tetanusschutz": true,
+            "Information nicht erhebbar": false
+          }
+        }
+      },
+      {
+        "target": "Clostridiumtetaniimmunization.nullFlavor",
+        "transform": {
+          "type": "enum",
+          "map": {
+            "Patient hat Tetanusschutz": null,
+            "Patient hat keinen Tetanusschutz": null,
+            "Information nicht erhebbar": "NI"
+          }
+        }
+      }
+    ],
+    "vitalparameter.zeitpunkt": "vitalparametercontainer.effectiveTime",
+    "vitalparameter.atemfrequenz": "RespiratoryRate.value",
+    "vitalparameter.pulsoximetrische_sauerstoffsattigung": "pulsoximetrische_sauerstoffsattigung.value",
+    "vitalparameter.blutdruck.systolischer_blutdruck": "Systolicbloodpressure.value",
+    "vitalparameter.blutdruck.diastolischer_blutdruck": "blutdruck-diastolisch.value",
+    "vitalparameter.herzfrequenz": "HeartRate.value",
+    "vitalparameter.puls.pulsfrequenz": "pulsfrequenz.value",
+    "vitalparameter.pupillenweite.pupillenweite_rechts": {
+      "target": "Pupilsize_right.value",
+      "cda_target": "Pupilsize.value",
+      "structure": "repeat-by-discriminator-pupilsize-value",
+      "branch": "right"
+    },
+    "vitalparameter.pupillenweite.pupillenweite_links": {
+      "target": "Pupilsize_left.value",
+      "cda_target": "Pupilsize.value",
+      "structure": "repeat-by-discriminator-pupilsize-value",
+      "branch": "left"
+    },
+    "vitalparameter.pupillenreaktion.pupillenreaktion_rechts": {
+      "target": "Pupilreaction_right.value",
+      "cda_target": "Pupilreaction.value",
+      "structure": "repeat-by-discriminator-pupilreaction-value",
+      "branch": "right"
+    },
+    "vitalparameter.pupillenreaktion.pupillenreaktion_links": {
+      "target": "Pupilreaction_left.value",
+      "cda_target": "Pupilreaction.value",
+      "structure": "repeat-by-discriminator-pupilreaction-value",
+      "branch": "left"
+    },
+    "vitalparameter.korperkerntemperatur.korperkerntemperatur": "BodyTemperatureCore.value",
+    "scores.glasgow_coma_scale_gcs.gcs_augenoffnen": "GlasgowComaScale.observation.entryRelationship_observation.code.code_9267-6.observation.value",
+    "scores.glasgow_coma_scale_gcs.gcs_verbale_antwort": "GlasgowComaScale.observation.entryRelationship_observation.code.code_9270-0.observation.value",
+    "scores.glasgow_coma_scale_gcs.gcs_motorische_antwort": "GlasgowComaScale.observation.entryRelationship_observation.code.code_9268-4.observation.value",
+    "scores.glasgow_coma_scale_gcs.gcs_summe": "GlasgowComaScale.observation.value",
+    "scores.modified_rankin_skala_score": {
+      "target": "Modifiedrankinscale.observation.value",
+      "transform": {
+        "type": "ordinal",
+        "map": {
+          "keine Symptome": 0,
+          "keine wesentliche Funktionseinschränkung": 1,
+          "geringgradige Funktionseinschränkung": 2,
+          "mäßiggradige Funktionseinschränkung": 3,
+          "mittelschwere Funktionseinschränkung": 4,
+          "schwere Funktionseinschränkung": 5,
+          "Tod": 6
+        }
+      }
+    },
+    "scores.schmerzmessung.numerischen_rating_skala": "Painseverity.observation.value",
+    "diagnostik.bildgebende_diagnostik.magnetresonanztomographie.untersuchungsregion": null,
+    "diagnostik.bildgebende_diagnostik.rontgen.untersuchungsregion": null,
+    "diagnostik.abgeleitete_informationen_uber_diagnostik_zur_weitergabe.mikrobiologie_angefordert": {
+      "target": "mikrobiologie_angefordert.negationInd",
+      "transform": {
+        "type": "not"
+      }
+    },
+    "diagnostik.abgeleitete_informationen_uber_diagnostik_zur_weitergabe.bga_angefordert": {
+      "target": "bga_angefordert.negationInd",
+      "transform": {
+        "type": "not"
+      }
+    },
+    "diagnostik.abgeleitete_informationen_uber_diagnostik_zur_weitergabe.ekg_angefordert": {
+      "target": "ekg_angefordert.negationInd",
+      "transform": {
+        "type": "not"
+      }
+    },
+    "diagnostik.abgeleitete_informationen_uber_diagnostik_zur_weitergabe.sonographie_angefordert": {
+      "target": "sonographie_angefordert.negationInd",
+      "transform": {
+        "type": "not"
+      }
+    },
+    "diagnostik.abgeleitete_informationen_uber_diagnostik_zur_weitergabe.rontgenthorax_angefordert": {
+      "target": "rontgenthorax_angefordert.negationInd",
+      "transform": {
+        "type": "not"
+      }
+    },
+    "diagnostik.abgeleitete_informationen_uber_diagnostik_zur_weitergabe.rontgenthorax_durchgefuhrt": {
+      "target": "Plainchestxray.negationInd",
+      "transform": {
+        "type": "not"
+      }
+    },
+    "diagnostik.abgeleitete_informationen_uber_diagnostik_zur_weitergabe.rontgenbecken_durchgefuhrt": {
+      "target": "Pelvisxray.negationInd",
+      "transform": {
+        "type": "not"
+      }
+    },
+    "diagnostik.abgeleitete_informationen_uber_diagnostik_zur_weitergabe.rontgenwirbelsaule_durchgefuhrt": {
+      "target": "Radiographyofspine.negationInd",
+      "transform": {
+        "type": "not"
+      }
+    },
+    "diagnostik.abgeleitete_informationen_uber_diagnostik_zur_weitergabe.ct_kopf_durchgefuhrt": {
+      "target": "Computedtomographyofentirehead.negationInd",
+      "transform": {
+        "type": "not"
+      }
+    },
+    "diagnostik.abgeleitete_informationen_uber_diagnostik_zur_weitergabe.ct_hws_durchgefuhrt": {
+      "target": "ct_hws_durchgefuhrt.negationInd",
+      "transform": {
+        "type": "not"
+      }
+    },
+    "diagnostik.abgeleitete_informationen_uber_diagnostik_zur_weitergabe.ct_thorax_durchgefuhrt": {
+      "target": "ct_thorax_durchgefuhrt.negationInd",
+      "transform": {
+        "type": "not"
+      }
+    },
+    "diagnostik.abgeleitete_informationen_uber_diagnostik_zur_weitergabe.ct_abdomen_durchgefuhrt": {
+      "target": "ct_abdomen_durchgefuhrt.negationInd",
+      "transform": {
+        "type": "not"
+      }
+    },
+    "diagnostik.abgeleitete_informationen_uber_diagnostik_zur_weitergabe.ct_bzw_mr_bzw_dsangiographie": {
+      "target": "ct-mr-ds-angiographie.value",
+      "transform": {
+        "type": "enum",
+        "select": "raw",
+        "map": {
+          "nein": {
+            "code": "0",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.106",
+            "displayName": "nein",
+            "kind": "concept",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.24",
+            "valueSetEffectiveDate": "2024-07-22T16:51:10"
+          },
+          "0": {
+            "code": "0",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.106",
+            "displayName": "nein",
+            "kind": "concept",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.24",
+            "valueSetEffectiveDate": "2024-07-22T16:51:10"
+          },
+          "vor Aufnahme": {
+            "code": "1",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.106",
+            "displayName": "vor Aufnahme",
+            "kind": "concept",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.24",
+            "valueSetEffectiveDate": "2024-07-22T16:51:10"
+          },
+          "1": {
+            "code": "1",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.106",
+            "displayName": "vor Aufnahme",
+            "kind": "concept",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.24",
+            "valueSetEffectiveDate": "2024-07-22T16:51:10"
+          },
+          "direkt im Anschluss an native Bildgebung": {
+            "code": "2",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.106",
+            "displayName": "direkt im Anschluss an native Bildgebung",
+            "kind": "concept",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.24",
+            "valueSetEffectiveDate": "2024-07-22T16:51:10"
+          },
+          "2": {
+            "code": "2",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.106",
+            "displayName": "direkt im Anschluss an native Bildgebung",
+            "kind": "concept",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.24",
+            "valueSetEffectiveDate": "2024-07-22T16:51:10"
+          },
+          "nicht direkt im Anschluss an native Bildgebung aber ≤ 24 h": {
+            "code": "3",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.106",
+            "displayName": "nicht direkt im Anschluss an native Bildgebung aber ≤ 24 h",
+            "kind": "concept",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.24",
+            "valueSetEffectiveDate": "2024-07-22T16:51:10"
+          },
+          "3": {
+            "code": "3",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.106",
+            "displayName": "nicht direkt im Anschluss an native Bildgebung aber ≤ 24 h",
+            "kind": "concept",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.24",
+            "valueSetEffectiveDate": "2024-07-22T16:51:10"
+          },
+          "nicht direkt im Anschluss an native Bildgebung aber > 24 h": {
+            "code": "4",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.106",
+            "displayName": "nicht direkt im Anschluss an native Bildgebung aber > 24 h",
+            "kind": "concept",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.24",
+            "valueSetEffectiveDate": "2024-07-22T16:51:10"
+          },
+          "4": {
+            "code": "4",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.106",
+            "displayName": "nicht direkt im Anschluss an native Bildgebung aber > 24 h",
+            "kind": "concept",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.24",
+            "valueSetEffectiveDate": "2024-07-22T16:51:10"
+          }
+        }
+      }
+    },
+    "diagnostik.wildcard_diagnostik.klinisch_relevante_zeitangaben.zeitpunkt": "WildcardDiagnostik.effectiveTime_not_xsi_type",
+    "diagnostik.wildcard_diagnostik.klinisch_relevante_zeitangaben.zeitraum": "WildcardDiagnostik.observation.effectiveTime_xsi_type_IVL_TS.width",
+    "diagnostik.wildcard_diagnostik.code": "WildcardDiagnostik.code",
+    "diagnostik.wildcard_diagnostik.wert": "WildcardDiagnostik.value_as_ST",
+    "diagnostik.wildcard_diagnostik.definitorischer_link": "WildcardDiagnostik.observation.reference.externalDocument.text.reference",
+    "masnahmen.isolation.isolation": [
+      {
+        "target": "isolation.negationInd",
+        "transform": {
+          "type": "enum",
+          "map": {
+            "Patient muss isoliert werden": false,
+            "Patient muss nicht isoliert werden": true
+          }
+        }
+      }
+    ],
+    "masnahmen.isolation.isolation_begrundung": "Isolationindication.value",
+    "masnahmen.wildcard_therapie.klinisch_relevante_zeitangaben.zeitpunkt": "WildcardTherapie.effectiveTime_not_xsi_type",
+    "masnahmen.wildcard_therapie.klinisch_relevante_zeitangaben.zeitraum": "WildcardTherapie.procedure.effectiveTime_xsi_type_IVL_TS.width",
+    "masnahmen.wildcard_therapie.code": "WildcardTherapie.code",
+    "masnahmen.wildcard_therapie.definitorischer_link": "WildcardTherapie.procedure.reference.externalDocument.text.reference",
+    "abschlussdiagnosen.abschlussdiagnose.freitext_abschlussdiagnose": null,
+    "abschlussdiagnosen.abschlussdiagnose.icd10": null,
+    "abschlussdiagnosen.abschlussdiagnose.icd10_sekundardiagnose": null,
+    "abschlussdiagnosen.abschlussdiagnose.zusatzkennzeichen": [
+      {
+        "target": "Certainty.value",
+        "transform": {
+          "type": "enum",
+          "select": "raw",
+          "map": {
+            "Verdachtsdiagnose": {
+              "code": "V",
+              "codeSystem": "1.2.276.0.76.3.1.1.5.1.21",
+              "displayName": "Verdacht auf / zum Ausschluss von",
+              "kind": "concept",
+              "designations": [],
+              "valueSet": "1.2.276.0.76.11.121",
+              "valueSetEffectiveDate": "2005-08-01T00:00:00"
+            },
+            "V": {
+              "code": "V",
+              "codeSystem": "1.2.276.0.76.3.1.1.5.1.21",
+              "displayName": "Verdacht auf / zum Ausschluss von",
+              "kind": "concept",
+              "designations": [],
+              "valueSet": "1.2.276.0.76.11.121",
+              "valueSetEffectiveDate": "2005-08-01T00:00:00"
+            },
+            "ausgeschlossene Diagnose": {
+              "code": "A",
+              "codeSystem": "1.2.276.0.76.3.1.1.5.1.21",
+              "displayName": "ausgeschlossen",
+              "kind": "concept",
+              "designations": [],
+              "valueSet": "1.2.276.0.76.11.121",
+              "valueSetEffectiveDate": "2005-08-01T00:00:00"
+            },
+            "A": {
+              "code": "A",
+              "codeSystem": "1.2.276.0.76.3.1.1.5.1.21",
+              "displayName": "ausgeschlossen",
+              "kind": "concept",
+              "designations": [],
+              "valueSet": "1.2.276.0.76.11.121",
+              "valueSetEffectiveDate": "2005-08-01T00:00:00"
+            },
+            "Zustand nach der Diagnose": {
+              "code": "Z",
+              "codeSystem": "1.2.276.0.76.3.1.1.5.1.21",
+              "displayName": "Zustand nach",
+              "kind": "concept",
+              "designations": [],
+              "valueSet": "1.2.276.0.76.11.121",
+              "valueSetEffectiveDate": "2005-08-01T00:00:00"
+            },
+            "Z": {
+              "code": "Z",
+              "codeSystem": "1.2.276.0.76.3.1.1.5.1.21",
+              "displayName": "Zustand nach",
+              "kind": "concept",
+              "designations": [],
+              "valueSet": "1.2.276.0.76.11.121",
+              "valueSetEffectiveDate": "2005-08-01T00:00:00"
+            },
+            "gesicherte Diagnose": {
+              "code": "G",
+              "codeSystem": "1.2.276.0.76.3.1.1.5.1.21",
+              "displayName": "gesicherte Diagnose",
+              "kind": "concept",
+              "designations": [],
+              "valueSet": "1.2.276.0.76.11.121",
+              "valueSetEffectiveDate": "2005-08-01T00:00:00"
+            },
+            "G": {
+              "code": "G",
+              "codeSystem": "1.2.276.0.76.3.1.1.5.1.21",
+              "displayName": "gesicherte Diagnose",
+              "kind": "concept",
+              "designations": [],
+              "valueSet": "1.2.276.0.76.11.121",
+              "valueSetEffectiveDate": "2005-08-01T00:00:00"
+            }
+          }
+        }
+      },
+      {
+        "target": "Problemobservationeddiagnosis.negationInd",
+        "transform": {
+          "type": "enum",
+          "select": "raw",
+          "map": {
+            "ausgeschlossene Diagnose": true,
+            "A": true
+          }
+        }
+      }
+    ],
+    "abschlussdiagnosen.abschlussdiagnose.fuhrende_abschlussdiagnoseq_sequenznummer": "Problemconcernacteddiagnoses.sequenceNumber",
+    "weiteres_procedere_therapieempfehlung_weiterbehandler.procedere": "Eddisposition.text",
+    "administrative_verlegungsentlassungsinformationen.typ_verlegung": null,
+    "administrative_verlegungsentlassungsinformationen.typ_entlassung": "CDAEncompassingEncounter.dischargeDispositionCode",
+    "administrative_verlegungsentlassungsinformationen.zeitpunkt_entscheidung_zur_verlegung_entlassung": "zeitpunkt_entscheidung_zur_verlegung__entlassung.value",
+    "administrative_verlegungsentlassungsinformationen.zeitpunkt_patient_verlegungs_entlassungsfahig": "zeitpunkt_patient_verlegungs__entlassungsfahig.value",
+    "administrative_verlegungsentlassungsinformationen.zeitpunkt_patient_verlegt_entlassen_nach": "zeitpunkt_patient_verlegt__entlassen_nach.value",
+    "dokumentationsinformationen.beginn_patientenbezogene_dokumentation.zeitpunkt_beginn_patientenbezogene_dokumentation": null,
+    "dokumentationsinformationen.berechnete_zeitintervalle.zeit_bis_zum_export": "zeit_bis_zum_export.value",
+    "dokumentationsinformationen.datenbereitstellung.name_des_edis": "name_des_edis.value",
+    "dokumentationsinformationen.datenbereitstellung.version_des_edis": "version_des_edis.value",
+    "masnahmen.medikamentose_therapie.medikation.medikament.arzneimittel.arzneimittelname": null,
+    "masnahmen.medikamentose_therapie.medikation.medikament.arzneimittel.arzneimittelcode": null,
+    "masnahmen.medikamentose_therapie.medikation.medikament.darreichungsform": null,
+    "masnahmen.medikamentose_therapie.medikation.medikament.wirkstoff.wirkstoffname": null,
+    "masnahmen.medikamentose_therapie.medikation.medikament.wirkstoff.wirkstoffcode": null,
+    "masnahmen.medikamentose_therapie.medikation.medikament.wirkstoff.arzneilich_wirksamer_bestandteilq": null,
+    "masnahmen.medikamentose_therapie.medikation.medikament.wirkstoff.wirkstarke": null,
+    "masnahmen.medikamentose_therapie.medikation.medikament.chargennummer": null,
+    "masnahmen.medikamentose_therapie.medikation.anwendungszeiten.startzeitpunkt_der_anwendung": null,
+    "masnahmen.medikamentose_therapie.medikation.anwendungszeiten.stoppzeitpunkt_der_anwendung": null,
+    "masnahmen.medikamentose_therapie.medikation.dosierung.sequenznummer": "Medikation.sequenceNumber",
+    "masnahmen.medikamentose_therapie.medikation.dosierung.freitext": null,
+    "masnahmen.medikamentose_therapie.medikation.dosierung.zusatzliche_hinweise": null,
+    "masnahmen.medikamentose_therapie.medikation.dosierung.anweisungen_zur_einnahme": null,
+    "masnahmen.medikamentose_therapie.medikation.dosierung.zeitangabe.zeitpunkt": null,
+    "masnahmen.medikamentose_therapie.medikation.dosierung.zeitangabe.ereignisbezogene_wiederholung.ereignis": null,
+    "masnahmen.medikamentose_therapie.medikation.dosierung.zeitangabe.ereignisbezogene_wiederholung.offset": null,
+    "masnahmen.medikamentose_therapie.medikation.dosierung.einnahme_bei_bedarf": null,
+    "masnahmen.medikamentose_therapie.medikation.dosierung.korperstelle": null,
+    "masnahmen.medikamentose_therapie.medikation.dosierung.art_der_anwendung": null,
+    "masnahmen.medikamentose_therapie.medikation.dosierung.methode_der_anwendung": null,
+    "masnahmen.medikamentose_therapie.medikation.dosierung.dosismenge_und_einheit": null,
+    "masnahmen.medikamentose_therapie.medikation.dosierung.kontinuierliche_gabe_rate": null,
+    "masnahmen.medikamentose_therapie.medikation.grund_der_medikation.begrundungstext": null,
+    "masnahmen.medikamentose_therapie.medikation.grund_der_medikation.kodierte_begrundung": null,
+    "patient.geschlecht": {
+      "target": "CDArecordTargetnnar.administrativeGenderCode",
+      "transform": {
+        "type": "enum",
+        "select": "raw",
+        "map": {
+          "Female": {
+            "code": "F",
+            "codeSystem": "2.16.840.1.113883.5.1",
+            "displayName": "Female",
+            "kind": "concept",
+            "designations": [],
+            "valueSet": "2.16.840.1.113883.1.11.1",
+            "valueSetEffectiveDate": "2016-06-23T00:00:00"
+          },
+          "Male": {
+            "code": "M",
+            "codeSystem": "2.16.840.1.113883.5.1",
+            "displayName": "Male",
+            "kind": "concept",
+            "designations": [],
+            "valueSet": "2.16.840.1.113883.1.11.1",
+            "valueSetEffectiveDate": "2016-06-23T00:00:00"
+          },
+          "Undifferentiated": {
+            "code": "UN",
+            "codeSystem": "2.16.840.1.113883.5.1",
+            "displayName": "Undifferentiated",
+            "kind": "concept",
+            "designations": [],
+            "valueSet": "2.16.840.1.113883.1.11.1",
+            "valueSetEffectiveDate": "2016-06-23T00:00:00"
+          }
+        }
+      }
+    },
+    "hauptkostentrager.versicherungsverhaltnis.versichertenstatus": {
+      "target": "HeaderParticipantKostentraeger.code",
+      "transform": {
+        "type": "enum",
+        "select": "raw",
+        "map": {
+          "family dependent": {
+            "code": "FAMDEP",
+            "codeSystem": "2.16.840.1.113883.5.111",
+            "displayName": "family dependent",
+            "kind": "concept",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.11.68",
+            "valueSetEffectiveDate": "2011-12-19T00:00:00"
+          },
+          "self": {
+            "code": "SELF",
+            "codeSystem": "2.16.840.1.113883.5.111",
+            "displayName": "self",
+            "kind": "concept",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.11.68",
+            "valueSetEffectiveDate": "2011-12-19T00:00:00"
+          }
+        }
+      }
+    },
+    "hauptkostentrager.versicherungsverhaltnis.versichertenstatus_gkv": {
+      "target": "HeaderParticipantKostentraeger.translation_codeSystem_2.16.840.1.113883.3.7.1.1",
+      "transform": {
+        "type": "enum",
+        "select": "raw",
+        "map": {
+          "Mitglied": {
+            "code": "1",
+            "codeSystem": "2.16.840.1.113883.3.7.1.1",
+            "displayName": "Mitglied",
+            "kind": "concept",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.11.162",
+            "valueSetEffectiveDate": "2014-01-01T00:00:00"
+          },
+          "Familienangehörige": {
+            "code": "3",
+            "codeSystem": "2.16.840.1.113883.3.7.1.1",
+            "displayName": "Familienangehörige",
+            "kind": "concept",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.11.162",
+            "valueSetEffectiveDate": "2014-01-01T00:00:00"
+          },
+          "Rentner": {
+            "code": "5",
+            "codeSystem": "2.16.840.1.113883.3.7.1.1",
+            "displayName": "Rentner",
+            "kind": "concept",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.11.162",
+            "valueSetEffectiveDate": "2014-01-01T00:00:00"
+          }
+        }
+      }
+    },
+    "hauptkostentrager.versicherungsverhaltnis.weitere_versichertenstatuskodierung": null,
+    "hauptkostentrager.versicherungsverhaltnis.kv_fall": {
+      "target": "hauptkostentrager.code",
+      "transform": {
+        "type": "enum",
+        "select": "raw",
+        "map": {
+          "KV-Fall": {
+            "code": "AKV",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.97",
+            "displayName": "KV-Fall",
+            "kind": "concept",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.19",
+            "valueSetEffectiveDate": "2024-08-08T20:33:01"
+          },
+          "kein KV-Fall": {
+            "code": "AOTH",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.97",
+            "displayName": "kein KV-Fall",
+            "kind": "concept",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.3.1.195.11.19",
+            "valueSetEffectiveDate": "2024-08-08T20:33:01"
+          }
+        }
+      }
+    },
+    "administrative_aufnahmeinformationen.transport.ankunftszeit": null,
+    "abschlussdiagnosen.abschlussdiagnose.lateralitat": {
+      "target": "Laterality.value",
+      "transform": {
+        "type": "enum",
+        "select": "raw",
+        "map": {
+          "Left": {
+            "code": "L",
+            "codeSystem": "1.2.276.0.76.5.412",
+            "displayName": "Left",
+            "kind": "concept",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.11.412",
+            "valueSetEffectiveDate": "2017-02-08T00:00:00"
+          },
+          "Right": {
+            "code": "R",
+            "codeSystem": "1.2.276.0.76.5.412",
+            "displayName": "Right",
+            "kind": "concept",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.11.412",
+            "valueSetEffectiveDate": "2017-02-08T00:00:00"
+          },
+          "Bilateral": {
+            "code": "B",
+            "codeSystem": "1.2.276.0.76.5.412",
+            "displayName": "Bilateral",
+            "kind": "concept",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.11.412",
+            "valueSetEffectiveDate": "2017-02-08T00:00:00"
+          },
+          "Unilateral": {
+            "code": "U",
+            "codeSystem": "1.2.276.0.76.5.412",
+            "displayName": "Unilateral",
+            "kind": "concept",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.11.412",
+            "valueSetEffectiveDate": "2017-02-08T00:00:00"
+          },
+          "Atypical": {
+            "code": "A",
+            "codeSystem": "1.2.276.0.76.5.412",
+            "displayName": "Atypical",
+            "kind": "concept",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.11.412",
+            "valueSetEffectiveDate": "2017-02-08T00:00:00"
+          },
+          "Unbekannt": {
+            "code": "UNK",
+            "codeSystem": "2.16.840.1.113883.5.1008",
+            "displayName": "Unbekannt",
+            "kind": "exception",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.11.412",
+            "valueSetEffectiveDate": "2017-02-08T00:00:00"
+          }
+        }
+      }
+    },
+    "administrative_verlegungsentlassungsinformationen.aufnehmende_fachabteilung": {
+      "target": "Referralto.act.participant.participantRole.code",
+      "transform": {
+        "type": "enum",
+        "select": "raw",
+        "map": {
+          "Innere Medizin": {
+            "code": "0100",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.104",
+            "displayName": "Innere Medizin",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Innere Medizin",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.17",
+            "valueSetEffectiveDate": "2024-08-08T13:35:43"
+          },
+          "Geriatrie": {
+            "code": "0200",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.104",
+            "displayName": "Geriatrie",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Geriatrie",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.17",
+            "valueSetEffectiveDate": "2024-08-08T13:35:43"
+          },
+          "Kardiologie": {
+            "code": "0300",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.104",
+            "displayName": "Kardiologie",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Kardiologie",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.17",
+            "valueSetEffectiveDate": "2024-08-08T13:35:43"
+          },
+          "Nephrologie": {
+            "code": "0400",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.104",
+            "displayName": "Nephrologie",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Nephrologie",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.17",
+            "valueSetEffectiveDate": "2024-08-08T13:35:43"
+          },
+          "Hämatologie und internistische Onkologie": {
+            "code": "0500",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.104",
+            "displayName": "Hämatologie und internistische Onkologie",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Hämatologie und internistische Onkologie",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.17",
+            "valueSetEffectiveDate": "2024-08-08T13:35:43"
+          },
+          "Endokrinologie": {
+            "code": "0600",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.104",
+            "displayName": "Endokrinologie",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Endokrinologie",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.17",
+            "valueSetEffectiveDate": "2024-08-08T13:35:43"
+          },
+          "Gastroenterologie": {
+            "code": "0700",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.104",
+            "displayName": "Gastroenterologie",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Gastroenterologie",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.17",
+            "valueSetEffectiveDate": "2024-08-08T13:35:43"
+          },
+          "Pneumologie": {
+            "code": "0800",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.104",
+            "displayName": "Pneumologie",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Pneumologie",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.17",
+            "valueSetEffectiveDate": "2024-08-08T13:35:43"
+          },
+          "Rheumatologie": {
+            "code": "0900",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.104",
+            "displayName": "Rheumatologie",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Rheumatologie",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.17",
+            "valueSetEffectiveDate": "2024-08-08T13:35:43"
+          },
+          "Pädiatrie": {
+            "code": "1000",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.104",
+            "displayName": "Pädiatrie",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Pädiatrie",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.17",
+            "valueSetEffectiveDate": "2024-08-08T13:35:43"
+          },
+          "Kinderkardiologie": {
+            "code": "1100",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.104",
+            "displayName": "Kinderkardiologie",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Kinderkardiologie",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.17",
+            "valueSetEffectiveDate": "2024-08-08T13:35:43"
+          },
+          "Neonatologie": {
+            "code": "1200",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.104",
+            "displayName": "Neonatologie",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Neonatologie",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.17",
+            "valueSetEffectiveDate": "2024-08-08T13:35:43"
+          },
+          "Kinderchirurgie": {
+            "code": "1300",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.104",
+            "displayName": "Kinderchirurgie",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Kinderchirurgie",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.17",
+            "valueSetEffectiveDate": "2024-08-08T13:35:43"
+          },
+          "Lungen- und Bronchialheilkunde": {
+            "code": "1400",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.104",
+            "displayName": "Lungen- und Bronchialheilkunde",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Lungen- und Bronchialheilkunde",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.17",
+            "valueSetEffectiveDate": "2024-08-08T13:35:43"
+          },
+          "Allgemeine Chirurgie": {
+            "code": "1500",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.104",
+            "displayName": "Allgemeine Chirurgie",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Allgemeine Chirurgie",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.17",
+            "valueSetEffectiveDate": "2024-08-08T13:35:43"
+          },
+          "Unfallchirurgie": {
+            "code": "1600",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.104",
+            "displayName": "Unfallchirurgie",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Unfallchirurgie",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.17",
+            "valueSetEffectiveDate": "2024-08-08T13:35:43"
+          },
+          "Neurochirurgie": {
+            "code": "1700",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.104",
+            "displayName": "Neurochirurgie",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Neurochirurgie",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.17",
+            "valueSetEffectiveDate": "2024-08-08T13:35:43"
+          },
+          "Gefäßchirurgie": {
+            "code": "1800",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.104",
+            "displayName": "Gefäßchirurgie",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Gefäßchirurgie",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.17",
+            "valueSetEffectiveDate": "2024-08-08T13:35:43"
+          },
+          "Plastische Chirurgie": {
+            "code": "1900",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.104",
+            "displayName": "Plastische Chirurgie",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Plastische Chirurgie",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.17",
+            "valueSetEffectiveDate": "2024-08-08T13:35:43"
+          },
+          "Thoraxchirurgie": {
+            "code": "2000",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.104",
+            "displayName": "Thoraxchirurgie",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Thoraxchirurgie",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.17",
+            "valueSetEffectiveDate": "2024-08-08T13:35:43"
+          },
+          "Herzchirurgie": {
+            "code": "2100",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.104",
+            "displayName": "Herzchirurgie",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Herzchirurgie",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.17",
+            "valueSetEffectiveDate": "2024-08-08T13:35:43"
+          },
+          "Urologie": {
+            "code": "2200",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.104",
+            "displayName": "Urologie",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Urologie",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.17",
+            "valueSetEffectiveDate": "2024-08-08T13:35:43"
+          },
+          "Orthopädie": {
+            "code": "2300",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.104",
+            "displayName": "Orthopädie",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Orthopädie",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.17",
+            "valueSetEffectiveDate": "2024-08-08T13:35:43"
+          },
+          "Frauenheilkunde und Geburtshilfe": {
+            "code": "2400",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.104",
+            "displayName": "Frauenheilkunde und Geburtshilfe",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Frauenheilkunde und Geburtshilfe",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.17",
+            "valueSetEffectiveDate": "2024-08-08T13:35:43"
+          },
+          "davon Geburtshilfe": {
+            "code": "2500",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.104",
+            "displayName": "davon Geburtshilfe",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "davon Geburtshilfe",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.17",
+            "valueSetEffectiveDate": "2024-08-08T13:35:43"
+          },
+          "Hals-, Nasen-, Ohrenheilkunde": {
+            "code": "2600",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.104",
+            "displayName": "Hals-, Nasen-, Ohrenheilkunde",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Hals-, Nasen-, Ohrenheilkunde",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.17",
+            "valueSetEffectiveDate": "2024-08-08T13:35:43"
+          },
+          "Augenheilkunde": {
+            "code": "2700",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.104",
+            "displayName": "Augenheilkunde",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Augenheilkunde",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.17",
+            "valueSetEffectiveDate": "2024-08-08T13:35:43"
+          },
+          "Neurologie": {
+            "code": "2800",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.104",
+            "displayName": "Neurologie",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Neurologie",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.17",
+            "valueSetEffectiveDate": "2024-08-08T13:35:43"
+          },
+          "Allgemeine Psychiatrie": {
+            "code": "2900",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.104",
+            "displayName": "Allgemeine Psychiatrie",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Allgemeine Psychiatrie",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.17",
+            "valueSetEffectiveDate": "2024-08-08T13:35:43"
+          },
+          "Kinder- und Jugendpsychiatrie": {
+            "code": "3000",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.104",
+            "displayName": "Kinder- und Jugendpsychiatrie",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Kinder- und Jugendpsychiatrie",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.17",
+            "valueSetEffectiveDate": "2024-08-08T13:35:43"
+          },
+          "Psychosomatik/Psychotherapie": {
+            "code": "3100",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.104",
+            "displayName": "Psychosomatik/Psychotherapie",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Psychosomatik/Psychotherapie",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.17",
+            "valueSetEffectiveDate": "2024-08-08T13:35:43"
+          },
+          "Nuklearmedizin": {
+            "code": "3200",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.104",
+            "displayName": "Nuklearmedizin",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Nuklearmedizin",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.17",
+            "valueSetEffectiveDate": "2024-08-08T13:35:43"
+          },
+          "Strahlenheilkunde": {
+            "code": "3300",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.104",
+            "displayName": "Strahlenheilkunde",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Strahlenheilkunde",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.17",
+            "valueSetEffectiveDate": "2024-08-08T13:35:43"
+          },
+          "Dermatologie": {
+            "code": "3400",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.104",
+            "displayName": "Dermatologie",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Dermatologie",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.17",
+            "valueSetEffectiveDate": "2024-08-08T13:35:43"
+          },
+          "Zahn- und Kieferheilkunde, Mund- und Kieferchirurgie": {
+            "code": "3500",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.104",
+            "displayName": "Zahn- und Kieferheilkunde, Mund- und Kieferchirurgie",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Zahn- und Kieferheilkunde, Mund- und Kieferchirurgie",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.17",
+            "valueSetEffectiveDate": "2024-08-08T13:35:43"
+          },
+          "Intensivmedizin": {
+            "code": "3600",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.104",
+            "displayName": "Intensivmedizin",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Intensivmedizin",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.17",
+            "valueSetEffectiveDate": "2024-08-08T13:35:43"
+          },
+          "Orthopädie und Unfallchirurgie": {
+            "code": "2316",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.104",
+            "displayName": "Orthopädie und Unfallchirurgie",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Orthopädie und Unfallchirurgie",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.17",
+            "valueSetEffectiveDate": "2024-08-08T13:35:43"
+          },
+          "Frauenheilkunde": {
+            "code": "2425",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.104",
+            "displayName": "Frauenheilkunde",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Frauenheilkunde",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.17",
+            "valueSetEffectiveDate": "2024-08-08T13:35:43"
+          },
+          "Sonstige Fachabteilung": {
+            "code": "3700",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.104",
+            "displayName": "Sonstige Fachabteilung",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Sonstige Fachabteilung",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.3.1.195.11.17",
+            "valueSetEffectiveDate": "2024-08-08T13:35:43"
+          }
+        }
+      }
+    }
+  },
+  "field_reviews": {},
+  "narratives": {},
+  "structures": {
+    "repeat-by-discriminator-pupilsize-value": {
+      "type": "repeat_by_discriminator",
+      "discriminator": {
+        "target": "Pupilsize.targetSiteCode",
+        "value_set": {
+          "id": "1.2.276.0.76.11.48",
+          "effective_date": "2015-11-17T00:00:00"
+        },
+        "members": [
+          {
+            "code": "R",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.48",
+            "displayName": "Auge rechts",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Right eye",
+                "language": "en-US"
+              },
+              {
+                "displayName": "Auge rechts",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.11.48",
+            "valueSetEffectiveDate": "2015-11-17T00:00:00"
+          },
+          {
+            "code": "L",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.48",
+            "displayName": "Auge links",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Left eye",
+                "language": "en-US"
+              },
+              {
+                "displayName": "Auge links",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.11.48",
+            "valueSetEffectiveDate": "2015-11-17T00:00:00"
+          }
+        ],
+        "evidence_level": "STRONG"
+      },
+      "evidence": [
+        "shared repeatable CDA value target",
+        "one additional CDA repeat level",
+        "required coded discriminator Pupilsize.targetSiteCode",
+        "unique terminology designation match",
+        "Schematron uniqueness by discriminator code"
+      ],
+      "branches": [
+        {
+          "source": "vitalparameter.pupillenweite.pupillenweite_rechts",
+          "target": "Pupilsize_right.value",
+          "cda_target": "Pupilsize.value",
+          "branch": "right",
+          "constants": {
+            "Pupilsize.targetSiteCode": {
+              "code": "R",
+              "codeSystem": "1.2.276.0.76.3.1.195.5.48",
+              "displayName": "Auge rechts",
+              "kind": "concept",
+              "designations": [
+                {
+                  "displayName": "Right eye",
+                  "language": "en-US"
+                },
+                {
+                  "displayName": "Auge rechts",
+                  "language": "de-DE"
+                }
+              ],
+              "valueSet": "1.2.276.0.76.11.48",
+              "valueSetEffectiveDate": "2015-11-17T00:00:00"
+            }
+          }
+        },
+        {
+          "source": "vitalparameter.pupillenweite.pupillenweite_links",
+          "target": "Pupilsize_left.value",
+          "cda_target": "Pupilsize.value",
+          "branch": "left",
+          "constants": {
+            "Pupilsize.targetSiteCode": {
+              "code": "L",
+              "codeSystem": "1.2.276.0.76.3.1.195.5.48",
+              "displayName": "Auge links",
+              "kind": "concept",
+              "designations": [
+                {
+                  "displayName": "Left eye",
+                  "language": "en-US"
+                },
+                {
+                  "displayName": "Auge links",
+                  "language": "de-DE"
+                }
+              ],
+              "valueSet": "1.2.276.0.76.11.48",
+              "valueSetEffectiveDate": "2015-11-17T00:00:00"
+            }
+          }
+        }
+      ]
+    },
+    "repeat-by-discriminator-pupilreaction-value": {
+      "type": "repeat_by_discriminator",
+      "discriminator": {
+        "target": "Pupilreaction.targetSiteCode",
+        "value_set": {
+          "id": "1.2.276.0.76.11.48",
+          "effective_date": "2015-11-17T00:00:00"
+        },
+        "members": [
+          {
+            "code": "R",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.48",
+            "displayName": "Auge rechts",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Right eye",
+                "language": "en-US"
+              },
+              {
+                "displayName": "Auge rechts",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.11.48",
+            "valueSetEffectiveDate": "2015-11-17T00:00:00"
+          },
+          {
+            "code": "L",
+            "codeSystem": "1.2.276.0.76.3.1.195.5.48",
+            "displayName": "Auge links",
+            "kind": "concept",
+            "designations": [
+              {
+                "displayName": "Left eye",
+                "language": "en-US"
+              },
+              {
+                "displayName": "Auge links",
+                "language": "de-DE"
+              }
+            ],
+            "valueSet": "1.2.276.0.76.11.48",
+            "valueSetEffectiveDate": "2015-11-17T00:00:00"
+          }
+        ],
+        "evidence_level": "STRONG"
+      },
+      "evidence": [
+        "shared repeatable CDA value target",
+        "one additional CDA repeat level",
+        "required coded discriminator Pupilreaction.targetSiteCode",
+        "unique terminology designation match",
+        "Schematron uniqueness by discriminator code"
+      ],
+      "branches": [
+        {
+          "source": "vitalparameter.pupillenreaktion.pupillenreaktion_rechts",
+          "target": "Pupilreaction_right.value",
+          "cda_target": "Pupilreaction.value",
+          "branch": "right",
+          "constants": {
+            "Pupilreaction.targetSiteCode": {
+              "code": "R",
+              "codeSystem": "1.2.276.0.76.3.1.195.5.48",
+              "displayName": "Auge rechts",
+              "kind": "concept",
+              "designations": [
+                {
+                  "displayName": "Right eye",
+                  "language": "en-US"
+                },
+                {
+                  "displayName": "Auge rechts",
+                  "language": "de-DE"
+                }
+              ],
+              "valueSet": "1.2.276.0.76.11.48",
+              "valueSetEffectiveDate": "2015-11-17T00:00:00"
+            }
+          }
+        },
+        {
+          "source": "vitalparameter.pupillenreaktion.pupillenreaktion_links",
+          "target": "Pupilreaction_left.value",
+          "cda_target": "Pupilreaction.value",
+          "branch": "left",
+          "constants": {
+            "Pupilreaction.targetSiteCode": {
+              "code": "L",
+              "codeSystem": "1.2.276.0.76.3.1.195.5.48",
+              "displayName": "Auge links",
+              "kind": "concept",
+              "designations": [
+                {
+                  "displayName": "Left eye",
+                  "language": "en-US"
+                },
+                {
+                  "displayName": "Auge links",
+                  "language": "de-DE"
+                }
+              ],
+              "valueSet": "1.2.276.0.76.11.48",
+              "valueSetEffectiveDate": "2015-11-17T00:00:00"
+            }
+          }
+        }
+      ]
+    },
+    "for-each-vitalparameter": {
+      "type": "for_each",
+      "source_group": "vitalparameter",
+      "target_repeat": "VitalSignsSection.entry",
+      "evidence": [
+        "matching source and CDA repeat depth"
+      ]
+    },
+    "for-each-diagnostik-wildcard-diagnostik": {
+      "type": "for_each",
+      "source_group": "diagnostik.wildcard_diagnostik",
+      "target_repeat": "Relevantdiagnostictestsorlaboratorydata.section.entry@20251201@1642301",
+      "evidence": [
+        "matching source and CDA repeat depth"
+      ]
+    },
+    "for-each-masnahmen-medikamentose-therapie": {
+      "type": "for_each",
+      "source_group": "masnahmen.medikamentose_therapie",
+      "target_repeat": "medikamentose-therapie.entry",
+      "evidence": [
+        "matching source and CDA repeat depth"
+      ]
+    },
+    "for-each-masnahmen-wildcard-therapie": {
+      "type": "for_each",
+      "source_group": "masnahmen.wildcard_therapie",
+      "target_repeat": "Patientcarenarrative.section.entry@20251201@1642304",
+      "evidence": [
+        "matching source and CDA repeat depth"
+      ]
+    },
+    "for-each-abschlussdiagnosen-abschlussdiagnose": {
+      "type": "for_each",
+      "source_group": "abschlussdiagnosen.abschlussdiagnose",
+      "target_repeat": "Problemconcernacteddiagnoses.entryRelationship",
+      "evidence": [
+        "matching source and CDA repeat depth"
+      ]
+    },
+    "repeat-by-example-discriminator-allergyintoleranceobservation-negationind": {
+      "type": "repeat_by_discriminator",
+      "discriminator": {
+        "target": "Allergyintoleranceobservation.observation.participant.participantRole.playingEntity.code",
+        "value_set": {
+          "id": "1.2.276.0.76.11.52",
+          "effective_date": "2015-11-17T00:00:00"
+        },
+        "members": [
+          {
+            "code": "A07AA",
+            "codeSystem": "2.16.840.1.113883.6.73",
+            "displayName": "Antibiotika",
+            "kind": "concept",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.11.52",
+            "valueSetEffectiveDate": "2015-11-17T00:00:00"
+          },
+          {
+            "code": "V08",
+            "codeSystem": "2.16.840.1.113883.6.73",
+            "displayName": "Kontrastmittel",
+            "kind": "concept",
+            "designations": [],
+            "valueSet": "1.2.276.0.76.11.52",
+            "valueSetEffectiveDate": "2015-11-17T00:00:00"
+          }
+        ],
+        "evidence_level": "STRONG"
+      },
+      "coalesce_existing_discriminator": true,
+      "existing_discriminator_sources": [
+        "klinische_basisdaten_patient.allergien.agens"
+      ],
+      "evidence": [
+        "neutral ART-DECOR examples in 1.2.276.0.76.10.4066@2015-09-18T00:00:00",
+        "unique category-specific example caption matches",
+        "inverse boolean-to-negationInd semantics",
+        "exact bound discriminator Allergyintoleranceobservation.observation.participant.participantRole.playingEntity.code",
+        "coalesce an equal explicit discriminator occurrence"
+      ],
+      "branches": [
+        {
+          "source": "klinische_basisdaten_patient.allergien.abgeleitete_informationen_zur_weitergabe.antibiotikaallergie",
+          "target": "Allergyintoleranceobservation_antibiotikaallergie.negationInd",
+          "cda_target": "Allergyintoleranceobservation.negationInd",
+          "branch": "antibiotikaallergie",
+          "transform": {
+            "type": "not"
+          },
+          "constants": {
+            "Allergyintoleranceobservation.observation.participant.participantRole.playingEntity.code": {
+              "code": "A07AA",
+              "codeSystem": "2.16.840.1.113883.6.73",
+              "displayName": "Antibiotika",
+              "kind": "concept",
+              "designations": [],
+              "valueSet": "1.2.276.0.76.11.52",
+              "valueSetEffectiveDate": "2015-11-17T00:00:00"
+            }
+          }
+        },
+        {
+          "source": "klinische_basisdaten_patient.allergien.abgeleitete_informationen_zur_weitergabe.kontrastmittelallergie",
+          "target": "Allergyintoleranceobservation_kontrastmittelallergie.negationInd",
+          "cda_target": "Allergyintoleranceobservation.negationInd",
+          "branch": "kontrastmittelallergie",
+          "transform": {
+            "type": "not"
+          },
+          "constants": {
+            "Allergyintoleranceobservation.observation.participant.participantRole.playingEntity.code": {
+              "code": "V08",
+              "codeSystem": "2.16.840.1.113883.6.73",
+              "displayName": "Kontrastmittel",
+              "kind": "concept",
+              "designations": [],
+              "valueSet": "1.2.276.0.76.11.52",
+              "valueSetEffectiveDate": "2015-11-17T00:00:00"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "defaults": {
+    "required_unmapped": {
+      "nullFlavor": "NI"
+    }
+  },
+  "target_defaults": {
+    "Problemobservationeddiagnosis.low": {
+      "nullFlavor": "UNK",
+      "reason": "The transaction contains no diagnosis-onset datapoint; the required onset therefore exists with an unknown value."
+    }
+  },
+  "target_identities": {
+    "Additionalmodulessection.text": {
+      "cda_target": "Additionalmodulessection.text",
+      "source_key": "1.2.276.0.76.10.3057@2015-03-30T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.212|PATH:hl7:section/hl7:text",
+      "revisionless_source_key": "1.2.276.0.76.10.3057|ID:2.16.840.1.113883.2.6.60.3.9.212|PATH:hl7:section/hl7:text",
+      "template_id": "1.2.276.0.76.10.3057",
+      "template_effective_date": "2015-03-30T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.212",
+      "path": "hl7:section/hl7:text"
+    },
+    "AllergienUnvertraeglichkeiten.text": {
+      "cda_target": "AllergienUnvertraeglichkeiten.text",
+      "source_key": "1.2.276.0.76.10.3051@2015-03-26T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.163|PATH:hl7:section/hl7:text",
+      "revisionless_source_key": "1.2.276.0.76.10.3051|ID:2.16.840.1.113883.2.6.60.3.9.163|PATH:hl7:section/hl7:text",
+      "template_id": "1.2.276.0.76.10.3051",
+      "template_effective_date": "2015-03-26T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.163",
+      "path": "hl7:section/hl7:text"
+    },
+    "Allergyintoleranceobservation.observation.participant.participantRole.playingEntity.code": {
+      "cda_target": "Allergyintoleranceobservation.observation.participant.participantRole.playingEntity.code",
+      "source_key": "1.2.276.0.76.10.4066@2015-09-18T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.620|PATH:hl7:observation/hl7:participant/hl7:participantRole/hl7:playingEntity/hl7:code",
+      "revisionless_source_key": "1.2.276.0.76.10.4066|ID:2.16.840.1.113883.2.6.60.3.9.620|PATH:hl7:observation/hl7:participant/hl7:participantRole/hl7:playingEntity/hl7:code",
+      "template_id": "1.2.276.0.76.10.4066",
+      "template_effective_date": "2015-09-18T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.620",
+      "path": "hl7:observation/hl7:participant/hl7:participantRole/hl7:playingEntity/hl7:code"
+    },
+    "Allergyintoleranceobservation_antibiotikaallergie.negationInd": {
+      "cda_target": "Allergyintoleranceobservation.negationInd",
+      "source_key": "1.2.276.0.76.10.4066@2015-09-18T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.604|PATH:hl7:observation/@negationInd",
+      "revisionless_source_key": "1.2.276.0.76.10.4066|ID:2.16.840.1.113883.2.6.60.3.9.604|PATH:hl7:observation/@negationInd",
+      "template_id": "1.2.276.0.76.10.4066",
+      "template_effective_date": "2015-09-18T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.604",
+      "path": "hl7:observation/@negationInd"
+    },
+    "Allergyintoleranceobservation_kontrastmittelallergie.negationInd": {
+      "cda_target": "Allergyintoleranceobservation.negationInd",
+      "source_key": "1.2.276.0.76.10.4066@2015-09-18T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.604|PATH:hl7:observation/@negationInd",
+      "revisionless_source_key": "1.2.276.0.76.10.4066|ID:2.16.840.1.113883.2.6.60.3.9.604|PATH:hl7:observation/@negationInd",
+      "template_id": "1.2.276.0.76.10.4066",
+      "template_effective_date": "2015-09-18T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.604",
+      "path": "hl7:observation/@negationInd"
+    },
+    "BodyTemperatureCore.value": {
+      "cda_target": "BodyTemperatureCore.value",
+      "source_key": "1.2.276.0.76.10.4035@2014-09-16T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.13|PATH:hl7:observation/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.10.4035|ID:2.16.840.1.113883.2.6.60.3.9.13|PATH:hl7:observation/hl7:value",
+      "template_id": "1.2.276.0.76.10.4035",
+      "template_effective_date": "2014-09-16T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.13",
+      "path": "hl7:observation/hl7:value"
+    },
+    "CDAEncompassingEncounter.dischargeDispositionCode": {
+      "cda_target": "CDAEncompassingEncounter.dischargeDispositionCode",
+      "source_key": "1.2.276.0.76.10.2036@2016-06-01T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.224|PATH:hl7:componentOf/hl7:encompassingEncounter/hl7:dischargeDispositionCode",
+      "revisionless_source_key": "1.2.276.0.76.10.2036|ID:2.16.840.1.113883.2.6.60.3.9.224|PATH:hl7:componentOf/hl7:encompassingEncounter/hl7:dischargeDispositionCode",
+      "template_id": "1.2.276.0.76.10.2036",
+      "template_effective_date": "2016-06-01T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.224",
+      "path": "hl7:componentOf/hl7:encompassingEncounter/hl7:dischargeDispositionCode"
+    },
+    "CDAEncompassingEncounter.id_1": {
+      "cda_target": "CDAEncompassingEncounter.id_1",
+      "source_key": "1.2.276.0.76.10.2036@2016-06-01T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.1558|PATH:hl7:componentOf/hl7:encompassingEncounter/hl7:id[1]",
+      "revisionless_source_key": "1.2.276.0.76.10.2036|ID:2.16.840.1.113883.2.6.60.3.9.1558|PATH:hl7:componentOf/hl7:encompassingEncounter/hl7:id[1]",
+      "template_id": "1.2.276.0.76.10.2036",
+      "template_effective_date": "2016-06-01T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.1558",
+      "path": "hl7:componentOf/hl7:encompassingEncounter/hl7:id[1]"
+    },
+    "CDAEncompassingEncounter.id_2": {
+      "cda_target": "CDAEncompassingEncounter.id_2",
+      "source_key": "1.2.276.0.76.10.2036@2016-06-01T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.15588|PATH:hl7:componentOf/hl7:encompassingEncounter/hl7:id[2]",
+      "revisionless_source_key": "1.2.276.0.76.10.2036|ID:2.16.840.1.113883.2.6.60.3.9.15588|PATH:hl7:componentOf/hl7:encompassingEncounter/hl7:id[2]",
+      "template_id": "1.2.276.0.76.10.2036",
+      "template_effective_date": "2016-06-01T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.15588",
+      "path": "hl7:componentOf/hl7:encompassingEncounter/hl7:id[2]"
+    },
+    "CDArecordTargetnnar.administrativeGenderCode": {
+      "cda_target": "CDArecordTargetnnar.administrativeGenderCode",
+      "source_key": "1.2.276.0.76.10.2032@2014-09-17T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.5|PATH:hl7:recordTarget/hl7:patientRole/hl7:patient/hl7:administrativeGenderCode",
+      "revisionless_source_key": "1.2.276.0.76.10.2032|ID:2.16.840.1.113883.2.6.60.3.9.5|PATH:hl7:recordTarget/hl7:patientRole/hl7:patient/hl7:administrativeGenderCode",
+      "template_id": "1.2.276.0.76.10.2032",
+      "template_effective_date": "2014-09-17T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.5",
+      "path": "hl7:recordTarget/hl7:patientRole/hl7:patient/hl7:administrativeGenderCode"
+    },
+    "Certainty.value": {
+      "cda_target": "Certainty.value",
+      "source_key": "1.2.276.0.76.10.90027@2017-03-02T00:00:00|ID:2.16.840.1.113883.2.6.77.9.300|PATH:hl7:qualifier[hl7:name/@code='8']/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.10.90027|ID:2.16.840.1.113883.2.6.77.9.300|PATH:hl7:qualifier[hl7:name/@code='8']/hl7:value",
+      "template_id": "1.2.276.0.76.10.90027",
+      "template_effective_date": "2017-03-02T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.77.9.300",
+      "path": "hl7:qualifier[hl7:name/@code='8']/hl7:value"
+    },
+    "Clostridiumtetaniimmunization.negationInd": {
+      "cda_target": "Clostridiumtetaniimmunization.negationInd",
+      "source_key": "1.2.276.0.76.10.4044@2015-09-18T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.268|PATH:hl7:substanceAdministration/@negationInd",
+      "revisionless_source_key": "1.2.276.0.76.10.4044|ID:2.16.840.1.113883.2.6.60.3.9.268|PATH:hl7:substanceAdministration/@negationInd",
+      "template_id": "1.2.276.0.76.10.4044",
+      "template_effective_date": "2015-09-18T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.268",
+      "path": "hl7:substanceAdministration/@negationInd"
+    },
+    "Clostridiumtetaniimmunization.nullFlavor": {
+      "cda_target": "Clostridiumtetaniimmunization.nullFlavor",
+      "source_key": "1.2.276.0.76.10.4044@2015-09-18T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.269|PATH:hl7:substanceAdministration/@nullFlavor",
+      "revisionless_source_key": "1.2.276.0.76.10.4044|ID:2.16.840.1.113883.2.6.60.3.9.269|PATH:hl7:substanceAdministration/@nullFlavor",
+      "template_id": "1.2.276.0.76.10.4044",
+      "template_effective_date": "2015-09-18T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.269",
+      "path": "hl7:substanceAdministration/@nullFlavor"
+    },
+    "Computedtomographyofentirehead.negationInd": {
+      "cda_target": "Computedtomographyofentirehead.negationInd",
+      "source_key": "1.2.276.0.76.10.4055@2015-09-18T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.451|PATH:hl7:observation/@negationInd",
+      "revisionless_source_key": "1.2.276.0.76.10.4055|ID:2.16.840.1.113883.2.6.60.3.9.451|PATH:hl7:observation/@negationInd",
+      "template_id": "1.2.276.0.76.10.4055",
+      "template_effective_date": "2015-09-18T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.451",
+      "path": "hl7:observation/@negationInd"
+    },
+    "Eddisposition.text": {
+      "cda_target": "Eddisposition.text",
+      "source_key": "1.2.276.0.76.10.3056@2015-01-10T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.202|PATH:hl7:section/hl7:text",
+      "revisionless_source_key": "1.2.276.0.76.10.3056|ID:2.16.840.1.113883.2.6.60.3.9.202|PATH:hl7:section/hl7:text",
+      "template_id": "1.2.276.0.76.10.3056",
+      "template_effective_date": "2015-01-10T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.202",
+      "path": "hl7:section/hl7:text"
+    },
+    "GlasgowComaScale.observation.entryRelationship_observation.code.code_9267-6.observation.value": {
+      "cda_target": "GlasgowComaScale.observation.entryRelationship_observation.code.code_9267-6.observation.value",
+      "source_key": "1.2.276.0.76.10.4034@2014-09-16T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.17|PATH:hl7:observation/hl7:entryRelationship[hl7:observation/hl7:code/@code='9267-6']/hl7:observation/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.10.4034|ID:2.16.840.1.113883.2.6.60.3.9.17|PATH:hl7:observation/hl7:entryRelationship[hl7:observation/hl7:code/@code='9267-6']/hl7:observation/hl7:value",
+      "template_id": "1.2.276.0.76.10.4034",
+      "template_effective_date": "2014-09-16T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.17",
+      "path": "hl7:observation/hl7:entryRelationship[hl7:observation/hl7:code/@code='9267-6']/hl7:observation/hl7:value"
+    },
+    "GlasgowComaScale.observation.entryRelationship_observation.code.code_9268-4.observation.value": {
+      "cda_target": "GlasgowComaScale.observation.entryRelationship_observation.code.code_9268-4.observation.value",
+      "source_key": "1.2.276.0.76.10.4034@2014-09-16T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.19|PATH:hl7:observation/hl7:entryRelationship[hl7:observation/hl7:code/@code='9268-4']/hl7:observation/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.10.4034|ID:2.16.840.1.113883.2.6.60.3.9.19|PATH:hl7:observation/hl7:entryRelationship[hl7:observation/hl7:code/@code='9268-4']/hl7:observation/hl7:value",
+      "template_id": "1.2.276.0.76.10.4034",
+      "template_effective_date": "2014-09-16T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.19",
+      "path": "hl7:observation/hl7:entryRelationship[hl7:observation/hl7:code/@code='9268-4']/hl7:observation/hl7:value"
+    },
+    "GlasgowComaScale.observation.entryRelationship_observation.code.code_9270-0.observation.value": {
+      "cda_target": "GlasgowComaScale.observation.entryRelationship_observation.code.code_9270-0.observation.value",
+      "source_key": "1.2.276.0.76.10.4034@2014-09-16T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.18|PATH:hl7:observation/hl7:entryRelationship[hl7:observation/hl7:code/@code='9270-0']/hl7:observation/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.10.4034|ID:2.16.840.1.113883.2.6.60.3.9.18|PATH:hl7:observation/hl7:entryRelationship[hl7:observation/hl7:code/@code='9270-0']/hl7:observation/hl7:value",
+      "template_id": "1.2.276.0.76.10.4034",
+      "template_effective_date": "2014-09-16T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.18",
+      "path": "hl7:observation/hl7:entryRelationship[hl7:observation/hl7:code/@code='9270-0']/hl7:observation/hl7:value"
+    },
+    "GlasgowComaScale.observation.value": {
+      "cda_target": "GlasgowComaScale.observation.value",
+      "source_key": "1.2.276.0.76.10.4034@2014-09-16T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.16|PATH:hl7:observation/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.10.4034|ID:2.16.840.1.113883.2.6.60.3.9.16|PATH:hl7:observation/hl7:value",
+      "template_id": "1.2.276.0.76.10.4034",
+      "template_effective_date": "2014-09-16T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.16",
+      "path": "hl7:observation/hl7:value"
+    },
+    "HeaderParticipantKostentraeger.code": {
+      "cda_target": "HeaderParticipantKostentraeger.code",
+      "source_key": "1.2.276.0.76.10.2022@2014-08-25T00:00:00|ID:2.16.840.1.113883.2.6.77.9.27|PATH:hl7:participant[hl7:templateId[@root='1.2.276.0.76.10.2022']]/hl7:associatedEntity/hl7:code",
+      "revisionless_source_key": "1.2.276.0.76.10.2022|ID:2.16.840.1.113883.2.6.77.9.27|PATH:hl7:participant[hl7:templateId[@root='1.2.276.0.76.10.2022']]/hl7:associatedEntity/hl7:code",
+      "template_id": "1.2.276.0.76.10.2022",
+      "template_effective_date": "2014-08-25T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.77.9.27",
+      "path": "hl7:participant[hl7:templateId[@root='1.2.276.0.76.10.2022']]/hl7:associatedEntity/hl7:code"
+    },
+    "HeaderParticipantKostentraeger.translation_codeSystem_2.16.840.1.113883.3.7.1.1": {
+      "cda_target": "HeaderParticipantKostentraeger.translation_codeSystem_2.16.840.1.113883.3.7.1.1",
+      "source_key": "1.2.276.0.76.10.2022@2014-08-25T00:00:00|ID:2.16.840.1.113883.2.6.77.9.178|PATH:hl7:participant[hl7:templateId[@root='1.2.276.0.76.10.2022']]/hl7:associatedEntity/hl7:code/hl7:translation[@codeSystem='2.16.840.1.113883.3.7.1.1']",
+      "revisionless_source_key": "1.2.276.0.76.10.2022|ID:2.16.840.1.113883.2.6.77.9.178|PATH:hl7:participant[hl7:templateId[@root='1.2.276.0.76.10.2022']]/hl7:associatedEntity/hl7:code/hl7:translation[@codeSystem='2.16.840.1.113883.3.7.1.1']",
+      "template_id": "1.2.276.0.76.10.2022",
+      "template_effective_date": "2014-08-25T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.77.9.178",
+      "path": "hl7:participant[hl7:templateId[@root='1.2.276.0.76.10.2022']]/hl7:associatedEntity/hl7:code/hl7:translation[@codeSystem='2.16.840.1.113883.3.7.1.1']"
+    },
+    "HeartRate.value": {
+      "cda_target": "HeartRate.value",
+      "source_key": "1.2.276.0.76.10.4033@2014-09-16T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.9|PATH:hl7:observation/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.10.4033|ID:2.16.840.1.113883.2.6.60.3.9.9|PATH:hl7:observation/hl7:value",
+      "template_id": "1.2.276.0.76.10.4033",
+      "template_effective_date": "2014-09-16T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.9",
+      "path": "hl7:observation/hl7:value"
+    },
+    "Isolationindication.value": {
+      "cda_target": "Isolationindication.value",
+      "source_key": "1.2.276.0.76.3.1.195.10.66@2024-08-14T18:14:44|ID:2.16.840.1.113883.2.6.60.3.9.4069.1|PATH:hl7:observation/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.66|ID:2.16.840.1.113883.2.6.60.3.9.4069.1|PATH:hl7:observation/hl7:value",
+      "template_id": "1.2.276.0.76.3.1.195.10.66",
+      "template_effective_date": "2024-08-14T18:14:44",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.4069.1",
+      "path": "hl7:observation/hl7:value"
+    },
+    "Laterality.value": {
+      "cda_target": "Laterality.value",
+      "source_key": "1.2.276.0.76.10.90026@2017-02-13T00:00:00|ID:2.16.840.1.113883.2.6.77.9.100|PATH:hl7:qualifier[hl7:name/@code='20228-3']/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.10.90026|ID:2.16.840.1.113883.2.6.77.9.100|PATH:hl7:qualifier[hl7:name/@code='20228-3']/hl7:value",
+      "template_id": "1.2.276.0.76.10.90026",
+      "template_effective_date": "2017-02-13T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.77.9.100",
+      "path": "hl7:qualifier[hl7:name/@code='20228-3']/hl7:value"
+    },
+    "Medikation.sequenceNumber": {
+      "cda_target": "Medikation.sequenceNumber",
+      "source_key": "1.2.276.0.76.3.1.195.10.67@2023-12-03T00:00:00|ID:2.16.840.1.113883.3.1937.777.15.9.63|PATH:hl7:substanceAdministration/hl7:entryRelationship[exists(hl7:substanceAdministration)]/hl7:sequenceNumber",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.67|ID:2.16.840.1.113883.3.1937.777.15.9.63|PATH:hl7:substanceAdministration/hl7:entryRelationship[exists(hl7:substanceAdministration)]/hl7:sequenceNumber",
+      "template_id": "1.2.276.0.76.3.1.195.10.67",
+      "template_effective_date": "2023-12-03T00:00:00",
+      "element_id": "2.16.840.1.113883.3.1937.777.15.9.63",
+      "path": "hl7:substanceAdministration/hl7:entryRelationship[exists(hl7:substanceAdministration)]/hl7:sequenceNumber"
+    },
+    "Modifiedrankinscale.observation.value": {
+      "cda_target": "Modifiedrankinscale.observation.value",
+      "source_key": "1.2.276.0.76.10.4045@2015-03-03T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.296|PATH:hl7:observation/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.10.4045|ID:2.16.840.1.113883.2.6.60.3.9.296|PATH:hl7:observation/hl7:value",
+      "template_id": "1.2.276.0.76.10.4045",
+      "template_effective_date": "2015-03-03T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.296",
+      "path": "hl7:observation/hl7:value"
+    },
+    "Painseverity.observation.value": {
+      "cda_target": "Painseverity.observation.value",
+      "source_key": "1.2.276.0.76.10.4036@2014-09-16T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.23|PATH:hl7:observation/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.10.4036|ID:2.16.840.1.113883.2.6.60.3.9.23|PATH:hl7:observation/hl7:value",
+      "template_id": "1.2.276.0.76.10.4036",
+      "template_effective_date": "2014-09-16T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.23",
+      "path": "hl7:observation/hl7:value"
+    },
+    "Pelvisxray.negationInd": {
+      "cda_target": "Pelvisxray.negationInd",
+      "source_key": "1.2.276.0.76.10.4052@2015-09-18T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.397|PATH:hl7:observation/@negationInd",
+      "revisionless_source_key": "1.2.276.0.76.10.4052|ID:2.16.840.1.113883.2.6.60.3.9.397|PATH:hl7:observation/@negationInd",
+      "template_id": "1.2.276.0.76.10.4052",
+      "template_effective_date": "2015-09-18T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.397",
+      "path": "hl7:observation/@negationInd"
+    },
+    "Plainchestxray.negationInd": {
+      "cda_target": "Plainchestxray.negationInd",
+      "source_key": "1.2.276.0.76.10.4050@2015-09-18T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.361|PATH:hl7:observation/@negationInd",
+      "revisionless_source_key": "1.2.276.0.76.10.4050|ID:2.16.840.1.113883.2.6.60.3.9.361|PATH:hl7:observation/@negationInd",
+      "template_id": "1.2.276.0.76.10.4050",
+      "template_effective_date": "2015-09-18T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.361",
+      "path": "hl7:observation/@negationInd"
+    },
+    "Pregnancystatus.value": {
+      "cda_target": "Pregnancystatus.value",
+      "source_key": "1.2.276.0.76.10.4043@2015-03-03T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.264|PATH:hl7:observation/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.10.4043|ID:2.16.840.1.113883.2.6.60.3.9.264|PATH:hl7:observation/hl7:value",
+      "template_id": "1.2.276.0.76.10.4043",
+      "template_effective_date": "2015-03-03T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.264",
+      "path": "hl7:observation/hl7:value"
+    },
+    "Problemconcernacteddiagnoses.sequenceNumber": {
+      "cda_target": "Problemconcernacteddiagnoses.sequenceNumber",
+      "source_key": "1.2.276.0.76.10.4048@2016-06-22T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.1263|PATH:hl7:act/hl7:entryRelationship/hl7:sequenceNumber",
+      "revisionless_source_key": "1.2.276.0.76.10.4048|ID:2.16.840.1.113883.2.6.60.3.9.1263|PATH:hl7:act/hl7:entryRelationship/hl7:sequenceNumber",
+      "template_id": "1.2.276.0.76.10.4048",
+      "template_effective_date": "2016-06-22T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.1263",
+      "path": "hl7:act/hl7:entryRelationship/hl7:sequenceNumber"
+    },
+    "Problemobservationcedis.originalText": {
+      "cda_target": "Problemobservationcedis.originalText",
+      "source_key": "1.2.276.0.76.10.4040@2015-09-18T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.1556|PATH:hl7:observation/hl7:value/hl7:originalText",
+      "revisionless_source_key": "1.2.276.0.76.10.4040|ID:2.16.840.1.113883.2.6.60.3.9.1556|PATH:hl7:observation/hl7:value/hl7:originalText",
+      "template_id": "1.2.276.0.76.10.4040",
+      "template_effective_date": "2015-09-18T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.1556",
+      "path": "hl7:observation/hl7:value/hl7:originalText"
+    },
+    "Problemobservationcedis.value": {
+      "cda_target": "Problemobservationcedis.value",
+      "source_key": "1.2.276.0.76.10.4040@2015-09-18T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.252|PATH:hl7:observation/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.10.4040|ID:2.16.840.1.113883.2.6.60.3.9.252|PATH:hl7:observation/hl7:value",
+      "template_id": "1.2.276.0.76.10.4040",
+      "template_effective_date": "2015-09-18T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.252",
+      "path": "hl7:observation/hl7:value"
+    },
+    "Problemobservationeddiagnosis.low": {
+      "cda_target": "Problemobservationeddiagnosis.low",
+      "source_key": "1.2.276.0.76.10.4049@2017-02-13T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.633|PATH:hl7:observation/hl7:effectiveTime/hl7:low",
+      "revisionless_source_key": "1.2.276.0.76.10.4049|ID:2.16.840.1.113883.2.6.60.3.9.633|PATH:hl7:observation/hl7:effectiveTime/hl7:low",
+      "template_id": "1.2.276.0.76.10.4049",
+      "template_effective_date": "2017-02-13T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.633",
+      "path": "hl7:observation/hl7:effectiveTime/hl7:low"
+    },
+    "Problemobservationeddiagnosis.negationInd": {
+      "cda_target": "Problemobservationeddiagnosis.negationInd",
+      "source_key": "1.2.276.0.76.10.4049@2017-02-13T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.624|PATH:hl7:observation/@negationInd",
+      "revisionless_source_key": "1.2.276.0.76.10.4049|ID:2.16.840.1.113883.2.6.60.3.9.624|PATH:hl7:observation/@negationInd",
+      "template_id": "1.2.276.0.76.10.4049",
+      "template_effective_date": "2017-02-13T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.624",
+      "path": "hl7:observation/@negationInd"
+    },
+    "Pupilreaction.targetSiteCode": {
+      "cda_target": "Pupilreaction.targetSiteCode",
+      "source_key": "1.2.276.0.76.10.4047@2015-09-18T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.357|PATH:hl7:observation/hl7:targetSiteCode",
+      "revisionless_source_key": "1.2.276.0.76.10.4047|ID:2.16.840.1.113883.2.6.60.3.9.357|PATH:hl7:observation/hl7:targetSiteCode",
+      "template_id": "1.2.276.0.76.10.4047",
+      "template_effective_date": "2015-09-18T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.357",
+      "path": "hl7:observation/hl7:targetSiteCode"
+    },
+    "Pupilreaction_left.value": {
+      "cda_target": "Pupilreaction.value",
+      "source_key": "1.2.276.0.76.10.4047@2015-09-18T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.356|PATH:hl7:observation/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.10.4047|ID:2.16.840.1.113883.2.6.60.3.9.356|PATH:hl7:observation/hl7:value",
+      "template_id": "1.2.276.0.76.10.4047",
+      "template_effective_date": "2015-09-18T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.356",
+      "path": "hl7:observation/hl7:value"
+    },
+    "Pupilreaction_right.value": {
+      "cda_target": "Pupilreaction.value",
+      "source_key": "1.2.276.0.76.10.4047@2015-09-18T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.356|PATH:hl7:observation/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.10.4047|ID:2.16.840.1.113883.2.6.60.3.9.356|PATH:hl7:observation/hl7:value",
+      "template_id": "1.2.276.0.76.10.4047",
+      "template_effective_date": "2015-09-18T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.356",
+      "path": "hl7:observation/hl7:value"
+    },
+    "Pupilsize.targetSiteCode": {
+      "cda_target": "Pupilsize.targetSiteCode",
+      "source_key": "1.2.276.0.76.10.4046@2015-09-18T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.344|PATH:hl7:observation/hl7:targetSiteCode",
+      "revisionless_source_key": "1.2.276.0.76.10.4046|ID:2.16.840.1.113883.2.6.60.3.9.344|PATH:hl7:observation/hl7:targetSiteCode",
+      "template_id": "1.2.276.0.76.10.4046",
+      "template_effective_date": "2015-09-18T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.344",
+      "path": "hl7:observation/hl7:targetSiteCode"
+    },
+    "Pupilsize_left.value": {
+      "cda_target": "Pupilsize.value",
+      "source_key": "1.2.276.0.76.10.4046@2015-09-18T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.343|PATH:hl7:observation/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.10.4046|ID:2.16.840.1.113883.2.6.60.3.9.343|PATH:hl7:observation/hl7:value",
+      "template_id": "1.2.276.0.76.10.4046",
+      "template_effective_date": "2015-09-18T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.343",
+      "path": "hl7:observation/hl7:value"
+    },
+    "Pupilsize_right.value": {
+      "cda_target": "Pupilsize.value",
+      "source_key": "1.2.276.0.76.10.4046@2015-09-18T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.343|PATH:hl7:observation/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.10.4046|ID:2.16.840.1.113883.2.6.60.3.9.343|PATH:hl7:observation/hl7:value",
+      "template_id": "1.2.276.0.76.10.4046",
+      "template_effective_date": "2015-09-18T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.343",
+      "path": "hl7:observation/hl7:value"
+    },
+    "Radiographyofspine.negationInd": {
+      "cda_target": "Radiographyofspine.negationInd",
+      "source_key": "1.2.276.0.76.10.4051@2015-09-18T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.379|PATH:hl7:observation/@negationInd",
+      "revisionless_source_key": "1.2.276.0.76.10.4051|ID:2.16.840.1.113883.2.6.60.3.9.379|PATH:hl7:observation/@negationInd",
+      "template_id": "1.2.276.0.76.10.4051",
+      "template_effective_date": "2015-09-18T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.379",
+      "path": "hl7:observation/@negationInd"
+    },
+    "Referralfrom.act.participant.participantRole.code": {
+      "cda_target": "Referralfrom.act.participant.participantRole.code",
+      "source_key": "1.2.276.0.76.10.4038@2015-09-18T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.67|PATH:hl7:act/hl7:participant/hl7:participantRole/hl7:code",
+      "revisionless_source_key": "1.2.276.0.76.10.4038|ID:2.16.840.1.113883.2.6.60.3.9.67|PATH:hl7:act/hl7:participant/hl7:participantRole/hl7:code",
+      "template_id": "1.2.276.0.76.10.4038",
+      "template_effective_date": "2015-09-18T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.67",
+      "path": "hl7:act/hl7:participant/hl7:participantRole/hl7:code"
+    },
+    "Referralto.act.participant.participantRole.code": {
+      "cda_target": "Referralto.act.participant.participantRole.code",
+      "source_key": "1.2.276.0.76.10.4067@2025-12-01T00:00:00|PATH:hl7:act/hl7:participant/hl7:participantRole/hl7:code",
+      "revisionless_source_key": "1.2.276.0.76.10.4067|ID:|PATH:hl7:act/hl7:participant/hl7:participantRole/hl7:code",
+      "template_id": "1.2.276.0.76.10.4067",
+      "template_effective_date": "2025-12-01T00:00:00",
+      "element_id": "",
+      "path": "hl7:act/hl7:participant/hl7:participantRole/hl7:code"
+    },
+    "RespiratoryRate.value": {
+      "cda_target": "RespiratoryRate.value",
+      "source_key": "1.2.276.0.76.10.4030@2014-09-16T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.14|PATH:hl7:observation/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.10.4030|ID:2.16.840.1.113883.2.6.60.3.9.14|PATH:hl7:observation/hl7:value",
+      "template_id": "1.2.276.0.76.10.4030",
+      "template_effective_date": "2014-09-16T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.14",
+      "path": "hl7:observation/hl7:value"
+    },
+    "Systolicbloodpressure.value": {
+      "cda_target": "Systolicbloodpressure.value",
+      "source_key": "1.2.276.0.76.10.4032@2014-09-16T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.8|PATH:hl7:observation/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.10.4032|ID:2.16.840.1.113883.2.6.60.3.9.8|PATH:hl7:observation/hl7:value",
+      "template_id": "1.2.276.0.76.10.4032",
+      "template_effective_date": "2014-09-16T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.8",
+      "path": "hl7:observation/hl7:value"
+    },
+    "Transportmethod.value": {
+      "cda_target": "Transportmethod.value",
+      "source_key": "1.2.276.0.76.10.4037@2015-03-03T00:00:00|ID:2.16.840.1.113883.2.6.60.3.9.1631714|PATH:hl7:observation/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.10.4037|ID:2.16.840.1.113883.2.6.60.3.9.1631714|PATH:hl7:observation/hl7:value",
+      "template_id": "1.2.276.0.76.10.4037",
+      "template_effective_date": "2015-03-03T00:00:00",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.1631714",
+      "path": "hl7:observation/hl7:value"
+    },
+    "WildcardDiagnostik.code": {
+      "cda_target": "WildcardDiagnostik.code",
+      "source_key": "1.2.276.0.76.3.1.195.10.89@2024-08-18T21:50:30|ID:2.16.840.1.113883.2.6.60.3.9.608|PATH:hl7:observation/hl7:code",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.89|ID:2.16.840.1.113883.2.6.60.3.9.608|PATH:hl7:observation/hl7:code",
+      "template_id": "1.2.276.0.76.3.1.195.10.89",
+      "template_effective_date": "2024-08-18T21:50:30",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.608",
+      "path": "hl7:observation/hl7:code"
+    },
+    "WildcardDiagnostik.effectiveTime_not_xsi_type": {
+      "cda_target": "WildcardDiagnostik.effectiveTime_not_xsi_type",
+      "source_key": "1.2.276.0.76.3.1.195.10.89@2024-08-18T21:50:30|ID:2.16.840.1.113883.2.6.60.3.9.1642329|PATH:hl7:observation/hl7:effectiveTime[not(@xsi:type)]",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.89|ID:2.16.840.1.113883.2.6.60.3.9.1642329|PATH:hl7:observation/hl7:effectiveTime[not(@xsi:type)]",
+      "template_id": "1.2.276.0.76.3.1.195.10.89",
+      "template_effective_date": "2024-08-18T21:50:30",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.1642329",
+      "path": "hl7:observation/hl7:effectiveTime[not(@xsi:type)]"
+    },
+    "WildcardDiagnostik.observation.effectiveTime_xsi_type_IVL_TS.width": {
+      "cda_target": "WildcardDiagnostik.observation.effectiveTime_xsi_type_IVL_TS.width",
+      "source_key": "1.2.276.0.76.3.1.195.10.89@2024-08-18T21:50:30|PATH:hl7:observation/hl7:effectiveTime[@xsi:type='IVL_TS']/hl7:width",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.89|ID:|PATH:hl7:observation/hl7:effectiveTime[@xsi:type='IVL_TS']/hl7:width",
+      "template_id": "1.2.276.0.76.3.1.195.10.89",
+      "template_effective_date": "2024-08-18T21:50:30",
+      "element_id": "",
+      "path": "hl7:observation/hl7:effectiveTime[@xsi:type='IVL_TS']/hl7:width"
+    },
+    "WildcardDiagnostik.observation.reference.externalDocument.text.reference": {
+      "cda_target": "WildcardDiagnostik.observation.reference.externalDocument.text.reference",
+      "source_key": "1.2.276.0.76.3.1.195.10.89@2024-08-18T21:50:30|ID:2.16.840.1.113883.2.6.60.3.9.1642334|PATH:hl7:observation/hl7:reference/hl7:externalDocument/hl7:text/hl7:reference",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.89|ID:2.16.840.1.113883.2.6.60.3.9.1642334|PATH:hl7:observation/hl7:reference/hl7:externalDocument/hl7:text/hl7:reference",
+      "template_id": "1.2.276.0.76.3.1.195.10.89",
+      "template_effective_date": "2024-08-18T21:50:30",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.1642334",
+      "path": "hl7:observation/hl7:reference/hl7:externalDocument/hl7:text/hl7:reference"
+    },
+    "WildcardDiagnostik.value_as_ST": {
+      "cda_target": "WildcardDiagnostik.value_as_ST",
+      "source_key": "1.2.276.0.76.3.1.195.10.89@2024-08-18T21:50:30|ID:2.16.840.1.113883.2.6.60.3.9.613|PATH:hl7:observation/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.89|ID:2.16.840.1.113883.2.6.60.3.9.613|PATH:hl7:observation/hl7:value",
+      "template_id": "1.2.276.0.76.3.1.195.10.89",
+      "template_effective_date": "2024-08-18T21:50:30",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.613",
+      "path": "hl7:observation/hl7:value"
+    },
+    "WildcardTherapie.code": {
+      "cda_target": "WildcardTherapie.code",
+      "source_key": "1.2.276.0.76.3.1.195.10.90@2024-08-18T21:50:30|ID:2.16.840.1.113883.2.6.60.3.9.608|PATH:hl7:procedure/hl7:code",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.90|ID:2.16.840.1.113883.2.6.60.3.9.608|PATH:hl7:procedure/hl7:code",
+      "template_id": "1.2.276.0.76.3.1.195.10.90",
+      "template_effective_date": "2024-08-18T21:50:30",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.608",
+      "path": "hl7:procedure/hl7:code"
+    },
+    "WildcardTherapie.effectiveTime_not_xsi_type": {
+      "cda_target": "WildcardTherapie.effectiveTime_not_xsi_type",
+      "source_key": "1.2.276.0.76.3.1.195.10.90@2024-08-18T21:50:30|ID:2.16.840.1.113883.2.6.60.3.9.1642321|PATH:hl7:procedure/hl7:effectiveTime[not(@xsi:type)]",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.90|ID:2.16.840.1.113883.2.6.60.3.9.1642321|PATH:hl7:procedure/hl7:effectiveTime[not(@xsi:type)]",
+      "template_id": "1.2.276.0.76.3.1.195.10.90",
+      "template_effective_date": "2024-08-18T21:50:30",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.1642321",
+      "path": "hl7:procedure/hl7:effectiveTime[not(@xsi:type)]"
+    },
+    "WildcardTherapie.procedure.effectiveTime_xsi_type_IVL_TS.width": {
+      "cda_target": "WildcardTherapie.procedure.effectiveTime_xsi_type_IVL_TS.width",
+      "source_key": "1.2.276.0.76.3.1.195.10.90@2024-08-18T21:50:30|PATH:hl7:procedure/hl7:effectiveTime[@xsi:type='IVL_TS']/hl7:width",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.90|ID:|PATH:hl7:procedure/hl7:effectiveTime[@xsi:type='IVL_TS']/hl7:width",
+      "template_id": "1.2.276.0.76.3.1.195.10.90",
+      "template_effective_date": "2024-08-18T21:50:30",
+      "element_id": "",
+      "path": "hl7:procedure/hl7:effectiveTime[@xsi:type='IVL_TS']/hl7:width"
+    },
+    "WildcardTherapie.procedure.reference.externalDocument.text.reference": {
+      "cda_target": "WildcardTherapie.procedure.reference.externalDocument.text.reference",
+      "source_key": "1.2.276.0.76.3.1.195.10.90@2024-08-18T21:50:30|ID:2.16.840.1.113883.2.6.60.3.9.1642326|PATH:hl7:procedure/hl7:reference/hl7:externalDocument/hl7:text/hl7:reference",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.90|ID:2.16.840.1.113883.2.6.60.3.9.1642326|PATH:hl7:procedure/hl7:reference/hl7:externalDocument/hl7:text/hl7:reference",
+      "template_id": "1.2.276.0.76.3.1.195.10.90",
+      "template_effective_date": "2024-08-18T21:50:30",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.1642326",
+      "path": "hl7:procedure/hl7:reference/hl7:externalDocument/hl7:text/hl7:reference"
+    },
+    "bga_angefordert.negationInd": {
+      "cda_target": "bga_angefordert.negationInd",
+      "source_key": "1.2.276.0.76.3.1.195.10.48@2024-05-24T00:00:00|PATH:hl7:procedure/@negationInd",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.48|ID:|PATH:hl7:procedure/@negationInd",
+      "template_id": "1.2.276.0.76.3.1.195.10.48",
+      "template_effective_date": "2024-05-24T00:00:00",
+      "element_id": "",
+      "path": "hl7:procedure/@negationInd"
+    },
+    "blutdruck-diastolisch.value": {
+      "cda_target": "blutdruck-diastolisch.value",
+      "source_key": "1.2.276.0.76.3.1.195.10.38@2024-08-14T10:13:56|ID:2.16.840.1.113883.2.6.77.9.888|PATH:hl7:observation/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.38|ID:2.16.840.1.113883.2.6.77.9.888|PATH:hl7:observation/hl7:value",
+      "template_id": "1.2.276.0.76.3.1.195.10.38",
+      "template_effective_date": "2024-08-14T10:13:56",
+      "element_id": "2.16.840.1.113883.2.6.77.9.888",
+      "path": "hl7:observation/hl7:value"
+    },
+    "ct-mr-ds-angiographie.value": {
+      "cda_target": "ct-mr-ds-angiographie.value",
+      "source_key": "1.2.276.0.76.3.1.195.10.91@2024-05-24T00:00:00|PATH:hl7:observation/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.91|ID:|PATH:hl7:observation/hl7:value",
+      "template_id": "1.2.276.0.76.3.1.195.10.91",
+      "template_effective_date": "2024-05-24T00:00:00",
+      "element_id": "",
+      "path": "hl7:observation/hl7:value"
+    },
+    "ct_abdomen_durchgefuhrt.negationInd": {
+      "cda_target": "ct_abdomen_durchgefuhrt.negationInd",
+      "source_key": "1.2.276.0.76.3.1.195.10.59@2024-05-24T00:00:00|PATH:hl7:procedure/@negationInd",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.59|ID:|PATH:hl7:procedure/@negationInd",
+      "template_id": "1.2.276.0.76.3.1.195.10.59",
+      "template_effective_date": "2024-05-24T00:00:00",
+      "element_id": "",
+      "path": "hl7:procedure/@negationInd"
+    },
+    "ct_hws_durchgefuhrt.negationInd": {
+      "cda_target": "ct_hws_durchgefuhrt.negationInd",
+      "source_key": "1.2.276.0.76.3.1.195.10.57@2024-05-24T00:00:00|PATH:hl7:procedure/@negationInd",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.57|ID:|PATH:hl7:procedure/@negationInd",
+      "template_id": "1.2.276.0.76.3.1.195.10.57",
+      "template_effective_date": "2024-05-24T00:00:00",
+      "element_id": "",
+      "path": "hl7:procedure/@negationInd"
+    },
+    "ct_thorax_durchgefuhrt.negationInd": {
+      "cda_target": "ct_thorax_durchgefuhrt.negationInd",
+      "source_key": "1.2.276.0.76.3.1.195.10.58@2024-05-24T00:00:00|PATH:hl7:procedure/@negationInd",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.58|ID:|PATH:hl7:procedure/@negationInd",
+      "template_id": "1.2.276.0.76.3.1.195.10.58",
+      "template_effective_date": "2024-05-24T00:00:00",
+      "element_id": "",
+      "path": "hl7:procedure/@negationInd"
+    },
+    "direkter_arztkontakt.observation.negationInd": {
+      "cda_target": "direkter_arztkontakt.observation.negationInd",
+      "source_key": "1.2.276.0.76.3.1.195.10.17@2024-05-24T00:00:00|PATH:hl7:observation/@negationInd",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.17|ID:|PATH:hl7:observation/@negationInd",
+      "template_id": "1.2.276.0.76.3.1.195.10.17",
+      "template_effective_date": "2024-05-24T00:00:00",
+      "element_id": "",
+      "path": "hl7:observation/@negationInd"
+    },
+    "ekg_angefordert.negationInd": {
+      "cda_target": "ekg_angefordert.negationInd",
+      "source_key": "1.2.276.0.76.3.1.195.10.49@2024-05-24T00:00:00|PATH:hl7:procedure/@negationInd",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.49|ID:|PATH:hl7:procedure/@negationInd",
+      "template_id": "1.2.276.0.76.3.1.195.10.49",
+      "template_effective_date": "2024-05-24T00:00:00",
+      "element_id": "",
+      "path": "hl7:procedure/@negationInd"
+    },
+    "ersteinschatzung.effectiveTime": {
+      "cda_target": "ersteinschatzung.effectiveTime",
+      "source_key": "1.2.276.0.76.3.1.195.10.18@2024-08-13T14:17:50|ID:2.16.840.1.113883.2.6.60.3.9.646|PATH:hl7:observation/hl7:effectiveTime",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.18|ID:2.16.840.1.113883.2.6.60.3.9.646|PATH:hl7:observation/hl7:effectiveTime",
+      "template_id": "1.2.276.0.76.3.1.195.10.18",
+      "template_effective_date": "2024-08-13T14:17:50",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.646",
+      "path": "hl7:observation/hl7:effectiveTime"
+    },
+    "ersteinschatzung.methodCode": {
+      "cda_target": "ersteinschatzung.methodCode",
+      "source_key": "1.2.276.0.76.3.1.195.10.18@2024-08-13T14:17:50|ID:2.16.840.1.113883.2.6.60.3.9.1632189|PATH:hl7:observation/hl7:methodCode",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.18|ID:2.16.840.1.113883.2.6.60.3.9.1632189|PATH:hl7:observation/hl7:methodCode",
+      "template_id": "1.2.276.0.76.3.1.195.10.18",
+      "template_effective_date": "2024-08-13T14:17:50",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.1632189",
+      "path": "hl7:observation/hl7:methodCode"
+    },
+    "ersteinschatzung.value": {
+      "cda_target": "ersteinschatzung.value",
+      "source_key": "1.2.276.0.76.3.1.195.10.18@2024-08-13T14:17:50|ID:2.16.840.1.113883.2.6.60.3.9.649|PATH:hl7:observation/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.18|ID:2.16.840.1.113883.2.6.60.3.9.649|PATH:hl7:observation/hl7:value",
+      "template_id": "1.2.276.0.76.3.1.195.10.18",
+      "template_effective_date": "2024-08-13T14:17:50",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.649",
+      "path": "hl7:observation/hl7:value"
+    },
+    "esi-triage-faktoren.value": {
+      "cda_target": "esi-triage-faktoren.value",
+      "source_key": "1.2.276.0.76.3.1.195.10.26@2024-08-13T10:50:15|ID:2.16.840.1.113883.2.6.60.3.9.19196|PATH:hl7:observation/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.26|ID:2.16.840.1.113883.2.6.60.3.9.19196|PATH:hl7:observation/hl7:value",
+      "template_id": "1.2.276.0.76.3.1.195.10.26",
+      "template_effective_date": "2024-08-13T10:50:15",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.19196",
+      "path": "hl7:observation/hl7:value"
+    },
+    "hauptkostentrager.code": {
+      "cda_target": "hauptkostentrager.code",
+      "source_key": "1.2.276.0.76.3.1.195.10.4@2024-08-09T10:35:24|ID:2.16.840.1.113883.2.6.77.9.27|PATH:hl7:participant[hl7:templateId[@root='1.2.276.0.76.3.1.195.10.4']]/hl7:associatedEntity/hl7:code",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.4|ID:2.16.840.1.113883.2.6.77.9.27|PATH:hl7:participant[hl7:templateId[@root='1.2.276.0.76.3.1.195.10.4']]/hl7:associatedEntity/hl7:code",
+      "template_id": "1.2.276.0.76.3.1.195.10.4",
+      "template_effective_date": "2024-08-09T10:35:24",
+      "element_id": "2.16.840.1.113883.2.6.77.9.27",
+      "path": "hl7:participant[hl7:templateId[@root='1.2.276.0.76.3.1.195.10.4']]/hl7:associatedEntity/hl7:code"
+    },
+    "hauptkostentrager.name": {
+      "cda_target": "hauptkostentrager.name",
+      "source_key": "1.2.276.0.76.3.1.195.10.4@2024-08-09T10:35:24|ID:2.16.840.1.113883.2.6.60.3.9.1632161|PATH:hl7:participant[hl7:templateId[@root='1.2.276.0.76.3.1.195.10.4']]/hl7:associatedEntity/hl7:scopingOrganization/hl7:name",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.4|ID:2.16.840.1.113883.2.6.60.3.9.1632161|PATH:hl7:participant[hl7:templateId[@root='1.2.276.0.76.3.1.195.10.4']]/hl7:associatedEntity/hl7:scopingOrganization/hl7:name",
+      "template_id": "1.2.276.0.76.3.1.195.10.4",
+      "template_effective_date": "2024-08-09T10:35:24",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.1632161",
+      "path": "hl7:participant[hl7:templateId[@root='1.2.276.0.76.3.1.195.10.4']]/hl7:associatedEntity/hl7:scopingOrganization/hl7:name"
+    },
+    "hauptkostentrager.participant_templateId_root_1.2.276.0.76.3.1.195.10.4.associatedEntity.id": {
+      "cda_target": "hauptkostentrager.participant_templateId_root_1.2.276.0.76.3.1.195.10.4.associatedEntity.id",
+      "source_key": "1.2.276.0.76.3.1.195.10.4@2024-08-09T10:35:24|PATH:hl7:participant[hl7:templateId[@root='1.2.276.0.76.3.1.195.10.4']]/hl7:associatedEntity/hl7:id",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.4|ID:|PATH:hl7:participant[hl7:templateId[@root='1.2.276.0.76.3.1.195.10.4']]/hl7:associatedEntity/hl7:id",
+      "template_id": "1.2.276.0.76.3.1.195.10.4",
+      "template_effective_date": "2024-08-09T10:35:24",
+      "element_id": "",
+      "path": "hl7:participant[hl7:templateId[@root='1.2.276.0.76.3.1.195.10.4']]/hl7:associatedEntity/hl7:id"
+    },
+    "isolation.negationInd": {
+      "cda_target": "isolation.negationInd",
+      "source_key": "1.2.276.0.76.3.1.195.10.65@2024-08-14T18:08:14|ID:2.16.840.1.113883.2.6.60.3.9.4068.1|PATH:hl7:procedure/@negationInd",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.65|ID:2.16.840.1.113883.2.6.60.3.9.4068.1|PATH:hl7:procedure/@negationInd",
+      "template_id": "1.2.276.0.76.3.1.195.10.65",
+      "template_effective_date": "2024-08-14T18:08:14",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.4068.1",
+      "path": "hl7:procedure/@negationInd"
+    },
+    "medizinische-begleitung.code": {
+      "cda_target": "medizinische-begleitung.code",
+      "source_key": "1.2.276.0.76.3.1.195.10.12@2024-08-13T12:56:59|ID:2.16.840.1.113883.2.6.60.3.9.665|PATH:hl7:procedure/hl7:code",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.12|ID:2.16.840.1.113883.2.6.60.3.9.665|PATH:hl7:procedure/hl7:code",
+      "template_id": "1.2.276.0.76.3.1.195.10.12",
+      "template_effective_date": "2024-08-13T12:56:59",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.665",
+      "path": "hl7:procedure/hl7:code"
+    },
+    "mikrobiologie_angefordert.negationInd": {
+      "cda_target": "mikrobiologie_angefordert.negationInd",
+      "source_key": "1.2.276.0.76.3.1.195.10.47@2024-05-24T00:00:00|PATH:hl7:procedure/@negationInd",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.47|ID:|PATH:hl7:procedure/@negationInd",
+      "template_id": "1.2.276.0.76.3.1.195.10.47",
+      "template_effective_date": "2024-05-24T00:00:00",
+      "element_id": "",
+      "path": "hl7:procedure/@negationInd"
+    },
+    "mts-indikatoren-gelb.value": {
+      "cda_target": "mts-indikatoren-gelb.value",
+      "source_key": "1.2.276.0.76.3.1.195.10.24@2024-08-13T10:50:15|ID:2.16.840.1.113883.2.6.60.3.9.19196|PATH:hl7:observation/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.24|ID:2.16.840.1.113883.2.6.60.3.9.19196|PATH:hl7:observation/hl7:value",
+      "template_id": "1.2.276.0.76.3.1.195.10.24",
+      "template_effective_date": "2024-08-13T10:50:15",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.19196",
+      "path": "hl7:observation/hl7:value"
+    },
+    "mts-indikatoren-grun.value": {
+      "cda_target": "mts-indikatoren-grun.value",
+      "source_key": "1.2.276.0.76.3.1.195.10.25@2024-08-13T10:50:15|ID:2.16.840.1.113883.2.6.60.3.9.19196|PATH:hl7:observation/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.25|ID:2.16.840.1.113883.2.6.60.3.9.19196|PATH:hl7:observation/hl7:value",
+      "template_id": "1.2.276.0.76.3.1.195.10.25",
+      "template_effective_date": "2024-08-13T10:50:15",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.19196",
+      "path": "hl7:observation/hl7:value"
+    },
+    "mts-indikatoren-orange.value": {
+      "cda_target": "mts-indikatoren-orange.value",
+      "source_key": "1.2.276.0.76.3.1.195.10.23@2024-08-13T10:50:15|ID:2.16.840.1.113883.2.6.60.3.9.19196|PATH:hl7:observation/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.23|ID:2.16.840.1.113883.2.6.60.3.9.19196|PATH:hl7:observation/hl7:value",
+      "template_id": "1.2.276.0.76.3.1.195.10.23",
+      "template_effective_date": "2024-08-13T10:50:15",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.19196",
+      "path": "hl7:observation/hl7:value"
+    },
+    "mts-indikatoren-rot.value": {
+      "cda_target": "mts-indikatoren-rot.value",
+      "source_key": "1.2.276.0.76.3.1.195.10.22@2024-08-13T10:50:15|ID:2.16.840.1.113883.2.6.60.3.9.19196|PATH:hl7:observation/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.22|ID:2.16.840.1.113883.2.6.60.3.9.19196|PATH:hl7:observation/hl7:value",
+      "template_id": "1.2.276.0.76.3.1.195.10.22",
+      "template_effective_date": "2024-08-13T10:50:15",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.19196",
+      "path": "hl7:observation/hl7:value"
+    },
+    "mts-prasentationsdiagramm.value": {
+      "cda_target": "mts-prasentationsdiagramm.value",
+      "source_key": "1.2.276.0.76.3.1.195.10.21@2024-08-13T10:50:15|ID:2.16.840.1.113883.2.6.60.3.9.19196|PATH:hl7:observation/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.21|ID:2.16.840.1.113883.2.6.60.3.9.19196|PATH:hl7:observation/hl7:value",
+      "template_id": "1.2.276.0.76.3.1.195.10.21",
+      "template_effective_date": "2024-08-13T10:50:15",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.19196",
+      "path": "hl7:observation/hl7:value"
+    },
+    "name_des_edis.value": {
+      "cda_target": "name_des_edis.value",
+      "source_key": "1.2.276.0.76.3.1.195.10.86@2024-05-24T00:00:00|PATH:hl7:observation/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.86|ID:|PATH:hl7:observation/hl7:value",
+      "template_id": "1.2.276.0.76.3.1.195.10.86",
+      "template_effective_date": "2024-05-24T00:00:00",
+      "element_id": "",
+      "path": "hl7:observation/hl7:value"
+    },
+    "pulsfrequenz.value": {
+      "cda_target": "pulsfrequenz.value",
+      "source_key": "1.2.276.0.76.3.1.195.10.40@2024-08-14T10:13:56|ID:2.16.840.1.113883.2.6.77.9.888|PATH:hl7:observation/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.40|ID:2.16.840.1.113883.2.6.77.9.888|PATH:hl7:observation/hl7:value",
+      "template_id": "1.2.276.0.76.3.1.195.10.40",
+      "template_effective_date": "2024-08-14T10:13:56",
+      "element_id": "2.16.840.1.113883.2.6.77.9.888",
+      "path": "hl7:observation/hl7:value"
+    },
+    "pulsoximetrische_sauerstoffsattigung.value": {
+      "cda_target": "pulsoximetrische_sauerstoffsattigung.value",
+      "source_key": "1.2.276.0.76.3.1.195.10.35@2024-08-14T10:13:56|PATH:hl7:observation/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.35|ID:|PATH:hl7:observation/hl7:value",
+      "template_id": "1.2.276.0.76.3.1.195.10.35",
+      "template_effective_date": "2024-08-14T10:13:56",
+      "element_id": "",
+      "path": "hl7:observation/hl7:value"
+    },
+    "rontgenthorax_angefordert.negationInd": {
+      "cda_target": "rontgenthorax_angefordert.negationInd",
+      "source_key": "1.2.276.0.76.3.1.195.10.51@2024-05-24T00:00:00|PATH:hl7:procedure/@negationInd",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.51|ID:|PATH:hl7:procedure/@negationInd",
+      "template_id": "1.2.276.0.76.3.1.195.10.51",
+      "template_effective_date": "2024-05-24T00:00:00",
+      "element_id": "",
+      "path": "hl7:procedure/@negationInd"
+    },
+    "sonographie_angefordert.negationInd": {
+      "cda_target": "sonographie_angefordert.negationInd",
+      "source_key": "1.2.276.0.76.3.1.195.10.50@2024-05-24T00:00:00|PATH:hl7:procedure/@negationInd",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.50|ID:|PATH:hl7:procedure/@negationInd",
+      "template_id": "1.2.276.0.76.3.1.195.10.50",
+      "template_effective_date": "2024-05-24T00:00:00",
+      "element_id": "",
+      "path": "hl7:procedure/@negationInd"
+    },
+    "substanz-einfluss.value": {
+      "cda_target": "substanz-einfluss.value",
+      "source_key": "1.2.276.0.76.3.1.195.10.32@2024-08-13T18:37:55|ID:2.16.840.1.113883.2.6.60.3.9.163134|PATH:hl7:observation/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.32|ID:2.16.840.1.113883.2.6.60.3.9.163134|PATH:hl7:observation/hl7:value",
+      "template_id": "1.2.276.0.76.3.1.195.10.32",
+      "template_effective_date": "2024-08-13T18:37:55",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.163134",
+      "path": "hl7:observation/hl7:value"
+    },
+    "unfall-anamnese.act.participant.participantRole.code": {
+      "cda_target": "unfall-anamnese.act.participant.participantRole.code",
+      "source_key": "1.2.276.0.76.3.1.195.10.28@2024-08-13T18:34:56|ID:2.16.840.1.113883.2.6.60.3.9.375|PATH:hl7:act/hl7:participant/hl7:participantRole/hl7:code",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.28|ID:2.16.840.1.113883.2.6.60.3.9.375|PATH:hl7:act/hl7:participant/hl7:participantRole/hl7:code",
+      "template_id": "1.2.276.0.76.3.1.195.10.28",
+      "template_effective_date": "2024-08-13T18:34:56",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.375",
+      "path": "hl7:act/hl7:participant/hl7:participantRole/hl7:code"
+    },
+    "unfallart-traumaregister.value": {
+      "cda_target": "unfallart-traumaregister.value",
+      "source_key": "1.2.276.0.76.3.1.195.10.30@2024-08-13T18:37:55|ID:2.16.840.1.113883.2.6.60.3.9.163134|PATH:hl7:observation/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.30|ID:2.16.840.1.113883.2.6.60.3.9.163134|PATH:hl7:observation/hl7:value",
+      "template_id": "1.2.276.0.76.3.1.195.10.30",
+      "template_effective_date": "2024-08-13T18:37:55",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.163134",
+      "path": "hl7:observation/hl7:value"
+    },
+    "unfallursache-kinetik.observation.value": {
+      "cda_target": "unfallursache-kinetik.observation.value",
+      "source_key": "1.2.276.0.76.3.1.195.10.29@2024-08-13T18:37:55|ID:2.16.840.1.113883.2.6.60.3.9.163134|PATH:hl7:observation/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.29|ID:2.16.840.1.113883.2.6.60.3.9.163134|PATH:hl7:observation/hl7:value",
+      "template_id": "1.2.276.0.76.3.1.195.10.29",
+      "template_effective_date": "2024-08-13T18:37:55",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.163134",
+      "path": "hl7:observation/hl7:value"
+    },
+    "unfallursache-kinetik.observation.value.qualifier_name.code_67496-0.value": {
+      "cda_target": "unfallursache-kinetik.observation.value.qualifier_name.code_67496-0.value",
+      "source_key": "1.2.276.0.76.3.1.195.10.29@2024-08-13T18:37:55|ID:2.16.840.1.113883.2.6.60.3.9.163140|PATH:hl7:observation/hl7:value/hl7:qualifier[hl7:name/@code='67496-0']/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.29|ID:2.16.840.1.113883.2.6.60.3.9.163140|PATH:hl7:observation/hl7:value/hl7:qualifier[hl7:name/@code='67496-0']/hl7:value",
+      "template_id": "1.2.276.0.76.3.1.195.10.29",
+      "template_effective_date": "2024-08-13T18:37:55",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.163140",
+      "path": "hl7:observation/hl7:value/hl7:qualifier[hl7:name/@code='67496-0']/hl7:value"
+    },
+    "version_des_edis.value": {
+      "cda_target": "version_des_edis.value",
+      "source_key": "1.2.276.0.76.3.1.195.10.87@2024-05-24T00:00:00|PATH:hl7:observation/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.87|ID:|PATH:hl7:observation/hl7:value",
+      "template_id": "1.2.276.0.76.3.1.195.10.87",
+      "template_effective_date": "2024-05-24T00:00:00",
+      "element_id": "",
+      "path": "hl7:observation/hl7:value"
+    },
+    "vitalparametercontainer.effectiveTime": {
+      "cda_target": "vitalparametercontainer.effectiveTime",
+      "source_key": "1.2.276.0.76.3.1.195.10.95@2026-04-27T15:39:06|ID:2.16.840.1.113883.2.6.60.3.9.1642361|PATH:hl7:organizer/hl7:effectiveTime",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.95|ID:2.16.840.1.113883.2.6.60.3.9.1642361|PATH:hl7:organizer/hl7:effectiveTime",
+      "template_id": "1.2.276.0.76.3.1.195.10.95",
+      "template_effective_date": "2026-04-27T15:39:06",
+      "element_id": "2.16.840.1.113883.2.6.60.3.9.1642361",
+      "path": "hl7:organizer/hl7:effectiveTime"
+    },
+    "zeit_bis_zum_export.value": {
+      "cda_target": "zeit_bis_zum_export.value",
+      "source_key": "1.2.276.0.76.3.1.195.10.85@2024-05-24T00:00:00|PATH:hl7:observation/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.85|ID:|PATH:hl7:observation/hl7:value",
+      "template_id": "1.2.276.0.76.3.1.195.10.85",
+      "template_effective_date": "2024-05-24T00:00:00",
+      "element_id": "",
+      "path": "hl7:observation/hl7:value"
+    },
+    "zeitpunkt_entscheidung_zur_verlegung__entlassung.value": {
+      "cda_target": "zeitpunkt_entscheidung_zur_verlegung__entlassung.value",
+      "source_key": "1.2.276.0.76.3.1.195.10.75@2024-05-24T00:00:00|PATH:hl7:observation/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.75|ID:|PATH:hl7:observation/hl7:value",
+      "template_id": "1.2.276.0.76.3.1.195.10.75",
+      "template_effective_date": "2024-05-24T00:00:00",
+      "element_id": "",
+      "path": "hl7:observation/hl7:value"
+    },
+    "zeitpunkt_patient_verlegt__entlassen_nach.value": {
+      "cda_target": "zeitpunkt_patient_verlegt__entlassen_nach.value",
+      "source_key": "1.2.276.0.76.3.1.195.10.77@2024-05-24T00:00:00|PATH:hl7:observation/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.77|ID:|PATH:hl7:observation/hl7:value",
+      "template_id": "1.2.276.0.76.3.1.195.10.77",
+      "template_effective_date": "2024-05-24T00:00:00",
+      "element_id": "",
+      "path": "hl7:observation/hl7:value"
+    },
+    "zeitpunkt_patient_verlegungs__entlassungsfahig.value": {
+      "cda_target": "zeitpunkt_patient_verlegungs__entlassungsfahig.value",
+      "source_key": "1.2.276.0.76.3.1.195.10.76@2024-05-24T00:00:00|PATH:hl7:observation/hl7:value",
+      "revisionless_source_key": "1.2.276.0.76.3.1.195.10.76|ID:|PATH:hl7:observation/hl7:value",
+      "template_id": "1.2.276.0.76.3.1.195.10.76",
+      "template_effective_date": "2024-05-24T00:00:00",
+      "element_id": "",
+      "path": "hl7:observation/hl7:value"
+    }
+  },
+  "configuration_notes": [
+    {
+      "generated": true,
+      "source": "config/cda-extensions.json",
+      "note": "Uses reviewed CDA profile-overlay configuration for 3 template(s) in 3 mapped field(s).",
+      "templates": [
+        "1.2.276.0.76.3.1.195.10.85",
+        "1.2.276.0.76.3.1.195.10.86",
+        "1.2.276.0.76.3.1.195.10.87"
+      ],
+      "fields": [
+        "dokumentationsinformationen.berechnete_zeitintervalle.zeit_bis_zum_export",
+        "dokumentationsinformationen.datenbereitstellung.name_des_edis",
+        "dokumentationsinformationen.datenbereitstellung.version_des_edis"
+      ]
+    }
+  ]
+}

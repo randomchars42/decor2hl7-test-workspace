@@ -1,0 +1,456 @@
+{
+  "version": 2,
+  "status": "degraded",
+  "policy": {
+    "substitute_revisions": false,
+    "missing_dependencies": "omit-and-report",
+    "missing_document_template": "fatal",
+    "identity_mismatch": "fatal",
+    "spec_constraint_weakening": "explicit-child-constraint-and-warning",
+    "missing_spec_prototype": "informational-no-constraint-omission"
+  },
+  "crawl_degraded": [
+    {
+      "request_key": "codesystem:1.2.276.0.76.3.1.195.5.53@2019-12-30T00:00:00",
+      "type": "codesystem",
+      "id": "1.2.276.0.76.3.1.195.5.53",
+      "effective_date": "2019-12-30T00:00:00",
+      "status": "waived",
+      "roles": [
+        "expansion-support"
+      ],
+      "reasons": [
+        "codesystem:1.2.276.0.76.3.1.195.5.53@2019-12-30T00:00:00: external artifact absence is provisionally waived (Settled absence, reviewed 2026-09-03. AKTIN ValueSet 1.2.276.0.76.11.53@2015-11-17 includes this code system intensionally, but it is published nowhere on the specification server: the cross-project lookup /codesystem/1.2.276.0.76.3.1.195.5.53 answers 404, and the dated extract answers 404 in every candidate project recorded in resolution_attempts. The value set therefore expands to no members and its bound field keeps a non-executable enumeration (DEC-003, DEC-016). No exact 2019-12-30 revision was found in a DIVI or HL7 Germany publication, so a builtin supplement would have to invent an identity; the absence stays visible instead.)"
+      ]
+    },
+    {
+      "request_key": "valueset:1.2.276.0.76.11.53",
+      "type": "valueset",
+      "id": "1.2.276.0.76.11.53",
+      "effective_date": "2015-11-17T00:00:00",
+      "status": "partial-expansion",
+      "roles": [
+        "formal-terminology"
+      ],
+      "reasons": [
+        "value-set expansion unavailable"
+      ]
+    }
+  ],
+  "build_degraded": [
+    {
+      "request_key": "valueset:1.2.276.0.76.11.53",
+      "type": "valueset",
+      "id": "1.2.276.0.76.11.53",
+      "effective_date": "2015-11-17T00:00:00",
+      "status": "partial-expansion",
+      "roles": [
+        "formal-terminology"
+      ],
+      "reasons": [
+        "value-set expansion unavailable"
+      ],
+      "consulted_by": "selected-field-or-validator-value-set"
+    },
+    {
+      "request_key": "codesystem:1.2.276.0.76.3.1.195.5.53@2019-12-30T00:00:00",
+      "type": "codesystem",
+      "id": "1.2.276.0.76.3.1.195.5.53",
+      "effective_date": "2019-12-30T00:00:00",
+      "status": "waived",
+      "roles": [
+        "expansion-support"
+      ],
+      "reasons": [
+        "codesystem:1.2.276.0.76.3.1.195.5.53@2019-12-30T00:00:00: external artifact absence is provisionally waived (Settled absence, reviewed 2026-09-03. AKTIN ValueSet 1.2.276.0.76.11.53@2015-11-17 includes this code system intensionally, but it is published nowhere on the specification server: the cross-project lookup /codesystem/1.2.276.0.76.3.1.195.5.53 answers 404, and the dated extract answers 404 in every candidate project recorded in resolution_attempts. The value set therefore expands to no members and its bound field keeps a non-executable enumeration (DEC-003, DEC-016). No exact 2019-12-30 revision was found in a DIVI or HL7 Germany publication, so a builtin supplement would have to invent an identity; the absence stays visible instead.)"
+      ],
+      "consulted_by": "selected-value-set-expansion"
+    }
+  ],
+  "unavailable_artifacts": [
+    {
+      "request_key": "codesystem:1.2.276.0.76.3.1.195.5.53@2019-12-30T00:00:00",
+      "type": "codesystem",
+      "id": "1.2.276.0.76.3.1.195.5.53",
+      "effective_date": "2019-12-30T00:00:00",
+      "status": "waived",
+      "roles": [
+        "expansion-support"
+      ],
+      "reasons": [
+        "codesystem:1.2.276.0.76.3.1.195.5.53@2019-12-30T00:00:00: external artifact absence is provisionally waived (Settled absence, reviewed 2026-09-03. AKTIN ValueSet 1.2.276.0.76.11.53@2015-11-17 includes this code system intensionally, but it is published nowhere on the specification server: the cross-project lookup /codesystem/1.2.276.0.76.3.1.195.5.53 answers 404, and the dated extract answers 404 in every candidate project recorded in resolution_attempts. The value set therefore expands to no members and its bound field keeps a non-executable enumeration (DEC-003, DEC-016). No exact 2019-12-30 revision was found in a DIVI or HL7 Germany publication, so a builtin supplement would have to invent an identity; the absence stays visible instead.)"
+      ]
+    }
+  ],
+  "unresolved_templates": [],
+  "unresolved_template_prototypes": [
+    {
+      "relation": "SPEC",
+      "template": "1.2.276.0.76.3.1.195.10.92",
+      "flexibility": "2025-11-12T00:00:00",
+      "used_by": {
+        "template": "1.2.276.0.76.3.1.195.10.93",
+        "effective_date": "2026-03-25T11:04:07"
+      },
+      "required": false,
+      "purpose": "editor-prototype"
+    },
+    {
+      "relation": "SPEC",
+      "template": "1.2.276.0.76.10.4095",
+      "flexibility": "2017-02-01T00:00:00",
+      "used_by": {
+        "template": "1.2.276.0.76.3.1.195.10.32",
+        "effective_date": "2024-08-13T18:37:55"
+      },
+      "required": false,
+      "purpose": "editor-prototype"
+    },
+    {
+      "relation": "SPEC",
+      "template": "1.2.276.0.76.10.4101",
+      "flexibility": "2017-02-01T00:00:00",
+      "used_by": {
+        "template": "1.2.276.0.76.3.1.195.10.95",
+        "effective_date": "2026-04-27T15:39:06"
+      },
+      "required": false,
+      "purpose": "editor-prototype"
+    },
+    {
+      "relation": "SPEC",
+      "template": "1.2.276.0.76.10.4068",
+      "flexibility": "2015-09-18T00:00:00",
+      "used_by": {
+        "template": "1.2.276.0.76.3.1.195.10.65",
+        "effective_date": "2024-08-14T18:08:14"
+      },
+      "required": false,
+      "purpose": "editor-prototype"
+    },
+    {
+      "relation": "SPEC",
+      "template": "1.2.276.0.76.10.4095",
+      "flexibility": "2017-02-01T00:00:00",
+      "used_by": {
+        "template": "1.2.276.0.76.3.1.195.10.29",
+        "effective_date": "2024-08-13T18:37:55"
+      },
+      "required": false,
+      "purpose": "editor-prototype"
+    },
+    {
+      "relation": "SPEC",
+      "template": "1.2.276.0.76.10.4095",
+      "flexibility": "2017-02-01T00:00:00",
+      "used_by": {
+        "template": "1.2.276.0.76.3.1.195.10.30",
+        "effective_date": "2024-08-13T18:37:55"
+      },
+      "required": false,
+      "purpose": "editor-prototype"
+    }
+  ],
+  "constraint_diagnostics": [
+    {
+      "code": "spec-constraint-weakening",
+      "severity": "warning",
+      "policy": "explicit-child-constraint-authoritative",
+      "message": "1.2.276.0.76.10.2034 weakens SPEC parent 2.16.840.1.113883.10.12.104 at hl7:custodian/hl7:assignedCustodian/hl7:representedCustodianOrganization (minimumMultiplicity 1 -> 0); using the explicit child constraint",
+      "path": "hl7:custodian/hl7:assignedCustodian/hl7:representedCustodianOrganization",
+      "parent": {
+        "template_id": "2.16.840.1.113883.10.12.104",
+        "template_effective_date": "2005-09-07T00:00:00",
+        "element_id": "2.16.840.1.113883.3.1937.777.1.9.135",
+        "path": "hl7:custodian/hl7:assignedCustodian/hl7:representedCustodianOrganization"
+      },
+      "child": {
+        "template_id": "1.2.276.0.76.10.2034",
+        "template_effective_date": "2014-09-17T00:00:00",
+        "element_id": "2.16.840.1.113883.2.6.60.3.9.1631533",
+        "path": "hl7:custodian/hl7:assignedCustodian/hl7:representedCustodianOrganization"
+      },
+      "changes": [
+        {
+          "property": "minimumMultiplicity",
+          "parent": 1,
+          "child": 0
+        }
+      ]
+    },
+    {
+      "code": "spec-constraint-weakening",
+      "severity": "warning",
+      "policy": "explicit-child-constraint-authoritative",
+      "message": "1.2.276.0.76.3.1.195.10.67 weakens SPEC parent 2.16.840.1.113883.10.21.4.7 at hl7:substanceAdministration/hl7:statusCode (minimumMultiplicity 1 -> 0, mandatory True -> False); using the explicit child constraint",
+      "path": "hl7:substanceAdministration/hl7:statusCode",
+      "parent": {
+        "template_id": "2.16.840.1.113883.10.21.4.7",
+        "template_effective_date": "2023-01-30T08:32:34",
+        "element_id": "2.16.840.1.113883.3.1937.777.15.9.27",
+        "path": "hl7:substanceAdministration/hl7:statusCode"
+      },
+      "child": {
+        "template_id": "1.2.276.0.76.3.1.195.10.67",
+        "template_effective_date": "2023-12-03T00:00:00",
+        "element_id": "2.16.840.1.113883.2.6.60.3.9.1631782",
+        "path": "hl7:substanceAdministration/hl7:statusCode"
+      },
+      "changes": [
+        {
+          "property": "minimumMultiplicity",
+          "parent": 1,
+          "child": 0
+        },
+        {
+          "property": "mandatory",
+          "parent": true,
+          "child": false
+        }
+      ]
+    },
+    {
+      "code": "textual-constraint-not-executable",
+      "severity": "info",
+      "policy": "preserve-owner-free-form-markup",
+      "message": "ART-DECOR <constraint> is free-form markup and has no machine test; it is preserved without inferring XPath: Sollte ab Version 2 (2016) immer angegeben werden oder als unbekannt markiert werden.",
+      "path": "hl7:observation/hl7:value/hl7:originalText",
+      "source": {
+        "kind": "constraint",
+        "language": "de-DE",
+        "text": "Sollte ab Version 2 (2016) immer angegeben werden oder als unbekannt markiert werden.",
+        "normative_terms": [],
+        "machine_test": null,
+        "template_id": "1.2.276.0.76.10.4040",
+        "template_effective_date": "2015-09-18T00:00:00",
+        "element_id": "2.16.840.1.113883.2.6.60.3.9.1556",
+        "path": "hl7:observation/hl7:value/hl7:originalText"
+      }
+    },
+    {
+      "code": "conditional-conformance-condition-missing",
+      "severity": "error",
+      "policy": "owner-conformance-C-requires-stated-condition",
+      "message": "ART-DECOR conformance C requires a stated condition, but none is attached to hl7:entry",
+      "path": "hl7:section/hl7:entry",
+      "source": {
+        "template_id": "1.2.276.0.76.10.3047",
+        "template_effective_date": "2016-08-02T00:00:00",
+        "element_id": "2.16.840.1.113883.2.6.60.3.9.92",
+        "path": "hl7:section/hl7:entry"
+      }
+    },
+    {
+      "code": "conditional-conformance-not-machine-enforced",
+      "severity": "warning",
+      "policy": "do-not-infer-condition-from-prose-or-selector",
+      "message": "ART-DECOR conformance C has stated condition evidence (element-name-predicate) but no associated executable assert/report; presence remains input-activated",
+      "path": "hl7:observation/hl7:entryRelationship[hl7:observation/hl7:code/@code='9267-6']",
+      "source": {
+        "template_id": "1.2.276.0.76.10.4034",
+        "template_effective_date": "2014-09-16T00:00:00",
+        "element_id": "2.16.840.1.113883.2.6.60.3.9.1631659",
+        "path": "hl7:observation/hl7:entryRelationship[hl7:observation/hl7:code/@code='9267-6']"
+      },
+      "condition_evidence": [
+        "element-name-predicate"
+      ]
+    },
+    {
+      "code": "conditional-conformance-not-machine-enforced",
+      "severity": "warning",
+      "policy": "do-not-infer-condition-from-prose-or-selector",
+      "message": "ART-DECOR conformance C has stated condition evidence (element-name-predicate) but no associated executable assert/report; presence remains input-activated",
+      "path": "hl7:observation/hl7:entryRelationship[hl7:observation/hl7:code/@code='9270-0']",
+      "source": {
+        "template_id": "1.2.276.0.76.10.4034",
+        "template_effective_date": "2014-09-16T00:00:00",
+        "element_id": "2.16.840.1.113883.2.6.60.3.9.1631669",
+        "path": "hl7:observation/hl7:entryRelationship[hl7:observation/hl7:code/@code='9270-0']"
+      },
+      "condition_evidence": [
+        "element-name-predicate"
+      ]
+    },
+    {
+      "code": "conditional-conformance-not-machine-enforced",
+      "severity": "warning",
+      "policy": "do-not-infer-condition-from-prose-or-selector",
+      "message": "ART-DECOR conformance C has stated condition evidence (element-name-predicate) but no associated executable assert/report; presence remains input-activated",
+      "path": "hl7:observation/hl7:entryRelationship[hl7:observation/hl7:code/@code='9268-4']",
+      "source": {
+        "template_id": "1.2.276.0.76.10.4034",
+        "template_effective_date": "2014-09-16T00:00:00",
+        "element_id": "2.16.840.1.113883.2.6.60.3.9.1631679",
+        "path": "hl7:observation/hl7:entryRelationship[hl7:observation/hl7:code/@code='9268-4']"
+      },
+      "condition_evidence": [
+        "element-name-predicate"
+      ]
+    },
+    {
+      "code": "textual-constraint-not-executable",
+      "severity": "warning",
+      "policy": "preserve-owner-free-form-markup",
+      "message": "ART-DECOR <constraint> is free-form markup and has no machine test; it is preserved without inferring XPath: At least one subordinate element SHALL be present unless medications are unknown or known absent.",
+      "path": "hl7:substanceAdministration/hl7:entryRelationship[exists(hl7:substanceAdministration)]",
+      "source": {
+        "kind": "constraint",
+        "language": "en-US",
+        "text": "At least one subordinate element SHALL be present unless medications are unknown or known absent.",
+        "normative_terms": [
+          "SHALL"
+        ],
+        "machine_test": null,
+        "template_id": "1.2.276.0.76.3.1.195.10.67",
+        "template_effective_date": "2023-12-03T00:00:00",
+        "element_id": "2.16.840.1.113883.3.1937.777.15.9.61",
+        "path": "hl7:substanceAdministration/hl7:entryRelationship[exists(hl7:substanceAdministration)]"
+      }
+    },
+    {
+      "code": "conditional-conformance-not-machine-enforced",
+      "severity": "warning",
+      "policy": "do-not-infer-condition-from-prose-or-selector",
+      "message": "ART-DECOR conformance C has stated condition evidence (element-name-predicate, textual-constraint) but no associated executable assert/report; presence remains input-activated",
+      "path": "hl7:substanceAdministration/hl7:entryRelationship[exists(hl7:substanceAdministration)]",
+      "source": {
+        "template_id": "1.2.276.0.76.3.1.195.10.67",
+        "template_effective_date": "2023-12-03T00:00:00",
+        "element_id": "2.16.840.1.113883.3.1937.777.15.9.61",
+        "path": "hl7:substanceAdministration/hl7:entryRelationship[exists(hl7:substanceAdministration)]"
+      },
+      "condition_evidence": [
+        "element-name-predicate",
+        "textual-constraint"
+      ]
+    },
+    {
+      "code": "textual-constraint-not-executable",
+      "severity": "warning",
+      "policy": "preserve-owner-free-form-markup",
+      "message": "ART-DECOR <constraint> is free-form markup and has no machine test; it is preserved without inferring XPath: The moodCode of this subordinate substance administration SHALL be the same of the parent substance administration",
+      "path": "hl7:substanceAdministration",
+      "source": {
+        "kind": "constraint",
+        "language": "en-US",
+        "text": "The moodCode of this subordinate substance administration SHALL be the same of the parent substance administration",
+        "normative_terms": [
+          "SHALL"
+        ],
+        "machine_test": null,
+        "template_id": "2.16.840.1.113883.10.21.4.6",
+        "template_effective_date": "2023-01-30T09:36:00",
+        "element_id": "2.16.840.1.113883.3.1937.777.15.9.183",
+        "path": "hl7:substanceAdministration"
+      }
+    },
+    {
+      "code": "textual-constraint-not-executable",
+      "severity": "warning",
+      "policy": "preserve-owner-free-form-markup",
+      "message": "ART-DECOR <constraint> is free-form markup and has no machine test; it is preserved without inferring XPath: The statusCode of this subordinate substance administration SHALL be the same of that of the parent substance administration.",
+      "path": "hl7:substanceAdministration/hl7:statusCode",
+      "source": {
+        "kind": "constraint",
+        "language": "en-US",
+        "text": "The statusCode of this subordinate substance administration SHALL be the same of that of the parent substance administration.",
+        "normative_terms": [
+          "SHALL"
+        ],
+        "machine_test": null,
+        "template_id": "2.16.840.1.113883.10.21.4.6",
+        "template_effective_date": "2023-01-30T09:36:00",
+        "element_id": "2.16.840.1.113883.3.1937.777.15.9.188",
+        "path": "hl7:substanceAdministration/hl7:statusCode"
+      }
+    },
+    {
+      "code": "conditional-conformance-not-machine-enforced",
+      "severity": "warning",
+      "policy": "do-not-infer-condition-from-prose-or-selector",
+      "message": "ART-DECOR conformance C has stated condition evidence (element-name-predicate) but no associated executable assert/report; presence remains input-activated",
+      "path": "hl7:substanceAdministration/hl7:effectiveTime[@value or @nullFlavor]",
+      "source": {
+        "template_id": "2.16.840.1.113883.10.21.4.6",
+        "template_effective_date": "2023-01-30T09:36:00",
+        "element_id": "2.16.840.1.113883.3.1937.777.15.9.9114",
+        "path": "hl7:substanceAdministration/hl7:effectiveTime[@value or @nullFlavor]"
+      },
+      "condition_evidence": [
+        "element-name-predicate"
+      ]
+    },
+    {
+      "code": "conditional-conformance-not-machine-enforced",
+      "severity": "warning",
+      "policy": "do-not-infer-condition-from-prose-or-selector",
+      "message": "ART-DECOR conformance C has stated condition evidence (element-name-predicate) but no associated executable assert/report; presence remains input-activated",
+      "path": "hl7:substanceAdministration/hl7:effectiveTime[@xsi:type='PIVL_TS']",
+      "source": {
+        "template_id": "2.16.840.1.113883.10.21.4.6",
+        "template_effective_date": "2023-01-30T09:36:00",
+        "element_id": "2.16.840.1.113883.3.1937.777.15.9.9244",
+        "path": "hl7:substanceAdministration/hl7:effectiveTime[@xsi:type='PIVL_TS']"
+      },
+      "condition_evidence": [
+        "element-name-predicate"
+      ]
+    },
+    {
+      "code": "conditional-conformance-not-machine-enforced",
+      "severity": "warning",
+      "policy": "do-not-infer-condition-from-prose-or-selector",
+      "message": "ART-DECOR conformance C has stated condition evidence (element-name-predicate) but no associated executable assert/report; presence remains input-activated",
+      "path": "hl7:substanceAdministration/hl7:effectiveTime[@xsi:type='EIVL_TS']",
+      "source": {
+        "template_id": "2.16.840.1.113883.10.21.4.6",
+        "template_effective_date": "2023-01-30T09:36:00",
+        "element_id": "2.16.840.1.113883.3.1937.777.15.9.9245",
+        "path": "hl7:substanceAdministration/hl7:effectiveTime[@xsi:type='EIVL_TS']"
+      },
+      "condition_evidence": [
+        "element-name-predicate"
+      ]
+    },
+    {
+      "code": "conditional-conformance-condition-missing",
+      "severity": "error",
+      "policy": "owner-conformance-C-requires-stated-condition",
+      "message": "ART-DECOR conformance C requires a stated condition, but none is attached to hl7:event",
+      "path": "hl7:substanceAdministration/hl7:effectiveTime[@xsi:type='EIVL_TS']/hl7:event",
+      "source": {
+        "template_id": "2.16.840.1.113883.10.21.4.6",
+        "template_effective_date": "2023-01-30T09:36:00",
+        "element_id": "2.16.840.1.113883.3.1937.777.15.9.9246",
+        "path": "hl7:substanceAdministration/hl7:effectiveTime[@xsi:type='EIVL_TS']/hl7:event"
+      }
+    },
+    {
+      "code": "textual-constraint-not-executable",
+      "severity": "info",
+      "policy": "preserve-owner-free-form-markup",
+      "message": "ART-DECOR <constraint> is free-form markup and has no machine test; it is preserved without inferring XPath: Internationale statistische Klassifikation der Krankheiten und verwandter Gesundheitsprobleme (ICD), 10. Revision, German Modification, jeweils aktuelle Fassung",
+      "path": "hl7:observation/hl7:value",
+      "source": {
+        "kind": "constraint",
+        "language": "de-DE",
+        "text": "Internationale statistische Klassifikation der Krankheiten und verwandter Gesundheitsprobleme (ICD), 10. Revision, German Modification, jeweils aktuelle Fassung",
+        "normative_terms": [],
+        "machine_test": null,
+        "template_id": "1.2.276.0.76.10.4049",
+        "template_effective_date": "2017-02-13T00:00:00",
+        "element_id": "2.16.840.1.113883.2.6.60.3.9.635",
+        "path": "hl7:observation/hl7:value"
+      }
+    }
+  ],
+  "summary": {
+    "unavailable_artifacts": 1,
+    "crawl_degraded": 2,
+    "build_degraded": 2,
+    "unresolved_templates": 0,
+    "unresolved_template_prototypes": 6,
+    "constraint_diagnostics": 16
+  }
+}

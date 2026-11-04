@@ -1,12 +1,29 @@
-/mapping/**
-!/mapping/
-!/mapping/**/
-!/mapping/**/cda-mapping.json
-!/mapping/**/mapping-lock.json
-/model/
+# Publish spec/, model/, mapping/ and reviewed config/ together.
+# Deployment configuration, runtime history and test runs stay local.
 /out/
 /site/
 /state/
 /test/
 
+# Keep pinned validation dependencies even when a personal ignore file
+# excludes archives or Java libraries.
+!/spec/**/validation/packages/*.xar
+!/spec/**/validation/packages/*.tar.gz
+!/spec/**/validation/tools/*.jar
+
+# Temporary files and local tooling.
+.venv/
+__pycache__/
+*.py[cod]
+*.log
+*.bk
+*.bak
+*~
+*.swp
+*.swo
 *.vim
+.DS_Store
+
+# Historical reports are retained; disposable report archives stay local.
+/reports/**/*.tar.gz
+/reports/**/*.zip

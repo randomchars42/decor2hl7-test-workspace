@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets>
+   <valueSet xmlns:ns0="http://www.json.org"
+             xmlns:ns1="urn:hl7-org:v3"
+             xmlns:ns3="urn:art-decor:example"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             id="1.2.276.0.76.11.52"
+             name="Allergyintolerancesubstances"
+             displayName="Allergy / intolerance substances"
+             statusCode="draft"
+             effectiveDate="2015-11-17T00:00:00"
+             versionLabel="2015"
+             lastModifiedDate="2022-11-25T08:29:29">
+      <sourceCodeSystem id="1.2.276.0.76.3.1.195.5.52"
+                        identifierName="divi-codesystem-52"
+                        canonicalUri="urn:oid:1.2.276.0.76.3.1.195.5.52"
+                        canonicalUriDSTU2="urn:oid:1.2.276.0.76.3.1.195.5.52"
+                        canonicalUriSTU3="urn:oid:1.2.276.0.76.3.1.195.5.52"
+                        canonicalUriR4="urn:oid:1.2.276.0.76.3.1.195.5.52"
+                        canonicalUriR4B="urn:oid:1.2.276.0.76.3.1.195.5.52"
+                        canonicalUriR5="urn:oid:1.2.276.0.76.3.1.195.5.52"/>
+      <sourceCodeSystem id="2.16.840.1.113883.5.1008"
+                        identifierName="Null Flavor"
+                        canonicalUri="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+                        canonicalUriDSTU2="http://hl7.org/fhir/v3/NullFlavor"
+                        canonicalUriSTU3="http://hl7.org/fhir/v3/NullFlavor"
+                        canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+                        canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+                        canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+                        context="external/hl7intl/v3/v3-NullFlavor"/>
+      <sourceCodeSystem id="2.16.840.1.113883.6.73"
+                        identifierName="WHO Anatomical Therapeutic Chemical classification"
+                        canonicalUri="http://www.whocc.no/atc"
+                        canonicalUriDSTU2="http://www.whocc.no/atc"
+                        canonicalUriSTU3="http://www.whocc.no/atc"
+                        canonicalUriR4="http://www.whocc.no/atc"
+                        canonicalUriR4B="http://www.whocc.no/atc"
+                        canonicalUriR5="http://www.whocc.no/atc"
+                        context="external/atc"/>
+      <publishingAuthority name="AKTIN e. V." inherited="project">
+         <addrLine>c/o Uniklinik RWTH Aachen</addrLine>
+         <addrLine>Institut für Medizinische Informatik</addrLine>
+         <addrLine>Pauwelsstraße 35</addrLine>
+         <addrLine>52074 Aachen</addrLine>
+         <addrLine type="phone">Tel. +49 391 67 28186</addrLine>
+         <addrLine type="email">office@aktin.org</addrLine>
+      </publishingAuthority>
+      <conceptList>
+         <concept code="ALGN"
+                  codeSystem="1.2.276.0.76.3.1.195.5.52"
+                  displayName="Allergen"
+                  level="0"
+                  type="L"/>
+         <concept code="A07AA"
+                  codeSystem="2.16.840.1.113883.6.73"
+                  displayName="Antibiotika"
+                  level="1"
+                  type="L"/>
+         <concept code="V08"
+                  codeSystem="2.16.840.1.113883.6.73"
+                  displayName="Kontrastmittel"
+                  level="1"
+                  type="L"/>
+         <exception code="OTH"
+                    codeSystem="2.16.840.1.113883.5.1008"
+                    displayName="Andere"
+                    level="0"
+                    type="L"/>
+      </conceptList>
+   </valueSet>
+</valueSets>

@@ -1,6 +1,12 @@
-.PHONY: rebuild
+.DEFAULT_GOAL := check
+DECOR2HL7 ?= decor2hl7
+
+.PHONY: check rebuild
+
+check:
+	$(DECOR2HL7) check-cda-mapping
 
 rebuild:
-	rm -rf model mapping site; \
-	decor2hl7 build; \
-	decor2hl7 init-cda-mapping;
+	$(DECOR2HL7) build
+	$(DECOR2HL7) init-cda-mapping
+	$(DECOR2HL7) check-cda-mapping

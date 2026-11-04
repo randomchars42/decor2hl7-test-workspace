@@ -1,0 +1,7 @@
+# Preserve the bytes and upstream formatting of frozen artifacts.
+spec/** -text -whitespace
+model/** -text -whitespace
+mapping/**/*.md -whitespace
+
+# The compiled CDA model exceeds GitHub's ordinary file-size limit.
+model/**/cda.json filter=lfs diff=lfs merge=lfs -text

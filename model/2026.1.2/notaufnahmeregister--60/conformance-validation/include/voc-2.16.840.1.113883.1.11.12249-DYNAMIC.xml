@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets>
+   <valueSet xmlns:ns0="http://www.json.org"
+             xmlns:ns1="urn:hl7-org:v3"
+             xmlns:ns3="urn:art-decor:example"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             id="2.16.840.1.113883.1.11.12249"
+             name="LanguageAbilityMode"
+             displayName="LanguageAbilityMode"
+             effectiveDate="2016-06-23T00:00:00"
+             statusCode="final"
+             ns0:array="true"
+             ident="ccda-">
+      <sourceCodeSystem id="2.16.840.1.113883.5.60"
+                        identifierName="Language Ability Mode"
+                        canonicalUri="http://terminology.hl7.org/CodeSystem/v3-LanguageAbilityMode"
+                        canonicalUriDSTU2="http://hl7.org/fhir/v3/LanguageAbilityMode"
+                        canonicalUriSTU3="http://hl7.org/fhir/v3/LanguageAbilityMode"
+                        canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-LanguageAbilityMode"
+                        canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-LanguageAbilityMode"
+                        canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-LanguageAbilityMode"
+                        context="external/hl7intl/v3/v3-LanguageAbilityMode"/>
+      <publishingAuthority name="HL7 International" inherited="project">
+         <addrLine>Health Level Seven International</addrLine>
+         <addrLine>3300 Washtenaw Avenue</addrLine>
+         <addrLine>Suite 227</addrLine>
+         <addrLine>Ann Arbor, MI 48104- 4261</addrLine>
+         <addrLine>USA</addrLine>
+         <addrLine>T +1 734 677 7777 </addrLine>
+         <addrLine>F +1 734 677 6622</addrLine>
+         <addrLine>E info@hl7.org</addrLine>
+      </publishingAuthority>
+      <conceptList>
+         <concept ns0:array="true"
+                  code="ESGN"
+                  codeSystem="2.16.840.1.113883.5.60"
+                  displayName="Expressed signed"
+                  level="0"
+                  type="L">
+            <designation ns0:array="true"
+                         lang="en-US"
+                         use="pref"
+                         statusCode="active"
+                         effectiveDate=""
+                         expirationDate=""
+                         lastModifiedDate=""
+                         count="2"
+                         length="16">Expressed signed</designation>
+            <designation ns0:array="true"
+                         statusCode="active"
+                         effectiveDate=""
+                         expirationDate=""
+                         lastModifiedDate=""
+                         lang="en-US"
+                         use="syn"
+                         count="2"
+                         length="16">Expressed signed</designation>
+         </concept>
+         <concept ns0:array="true"
+                  code="ESP"
+                  codeSystem="2.16.840.1.113883.5.60"
+                  displayName="Expressed spoken"
+                  level="0"
+                  type="L">
+            <designation ns0:array="true"
+                         lang="en-US"
+                         use="pref"
+                         statusCode="active"
+                         effectiveDate=""
+                         expirationDate=""
+                         lastModifiedDate=""
+                         count="2"
+                         length="16">Expressed spoken</designation>
+            <designation ns0:array="true"
+                         statusCode="active"
+                         effectiveDate=""
+                         expirationDate=""
+                         lastModifiedDate=""
+                         lang="en-US"
+                         use="syn"
+                         count="2"
+                         length="16">Expressed spoken</designation>
+         </concept>
+         <concept ns0:array="true"
+                  code="EWR"
+                  codeSystem="2.16.840.1.113883.5.60"
+                  displayName="Expressed written"
+                  level="0"
+                  type="L">
+            <designation ns0:array="true"
+                         lang="en-US"
+                         use="pref"
+                         statusCode="active"
+                         effectiveDate=""
+                         expirationDate=""
+                         lastModifiedDate=""
+                         count="2"
+                         length="17">Expressed written</designation>
+            <designation ns0:array="true"
+                         statusCode="active"
+                         effectiveDate=""
+                         expirationDate=""
+                         lastModifiedDate=""
+                         lang="en-US"
+                         use="syn"
+                         count="2"
+                         length="17">Expressed written</designation>
+         </concept>
+         <concept ns0:array="true"
+                  code="RSGN"
+                  codeSystem="2.16.840.1.113883.5.60"
+                  displayName="Received signed"
+                  level="0"
+                  type="L">
+            <designation ns0:array="true"
+                         lang="en-US"
+                         use="pref"
+                         statusCode="active"
+                         effectiveDate=""
+                         expirationDate=""
+                         lastModifiedDate=""
+                         count="2"
+                         length="15">Received signed</designation>
+            <designation ns0:array="true"
+                         statusCode="active"
+                         effectiveDate=""
+                         expirationDate=""
+                         lastModifiedDate=""
+                         lang="en-US"
+                         use="syn"
+                         count="2"
+                         length="15">Received signed</designation>
+         </concept>
+         <concept ns0:array="true"
+                  code="RSP"
+                  codeSystem="2.16.840.1.113883.5.60"
+                  displayName="Received spoken"
+                  level="0"
+                  type="L">
+            <designation ns0:array="true"
+                         lang="en-US"
+                         use="pref"
+                         statusCode="active"
+                         effectiveDate=""
+                         expirationDate=""
+                         lastModifiedDate=""
+                         count="2"
+                         length="15">Received spoken</designation>
+            <designation ns0:array="true"
+                         statusCode="active"
+                         effectiveDate=""
+                         expirationDate=""
+                         lastModifiedDate=""
+                         lang="en-US"
+                         use="syn"
+                         count="2"
+                         length="15">Received spoken</designation>
+         </concept>
+         <concept ns0:array="true"
+                  code="RWR"
+                  codeSystem="2.16.840.1.113883.5.60"
+                  displayName="Received written"
+                  level="0"
+                  type="L">
+            <designation ns0:array="true"
+                         lang="en-US"
+                         use="pref"
+                         statusCode="active"
+                         effectiveDate=""
+                         expirationDate=""
+                         lastModifiedDate=""
+                         count="2"
+                         length="16">Received written</designation>
+            <designation ns0:array="true"
+                         statusCode="active"
+                         effectiveDate=""
+                         expirationDate=""
+                         lastModifiedDate=""
+                         lang="en-US"
+                         use="syn"
+                         count="2"
+                         length="16">Received written</designation>
+         </concept>
+      </conceptList>
+   </valueSet>
+</valueSets>

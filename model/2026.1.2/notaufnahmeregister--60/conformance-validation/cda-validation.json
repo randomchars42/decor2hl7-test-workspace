@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "scope": "generated CDA",
+  "status": "passed",
+  "policy": "enforced",
+  "packages": {
+    "validation-package:DECOR-core@2.2.28": {
+      "version": "2.2.28",
+      "sha256": "14bda739197800f754dff57a6242aa780c01004e58af0d33fc85de72888f9110",
+      "license": "GNU-LGPL",
+      "url": "https://repository.art-decor.org/exist/apps/stable3/public/DECOR-core-2.2.28.xar"
+    },
+    "validation-package:CDA-core-2.0@e922fc35586fd2629f0c8a021080bca9ab424e18": {
+      "version": "e922fc35586fd2629f0c8a021080bca9ab424e18",
+      "sha256": "cad63f59b3247b73b3ddc8caa4105080fb3a23c164a73a5dc000946d5be34ad4",
+      "license": "HL7 CDA R2 schema license",
+      "url": "https://github.com/HL7/CDA-core-2.0/archive/e922fc35586fd2629f0c8a021080bca9ab424e18.tar.gz"
+    },
+    "validation-tool:Saxon-HE@12.5": {
+      "version": "12.5",
+      "sha256": "98c3a91e6e5aaf9b3e2b37601e04b214a6e67098493cdd8232fcb705fddcb674",
+      "license": "MPL-2.0",
+      "url": "https://repo1.maven.org/maven2/net/sf/saxon/Saxon-HE/12.5/Saxon-HE-12.5.jar"
+    },
+    "validation-tool:xmlresolver@5.2.2": {
+      "version": "5.2.2",
+      "sha256": "efc92bd7ed32b3e57095e0b3e872051ccfbbdcc980831ef33e89e38161a85222",
+      "license": "Apache-2.0",
+      "url": "https://repo1.maven.org/maven2/org/xmlresolver/xmlresolver/5.2.2/xmlresolver-5.2.2.jar"
+    }
+  },
+  "summary": {
+    "error": 0,
+    "warning": 0,
+    "info": 0
+  },
+  "stages": [
+    {
+      "phase": "template-validator-provenance",
+      "status": "passed",
+      "detail": "exact transaction validator is complete"
+    },
+    {
+      "phase": "cda-sdtc-xsd",
+      "status": "passed",
+      "detail": "1 document(s)"
+    },
+    {
+      "phase": "cda-template-schematron",
+      "status": "passed",
+      "detail": "0 diagnostic(s)"
+    }
+  ],
+  "diagnostics": []
+}

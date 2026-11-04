@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets>
+   <valueSet xmlns:ns0="http://www.json.org"
+             xmlns:ns1="urn:hl7-org:v3"
+             xmlns:ns3="urn:art-decor:example"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             id="1.2.276.0.76.3.1.195.11.17"
+             name="Fachabteilungsschluessel"
+             displayName="Fachabteilungsschlüssel"
+             effectiveDate="2024-08-08T13:35:43"
+             statusCode="draft"
+             canonicalUri="http://fhir.de/ValueSet/dkgev/Fachabteilungsschluessel"
+             lastModifiedDate="2024-08-08T13:35:43">
+      <desc language="de-DE" lastTranslated="2024-08-08T13:35:43">
+         <p>Fachabteilungen gemäß Anhang 1 der BPflV in der am 31.12.2003 geltenden Fassung</p>
+      </desc>
+      <sourceCodeSystem id="1.2.276.0.76.3.1.195.5.104"
+                        identifierName="Fachabteilungsschlüssel"
+                        canonicalUri="http://fhir.de/CodeSystem/dkgev/Fachabteilungsschluessel"
+                        canonicalUriDSTU2="http://fhir.de/CodeSystem/dkgev/Fachabteilungsschluessel"
+                        canonicalUriSTU3="http://fhir.de/CodeSystem/dkgev/Fachabteilungsschluessel"
+                        canonicalUriR4="http://fhir.de/CodeSystem/dkgev/Fachabteilungsschluessel"
+                        canonicalUriR4B="http://fhir.de/CodeSystem/dkgev/Fachabteilungsschluessel"
+                        canonicalUriR5="http://fhir.de/CodeSystem/dkgev/Fachabteilungsschluessel"
+                        context="projects/aktin-/Fachabteilungsschluessel-1.2.276.0.76.3.1.195.5.104"/>
+      <publishingAuthority name="HL7 DE TC FHIR">HL7 Deutschland e.V. (Technisches Komitee FHIR)</publishingAuthority>
+      <copyright language="de-DE" lastTranslated="2024-08-08T13:35:43">
+         <p>HL7 Deutschland e.V. (Technisches Komitee FHIR)</p>
+      </copyright>
+      <conceptList>
+         <concept code="0100"
+                  codeSystem="1.2.276.0.76.3.1.195.5.104"
+                  codeSystemName="Fachabteilungsschlüssel"
+                  codeSystemVersion="2021-01-10T00:00:00"
+                  displayName="Innere Medizin"
+                  level="0"
+                  type="L">
+            <designation displayName="Innere Medizin" type="preferred" language="de-DE"/>
+         </concept>
+         <concept code="0200"
+                  codeSystem="1.2.276.0.76.3.1.195.5.104"
+                  codeSystemName="Fachabteilungsschlüssel"
+                  codeSystemVersion="2021-01-10T00:00:00"
+                  displayName="Geriatrie"
+                  level="0"
+                  type="L">
+            <designation displayName="Geriatrie" type="preferred" language="de-DE"/>
+         </concept>
+         <concept code="0300"
+                  codeSystem="1.2.276.0.76.3.1.195.5.104"
+                  codeSystemName="Fachabteilungsschlüssel"
+                  codeSystemVersion="2021-01-10T00:00:00"
+                  displayName="Kardiologie"
+                  level="0"
+                  type="L">
+            <designation displayName="Kardiologie" type="preferred" language="de-DE"/>
+         </concept>
+         <concept code="0400"
+                  codeSystem="1.2.276.0.76.3.1.195.5.104"
+                  codeSystemName="Fachabteilungsschlüssel"
+                  codeSystemVersion="2021-01-10T00:00:00"
+                  displayName="Nephrologie"
+                  level="0"
+                  type="L">
+            <designation displayName="Nephrologie" type="preferred" language="de-DE"/>
+         </concept>
+         <concept code="0500"
+                  codeSystem="1.2.276.0.76.3.1.195.5.104"
+                  codeSystemName="Fachabteilungsschlüssel"
+                  codeSystemVersion="2021-01-10T00:00:00"
+                  displayName="Hämatologie und internistische Onkologie"
+                  level="0"
+                  type="L">
+            <designation displayName="Hämatologie und internistische Onkologie"
+                         type="preferred"
+                         language="de-DE"/>
+         </concept>
+         <concept code="0600"
+                  codeSystem="1.2.276.0.76.3.1.195.5.104"
+                  codeSystemName="Fachabteilungsschlüssel"
+                  codeSystemVersion="2021-01-10T00:00:00"
+                  displayName="Endokrinologie"
+                  level="0"
+                  type="L">
+            <designation displayName="Endokrinologie" type="preferred" language="de-DE"/>
+         </concept>
+         <concept code="0700"
+                  codeSystem="1.2.276.0.76.3.1.195.5.104"
+                  codeSystemName="Fachabteilungsschlüssel"
+                  codeSystemVersion="2021-01-10T00:00:00"
+                  displayName="Gastroenterologie"
+                  level="0"
+                  type="L">
+            <designation displayName="Gastroenterologie" type="preferred" language="de-DE"/>
+         </concept>
+         <concept code="0800"
+                  codeSystem="1.2.276.0.76.3.1.195.5.104"
+                  codeSystemName="Fachabteilungsschlüssel"
+                  codeSystemVersion="2021-01-10T00:00:00"
+                  displayName="Pneumologie"
+                  level="0"
+                  type="L">
+            <designation displayName="Pneumologie" type="preferred" language="de-DE"/>
+         </concept>
+         <concept code="0900"
+                  codeSystem="1.2.276.0.76.3.1.195.5.104"
+                  codeSystemName="Fachabteilungsschlüssel"
+                  codeSystemVersion="2021-01-10T00:00:00"
+                  displayName="Rheumatologie"
+                  level="0"
+                  type="L">
+            <designation displayName="Rheumatologie" type="preferred" language="de-DE"/>
+         </concept>
+         <concept code="1000"
+                  codeSystem="1.2.276.0.76.3.1.195.5.104"
+                  codeSystemName="Fachabteilungsschlüssel"
+                  codeSystemVersion="2021-01-10T00:00:00"
+                  displayName="Pädiatrie"
+                  level="0"
+                  type="L">
+            <designation displayName="Pädiatrie" type="preferred" language="de-DE"/>
+         </concept>
+         <concept code="1100"
+                  codeSystem="1.2.276.0.76.3.1.195.5.104"
+                  codeSystemName="Fachabteilungsschlüssel"
+                  codeSystemVersion="2021-01-10T00:00:00"
+                  displayName="Kinderkardiologie"
+                  level="0"
+                  type="L">
+            <designation displayName="Kinderkardiologie" type="preferred" language="de-DE"/>
+         </concept>
+         <concept code="1200"
+                  codeSystem="1.2.276.0.76.3.1.195.5.104"
+                  codeSystemName="Fachabteilungsschlüssel"
+                  codeSystemVersion="2021-01-10T00:00:00"
+                  displayName="Neonatologie"
+                  level="0"
+                  type="L">
+            <designation displayName="Neonatologie" type="preferred" language="de-DE"/>
+         </concept>
+         <concept code="1300"
+                  codeSystem="1.2.276.0.76.3.1.195.5.104"
+                  codeSystemName="Fachabteilungsschlüssel"
+                  codeSystemVersion="2021-01-10T00:00:00"
+                  displayName="Kinderchirurgie"
+                  level="0"
+                  type="L">
+            <designation displayName="Kinderchirurgie" type="preferred" language="de-DE"/>
+         </concept>
+         <concept code="1400"
+                  codeSystem="1.2.276.0.76.3.1.195.5.104"
+                  codeSystemName="Fachabteilungsschlüssel"
+                  codeSystemVersion="2021-01-10T00:00:00"
+                  displayName="Lungen- und Bronchialheilkunde"
+                  level="0"
+                  type="L">
+            <designation displayName="Lungen- und Bronchialheilkunde"
+                         type="preferred"
+                         language="de-DE"/>
+         </concept>
+         <concept code="1500"
+                  codeSystem="1.2.276.0.76.3.1.195.5.104"
+                  codeSystemName="Fachabteilungsschlüssel"
+                  codeSystemVersion="2021-01-10T00:00:00"
+                  displayName="Allgemeine Chirurgie"
+                  level="0"
+                  type="L">
+            <designation displayName="Allgemeine Chirurgie"
+                         type="preferred"
+                         language="de-DE"/>
+         </concept>
+         <concept code="1600"
+                  codeSystem="1.2.276.0.76.3.1.195.5.104"
+                  codeSystemName="Fachabteilungsschlüssel"
+                  codeSystemVersion="2021-01-10T00:00:00"
+                  displayName="Unfallchirurgie"
+                  level="0"
+                  type="L">
+            <designation displayName="Unfallchirurgie" type="preferred" language="de-DE"/>
+         </concept>
+         <concept code="1700"
+                  codeSystem="1.2.276.0.76.3.1.195.5.104"
+                  codeSystemName="Fachabteilungsschlüssel"
+                  codeSystemVersion="2021-01-10T00:00:00"
+                  displayName="Neurochirurgie"
+                  level="0"
+                  type="L">
+            <designation displayName="Neurochirurgie" type="preferred" language="de-DE"/>
+         </concept>
+         <concept code="1800"
+                  codeSystem="1.2.276.0.76.3.1.195.5.104"
+                  codeSystemName="Fachabteilungsschlüssel"
+                  codeSystemVersion="2021-01-10T00:00:00"
+                  displayName="Gefäßchirurgie"
+                  level="0"
+                  type="L">
+            <designation displayName="Gefäßchirurgie" type="preferred" language="de-DE"/>
+         </concept>
+         <concept code="1900"
+                  codeSystem="1.2.276.0.76.3.1.195.5.104"
+                  codeSystemName="Fachabteilungsschlüssel"
+                  codeSystemVersion="2021-01-10T00:00:00"
+                  displayName="Plastische Chirurgie"
+                  level="0"
+                  type="L">
+            <designation displayName="Plastische Chirurgie"
+                         type="preferred"
+                         language="de-DE"/>
+         </concept>
+         <concept code="2000"
+                  codeSystem="1.2.276.0.76.3.1.195.5.104"
+                  codeSystemName="Fachabteilungsschlüssel"
+                  codeSystemVersion="2021-01-10T00:00:00"
+                  displayName="Thoraxchirurgie"
+                  level="0"
+                  type="L">
+            <designation displayName="Thoraxchirurgie" type="preferred" language="de-DE"/>
+         </concept>
+         <concept code="2100"
+                  codeSystem="1.2.276.0.76.3.1.195.5.104"
+                  codeSystemName="Fachabteilungsschlüssel"
+                  codeSystemVersion="2021-01-10T00:00:00"
+                  displayName="Herzchirurgie"
+                  level="0"
+                  type="L">
+            <designation displayName="Herzchirurgie" type="preferred" language="de-DE"/>
+         </concept>
+         <concept code="2200"
+                  codeSystem="1.2.276.0.76.3.1.195.5.104"
+                  codeSystemName="Fachabteilungsschlüssel"
+                  codeSystemVersion="2021-01-10T00:00:00"
+                  displayName="Urologie"
+                  level="0"
+                  type="L">
+            <designation displayName="Urologie" type="preferred" language="de-DE"/>
+         </concept>
+         <concept code="2300"
+                  codeSystem="1.2.276.0.76.3.1.195.5.104"
+                  codeSystemName="Fachabteilungsschlüssel"
+                  codeSystemVersion="2021-01-10T00:00:00"
+                  displayName="Orthopädie"
+                  level="0"
+                  type="L">
+            <designation displayName="Orthopädie" type="preferred" language="de-DE"/>
+         </concept>
+         <concept code="2400"
+                  codeSystem="1.2.276.0.76.3.1.195.5.104"
+                  codeSystemName="Fachabteilungsschlüssel"
+                  codeSystemVersion="2021-01-10T00:00:00"
+                  displayName="Frauenheilkunde und Geburtshilfe"
+                  level="0"
+                  type="L">
+            <designation displayName="Frauenheilkunde und Geburtshilfe"
+                         type="preferred"
+                         language="de-DE"/>
+         </concept>
+         <concept code="2500"
+                  codeSystem="1.2.276.0.76.3.1.195.5.104"
+                  codeSystemName="Fachabteilungsschlüssel"
+                  codeSystemVersion="2021-01-10T00:00:00"
+                  displayName="davon Geburtshilfe"
+                  level="0"
+                  type="L">
+            <designation displayName="davon Geburtshilfe" type="preferred" language="de-DE"/>
+         </concept>
+         <concept code="2600"
+                  codeSystem="1.2.276.0.76.3.1.195.5.104"
+                  codeSystemName="Fachabteilungsschlüssel"
+                  codeSystemVersion="2021-01-10T00:00:00"
+                  displayName="Hals-, Nasen-, Ohrenheilkunde"
+                  level="0"
+                  type="L">
+            <designation displayName="Hals-, Nasen-, Ohrenheilkunde"
+                         type="preferred"
+                         language="de-DE"/>
+         </concept>
+         <concept code="2700"
+                  codeSystem="1.2.276.0.76.3.1.195.5.104"
+                  codeSystemName="Fachabteilungsschlüssel"
+                  codeSystemVersion="2021-01-10T00:00:00"
+                  displayName="Augenheilkunde"
+                  level="0"
+                  type="L">
+            <designation displayName="Augenheilkunde" type="preferred" language="de-DE"/>
+         </concept>
+         <concept code="2800"
+                  codeSystem="1.2.276.0.76.3.1.195.5.104"
+                  codeSystemName="Fachabteilungsschlüssel"
+                  codeSystemVersion="2021-01-10T00:00:00"
+                  displayName="Neurologie"
+                  level="0"
+                  type="L">
+            <designation displayName="Neurologie" type="preferred" language="de-DE"/>
+         </concept>
+         <concept code="2900"
+                  codeSystem="1.2.276.0.76.3.1.195.5.104"
+                  codeSystemName="Fachabteilungsschlüssel"
+                  codeSystemVersion="2021-01-10T00:00:00"
+                  displayName="Allgemeine Psychiatrie"
+                  level="0"
+                  type="L">
+            <designation displayName="Allgemeine Psychiatrie"
+                         type="preferred"
+                         language="de-DE"/>
+         </concept>
+         <concept code="3000"
+                  codeSystem="1.2.276.0.76.3.1.195.5.104"
+                  codeSystemName="Fachabteilungsschlüssel"
+                  codeSystemVersion="2021-01-10T00:00:00"
+                  displayName="Kinder- und Jugendpsychiatrie"
+                  level="0"
+                  type="L">
+            <designation displayName="Kinder- und Jugendpsychiatrie"
+                         type="preferred"
+                         language="de-DE"/>
+         </concept>
+         <concept code="3100"
+                  codeSystem="1.2.276.0.76.3.1.195.5.104"
+                  codeSystemName="Fachabteilungsschlüssel"
+                  codeSystemVersion="2021-01-10T00:00:00"
+                  displayName="Psychosomatik/Psychotherapie"
+                  level="0"
+                  type="L">
+            <designation displayName="Psychosomatik/Psychotherapie"
+                         type="preferred"
+                         language="de-DE"/>
+         </concept>
+         <concept code="3200"
+                  codeSystem="1.2.276.0.76.3.1.195.5.104"
+                  codeSystemName="Fachabteilungsschlüssel"
+                  codeSystemVersion="2021-01-10T00:00:00"
+                  displayName="Nuklearmedizin"
+                  level="0"
+                  type="L">
+            <designation displayName="Nuklearmedizin" type="preferred" language="de-DE"/>
+         </concept>
+         <concept code="3300"
+                  codeSystem="1.2.276.0.76.3.1.195.5.104"
+                  codeSystemName="Fachabteilungsschlüssel"
+                  codeSystemVersion="2021-01-10T00:00:00"
+                  displayName="Strahlenheilkunde"
+                  level="0"
+                  type="L">
+            <designation displayName="Strahlenheilkunde" type="preferred" language="de-DE"/>
+         </concept>
+         <concept code="3400"
+                  codeSystem="1.2.276.0.76.3.1.195.5.104"
+                  codeSystemName="Fachabteilungsschlüssel"
+                  codeSystemVersion="2021-01-10T00:00:00"
+                  displayName="Dermatologie"
+                  level="0"
+                  type="L">
+            <designation displayName="Dermatologie" type="preferred" language="de-DE"/>
+         </concept>
+         <concept code="3500"
+                  codeSystem="1.2.276.0.76.3.1.195.5.104"
+                  codeSystemName="Fachabteilungsschlüssel"
+                  codeSystemVersion="2021-01-10T00:00:00"
+                  displayName="Zahn- und Kieferheilkunde, Mund- und Kieferchirurgie"
+                  level="0"
+                  type="L">
+            <designation displayName="Zahn- und Kieferheilkunde, Mund- und Kieferchirurgie"
+                         type="preferred"
+                         language="de-DE"/>
+         </concept>
+         <concept code="3600"
+                  codeSystem="1.2.276.0.76.3.1.195.5.104"
+                  codeSystemName="Fachabteilungsschlüssel"
+                  codeSystemVersion="2021-01-10T00:00:00"
+                  displayName="Intensivmedizin"
+                  level="0"
+                  type="L">
+            <designation displayName="Intensivmedizin" type="preferred" language="de-DE"/>
+         </concept>
+         <concept code="2316"
+                  codeSystem="1.2.276.0.76.3.1.195.5.104"
+                  codeSystemName="Fachabteilungsschlüssel"
+                  codeSystemVersion="2021-01-10T00:00:00"
+                  displayName="Orthopädie und Unfallchirurgie"
+                  level="0"
+                  type="L">
+            <designation displayName="Orthopädie und Unfallchirurgie"
+                         type="preferred"
+                         language="de-DE"/>
+         </concept>
+         <concept code="2425"
+                  codeSystem="1.2.276.0.76.3.1.195.5.104"
+                  codeSystemName="Fachabteilungsschlüssel"
+                  codeSystemVersion="2021-01-10T00:00:00"
+                  displayName="Frauenheilkunde"
+                  level="0"
+                  type="L">
+            <designation displayName="Frauenheilkunde" type="preferred" language="de-DE"/>
+         </concept>
+         <concept code="3700"
+                  codeSystem="1.2.276.0.76.3.1.195.5.104"
+                  codeSystemName="Fachabteilungsschlüssel"
+                  codeSystemVersion="2021-01-10T00:00:00"
+                  displayName="Sonstige Fachabteilung"
+                  level="0"
+                  type="L">
+            <designation displayName="Sonstige Fachabteilung"
+                         type="preferred"
+                         language="de-DE"/>
+         </concept>
+      </conceptList>
+   </valueSet>
+</valueSets>

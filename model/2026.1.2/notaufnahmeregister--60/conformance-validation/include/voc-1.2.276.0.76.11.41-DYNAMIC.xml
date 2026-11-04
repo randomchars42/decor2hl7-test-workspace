@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets>
+   <valueSet xmlns:ns0="http://www.json.org"
+             xmlns:ns1="urn:hl7-org:v3"
+             xmlns:ns3="urn:art-decor:example"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             id="1.2.276.0.76.11.41"
+             name="Transportmethod"
+             displayName="Transportmethode"
+             statusCode="final"
+             effectiveDate="2015-11-17T00:00:00"
+             lastModifiedDate="2024-02-14T09:47:10">
+      <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.3.2.6.20139.20190127224803.0"
+                              valueSet="1.2.276.0.76.11.41"
+                              flexibility="2015-11-17T00:00:00"
+                              effectiveDate="2025-12-29T14:27:45"
+                              valueSetName="Transportmethode"
+                              valueSetStatusCode="final"
+                              valueSetEffectiveDate="2015-11-17T00:00:00"
+                              transactionId="2.16.840.1.113883.2.6.60.3.4.60"
+                              transactionEffectiveDate="2026-03-25T00:00:00"
+                              transactionVersionLabel="2026"
+                              transactionStatusCode="draft"/>
+      <sourceCodeSystem id="1.2.276.0.76.3.1.195.5.41"
+                        identifierName="divi-codesystem-41"
+                        canonicalUri="urn:oid:1.2.276.0.76.3.1.195.5.41"
+                        canonicalUriDSTU2="urn:oid:1.2.276.0.76.3.1.195.5.41"
+                        canonicalUriSTU3="urn:oid:1.2.276.0.76.3.1.195.5.41"
+                        canonicalUriR4="urn:oid:1.2.276.0.76.3.1.195.5.41"
+                        canonicalUriR4B="urn:oid:1.2.276.0.76.3.1.195.5.41"
+                        canonicalUriR5="urn:oid:1.2.276.0.76.3.1.195.5.41"/>
+      <sourceCodeSystem id="2.16.840.1.113883.5.1008"
+                        identifierName="Null Flavor"
+                        canonicalUri="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+                        canonicalUriDSTU2="http://hl7.org/fhir/v3/NullFlavor"
+                        canonicalUriSTU3="http://hl7.org/fhir/v3/NullFlavor"
+                        canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+                        canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+                        canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+                        context="external/hl7intl/v3/v3-NullFlavor"/>
+      <publishingAuthority name="AKTIN e. V." inherited="project">
+         <addrLine>c/o Uniklinik RWTH Aachen</addrLine>
+         <addrLine>Institut für Medizinische Informatik</addrLine>
+         <addrLine>Pauwelsstraße 35</addrLine>
+         <addrLine>52074 Aachen</addrLine>
+         <addrLine type="phone">Tel. +49 391 67 28186</addrLine>
+         <addrLine type="email">office@aktin.org</addrLine>
+      </publishingAuthority>
+      <conceptList id="2.16.840.1.113883.2.6.60.3.2.6.20139.20190127224803.0">
+         <concept localId="1"
+                  code="1"
+                  codeSystem="1.2.276.0.76.3.1.195.5.41"
+                  displayName="KTW"
+                  level="0"
+                  type="L">
+            <name language="de-DE">KTW</name>
+         </concept>
+         <concept localId="2"
+                  code="2"
+                  codeSystem="1.2.276.0.76.3.1.195.5.41"
+                  displayName="RTW"
+                  level="0"
+                  type="L">
+            <name language="de-DE">RTW</name>
+         </concept>
+         <concept localId="3"
+                  code="3"
+                  codeSystem="1.2.276.0.76.3.1.195.5.41"
+                  displayName="NAW/NEF/ITW"
+                  level="0"
+                  type="L">
+            <name language="de-DE">NAW/NEF/ITW</name>
+         </concept>
+         <concept localId="4"
+                  code="4"
+                  codeSystem="1.2.276.0.76.3.1.195.5.41"
+                  displayName="RTH/ITH"
+                  level="0"
+                  type="L">
+            <name language="de-DE">RTH/ITH</name>
+         </concept>
+         <exception localId="5"
+                    code="NA"
+                    codeSystem="2.16.840.1.113883.5.1008"
+                    displayName="Ohne"
+                    level="0"
+                    type="L">
+            <name language="de-DE">Ohne</name>
+         </exception>
+         <exception localId="6"
+                    code="OTH"
+                    codeSystem="2.16.840.1.113883.5.1008"
+                    displayName="Andere"
+                    level="0"
+                    type="L">
+            <name language="de-DE">Andere</name>
+         </exception>
+      </conceptList>
+   </valueSet>
+</valueSets>

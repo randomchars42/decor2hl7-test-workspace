@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets>
+   <valueSet xmlns:ns0="http://www.json.org"
+             xmlns:ns1="urn:hl7-org:v3"
+             xmlns:ns3="urn:art-decor:example"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             id="1.2.276.0.76.11.73"
+             name="Befundstatusverdachtgesichert"
+             displayName="Befundstatus Verdacht/Gesichert"
+             statusCode="draft"
+             effectiveDate="2016-08-02T00:00:00">
+      <sourceCodeSystem id="1.2.276.0.76.3.1.195.5.73"
+                        identifierName="divi-codesystem-73"
+                        canonicalUri="urn:oid:1.2.276.0.76.3.1.195.5.73"
+                        canonicalUriDSTU2="urn:oid:1.2.276.0.76.3.1.195.5.73"
+                        canonicalUriSTU3="urn:oid:1.2.276.0.76.3.1.195.5.73"
+                        canonicalUriR4="urn:oid:1.2.276.0.76.3.1.195.5.73"
+                        canonicalUriR4B="urn:oid:1.2.276.0.76.3.1.195.5.73"
+                        canonicalUriR5="urn:oid:1.2.276.0.76.3.1.195.5.73"/>
+      <publishingAuthority name="AKTIN e. V." inherited="project">
+         <addrLine>c/o Uniklinik RWTH Aachen</addrLine>
+         <addrLine>Institut für Medizinische Informatik</addrLine>
+         <addrLine>Pauwelsstraße 35</addrLine>
+         <addrLine>52074 Aachen</addrLine>
+         <addrLine type="phone">Tel. +49 391 67 28186</addrLine>
+         <addrLine type="email">office@aktin.org</addrLine>
+      </publishingAuthority>
+      <conceptList>
+         <concept code="SUSP"
+                  codeSystem="1.2.276.0.76.3.1.195.5.73"
+                  displayName="Verdacht"
+                  level="0"
+                  type="L"/>
+         <concept code="CONF"
+                  codeSystem="1.2.276.0.76.3.1.195.5.73"
+                  displayName="Gesichert"
+                  level="0"
+                  type="L"/>
+      </conceptList>
+   </valueSet>
+</valueSets>

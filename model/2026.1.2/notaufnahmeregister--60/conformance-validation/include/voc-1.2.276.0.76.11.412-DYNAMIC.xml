@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets>
+   <valueSet xmlns:ns0="http://www.json.org"
+             xmlns:ns1="urn:hl7-org:v3"
+             xmlns:ns3="urn:art-decor:example"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             name="Laterality"
+             displayName="Lateralität"
+             id="1.2.276.0.76.11.412"
+             effectiveDate="2017-02-08T00:00:00"
+             statusCode="draft">
+      <desc language="de-DE">Seitenlokalisation</desc>
+      <sourceCodeSystem id="1.2.276.0.76.5.412"
+                        identifierName=""
+                        canonicalUri="urn:oid:1.2.276.0.76.5.412"
+                        canonicalUriDSTU2="urn:oid:1.2.276.0.76.5.412"
+                        canonicalUriSTU3="urn:oid:1.2.276.0.76.5.412"
+                        canonicalUriR4="urn:oid:1.2.276.0.76.5.412"
+                        canonicalUriR4B="urn:oid:1.2.276.0.76.5.412"
+                        canonicalUriR5="urn:oid:1.2.276.0.76.5.412"/>
+      <sourceCodeSystem id="2.16.840.1.113883.5.1008"
+                        identifierName="Null Flavor"
+                        canonicalUri="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+                        canonicalUriDSTU2="http://hl7.org/fhir/v3/NullFlavor"
+                        canonicalUriSTU3="http://hl7.org/fhir/v3/NullFlavor"
+                        canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+                        canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+                        canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+                        context="external/hl7intl/v3/v3-NullFlavor"/>
+      <publishingAuthority name="HL7 Deutschland e. V." inherited="project">
+         <addrLine>Anna-Louisa-Karsch-Str. 2</addrLine>
+         <addrLine>10178 Berlin</addrLine>
+         <addrLine type="phone">T 0700 77 77 67 67</addrLine>
+      </publishingAuthority>
+      <conceptList>
+         <concept code="L"
+                  codeSystem="1.2.276.0.76.5.412"
+                  displayName="Left"
+                  level="0"
+                  type="L"/>
+         <concept code="R"
+                  codeSystem="1.2.276.0.76.5.412"
+                  displayName="Right"
+                  level="0"
+                  type="L"/>
+         <concept code="B"
+                  codeSystem="1.2.276.0.76.5.412"
+                  displayName="Bilateral"
+                  level="0"
+                  type="L"/>
+         <concept code="U"
+                  codeSystem="1.2.276.0.76.5.412"
+                  displayName="Unilateral"
+                  level="0"
+                  type="L">
+            <desc language="en-US">Unpaired organ</desc>
+         </concept>
+         <concept code="A"
+                  codeSystem="1.2.276.0.76.5.412"
+                  displayName="Atypical"
+                  level="0"
+                  type="L">
+            <desc language="en-US">Atypical situation, e.g. Transplantat<br clear="none"/>
+            </desc>
+         </concept>
+         <exception code="UNK"
+                    codeSystem="2.16.840.1.113883.5.1008"
+                    displayName="Unbekannt"
+                    level="0"
+                    type="L"/>
+      </conceptList>
+   </valueSet>
+</valueSets>

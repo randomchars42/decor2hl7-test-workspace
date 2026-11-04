@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets>
+   <valueSet xmlns:ns0="http://www.json.org"
+             xmlns:ns1="urn:hl7-org:v3"
+             xmlns:ns3="urn:art-decor:example"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             id="2.16.840.1.113883.3.1937.777.75.11.7"
+             name="Lebensphasen"
+             displayName="Lebensphasen"
+             effectiveDate="2024-01-10T12:07:15"
+             statusCode="draft"
+             lastModifiedDate="2025-08-01T11:23:40">
+      <terminologyAssociation conceptId="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.0"
+                              valueSet="2.16.840.1.113883.3.1937.777.75.11.7"
+                              flexibility="2024-01-10T12:07:15"
+                              effectiveDate="2024-01-10T12:18:03"
+                              valueSetName="Lebensphasen"
+                              valueSetStatusCode="draft"
+                              valueSetEffectiveDate="2024-01-10T12:07:15"/>
+      <desc language="de-DE" lastTranslated="2025-08-01T11:23:40">
+         <p>Value Set (Expanded) :: is-a <strong>767023003 Period of life beginning after birth and ending before death (qualifier value) </strong>
+         </p>
+      </desc>
+      <sourceCodeSystem id="2.16.840.1.113883.6.96"
+                        identifierName="SNOMED Clinical Terms"
+                        canonicalUri="http://snomed.info/sct"
+                        canonicalUriDSTU2="http://snomed.info/sct"
+                        canonicalUriSTU3="http://snomed.info/sct"
+                        canonicalUriR4="http://snomed.info/sct"
+                        canonicalUriR4B="http://snomed.info/sct"
+                        canonicalUriR5="http://snomed.info/sct"/>
+      <publishingAuthority name="InteropCouncil" inherited="project"/>
+      <copyright language="en-US" inherited="true">This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.</copyright>
+      <conceptList id="2.16.840.1.113883.3.1937.777.75.2.1.702.20240110113352.0">
+         <concept localId="1"
+                  code="3658006"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  displayName="Infancy (qualifier value)"
+                  level="0"
+                  type="L">
+            <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Baby</name>
+            <designation language="de-DE" type="synonym" displayName="Säugling"/>
+         </concept>
+         <concept localId="2"
+                  code="255407002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  displayName="Neonatal (qualifier value)"
+                  level="1"
+                  type="L">
+            <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Neugebores</name>
+         </concept>
+         <concept localId="3"
+                  code="303114002"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  displayName="Early neonatal period (qualifier value)"
+                  level="2"
+                  type="L">
+            <name language="de-DE" lastTranslated="2024-01-10T12:25:14">Frühes Neugeborenes</name>
+         </concept>
+         <concept localId="4"
+                  code="303115001"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  displayName="Late neonatal period (qualifier value)"
+                  level="2"
+                  type="L">
+            <name language="de-DE" lastTranslated="2024-01-10T12:25:14">Spätes Neugeborenes</name>
+         </concept>
+         <concept localId="5"
+                  code="263659003"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  displayName="Adolescence (qualifier value)"
+                  level="0"
+                  type="L">
+            <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Jugendlicher</name>
+         </concept>
+         <concept localId="6"
+                  code="255398004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  displayName="Childhood (qualifier value)"
+                  level="0"
+                  type="L">
+            <name language="de-DE">Childhood (qualifier value)</name>
+         </concept>
+         <concept localId="7"
+                  code="713152004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  displayName="Early childhood (qualifier value)"
+                  level="1"
+                  type="L">
+            <name language="de-DE">Early childhood (qualifier value)</name>
+         </concept>
+         <concept localId="8"
+                  code="713153009"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  displayName="Toddler (qualifier value)"
+                  level="2"
+                  type="L">
+            <name language="de-DE">Toddler (qualifier value)</name>
+         </concept>
+         <concept localId="9"
+                  code="41847000"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  displayName="Adulthood (qualifier value)"
+                  level="0"
+                  type="L">
+            <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Erwachsensein</name>
+         </concept>
+         <concept localId="10"
+                  code="764868004"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  displayName="Middle age (qualifier value)"
+                  level="1"
+                  type="L">
+            <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Mittleres Erwachsenenalter</name>
+         </concept>
+         <concept localId="11"
+                  code="271872005"
+                  codeSystem="2.16.840.1.113883.6.96"
+                  displayName="Old age (qualifier value)"
+                  level="1"
+                  type="L">
+            <name language="de-DE" lastTranslated="2024-01-10T11:44:24">Alter</name>
+            <designation language="de-DE" type="synonym" displayName="Senium"/>
+         </concept>
+      </conceptList>
+   </valueSet>
+</valueSets>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets>
+   <valueSet xmlns:ns0="http://www.json.org"
+             xmlns:ns1="urn:hl7-org:v3"
+             xmlns:ns3="urn:art-decor:example"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             id="2.16.840.1.113883.3.88.12.80.2"
+             name="PostalCode"
+             displayName="PostalCode"
+             effectiveDate="2013-01-31T00:00:00"
+             statusCode="final">
+      <sourceCodeSystem id="2.16.840.1.113883.6.231"
+                        identifierName="US Postal Codes"
+                        canonicalUri="http://terminology.hl7.org/CodeSystem/USZIPCODES"
+                        canonicalUriDSTU2="http://terminology.hl7.org/CodeSystem/USZIPCODES"
+                        canonicalUriSTU3="http://terminology.hl7.org/CodeSystem/USZIPCODES"
+                        canonicalUriR4="http://terminology.hl7.org/CodeSystem/USZIPCODES"
+                        canonicalUriR4B="http://terminology.hl7.org/CodeSystem/USZIPCODES"
+                        canonicalUriR5="http://terminology.hl7.org/CodeSystem/USZIPCODES"/>
+      <publishingAuthority name="HL7 International" inherited="project">
+         <addrLine>Health Level Seven International</addrLine>
+         <addrLine>3300 Washtenaw Avenue</addrLine>
+         <addrLine>Suite 227</addrLine>
+         <addrLine>Ann Arbor, MI 48104- 4261</addrLine>
+         <addrLine>USA</addrLine>
+         <addrLine>T +1 734 677 7777 </addrLine>
+         <addrLine>F +1 734 677 6622</addrLine>
+         <addrLine>E info@hl7.org</addrLine>
+      </publishingAuthority>
+      <conceptList>
+         <concept code="19009"
+                  codeSystem="2.16.840.1.113883.6.231"
+                  displayName="Bryn Athyn"
+                  level="0"
+                  type="L"/>
+         <concept code="92869-1736"
+                  codeSystem="2.16.840.1.113883.6.231"
+                  displayName="Orange, CA"
+                  level="0"
+                  type="L"/>
+         <concept code="32830-8413"
+                  codeSystem="2.16.840.1.113883.6.231"
+                  displayName="Lake Buena Vista, FL"
+                  level="0"
+                  type="L"/>
+      </conceptList>
+   </valueSet>
+</valueSets>

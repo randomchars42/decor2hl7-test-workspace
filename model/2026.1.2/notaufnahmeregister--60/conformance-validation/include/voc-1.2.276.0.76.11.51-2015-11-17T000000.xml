@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets>
+   <valueSet xmlns:ns0="http://www.json.org"
+             xmlns:ns1="urn:hl7-org:v3"
+             xmlns:ns3="urn:art-decor:example"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             id="1.2.276.0.76.11.51"
+             name="Findingsituation"
+             displayName="Finding situation"
+             statusCode="draft"
+             effectiveDate="2015-11-17T00:00:00">
+      <sourceCodeSystem id="1.2.276.0.76.3.1.195.5.51"
+                        identifierName="divi-codesystem-51"
+                        canonicalUri="urn:oid:1.2.276.0.76.3.1.195.5.51"
+                        canonicalUriDSTU2="urn:oid:1.2.276.0.76.3.1.195.5.51"
+                        canonicalUriSTU3="urn:oid:1.2.276.0.76.3.1.195.5.51"
+                        canonicalUriR4="urn:oid:1.2.276.0.76.3.1.195.5.51"
+                        canonicalUriR4B="urn:oid:1.2.276.0.76.3.1.195.5.51"
+                        canonicalUriR5="urn:oid:1.2.276.0.76.3.1.195.5.51"/>
+      <sourceCodeSystem id="2.16.840.1.113883.5.1008"
+                        identifierName="Null Flavor"
+                        canonicalUri="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+                        canonicalUriDSTU2="http://hl7.org/fhir/v3/NullFlavor"
+                        canonicalUriSTU3="http://hl7.org/fhir/v3/NullFlavor"
+                        canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+                        canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+                        canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+                        context="external/hl7intl/v3/v3-NullFlavor"/>
+      <publishingAuthority name="AKTIN e. V." inherited="project">
+         <addrLine>c/o Uniklinik RWTH Aachen</addrLine>
+         <addrLine>Institut für Medizinische Informatik</addrLine>
+         <addrLine>Pauwelsstraße 35</addrLine>
+         <addrLine>52074 Aachen</addrLine>
+         <addrLine type="phone">Tel. +49 391 67 28186</addrLine>
+         <addrLine type="email">office@aktin.org</addrLine>
+      </publishingAuthority>
+      <conceptList>
+         <concept code="PB"
+                  codeSystem="1.2.276.0.76.3.1.195.5.51"
+                  displayName="path. Befund"
+                  level="0"
+                  type="L"/>
+         <concept code="OPB"
+                  codeSystem="1.2.276.0.76.3.1.195.5.51"
+                  displayName="ohne path. Befund"
+                  level="0"
+                  type="L"/>
+         <exception code="UNK"
+                    codeSystem="2.16.840.1.113883.5.1008"
+                    displayName="Unbekannt"
+                    level="0"
+                    type="L"/>
+         <exception code="NAV"
+                    codeSystem="2.16.840.1.113883.5.1008"
+                    displayName="Noch nicht verfügbar"
+                    level="0"
+                    type="L"/>
+      </conceptList>
+   </valueSet>
+</valueSets>

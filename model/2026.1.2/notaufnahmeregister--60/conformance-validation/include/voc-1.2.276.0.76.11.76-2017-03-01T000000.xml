@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets>
+   <valueSet xmlns:ns0="http://www.json.org"
+             xmlns:ns1="urn:hl7-org:v3"
+             xmlns:ns3="urn:art-decor:example"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             id="1.2.276.0.76.11.76"
+             name="Unfallart"
+             displayName="Unfallart"
+             effectiveDate="2017-03-01T00:00:00"
+             statusCode="deprecated"
+             lastModifiedDate="2024-02-14T12:58:55">
+      <desc language="de-DE" lastTranslated="2024-02-14T12:58:50">Unfallart (eigen Codes)</desc>
+      <sourceCodeSystem id="1.2.276.0.76.5.76"
+                        identifierName=""
+                        canonicalUri="urn:oid:1.2.276.0.76.5.76"
+                        canonicalUriDSTU2="urn:oid:1.2.276.0.76.5.76"
+                        canonicalUriSTU3="urn:oid:1.2.276.0.76.5.76"
+                        canonicalUriR4="urn:oid:1.2.276.0.76.5.76"
+                        canonicalUriR4B="urn:oid:1.2.276.0.76.5.76"
+                        canonicalUriR5="urn:oid:1.2.276.0.76.5.76"/>
+      <sourceCodeSystem id="2.16.840.1.113883.5.1008"
+                        identifierName="Null Flavor"
+                        canonicalUri="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+                        canonicalUriDSTU2="http://hl7.org/fhir/v3/NullFlavor"
+                        canonicalUriSTU3="http://hl7.org/fhir/v3/NullFlavor"
+                        canonicalUriR4="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+                        canonicalUriR4B="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+                        canonicalUriR5="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+                        context="external/hl7intl/v3/v3-NullFlavor"/>
+      <publishingAuthority name="AKTIN e. V." inherited="project">
+         <addrLine>c/o Uniklinik RWTH Aachen</addrLine>
+         <addrLine>Institut für Medizinische Informatik</addrLine>
+         <addrLine>Pauwelsstraße 35</addrLine>
+         <addrLine>52074 Aachen</addrLine>
+         <addrLine type="phone">Tel. +49 391 67 28186</addrLine>
+         <addrLine type="email">office@aktin.org</addrLine>
+      </publishingAuthority>
+      <conceptList>
+         <concept code="AU"
+                  codeSystem="1.2.276.0.76.5.76"
+                  displayName="Unfall als PKW/LKW Insasse"
+                  level="0"
+                  type="L"/>
+         <concept code="MC"
+                  codeSystem="1.2.276.0.76.5.76"
+                  displayName="Motorradunfall"
+                  level="0"
+                  type="L"/>
+         <concept code="CY"
+                  codeSystem="1.2.276.0.76.5.76"
+                  displayName="Fahrradunfall"
+                  level="0"
+                  type="L"/>
+         <concept code="PE"
+                  codeSystem="1.2.276.0.76.5.76"
+                  displayName="Fußgängerunfall"
+                  level="0"
+                  type="L"/>
+         <concept code="OA"
+                  codeSystem="1.2.276.0.76.5.76"
+                  displayName="Sonstiger Verkehrsunfall"
+                  level="0"
+                  type="L"/>
+         <concept code="F3"
+                  codeSystem="1.2.276.0.76.5.76"
+                  displayName="Sturz mit Fallhöhe &gt;= 3m"
+                  level="0"
+                  type="L"/>
+         <concept code="FP"
+                  codeSystem="1.2.276.0.76.5.76"
+                  displayName="Sturz mit Fallhöhe &lt; 3m"
+                  level="0"
+                  type="L"/>
+         <concept code="HI"
+                  codeSystem="1.2.276.0.76.5.76"
+                  displayName="Schlagverletzung"
+                  level="0"
+                  type="L"/>
+         <concept code="SH"
+                  codeSystem="1.2.276.0.76.5.76"
+                  displayName="Schussverletzung"
+                  level="0"
+                  type="L"/>
+         <concept code="ET"
+                  codeSystem="1.2.276.0.76.5.76"
+                  displayName="Stichverletzung"
+                  level="0"
+                  type="L"/>
+         <exception code="OTH"
+                    codeSystem="2.16.840.1.113883.5.1008"
+                    displayName="Andere"
+                    level="0"
+                    type="L"/>
+      </conceptList>
+   </valueSet>
+</valueSets>

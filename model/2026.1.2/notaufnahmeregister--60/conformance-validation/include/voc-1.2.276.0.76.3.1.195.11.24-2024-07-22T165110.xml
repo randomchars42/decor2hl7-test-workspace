@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets>
+   <valueSet xmlns:ns0="http://www.json.org"
+             xmlns:ns1="urn:hl7-org:v3"
+             xmlns:ns3="urn:art-decor:example"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             id="1.2.276.0.76.3.1.195.11.24"
+             name="ct-mr-ds-angiographie"
+             displayName="CT-/MR-/DS-Angiographie"
+             effectiveDate="2024-07-22T16:51:10"
+             statusCode="draft"
+             canonicalUri="http://aktin.org/fhir/ValueSet/aktin-vs-substance-used"
+             lastModifiedDate="2024-07-22T16:51:10">
+      <desc language="en-US">Durchführung einer CT-/MR-/DS-Angiographie im Vergleich zur nativen Bildgebung</desc>
+      <sourceCodeSystem id="1.2.276.0.76.3.1.195.5.106"
+                        identifierName="divi-codesystem-106"
+                        canonicalUri="urn:oid:1.2.276.0.76.3.1.195.5.106"
+                        canonicalUriDSTU2="urn:oid:1.2.276.0.76.3.1.195.5.106"
+                        canonicalUriSTU3="urn:oid:1.2.276.0.76.3.1.195.5.106"
+                        canonicalUriR4="urn:oid:1.2.276.0.76.3.1.195.5.106"
+                        canonicalUriR4B="urn:oid:1.2.276.0.76.3.1.195.5.106"
+                        canonicalUriR5="urn:oid:1.2.276.0.76.3.1.195.5.106"/>
+      <publishingAuthority name="AKTIN e. V." inherited="project">
+         <addrLine>c/o Uniklinik RWTH Aachen</addrLine>
+         <addrLine>Institut für Medizinische Informatik</addrLine>
+         <addrLine>Pauwelsstraße 35</addrLine>
+         <addrLine>52074 Aachen</addrLine>
+         <addrLine type="phone">Tel. +49 391 67 28186</addrLine>
+         <addrLine type="email">office@aktin.org</addrLine>
+      </publishingAuthority>
+      <conceptList>
+         <concept code="0"
+                  codeSystem="1.2.276.0.76.3.1.195.5.106"
+                  displayName="nein"
+                  level="0"
+                  type="L"/>
+         <concept code="1"
+                  codeSystem="1.2.276.0.76.3.1.195.5.106"
+                  displayName="vor Aufnahme"
+                  level="0"
+                  type="L"/>
+         <concept code="2"
+                  codeSystem="1.2.276.0.76.3.1.195.5.106"
+                  displayName="direkt im Anschluss an native Bildgebung"
+                  level="0"
+                  type="L"/>
+         <concept code="3"
+                  codeSystem="1.2.276.0.76.3.1.195.5.106"
+                  displayName="nicht direkt im Anschluss an native Bildgebung aber ≤ 24 h"
+                  level="0"
+                  type="L"/>
+         <concept code="4"
+                  codeSystem="1.2.276.0.76.3.1.195.5.106"
+                  displayName="nicht direkt im Anschluss an native Bildgebung aber &gt; 24 h"
+                  level="0"
+                  type="L"/>
+      </conceptList>
+   </valueSet>
+</valueSets>

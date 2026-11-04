@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets>
+   <valueSet xmlns:ns0="http://www.json.org"
+             xmlns:ns1="urn:hl7-org:v3"
+             xmlns:ns3="urn:art-decor:example"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             id="1.2.276.0.76.11.45"
+             name="emergencyseverityindex"
+             displayName="Emergency Severity Index"
+             effectiveDate="2024-08-16T17:47:00"
+             statusCode="draft"
+             canonicalUri="http://aktin.org/fhir/ValueSet/aktin-vs-emergencyseverityindex"
+             versionLabel="2024"
+             lastModifiedDate="2024-08-16T17:47:03">
+      <sourceCodeSystem id="1.2.276.0.76.5.437"
+                        identifierName="Emergencyseverityindex"
+                        canonicalUri="http://aktin.org/fhir/CodeSystem/aktin-cs-emergencyseverityindex"
+                        canonicalUriDSTU2="http://aktin.org/fhir/CodeSystem/aktin-cs-emergencyseverityindex"
+                        canonicalUriSTU3="http://aktin.org/fhir/CodeSystem/aktin-cs-emergencyseverityindex"
+                        canonicalUriR4="http://aktin.org/fhir/CodeSystem/aktin-cs-emergencyseverityindex"
+                        canonicalUriR4B="http://aktin.org/fhir/CodeSystem/aktin-cs-emergencyseverityindex"
+                        canonicalUriR5="http://aktin.org/fhir/CodeSystem/aktin-cs-emergencyseverityindex"
+                        context="projects/aktin-/emergencyseverityindex-1.2.276.0.76.5.437"/>
+      <publishingAuthority name="AKTIN e. V." inherited="project">
+         <addrLine>c/o Uniklinik RWTH Aachen</addrLine>
+         <addrLine>Institut für Medizinische Informatik</addrLine>
+         <addrLine>Pauwelsstraße 35</addrLine>
+         <addrLine>52074 Aachen</addrLine>
+         <addrLine type="phone">Tel. +49 391 67 28186</addrLine>
+         <addrLine type="email">office@aktin.org</addrLine>
+      </publishingAuthority>
+      <terminologyAssociation conceptId="2.16.840.1.113883.2.6.60.3.2.9.21746.20231120000000.0"
+                              valueSet="1.2.276.0.76.11.45"
+                              flexibility="dynamic"
+                              effectiveDate="2024-07-22T14:58:40"
+                              valueSetName="Emergency Severity Index"
+                              valueSetStatusCode="draft"
+                              valueSetVersionLabel="2024"
+                              valueSetEffectiveDate="2024-08-16T17:47:00"/>
+      <conceptList>
+         <concept code="1"
+                  codeSystem="1.2.276.0.76.5.437"
+                  codeSystemName="Emergency Severity Index"
+                  codeSystemVersion="2015-03-03T00:00:00"
+                  displayName="Resuscitation - Immediate, life-saving intervention required without delay"
+                  level="0"
+                  type="L">
+            <designation displayName="Resuscitation - Immediate, life-saving intervention required without delay"
+                         type="preferred"
+                         language="en-US"/>
+         </concept>
+         <concept code="2"
+                  codeSystem="1.2.276.0.76.5.437"
+                  codeSystemName="Emergency Severity Index"
+                  codeSystemVersion="2015-03-03T00:00:00"
+                  displayName="Emergent - High risk of deterioration, or signs of a time-critical problem"
+                  level="0"
+                  type="L">
+            <designation displayName="Emergent - High risk of deterioration, or signs of a time-critical problem"
+                         type="preferred"
+                         language="en-US"/>
+         </concept>
+         <concept code="3"
+                  codeSystem="1.2.276.0.76.5.437"
+                  codeSystemName="Emergency Severity Index"
+                  codeSystemVersion="2015-03-03T00:00:00"
+                  displayName="Urgent - Stable, with multiple types of resources needed to investigate or treat (such as lab tests plus X-ray imaging)"
+                  level="0"
+                  type="L">
+            <designation displayName="Urgent - Stable, with multiple types of resources needed to investigate or treat (such as lab tests plus X-ray imaging)"
+                         type="preferred"
+                         language="en-US"/>
+         </concept>
+         <concept code="4"
+                  codeSystem="1.2.276.0.76.5.437"
+                  codeSystemName="Emergency Severity Index"
+                  codeSystemVersion="2015-03-03T00:00:00"
+                  displayName="Less Urgent - Stable, with only one type of resource anticipated (such as only an X-ray, or only sutures)"
+                  level="0"
+                  type="L">
+            <designation displayName="Less Urgent - Stable, with only one type of resource anticipated (such as only an X-ray, or only sutures)"
+                         type="preferred"
+                         language="en-US"/>
+         </concept>
+         <concept code="5"
+                  codeSystem="1.2.276.0.76.5.437"
+                  codeSystemName="Emergency Severity Index"
+                  codeSystemVersion="2015-03-03T00:00:00"
+                  displayName="Nonurgent - Stable, with no resources anticipated except oral or topical medications, or prescriptions"
+                  level="0"
+                  type="L">
+            <designation displayName="Nonurgent - Stable, with no resources anticipated except oral or topical medications, or prescriptions"
+                         type="preferred"
+                         language="en-US"/>
+         </concept>
+      </conceptList>
+   </valueSet>
+</valueSets>
